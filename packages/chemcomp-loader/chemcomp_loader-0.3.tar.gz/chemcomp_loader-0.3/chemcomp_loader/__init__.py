@@ -1,0 +1,5 @@
+from chemcomp_loader import Disc_class
+from chemcomp_loader import help
+from chemcomp_loader import Disc_gas
+from chemcomp_loader import Disc_dust
+from chemcomp_loader import Disc_chemistry
