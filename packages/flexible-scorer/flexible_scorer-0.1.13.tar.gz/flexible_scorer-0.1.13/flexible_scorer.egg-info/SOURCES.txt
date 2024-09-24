@@ -1,0 +1,10 @@
+README.md
+setup.py
+flexible_scorer/__init__.py
+flexible_scorer/scorer.py
+flexible_scorer/utils.py
+flexible_scorer.egg-info/PKG-INFO
+flexible_scorer.egg-info/SOURCES.txt
+flexible_scorer.egg-info/dependency_links.txt
+flexible_scorer.egg-info/requires.txt
+flexible_scorer.egg-info/top_level.txt
