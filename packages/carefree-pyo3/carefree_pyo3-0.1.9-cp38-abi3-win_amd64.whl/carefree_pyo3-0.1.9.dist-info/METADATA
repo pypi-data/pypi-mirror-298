@@ -1,0 +1,39 @@
+Metadata-Version: 2.3
+Name: carefree-pyo3
+Version: 0.1.9
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: numpy ==1.24.4
+Requires-Dist: pandas
+Requires-Dist: pydantic
+License-File: LICENSE
+License-File: LICENSE
+Summary: rust → python made easy
+Keywords: rust,python,numpy,pandas
+Home-Page: https://github.com/carefree0910/carefree-pyo3
+Author: carefree0910 <syameimaru.saki@gmail.com>
+Author-email: carefree0910 <syameimaru.saki@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/carefree0910/carefree-pyo3
+
+# carefree-pyo3
+
+`cfpyo3` is a collection of performant utilities.
+
+## Installation
+
+`carefree-pyo3` requires:
+- Python 3.8 or higher.
+- `numpy < 2.x`, because currently rust numpy doesn't support numpy 2.x.
+
+```bash
+pip install carefree-pyo3
+```
+
+## Test
+
+```bash
+pytest
+```
+
