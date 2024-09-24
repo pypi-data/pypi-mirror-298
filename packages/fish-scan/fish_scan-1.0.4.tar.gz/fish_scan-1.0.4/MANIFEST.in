@@ -1,0 +1,6 @@
+include LICENSE
+include README.md
+include src/fish_scan/support_files/*
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
