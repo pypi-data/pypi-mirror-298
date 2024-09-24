@@ -1,0 +1,5 @@
+timestamp_schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timestamp_schema/timestamp_pb2.py,sha256=6sBYy2XhaGthYPYvuGjYMk-SA29JLvoz21YKPVhoeYo,1028
+timestamp_schema-0.1.0.dist-info/METADATA,sha256=npAgHdqfXmT0ri7idHeKju-tDN4foLZiNBbIV2H0g0g,379
+timestamp_schema-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+timestamp_schema-0.1.0.dist-info/RECORD,,
