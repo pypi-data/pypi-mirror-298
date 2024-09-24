@@ -1,0 +1,14 @@
+v440/__init__.py,sha256=MQrVNWvZoxumw3SE5XBnGWje_gQ7V_DvfDLv29UX0SE,25
+v440/_core/Local.py,sha256=E3qKmtj8KFaGS_eJ8aAWyILaASL1gD1JHUApFrYb02c,1875
+v440/_core/Pre.py,sha256=MW0KGOZJYCjdNhZSmoj5ZxT8ax6oahTHRbT2oxzceFY,1112
+v440/_core/Release.py,sha256=Eqp_iidbQ3JNga6wwj2akWx86Yg7a3xSRLPpGVaw2rM,5175
+v440/_core/Version.py,sha256=v6EC8fFhYf5-cPUgicfDXKpf2G6zDg-duYuRO7PYUT4,6663
+v440/_core/__init__.py,sha256=uYjdaudy0Sc4ys1eoI8c7-WvW5394p5UNw2BI_thrRA,81
+v440/_core/utils.py,sha256=KMLtzvRecQ4Fo5DwEtb3kopXJ9p9jymavJSK33yyry0,5238
+v440/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+v440/tests/test_version.py,sha256=9OqLnrFRFqpDS-26dA7yFJg2xWSsQk-Hhi61mxnTy-k,16188
+v440-1.0.15.dist-info/LICENSE.txt,sha256=QwqYepQwTN5xG57cngKt6xxYD9z9hw9d3lcI8zSLiNg,1074
+v440-1.0.15.dist-info/METADATA,sha256=wuT4x_NSg_ZEBYUSHFpQgcyEcJT7fOPXKsG3hsUMWU0,6617
+v440-1.0.15.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+v440-1.0.15.dist-info/top_level.txt,sha256=0KhvBmvlzcE4QlmK9pkVo1pXR2q-YDKG5Bj5yIXmWTE,5
+v440-1.0.15.dist-info/RECORD,,
