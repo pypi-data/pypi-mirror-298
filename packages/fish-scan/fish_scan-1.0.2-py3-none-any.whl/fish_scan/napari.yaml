@@ -1,0 +1,42 @@
+name: fish-scan
+display_name: Fish Scan
+# use 'hidden' to remove plugin from napari hub search results
+visibility: public
+# see https://napari.org/stable/plugins/manifest.html for valid categories
+categories: ["Image Processing", "Segmentation", "Measurement"]
+contributions:
+  commands:
+    - id: fish-scan.get_reader
+      python_name: fish_scan._reader:napari_get_reader
+      title: Open data with Fish Scan
+    - id: fish-scan.write_multiple
+      python_name: fish_scan._writer:write_multiple
+      title: Save multi-layer data with Fish Scan
+    - id: fish-scan.write_single_image
+      python_name: fish_scan._writer:write_single_image
+      title: Save image data with Fish Scan
+    - id: fish-scan.make_sample_data
+      python_name: fish_scan._sample_data:make_sample_data
+      title: Load sample data from Fish Scan
+    - id: fish-scan.analysis
+      python_name: fish_scan:FishAnalysis
+      title: Analyse the image
+    
+  readers:
+    - command: fish-scan.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.npy']
+  writers:
+    - command: fish-scan.write_multiple
+      layer_types: ['image*','labels*']
+      filename_extensions: []
+    - command: fish-scan.write_single_image
+      layer_types: ['image']
+      filename_extensions: ['.npy']
+  sample_data:
+    - command: fish-scan.make_sample_data
+      display_name: Fish Scan
+      key: unique_id.1
+  widgets:
+    - command: fish-scan.analysis
+      display_name: FishAnalysis
