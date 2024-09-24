@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: data3_network
+Version: 0.0.1
+Summary: Data3 Network Library for PySyft Server Integration
+Author: Data3 Network
+Author-email: data3network@gmail.com
+Requires-Dist: syft==0.9.1
