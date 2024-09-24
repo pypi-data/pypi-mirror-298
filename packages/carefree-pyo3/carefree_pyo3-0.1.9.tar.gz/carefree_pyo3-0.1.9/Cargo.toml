@@ -1,0 +1,15 @@
+[workspace]
+members = ["cfpyo3_rs_core", "cfpyo3_rs_py"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.9"
+edition = "2021"
+authors = ["carefree0910 <syameimaru.saki@gmail.com>"]
+description = "a collection of performant utilities"
+homepage = "https://github.com/carefree0910/carefree-pyo3"
+repository = "https://github.com/carefree0910/carefree-pyo3"
+readme = "README.md"
+keywords = ["python", "rust", "pyo3"]
+categories = ["algorithms", "data-structures"]
+license-file = "LICENSE"
