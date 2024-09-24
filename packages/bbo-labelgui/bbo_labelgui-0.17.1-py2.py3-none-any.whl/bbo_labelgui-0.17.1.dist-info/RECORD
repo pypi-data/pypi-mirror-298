@@ -1,0 +1,13 @@
+labelgui/__init__.py,sha256=mrwBkyZNcMowMG4-KslRvuWjlT2xdlnWDSWDZEK270s,23
+labelgui/__main__.py,sha256=D_FYhdfRum6KCRnAuEEq9Zs6cB1L5nKbk1pgxlPaWF4,3368
+labelgui/check.py,sha256=yO0sgR52MQoi7gPBLXwMIHldFi1Zi9qB5MvfLydySxY,2036
+labelgui/config.py,sha256=5lgeeGPabpk6r8UqPUlZat7SYF50UnoEenJ-seFq3_U,1100
+labelgui/helper_gui.py,sha256=5kteIa2L8ByaijH0yHXwcfnleWaM6Fp77WszIQSRgPM,652
+labelgui/helper_video.py,sha256=G5FtXD7OcqajwM0aI3guBLtJUbRqYfBOC-yv9ZbHnFM,622
+labelgui/labeling_gui.py,sha256=x-B-LlWNn3cWGl4bEK01G6Y3wqsMegsKa1D7UvfZfBg,69051
+labelgui/labeling_gui_cfg.py,sha256=nILHE0RfgZu1E7IHIkeErmLKruszwv3hr8kZdozAOHg,2147
+labelgui/select_user.py,sha256=wUMvibGEnuanPT216DnU0XaWLIGhP0UhFCzpcBpLfBQ,4527
+bbo_labelgui-0.17.1.dist-info/METADATA,sha256=07GOhY-sr64OWeUBkpB1wh3BWdk7585Hkb3swD-whkM,3630
+bbo_labelgui-0.17.1.dist-info/WHEEL,sha256=fl6v0VwpzfGBVsGtkAkhILUlJxROXbA3HvRL6Fe3140,105
+bbo_labelgui-0.17.1.dist-info/licenses/LICENSE,sha256=E--zsPmnnjThYaNwD9fc91e7LzfzMVztO51SK5IdpgY,25313
+bbo_labelgui-0.17.1.dist-info/RECORD,,
