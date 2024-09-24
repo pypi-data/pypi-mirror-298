@@ -1,0 +1,11 @@
+penify_hook/api_client.py,sha256=g8q1BmyQoppu74tmnPYe7KiGE8Zm00XXo-MQuXrySXw,6177
+penify_hook/commit_analyzer.py,sha256=Nc-eCAXrtw1kwmU9LucNS-7cS2xW4nxBL7LvGMBFtjo,6512
+penify_hook/file_analyzer.py,sha256=m_WuUNJx8LJ3JSp2Vm6uIlaK-xIQQc0HkCA4ifor8CQ,2576
+penify_hook/folder_analyzer.py,sha256=gb99E67pJCmRdkJ8OosikL02-aadlDOTKfgCG76XuGU,3251
+penify_hook/git_analyzer.py,sha256=AyA9ro4aDnXzhh9sA29LvQRKubFqtuVqa04FkWB3MPk,9794
+penify_hook/main.py,sha256=8i3NzxqoDAfjSfnCP5pgYuh0rhFxEa3BUmLnWQVXwEE,11423
+penify_cli-0.1.4.dist-info/METADATA,sha256=0JC5mjelv9_llDhc3shs1zdzmNPX7uHDK9QP0rJvTiY,3977
+penify_cli-0.1.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+penify_cli-0.1.4.dist-info/entry_points.txt,sha256=BCLdhRUQnegZZeoeS5fTbvzyRMiQvyyHgUUNszchoHo,53
+penify_cli-0.1.4.dist-info/top_level.txt,sha256=b1SkCiz3iOVa1uEGiU2gMr6JyCdBccy8O-DGtqPBVbw,12
+penify_cli-0.1.4.dist-info/RECORD,,
