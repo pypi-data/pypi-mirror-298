@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: topaisdk
+Version: 0.1.2
+Summary: topai python sdk
+Home-page: http://github.com/topailab
+Author: error.ding
+Author-email: error.ding@uptech.ai
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: ray==2.34.0
+
+# topaisdk
+
+## setup
+
+```shell
+pip install .
+```
