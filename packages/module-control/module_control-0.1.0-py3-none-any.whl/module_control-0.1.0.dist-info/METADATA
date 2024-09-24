@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: module-control
+Version: 0.1.0
+Summary: A Python package for network analysis including dominating sets and controllability.
+License: MIT
+Author: Fan Tianyi
+Author-email: fantianyi@stu.njmu.edu.cn
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.4.0,<4.0.0)
+Requires-Dist: networkx (>=2.6.0,<3.0.0)
+Requires-Dist: numpy (>=1.21.0,<2.0.0)
+Requires-Dist: pandas (>=1.3.0,<2.0.0)
+Requires-Dist: python-louvain (>=0.15,<0.16)
+Requires-Dist: scikit-learn (>=1.0,<2.0)
+Requires-Dist: scipy (>=1.7.0,<2.0.0)
+Requires-Dist: seaborn (>=0.12.0,<0.13.0)
+Description-Content-Type: text/markdown
+
+README.md
+
+# 模块控制
+
+## 简介
+
+模块控制是用于控制多个模块的运行状态的工具。
+
+## 安装
+
+
+
