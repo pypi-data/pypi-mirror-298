@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: iemtools
+Version: 0.0.2
+Summary: Behavioural tests analysis tool
+Author-email: Sely Papan <sely.papan@iem.cas.cz>
+Project-URL: Homepage, https://github.com/selypapan/iem_cas_projects/blob/main/iemtools_package/
+Project-URL: Issues, https://github.com/selypapan/iem_cas_projects/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# IEM CAS toolset
+This library contains functions for the analysis of behavioural tests such as Morris Water Maze, offering an open-source non-DeepL/ML alternative to existing proprietary software.
+This is an experimental version. Created by Sely Papan.
