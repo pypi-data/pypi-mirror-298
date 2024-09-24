@@ -1,0 +1,12 @@
+text2dataset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+text2dataset/_version.py,sha256=O3R9QIT7Yun4cHpilAUPwWsXOljhfNHgrrNKwznzFNo,123
+text2dataset/main.py,sha256=d05WpKVAbZpwx84qltmVL2KV_Dwybv3YHBX6eMJbqBs,5737
+text2dataset/reader.py,sha256=udZK2CvWmxJF8fFaTa1Yx12IxoV_MIWvBSSf9MkaC_M,411
+text2dataset/translator.py,sha256=_idcJ8Z4121e3UWpgpQ1MdDlbQF4oi9-nZfAuFCU-Yg,1978
+text2dataset/utils.py,sha256=b_TymuMUH-CZnHA51fg_Q9F6TJJDC1T_G7CDgFC8K5w,710
+text2dataset/writer.py,sha256=taNpuP_FjFuqxZ5YC7hPnDtp59NTr1KyVAFjCO6Hd60,1116
+text2dataset-0.1.12.dist-info/METADATA,sha256=ZpFBeNoBowAU3mpzskkJ02Jwl2F7na7pKa8eN4w6aeg,5146
+text2dataset-0.1.12.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+text2dataset-0.1.12.dist-info/entry_points.txt,sha256=A34Cs8HriW7FBF4H0fUM2PVNTdi1couC6qg3Nzk8tAQ,56
+text2dataset-0.1.12.dist-info/licenses/LICENSE,sha256=UFASP8yC_pnuY_V3sYRmnQrv4b0jzwtETRUeeEx26uA,1062
+text2dataset-0.1.12.dist-info/RECORD,,
