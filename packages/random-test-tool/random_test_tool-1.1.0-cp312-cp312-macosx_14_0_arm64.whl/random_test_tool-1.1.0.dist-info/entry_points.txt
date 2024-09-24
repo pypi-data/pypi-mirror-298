@@ -1,0 +1,2 @@
+[console_scripts]
+random-test-tool = app.random_test_tool:main
