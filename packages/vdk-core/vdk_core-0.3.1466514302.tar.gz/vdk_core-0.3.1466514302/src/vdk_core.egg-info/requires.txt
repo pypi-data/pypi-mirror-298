@@ -1,0 +1,6 @@
+click==8.*
+pluggy
+click_log
+click-plugins
+tenacity
+setuptools
