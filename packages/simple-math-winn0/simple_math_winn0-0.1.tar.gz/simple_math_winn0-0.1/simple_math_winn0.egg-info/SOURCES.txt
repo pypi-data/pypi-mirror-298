@@ -1,0 +1,8 @@
+README.md
+setup.py
+simple_math_winn0/__init__.py
+simple_math_winn0/main.py
+simple_math_winn0.egg-info/PKG-INFO
+simple_math_winn0.egg-info/SOURCES.txt
+simple_math_winn0.egg-info/dependency_links.txt
+simple_math_winn0.egg-info/top_level.txt
