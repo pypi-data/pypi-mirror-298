@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: modstore
+Version: 0.1.2
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: maturin
+License-File: LICENSE
+Summary: Basic and Moded data structures with rust backend for speed.
+Author-email: Soumyo Deep Gupta <deep.main.ac@gmail.com>
+Maintainer-email: Soumyo Deep Gupta <deep.main.ac@gmail.com>
+Description-Content-Type: text/markdown
+Project-URL: GitHub, https://github.com/d33p0st/modstore
+
+[![Unit Tests](https://github.com/d33p0st/modstore/actions/workflows/tests.yml/badge.svg)](https://github.com/d33p0st/modstore/actions/workflows/tests.yml)
+
+# Overview
