@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+neuroclassify/__init__.py
+neuroclassify/classifier.py
+neuroclassify/utils.py
+neuroclassify.egg-info/PKG-INFO
+neuroclassify.egg-info/SOURCES.txt
+neuroclassify.egg-info/dependency_links.txt
+neuroclassify.egg-info/requires.txt
+neuroclassify.egg-info/top_level.txt
