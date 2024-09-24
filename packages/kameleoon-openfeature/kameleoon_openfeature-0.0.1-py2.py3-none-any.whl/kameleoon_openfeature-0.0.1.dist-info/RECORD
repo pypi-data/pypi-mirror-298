@@ -1,0 +1,10 @@
+kameleoon_openfeature/__init__.py,sha256=_KsIsouFOjMZWo1eOwSpNrM1_gz1M6qd8U6LmNbZ2Ow,35
+kameleoon_openfeature/data_converter.py,sha256=G8ovfVT-9J6vIO1EWXKkWmVdXlNOzDaj1AxS4N8Fpgc,2975
+kameleoon_openfeature/kameleoon_provider.py,sha256=pD5VjMwgQ0fgcYG9ZXcjtwSBH8VTvPpXXMIxPFUt7ps,5496
+kameleoon_openfeature/resolver.py,sha256=7I0bLkvjyiO323jx8n1nCalAWIVm-VsZ18C-HHyp1rc,5615
+kameleoon_openfeature/sdk_version.py,sha256=XC6nMaiNuSfSCOfExswgrMZDvnC1eRaoa-BazHtqjak,164
+kameleoon_openfeature/types.py,sha256=M3xmAXEJJNBcRjcH0AcTdLovGrljRWyesqCphIsXiPY,1425
+kameleoon_openfeature-0.0.1.dist-info/METADATA,sha256=LR5ThYDxSnKt8tqJ1BwMV7AHtZ5qGLS6d78pcNyEUEc,8107
+kameleoon_openfeature-0.0.1.dist-info/WHEEL,sha256=fS9sRbCBHs7VFcwJLnLXN1MZRR0_TVTxvXKzOnaSFs8,110
+kameleoon_openfeature-0.0.1.dist-info/top_level.txt,sha256=oUswM2FBpNhAl-IfEwHR0r3Dxd0LXizDq_15y_ekfGQ,22
+kameleoon_openfeature-0.0.1.dist-info/RECORD,,
