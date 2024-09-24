@@ -1,0 +1,11 @@
+structured_templates-0.1.0.dist-info/METADATA,sha256=UZ9dfGQW29Q5oVIJpsGGjQO-dj4mJ3vs6LyPKMQUnPw,3055
+structured_templates-0.1.0.dist-info/WHEEL,sha256=Vza3XR51HW1KmFP0iIMUVYIvz0uQuKJpIXKYOBGQyFQ,90
+structured_templates-0.1.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+structured_templates/__init__.py,sha256=OQP0njuuTag17UT8hfnWx6nYNgv_uKJPDUObroMQPyw,85
+structured_templates/context.py,sha256=TX0vqOgobNNQfMmu02n2XL3XL9fXAJHFn-At4knbqn8,2143
+structured_templates/engine.py,sha256=UgxE5XJQuj6J1049Ipa5iq9aUY7FXtGbuRv6AhWUHdI,7422
+structured_templates/engine_test.py,sha256=NpRG5nNf5kmxQH5SS5bWK2-NIrrUIUJcB8BKKGv7yaA,2984
+structured_templates/exceptions.py,sha256=VkbxK5Pq2O13UQchkBQRxRzsjr9XV8YOWUuPjyqPjt4,417
+structured_templates/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+structured_templates/types.py,sha256=S2vEswYvupJo6x59P5PeLHqP6Hz60oS9UkB7bmh2Iy0,145
+structured_templates-0.1.0.dist-info/RECORD,,
