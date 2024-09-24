@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+tutor_contrib_mailpit.egg-info/PKG-INFO
+tutor_contrib_mailpit.egg-info/SOURCES.txt
+tutor_contrib_mailpit.egg-info/dependency_links.txt
+tutor_contrib_mailpit.egg-info/entry_points.txt
+tutor_contrib_mailpit.egg-info/requires.txt
+tutor_contrib_mailpit.egg-info/top_level.txt
+tutormailpit/__about__.py
+tutormailpit/__init__.py
+tutormailpit/plugin.py
+tutormailpit/patches/local-docker-compose-dev-services
+tutormailpit/patches/openedx-development-settings
