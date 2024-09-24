@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PIM-SM"
+version = "0.1.1"
+description = "about sending PIM-SM protocol messages."
+readme = "README.md"
+authors = [
+    { name="SoloHand", email="657229783@qq.com" }
+]
+license = { text = "MIT" }
+keywords = ["pim-sm", "igmp", "scapy", "pyshark", "networking"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"  # 项目支持的 Python 版本
+
+dependencies = [
+    "scapy>=2.4.5",  # 项目所需的依赖包及版本
+    "pyshark>=0.4.2.12",
+    "asyncio"
+]
+
+
