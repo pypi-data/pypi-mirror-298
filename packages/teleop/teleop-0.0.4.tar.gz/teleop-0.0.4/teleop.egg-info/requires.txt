@@ -1,0 +1,6 @@
+Flask
+numpy
+transforms3d
+werkzeug
+pytest
+requests
