@@ -1,0 +1,10 @@
+openfeature-sdk>=0.7.1
+kameleoon-client-python>=3.3.3
+
+[test]
+flake8==7.1.1
+openfeature-sdk>=0.7.1
+pylint==3.2.7
+kameleoon-client-python>=3.3.3
+mypy==1.11.2
+pytest==8.3.3
