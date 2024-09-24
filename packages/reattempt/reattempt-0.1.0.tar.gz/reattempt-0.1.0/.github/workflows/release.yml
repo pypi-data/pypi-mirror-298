@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+      - name: Extract version from tag
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+      - name: Install uv
+        run: pip install uv
+      - name: Use uv with Python version
+        run: uv venv --python 3.12
+      - run: make install
+      - run: make build
+      - run: make test
+      - run: make deploy
+        env:
+          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
