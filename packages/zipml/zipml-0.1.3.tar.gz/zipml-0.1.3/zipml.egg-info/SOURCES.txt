@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+zipml/__init__.py
+zipml/helpers.py
+zipml/zipml.py
+zipml.egg-info/PKG-INFO
+zipml.egg-info/SOURCES.txt
+zipml.egg-info/dependency_links.txt
+zipml.egg-info/entry_points.txt
+zipml.egg-info/requires.txt
+zipml.egg-info/top_level.txt
