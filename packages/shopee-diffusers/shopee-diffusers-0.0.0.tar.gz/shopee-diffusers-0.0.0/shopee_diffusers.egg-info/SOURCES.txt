@@ -1,0 +1,6 @@
+README.md
+setup.py
+shopee_diffusers.egg-info/PKG-INFO
+shopee_diffusers.egg-info/SOURCES.txt
+shopee_diffusers.egg-info/dependency_links.txt
+shopee_diffusers.egg-info/top_level.txt
