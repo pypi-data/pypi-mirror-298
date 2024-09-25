@@ -1,0 +1,7 @@
+drugdetector/__init__.py,sha256=73zoF5MQGdjzY5BfG7UB0v7ERXHzhJzT0HrWuo1N8UY,44
+drugdetector/detect.py,sha256=G7DOmGFWM7GXryd8cKxRpcUY0QEx16uhpU4FUmZJKoM,8347
+drugdetector/utils.py,sha256=O35s5QmMF7QCRj99pR4MgwjYtMJcTlznoPEvrv7KRto,393
+drugdetector-0.3.0.dist-info/METADATA,sha256=PF51yZ1JqBVBmcXxqDCItaoEw20z3A33uI6HbCsJGKk,3300
+drugdetector-0.3.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+drugdetector-0.3.0.dist-info/top_level.txt,sha256=kSCSbkGESPKjHRFD0T5NvSd9rGXkoDbtjiyk0w495oE,13
+drugdetector-0.3.0.dist-info/RECORD,,
