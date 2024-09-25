@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+easyflowutils/__init__.py
+easyflowutils/fireberry_client.py
+easyflowutils/logger_utils.py
+easyflowutils/main.py
+easyflowutils.egg-info/PKG-INFO
+easyflowutils.egg-info/SOURCES.txt
+easyflowutils.egg-info/dependency_links.txt
+easyflowutils.egg-info/top_level.txt
+upgrade/__init__.py
+upgrade/update_package.py
