@@ -1,0 +1,14 @@
+hypster/__init__.py,sha256=-OS0a-zfycacHF07d78xW1wOCJMjNmq3pGlqLfJETSg,279
+hypster/ast_analyzer.py,sha256=JyclFR3p8xsmIFmK4uNMNvfgYFt79SRVx4moncmHs7k,17613
+hypster/config.py,sha256=X8Jd222yLzGolthfVgtR0G-5kc1wN5VVvDgWL_i5rko,2223
+hypster/core.py,sha256=umGZ3iqFxreFzorU3HJPdQ86NLQ0JRRGOQ_8e3swWYs,9305
+hypster/hp.py,sha256=87bxiOTwfdZ1S6G6LFzeH_SZcgKl9fW1gfPbvZG4yCg,5836
+hypster/hp_calls.py,sha256=vm8VZH8HtTdO45J4bIfMYMAel0KA57iABID08YYSMSc,14530
+hypster/logging_utils.py,sha256=9YWpg_FQMsQZ3AgQDJX91XpiGI0jLvbscKqRO4TAbVE,1595
+hypster/magic.py,sha256=H4ZjdMskD5co9aWza1VhsylGzPOieAzF2hBLD112qIw,17499
+hypster/selection_handler.py,sha256=0aR1uE3Q8op__C_aAYhg1jzMixTP44Nt4jU24Xf8uk4,6956
+hypster/utils.py,sha256=kNN36DCYOOjj49Kqs_VqiIG7uP5kJT0lncd_OEtpiUk,3231
+hypster-0.2.11.dist-info/LICENSE,sha256=uSD0WGs3Wkrc6M1UU865Dc89UWX0Kssx7dapKdcLL1I,1077
+hypster-0.2.11.dist-info/METADATA,sha256=WhYEqy5fBv-Zd3LgZSRr0-wOEgGUNUABniCh5FjVzOc,2690
+hypster-0.2.11.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+hypster-0.2.11.dist-info/RECORD,,
