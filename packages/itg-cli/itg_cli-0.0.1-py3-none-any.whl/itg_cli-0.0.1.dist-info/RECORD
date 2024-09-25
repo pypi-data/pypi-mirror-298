@@ -1,0 +1,11 @@
+itg_cli/__init__.py,sha256=cS_yAnohEHAz1aMdU-kiWxwPdmrzg3_u4Yu3SLZe1pA,120
+itg_cli/__main__.py,sha256=n7mzGqJSLrqfg57R_br4rQIIN58mmS4e8zWd9Gm5fEs,3275
+itg_cli/_config.py,sha256=kZYayioA4Sw3T--aRU6cyKg87pEGeMyH_v1eeHmMv4E,4390
+itg_cli/_utils.py,sha256=lbxzNA5Ym4b4LyhBepm6kQNCTCrphkI5UtpOf8r8TM4,7761
+itg_cli/commands.py,sha256=fSO4OtRHC2BCZb4lfoF9ssMT6S29l1U3QSwS7EFiNnw,9573
+itg_cli-0.0.1.dist-info/LICENSE,sha256=qzyrO9KVnv46xyOVnoU7Wn7siJNRvtQSMcJFQw74D-4,1089
+itg_cli-0.0.1.dist-info/METADATA,sha256=epuul4qeVUJwP4EjQ5NlPWJSlFmhRVI3bjMT9syHk4s,4817
+itg_cli-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+itg_cli-0.0.1.dist-info/entry_points.txt,sha256=u6l33ba12O-wGd6uKhDPbQ50KIUFk-sRwz3uT3uNVjY,50
+itg_cli-0.0.1.dist-info/top_level.txt,sha256=9N2pqTfDK4ZFP08BtC36A1jDW2BiVkPusIqXxA69W6Q,8
+itg_cli-0.0.1.dist-info/RECORD,,
