@@ -1,0 +1,2 @@
+[sceptre.hooks]
+stack_deploy_time = hook.hook:CustomHook
