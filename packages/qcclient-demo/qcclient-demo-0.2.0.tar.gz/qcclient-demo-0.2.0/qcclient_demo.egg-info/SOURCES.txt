@@ -1,0 +1,10 @@
+setup.py
+qcclient/__init__.py
+qcclient/client.py
+qcclient/config.py
+qcclient/job.py
+qcclient_demo.egg-info/PKG-INFO
+qcclient_demo.egg-info/SOURCES.txt
+qcclient_demo.egg-info/dependency_links.txt
+qcclient_demo.egg-info/requires.txt
+qcclient_demo.egg-info/top_level.txt
