@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/streamlit_report/__init__.py
+src/streamlit_report/htmlClass.py
+src/streamlit_report/report.py
+src/streamlit_report/style.html
+src/streamlit_report.egg-info/PKG-INFO
+src/streamlit_report.egg-info/SOURCES.txt
+src/streamlit_report.egg-info/dependency_links.txt
+src/streamlit_report.egg-info/requires.txt
+src/streamlit_report.egg-info/top_level.txt
+tests/test-multiselect.py
+tests/test-slider-range.py
+tests/test-text.py
