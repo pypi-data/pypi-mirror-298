@@ -1,0 +1,9 @@
+splice_replace/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+splice_replace/splice_replace.py,sha256=jeV9k0C82V_2aWbCGgZIgSxviDkGPnf-xPhY1iBwyaw,2739
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_splice_replace.py,sha256=ynRKWF8rkZJX27tKAwBMPUB8tj2tB_pbDwNItCJOdE0,2424
+splice_replace-0.1.dist-info/METADATA,sha256=4nQxPiRuu4CHALasFNxGfBRJGbYIR6-ZPXaMQj21k98,336
+splice_replace-0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+splice_replace-0.1.dist-info/entry_points.txt,sha256=RBmtq2gpXK5ZeYzbT_O7vaP2V6fmjmlvZ1frLad_vI8,70
+splice_replace-0.1.dist-info/top_level.txt,sha256=guqvg2Oej1yA8B-PlNYxoo1vziiKZFidoww6HjwER1A,21
+splice_replace-0.1.dist-info/RECORD,,
