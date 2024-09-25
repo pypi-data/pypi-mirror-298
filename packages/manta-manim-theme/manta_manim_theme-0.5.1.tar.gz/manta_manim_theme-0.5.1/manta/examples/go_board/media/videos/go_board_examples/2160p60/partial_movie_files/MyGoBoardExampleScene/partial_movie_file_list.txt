@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/go_board/media/videos/go_board_examples/2160p60/partial_movie_files/MyGoBoardExampleScene/3936264444_3658458776_2358810818.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/go_board/media/videos/go_board_examples/2160p60/partial_movie_files/MyGoBoardExampleScene/937097409_1754276053_3244069566.mp4'

@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/agenda/media/videos/example_agenda_fade_in_all_at_once/720p30/partial_movie_files/Agenda/3456279373_2439657585_2358810818.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/agenda/media/videos/example_agenda_fade_in_all_at_once/720p30/partial_movie_files/Agenda/275379283_1983916510_2854644217.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/agenda/media/videos/example_agenda_fade_in_all_at_once/720p30/partial_movie_files/Agenda/275379283_1619302554_2527587678.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/agenda/media/videos/example_agenda_fade_in_all_at_once/720p30/partial_movie_files/Agenda/275379283_2275908192_629794323.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/agenda/media/videos/example_agenda_fade_in_all_at_once/720p30/partial_movie_files/Agenda/275379283_3890345977_3465817516.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/agenda/media/videos/example_agenda_fade_in_all_at_once/720p30/partial_movie_files/Agenda/275379283_4126441123_2933972966.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/agenda/media/videos/example_agenda_fade_in_all_at_once/720p30/partial_movie_files/Agenda/275379283_2382575804_2767018937.mp4'

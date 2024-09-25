@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/iqs/media/videos/iqs_example/720p30/partial_movie_files/MyIQSExampleScene/4075998065_3529918938_2358810818.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/iqs/media/videos/iqs_example/720p30/partial_movie_files/MyIQSExampleScene/1630797920_2781284761_1574399176.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/iqs/media/videos/iqs_example/720p30/partial_movie_files/MyIQSExampleScene/1630797920_1840917363_3937145127.mp4'

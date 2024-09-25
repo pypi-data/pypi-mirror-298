@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/slide_templates/classic/media/videos/classic_slide_template/720p30/partial_movie_files/TestClassicSlide/3456279373_3404802251_2358810818.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/slide_templates/classic/media/videos/classic_slide_template/720p30/partial_movie_files/TestClassicSlide/275379283_2052089197_1917614136.mp4'
