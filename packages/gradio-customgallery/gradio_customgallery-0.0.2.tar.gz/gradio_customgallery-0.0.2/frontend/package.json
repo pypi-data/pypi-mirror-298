@@ -1,0 +1,30 @@
+{
+  "name": "gradio_customgallery",
+  "version": "0.11.3",
+  "description": "Gradio UI packages",
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "private": false,
+  "dependencies": {
+    "@gradio/atoms": "0.7.7",
+    "@gradio/client": "1.4.0",
+    "@gradio/icons": "0.6.0",
+    "@gradio/image": "0.13.0",
+    "@gradio/statustracker": "0.7.2",
+    "@gradio/upload": "0.12.0",
+    "@gradio/utils": "0.5.1",
+    "@gradio/file": "0.9.0",
+    "dequal": "^2.0.2"
+  },
+  "devDependencies": {
+    "@gradio/preview": "0.10.1"
+  },
+  "main": "./Index.svelte",
+  "main_changeset": true,
+  "exports": {
+    ".": "./Index.svelte",
+    "./package.json": "./package.json",
+    "./base": "./shared/Gallery.svelte"
+  }
+}
