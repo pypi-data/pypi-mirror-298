@@ -1,0 +1,32 @@
+name: Test Install
+
+on:
+  workflow_call:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+      fail-fast: false
+    steps:
+      - uses: astral-sh/setup-uv@v3.1.1
+        with:
+          version: "0.4.10"
+
+      - name: Create python venv
+        run: |
+          uv venv --python ${{ matrix.python-version }}
+
+      - name: Download package distributions from GitHub
+        uses: actions/download-artifact@v4.1.8
+        id: download-package
+        with:
+          name: package
+          path: dist/
+
+      - name: Install tools and package
+        run: |
+          export WHEEL_PATH=$(find ./dist -type f -name '*.whl')
+          uv pip install $WHEEL_PATH

@@ -1,0 +1,36 @@
+name: Build
+
+on:
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.7
+
+      - uses: astral-sh/setup-uv@v3.1.1
+        with:
+          version: "0.4.10"
+
+      - name: Check code format (ruff)
+        run: uv run --frozen ruff format --check
+
+      - name: Lint code (ruff)
+        run: uv run --frozen ruff check .
+
+      - name: Type check (mypy)
+        run: uv run --frozen mypy .
+
+      - name: Build package
+        run: |
+          export SOURCE_DATE_EPOCH=$(date +%s)
+          echo "SOURCE_DATE_EPOCH: $SOURCE_DATE_EPOCH"
+          uv build
+
+      - name: Upload package distributions to GitHub
+        uses: actions/upload-artifact@v4.4.0
+        with:
+          name: package
+          path: dist/
+          if-no-files-found: error

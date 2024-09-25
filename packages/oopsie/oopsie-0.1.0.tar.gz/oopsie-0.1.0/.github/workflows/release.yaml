@@ -1,0 +1,44 @@
+name: Release
+
+on:
+  # TODO: releases are manual for now, but I'd like to trigger them when a
+  # GitHub release and/or tag is created. For now, workflow_dispatch is good enough.
+  workflow_dispatch:
+    inputs:
+      publish-to:
+        type: choice
+        description: The URL of the PyPI repository to publish to
+        required: true
+        options:
+          - https://test.pypi.org/legacy/ # for testing
+          - https://upload.pypi.org/legacy/ # for release
+
+jobs:
+  build:
+    uses: ./.github/workflows/build.yaml
+
+  test:
+    needs: [build]
+    uses: ./.github/workflows/test.yaml
+
+  test_install:
+    needs: [build]
+    uses: ./.github/workflows/test_install.yaml
+
+  publish:
+    needs: [test, test_install]
+    runs-on: ubuntu-latest
+    environment: release # FIXME: this should be different for pypi and test pypi
+    permissions:
+      id-token: write # IMPORTANT: this permission is mandatory for trusted publishing
+    steps:
+      - uses: actions/download-artifact@v4.1.8
+        with:
+          name: package
+          path: dist/
+
+      # https://docs.pypi.org/trusted-publishers/using-a-publisher/
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@v1.10.2
+        with:
+          repository-url: ${{ inputs.publish-to }}

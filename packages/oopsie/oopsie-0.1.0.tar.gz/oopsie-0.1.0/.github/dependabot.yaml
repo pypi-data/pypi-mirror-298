@@ -1,0 +1,17 @@
+version: 2
+updates:
+  # Check for Python dependency upgrades
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # Check for GitHub Actions upgrades
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      artifacts:
+        patterns:
+          - "actions/*-artifact"
