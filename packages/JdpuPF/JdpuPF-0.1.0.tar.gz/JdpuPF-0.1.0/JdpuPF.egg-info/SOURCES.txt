@@ -1,0 +1,6 @@
+setup.py
+JdpuPF.egg-info/PKG-INFO
+JdpuPF.egg-info/SOURCES.txt
+JdpuPF.egg-info/dependency_links.txt
+JdpuPF.egg-info/requires.txt
+JdpuPF.egg-info/top_level.txt

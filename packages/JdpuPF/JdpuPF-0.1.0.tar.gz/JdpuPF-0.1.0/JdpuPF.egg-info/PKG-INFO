@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: JdpuPF
+Version: 0.1.0
+Summary: Personal python Framework.
+Home-page: https://github.com/lochinbekdev/JdpuPF
+Author: Lochinbek Abduvoitov
+Author-email: lochinbekabduvoitov8@gamil.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+
+Personal python Framework.
