@@ -1,0 +1,2 @@
+[console_scripts]
+octopus = octopus_common.util.crawler_command_utils:main
