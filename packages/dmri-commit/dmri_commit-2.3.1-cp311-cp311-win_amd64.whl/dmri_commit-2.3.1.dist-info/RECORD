@@ -1,0 +1,15 @@
+commit/__init__.py,sha256=AaTCXr1oNiLf8XiGaznm0_saRdjGNwjALuMhhbk9xa8,262
+commit/core.cp311-win_amd64.pyd,sha256=VWYyNJY7flNu1u9dSLwiiGEb9bJVoUVwzKn12SQgHYA,676864
+commit/models.py,sha256=Z04Ux2aZQ3pvHSLem7l1VUm5JUjC7FpkBlxxl1rLHBI,3603
+commit/proximals.cp311-win_amd64.pyd,sha256=6cikvSZC15_EVuozxPKMUKGFFjik0sn-27OcdRp5tq0,183296
+commit/solvers.py,sha256=C_fLjuKT_pjH3_1EmUJdiSz6M574k51-yoGJ5eqvHsc,17717
+commit/trk2dictionary.cp311-win_amd64.pyd,sha256=LgZHfY0y3WyONpPg1N36QSayDjUGiKoO8R3Ui-CU2GE,414720
+commit/operator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commit/operator/operator.cp311-win_amd64.pyd,sha256=NmHa7dXrZHUDn2fX9u1wAV1NgGP_60jbR-J2FaVecuo,369152
+commit/operator/operator.pyx,sha256=Qc95vijYxoMjmDrqc6wiDK8RVcclFj1tdx9X7MIeJTk,9400
+commit/operator/operator_c.c,sha256=qXvKE5EQopnBM35i_E2plDunNSj8xOlDVCzhK6yXgqI,360704
+dmri_commit-2.3.1.dist-info/LICENSE,sha256=KGYJ1FLUEuu_4DZKE7mvtewiMv_29EzY-3BVrhBQMdQ,4493
+dmri_commit-2.3.1.dist-info/METADATA,sha256=M7CC0E-Gt95v_-rYFua9TXpqs8hSy3ChPvEl7cPt4e8,10428
+dmri_commit-2.3.1.dist-info/WHEEL,sha256=qW4RD1rfHm8ZRUjJbXUnZHDNPCXHt6Rq0mgR8lv_JEg,101
+dmri_commit-2.3.1.dist-info/top_level.txt,sha256=UINu7ldOz_ed6jtP1AZz19AA96Xxd9imowALWceDg7g,7
+dmri_commit-2.3.1.dist-info/RECORD,,
