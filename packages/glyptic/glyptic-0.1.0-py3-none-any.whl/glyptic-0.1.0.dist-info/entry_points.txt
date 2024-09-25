@@ -1,0 +1,3 @@
+[console_scripts]
+glyptic = glyptic:glyptic
+glyptic_setup = glyptic_setup:glyptic_setup
