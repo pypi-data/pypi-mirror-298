@@ -1,0 +1,14 @@
+[console_scripts]
+clims-aimsplot = clims.cli.aimsplot:aimsplot
+clims-configure = clims.cli.configure:clims_configure
+clims-convert-geometry = clims.cli.convert:convert
+clims-elastic = clims.cli.elastic_constants:clims_elastic
+clims-phonopy = clims.cli.phonons:clims_phonopy
+clims-prepare-run = clims.cli.prepare_run:prepare_run
+clims-prerelax = clims.cli.mace:clims_prerelax
+clims-reinitialize-geometry = clims.cli.reinitialize_geometry:reinitialize_geometry
+clims-supercell = clims.cli.supercell:supercell
+clims-testsuite = clims.cli.testsuite:testsuite
+clims-unit-cell-info = clims.cli.unit_cell_info:unit_cell_info
+clims-wigner-seitz-cluster = clims.cli.wigner_seitz_cluster:construct
+clims-xyplot = clims.cli.xyplot:xyplot
