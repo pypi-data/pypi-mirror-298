@@ -1,0 +1,24 @@
+[project]
+name = "cpykg"
+version = "0.0.10"
+authors = [
+  { name="Cameron Pykiet", email="pykietcj11@gmail.com" },
+]
+description = "Knowledge Graph Repository"
+readme = "README.md"
+
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "py2neo",
+    "yfiles_jupyter_graphs_for_neo4j",
+    "neo4j",
+]
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
