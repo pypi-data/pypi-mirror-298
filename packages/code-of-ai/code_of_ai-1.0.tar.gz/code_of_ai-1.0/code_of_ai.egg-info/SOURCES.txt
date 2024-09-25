@@ -1,0 +1,7 @@
+setup.py
+code_of_ai/__init__.py
+code_of_ai/aiallcode.py
+code_of_ai.egg-info/PKG-INFO
+code_of_ai.egg-info/SOURCES.txt
+code_of_ai.egg-info/dependency_links.txt
+code_of_ai.egg-info/top_level.txt
