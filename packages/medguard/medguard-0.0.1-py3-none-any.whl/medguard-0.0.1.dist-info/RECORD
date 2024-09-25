@@ -1,0 +1,9 @@
+medguard/__init__.py,sha256=9pfNry3KClIlSSM_eZfMvbMjt4Uc_Ywb0yOcECaOOQQ,300
+medguard/audit_logging.py,sha256=yKuR2_VOz1xEslkUXtGPvGe2BDngRchO2WcRaWwusnE,1752
+medguard/de_identifier.py,sha256=OZ31kpHZjQ3cFL5RuvdyvaJb3eCQCq1AownNu0qbaqo,2269
+medguard/main.py,sha256=zWCObpfU_3HLqlQ2YjenExiRIzPPTHTH71CWgCa-mr4,4020
+medguard/secure_communications.py,sha256=q3ws56uhiBQBLqrvHAv2U3m15KpObnUroDbKb-NZ5_c,7703
+medguard-0.0.1.dist-info/LICENSE,sha256=GHYD0Vn7cqu6O1FibXB1ix_cx8js09uZI1rKjCjW5sY,1074
+medguard-0.0.1.dist-info/METADATA,sha256=kTmqQZjrpS6a-sBk5b2wdIGmuOAlDWO24gmwwzo_K9s,7901
+medguard-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+medguard-0.0.1.dist-info/RECORD,,
