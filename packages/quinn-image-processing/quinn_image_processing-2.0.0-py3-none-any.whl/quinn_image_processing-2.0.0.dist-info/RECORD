@@ -1,0 +1,14 @@
+quinn_image_processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quinn_image_processing/moveImages.py,sha256=Nsx7ViivI3FVXfunDzb-CYKa0LSIX8rIbvUG51ZMjkM,3878
+quinn_image_processing/movetospecial.py,sha256=d_u1gdwB91Rs4GWQukyrHHMPr1qT0kUyPeXlFGSm5Ok,1018
+quinn_image_processing/mvFiles.py,sha256=cQqW9WFh1nJNabk8NTeIS2DibwBe1hrOzWJIP18VB-w,1997
+quinn_image_processing/overlayScript.py,sha256=KtXWrWxL7X7owj1L6-Bi6RB9JjFuia9rFDwteXK_Dpk,5860
+quinn_image_processing/removeImages.py,sha256=Oua6uOl8uaK0Bx5JZuLYyt0gUvLRHwPNV05lHWXGLRg,3191
+quinn_image_processing/script.py,sha256=qvRozS8Kt-sjN1jHRP8fYxG-8ZKLaneKKIgSzvuUguM,14280
+quinn_image_processing/test_image_overlay.py,sha256=WT9GXWiGTnukZfPVw4Yqvqrrode0vAWZiHl3CWEdolU,790
+quinn_image_processing-2.0.0.dist-info/LICENSE,sha256=TlU6gLOhNYxpiop_lCwZZSS2KwtUq-IsdGTwlyTS8u0,1091
+quinn_image_processing-2.0.0.dist-info/METADATA,sha256=xoMzadB42RLrNTL7mAw-SqZEX_2W7QNfLtYixm348Ns,1735
+quinn_image_processing-2.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+quinn_image_processing-2.0.0.dist-info/entry_points.txt,sha256=3db21eRP5-amBSHPPuZ1KvVM3hKz6m075tuPgv1DdtY,128
+quinn_image_processing-2.0.0.dist-info/top_level.txt,sha256=pj3VsvpF9AGftSqOcXTO0vYNw__rsyP6DB_97-mWgr8,23
+quinn_image_processing-2.0.0.dist-info/RECORD,,
