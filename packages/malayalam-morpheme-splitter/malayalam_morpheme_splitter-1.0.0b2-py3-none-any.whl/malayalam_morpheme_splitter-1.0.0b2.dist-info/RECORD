@@ -1,0 +1,11 @@
+malayalam_morpheme_splitter/__init__.py,sha256=OZGIfyR1r046CqeICAkUyHiEUUDzX0OHu3XQk3u_iDg,382
+malayalam_morpheme_splitter/db_interface.py,sha256=QlyZl-qj7xb_67vyBH2QW_gaGOintuqCA8J0ShL6XJA,6461
+malayalam_morpheme_splitter/data/__init__.py,sha256=tGOc1FwYhWsnM8_yytQMKvNgZ75C8k4pJXleOUHrmjw,95
+malayalam_morpheme_splitter/data/malayalam_words.py,sha256=iw6q4DEA3Cy6iWFyKRP0hHYQbGPxX_qTG4qWxWiPW7U,1874101
+malayalam_morpheme_splitter/data/morph_examples.py,sha256=PP3K58bGqqx7lC_MKlC8lN1BEvqKegXn63juK-dUUyE,8691
+malayalam_morpheme_splitter-1.0.0b2.dist-info/LICENSE.txt,sha256=jb_4V9x3OV6-W0U3cgsiuXaMZoGqabu_Q6ZTrBnCyb0,1083
+malayalam_morpheme_splitter-1.0.0b2.dist-info/METADATA,sha256=NWqKsIqlY-SVZELO_6UEZNU-FChpZKgiVIRXN5lJ54s,2593
+malayalam_morpheme_splitter-1.0.0b2.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+malayalam_morpheme_splitter-1.0.0b2.dist-info/entry_points.txt,sha256=18EKi5nqjblarYv6BPFpN2UnffBFEtZl5sK4mMweqVw,97
+malayalam_morpheme_splitter-1.0.0b2.dist-info/top_level.txt,sha256=IphlQhdlgzyqYCzzA2SLxi-Z3nl74IOCkHOu4cth1RQ,28
+malayalam_morpheme_splitter-1.0.0b2.dist-info/RECORD,,
