@@ -1,0 +1,8 @@
+verifyauth/__init__.py,sha256=K-ctbdqVxZ-WVZNHbkmA-GAF2c3hgHZQE7aE31IeXks,45
+verifyauth/decorator.py,sha256=jyssSfhu_kKxbEH2Qzw_DSJir26S7lk_pewZldRp68U,5995
+verifyauth/response_handler.py,sha256=FycEYWokMwdu51dNyAkdjNV819xhyogbqO3sQhzJh3o,1738
+verifyauth/util.py,sha256=s-IL_mwHgKakD7jtIbGCBAssei5YxRYN5zjduS1S_Es,578
+verifyauth-0.1.25.dist-info/METADATA,sha256=Wo5baJWPVlwGYb3eWYBCIS-9oNljXxzE4A1-sR4PhAA,571
+verifyauth-0.1.25.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+verifyauth-0.1.25.dist-info/top_level.txt,sha256=dS7UKRlxBAyYW58pdxyto_VcMrvwMKXwE-_KdklYhAA,11
+verifyauth-0.1.25.dist-info/RECORD,,
