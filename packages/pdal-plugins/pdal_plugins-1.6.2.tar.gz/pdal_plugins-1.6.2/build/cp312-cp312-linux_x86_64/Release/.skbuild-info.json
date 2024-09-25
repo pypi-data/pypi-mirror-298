@@ -1,0 +1,8 @@
+{
+  "source_dir": "/home/runner/work/python-plugins/python-plugins",
+  "build_dir": "/home/runner/work/python-plugins/python-plugins/build/cp312-cp312-linux_x86_64/Release",
+  "cmake_path": "/home/runner/miniconda3/envs/test/bin/cmake",
+  "skbuild_path": "/tmp/build-env-nqkcpyjx/lib/python3.12/site-packages/scikit_build_core",
+  "skbuild_version": "0.10.7",
+  "python_executable": "/tmp/build-env-nqkcpyjx/bin/python"
+}
