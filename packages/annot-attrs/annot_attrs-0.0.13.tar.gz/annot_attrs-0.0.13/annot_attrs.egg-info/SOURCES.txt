@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+annot_attrs/__init__.py
+annot_attrs/annot_attr.py
+annot_attrs/annots_nested.py
+annot_attrs/keys_as_values.py
+annot_attrs.egg-info/PKG-INFO
+annot_attrs.egg-info/SOURCES.txt
+annot_attrs.egg-info/dependency_links.txt
+annot_attrs.egg-info/top_level.txt
+tests/test__annot_attrs.py
+tests/test__keys_as_values.py
+tests/test__nested.py
