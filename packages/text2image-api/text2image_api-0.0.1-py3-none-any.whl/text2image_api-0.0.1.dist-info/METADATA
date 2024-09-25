@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: text2image_api
+Version: 0.0.1
+Summary: Utils for text2image generation models and API
+Author-email: dingo0927@126.com
+Keywords: text,image,generation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.4
+
+Utils for text2image generation models and API
