@@ -1,0 +1,6 @@
+lxml==5.2.*
+xmltodict==0.13.*
+
+[Xerces]
+pyzmq==18.1.0
+xerces_wrapper==0.1.0
