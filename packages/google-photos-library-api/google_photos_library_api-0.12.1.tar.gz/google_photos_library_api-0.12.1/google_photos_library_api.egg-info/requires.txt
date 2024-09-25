@@ -1,0 +1,4 @@
+aiohttp>=3.7.3
+google-api-python-client>=2.71.0
+google-auth>=1.22.0
+mashumaro>=3.12
