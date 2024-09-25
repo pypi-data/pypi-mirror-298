@@ -1,0 +1,10 @@
+pulser_pasqal/__init__.py,sha256=xH_hZp1g1K7sa-T5nzmVqfcHYWreZ6ap0ucYhffty0M,939
+pulser_pasqal/_version.py,sha256=b_8AUmJQSLFqq4l94218VJ26tu8LGD7IosAlqzcFigY,23
+pulser_pasqal/backends.py,sha256=qsTSl0StMKtEaKdFL2qmksmPqZiR2ExDJ4BRy2I5jvk,6562
+pulser_pasqal/pasqal_cloud.py,sha256=f-sIR8n-9g70N35V9e18TfVhodiDQ7HtqhK4_v0fOxE,11515
+pulser_pasqal/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pulser_pasqal-0.20.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+pulser_pasqal-0.20.1.dist-info/METADATA,sha256=QqCvpBdjwUs_Wxm7ZAxhCyVORM3nYqQ70TueUhNRObg,1192
+pulser_pasqal-0.20.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+pulser_pasqal-0.20.1.dist-info/top_level.txt,sha256=tVH3lcJdmOaGbLttUuIOXOqrDSLoGyFtmLpe3lcUitE,14
+pulser_pasqal-0.20.1.dist-info/RECORD,,
