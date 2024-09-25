@@ -1,0 +1,64 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "django-srcdoc"
+dynamic = ["version"]
+description = 'A simple Django template tag to automate escaping HTML for use with the iframe srcdoc attribute. '
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Hans Kelson", email = "hans@communitycomputing.net" },
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Framework :: Django",
+  "Framework :: Django :: 5.0",
+  "Framework :: Django :: 5.1",
+]
+dependencies = [
+  "django>=5.1,<5.2"
+]
+
+[project.urls]
+Documentation = "https://github.com/sheepman4267/django-srcdoc#readme"
+Issues = "https://github.com/sheepman4267/django-srcdoc/issues"
+Source = "https://github.com/sheepman4267 /django-srcdoc"
+
+[tool.hatch.version]
+path = "src/django_srcdoc/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/django_srcdoc tests}"
+
+[tool.coverage.run]
+source_pkgs = ["django_srcdoc", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/django_srcdoc/__about__.py",
+]
+
+[tool.coverage.paths]
+django_srcdoc = ["src/django_srcdoc", "*/django-srcdoc/src/django_srcdoc"]
+tests = ["tests", "*/django-srcdoc/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]

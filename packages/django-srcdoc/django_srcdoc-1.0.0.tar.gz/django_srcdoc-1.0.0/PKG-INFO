@@ -1,0 +1,65 @@
+Metadata-Version: 2.3
+Name: django-srcdoc
+Version: 1.0.0
+Summary: A simple Django template tag to automate escaping HTML for use with the iframe srcdoc attribute. 
+Project-URL: Documentation, https://github.com/sheepman4267/django-srcdoc#readme
+Project-URL: Issues, https://github.com/sheepman4267/django-srcdoc/issues
+Project-URL: Source, https://github.com/sheepman4267 /django-srcdoc
+Author-email: Hans Kelson <hans@communitycomputing.net>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 5.0
+Classifier: Framework :: Django :: 5.1
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: django<5.2,>=5.1
+Description-Content-Type: text/markdown
+
+# django-srcdoc
+
+[![PyPI - Version](https://img.shields.io/pypi/v/django-srcdoc.svg)](https://pypi.org/project/django-srcdoc)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django-srcdoc.svg)](https://pypi.org/project/django-srcdoc)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Installation
+
+1. Install django-srcdoc from PyPI:
+    ```console
+    pip install django-srcdoc
+    ```
+
+2. Add django-srcdoc to `INSTALLED_APPS` in your `settings.py`:
+    ```python
+   INSTALLED_APPS = [
+       # ...
+       'django_srcdoc',
+       # ...
+   ]
+    ```
+
+## Usage
+After installation, use the `{% srcdoc %}` tag much like the `{% filter %}` tag. A brief example:
+```html
+<iframe srcdoc="{% srcdoc %}{{ some_html_from_your_project }}{% endsrcdoc %}"></iframe>
+```
+HTML to be escaped could be written by hand, passed in as a variable, or added with an `{% include %}` tag (or any other method you like).
+
+The tag will escape HTML per the [iframe specification](https://html.spec.whatwg.org/multipage/iframe-embed-object.html#an-iframe-srcdoc-document).
+
+## License
+
+`django-srcdoc` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
