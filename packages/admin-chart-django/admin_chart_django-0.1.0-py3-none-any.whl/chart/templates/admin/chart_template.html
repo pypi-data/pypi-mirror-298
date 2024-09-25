@@ -1,0 +1,84 @@
+<!-- templates/admin/chart_template.html -->
+{% extends 'admin/base_site.html' %}
+
+{% block content %}
+<h1>{{ model_name }} Count by Date</h1>
+
+<canvas id="countChart"></canvas>
+<h1>Total Sum of {{ model_field }}</h1>
+<canvas id="sumChart"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var countCtx = document.getElementById('countChart').getContext('2d');
+    var sumCtx = document.getElementById('sumChart').getContext('2d');
+
+    // Line Chart for Count
+    var countChart = new Chart(countCtx, {
+        type: 'line',
+        data: {
+            labels: {{ dates|safe }},
+            datasets: [{
+                label: 'Count',
+                data: {{ counts|safe }},
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 2,
+                fill: false
+            }]
+        },
+        options: {
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Date'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Total Count'
+                    },
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    // Line Chart for Total Sum
+    var sumChart = new Chart(sumCtx, {
+        type: 'line',
+        data: {
+            labels: {{ dates|safe }},
+            datasets: [
+                {% for dataset in datasets %}
+                {
+                    label: '{{ dataset.label }}',
+                    data: {{ dataset.data|safe }},
+                    borderColor: '{{ dataset.borderColor }}',
+                    borderWidth: 2,
+                    fill: false
+                }{% if not forloop.last %},{% endif %}
+                {% endfor %}
+            ]
+        },
+        options: {
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Date'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Total Sum'
+                    },
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+{% endblock %}
