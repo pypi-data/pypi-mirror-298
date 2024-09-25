@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lhcoptics
+Version: 0.0.2
+Summary: Library to build LHC Optics
+Author-email: Riccardo De Maria <riccardodemaria@gmail.com>
+License: MIT
+Project-URL: homepage, https://github.com/rdemaria/optics
+Project-URL: repository, https://github.com/rdemaria/optics
+Keywords: LHC,beam dynamics
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: xsuite
+Requires-Dist: cpymad
