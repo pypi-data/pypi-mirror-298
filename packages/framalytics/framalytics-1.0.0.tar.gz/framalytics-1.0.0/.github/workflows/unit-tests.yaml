@@ -1,0 +1,39 @@
+name: Unit Tests
+
+on:
+  pull_request:
+    paths:
+      - '**.py'
+  push:
+    branches:
+      - main
+    paths:
+      - '**.py'
+
+
+jobs:
+  test:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Python (specify version range)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '>=3.10'
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: |
+          pip install pytest
+          pip install -r requirements.txt
+
+      # Step 4: Run pytest
+      - name: Run pytest
+        run: |
+          pytest --maxfail=1 --disable-warnings

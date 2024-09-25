@@ -1,0 +1,7 @@
+.DS_Store
+.idea
+.ipynb_checkpoints
+.python-version
+*.pdf
+docs/_build
+docs/api
