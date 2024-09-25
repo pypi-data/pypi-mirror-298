@@ -1,0 +1,20 @@
+## SpeedyBot dev
+
+Use with goggles, highly unstable/experimental library
+
+## Env
+
+```sh
+uv python install 3.11
+uv venv sbdev --python 3.11
+source sbdev/bin/activate
+uv pip install -r pyproject.toml --all-extras
+python --version # confirm a version match
+```
+
+## Publish
+
+```sh
+uv build
+uv publish --token
+```
