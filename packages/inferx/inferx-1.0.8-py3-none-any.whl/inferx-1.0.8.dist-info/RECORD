@@ -1,0 +1,17 @@
+inferx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inferx/base.py,sha256=NK3Zb_AfUL55lfB2DpoLF2k6LfGE0fGUD8q5gxUqv4I,429
+inferx/config.py,sha256=A6vRPQudn0Hl-q3RHa1lEsjh-JPuB2PBvn7v_LQM6Ic,1811
+inferx/runtime.py,sha256=2TSMUYrvZ0_R4k0Z5WgUWJdqvTwYcch8Hr21uitcfbM,885
+inferx/backend/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+inferx/backend/onx/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+inferx/backend/onx/onnx_backend.py,sha256=FCYKck2_ZB165PN7XuvUPzuILnlTzwtQnawknWEx6AY,1480
+inferx/backend/trt/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+inferx/backend/trt/tensorrt_backend.py,sha256=K4JC38xfSp1ajYWWWci-L9L5acRSz6r632r5-pR-pIs,4387
+inferx/backend/trt/utils.py,sha256=ko749TZBDcqx70m_0eqJgW395vChMMW-Dci0CKGMahs,1618
+inferx/backend/trt/convert/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inferx/backend/trt/convert/dynamic_axis.py,sha256=fT8lXZCUpibh_U9unUCM-Ini04MyHfgEqViNOMskzEk,1161
+inferx/backend/trt/convert/onnx_tensorrt.py,sha256=mKk2ptmQfCaTPDIZ3gHCrJn2kzez_uN8aQWJzx4pmws,4076
+inferx-1.0.8.dist-info/METADATA,sha256=Kijel8d-DEZP0IkP4k1pdcfFqm3kumC03MfTDfIvC-g,296
+inferx-1.0.8.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+inferx-1.0.8.dist-info/top_level.txt,sha256=DbsLAfRcElrOqy2h00URQsPujT8a0GYlIvYaYIIsK8A,7
+inferx-1.0.8.dist-info/RECORD,,
