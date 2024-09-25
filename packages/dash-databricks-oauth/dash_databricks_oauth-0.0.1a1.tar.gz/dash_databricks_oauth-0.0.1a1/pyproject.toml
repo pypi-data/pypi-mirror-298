@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dash-databricks-oauth"
+version = "0.0.1a1"
+description = "Placeholder"
+authors = ["sachds <sachin@lakesideanalytics.io>", "Jesse Whitehouse <jesse@whitehouse.dev>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "dash_databricks_oauth", from = "src" }
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
