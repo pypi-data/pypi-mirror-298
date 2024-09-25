@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "neo4j-database-client"
+version = "0.1.4"
+description = "CRUD operations on neo4j database"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+neo4j = "^5.24.0"
+pydantic = "^2.8.2"
+neo4j-graphrag = "^0.6.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+coverage = "^7.6.1"
+
+[tool.coverage.run]
+branch = true
+source = ["database_client"]
+command_line = "-m pytest"
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.coverage.xml]
+output = "coverage.xml"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "semver"
+version_provider = "poetry"
+update_changelog_on_bump = true
+major_version_zero = true
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
