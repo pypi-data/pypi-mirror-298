@@ -1,0 +1,2 @@
+recursive-include open_magvit2/configs/gpu *.yaml
+recursive-include open_magvit2/configs/npu *.yaml

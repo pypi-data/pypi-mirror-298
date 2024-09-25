@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: open_magvit2
+Version: 1.0
+Summary: Packaging of Open-source replication of Google's MAGVIT-v2 tokenizer
+Home-page: https://github.com/vinyesm/Open-MAGVIT2
+Download-URL: https://github.com/vinyesm/Open-MAGVIT2/archive/refs/tags/v0.1.0.tar.gz
+Author: vinyesm
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lightning==2.2.0
+Requires-Dist: jsonargparse[signatures]>=4.27.7
+Requires-Dist: tensorboard
+Requires-Dist: tensorboardx
+Requires-Dist: albumentations==1.4.4
+Requires-Dist: omegaconf
+Requires-Dist: einops
+Requires-Dist: requests
+Requires-Dist: transformers==4.37.2
+Requires-Dist: lpips
+
+## OPEN-MAGVIT2 package
+
+This is a fork of [OPEN-MAGVIT2: An Open-source Project Toward Democratizing Auto-Regressive Visual Generation](https://github.com/TencentARC/Open-MAGVIT2) in order to make it a package for easy usage.
+
+## Install
+```
+pip install open-magvit2
+```
+
+## Example of usage
+
+[open-MAGVIT2-package-inference-example.ipynb](https://colab.research.google.com/drive/1lpqnekYG__GgSTmW2y7w4FZEZms54Sc5?usp=sharing)
