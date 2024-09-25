@@ -1,0 +1,6 @@
+.idea/
+.vscode/
+*.kml
+**/*.pyc
+**/__pycache__/
+dist/
