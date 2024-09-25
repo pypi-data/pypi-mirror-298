@@ -1,0 +1,11 @@
+airflow/providers/mongo/LICENSE,sha256=FFb4jd2AXnOOf7XLP04pQW6jbdhG49TxlGY6fFpCV1Y,13609
+airflow/providers/mongo/__init__.py,sha256=aPNNxP6BkfCgD8s3dNuS7z8VimoWD1p7eNzhGsSpwxg,1492
+airflow/providers/mongo/get_provider_info.py,sha256=0PYCoW2H3qlAoqueWm6MWEEvK1omEQFSjmkPs3hoZ-I,2691
+airflow/providers/mongo/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/mongo/hooks/mongo.py,sha256=ble34pfTRMk9jeG1JsUoWLzych1BqNvTBzCeGyfBrkk,19430
+airflow/providers/mongo/sensors/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/mongo/sensors/mongo.py,sha256=VQgiOfBAbuD3CniLrLIsAvWHFqyVUcqOXFln44giIHQ,2436
+apache_airflow_providers_mongo-4.2.1.dist-info/entry_points.txt,sha256=V1TQrl8sEfPolIhQGhW66X6wItfBsGSlS9FVt_5745M,101
+apache_airflow_providers_mongo-4.2.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_mongo-4.2.1.dist-info/METADATA,sha256=xjkU2KjbIAbwGumDoFCLhHptI47rhn72gTdxGt9UqtY,4789
+apache_airflow_providers_mongo-4.2.1.dist-info/RECORD,,
