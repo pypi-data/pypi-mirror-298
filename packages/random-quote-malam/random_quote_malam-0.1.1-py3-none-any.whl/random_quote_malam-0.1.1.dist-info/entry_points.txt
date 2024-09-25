@@ -1,0 +1,3 @@
+[console_scripts]
+random_quote=random_quote.main:main
+
