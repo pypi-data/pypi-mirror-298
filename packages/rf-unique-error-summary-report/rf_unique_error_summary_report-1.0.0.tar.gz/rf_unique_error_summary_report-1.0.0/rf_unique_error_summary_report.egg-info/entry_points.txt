@@ -1,0 +1,3 @@
+[console_scripts]
+error_report = error_summary:main
+
