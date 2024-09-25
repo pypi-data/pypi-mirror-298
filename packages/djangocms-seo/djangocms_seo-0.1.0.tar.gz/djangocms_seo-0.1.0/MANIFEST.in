@@ -1,0 +1,18 @@
+include README.rst
+
+include LICENSE
+
+include pyproject.toml
+
+recursive-include djangocms_seo/migrations *
+
+recursive-include djangocms_seo/templatetags *
+
+recursive-include djangocms_seo/static *
+
+recursive-include djangocms_seo/templates *
+
+recursive-include docs *
+
+global-exclude __pycache__
+global-exclude *.py[co]
