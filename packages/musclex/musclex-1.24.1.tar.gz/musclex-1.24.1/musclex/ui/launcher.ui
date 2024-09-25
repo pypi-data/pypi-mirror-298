@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LauncherForm</class>
+ <widget class="QWidget" name="LauncherForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MuscleX Launcher</string>
+  </property>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>251</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="tabKeyNavigation">
+    <bool>true</bool>
+   </property>
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="currentRow">
+    <number>0</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>X-Ray Viewer</string>
+    </property>
+    <property name="background">
+     <brush brushstyle="NoBrush">
+      <color alpha="255">
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </brush>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Equator</string>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Quadrant Folding</string>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Projection Traces</string>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Scanning Diffraction</string>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Diffraction Centroids</string>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>DDF Processor</string>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Add Intensities Single Experiment</string>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Add Intensities Multiple Experiments</string>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+    </property>
+   </item>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>10</y>
+     <width>521</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page_0">
+    <widget class="QTextBrowser" name="textBrowser_0">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>521</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="markdown">
+      <string>**X-Ray Viewer** is a small program used to display tif and h5 files and able to
+play images in a folder (or h5 file) as a video. A second tab shows a selected
+slice or an integrated slice of the image as a graph. <br />
+See 
+[https://musclex.readthedocs.io/en/latest/AppSuite/XRayViewer/index.html](https://musclex.readthedocs.io/en/latest/AppSuite/XRayViewer/index.html)
+for details.
+
+</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;X-Ray Viewer&lt;/span&gt; is a small program used to display tif and h5 files and able to play images in a folder (or h5 file) as a video. A second tab shows a selected slice or an integrated slice of the image as a graph. See &lt;a href=&quot;https://musclex.readthedocs.io/en/latest/AppSuite/XRayViewer/index.html&quot;&gt;&lt;span style=&quot; color:#0000ff;&quot;&gt;https://musclex.readthedocs.io/en/latest/AppSuite/XRayViewer/index.html&lt;/span&gt;&lt;/a&gt; for details.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_1">
+    <widget class="QTextBrowser" name="textBrowser_1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>521</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="markdown">
+      <string>The purpose of the **Equator** program is to analyze the equatorial portion of
+muscle X-ray diffraction patterns. <br />
+See 
+[https://musclex.readthedocs.io/en/latest/AppSuite/Equator/index.html](https://musclex.readthedocs.io/en/latest/AppSuite/Equator/index.html)
+for details.
+
+</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The purpose of the &lt;span style=&quot; font-weight:600;&quot;&gt;Equator&lt;/span&gt; program is to analyze the equatorial portion of muscle X-ray diffraction patterns. See &lt;a href=&quot;https://musclex.readthedocs.io/en/latest/AppSuite/Equator/index.html&quot;&gt;&lt;span style=&quot; color:#0000ff;&quot;&gt;https://musclex.readthedocs.io/en/latest/AppSuite/Equator/index.html&lt;/span&gt;&lt;/a&gt; for details.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QTextBrowser" name="textBrowser_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>521</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="markdown">
+      <string>The equator and the meridian of a fiber diffraction pattern divides a pattern
+into four quadrants. You can regenerate a full diffraction pattern by simply
+rotating the summed quadrant. **Quadrant Folding** is a program for generating
+such a quadrant-folded image. <br />
+See 
+[https://musclex.readthedocs.io/en/latest/AppSuite/QuadrantFolding/index.html](https://musclex.readthedocs.io/en/latest/AppSuite/QuadrantFolding/index.html)
+for details.
+
+</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The equator and the meridian of a fiber diffraction pattern divides a pattern into four quadrants. You can regenerate a full diffraction pattern by simply rotating the summed quadrant. &lt;span style=&quot; font-weight:600;&quot;&gt;Quadrant Folding&lt;/span&gt; is a program for generating such a quadrant-folded image. See &lt;a href=&quot;https://musclex.readthedocs.io/en/latest/AppSuite/QuadrantFolding/index.html&quot;&gt;&lt;span style=&quot; color:#0000ff;&quot;&gt;https://musclex.readthedocs.io/en/latest/AppSuite/QuadrantFolding/index.html&lt;/span&gt;&lt;/a&gt; for details.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QTextBrowser" name="textBrowser_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>521</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="markdown">
+      <string>**Projection traces** was conceived originally as a program to extract the
+integrated intensity along a layer line in order to identify positions of
+intensity maxima along with their integrated intensities. It also allows
+measurement of the radial width of meridional reflections. <br />
+See 
+[https://musclex.readthedocs.io/en/latest/AppSuite/ProjectionTraces/index.html](https://musclex.readthedocs.io/en/latest/AppSuite/ProjectionTraces/index.html)
+for details.
+
+</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Projection traces&lt;/span&gt; was conceived originally as a program to extract the integrated intensity along a layer line in order to identify positions of intensity maxima along with their integrated intensities. It also allows measurement of the radial width of meridional reflections. See &lt;a href=&quot;https://musclex.readthedocs.io/en/latest/AppSuite/ProjectionTraces/index.html&quot;&gt;&lt;span style=&quot; color:#0000ff;&quot;&gt;https://musclex.readthedocs.io/en/latest/AppSuite/ProjectionTraces/index.html&lt;/span&gt;&lt;/a&gt; for details.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_4">
+    <widget class="QTextBrowser" name="textBrowser_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>521</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="markdown">
+      <string>**Scanning diffraction** imaging experiments attempt to determine the
+distribution of diffracting materials such as collagen, myelin, and amyloid
+structures as a function of position in a sample that is raster scanned in a
+microbeam. <br />
+See 
+[https://musclex.readthedocs.io/en/latest/AppSuite/ScanningDiffraction/index.html](https://musclex.readthedocs.io/en/latest/AppSuite/ScanningDiffraction/index.html)
+for details.
+
+</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Scanning diffraction&lt;/span&gt; imaging experiments attempt to determine the distribution of diffracting materials such as collagen, myelin, and amyloid structures as a function of position in a sample that is raster scanned in a microbeam. See &lt;a href=&quot;https://musclex.readthedocs.io/en/latest/AppSuite/ScanningDiffraction/index.html&quot;&gt;&lt;span style=&quot; color:#0000ff;&quot;&gt;https://musclex.readthedocs.io/en/latest/AppSuite/ScanningDiffraction/index.html&lt;/span&gt;&lt;/a&gt; for details.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_5">
+    <widget class="QTextBrowser" name="textBrowser_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>521</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="markdown">
+      <string>**Diffraction Centroids** is designed to rapidly and accurately measure the
+spacings of user specified meridional reflections as well as the 5.9 and 5.1
+actin layer lines in a series of diffraction images, such as those generated in
+a time resolved experiment. <br />
+See 
+[https://musclex.readthedocs.io/en/latest/AppSuite/DiffractionCentroids/index.html](https://musclex.readthedocs.io/en/latest/AppSuite/DiffractionCentroids/index.html)
+for details.
+
+</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Diffraction Centroids&lt;/span&gt; is designed to rapidly and accurately measure the spacings of user specified meridional reflections as well as the 5.9 and 5.1 actin layer lines in a series of diffraction images, such as those generated in a time resolved experiment. See &lt;a href=&quot;https://musclex.readthedocs.io/en/latest/AppSuite/DiffractionCentroids/index.html&quot;&gt;&lt;span style=&quot; color:#0000ff;&quot;&gt;https://musclex.readthedocs.io/en/latest/AppSuite/DiffractionCentroids/index.html&lt;/span&gt;&lt;/a&gt; for details.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_6">
+    <widget class="QTextBrowser" name="textBrowser_6">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>521</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="markdown">
+      <string>**DDF Processor** is a program which is able to average data points for ddf file.<br />
+See 
+[https://musclex.readthedocs.io/en/latest/AppSuite/DDFProcessor/index.html](https://musclex.readthedocs.io/en/latest/AppSuite/DDFProcessor/index.html)
+for details.
+
+</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;DDF Processor&lt;/span&gt; is a program which is able to average data points for ddf file. See &lt;a href=&quot;https://musclex.readthedocs.io/en/latest/AppSuite/DDFProcessor/index.html&quot;&gt;&lt;span style=&quot; color:#0000ff;&quot;&gt;https://musclex.readthedocs.io/en/latest/AppSuite/DDFProcessor/index.html&lt;/span&gt;&lt;/a&gt; for details.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_7">
+    <widget class="QTextBrowser" name="textBrowser_7">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>521</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="markdown">
+      <string>**Add Intensities Single Experiment** (former Image Merger) is a program which is
+designed to be used with a series of images with sequential file names taken in
+a time resolved experiment. <br />
+See 
+[https://musclex.readthedocs.io/en/latest/AppSuite/AddIntensitiesSE/index.html](https://musclex.readthedocs.io/en/latest/AppSuite/AddIntensitiesSE/index.html)
+for details.
+
+</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Add Intensities Single Experiment&lt;/span&gt; (former Image Merger) is a program which is designed to be used with a series of images with sequential file names taken in a time resolved experiment. See &lt;a href=&quot;https://musclex.readthedocs.io/en/latest/AppSuite/AddIntensitiesSE/index.html&quot;&gt;&lt;span style=&quot; color:#0000ff;&quot;&gt;https://musclex.readthedocs.io/en/latest/AppSuite/AddIntensitiesSE/index.html&lt;/span&gt;&lt;/a&gt; for details.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_8">
+    <widget class="QTextBrowser" name="textBrowser_8">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>521</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="markdown">
+      <string>**Add Intensities Multiple Experiments** (former Add Intensities) is a program
+which is designed to be used with a series of images placed across multiple
+folders. It takes the sum of the images in each folder which have the same
+number (For example, F_001.tif in Folder A will map to FP_001.tif in folder B).
+The matched images are then summed together and the resultant sum image is
+stored in `aime_results` folder in the selected directory. <br />
+See 
+[https://musclex.readthedocs.io/en/latest/AppSuite/AddIntensitiesME/index.html](https://musclex.readthedocs.io/en/latest/AppSuite/AddIntensitiesME/index.html)
+for details.
+
+</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Add Intensities Multiple Experiments&lt;/span&gt; (former Add Intensities) is a program which is designed to be used with a series of images placed across multiple folders. It takes the sum of the images in each folder which have the same number (For example, F_001.tif in Folder A will map to FP_001.tif in folder B). The matched images are then summed together and the resultant sum image is stored in &lt;span style=&quot; font-family:'monospace';&quot;&gt;aime_results&lt;/span&gt; folder in the selected directory. See &lt;a href=&quot;https://musclex.readthedocs.io/en/latest/AppSuite/AddIntensitiesME/index.html&quot;&gt;&lt;span style=&quot; color:#0000ff;&quot;&gt;https://musclex.readthedocs.io/en/latest/AppSuite/AddIntensitiesME/index.html&lt;/span&gt;&lt;/a&gt; for details.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>560</y>
+     <width>781</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="quitButton">
+      <property name="text">
+       <string>Quit</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="runButton">
+      <property name="text">
+       <string>Run</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="testButton">
+      <property name="text">
+       <string>Run Tests</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>listWidget</sender>
+   <signal>currentRowChanged(int)</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>80</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quitButton</sender>
+   <signal>clicked()</signal>
+   <receiver>LauncherForm</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>48</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

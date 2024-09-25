@@ -1,0 +1,99 @@
+# appimage-builder recipe see https://appimage-builder.readthedocs.io for details
+version: 1
+script:
+  # Remove any previous build
+  - rm -rf AppDir  | true
+  # Make usr and icons dirs
+  - mkdir -p AppDir/usr/src
+  # Copy the python application code into the AppDir
+  - cp main.py  AppDir/usr/src -r
+  - cp musclex AppDir/usr/src -r
+  # Install application dependencies
+  - python3 -m pip install --ignore-installed --prefix=/usr --root=AppDir -r ./requirements.txt
+
+AppDir:
+  path: ./AppDir
+  app_info:
+    id: musclex
+    name: musclex
+    icon: utilities-terminal
+    version: 1.23.2
+    # Set the python executable as entry point
+    exec: usr/bin/python3.8
+    # Set the application main script path as argument. Use '$@' to forward CLI parameters
+    exec_args: "$APPDIR/usr/src/main.py $@"
+  apt:
+    arch: amd64
+    allow_unauthenticated: true
+    sources:
+    - sourceline: deb http://us.archive.ubuntu.com/ubuntu/ focal main restricted
+    - sourceline: deb http://us.archive.ubuntu.com/ubuntu/ focal-updates main restricted
+    - sourceline: deb http://us.archive.ubuntu.com/ubuntu/ focal universe
+    - sourceline: deb http://us.archive.ubuntu.com/ubuntu/ focal-updates universe
+    - sourceline: deb http://us.archive.ubuntu.com/ubuntu/ focal multiverse
+    - sourceline: deb http://us.archive.ubuntu.com/ubuntu/ focal-updates multiverse
+    - sourceline: deb http://us.archive.ubuntu.com/ubuntu/ focal-backports main restricted
+        universe multiverse
+    - sourceline: deb http://security.ubuntu.com/ubuntu focal-security main restricted
+    - sourceline: deb http://security.ubuntu.com/ubuntu focal-security universe
+    - sourceline: deb http://security.ubuntu.com/ubuntu focal-security multiverse
+    - sourceline: deb [arch=amd64] https://repo.skype.com/deb stable main
+    - sourceline: deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg]
+        https://download.docker.com/linux/ubuntu focal stable
+    include: 
+    - python3.8
+    - python3-pkg-resources
+    - python3-pyqt5
+    - libfreetype6
+    - libfontconfig1
+    - cython
+    - libjpeg-dev
+    - libopencv-dev
+    - python3-opencv
+    - mesa-common-dev
+    - libgl1
+    - libglx0
+   
+    
+  files:
+    include: []
+    exclude:
+    - usr/share/man
+    - usr/share/doc/*/README.*
+    - usr/share/doc/*/changelog.*
+    - usr/share/doc/*/NEWS.*
+    - usr/share/doc/*/TODO.*
+  runtime:
+    version: "continuous"
+    env:
+      PATH: '${APPDIR}/usr/bin:${PATH}'
+      # Set python home
+      # See https://docs.python.org/3/using/cmdline.html#envvar-PYTHONHOME
+      PYTHONHOME: '${APPDIR}/usr'
+      # Path to the site-packages dir or other modules dirs
+      # See https://docs.python.org/3/using/cmdline.html#envvar-PYTHONPATH
+      PYTHONPATH: '${APPDIR}/usr/lib/python3.8/site-packages'
+  test:
+    fedora-30:
+      image: appimagecrafters/tests-env:fedora-30
+      command: ./AppRun
+      use_host_x: true
+    debian-stable:
+      image: appimagecrafters/tests-env:debian-stable
+      command: ./AppRun
+      use_host_x: true
+    archlinux-latest:
+      image: appimagecrafters/tests-env:archlinux-latest
+      command: ./AppRun
+      use_host_x: true
+    centos-7:
+      image: appimagecrafters/tests-env:centos-7
+      command: ./AppRun
+      use_host_x: true
+    ubuntu-xenial:
+      image: appimagecrafters/tests-env:ubuntu-xenial
+      command: ./AppRun
+      use_host_x: true
+AppImage:
+  arch: x86_64
+  update-information: guess
