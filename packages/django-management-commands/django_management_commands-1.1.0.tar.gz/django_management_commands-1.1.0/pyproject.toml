@@ -1,0 +1,151 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-management-commands"
+description = "Modular discovery, aliasing, and sequencing of Django commands"
+authors = [
+  { name = "Kamil Paduszyński", email = "92403542+paduszyk@users.noreply.github.com" },
+]
+readme = "docs/README.md"
+keywords = [
+  "django",
+  "django-application",
+  "django-commands",
+  "django-management-commands",
+]
+classifiers = [
+  "Framework :: Django",
+  "Framework :: Django :: 4.2",
+  "Framework :: Django :: 5.0",
+  "Framework :: Django :: 5.1",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">= 3.9"
+dependencies = [
+  "django >= 4.2, < 5.2",
+  "django-appconf ~= 1.0",
+  "typing-extensions ~= 4.12",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+  "commitizen ~= 3.29",
+  "django-stubs[compatible-mypy] ~= 5.0",
+  "nox == 2024.4.15",
+  "pre-commit ~= 3.8",
+  "pytest ~= 8.3",
+  "pytest-cov ~= 5.0",
+  "pytest-custom-exit-code ~= 0.3",
+  "pytest-django ~= 4.9",
+  "pytest-mock ~= 3.14",
+  "pytest-randomly ~= 3.15",
+  "ruff ~= 0.6",
+]
+
+[project.urls]
+"Source" = "https://github.com/paduszyk/django-management-commands"
+
+[tool.setuptools.dynamic]
+version = { attr = "management_commands.__version__" }
+
+[tool.ruff]
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["ANN", "D1", "N"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["ARG", "E501", "FBT", "PLR2004", "S101"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["management_commands"]
+required-imports = [
+  "from __future__ import annotations",
+]
+section-order = [
+  "future",
+  "standard-library",
+  "third-party",
+  "django",
+  "first-party",
+  "local-folder",
+]
+
+[tool.ruff.lint.isort.sections]
+"django" = ["django"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.mypy]
+mypy_path = "src/"
+strict = true
+plugins = [
+  "mypy_django_plugin.main",
+]
+
+[[tool.mypy.overrides]]
+module = [
+  "appconf",
+]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = [
+  "noxfile",
+  "tests.*",
+]
+disallow_untyped_decorators = false
+
+[tool.django-stubs]
+django_settings_module = "tests.settings"
+strict_settings = false
+
+[tool.pytest.ini_options]
+addopts = [
+  "-ra",
+  "--suppress-no-test-exit-code",
+  "--ds=tests.settings",
+  "--cov",
+  "--cov-append",
+  "--cov-branch",
+  "--cov-report=term-missing:skip-covered",
+  "--cov-report=xml",
+]
+pythonpath = [".", "src/"]
+testpaths = ["tests/"]
+
+[tool.coverage.run]
+source = ["src/"]
+
+[tool.coverage.report]
+exclude_also = [
+  "if TYPE_CHECKING:",
+]
+
+[tool.coverage.html]
+directory = ".htmlcov/"
+
+[tool.coverage.xml]
+output = "coverage.xml"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "1.1.0"
+version_files = [
+  "src/management_commands/__init__.py:__version__",
+]
