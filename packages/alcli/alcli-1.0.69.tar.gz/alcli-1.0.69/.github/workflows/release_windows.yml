@@ -1,0 +1,26 @@
+name: Run Tests and Release Windows exe
+on:
+  release:
+    types:
+      - created
+jobs:
+  test:
+    uses: ./.github/workflows/run_tests.yml
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: ./.github/workflows/build_windows
+        secrets: inherit
+      - name: Prepare Assets
+        run: |
+          mv dist/alcli_setup.exe AlertlogicCLISetup.exe
+          mv dist/alcli_setup.msi AlertlogicCLISetup.msi
+      - name: Upload Release Assets
+        id: upload-assets
+        uses: softprops/action-gh-release@v1
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            AlertlogicCLISetup.exe
+            AlertlogicCLISetup.msi
