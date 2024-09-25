@@ -1,0 +1,15 @@
+flexai/__init__.py,sha256=2XsKxyIZ-FJTEWDQtnBTMFWRHlirYyTY9gneNWo3fbw,160
+flexai/agent.py,sha256=sceuVod95IiFm5Oq_CJ3nXjtFPi72ogDxQH-h5ZjuA8,7754
+flexai/capabilities/__init__.py,sha256=6yoTq0ahq0szFYXvxI_o6P_Js0dOO6MbS3dO4holF3M,157
+flexai/capabilities/add_context.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flexai/capabilities/limit_tool_use.py,sha256=CcdBraQjMGyqDv9T_RsKAifwAopRnDtsWu9sj0LexCo,1522
+flexai/capabilities/truncate_messages.py,sha256=ymvxbXXwEALGsZxSOqiQQtYY9TgW7v48JIWFPYL2Ac8,438
+flexai/capability.py,sha256=TZu5Ys-gBW90r0HwBStLqVIzzMO4yQru1ScyjgnGOtY,1780
+flexai/llm/__init__.py,sha256=Cm2D1caHO3oJf714A_seArFB3Rokx7qLzi2GsI3q9D0,418
+flexai/llm/anthropic_client.py,sha256=A3PiSQCe5uui4W8_77mOjPSem0jdRxSHaDvetEyoXrU,8377
+flexai/llm/client.py,sha256=Y852xWVCh6YQD0YN97vXdYEuIEq4VEnsHaw-fLAWqqQ,2762
+flexai/message.py,sha256=0NPqioZi8GsA_syA5wBpA2ivVVQxTdnpQjdGuZsRbmk,1834
+flexai/tool.py,sha256=ALIlgyS7xGGrVKm2djtB4HfPOqJIzVVRzG1Thc_FFro,2747
+reflex_agent-0.1.0a16.dist-info/METADATA,sha256=Q5JBQW8mFnhQnG0u_-n0GeoTsIVUQ9VVQbUPNmta4DE,455
+reflex_agent-0.1.0a16.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+reflex_agent-0.1.0a16.dist-info/RECORD,,
