@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: unemi-audi-kafka
+Version: 0.3
+Summary: Una aplicación reutilizable de Django para auditar modelos automáticamente con integración con Kafka.
+Home-page: https://github.com/marcosdaniel2002/django-audit-kafkalogger
+Author: Marcos Daniel
+Author-email: mteranc@unemi.edu.ec
+License: MIT
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>=3.0
+Requires-Dist: confluent_kafka>=1.7.0
+
+# Unemi Audit Kafka
+
+`unemi-audi-kafka` es una aplicaciÃ³n reutilizable de Django que audita automÃ¡ticamente los cambios en los modelos (creaciÃ³n, actualizaciÃ³n, eliminaciÃ³n) en todos los modelos de tu proyecto Django. Se integra con Kafka para el envÃ­o de logs y permite una auditorÃ­a configurable para los modelos importantes. La aplicaciÃ³n captura metadatos Ãºtiles como el usuario que realizÃ³ los cambios, la IP de la solicitud, la URL y mÃ¡s.
+
+## CaracterÃ­sticas
+
+- **AuditorÃ­a AutomÃ¡tica**: Registra automÃ¡ticamente todos los modelos de Django para el registro de auditorÃ­a.
+- **IntegraciÃ³n con Kafka**: Utiliza `confluent_kafka` para enviar los registros de auditorÃ­a a los temas de Kafka..
+- **AuditorÃ­a de ConfiguraciÃ³n**: Registra manualmente modelos importantes para la auditorÃ­a de configuraciÃ³n..
+- **Middleware de Contexto de Usuario**: Captura informaciÃ³n sobre el usuario, la IP de la solicitud y el agente de usuario a travÃ©s de middleware.
+- **Personalizable**: Puedes extender o sobrescribir middleware, y controlar el comportamiento del productor de Kafka.
+
+## InstalaciÃ³n
+
+1. **INSTALAR la librerÃ­a usando pip**:
+
+   ```bash
+   pip install unemi-audi-kafka
+   
+2. **Agregar la libreria en Django INSTALLED_APPS**:
+
+    En tu `settings.py`, configura las aplicaciones:
+    ```python
+   INSTALLED_APPS = [
+       # Other installed apps
+       'audit_logger',
+   ]
+
+3. **Agregar el MIDDLEWARE**:
+
+    En tu `settings.py`, configura las middlewares:
+    ```python
+   MIDDLEWARE = [
+       # Other middlewares
+       'audit_logger.middlewares.AuditUserMiddleware',
+   ]
+
+4. **Agregar CONFIGURACIONES DE KAFKA**:
+    
+    En tu `settings.py`, configurar los Kafka broker y topics:
+    ```python
+    KAFKA_BROKER_URL = 'localhost:9092'  # Replace with your Kafka broker URL
+    KAFKA_TOPIC_LOGS = 'audit_logs'      # Topic for log auditing
+    KAFKA_TOPIC_ERRORS = 'audit_errors'  # Topic for error logging
+    KAFKA_TOPIC_CONFIG = 'audit_config'  # Topic for configuration auditing
+
+
+## Opcional
+Si deseas guardar las configuraciones de tu aplicacion, la puedes separar de los otras tablas con:
+
+En tu `models.py`, agregar modelo manualmente:
+   
+   ```python
+   from audit_logger import AuditLogger
+   
+    class Configuracion(ModelBase):
+    nombre = models.CharField(unique=True, max_length=100, verbose_name=u'Nombre')
+   
+   # Registrar Configuracion
+   AuditLogger.register_auditoria_config(Configuracion)
