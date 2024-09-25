@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+random_english_word_generator.egg-info/PKG-INFO
+random_english_word_generator.egg-info/SOURCES.txt
+random_english_word_generator.egg-info/dependency_links.txt
+random_english_word_generator.egg-info/requires.txt
+random_english_word_generator.egg-info/top_level.txt
+word_generator/__init__.py
