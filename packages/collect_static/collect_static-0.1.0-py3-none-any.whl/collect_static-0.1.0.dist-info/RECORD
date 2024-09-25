@@ -1,0 +1,5 @@
+collect_static/__init__.py,sha256=Q86oL7cQP30Vbjv8-kFu9vgEF79B415tc5aSvO4VmHo,23
+collect_static/collect.py,sha256=p4nZPFdKIQq5fJur5n3i3YSC9T8Gvq0lF3mJfDSFvoc,5803
+collect_static-0.1.0.dist-info/METADATA,sha256=_KOuiA_8E9Q90c5DCaXjez3kVW4XR1HQFUYzcUmhGn0,3443
+collect_static-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+collect_static-0.1.0.dist-info/RECORD,,
