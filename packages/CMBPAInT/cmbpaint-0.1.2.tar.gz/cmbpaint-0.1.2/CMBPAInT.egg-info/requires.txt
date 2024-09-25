@@ -1,0 +1,8 @@
+numpy
+scipy
+healpy
+tqdm
+psutil
+dask
+mpi4py
+h5py
