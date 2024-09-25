@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: amock
+Version: 0.1.0
+Summary: Default template for PDM package
+Author-Email: ylei <2457738122@qq.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: openai>=1.47.0
+Requires-Dist: jinja2>=3.1.4
+Description-Content-Type: text/markdown
+
+# aimock
