@@ -1,0 +1,11 @@
+management_commands/__init__.py,sha256=Iq0Wpiois2btEXR6bHCxUOPDJCUSSksVZescvgFn2W4,58
+management_commands/conf.py,sha256=YduE9mPWWVEJC4HEJaBF8KOjsl_tJVOY2nw_rHqQE6c,4310
+management_commands/core.py,sha256=WirzYoSGe3RKRR4Ap3OEcrNqJSE-IGpAJnQzqGQz1V0,2039
+management_commands/exceptions.py,sha256=Yt1QHgy3F1lq95ecgl05t9sI9k-5ws-ZOunvzVASlC8,2431
+management_commands/management.py,sha256=-RFyWJDX8gZUkVBlFzwrCH_uGIGokLXev31FT_1q7uw,2709
+management_commands/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_management_commands-1.1.0.dist-info/LICENSE,sha256=zO0NGUbmr22sIMO8oYKgLo4fhI-vAXZFhz6PLoLYHWc,1075
+django_management_commands-1.1.0.dist-info/METADATA,sha256=5uuV5BRgl0-4kfF6O9rAhSy-4T97EWsrjDHLOAAHniI,12000
+django_management_commands-1.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+django_management_commands-1.1.0.dist-info/top_level.txt,sha256=OjVp9MD6VLhblMmnxaZsZMYWTQpGODa7enpTvWxInJ8,20
+django_management_commands-1.1.0.dist-info/RECORD,,
