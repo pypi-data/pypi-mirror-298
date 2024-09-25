@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: py-icap-server
+Version: 1.1.0
+Summary: A framework for writing ICAP servers
+Author-email: FÁBIÁN Tamás László <giganetom@gmail.com>
+Maintainer-email: Kirill Zimnikov <kirill@zimnikov.ru>
+License: BSD License
+Project-URL: Repository, https://github.com/lirik90/py-icap-server.git
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.10
+License-File: LICENSE.md
+
