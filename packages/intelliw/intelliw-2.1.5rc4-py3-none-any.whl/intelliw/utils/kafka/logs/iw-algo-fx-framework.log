@@ -1,0 +1,457 @@
+[0] [32m[PID39286] -Framework Log- 2024-09-24 10:54:16 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}[0m
+[0] [31m[PID39286] -Framework Log- 2024-09-24 10:54:46 | ERROR | client.py:155: Message failed delivery: KafkaError{code=_MSG_TIMED_OUT,val=-192,str="Local: Message timed out"}[0m
+[0] [32m[PID39371] -Framework Log- 2024-09-24 10:55:52 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID39385] -Framework Log- 2024-09-24 10:56:09 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID39413] -Framework Log- 2024-09-24 10:56:26 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID39463] -Framework Log- 2024-09-24 10:56:51 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID39493] -Framework Log- 2024-09-24 10:57:11 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID40191] -Framework Log- 2024-09-24 11:11:58 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}[0m
+[0] [31m[PID40191] -Framework Log- 2024-09-24 11:12:28 | ERROR | client.py:155: Message failed delivery: KafkaError{code=_MSG_TIMED_OUT,val=-192,str="Local: Message timed out"}[0m
+[0] [32m[PID40377] -Framework Log- 2024-09-24 11:15:22 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID40446] -Framework Log- 2024-09-24 11:16:25 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}[0m
+[0] [31m[PID40446] -Framework Log- 2024-09-24 11:16:55 | ERROR | client.py:155: Message failed delivery: KafkaError{code=_MSG_TIMED_OUT,val=-192,str="Local: Message timed out"}[0m
+[0] [32m[PID40688] -Framework Log- 2024-09-24 11:20:12 | INFO | client.py:47: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}[0m
+[0] [31m[PID40688] -Framework Log- 2024-09-24 11:20:42 | ERROR | client.py:165: Message failed delivery: KafkaError{code=_MSG_TIMED_OUT,val=-192,str="Local: Message timed out"}[0m
+[0] [32m[PID41016] -Framework Log- 2024-09-24 11:27:19 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID41016] -Framework Log- 2024-09-24 11:27:20 | INFO | client.py:167: Message delivered to test-topic [0] at offset 0[0m
+[0] [32m[PID41035] -Framework Log- 2024-09-24 11:27:45 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID41035] -Framework Log- 2024-09-24 11:27:45 | INFO | client.py:167: Message delivered to test-topic [0] at offset 1[0m
+[0] [32m[PID46479] -Framework Log- 2024-09-24 13:42:58 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID46543] -Framework Log- 2024-09-24 13:44:00 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID46543] -Framework Log- 2024-09-24 13:44:00 | INFO | client.py:167: Message delivered to test-topic [0] at offset 2[0m
+[0] [32m[PID46625] -Framework Log- 2024-09-24 13:45:32 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID46738] -Framework Log- 2024-09-24 13:47:51 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID46784] -Framework Log- 2024-09-24 13:48:47 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID46931] -Framework Log- 2024-09-24 13:51:36 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID46931] -Framework Log- 2024-09-24 13:51:36 | INFO | client.py:167: Message delivered to test-topic [0] at offset 4[0m
+[0] [32m[PID46984] -Framework Log- 2024-09-24 13:52:27 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID47113] -Framework Log- 2024-09-24 13:54:24 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID47113] -Framework Log- 2024-09-24 13:54:24 | INFO | client.py:166: Message delivered to test-topic [0] at offset 5[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:19 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 6[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 7[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 8[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 9[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 10[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 11[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 12[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 13[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 14[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 15[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 16[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 17[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 18[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 19[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 20[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 21[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 22[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 23[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 24[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 25[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 26[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 27[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 28[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 29[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 30[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 31[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 32[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 33[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 34[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 35[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 36[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 37[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 38[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 39[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 40[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 41[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 42[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 43[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 44[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 45[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 46[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 47[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 48[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 49[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 50[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 51[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 52[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 53[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 54[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 55[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 56[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 57[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 58[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 59[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 60[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 61[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 62[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 63[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 64[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 65[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 66[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 67[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 68[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 69[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 70[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 71[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 72[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 73[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 74[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 75[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 76[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 77[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 78[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 79[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 80[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 81[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 82[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 83[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 84[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 85[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 86[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 87[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 88[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 89[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 90[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 91[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 92[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 93[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 94[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 95[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 96[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 97[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 98[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 99[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 100[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 101[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 102[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 103[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 104[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 105[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key0', value: b'value0'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key1', value: b'value1'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key2', value: b'value2'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key3', value: b'value3'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key4', value: b'value4'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key5', value: b'value5'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key6', value: b'value6'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key7', value: b'value7'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key8', value: b'value8'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key9', value: b'value9'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key10', value: b'value10'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key11', value: b'value11'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key12', value: b'value12'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key13', value: b'value13'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key14', value: b'value14'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key15', value: b'value15'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key16', value: b'value16'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key17', value: b'value17'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key18', value: b'value18'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key19', value: b'value19'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key20', value: b'value20'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key21', value: b'value21'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key22', value: b'value22'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key23', value: b'value23'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key24', value: b'value24'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key25', value: b'value25'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key26', value: b'value26'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key27', value: b'value27'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key28', value: b'value28'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key29', value: b'value29'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key30', value: b'value30'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key31', value: b'value31'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key32', value: b'value32'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key33', value: b'value33'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key34', value: b'value34'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key35', value: b'value35'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key36', value: b'value36'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key37', value: b'value37'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key38', value: b'value38'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key39', value: b'value39'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key40', value: b'value40'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key41', value: b'value41'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key42', value: b'value42'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key43', value: b'value43'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key44', value: b'value44'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key45', value: b'value45'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key46', value: b'value46'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key47', value: b'value47'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key48', value: b'value48'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key49', value: b'value49'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key50', value: b'value50'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key51', value: b'value51'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key52', value: b'value52'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key53', value: b'value53'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key54', value: b'value54'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key55', value: b'value55'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key56', value: b'value56'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key57', value: b'value57'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key58', value: b'value58'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key59', value: b'value59'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key60', value: b'value60'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key61', value: b'value61'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key62', value: b'value62'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key63', value: b'value63'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key64', value: b'value64'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key65', value: b'value65'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key66', value: b'value66'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key67', value: b'value67'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key68', value: b'value68'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key69', value: b'value69'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key70', value: b'value70'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key71', value: b'value71'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key72', value: b'value72'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key73', value: b'value73'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key74', value: b'value74'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key75', value: b'value75'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key76', value: b'value76'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key77', value: b'value77'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key78', value: b'value78'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key79', value: b'value79'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key80', value: b'value80'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key81', value: b'value81'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key82', value: b'value82'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key83', value: b'value83'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key84', value: b'value84'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key85', value: b'value85'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key86', value: b'value86'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key87', value: b'value87'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key88', value: b'value88'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key89', value: b'value89'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key90', value: b'value90'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key91', value: b'value91'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key92', value: b'value92'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key93', value: b'value93'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key94', value: b'value94'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key95', value: b'value95'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key96', value: b'value96'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key97', value: b'value97'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key98', value: b'value98'[0m
+[0] [32m[PID47630] -Framework Log- 2024-09-24 14:03:27 | INFO | client.py:170: Received message with key: b'key99', value: b'value99'[0m
+[0] [32m[PID57049] -Framework Log- 2024-09-24 16:15:20 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID57049] -Framework Log- 2024-09-24 16:15:20 | INFO | client.py:166: Message delivered to test-topic [0] at offset 106[0m
+[0] [32m[PID57049] -Framework Log- 2024-09-24 16:16:42 | INFO | client.py:170: Received message with key: b'keyxxxxxx222', value: b'kkkkkkfkkkkkkk!'[0m
+[0] [32m[PID87278] -Framework Log- 2024-09-24 20:58:21 | INFO | client.py:52: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [31m[PID87278] -Framework Log- 2024-09-24 20:58:21 | ERROR | client.py:125: Error producing message: a bytes-like object is required, not 'dict'[0m
+[0] [32m[PID87304] -Framework Log- 2024-09-24 20:58:43 | INFO | client.py:52: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID87304] -Framework Log- 2024-09-24 20:58:43 | INFO | client.py:192: Message delivered to test-topic [0] at offset 107[0m
+[0] [32m[PID87304] -Framework Log- 2024-09-24 20:59:15 | INFO | client.py:196: Received message with key: b'keyxxxxxx222', value: b'{"nihao": "1"}'[0m
+[0] [32m[PID87402] -Framework Log- 2024-09-24 21:00:07 | INFO | client.py:52: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID87402] -Framework Log- 2024-09-24 21:00:07 | INFO | client.py:192: Message delivered to test-topic [0] at offset 108[0m
+[0] [32m[PID87402] -Framework Log- 2024-09-24 21:00:12 | INFO | client.py:196: Received message with key: None, value: b'{"nihao": "1"}'[0m
+[0] [32m[PID44103] -Framework Log- 2024-09-25 13:52:11 | INFO | client.py:52: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID44103] -Framework Log- 2024-09-25 13:52:11 | INFO | client.py:196: Received message with key: None, value: b'{"modelInstanceId": "", "target": {"key": "\\u9884\\u7b97\\u603b\\u989d", "name": "\\u9884\\u7b97\\u603b\\u989d", "parameterType": "Double", "desc": "\\u9884\\u7b97\\u603b\\u989d"}, "parameters": [{"key": "\\u4eba\\u5458\\u914d\\u7f6e", "name": "\\u4eba\\u5458\\u914d\\u7f6e", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u4eba\\u5458\\u914d\\u7f6e", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u603b\\u9762\\u79ef", "name": "\\u603b\\u9762\\u79ef", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u603b\\u9762\\u79ef", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u4f1a\\u52a1\\u670d\\u52a1", "name": "\\u4f1a\\u52a1\\u670d\\u52a1", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u4f1a\\u52a1\\u670d\\u52a1", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u7ef4\\u4fee\\u4eba\\u5458\\u4eba\\u6570", "name": "\\u7ef4\\u4fee\\u4eba\\u5458\\u4eba\\u6570", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u7ef4\\u4fee\\u4eba\\u5458\\u4eba\\u6570", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u7ef4\\u62a4\\u4fdd\\u517b\\u670d\\u52a1", "name": "\\u7ef4\\u62a4\\u4fdd\\u517b\\u670d\\u52a1", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u7ef4\\u62a4\\u4fdd\\u517b\\u670d\\u52a1", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u4fdd\\u6d01\\u4eba\\u5458\\u4eba\\u6570", "name": "\\u4fdd\\u6d01\\u4eba\\u5458\\u4eba\\u6570", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u4fdd\\u6d01\\u4eba\\u5458\\u4eba\\u6570", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u7c7b\\u578b", "name": "\\u7c7b\\u578b", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u7c7b\\u578b", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u533a\\u57df", "name": "\\u533a\\u57df", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u533a\\u57df", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u5b89\\u4fdd\\u670d\\u52a1", "name": "\\u5b89\\u4fdd\\u670d\\u52a1", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u5b89\\u4fdd\\u670d\\u52a1", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u9879\\u76ee\\u7ecf\\u7406\\u4eba\\u6570", "name": "\\u9879\\u76ee\\u7ecf\\u7406\\u4eba\\u6570", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u9879\\u76ee\\u7ecf\\u7406\\u4eba\\u6570", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u9879\\u76ee\\u540d\\u79f0", "name": "\\u9879\\u76ee\\u540d\\u79f0", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u9879\\u76ee\\u540d\\u79f0", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u7ba1\\u7406\\u4eba\\u5458\\u4eba\\u6570", "name": "\\u7ba1\\u7406\\u4eba\\u5458\\u4eba\\u6570", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u7ba1\\u7406\\u4eba\\u5458\\u4eba\\u6570", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u73af\\u5883\\u670d\\u52a1", "name": "\\u73af\\u5883\\u670d\\u52a1", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u73af\\u5883\\u670d\\u52a1", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u5b89\\u4fdd\\u4eba\\u5458\\u4eba\\u6570", "name": "\\u5b89\\u4fdd\\u4eba\\u5458\\u4eba\\u6570", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u5b89\\u4fdd\\u4eba\\u5458\\u4eba\\u6570", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u5e74\\u4efd", "name": "\\u5e74\\u4efd", "category": "", "parameterType": "Int", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u5e74\\u4efd", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}]}'[0m
+[0] [32m[PID44103] -Framework Log- 2024-09-25 13:52:11 | INFO | client.py:196: Received message with key: None, value: b'{"modelInstanceId": "", "target": {"key": "\\u9884\\u7b97\\u603b\\u989d", "name": "\\u9884\\u7b97\\u603b\\u989d", "parameterType": "Double", "desc": "\\u9884\\u7b97\\u603b\\u989d"}, "parameters": [{"key": "\\u4eba\\u5458\\u914d\\u7f6e", "name": "\\u4eba\\u5458\\u914d\\u7f6e", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u4eba\\u5458\\u914d\\u7f6e", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u603b\\u9762\\u79ef", "name": "\\u603b\\u9762\\u79ef", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u603b\\u9762\\u79ef", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u4f1a\\u52a1\\u670d\\u52a1", "name": "\\u4f1a\\u52a1\\u670d\\u52a1", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u4f1a\\u52a1\\u670d\\u52a1", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u7ef4\\u4fee\\u4eba\\u5458\\u4eba\\u6570", "name": "\\u7ef4\\u4fee\\u4eba\\u5458\\u4eba\\u6570", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u7ef4\\u4fee\\u4eba\\u5458\\u4eba\\u6570", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u7ef4\\u62a4\\u4fdd\\u517b\\u670d\\u52a1", "name": "\\u7ef4\\u62a4\\u4fdd\\u517b\\u670d\\u52a1", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u7ef4\\u62a4\\u4fdd\\u517b\\u670d\\u52a1", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u4fdd\\u6d01\\u4eba\\u5458\\u4eba\\u6570", "name": "\\u4fdd\\u6d01\\u4eba\\u5458\\u4eba\\u6570", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u4fdd\\u6d01\\u4eba\\u5458\\u4eba\\u6570", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u7c7b\\u578b", "name": "\\u7c7b\\u578b", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u7c7b\\u578b", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u533a\\u57df", "name": "\\u533a\\u57df", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u533a\\u57df", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u5b89\\u4fdd\\u670d\\u52a1", "name": "\\u5b89\\u4fdd\\u670d\\u52a1", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u5b89\\u4fdd\\u670d\\u52a1", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u9879\\u76ee\\u7ecf\\u7406\\u4eba\\u6570", "name": "\\u9879\\u76ee\\u7ecf\\u7406\\u4eba\\u6570", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u9879\\u76ee\\u7ecf\\u7406\\u4eba\\u6570", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u9879\\u76ee\\u540d\\u79f0", "name": "\\u9879\\u76ee\\u540d\\u79f0", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u9879\\u76ee\\u540d\\u79f0", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u7ba1\\u7406\\u4eba\\u5458\\u4eba\\u6570", "name": "\\u7ba1\\u7406\\u4eba\\u5458\\u4eba\\u6570", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u7ba1\\u7406\\u4eba\\u5458\\u4eba\\u6570", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u73af\\u5883\\u670d\\u52a1", "name": "\\u73af\\u5883\\u670d\\u52a1", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u73af\\u5883\\u670d\\u52a1", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u5b89\\u4fdd\\u4eba\\u5458\\u4eba\\u6570", "name": "\\u5b89\\u4fdd\\u4eba\\u5458\\u4eba\\u6570", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u5b89\\u4fdd\\u4eba\\u5458\\u4eba\\u6570", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\\u5e74\\u4efd", "name": "\\u5e74\\u4efd", "category": "", "parameterType": "Int", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\\u5e74\\u4efd", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}]}'[0m
+[0] [32m[PID44103] -Framework Log- 2024-09-25 13:52:11 | INFO | client.py:196: Received message with key: None, value: b'{"modelInstanceId": "2096170703130198024", "target": {"name": "\\u9884\\u6d4b\\u76ee\\u6807", "desc": "\\u9884\\u7b97\\u603b\\u989d"}, "parameters": [{"key": "staff_num", "name": "\\u4eba\\u5458\\u914d\\u7f6e", "parameterType": "Int", "defaultValue": 100, "isOptional": "true", "desc": "\\u5355\\u4f4d:\\u4eba, Int\\u7c7b\\u578b"}, {"key": "area", "name": "\\u603b\\u9762\\u79ef", "parameterType": "Int", "defaultValue": 100, "isOptional": "true", "desc": "\\u5355\\u4f4d:\\u5e73\\u65b9\\u7c73, Int\\u7c7b\\u578b"}, {"key": "cleaner_num", "name": "\\u4fdd\\u6d01\\u4eba\\u6570", "parameterType": "Int", "defaultValue": 100, "isOptional": "false", "desc": "\\u5355\\u4f4d:\\u4eba, Int\\u7c7b\\u578b"}]}'[0m
+[0] [32m[PID44103] -Framework Log- 2024-09-25 13:52:11 | INFO | client.py:196: Received message with key: b'fff', value: b'{   \n    "modelInstanceId":"1526371067163049999",\n    "target": {\n        "name": "\xe9\xa2\x84\xe6\xb5\x8b\xe7\x9b\xae\xe6\xa0\x87",\n        "desc":"\xe9\xa2\x84\xe7\xae\x97\xe6\x80\xbb\xe9\xa2\x9d"\n    },\n    "parameters":[\n        {   \n            "key": "staff_num",\n            "name": "\xe4\xba\xba\xe5\x91\x98\xe9\x85\x8d\xe7\xbd\xae",\n            "parameterType":"Int",\n            "defaultValue":100,\n            "isOptional": "true",\n            "desc":"\xe5\x8d\x95\xe4\xbd\x8d:\xe4\xba\xba, Int\xe7\xb1\xbb\xe5\x9e\x8b"\n        },\n        {   \n            "key": "area",\n            "name": "\xe6\x80\xbb\xe9\x9d\xa2\xe7\xa7\xaf",\n            "parameterType":"Int",\n            "defaultValue":100,\n            "isOptional": "true",\n            "desc":"\xe5\x8d\x95\xe4\xbd\x8d:\xe5\xb9\xb3\xe6\x96\xb9\xe7\xb1\xb3, Int\xe7\xb1\xbb\xe5\x9e\x8b"\n        },\n        {   \n            "key": "cleaner_num",\n            "name": "\xe4\xbf\x9d\xe6\xb4\x81\xe4\xba\xba\xe6\x95\xb0",\n            "parameterType":"Int",\n            "defaultValue":100,\n            "isOptional": "false",\n            "desc":"\xe5\x8d\x95\xe4\xbd\x8d:\xe4\xba\xba, Int\xe7\xb1\xbb\xe5\x9e\x8b"\n        }\n    ]\n}'[0m
+[0] [32m[PID44323] -Framework Log- 2024-09-25 13:54:22 | INFO | client.py:52: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID45958] -Framework Log- 2024-09-25 14:06:08 | INFO | client.py:52: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID46830] -Framework Log- 2024-09-25 14:13:52 | INFO | client.py:52: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID46830] -Framework Log- 2024-09-25 14:21:19 | INFO | client.py:192: Received message with key: b'2096332778016604178', value: b'{"modelInstanceId": "2096332778016604178", "target": {"key": "\xe9\xa2\x84\xe7\xae\x97\xe6\x80\xbb\xe9\xa2\x9d", "name": "\xe9\xa2\x84\xe7\xae\x97\xe6\x80\xbb\xe9\xa2\x9d", "parameterType": "Double", "desc": "\xe9\xa2\x84\xe7\xae\x97\xe6\x80\xbb\xe9\xa2\x9d"}, "parameters": [{"key": "\xe4\xba\xba\xe5\x91\x98\xe9\x85\x8d\xe7\xbd\xae", "name": "\xe4\xba\xba\xe5\x91\x98\xe9\x85\x8d\xe7\xbd\xae", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\xe4\xba\xba\xe5\x91\x98\xe9\x85\x8d\xe7\xbd\xae", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\xe6\x80\xbb\xe9\x9d\xa2\xe7\xa7\xaf", "name": "\xe6\x80\xbb\xe9\x9d\xa2\xe7\xa7\xaf", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\xe6\x80\xbb\xe9\x9d\xa2\xe7\xa7\xaf", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\xe4\xbc\x9a\xe5\x8a\xa1\xe6\x9c\x8d\xe5\x8a\xa1", "name": "\xe4\xbc\x9a\xe5\x8a\xa1\xe6\x9c\x8d\xe5\x8a\xa1", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\xe4\xbc\x9a\xe5\x8a\xa1\xe6\x9c\x8d\xe5\x8a\xa1", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\xe7\xbb\xb4\xe4\xbf\xae\xe4\xba\xba\xe5\x91\x98\xe4\xba\xba\xe6\x95\xb0", "name": "\xe7\xbb\xb4\xe4\xbf\xae\xe4\xba\xba\xe5\x91\x98\xe4\xba\xba\xe6\x95\xb0", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\xe7\xbb\xb4\xe4\xbf\xae\xe4\xba\xba\xe5\x91\x98\xe4\xba\xba\xe6\x95\xb0", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\xe7\xbb\xb4\xe6\x8a\xa4\xe4\xbf\x9d\xe5\x85\xbb\xe6\x9c\x8d\xe5\x8a\xa1", "name": "\xe7\xbb\xb4\xe6\x8a\xa4\xe4\xbf\x9d\xe5\x85\xbb\xe6\x9c\x8d\xe5\x8a\xa1", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\xe7\xbb\xb4\xe6\x8a\xa4\xe4\xbf\x9d\xe5\x85\xbb\xe6\x9c\x8d\xe5\x8a\xa1", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\xe4\xbf\x9d\xe6\xb4\x81\xe4\xba\xba\xe5\x91\x98\xe4\xba\xba\xe6\x95\xb0", "name": "\xe4\xbf\x9d\xe6\xb4\x81\xe4\xba\xba\xe5\x91\x98\xe4\xba\xba\xe6\x95\xb0", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\xe4\xbf\x9d\xe6\xb4\x81\xe4\xba\xba\xe5\x91\x98\xe4\xba\xba\xe6\x95\xb0", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\xe7\xb1\xbb\xe5\x9e\x8b", "name": "\xe7\xb1\xbb\xe5\x9e\x8b", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\xe7\xb1\xbb\xe5\x9e\x8b", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\xe5\x8c\xba\xe5\x9f\x9f", "name": "\xe5\x8c\xba\xe5\x9f\x9f", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\xe5\x8c\xba\xe5\x9f\x9f", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\xe5\xae\x89\xe4\xbf\x9d\xe6\x9c\x8d\xe5\x8a\xa1", "name": "\xe5\xae\x89\xe4\xbf\x9d\xe6\x9c\x8d\xe5\x8a\xa1", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\xe5\xae\x89\xe4\xbf\x9d\xe6\x9c\x8d\xe5\x8a\xa1", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\xe9\xa1\xb9\xe7\x9b\xae\xe7\xbb\x8f\xe7\x90\x86\xe4\xba\xba\xe6\x95\xb0", "name": "\xe9\xa1\xb9\xe7\x9b\xae\xe7\xbb\x8f\xe7\x90\x86\xe4\xba\xba\xe6\x95\xb0", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\xe9\xa1\xb9\xe7\x9b\xae\xe7\xbb\x8f\xe7\x90\x86\xe4\xba\xba\xe6\x95\xb0", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\xe9\xa1\xb9\xe7\x9b\xae\xe5\x90\x8d\xe7\xa7\xb0", "name": "\xe9\xa1\xb9\xe7\x9b\xae\xe5\x90\x8d\xe7\xa7\xb0", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\xe9\xa1\xb9\xe7\x9b\xae\xe5\x90\x8d\xe7\xa7\xb0", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\xe7\xae\xa1\xe7\x90\x86\xe4\xba\xba\xe5\x91\x98\xe4\xba\xba\xe6\x95\xb0", "name": "\xe7\xae\xa1\xe7\x90\x86\xe4\xba\xba\xe5\x91\x98\xe4\xba\xba\xe6\x95\xb0", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\xe7\xae\xa1\xe7\x90\x86\xe4\xba\xba\xe5\x91\x98\xe4\xba\xba\xe6\x95\xb0", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\xe7\x8e\xaf\xe5\xa2\x83\xe6\x9c\x8d\xe5\x8a\xa1", "name": "\xe7\x8e\xaf\xe5\xa2\x83\xe6\x9c\x8d\xe5\x8a\xa1", "category": "", "parameterType": "String", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\xe7\x8e\xaf\xe5\xa2\x83\xe6\x9c\x8d\xe5\x8a\xa1", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\xe5\xae\x89\xe4\xbf\x9d\xe4\xba\xba\xe5\x91\x98\xe4\xba\xba\xe6\x95\xb0", "name": "\xe5\xae\x89\xe4\xbf\x9d\xe4\xba\xba\xe5\x91\x98\xe4\xba\xba\xe6\x95\xb0", "category": "", "parameterType": "Double", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\xe5\xae\x89\xe4\xbf\x9d\xe4\xba\xba\xe5\x91\x98\xe4\xba\xba\xe6\x95\xb0", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}, {"key": "\xe5\xb9\xb4\xe4\xbb\xbd", "name": "\xe5\xb9\xb4\xe4\xbb\xbd", "category": "", "parameterType": "Int", "isOptional": "false", "defaultValue": null, "enumValues": [], "desc": "\xe5\xb9\xb4\xe4\xbb\xbd", "enabledByParameterNames": [], "enabledByParameterValues": [[]], "lowerBound": null, "upperBound": null}]}'[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:28 | INFO | client.py:52: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 209[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 210[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 211[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 212[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 213[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 214[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 215[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 216[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 217[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 218[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 219[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 220[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 221[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 222[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 223[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 224[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 225[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 226[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 227[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 228[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 229[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 230[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 231[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 232[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 233[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 234[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 235[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 236[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 237[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 238[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 239[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 240[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 241[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 242[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 243[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 244[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 245[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 246[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 247[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 248[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 249[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 250[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 251[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 252[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 253[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 254[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 255[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 256[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 257[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 258[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 259[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 260[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 261[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 262[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 263[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 264[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 265[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 266[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 267[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 268[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 269[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 270[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 271[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 272[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 273[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 274[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 275[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 276[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 277[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 278[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 279[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 280[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 281[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 282[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 283[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 284[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 285[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 286[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 287[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 288[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 289[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 290[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 291[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 292[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 293[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 294[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 295[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 296[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 297[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 298[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 299[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 300[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 301[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 302[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 303[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 304[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 305[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 306[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 307[0m
+[0] [32m[PID58318] -Framework Log- 2024-09-25 16:17:29 | INFO | client.py:192: Message delivered to test-topic [0] at offset 308[0m
+[0] [31m[PID58318] -Framework Log- 2024-09-25 16:17:36 | ERROR | client.py:166: Error consuming messages: handle_message() missing 1 required positional argument: 'v'[0m
+[0] [31m[PID58318] -Framework Log- 2024-09-25 16:17:39 | ERROR | client.py:166: Error consuming messages: handle_message() missing 1 required positional argument: 'v'[0m
+[0] [31m[PID58318] -Framework Log- 2024-09-25 16:17:42 | ERROR | client.py:166: Error consuming messages: handle_message() missing 1 required positional argument: 'v'[0m
+[0] [31m[PID58318] -Framework Log- 2024-09-25 16:17:45 | ERROR | client.py:166: Error consuming messages: handle_message() missing 1 required positional argument: 'v'[0m
+[0] [31m[PID58318] -Framework Log- 2024-09-25 16:17:48 | ERROR | client.py:166: Error consuming messages: handle_message() missing 1 required positional argument: 'v'[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:53 | INFO | client.py:52: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 309[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 310[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 311[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 312[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 313[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 314[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 315[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 316[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 317[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 318[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 319[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 320[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 321[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 322[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 323[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 324[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 325[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 326[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 327[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 328[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 329[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 330[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 331[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 332[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 333[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 334[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 335[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 336[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 337[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 338[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 339[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 340[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 341[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 342[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 343[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 344[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 345[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 346[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 347[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 348[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 349[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 350[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 351[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 352[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 353[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 354[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 355[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 356[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 357[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 358[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 359[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 360[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 361[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 362[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 363[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 364[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 365[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 366[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 367[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 368[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 369[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 370[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 371[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 372[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 373[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 374[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 375[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 376[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 377[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 378[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 379[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 380[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 381[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 382[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 383[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 384[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 385[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 386[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 387[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 388[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 389[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 390[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 391[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 392[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 393[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 394[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 395[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 396[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 397[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 398[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 399[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 400[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 401[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 402[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 403[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 404[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 405[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 406[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 407[0m
+[0] [32m[PID58572] -Framework Log- 2024-09-25 16:19:54 | INFO | client.py:192: Message delivered to test-topic [0] at offset 408[0m
