@@ -1,0 +1,9 @@
+fixed:
+  type: watsonx_spark
+prompts:
+  host:
+    hint: us-south.lakehouse.cloud.ibm.com
+  uri:
+    hint: /lakehouse/api/v2/spark_engines/<engine-id</sql_servers/<sql-server-id>/connect/cliservice
+  schema:
+    hint: default schema that DBT will run on
