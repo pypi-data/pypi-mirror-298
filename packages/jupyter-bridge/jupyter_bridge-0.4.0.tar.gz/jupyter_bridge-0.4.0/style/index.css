@@ -1,0 +1,159 @@
+@import url('base.css');
+
+.jp-Cell .ct-cellFooterContainer {
+    display: flex;
+    flex-direction: row; /* Ensure horizontal alignment */
+    justify-content: flex-start; /* Move button to the left */
+    align-items: center; /* Vertically center the button */
+   }
+  
+   .jp-Cell .ct-cellFooterBtn {
+     color: #fff;
+     opacity: 0.7;
+     font-size: 0.65rem;
+     font-weight: 500;
+     text-transform: uppercase;
+     border: none;
+     padding: 4px 8px;
+     margin: 0.2rem 0;
+     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+     outline: none;
+     cursor: pointer;
+     user-select: none;  
+     margin-left: 0px;
+     margin-right: 4px;
+   }
+  
+   .jp-Placeholder-content .jp-PlaceholderText,
+   .jp-Placeholder-content .jp-MoreHorizIcon {
+     display: none;
+   }
+  
+   /* Disable default cell collapsing behavior */
+  .jp-InputCollapser,
+  .jp-OutputCollapser,
+  .jp-Placeholder {
+   cursor: auto !important;
+   pointer-events: none !important;
+  }
+  
+   /* Add styles for toggle button */
+   .jp-Cell .ct-toggleBtn{
+     background: #f0f0f0;
+   }
+  
+   .jp-Cell .ct-toggleBtn:hover{
+     background-color: #ccc;
+   }
+  
+   .jp-Cell .ct-toggleBtn:active{
+     background-color: #999;
+   }
+   
+   .ct-cellFooterBtn:active {
+     background-color: var(--md-blue-600);
+     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+   }
+   
+   .jp-Cell .ct-cellFooterBtn:hover {
+     background-color: var(--md-blue-500);
+     opacity: 1;
+     text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+     box-shadow: var(--jp-elevation-z2);
+   }
+   
+   .jp-Cell .ct-cellFooterBtn {
+     background: var(--md-blue-400);
+   }
+   
+   .jp-CodeCell {
+     display: flex !important;
+     flex-direction: column;
+   }
+   
+   .jp-CodeCell .jp-CellFooter {
+     height: auto;
+     order: 2;
+   }
+   
+   .jp-Cell .jp-Cell-inputWrapper {
+     margin-top: 5px;
+   }
+   
+   .jp-CodeCell .jp-Cell-outputWrapper {
+     order: 4;
+   }
+   
+   .ct-explanatory-cell {
+     
+     width: 50%;
+     float: left;
+   }
+   
+   .ct-code-cell {
+    
+   }
+  
+   .hidden {
+     display: none;
+   }
+  
+   .lm-Widget.jp-Collapser.jp-InputCollapser.jp-Cell-inputCollapser, .lm-Widget.jp-Collapser.jp-OutputCollapser.jp-Cell-outputCollapser {
+    display: none !important;
+   }
+  
+   .lm-Widget.jp-InputPrompt.jp-InputArea-prompt{
+  
+   }
+   
+
+   .ct-explanatory-cell {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    background-color: #fdf2e9; /* Soft peach color for background */
+    border: 2px solid #e67e22; /* Orange border for distinction */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ct-explanatory-cell h2 {
+    color: #d35400;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .ct-explanatory-cell p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2c3e50;
+  }
+  
+  .ct-explanatory-cell ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ct-explanatory-cell li {
+    background-color: #f39c12;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    color: white;
+  }
+  
+  .ct-explanatory-cell code {
+    background-color: #ffe6cc;
+    padding: 5px;
+    border-radius: 5px;
+    color: #d35400;
+    font-weight: bold;
+  }
+  
+  .ct-hidden-cell {
+    display: none;
+  }
+  
+

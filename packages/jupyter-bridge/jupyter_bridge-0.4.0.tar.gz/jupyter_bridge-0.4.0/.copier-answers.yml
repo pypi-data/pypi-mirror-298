@@ -1,0 +1,23 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.2.6
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: lisamarie9006@gmail.com
+author_name: Lisa Marie Meyers
+data_format: string
+file_extension: ''
+has_binder: true
+has_settings: false
+kind: frontend
+labextension_name: jupyter_bridge
+mimetype: ''
+mimetype_name: ''
+project_short_description: A JupyterLab extension that adds footer buttons to code
+    cells for improved interactivity and visibility control, supporting operations
+    like running cells, hiding/showing code, and managing output directly from the
+    cell interface. Initial functionality included to mark documentation cells that
+    are controlled by their corresponding code cells.
+python_name: jupyter_bridge
+repository: https://github.com/LtStarbuck1030/jupyter_bridge
+test: true
+viewer_name: ''
+
