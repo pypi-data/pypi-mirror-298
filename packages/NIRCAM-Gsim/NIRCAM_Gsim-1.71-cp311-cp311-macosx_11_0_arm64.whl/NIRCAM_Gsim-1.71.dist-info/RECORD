@@ -1,0 +1,18 @@
+NIRCAM_Gsim/NIRISS_grism_seed_disperser.py,sha256=zMRogt6hDJioWuGJThBjqkjrIp36j9xvxtGz7WH-uo0,2731
+NIRCAM_Gsim/__init__.py,sha256=_5YNDdD5iec_SxdrSf8hI6K5XwLhMkPxqFzTddCspSA,72
+NIRCAM_Gsim/grism_seed_disperser.py,sha256=G67wrIdpS78JocBtlQuFbT4FXolx2S07G_NzQffRKNQ,11346
+NIRCAM_Gsim/disperse/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+NIRCAM_Gsim/disperse/disperse.py,sha256=pA2-SMjan-63gkr_GJGPp0z9j-0gQtgVziuUh1Flgpk,4893
+NIRCAM_Gsim/observations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+NIRCAM_Gsim/observations/observations.py,sha256=Dem-5Qu8oPXrcfAKVH4apfU-Uq1LYsotc19RjXZw6Co,33702
+NIRCAM_Gsim/polyclip/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+NIRCAM_Gsim/polyclip/polyclip.py,sha256=pdrJyvGOi7n1q35zvi59nfqFCX6kp7V3Tc3Cp3-9A9U,2772
+NIRCAM_Gsim/polyclip/polyclip_c.cpython-311-darwin.so,sha256=vsVJuHcVHj9JE6mkngldb4MvIFG8B_jKkxDOoAZ_F7A,50896
+NIRCAM_Gsim-1.71.dist-info/METADATA,sha256=TDlxqWEtk3uHaIeq_hGYErLIOJDGik_Ltr-d9f2r9hM,286
+NIRCAM_Gsim-1.71.dist-info/PKG-INFO (Nor Pirzkal's conflicted copy 2024-01-05 1),sha256=CR2ybAqDdxHe9hITPJ7vQhSYC0ImMWRzHde02RtrkWw,283
+NIRCAM_Gsim-1.71.dist-info/PKG-INFO (Nor Pirzkal's conflicted copy 2024-01-05),sha256=CR2ybAqDdxHe9hITPJ7vQhSYC0ImMWRzHde02RtrkWw,283
+NIRCAM_Gsim-1.71.dist-info/SOURCES (Nor Pirzkal's conflicted copy 2024-01-05 1).txt,sha256=33Cyop0IWlUfwLNk44uQQfLnjY5O_DasaId9Her7Y5E,319
+NIRCAM_Gsim-1.71.dist-info/SOURCES (Nor Pirzkal's conflicted copy 2024-01-05).txt,sha256=33Cyop0IWlUfwLNk44uQQfLnjY5O_DasaId9Her7Y5E,319
+NIRCAM_Gsim-1.71.dist-info/WHEEL,sha256=sieEctgmsyAnWfDYOiunmkigyyjGmYuUaApm_YItwoI,110
+NIRCAM_Gsim-1.71.dist-info/top_level.txt,sha256=EXGz0oPzXZC-rjnEQLxjsib_rL1V0Yt_JrDXno62kw0,12
+NIRCAM_Gsim-1.71.dist-info/RECORD,,

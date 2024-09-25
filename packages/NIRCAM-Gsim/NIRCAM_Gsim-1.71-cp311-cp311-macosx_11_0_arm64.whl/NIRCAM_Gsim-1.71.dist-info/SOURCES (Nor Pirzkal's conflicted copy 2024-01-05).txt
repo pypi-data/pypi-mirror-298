@@ -1,0 +1,11 @@
+README.md
+setup.py
+NIRCAM_Gsim/__init__.py
+NIRCAM_Gsim.egg-info/PKG-INFO
+NIRCAM_Gsim.egg-info/SOURCES.txt
+NIRCAM_Gsim.egg-info/dependency_links.txt
+NIRCAM_Gsim.egg-info/requires.txt
+NIRCAM_Gsim.egg-info/top_level.txt
+NIRCAM_Gsim/disperse/__init__.py
+NIRCAM_Gsim/observations/__init__.py
+NIRCAM_Gsim/polyclip/__init__.py
