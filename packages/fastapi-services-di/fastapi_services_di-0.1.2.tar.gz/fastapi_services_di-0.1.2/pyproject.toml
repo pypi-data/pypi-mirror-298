@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "fastapi-services-di"
+version = "0.1.2"
+description = ""
+authors = ["udachin077 <pypi.udachin@yandex.ru>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "di", from = "." }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
