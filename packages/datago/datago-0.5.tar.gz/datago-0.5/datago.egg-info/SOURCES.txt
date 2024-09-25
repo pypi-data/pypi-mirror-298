@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+datago/__init__.py
+datago/_datago.cpython-311-x86_64-linux-gnu.h
+datago/_datago.cpython-311-x86_64-linux-gnu.so
+datago/build.py
+datago/datago.c
+datago/datago.py
+datago/datago_go.h
+datago/go.py
+datago.egg-info/PKG-INFO
+datago.egg-info/SOURCES.txt
+datago.egg-info/dependency_links.txt
+datago.egg-info/not-zip-safe
+datago.egg-info/top_level.txt
