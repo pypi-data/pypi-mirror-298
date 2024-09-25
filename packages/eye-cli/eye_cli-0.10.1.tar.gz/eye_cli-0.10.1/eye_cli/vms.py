@@ -1,0 +1,153 @@
+import subprocess
+from typing import List
+
+import typer
+from yaspin import yaspin
+from yaspin.spinners import Spinners
+import inquirer
+from rich import print
+from rich.padding import Padding
+
+
+
+app = typer.Typer()
+
+def message(s):
+    print(Padding(s, 1))
+
+
+def color(s, color):
+    return f"[bold {color}]{s}[/]"
+
+
+
+@app.command()
+def list():
+    args = ['gcloud', 'compute', 'instances', 'list', '--project', 'fde-playground',
+            '--format=table(name, zone, machineType, networkInterfaces.networkIP, status)', '--sort-by=name']
+    for vm in get_vms(args):
+        print(vm)
+
+
+@app.command()
+def running():
+    args = ['gcloud', 'compute', 'instances', 'list', '--project', 'fde-playground', '--filter=status=RUNNING',
+            '--format=table(name, zone, machineType, networkInterfaces.networkIP, status)', '--sort-by=name']
+    for vm in get_vms(args):
+        print(vm)
+
+
+@app.command()
+def start(showall: bool = False):
+
+    message(f"{color("Which VMs should we start?", "blue")}")
+
+    args = ['gcloud', 'compute', 'instances', 'list', '--project', 'fde-playground',
+            '--format=table(name, status)', '--sort-by=name']
+    if not showall:
+        args.append('--filter=status=TERMINATED')
+        
+    vms = inquirer.checkbox(
+        "Which VMs?",
+        choices=get_vms(args, header=False))
+
+    # Get just name column
+    vms = [vm.split()[0] for vm in vms]
+
+    for vm in vms:
+        message(f"{color("START", "green")} {vm}")
+        try:
+            uri = get_vm_uri(vm)
+            start_vm(uri)
+        except (ValueError, subprocess.CalledProcessError):
+            pass
+
+
+
+
+def get_vms(args, header: bool = True):
+    with yaspin(Spinners.aesthetic, text="Grabbing vms...", color="yellow") as spinner:
+        res = subprocess.run(args, check=True, capture_output=True, encoding='utf-8')
+        vms = res.stdout.split('\n')
+        vms = vms[:-1]
+        if not header:
+            vms = vms[1:]
+        spinner.ok("✅ ")
+        return vms
+
+
+
+@app.command()
+def stop(showall: bool = False):
+
+    message(f"{color("Which VMs should we stop?", "blue")}")
+
+    args = ['gcloud', 'compute', 'instances', 'list', '--project', 'fde-playground',
+            '--format=table(name, status)', '--sort-by=name']
+    if not showall:
+        args.append('--filter=status=RUNNING')
+        
+    vms = inquirer.checkbox(
+        "Which VMs?",
+        choices=get_vms(args, header=False))
+
+    # Get just name column
+    vms = [vm.split()[0] for vm in vms]
+
+    for vm in vms:
+        message(f"{color("STOP", "red")} {vm}")
+        try:
+            uri = get_vm_uri(vm)
+            stop_vm(uri)
+        except (ValueError, subprocess.CalledProcessError):
+            pass
+
+
+def start_vm(uri):
+    with yaspin(Spinners.aesthetic, text=f"Starting vm ({uri})...", color="yellow") as spinner:
+        try:
+            subprocess.run(['gcloud', 'compute', 'instances', 'start', uri],
+                       check=True,
+                       capture_output=True, encoding='utf-8')
+            spinner.ok("✅ ")
+        except subprocess.CalledProcessError as e:
+            spinner.fail("💥 ")
+            print(e)
+            raise e
+
+
+def stop_vm(uri):
+    with yaspin(Spinners.aesthetic, text=f"Stopping vm ({uri})...", color="yellow") as spinner:
+        try:
+            subprocess.run(['gcloud', 'compute', 'instances', 'stop', uri],
+                       check=True,
+                       capture_output=True, encoding='utf-8')
+            spinner.ok("✅ ")
+        except subprocess.CalledProcessError as e:
+            spinner.fail("💥 ")
+            print(e)
+            raise e
+
+
+def get_vm_uri(name):
+    with yaspin(Spinners.aesthetic, text=f"Getting URI for vm ({name})...", color="yellow") as spinner:
+        try:
+            res = subprocess.run(
+                ['gcloud', 'compute', 'instances', 'list', f'--filter=name:{name}', '--uri', '--project', 'fde-playground'],
+                check=True,
+                capture_output=True, encoding='utf-8')
+            uri = res.stdout.split('\n')[0]
+            if uri:
+                spinner.ok("✅ ")
+                return uri
+            else:
+                raise ValueError(f"Couldn't get URI for vm {name}")
+        except (ValueError, subprocess.CalledProcessError) as e:
+            spinner.fail("💥 ")
+            raise e
+
+
+
+if __name__ == '__main__':
+    app()
+
