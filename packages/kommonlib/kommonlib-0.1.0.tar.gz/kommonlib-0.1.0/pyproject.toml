@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kommonlib"
+version = "0.1.0"
+authors = [
+  { name="Kubermate", email="168834048+kubermate@users.noreply.github.com" },
+]
+description = "KommonLib: A common library for Kubertools projects."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+keywords=["python"]
+
+[project.urls]
+Homepage = "https://github.com/kubertools/kommonlib"
+Issues = "https://github.com/kubertools/kommonlib/issues"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-mock"
+]
+lint = [
+    "black>=22.12"
+]
+type = [
+    "mypy>=1.11.1"
+]
