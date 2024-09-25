@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: pycustomnets
+Version: 0.0.2
+Summary: A Neural Network customization tool
+Project-URL: Homepage, https://github.com/machinekeepslearning/pyNets
+Project-URL: Issues, https://github.com/machinekeepslearning/issues
+Author-email: Raj <machinekeepslearning@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pycustomnets
+neural network customizer
