@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "duple"
+version = "1.1.2"
+description = "Duple is a CLI that finds and removes duplicate files."
+authors = ["David Bruce"]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+keywords = ["duplicate", "lint"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+tqdm = "^4.66.5"
+humanize = "^4.10.0"
+send2trash = "^1.8.3"
+
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.28.0"
+
+
+
+pytest = "^8.3.3"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+duple = "duple.duple:cli"
+sync_version = "duple.publish_actions:sync_version"
+
+[tool.poe.tasks]
+
+    [tool.poe.tasks.build_test]
+    sequence = ["sync_version", "build", "test"]
+
+    [tool.poe.tasks.sync_version]
+    cmd = "sync_version" 
+
+    [tool.poe.tasks.build]
+    cmd = "poetry build"
+
+    [tool.poe.tasks.test]
+    cmd = "pytest"

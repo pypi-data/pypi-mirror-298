@@ -1,0 +1,285 @@
+# Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Project Description](#project-description)
+- [Installation](#installation)
+  - [Windows](#windows)
+- [Usage](#usage)
+  - [Overall Workflow](#overall-workflow)
+  - [Basic Usage](#basic-usage)
+- [Help](#help)
+  - [duple scan](#duple-scan)
+  - [duple rm](#duple-rm)
+  - [duple make-test-files](#duple-make-test-files)
+  - [duple hash-stats](#duple-hash-stats)
+  - [duple version](#duple-version)
+  - [Learning How It Works](#learning-how-it-works)
+- [Version History](#version-history)
+  - [1.1.0 Improved Documentation](#110-improved-documentation)
+  - [1.0.0 Refactored and Improved Output and Reporting](#100-refactored-and-improved-output-and-reporting)
+  - [0.5.0 Improve Data Outputs](#050-improve-data-outputs)
+  - [0.4.0 Performance Improvements](#040-performance-improvements)
+  - [0.3.0 Added Capability](#030-added-capability)
+  - [0.2.0 Added license](#020-added-license)
+  - [0.1.1 Misc. Fixes](#011-misc-fixes)
+  - [0.1.0 Initial Release](#010-initial-release)
+
+
+# Project Description
+
+Duple is a small package that will find and remove duplicate files.  I created duple only because there is no port of rmlint to Windows.
+
+Duple will iterate through all files and directories that is given and find duplicate files (files are compared on their contents, byte by byte).  duple then outputs two files: duple.delete and duple.json.  The user should revivew duple.delete and make edits if needed (instructions are in duple.delete).  Once the review is complete and edits made, another duple command will review duple.delete and delete the apporpriate files. see the flags and their descriptions:
+# Installation
+It is strongly recommended to use the latest version of duple.
+
+    pip install duple
+
+or if you need to upgrade:
+
+    pip install duple --upgrade
+
+
+You may need to add the Python Scripts folder on your computer to the PATH.
+
+## Windows
+Open PowerShell (Start > [search for powershell]) and copy/paste the following text to the command line:
+
+    python3 -c "from duple.info import get_user_scripts_path
+    get_user_scripts_path()"
+
+Go to Start > [search for 'edit environment variables for your account'] > Users Variables for [user name] > Select Path in top list box > Click Edit...
+
+Once the window pops up, add to the bottom of the list the result from the PowerShell command above
+
+# Usage
+## Overall Workflow
+First, open the terminal and navigate to the directory you want to analyze for duplicates.  Then, run 'duple.scan', which will make two output files: duple.delete and duple.json.  Review duple.delete to validate how duple determined which files were original and which were duplicates.  Then, run 'duple rm' to remove the files specified in 'duple.delete'.
+## Basic Usage
+duple has two primary sub-commands: scan and rm.  Scan scans your system based on the arguments given to scan and reports those results in output files reported by duple scan.
+
+An Example:
+
+The command below will scan the currenty directory and calculate a hash for each file to determine if there are duplicates:
+
+    duple scan -d . 'sha256'
+
+|Argument|Description|
+|--------|-----------|
+|-d|specifies the duplicate resolution behavior, in this case, duple will keep the duplicate with the lowest filesystem depth.|
+|.|specifies the current directory, to be scanned|
+|'sha256'|specifies the hash function to use when duple calculates hashes to determine if files are duplicates|
+
+# Help
+## duple scan
+
+    duple scan --help
+    Usage: duple scan [OPTIONS] PATH HASH
+    
+      Scan recursively computes a hash of each file and puts the hash into a
+      dictionary.  The keys are the hashes of the files, and the values are the
+      file paths and metadata.  If an entry has more than 1 file associated, they
+      are duplicates.  The original is determined by the flags or options (ex:
+      -d).  The duplicates are added to a file called duple.delete.
+    
+    Options:
+      -d, --depth_lowest              keep the file with the lowest pathway depth
+      -D, --depth_highest             keep the file with the highest pathway depth
+      -s, --shortest_name             keep the file with the shortest name
+      -S, --longest_name              keep the file with the longest name
+      -c, --created_oldest            keep the file with the oldest creation date
+      -C, --created_newest            keep the file with the newest creation date
+      -m, --modified_oldest           keep the file with the oldest modification
+                                      date
+      -M, --modified_newest           keep the file with the newest modification
+                                      date
+      -ncpu, --number_of_cpus INTEGER
+                                      Maximum number of workers (cpu cores) to use
+                                      for the scan
+      -ch, --chunksize INTEGER        chunksize to give to workers, minimum of 2
+      --help                          Show this message and exit.
+
+## duple rm
+    
+    duple_test duple make-test-files --help
+    Usage: duple make-test-files [OPTIONS]
+
+    make test files to test 'duple scan' and 'duple rm'
+
+    Options:
+    -tp, --test_path PATH         path where test directories and files will be
+                                    created
+    -nd, --numdirs INTEGER        number of directories to make for the test
+    -nf, --numfiles INTEGER       number of files to make in each directory,
+                                    spread through the directories
+    -fs, --max_file_size INTEGER  file size to create in bytes
+    --help                        Show this message and exit.
+
+## duple make-test-files
+
+    duple make-test-files --help
+    Usage: duple make-test-files [OPTIONS]
+
+    make test files to test 'duple scan' and 'duple rm'
+
+    Options:
+    -tp, --test_path PATH         path where test directories and files will be
+                                    created
+    -nd, --numdirs INTEGER        number of directories to make for the test
+    -nf, --numfiles INTEGER       number of files to make in each directory,
+                                    spread through the directories
+    -fs, --max_file_size INTEGER  file size to create in bytes
+    --help                        Show this message and exit.
+
+## duple hash-stats
+
+    duple hash-stats --help
+    Usage: duple hash-stats [OPTIONS] PATH
+
+    hash the specified file with each available hash and return stats
+
+    Options:
+    --help  Show this message and exit.
+
+## duple version
+
+    duple version --help
+    Usage: duple version [OPTIONS]
+
+    display the current version of duple
+
+    Options:
+    --help  Show this message and exit.
+
+## Learning How It Works
+duple will create folders containers files of random data (binary - not readalbe).  Use the following:
+
+    duple_test duple make-test-files
+    duple_test tree
+    .
+    ├── folder_0
+    │   ├── file_0.txt
+    │   ├── file_1.txt
+    │   └── file_2.txt
+    ├── folder_1
+    │   ├── file_0.txt
+    │   ├── file_1.txt
+    │   └── file_2.txt
+    └── folder_2
+        ├── file_0.txt
+        ├── file_1.txt
+        └── file_2.txt
+
+    4 directories, 9 files
+    4 directories, 9 files
+
+To find duplicates in the test files:
+
+    duple scan -d . 'sha256'
+    
+results in the following output:
+
+    total files..............................................................................10
+    ignored files.............................................................................2
+    duplicates................................................................................6
+    duplicate groups..........................................................................2
+    total size - duplicates..............................................................5.6 kB
+    total size - all files..............................................................14.1 kB
+    hash_type............................................................................sha256
+    file system traveral time (seconds)..................................................0.0082
+    hashing time (seconds)...............................................................0.1383
+    annotating duplicates (seconds).........................................................0.0
+    calculating statistics time (seconds)...................................................0.0
+    total time (seconds).................................................................0.1466
+    version...............................................................................1.1.1
+    wrote summary results........................../Users/shout/Desktop/duple_test/duple.delete
+    wrote raw results................................/Users/shout/Desktop/duple_test/duple.json
+    
+    Open the `output summary results` file listed above with a text editor for review
+    Once review and changes are complete, run `duple rm`
+
+And the duple.delete output, your results will vary somewhat, the data is in the files is random:
+    
+    Duple Report Generated on 2024-09-24T13:36:11.178377-04:00, commanded by user: shout
+    -------------------------------------------------------------------------------------------
+    Summary Statistics:
+    total files..............................................................................10
+    ignored files.............................................................................2
+    duplicates................................................................................6
+    duplicate groups..........................................................................2
+    total size - duplicates..............................................................5.6 kB
+    total size - all files..............................................................14.1 kB
+    hash_type............................................................................sha256
+    file system traveral time (seconds)..................................................0.0082
+    hashing time (seconds)...............................................................0.1383
+    annotating duplicates (seconds).........................................................0.0
+    calculating statistics time (seconds)...................................................0.0
+    total time (seconds).................................................................0.1466
+    version...............................................................................1.1.1
+    wrote summary results........................../Users/shout/Desktop/duple_test/duple.delete
+    wrote raw results................................/Users/shout/Desktop/duple_test/duple.json
+    
+    -------------------------------------------------------------------------------------------
+    Outputs:
+    /Users/shout/Desktop/duple_test/duple.delete
+    /Users/shout/Desktop/duple_test/duple.json
+    
+    -------------------------------------------------------------------------------------------
+    Instructions to User:
+    The sections below describe what action duple will take when 'duple rm' is commanded. The first column is the flag that tells duple what to do:
+        orig   : means duple will take no action for this file, listed only as a reference to the user
+        delete : means duple will send this file to the trash can or recycling bin, if able
+    
+    -------------------------------------------------------------------------------------------
+    Duplicate Results:
+    original   |  499 Bytes | /Users/shout/Desktop/duple_test/folder_2/file_1.txt
+    duplicate  |  499 Bytes | /Users/shout/Desktop/duple_test/folder_1/file_2.txt
+    
+    original   |     1.0 kB | /Users/shout/Desktop/duple_test/folder_2/file_2.txt
+    duplicate  |     1.0 kB | /Users/shout/Desktop/duple_test/folder_1/file_1.txt
+    duplicate  |     1.0 kB | /Users/shout/Desktop/duple_test/folder_1/file_0.txt
+    duplicate  |     1.0 kB | /Users/shout/Desktop/duple_test/folder_0/file_1.txt
+    duplicate  |     1.0 kB | /Users/shout/Desktop/duple_test/folder_0/file_0.txt
+    duplicate  |     1.0 kB | /Users/shout/Desktop/duple_test/folder_0/file_2.txt
+    
+    
+    -------------------------------------------------------------------------------------------
+    All Files in Scan:
+    ignored    |     6.1 kB | /Users/shout/Desktop/duple_test/.DS_Store
+    original   |  499 Bytes | /Users/shout/Desktop/duple_test/folder_2/file_1.txt
+    ignored    |  864 Bytes | /Users/shout/Desktop/duple_test/folder_2/file_0.txt
+    original   |     1.0 kB | /Users/shout/Desktop/duple_test/folder_2/file_2.txt
+    duplicate  |     1.0 kB | /Users/shout/Desktop/duple_test/folder_1/file_1.txt
+    duplicate  |     1.0 kB | /Users/shout/Desktop/duple_test/folder_1/file_0.txt
+    duplicate  |  499 Bytes | /Users/shout/Desktop/duple_test/folder_1/file_2.txt
+    duplicate  |     1.0 kB | /Users/shout/Desktop/duple_test/folder_0/file_1.txt
+    duplicate  |     1.0 kB | /Users/shout/Desktop/duple_test/folder_0/file_0.txt
+    duplicate  |     1.0 kB | /Users/shout/Desktop/duple_test/folder_0/file_2.txt
+
+
+# Version History
+## 1.1.0 Improved Documentation
+-Improved README for better installation and setup instructions
+## 1.0.0 Refactored and Improved Output and Reporting
+-refactored code to be easier to follow and more modular<br>
+-improved reporting of results to duple.delete and duple.json<br>
+-improved duple.json output, adding additional data<br>
+-added dry run and verbose flags to duple rm
+-added hash-stats to calculate performance times for each available hash<br>
+-added make-test-files to make test files for the user to learn how duple works on test data<br>
+## 0.5.0 Improve Data Outputs
+-added dictionary to duple.json for file stats, now each entry has a key to describe the number<br>
+-fixed progress bar for pre-processing directories<br>
+-added output file duple.all_files.json with file statistics on all files within the specified path for 'duple scan'<br>
+-Improved summary statistics output for 'duple scan'
+## 0.4.0 Performance Improvements
+-adding multiprocessing, taking advantage of multiple cores<br>
+-eliminated files with unique sizes from analysis - files with unique size are not duplicates of another file
+## 0.3.0 Added Capability
+-added mv function that will move 'duple.delete' paths instead of deleting them
+## 0.2.0 Added license
+-Added license
+## 0.1.1 Misc. Fixes
+-Fixed typos in help strings<br>
+-Added support for sending duplicates to trash ('duple rm')
+## 0.1.0 Initial Release
+This is the initial release of duple
