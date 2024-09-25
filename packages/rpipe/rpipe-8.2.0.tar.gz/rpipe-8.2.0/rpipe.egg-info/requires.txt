@@ -1,0 +1,7 @@
+pycryptodomex
+cryptography
+requests
+tqdm
+human_readable
+waitress
+flask
