@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: cryptskeletonkey
+Version: 7.7.7
+Summary: Generate mnemonic phrases and derive Ethereum, Bech32, P2PKH, and P2SH addresses
+Home-page: https://github.com/deadmanriffs/cryptskeletonkey
+Author: DeadManRiffs
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: mnemonic
+Requires-Dist: bip32utils
+Requires-Dist: web3
+
+from cryptskeletonkey import generate_mnemonic, derive_eth_address, derive_btc_address
+
+mnemonic = generate_mnemonic()
+eth_address = derive_eth_address(mnemonic)
+btc_address_p2pkh = derive_btc_address(mnemonic, 'p2pkh')
+btc_address_p2sh = derive_btc_address(mnemonic, 'p2sh')
+btc_address_bech32 = derive_btc_address(mnemonic, 'bech32')
+
+print(f"Mnemonic: {mnemonic}")
+print(f"Ethereum Address: {eth_address}")
+print(f"Bitcoin P2PKH Address: {btc_address_p2pkh}")
+print(f"Bitcoin P2SH Address: {btc_address_p2sh}")
+print(f"Bitcoin Bech32 Address: {btc_address_bech32}")
