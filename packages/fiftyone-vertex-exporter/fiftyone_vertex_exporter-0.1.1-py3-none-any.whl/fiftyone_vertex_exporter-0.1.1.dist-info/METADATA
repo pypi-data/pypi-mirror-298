@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: fiftyone-vertex-exporter
+Version: 0.1.1
+Summary: 
+Home-page: https://codeberg.org/anriha/fiftyone_vertex_exporter
+License: MIT
+Author: Antonín Říha
+Author-email: antonin.riha@protonmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fiftyone (>=0.25.2,<0.26.0)
+Requires-Dist: jsonlines (>=4.0.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Fiftyone Vertex AI exporter
+
+This package provides exporter for fiftyone compatible with format used by Vertex AI.
+Currently it only supports detections, and does not move the actual images to gcs bucket.
+
+## Usage
+```python
+dataset = foz.load_zoo_dataset(
+    "coco-2017", split="test", label_types=["detections"]
+)
+
+exporter = VertexAiLabeledImageDatasetExporterGCS(
+    "export",
+    gcs_bucket="gs://bucket/test",
+)
+
+dataset.export(dataset_exporter=exporter)
+```
+
