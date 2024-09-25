@@ -1,0 +1,14 @@
+recomenda/__init__.py,sha256=R8SiJs8FtvSinsqG3qk0mVfIfFc_0Nfk_DpP4L4Mudo,190
+recomenda/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recomenda/core/config.py,sha256=gHZbxsdlxjACkR38FjSMxq4QdiCOLOxe3ULXMludilM,1836
+recomenda/core/logger.py,sha256=1k4FSaMXTlKpBSv5a0wHwYfKQ_hdFPPcYNeyC8f3ODE,2616
+recomenda/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recomenda/services/async_recommender.py,sha256=64fd8PdalkRc2LRWNNA4LpsqSnoPrWYfGU5AtsK4EmE,13889
+recomenda/services/base_recommender.py,sha256=896-9ISpfKYbHkf1JX7Bymd3iQrm4vj3FrEznfTiKGU,6915
+recomenda/services/embedder.py,sha256=MakZ45nweLMufyiMtwyx5fyflmtuIJ2efYqWHxgPabI,7037
+recomenda/services/recommender.py,sha256=Aada_UOFTGAP8qmPJYCuODvz0Wd36rRqdJBD30ueVD4,13093
+recomenda/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recomenda/utils/hashing.py,sha256=DAinmEIZ7IPMdttQn95yuFJqhcVTkWWFhqX8N1-GkDo,1374
+recomenda-0.1.5.dist-info/METADATA,sha256=a4A4BePvuyCIGTx70BMyBV1CoUh3ta7CDegWWDvrJyg,7920
+recomenda-0.1.5.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+recomenda-0.1.5.dist-info/RECORD,,
