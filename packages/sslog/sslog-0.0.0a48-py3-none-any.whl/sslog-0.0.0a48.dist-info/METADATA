@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sslog
+Version: 0.0.0a48
+Summary: opinionated logger based on structlog
+Author-email: trim21 <trim21me@gmail.com>
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Typing :: Typed
+Requires-Dist: structlog==24.4.0
+Requires-Dist: typing-extensions
+Requires-Dist: rich ; extra == "dev"
+Requires-Dist: colorama ; extra == "dev"
+Requires-Dist: mypy ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: loguru ; extra == "dev"
+Project-URL: Homepage, https://github.com/trim21/sslog
+Provides-Extra: dev
+
+
