@@ -1,0 +1,12 @@
+setup.py
+esymod/__init__.py
+esymod/blocks.py
+esymod/example.py
+esymod/gans.py
+esymod/kans.py
+esymod/manipulators.py
+esymod/pggan.py
+esymod.egg-info/PKG-INFO
+esymod.egg-info/SOURCES.txt
+esymod.egg-info/dependency_links.txt
+esymod.egg-info/top_level.txt
