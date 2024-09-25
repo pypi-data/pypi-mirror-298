@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: sovai-cluster
+Version: 0.1.0
+Summary: Clustering financial data using advanced plotting libraries
+Author: Derek Snow
+Author-email: d.snow@outlook.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: datamapplot (>=0.1.0,<0.2.0)
+Requires-Dist: matplotlib (>=3.4.0,<4.0.0)
+Requires-Dist: numpy (>=1.21.0,<2.0.0)
+Requires-Dist: openTSNE (>=0.6.0,<0.7.0)
+Requires-Dist: pandas (>=1.3.0,<2.0.0)
+Requires-Dist: scikit-learn (>=1.1.0,<2.0.0)
+Requires-Dist: scipy (>=1.7.0,<2.0.0)
+Requires-Dist: umap-learn (>=0.5.0,<0.6.0)
+Description-Content-Type: text/markdown
+
+# sovai-cluster
