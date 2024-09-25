@@ -1,0 +1,15 @@
+negromate/karaoke/__init__.py,sha256=F9Kg_pw4oofoLOnvwpsfpaMB7KkTf89GTmtGywaxB9Q,16
+negromate/karaoke/karaoke.py,sha256=KDS_dXFe_ljNCggkJ7dZCrmZ1IE7Lh5rTMVa4SC3JWc,3910
+negromate/karaoke/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+negromate/karaoke/commands/karaoke.py,sha256=fdZgWjjh4W74K7XCI2yMEl2NiwOr8f03tOcb06R8g8Q,485
+negromate/karaoke/kv_templates/karaoke.kv,sha256=MbzcptvdlhSffZPptk273LRI_Qz0TJDFZS4ZckY4k9s,2367
+negromate/karaoke/resources/fonts/CyrBit.ttf,sha256=uq3kROwTXz0Hfj__GEDlFVOLyApn3Bxz1g_KZ64l4XY,17196
+negromate/karaoke/resources/images/fondo_monkey_island_barco.png,sha256=o0Q2ef_yVDX0HIQRHMtsCdQ8_ROK4anJsfknaDoKQ7U,102535
+negromate/karaoke/resources/images/fondo_monkey_island_pareja.png,sha256=s8KH5mSOojdIJUsuuiGgxuP95S9lpMyAZw70xR0LXLE,33656
+negromate/karaoke/resources/images/logo.png,sha256=iK1cJXHdJ-0VJkYrlhvhiFrdPzd6RYNn8nwNfJdAlUc,9850
+negromate.karaoke-1.2.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+negromate.karaoke-1.2.dist-info/METADATA,sha256=YmASgyCXCexEc-2MV9l79U5HDw2SNh3F9TPFSp0wQY4,1271
+negromate.karaoke-1.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+negromate.karaoke-1.2.dist-info/entry_points.txt,sha256=z-huFQ6DaxoJaTCQzgOyoK1P5-Bb4UYPwQfgmKyOvwc,66
+negromate.karaoke-1.2.dist-info/top_level.txt,sha256=lHeRRGaQnJJUrT_q-Tp_q411sTidf2oHs2CrzMBu7dc,10
+negromate.karaoke-1.2.dist-info/RECORD,,

@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: negromate.karaoke
+Version: 1.2
+Summary: Player for NegroMate karaoke parties
+Home-page: http://negromate.rocks
+Author: Ales (Shagi) Zabala Alava
+Author-email: shagi@gisa-elkartea.org
+License: GPLv3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: X11 Applications
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Multimedia :: Graphics :: Presentation
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: negromate.songs>=1.5
+
+Negro Mate Karaoke
+==================
+
+Simple karaoke video browser.
+
+This module provides one extra command to negromate:
+
+    negromate karaoke: GUI for negromate karaoke
+
+
+Uses Kivy, a fairly large python library. It could be more easy to install this
+package if Kivy is already installed in the system.
+
+VLC is also used to play the songs.
+
+Needs the following packages installed:
+
+ * python3-kivy (at least version 2.1.0)
+ * vlc
+
+
+Usage
+-----
+
+Keyboard shortcuts:
+
+- A: Previous song
+- S: Play
+- D: Next song
+
+The songs are played with vlc, so to exit a playing song: `Ctrl-C`.
