@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+finalsa/traceability/__init__.py
+finalsa/traceability/context.py
+finalsa/traceability/functions.py
+finalsa/traceability/py.typed
+finalsa_traceability.egg-info/PKG-INFO
+finalsa_traceability.egg-info/SOURCES.txt
+finalsa_traceability.egg-info/dependency_links.txt
+finalsa_traceability.egg-info/top_level.txt
+finalsa_traceability.egg-info/zip-safe
+tests/test_set.py
