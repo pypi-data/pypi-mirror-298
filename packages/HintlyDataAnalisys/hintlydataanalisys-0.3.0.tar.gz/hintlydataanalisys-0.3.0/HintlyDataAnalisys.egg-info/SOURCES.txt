@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+HintlyDataAnalisys/DataAnalisys.py
+HintlyDataAnalisys/__init__.py
+HintlyDataAnalisys.egg-info/PKG-INFO
+HintlyDataAnalisys.egg-info/SOURCES.txt
+HintlyDataAnalisys.egg-info/dependency_links.txt
+HintlyDataAnalisys.egg-info/top_level.txt
