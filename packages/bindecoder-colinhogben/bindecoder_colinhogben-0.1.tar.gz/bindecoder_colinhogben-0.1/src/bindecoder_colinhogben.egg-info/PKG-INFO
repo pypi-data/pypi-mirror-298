@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bindecoder_colinhogben
+Version: 0.1
+Summary: Framework for decoding binary files
+Author-email: Colin Hogben <pypi@colinhogben.com>
+Project-URL: Homepage, https://github.com/colinhogben/bindecoder
+Project-URL: Issues, https://github.com/colinhogben/bindecoder/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Bindecoder
+
+This is a framework for creating decoders (parsers) for
+binary file formats.
+
+Examples (of varying levels of completeness) are included
+for several audio-visual formats (JPEG, AVI, MOV, QT, MKV, FLV).

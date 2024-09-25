@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/bindecoder/__init__.py
+src/bindecoder/avi.py
+src/bindecoder/decoder.py
+src/bindecoder/flv.py
+src/bindecoder/hexdumper.py
+src/bindecoder/jpg.py
+src/bindecoder/mkv.py
+src/bindecoder/qt.py
+src/bindecoder/viewer.py
+src/bindecoder_colinhogben.egg-info/PKG-INFO
+src/bindecoder_colinhogben.egg-info/SOURCES.txt
+src/bindecoder_colinhogben.egg-info/dependency_links.txt
+src/bindecoder_colinhogben.egg-info/top_level.txt
