@@ -1,0 +1,12 @@
+framalytics/FRAM_Visualizer.py,sha256=LqjhsxhjZHo2at-_cb5BNp1gjyRwLmtLAbzHPClvsbg,16495
+framalytics/__init__.py,sha256=On1_6Jj_RQVdKG_zFftndIn5-1aYeG3Fz_o7Cyjrvdk,46
+framalytics/fram.py,sha256=reqiIN_D3tbD7tpHiXanFeYkFlQnnwHaAzq1N7OIygQ,22122
+framalytics/xfmv_parser.py,sha256=MuUHgLzUDyr7F6cVtgh-1Ol3uCj-SYDA9T77AUjDh8s,3110
+framalytics/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+framalytics/tests/test_fram.py,sha256=eQMGpqPP8eB9XvFm7eNianZji7QEAIUXsW4m0pOBQ34,4127
+framalytics/tests/test_xfmv_parser.py,sha256=a4u4R4S2_XarjV075ZDDQyHUPVnDGuSHyZ2771fuJV0,5605
+framalytics/tests/resources/simple_fram.xfmv,sha256=8RwNaMAtfPOk2i_xBiSbWZqG7nQBGeXP2z4JSv7NyQQ,5856
+framalytics-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+framalytics-1.0.0.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+framalytics-1.0.0.dist-info/METADATA,sha256=wzPukOS-INwcUCDLimFL6nfuvVvD_yc980K8aDprPLU,1316
+framalytics-1.0.0.dist-info/RECORD,,
