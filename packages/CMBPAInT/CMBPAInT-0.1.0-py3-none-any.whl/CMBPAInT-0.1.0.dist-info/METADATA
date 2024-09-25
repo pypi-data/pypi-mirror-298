@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: CMBPAInT
+Version: 0.1.0
+Summary: A Python package to inpaint Cosmic Microwave Background (CMB) intensity and polarization maps.
+Home-page: https://https://github.com/ChristianGim/CMB-PAInT
+Author: Gimeno-Amo, Christian
+Author-email: gimenoc@ifca.unican.es
+License: MIT License
+Keywords: inpainting,anisotropy,healpy,polarization,cmb,healpix,cosmology,maps,sampling
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: healpy
+Requires-Dist: tqdm
+Requires-Dist: psutil
+Requires-Dist: dask
+
