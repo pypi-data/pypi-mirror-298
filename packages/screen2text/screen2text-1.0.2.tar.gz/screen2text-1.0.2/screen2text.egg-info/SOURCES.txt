@@ -1,0 +1,8 @@
+setup.py
+screen2text/__init__.py
+screen2text/app.py
+screen2text.egg-info/PKG-INFO
+screen2text.egg-info/SOURCES.txt
+screen2text.egg-info/dependency_links.txt
+screen2text.egg-info/requires.txt
+screen2text.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+SpeechRecognition
+pygame
+gTTS
+pyautoguirequests
+pyaudio
+distutils-pytest
+pycaw
+comtypes
