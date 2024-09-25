@@ -1,0 +1,9 @@
+shtomo-0.1.0.dist-info/METADATA,sha256=eIHOYWI-s66mn7JWHmf0zdZh-PUag3WVqK2Tio_kudM,641
+shtomo-0.1.0.dist-info/WHEEL,sha256=Vza3XR51HW1KmFP0iIMUVYIvz0uQuKJpIXKYOBGQyFQ,90
+shtomo-0.1.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+shtomo/__init__.py,sha256=QiTwxX_CqB8X6yzWKyznhDKioBTPAy0jb07RqUlz5es,190
+shtomo/client.py,sha256=qMgaZ7zGiaZt9n2Ny_CHc35BscLx86n2qxB27rzH6CY,2368
+shtomo/parser_socks5_url.py,sha256=8vbc094CGDYCfpBCvwcD4zQn-azFhAlEvIOYivKQD24,1519
+shtomo/shell_io.py,sha256=FnU8ZfkMU86otl-X5uMMKryd-2JwbtGCnZlwq3UEh-k,8272
+shtomo/shtomo.py,sha256=xbvjtIW66-n6vruDaxMCxVB0740-TGwzbBFotOARbw8,2197
+shtomo-0.1.0.dist-info/RECORD,,
