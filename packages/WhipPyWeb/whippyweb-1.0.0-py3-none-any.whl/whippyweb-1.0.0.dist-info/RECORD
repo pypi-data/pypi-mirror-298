@@ -1,0 +1,14 @@
+whipweb/__about__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+whipweb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whipweb/__main__.py,sha256=YxA_gSVUU8pPZDljOzRWWLJtpu5KUgfb-R4NCd6IRdU,88
+whipweb/app.py,sha256=at8Qp5l_n_y2LbHby6zPkMPCB6C9MAFOaCeFCR4Xu8g,3247
+whipweb/cli.py,sha256=b321rgCFHiAe3HEPaswhWPwdYOB3hgxMTaJ3W0kmcOM,428
+whipweb/index.html,sha256=xGrdL6aO4Tr_IhjRvqQKVhoNr6xegDOuF9p8rV_RWAg,4179
+whipweb/settings.py,sha256=0Wgk8E_Mf8RToUIfwZ8-0SZzk0zTCvzFwQdxCm-O3h8,674
+whipweb/static/obs_output_settings.png,sha256=T6aR04tppmdNTf6pZZUS7KFaMjXXdy6DjTzVvMuFj9g,175790
+whipweb/static/obs_stream_settings.png,sha256=HJxuylkYnQgSgruZA_4d-xRVSWoMBdcrGgIj_T2ABj0,144541
+whippyweb-1.0.0.dist-info/METADATA,sha256=5LgquBGikLY_r-G-S7F8NePbgiyVKc0ORB-cu-hHQgw,5255
+whippyweb-1.0.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+whippyweb-1.0.0.dist-info/entry_points.txt,sha256=nzgRoVHUUE2y3o2lBTMB3TBRfyDGBMvENXt4OsLdrf8,46
+whippyweb-1.0.0.dist-info/licenses/LICENSE,sha256=ZyMSv3_w-BrMEvIz5e8XAMwsJVewRCuXkPww1PniV4g,1070
+whippyweb-1.0.0.dist-info/RECORD,,
