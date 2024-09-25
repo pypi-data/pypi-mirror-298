@@ -1,0 +1,7 @@
+django
+Markdown
+djp>=0.1
+
+[test]
+pytest
+pytest-django

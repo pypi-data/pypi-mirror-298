@@ -1,0 +1,2 @@
+[djp]
+django_plugin_blog = django_plugin_blog
