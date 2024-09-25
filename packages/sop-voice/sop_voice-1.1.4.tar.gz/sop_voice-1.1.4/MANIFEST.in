@@ -1,0 +1,7 @@
+recursive-include sop_voice/templates/ *
+recursive-include sop_voice/api/ *
+recursive-include sop_voice/forms/ *
+recursive-include sop_voice/migrations/ *
+recursive-include sop_voice/tables/ *
+recursive-include sop_voice/views/ *
+
