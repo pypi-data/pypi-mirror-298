@@ -1,0 +1,10 @@
+lrcup/__init__.py,sha256=WyYBIi3P-oSgRGkvrF0OG7F8tu758yH9sFsz_mOWEUQ,170
+lrcup/__main__.py,sha256=UwqqCGa-YQUlk3B_TgEkL2UxeKqUUxeHoj4c8uNPwac,7398
+lrcup/challenge.py,sha256=DkPfFNZ66U25y2EfWXPgYTbb_5PyXo7KbEavNwPvxmU,1182
+lrcup/controller.py,sha256=rhNkKcZc_iTbBqbLQgGgNUcTcn1-Qo8s6OBgwovvH0Q,3349
+lrcup/audio/__init__.py,sha256=Q8bkKHzayIUOnSrpoexiEivqR0EsCcYP9nRmMfkXUzM,3787
+lrcup-0.5.4.dist-info/METADATA,sha256=It5ImTnY8C_nQywRr83NFGuEuMupsUXrvtl03yC8T_s,2052
+lrcup-0.5.4.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+lrcup-0.5.4.dist-info/entry_points.txt,sha256=4u5DfFJR9vt3cff5DUrwKj5hLyQ4qiGhSr8HUmjeHfk,47
+lrcup-0.5.4.dist-info/licenses/LICENSE.txt,sha256=PxYv51cYnUTDhFwDHu2Tbbao7j8r5ErOcLDSSTMVDbs,1064
+lrcup-0.5.4.dist-info/RECORD,,
