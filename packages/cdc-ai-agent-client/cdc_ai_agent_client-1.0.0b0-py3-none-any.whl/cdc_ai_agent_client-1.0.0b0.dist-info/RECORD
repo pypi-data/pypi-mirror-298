@@ -1,0 +1,10 @@
+cdc_ai_agent_client/__init__.py,sha256=savVKC_BpAkqxGjFzuvewm4RgqWHM6BWxmdtkFZ6xBk,131
+cdc_ai_agent_client/client.py,sha256=VLuV2K0Lwj35o_4I_bPz2pyuVil_AoLObV39z9bTE8g,2920
+cdc_ai_agent_client/integrations/__init__.py,sha256=fQhuPmCpNeT0LKewX6RjB_dq3TRIsnWbLjiFySReAoY,163
+cdc_ai_agent_client/integrations/cdc_ai_agent_api.py,sha256=nNH4u27U8xBNAfXd7kdqYDo7kEH_frTzN1h25m-4fvM,1754
+cdc_ai_agent_client/integrations/cdc_ai_agent_interface.py,sha256=s0du6magsa_wFEjnGBP9xCm7oKADNW609YrFA5FkhPE,1712
+cdc_ai_agent_client-1.0.0b0.dist-info/LICENSE,sha256=-BpCoUL-gjQtCH73XnmmuDrM7ByQD83raPS9HaHY5H8,1136
+cdc_ai_agent_client-1.0.0b0.dist-info/METADATA,sha256=AWpz9A2OddRpxIrGjVaV1fdqDBkdzGORvRVHOOtByxQ,2863
+cdc_ai_agent_client-1.0.0b0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cdc_ai_agent_client-1.0.0b0.dist-info/entry_points.txt,sha256=eq__jYApbmAq4jIdHbBY2t1072Hfe5Jvt6bssVQow3s,68
+cdc_ai_agent_client-1.0.0b0.dist-info/RECORD,,

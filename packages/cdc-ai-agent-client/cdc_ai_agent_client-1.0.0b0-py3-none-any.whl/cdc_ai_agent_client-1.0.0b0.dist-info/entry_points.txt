@@ -1,0 +1,3 @@
+[console_scripts]
+cdc-ai-agent-client=cdc_ai_agent_client.cli:main
+
