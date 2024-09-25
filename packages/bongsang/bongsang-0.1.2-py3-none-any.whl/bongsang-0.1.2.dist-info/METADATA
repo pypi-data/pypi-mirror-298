@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: bongsang
+Version: 0.1.2
+Summary: A collection of statistics and machine learning libraries under the bongsang package
+Home-page: https://github.com/bongsang/bongsang
+Author: Bongsang Kim
+Author-email: happykbs@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.18.0
+Requires-Dist: pandas >=1.0.0
+Requires-Dist: matplotlib >=3.0.0
+Requires-Dist: scikit-learn >=0.22.0
+Requires-Dist: scipy >=1.4.0
+
+# bongsang
+
+A collection of statistics and machine learning libraries developed by Bongsang Kim, including a linear regression class similar to R's `lm` function.
+
+## Installation
+
+````bash
+pip install bongsang
+
+
+## Accessing Sample Datasets
+
+The `bongsang.datasets` subpackage provides sample datasets for easy experimentation.
+
+### Example:
+
+```python
+from bongsang.datasets import load_house
+
+# Load the house dataset
+df = load_house()
+
+# Now you can use df with the LM class
+from bongsang import lm
+
+X = df[['size']]
+y = df['price']
+
+model = lm.LM(X, y)
+model.fit()
+model.summary()
+model.plot()
+````
