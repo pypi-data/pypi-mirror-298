@@ -1,0 +1,4 @@
+[console_scripts]
+move-overwrite = quinn_image_processing.moveImages:main
+overlay-images = quinn_image_processing.overlayScript:main
+square-images = quinn_image_processing.script:main
