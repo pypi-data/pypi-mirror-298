@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: DCC-EX_py
+Version: 0.0.1
+Summary: TODO
+Author-email: Kaiden Richardson <kaidencr@gmail.com>
+License: MIT License
+Keywords: DCC-EX_py
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: all
+Requires-Dist: DCC-EX_py[extra]; extra == "all"
+Provides-Extra: extra
+
+# DCC-EX_py
+
+
+[![image](https://img.shields.io/pypi/v/DCC-EX_py.svg)](https://pypi.python.org/pypi/DCC-EX_py)
+[![image](https://img.shields.io/conda/vn/conda-forge/DCC-EX_py.svg)](https://anaconda.org/conda-forge/DCC-EX_py)
+
+
+**TODO**
+
+
+-   Free software: MIT License
+-   Documentation: https://Zenith08.github.io/DCC-EX_py
+    
+
+## Features
+
+-   TODO
