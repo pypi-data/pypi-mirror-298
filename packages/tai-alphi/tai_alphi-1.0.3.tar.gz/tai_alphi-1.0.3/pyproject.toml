@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "tai-alphi"
+version = "1.0.3"
+description = "Logs y monitorización de recursos"
+license = "MIT"
+authors = ["MateoSaezMata <msaez@triplealpha.in>", "sfernandez <sfernandez@triplealpha.in>"]
+readme = "README.md"
+homepage = "https://www.triplealpha.in/es/"
+repository = "https://github.com/triplealpha-innovation/tai-alphi" 
+keywords = ["logs", "cloud"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tomli = "^2.0.1"
+pydantic = "^2.8.2"
+
+[tool.poetry.scripts]
+# init = "tai_alphi.a:mateo"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[[tool.poetry.source]]
+name = "pypi-test"
+url = "https://test.pypi.org/legacy/"
+priority = "primary"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
