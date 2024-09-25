@@ -1,0 +1,14 @@
+eval_mm/__init__.py,sha256=h0YpPFs_Uy-xo5Gduu9MjuP195emrAH4tWkMMuPIIgE,108
+eval_mm/_version.py,sha256=6DZ--auaWaTqLFJyj9KlWRHvzcpdbSSzRufLkdV5694,123
+eval_mm/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eval_mm/api/registry.py,sha256=dDc8X1kD1j7EEVvaqfZZ96S4BP3oAMDARu2iOgJZ1zQ,818
+eval_mm/api/task.py,sha256=Kkj5xd0K1aPo3MI8KbrGdqvyYfFsx4TTLASq3D_n27k,2664
+eval_mm/tasks/__init__.py,sha256=wAXX-sN2L-RCbuXu0Fr8_4RbQk25pg1RmVkAAHi0-u4,91
+eval_mm/tasks/ja_vg_vqa_500.py,sha256=yDiXWS7nJ8NbKvpQCd4dio4qMCeyBZSwCs3q9aqcAZA,5427
+eval_mm/tasks/japanese_heron_bench.py,sha256=F9DawT8o5DxDViZxJ_5dN-DiEvlaVOAporngl0e7sx0,17519
+eval_mm/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eval_mm/utils/azure_client.py,sha256=tz1sA6tgPS5TW2NUuEY13qBTQtYdER4BpjewUIbdt9Y,5477
+eval_mm/utils/metrics.py,sha256=L88c8coG0xikPj8uzQlqaaqNoGlLKNuDxtkT3iHsFMc,3658
+eval_mm-0.0.2.dist-info/METADATA,sha256=P4NAWUHRq_FJeU7HnWmLt9VS3s6sCl-ng066_luMuOw,4165
+eval_mm-0.0.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+eval_mm-0.0.2.dist-info/RECORD,,
