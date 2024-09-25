@@ -1,0 +1,2 @@
+[console_scripts]
+feroxbuster-cli = feroxbuster_cli.cli:main
