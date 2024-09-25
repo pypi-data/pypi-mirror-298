@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: image-processing-alisson
+Version: 0.0.1
+Summary: Image Processing Package using Skimage
+Home-page: https://github.com/alissonwr/Desafios_Ntt_Data_Dio/tree/1bfc7e799f6ae9519bec3bf8c668cda0931e30ec/image-processing-package
+Author: Alisson
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scikit-image>=0.16.1
+
+# package_name
+
+Description. 
+The package package_name is used to:
+	Processing:
+		- Histogram matching
+		- Structural similarity
+		- Resize image
+	Utils:
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histogram
+
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install package_name
+```
+
+## Author
+Alisson
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
