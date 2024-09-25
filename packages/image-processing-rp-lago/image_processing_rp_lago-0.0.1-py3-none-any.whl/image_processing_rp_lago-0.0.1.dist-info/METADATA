@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: image-processing-rp-lago
+Version: 0.0.1
+Summary: A package for image processing
+Home-page: https://github.com/RP-Lago/IMAGE_PROCESSING_PACKAGE.git
+Author: Robson P Lago
+Author-email: robson.pereira.lago@gmail.com
+Requires-Python: >=3.12.6
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scikit-image >=0.16.1
+
+# Image_Precessing
+
+Description.
+The Package image_processing is used to:
+    Processing:
+        - Histogram matching
+        - Structural similarity
+        - Resize image
+    Utils:
+        - Plot image
+        - Plot result
+        - Plot histogram
+        - Read image
+        - Save image
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install image_processing.
+
+```bash
+pip install image_processing
+```
+
+## Author
+    - Name: Robsos P Lago,
+    - Email:  
+
+## Usage
+    
+    ```python
+    from image_processing.processing.transformation import resize_image
+    files_name.my_function()
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+```
