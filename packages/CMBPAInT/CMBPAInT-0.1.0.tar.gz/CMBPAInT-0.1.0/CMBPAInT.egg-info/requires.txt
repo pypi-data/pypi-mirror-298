@@ -1,0 +1,6 @@
+numpy
+scipy
+healpy
+tqdm
+psutil
+dask
