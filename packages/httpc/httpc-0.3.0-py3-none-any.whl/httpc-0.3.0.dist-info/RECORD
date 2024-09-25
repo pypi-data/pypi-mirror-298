@@ -1,0 +1,10 @@
+httpc/__init__.py,sha256=2ZXJ1vvYpWiwRq--oKy6IWakg0CH_YdcJ5D29yFSQww,547
+httpc/_api.py,sha256=LmweE2jd81EZ7aYYF802ZhkhQMR6oxKtWJrgOJu79Dc,11061
+httpc/_base.py,sha256=pG6dPGGQ2W11aSd-cKKgEMMgrY4a2G5wwPA-z3F_K-0,15417
+httpc/_broadcaster.py,sha256=cTb6Sa6DZfM3zjBt_SV20tyNVu44BDK4wGBeCQszNPo,9319
+httpc/_client.py,sha256=oJvVphB3Cq04gbFbz0tgJCXdhJn3itYcAZH0q3x7pAY,34171
+httpc/_css.py,sha256=dom58K_wqXi9ALqKN7F2nLMqmt3bQw3lwW6MOJWTs2M,2278
+httpc/_options.py,sha256=n3aU85YTD-Uum7J5n7ZCtSWhiml4yCp0nZ6EXr3860Q,4423
+httpc-0.3.0.dist-info/METADATA,sha256=Uvb0x1iqF-fX2fWDFYfJIqIGflEMe-kPjGUKGZEcgcY,2353
+httpc-0.3.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+httpc-0.3.0.dist-info/RECORD,,
