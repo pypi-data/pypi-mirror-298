@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+bode_utils/__init__.py
+bode_utils.egg-info/PKG-INFO
+bode_utils.egg-info/SOURCES.txt
+bode_utils.egg-info/dependency_links.txt
+bode_utils.egg-info/top_level.txt
