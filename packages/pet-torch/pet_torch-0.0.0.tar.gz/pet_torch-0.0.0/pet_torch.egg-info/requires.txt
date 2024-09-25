@@ -1,0 +1,9 @@
+numpy
+scipy
+ase
+pathos
+jupyter
+scikit-learn
+torch
+torch_geometric
+matscipy
