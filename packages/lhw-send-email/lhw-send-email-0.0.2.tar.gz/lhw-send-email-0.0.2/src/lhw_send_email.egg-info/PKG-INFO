@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: lhw-send-email
+Version: 0.0.2
+Home-page: https://github.com/Th5200/SendEmail
+Author: 骆鸿威
+Author-email: 1959415641@qq.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7, <=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# lhw-send-email
+使用 pip install lhw-send-email 进行下载该库<br>
+本库是作者第一个自主发布的三方库<br>
+
+# 开发目的
+为了完善自主开发的网站的验证码机制而做出的尝试
+
+# 基本用法
