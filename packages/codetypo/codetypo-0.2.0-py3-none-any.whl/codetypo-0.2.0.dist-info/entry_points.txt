@@ -1,0 +1,2 @@
+[console_scripts]
+codetypo = codetypo:_script_main
