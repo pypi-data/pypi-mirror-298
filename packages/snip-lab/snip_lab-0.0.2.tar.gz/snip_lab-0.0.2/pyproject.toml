@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "snip-lab"
+version = "0.0.2"
+authors = [
+    { name = "Sebastian B. Mohr", email = "sebastianbernd.mohr@uni-goettingen.de" },
+]
+description = "Placeholder for the snip package"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["typer>=0.12.5", "keyring>=25.3.0"]
+
+
+[project.scripts]
+snip-lab = "snip.__main__:app"
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov>=5.0.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/snip"]
+
+[tool.ruff]
+include = ["pyproject.toml", "src/**/*.py", "tests/**/*.py"]
+
+[tool.ruff.lint.per-file-ignores]
+"**/tests/**" = ["D", "I", "S", "W"]
+"**__main__.py" = ["D103"]
+[tool.ruff.lint]
+select = [
+    "I",
+    "D",
+    # Augment the convention by requiring an imperative mood for all docstrings.
+    "D401",
+    "F",
+]
+ignore = ["D104", "D100"]
+
+fixable = ["ALL"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.pytest.ini_options]
+addopts = "--cov=snip --cov-report term-missing"

@@ -1,0 +1,65 @@
+# Snip
+
+Package to interact with the Snip API. Allows to create and upload snips with relative ease. Store and retrieve api tokens, and more.
+
+Features:
+- Token storage and retrieval in secure keyring
+
+## Getting started
+
+Install the package via pip:
+
+```bash
+pip install snip-lab
+```
+
+## Usage
+
+Using the cli you may add, remove and interact with tokens. The tokens are stored in a secure keyring.
+
+```bash
+snip-lab token --help
+```
+
+Alternatively you may also add an .sniprc file to your home directory or working directory to store the tokens. The file should look like this and should be automatically loaded.
+
+```ini
+[my_token_name]
+book_id = YOUR_BOOK_ID
+token =  YOUR_TOKEN
+
+[another_token]
+book_id = ANOTHER_BOOK_ID
+token =  ANOTHER_TOKEN
+deployment = https://snip.roentgen.physik.uni-goettingen.de
+```
+
+You may check if the tokens can be read correctly by trying to list them.
+
+```bash
+snip-lab token list
+```
+
+## Troubleshooting
+
+### Problems with keyring
+
+It is possible that a `token add` command does not work as expected and tokens do not appear in the list if the `NULL` keyring backend is selected. This can be fixed by setting the keyring backend via the `-k` or using the env variable `PYTHON_KEYRING_BACKEND`. For example:
+
+```bash
+export PYTHON_KEYRING_BACKEND=keyring.backends.chainer.ChainerBackend
+```
+
+Using the `-k` flag:
+
+```bash
+snip-lab token add -k keyring.backends.chainer.ChainerBackend
+```
+
+### General problems
+
+You may be able to get more information about the problem by setting the log level to debug. For example by setting the verbosity flag.
+
+```bash
+snip-lab -v token list
+```
