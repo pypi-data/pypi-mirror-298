@@ -1,0 +1,12 @@
+upepper/__init__.py,sha256=g7Jj18Qd2PZv7VmYe6M5IH0Az3EIlW5Z1CGFP-J0yXk,417
+upepper/cli.py,sha256=WLDT6YeHPW7qduxEqldg0Nk5lZ6w3XNO3HNBrzOw0J4,23521
+upepper/exceptions.py,sha256=WpaYnMIr-khWjx1SnJ4fUnvOSlWZ_tOXQi_sRF3b9XQ,172
+upepper/libpepper.py,sha256=suyEVqRcmykxcsv8_S-GInzCOLL6BQuyEZtqH8ix4DQ,15189
+upepper/retcode.py,sha256=DYIok2uFD6K1jSFPOPjh8Ky7zHfs2OIxBWW-2s_5aF0,4007
+upepper/script.py,sha256=Rlls8LCgAIOU6ylEzbUOi6lUwILGPDFhlUvIGh-WsMs,5678
+upepper-0.1.3.data/scripts/pepper,sha256=dH3sRnlN8zBjY3OtvTuY4m6T9SzZuBeOijrBlKObD3M,539
+upepper-0.1.3.dist-info/LICENSE,sha256=7XIB5FyHy8t7uojHli3G7Aj29Fk-vqOgnnJR0uv-KnY,626
+upepper-0.1.3.dist-info/METADATA,sha256=t3z8YAI_0XMY-z6IjETeHQjiNtceu4AgR5Bv4mz1bpg,3943
+upepper-0.1.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+upepper-0.1.3.dist-info/top_level.txt,sha256=O8zbyZ3r9QeuwEKMr31tVExbkE5etGig18WB8vXIZMU,8
+upepper-0.1.3.dist-info/RECORD,,
