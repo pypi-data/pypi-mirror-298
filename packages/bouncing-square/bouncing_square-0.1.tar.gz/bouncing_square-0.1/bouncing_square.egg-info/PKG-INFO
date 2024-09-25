@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: bouncing_square
+Version: 0.1
+Summary: A simple 2D bouncing square game
+Home-page: https://github.com/seu_usuario/bouncing_square
+Author: Seu Nome
+Author-email: seu_email@example.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pygame
+
+# package_name
+
+Description. 
+The package package_name is used to:
+	- 
+	-
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install boucing_square
+```
+
+## Usage
+
+```python
+from boucing_square import map
+
+file1_name.my_function()
+```
+
+## Author
+My_name
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
