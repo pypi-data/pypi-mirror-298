@@ -1,0 +1,8 @@
+[airflow.plugins]
+memray_plugin = airflow_memray.plugin:MemrayPlugin
+
+[airflow.policy]
+_ = airflow_memray.policies
+
+[apache_airflow_provider]
+provider_info = airflow_memray.__init__:get_provider_info
