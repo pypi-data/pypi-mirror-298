@@ -1,0 +1,2 @@
+[console_scripts]
+splice-replace = splice_replace.splice_replace:main
