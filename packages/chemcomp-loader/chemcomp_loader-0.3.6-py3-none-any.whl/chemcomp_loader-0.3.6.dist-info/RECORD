@@ -1,0 +1,9 @@
+chemcomp_loader/__init__.py,sha256=P-wymu0po3GpNZBZemBVCWDubaPe2wZHBZR-hB2LSl0,435
+chemcomp_loader/chemistry_properties.py,sha256=f2T_ZFMmxS4MDkq-HE3db5Wo10Gsr4-570X7WhtnseQ,1398
+chemcomp_loader/disc_loader.py,sha256=OohvBBmJ4l6OdOYeHh-8CKQ85yE27d7yUglRF4EQNEA,12744
+chemcomp_loader/import_config.py,sha256=HSA1f057MQRPejlUbT4tYIZ_gcscJfn281_QDjbV3CY,3399
+chemcomp_loader-0.3.6.dist-info/LICENSE.txt,sha256=2533I6wq5_rQU17IeREHVLgHaDjcYkL2cEdCcE3zEg4,464
+chemcomp_loader-0.3.6.dist-info/METADATA,sha256=slLmnbjfYaxd-v7oLILXfMqqvYgQVgN5FjC6BQKMH1o,864
+chemcomp_loader-0.3.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+chemcomp_loader-0.3.6.dist-info/top_level.txt,sha256=sOQSM0iZcevKBzqj3AwHZW8dauUUvD13WLqbvffw6g8,16
+chemcomp_loader-0.3.6.dist-info/RECORD,,
