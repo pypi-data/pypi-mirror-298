@@ -1,0 +1,12 @@
+stackspot/__init__.py,sha256=hvjObAKMf9ZNVf-uMkvtLr4964X5ixCt9ZwBzg2rMs0,261
+stackspot/stackspot.py,sha256=6I_vw_ZBVByj2ogIO441q2dQP82ZQCfEDtFuowFZIWo,1825
+stackspot/stackspot_ai.py,sha256=hZAE-G6sPal6tnr2tYrEW2hRJgpLAQyF5UTtA1AEjl4,2215
+stackspot/stackspot_ai_ks.py,sha256=KLPtqRIhwwoB47dUvVFUDqZCPDyua5eXY-5MHEqxulA,3041
+stackspot/stackspot_ai_quick_command.py,sha256=BRL35zdr_Mns2TdxKdRO6Zzr9DciVL98807Nk2LlIoA,4055
+stackspot/stackspot_auth.py,sha256=bF4mWoR3ufevFiDrBAxods5ZkV5z5BrdhHKPiljx1OI,1296
+stackspot/stackspot_dict_types.py,sha256=YinAUzMCF1RSFQ_wtx8N2BZvAJkeXj69bGGBlxo821A,2448
+stackspot-1.0.0.dist-info/LICENSE,sha256=gt7GQUI6I3d3jqIpjVLnq77znYDHAVu48Ckwc-XaeFY,1090
+stackspot-1.0.0.dist-info/METADATA,sha256=h_unoQkdqvTKJglvDoLN8TIQ8PWgHxm4D2-Awtf4jpc,7612
+stackspot-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+stackspot-1.0.0.dist-info/top_level.txt,sha256=wOa6-xSeK3Ob16Fz4gTnyeb-JEQVC0uCwMHbSY6X5es,10
+stackspot-1.0.0.dist-info/RECORD,,
