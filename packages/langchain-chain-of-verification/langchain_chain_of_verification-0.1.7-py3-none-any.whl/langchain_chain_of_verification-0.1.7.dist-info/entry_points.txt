@@ -1,0 +1,2 @@
+[console_scripts]
+cove = langchain_chain_of_verification:cli_main
