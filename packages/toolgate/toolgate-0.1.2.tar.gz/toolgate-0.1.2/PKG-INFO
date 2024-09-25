@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: toolgate
+Version: 0.1.2
+Summary: Toolgate SDK
+Author: Oleksii Dzhulai
+Author-email: topics-trine-0i@icloud.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: langchain (>=0.2.6,<0.3.0)
+Requires-Dist: langchain-community (>=0.2.6,<0.3.0)
+Requires-Dist: langchain-openai (==0.1.19)
+Requires-Dist: nats-py (==2.8.0)
+Requires-Dist: protobuf (==5.27.3)
+Requires-Dist: streamlit (==1.37.1)
+Description-Content-Type: text/markdown
+
+# ToolGate-LangChain - ToolGate integration with LangChain
+
+**Features:**
+ - LangChain Tools support
+
+
