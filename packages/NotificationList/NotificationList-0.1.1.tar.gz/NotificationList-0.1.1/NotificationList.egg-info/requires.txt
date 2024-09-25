@@ -1,0 +1,10 @@
+pandas
+scipy
+numpy
+polars
+jupyter
+matplotlib
+scikit-learn
+xgboost
+tensorflow
+tensorboard
