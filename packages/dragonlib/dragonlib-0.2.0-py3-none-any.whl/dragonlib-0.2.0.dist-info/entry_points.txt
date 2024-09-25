@@ -1,0 +1,3 @@
+[console_scripts]
+dragonlib_app = dragonlib.__main__:main
+dragonlib_dev = dragonlib.cli_dev:main
