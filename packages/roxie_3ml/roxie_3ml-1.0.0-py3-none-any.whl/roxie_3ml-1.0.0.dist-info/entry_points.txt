@@ -1,0 +1,3 @@
+[console_scripts]
+roxie_3ml=roxie_3ml.py_files.main_mmbse_gui:main
+

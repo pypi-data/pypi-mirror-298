@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: roxie_3ml
+Version: 1.0.0
+Summary: Project template for new python Projects
+Home-page: https://gitlab.cern.ch/pymbse/3ml-gui
+License: GPL-3.0-or-later
+Author: Konstantinos Diamantis
+Author-email: konstantinos.diamantis@cern.ch
+Maintainer: Konstantinos Diamantis
+Maintainer-email: konstantinos.diamantis@cern.ch
+Requires-Python: >=3.9,<3.13
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: mmbse_client (>=1.0.0,<2.0.0)
+Requires-Dist: pyqt6 (>=6.6.1,<7.0.0)
+Requires-Dist: qtwidgets (>=1.1,<2.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: setuptools (>=69.0.3,<70.0.0)
+Project-URL: Repository, https://gitlab.cern.ch/pymbse/3ml-gui
+Description-Content-Type: text/markdown
+
+# ROXIE_3ML
+
+**Magnet Model Management Layer – 3ML** is a versatile application providing a graphical user interface (GUI) for users to interact with Magnets database, view reports of models and systems, upload files, and query ROXIE models directly from the database.
+
+## Installation
+
+Before installing the project, ensure you have the `xcb` and `X11` libraries installed, required for the PyQt6 GUI in Unix-like OS.
+
+Once the necessary libraries are installed, you can install the package via pip.
+
+In order to run the application just type `roxie_3ml` in the terminal and the GUI will launch. Remember that need your personal token in order to gain access to the remote [Magnets Database](https://mmbse.app.cern.ch/).
+
+
+## License
+
+This project is licensed under the GPL-3.0-or-later license. It uses PyQt6, which is also GPL-licensed.
+
+This project uses [Feather icons](https://feathericons.com/), which are licensed under the MIT License. See `LICENSES/LicenseRef-feather-MIT.txt` for details.
+
