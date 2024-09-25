@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+karen/__init__.py
+karen/inspection.py
+karen/orders.py
+karen_inspect.egg-info/PKG-INFO
+karen_inspect.egg-info/SOURCES.txt
+karen_inspect.egg-info/dependency_links.txt
+karen_inspect.egg-info/entry_points.txt
+karen_inspect.egg-info/requires.txt
+karen_inspect.egg-info/top_level.txt
