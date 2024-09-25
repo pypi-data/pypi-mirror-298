@@ -1,0 +1,4 @@
+dill
+numpy
+pydantic
+requests
