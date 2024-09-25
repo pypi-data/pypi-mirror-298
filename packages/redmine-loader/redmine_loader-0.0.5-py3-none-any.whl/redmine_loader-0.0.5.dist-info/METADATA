@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: redmine-loader
+Version: 0.0.5
+Summary: Document Loader for bitnami Redmine. Crawl Redmine Issues using WebAPI and gather issue subject, description, comments, attachments. Attachments are parsed with unstructured.io .
+License: MIT
+Author: syakesaba
+Author-email: pakemon@syakesaba.com
+Requires-Python: >=3.11,<=3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: httpx (>=0.27.2,<0.28.0)
+Requires-Dist: langchain (>=0.3.0,<0.4.0)
+Requires-Dist: langchain-community (>=0.3.0,<0.4.0)
+Requires-Dist: langchain-unstructured[local-inference] (>=0.1.4,<0.2.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: unstructured (>=0.15.12,<0.16.0)
+Description-Content-Type: text/markdown
+
+[![Python package](https://github.com/syakesaba/redmine-loader/actions/workflows/python-package.yml/badge.svg)](https://github.com/syakesaba/redmine-loader/actions/workflows/python-package.yml)
+[![Upload Python Package](https://github.com/syakesaba/redmine-loader/actions/workflows/python-publish.yml/badge.svg)](https://github.com/syakesaba/redmine-loader/actions/workflows/python-publish.yml)
+[![codecov](https://codecov.io/github/syakesaba/redmine-loader/graph/badge.svg?token=HTRTEEOOT9)](https://codecov.io/github/syakesaba/redmine-loader)
+![GitHub License](https://img.shields.io/github/license/syakesaba/redmine-loader)
+
+redmine-loader
+=====
+Document Loader for bitnami Redmine.
+Crawl Redmine Issues using WebAPI and gather issue subject, description, comments, attachments.
+Attachments are parsed with [unstructured.io](https://unstructured.io/) .
+
+Usage
+=====
+
+```python
+from redmine_loader import RedmineLoader
+loader = RedmineLoader(
+    api_key="",
+    redmine_url="https://www.redmine.org/",
+    issue_ids=[1, 2],
+    include_comments=True,
+    include_attachments=True,
+    attachment_maxcharsize=1000,
+)
+for doc in loader.load():
+    print(doc)
+```
+
+
+Build
+=====
+```sh
+poetry build
+```
+
+Install
+=====
+```sh
+poetry install
+```
+
+License
+=====
+MIT
