@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/spinWannier/WannierTBmodel.py
+src/spinWannier/__init__.py
+src/spinWannier/test_spn_file.py
+src/spinWannier/vaspspn.py
+src/spinWannier/wannier_quality_utils.py
+src/spinWannier/wannier_utils.py
+src/spinWannier.egg-info/PKG-INFO
+src/spinWannier.egg-info/SOURCES.txt
+src/spinWannier.egg-info/dependency_links.txt
+src/spinWannier.egg-info/requires.txt
+src/spinWannier.egg-info/top_level.txt
+tests/test_spinWannier.py
