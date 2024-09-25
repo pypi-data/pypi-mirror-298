@@ -1,0 +1,3 @@
+recursive-include deeva/animations *
+recursive-include deeva/assets *
+recursive-include deeva/styles *
