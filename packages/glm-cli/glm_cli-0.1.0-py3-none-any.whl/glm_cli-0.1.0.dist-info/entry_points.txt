@@ -1,0 +1,2 @@
+[console_scripts]
+glm-cli = glm_cli:cli
