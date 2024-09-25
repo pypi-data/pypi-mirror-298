@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/Customer_dna.egg-info/PKG-INFO
+src/Customer_dna.egg-info/SOURCES.txt
+src/Customer_dna.egg-info/dependency_links.txt
+src/Customer_dna.egg-info/top_level.txt
+src/customer_dna/__init__.py
+src/customer_dna/association_rules.py
+src/customer_dna/cltv.py
+src/customer_dna/customer_attrition.py
+src/customer_dna/customer_segmentation.py
+src/customer_dna/main.py
+src/customer_dna/mba.py
+src/customer_dna/visualisation.py
