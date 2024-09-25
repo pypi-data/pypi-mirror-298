@@ -1,0 +1,15 @@
+ton_ocr/__init__.py,sha256=FZkWmHyDf-T9mxuT0qWgEzF54UXedf29GmPjObwsF5o,67
+ton_ocr/pipeline.py,sha256=1TATfFsjVBlHBUTGKu9hGiyOiCzq96y6lJ4AaXugU9U,2545
+ton_ocr/det/__init__.py,sha256=oYkBHiA79wm8j-7IJGtnIk3hlERB_zQ63YxhVtCDlMk,38
+ton_ocr/det/postprocess.py,sha256=tSXAYcLQqwV4bscvjJTTHvBsJifoji6ull-9ElUGE1M,3410
+ton_ocr/det/predict_det.py,sha256=7PljNNWMBzcfH4ZZATkrzI4JqicEZE650dYwpSeu_TI,3363
+ton_ocr/det/preprocess.py,sha256=kpf6JuXVXrx9tB8YkN5RhcPEsOgTUiw3jTnQV-i2XZ8,1443
+ton_ocr/models/text_detection.onnx,sha256=MKhvVzEYFGHQgCFAJ2ZgHkMCqbm5Zmvor_QCaWM5zf8,4745517
+ton_ocr/models/text_recognition.onnx,sha256=BrPmr2xZobpdU3kO2MLkst44mHC2z1qX80nzQSyyacA,10822323
+ton_ocr/rec/__init__.py,sha256=gd8_wa5FgRp9uqizeOAU_GdOVvjm59ywkDcjWXzV03I,40
+ton_ocr/rec/predict_rec.py,sha256=TZo4Wo1MB-h84tkzZ9Gl9li27NwmlnvypKu6jmwWLmE,2927
+ton_ocr/rec/rec_decoder.py,sha256=6ELrXbETRh-xJzkgXtSI9mEyx5ioycDTuLVdE-brFQw,2139
+ton_ocr-0.2.2.dist-info/METADATA,sha256=JCRfzKFqgxuHlGrH9W7HWM47dEDm49SNbBKzSE2bUPw,479
+ton_ocr-0.2.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+ton_ocr-0.2.2.dist-info/top_level.txt,sha256=mpdr_FkQTp2JJtoNcNVDOPEPkhzNdR9vTbmm4dxqCag,8
+ton_ocr-0.2.2.dist-info/RECORD,,
