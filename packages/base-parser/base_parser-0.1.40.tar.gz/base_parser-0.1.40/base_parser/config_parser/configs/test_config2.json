@@ -1,0 +1,323 @@
+{
+  "source": {
+    "host": "https://github.com/CVEProject/cvelistV5/archive/refs/heads/main.zip",
+    "port": 443,
+    "type": "5",
+    "send_limit": 10,
+    "files_dir": "BDU_FSTEK"
+  },
+  "receiver": {
+    "url": "https://vdb.dev.bi.zone/api/v1/vulnerability_logs/",
+    "auth": {
+      "token": "Token 5b7e2da6e133a9a2b8993b09ece7c72d1f5066e4",
+      "type": "5"
+    }
+  },
+  "evasion": {
+    "proxy": 1,
+    "vpn": 0,
+    "robots": 0,
+    "sleep": 1,
+    "captcha": 0
+  },
+  "json_template": {
+    "vuln_description": {
+      "value": "vul_desc",
+      "settings": {
+        "max_size": 255
+      }
+    },
+    "orig_component_version": {
+      "value": null,
+      "settings": {
+        "max_size": 100
+      }
+    },
+    "cpe": {
+      "value": null,
+      "settings": {
+        "max_size": 200
+      }
+    },
+    "patch_links": {
+      "value": "vul_infou",
+      "settings": {
+        "max_size": 300
+      }
+    },
+    "other_ids": {
+      "value": "vul_oiddat",
+      "settings": {
+        "max_size": 100
+      }
+    },
+    "cwe_id": {
+      "value": "cwe_id",
+      "settings": {
+        "max_size": 10
+      }
+    },
+    "vuln_date": {
+      "value": "vul_datv",
+      "settings": {
+        "max_size": 20
+      }
+    },
+    "publish_date": {
+      "value": "vul_refdat",
+      "settings": {
+        "max_size": 20
+      }
+    },
+    "update_dates": {
+      "value": "vul_upddate",
+      "settings": {
+        "max_size": 50
+      }
+    },
+    "cvss3_vector": {
+      "value": [
+        "cvss3_av",
+        "cvss3_ac",
+        "cvss3_pr",
+        "cvss3_ui",
+        "cvss3_s",
+        "cvss3_c",
+        "cvss3_i",
+        "cvss3_a"
+      ],
+      "settings": {
+        "max_size": 50
+      }
+    },
+    "cvss4_vector": {
+      "value": null,
+      "settings": {
+        "max_size": 50
+      }
+    },
+    "cvss2_vector": {
+      "value": [
+        "cvss_av",
+        "cvss_ac",
+        "cvss_au",
+        "cvss_c",
+        "cvss_i",
+        "cvss_a"
+      ],
+      "settings": {
+        "max_size": 50
+      }
+    },
+    "cvss5_vector": {
+      "value": null,
+      "settings": {
+        "max_size": 50
+      }
+    },
+    "cvss3_metric_vector": {
+      "value": null,
+      "settings": {
+        "max_size": 50
+      }
+    },
+    "cvss4_metric_vector": {
+      "value": null,
+      "settings": {
+        "max_size": 50
+      }
+    },
+    "cvss2_metric_vector": {
+      "value": null,
+      "settings": {
+        "max_size": 50
+      }
+    },
+    "cvss5_metric_vector": {
+      "value": null,
+      "settings": {
+        "max_size": 50
+      }
+    },
+    "cvss3_base": {
+      "value": "cvss3_bsc",
+      "settings": {
+        "max_size": 10
+      }
+    },
+    "cvss4_base": {
+      "value": null,
+      "settings": {
+        "max_size": 10
+      }
+    },
+    "cvss5_base": {
+      "value": null,
+      "settings": {
+        "max_size": 10
+      }
+    },
+    "cvss2_base": {
+      "value": "cvss_bsc",
+      "settings": {
+        "max_size": 10
+      }
+    },
+    "cvss3_metric_base": {
+      "value": null,
+      "settings": {
+        "max_size": 10
+      }
+    },
+    "cvss4_metric_base": {
+      "value": null,
+      "settings": {
+        "max_size": 10
+      }
+    },
+    "cvss2_metric_base": {
+      "value": null,
+      "settings": {
+        "max_size": 10
+      }
+    },
+    "cvss5_metric_base": {
+      "value": null,
+      "settings": {
+        "max_size": 10
+      }
+    },
+    "cve": {
+      "value": "idv_val",
+      "settings": {
+        "max_size": 20
+      }
+    },
+    "vuln_mitigation": {
+      "value": "vul_vmer",
+      "settings": {
+        "max_size": 300
+      }
+    },
+    "poc_links": {
+      "value": null,
+      "settings": {
+        "max_size": 300
+      }
+    },
+    "vuln_sources": {
+      "value": "vul_link",
+      "settings": {
+        "max_size": 300
+      }
+    },
+    "parser_source": {
+      "value": "БДУ ФСТЭК",
+      "settings": {
+        "max_size": 50
+      }
+    },
+    "researcher_info": {
+      "value": null,
+      "settings": {
+        "max_size": 100
+      }
+    },
+    "capec_id": {
+      "value": null,
+      "settings": {
+        "max_size": 50
+      }
+    }
+  },
+  "features": {
+    "auth": {
+      "type": "4",
+      "url": "api/v1/auth",
+      "password": "D+J@5njSn8EKcq~",
+      "username": "i.karpov@bi.zone"
+    },
+    "additional_fields": {
+      "endpoint1": {
+        "limit": 50,
+        "source": "api/v1/Vuls?",
+        "filter": "include=versions.soft.vendor&page[limit]=50&page[offset]=",
+        "attr": "attributes",
+        "fields": {
+          "vuln_description": "vul_desc",
+          "patch_links": [
+            "vul_infou"
+          ],
+          "vuln_date": "vul_datv",
+          "publish_date": "vul_refdat",
+          "update_dates": "vul_upddate",
+          "vuln_mitigation": "vul_vmer",
+          "vuln_sources": [
+            "vul_link",
+            "vul_bdu_link",
+            "idv_url"
+          ],
+          "other_ids": [
+            "vul_oiddat",
+            "vul_oidnum"
+          ]
+        }
+      },
+      "endpoint_cves": {
+        "relation": "vul_id",
+        "source": "api/v1/Vuls?",
+        "filter": "include=idval&filter[and][vul][vul_id][=]=",
+        "attr": "attributes",
+        "fields": {
+          "cve": "idv_val"
+        }
+      },
+      "endpoint_platforms": {
+        "relation": "vul_id",
+        "source": "api/v1/Vuls?",
+        "filter": "include=platf&filter[and][vul][vul_id][=]=",
+        "attr": "attributes",
+        "fields": {
+          "platforms": [
+            "plf_note",
+            "plf_name"
+          ]
+        }
+      },
+      "endpoint_cvss2": {
+        "relation": "vul_id",
+        "source": "api/v1/Vuls?",
+        "filter": "include=cvss2&filter[and][vul][vul_id][=]=",
+        "attr": "attributes",
+        "fields": {
+          "cvss2_vector": [
+            "cvss_av",
+            "cvss_ac",
+            "cvss_au",
+            "cvss_c",
+            "cvss_i",
+            "cvss_a"
+          ]
+        }
+      },
+      "endpoint_cvss3": {
+        "relation": "vul_id",
+        "source": "api/v1/Vuls?",
+        "filter": "include=cvss3&filter[and][vul][vul_id][=]=",
+        "attr": "attributes",
+        "fields": {
+          "cvss3_vector": [
+            "cvss3_av",
+            "cvss3_ac",
+            "cvss3_pr",
+            "cvss3_ui",
+            "cvss3_s",
+            "cvss3_c",
+            "cvss3_i",
+            "cvss3_a"
+          ]
+        }
+      }
+    }
+  }
+}
