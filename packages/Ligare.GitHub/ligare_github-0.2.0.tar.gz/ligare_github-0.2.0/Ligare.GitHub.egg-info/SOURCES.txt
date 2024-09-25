@@ -1,0 +1,12 @@
+LICENSE.md
+MANIFEST.in
+README.md
+py.typed
+pyproject.toml
+Ligare.GitHub.egg-info/PKG-INFO
+Ligare.GitHub.egg-info/SOURCES.txt
+Ligare.GitHub.egg-info/dependency_links.txt
+Ligare.GitHub.egg-info/requires.txt
+Ligare.GitHub.egg-info/top_level.txt
+Ligare/GitHub/__init__.py
+Ligare/GitHub/api.py

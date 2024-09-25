@@ -1,0 +1,46 @@
+[build-system]
+
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Ligare.GitHub"
+requires-python = ">=3.10"
+authors = [
+    {name = 'Aaron Holmes', email = 'aholmes@mednet.ucla.edu'}
+]
+description = 'Libraries for working with the GitHub HTTP API.'
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "PyGithub"
+]
+
+dynamic = ["version", "readme"]
+[tool.setuptools.dynamic]
+version = {attr = "Ligare.GitHub.__version__"}
+readme = {file = ["README.md"], content-type = "text/markdown"}
+
+[tool.setuptools.package-dir]
+"Ligare.GitHub" = "Ligare/GitHub"
+
+[tool.setuptools.packages.find]
+exclude = ["build*"]
+
+[tool.setuptools.package-data]
+"Ligare.GitHub" = ["py.typed"]
+
+[project.optional-dependencies]
+dev-dependencies = [
+    "pytest",
+    "pytest-mock",
+    "mock"
+]
