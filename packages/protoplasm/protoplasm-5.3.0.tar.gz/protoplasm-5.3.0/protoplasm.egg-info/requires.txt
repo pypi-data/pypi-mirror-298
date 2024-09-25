@@ -1,0 +1,5 @@
+ccptools<2,>=1.1
+protobuf<6,>=5.28.2
+grpcio<2,>=1.66.1
+grpcio-tools<2,>=1.66.1
+googleapis-common-protos<2,>=1.65
