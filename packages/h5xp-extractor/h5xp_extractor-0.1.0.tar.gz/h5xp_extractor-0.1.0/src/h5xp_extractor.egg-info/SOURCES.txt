@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/h5xp_extractor/__init__.py
+src/h5xp_extractor/h5xp_extractor.py
+src/h5xp_extractor.egg-info/PKG-INFO
+src/h5xp_extractor.egg-info/SOURCES.txt
+src/h5xp_extractor.egg-info/dependency_links.txt
+src/h5xp_extractor.egg-info/top_level.txt
