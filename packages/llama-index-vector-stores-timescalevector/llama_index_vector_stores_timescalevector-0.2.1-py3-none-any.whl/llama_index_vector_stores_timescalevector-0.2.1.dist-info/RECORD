@@ -1,0 +1,6 @@
+llama_index/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llama_index/vector_stores/timescalevector/__init__.py,sha256=k3dOxuKfrxZ4g20CEABuOnVfWEugStPxfSgc_eoelfw,116
+llama_index/vector_stores/timescalevector/base.py,sha256=7whj-GIISJQ4eBx3Ddzva14NtyUgBmXNTYiCG4C7KBg,9483
+llama_index_vector_stores_timescalevector-0.2.1.dist-info/METADATA,sha256=sVNxIXUbNGPhNsAJMgoUI50iRgNli-pR2Er-GUfzmg4,739
+llama_index_vector_stores_timescalevector-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_vector_stores_timescalevector-0.2.1.dist-info/RECORD,,
