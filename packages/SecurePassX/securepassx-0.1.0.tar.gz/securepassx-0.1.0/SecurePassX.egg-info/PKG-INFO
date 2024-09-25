@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: SecurePassX
+Version: 0.1.0
+Summary: A secure password management solution
+Author: Anurag
+Author-email: kvanurag39@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cryptography==43.0.1
+Requires-Dist: pytest==8.3.3
+Requires-Dist: typer==0.12.5
+Requires-Dist: typing_extensions==4.12.2
+
+# SecurePassX
+
+SecurePassX is a secure password management solution designed to store and protect your passwords with industry-standard encryption.
+
+## Features
+
+- **Secure Password Storage:** Store your passwords securely and access them when needed.
+- **Password Decryption:** Easily retrieve and decrypt stored passwords.
+- **Secret Management:** Add, list, and remove secrets (passwords) with ease.
+- **Database Initialization:** Set up your local secure password database.
+
+## Installation
+
+To install SecurePassX, simply run:
+
+```bash
+pip install securepassx
