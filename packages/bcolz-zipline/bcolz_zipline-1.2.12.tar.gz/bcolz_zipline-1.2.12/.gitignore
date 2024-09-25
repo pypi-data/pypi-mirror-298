@@ -1,0 +1,10 @@
+bench/bench
+build/
+
+*.sw?
+*.c
+*.so
+bcolz/_version.py
+.idea/
+__pycache__/
+rebuild-cython.sh
