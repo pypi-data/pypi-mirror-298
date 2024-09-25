@@ -1,0 +1,8 @@
+physfields/__init__.py,sha256=LTSRM2L_AN4-8lF2Q8aSPZz1uXRLr3gM9q0DGZOzens,183
+physfields/field.py,sha256=O-QgrBYqfz4sdOt9HF8m1NoKKYOEViyMijMZL0SmUUU,499
+physfields/scalarfield.py,sha256=C6b1CGzc8d84Ip04iQlRzeUBDF5nytJqdq5HOSIkWgY,4314
+physfields/vectorfield.py,sha256=CC3ipFa5ft_MKekAYftBP4jjTdLtwV2t7_5So49KIN0,8271
+physfields/zernike.py,sha256=7ydl0YQejYnZMiHrJ1TVgYPyTRkEi7fZKrKuQ15Pkns,4949
+physics_fields-0.1.0.dist-info/METADATA,sha256=aPmmCPKTZ5D3H2sIMeitwSvKCMKUfihiUZz6alfKjO0,660
+physics_fields-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+physics_fields-0.1.0.dist-info/RECORD,,
