@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: neobuilder
+Version: 5.2.1
+Summary: Builds Neobuf Packages from Protobuf files using Protoplasm! :D
+Author-email: Thordur Matthiasson <thordurm@ccpgames.com>
+License: MIT License
+        
+        Copyright (c) 2022-2024 CCP Games
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/ccpgames/neobuilder
+Project-URL: Documentation, https://github.com/ccpgames/neobuilder/blob/main/README.md
+Project-URL: Repository, https://github.com/ccpgames/neobuilder.git
+Project-URL: Issues, https://github.com/ccpgames/neobuilder/issues
+Project-URL: Changelog, https://github.com/ccpgames/neobuilder/blob/main/CHANGELOG.md
+Keywords: protobuf,proto,protoplasm,dataclasses,tools,ccp,utils
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: protoplasm<6,>=5.2
+Requires-Dist: ccptools<2,>=1.1
+Requires-Dist: Jinja2<4,>=3.1
+Requires-Dist: semver<4,>=3.0.2
+
+# NeoBuilder
+
+Builds Neobuf Packages from Protobuf files using Protoplasm! :D
+
+## Super Important Info
+
+Neobuilder releases are NOT guaranteed to be backwards compatible with older 
+versions of Protoplasm and trying to run Neobuilder built code in a Protoplasm 
+release who's major and/or minor versions lag behind will more often than not 
+just break.
+
+A difference in the patch version should most often be fine, as should using a 
+Protoplasm release that's one or more minor versions ahead of the Neobuilder 
+used to build code. 
+
+## Versioning
+
+The versioning of Neobuilder and Protoplasm (major and minor versions) go hand 
+in hand; i.e. when Protoplasm's major of minor versions bump, a new NeoBuilder 
+should also be released with the same major and minor version, even if there's 
+no actual code change needed in NeoBuilder to support whatever changed in 
+Protoplasm.
+
+Note that in order to simplify and ease this synchronous development, release 
+and versioning, the NeoBuilder package for the latest Protoplasm should 
+generally NOT be dependent on any new features added to that package, so that 
+the NeoBuilder package can be built and released FIRST and it can build code for
+its corresponding Protoplasm version, withing having that latest version 
+actually installed.
+
+This is done in order to not create a circular dependency on features between 
+the two but instead have NeoBuilder only depend on the previous version of 
+Protoplasm, especially for its pre-release unit-tests, and instead allow 
+Protoplasm to fully depend on the latest NeoBuilder for its unit-tests.
+
+## Useful info
+
+Installing this package creates a command line executable called `neobuild` (or 
+`neobuild.exe` in Windows) in Python's `Scripts` folder so you just run the 
+`neobuild` command from a console.
+
+## Usage
+
+Assuming you've got a package called `sandbox` and you're storing your protobuf 
+files in a directory called `proto` and you want to spit out the build into the 
+directory `build` just go:
+
+```
+neobuild sandbox 
+```
+
+## Versioning Your Package
+
+If you place a plain text file called `VERSION` in the root of your proto 
+package (e.g. `/proto/sandbox/VERSION` from the example above) and skip any 
+versioning parameters (the `--major`, `-m`, `--patch` and `-p` guys) Neobuilder
+will use that file for versioning.
+
+The first line in the file should be the semantic version number `x.y.z.a`
+
+## More stuff
+
+```
+usage: neobuild [-h] [-m | -p] [-b [BUILDROOT]] [-v] package [protopath]
+
+Builds neobuf packages with protoplasm.
+
+positional arguments:
+  package               Package name
+  protopath             Path to the root of the protobuf files (default="./proto")
+
+options:
+  -h, --help            show this help message and exit
+  -m, --major           Bump the major version number instead of the minor
+  -p, --patch           Bump the patch version number instead of the minor
+  -b [BUILDROOT], --buildroot [BUILDROOT]
+                        Path to the root of the output build files (default="./build")
+  -v, --verbose         Spits out DEBUG level logs
+```
