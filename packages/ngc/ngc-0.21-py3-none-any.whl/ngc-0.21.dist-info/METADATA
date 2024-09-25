@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ngc
+Version: 0.21
+Summary: Python New General Common Tool
+Home-page: https://github.com/ngc5139/pyngc
+Author: NGC5139
+Author-email: cencrx@outlook.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Python New General Common Tool
+
+A simple common py-tool mainly formed with easy functions for users who like to write small scripts, with less class and complex things.
+
+Please use the newest version of python to use. It is being improved.
+
+It use lambda in general. It includes functions of multi-regions like os as dirlist(traverse folder), IO, string operating, data struct operating and web operating.
