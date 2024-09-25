@@ -1,0 +1,8 @@
+README.md
+setup.py
+NumNeighbors.egg-info/PKG-INFO
+NumNeighbors.egg-info/SOURCES.txt
+NumNeighbors.egg-info/dependency_links.txt
+NumNeighbors.egg-info/top_level.txt
+NumNeighbours/__init__.py
+NumNeighbours/main.py
