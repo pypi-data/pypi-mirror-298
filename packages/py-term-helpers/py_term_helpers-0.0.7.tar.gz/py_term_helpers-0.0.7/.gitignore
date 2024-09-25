@@ -1,0 +1,7 @@
+NOTES.md
+/dist
+*/__pycache__
+*/*/__pycache__
+.venv
+.pytest_cache
+.github
