@@ -1,0 +1,10 @@
+exclude pAudio/__pycache__
+exclude paudio.egg-info*
+exclude build
+exclude dist
+exclude .gitignore
+exclude *.log
+exclude *.md
+exclude setup.cfg
+recursive-exclude tests *
+

@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+pyproject.toml
+setup.py
+pAudio/__init__.py
+pAudio/parecord.py
+paudio.egg-info/PKG-INFO
+paudio.egg-info/SOURCES.txt
+paudio.egg-info/dependency_links.txt
+paudio.egg-info/top_level.txt
