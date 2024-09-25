@@ -1,0 +1,16 @@
+setup.py
+ngc/Android.py
+ngc/Astro.py
+ngc/Doc.py
+ngc/Lang.py
+ngc/Media.py
+ngc/UI.py
+ngc/Windows.py
+ngc/__init__.py
+ngc/bin.py
+ngc/web.py
+ngc.egg-info/PKG-INFO
+ngc.egg-info/SOURCES.txt
+ngc.egg-info/dependency_links.txt
+ngc.egg-info/requires.txt
+ngc.egg-info/top_level.txt
