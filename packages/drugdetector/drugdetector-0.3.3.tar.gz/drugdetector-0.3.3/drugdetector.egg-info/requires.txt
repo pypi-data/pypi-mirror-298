@@ -1,0 +1,5 @@
+accelerate
+guidance
+llama-cpp-python
+transformers
+optimum
