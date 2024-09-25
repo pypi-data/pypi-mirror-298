@@ -1,0 +1,2 @@
+[console_scripts]
+create-folder = pclearn:create_folder_with_pyfile

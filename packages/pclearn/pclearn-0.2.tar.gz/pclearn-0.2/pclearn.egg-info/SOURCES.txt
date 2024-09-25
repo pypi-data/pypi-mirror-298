@@ -1,0 +1,9 @@
+setup.py
+pclearn/__init__.py
+pclearn/ai.py
+pclearn/folder.py
+pclearn.egg-info/PKG-INFO
+pclearn.egg-info/SOURCES.txt
+pclearn.egg-info/dependency_links.txt
+pclearn.egg-info/entry_points.txt
+pclearn.egg-info/top_level.txt
