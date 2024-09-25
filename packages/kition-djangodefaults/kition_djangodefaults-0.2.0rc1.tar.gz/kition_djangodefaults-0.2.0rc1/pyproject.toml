@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "kition-djangodefaults"
+version = "0.2.0rc1"
+description = "Default configuration and components for Django projects."
+authors = ["Dennis Stritzke <dennis.stritzke@kition.dev>"]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/kition-dev/djangodefaults"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "0.6.7"
+mypy = "1.11.2"
+django-stubs = "5.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
