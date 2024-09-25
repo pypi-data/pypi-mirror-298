@@ -1,0 +1,304 @@
+Metadata-Version: 2.1
+Name: langdict
+Version: 0.0.2
+Summary: Build complex LLM Applications with Python Dictionary
+Author-email: Dongjun Lee <djlee.hb@gmail.com>
+Maintainer-email: Dongjun Lee <djlee.hb@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 LangDict
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://langdict.github.io/
+Project-URL: Documentation, https://langdict.github.io/docs
+Project-URL: Repository, https://github.com/LangDict/langdict.git
+Project-URL: Bug Tracker, https://github.com/LangDict/langdict/issues
+Keywords: LLM,RAG,Agent,Compund AI Systems,LangDict
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: <4.0,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+
+
+<p align="center">
+    <img src="https://github.com/LangDict/langdict/blob/main/images/logo.png" style="inline" width=600>
+</p>
+
+
+<h4 align="center">
+    Build complex LLM Applications with Python Dictionary
+</h4>
+
+---
+
+# LangDict
+
+LangDict is a framework for building agents (Compound AI Systems) using only specifications in a Python `Dictionary`. The framework is simple and intuitive to use for production.
+
+The prompts are similar to a feature specification, which is all you need to build an LLM Module. LangDict was created with the design philosophy that building LLM applications should be as simple as possible. Build your own LLM Application with minimal understanding of the framework.
+
+<p align="center">
+    <img src="https://github.com/LangDict/langdict/blob/main/images/module.png" style="inline" width=800>
+</p>
+
+An Agent can be built by connecting multiple Modules. At LangDict, we focus on the intuitive interface, modularity, extensibility, and reusability of [PyTorch](https://github.com/pytorch/pytorch)'s `nn.Module`. If you have experience developing Neural Networks with PyTorch, you will understand how to use it right away.
+
+
+## Key Features
+
+<details>
+  <summary>LLM Applicaiton framework for simple, intuitive, specification-based development</summary>
+
+```python
+chitchat = LangDict.from_dict({
+    "messages": [
+        ("system", "You are a helpful AI bot. Your name is {name}."),
+        ("human", "Hello, how are you doing?"),
+        ("ai", "I'm doing well, thanks!"),
+        ("human", "{user_input}"),
+    ],
+    "llm": {
+        "model": "gpt-4o-mini",
+        "max_tokens": 200
+    },
+    "output": {
+        "type": "string"
+    }
+})
+# format placeholder is key of input dictionary
+chitchat({
+    "name": "LangDict",
+    "user_input": "What is your name?"
+})
+```
+
+</details>
+
+<details>
+  <summary>Simple interface (Stream / Batch) </summary>
+
+```python
+rag = RAG()
+
+single_inputs = {
+    "conversation": [{"role": "user", "content": "How old is Obama?"}]
+}
+# invoke
+rag(single_inputs)
+
+# stream
+rag(single_inputs, stream=True)
+
+# batch
+batch_inputs = [{ ...  }, { ...}, ...]
+rag(batch_inputs, batch=True)
+```
+
+</details>
+
+<details>
+  <summary>Modularity: Extensibility, Modifiability, Reusability</summary>
+
+```python
+class RAG(Module):
+
+    def __init__(self, docs: List[str]):
+        super().__init__()
+        self.query_rewrite = LangDictModule.from_dict({ ... })  # Module
+        self.search = SimpleKeywordSearch(docs=docs)  # Module
+        self.answer = LangDictModule.from_dict({ ... })  # Module
+
+    def forward(self, inputs: Dict):
+        query_rewrite_result = self.query_rewrite({
+            "conversation": inputs["conversation"],
+        })
+        doc = self.search(query_rewrite_result)
+        return self.answer({
+            "conversation": inputs["conversation"],
+            "context": doc,
+        })
+```
+
+</details>
+
+<details>
+  <summary>Easy to change trace options (Console, Langfuse)</summary>
+
+```python
+# Apply Trace option to all modules
+rag = RAG()
+
+# Console Trace
+rag.trace(backend="console")
+
+# Langfuse
+rag.trace(backend="langfuse")
+```
+
+</details>
+
+<details>
+  <summary>Easy to change hyper-paramters (Prompt, Paramter)</summary>
+
+```python
+rag = RAG()
+rag.save_json("rag.json")
+# Modify "rag.json" file
+rag.load_json("rag.json")
+```
+</details>
+
+
+## Quick Start
+
+Install LangDict:
+
+```python
+$ pip install langdict
+```
+
+### Example
+
+**Chitchat** (`LangDict`)
+- Build LLM Module with the specification.
+
+```python
+from langdict import LangDict
+
+
+chitchat_spec = {
+    "messages": [
+        ("system", "You are a helpful AI bot. Your name is {name}."),
+        ("human", "Hello, how are you doing?"),
+        ("ai", "I'm doing well, thanks!"),
+        ("human", "{user_input}"),
+    ],
+    "llm": {
+        "model": "gpt-4o-mini",
+        "max_tokens": 200
+    },
+    "output": {
+        "type": "string"
+    }
+}
+chitchat = LangDict.from_dict(chitchat_spec)
+chitchat({
+    "name": "LangDict",
+    "user_input": "What is your name?"
+})
+>>> 'My name is LangDict. How can I assist you today?'
+```
+
+**RAGAgent** (`Module`, `LangDictModule`)
+- Build a agent by connecting multiple modules.
+
+```python
+from typing import Any, Dict, List
+
+from langdict import Module, LangDictModule
+
+
+class RAG(Module):
+
+    def __init__(self, docs: List[str]):
+        super().__init__()  
+        self.query_rewrite = LangDictModule.from_dict(query_rewrite_spec)
+        self.search = SimpleRetriever(docs=docs)  # Module
+        self.answer = LangDictModule.from_dict(answer_spec)
+
+    def forward(self, inputs: Dict[str, Any]):
+        query_rewrite_result = self.query_rewrite({
+            "conversation": inputs["conversation"],
+        })
+        doc = self.search(query_rewrite_result)
+        return self.answer({
+            "conversation": inputs["conversation"],
+            "context": doc,
+        })
+
+rag = RAG()
+inputs = {
+    "conversation": [{"role": "user", "content": "How old is Obama?"}]
+}
+
+rag(inputs)
+>>> 'Barack Obama was born on August 4, 1961. As of now, in September 2024, he is 63 years old.'
+```
+
+- Streaming
+
+```python
+rag = RAG()
+# Stream
+for token in rag(inputs, stream=True):
+    print(f"token > {token}")
+>>>
+token > Bar
+token > ack
+token >  Obama
+token >  was
+token >  born
+token >  on
+token >  August
+token >  
+token > 4
+...
+```
+
+- Get observability with a single line of code.
+
+```python
+rag = RAG()
+# Trace
+rag.trace(backend="langfuse")
+```
+
+- Save and load the module as a JSON file.
+
+```python
+rag = RAG()
+rag.save_json("rag.json")
+rag.load_json("rag.json")
+```
+
+## Dependencies
+
+LangDict requires the following:
+
+- [`LangChain`](https://github.com/langchain-ai/langchain) - LangDict consists of PromptTemplate + LLM + Output Parser.
+    - langchain
+    - langchain-core
+- [`LiteLLM`](https://github.com/BerriAI/litellm) - Call 100+ LLM APIs in OpenAI format.
+
+### Optional
+
+- [`Langfuse`](https://github.com/langfuse/langfuse) - If you use langfuse with the Trace option, you need to install it separately.
