@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: TrajAtlas
+Version: 0.3.1
+Summary: TrajAtlas, a trajectory-centric framework reveals differentiation heterogenity among cells, genes, and gene modules
+Author-email: Gilbert Han <gilberthan1011@gmail.com>
+Project-URL: Homepage, https://github.com/GilbertHan1011/TrajAtlas
+Project-URL: Bug Tracker, https://github.com/GilbertHan1011/TrajAtlas/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anndata >=0.8.0
+Requires-Dist: numpy >=1.23.5
+Requires-Dist: scipy >=1.10.1
+Requires-Dist: joblib >=1.2.0
+Requires-Dist: pandas <2.0.0
+Requires-Dist: scvi >=0.6.8
+Requires-Dist: scanpy >=1.9.1
+Requires-Dist: mudata >=0.2.3
+Requires-Dist: tqdm >=4.65.0
+Requires-Dist: statsmodels >=0.14.0
+Requires-Dist: PyComplexHeatmap >=1.6.4
+Requires-Dist: lightgbm
+Requires-Dist: scikit-learn
+Requires-Dist: rich
+Requires-Dist: muon
+Requires-Dist: docrep
+Requires-Dist: rpy2
+Requires-Dist: optax ==0.1.5
+Provides-Extra: scarches
+Requires-Dist: scarches >=0.5.6 ; extra == 'scarches'
+Requires-Dist: tensorflow >=2.13.0 ; extra == 'scarches'
+
+<p align="center">
+  <img width="300" src="img/logo.png">
+</p>
+
+<h1><p align="center">Unraveling multi-scale differentiation heterogeneity with trajectory-centric framework</p></h1>
+
+
+The central idea of **TrajAtlas** revolves around axis-based analysis. Although initially designed for osteogenesis datasets, 
+it can be applied to almost any type of dataset as long as you have an "axis" (such as pseudotime or gene expression patterns).
+
+<p align="center">
+  <img width="600" src="img/Fig1_v2.png">
+</p>
+
+## Getting started
+
+Please refer to the [documentation](https://trajatlas.readthedocs.io/en/stable/). In particular:
+
+- [API documentation](https://trajatlas.readthedocs.io/en/stable/api/index.html)
+- [Introduction](https://trajatlas.readthedocs.io/en/stable/introduction/index.html)
+- [Tutorial](https://trajatlas.readthedocs.io/en/stable/tutorial/index.html)
+
+If you want to do pseudotime analysis, please check 
+
+
+   [Differential Abundance analysis](https://trajatlas.readthedocs.io/en/stable/tutorial/Step2_differential_abundance.html)
+
+   [Differential Expression analysis](https://trajatlas.readthedocs.io/en/stable/tutorial/step3_DE.html)
+
+
+If you are interested in gene expression programs, we have developed a pipeline based on it. Please check 
+
+  [TrajAtlas meets gene expression program](https://trajatlas.readthedocs.io/en/stable/tutorial/4.15_GEP.html)
+
+
+If you are using gene set scoring for function inference, you can utilize TrajAtlas to identify which genes are more significant within the gene sets.
+
+  [TrajAtlas meets gene set scoring](https://trajatlas.readthedocs.io/en/stable/tutorial/gssaxis.html)
+  [TrajAtlas meets spatial omic](https://trajatlas.readthedocs.io/en/stable/tutorial/spaital_omic.html)
+
+If you have osteogenesis datasets, you can project your datasets onto our model.
+
+   [Projecting osteogenesis datasets](https://trajatlas.readthedocs.io/en/stable/tutorial/1_OPCST_projecting.html)
+
+
+## Installation
+
+You need to have Python 3.8 or newer installed on your system. If you don't have Python installed, we recommend installing [Mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html).
+
+You can install **TrajAtlas** with following codes
+
+```bash
+pip install TrajAtlas
+```
+
+## Citation
+
+**TrajAtlas** recently has posted on bioRxiv. If **TrajAtlas** helps you, please cite our [work](https://www.biorxiv.org/content/10.1101/2024.05.28.596174v1.full).
