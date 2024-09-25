@@ -1,0 +1,2 @@
+[console_scripts]
+computer2mqtt = computer2mqtt:sync_main
