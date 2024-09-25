@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+eheimdigital/__init__.py
+eheimdigital/classic_led_ctrl.py
+eheimdigital/classic_vario.py
+eheimdigital/device.py
+eheimdigital/heater.py
+eheimdigital/hub.py
+eheimdigital/types.py
+eheimdigital.egg-info/PKG-INFO
+eheimdigital.egg-info/SOURCES.txt
+eheimdigital.egg-info/dependency_links.txt
+eheimdigital.egg-info/requires.txt
+eheimdigital.egg-info/top_level.txt
+tests/test_hub.py
