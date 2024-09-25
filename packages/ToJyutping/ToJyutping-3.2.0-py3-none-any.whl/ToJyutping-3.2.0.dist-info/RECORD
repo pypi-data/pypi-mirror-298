@@ -1,0 +1,14 @@
+ToJyutping/CustomList.py,sha256=9bH5yKjS9Vtd49MhCoTIiIfi_glAXr5nKwGfbnF4LiQ,2195
+ToJyutping/Jyutping.py,sha256=TPLTOw-Dbl3_-2IupfaO4KM5wmzcUv02KvkmiT3zkvM,5393
+ToJyutping/PhonemesList.py,sha256=5hS0V4j7qvE3rfsbhS32NO48ntuc_8VErUwTy8yvzVU,518
+ToJyutping/ToJyutping.py,sha256=9K8vSEjGVJhV_C9FqFu-e9aNuqvbtFg6kBuNsAR9fuQ,3614
+ToJyutping/Trie.py,sha256=24uMcl6k0BCqVq2lJPcDgezdA2Aui94tDQKvGMey7EY,4373
+ToJyutping/__init__.py,sha256=DUKIGYocYIcoQXSNsA-Iibj_TGUIyLP_ZlKwgVRN070,611
+ToJyutping/trie.txt,sha256=SZXsRAJD1GikyBZpfn_ZqHuO-7kOVNsRnet4yCmodyk,379036
+ToJyutping/utils.py,sha256=OW4aJgv6zRgm4bzR4B4RJezUe5Nk8Xbyi2lzTKAWjbs,9380
+ToJyutping/version.py,sha256=kOZgokKclzJOb4ZLTaNz4mdDGkZQMziCTNNc9b9GmIQ,22
+ToJyutping-3.2.0.dist-info/LICENSE,sha256=HTZJo2fI5ALAWRQsQe9_APwc_Z47HAbs8Oi_8kZHaEs,1381
+ToJyutping-3.2.0.dist-info/METADATA,sha256=43hE2UrLqHbHmC04RG7Gdhrzec4QDtC-kxMkVTm8v5w,25818
+ToJyutping-3.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ToJyutping-3.2.0.dist-info/top_level.txt,sha256=dqfFco3Bo-U4lzfMLIw2d1L5jSBUDWUbTMybwiS_Kkg,11
+ToJyutping-3.2.0.dist-info/RECORD,,
