@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "IVOFilesConverter"
+version = "0.0.1"
+authors = [
+ { name="keynet", email="viktorplay377@gmail.com"},
+]
+description = "Конвертер файлов"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+   "Programming Language :: Python :: 3",
+   "License :: OSI Approved :: MIT License",
+   "Operating System :: OS Independent",
+]
