@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: streamlit-fluid-dropdown
+Version: 0.0.2
+Summary: Streamlit component that uses the Fluent UI to create a Dropdown box.
+Home-page: 
+Author: Taha Fanaswala
+Author-email: tahafanaswala@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit >=0.63
+Provides-Extra: devel
+Requires-Dist: wheel ; extra == 'devel'
+Requires-Dist: pytest ==7.4.0 ; extra == 'devel'
+Requires-Dist: playwright ==1.39.0 ; extra == 'devel'
+Requires-Dist: requests ==2.31.0 ; extra == 'devel'
+Requires-Dist: pytest-playwright-snapshot ==1.0 ; extra == 'devel'
+Requires-Dist: pytest-rerunfailures ==12.0 ; extra == 'devel'
+
+# streamlit-custom-component
+
+Streamlit component that uses Fluent UI to create a Dropdown box.
+
+## Installation instructions
+
+```sh
+pip install streamlit-fluid-dropdown
+```
+
+## Usage instructions
+
+```python
+import streamlit as st
+
+from fluid_dropdown import fluid_dropdown
+
+keys = ["A", "B", "C", "D"]
+labels = ["Item A", "Item B", "Item C", "Item D"]
+
+selected_idx_ = fluid_dropdown(name="default", options=labels)
+
+st.write(keys[selected_idx])
+```
+
+The returned value of this component is the index of the selected value. 
