@@ -1,0 +1,3 @@
+[console_scripts]
+device-certificate-report=device_certificate_report.main:app
+
