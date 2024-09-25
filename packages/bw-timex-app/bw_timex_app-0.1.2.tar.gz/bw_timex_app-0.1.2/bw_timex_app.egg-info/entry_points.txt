@@ -1,0 +1,2 @@
+[console_scripts]
+bw-timex-app = bw_timex_app.cli:main
