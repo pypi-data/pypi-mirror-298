@@ -1,0 +1,278 @@
+<!-- <div class="container mt-4"> -->
+<hr>
+
+<div>
+    <h4>Búsqueda</h4>
+    <form action="{{ url_for('search') }}" id="searchForm" method="POST">
+        <!-- Selección de campo de búsqueda -->
+        <div class="form-inline">
+            <div class="form-group mr-2">
+                <!-- <label for="search-field">Selecciona un campo:</label> -->
+                <select id="search-field" class="form-control" onchange="updateSearchField()">
+                    <option value="">-- Selecciona un campo --</option>
+                    {% for input in template_data.form_data.inputs %}
+                    <option value="{{ input.name }}">{{ input.label }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        
+            <div class="form-group" id="search-type-container">
+                <!-- Aquí se añadirá el selector de tipo de búsqueda -->
+            </div>
+        
+            <div class="form-group ml-1 mr-1" id="search-input-container">
+                <!-- Aquí se añadirá el input dinámicamente -->
+            </div>
+        
+            <button type="button" class="btn btn-success btn-m" onclick="addCriteria()">Añadir criterio</button>
+        </div>        
+
+        <!-- Lista de criterios añadidos -->
+        <h5 class="mt-3 mb-2">Criterios de búsqueda:</h5>
+        <!-- <ul id="criteria-list" class="list-group form-inline"></ul> -->
+        <!-- <ul id="criteria-list" class="list-group form-inline d-flex flex-wrap justify-content-start gap-2"></ul> -->
+        <ul id="criteria-list" class="d-flex flex-wrap"></ul>
+
+        <br>
+
+        <!-- Botón para enviar la búsqueda -->
+        <button type="submit" class="btn btn-primary" onclick="submitForm()">Buscar</button>
+    </form>
+</div>
+<hr>
+<script>
+    // <option value="nombre">Nombre</option>
+    // <option value="precio">Precio</option>
+    // <option value="categoria">Categoría</option>
+    // <option value="fecha">Fecha</option>
+    // Configuración del mapa de campos y sus opciones
+    const fieldsData = [
+        {% for input in template_data.form_data.inputs %}
+        {
+            "name": "{{ input.name }}",
+            "label": "{{ input.label }}",
+            "type": "{{ input.type }}"{% if input.options %},
+                "options": [
+                {% for option in input.options %}
+                    "{{ option }}"
+                    {% if not loop.last %},{% endif %}
+                {% endfor %}
+                ]
+            {% endif %}
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+    ];
+    
+    // const criterialsToRequest = []
+
+    const searchFieldMap = {
+        "text": {
+            "type": "text",
+            "placeholder": "Escribe un nombre",
+            "searchTypes": ["Coincidencia", "Exacta"]
+        },
+        "number": {
+            "type": "number",
+            "placeholder": "Introduce un precio",
+            "searchTypes": ["Exacta", "Intervalo"]
+        },
+        "select": {
+            "type": "select",
+            "searchTypes": ["Exacta"]
+        },
+        "date": {
+            "type": "date",
+            "placeholder": "Selecciona una fecha",
+            "searchTypes": ["Exacta", "Intervalo"]
+        }
+    };
+
+    // Actualiza el campo de búsqueda según el campo seleccionado
+    function updateSearchField() {
+        const selectedFieldName = document.getElementById("search-field").value; // Obtener el nombre del campo seleccionado
+        const searchInputContainer = document.getElementById("search-input-container");
+        const searchTypeContainer = document.getElementById("search-type-container");
+
+        // Limpiar los contenedores antes de añadir los nuevos elementos
+        searchInputContainer.innerHTML = '';
+        searchTypeContainer.innerHTML = '';
+
+        // Filtrar el campo seleccionado desde fieldsData
+        const selectedFieldData = fieldsData.filter(fieldDt => fieldDt.name === selectedFieldName)[0];
+
+        if (selectedFieldData && selectedFieldData.type in searchFieldMap) {
+            const fieldConfig = searchFieldMap[selectedFieldData.type];
+
+            // Crear el dropdown de tipo de búsqueda
+            const searchTypeSelect = document.createElement("select");
+            searchTypeSelect.className = "form-control";
+            searchTypeSelect.id = "search-type";
+            fieldConfig.searchTypes.forEach(type => {
+                const option = document.createElement("option");
+                option.value = type;
+                option.textContent = type;
+                searchTypeSelect.appendChild(option);
+            });
+            searchTypeContainer.appendChild(searchTypeSelect);
+
+            // Mostrar los campos de entrada según el tipo de búsqueda
+            searchTypeSelect.addEventListener("change", function() {
+                updateInputField(fieldConfig, searchTypeSelect.value, selectedFieldData);
+            });
+
+            // Iniciar mostrando el primer tipo de búsqueda por defecto
+            updateInputField(fieldConfig, searchTypeSelect.value, selectedFieldData);
+        }
+    }
+
+    // Actualiza el campo de entrada según el tipo de búsqueda
+    function updateInputField(fieldConfig, searchType, selectedFieldData) {
+        const searchInputContainer = document.getElementById("search-input-container");
+        searchInputContainer.innerHTML = '';
+
+        // Mostrar siempre el campo de texto para búsquedas de texto con "Coincidencia" o "Exacta"
+        if (fieldConfig.type === "text") {
+            const input = document.createElement("input");
+            input.type = fieldConfig.type;
+            input.className = "form-control";
+            input.id = "search-value";
+            input.placeholder = fieldConfig.placeholder;
+            searchInputContainer.appendChild(input);
+        } 
+        
+        // Para números y fechas, manejar "Exacta" o "Intervalo"
+        else if (searchType === "Exacta") {
+            if (fieldConfig.type === "number" || fieldConfig.type === "date") {
+
+                const input = document.createElement("input");
+                input.type = fieldConfig.type;
+                input.className = "form-control";
+                input.id = "search-value";
+                input.placeholder = fieldConfig.placeholder;
+                  // Si el tipo es number, establecer que no se puedan ingresar valores negativos
+                if (fieldConfig.type === "number") {
+                    input.min = "0";  // Establece el valor mínimo como 0 para evitar números negativos
+                }
+                
+                // Si el tipo es date, agregar control para el rango de fechas
+                // if (fieldConfig.type === "date") {
+                //     input.min = fieldConfig.minDate || "2020-01-01";  // Fecha mínima permitida
+                //     input.max = fieldConfig.maxDate || "2030-12-31";  // Fecha máxima permitida
+                // }
+
+                searchInputContainer.appendChild(input);
+            } else if (fieldConfig.type === "select") {
+                const select = document.createElement("select");
+                select.className = "form-control";
+                select.id = "search-value";
+
+                selectedFieldData.options.forEach(option => {
+                    const opt = document.createElement("option");
+                    opt.value = option;
+                    opt.textContent = option;
+                    select.appendChild(opt);
+                });
+                searchInputContainer.appendChild(select);
+            }
+        } else if (searchType === "Intervalo" && (fieldConfig.type === "number" || fieldConfig.type === "date")) {
+            // Campos de entrada para intervalos (números o fechas)
+            const inputMin = document.createElement("input");
+            inputMin.type = fieldConfig.type;
+            inputMin.className = "form-control mr-1";
+            inputMin.id = "search-value-min";
+            inputMin.placeholder = `Mínimo ${fieldConfig.type === "date" ? "fecha" : "valor"}`;
+            
+            const inputMax = document.createElement("input");
+            inputMax.type = fieldConfig.type;
+            inputMax.className = "form-control";
+            inputMax.id = "search-value-max";
+            inputMax.placeholder = `Máximo ${fieldConfig.type === "date" ? "fecha" : "valor"}`;
+
+            searchInputContainer.appendChild(inputMin);
+            searchInputContainer.appendChild(inputMax);
+        }
+    }
+
+    let criterialsToRequest = [];
+
+// Función para añadir criterios a la lista
+function addCriteria() {
+    const selectedField = document.getElementById("search-field").value;
+    const searchType = document.getElementById("search-type").value;
+    const searchValue = document.getElementById("search-value");
+    const searchValueMin = document.getElementById("search-value-min");
+    const searchValueMax = document.getElementById("search-value-max");
+    const selectedFieldData = fieldsData.filter(fieldDt => fieldDt.name === selectedField)[0];
+
+    let value;
+
+    // Obtener el valor según el tipo de búsqueda
+    if (searchType === "Exacta" || searchType === "Coincidencia") {
+        value = searchValue ? searchValue.value : null;
+    } else if (searchType === "Intervalo") {
+        const minValue = parseFloat(searchValueMin.value);
+        const maxValue = parseFloat(searchValueMax.value);
+
+        // Verificar cuál valor es menor y asignar correctamente
+        if (minValue > maxValue) {
+            value = `${searchValueMax.value} a ${searchValueMin.value}`;
+        } else {
+            value = `${searchValueMin.value} a ${searchValueMax.value}`;
+        }
+    }
+
+    if (selectedField && value) {
+        const criteriaList = document.getElementById("criteria-list");
+
+        // Crear un nuevo criterio
+        const newCriteria = document.createElement("li");
+        newCriteria.className = "list-group-item li-child";
+
+        // Añadir a la lista de criterios
+        criterialsToRequest.push({ name: selectedField, searchType: searchType, value: value });
+        
+        // <button type="button" class="btn btn-danger btn-sm" onclick="removeCriteria(this)">Eliminar</button>
+        newCriteria.innerHTML = `
+            <strong>${selectedFieldData.label} (${searchType}):</strong> ${value}
+            <input type="hidden" name="criteria" value="${selectedField}:${searchType}:${value}">
+            <button type="button" class="btn btn-danger btn-sm square-btn" onclick="removeCriteria(this)">X</button>
+        `;
+        
+        // Añadir el criterio a la lista
+        criteriaList.appendChild(newCriteria);
+
+        // Limpiar el campo de valor
+        updateSearchField(); // Resetea el campo
+    } else {
+        alert("Por favor selecciona un campo y escribe un valor de búsqueda válido.");
+    }
+}
+
+// Función para eliminar un criterio de la lista
+function removeCriteria(button) {
+    const criteriaItem = button.parentElement;
+    const valueToRemove = criteriaItem.querySelector('input[type="hidden"]').value;
+
+    // Eliminar del array criterialsToRequest
+    criterialsToRequest = criterialsToRequest.filter(criteria => {
+        const [name, type, value] = valueToRemove.split(':');
+        return !(criteria.name === name && criteria.searchType === type && criteria.value === value);
+    });
+
+    // Eliminar el elemento de la lista
+    criteriaItem.remove();
+}
+
+// Función para enviar el formulario
+function submitForm() {
+    const criteriaInput = document.createElement("input");
+    criteriaInput.type = "hidden";
+    criteriaInput.name = "criteriaList";
+    criteriaInput.value = JSON.stringify(criterialsToRequest); // Convierte a JSON
+
+    const form = document.getElementById("searchForm"); // Asegúrate de que el ID del formulario es correcto
+    form.appendChild(criteriaInput);
+    form.submit();
+}
+
+</script>

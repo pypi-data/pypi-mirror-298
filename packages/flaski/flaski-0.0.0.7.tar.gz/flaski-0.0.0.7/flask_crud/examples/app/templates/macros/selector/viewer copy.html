@@ -1,0 +1,24 @@
+{% macro render(viewer_data, mount_field={"name":"Default name", "label":"Cantidad", "text_btn":"Agregar"}, cfg={}) %}
+{% if viewer_data %}
+
+<!-- Detalles del Vehículo -->
+  <div class="form-group details-wrapper mr-5" id="data-details">
+    {% if cfg.title %}<h2 class="mt-5">{{ cfg.title }}</h2>{% endif %}
+    {% for field in viewer_data %}
+        {% set display_name = field.replace('_', ' ').capitalize() %}
+        <label class="mt-3" for="{{field}}">{{ display_name }}:</label>
+        <input class="form-control" type="text" id="{{field}}" value="{{viewer_data[field]}}" disabled>
+    {% endfor %}
+
+    <!-- <label for="vehicle-available">Cantidad Disponible:</label>
+    <input type="text" id="vehicle-available" disabled> -->
+    <label class="mt-3" for="{{mount_field.name}}">{{mount_field.label}}:</label>
+    <input type="number" id="{{mount_field.name}}" class="form-control" min="1" placeholder="Ingrese cantidad">
+
+    <p class="error-message mt-3" id="quantity-error">La cantidad debe ser mayor que 0 y no debe exceder la cantidad disponible.</p>
+
+    <button  type="button" id="add-to-post-data" class="mt-3 btn-primary btn">{{mount_field.text_btn}}</button>
+
+</div>
+{% endif %}
+{% endmacro %}

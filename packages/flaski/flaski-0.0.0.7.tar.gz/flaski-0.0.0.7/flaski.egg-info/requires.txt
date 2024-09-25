@@ -1,0 +1,4 @@
+Flask
+Flask-MySQLdb
+flask_login
+flask_mysqldb

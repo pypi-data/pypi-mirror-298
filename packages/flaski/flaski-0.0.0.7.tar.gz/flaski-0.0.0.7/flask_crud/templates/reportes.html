@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Reportes de Ventas{% endblock %}
+
+{% block content %}
+    <h1 class="mt-5">Reportes de Ventas</h1>
+    <div class="mt-3 mb-3">
+        <a href="{{ url_for('export_reportes', formato='csv') }}" class="btn btn-success">Exportar CSV</a>
+        <a href="{{ url_for('export_reportes', formato='xls') }}" class="btn btn-success">Exportar XLS</a>
+        <a href="{{ url_for('export_reportes', formato='json') }}" class="btn btn-success">Exportar JSON</a>
+        <a href="{{ url_for('export_reportes', formato='pdf') }}" class="btn btn-success">Exportar PDF</a>
+    </div>
+    <table class="table table-bordered mt-3">
+        <thead>
+            <tr>
+                <th>Categoría</th>
+                <th>Total Cantidad</th>
+                <th>Total Venta</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for reporte in reportes %}
+            <tr>
+                <td>{{ reporte[0] }}</td>
+                <td>{{ reporte[1] }}</td>
+                <td>{{ reporte[2] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

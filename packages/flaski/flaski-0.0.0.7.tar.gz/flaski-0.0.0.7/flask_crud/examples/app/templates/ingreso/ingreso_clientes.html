@@ -1,0 +1,48 @@
+{% import "macros/form_macro.html" as forms %}
+{% import "macros/table_macro.html" as tables %}
+{% import "macros/selector/table_selector.html" as table_selector %}
+{% import "macros/selector/simple_selector.html" as simple_selector %}
+{% import "macros/selector/viewer.html" as viewers %}
+{% extends "base.html" %}
+
+{% block title %}{{main_title}}{% endblock %}
+
+{# START - TABLE SELECTOR (VIEWER DEFAULTS) #}
+{% set df_mount_field={"stock_name":"cantidad_disponible", "name":"cantidad", "label":"Cantidad a ordenar", "head":"Cantidad", "text_btn":"Agregar"} %}
+{% set df_cfg_table_selector={"detail_title":"Detalles", "order_title":"Orden/Pedido", "sales_title":"Disponibles"} %}
+{# END - TABLE SELECTOR (VIEWER DEFAULTS) #}
+
+{% block content %}
+<h1 class="mt-5">{{main_title}}</h1>
+{% if comps_data %}
+    {% for comp_data in comps_data %}
+        {% if comp_data.type=="form" %}
+            {{ forms.render(comp_data.form_data) }}
+        {% endif %}
+        {% if comp_data.type=="table" %}
+            {{ tables.render(comp_data.table_data) }}
+        {% endif %}
+        {% if comp_data.type=="table_selector" %}
+            {{ table_selector.render(comp_data.viewer_data, comp_data.table_data) }}
+        {% endif %}
+        {% if comp_data.type=="form+table_selector" %}            
+            {% set selector_ui = viewers.render(comp_data.viewer_data, comp_data.table_data, comp_data.mount_field, comp_data.cfg_table_selector) %}
+            {{ forms.render(comp_data.form_data, content=selector_ui) }}
+        {% endif %}
+        {% if comp_data.type=="form+simple_selector" %}
+            {% set simple_selector_ui = simple_selector.render(comp_data.table_data, comp_data.cfg_simple_selector) %}
+            {{ forms.render(comp_data.form_data, content=simple_selector_ui) }}
+        {% endif %}
+        {% if comp_data.type=="form+table" %}
+            {% set tableui = tables.render(comp_data.table_data) %}
+            {{ forms.render(comp_data.form_data, content=tableui) }}
+        {% endif %}
+        {% if comp_data.type=="viewer" %}
+            {{ viewers.render(comp_data.data, comp_data.table_data) }}
+        {% endif %}
+        {% if comp_data.type=="simple_selector" %}
+            {{ simple_selector.render(comp_data.table_data, comp_data.cfg_simple_selector) }}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+{% endblock%}
