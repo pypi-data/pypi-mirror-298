@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: tintapy
+Version: 0.1.1
+Summary: A package that provides tools for applying text styles and color customization in the terminal using ANSI sequences.
+Home-page: https://github.com/managua48/tintapy
+Author: managua48
+Author-email: julio.balladares@icloud.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tintapy
+
+`tintapy` is a versatile Python package that provides a wide range of tools to apply advanced text styling and color customization in the terminal using ANSI escape sequences. This package supports text effects such as bold, underline, foreground and background colors, and even more advanced styles like blinking, strikethrough, double underline, and rainbow effects. It also includes support for 256-color palettes and 24-bit RGB color customization, making it an excellent choice for enhancing the visual appeal of CLI applications and scripts.
+
+## Features
+
+- Full support for ANSI text styles: bold, italic, underline, strikethrough, etc.
+- Manipulation of foreground and background colors, including bright colors and 24-bit RGB.
+- Effects such as blinking text, double underline, and overline.
+- Support for 256-color palettes.
+- Windows compatibility to enable ANSI sequences in `cmd` and PowerShell.
+- Static and animated rainbow text effects.
+
+## Installation
+
+To install the package, simply use `pip`:
+
+```bash
+pip install tintapy
+```
+
+## Usage
+
+### Basic Example
+
+Hereâ€™s a simple example of how to use `tintapy`'s basic functionality:
+
+```python
+from tintapy import Tinta, bold, underline, colored
+
+print(bold("This is bold text"))
+print(underline("This is underlined text"))
+
+print(Tinta.RED + "This text is red!" + Tinta.RESET)
+
+print(Tinta.palette_256(fg=46, bg=160) + "This text has custom foreground and background colors!" + Tinta.RESET)
+```
+
+### Advanced Usage
+
+#### Using RGB Colors
+
+You can specify exact RGB values for even greater control over your text styling:
+
+```python
+from tintapy import Tinta
+
+print(Tinta.rgb(255, 0, 0) + "This is red using RGB!" + Tinta.RESET)
+
+print(Tinta.rgb(0, 255, 0, is_bg=True) + "This text has a green background!" + Tinta.RESET)
+```
+
+#### Rainbow Effect
+
+Apply a rainbow color effect to your text:
+
+```python
+from tintapy import rainbow
+
+print(rainbow("This text has a static rainbow effect!"))
+```
+
+#### Animated Rainbow Effect
+
+For dynamic CLI applications, you can even create text with animated rainbow effects:
+
+```python
+from tintapy import rainbow_animate
+
+rainbow_animate("This is an animated rainbow!", speed=0.2)
+```
+
+### Styles and Effects
+
+Here are additional examples of how to apply various styles and effects:
+
+```python
+from tintapy import italic, blink, double_underline, overline, strikethrough
+
+print(italic("This text is italicized"))
+print(blink("This text is blinking"))
+print(double_underline("This text has a double underline"))
+print(overline("This text has an overline"))
+print(strikethrough("This text is strikethrough"))
+```
+
+### Custom Text Styling with Multiple Effects
+
+You can also combine several styles in a single function call:
+
+```python
+from tintapy import style_text, Tinta
+
+styled_text = style_text("Styled Text!", color=Tinta.GREEN, styles=[Tinta.BOLD, Tinta.UNDERLINE])
+print(styled_text)
+```
+
+## Windows Compatibility
+
+By default, Windows terminals (`cmd` and PowerShell) do not support ANSI escape sequences. However, `tintapy` includes a built-in function to enable ANSI sequence support:
+
+```python
+from tintapy import enable_windows_ansi_support
+
+enable_windows_ansi_support()
+```
+
+Call this function at the beginning of your script to ensure that ANSI codes work on Windows.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributions
+
+Contributions are welcome! Feel free to submit a pull request or report issues on the [GitHub repository](https://github.com/managua48/tintapy).

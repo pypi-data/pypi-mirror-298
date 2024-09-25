@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+tintapy.egg-info/PKG-INFO
+tintapy.egg-info/SOURCES.txt
+tintapy.egg-info/dependency_links.txt
+tintapy.egg-info/top_level.txt
