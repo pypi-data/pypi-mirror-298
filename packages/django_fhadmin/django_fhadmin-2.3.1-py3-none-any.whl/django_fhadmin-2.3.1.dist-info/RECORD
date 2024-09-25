@@ -1,0 +1,17 @@
+fhadmin/__init__.py,sha256=cWTgR7g22UIh3YRCSchZw6kjgM15T7kwo4jwQBaYbFc,102
+fhadmin/apps.py,sha256=V__LphvgIGMekFXQ_ErIsP9x7RcVBy45M56Vo6hIL6I,199
+fhadmin/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fhadmin/locale/de/LC_MESSAGES/django.mo,sha256=mPf_bUVdZ-u2h9oCJtbTNZ2Gi7QV_y80QaufgsQcl3I,782
+fhadmin/locale/de/LC_MESSAGES/django.po,sha256=0xZRJ-H3nWrNs9H_vlB4IzlCEq3pPzyYQFOb5I77S0s,1238
+fhadmin/static/fhadmin/fhadmin.css,sha256=u9szLqXICrsyQkzeRGKkc7gmPtkrkQ_WIlTO45EqFCk,1650
+fhadmin/static/fhadmin/fhadmin.js,sha256=6XGBKU3C73GHm0oXAWjwmrHUNiFB-huMWc16E0nGNh4,477
+fhadmin/templates/admin/base_site.html,sha256=G3NdiZPsD3pjNkHVqa8Lnw49G484_P5pth3eEjlEBFY,463
+fhadmin/templates/admin/group_list.html,sha256=eQwTpY3oa-GNG6dGJcDVVMIjSkfo7sRxLsdPJ-XiPSk,445
+fhadmin/templates/admin/index.html,sha256=Ym95bTZCeVEouRxA0QZzgjLZzjhzX33uFoCEAiauDHY,176
+fhadmin/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fhadmin/templatetags/fhadmin_groups.py,sha256=nSMYdpTx0aEUYsCvAGa0dU7srS8HRk8oJlT3Yq0CSVY,2997
+django_fhadmin-2.3.1.dist-info/LICENSE,sha256=EeStXy_qBePVTsM8AHL7fnHdVlyfAmRdMDArwiUh84o,1557
+django_fhadmin-2.3.1.dist-info/METADATA,sha256=Fv9_Z07ZvOTRZt9ET1tKX6J204BOt_JkVsQnns-NZ3k,1938
+django_fhadmin-2.3.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+django_fhadmin-2.3.1.dist-info/top_level.txt,sha256=K_aIxFl54EJbRhWz8-LdaWkS_Tfwd46pCxh1nn3kToU,8
+django_fhadmin-2.3.1.dist-info/RECORD,,
