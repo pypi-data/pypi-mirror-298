@@ -1,0 +1,13 @@
+SecurePassX/SecurePassX.py,sha256=Fm2BUUkBFkXYOMcZuZOLOrLXRl48EaHk1HcYzm0IOa4,2001
+SecurePassX/__init__.py,sha256=DKXxPTeSB0EUNcEP7jdfO5QccNj4pBQtpb5--jsnYQM,389
+SecurePassX/__main__.py,sha256=gW25YoQDaK6xelpLSHMTTAp8AeAtwcBdr4jb8NQb8Is,129
+SecurePassX/cli.py,sha256=5zsPzvi091bxfiKyyxuY_JG-DSSKJLo02SRGlPZ5S54,5825
+SecurePassX/config.py,sha256=G9i2tdXI8NgDsijGVIePo5-eflICKNSXFas2AK7o18g,1250
+SecurePassX/database.py,sha256=deQL-5V240wShRRy3pXY_1xE0Qomonfs44RlSFjJALU,1651
+SecurePassX/security.py,sha256=Gjj88s60bQ4qBZSRGXn17WyliLkZnawVyDG-L-7XdMM,713
+SecurePassX-0.1.0.dist-info/LICENSE,sha256=f_QLBs-R2Pl0MibM0cog77TNbH2H2CKMCSroiN6yvkA,1063
+SecurePassX-0.1.0.dist-info/METADATA,sha256=CXrZc-Dazg-J9OvVmv7NUQ5M2qjluNhLDWa5LjUybHY,919
+SecurePassX-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+SecurePassX-0.1.0.dist-info/entry_points.txt,sha256=m_UoLIEM9h2irnhW6gY3B3NV5zpaNKmqsHyNKMapTFo,58
+SecurePassX-0.1.0.dist-info/top_level.txt,sha256=ehh4pDgR60zUMn4Pk3jJPsIEblPnqp2M3BsiABlu56w,12
+SecurePassX-0.1.0.dist-info/RECORD,,
