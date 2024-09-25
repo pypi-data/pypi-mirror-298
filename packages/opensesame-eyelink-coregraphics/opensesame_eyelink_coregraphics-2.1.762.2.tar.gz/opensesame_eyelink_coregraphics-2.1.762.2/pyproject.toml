@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "opensesame-eyelink-coregraphics"
+version = "2.1.762.2"
+description = "Implementation of the EyeLink core graphics set of handlers for OpenSesame 4.0"
+authors = ["Jono Batten <jono@sr-research.com>", "Zhiguo Wang <zhiguo@sr-research.com>", "SR Research Support <support@sr-research.com>"]
+readme = "README.md"
+packages = [
+    {include = "EyeLinkCoreGraphicsOpensesame"},
+]
+[tool.poetry.dependencies]
+python = ">= 3.9"
+opensesame-core = ">= 4.0.0a0"
+sr-research-pylink = ">= 2.1.0"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
