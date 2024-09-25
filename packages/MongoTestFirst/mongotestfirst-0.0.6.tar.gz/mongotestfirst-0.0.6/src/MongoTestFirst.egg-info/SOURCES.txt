@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/MongoTestFirst.egg-info/PKG-INFO
+src/MongoTestFirst.egg-info/SOURCES.txt
+src/MongoTestFirst.egg-info/dependency_links.txt
+src/MongoTestFirst.egg-info/requires.txt
+src/MongoTestFirst.egg-info/top_level.txt
+src/mongodb_test_package/__init__.py
+src/mongodb_test_package/mongo_crud.py
