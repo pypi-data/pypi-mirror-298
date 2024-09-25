@@ -1,0 +1,267 @@
+[0] [PID39259] -root- 2024-09-24 10:53:51,600 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID39286] -root- 2024-09-24 10:54:16,687 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID39286] -Framework Log- 2024-09-24 10:54:16,688 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}
+[0] [PID39286] -Framework Log- 2024-09-24 10:54:46,847 | ERROR | client.py:155: Message failed delivery: KafkaError{code=_MSG_TIMED_OUT,val=-192,str="Local: Message timed out"}
+[0] [PID39371] -root- 2024-09-24 10:55:52,784 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID39371] -Framework Log- 2024-09-24 10:55:52,784 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}
+[0] [PID39385] -root- 2024-09-24 10:56:09,057 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID39385] -Framework Log- 2024-09-24 10:56:09,058 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}
+[0] [PID39413] -root- 2024-09-24 10:56:26,995 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID39413] -Framework Log- 2024-09-24 10:56:26,996 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}
+[0] [PID39463] -root- 2024-09-24 10:56:51,584 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID39463] -Framework Log- 2024-09-24 10:56:51,584 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}
+[0] [PID39493] -root- 2024-09-24 10:57:11,518 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID39493] -Framework Log- 2024-09-24 10:57:11,519 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}
+[0] [PID40191] -root- 2024-09-24 11:11:58,162 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID40191] -Framework Log- 2024-09-24 11:11:58,163 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}
+[0] [PID40191] -Framework Log- 2024-09-24 11:12:28,286 | ERROR | client.py:155: Message failed delivery: KafkaError{code=_MSG_TIMED_OUT,val=-192,str="Local: Message timed out"}
+[0] [PID40377] -root- 2024-09-24 11:15:22,113 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID40377] -Framework Log- 2024-09-24 11:15:22,114 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}
+[0] [PID40446] -root- 2024-09-24 11:16:25,532 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID40446] -Framework Log- 2024-09-24 11:16:25,534 | INFO | client.py:37: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}
+[0] [PID40446] -Framework Log- 2024-09-24 11:16:55,635 | ERROR | client.py:155: Message failed delivery: KafkaError{code=_MSG_TIMED_OUT,val=-192,str="Local: Message timed out"}
+[0] [PID40688] -root- 2024-09-24 11:20:12,527 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID40688] -Framework Log- 2024-09-24 11:20:12,527 | INFO | client.py:47: Kafka Client initialized with brokers: 10.5.32.104:9092,10.5.32.105:9092,10.5.32.106:9092, producer_config: {}, consumer_config: {}
+[0] [PID40688] -Framework Log- 2024-09-24 11:20:42,627 | ERROR | client.py:165: Message failed delivery: KafkaError{code=_MSG_TIMED_OUT,val=-192,str="Local: Message timed out"}
+[0] [PID41016] -root- 2024-09-24 11:27:19,042 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID41016] -Framework Log- 2024-09-24 11:27:19,043 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}
+[0] [PID41016] -Framework Log- 2024-09-24 11:27:20,125 | INFO | client.py:167: Message delivered to test-topic [0] at offset 0
+[0] [PID41035] -root- 2024-09-24 11:27:45,735 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID41035] -Framework Log- 2024-09-24 11:27:45,736 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}
+[0] [PID41035] -Framework Log- 2024-09-24 11:27:45,822 | INFO | client.py:167: Message delivered to test-topic [0] at offset 1
+[0] [PID46479] -root- 2024-09-24 13:42:58,276 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID46479] -Framework Log- 2024-09-24 13:42:58,278 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}
+[0] [PID46543] -root- 2024-09-24 13:44:00,704 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID46543] -Framework Log- 2024-09-24 13:44:00,705 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}
+[0] [PID46543] -Framework Log- 2024-09-24 13:44:00,783 | INFO | client.py:167: Message delivered to test-topic [0] at offset 2
+[0] [PID46625] -root- 2024-09-24 13:45:32,448 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID46625] -Framework Log- 2024-09-24 13:45:32,448 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}
+[0] [PID46738] -root- 2024-09-24 13:47:51,496 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID46738] -Framework Log- 2024-09-24 13:47:51,497 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}
+[0] [PID46784] -root- 2024-09-24 13:48:47,644 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID46784] -Framework Log- 2024-09-24 13:48:47,644 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}
+[0] [PID46931] -root- 2024-09-24 13:51:36,433 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID46931] -Framework Log- 2024-09-24 13:51:36,435 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}
+[0] [PID46931] -Framework Log- 2024-09-24 13:51:36,786 | INFO | client.py:167: Message delivered to test-topic [0] at offset 4
+[0] [PID46984] -root- 2024-09-24 13:52:27,299 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID46984] -Framework Log- 2024-09-24 13:52:27,299 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}
+[0] [PID47113] -root- 2024-09-24 13:54:24,167 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID47113] -Framework Log- 2024-09-24 13:54:24,168 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}
+[0] [PID47113] -Framework Log- 2024-09-24 13:54:24,368 | INFO | client.py:166: Message delivered to test-topic [0] at offset 5
+[0] [PID47630] -root- 2024-09-24 14:03:19,185 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:19,185 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,240 | INFO | client.py:166: Message delivered to test-topic [0] at offset 6
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,240 | INFO | client.py:166: Message delivered to test-topic [0] at offset 7
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,241 | INFO | client.py:166: Message delivered to test-topic [0] at offset 8
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,241 | INFO | client.py:166: Message delivered to test-topic [0] at offset 9
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,241 | INFO | client.py:166: Message delivered to test-topic [0] at offset 10
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,242 | INFO | client.py:166: Message delivered to test-topic [0] at offset 11
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,242 | INFO | client.py:166: Message delivered to test-topic [0] at offset 12
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,242 | INFO | client.py:166: Message delivered to test-topic [0] at offset 13
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,243 | INFO | client.py:166: Message delivered to test-topic [0] at offset 14
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,243 | INFO | client.py:166: Message delivered to test-topic [0] at offset 15
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,243 | INFO | client.py:166: Message delivered to test-topic [0] at offset 16
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,243 | INFO | client.py:166: Message delivered to test-topic [0] at offset 17
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,244 | INFO | client.py:166: Message delivered to test-topic [0] at offset 18
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,244 | INFO | client.py:166: Message delivered to test-topic [0] at offset 19
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,244 | INFO | client.py:166: Message delivered to test-topic [0] at offset 20
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,245 | INFO | client.py:166: Message delivered to test-topic [0] at offset 21
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,245 | INFO | client.py:166: Message delivered to test-topic [0] at offset 22
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,245 | INFO | client.py:166: Message delivered to test-topic [0] at offset 23
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,246 | INFO | client.py:166: Message delivered to test-topic [0] at offset 24
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,246 | INFO | client.py:166: Message delivered to test-topic [0] at offset 25
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,246 | INFO | client.py:166: Message delivered to test-topic [0] at offset 26
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,246 | INFO | client.py:166: Message delivered to test-topic [0] at offset 27
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,247 | INFO | client.py:166: Message delivered to test-topic [0] at offset 28
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,247 | INFO | client.py:166: Message delivered to test-topic [0] at offset 29
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,247 | INFO | client.py:166: Message delivered to test-topic [0] at offset 30
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,248 | INFO | client.py:166: Message delivered to test-topic [0] at offset 31
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,248 | INFO | client.py:166: Message delivered to test-topic [0] at offset 32
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,248 | INFO | client.py:166: Message delivered to test-topic [0] at offset 33
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,249 | INFO | client.py:166: Message delivered to test-topic [0] at offset 34
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,249 | INFO | client.py:166: Message delivered to test-topic [0] at offset 35
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,250 | INFO | client.py:166: Message delivered to test-topic [0] at offset 36
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,250 | INFO | client.py:166: Message delivered to test-topic [0] at offset 37
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,250 | INFO | client.py:166: Message delivered to test-topic [0] at offset 38
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,251 | INFO | client.py:166: Message delivered to test-topic [0] at offset 39
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,251 | INFO | client.py:166: Message delivered to test-topic [0] at offset 40
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,251 | INFO | client.py:166: Message delivered to test-topic [0] at offset 41
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,251 | INFO | client.py:166: Message delivered to test-topic [0] at offset 42
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,252 | INFO | client.py:166: Message delivered to test-topic [0] at offset 43
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,252 | INFO | client.py:166: Message delivered to test-topic [0] at offset 44
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,252 | INFO | client.py:166: Message delivered to test-topic [0] at offset 45
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,253 | INFO | client.py:166: Message delivered to test-topic [0] at offset 46
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,253 | INFO | client.py:166: Message delivered to test-topic [0] at offset 47
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,253 | INFO | client.py:166: Message delivered to test-topic [0] at offset 48
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,254 | INFO | client.py:166: Message delivered to test-topic [0] at offset 49
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,254 | INFO | client.py:166: Message delivered to test-topic [0] at offset 50
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,255 | INFO | client.py:166: Message delivered to test-topic [0] at offset 51
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,255 | INFO | client.py:166: Message delivered to test-topic [0] at offset 52
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,255 | INFO | client.py:166: Message delivered to test-topic [0] at offset 53
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,255 | INFO | client.py:166: Message delivered to test-topic [0] at offset 54
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,256 | INFO | client.py:166: Message delivered to test-topic [0] at offset 55
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,256 | INFO | client.py:166: Message delivered to test-topic [0] at offset 56
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,256 | INFO | client.py:166: Message delivered to test-topic [0] at offset 57
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,257 | INFO | client.py:166: Message delivered to test-topic [0] at offset 58
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,257 | INFO | client.py:166: Message delivered to test-topic [0] at offset 59
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,257 | INFO | client.py:166: Message delivered to test-topic [0] at offset 60
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,257 | INFO | client.py:166: Message delivered to test-topic [0] at offset 61
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,258 | INFO | client.py:166: Message delivered to test-topic [0] at offset 62
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,258 | INFO | client.py:166: Message delivered to test-topic [0] at offset 63
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,259 | INFO | client.py:166: Message delivered to test-topic [0] at offset 64
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,260 | INFO | client.py:166: Message delivered to test-topic [0] at offset 65
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,260 | INFO | client.py:166: Message delivered to test-topic [0] at offset 66
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,261 | INFO | client.py:166: Message delivered to test-topic [0] at offset 67
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,261 | INFO | client.py:166: Message delivered to test-topic [0] at offset 68
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,261 | INFO | client.py:166: Message delivered to test-topic [0] at offset 69
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,262 | INFO | client.py:166: Message delivered to test-topic [0] at offset 70
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,262 | INFO | client.py:166: Message delivered to test-topic [0] at offset 71
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,263 | INFO | client.py:166: Message delivered to test-topic [0] at offset 72
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,263 | INFO | client.py:166: Message delivered to test-topic [0] at offset 73
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,263 | INFO | client.py:166: Message delivered to test-topic [0] at offset 74
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,264 | INFO | client.py:166: Message delivered to test-topic [0] at offset 75
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,264 | INFO | client.py:166: Message delivered to test-topic [0] at offset 76
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,264 | INFO | client.py:166: Message delivered to test-topic [0] at offset 77
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,265 | INFO | client.py:166: Message delivered to test-topic [0] at offset 78
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,265 | INFO | client.py:166: Message delivered to test-topic [0] at offset 79
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,266 | INFO | client.py:166: Message delivered to test-topic [0] at offset 80
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,266 | INFO | client.py:166: Message delivered to test-topic [0] at offset 81
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,267 | INFO | client.py:166: Message delivered to test-topic [0] at offset 82
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,267 | INFO | client.py:166: Message delivered to test-topic [0] at offset 83
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,268 | INFO | client.py:166: Message delivered to test-topic [0] at offset 84
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,268 | INFO | client.py:166: Message delivered to test-topic [0] at offset 85
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,269 | INFO | client.py:166: Message delivered to test-topic [0] at offset 86
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,269 | INFO | client.py:166: Message delivered to test-topic [0] at offset 87
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,270 | INFO | client.py:166: Message delivered to test-topic [0] at offset 88
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,270 | INFO | client.py:166: Message delivered to test-topic [0] at offset 89
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,270 | INFO | client.py:166: Message delivered to test-topic [0] at offset 90
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,271 | INFO | client.py:166: Message delivered to test-topic [0] at offset 91
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,271 | INFO | client.py:166: Message delivered to test-topic [0] at offset 92
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,271 | INFO | client.py:166: Message delivered to test-topic [0] at offset 93
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,271 | INFO | client.py:166: Message delivered to test-topic [0] at offset 94
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,272 | INFO | client.py:166: Message delivered to test-topic [0] at offset 95
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,272 | INFO | client.py:166: Message delivered to test-topic [0] at offset 96
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,273 | INFO | client.py:166: Message delivered to test-topic [0] at offset 97
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,273 | INFO | client.py:166: Message delivered to test-topic [0] at offset 98
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,273 | INFO | client.py:166: Message delivered to test-topic [0] at offset 99
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,274 | INFO | client.py:166: Message delivered to test-topic [0] at offset 100
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,274 | INFO | client.py:166: Message delivered to test-topic [0] at offset 101
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,274 | INFO | client.py:166: Message delivered to test-topic [0] at offset 102
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,275 | INFO | client.py:166: Message delivered to test-topic [0] at offset 103
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,275 | INFO | client.py:166: Message delivered to test-topic [0] at offset 104
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:20,276 | INFO | client.py:166: Message delivered to test-topic [0] at offset 105
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,348 | INFO | client.py:170: Received message with key: b'key0', value: b'value0'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,349 | INFO | client.py:170: Received message with key: b'key1', value: b'value1'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,349 | INFO | client.py:170: Received message with key: b'key2', value: b'value2'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,350 | INFO | client.py:170: Received message with key: b'key3', value: b'value3'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,350 | INFO | client.py:170: Received message with key: b'key4', value: b'value4'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,351 | INFO | client.py:170: Received message with key: b'key5', value: b'value5'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,351 | INFO | client.py:170: Received message with key: b'key6', value: b'value6'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,351 | INFO | client.py:170: Received message with key: b'key7', value: b'value7'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,352 | INFO | client.py:170: Received message with key: b'key8', value: b'value8'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,352 | INFO | client.py:170: Received message with key: b'key9', value: b'value9'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,353 | INFO | client.py:170: Received message with key: b'key10', value: b'value10'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,353 | INFO | client.py:170: Received message with key: b'key11', value: b'value11'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,353 | INFO | client.py:170: Received message with key: b'key12', value: b'value12'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,354 | INFO | client.py:170: Received message with key: b'key13', value: b'value13'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,354 | INFO | client.py:170: Received message with key: b'key14', value: b'value14'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,354 | INFO | client.py:170: Received message with key: b'key15', value: b'value15'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,355 | INFO | client.py:170: Received message with key: b'key16', value: b'value16'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,355 | INFO | client.py:170: Received message with key: b'key17', value: b'value17'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,355 | INFO | client.py:170: Received message with key: b'key18', value: b'value18'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,356 | INFO | client.py:170: Received message with key: b'key19', value: b'value19'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,356 | INFO | client.py:170: Received message with key: b'key20', value: b'value20'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,356 | INFO | client.py:170: Received message with key: b'key21', value: b'value21'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,356 | INFO | client.py:170: Received message with key: b'key22', value: b'value22'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,357 | INFO | client.py:170: Received message with key: b'key23', value: b'value23'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,357 | INFO | client.py:170: Received message with key: b'key24', value: b'value24'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,357 | INFO | client.py:170: Received message with key: b'key25', value: b'value25'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,358 | INFO | client.py:170: Received message with key: b'key26', value: b'value26'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,358 | INFO | client.py:170: Received message with key: b'key27', value: b'value27'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,358 | INFO | client.py:170: Received message with key: b'key28', value: b'value28'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,359 | INFO | client.py:170: Received message with key: b'key29', value: b'value29'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,359 | INFO | client.py:170: Received message with key: b'key30', value: b'value30'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,359 | INFO | client.py:170: Received message with key: b'key31', value: b'value31'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,360 | INFO | client.py:170: Received message with key: b'key32', value: b'value32'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,360 | INFO | client.py:170: Received message with key: b'key33', value: b'value33'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,360 | INFO | client.py:170: Received message with key: b'key34', value: b'value34'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,360 | INFO | client.py:170: Received message with key: b'key35', value: b'value35'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,361 | INFO | client.py:170: Received message with key: b'key36', value: b'value36'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,361 | INFO | client.py:170: Received message with key: b'key37', value: b'value37'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,361 | INFO | client.py:170: Received message with key: b'key38', value: b'value38'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,362 | INFO | client.py:170: Received message with key: b'key39', value: b'value39'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,362 | INFO | client.py:170: Received message with key: b'key40', value: b'value40'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,362 | INFO | client.py:170: Received message with key: b'key41', value: b'value41'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,363 | INFO | client.py:170: Received message with key: b'key42', value: b'value42'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,363 | INFO | client.py:170: Received message with key: b'key43', value: b'value43'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,363 | INFO | client.py:170: Received message with key: b'key44', value: b'value44'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,363 | INFO | client.py:170: Received message with key: b'key45', value: b'value45'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,364 | INFO | client.py:170: Received message with key: b'key46', value: b'value46'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,364 | INFO | client.py:170: Received message with key: b'key47', value: b'value47'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,364 | INFO | client.py:170: Received message with key: b'key48', value: b'value48'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,365 | INFO | client.py:170: Received message with key: b'key49', value: b'value49'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,365 | INFO | client.py:170: Received message with key: b'key50', value: b'value50'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,365 | INFO | client.py:170: Received message with key: b'key51', value: b'value51'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,365 | INFO | client.py:170: Received message with key: b'key52', value: b'value52'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,366 | INFO | client.py:170: Received message with key: b'key53', value: b'value53'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,366 | INFO | client.py:170: Received message with key: b'key54', value: b'value54'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,366 | INFO | client.py:170: Received message with key: b'key55', value: b'value55'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,367 | INFO | client.py:170: Received message with key: b'key56', value: b'value56'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,367 | INFO | client.py:170: Received message with key: b'key57', value: b'value57'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,367 | INFO | client.py:170: Received message with key: b'key58', value: b'value58'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,367 | INFO | client.py:170: Received message with key: b'key59', value: b'value59'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,368 | INFO | client.py:170: Received message with key: b'key60', value: b'value60'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,368 | INFO | client.py:170: Received message with key: b'key61', value: b'value61'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,368 | INFO | client.py:170: Received message with key: b'key62', value: b'value62'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,369 | INFO | client.py:170: Received message with key: b'key63', value: b'value63'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,369 | INFO | client.py:170: Received message with key: b'key64', value: b'value64'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,369 | INFO | client.py:170: Received message with key: b'key65', value: b'value65'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,369 | INFO | client.py:170: Received message with key: b'key66', value: b'value66'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,370 | INFO | client.py:170: Received message with key: b'key67', value: b'value67'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,370 | INFO | client.py:170: Received message with key: b'key68', value: b'value68'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,370 | INFO | client.py:170: Received message with key: b'key69', value: b'value69'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,371 | INFO | client.py:170: Received message with key: b'key70', value: b'value70'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,371 | INFO | client.py:170: Received message with key: b'key71', value: b'value71'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,371 | INFO | client.py:170: Received message with key: b'key72', value: b'value72'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,371 | INFO | client.py:170: Received message with key: b'key73', value: b'value73'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,372 | INFO | client.py:170: Received message with key: b'key74', value: b'value74'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,372 | INFO | client.py:170: Received message with key: b'key75', value: b'value75'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,372 | INFO | client.py:170: Received message with key: b'key76', value: b'value76'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,373 | INFO | client.py:170: Received message with key: b'key77', value: b'value77'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,373 | INFO | client.py:170: Received message with key: b'key78', value: b'value78'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,373 | INFO | client.py:170: Received message with key: b'key79', value: b'value79'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,373 | INFO | client.py:170: Received message with key: b'key80', value: b'value80'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,374 | INFO | client.py:170: Received message with key: b'key81', value: b'value81'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,374 | INFO | client.py:170: Received message with key: b'key82', value: b'value82'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,374 | INFO | client.py:170: Received message with key: b'key83', value: b'value83'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,375 | INFO | client.py:170: Received message with key: b'key84', value: b'value84'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,375 | INFO | client.py:170: Received message with key: b'key85', value: b'value85'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,375 | INFO | client.py:170: Received message with key: b'key86', value: b'value86'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,375 | INFO | client.py:170: Received message with key: b'key87', value: b'value87'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,376 | INFO | client.py:170: Received message with key: b'key88', value: b'value88'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,376 | INFO | client.py:170: Received message with key: b'key89', value: b'value89'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,376 | INFO | client.py:170: Received message with key: b'key90', value: b'value90'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,377 | INFO | client.py:170: Received message with key: b'key91', value: b'value91'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,377 | INFO | client.py:170: Received message with key: b'key92', value: b'value92'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,377 | INFO | client.py:170: Received message with key: b'key93', value: b'value93'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,377 | INFO | client.py:170: Received message with key: b'key94', value: b'value94'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,378 | INFO | client.py:170: Received message with key: b'key95', value: b'value95'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,378 | INFO | client.py:170: Received message with key: b'key96', value: b'value96'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,378 | INFO | client.py:170: Received message with key: b'key97', value: b'value97'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,379 | INFO | client.py:170: Received message with key: b'key98', value: b'value98'
+[0] [PID47630] -Framework Log- 2024-09-24 14:03:27,379 | INFO | client.py:170: Received message with key: b'key99', value: b'value99'
+[0] [PID57049] -root- 2024-09-24 16:15:20,223 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID57049] -Framework Log- 2024-09-24 16:15:20,225 | INFO | client.py:47: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}
+[0] [PID57049] -Framework Log- 2024-09-24 16:15:20,450 | INFO | client.py:166: Message delivered to test-topic [0] at offset 106
+[0] [PID57049] -Framework Log- 2024-09-24 16:16:42,052 | INFO | client.py:170: Received message with key: b'keyxxxxxx222', value: b'kkkkkkfkkkkkkk!'
+[0] [PID87278] -root- 2024-09-24 20:58:21,764 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID87278] -Framework Log- 2024-09-24 20:58:21,767 | INFO | client.py:52: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}
+[0] [PID87278] -Framework Log- 2024-09-24 20:58:21,915 | ERROR | client.py:125: Error producing message: a bytes-like object is required, not 'dict'
+[0] [PID87304] -root- 2024-09-24 20:58:43,483 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID87304] -Framework Log- 2024-09-24 20:58:43,485 | INFO | client.py:52: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}
+[0] [PID87304] -Framework Log- 2024-09-24 20:58:43,696 | INFO | client.py:192: Message delivered to test-topic [0] at offset 107
+[0] [PID87304] -Framework Log- 2024-09-24 20:59:15,068 | INFO | client.py:196: Received message with key: b'keyxxxxxx222', value: b'{"nihao": "1"}'
+[0] [PID87402] -root- 2024-09-24 21:00:07,624 | INFO | logger.py:123: root logger init, level:INFO
+[0] [PID87402] -Framework Log- 2024-09-24 21:00:07,625 | INFO | client.py:52: Kafka Client initialized with brokers: 172.20.32.80:9092,172.20.32.82:9092,172.20.32.83:9092, producer_config: {}, consumer_config: {}
+[0] [PID87402] -Framework Log- 2024-09-24 21:00:07,828 | INFO | client.py:192: Message delivered to test-topic [0] at offset 108
+[0] [PID87402] -Framework Log- 2024-09-24 21:00:12,937 | INFO | client.py:196: Received message with key: None, value: b'{"nihao": "1"}'
