@@ -1,0 +1,8 @@
+pgp_check/__init__.py,sha256=4SfEuk6SMkEeMbfGYAOJOBPFtzvQ_vRMhMbKh2yXaS4,116
+pgp_check/cli.py,sha256=Se_bjqMdTGEDiF7GNN1NR9ao3YZFVN-r5Fx0iqIlV4A,2990
+pgp_check/pgp_check.py,sha256=OD_pg8tQST6uyvg0qs_dsQ1903-nXxzyhWkzOQSPF68,677
+python_pgp_check-0.2.14.dist-info/METADATA,sha256=87IpcfvGtrXtrNMyRvf7uNTrCaqsOUh3Gs-dSMNqSUI,1572
+python_pgp_check-0.2.14.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+python_pgp_check-0.2.14.dist-info/entry_points.txt,sha256=3HVwZ0FQtblTWTGWMEFvvBjT_mNX8MspXZE2Tl6n5BE,56
+python_pgp_check-0.2.14.dist-info/top_level.txt,sha256=HCCaBqA5TPl7Gy9mW5lRX2VyCYmxe5TdBnDSrKJV9qo,10
+python_pgp_check-0.2.14.dist-info/RECORD,,
