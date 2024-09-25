@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/postman_github_sync/__init__.py
+src/postman_github_sync/helper_functions.py
+src/postman_github_sync/main.py
+src/postman_github_sync.egg-info/PKG-INFO
+src/postman_github_sync.egg-info/SOURCES.txt
+src/postman_github_sync.egg-info/dependency_links.txt
+src/postman_github_sync.egg-info/entry_points.txt
+src/postman_github_sync.egg-info/requires.txt
+src/postman_github_sync.egg-info/top_level.txt
