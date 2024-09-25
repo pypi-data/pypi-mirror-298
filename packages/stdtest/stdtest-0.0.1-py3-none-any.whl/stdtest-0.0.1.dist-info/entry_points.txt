@@ -1,0 +1,6 @@
+[console_scripts]
+stdcomb = stdtest.combine:main
+stdconf = stdtest.conf:main
+stdlist = stdtest.listener:main
+stdnew = stdtest.new:main
+stdtest = stdtest.testsync:main

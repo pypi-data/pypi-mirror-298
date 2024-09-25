@@ -1,0 +1,16 @@
+stdtest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stdtest/__main__.py,sha256=aTGU-7idBO_dVzZvTRbnE2E4QEw40kUvvUm4NJKOYJo,2905
+stdtest/combine.py,sha256=qQJeWyBYK-z0pe4GBodNQFBzWM6KPwmcrxi1HInx1dk,3694
+stdtest/conf.py,sha256=tFKd6pEdR6gwhtRGtoXNtObAyVO7J-fuM-zxB6KRz0c,4217
+stdtest/listener.py,sha256=LmQzhKzDGn0_-R7c4Q0EnCDil7WP5zfVB6vxd4nqQDA,3397
+stdtest/logger.py,sha256=HESC49HQN0WKHe1-ULwuPOIMr1b9Wj3O2r9jYuLAH_Y,6979
+stdtest/logger2.py,sha256=6PlEEQMhIK38DM5jF3LMowqrotFC4ixK9AfNjqj_GWQ,7161
+stdtest/new.py,sha256=rmvNt_jui6eqCSDkR0tfzywgORZY24uYXggtyKUpofM,1260
+stdtest/run.py,sha256=PvRKFzy1GGhGzb8MT7uct8lW_o4cKbmnjycRxJTN8k0,1128
+stdtest/testsync.py,sha256=B4Zl8RI8HZZjqAoqTbUbP8s4KWTsgc6wIYnncYINC08,16463
+stdtest/testsync2.py,sha256=Ss6FhAYSF303UwtHhjd2DEzcfGa694HfR-BUtL0HHLU,17081
+stdtest-0.0.1.dist-info/METADATA,sha256=aCoHYlEaE2rrkFYUqCIW9ewJfIEoD8Ok62KqgmNmWxQ,128
+stdtest-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+stdtest-0.0.1.dist-info/entry_points.txt,sha256=f8SmOMl8iISxcH1mlZp7TnnbtkfMrtC9r7oCxYOiRfg,167
+stdtest-0.0.1.dist-info/top_level.txt,sha256=tQCRr9xHF104tM5_3ObQLMdVWntYIX0EZGJ1lFGJ4hs,8
+stdtest-0.0.1.dist-info/RECORD,,

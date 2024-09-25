@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: stdtest
+Version: 0.0.1
+Requires-Dist: psutil
+Requires-Dist: aiofiles
+Requires-Dist: beautifulsoup4
+
