@@ -1,0 +1,17 @@
+kition_djangodefaults/__init__.py,sha256=YIeuaLuO5MMMmkKJ54Xk6bR0mv1ZM1v1VvILK3HKdRg,53
+kition_djangodefaults/apps.py,sha256=rgMrW4PdQxsf3ksANb0dBNVhBjzQpPtUOtSo5cFRL5M,173
+kition_djangodefaults/healthcheck.py,sha256=dNvc9-x1qDp5lJa9sQ4fkIi9SF6GzFCv5_zJWZznm7E,1303
+kition_djangodefaults/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kition_djangodefaults/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kition_djangodefaults/management/commands/sendtestmail.py,sha256=OFQ7slPsu5A_fvlW44AqgL-1IU3TBTppAKp05Tbc2FM,994
+kition_djangodefaults/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kition_djangodefaults/settings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kition_djangodefaults/settings/default.py,sha256=mWD32CvbHwEZ-eS3uTEjHgYWVvdq_cIfvK4rO07ZlZg,2159
+kition_djangodefaults/settings/default_databases.py,sha256=iX_fTVgGFcw1dzU4p3NTz47_u8AmmfxHnODzxxYvbOA,401
+kition_djangodefaults/settings/default_email.py,sha256=rJXW2272ueW6CKy5FJEbrUWZIolaFCJYfrsn_AvvwFk,419
+kition_djangodefaults/settings/default_static.py,sha256=DWSpjnnXq6pJwk0sK6fKTlvfiySiGCUpAHulSOjzrNM,582
+kition_djangodefaults/settings/initialize.py,sha256=WrZ5i62lZKiiBDHxl9Ozkwz0gacDUiJs8VoqUU0UHVI,767
+kition_djangodefaults-0.2.0rc1.dist-info/LICENSE,sha256=mdnWcHFu6Yho31F2_q8qt5khTaqG1ea17Mswgeq5S3Y,1077
+kition_djangodefaults-0.2.0rc1.dist-info/METADATA,sha256=fLMim2hwBniwPgT2YdQQC7gKhc2dG-gK7khTBeZrf-c,2241
+kition_djangodefaults-0.2.0rc1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+kition_djangodefaults-0.2.0rc1.dist-info/RECORD,,
