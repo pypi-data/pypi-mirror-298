@@ -1,0 +1,5 @@
+google-api-core[grpc]<3.0.0dev,>=2.10.0
+google-auth<3.0.0dev,>=2.14.1
+googleapis-common-protos>=1.53.0
+grpcio>=1.10.0
+proto-plus<2.0.0dev,>=1.22.3
