@@ -1,0 +1,9 @@
+%SETS
+RD = 0..1;
+JOBS = 1..{jobs};
+TASKS = 1..{tasks};
+MACHINES = 1..{machines};
+
+time = array2d(JOBS,TASKS,{time});
+energy = array2d(JOBS,TASKS,{energy});
+precedence = array2d(JOBS,TASKS,{precedence});

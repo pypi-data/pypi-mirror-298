@@ -1,0 +1,148 @@
+# JSP Generator
+
+## Description
+Benchmark generator for the Job Shop Problem (BG-JSP)
+
+## Parameters
+
+Parameters available for the generation of problem instances:
+
+1. **Jobs:`--jobs (-J)`**
+   - **Description**: Number of jobs that will have the problem generated.
+   - **Possible values**: List of integers. If you put more than one value in the list, all possible combinations will be made with the available machines.
+   - **Example of possible values**: `[3]`, `[4, 5]`.
+   - **Default value**: `[10]`
+
+2. **Machines:`--machines (-M)`**
+   - **Description**: Number of machines that will have the problem generated.
+   - **Possible values**: List of integers. If you put more than one value in the list, all possible combinations will be made with the available jobs.
+   - **Example of possible values**: `[6]`, `[2, 5]`.
+   - **Default value**: `[4]`
+
+3. **Seed:`--seed (-s)`**
+   - **Description**: Base number for data generation.
+   - **Possible values**: Integer value.
+   - **Example of possible values**: `84`, `32`
+   - **Default value**: `1`
+
+4. **Speed Scaling:`--speed-scaling (-S)`**
+   - **Description**: Number of speeds that will be available to perform each task.
+   - **Possible values**: Integer value.
+   - **Example of possible values**: `3`, `5`
+   - **Default value**: `1`
+
+5. **Machine Processing Time:`--machine-processing-time (-mpt)`**
+   - **Description**: Base consumption for a machine in stand-by.
+   - **Possible values**: List of floats that will have the same number of elements as available machines.
+   - **Example of possible values**: `[1.2]`, `[1.2, 3.4]`
+   - **Default value**: `[]`
+
+6. **Release and Due Date:`--release-due (-RDDD)`**
+   - **Descripción**: Establish that each task has an instant of release and an instant of completion limit.
+   - **Possible values**: 
+      - `0`: Neither the works and operations of each of them will have an instant of release or time limit for completion.
+      - `1`: The work will have instant of release and instant of completion limit.
+      - `2`: The operations of each job will have a release time and a limiting end time.
+   - **Example of possible values**: `1`, `2`
+   - **Default value**: `0`
+
+7. **Path:`--path (-P)`**
+   - **Description**: Path where the problem instance file will be generated. 
+   - **Possible values**: String.
+   - **Example of possible values**: `./problems`, `./instances`
+   - **Default value**: `./output`
+
+8. **Quantity:`--quantity (-Q)`**
+   - **Description**: Number of problem instances to be generated.
+   - **Possible values**: Integer value.
+   - **Example of possible values**: `2`, `5`
+   - **Default value**: `1`
+
+9. **Distribution:`--distribution (-D)`**
+   - **Description**: Type of distribution to be followed for data generation.
+   - **Possible values**: You can only set one of the following values: `uniform` `normal` `exponential`
+   - **Example of possible values**: `uniform`, `exponential`
+   - **Default value**: `normal`
+
+## Example of JSON generated
+
+This JSON shows how the data generated from an JSP problem with 2 machines and 2 jobs will look like. For this generation we have used the following parameters:
+`-J [2] -M [2] -s 155632 -S 2 -mpt [50,60] -RDDD 1 -P ./problems -D exponential`
+
+```json
+{
+    "nbJobs": [
+        0,
+        1
+    ],
+    "nbMchs": [
+        0,
+        1
+    ],
+    "timeEnergy": [
+        {
+            "jobId": 0,
+            "operations": {
+                "0": {
+                    "speed-scaling": [
+                        {
+                            "procTime": 12,
+                            "energyCons": 88
+                        },
+                        {
+                            "procTime": 2,
+                            "energyCons": 98
+                        }
+                    ]
+                },
+                "1": {
+                    "speed-scaling": [
+                        {
+                            "procTime": 99,
+                            "energyCons": 37
+                        },
+                        {
+                            "procTime": 32,
+                            "energyCons": 72
+                        }
+                    ]
+                }
+            },
+            "release-date": 60,
+            "due-date": 281
+        },
+        {
+            "jobId": 1,
+            "operations": {
+                "1": {
+                    "speed-scaling": [
+                        {
+                            "procTime": 144,
+                            "energyCons": 23
+                        },
+                        {
+                            "procTime": 23,
+                            "energyCons": 79
+                        }
+                    ]
+                },
+                "0": {
+                    "speed-scaling": [
+                        {
+                            "procTime": 6,
+                            "energyCons": 94
+                        },
+                        {
+                            "procTime": 2,
+                            "energyCons": 98
+                        }
+                    ]
+                }
+            },
+            "release-date": 40,
+            "due-date": 317
+        }
+    ],
+    "drDate": []
+}
+```
