@@ -1,0 +1,1 @@
+from cpykg.utils import list_csv_files,read_csv_filec = list_csv_files()b = read_csv_file('R25KG_rare.csv')
