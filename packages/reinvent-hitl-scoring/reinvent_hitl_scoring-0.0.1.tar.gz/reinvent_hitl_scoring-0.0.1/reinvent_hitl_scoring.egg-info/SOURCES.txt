@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+reinvent_hitl_scoring.egg-info/PKG-INFO
+reinvent_hitl_scoring.egg-info/SOURCES.txt
+reinvent_hitl_scoring.egg-info/dependency_links.txt
+reinvent_hitl_scoring.egg-info/top_level.txt
