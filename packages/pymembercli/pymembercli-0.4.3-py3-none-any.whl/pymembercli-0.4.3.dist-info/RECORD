@@ -1,0 +1,9 @@
+pymembercli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymembercli/__main__.py,sha256=uM7MqnQ-0aIvIbBo5E0IVu0uMF0I_bMKVZ8jEaip7no,71
+pymembercli/cmds.py,sha256=qDMnhIwHJ32B9pfVT0PE9JebsjN4d-VDPFxMm6aKJIM,1720
+pymembercli/pymember.py,sha256=8HcGiBMqp-gfm3gQ_xYIkPs-iyjZbaEerSy0BQ3pJjk,3122
+pymembercli/task_item.py,sha256=mzEVzi4ah-Bq80YhaeqCoVEkI48pXaZ8WrN6kXemrjY,902
+pymembercli-0.4.3.dist-info/METADATA,sha256=LdMm32jHf2-bdgDMeZLyhqD_Fsro6VzTs_6QWgpA7-A,896
+pymembercli-0.4.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pymembercli-0.4.3.dist-info/entry_points.txt,sha256=r3W-dI-mhvy_G6Dq1uXbqsnIpYucyYQ28xtX7QrHx3M,54
+pymembercli-0.4.3.dist-info/RECORD,,
