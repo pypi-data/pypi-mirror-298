@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/main.cpp
+word_levenshtein/__init__.py
+word_levenshtein/py_api.py
+word_levenshtein.egg-info/PKG-INFO
+word_levenshtein.egg-info/SOURCES.txt
+word_levenshtein.egg-info/dependency_links.txt
+word_levenshtein.egg-info/not-zip-safe
+word_levenshtein.egg-info/requires.txt
+word_levenshtein.egg-info/top_level.txt
