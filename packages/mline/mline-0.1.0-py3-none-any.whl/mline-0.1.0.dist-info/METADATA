@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mline
+Version: 0.1.0
+Summary: Lightweight YAML-based pipeline engine
+Home-page: https://github.com/andmeln/mline/
+Author: Andrey Melnikov
+Author-email: andmeln@hotmail.com
+License: Apache License, Version 2.0
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: iyaml
+Requires-Dist: qcall
+
+# mline
+
+**mline** is a lightweight YAML-based pipeline engine.
+
+More documentation coming soon.
+
+
+# Installation
+
+Install default version from the
+[Python Package Index](https://pypi.org/project/mline/):
+
+```
+pip install mline
+```
