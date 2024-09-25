@@ -1,0 +1,14 @@
+fiberhttp/__init__.py,sha256=3JYukiSFdLsWsHPt2JZg9vYsLkYfC8yYvXILlBmsVEw,270
+fiberhttp/__version__.py,sha256=2QXqk3JJHbq0PafjoI18RSxTxyJUJZ-MWvIINbjoJ28,238
+fiberhttp/_build.py,sha256=TMSbJdxcTC02MkQzJITEKdW5xZg78nAVlGJ3rUX9Nyw,1996
+fiberhttp/_client_file.py,sha256=5EJ2N0aGfTkbCnq7jKedgkpUNsVyZywdmD1NdE5OrfQ,4271
+fiberhttp/_client_proxy.py,sha256=UQm7H67DP9acrPs-GPKy_LeEkG5CWJXQ1jyAEikoITk,4871
+fiberhttp/_connections.py,sha256=sb756LUgG1DLnQlt-Dl-sdQsLX_Wl6YuE0G8BMbd60A,930
+fiberhttp/_methods.py,sha256=qpz6fQgzdSFjWb2F69aGEZLKDy00-WrYcjL_BDVkbIU,1050
+fiberhttp/_responses.py,sha256=D5zwgWCe7p35tWradvN8zQ5KLJKqZpEvdTVwfjikXPw,1727
+fiberhttp-3.0.dist-info/LICENSE,sha256=NvOm3JREX-49u0i3PbQ7_ykuy_QxKb4UsklOMDqgLw8,10281
+fiberhttp-3.0.dist-info/METADATA,sha256=DUMqWxYs04pUewx0Rm53AhL4VQiaxirQ7xZxU-xLnac,3907
+fiberhttp-3.0.dist-info/NOTICE,sha256=AEnFhSfFVk3XVwW3oNR2gXZSQsF1OVr_AuUUFwLurs8,38
+fiberhttp-3.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+fiberhttp-3.0.dist-info/top_level.txt,sha256=vsRmGOSQUC88Swpb9bVaYS0Y6YJNm1qxhS9y0Np0Y0w,10
+fiberhttp-3.0.dist-info/RECORD,,
