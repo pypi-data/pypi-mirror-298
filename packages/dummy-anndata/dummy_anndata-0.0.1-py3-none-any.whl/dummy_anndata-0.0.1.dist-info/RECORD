@@ -1,0 +1,10 @@
+dummy_anndata/__init__.py,sha256=as1OIq2JiAA1RWIeP-2tyUK_2KCZReZf3zWAwwVy_Zk,612
+dummy_anndata/generate_dataframe.py,sha256=7kpS1VJubBLlRTmSNqHQe7OK2V2IeRR_xBKraF1EOJw,769
+dummy_anndata/generate_dataset.py,sha256=FLWXzVy7fXf_4TZJgUDWpjKpd72tBCRjQsTBPcLSKA4,4320
+dummy_anndata/generate_dict.py,sha256=FF-ccSJqiY4Y0DT6eWATqdG8J7DznxSEt7JOTvt1czM,1395
+dummy_anndata/generate_matrix.py,sha256=_S57rMG3sGy2x3zr-KWwXdAn99x_rwT-ioVSG20_rdw,2142
+dummy_anndata/generate_vector.py,sha256=L3dTUcoiVixxBCSdTDm6dlE_hoPScT0FCx72qsZz9TM,2523
+dummy_anndata-0.0.1.dist-info/METADATA,sha256=Ni2Q8VMqgeOshIYWj5rpKwsy4a3eotgyImnVwz0RtJI,3850
+dummy_anndata-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+dummy_anndata-0.0.1.dist-info/licenses/LICENSE,sha256=V1oeUC_T7guOPXdjoo1hGewhIuLGwxTTXOLU454n7LE,1074
+dummy_anndata-0.0.1.dist-info/RECORD,,
