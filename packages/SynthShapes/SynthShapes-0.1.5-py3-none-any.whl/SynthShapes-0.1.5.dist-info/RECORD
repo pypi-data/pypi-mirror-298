@@ -1,0 +1,11 @@
+SynthShapes/__init__.py,sha256=eKzW7xxgd4Krc3AlUah2aLcMhZabIjdNNekUopyvBgM,19
+SynthShapes/blending.py,sha256=zSQrGEih6SIlXlts3F6AQ9ApMrpBizMJh2vlNBNWwDY,2146
+SynthShapes/filters.py,sha256=T325lLhvJB4A0xHi3hIlXxycUu6qxLosq_VVTwDm4rg,4189
+SynthShapes/hist.py,sha256=9FCH5LF_mYpw0wA6fEGrXwSxFyN6S7RzAvDx9klw5ig,2804
+SynthShapes/shapes.py,sha256=cGMJa7ql_6D6M6ldh7KUGp7laD0o5mP931FTLfZ7xfs,40592
+SynthShapes/texturizing.py,sha256=jHcKCuGKNxKx4LUZ8-IuLdwkEOJcuM2LRBN15jrI2Sk,6232
+SynthShapes/utils.py,sha256=-Yzl54Ktt1REj6Z2FkNYK77W6-3R5PW-M8oV76pdBBk,2124
+SynthShapes-0.1.5.dist-info/METADATA,sha256=JsrXgHMcbfeDRsag8jdmkYuQ2canvPkNWPux--uwonE,1403
+SynthShapes-0.1.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+SynthShapes-0.1.5.dist-info/top_level.txt,sha256=G_TZWWQrH_CwhqWe3318zcRzjtl8jZAiGXjcmYHQLYU,12
+SynthShapes-0.1.5.dist-info/RECORD,,
