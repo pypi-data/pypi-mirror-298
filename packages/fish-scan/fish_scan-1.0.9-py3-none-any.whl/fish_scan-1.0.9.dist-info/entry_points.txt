@@ -1,0 +1,2 @@
+[napari.manifest]
+fish-scan = fish_scan:napari.yaml
