@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: RemoteWindowsDevelopment
+Version: 0.0.1
+Summary: A small example package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: Julio Zamora <julio17795@gmail.com>
+License-File: LICENSE
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
