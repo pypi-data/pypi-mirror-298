@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: iyaml
+Version: 0.1.2
+Summary: YAML macro processor
+Home-page: https://github.com/andmeln/iyaml/
+Author: Andrey Melnikov
+Author-email: andmeln@hotmail.com
+License: Apache License, Version 2.0
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+
+# iYAML
+
+iYAML is a YAML macro processor.
+
+iYAML provides the following YAML tags:
+- `!include` - to include the content of the specified file, or
+   files matching the given wildcard
+- `!env` - to include the value of the specified environment variable
+
+
+# Installation
+
+Install default version from the
+[Python Package Index](https://pypi.org/project/iyaml/):
+
+```
+pip install iyaml
+```
+
+
+# Examples
+
+Here is an example of including files and environment variables:
+```yaml
+foo:
+  greeting: !include greeting.txt
+  secret_token: !env TOKEN
+
+bar: !include temlates/*.sql
+```
+
+To load the YAML file use the following code:
+```python
+import iyaml
+
+
+data = iyaml.load("file.yaml")
+```

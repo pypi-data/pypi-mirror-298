@@ -1,0 +1,12 @@
+LICENSE
+NOTICE
+README.md
+setup.py
+iyaml/__init__.py
+iyaml/__main__.py
+iyaml/iyaml.py
+iyaml.egg-info/PKG-INFO
+iyaml.egg-info/SOURCES.txt
+iyaml.egg-info/dependency_links.txt
+iyaml.egg-info/requires.txt
+iyaml.egg-info/top_level.txt
