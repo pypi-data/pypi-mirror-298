@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+itg_cli/itg_cli.egg-info/PKG-INFO
+itg_cli/itg_cli.egg-info/SOURCES.txt
+itg_cli/itg_cli.egg-info/dependency_links.txt
+itg_cli/itg_cli.egg-info/entry_points.txt
+itg_cli/itg_cli.egg-info/requires.txt
+itg_cli/itg_cli.egg-info/top_level.txt
