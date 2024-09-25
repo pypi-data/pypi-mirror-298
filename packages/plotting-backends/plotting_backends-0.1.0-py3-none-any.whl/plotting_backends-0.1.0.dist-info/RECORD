@@ -1,0 +1,8 @@
+plotting_backends/__init__.py,sha256=X6cLT30oMTOwVVPy3FqCfceyL-8uDHJEKWWdbl8S2Wo,454
+plotting_backends/_version.py,sha256=IMl2Pr_Sy4LVRKy_Sm4CdwUl1Gryous6ncL96EMYsnM,411
+plotting_backends/_version.pyi,sha256=o7uNL6MhuJoiqpEnriU7rBT6TmkJZA-i2qMoNz9YcgQ,82
+plotting_backends/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plotting_backends-0.1.0.dist-info/METADATA,sha256=zJLHZs3Mb8KBKmSOxU5vywNK2J2Nps6M8SrETjl4Sgs,4818
+plotting_backends-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+plotting_backends-0.1.0.dist-info/licenses/LICENSE,sha256=0trlfVn5msd94uMzquYMSY62BrwHfzt1Nijx8FP-if4,1057
+plotting_backends-0.1.0.dist-info/RECORD,,
