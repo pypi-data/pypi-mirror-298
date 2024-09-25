@@ -1,0 +1,10 @@
+lkprf/__init__.py,sha256=BPoNUf3D0wWtW6iPDccmOSix1F5qxiDnEo4_pgHS6Lc,286
+lkprf/data.py,sha256=bSSd700-SeJ5bpqvcKpfBXkjbns4BDkEz7O6IScxO4E,6550
+lkprf/keplerprf.py,sha256=DU-qJwRlGHRqGgicVXP9wdQ2TDdWyNG-BBo2YKPY-JA,5473
+lkprf/prfmodel.py,sha256=4-Lz13b44XItFTUYX94Sl9w0b8TOjGtlTyxb5braYio,8899
+lkprf/tessprf.py,sha256=HTH74oCo0xoZrLOuu-xlR2uNxCihGxDsiQzC90yscj0,5091
+lkprf/utils.py,sha256=o7BGB4ZvZFiGdtJkehzT8O-1lfdgQzz4sSfzTNN_ZEY,1751
+lkprf/version.py,sha256=SP7KQwIPC5Mw7IviA33r3mudi3QgEYFyS2vYdt3FiOc,142
+lkprf-1.1.1.dist-info/METADATA,sha256=_kakEdczVPzbskfIz1N-m13VFZKi-1J1RqB-PEplqDk,4965
+lkprf-1.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lkprf-1.1.1.dist-info/RECORD,,
