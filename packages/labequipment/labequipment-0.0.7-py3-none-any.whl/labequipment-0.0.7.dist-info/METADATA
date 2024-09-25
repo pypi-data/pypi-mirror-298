@@ -1,0 +1,41 @@
+Metadata-Version: 2.3
+Name: labequipment
+Version: 0.0.7
+Summary: A library for control of common lab equipment.
+Project-URL: Homepage, https://github.com/tristanmelton/LabEquipment
+Project-URL: Issues, https://github.com/tristanmelton/LabEquipment/issues
+Author-email: Tristan Melton <tristanmelton@proton.me>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: easy-scpi>=0.1.4
+Requires-Dist: numpy>=1.26.0
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: pythonnet>=3.0.3
+Requires-Dist: pyvisa>=1.14.0
+Description-Content-Type: text/markdown
+
+# LabEquipment
+Library of classes for interfacing with common lab equipment in Python. 
+
+## Installation
+```sh
+pip install labequipment
+```
+
+## Required Libraries
+- NumPY
+- Pandas
+- pyVISA
+- EasySCPI
+- pythonnet
+
+TLB6700 specifically requires:
+- .NET to be installed, see https://dotnet.microsoft.com/en-us/download
+- Newport USB drivers installed, see https://www.newport.com/software-and-drivers, https://download.newport.com/#/Software/Newport_USB_Driver/
+- UsbDllWrap.dll in a path location, contains NewPort module
+
+## Examples
+See the examples folder for some usage tests.
