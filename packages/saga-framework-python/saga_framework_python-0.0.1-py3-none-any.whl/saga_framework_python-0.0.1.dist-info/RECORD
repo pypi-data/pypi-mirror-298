@@ -1,0 +1,15 @@
+source/__init__.py,sha256=3AOtWwQ4fRRYQ-YAd-edBCDPPQoIuESpwSl3Oo3HRJ4,22
+source/context.py,sha256=KqFFq0F3aAHz-61WTSqYOBz9GgLgu259xjacbVZAFDU,274
+source/errors/parallel_task_requires_tasks_exception.py,sha256=EXfJ6daJH_Y0dhTQQ9lau_PQiCqW8BWN2Kf5WdDlYkQ,139
+source/errors/saga_compensation_execution_exception.py,sha256=kl4SOX_JfPunQt1wvQbTJy9ZZsd5nu7ogklZ8ZJChJw,139
+source/errors/saga_execution_exception.py,sha256=R2EYqmbSp8yDUqnDudOXcLgRNkLRPKnA2HmVX_dRLGo,127
+source/errors/task_execution_exception.py,sha256=IC9wLlKMw6U05YLqbZ-pHllD1Mc_1ikbkxeY2UT-9Xw,129
+source/logging/saga_logging.py,sha256=wF3bXhVBnVk6rUDiDr6bNKqPpT8h7r9gaVywbNv2opM,2449
+source/parallel_task.py,sha256=K3wCRKzwMxzWpYd2M4JXmXqXO-clpQr0Ik9x-UFcB44,5246
+source/saga.py,sha256=PUrxHKROSB-9hO-Tt23fGIEvCUkapwjq6VV62ougvHM,1977
+source/task.py,sha256=apF_qGq2z8bod1wM2BFEokVs8yYpLPw7a-ZkfTmWc0E,6080
+source/task_status.py,sha256=7e1Xcz5MdTcvVnPsu1kF1L-RlXNeaXUM0J9vcQ7c0k0,118
+saga_framework_python-0.0.1.dist-info/LICENSE,sha256=7jENe9zfDn7tl7DWGKgiQWJOjxElBThLYCPUGd06UKQ,1071
+saga_framework_python-0.0.1.dist-info/METADATA,sha256=v82O3freCSTS6SUhEpqNenHb0jYbNRy5_Jmuauqal3s,3294
+saga_framework_python-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+saga_framework_python-0.0.1.dist-info/RECORD,,
