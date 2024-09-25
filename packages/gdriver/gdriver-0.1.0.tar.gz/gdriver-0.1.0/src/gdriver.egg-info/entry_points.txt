@@ -1,0 +1,2 @@
+[console_scripts]
+gdrive-auth = google_driver.cli:main
