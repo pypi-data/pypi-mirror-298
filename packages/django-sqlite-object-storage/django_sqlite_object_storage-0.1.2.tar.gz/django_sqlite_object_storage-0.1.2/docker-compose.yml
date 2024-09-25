@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: django_sqlite_object_storage
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    environment:
+      - SQLITE_OBJECT_STORAGE_BUCKET_NAME=test
+      - SQLITE_OBJECT_STORAGE_ACCESS_KEY_ID=minioadmin
+      - SQLITE_OBJECT_STORAGE_ACCESS_SECRET=minioadmin
+      - SQLITE_OBJECT_STORAGE_ENDPOINT_URL=http://localhost:9000 # local mock S3 container
+      - SQLITE_OBJECT_STORAGE_SIGNATURE_VERSION=s3v4
+
+      # publishing
+      - TWINE_USERNAME=${TWINE_USERNAME}
+      - TWINE_PASSWORD=${TWINE_PASSWORD}
+
+    volumes:
+      - .:/workspaces
+    working_dir: /workspaces
+    entrypoint: /bin/bash
+    command: -c "sleep infinity"
+    ports:
+      - ${S3_CONSOLE_PORT:-9090}:9090
+
+  s3:
+    container_name: object-storage
+    image: minio/minio
+    network_mode: service:app
+    # volumes:
+    #   - dsos-s3-data:/data
+    depends_on:
+      - app
+    command: server /data --console-address ":9090"
+
+volumes:
+  dsos-s3-data: null
