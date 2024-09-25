@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: langchain-chain-of-verification
+Version: 0.1.2
+Summary: Add your description here
+License-Expression: MIT
+Keywords: cli,langchain,prompt-engineering
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Requires-Dist: duckduckgo-search>=6.2.13
+Requires-Dist: langchain-community>=0.2.4
+Requires-Dist: langchain==0.2.1
+Requires-Dist: python-dotenv>=1.0.1
+Description-Content-Type: text/markdown
+
+# langchain-chain-of-verification 
+
+Based off https://github.com/ritun16/chain-of-verification , packaged and updated for newer langchain versions for easier consumption.
+
+Can be used as CLI or library.
