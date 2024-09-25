@@ -1,0 +1,14 @@
+matplotlib
+opencv-python-headless
+openpyxl
+napari[pyqt5]
+torch
+numpy==1.26
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5

@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-cardio-bio-eval = napari_cardio_bio_eval:napari.yaml
