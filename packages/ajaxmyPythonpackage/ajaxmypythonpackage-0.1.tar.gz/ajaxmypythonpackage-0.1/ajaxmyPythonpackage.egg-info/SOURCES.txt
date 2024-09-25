@@ -1,0 +1,5 @@
+setup.py
+ajaxmyPythonpackage.egg-info/PKG-INFO
+ajaxmyPythonpackage.egg-info/SOURCES.txt
+ajaxmyPythonpackage.egg-info/dependency_links.txt
+ajaxmyPythonpackage.egg-info/top_level.txt
