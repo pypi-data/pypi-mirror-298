@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ef-ppo
+Version: 0.1.1
+Summary: EF-PPO implementation of Leonard Franz
+Author: Leonard Franz
+Author-email: leonard.franz@student.uni-tuebingen.de
+Requires-Python: >=3.10,<=3.11.5
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: deprl (>=0.5.0,<0.6.0)
+Requires-Dist: gait-40-dof-22-musc-sagittal (>=0.1.4,<0.2.0)
+Requires-Dist: myosuite (>=2.5.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# EF-PPO
+EF-PPO implementation of Leonard Franz
+
+## Install and run
+In python >=3.10, <=3.11.5 run..
+```
+pip install ef-ppo
+```
+
+Download [sagittal_walk.yaml](experiments/sagittal_walk.yaml) and run the following at the file location:
+```
+python -m deprl.main --path sagittal_walk.yaml
+```
+
