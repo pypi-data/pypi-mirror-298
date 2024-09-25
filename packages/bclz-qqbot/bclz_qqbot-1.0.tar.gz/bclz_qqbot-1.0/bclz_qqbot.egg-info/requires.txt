@@ -1,0 +1,4 @@
+threading
+websocket-client
+openai
+qq-botpy
