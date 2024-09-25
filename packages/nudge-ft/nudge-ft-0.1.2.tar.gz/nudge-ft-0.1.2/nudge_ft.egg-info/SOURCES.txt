@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+nudge/__init__.py
+nudge/nudge.py
+nudge_ft.egg-info/PKG-INFO
+nudge_ft.egg-info/SOURCES.txt
+nudge_ft.egg-info/dependency_links.txt
+nudge_ft.egg-info/requires.txt
+nudge_ft.egg-info/top_level.txt

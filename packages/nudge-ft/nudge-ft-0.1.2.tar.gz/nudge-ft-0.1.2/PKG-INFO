@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nudge-ft
+Version: 0.1.2
+Summary: NUDGE: Lightweight Non-Parametric Embedding Fine-Tuning
+Home-page: https://github.com/szeighami/nudge
+Author: Sepanta Zeighami
+Author-email: zeighami@berkeley.edu
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: numpy
