@@ -1,0 +1,11 @@
+nimbus_inference/__init__.py,sha256=CkfzLLXRff9gEpkvbrIVTAu5xpHgxHSLfkgpWvkFuC4,82
+nimbus_inference/cell_analyzer.py,sha256=dD-qW6fyjTaE-MjTNnw5HkHvid8qoUtd-OtoLuH48Tw,12923
+nimbus_inference/example_dataset.py,sha256=1IAzed5vFMlVZy9rSRj3_VgoUZ6CE69F88K7cmW-SUY,9973
+nimbus_inference/nimbus.py,sha256=0bciCZOAGyGLaxwdjf5Zn6xKDKlWgDX5fPtwuSYpWZo,16294
+nimbus_inference/unet.py,sha256=7bbO_TRS2bHK2gubm_lMb2i9Zj4yruzgAF_WC8DCSrY,11194
+nimbus_inference/utils.py,sha256=00rk4uCJtPvpa5sfxV-vmh-L88hsxjr2xU6XUPlACBc,21023
+nimbus_inference/viewer_widget.py,sha256=W_aoogsnqxyOWsuOyWB35cKo-XoPsfsB8ns6X0BK1P0,10669
+nimbus_inference-0.0.2.dist-info/METADATA,sha256=gG_4li3bR5TRlE0MsWYAruf3m-9ZVcxaGHp2Mpducn4,5373
+nimbus_inference-0.0.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+nimbus_inference-0.0.2.dist-info/licenses/LICENSE,sha256=gKjlOaN4Jf_s_vOpY0tF2PYadqscrGBouOcJ61OuaVs,1074
+nimbus_inference-0.0.2.dist-info/RECORD,,
