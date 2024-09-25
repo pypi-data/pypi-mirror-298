@@ -1,0 +1,13 @@
+customer_dna/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+customer_dna/association_rules.py,sha256=yRIlSCO9ONNm8YVV_dMKNwagtVH28teIljzklMY05fo,3244
+customer_dna/cltv.py,sha256=oFyikrj4MH0ezVRhI52mr68w7Ell0WozuZiAldvOk8k,6244
+customer_dna/customer_attrition.py,sha256=9y0T1R4c6ygJZPK_UdHKdyzNS0_Lwq7_iQzLlZRyj-Y,4047
+customer_dna/customer_segmentation.py,sha256=zceKgqDZmSg_Be4KkBykmOWgdLC6fqd52uBa3eMiZlk,6479
+customer_dna/main.py,sha256=il_ZxWRxvQYFHoC757f1hOXkKQZdXtS0afWfSfyyfJ4,2968
+customer_dna/mba.py,sha256=dSYFqX9OjqWiQ8ikdAjzpe4l8z69O1Yc-pfZB_EKUZE,3691
+customer_dna/visualisation.py,sha256=EIb4pEw-LAciIDJR6Wct3U_gKShmNTUFs8dh4wSPMfQ,3395
+Customer_dna-0.1.0.dist-info/LICENSE,sha256=C9kIcZ9frHTS57q1kJ0C5mEN2prsINj4kpMYs5tfq9I,1084
+Customer_dna-0.1.0.dist-info/METADATA,sha256=kEHJHSMCPZMIB0KNVy9B5FZ5Uf7EAAWIYcaRKc1F8As,3266
+Customer_dna-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+Customer_dna-0.1.0.dist-info/top_level.txt,sha256=rmv90TkVC8sOiCznJmrzqbZc2CBjK3dIxfflPzShkKc,13
+Customer_dna-0.1.0.dist-info/RECORD,,
