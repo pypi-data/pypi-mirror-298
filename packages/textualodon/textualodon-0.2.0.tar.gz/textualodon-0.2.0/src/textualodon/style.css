@@ -1,0 +1,216 @@
+Screen {
+  layers: base spoiler;
+}
+
+TabbedContent ContentSwitcher {
+    height: 1fr;
+}
+
+#logo, #title {
+  content-align: center middle;
+  height: auto;
+  padding: 1;
+  background: blue;
+}
+
+#login-form {
+  content-align: center middle;
+}
+
+.login-form {
+  width: 60%;
+  margin: 1;
+}
+
+#loginButton {
+  content-align: center middle;
+  background: #013220;
+  width: 60%;
+  margin-left: 2;
+  margin-top: 2;
+}
+
+.grant_token {
+  display: none;
+}
+
+.post {
+content-align: center middle;
+border: solid red;
+}
+
+.reblog {
+content-align: center middle;
+border: solid green;
+}
+
+.comment {
+content-align: center middle;
+border: solid yellow;
+}
+
+.post_content {
+padding: 1;
+}
+
+.buttons {
+height: 3;
+margin-left: 1;
+margin-right: 1;
+}
+
+.favourited {
+  background: yellow;
+}
+
+.replied {
+  background: blue;
+}
+
+.boosted {
+  background: green;
+}
+
+.bookmarked {
+  background: orange;
+}
+
+.author {
+  content-align: center middle;
+}
+
+#login-success {
+  content-align: center middle;
+  background: green;
+  padding: 2;
+  display: none;
+}
+
+#more_button, #submit {
+  content-align: center middle;
+  background: #013220;
+  margin-top: 1;
+  width: 100%;
+}
+
+.posts {
+  content-align: center middle;
+  overflow: auto auto;
+}
+
+.media {
+  content-align: center middle;
+}
+
+.media_attachment {
+  content-align: center middle;
+  border: solid orange;
+}
+
+.poll {
+  content-align: center middle;
+  border: solid blue;
+  height: auto;
+}
+
+.poll_option {
+  content-align: center middle;
+  height: auto;
+  padding-left: 1;
+}
+
+.poll_choice_indicator {
+  content-align: center middle;
+  height: auto;
+  padding-left: 1;
+}
+
+.spoiler {
+  height: 100%;
+  background: #013220;
+  layer: spoiler;
+}
+
+.spoiler_text {
+  content-align: center middle;
+  padding: 1;
+}
+
+.spoiler_button {
+  margin-left: 1;
+}
+
+#post_content {
+  content-align: center middle;
+  margin: 1;
+}
+
+#status_length {
+  content-align: left middle;
+}
+
+.label {
+  content-align: center middle;
+  width: 100%;
+}
+
+#checkboxes {
+  margin: 1;
+  height: 3;
+}
+
+#cw_container {
+  display: none;
+  height: auto;
+}
+
+#poll_container {
+  display: none;
+  height: auto;
+}
+
+Horizontal {
+  content-align: center middle;
+  height: auto;
+}
+
+.horizontal_label {
+  content-align-vertical: middle;
+  margin: 1;
+}
+
+#visibility, #post_language {
+  width: 40%;
+}
+
+#cw_checkbox, #poll_checkbox {
+  width: 10%;
+}
+
+#poll_not_enough_options, #post_content_empty {
+  display: none;
+  background: red;
+  color: white;
+  content-align: center middle;
+  padding: 1;
+}
+
+.visibility {
+  content-align: center middle;
+}
+
+TabbedContent ContentSwitcher {
+    height: 1fr;
+}
+
+#show_tag_posts {
+  width: 50;
+}
+
+.trending_link, .trending_link_title, .trending_link_description, .trending_link_delimeter {
+  content-align: center middle;
+}
+
+.toot_too_long {
+  color: red;
+}

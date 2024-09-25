@@ -1,0 +1,16 @@
+beautifulsoup4==4.12.2
+requests==2.31.0
+textual==0.79.1
+
+[dev]
+pre-commit
+flake8
+flake8-import-order
+flake8-bugbear
+flake8-simplify
+flake8-comprehensions
+flake8-builtins
+flake8-annotations
+black
+mypy
+textual-dev

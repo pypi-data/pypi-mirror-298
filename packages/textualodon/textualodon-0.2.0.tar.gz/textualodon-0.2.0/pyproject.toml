@@ -1,0 +1,68 @@
+[project]
+name = "textualodon"
+version = "0.2.0"
+description = "Mastodon client for terminal. Created with an excellent Textual framework."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Operating System :: OS Independent",
+	"Environment :: Console"
+]
+authors = [
+	{ name = "djvdq" }
+]
+maintainers = [
+	{ name = "djvdq" }
+]
+dependencies = [
+	"beautifulsoup4==4.12.2",
+	"requests==2.31.0",
+    "textual==0.79.1"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+textualodon = ["style.css"]
+
+[project.optional-dependencies]
+dev = [
+	"pre-commit",
+    "flake8",
+	"flake8-import-order",
+    "flake8-bugbear",
+    "flake8-simplify",
+    "flake8-comprehensions",
+    "flake8-builtins",
+	"flake8-annotations",
+	"black",
+	"mypy",
+    "textual-dev"
+]
+
+[project.urls]
+repository = "https://codeberg.org/djvdq/Textualodon"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+textualodon = "textualodon.main:main"
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[tool.mypy]
+python_version = 3.8
+exclude = [
+	'venv',
+	'setup.py'
+]
