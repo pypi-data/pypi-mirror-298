@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: inferx
+Version: 1.1.1
+Summary: deep learning deploy framework
+Home-page: https://github.com/yuanyang1991/InferX
+Author: yuanyang
+Author-email: yuan823978@gmail.com
+Requires-Python: >=3.6
+Requires-Dist: tensorrt ==10.3.0
+Requires-Dist: cuda-python ==12.3.0
+
