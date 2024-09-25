@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: imagecompress_svd
+Version: 0.1.2
+Summary: A Python package for image compression using Singular Value Decomposition (SVD).
+Author: Katie Wen-Ling Kuo
+Author-email: katie20030705@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+
+# Image Compression
+
+## Overview
+`imagecompress_svd` is a Python package that compresses images using Singular Value Decomposition (SVD). It provides functions to convert RGB images to grayscale, compress images by retaining a specified number of singular values, and visualize the compressed images.
+
+## Features
+- Convert RGB images to grayscale.
+- Compress images using SVD with adjustable singular values.
+- Visualize the compressed images for different levels of compression.
+
+## Installation
+
+To install the package, first clone the repository or download the code, then navigate to the package directory and run:
+
+```bash
+pip install .
+```
+
+## Usage
+```python
+from imagecompress_svd import rgb2gray, plot_compressed_images
+from PIL import Image
+import numpy as np
+
+# Load image and convert to grayscale
+image = Image.open('your_image.jpg')
+gray_image = rgb2gray(np.array(image))
+
+# Define different k values for compression
+k_values = [1, 2, 5, 10, 20, 50]
+
+# Plot compressed images
+plot_compressed_images(gray_image, k_values)
+```
