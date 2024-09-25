@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pymembercli"
+version = "0.3.6"
+description = ""
+authors = ["lawnchairmeku <mekumotoki@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+platformdirs = "^4.3.6"
+pympmyansi = "^0.2.0"
+
+[tool.poetry.scripts]
+pymember = "pymembercli.pymember:main"
+
+[tool.poetry.group.tests]
+optional = true
+
+[tool.poetry.group.tests.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
