@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+dpgdesigner/__init__.py
+dpgdesigner/style_theme.py
+dpgdesigner/utils.py
+dpgdesigner.egg-info/PKG-INFO
+dpgdesigner.egg-info/SOURCES.txt
+dpgdesigner.egg-info/dependency_links.txt
+dpgdesigner.egg-info/requires.txt
+dpgdesigner.egg-info/top_level.txt
+dpgdesigner/fonts/FiraCode-SemiBold.ttf
