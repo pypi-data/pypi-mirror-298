@@ -1,0 +1,19 @@
+site_name: yooink docs
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette:
+    primary: black
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Quick start: quick-start.md
