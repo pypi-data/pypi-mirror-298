@@ -1,0 +1,10 @@
+README.md
+setup.py
+RelationCalculator/CaculatorClass.py
+RelationCalculator/RelationsClass.py
+RelationCalculator/__init__.py
+RelationCalculator.egg-info/PKG-INFO
+RelationCalculator.egg-info/SOURCES.txt
+RelationCalculator.egg-info/dependency_links.txt
+RelationCalculator.egg-info/requires.txt
+RelationCalculator.egg-info/top_level.txt
