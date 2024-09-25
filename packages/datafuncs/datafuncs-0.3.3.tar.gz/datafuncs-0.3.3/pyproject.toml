@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.setuptools]
+packages = ["datafuncs"]
+package-dir = {"" = "src/datafuncs"}
+
+[project]
+name = "datafuncs"
+version = "0.3.3"
+authors = [
+  { name = "Fraser Woodward", email = "woodwardfraser1@gmail.com" },
+  { name = "Liam Leonard", email = "liamleonard@outlook.ie" }
+]
+description = "Functions for Data Processing"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+homepage = "https://github.com/Liam-Leonard/Data-Funcs"
+bug_tracker = "https://github.com/Liam-Leonard/Data-Funcs/issues"
+pypi = "https://pypi.org/project/datafuncs/"
+
+[tool.hatch.build.targets.wheel]
+packages = ["datafuncs"]
+package-dir = "src/datafuncs"
