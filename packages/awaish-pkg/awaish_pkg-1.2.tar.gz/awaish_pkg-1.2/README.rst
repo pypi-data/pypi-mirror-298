@@ -1,0 +1,85 @@
+Project Title
+=============
+
+This package comes with some useful functions that make your work easier. Here are the function names with their functionalities:
+
+1. ``add_list_index_element()``
+   - Takes a list of integers as input, computes the sum of the digits of each integer, and creates a new list containing these sums.
+
+2. ``stack()``
+   - Implements a simple stack data structure with a fixed size limit. Provides interactive operations for pushing and popping elements, allowing users to choose between pushing an element onto the stack, popping an element from the stack, or exiting the program.
+
+3. ``find_positive_and_negative()``
+   - Reads a list of integers from the user.
+   - Separates the positive and negative numbers into two different lists.
+   - Calculates the sum of the positive numbers and the sum of the negative numbers.
+   - Displays the original list, the lists of positive and negative numbers, and their respective sums.
+
+4. ``factor_finder()``
+   - Finds all the factors of a given integer.
+   - Prints each factor.
+   - Calculates and prints the sum of all these factors.
+
+5. ``count_vowel_and_spaces()``
+   - Counts the number of vowels and spaces in a given input text.
+   - Identifies and lists all the vowels present in the text.
+   - Displays the original text, the count and list of vowels, and the count of spaces.
+
+6. ``prime_finder()``
+   - Determines whether a given number is prime.
+   - Informs the user whether the number is prime or not through printed messages.
+
+7. ``even_and_odd()``
+   - Reads a list of integers from the user.
+   - Separates the integers into two lists: one for even numbers and one for odd numbers.
+   - Displays the lists of even and odd numbers, or informs the user if no even or odd numbers were provided.
+
+8. ``fibonacci_series()``
+   - Generates and prints the first n terms of the Fibonacci series, where n is provided by the user.
+
+9. ``selection_sort()``
+   - This function sorts a list of integers in ascending order using the selection sort algorithm.
+   - This algorithm works by iteratively selecting the smallest element from the unsorted portion of the list and swapping it with the first element of the unsorted portion.
+   - After each iteration, the boundary between the sorted and unsorted portions of the list shifts, expanding the sorted section by one element.
+
+10. ``palindrome_number_pattern()``
+    - This function generates a number pyramid pattern resembling a palindrome structure.
+    - It prints a symmetrical pattern of numbers where each row contains numbers that first descend from a given number and then ascend back to the same value, creating a mirrored effect.
+    - The function also adds leading spaces to center the numbers, producing a pyramid-like shape.
+
+Documentation
+-------------
+
+For detailed documentation, see:
+`GitHub <https://github.com/abuawaish/awaish_pkg>`__
+
+Author
+------
+
+Created by:
+`abuawaish7 <https://www.github.com/abuawaish>`__
+
+Badges
+------
+
+.. image:: https://badge.fury.io/py/awaish_pkg.svg
+   :target: https://pypi.org/project/awaish_pkg/
+
+.. image:: https://img.shields.io/badge/License-MIT-yellow.svg
+   :target: https://opensource.org/licenses/MIT
+
+Installation and Use
+--------------------
+
+To install the package, use pip:
+
+.. code-block:: sh
+
+   pip install awaish_pkg
+
+To use the package in your Python script:
+
+.. code-block:: python
+
+   import awaish_pkg
+   help(awaish_pkg)
