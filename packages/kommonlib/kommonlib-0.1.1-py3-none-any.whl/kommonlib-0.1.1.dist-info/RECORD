@@ -1,0 +1,8 @@
+kommonlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kommonlib/registry/__init__.py,sha256=rBakZaW5QPdQ--JF-CrmrRxuXRg5yGSpOWqud6XYqAY,150
+kommonlib/registry/common.py,sha256=qHfv2NO4F0kyEEYtribAmlMLOE4Kk6YDukxvWFsM4jw,3964
+kommonlib/registry/namespace.py,sha256=5OupT5MV8Ocm6aQom6NfXDKSG-yyacLNokp9K7Zed5Y,1507
+kommonlib-0.1.1.dist-info/METADATA,sha256=V7c1s0dcrmZRx25s3F8chTTElJWm2vlIBJc06z-7T90,993
+kommonlib-0.1.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+kommonlib-0.1.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+kommonlib-0.1.1.dist-info/RECORD,,

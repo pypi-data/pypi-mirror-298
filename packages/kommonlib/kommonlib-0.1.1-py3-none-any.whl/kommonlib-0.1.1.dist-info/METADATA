@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: kommonlib
+Version: 0.1.1
+Summary: KommonLib: A common library for Kubertools projects.
+Project-URL: Homepage, https://github.com/kubertools/kommonlib
+Project-URL: Issues, https://github.com/kubertools/kommonlib/issues
+Author-email: Kubermate <168834048+kubermate@users.noreply.github.com>
+License-File: LICENSE
+Keywords: python
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Provides-Extra: lint
+Requires-Dist: black>=22.12; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest-mock; extra == 'test'
+Provides-Extra: type
+Requires-Dist: mypy>=1.11.1; extra == 'type'
+Description-Content-Type: text/markdown
+
+KommonLib: A common library for Kubertools projects.
