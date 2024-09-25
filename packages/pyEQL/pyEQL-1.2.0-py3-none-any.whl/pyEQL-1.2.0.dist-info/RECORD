@@ -1,0 +1,26 @@
+pyEQL/__init__.py,sha256=OCp_PiQEPyVoi1VX0ursBzHJWN6nDS1Id6bTBOgqCYs,1999
+pyEQL/activity_correction.py,sha256=eOixjgTd5hTrTRD5s6aPCCG12lAIH7-lRN0Z1qHu678,37151
+pyEQL/engines.py,sha256=VbdQSPKlNehW96U1XxWYwjTy6k6WDpZZEx_Y4l3qZv4,34686
+pyEQL/equilibrium.py,sha256=YCtoAJSgn1WC9NJnc3H4FTJdKQvogsvCuj7HqlKMtww,8307
+pyEQL/functions.py,sha256=8TePRHfOWsDnFsmBA-twv5XZyhrkMQI6VroDLouckho,11452
+pyEQL/salt_ion_match.py,sha256=0nCZXmeo67VqcyYWQpPx-81hjSvnsg8HFB3fIyfjW_k,4070
+pyEQL/solute.py,sha256=no00Rc3tRfHmyht4wm2UXA1KZhKC45tWMO5QEkZY6yg,5140
+pyEQL/solution.py,sha256=3hvtqeu5KzfFKzeOdKlzS_aIFPTNgUfhjIwBurfuGJw,115754
+pyEQL/utils.py,sha256=dXXM7_Mv0-8MWDjoPfNl9qoFmRgV0eVt_iSEhu1JYSc,7194
+pyEQL/database/geothermal.dat,sha256=kksnfcBtWdOTpNn4CLXU1Mz16cwas2WuVKpuMU8CaVI,234230
+pyEQL/database/llnl.dat,sha256=jN-a0kfUFbQlYMn2shTVRg1JX_ZhLa-tJ0lLw2YSpLU,751462
+pyEQL/database/phreeqc_license.txt,sha256=8W1r8VxC2kVptIMSU9sDFNASYqN7MdwKEtIWWfjTQuM,2906
+pyEQL/database/pyeql_db.json,sha256=OFUwq3KjbSzmpUE9kkn17TXF4aszs-2ki5N0VKX8E0o,1075941
+pyEQL/presets/Ringers lactate.yaml,sha256=kaGiBbg_JFrmOm8xZqb_EMVqeQYxll7pOOvXcmxAJ5I,413
+pyEQL/presets/normal saline.yaml,sha256=eT5MZKgc0uW-TrQOiX87ZoTwlMO-OEhTvQyQAXoIa80,318
+pyEQL/presets/rainwater.yaml,sha256=QG3aol2Z5HwLj-s6frN7hYNQr01qw_HR2h5f4BdAvVc,337
+pyEQL/presets/seawater.yaml,sha256=Kts0vAmXSPvPzy_PJpx0RR2uSt40izxp-687Qi02oro,843
+pyEQL/presets/urine.yaml,sha256=Zpcr2Dp7xZrlLqzYk4UcMyWXlNrd2AFUexWpb8k9FEg,679
+pyEQL/presets/wastewater.yaml,sha256=zJcpp9Ye4hIw6iInsdV5bgjTNuJ8oAUVimsUgZXlG-w,502
+pyEQL-1.2.0.dist-info/AUTHORS.md,sha256=Ukdh6f3jO6jdgl2k_r_xdNOuzmjXcISMQqUTSH39QVw,506
+pyEQL-1.2.0.dist-info/COPYING,sha256=Ww2oUywfFTn242v9ksCgQdIVSpcMXJiKKePn0GFm25E,7649
+pyEQL-1.2.0.dist-info/LICENSE.txt,sha256=2Zf1F7RzbpeposgIxUydpurqNCMoMgDi2gAB65_GjwQ,969
+pyEQL-1.2.0.dist-info/METADATA,sha256=okvLJvrb90RHE5Y3GoTDeXbvY0i_b4oP9MPa6TgIn5A,6151
+pyEQL-1.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pyEQL-1.2.0.dist-info/top_level.txt,sha256=QMOaZjCAm_lS4Njsjh4L0B5aWnJFGQMYKhuH88CG1co,6
+pyEQL-1.2.0.dist-info/RECORD,,
