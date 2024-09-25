@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/gdriver/__init__.py
+src/gdriver/__init__.pyi
+src/gdriver/cli.py
+src/gdriver/client.py
+src/gdriver/files.py
+src/gdriver/folders.py
+src/gdriver.egg-info/PKG-INFO
+src/gdriver.egg-info/SOURCES.txt
+src/gdriver.egg-info/dependency_links.txt
+src/gdriver.egg-info/entry_points.txt
+src/gdriver.egg-info/requires.txt
+src/gdriver.egg-info/top_level.txt
