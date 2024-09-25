@@ -1,0 +1,1 @@
+aikosmo_register_service

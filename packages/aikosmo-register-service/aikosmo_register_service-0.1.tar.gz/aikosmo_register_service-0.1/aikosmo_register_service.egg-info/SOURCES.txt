@@ -1,0 +1,9 @@
+README.md
+setup.py
+aikosmo_register_service/__init__.py
+aikosmo_register_service/register.py
+aikosmo_register_service.egg-info/PKG-INFO
+aikosmo_register_service.egg-info/SOURCES.txt
+aikosmo_register_service.egg-info/dependency_links.txt
+aikosmo_register_service.egg-info/requires.txt
+aikosmo_register_service.egg-info/top_level.txt
