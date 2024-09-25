@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "zk"
+version = "0.9.1"
+description = "zipkin"
+authors = ["Gandi <feedback@gandi.net>"]
+license = "Apache"
+readme = "README.rst"
+keywords = ["zipkin", "metrics", "trace"]
+homepage = "https://github.com/Gandi/python-zipkin/"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+thriftpy2 = "^0.5.2"
+six = "^1.16.0"
+setuptools = "^75.1.0"
+
+[tool.poetry.extras]
+django = ["django"]
+pyramid = ["pyramid"]
+celery = ["celery"]
+requests = ["requests"]
+psycopg2 = ["psycopg2-binary"]
+flask = ["flask", "blinker"]
+dev = [
+    "blinker",
+    "celery",
+    "django",
+    "flask",
+    "psycopg2-binary",
+    "pyramid",
+    "requests",
+    "sphinx",
+    "sqlalchemy"
+]
+test = ["pytest", "mock"]
+
+[tool.poetry.dev-dependencies]
+python = ">=3.11"
+pytest = "^7.0.0"
+
+[tool.poetry.group.dev.dependencies]
+flask = "^3.0.3"
+pyramid = "^2.0.2"
+celery = "^5.4.0"
+requests = "^2.32.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
