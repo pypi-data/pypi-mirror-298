@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: carjam
+Version: 1.0.1
+Summary: Unoffical Python API for CarJam NZ
+Home-page: https://github.com/kianz20/CarJam-API
+Author: Kian Jazayeri
+Author-email: kianja02@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[CarJam](https://www.carjam.co.nz/) is a resource for finding information about cars registered in NZ.
+
+Unofficial Python API for Carjam
+
+This API may stop functioning if CarJam updates their website code.  
+It is provided "as-is" with no implied warranty.  
+We assume no responsibility for any future issues or interruptions in API functionality as a result of using this library.
+
+## Installation
+``pip install git+https://github.com/kianz20/CarJam-API``
+
+## Basic car details
+```python
+import carjam
+client = carjam.Client()
+details = client.basic_details('aaa000')
+```
+
+## Car model details
+```python
+import carjam
+client = carjam.Client()
+details = client.model_details('aaa000')
+```
+
+## Car fuel consumption
+```python
+import carjam
+client = carjam.Client()
+fuel_consumption = client.fuel_consumption("aaa000")
+```
+
+## Car images
+```python
+import carjam
+client = carjam.Client()
+image = client.image('aaa000')
+```
+
+## Car Odometer Details
+```python
+import carjam
+client = carjam.Client()
+odo_details = client.odometer_history('aaa000')
+```
+
+## NZ Fleet Details
+```python
+import carjam
+client = carjam.Client()
+fleet_details = client.fleet_details(1)
+```
+fleet_details can also take optional filter variables:
+```python
+import carjam
+client = carjam.Client()
+filtered_fleet_details = client.fleet_details(1, make='TOYOTA', query="cor", fuel_type="PETROL")
+```
+
+## Development and Contribution
+I welcome any contributions to this project, so feel free!
