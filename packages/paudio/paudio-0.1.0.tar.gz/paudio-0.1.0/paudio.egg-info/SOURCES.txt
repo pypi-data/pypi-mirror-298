@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+parecord_wrapper/__init__.py
+parecord_wrapper/parecord.py
+paudio.egg-info/PKG-INFO
+paudio.egg-info/SOURCES.txt
+paudio.egg-info/dependency_links.txt
+paudio.egg-info/top_level.txt
