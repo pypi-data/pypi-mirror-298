@@ -1,0 +1,11 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+UdemyCalculatorEkene.egg-info/PKG-INFO
+UdemyCalculatorEkene.egg-info/SOURCES.txt
+UdemyCalculatorEkene.egg-info/dependency_links.txt
+UdemyCalculatorEkene.egg-info/top_level.txt
+tests/test_calculator.py
+udemycalculator/__init__.py
+udemycalculator/calculator.py
