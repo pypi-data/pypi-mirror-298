@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tldparse/__init__.py
+tldparse/__version__.py
+tldparse/public_suffix_list.dat
+tldparse/tests.py
+tldparse.egg-info/PKG-INFO
+tldparse.egg-info/SOURCES.txt
+tldparse.egg-info/dependency_links.txt
+tldparse.egg-info/top_level.txt
