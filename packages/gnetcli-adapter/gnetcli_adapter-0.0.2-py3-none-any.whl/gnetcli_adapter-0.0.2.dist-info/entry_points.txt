@@ -1,0 +1,4 @@
+[annet.adapters]
+deploy_driver=gnetcli_adapter.gnetcli_adapter:GnetcliDeployer
+deploy_fetcher=gnetcli_adapter.gnetcli_adapter:GnetcliFetcher
+
