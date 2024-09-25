@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20240924.0
+-------------
+
+* Remove deprecated validations (#1054)
