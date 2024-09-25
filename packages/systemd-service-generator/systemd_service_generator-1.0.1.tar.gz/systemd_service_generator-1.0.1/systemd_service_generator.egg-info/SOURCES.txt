@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+systemd_service_generator/__init__.py
+systemd_service_generator/sdg.py
+systemd_service_generator.egg-info/PKG-INFO
+systemd_service_generator.egg-info/SOURCES.txt
+systemd_service_generator.egg-info/dependency_links.txt
+systemd_service_generator.egg-info/entry_points.txt
+systemd_service_generator.egg-info/top_level.txt
+tests/test_gen.py
