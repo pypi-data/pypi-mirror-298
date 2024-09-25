@@ -1,0 +1,97 @@
+from pyspark.sql.functions import *
+from pyspark.sql.types import StructField
+
+
+class EasyDeltaHelpers:
+
+    @staticmethod
+    def build_struct_type(struct_types: dict | list[StructField], nullable=False) -> StructType:
+        struct_types = EasyDeltaHelpers.build_struct_fields(struct_types, nullable)
+
+        return StructType(struct_types)
+
+    @staticmethod
+    def build_struct_fields(struct_types: dict | list[StructField], nullable=False) -> list[StructField]:
+
+        if isinstance(struct_types, dict):
+            struct_types = [StructField(key, value, nullable) for key, value in struct_types.items()]
+
+        return struct_types
+
+    @staticmethod
+    def build_condition(keys: dict[str, any], conditions=""):
+        conditions = conditions
+
+        if keys is None or len(keys) == 0:
+            return conditions
+
+        for key, value in keys.items():
+            is_integer = isinstance(value, int) or isinstance(value, float)
+            if not conditions == "" and not conditions.endswith("And "):
+                conditions += f" And "
+
+            if is_integer:
+                conditions += f"{key} == {value}"
+            else:
+                conditions += f"{key} == '{value}'"
+
+        return conditions
+
+    @staticmethod
+    def build_condition_by_multiple_keys(multiple_keys: list[tuple[str, list]], conditions=""):
+        conditions = conditions
+
+        if multiple_keys is None or len(multiple_keys) == 0:
+            return conditions
+
+        for key in multiple_keys:
+            if key[1] is None and len(key[1]) == 0:
+                continue
+
+            if not conditions == "" and not conditions.endswith("And "):
+                conditions += f" And "
+
+            if len(key[1]) == 1:
+                conditions = EasyDeltaHelpers.build_condition({key[0]: key[1][0]}, conditions)
+            else:
+                conditions += f"{key[0]} in {tuple(key[1])}"
+        return conditions
+
+    @staticmethod
+    def combine_from_dfs(dfs: list[DataFrame], type: str = 'unionByName',
+                         allowMissingColumns: bool = True) -> DataFrame:
+
+        # Fid the index of df in dfs with the most number of columns
+        index_df = 0
+        for df in dfs:
+            if len(df.columns) > len(dfs[index_df].columns):
+                index_df = dfs.index(df)
+
+        combine_df = dfs[index_df]
+
+        if len(dfs) > 1:
+            others_dfs = dfs[:index_df] + dfs[index_df + 1:]
+            for other_df in others_dfs:
+                if type == 'unionByName':
+                    combine_df = combine_df.unionByName(other_df, allowMissingColumns=allowMissingColumns)
+                else:
+                    combine_df = combine_df.union(other_df)
+
+        return combine_df
+
+    @staticmethod
+    def add_missing_columns_based_on_schema(df: DataFrame, schema: StructType) -> DataFrame:
+        new_schema = schema if schema is not None else df.schema
+        for field in new_schema.fields:
+            if field.name not in df.columns:
+                df = df.withColumn(field.name, lit(None).cast(field.dataType))
+        return df
+
+    @staticmethod
+    def remove_columns_based_on_schema(df, schema: StructType) -> DataFrame:
+        new_schema = schema if schema is not None else df.schema
+        for coloumn in df.columns:
+            if coloumn not in new_schema.names:
+                df = df.drop(coloumn)
+
+        return df
