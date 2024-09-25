@@ -1,0 +1,9 @@
+bed/__init__.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+bed/design.py,sha256=2_j2LOQbWDrC_5_e8prYVxhnXfp1JBai8iZeKZNdUbQ,7719
+bed/grid.py,sha256=2zwJLO6hUJ-zOPmfboMnz2MmgoDziY6j_xqBjTJqAGM,11573
+bed/plot.py,sha256=rGaScrNoGNhnQxRVfEDuHuqE1549xrTXH4VUEp8N3bg,4535
+bayesdesign-0.4.0.dist-info/LICENSE,sha256=c5IiPt3GRSQI0jL5XpzBPTNZkE8Xu7fMl8M-1_x8RVs,1087
+bayesdesign-0.4.0.dist-info/METADATA,sha256=bIKVFnDRjWms_rGayoLQN96jry-MwznqalI-pHu5QzU,3335
+bayesdesign-0.4.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+bayesdesign-0.4.0.dist-info/top_level.txt,sha256=ekjd2XWMehpqa2esCl3CsDg6Vzl67E0X1zjMwt2Zhmc,4
+bayesdesign-0.4.0.dist-info/RECORD,,
