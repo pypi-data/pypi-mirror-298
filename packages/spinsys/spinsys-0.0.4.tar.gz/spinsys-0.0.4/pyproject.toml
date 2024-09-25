@@ -1,0 +1,41 @@
+# Copyright 2024 The Spin Authors. All rights reserved.
+# Use of this source code is governed by the Apache 2.0
+# license that can be found in the LICENSE file.
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spinsys"
+dynamic = ["version"]
+authors = [
+  { name = "N. C. Landolfi", email="crews.fixture.0f@icloud.com"},
+]
+description = "A library for interacting with a Spin system"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "fsspec>=2024.9.0",
+  "python-dateutil",
+  "requests>=2.32.3",
+]
+classifiers = [
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/nlandolfi/spinsys"
+
+[tool.hatch.version]
+path = "spinsys/__init__.py"
+
+[tool.uv]
+dev-dependencies = [
+    "mypy>=1.11.2",
+    "pytest>=8.3.3",
+    "ruff>=0.6.7",
+    "twine>=5.1.1",
+]
