@@ -1,0 +1,6 @@
+Jinja2>=3.0
+natsort>=6.0.0
+PyYAML>=5.1
+rarfile>=3.0
+Requests>=2.32
+requests_toolbelt>=0.9.1
