@@ -1,0 +1,15 @@
+{
+  "DMS214": [
+    "romanisim.tests.test_image.test_image_rendering"
+  ],
+  "DMS215": [
+    "romanisim.tests.test_image.test_image_rendering"
+  ],
+  "DMS217": [
+    "romanisim.tests.test_catalog.test_table_catalog"
+  ],
+  "DMS283": [
+    "romanisim.tests.test_catalog.test_table_catalog",
+    "romanisim.tests.test_image.test_image_rendering"
+  ]
+}

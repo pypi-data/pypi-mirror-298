@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+    <testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="714.941"
+        timestamp="2023-12-08T16:15:11.232524" hostname="thatrock2023.local.stsci.edu">
+        <testcase classname="romancal.regtest.test_tweakreg" name="test_tweakreg" time="707.901">
+            <failure
+                message="AssertionError: {'values_changed': {&quot;root['roman']['meta']['ref_file']['crds']['context_used']&quot;: {'new_value': 'roman_0051.pmap',&#10;                                                                                    'old_value': 'roman_0052.pmap'}}}&#10;assert False&#10; +  where False = &lt;romancal.regtest.regtestdata.DiffResult object at 0x16498f990&gt;.identical">rtdata
+                = {'input':
+                '/Users/jglorioso/Source/scsb/romancal/test_outputs/popen-gw1/test_tweakreg0/tweakreg_asn.json',
+                'input_rem...p.asdf',
+                'truth_remote':
+                'roman-pipeline/dev/truth/WFI/image/r0000101001001001001_01101_0001_WFI01_tweakregstep.asdf'}
+                ignore_asdf_paths = {'ignore': ['asdf_library', 'history',
+                'roman.meta.ref_file.crds.sw_version', 'roman.cal_logs', 'roman.meta.date']},
+                tmp_path =
+                PosixPath('/Users/jglorioso/Source/scsb/romancal/test_outputs/popen-gw1/test_tweakreg0')
+                @metrics_logger("DMS280")
+                @pytest.mark.bigdata
+                def test_tweakreg(rtdata, ignore_asdf_paths, tmp_path):
+                # N.B.: the data were created using WFIsim and processed through
+                # the three pipeline steps listed below:
+                # - assign_wcs;
+                # - photom;
+                # - source_detection.
+                input_data = "r0000101001001001001_01101_0001_WFI01_cal.asdf"
+                output_data = "r0000101001001001001_01101_0001_WFI01_tweakregstep.asdf"
+                truth_data = "r0000101001001001001_01101_0001_WFI01_tweakregstep.asdf"
+
+                asn_fn = "tweakreg_asn.json"
+
+                rtdata.get_data(f"WFI/image/{input_data}")
+                rtdata.get_data(f"WFI/image/{asn_fn}")
+                rtdata.get_truth(f"truth/WFI/image/{truth_data}")
+
+                rtdata.input = asn_fn
+                rtdata.output = output_data
+
+                # instantiate TweakRegStep (for running and log access)
+                step = TweakRegStep()
+
+                args = [
+                "romancal.step.TweakRegStep",
+                rtdata.input,
+                f"--output_file='{rtdata.output}'",
+                "--suffix='tweakregstep'",
+                ]
+                RomanStep.from_cmdline(args)
+                tweakreg_out = rdm.open(rtdata.output)
+
+                step.log.info(
+                "DMS280 MSG: TweakReg step recorded as complete? :"
+                f' {tweakreg_out.meta.cal_step.tweakreg == "COMPLETE"}'
+                )
+                assert tweakreg_out.meta.cal_step.tweakreg == "COMPLETE"
+
+                step.log.info(
+                f"""DMS280 MSG: TweakReg created new attribute with fit results? :\
+                {"wcs_fit_results" in tweakreg_out.meta}"""
+                )
+                assert "wcs_fit_results" in tweakreg_out.meta
+
+                step.log.info(
+                f"""DMS280 MSG: TweakReg created new coordinate frame 'v2v3corr'? :\
+                {"v2v3corr" in tweakreg_out.meta.wcs.available_frames}"""
+                )
+                assert "v2v3corr" in tweakreg_out.meta.wcs.available_frames
+
+                diff = compare_asdf(rtdata.output, rtdata.truth, atol=1e-3, **ignore_asdf_paths)
+                step.log.info(
+                f"DMS280 MSG: Was the proper TweakReg data produced? : {diff.identical}"
+                )
+                &gt; assert diff.identical, diff.report()
+                E AssertionError: {'values_changed':
+                {"root['roman']['meta']['ref_file']['crds']['context_used']": {'new_value':
+                'roman_0051.pmap',
+                E 'old_value': 'roman_0052.pmap'}}}
+                E assert False
+                E + where False = &lt;romancal.regtest.regtestdata.DiffResult object at
+                0x16498f990&gt;.identical
+                /Users/jglorioso/Source/scsb/romancal/romancal/regtest/test_tweakreg.py:66:
+                AssertionError</failure>
+            <system-err>--------------------------------- Captured Err
+                ---------------------------------
+                2023-12-08 16:26:45,567 - stpipe.TweakRegStep - INFO - TweakRegStep instance
+                created.
+                2023-12-08 16:26:47,214 - stpipe - WARNING - **WARNING**: LOCAL JWST PRD VERSION
+                PRDOPSSOC-062 CANNOT BE CHECKED AGAINST ONLINE VERSION
+                2023-12-08 16:26:48,151 - stpipe - WARNING - Input dataset is not an instance of
+                AbstractDataModel.
+                2023-12-08 16:26:48,151 - stpipe - INFO - PARS-TWEAKREGSTEP: CRDS parameter
+                reference retrieval disabled.
+                2023-12-08 16:26:48,153 - stpipe.TweakRegStep - INFO - TweakRegStep instance
+                created.
+                2023-12-08 16:26:48,153 - stpipe - INFO - Hostname: thatrock2023.local.stsci.edu
+                2023-12-08 16:26:48,154 - stpipe - INFO - OS: Darwin
+                2023-12-08 16:26:48,212 - stpipe.TweakRegStep - INFO - Step TweakRegStep running
+                with args
+                ('/Users/jglorioso/Source/scsb/romancal/test_outputs/popen-gw1/test_tweakreg0/tweakreg_asn.json',).
+                2023-12-08 16:26:48,214 - stpipe.TweakRegStep - INFO - Step TweakRegStep parameters
+                are: {'pre_hooks': [], 'post_hooks': [], 'output_file':
+                '/Users/jglorioso/Source/scsb/romancal/test_outputs/popen-gw1/test_tweakreg0/r0000101001001001001_01101_0001_WFI01_tweakregstep.asdf',
+                'output_dir': None, 'output_ext': '.asdf', 'output_use_model': True,
+                'output_use_index': True, 'save_results': True, 'skip': False, 'suffix':
+                'tweakregstep', 'search_output_file': True, 'input_dir':
+                '/Users/jglorioso/Source/scsb/romancal/test_outputs/popen-gw1/test_tweakreg0',
+                'use_custom_catalogs': False, 'catalog_format': 'ascii.ecsv', 'catfile': '',
+                'catalog_path': '', 'enforce_user_order': False, 'expand_refcat': False, 'minobj':
+                15, 'searchrad': 2.0, 'use2dhist': True, 'separation': 1.0, 'tolerance': 0.7,
+                'fitgeometry': 'rshift', 'nclip': 3, 'sigma': 3.0, 'abs_refcat': 'GAIADR3',
+                'save_abs_catalog': False, 'abs_minobj': 15, 'abs_searchrad': 6.0, 'abs_use2dhist':
+                True, 'abs_separation': 0.1, 'abs_tolerance': 0.7, 'abs_fitgeometry': 'rshift',
+                'abs_nclip': 3, 'abs_sigma': 3.0}
+                2023-12-08 16:26:48,732 - stpipe.TweakRegStep - INFO - All source catalogs will be
+                saved to:
+                /Users/jglorioso/Source/scsb/romancal/test_outputs/popen-gw1/test_tweakreg0
+                2023-12-08 16:26:48,733 - stpipe.TweakRegStep - INFO - Removed 5 sources from
+                r0000101001001001001_01101_0001_WFI01_cal.asdf's catalog that were outside of the
+                bounding box.
+                2023-12-08 16:26:48,734 - stpipe.TweakRegStep - INFO - Detected 16888 sources in
+                r0000101001001001001_01101_0001_WFI01_cal.asdf.
+                2023-12-08 16:26:48,734 - stpipe.TweakRegStep - INFO -
+                2023-12-08 16:26:48,734 - stpipe.TweakRegStep - INFO - Number of image groups to be
+                aligned: 1.
+                2023-12-08 16:26:48,734 - stpipe.TweakRegStep - INFO - Image groups:
+                2023-12-08 16:26:48,777 - stpipe.TweakRegStep - INFO - * Images in GROUP
+                'r0000101001001001001_01101_0001_WFI01_cal':
+                2023-12-08 16:26:48,778 - stpipe.TweakRegStep - INFO -
+                r0000101001001001001_01101_0001_WFI01_cal
+                2023-12-08 16:26:48,778 - stpipe.TweakRegStep - INFO -
+                2023-12-08 16:26:52,230 - stpipe.TweakRegStep - INFO -
+                2023-12-08 16:26:52,230 - stpipe.TweakRegStep - INFO - *****
+                tweakwcs.imalign.align_wcs() started on 2023-12-08 16:26:52.230287
+                2023-12-08 16:26:52,230 - stpipe.TweakRegStep - INFO - Version 0.8.3.dev2+ga9bf1b1
+                2023-12-08 16:26:52,230 - stpipe.TweakRegStep - INFO -
+                2023-12-08 16:26:53,080 - stpipe.TweakRegStep - INFO - Aligning image catalog 'GROUP
+                ID: 987654' to the reference catalog.
+                2023-12-08 16:26:53,090 - stpipe.TweakRegStep - INFO - Matching sources from
+                'r0000101001001001001_01101_0001_WFI01_cal' catalog with sources from the reference
+                'Unnamed' catalog.
+                2023-12-08 16:26:53,091 - stpipe.TweakRegStep - INFO - Computing initial guess for X
+                and Y shifts...
+                2023-12-08 16:26:53,189 - stpipe.TweakRegStep - INFO - Found initial X and Y shifts
+                of -4.705, -4.239 (arcsec) with significance of 4.307 and 22 matches.
+                2023-12-08 16:26:53,192 - stpipe.TweakRegStep - INFO - Found 65 matches for 'GROUP
+                ID: 987654'...
+                2023-12-08 16:26:53,192 - stpipe.TweakRegStep - INFO - Performing 'rshift' fit
+                2023-12-08 16:26:53,194 - stpipe.TweakRegStep - INFO - Computed 'rshift' fit for
+                GROUP ID: 987654:
+                2023-12-08 16:26:53,194 - stpipe.TweakRegStep - INFO - XSH: 4.71497 YSH: 4.2045 ROT:
+                -0.00710356 SCALE: 1
+                2023-12-08 16:26:53,194 - stpipe.TweakRegStep - INFO -
+                2023-12-08 16:26:53,195 - stpipe.TweakRegStep - INFO - FIT RMSE: 0.431863 FIT MAE:
+                0.3993
+                2023-12-08 16:26:53,195 - stpipe.TweakRegStep - INFO - Final solution based on 65
+                objects.
+                2023-12-08 16:26:53,270 - stpipe.TweakRegStep - INFO -
+                2023-12-08 16:26:53,271 - stpipe.TweakRegStep - INFO - *****
+                tweakwcs.imalign.align_wcs() ended on 2023-12-08 16:26:53.270793
+                2023-12-08 16:26:53,271 - stpipe.TweakRegStep - INFO - *****
+                tweakwcs.imalign.align_wcs() TOTAL RUN TIME: 0:00:01.040506
+                2023-12-08 16:26:53,271 - stpipe.TweakRegStep - INFO -
+                2023-12-08 16:26:56,227 - stpipe.TweakRegStep - INFO - Saved model in
+                r0000101001001001001_01101_0001_WFI01_tweakregstep.asdf
+                2023-12-08 16:26:56,227 - stpipe.TweakRegStep - INFO - Step TweakRegStep done
+                2023-12-08 16:26:56,753 - stpipe.TweakRegStep - INFO - DMS280 MSG: TweakReg step
+                recorded as complete? : True
+                2023-12-08 16:26:56,753 - stpipe.TweakRegStep - INFO - DMS280 MSG: TweakReg created
+                new attribute with fit results? : True
+                2023-12-08 16:26:56,753 - stpipe.TweakRegStep - INFO - DMS280 MSG: TweakReg created
+                new coordinate frame 'v2v3corr'? : True
+                2023-12-08 16:27:04,653 - stpipe.TweakRegStep - INFO - DMS280 MSG: Was the proper
+                TweakReg data produced? : False
+                2023-12-08 16:27:04,654 - stpipe - INFO - METRIC - DMS280 - test_tweakreg - FAIL
+
+            </system-err>
+        </testcase>
+        <testcase classname="romancal.lib.tests.test_psf.TestPSFFitting"
+            name="test_psf_fit[0.4589931219679968-0.34124882938726064-10000.0]" time="47.561">
+            <system-err>--------------------------------- Captured Err
+                ---------------------------------
+                2023-12-08 16:27:04,654 - stpipe - INFO - METRIC - DMS280 - test_simulate - PASS
+
+            </system-err>
+        </testcase>
+    </testsuite>
+</testsuites>

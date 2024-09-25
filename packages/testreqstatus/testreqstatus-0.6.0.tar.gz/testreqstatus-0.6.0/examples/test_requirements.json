@@ -1,0 +1,14 @@
+{
+  "DMS356": [
+    "romancal.regtest.test_mos_pipeline.test_level3_mos_pipeline"
+  ],
+  "DMS373": [
+    "romancal.regtest.test_mos_pipeline.test_hlp_mosaic_pipeline"
+  ],
+  "DMS374": [
+    "romancal.regtest.test_mos_pipeline.test_level3_mos_pipeline"
+  ],
+  "DMS400": [
+    "romancal.regtest.test_mos_pipeline.test_level3_mos_pipeline"
+  ]
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="64" time="418.307" timestamp="2023-12-12T22:34:27.636176" hostname="thatrock2023.local.stsci.edu"><testcase classname="romanisim.regtest.test_l1" name="test_dummy_reg" time="0.001"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.regtest.test_l1" name="test_dummy_soctest_reg" time="0.000"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_bandpass" name="test_read_gsfc_effarea" time="0.012"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_bandpass" name="test_compute_abflux[F062]" time="0.002"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_bandpass" name="test_compute_abflux[F158]" time="0.001"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_bandpass" name="test_compute_abflux[F213]" time="0.001"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_bandpass" name="test_get_abflux[F062-49380000000.0]" time="0.008"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_bandpass" name="test_get_abflux[F158-40225000000.0]" time="0.000"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_bandpass" name="test_get_abflux[F213-25500000000.0]" time="0.000"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_catalog" name="test_make_dummy_catalog" time="0.459"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_catalog" name="test_table_catalog" time="0.954"><system-out>--------------------------------- Captured Log ---------------------------------
+#x1B[32mINFO    #x1B[0m romanisim:test_catalog.py:153 DMS217: successfully generated parametric distributions of sources with different magnitudes and sizes.
+#x1B[32mINFO    #x1B[0m metrics_logger:decorators.py:54 METRIC - DMS283 - test_table_catalog - PASS
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_cr" name="test_traverse" time="0.016"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_cr" name="test_create_sampler" time="0.001"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_cr" name="test_moyal" time="0.001"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_cr" name="test_power_law" time="0.000"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_cr" name="test_sample_cr_params" time="0.003"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_cr" name="test_simulate_crs" time="0.161"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_gaia" name="test_gaia" time="0.019"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_image" name="test_in_bounds" time="0.000"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_image" name="test_trim_objlist" time="2.129"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_image" name="test_make_l2" time="0.008"><system-out>--------------------------------- Captured Log ---------------------------------
+#x1B[32mINFO    #x1B[0m romanisim:image.py:115 Fitting ramps.
+#x1B[33mWARNING #x1B[0m romanisim:image.py:134 The ramp fitter is unaware of noise from dark current because it runs on dark-subtracted images.  We could consider adding a separate dark rate term to fit ramps.
+#x1B[32mINFO    #x1B[0m romanisim:image.py:115 Fitting ramps.
+#x1B[33mWARNING #x1B[0m romanisim:image.py:134 The ramp fitter is unaware of noise from dark current because it runs on dark-subtracted images.  We could consider adding a separate dark rate term to fit ramps.
+#x1B[32mINFO    #x1B[0m romanisim:image.py:115 Fitting ramps.
+#x1B[33mWARNING #x1B[0m romanisim:image.py:134 The ramp fitter is unaware of noise from dark current because it runs on dark-subtracted images.  We could consider adding a separate dark rate term to fit ramps.
+#x1B[32mINFO    #x1B[0m romanisim:image.py:115 Fitting ramps.
+#x1B[33mWARNING #x1B[0m romanisim:image.py:134 The ramp fitter is unaware of noise from dark current because it runs on dark-subtracted images.  We could consider adding a separate dark rate term to fit ramps.
+#x1B[32mINFO    #x1B[0m romanisim:image.py:115 Fitting ramps.
+#x1B[33mWARNING #x1B[0m romanisim:image.py:134 The ramp fitter is unaware of noise from dark current because it runs on dark-subtracted images.  We could consider adding a separate dark rate term to fit ramps.
+#x1B[32mINFO    #x1B[0m romanisim:image.py:115 Fitting ramps.
+#x1B[33mWARNING #x1B[0m romanisim:image.py:134 The ramp fitter is unaware of noise from dark current because it runs on dark-subtracted images.  We could consider adding a separate dark rate term to fit ramps.
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="romanisim.tests.test_image" name="test_image_rendering" time="18.382"><system-out>--------------------------------- Captured Log ---------------------------------
+#x1B[33mWARNING #x1B[0m romanisim:psf.py:59 wcs is None; unlikely to get orientation of PSF correct.
+#x1B[33mWARNING #x1B[0m romanisim:image.py:260 No RNG set, constructing a new default RNG from default seed.
+#x1B[32mINFO    #x1B[0m romanisim:image.py:265 Adding sources to image...
+#x1B[32mINFO    #x1B[0m romanisim:image.py:307 Rendered 1 sources...
+#x1B[32mINFO    #x1B[0m romanisim:test_image.py:205 DMS214: rendered PSF matches WebbPSF
+#x1B[33mWARNING #x1B[0m romanisim:image.py:260 No RNG set, constructing a new default RNG from default seed.
+#x1B[32mINFO    #x1B[0m romanisim:image.py:265 Adding sources to image...
+#x1B[32mINFO    #x1B[0m romanisim:image.py:307 Rendered 1 sources...
+#x1B[32mINFO    #x1B[0m romanisim:test_image.py:269 DMS215: rendered galaxy matches astropy Sersic2D after pixel integration.
+#x1B[32mINFO    #x1B[0m metrics_logger:decorators.py:54 METRIC - DMS283 - test_image_rendering - FAIL
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

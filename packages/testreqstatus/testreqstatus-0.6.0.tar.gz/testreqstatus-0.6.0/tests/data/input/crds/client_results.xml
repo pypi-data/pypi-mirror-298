@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="4" time="8.825" timestamp="2024-03-28T21:41:54.653527" hostname="thatrock2023.local.stsci.edu"><testcase classname="test.roman.test_roman" name="test_getreferences_with_valid_header_ISOT_fmt" time="0.027"><system-out>--------------------------------- Captured Log ---------------------------------
+#x1B[32mINFO    #x1B[0m metrics_logger:decorators.py:54 METRIC - DMS283 - test_getreferences_with_valid_header_ISOT_fmt - PASS
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="test.roman.test_roman" name="test_getreferences_with_valid_header_ISO_fmt" time="0.011"><system-out>--------------------------------- Captured Log ---------------------------------
+#x1B[32mINFO    #x1B[0m metrics_logger:decorators.py:54 METRIC - DMS283 - test_getreferences_with_valid_header_ISO_fmt - FAIL
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

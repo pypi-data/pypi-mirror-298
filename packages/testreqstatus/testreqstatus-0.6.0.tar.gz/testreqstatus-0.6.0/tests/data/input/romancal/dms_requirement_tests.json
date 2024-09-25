@@ -1,0 +1,6 @@
+{
+  "DMS280": [
+    "romancal.regtest.test_tweakreg.test_tweakreg",
+    "romancal.lib.tests.test_psf.TestPSFFitting.test_psf_fit"
+  ]
+}
