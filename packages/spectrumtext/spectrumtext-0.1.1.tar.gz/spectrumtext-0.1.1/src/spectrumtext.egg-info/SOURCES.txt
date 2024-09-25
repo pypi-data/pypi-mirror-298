@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/spectrumtext/__init__.py
+src/spectrumtext/colors.py
+src/spectrumtext/exceptions.py
+src/spectrumtext/printer.py
+src/spectrumtext/spectrumtext.py
+src/spectrumtext.egg-info/PKG-INFO
+src/spectrumtext.egg-info/SOURCES.txt
+src/spectrumtext.egg-info/dependency_links.txt
+src/spectrumtext.egg-info/requires.txt
+src/spectrumtext.egg-info/top_level.txt
