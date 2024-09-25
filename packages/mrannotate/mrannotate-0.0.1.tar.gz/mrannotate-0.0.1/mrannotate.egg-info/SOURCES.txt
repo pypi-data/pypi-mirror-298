@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+mrannotate/ImageLabeller.py
+mrannotate/__init__.py
+mrannotate.egg-info/PKG-INFO
+mrannotate.egg-info/SOURCES.txt
+mrannotate.egg-info/dependency_links.txt
+mrannotate.egg-info/requires.txt
+mrannotate.egg-info/top_level.txt
