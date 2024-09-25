@@ -1,0 +1,143 @@
+Metadata-Version: 2.1
+Name: oilgas_analysis
+Version: 0.1.0
+Summary: A package for oil and gas well analysis
+Home-page: https://github.com/shailesh2790/oilgas_analysis
+Author: Shailesh Tripathi
+Author-email: tripathi_shailesh@ongc.co.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
+# Oil and Gas Analysis Package
+
+This package provides tools for analyzing well logs, generating IPR curves, predicting reservoir performance, and selecting candidates for artificial lift in the oil and gas industry.
+
+## Installation
+
+```
+pip install oilgas_analysis
+```
+
+## Usage
+
+### Well Log Analysis
+
+```python
+from oilgas_analysis import load_well_log_data, analyze_well_log
+
+# Load well log data
+log_data = load_well_log_data('well_log.csv')
+
+# Analyze well log
+analysis_results = analyze_well_log(log_data)
+print(analysis_results)
+```
+
+### IPR Curve Generation
+
+```python
+from oilgas_analysis import generate_ipr_curve, plot_ipr_curve
+
+# Generate IPR curve
+pressures, rates = generate_ipr_curve(reservoir_pressure=3000, bubble_point_pressure=2500, productivity_index=2.5, water_cut=0.2)
+
+# Plot IPR curve
+plot_ipr_curve(pressures, rates, title="Well X IPR Curve")
+```
+
+### Reservoir Performance Prediction
+
+```python
+from oilgas_analysis import predict_reservoir_performance, forecast_production
+import numpy as np
+
+# Historical production data
+time = np.array([0, 30, 60, 90, 120])
+production_data = np.array([1000, 950, 905, 865, 830])
+
+# Predict reservoir performance
+params = predict_reservoir_performance(time, production_data)
+
+# Forecast future production
+forecast_time, forecast_rates = forecast_production(params, time_horizon=24)
+print(f"Forecasted production after 2 years: {forecast_rates[-1]:.2f} STB/day")
+```
+
+### Artificial Lift Analysis
+
+```python
+from oilgas_analysis import select_artificial_lift_candidates, analyze_lift_performance
+
+# Select artificial lift candidates
+wells_data = [
+    {'name': 'Well A', 'production_rate': 40, 'economic_limit': 50, 'reservoir_pressure': 2000, 'bottomhole_pressure': 1000, 'water_cut': 0.3},
+    {'name': 'Well B', 'production_rate': 60, 'economic_limit': 50, 'reservoir_pressure': 1800, 'bottomhole_pressure': 1200, 'water_cut': 0.5},
+    {'name': 'Well C', 'production_rate': 30, 'economic_limit': 50, 'reservoir_pressure': 2200, 'bottomhole_pressure': 1100, 'water_cut': 0.8}
+]
+
+candidates = select_artificial_lift_candidates(wells_data)
+print(f"Candidates for artificial lift: {candidates}")
+
+# Analyze lift performance
+initial_rate = 50
+time = np.array([0, 30, 60, 90])
+lifted_rates = np.array([100, 95, 92, 90])
+lift_type = 'ESP'
+
+lift_analysis = analyze_lift_performance(initial_rate, time, lifted_rates, lift_type)
+print(lift_analysis)
+```
+
+## Running the Package
+
+To run this package:
+
+1. Install the package and its dependencies:
+   ```
+   pip install oilgas_analysis
+   ```
+
+2. Create a Python script (e.g., `analysis_script.py`) and import the necessary functions as shown in the usage examples above.
+
+3. Run your script:
+   ```
+   python analysis_script.py
+   ```
+
+## Running Tests
+
+To run the test suite:
+
+1. Ensure you have the package and its dependencies installed.
+2. Navigate to the root directory of the package.
+3. Run the following command:
+   ```
+   python -m unittest discover tests
+   ```
+
+This will discover and run all the tests in the `tests` directory.
+
+## Contributing
+
+Contributions to this package are welcome. Please ensure that you add or update tests as appropriate when making changes. Follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Write your code and tests.
+4. Run the test suite to ensure all tests pass.
+5. Submit a pull request with a clear description of your changes.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+
+For any questions or issues, please open an issue on the GitHub repository or contact the maintainer at [shailesh.tripathi2706@gmail.com].
