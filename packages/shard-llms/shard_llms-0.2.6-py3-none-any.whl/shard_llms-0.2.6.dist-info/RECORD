@@ -1,0 +1,7 @@
+utils/__init__.py,sha256=hgzPb_x2hVMBtK7E9NTzIVY3caPhPN9As2VXruYUNbs,26
+utils/read_files.py,sha256=7iAVCjwwOwgy1ScT7gf5BaKPn0jlPlSI3rdSstr_7Ww,570
+shard_llms-0.2.6.dist-info/METADATA,sha256=fvVklIB18cdAnl_L-K2aFWgmWiOY-ksL8PhRvasctVI,5365
+shard_llms-0.2.6.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+shard_llms-0.2.6.dist-info/entry_points.txt,sha256=ajo0pr__7wGM33KSBtIeIDTDcTR7DWsRVEWdgH25ky4,52
+shard_llms-0.2.6.dist-info/top_level.txt,sha256=BXdhaaHBJTl5WDScj-NdcpdW6F1g7hNN3YP0CLPxk-0,6
+shard_llms-0.2.6.dist-info/RECORD,,
