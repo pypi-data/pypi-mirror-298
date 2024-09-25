@@ -1,0 +1,7 @@
+locus_rs-0.1.0.dist-info/METADATA,sha256=IvP4MqpEKJ5uNnJn9ipHX3qrJBHQNgAOOXVQULNXVUI,2086
+locus_rs-0.1.0.dist-info/WHEEL,sha256=iiAmgfGiTp2ws4OFEo08OBG1KOb9dPXCdUURfyKWj0c,109
+locus_rs.libs/libssl-b2e358a4.so.3,sha256=lpzsrjYREZJkRzizVX4QrN-xgbwPSe9vQcwOmewYQbU,742257
+locus_rs.libs/libcrypto-e7f5e30d.so.3,sha256=aw_A7XSfcU-tIM7IUN8o-x8NDjb4Zarfd6PbE7yXod0,4217849
+locus_rs/__init__.py,sha256=j6mY_mA0CRetzdjrdMXUmjiHXKpZPbeR23dmdRQ5tRs,115
+locus_rs/locus_rs.cpython-312-aarch64-linux-gnu.so,sha256=3X0zFexYxIlfHLsOpJe-fhK7beeys4GiO8HSqylCcWE,8262193
+locus_rs-0.1.0.dist-info/RECORD,,
