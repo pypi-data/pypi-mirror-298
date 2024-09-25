@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: random-english-word-generator
+Version: 1.0.0
+Summary: A Python package to generate random English words based on word length and count
+Home-page: 
+Author: Random Generator AI
+Author-email: randomgenerate.ai@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: nltk
+
+# Word Generator
+
+🎉 Welcome to Word Generator - a simple Python package to generate random English words! 🎉
+
+This package allows you to generate random words based on word length and the number of words required. Perfect for tasks like text augmentation, testing, and adding random noise to datasets.
+
+## Features:
+- Generate real English words by specifying word length.
+- Generate a list of multiple random words.
+- Simple and lightweight, with minimal dependencies.
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install word_generator
+Usage
+python
+Copy code
+from word_generator import generate_words
+
+# Generate 3 random words of length 5
+words = generate_words(word_length=5, num_words=3)
+print(words)
+# Output: ['apple', 'grape', 'plane']
+For more tools, check out our website randomgenerator.ai.
