@@ -1,0 +1,83 @@
+[build-system]
+requires = [
+    "hatchling",
+    "versioningit",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "stripepy-hic"
+dynamic = ["version"]
+authors = [
+    {name="Andrea Raffo", email="andrea.raffo@ibv.no"},
+    {name="Bendik Berg", email="bendber@ifi.uio.no"},
+]
+maintainers = [
+    {name="Roberto Rossini", email="roberto.rossini@ibv.uio.no"},
+    {name="Andrea Raffo", email="andrea.raffo@ibv.no"},
+]
+description = "A stripe recognition tool developed by Paulsen Group @University of Oslo"
+readme = "README.md"
+requires-pyhton = ">=3.0"
+dependencies = [
+    "bioframe >0.7, <1",
+    "h5py >3, <4",
+    "hictkpy >=0.0.5, <1",
+    "matplotlib >=3.8, <4",
+    "numpy >=1.26, <2",
+    "pandas >=2.0, <3",
+    "scikit-learn >=1.5, <2",
+    "scipy >=1.10, <2",
+    "seaborn >=0.13, <1"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+keywords = [
+    "Hi-C",
+    "hic",
+    "stripe",
+    "stripes",
+    "stripe recognition",
+]
+
+[project.urls]
+Source = "https://github.com/paulsengroup/StripePy"
+Issues = "https://github.com/paulsengroup/StripePy/issues"
+
+
+
+[tool.hatch.version]
+source = "versioningit"
+
+[tool.versioningit]
+
+[tool.versioningit.format]
+
+# Format used when there have been commits since the most recent tag:
+# distance = "{base_version}.post{distance}+{vcs}{rev}"
+distance = "{base_version}.post{distance}"
+# Example formatted version: 1.2.3.post42+ge174a1f
+
+# Format used when there are uncommitted changes:
+# dirty = "{base_version}+d{build_date:%Y%m%d}"
+dirty = "{base_version}"
+# Example formatted version: 1.2.3+d20230922
+
+# Format used when there are both commits and uncommitted changes:
+# distance-dirty = "{base_version}.post{distance}+{vcs}{rev}.d{build_date:%Y%m%d}"
+distance-dirty = "{base_version}.post{distance}"
+# Example formatted version: 1.2.3.post42+ge174a1f.d20230922
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/stripepy"]
+
+[project.scripts]
+run = "main:run"
