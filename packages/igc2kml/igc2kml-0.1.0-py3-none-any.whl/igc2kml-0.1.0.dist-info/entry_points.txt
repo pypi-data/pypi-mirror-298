@@ -1,0 +1,2 @@
+[console_scripts]
+igc2kml = igc2kml.igc2kml:main

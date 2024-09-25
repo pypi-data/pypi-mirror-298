@@ -1,0 +1,9 @@
+igc2kml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+igc2kml/color_maps.py,sha256=ISZyxpn74cax47bdKMLiyN-FBrUmtYuw-aGgwA3gR3U,1289
+igc2kml/igc2kml.py,sha256=tQObh_IuBMboN99Om5riiVw-UNtd0ItLWRLRjtaOBQw,10309
+igc2kml/launch_sites.py,sha256=k9UzDXXr3UdSRsq8yHe1GaduD0G5ZoPxoA6lzgTgKjw,234
+igc2kml-0.1.0.dist-info/METADATA,sha256=Wjg7nliE_iGh8kp-1N0C0-3caIazsOxNbfzIGxNjTzQ,784
+igc2kml-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+igc2kml-0.1.0.dist-info/entry_points.txt,sha256=n6osAOlazn-Xhde2LR1f_KQrpa6sTZD2MY4tcbIDfLw,49
+igc2kml-0.1.0.dist-info/licenses/LICENSE,sha256=K62qhEJ9wfxtC2LC0lE59EOS8-DxxwwK49yUKD2qZq0,1074
+igc2kml-0.1.0.dist-info/RECORD,,
