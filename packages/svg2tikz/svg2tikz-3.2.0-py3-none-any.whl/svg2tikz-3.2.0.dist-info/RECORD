@@ -1,0 +1,10 @@
+svg2tikz/.jukit/.jukit_info.json,sha256=mr0xlRE8BUsaRUYBDfcBw8vi5ITUxz53Y4PvaIyy7rc,24
+svg2tikz/__init__.py,sha256=cR8Xw7ovEIm4jRZmEEVeabWJ3sbOIGdHF8WpdtpBqT0,136
+svg2tikz/tikz_export.py,sha256=P2EyRts5-clOAOkYsBMDBQnKacmkZF9b2Y3Vjk4jPic,51242
+svg2tikz/tikz_export_effect.inx,sha256=bXIbCBqMditAsZlvds1Uax7bSpytSi60NQhwtGV5kLk,5191
+svg2tikz/tikz_export_output.inx,sha256=e26Jj2q_rS9f4kboCBHm1RWSkvaG76J_CJphup5WgL8,5160
+svg2tikz-3.2.0.dist-info/LICENSE,sha256=QqU-vJNDxX-lAAY0NG5xNyGstHU72O1b4elM4gwY7Ro,716
+svg2tikz-3.2.0.dist-info/METADATA,sha256=0wPJIGWpZPFS9FpS9MUkSjhQ8-w7SzbPeBGkVBUPCAI,2294
+svg2tikz-3.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+svg2tikz-3.2.0.dist-info/entry_points.txt,sha256=zkQligZ2U0ZSl3jfjXQc6c753oY2ImpXi7Puf2tECug,62
+svg2tikz-3.2.0.dist-info/RECORD,,
