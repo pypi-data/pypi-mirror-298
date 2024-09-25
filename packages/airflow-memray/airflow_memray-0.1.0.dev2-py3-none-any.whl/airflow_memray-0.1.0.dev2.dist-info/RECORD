@@ -1,0 +1,12 @@
+airflow_memray/__init__.py,sha256=JsYEGB9rStT-O0nhqRqA5CJPCXeWgNy8KEO6b_3Cnt4,286
+airflow_memray/core.py,sha256=dWls497LSCqvCQbWj6AJD0mnDRSVHjXZW44Ycr2gnpE,5844
+airflow_memray/plugin.py,sha256=SlHxTJ_Srk12FO5tDYvCIbDJTaNzSol-dd_tGvgFSOU,1782
+airflow_memray/policies.py,sha256=0gxbayvkvY-P8uDgUGKuZ_-6bcyp5RiGynaHXl6qnEA,673
+dags/memray_demo.py,sha256=XuCXxLIW4siYtPe9vlVN7jXFJUi_3yFrQyGA7rfmw78,765
+include/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_memray-0.1.0.dev2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+airflow_memray-0.1.0.dev2.dist-info/METADATA,sha256=SZl3q219JH-ZpDsewplfcmSDZWzpfGJ37FOwE3YJ_MI,2163
+airflow_memray-0.1.0.dev2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+airflow_memray-0.1.0.dev2.dist-info/entry_points.txt,sha256=EuyLG9_yIoZmmjxOJo-X0M9Ht5sFoh-8dkI0g5zyHSQ,200
+airflow_memray-0.1.0.dev2.dist-info/top_level.txt,sha256=GP2a7A97BHuDtHEqYM5Pw2ZyhehRr-H7Sf5h6no9bk4,28
+airflow_memray-0.1.0.dev2.dist-info/RECORD,,
