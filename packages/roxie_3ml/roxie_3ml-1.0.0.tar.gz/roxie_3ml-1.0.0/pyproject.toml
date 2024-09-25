@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "roxie_3ml"
+version = "1.0.0"
+description = "Project template for new python Projects"
+authors = ["Konstantinos Diamantis <konstantinos.diamantis@cern.ch>", "Jens Kaese <jens.kaeske@cern.ch>"]
+maintainers = ["Konstantinos Diamantis <konstantinos.diamantis@cern.ch>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+repository = "https://gitlab.cern.ch/pymbse/3ml-gui"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Education",
+    "Operating System :: OS Independent",
+]
+packages = [
+    { include = "roxie_3ml" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.13"
+requests = "^2.31.0"
+setuptools = "^69.0.3"
+qtwidgets = "^1.1"
+pyqt6 = "^6.6.1"
+mmbse_client = "^1.0.0"
+
+
+[tool.ruff]
+lint.ignore = ["F403", "F404", "F405", "F401"]
+
+
+[tool.poetry.group.lint.dependencies]
+mypy = "^0.961"
+types-requests = "^2.28.1"
+flake8 = "^4.0.1"
+black = "^22.6.0"
+pre-commit = "^3.6.0"
+ruff = "^0.4.3"
+
+[tool.poetry.dev-dependencies]
+reuse = "^4.0.0"
+
+[tool.poetry.group.test.dependencies]
+toml-cli = "^0.3.1"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+pytest-qt = "^4.4.0"
+
+[tool.poetry.group.docs.dependencies]
+myst-parser = "^0.18.1"
+sphinx = "^5"
+toml = "^0.10.2"
+sphinx-gallery = "^0.11.1"
+pillow = "^9.4.0"
+nbsphinx = "^0.8.12"
+sphinxcontrib-apidoc = "^0.3.0"
+
+[tool.poetry.scripts]
+roxie_3ml = "roxie_3ml.py_files.main_mmbse_gui:main"
+
+[tool.mypy]
+ignore_missing_imports = true
+python_version = "3.9"
+exclude = "docs"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+pattern = "default-unprefixed"
