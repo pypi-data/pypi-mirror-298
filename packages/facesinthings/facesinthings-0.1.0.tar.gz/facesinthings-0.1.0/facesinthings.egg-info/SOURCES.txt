@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+facesinthings/__init__.py
+facesinthings/dataset.py
+facesinthings.egg-info/PKG-INFO
+facesinthings.egg-info/SOURCES.txt
+facesinthings.egg-info/dependency_links.txt
+facesinthings.egg-info/requires.txt
+facesinthings.egg-info/top_level.txt
