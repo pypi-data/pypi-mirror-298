@@ -1,0 +1,10 @@
+.gitignore
+SMS_BP.egg-info
+TESTING
+SMS_BP/sim_config_testing.json
+SMS_BP/__pycache__
+USER_GUIDE/DOC_PDF
+site/
+<YOUR-PATH-HERE-CAN-BE-ABSOLUTE-OR-RELATIVE>
+build
+dist
