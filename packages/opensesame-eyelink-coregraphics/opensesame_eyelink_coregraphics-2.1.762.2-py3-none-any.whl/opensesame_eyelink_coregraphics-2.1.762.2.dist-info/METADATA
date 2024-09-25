@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: opensesame-eyelink-coregraphics
+Version: 2.1.762.2
+Summary: Implementation of the EyeLink core graphics set of handlers for OpenSesame 4.0
+Author: Jono Batten
+Author-email: jono@sr-research.com
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: opensesame-core (>=4.0.0a0)
+Requires-Dist: sr-research-pylink (>=2.1.0)
+Description-Content-Type: text/markdown
+
+# opensesame-coregraphics-eyelink
+
+This package from SR Research Ltd. provides an implementation of the EyeLink Core Graphics library's callback-handling using OpenSesame libraries.
+
+For OpenSesame users who are interested in scripting psychophysical experimental paradigms that integrate eye-tracking methodology using EyeLink devices from SR Research Ltd., this package provides the interface between the core API integration (c.f. [sr-research-pylink](https://pypi.org/project/sr-research-pylink/), a dependency package of opensesame-eyelink-coregraphics) and the graphics interface provided by the OpenSesame. This opensesame-eyelink-coregraphics package is a dependency of the [EyeLink plugin](https://pypi.org/project/opensesame-plugin-eyelink/) for OpenSesame from SR Research Ltd.
+
+Please visit the [SR Research Support Forums](https://www.sr-research.com/support) for more information, educational material and Q&A.
