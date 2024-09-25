@@ -1,0 +1,6 @@
+tables
+numpy
+matplotlib
+pyyaml
+ast
+astropy
