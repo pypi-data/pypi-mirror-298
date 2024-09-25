@@ -1,0 +1,29 @@
+{
+  "_base": {
+    "center": {
+      "_local": {
+        "ip": "www.crazyboy.info",
+        "name": "center",
+        "tags": [
+          "_base"
+        ],
+        "type": "Host"
+      }
+    },
+    "_local": {
+      "name": "_base",
+      "hidden": 1,
+      "tags": [
+        "_base"
+      ],
+      "type": "HostList"
+    }
+  },
+  "_local": {
+    "name": "host",
+    "tags": [
+      "_static"
+    ],
+    "type": "Hosts"
+  }
+}

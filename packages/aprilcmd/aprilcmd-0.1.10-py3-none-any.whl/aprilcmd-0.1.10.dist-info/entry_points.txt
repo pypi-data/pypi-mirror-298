@@ -1,0 +1,5 @@
+[console_scripts]
+acmd=aprilcmd.main:main
+aload=aprilcmd.main:load
+aunload=aprilcmd.main:unload
+

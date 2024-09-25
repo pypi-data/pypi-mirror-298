@@ -1,0 +1,36 @@
+# ycmd.bashrc
+
+_ycmd_add(){
+	local before=$1
+	local list=$2
+	ret=()
+	for str in $list
+	do
+		echo "$before.$str"
+	done
+}
+
+_ycmd_key(){
+	local cmd=$1
+	cmd=".$cmd"
+	key1=${cmd%.*}
+	key1=${key1:1}
+	dot=${#key1}
+	if [ $dot -eq 0 ]
+	then
+		ycmd.py root next 2> /dev/null
+	else
+		list=$(ycmd.py $key1 next 2> /dev/null)
+		_ycmd_add $key1 "$list"
+	fi
+}
+_ycmd_completion(){
+	local cur=${COMP_WORDS[COMP_CWORD]}
+	word=$(_ycmd_key $cur)
+	COMPREPLY=($(compgen -W "$word" -- $cur))
+}
+
+
+export PATH=$HOME/bin:$HOME/.local/bin:$PATH
+complete -F _ycmd_completion ycmd.py
+

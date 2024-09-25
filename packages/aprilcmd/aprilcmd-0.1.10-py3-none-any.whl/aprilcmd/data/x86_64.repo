@@ -1,0 +1,7 @@
+# april.repo
+#
+
+[april]
+name=april
+gpgcheck=0
+baseurl=ftp://10.30.8.36/linux/yumrepo/x86

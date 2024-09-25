@@ -1,0 +1,1 @@
+{"_local": {"name": "tc1", "type": "Host", "path": "root.host._items.tc1", "ip": "10.30.8.39", "username": "root", "password": "kylinos-tc2"}, "_items": {"ssh": {"_local": {"name": "ssh", "type": "Ssh", "path": "root.host._items.tc1._items.ssh"}, "_items": {}}}}
