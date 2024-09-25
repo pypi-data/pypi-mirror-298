@@ -1,0 +1,8 @@
+README.md
+setup.py
+stripper/__init__.py
+stripper/text_utils.py
+stripper.egg-info/PKG-INFO
+stripper.egg-info/SOURCES.txt
+stripper.egg-info/dependency_links.txt
+stripper.egg-info/top_level.txt
