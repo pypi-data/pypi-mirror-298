@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+fluent_input/__init__.py
+fluent_input/frontend/build/asset-manifest.json
+fluent_input/frontend/build/index.html
+fluent_input/frontend/build/static/js/main.47567c19.js
+fluent_input/frontend/build/static/js/main.47567c19.js.LICENSE.txt
+fluent_input/frontend/build/static/js/main.47567c19.js.map
+streamlit_fluent_inputtext.egg-info/PKG-INFO
+streamlit_fluent_inputtext.egg-info/SOURCES.txt
+streamlit_fluent_inputtext.egg-info/dependency_links.txt
+streamlit_fluent_inputtext.egg-info/requires.txt
+streamlit_fluent_inputtext.egg-info/top_level.txt
