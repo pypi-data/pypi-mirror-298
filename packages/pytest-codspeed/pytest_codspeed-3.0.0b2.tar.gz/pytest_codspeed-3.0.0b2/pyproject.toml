@@ -1,0 +1,110 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.urls]
+Homepage = "https://codspeed.io/"
+Documentation = "https://docs.codspeed.io/"
+Source = "https://github.com/CodSpeedHQ/pytest-codspeed"
+
+[project]
+name = "pytest-codspeed"
+dynamic = ["version"]
+description = "Pytest plugin to create CodSpeed benchmarks"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+authors = [{ name = "Arthur Pastel", email = "arthur@codspeed.io" }]
+keywords = ["codspeed", "benchmark", "performance", "pytest"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Pytest",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Testing",
+    "Topic :: System :: Benchmark",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+dependencies = [
+    "cffi >= 1.17.1",
+    # cffi doesn't automatically install setuptools with python 3.12+
+    # cf https://github.com/python-cffi/cffi/releases/tag/v1.16.0
+    "setuptools; python_full_version >= '3.12.0'",
+    "pytest>=3.8",
+    "filelock >= 3.12.2",
+    "rich>=13.8.1",
+    "importlib-metadata>=8.5.0; python_version < '3.10'",
+]
+
+[project.optional-dependencies]
+build = ["semver>=3.0.2"]
+lint = ["mypy ~= 1.11.2", "ruff ~= 0.6.5"]
+compat = [
+    "pytest-benchmark ~= 4.0.0",
+    "pytest-xdist ~= 3.6.1",
+    # "pytest-speed>=0.3.5",
+]
+test = ["pytest ~= 7.0", "pytest-cov ~= 4.0.0"]
+[project.entry-points]
+pytest11 = { codspeed = "pytest_codspeed.plugin" }
+
+[tool.hatch.envs.default]
+python = "3.11"
+features = ["lint", "test", "compat"]
+
+[tool.hatch.envs.test]
+features = ["test"]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11", "3.12", "3.13"]
+features = ["compat", "test"]
+
+[tool.hatch.version]
+path = "src/pytest_codspeed/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = ["/src"]
+
+[tool.mypy]
+python_version = "3.12"
+
+[tool.ruff]
+target-version = "py37"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "C", "TCH", "FA", "UP"]
+flake8-type-checking = { exempt-modules = [], strict = true }
+
+[tool.isort]
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+use_parentheses = true
+force_grid_wrap = 0
+float_to_top = true
+
+[tool.pytest.ini_options]
+addopts = "--ignore=tests/benchmarks --ignore=tests/examples --ignore=tests/benchmarks/TheAlgorithms"
+filterwarnings = ["ignore::DeprecationWarning:pytest_benchmark.utils.*:"]
+pythonpath = ["tests/benchmarks/TheAlgorithms", "./scripts"]
+
+[tool.coverage.run]
+branch = true
+[tool.coverage.report]
+include = ["src/*", "tests/*"]
+omit = ["**/conftest.py"]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "@pytest.mark.skip",
+    "@abstractmethod",
+]
