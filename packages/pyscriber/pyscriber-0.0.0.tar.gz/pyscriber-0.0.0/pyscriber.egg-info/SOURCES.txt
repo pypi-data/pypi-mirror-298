@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyscriber/__init__.py
+pyscriber.egg-info/PKG-INFO
+pyscriber.egg-info/SOURCES.txt
+pyscriber.egg-info/dependency_links.txt
+pyscriber.egg-info/not-zip-safe
+pyscriber.egg-info/top_level.txt
