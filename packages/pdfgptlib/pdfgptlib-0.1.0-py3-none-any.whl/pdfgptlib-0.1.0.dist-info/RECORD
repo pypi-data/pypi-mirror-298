@@ -1,0 +1,9 @@
+pdfgpt/__init__.py,sha256=vMXlxyUxh4veP2WXcgRznn40o9xp1sGc6iNNK7uH6_I,113
+pdfgpt/__main__.py,sha256=vW9zawm6e9DxnslT6pxvaC7wcID6CVAdTKBlVE07FWU,1252
+pdfgpt/pdfgpt.py,sha256=S3TazImuuyhLxWfxUEmn3bDX_xFfwvEb-uwWNYUnsyY,8186
+pdfgptlib-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pdfgptlib-0.1.0.dist-info/METADATA,sha256=pkofid5bfB6B2WOrpX9Y9Ual8jsqhrRCnQgzaRPj43Y,13873
+pdfgptlib-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pdfgptlib-0.1.0.dist-info/entry_points.txt,sha256=9rlXfmxvJ9DhTvWS1A4bUI-1HRKsAheYeTYvVdU8wo8,51
+pdfgptlib-0.1.0.dist-info/top_level.txt,sha256=W70GLCOadK_-x6heAIthgAYnKwn_PY23OHcJphtImhI,7
+pdfgptlib-0.1.0.dist-info/RECORD,,
