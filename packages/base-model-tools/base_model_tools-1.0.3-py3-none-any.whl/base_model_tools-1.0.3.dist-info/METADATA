@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: base_model_tools
+Version: 1.0.3
+Summary: Nearly Human Base Model Tools dependency for training, saving, loading, deploying, and inferencing models.
+Author: Nearly Human
+Author-email: support@nearlyhuman.ai
+Keywords: nearlyhuman,nearly human,model,tools
+Requires-Python: >=3.8.10
+Requires-Dist: mlflow-skinny>=2.8.0
+
