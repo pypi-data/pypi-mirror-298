@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "rcs"
+version = "0.6.6"
+description = ""
+authors = ["Ivan Zhang <ivanzhangofficial@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = {extras = ["standard"], version = "^0.114.2"}
+requests = "^2.32.3"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

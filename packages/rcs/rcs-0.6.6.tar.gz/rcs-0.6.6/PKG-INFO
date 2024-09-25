@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: rcs
+Version: 0.6.6
+Summary: 
+Author: Ivan Zhang
+Author-email: ivanzhangofficial@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi[standard] (>=0.114.2,<0.115.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# rcs - The Rich Communication Services API for Developers
+
+`rcs` is the Pinnacle Python library that provides an API to interact with Rich Communication Services (RCS). This library allows developers to send and receive RCS and SMS messages.
+
+## Documentation
+See the [Python API docs](https://docs.trypinnacle.app/documentation/python/quick-start) for detailed information on how to use the library.
+
+See the [API Reference](https://docs.trypinnacle.app/api-reference/endpoint/introduction) for a complete list of available methods and classes.
+
+## Installation
+```bash
+pip install rcs
+```
+## Requirements
+- Python 3.8 or higher
