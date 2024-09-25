@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhipPyWeb Player</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: black;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: black;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="message" class="container">
+        <article class="message is-primary">
+            <div class="message-header">
+                <p>Ready to receive a stream from OBS</p>
+            </div>
+            <div class="message-body">
+                <div class="content">
+                    In OBS go to Settings -> Stream. Select <strong>WHIP</strong> as the
+                    service and <code id="codeUrl"></code> as the URL. There
+                    is no Bearer token required.
+                </div>
+                <div class="content">
+                    In OBS -> Settings -> Output, make sure you are using a <code>H264</code> video encoder
+                    and <code>Opus</code> audio encoder. Encoder settings are as follows:
+                    <ul>
+                        <li>Rate Control: <code>CBR</code></li>
+                        <li>Bitrate: <code>2500</code></li>
+                        <li>Keyframe Interval: <code>0</code></li>
+                        <li>Profile: <code>high</code></li>
+                        <li>Use B-Frames: <code>No</code></li>
+                    </ul>
+                </div>
+                <figure class="image">
+                    <img src="/static/obs_stream_settings.png" alt="OBS Stream Settings" />
+                </figure>
+                <figure class="image">
+                    <img src="/static/obs_output_settings.png" alt="OBS Output Settings" />
+                </figure>
+            </div>
+        </article>
+    </div>
+    <video id="webrtc-video" autoplay muted playsinline></video>
+    <script>
+        const url = `${window.location.protocol === 'http:' ? 'ws' : 'wss'}://${window.location.hostname}:${window.location.port}/ws`;
+        const streamUrl = `http://${window.location.hostname}:${window.location.port}/whip`;
+        const ws = new WebSocket(url);
+        const video = document.getElementById('webrtc-video');
+        const message = document.getElementById('message');
+        const codeURL = document.getElementById('codeUrl');
+        codeURL.textContent = streamUrl;
+        let pc = undefined;
+
+        ws.onmessage = async (event) => {
+            console.debug(event);
+            const data = JSON.parse(event.data);
+            if (data.type === 'connection-offer') {
+                message.style.display = 'none';
+                video.style.display = 'block';
+                pc = new RTCPeerConnection();
+                pc.ontrack = (event) => {
+                    console.debug(event);
+                    video.srcObject = event.streams[0];
+                };
+                pc.onicecandidate = event => {
+                    console.debug(event);
+                    if (event.candidate === null) {
+                        ws.send(JSON.stringify({
+                            "format": "application/vnd.whippyweb.connection+json",
+                            "type": "connection-answer",
+                            "payload": pc.localDescription
+                        }));
+                    }
+                };
+                await pc.setRemoteDescription(new RTCSessionDescription(data.payload));
+                const answer = await pc.createAnswer();
+                await pc.setLocalDescription(answer);
+            } else if (data.type === 'connection-close') {
+                message.style.display = 'block';
+                video.style.display = 'none';
+                await pc.close();
+            }
+        };
+    </script>
+</body>
+
+</html>
