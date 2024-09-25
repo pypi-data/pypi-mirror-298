@@ -1,0 +1,6 @@
+README.md
+setup.py
+devad3d.egg-info/PKG-INFO
+devad3d.egg-info/SOURCES.txt
+devad3d.egg-info/dependency_links.txt
+devad3d.egg-info/top_level.txt
