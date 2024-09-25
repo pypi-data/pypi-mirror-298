@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: firecore
+Version: 0.7.0a1
+Summary: Framework for fast and reproducable deep learning experiments
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: loguru>=0.7
+Requires-Dist: numpy>=1
+Requires-Dist: pydantic>=2.8
+Requires-Dist: rjsonnet>=0.5
+Description-Content-Type: text/markdown
+
+# firecore
+
+[![Github Actions](https://img.shields.io/github/actions/workflow/status/SunDoge/firecore/python-package.yml?branch=main&style=for-the-badge)](https://github.com/SunDoge/firecore/actions/workflows/python-package.yml)
+[![Pypi](https://img.shields.io/pypi/v/firecore?style=for-the-badge)](https://pypi.org/project/firecore/)
+
+You have to manully install `torch`, `oneflow`.
