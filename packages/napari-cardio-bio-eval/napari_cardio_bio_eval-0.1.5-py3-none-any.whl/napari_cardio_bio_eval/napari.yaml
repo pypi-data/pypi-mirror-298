@@ -1,0 +1,20 @@
+name: napari-cardio-bio-eval
+display_name: Cardio Biosensor Evaluation
+# use 'hidden' to remove plugin from napari hub search results
+visibility: hidden
+# see https://napari.org/stable/plugins/manifest.html for valid categories
+categories: ["Annotation", "Segmentation"]
+contributions:
+  commands:
+    - id: napari-cardio-bio-eval.cardio_bio_peak_detection_widget
+      python_name: napari_cardio_bio_eval:PeakDetectionWidget
+      title: Biosensor peak detection widget
+    - id: napari-cardio-bio-eval.cardio_bio_segmentation_widget
+      python_name: napari_cardio_bio_eval:SegmentationWidget
+      title: Biosensor segmentation widget
+
+  widgets:
+    - command: napari-cardio-bio-eval.cardio_bio_peak_detection_widget
+      display_name: Cardio Bio Peak Detection Widget
+    - command: napari-cardio-bio-eval.cardio_bio_segmentation_widget
+      display_name: Cardio Bio Segmentation Widget
