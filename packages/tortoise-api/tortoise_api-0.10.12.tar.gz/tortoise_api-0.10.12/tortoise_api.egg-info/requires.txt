@@ -1,0 +1,17 @@
+aiogram
+asyncpg
+python-dotenv
+fastapi
+tortoise-api-model
+orjson
+uvicorn
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+uvicorn
+tortoise-api-model
+
+[dev]
+build
+twine
+setuptools_scm
