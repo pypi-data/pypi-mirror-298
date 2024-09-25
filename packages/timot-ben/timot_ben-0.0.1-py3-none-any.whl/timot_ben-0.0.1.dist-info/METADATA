@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: timot-ben
+Version: 0.0.1
+Summary: My personal download module with my syntax
+Home-page: https://github.com/timotofcourse/ben
+Author: filmabemtv2@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: License.MD
+Requires-Dist: requests
+Requires-Dist: rich
+
+My own personal download module to use in my other projects
