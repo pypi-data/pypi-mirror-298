@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "sovai-cluster"
+version = "0.1.2"
+description = "Clustering financial data using advanced plotting libraries"
+authors = ["Derek Snow <d.snow@outlook.com>"]
+readme = "README.md"
+packages = [{include = "sovai_cluster"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.21.0"
+pandas = "^2.0.0"
+matplotlib = "^3.4.0"
+scipy = "^1.7.0"
+scikit-learn = "^1.1.0"
+openTSNE = "^1.0.0"
+umap-learn = "^0.5.0"
+datamapplot = "^0.2.0"
+dask = "^2024.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
