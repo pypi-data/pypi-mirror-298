@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: paudio-wrapper
+Version: 0.1.1
+Summary: A Python wrapper for paplay and parecord to play and record audio using PulseAudio.
+Home-page: https://github.com/yourusername/parecord-wrapper
+Author: afrhan-repo
+Author-email: afrhanhossain11@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# PulseAudio-Wrapper
+
+`PulseAudio-Wrapper` is a Python wrapper for `paplay and parecord`, the PulseAudio command-line tool for playing and capturing audio data. This module allows you to use `parecord` directly from Python by passing options as function arguments.
+
+## Installation
+
+You can install the package via pip:
+
+```
+pip install pulseaudio-wrapper
+```
