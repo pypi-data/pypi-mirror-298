@@ -1,0 +1,16 @@
+harlequelrah_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+harlequelrah_py/utilitaire.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+harlequelrah_py/files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+harlequelrah_py/files/myfiles.py,sha256=CDjIjH79LTtiBPoUJvr6DDZLCB5oF_7bxYv13-VD2pM,2378
+harlequelrah_py/integer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+harlequelrah_py/integer/myint.py,sha256=oM2E0r0Buc3AKC1oQfQpNe0LPkgxm_VizYl4T-7mVD0,2877
+harlequelrah_py/string/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+harlequelrah_py/string/mychar.py,sha256=AD3scdYifOMpLE2q5-lu4jMGzukqlcjrM9u5zoALjTI,1912
+harlequelrah_py/string/mycryptography.py,sha256=OKj-EF1xXVH70OsyBYbmBZ6V8nodjKyhNWTJaOxS6sg,1283
+harlequelrah_py/string/mysequence.py,sha256=A8VNSHjcV1igjmlYe_5m8wiVAJG918ohs9IdQRlj_iE,2524
+harlequelrah_py/turtle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+harlequelrah_py/turtle/myturtle.py,sha256=_KWA4XcMdRto-bjj1sc5vKlKWRj_3r4ZGPjo9K2T_Ls,1463
+harlequelrah_py-0.1.2.dist-info/METADATA,sha256=ZqkHAHXjMm_FMsXTNr1MuWpRp7JInTvQN_uMgHKhHRU,1139
+harlequelrah_py-0.1.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+harlequelrah_py-0.1.2.dist-info/top_level.txt,sha256=IakPksCU1M8lF8GorKEMOlVrvvVLPElBF-LnVhCtb2E,16
+harlequelrah_py-0.1.2.dist-info/RECORD,,
