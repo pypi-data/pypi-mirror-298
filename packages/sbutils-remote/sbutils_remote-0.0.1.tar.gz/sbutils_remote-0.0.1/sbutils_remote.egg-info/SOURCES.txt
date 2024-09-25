@@ -1,0 +1,7 @@
+setup.py
+sbutils_remote.egg-info/PKG-INFO
+sbutils_remote.egg-info/SOURCES.txt
+sbutils_remote.egg-info/dependency_links.txt
+sbutils_remote.egg-info/entry_points.txt
+sbutils_remote.egg-info/requires.txt
+sbutils_remote.egg-info/top_level.txt
