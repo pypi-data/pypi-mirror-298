@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: aikosmo_register_service
+Version: 0.1
+Summary: A package to register Cloud Run services with Supabase
+Author: Giulio Zani
+Author-email: giulio.zani@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: supabase
+
