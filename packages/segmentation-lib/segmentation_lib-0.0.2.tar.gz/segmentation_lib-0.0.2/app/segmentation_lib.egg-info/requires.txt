@@ -1,0 +1,15 @@
+torch
+torchvision
+pillow
+numpy
+pandas
+opencv-python
+albumentations
+tqdm
+matplotlib
+plotly
+PrettyTable
+dill
+optuna
+pathlib
+os

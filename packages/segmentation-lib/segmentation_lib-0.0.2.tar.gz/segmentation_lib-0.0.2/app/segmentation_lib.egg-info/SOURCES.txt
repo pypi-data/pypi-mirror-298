@@ -1,0 +1,13 @@
+setup.py
+app/segmentation_lib/__init__.py
+app/segmentation_lib.egg-info/PKG-INFO
+app/segmentation_lib.egg-info/SOURCES.txt
+app/segmentation_lib.egg-info/dependency_links.txt
+app/segmentation_lib.egg-info/requires.txt
+app/segmentation_lib.egg-info/top_level.txt
+app/segmentation_lib/example/__init__.py
+app/segmentation_lib/example/example_converter.py
+app/segmentation_lib/example/example_segmentation.py
+app/segmentation_lib/src/__init__.py
+app/segmentation_lib/src/converter.py
+app/segmentation_lib/src/segmentation.py

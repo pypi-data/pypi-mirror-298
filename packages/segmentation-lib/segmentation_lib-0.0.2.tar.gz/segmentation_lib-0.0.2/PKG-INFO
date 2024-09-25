@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: segmentation_lib
+Version: 0.0.2
+Summary: Library for images segmentation
+Home-page: https://github.com/PavelMalyshev01/segmentation_lib
+Author: Pavel Malyshev
+Author-email: p.malyshev@razumai.pro
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: pillow
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: opencv-python
+Requires-Dist: albumentations
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+Requires-Dist: PrettyTable
+Requires-Dist: dill
+Requires-Dist: optuna
+Requires-Dist: pathlib
+Requires-Dist: os
+
+# Images segmentation lib
+Library for images segmentation
+
+## How to use
+See example/example.py
