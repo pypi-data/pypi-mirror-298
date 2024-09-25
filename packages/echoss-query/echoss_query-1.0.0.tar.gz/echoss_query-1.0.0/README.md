@@ -1,0 +1,115 @@
+# echoss_query
+-------------
+MySQL, MongoDB, Opensearch compatible query access package
+
+## Prepare
+사용 전 config(인증 정보) 의 유무를 확인한 뒤 사용해야한다.
+
+### Installaion
+-------------
+To install this package, please use Python 3.8 or higher.
+
+Install from Source:
+```
+    git clone https://gitlab.echoss.net/big-data/solution-center/echoss_query
+    cd ~/echoss_query
+    pip install -r requirements.txt
+```
+
+### Quick Start
+-------------
+```
+    from echoss_query import MysqlQuery, MongoQuery, ElasticSearch
+
+    mysql = MysqlQuery('CONFIG_FILE_PATH' or dict)
+    mongo = MongoQuery('CONFIG_FILE_PATH' or dict)
+    elastic = ElasticSearch('CONFIG_FILE_PATH' or dict)
+
+
+    #CREATE
+    mysql.create('QUERY_STRING')
+    elastic.index(index='INDEX_NAME')
+
+    #DROP
+    mysql.drop('QUERY_STRING')
+    elastic.delete_index(index='INDEX_NAME')
+
+    #TRUNCATE
+    mysql.truncate('QUERY_STRING')
+
+    #ALTER
+    mysql.alter('QUERY_STRING')
+
+    #SELECT
+
+    mysql.select('QUERY_STRING', params=None) -> dataframe
+    mongo.select('COLLECTION_NAME','QUERY_STRING or DICTIONARY')
+    elastic.get(id='ID')
+    elastic.search_field(field='FIELD_NAME',value='VALUE')
+    elastic.get_source(id='ID') #-> Extract Source
+
+    mysql.select_one('QUERY_STRING', params=None) -> dict
+    mysql.select_list('QUERY_STRING', params=None) -> list(dict)
+    mysql.faster_select('QUERY_STRING', params=None) -> dataframe
+
+    #INSERT
+
+    mysql.insert('QUERY_STRING', params=None)
+    mongo.insert('COLLECTION_NAME','QUERY_STRING or DICTIONARY')
+    elastic.create(id='ID', body='JSON_BODY')
+
+    #UPDATE
+
+    mysql.update('QUERY_STRING', params=None)
+    mongo.update('COLLECTION_NAME','QUERY_STRING or DICTIONARY')
+    elastic.update(id='ID', body='JSON_BODY')
+
+    #DELETE
+
+    mysql.delete('QUERY_STRING', params=None)
+    mongo.delete('COLLECTION_NAME','QUERY_STRING or DICTIONARY')
+    elastic.delete(id='ID')
+
+    #Check Database
+
+    mysql.databases()
+    mongo.databases()
+
+    #Check Tables
+    mysql.tables()
+
+    #-MySQL Util Function-
+
+    # Ping
+    mysql.ping()
+    elastic.ping()
+
+    # Connection Information
+    mysql.conn_info()
+    elastic.info()
+
+    # Close
+    # crash process close
+    mysql.close()
+```
+
+### Code Quality
+When creating new functions, please follow the Google style Python docstrings. See example below:
+```
+def example_function(param1: int, param2: str) -> bool:
+    """Example function that does something.
+
+    Args:
+        param1: The first parameter.
+        param2: The second parameter.
+
+    Returns:
+        The return value. True for success, False otherwise.
+
+    """
+```
+
+## Version history
+v1.0 initial version
+v1.1 echoss_logger include
+v1.2 mysql support query with params. return cursor.rowcount for insert/update/delete query
