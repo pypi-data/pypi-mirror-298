@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: stardag
+Version: 0.0.1
+Summary: 
+Author: Anders Huss
+Author-email: andhus@kth.se
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)

@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "stardag"
+version = "0.0.1"
+description = ""
+authors = ["Anders Huss <andhus@kth.se>"]
+packages = [{ include = "stardag", from = "src" }]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.8.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+ipython = "^8.25.0"
+pytest-asyncio = "^0.23.7"
+ipdb = "^0.13.13"
+
+
+[tool.poetry.group.examples-ml-pipeline]
+optional = true
+
+[tool.poetry.group.examples-ml-pipeline.dependencies]
+pandas = "*"
+scikit-learn = "*"
+numpy = "*"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.isort]
+profile = "black"
+
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+
+[tool.pytest]
+testpaths = ["tests"]
