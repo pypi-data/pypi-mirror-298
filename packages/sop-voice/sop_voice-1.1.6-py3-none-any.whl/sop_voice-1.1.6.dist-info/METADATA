@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: sop-voice
+Version: 1.1.6
+Summary: Manage voice informations of each sites.
+Author: Leorevoir
+Author-email: leo.quinzler@epitech.eu
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: sop-utils>=1.0.7
+
