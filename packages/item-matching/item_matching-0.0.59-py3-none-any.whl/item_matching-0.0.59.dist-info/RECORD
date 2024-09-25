@@ -1,0 +1,14 @@
+item_matching/README.md,sha256=HTGYRffpf1REIIJO_E8H1HnlVNIvMVpjFl5E-gdML9c,1752
+item_matching/__init__.py,sha256=gvSlGoqu1OMxj1r1PWwLBDaDbPkJapfH_8YYVhcXsbA,194
+item_matching/main_1.py,sha256=jmsmkWOHW4k-gMYTCrM1PILwbSZLgF1S7qAW1M2cbIY,3500
+item_matching/main_2.py,sha256=zV51MwJtZduU-L3AZV3RMSSiI_I5kMGqQ_mgnpqZO5M,3882
+item_matching/func/function_image.py,sha256=XNvVpnkueSq0v96vkESWUgl-pQo0rDk7B68tkgdmoVs,5092
+item_matching/func/function_text.py,sha256=qBRt846yTMFT17HJgvZ2QDjqLzGK9427OXHvG0wN80Y,2371
+item_matching/func/utilities.py,sha256=ONoVCPwmjazGuMkGJ2AO1MB6enCUFiCm_x5kRWgqvg8,933
+item_matching/model/model.py,sha256=32aFKuaEXmSHWputvNFBV_1oLOZWl8xAL3y5MIbS7HU,2255
+item_matching/pipeline/build_index_and_query.py,sha256=X7TkfcDoyzRLLOKWkhYZtl_vHB3eK_JElX7I0DLe1hs,6718
+item_matching/pipeline/data_loading.py,sha256=Va8uH93zZSKYYMJpfohwb32rb84mblp-xgnVYQ2M3Q8,3623
+item_matching-0.0.59.dist-info/METADATA,sha256=3JzBj_PccD98TBFP_YvC2lyOs-0Sefo3nN0RKjxF_ZE,2368
+item_matching-0.0.59.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+item_matching-0.0.59.dist-info/licenses/LICENSE,sha256=e52nUM7JfwNPEdg6TvBFl07OHaXfeQqSdQSsDPyRssE,1054
+item_matching-0.0.59.dist-info/RECORD,,
