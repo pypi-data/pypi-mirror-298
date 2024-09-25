@@ -1,0 +1,10 @@
+README.md
+setup.py
+bixnox/__init__.py
+bixnox/base.py
+bixnox/main.py
+bixnox.egg-info/PKG-INFO
+bixnox.egg-info/SOURCES.txt
+bixnox.egg-info/dependency_links.txt
+bixnox.egg-info/requires.txt
+bixnox.egg-info/top_level.txt
