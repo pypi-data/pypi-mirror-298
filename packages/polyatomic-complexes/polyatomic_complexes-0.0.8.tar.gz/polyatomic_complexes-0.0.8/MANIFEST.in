@@ -1,0 +1,8 @@
+global-include polyatomic_complexes/dataset *.csv
+global-include polyatomic_complexes/dataset *.pkl
+global-include polyatomic_complexes/dataset *.json
+global-include polyatomic_complexes/dataset *.zip
+recursive-include polyatomic_complexes/dataset *.csv *.json *.pkl *.py *.zip
+prune */__pycache__ 
+prune .env/*
+prune .github/*
