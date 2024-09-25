@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: cache_return
+Version: 0.0.3
+Summary: A library providing a decorator wrapper for adding the caching mechanism to functions.
+Author-email: Cody Xiaozhan Yang <xiaozhan.yang@icloud.com>
+License: MIT License
+        
+        Copyright (c) 2024 Cody Xiaozhan Yang
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Keywords: cache,return,result,debug
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Cache Return
+
+This library provide a simple wrapper for custom functions to get the caching mechanism.
+
+## Use cases and benefits
+
+With the caching mechanism activated, the result of a sub-function will be cached in the dedicated folder in the initial run. And the in the following runs, the cached result will loaded to bypass the actual internal process of a function. 
+
+This will be mainly useful for testing or debug tasks of larger projects with sophisticated sub-functions. As it will
+
+1. Avoid the actual interanl function run, thus save resources (e.g. queries/calls to APIs or databases) and improve efficiency.
+2. Achieve quicker testing processes and circles, as the reloading process is generally much faster than the function run.
+3. Provide the possibility for "offline" debugging and investigation for the real cases, as the cached return result can be manually accessed for investigation.
+
+## Examples
+
+To add caching mechanism to a custom function, simply add the decorator wrapper to the function definition as below.
+
+```
+from cache_return import cache_return
+
+@cache_return
+def custom_function(arg_a, arg_b='default_value'):
+    ... internal processes ...
+    return results
+```
+
+Then custom function can be usage the same way as before. To activate its caching mechanism, simply provide an additional keyword argument `caching=True`.
+
+```
+# Before
+
+return_result = custom_function(arg_a, arg_b='actual_value')
+
+# After
+
+return_result = custom_function(arg_a, arg_b='actual_value', caching=True)
+```
+
+To turn the caching mechanism off in the production code, you can either set the keyword argument as `caching=False`, or simple remove the `caching=True` keyword argument, as the default value `caching=False` will be used in this case.
+
+The actual cached result will be saved in the auto-created folder `./_cache_` (sitting at the same directory as the top-level running script, not the script containing the custom function.), with the same name of the custom function as a pickle file
+
+Then the cached result manully accessed in other places by the code below
+
+```
+import pickle
+
+with open('./_cache_/custom_function.pkl', 'rb') as f:
+    return_result = pickle.load(f)
+```
+
+#### Special note for environment with pandas version >= 2.0.0
+
+The above custom investigation code has to be adjusted to the below code as 
+
+```
+import pandas as pd
+
+return_result = pd.compat.pickle_compat.load('./_cache_/custom_function.pkl') 
+```
+Or, you can downgrade pandas to the 1.x series by `pip install pandas<2.0.0`, see the [stackoverflow topic here](https://stackoverflow.com/questions/75953279/modulenotfounderror-no-module-named-pandas-core-indexes-numeric-using-metaflo).
