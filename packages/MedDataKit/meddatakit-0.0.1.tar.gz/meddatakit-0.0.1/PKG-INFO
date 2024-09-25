@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: MedDataKit
+Version: 0.0.1
+Summary: Medical Public Data Kit
+Author: Sitao Min
+Author-email: sitaomin1994@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: kaggle (>=1.6.17,<2.0.0)
+Requires-Dist: liac-arff (>=2.5.0,<3.0.0)
+Requires-Dist: matplotlib (>=3.9.2,<4.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: patool (>=2.4.0,<3.0.0)
+Requires-Dist: pyreadr (>=0.5.2,<0.6.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: pyunpack (>=0.3,<0.4)
+Requires-Dist: scikit-learn (>=1.5.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# MediDataKit
