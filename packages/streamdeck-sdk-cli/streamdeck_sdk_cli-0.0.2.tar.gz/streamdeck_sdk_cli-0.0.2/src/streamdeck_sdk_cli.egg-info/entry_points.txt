@@ -1,0 +1,2 @@
+[console_scripts]
+streamdeck_sdk = streamdeck_sdk_cli.executable.executable:main
