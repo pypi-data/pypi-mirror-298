@@ -1,0 +1,65 @@
+{% macro render(table_data, cfg={}) %}
+{% if cfg.title %}      
+<h4 class="mt-5">{{ cfg.title }}</h4>
+{% endif %}
+<table class="table table-bordered mt-3 td-val-center">
+    <thead>
+        <tr>
+            {% if cfg.head_names %}
+                    {% for colname in head_names %}
+                        <th>{{colname}}</th>
+                    {% endfor %}
+            {% else %}
+                {% if table_data and table_data[0] and table_data[0] is mapping %}
+                    {% for colname in table_data[0] %}
+                        <th>{{colname.replace("_", " ").capitalize()}}</th>
+                    {% endfor %}
+                {% endif %}
+            {% endif %}
+        </tr>
+    </thead>
+    <tbody>
+        {% if table_data %}
+        {% for nrow in range(table_data | length) %}                        
+        {% set vrow = table_data[nrow] %}
+        <tr>
+            {% for item in vrow %}
+            {% set value = vrow[item] if vrow is mapping else item %}
+            {% if value is not iterable or value is string %}
+                <td>{{ '-' if value is none or value == '' else value }}</td>              
+            {% else %}
+                <td>{{render(value)}}</td>
+            {% endif %}
+            {% endfor %}
+            {% if cfg.opts: %}
+            <td>
+                {% set entity_name = cfg.entity_name %}
+                {% set get_id = cfg.get_id %}
+                {% for opt in cfg.opts %}
+                {% if opt.isPostId %}                       
+                <form action="{{ url_for(opt.endpoint_name,  id=get_id(data[nrow])) }}" method="POST" style="display:inline;">
+                    <button type="submit" class="{{opt.class}}">{{opt.name_action}}</button>
+                </form>                    
+                {% endif %}
+                {% if opt.isPostRow %}
+                <form action="{{ url_for(opt.endpoint_name,  row=data[nrow]) }}" method="POST" style="display:inline;">
+                    <button type="submit" class="{{opt.class}}">{{opt.name_action}}</button>
+                </form>                    
+                {% endif %}
+                {% if opt.isGetRow %}
+                <a href="{{ url_for(opt.endpoint_name, row=data[nrow]) }}" class="{{opt.class}}">{{opt.name_action}}</a>                        
+                {% endif %}
+                {% if opt.isGetId %}
+                <a href="{{ url_for(opt.endpoint_name, id=get_id(data[nrow])) }}" class="{{opt.class}}">{{opt.name_action}}</a>
+                {% endif %}                        
+                {% endfor %}                
+            </td>
+            {% endif %}                        
+        </tr>
+        {% endfor %}
+        {% else %}
+        <tr><td colspan="{{ cfg.head_names | length}}" style="text-align: center;">0 registros encontrados</td></tr>
+        {% endif %}                        
+    </tbody>
+</table>
+{% endmacro %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Gestión de productos{% endblock %}
+
+{% block content %}    
+    <!-- <h1 class="mt-5">Gestión de productos</h1> -->
+    {% include "form.html" %}
+    <!-- Mostrar mensajes flash -->
+    {% include "messages.html" %}
+    {% include "table.html" %}
+{% endblock %}
