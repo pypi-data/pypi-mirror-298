@@ -1,0 +1,10 @@
+README.md
+license.txt
+setup.py
+logaid/__init__.py
+logaid/log.py
+logaid/logger.py
+logaid.egg-info/PKG-INFO
+logaid.egg-info/SOURCES.txt
+logaid.egg-info/dependency_links.txt
+logaid.egg-info/top_level.txt
