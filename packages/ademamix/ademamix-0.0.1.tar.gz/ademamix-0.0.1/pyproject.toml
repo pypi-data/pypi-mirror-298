@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ademamix"
+version = "0.0.1"
+description = "AdEMAMix is a PyTorch optimizer that combines two EMAs to better utilize past gradients, offering improved convergence and model retention over AdamW."
+authors = ["Oguz Vuruskaner <ovuruska@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+torch = "^2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^1.8.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
