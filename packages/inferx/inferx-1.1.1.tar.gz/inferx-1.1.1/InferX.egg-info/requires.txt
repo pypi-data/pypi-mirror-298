@@ -1,0 +1,2 @@
+tensorrt==10.3.0
+cuda-python==12.3.0
