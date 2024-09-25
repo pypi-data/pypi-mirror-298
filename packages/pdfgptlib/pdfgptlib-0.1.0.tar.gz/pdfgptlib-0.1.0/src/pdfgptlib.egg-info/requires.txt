@@ -1,0 +1,11 @@
+openai
+pydantic
+pymupdf
+
+[build]
+build
+twine
+
+[dev]
+pip-tools
+pytest

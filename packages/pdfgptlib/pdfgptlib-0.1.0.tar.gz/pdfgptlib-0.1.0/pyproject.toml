@@ -1,0 +1,38 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdfgptlib"
+version = "0.1.0"
+description = "Extract PDF contents with the magic of GPT."
+readme = "README.md"
+authors = [{ name = "DaYuan Tan", email = "dr.dayuantan@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Natural Language :: English",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+keywords = ["pdf", "gpt", "llm"]
+dependencies = [
+    "openai",
+    "pydantic",
+    'pymupdf',
+]
+requires-python = ">=3"
+
+[project.optional-dependencies]
+build = ["build", "twine"]
+dev = ["pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/DayuanTan/pdfgptlib"
+Repository = "https://github.com/DayuanTan/pdfgptlib"
+
+[project.scripts]
+pdfgptlib = "pdfgpt.__main__:main"

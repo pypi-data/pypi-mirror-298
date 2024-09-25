@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/pdfgpt/__init__.py
+src/pdfgpt/__main__.py
+src/pdfgpt/pdfgpt.py
+src/pdfgptlib.egg-info/PKG-INFO
+src/pdfgptlib.egg-info/SOURCES.txt
+src/pdfgptlib.egg-info/dependency_links.txt
+src/pdfgptlib.egg-info/entry_points.txt
+src/pdfgptlib.egg-info/requires.txt
+src/pdfgptlib.egg-info/top_level.txt
