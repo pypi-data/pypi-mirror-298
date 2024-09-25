@@ -1,0 +1,24 @@
+[project]
+name = "firecore"
+version = "0.7.0a1"
+description = "Framework for fast and reproducable deep learning experiments"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1",
+    "pydantic>=2.8",
+    "loguru>=0.7",
+    "rjsonnet>=0.5",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "torch>=2.4.0",
+    "pytest>=8.3.2",
+    "opencv-python-headless>=4.10.0.84",
+    "ipdb>=0.13.13",
+]
