@@ -1,0 +1,9 @@
+setuptools>=68.0.0
+zest.releaser
+zestreleaser.towncrier
+towncrier
+
+[test]
+wheel
+zope.testing
+zope.testrunner
