@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+fluent_dropdown/__init__.py
+fluent_dropdown/frontend/build/asset-manifest.json
+fluent_dropdown/frontend/build/index.html
+fluent_dropdown/frontend/build/static/js/main.fdce28c8.js
+fluent_dropdown/frontend/build/static/js/main.fdce28c8.js.LICENSE.txt
+fluent_dropdown/frontend/build/static/js/main.fdce28c8.js.map
+streamlit_fluent_dropdown.egg-info/PKG-INFO
+streamlit_fluent_dropdown.egg-info/SOURCES.txt
+streamlit_fluent_dropdown.egg-info/dependency_links.txt
+streamlit_fluent_dropdown.egg-info/requires.txt
+streamlit_fluent_dropdown.egg-info/top_level.txt
