@@ -1,0 +1,11 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pyfxa-mte = "==0.7.9"
+
+[dev-packages]
+pytest = "==4.4.1"
+pytest-mock = "==1.10.4"
