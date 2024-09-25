@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: stripepy-hic
+Version: 1.0.2
+Summary: A stripe recognition tool developed by Paulsen Group @University of Oslo
+Project-URL: Source, https://github.com/paulsengroup/StripePy
+Project-URL: Issues, https://github.com/paulsengroup/StripePy/issues
+Author-email: Andrea Raffo <andrea.raffo@ibv.no>, Bendik Berg <bendber@ifi.uio.no>
+Maintainer-email: Roberto Rossini <roberto.rossini@ibv.uio.no>, Andrea Raffo <andrea.raffo@ibv.no>
+License-File: LICENCE
+Keywords: Hi-C,hic,stripe,stripe recognition,stripes
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: bioframe<1,>0.7
+Requires-Dist: h5py<4,>3
+Requires-Dist: hictkpy<1,>=0.0.5
+Requires-Dist: matplotlib<4,>=3.8
+Requires-Dist: numpy<2,>=1.26
+Requires-Dist: pandas<3,>=2.0
+Requires-Dist: scikit-learn<2,>=1.5
+Requires-Dist: scipy<2,>=1.10
+Requires-Dist: seaborn<1,>=0.13
+Description-Content-Type: text/markdown
+
+# stripepy
