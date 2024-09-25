@@ -1,0 +1,11 @@
+LICENSE.md
+MANIFEST.in
+README.md
+py.typed
+pyproject.toml
+Ligare.development.egg-info/PKG-INFO
+Ligare.development.egg-info/SOURCES.txt
+Ligare.development.egg-info/dependency_links.txt
+Ligare.development.egg-info/top_level.txt
+Ligare/development/__init__.py
+Ligare/development/profiling.py
