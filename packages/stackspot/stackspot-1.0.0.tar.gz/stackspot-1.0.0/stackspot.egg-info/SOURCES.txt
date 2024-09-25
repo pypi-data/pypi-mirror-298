@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+stackspot/__init__.py
+stackspot/stackspot.py
+stackspot/stackspot_ai.py
+stackspot/stackspot_ai_ks.py
+stackspot/stackspot_ai_quick_command.py
+stackspot/stackspot_auth.py
+stackspot/stackspot_dict_types.py
+stackspot.egg-info/PKG-INFO
+stackspot.egg-info/SOURCES.txt
+stackspot.egg-info/dependency_links.txt
+stackspot.egg-info/requires.txt
+stackspot.egg-info/top_level.txt
