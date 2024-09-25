@@ -1,0 +1,11 @@
+alquitable/__init__.py,sha256=50YLzzSgZeWslBStp2RypucqA_-g-Z8VhOaLpoHI3Kk,154
+alquitable/__version__.py,sha256=Cu5j6fazjiClvgENyv2tCFCTLCsQs2T-k4o3O0qwmsQ,82
+alquitable/advanced_losses.py,sha256=bWd8rpmhTibkvQxIlY5hvWG1ftyuqL579lyrqxHyO5U,22492
+alquitable/callbacks.py,sha256=HO13qwp3VocWEF-cYqeRMKzqeBQicdYxNvxfnrVQ-rk,7927
+alquitable/generator.py,sha256=_f3nUbWrtIVMF4eCsPUC74zOs4-CSsR1x8JaOp6cU3w,5182
+alquitable/layers.py,sha256=eFBNxmAJtjVO_9S0nleWb0fNNL5Q8qufY_7l_cP_hf4,13423
+alquitable/losses.py,sha256=iXajtItaddAArjIJl6zRWcWtf-9HgFAT_nzw8nvvJAI,9310
+alquitable-0.0.4.dist-info/LICENSE,sha256=2EFyl4if2XD-czTp4FvhC0-rTdKas1b5VpFCQ1ca9gY,1499
+alquitable-0.0.4.dist-info/METADATA,sha256=nBr5uA2YAcftQrN_d3ac8tkWiJGbml1MVU-YCM0EaLk,2772
+alquitable-0.0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+alquitable-0.0.4.dist-info/RECORD,,
