@@ -1,0 +1,22 @@
+language: python
+dist: xenial
+sudo: false
+python:
+- '2.7'
+- '3.5'
+- '3.6'
+- '3.7'
+install:
+- pip install virtualenv
+script:
+- make test
+deploy:
+  provider: pypi
+  user: vmalloc
+  password:
+    secure: EWAh6AP6k6poYDyFNv9NamA7oGcxvphtsjuRXbm6XrEb+/cgAaCbcvjVa0bK5apd/CEFNPDFLK05D4Tf4NWgRsapQasGDtBaLqfX8QgmDB37ydIN70urnqfwj6qJKW8eIqr8FijZ2YuHTJl6Mf74emaQy3vFiFluMiZbqqwFCw8=
+  on:
+    tags: true
+    python: '3.6'
+    repo: vmalloc/Flask-Loopback
+    python: "3.6"
