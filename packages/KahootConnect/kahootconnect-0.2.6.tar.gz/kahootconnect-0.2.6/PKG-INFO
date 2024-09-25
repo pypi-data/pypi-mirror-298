@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: KahootConnect
+Version: 0.2.6
+Summary: A python package to interact with Kahoot!
+Home-page: https://github.com/HackySoftOfficial/KahootConnect
+Author: HackySoft
+Author-email: andrexyt@proton.me
+Keywords: kahoot,bot,spam
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: websockets
+Requires-Dist: httpx
+Requires-Dist: asyncio
+
+# About
+KahootConnect is a Kahoot API written in python, that Kahoot can't take down ðŸ¤¡ #REForever
+
+# Installation
+
+`pip install -U KahootConnect`
+or, clone the repo and
+`python3 -m pip install -e ./KahootConnect`
+
+# Usage
+
+Work In Progress!
+
+# Documentation:
+Work In Progress!
+
+# Kahoot Docs (OUTDATED)
+ [Need api docs?](KahootProtocol.md)
+ [More detailed docs?](KahootProtocolDetailed.md)
