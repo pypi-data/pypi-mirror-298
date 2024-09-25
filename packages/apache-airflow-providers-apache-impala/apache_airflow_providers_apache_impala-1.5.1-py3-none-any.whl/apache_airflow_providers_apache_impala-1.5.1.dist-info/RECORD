@@ -1,0 +1,9 @@
+airflow/providers/apache/impala/LICENSE,sha256=FFb4jd2AXnOOf7XLP04pQW6jbdhG49TxlGY6fFpCV1Y,13609
+airflow/providers/apache/impala/__init__.py,sha256=CJ4KbI4R4ROXwQ2X3lbrsIOtlbo7pZnlKP978MvaBqI,1500
+airflow/providers/apache/impala/get_provider_info.py,sha256=Zm2hzBIBg2KeebhHJmec3Ynmiz70NOw0ccsSl3Pgia8,2575
+airflow/providers/apache/impala/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/apache/impala/hooks/impala.py,sha256=SqDpjTzyuH0ezUo0gnUq_wWeDjPL73r5pSuOO1rzDK0,1617
+apache_airflow_providers_apache_impala-1.5.1.dist-info/entry_points.txt,sha256=kr7zSQxTa3nYdfRGjG7DlYMnW-i_bnl1fASww2U9vW0,109
+apache_airflow_providers_apache_impala-1.5.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_apache_impala-1.5.1.dist-info/METADATA,sha256=0M3_cka8MZvaWtAAVQtP-zP_A3rzC_f5vm10LYogOxc,6289
+apache_airflow_providers_apache_impala-1.5.1.dist-info/RECORD,,
