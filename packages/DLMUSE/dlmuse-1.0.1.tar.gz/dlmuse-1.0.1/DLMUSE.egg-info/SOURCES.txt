@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+DLMUSE/__init__.py
+DLMUSE/__main__.py
+DLMUSE/utils.py
+DLMUSE.egg-info/PKG-INFO
+DLMUSE.egg-info/SOURCES.txt
+DLMUSE.egg-info/dependency_links.txt
+DLMUSE.egg-info/entry_points.txt
+DLMUSE.egg-info/requires.txt
+DLMUSE.egg-info/top_level.txt
