@@ -1,0 +1,12 @@
+flask_loopback/__init__.py,sha256=ynhknYnVvTYV9ZfHLX9aTzHDYEN_Sa_nkYNqFV2SmmM,42
+flask_loopback/__version__.py,sha256=ZhIxsB2BJdCe7avfTdyYTDjBtZj7RFnQW-soN2sQ_HM,93
+flask_loopback/_compat.py,sha256=YvXxHDXQphmn9LHpXBRDX3F4mKv2hd3WmQAFnBbhNFw,733
+flask_loopback/dispatch.py,sha256=zpeiHyAWrU5X3w79w7bdEgz10oSc-BdnerDwrSdEaTo,1723
+flask_loopback/flask_loopback.py,sha256=k0LQdGi1_q4KAzlZAqzB_Fg1cLIwnVDieSe6c3XmXMQ,5698
+Flask_Loopback-1.6.0.dist-info/AUTHORS,sha256=8vqeEnyXdXtPgWvc7i3iIv4YzXOrgiiYBY627j59kr0,32
+Flask_Loopback-1.6.0.dist-info/LICENSE,sha256=4J5afbIvsX9oMFiSOxoAHBj0b9v-w33tornCDDdWAy4,1481
+Flask_Loopback-1.6.0.dist-info/METADATA,sha256=haSIbCoy1BZfr4nOfYbUXdX5rbIDGGMNN6dJWVJp9F4,3400
+Flask_Loopback-1.6.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+Flask_Loopback-1.6.0.dist-info/pbr.json,sha256=W55laztNcObM9sgWEZWdoVbYDYC1_OTXVB61kbmzrPs,47
+Flask_Loopback-1.6.0.dist-info/top_level.txt,sha256=TUNeL7h9L4_X1W50psRUSszLCWPsdZX--508v6xjhU8,15
+Flask_Loopback-1.6.0.dist-info/RECORD,,
