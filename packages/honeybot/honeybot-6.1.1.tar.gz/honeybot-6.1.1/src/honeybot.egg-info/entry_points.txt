@@ -1,0 +1,2 @@
+[console_scripts]
+honeybot = honeybot.manage:main
