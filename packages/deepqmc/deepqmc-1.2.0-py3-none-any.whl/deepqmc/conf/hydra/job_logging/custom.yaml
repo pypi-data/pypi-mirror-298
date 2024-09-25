@@ -1,0 +1,12 @@
+defaults:
+  - default
+formatters:
+  simple:
+    format: '[{asctime}.{msecs:03.0f}] {levelname}:{name}: {message}'
+    datefmt: '%Y-%m-%d %H:%M:%S'
+    style: '{'
+handlers:
+  console:
+    stream: ext://deepqmc.app.TqdmStream
+  file:
+    filename: ${hydra.runtime.output_dir}/${hydra.job.name}${process_idx_suffix:}.log
