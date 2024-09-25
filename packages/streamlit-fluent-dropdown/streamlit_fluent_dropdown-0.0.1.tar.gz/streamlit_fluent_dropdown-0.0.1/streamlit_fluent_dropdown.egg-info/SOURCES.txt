@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+streamlit_fluent_dropdown.egg-info/PKG-INFO
+streamlit_fluent_dropdown.egg-info/SOURCES.txt
+streamlit_fluent_dropdown.egg-info/dependency_links.txt
+streamlit_fluent_dropdown.egg-info/requires.txt
+streamlit_fluent_dropdown.egg-info/top_level.txt
