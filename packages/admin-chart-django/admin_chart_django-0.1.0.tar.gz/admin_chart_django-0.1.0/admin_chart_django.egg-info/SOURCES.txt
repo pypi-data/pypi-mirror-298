@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+admin_chart_django.egg-info/PKG-INFO
+admin_chart_django.egg-info/SOURCES.txt
+admin_chart_django.egg-info/dependency_links.txt
+admin_chart_django.egg-info/requires.txt
+admin_chart_django.egg-info/top_level.txt
+chart/__init__.py
+chart/admin.py
+chart/apps.py
+chart/models.py
+chart/migrations/0001_initial.py
+chart/migrations/__init__.py
+chart/templates/admin/chart_template.html
