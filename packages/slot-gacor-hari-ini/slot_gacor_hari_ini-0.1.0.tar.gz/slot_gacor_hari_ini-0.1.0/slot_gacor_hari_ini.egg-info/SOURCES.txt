@@ -1,0 +1,5 @@
+setup.py
+slot_gacor_hari_ini.egg-info/PKG-INFO
+slot_gacor_hari_ini.egg-info/SOURCES.txt
+slot_gacor_hari_ini.egg-info/dependency_links.txt
+slot_gacor_hari_ini.egg-info/top_level.txt
