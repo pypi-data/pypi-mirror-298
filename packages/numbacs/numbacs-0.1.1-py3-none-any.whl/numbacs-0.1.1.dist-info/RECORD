@@ -1,0 +1,13 @@
+numbacs/__init__.py,sha256=pKLyFodiuld0e6wh7TvlEB6rW41P3IlyqLf3TU0y3K0,93
+numbacs/diagnostics.py,sha256=5irlqszIHoCDPd60WZivYo-p8C9N9Uv2DA3jSZQ-HaE,23435
+numbacs/flows.py,sha256=igK3A0o__0yM4xY9jj0Xn_iQ5mAwVehNx58jXYw-A-A,33613
+numbacs/integration.py,sha256=eMVy9qLHQ4Ff9yxPdIjvEuPKRLyYIFTEefHJGHNCHuk,25576
+numbacs/utils.py,sha256=p1RWSsPer910PAPxWQryuiph1qRBEMnHo5ML-EHts8o,27668
+numbacs/extraction/__init__.py,sha256=fLSv6W3nW7kY582L3EJ-b84FGJ_RR4E6HgUKAQnpBnw,197
+numbacs/extraction/elliptic.py,sha256=rO26knb8X9khDzI35LPGrsE8fv19Ylgwvngzg8LR3Ws,4969
+numbacs/extraction/hyperbolic.py,sha256=a9UkRUdv4mu-S-p08x_5A_dzLtFNjTzMTTtUuILKIgk,36442
+numbacs/extraction/ridges.py,sha256=Y0Qn3FpcR-aBeagmkYWLAFOCpujghZ_Ezvy1DtR8dac,41395
+numbacs-0.1.1.dist-info/METADATA,sha256=W6TQsgnSJ-oqgz3btmxCdCi-t2WsiGFiIekTCEhyY8c,8797
+numbacs-0.1.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+numbacs-0.1.1.dist-info/licenses/LICENSE,sha256=2NJWKny2j_3-kfxmrx7UqKTicqpKtZvqdFG6NLmro9Q,16727
+numbacs-0.1.1.dist-info/RECORD,,
