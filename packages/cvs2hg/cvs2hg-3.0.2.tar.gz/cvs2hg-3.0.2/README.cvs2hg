@@ -1,0 +1,359 @@
+cvs2hg: Mercurial backend for cvs2svn
+=====================================
+
+contact: Greg Ward <greg at gerg dot ca>
+
+This project adds a third backend to cvs2svn: direct output to
+Mercurial.  (The first two, of course, are the original Subversion
+output and cvs2git, which writes git fast-import files.)
+
+(Do NOT confuse this cvs2hg with the variation on cvs2git that writes a
+fastimport file that early versions of hg-fastimport could handle.
+That's currently the cvs2hg you'll find in trunk checkouts of the
+official cvs2svn.  I apologize for the name conflict, but one of my
+goals is to replace the fastimport-based cvs2hg with this direct-output
+version.  In the rest of this document, cvs2hg refers to the code you
+have in front of you now.)
+
+Ultimately, I want to see this work merged into the official cvs2svn
+repository, at which point I will stop maintaining this project.  For
+now, though, I'm still actively developing, testing, and debugging this
+code, so I'm going to keep maintaining it here:
+
+  http://hg.gerg.ca/cvs2svn/
+
+
+Requirements
+------------
+
+cvs2hg requires:
+  * Python 2.4 or later (but not Python 3.x) (same as cvs2svn)
+  * Mercurial 1.1 or later
+  * direct access to your CVS repository (again, same as cvs2svn)
+
+If the appropriate Mercurial API cannot be found, cvs2hg will die with a
+(hopefully) clear and self-explanatory error message.  
+
+If your OS does not include Mercurial 1.1 or later, you have a little
+more work to do.  On Unix (including Mac OS X), you can just download
+and build Mercurial from source:
+
+  * download the latest released version from
+      http://mercurial.selenic.com/release/?C=M;O=D
+
+  * unpack it somewhere: for example, to /tmp/mercurial-$ver
+
+  * build it in place: cd /tmp/mercurial-$ver && make local
+
+  * before running cvs2hg, ensure that Python can find the Mercurial
+    library you just unpacked, e.g.
+      export PYTHONPATH=/tmp/mercurial-$ver
+
+On Windows, apparently the easiest way is:
+
+  * download the appropriate mercurial-$ver.win32-pyX.Y.exe
+    installer from
+      http://bitbucket.org/tortoisehg/thg-winbuild/downloads/
+    E.g. for Mercurial 1.6.2 under Python 2.6, download
+    mercurial-1.6.2.win32-py2.6.exe
+
+  * install it -- this adds the Mercurial Python API to your
+    Python installation
+
+  * run 
+      python <CVS2SVN_DIR>\cvs2hg ...
+    where <CVS2SVN_DIR> is the directory with cvs2hg and 
+    this README file, and "python" is on your %PATH%.
+
+
+Quick start
+-----------
+
+If you're not interested in understand the underlying concepts, you can
+try converting a CVS repository right away:
+
+  ./cvs2hg --hgrepos myproject.hg /path/to/cvs/myproject
+
+If you have problems, you might try a cvs2svn or cvs2git conversion
+first.  cvs2hg differs from those two only in the final pass; if there
+is something weird in your CVS repository that confuses any of the first
+15 passes, it should affect cvs2svn or cvs2git as well.  If that is the
+case, you should go to the cvs2svn developers for support.  Try a trunk
+checkout of cvs2svn first just to be sure; it's possible that my patches
+to implement cvs2hg broke some obscure part of cvs2svn/cvs2git.
+
+But if cvs2hg has problems on a CVS repository that cvs2svn and cvs2git
+can handle, let me know.  (My email address is at the top of this file.
+Please cc the users@cvs2svn.tigris.org list too, so the conversation is
+public and archived.)
+
+If you convert a large CVS repository, keep an eye on the runtime and
+memory usage.  cvs2hg should be slightly faster than writing to a
+Subversion repository, and hopefully not too much slower than writing a
+Subversion dump file or git fast-import file.  And memory usage should
+be reasonable -- hopefully no worse than cvs2svn.
+
+Also, if you have questions about the nature of the output Mercurial
+repository, you should read the rest of this file.
+
+
+Goals
+-----
+
+The basic goal of any CVS-to-X conversion is that you should be able to
+get out of X the same as you get out of CVS.  That is, a CVS checkout of
+any branch or tag should give the exact same directory tree as a
+corresponding Mercurial checkout.  CVS' peculiar approach to branching
+and tagging makes this particularly challenging, and the interesting
+part of implementing cvs2hg was figuring out how to adopt the bizarre
+things one sees in real-life CVS repositories to make a sensible
+Mercurial repository.
+
+As with human languages, there is a distinction between literal
+translation and idiomatic translation.  Literal translation is what
+meets the above goal: checkout any CVS tag/branch, update to the same
+tag/branch in Mercurial, and get identical trees.  The problem with
+literal translation is that it requires odd-looking hacks to make the
+Mercurial repository look just like the CVS repository.
+
+The goal of idiomatic translation is to produce a Mercurial repository
+that you would have had if you had been using Mercurial from the
+beginning.  Obviously, this is a vague and fuzzy goal that is impossible
+to fulfill in the general case.  That's why literal translation is the
+default; idiomatic translation will require you to muck about in a
+cvs2hg.options file, think hard about your workflow, and tell cvs2hg
+what sort of compromises to make in order to get a more natural-looking
+translation.
+
+
+Fixup commits
+-------------
+
+The most important hack used to achieve a literal translation is the
+fixup commit.  Consider a CVS repository with this structure:
+
+  /--+-- lib1/ ...
+     |
+     +-- lib2/ ...
+     |
+     +-- app1/ ...
+     |
+     +-- stuff/ ...
+
+where 'lib1', 'lib2', and 'app1' are separate projects that comprise a
+single product and 'stuff' is, well, just a bunch of stuff.  Further
+assume that you want to convert the entire CVS repository to one
+Mercurial repository.  (This might not be the best approach, but that's
+your decision.  cvs2hg has to do the right thing whatever you decide.)
+
+If the usual release procedure for this product is to tag and branch
+just 'lib1', 'lib2', and 'app1', then you have partial tags and
+branches.  That is, if you update a CVS working copy to a point on the
+trunk immediately before tag 'release-1_0', then you'll get 'stuff'.
+But if you update to 'release-1_0', or to the branch 'maint-1_0', then
+CVS will remove 'stuff' from your working copy.
+
+In order to get a correct conversion where release-1_0 and maint-1_0
+denote exactly the same tree in Mercurial as in CVS, cvs2hg adds a fixup
+commit in such cases.  For example, in this case the fixup commit would
+simply delete everything under stuff, ensuring those files are not in
+the tag or on the branch.
+
+But that's only the simplest type of fixup commit.  There are many ways
+in which a CVS tag or branch point can fail to denote a single point in
+history.  The goal of a fixup commit is always to create such a point in
+history, because Mercurial tags always denote a single changeset, and
+branches always branch off a single changeset.
+
+
+Consequences of fixup commits
+-----------------------------
+
+Fixup commits have a couple of consequences.  Notably, if done
+carelessly, they would create many new heads: for example, your
+Mercurial history might look like this:
+
+[...]
+o  6245:54a288630eb6  start work on 1.1 features
+|
+| o  6244:bef2a0bf46cf  fixup commit: create tag 'release-1_0'
+|/
+o  6243:d71085af4f8b  update release notes for 1.0
+|
+o  6242:9124110d9c3c  final bug fix before release 1.0
+[...]
+
+where revisions 6242, 6243, and 6245 were originally done in CVS, but
+6244 was created by cvs2hg.  If you convert a CVS repository with 4000
+partial tags, you might get a Mercurial repository with 4000 heads.
+This is not good: Mercurial was not designed for this sort of repository
+and does not perform well with it.
+
+Thus, cvs2hg takes pains to avoid proliferating heads, mainly by
+creating dummy merges.  In the above case, it would actually create this
+Mercurial history:
+
+[...]
+o  6245:0b262b3d12de  start work on 1.1 features
+|\
+| o  6244:bef2a0bf46cf  fixup commit: create tag 'release-1_0'
+|/
+o  6243:d71085af4f8b  update release notes for 1.0
+|
+o  6242:9124110d9c3c  final bug fix before release 1.0
+[...]
+
+Note that 6245 appears to be a merge of 6243 and 6244.  It isn't really
+a merge, because of course there was never any point in your CVS history
+corresponding to 6244.  But it's recorded as one to prevent 6244 from
+being a head.
+
+The logic for creating these dummy merges is simple: the next changeset
+on the same branch as the fixup commit ('default' in this case, because
+release-1_0 tagged the CVS trunk) will be a dummy merge.  That rule
+holds even if the next changeset is another fixup commit.  This can make
+for somewhat confusing history, but it keeps the number of artificial
+changesets down.
+
+There's one further peculiarity related to fixup commits: if cvs2hg
+reaches the end of conversion and the last commit on a particular branch
+was a fixup, it creates another artificial changeset to undo the effect
+of the fixup.  For example, say you created a partial tag 'trunk-stable'
+of 'lib1', 'lib2', and 'app1' on the trunk right before running the
+conversion.  The resulting history might look like this:
+
+  o  9324:c4c5df90da01    fixup commit: create tag 'trunk-stable'
+ /
+o  9323:20f642f732ed   add latest feature to app1
+|
+o  9322:cbe9d7fed4dd   add some handy things in stuff
+|
+o  9321:712e9fe8c56e   refactor lib2 a bit
+
+In this case, Mercurial revision 9324 is both tip and the head of the
+'default' branch.  But because 'trunk-stable' is a partial tag, it's
+missing everything in 'stuff'.  Thus, this conversion fails the most
+basic test, which is that updating to the head of Mercurial 'default'
+should give exactly the same tree as checking out the CVS trunk.
+
+The hack in this case is a second artificial commit:
+
+o  9325:a3f371ce1176   artificial commit: close fixup head c4c5df90da01
+|\
+| o  9324:c4c5df90da01    fixup commit: create tag 'trunk-stable'
+|/
+o  9323:20f642f732ed   add latest feature to app1
+|
+o  9322:cbe9d7fed4dd   add some handy things in stuff
+|
+o  9321:712e9fe8c56e   refactor lib2 a bit
+
+9325 is a dummy merge that is identical to 9323: it exists only to make
+the head of the Mercurial branch match the head of the corresponding CVS
+branch.
+
+
+Branch fixups
+-------------
+
+Everything that holds for CVS tags also holds for branch points: they do
+not necessarily correspond to a single changeset.  Thus, cvs2hg also
+creates fixup commits when adding a branch.
+
+However, branch fixup commits do not generally contribute to the
+proliferation of heads.  After all, a CVS branch is going to become a
+Mercurial branch, which usually ends in a head.  Also, your CVS branch
+won't be converted to Mercurial unless it has some commits, so the fixup
+commit will immediately be "covered up" by real changesets converted
+from CVS.  Finally, CVS branches are usually much less frequent than
+tags.
+
+Thus, cvs2hg makes no effort to dummy-merge branch fixups.
+
+
+Avoiding fixup commits
+----------------------
+
+You might have decided that you want to avoid as many fixup commits as
+you can.  After all, they clutter up history and create potentially
+confusing dummy merges.
+
+cvs2hg tries to make this easy for you.  First of all, it won't create a
+fixup commit for a tag unless it really needs to.  If you create a CVS
+tag by tagging the latest version of every file, then there should be no
+need for a fixup commit, and cvs2hg will not create one.
+
+Second, an important special case of fixup commits is the kind that only
+deletes files -- this corresponds to a CVS partial tag.  If you had been
+using Mercurial from the beginning, you would most likely simply tag the
+latest changeset, rather than deliberately excluding certain directories
+from the tag.  Thus, idiomatic translation requires that you have the
+option of disabling such "delete only" fixup commits.
+
+Finally, everything that holds for branch fixups should hold for tag
+fixups -- although the defaults should not necessarily be the same.
+Currently, cvs2hg behaves as follows:
+
+  * For branches: by default, always create fixups, even if there is no
+    difference with the fixup's first parent revision (this is more for
+    consistency with cvs2svn than for any good reason).  Override with
+    branch_fixup_mode.
+
+  * For tags: by default, only create fixups if there is a difference
+    with the fixup's first parent.  Override with tag_fixup_mode.
+
+  * You can control how/when to create fixups for tags and branches
+    independently with the branch_fixup_mode and tag_fixup_mode optional
+    keyword arguments to HgOutputOption.  (That is, to use this feature
+    you will need to create a cvs2hg.options file and edit it.)  The
+    available fixup modes are:
+
+    - 'always'  : always create the fixup (default for branch fixups)
+    - 'optional': create fixups when they are needed (default for tag
+      fixups)
+    - 'sloppy'  : don't bother with fixups that only delete files
+      relative to the first parent
+
+"Sloppy" fixup mode will break the prime requirement of literal
+translation (Mercurial tags won't be identical to CVS tags), but it's
+important for idiomatic translation (in Mercurial, you have to bend over
+backwards to tag a subset of your tree, and who would bother?).
+
+For example, if you always want sloppy fixup for both branches and tags,
+your cvs2hg.options file would contain:
+
+  ctx.output_option = HgOutputOption(
+    [...]
+    branch_fixup_mode='sloppy',
+    tag_fixup_mode='sloppy',
+    [...]
+  )
+
+
+Known problems
+--------------
+
+Occasionally, converting large repositories dies with a MemoryError
+exception.  I have seen this myself more than once, but have been
+unable to reproduce it reliably (although I admit I haven't tried very
+hard).  The workaround is annoying but simple: after the crash, just
+run remove the partial repository and run the output pass again:
+
+  rm -rf <output-repo>
+  cvs2hg [...other arguments...] --pass 16
+
+I'm not sure why, but that seems to work.
+
+
+Updates
+-------
+
+Since this project is meant to be a short-lived development branch of
+cvs2svn, I am *not* going to bother with official releases.  You can
+always get the latest code by cloning (or pulling from) my Mercurial
+repository:
+
+  http://vc.gerg.ca/hg/cvs2svn/
+
+I regularly merge with the upstream Subversion repository for cvs2svn,
+so this code should not diverge very far from the official source.

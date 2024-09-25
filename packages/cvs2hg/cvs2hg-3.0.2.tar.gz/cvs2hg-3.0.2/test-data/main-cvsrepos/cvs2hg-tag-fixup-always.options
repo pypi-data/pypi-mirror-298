@@ -1,0 +1,9 @@
+# (Be in -*- python -*- mode.)
+
+execfile('cvs2hg-example.options')
+
+ctx.output_option = HgOutputOption(
+    'test-temporary-tmp-dir/main-tag-fixup-always.hg',
+    tag_fixup_mode='always',
+)
+

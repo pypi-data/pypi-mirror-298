@@ -1,0 +1,11 @@
+^cvs2svn-tmp/
+\.pyc$
+\.svn/
+~$
+^test-temporary-tmp-dir/
+^test-temporary-work-dir/
+^main\..*
+/CVSROOT/(history|val-tags)$
+^build/
+^dist/
+\.egg-info/

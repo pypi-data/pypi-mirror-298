@@ -1,0 +1,178 @@
+Metadata-Version: 2.1
+Name: cvs2hg
+Version: 3.0.2
+Summary: cvs2hg repository converter (based on cvs2svn)
+Home-page: https://foss.heptapod.net/mercurial/mercurial-cvs2hg
+Author: The cvs2svn team, Greg Ward, Marcin Kasperski
+Author-email: Marcin.Kasperski@mekk.waw.pl
+License: Apache-style
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Topic :: Software Development :: Version Control :: CVS
+Classifier: Topic :: Utilities
+License-File: COPYING
+
+
+cvs2hg
+==================
+
+Convert CVS repositories into Mercurial. Contrary to ``hg convert``
+properly handle tags and branches.
+
+cvs2hg purpose
+------------------
+
+cvs2hg converts CVS repositories into Mercurial ones and
+does much better job than hg convert preserving appropriate
+tags and branchpoints contents.
+
+Most important case is that of manually tweaked tags.
+Example scenario::
+
+    cvs commit file1 file2 file3 file4
+    cvs tag blah_1-0-0      # covers 1.1 versions of all files
+    cvs commit file2 file3 file1    # makes 1.2
+    cvs commit file1        # makes 1.3
+    cvs tag -r blah_1-0-0 blah_1-0-1
+    cvs tag -F blah_1-0-1 file1
+
+(tag ``blah_1-0-0`` is created as copy of ``blah_1-0-0``, but manually
+moved to newer version of ``file1`` – fairly frequent way of backporting
+bugfixes in CVS world, handy as it avoids CVS branch creation).
+
+Even simpler scenario: some tag (on purpose or accidentally) omits some files.
+
+``hg convert`` is lost in such cases. In aggregated history there is
+no point of time at which ``file2``, ``file3``, and ``file4`` were at
+``1.1``, but ``file1`` was at ``1.3``. So ``hg convert`` binds
+``blah_1-0-1`` at some random place (usually nearby initial revision).
+
+``cvs2hg`` resolves that by creating *fixup commit* - artificial
+change which brings repository content in sync with tag being
+converted (removes files which were omitted by cvs tag, applies
+partial changes to selected files only…). The net result is that::
+
+    hg up -r blah_1-0-1
+
+gives exactly the same files, with exactly the same contents, as::
+
+    cvs up -r blah_1-0-1
+
+The cost is that history contains those commits - in most cases
+tiny triangular branches like::
+
+        |
+        o   
+        |\  
+        | | 
+        | |
+        | o [blah_1-0-1]   <--- fixup commit
+        |/  
+        |   
+        |
+        o 
+        |
+
+The same problem and solution applies to branches which started
+from such a tag (there fixup commit may init longer branch).
+
+See also longer discussion in README.cvs2hg in the source code.
+
+cvs2hg installation
+---------------------
+
+Install from pypi::
+
+    pip install cvs2hg
+
+or install from source::
+
+    hg clone https://foss.heptapod.net/mercurial/mercurial-cvs2hg
+
+    cd mercurial-cvs2hg
+    sudo python setup.py install
+
+(or install in virtualenv, or install locally using ``pip``).
+
+cvs2hg usage
+------------------
+
+Usual way to run the conversion:
+
+1. Grab ``,v`` files of module being converted somehow (you need read
+   access to the server CVS repository). To run the conversion,
+   you need the following directory tree (say you convert ``libs/acme`` which
+   has some files and also doc subdir)::
+
+       someWorkDir
+         |
+         +--- CVSROOT    (can be empty directory, just marks where root is)
+         |
+         |
+         +--- libs
+                |
+                |
+                +--- acme
+                       |
+                       +-- something.h,v
+                       |
+                       +-- something.c,v
+                       |
+                       +-- doc
+                             |
+                             +-- README.txt,v
+                             |
+                             +-- Attic
+                                   |
+                                   +-- BUGS.txt,v
+
+2. Run the command::
+
+       cd someWorkDir
+
+       cvs2hg --hgrepos=$HOME/repos/libs/acme \
+             --encoding utf8 --encoding iso-8859-2 \
+             libs/acme
+
+   (adapt encoding to your needs, that's list of encodings which could be used in commit
+   messages)
+
+3. Examine resulting Mercurial repository (with the command above it would be
+   ``$HOME/repos/libs/acme``). At times some history edition may make
+   sense (like dropping unnecessary branches or tags, or even
+   performing Mercurial to Mercurial conversion to modify usernames).
+
+
+Source code and it's history
+--------------------------------
+
+``cvs2hg`` was created by Greg Ward, as fork of ``cvs2svn`` (which,
+contrary to it's name, handled also conversion to git and Bazaar),
+extended to support Mercurial. Later on it was patched by Marcin Kasperski
+to support newer Mercurial versions.
+
+As the work was never merged back upstream, and presence of
+``cvs2svn`` script (and library) happened to cause confusion, the
+repository was finally cleaned up from most non-Mercurial related code
+and exists now as purely CVS → HG conversion tool.
+ 
+Current repository:
+
+- https://foss.heptapod.net/mercurial/mercurial-cvs2hg
+
+Historical repositories:
+
+- https://bitbucket.org/Mekk/mercurial-cvs2hg (Marcin Kasperski patches until 2020) 
+
+- http://hg.gerg.ca/cvs2svn (Greg Ward's repository)
+
+- http://cvs2svn.tigris.org/cvs2svn.html (original cvs2svn).
+
+

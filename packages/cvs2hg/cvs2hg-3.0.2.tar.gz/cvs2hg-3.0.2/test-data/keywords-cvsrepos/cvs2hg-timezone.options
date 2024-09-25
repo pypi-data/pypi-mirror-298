@@ -1,0 +1,16 @@
+# (Be in -*- python -*- mode.)
+
+# Test that cvs2hg can set a meaningful timezone.
+
+execfile('cvs2hg-example.options')
+name = 'keywords-timezone'
+
+ctx.output_option = HgOutputOption(
+  'test-temporary-tmp-dir/%s.hg' % (name,),
+
+  # pick a low-population timezone, so it's unlikely that this happens to be
+  # localtime for any random person running the tests
+  timezone='Canada/Newfoundland',
+)
+
+run_options.set_project('test-data/keywords-cvsrepos')

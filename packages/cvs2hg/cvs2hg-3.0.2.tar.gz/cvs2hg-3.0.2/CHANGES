@@ -1,0 +1,30 @@
+
+3.0.1
+---------------------------------
+
+Compatibility with mercurials ≥ 5.0 (which introduced API changes
+which caused cvs2hg crashes).
+
+This cvs2hg version is formally testes against Mercurials
+from 3.2 to 5.4 (inclusive).
+
+Mercurial versions ≤ 3.1 aren't supported.
+
+
+3.0.0
+--------------------------------
+
+General cleanup from non-cvs2hg related parts, renaming to cvs2hg,
+dropping various irrelevant or non-maintained doc parts, tests
+partially cleaned up and partially removed to be used against
+Mercurial only. Setup.py updated to properly package or install
+the tool. All modules and scripts which could conflict with 
+cvs2svn renamed.
+
+PyPI release.
+
+Older history
+--------------------------------
+
+This project forks cvs2svn, see cvs2svn history.
+

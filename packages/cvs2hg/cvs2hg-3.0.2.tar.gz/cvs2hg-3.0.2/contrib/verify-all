@@ -1,0 +1,108 @@
+#!/usr/bin/python
+
+"""Run repeated conversions from CVS, verifying each one in turn.  If
+you don't supply a list of input CVS repositories, converts and verifies
+test-data/*.
+"""
+
+import sys
+import os
+import signal
+import optparse
+import glob
+import tempfile
+import subprocess
+import shutil
+
+class ConversionFailed(Exception):
+    def __init__(self, inrepo, cmd, output):
+        self.inrepo = inrepo
+        self.cmd = cmd
+        self.output = output
+
+    def __str__(self):
+        return ("conversion failure: %s\n"
+                "command: %s\n"
+                "output:\n%s"
+                % (self.inrepo, " ".join(self.cmd), self.output))
+
+class VerificationFailed(Exception):
+    def __init__(self, inrepo):
+        self.inrepo = inrepo
+
+    def __str__(self):
+        return "verification failure: %s" % self.inrepo
+
+def convert(base_cmd, tmpdir, inrepo):
+    print "Converting", inrepo
+    outrepo = os.path.join(
+        tmpdir, os.path.basename(inrepo).replace("-cvsrepos", "") + ".hg")
+    cmd = base_cmd + ["--hgrepos", outrepo, inrepo]
+    child = subprocess.Popen(cmd,
+                             stdout=subprocess.PIPE,
+                             stderr=subprocess.STDOUT)
+    output = child.stdout.read()
+    status = child.wait()
+    if status:
+        raise ConversionFailed(inrepo, cmd, output)
+    return outrepo
+
+def verify(tmpdir, inrepo, verifyrepo):
+    cmd = ["./contrib/verify-cvs2svn.py",
+           "--tmpdir", tmpdir,
+           "--hg", inrepo, verifyrepo]
+    child = subprocess.Popen(cmd)
+    status = child.wait()
+    if status:
+        raise VerificationFailed(inrepo)
+
+# Some of the CVS repositories in test-data cannot be converted or
+# verified -- skip them.
+EXCLUDE_REPOS = set([
+    "attic-directory-conflict-cvsrepos", # file/dir name conflict
+    "bogus-tag-cvsrepos",                # bad tag name
+    ])
+
+def main():
+    parser = optparse.OptionParser(usage="%prog [options] [cvs-repo ...]",
+                                   description=__doc__)
+
+    (options, args) = parser.parse_args()
+    if not args:
+        args = [os.path.join("test-data", name)
+                for name in set(os.listdir("test-data")) - EXCLUDE_REPOS
+                if name.endswith("-cvsrepos")]
+        args.sort()
+
+    tmpdir = tempfile.mkdtemp(prefix="verify.", dir=".")
+    base_cmd = ["./cvs2hg"]
+    convert_failed = []
+    verify_failed = []
+    try:
+        for inrepo in args:
+            if inrepo is not args[0]:
+                print
+            try:
+                verifyrepo = convert(base_cmd, tmpdir, inrepo)
+                verify(tmpdir, inrepo, verifyrepo)
+            except ConversionFailed as err:
+                convert_failed.append(inrepo)
+                sys.stderr.write("error: " + str(err))
+            except VerificationFailed as err:
+                verify_failed.append((inrepo, verifyrepo))
+                sys.stderr.write("error: " + str(err))
+    finally:
+        print "cleaning", tmpdir
+        shutil.rmtree(tmpdir, ignore_errors=True)
+
+    if convert_failed:
+        sys.stderr.write("error: %d conversion(s) failed:\n  %s\n"
+                         % (len(convert_failed), "\n  ".join(convert_failed)))
+    if verify_failed:
+        failed = ["%s != %s" % pair for pair in verify_failed]
+        sys.stderr.write("error: %d verification(s) failed:\n  %s\n"
+                         % (len(verify_failed), "\n  ".join(failed)))
+
+    sys.exit((convert_failed or verify_failed) and 1 or 0)
+
+main()

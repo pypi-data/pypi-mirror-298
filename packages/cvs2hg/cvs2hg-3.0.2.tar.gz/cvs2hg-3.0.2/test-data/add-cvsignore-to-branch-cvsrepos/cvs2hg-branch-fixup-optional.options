@@ -1,0 +1,15 @@
+# (Be in -*- python -*- mode.)
+
+execfile('cvs2hg-example.options')
+
+run_options.set_project(
+    'test-data/add-cvsignore-to-branch-cvsrepos',
+    symbol_strategy_rules=global_symbol_strategy_rules,
+)
+
+ctx.output_option = HgOutputOption(
+    'test-temporary-tmp-dir/branch-fixup-optional.hg',
+    branch_fixup_mode='optional',
+)
+
+ctx.skip_cleanup = True

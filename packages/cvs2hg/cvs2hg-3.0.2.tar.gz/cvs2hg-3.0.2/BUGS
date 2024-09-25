@@ -1,0 +1,38 @@
+                                                       -*- text -*-
+
+                        REPORTING BUGS
+                        ==============
+
+Please report bugs to HeptaPod issue tracker:
+
+    https://foss.heptapod.net/mercurial/mercurial-cvs2hg
+
+Before reporting a bug:
+
+   a) Verify that you are running the latest version of cvs2hg.
+
+   b) Check to see if your bug is already filed in the issue tracker.
+
+To be useful, a bug report should include the following information:
+
+   * The revisions of cvs2hg and hg you ran. Run `cvs2hg --version`
+     and `hg --version` to determine those.
+
+   * The exact cvs2hg command line you invoked, and the output it
+     produced.
+
+   * The contents of the configuration file that you used (if you used
+     the --config option).
+
+   * The data you ran it on.  If your CVS repository is small (only a
+     few kilobytes), then just provide the repository itself.  If it's
+     large, or if the data is confidential, then please try to come up
+     with some smaller, releasable data set that still stimulates the
+     bug.
+
+The most important thing is that we be able to reproduce the bug :-).
+If we can reproduce it, we can usually fix it.  If we can't reproduce
+it, we'll probably never fix it.  So describing the bug conditions
+accurately is crucial.  If in addition to that, you want to add some
+speculations as to the cause of the bug, or even include a patch to
+fix it, that's great!

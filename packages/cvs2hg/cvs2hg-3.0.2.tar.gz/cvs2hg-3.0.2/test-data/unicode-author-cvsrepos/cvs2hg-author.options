@@ -1,0 +1,23 @@
+# (Be in -*- python -*- mode.)
+
+# Test that cvs2hg respects author_transform.
+# (N.B. we could do the same with cvs2git in this repository.)
+
+execfile('cvs2hg-example.options')
+name = 'unicode-author'
+
+ctx.cvs_author_decoder = CVSTextDecoder(["utf-8"])
+
+author_transforms = {
+    'ringstr\xC3\xB6m': ('Tobias Ringstr\xC3\xB6m', 'tobias@ringstrom.mine.nu'),
+    u'\u010Dibej':  (u'Branko \u010Cibej', 'brane@xbc.nu'),
+}
+
+ctx.output_option = HgOutputOption(
+    #'test-temporary-tmp-dir/%s--options=cvs2hg-author.options.hg' % (name,),
+    'test-temporary-tmp-dir/%s.hg' % (name,),
+    author_transforms=author_transforms)
+
+run_options.set_project(r'test-data/unicode-author-cvsrepos')
+
+logger.log_level = logger.DEBUG
