@@ -1,0 +1,8 @@
+README.md
+setup.py
+agentChef.egg-info/PKG-INFO
+agentChef.egg-info/SOURCES.txt
+agentChef.egg-info/dependency_links.txt
+agentChef.egg-info/entry_points.txt
+agentChef.egg-info/requires.txt
+agentChef.egg-info/top_level.txt

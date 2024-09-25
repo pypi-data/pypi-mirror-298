@@ -1,0 +1,12 @@
+click
+pandas
+requests
+pyarrow
+pyyaml
+huggingface_hub
+datasets
+PyGithub
+wikipedia
+arxiv
+tqdm
+colorama
