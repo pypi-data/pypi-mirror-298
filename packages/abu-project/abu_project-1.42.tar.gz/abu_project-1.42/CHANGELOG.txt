@@ -1,0 +1,8 @@
+Change Log
+==========
+
+1.42(24/09/2024)
+--------------------
+- Fifth Release
+- Encapsulating the implementation of the main() function
+- Added Docstring for every function.
