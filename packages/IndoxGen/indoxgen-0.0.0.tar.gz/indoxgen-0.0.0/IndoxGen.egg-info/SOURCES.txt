@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+IndoxGen.egg-info/PKG-INFO
+IndoxGen.egg-info/SOURCES.txt
+IndoxGen.egg-info/dependency_links.txt
+IndoxGen.egg-info/requires.txt
+IndoxGen.egg-info/top_level.txt
