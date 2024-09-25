@@ -1,0 +1,2 @@
+[console_scripts]
+my-engineer = my_engineer.main:main
