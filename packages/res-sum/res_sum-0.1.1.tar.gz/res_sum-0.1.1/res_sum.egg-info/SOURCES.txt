@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+res_sum/__init__.py
+res_sum/research_summarizer.py
+res_sum.egg-info/PKG-INFO
+res_sum.egg-info/SOURCES.txt
+res_sum.egg-info/dependency_links.txt
+res_sum.egg-info/entry_points.txt
+res_sum.egg-info/requires.txt
+res_sum.egg-info/top_level.txt

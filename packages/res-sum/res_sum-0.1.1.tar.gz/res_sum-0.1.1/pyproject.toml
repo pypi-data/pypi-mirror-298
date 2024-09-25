@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "res-sum"
+version = "0.1.1"
+description = "A Python package Leveraging LLMs for Research Synthesis"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+authors = [
+    {name = "Hammed A. Akande", email = "akandehammedadedamola@gmail.com"}
+]
+
+dependencies = [
+    "google-api-python-client",
+    "google-auth",
+    "google-auth-httplib2",
+    "google-auth-oauthlib",
+    'PyMuPDF',
+    'PyPDF2',
+    'python-docx',
+    'nltk',
+    'GDriveOps',
+    'voyageai',
+    'langchain',
+    'langchain-community',
+    'langchain-voyageai',
+    'langchain-groq',
+    'langchain-core',
+    'rouge_score',
+    'ipywidgets',
+    'scikit-learn',
+]
+
+[project.urls]
+homepage = "https://github.com/drhammed/res-sum"
+repository = "https://github.com/drhammed/res-sum"
+issues = "https://github.com/drhammed/res-sum/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov"
+]
+
+[project.scripts]
+res-sum = "research_summarizer:main"
