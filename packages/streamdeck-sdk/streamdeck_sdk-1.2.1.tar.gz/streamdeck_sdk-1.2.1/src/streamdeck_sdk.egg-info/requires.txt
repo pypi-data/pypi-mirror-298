@@ -1,0 +1,10 @@
+annotated-types==0.7.0
+decohints==1.0.9
+pydantic==2.8.2
+pydantic_core==2.20.1
+typing_extensions==4.12.2
+websockets==13.0.1
+
+[dev]
+streamdeck-sdk-cli<0.1.0,>=0.0.2
+streamdeck-sdk-pi<0.1.0,>=0.0.1
