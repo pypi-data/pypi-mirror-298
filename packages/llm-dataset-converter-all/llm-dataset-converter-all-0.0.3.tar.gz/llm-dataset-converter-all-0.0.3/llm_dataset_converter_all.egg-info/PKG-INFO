@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: llm-dataset-converter-all
+Version: 0.0.3
+Summary: Meta-library that combines all llm-dataset-converter libraries.
+Home-page: https://github.com/waikato-llm/audio-dataset-converter-all
+Author: Peter Reutemann
+Author-email: fracpete@waikato.ac.nz
+License: MIT License
+Description: Meta-library that combines all llm-dataset-converter libraries.
+        
+        
+        Changelog
+        =========
+        
+        0.0.3 (2024-09-25)
+        ------------------
+        
+        - added ldc-tint as dependency
+        
+        
+        0.0.2 (2024-07-05)
+        ------------------
+        
+        - upgraded llm-dataset-converter to 0.2.4
+        - upgraded ldc-doc to 0.0.2
+        - upgraded ldc-docx to 0.0.2
+        - upgraded ldc-html to 0.0.2
+        - upgraded ldc-pdf to 0.0.2
+        
+        
+        0.0.1 (2024-06-06)
+        ------------------
+        
+        - initial release
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Multimedia :: Sound/Audio :: Conversion
