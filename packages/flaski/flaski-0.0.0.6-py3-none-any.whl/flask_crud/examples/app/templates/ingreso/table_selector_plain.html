@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra</title>
+    <style>
+        /* Estilos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .form-wrapper, .table-wrapper, .details-wrapper, .purchase-wrapper {
+            margin-bottom: 20px;
+        }
+
+        .form-wrapper label, .details-wrapper label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-wrapper input, .details-wrapper input {
+            padding: 8px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .details-wrapper {
+            border: 1px solid #ddd;
+            /* padding: 15px; */
+            padding: 30px;
+            display: none;
+        }
+
+        .error-message {
+            color: red;
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Formulario de Compra</h1>
+
+    <!-- Formulario del Cliente y Vehículos -->
+    <!-- <form id="purchase-form" method="POST" action="https://example.com/api/compras"> -->
+    <form id="purchase-form" method="POST">
+        <!-- Formulario del Cliente -->
+        <div class="form-wrapper">
+            <h2>Datos del Cliente</h2>
+            <label for="client-name">Nombre del Cliente:</label>
+            <input type="text" id="client-name" name="clientName" placeholder="Ingrese nombre">
+
+            <label for="client-email">Correo Electrónico:</label>
+            <input type="email" id="client-email" name="clientEmail" placeholder="Ingrese correo electrónico">
+
+            <label for="client-phone">Teléfono:</label>
+            <input type="text" id="client-phone" name="clientPhone" placeholder="Ingrese teléfono">
+        </div>
+
+        <!-- Tabla de Vehículos a la Venta -->
+        <div class="table-wrapper">
+            <h2>Vehículos a la Venta</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Precio</th>
+                        <th>Cantidad Disponible</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="rows-for-post">
+                    <!-- Aquí se llenarán los vehículos -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Detalles del Vehículo -->
+        <div class="details-wrapper" id="data-details">
+            <h2>Detalles del Vehículo</h2>
+            <label for="vehicle-brand">Marca:</label>
+            <input type="text" id="vehicle-brand" disabled>
+
+            <label for="vehicle-model">Modelo:</label>
+            <input type="text" id="vehicle-model" disabled>
+
+            <label for="vehicle-year">Año:</label>
+            <input type="text" id="vehicle-year" disabled>
+
+            <label for="vehicle-price">Precio:</label>
+            <input type="text" id="vehicle-price" disabled>
+
+            <label for="vehicle-available">Cantidad Disponible:</label>
+            <input type="text" id="vehicle-available" disabled>
+
+            <label for="vehicle-quantity">Cantidad a Comprar:</label>
+            <input type="number" id="vehicle-quantity" min="1" placeholder="Ingrese cantidad">
+
+            <p class="error-message" id="quantity-error">La cantidad debe ser mayor que 0 y no debe exceder la cantidad disponible.</p>
+
+            <button type="button" id="add-to-post-data" class="btn">Agregar a la Compra</button>
+        </div>
+
+        <!-- Tabla de Vehículos para Comprar -->
+        <div class="purchase-wrapper">
+            <h2>Vehículos para Comprar</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="purchase-list">
+                    <!-- Aquí se agregarán los vehículos a comprar -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Campos ocultos para los Vehículos -->
+        <div id="hidden-data"></div>
+
+        <!-- Botón de Realizar Compra -->
+        <button type="submit" class="btn">Realizar Compra</button>
+    </form>
+</div>
+
+<script>
+    // Datos de ejemplo de vehículos a la venta, con cantidad disponible
+    const rows = [
+        { brand: "Toyota", model: "Corolla", year: 2020, price: 15000, available: 5 },
+        { brand: "Honda", model: "Civic", year: 2019, price: 16000, available: 3 },
+        { brand: "Ford", model: "Focus", year: 2021, price: 18000, available: 10 }
+    ];
+
+    // Array para almacenar los vehículos que el cliente quiere comprar
+    var vehiclesToPurchase = [];
+    const vehiclesToPurchaseMap = new Map();
+
+    function getItemKey(item) {
+        // Si el objeto tiene un ID, lo usamos como clave.
+        if (item.id) {
+            return item.id;
+        }
+        // Si no hay ID, generamos una clave basada en los atributos relevantes (generalizable).
+        const keyAsString = encodeURIComponent(JSON.stringify(item)); // Escapamos el JSON para pasarlo seguro al onclick
+        return keyAsString;
+        // return JSON.stringify(item);  // O una función de hash basada en atributos.
+    }
+
+    // Función para llenar la tabla de vehículos a la venta
+    function loadDataForPost() {
+        const dataBody = document.getElementById('rows-for-post');
+        dataBody.innerHTML = ''; // Limpiar tabla
+
+        rows.forEach((item, index) => {
+            const row = `
+                <tr>
+                    <td>${item.brand}</td>
+                    <td>${item.model}</td>
+                    <td>${item.year}</td>
+                    <td>$${item.price}</td>
+                    <td>${item.available}</td>
+                    <td><button type="button" class="btn" onclick="viewDetails(${index})">Ver Detalles</button></td>
+                </tr>
+            `;
+            dataBody.innerHTML += row;
+        });
+    }
+
+    // Mostrar detalles del vehículo seleccionado
+    function viewDetails(index) {
+        const vehicle = rows[index];
+        document.getElementById('vehicle-brand').value = vehicle.brand;
+        document.getElementById('vehicle-model').value = vehicle.model;
+        document.getElementById('vehicle-year').value = vehicle.year;
+        document.getElementById('vehicle-price').value = vehicle.price;
+        document.getElementById('vehicle-available').value = vehicle.available;
+
+        document.getElementById('vehicle-quantity').value = ''; // Limpiar campo de cantidad
+
+        document.getElementById('data-details').style.display = 'block';
+
+        // Almacenar el índice del vehículo para usar al agregar a la compra
+        document.getElementById('add-to-post-data').dataset.index = index;
+    }
+
+    // Agregar vehículo a la tabla de compra
+    document.getElementById('add-to-post-data').addEventListener('click', function() {
+        const index = this.dataset.index;
+        const vehicle = rows[index];
+        const quantity = parseInt(document.getElementById('vehicle-quantity').value);
+
+        const errorMessage = document.getElementById('quantity-error');
+
+        // Validar la cantidad
+        if (isNaN(quantity) || quantity <= 0 || quantity > vehicle.available) {
+            errorMessage.style.display = 'block'; // Mostrar mensaje de error
+            return;
+        } else {
+            errorMessage.style.display = 'none'; // Ocultar mensaje de error
+        }        
+        vehiclesToPurchaseMap.set(getItemKey(vehicle), {
+                ...vehicle,
+                quantity: quantity
+            });
+        // Actualizar la tabla y campos ocultos
+        updatePurchaseTable();
+        updateHiddenFields();
+    });
+
+    // Actualizar tabla de compra
+    function updatePurchaseTable() {
+        const purchaseTableBody = document.getElementById('purchase-list');
+        purchaseTableBody.innerHTML = ''; // Limpiar tabla
+
+        vehiclesToPurchaseMap.forEach((vehicle, key) => {
+            // alert(key)
+            const row = `
+                <tr>
+                    <td>${vehicle.brand}</td>
+                    <td>${vehicle.model}</td>
+                    <td>${vehicle.year}</td>
+                    <td>$${vehicle.price}</td>
+                    <td>${vehicle.quantity}</td>
+                    <td><button type="button" class="btn" onclick="removeFromPurchase('${key}')">Eliminar</button></td>
+                </tr>
+                `;
+            purchaseTableBody.innerHTML += row;
+        });        
+    }
+
+    // Actualizar campos ocultos en el formulario
+    function updateHiddenFields() {
+        const hiddenFieldsContainer = document.getElementById('hidden-data');
+        hiddenFieldsContainer.innerHTML = ''; // Limpiar campos ocultos        
+        // <input type="hidden" name="vehicles" value='${JSON.stringify(vehiclesToPurchase)}'>
+        vehiclesToPurchase = []
+        vehiclesToPurchaseMap.forEach(val=>{
+            vehiclesToPurchase.push(val)
+        })
+        const hiddenField = `
+            <input type="hidden" name="vehicles" value='${JSON.stringify(vehiclesToPurchase)}'>
+        `;
+        hiddenFieldsContainer.innerHTML += hiddenField;
+    }
+
+    // Eliminar vehículo de la compra
+    function removeFromPurchase(index) {
+        // vehiclesToPurchase.splice(index, 1);
+        vehiclesToPurchaseMap.delete(index);
+        updatePurchaseTable();
+        updateHiddenFields();
+    }
+
+    // Inicializar la tabla de vehículos a la venta
+    loadDataForPost();
+</script>
+
+</body>
+</html>

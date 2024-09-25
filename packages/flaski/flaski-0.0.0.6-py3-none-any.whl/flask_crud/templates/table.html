@@ -1,0 +1,52 @@
+{% if template_data.table_data %}
+{% if template_data.table_data.title %}      
+<h2 class="mt-5">{{ template_data.table_data.title }}</h2>
+{% endif %}
+{% include "search.html"%}
+<table class="table table-bordered mt-3">
+    <thead>
+        <tr>
+            {% for colname in template_data.table_data.head_names %}
+            <th>{{colname}}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% set data = template_data.table_data.data %}
+        {% set viewdata = template_data.table_data.viewdata %}
+        {% for nrow in range(viewdata | length) %}                        
+        {% set vrow = viewdata[nrow] %}
+        <tr>
+            {% for item in vrow %}
+            {% set value = vrow[item] if vrow is mapping else item %}
+            <td>{{ '-' if value is none or value == '' else value }}</td>
+            {% endfor %}
+            {% if template_data.table_data.opts: %}
+            <td>
+                {% set entity_name = template_data.table_data.entity_name %}
+                {% set get_id = template_data.table_data.get_id %}
+                {% for opt in template_data.table_data.opts %}
+                {% if opt.isPostId %}                       
+                <form action="{{ url_for(opt.endpoint_name, entity_name=entity_name,  id=get_id(data[nrow])) }}" method="POST" style="display:inline;">
+                    <button type="submit" class="{{opt.class}}">{{opt.name_action}}</button>
+                </form>                    
+                {% endif %}
+                {% if opt.isPostRow %}
+                <form action="{{ url_for(opt.endpoint_name, entity_name=entity_name,  row=data[nrow]) }}" method="POST" style="display:inline;">
+                    <button type="submit" class="{{opt.class}}">{{opt.name_action}}</button>
+                </form>                    
+                {% endif %}
+                {% if opt.isGetRow %}
+                <a href="{{ url_for(opt.endpoint_name, entity_name=entity_name, row=data[nrow]) }}" class="{{opt.class}}">{{opt.name_action}}</a>                        
+                {% endif %}
+                {% if opt.isGetId %}
+                <a href="{{ url_for(opt.endpoint_name, entity_name=entity_name, id=get_id(data[nrow])) }}" class="{{opt.class}}">{{opt.name_action}}</a>
+                {% endif %}                        
+                {% endfor %}                
+            </td>
+            {% endif %}                        
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endif %}

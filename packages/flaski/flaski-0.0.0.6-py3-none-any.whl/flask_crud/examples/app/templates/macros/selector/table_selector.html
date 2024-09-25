@@ -1,0 +1,208 @@
+{% macro render(viewer_data, table_data)%}
+<!-- Tabla de Vehículos a la Venta -->
+<div class="table-wrapper">
+    <h2>Vehículos a la Venta</h2>
+    <table>
+        <thead>
+            <tr>
+                {% for colname in table_data.head_names %}
+                <th>{{colname}}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+            <tbody id="rows-for-post">
+                <!-- Aquí se llenarán los vehículos -->
+            </tbody>
+    </table>
+</div>
+    
+{% if viewer_data and viewer_data.inputs %}
+{% set mount_field = viewer_data.mount_field %}
+
+    <!-- Detalles del Vehículo -->     
+    <div class="details-wrapper" id="data-details">
+    {% if viewer_data.title %}<h2 class="mt-5">{{ viewer_data.title }}</h2>{% endif %}
+        
+        {% for num_input in range(viewer_data.inputs|length) %}    
+        {% set input =  viewer_data.inputs[num_input] %}        
+        <label class="mt-2" for="{{ input.name }}">{{ input.label }}:</label>
+        <input type="text" id="{{ input.name }}" name="{{ input.name }}" disabled>
+        {% endfor %}
+        {% if viewer_data.stock_name == input.name %}
+        <input type="text" id="{{viewer_data.stock_name}}" disabled>
+        {% endif %}
+        <label for="{{mount_field.name}}">{{mount_field.label}}</label>
+        <input type="number" id="{{mount_field.name}}" min="1" placeholder="Ingrese cantidad">
+
+        <p class="error-message" id="quantity-error">La cantidad debe ser mayor que 0 y no debe exceder la cantidad disponible.</p>
+
+        <button type="button" id="add-to-post-data" class="btn">{{mount_field.text_btn}}</button>
+    </div>
+
+    <!-- Tabla de Vehículos para Comprar -->
+    <div class="purchase-wrapper">
+        <h2>Vehículos para Comprar</h2>
+        <table>
+            <thead>
+                <tr>
+                    {% for colname in table_data.head_names %}
+                    <th>{{colname}}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody id="purchase-list">
+                <!-- Aquí se agregarán los vehículos a comprar -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Campos ocultos para los Vehículos -->
+    <div id="hidden-data"></div>
+
+    <!-- Botón de Realizar Compra -->
+    <button type="submit" class="btn">Realizar Compra</button>
+</form>
+</div>
+{% set data = table_data.data %}
+{% set viewdata = table_data.viewdata %}
+
+<script>
+// Datos de ejemplo de vehículos a la venta, con cantidad disponible
+const rows = [
+    {% if viewdata %}
+    {% for nrow in range(viewdata | length) %}                        
+    {% set vrow = viewdata[nrow] %}
+    {
+    {% for item in vrow %}
+        {% set value = vrow[item] if vrow is mapping else item %}
+        {{item}}:{{ '-' if value is none or value == '' else value }},
+    {% endfor %}
+    },
+    {% endfor %}
+    {% endif %}
+];
+ // Array para almacenar los vehículos que el cliente quiere comprar
+ var vehiclesToPurchase = [];
+const vehiclesToPurchaseMap = new Map();
+
+function getItemKey(item) {
+    // Si el objeto tiene un ID, lo usamos como clave.
+    if (item.id) {
+        return item.id;
+    }
+    // Si no hay ID, generamos una clave basada en los atributos relevantes (generalizable).
+    const keyAsString = encodeURIComponent(JSON.stringify(item)); // Escapamos el JSON para pasarlo seguro al onclick
+    return keyAsString;
+    // return JSON.stringify(item);  // O una función de hash basada en atributos.
+}
+
+
+// Función para llenar la tabla de vehículos a la venta
+function loadDataForPost() {
+    const dataBody = document.getElementById('rows-for-post');
+    dataBody.innerHTML = ''; // Limpiar tabla
+    rows.forEach((item, index) => {
+        let row = `<tr>`;
+        // Recorremos todas las propiedades del objeto 'item'
+        for (let key in item) {
+            if (item.hasOwnProperty(key)) {
+                row += `<td>${item[key]}</td>`;
+            }
+        }
+        // Agregamos el botón al final de la fila
+        row += `<td><button type="button" class="btn" onclick="viewDetails(${index})">Ver Detalles</button></td>`;
+        row += `</tr>`;
+        dataBody.innerHTML += row;
+    });
+
+}
+
+// Mostrar detalles del vehículo seleccionado
+function viewDetails(index) {
+    const item = rows[index];
+    for (let key in item) {
+        if (item.hasOwnProperty(key)) {
+            document.getElementById(key).value = item[key];
+        }
+    }
+    document.getElementById('{{viewer_data.stock_name}}').value = item.{{viewer_data.stock_name}};
+
+    document.getElementById('{{mount_field.name}}').value = '1'; // Limpiar campo de cantidad
+
+    document.getElementById('data-details').style.display = 'block';
+
+    // Almacenar el índice del vehículo para usar al agregar a la compra
+    document.getElementById('add-to-post-data').dataset.index = index;
+}
+
+// Agregar vehículo a la tabla de compra
+document.getElementById('add-to-post-data').addEventListener('click', function() {
+    const index = this.dataset.index;
+    const vehicle = rows[index];
+    const quantity = parseInt(document.getElementById('{{mount_field.name}}').value);
+
+    const errorMessage = document.getElementById('quantity-error');
+
+    // Validar la cantidad
+    if (isNaN(quantity) || quantity <= 0 || quantity > vehicle.{{viewer_data.stock_name}}) {
+        errorMessage.style.display = 'block'; // Mostrar mensaje de error
+        return;
+    } else {
+        errorMessage.style.display = 'none'; // Ocultar mensaje de error
+    }
+
+    vehiclesToPurchaseMap.set(getItemKey(vehicle), {
+                ...vehicle,
+                quantity: quantity
+            });
+        // Actualizar la tabla y campos ocultos
+        updatePurchaseTable();
+        updateHiddenFields();
+});
+
+// Actualizar tabla de compra
+function updatePurchaseTable() {
+    const purchaseTableBody = document.getElementById('purchase-list');
+    purchaseTableBody.innerHTML = ''; // Limpiar tabla
+    vehiclesToPurchaseMap.forEach((item, index) => {
+        let row = `<tr>`;
+        // Recorremos todas las propiedades del objeto 'item'
+        for (let key in item) {
+            if (item.hasOwnProperty(key)) {
+                row += `<td>${item[key]}</td>`;
+            }
+        }
+        // Agregamos el botón al final de la fila
+        row += `<td><button type="button" class="btn" onclick="removeFromPurchase('${index}')">Eliminar</button></td>`;
+        row += `</tr>`;
+        purchaseTableBody.innerHTML += row;
+    });
+}
+
+// Actualizar campos ocultos en el formulario
+function updateHiddenFields() {
+    const hiddenFieldsContainer = document.getElementById('hidden-data');
+    hiddenFieldsContainer.innerHTML = ''; // Limpiar campos ocultos        
+    // <input type="hidden" name="vehicles" value='${JSON.stringify(vehiclesToPurchase)}'>
+    vehiclesToPurchase = []
+    vehiclesToPurchaseMap.forEach(val=>{
+        vehiclesToPurchase.push(val)
+    })
+    const hiddenField = `
+        <input type="hidden" name="selecteds" value='${JSON.stringify(vehiclesToPurchase)}'>
+    `;
+    hiddenFieldsContainer.innerHTML += hiddenField;
+}
+
+// Eliminar vehículo de la compra
+function removeFromPurchase(index) {
+    // vehiclesToPurchase.splice(index, 1);
+    vehiclesToPurchaseMap.delete(index);
+    updatePurchaseTable();
+    updateHiddenFields();
+}
+// Inicializar la tabla de vehículos a la venta
+loadDataForPost();
+</script>
+{% endif %}
+{% endmacro %}

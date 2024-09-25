@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+    <h1 class="mt-5">Bienvenido, {{ current_user.username }}</h1>
+    <p>Este es el panel donde puede navegar a diferentes secciones usando el menú de la izquierda.
+        .</p>
+{% endblock %}
