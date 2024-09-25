@@ -1,0 +1,98 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "icomo"
+authors = [
+  { name = "Jonas Dehning", email = "jonas.dehning@ds.mpg.de" },
+]
+description = "This toolbox aims to simplify the construction of compartmental models and the inference of their parameters"
+readme = "README.md"
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dynamic = ["version"]
+requires-python = '>=3.8.1'
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "tqdm",
+    "pymc == 5.*",
+    "pytensor",
+    "numpyro",
+    "graphviz",
+    "diffrax",
+    "optax",
+    "jaxopt",
+]
+
+[project.optional-dependencies]
+dev = [
+"pytest >= 7.3.2",
+"pre-commit >= 3.3.2",
+"ruff >= 0.0.272",
+"ipykernel >= 6.0.0",
+"Sphinx >= 6.2.1",
+"sphinx-book-theme",
+"importlib-metadata >= 6.5.1",
+"myst-parser >= 0.19.2",
+"nbsphinx >= 0.9.2",
+"pandoc >= 2.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/Priesemann-Group/icomo"
+"Bug Tracker" = "https://github.com/Priesemann-Group/icomo/issues"
+Discussions = "https://github.com/Priesemann-Group/icomo/discussions"
+Changelog = "https://github.com/Priesemann-Group/icomo/releases"
+
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+
+
+[tool.ruff.lint]
+ignore = [
+    "E721", # ignore type comparisons
+    "E731", # ignore lambdas rewrites
+    "E741", # ignore ambiguous variable names, because of the example of the S,I,R model
+]
+select = [
+    "E", # pycodestyle
+    "F", # Pyflakes
+    "UP", # pyupgrade
+    "B", # flake8-bugbear
+    "I", # isort
+    "D",     # pydocstyle
+
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Ignore `F401` (unused imports) in all `__init__.py` files.
+"__init__.py" = ["F401"]
+# Ignore pydocstyle rules everywhere except for the `icomo` directory.
+"!icomo/**.py" = ["D"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+
+[tool.setuptools]
+packages = ["icomo"]
+
+[tool.setuptools_scm]
+write_to = "icomo/_version.py"
+
+
