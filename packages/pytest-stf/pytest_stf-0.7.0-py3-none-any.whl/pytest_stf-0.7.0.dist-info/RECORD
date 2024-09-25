@@ -1,0 +1,7 @@
+pytest_stf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_stf/plugin.py,sha256=r8mB3XclxafRLLjTdxqADU06-bgQguakwRUboJLdXxE,6694
+pytest_stf-0.7.0.dist-info/METADATA,sha256=SAJFvwTFgtDbf8kwWBuP00IL0W7nnj3bHr91JO4qASg,5421
+pytest_stf-0.7.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+pytest_stf-0.7.0.dist-info/entry_points.txt,sha256=sPJZzekl0gA-kXZGhlQ5XsQVdMwT2r_TpO4TlCLHCfo,35
+pytest_stf-0.7.0.dist-info/top_level.txt,sha256=3j4biRNL82JVsI1VzzT5wh2VheKzkfRJx6iMF0EPmWU,11
+pytest_stf-0.7.0.dist-info/RECORD,,
