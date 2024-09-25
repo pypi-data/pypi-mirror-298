@@ -1,0 +1,41 @@
+from JMeter import *
+import JMeter
+from jmetertools.core import base
+
+
+class GenJMeter:
+    jmeter_script = JMeter.get()
+    hash_tree = ET.SubElement(jmeter_script, 'hashTree')
+    test_plan = JMeterTestPlan()
+    test_plan = test_plan.get(hash_tree)
+    thread_group_tree = ET.SubElement(hash_tree, 'hashTree')
+    thread_group = JMeterThreadGroup().get(thread_group_tree)
+    test_hashtree = ET.SubElement(thread_group_tree, 'hashTree')
+    http_sampler = JMeterHttpSampler()
+    http_sampler.set_params({'test': 123})
+    http_sampler.set_files({'file': 'test.txt'})
+    http_sampler.get(test_hashtree)
+    response_assert = JMeterResponseAssert()
+    response_assert.set_assert_name('断言')
+    response_assert.set_assert_text(['test', '123'])
+    response_assert.set_test_type('2')
+    response_assert.get(test_hashtree)
+    result_collector_prop = JMeterViewResultsFullVisualizer()
+    result_collector_prop.get(test_hashtree)
+    summary_report = JMeterSummaryReport()
+    summary_report.get(test_hashtree)
+    stat_visualizer = JMeterStatVisualizer()
+    stat_visualizer.get(test_hashtree)
+    resp_time_graph = JMeterRespTimeGraphVisualizer()
+    resp_time_graph.get(test_hashtree)
+    header_manager = JMeterHeaderManager()
+    header_manager.set_headers({'Content-Type': 'application/json'})
+    header_manager.get(test_hashtree)
+    arguments = JMeterArguments()
+    arguments.set_arguments({'test': '1111'})
+    arguments.get(thread_group_tree)
+    bases = base.General()
+    tree = ET.ElementTree(jmeter_script)
+    bases.indent(jmeter_script)
+    with open('file.jmx', "wb") as f:
+        tree.write(f, encoding="utf-8", xml_declaration=True, method="xml")

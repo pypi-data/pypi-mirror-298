@@ -1,0 +1,65 @@
+# JMeter脚本生成工具
+一款Python生成JMeter脚本的工具。
+# 使用说明
+**初始化JMeter脚本**
+
+```python
+
+from jmetertools import JMeter
+
+jmeter_script = JMeter.get()
+```
+**创建hashtree**
+```python
+hash_tree = ET.SubElement(jmeter_script, 'hashTree')
+```
+**创建测试计划**
+
+```python
+from jmetertools.JMeter import JMeterTestPlan
+
+test_plan = JMeterTestPlan()
+test_plan = test_plan.get(hash_tree)
+```
+**添加线程组**
+
+```python
+from jmetertools.JMeter import JMeterThreadGroup
+
+thread_group_tree = ET.SubElement(hash_tree, 'hashTree')
+thread_group = JMeterThreadGroup().get(thread_group_tree)
+```
+**添加HTTP请求取样器**
+
+详细设置代码中有注释
+
+```python
+from jmetertools.JMeter import JMeterHttpSampler
+
+http_sampler = JMeterHttpSampler()
+http_sampler.set_method('post')
+http_sampler.set_protocol('http')
+http_sampler.set_domain('127.0.0.1')
+http_sampler.set_port('8080')
+http_sampler.set_contentEncoding('UTF-8')
+http_sampler.set_postBodyRaw({"test1": "test2"})
+http_sampler.set_params({'test': 123})
+http_sampler.set_files({'file': 'test.txt'})
+# test_hashtree为http请求取样器的父级
+http_sampler.get(test_hashtree)
+```
+**其他取样器、监听器、配置元件等，可以查看core/__JMeter** * **.py代码中的注释。**
+
+**运行测试脚本**
+
+修改config.yaml配置文件，将jmeter_home修改为本地JMeter的bin目录
+
+```python
+
+from jmetertools import JMeter
+
+# jmx_file：jmeter脚本
+# result_file：结果文件
+# result_dir：结果保存目录
+JMeter.run_jmeter_test(jmx_file, result_file, result_dir)
+```
