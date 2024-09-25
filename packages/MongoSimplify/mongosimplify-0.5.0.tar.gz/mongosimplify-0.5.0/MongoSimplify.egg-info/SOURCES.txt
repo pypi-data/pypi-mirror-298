@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+MongoSimplify.egg-info/PKG-INFO
+MongoSimplify.egg-info/SOURCES.txt
+MongoSimplify.egg-info/dependency_links.txt
+MongoSimplify.egg-info/requires.txt
+MongoSimplify.egg-info/top_level.txt
+models/__init__.py
+models/base.py
