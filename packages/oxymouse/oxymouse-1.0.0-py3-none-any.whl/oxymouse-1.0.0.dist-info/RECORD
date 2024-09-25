@@ -1,0 +1,14 @@
+oxymouse/__init__.py,sha256=pQHYTFp98buP4uxcZpeo6O17y_VLuD3cvXWOdTEg0Y0,63
+oxymouse/algorithms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oxymouse/algorithms/base.py,sha256=nj4Hb1qbfqqHIB1IgDi0khQoSJlW4B3WA8JMqHLZp1U,862
+oxymouse/algorithms/bezier_mouse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oxymouse/algorithms/bezier_mouse/bezier_mouse.py,sha256=XQGA1VXNZSgbpCTe7jzwlTSvfppcFRGad63GernXrEY,4345
+oxymouse/algorithms/gaussian_mouse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oxymouse/algorithms/gaussian_mouse/gaussian_mouse.py,sha256=U6YAcrbuuuEzAyr77I9TXMRDvH4fjeFi9MtRCAHD-5Q,4620
+oxymouse/algorithms/perlin_mouse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oxymouse/algorithms/perlin_mouse/perlin_mouse.py,sha256=VBwuTcN9EU-RcOtixkpRKsiPoepnL57WxvBlleU58QE,3171
+oxymouse/oxymouse.py,sha256=9TtL4ZmXJZcxHyEFUWDyu315-WjFyWPwiqd8TJJ8t5o,1278
+oxymouse-1.0.0.dist-info/LICENSE,sha256=fs8A2Wx-AZtp1JjKdl9gaPSy3uPK9vdYo4z-QSFhPpw,1064
+oxymouse-1.0.0.dist-info/METADATA,sha256=OHMTlQqvERfoMc0uEse0qH0ty3VdouXWA2f3fXgyauE,3501
+oxymouse-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+oxymouse-1.0.0.dist-info/RECORD,,
