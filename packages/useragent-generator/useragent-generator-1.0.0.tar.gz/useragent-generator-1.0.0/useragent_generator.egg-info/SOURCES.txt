@@ -1,0 +1,8 @@
+README.md
+setup.py
+useragent-generator/__init__.py
+useragent-generator/useragent-generator.py
+useragent_generator.egg-info/PKG-INFO
+useragent_generator.egg-info/SOURCES.txt
+useragent_generator.egg-info/dependency_links.txt
+useragent_generator.egg-info/top_level.txt
