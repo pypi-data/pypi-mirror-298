@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "thz"
+version = "0.0.0"
+description = "Placeholder for upcoming package"
+authors = ["Matteo Pompili"]
+readme = "README.md"
+packages = [{include = "src/thz"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
