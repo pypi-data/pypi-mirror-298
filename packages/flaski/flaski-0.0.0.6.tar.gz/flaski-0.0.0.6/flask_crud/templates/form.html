@@ -1,0 +1,42 @@
+<h2 class="mt-5">{{ template_data.title }}</h1>
+
+{% if template_data.form_data %}
+<form method="POST" class="mt-3">
+    {% for input in template_data.form_data.inputs %}
+    <div class="form-group">
+        <label for="{{ input.name }}">{{ input.label }}:</label>
+        {% if input.type == "select" %}
+            <select class="form-control" id="{{ input.name }}" name="{{input.name}}" {% if input.multiple %} multiple {% endif %} {% if input.required %} required {% endif %}>
+                {% if input.disable %} <option value="" disabled selected >{{ input.disable }}</option> {% endif %}
+                {% for option in input.options %}
+                <option value="{{ option }}" {% if input.disable==option %} disabled {% endif %} {% if option == input.value %} selected {% endif %}>{{ option }}</option>
+                {% endfor %}
+            </select>
+        {% else %}
+            <input type="{{ input.type }}" class="form-control" id="{{ input.name }}" name="{{ input.name }}"
+                   {% if input.required %} required {% endif %}
+                   {% if input.step %} step="{{ input.step }}" {% endif %}
+                   {% if input.value %} value="{{ input.value }}" {% endif %}
+                   {% if input.type == 'number' %} min="0" {% endif %}>
+        {% endif %}
+    </div>
+    {% endfor %}
+    {% set main_btn = template_data.form_data.main_btn %}
+    {% set cancel_btn = template_data.form_data.cancel_btn %}
+    {% set btns = template_data.form_data.btns %}
+    {% if main_btn.isSubmit %}
+    <button type="submit" class="{{main_btn.class}}">{{ main_btn.name_action }}</button>
+    {% endif %}
+    {% if cancel_btn %}
+    <a type="button" href="{{ url_for('manager', entity_name=template_data.form_data.entity_name) }}" class="{{cancel_btn.class}}">{{ cancel_btn.name_action }}</a>
+    {% endif %}
+    {% for btn in template_data.form_data.btns %}
+            {% if btn.isSimple %}
+            <a href="{{ url_for(btn.endpoint_name)}}" class="{{btn.class}}">{{btn.name_action}}</a>                        
+            {% endif %}
+            {% if btn.isSubmit %}
+            <button type="submit" class="{{btn.class}}">{{ btn.name_action }}</button>
+            {% endif %}
+    {% endfor %}
+</form>
+{% endif %}
