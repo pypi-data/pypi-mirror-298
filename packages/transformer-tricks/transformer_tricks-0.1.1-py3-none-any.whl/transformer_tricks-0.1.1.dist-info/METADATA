@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: transformer-tricks
+Version: 0.1.1
+Summary: A collection of tricks to speed up LLMs, see our transformer-tricks papers on arXiv
+Project-URL: Homepage, https://github.com/OpenMachine-ai/transformer-tricks
+Project-URL: Bug Tracker, https://github.com/OpenMachine-ai/transformer-tricks/issues
+Author-email: Open Machine <info@openmachine.ai>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: datasets>=2.19.2
+Requires-Dist: torch>=2.4.1
+Requires-Dist: tqdm>=4.64.1
+Requires-Dist: transformers>=4.41.2
+Description-Content-Type: text/markdown
+
+### Setup
+
+```
+pip3 install --quiet -r requirements.txt
+```
+
+To run llama and other LLMs that need an agreement (not SmolLM), you first have to type the following:
+```
+huggingface-cli login
+```
+Above will ask you for the hf_token, which is the same you use e.g. in colab
