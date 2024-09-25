@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: my-engineer
+Version: 0.1.8
+Summary: My Engineer is an AI coding assistant that is good at creating or editing multiple files at a time.
+Home-page: https://github.com/adrienlaurent/my-engineer
+Author: Adrien Laurent
+Author-email: adrien.laurent@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest==8.3.3
+Requires-Dist: anthropic==0.34.2
+Requires-Dist: astor==0.8.1
+Requires-Dist: PyYAML==6.0.2
+Requires-Dist: rich==13.8.1
+Requires-Dist: pydantic==2.9.2
+Requires-Dist: colorama==0.4.6
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: tiktoken==0.7.0
+
+My Engineer is an AI coding assistant that is good at creating or editing multiple files at a time.
