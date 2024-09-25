@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sbutils-remote
+Version: 0.0.2
+Summary: SBUtils but for remote servers
+Author: Stonebranch
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7
+Description-Content-Type: text/x-rst
+Requires-Dist: requests
+Requires-Dist: paramiko
+Requires-Dist: pyyaml
+Requires-Dist: prodict
+
