@@ -1,0 +1,6 @@
+[requires]
+benchmark/1.7.1
+[generators]
+cmake_find_package
+[options]
+benchmark:shared=False

@@ -1,0 +1,41 @@
+[settings]
+    arch=x86_64
+    build_type=Release
+    compiler=Visual Studio
+    compiler.cppstd=20
+    compiler.runtime=MD
+    compiler.version=17
+    os=Windows
+
+[requires]
+    gtest/1.Y.Z
+
+[options]
+
+
+[full_settings]
+    arch=x86_64
+    arch_build=x86_64
+    build_type=Release
+    compiler=Visual Studio
+    compiler.cppstd=20
+    compiler.runtime=MD
+    compiler.version=17
+    os=Windows
+    os_build=Windows
+
+[full_requires]
+    gtest/1.10.0:111c650f4a6662c61f14f93de06e27092d1db0ae
+
+[full_options]
+    gtest:build_gmock=True
+    gtest:disable_pthreads=False
+    gtest:hide_symbols=False
+    gtest:no_main=False
+    gtest:shared=False
+
+[recipe_hash]
+
+
+[env]
+

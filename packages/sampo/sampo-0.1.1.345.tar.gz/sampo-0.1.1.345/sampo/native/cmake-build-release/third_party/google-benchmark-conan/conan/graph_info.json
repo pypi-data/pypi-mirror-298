@@ -1,0 +1,22 @@
+{
+ "options": [
+  [
+   "benchmark:enable_exceptions",
+   "True"
+  ],
+  [
+   "benchmark:enable_lto",
+   "False"
+  ],
+  [
+   "benchmark:shared",
+   "False"
+  ]
+ ],
+ "root": {
+  "name": null,
+  "version": null,
+  "user": null,
+  "channel": null
+ }
+}
