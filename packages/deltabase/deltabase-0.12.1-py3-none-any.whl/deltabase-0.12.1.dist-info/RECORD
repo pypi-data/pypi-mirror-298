@@ -1,0 +1,9 @@
+deltabase/__init__.py,sha256=QmGfP-BD6XNDAVw6eafmjxDNL2svrgUU_vQ-3-tGcEQ,14740
+deltabase/magic.py,sha256=ea2AzzWKGKwfLVLflmU2AUCCqguEWUlbQf79ch9CJCI,3395
+deltabase/plugins/__init__.py,sha256=DtUaEClRkfMtaw4k0bUeTQVbvMOxYBW2uLa7uAjgNAs,273
+deltabase/plugins/base.py,sha256=f_jQnHiKu9e3SidlQxIQB3xMnGYtmIF9Fb_lgJp24yg,132
+deltabase/plugins/salesforce.py,sha256=jbkws0EzPi8WXGOj-FV0r4PELI-4Kg26Ci-fsGLAev4,2679
+deltabase-0.12.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+deltabase-0.12.1.dist-info/METADATA,sha256=lwfG9Ai8O17QGa79H7soKY7N-CrVWhAdH8X771IomqM,2205
+deltabase-0.12.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+deltabase-0.12.1.dist-info/RECORD,,
