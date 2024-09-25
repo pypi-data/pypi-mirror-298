@@ -1,0 +1,2 @@
+[console_scripts]
+shard_llms = shard_llms:main
