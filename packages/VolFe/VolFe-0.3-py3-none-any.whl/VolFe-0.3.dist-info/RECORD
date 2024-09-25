@@ -1,0 +1,12 @@
+VolFe/__init__.py,sha256=ijkkvP1Q_vsHolN-hagXpWviEnA98TUy3pzLOBV5084,731
+VolFe/batch_calculations.py,sha256=PBIssErAWu2KLvSk7wH8jjNgkAZ5m0EagSDDhKeS2ts,76783
+VolFe/calculations.py,sha256=CpHuAOkUuGKMaKrIqueQpFh4tf1CIeXpUKa0tzhwC5o,54459
+VolFe/differential_equations.py,sha256=yAj-Fx3z1Q-ZH6RjyfVRZu76YbxU0sJIWQISVinMmK8,8419576
+VolFe/equilibrium_equations.py,sha256=C0D1smkkm4_iNkwHX99rG7d93Fq2WgD9Vzs05l8Unno,162912
+VolFe/isotopes.py,sha256=Zt3EROmtbe9wsYWzgtRVNbhoIqgx1_TgW8eOGoX0xKw,25735
+VolFe/melt_gas.py,sha256=uFJQ5f-G-QqT3e8iKPMe-ZpRkZUpTW8KVgtTOmj7uMw,44484
+VolFe/model_dependent_variables.py,sha256=VNGIg9tDIKcz9sx30zUoUOw33P1luRhKW0jHD17m_bA,169197
+VolFe-0.3.dist-info/METADATA,sha256=UdNHCSSpO9y370JkKa2zeRjC_Ijn9CyalFEkLlGSlXM,2049
+VolFe-0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+VolFe-0.3.dist-info/top_level.txt,sha256=jBaRR_jLT-0tr4tyCHuzlkhWLBJZQO3yjjNNL7sjHiU,6
+VolFe-0.3.dist-info/RECORD,,
