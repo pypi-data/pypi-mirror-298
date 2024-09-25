@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+jsoncls/__init__.py
+jsoncls/jsoncls.py
+jsoncls.egg-info/PKG-INFO
+jsoncls.egg-info/SOURCES.txt
+jsoncls.egg-info/dependency_links.txt
+jsoncls.egg-info/requires.txt
+jsoncls.egg-info/top_level.txt
