@@ -1,0 +1,231 @@
+{% load i18n %}
+
+<style>
+</style>
+
+{% verbatim %}
+<script type="x-tmpl-mustache" id="paginationItemTemplate">
+    <div class="paginationItem">
+        {{#paginationItemIndexIsOne}}
+            <div class="recommender_paginationPageNumber recommender_previousPageIcon" style="visibility: hidden;" aria-hidden="true"></div>
+        {{/paginationItemIndexIsOne}}
+        {{^paginationItemIndexIsOne}}
+            <div class="recommender_paginationPageNumber recommender_previousPageIcon" role="button" aria-label="previous page" tabindex="0"></div>
+        {{/paginationItemIndexIsOne}}
+        {{#noMorePreviousPageIcon}}
+            <div class="recommender_paginationPageNumber morePageIcon morePreviousPageIcon" style="visibility: hidden; cursor: default;" aria-hidden="true">...</div>
+        {{/noMorePreviousPageIcon}}
+        {{^noMorePreviousPageIcon}}
+            <div class="recommender_paginationPageNumber morePageIcon morePreviousPageIcon" style="cursor: default;">...</div>
+        {{/noMorePreviousPageIcon}}
+
+        {{#pageNumberIndexes}}
+            {{#pageNumberIndexIsActive}}
+                <div class="recommender_paginationPageNumber recommender_highlightActivePageNumber" role="button" aria-label="current page: page {{pageNumberIndex}}" tabindex="0">{{pageNumberIndex}}</div>
+            {{/pageNumberIndexIsActive}}
+            {{^pageNumberIndexIsActive}}
+                {{#pageNumberIndexOutOfRange}}
+                    <div class="recommender_paginationPageNumber" style="visibility: hidden;" aria-hidden="true">{{pageNumberIndex}}</div>
+                {{/pageNumberIndexOutOfRange}}
+                {{^pageNumberIndexOutOfRange}}
+                    <div class="recommender_paginationPageNumber" role="button" aria-label="page {{pageNumberIndex}}" tabindex="0">{{pageNumberIndex}}</div>
+                {{/pageNumberIndexOutOfRange}}
+            {{/pageNumberIndexIsActive}}
+        {{/pageNumberIndexes}}
+
+        {{#noMoreNextPageIcon}}
+            <div class="recommender_paginationPageNumber morePageIcon moreNextPageIcon" style="visibility: hidden; cursor: default;" aria-hidden="true">...</div>
+        {{/noMoreNextPageIcon}}
+        {{^noMoreNextPageIcon}}
+            <div class="recommender_paginationPageNumber morePageIcon moreNextPageIcon" style="cursor: default;">...</div>
+        {{/noMoreNextPageIcon}}
+        {{#paginationItemIndexIsLast}}
+            <div class="recommender_paginationPageNumber recommender_nextPageIcon" style="visibility: hidden;" aria-hidden="true"></div>
+        {{/paginationItemIndexIsLast}}
+        {{^paginationItemIndexIsLast}}
+            <div class="recommender_paginationPageNumber recommender_nextPageIcon" role="button" aria-label="next page" tabindex="0"></div>
+        {{/paginationItemIndexIsLast}}
+    </div>
+</script>
+<script type="x-tmpl-mustache" id="recommenderResourceTemplate">
+    <div class="recommenderResource" role="region" aria-label="Resource: {{resourceTitle}}" tabindex="0">
+        <div class="recommenderVoteBox">
+            <div class="recommenderVoteArrowUp" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="recommenderVoteScore" aria-label="{{resourceVotes}} votes" tabindex="0">{{resourceVotes}}</div>
+            <div class="recommenderVoteArrowDown" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+        <div class="recommenderBlurb">
+            <div class="recommenderTitle"><a href="{{resourceUrl}}" target="_blank" tabindex="0" aria-label="{{resourceText}}">{{resourceTitle}}</a></div>
+            <div class="recommenderDescriptionText" aria-hidden="true">{{resourceText}}</div>
+            <div class="recommenderDescriptionImg" aria-hidden="true">{{resourceImg}}</div>
+            <div class="recommenderEntryId" aria-hidden="true">{{resourceId}}</div>
+            <div class="recommenderProblematicReason" aria-hidden="true"></div>
+            <div class="recommenderEndorseReason" aria-hidden="true"></div>
+        </div>
+        <div class="recommenderEndorse">
+            <div class="recommender_endorse"></div>
+        </div>
+        <div class="recommenderEdit"> 
+            <span class="ui-icon ui-icon-pencil recommender_resourceEditButton" role="button" aria-label="edit resource" tabindex="0"></span>
+            <span class="ui-icon ui-icon-flag recommender_flagResource" role="button" aria-label="flag resource" tabindex="0"></span>
+        </div>
+    </div>
+</script>
+<script type="x-tmpl-mustache" id="hideShowTemplate">
+    <div class="recommender_expanded" aria-hidden="true"><div class="recommender_upArrow"></div></div>
+    <div class="recommender_notExpanded" aria-hidden="true"><div class="recommender_downArrow"></div></div>
+</script>
+{% endverbatim %}
+
+<div class="recommenderBlock">
+    <div class="recommenderRecommendations">
+        <div class="recommenderContent">
+            <div class="recommender_hideShow" role='button' tabindex='0' data-step="1" aria-expanded='false' data-intro="{% trans 'This is a list of recommended resources. If you\'re stuck, curious, or want to learn more, please look around. If you find a useful resources, help your fellow classmates by adding it!' %}">
+                {% trans "Show related resources" %}
+                <div class="recommender_expanded" aria-hidden="true"><div class="recommender_upArrow"></div></div>
+                <div class="recommender_notExpanded" aria-hidden="true"><div class="recommender_downArrow"></div></div>
+            </div>
+            <div class='recommenderRowInner' style='display: none;' aria-hidden="true">
+                <div class="recommenderRow">
+                    <div class="noResourceIntro" style='display: none;' tabindex='0' aria-hidden="true">
+                        {% trans "This will be a list of resources your fellow students thought might be helpful, but it is empty currently. If you find useful resources, either on edx.org or elsewhere, please add it." %}
+                    </div>
+                    {% for elem in resources %}
+                        <div class="recommenderResource" role="region" aria-label="Resource: {{elem.title}}" tabindex="0">
+                            <div class="recommenderVoteBox">
+                                <div class="recommenderVoteArrowUp {{elem.vote_mode}}" role="button" aria-label="upvote" tabindex="0"></div>
+                                <div class="recommenderVoteScore {{elem.vote_mode}}" aria-label="{{elem.votes}} votes" tabindex="0">{{elem.votes}}</div>
+                                <div class="recommenderVoteArrowDown {{elem.vote_mode}}" role="button" aria-label="downvote" tabindex="0"></div>
+                            </div>
+                            <div class="recommenderBlurb">
+                                <div class="recommenderTitle"><a href="{{elem.url}}" target="_blank" tabindex="0" aria-label="{{elem.descriptionText}}">{{elem.title}}</a></div>
+                                <div class="recommenderDescriptionText" aria-hidden="true">{{elem.descriptionText}}</div>
+                                <div class="recommenderDescriptionImg" aria-hidden="true">{{elem.description}}</div>
+                                <div class="recommenderEntryId" aria-hidden="true">{{elem.id}}</div>
+                                <div class="recommenderProblematicReason" aria-hidden="true">{{elem.reason}}</div>
+                                <div class="recommenderEndorseReason" aria-hidden="true">{{elem.endorsed_reason}}</div>
+                            </div>
+                            <div class="recommenderEndorse">
+                                <div class="recommender_endorse {{elem.endorse_mode}}"></div>
+                            </div>
+                            <div class="recommenderEdit">
+                                <span class="ui-icon ui-icon-pencil recommender_resourceEditButton" role="button" aria-label="edit resource" tabindex="0"></span>
+                                <span class="ui-icon ui-icon-flag recommender_flagResource {{elem.flag_mode}}" role="button" aria-label="flag resource" tabindex="0"></span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="recommender_resourceAddButton" role="button" tabindex="0">{% trans "Add new resource &gt;&gt;" %}</div>
+                <div class="recommender_resourceExportButton" role="button" tabindex="0">{% trans "Download resources" %}</div>
+                <div class="recommender_resourceImportButton" role="button" style='display: none;' tabindex="0" aria-hidden="true">{% trans "Upload resources" %}</div>
+                <div class="recommender_clearFix"></div>
+                <div class="recommender_resourceRankingForRemovalButton" style='display: none;' aria-hidden="true">{% trans "mode" %}</div>
+                <div class="recommender_clearFix"></div>
+                <div class="recommender_pagination"></div>
+                <div class="recommenderDescription">
+                    <div class="recommender_descriptionImg">
+                        <div class='recommender_showEndorsedReasons' style='display: none;' aria-hidden="true"></div>
+                        <div class="recommender_clearFix"></div>
+                        <div class='recommender_showProblematicReasons' style='display: none;' aria-hidden="true"></div>
+                        <div class="recommender_clearFix"></div>
+                        <div class='recommender_descriptionText'>{% trans "This is a list of resources your fellow students thought might be helpful. If you find another useful resource, either on edx.org or elsewhere, please add it. If you can improve the description or preview of a resource, please do so as well. If you find a resource helpful, upvote it. If it&rsquo;s not so helpful, downvote it. If it has issues (illegal material, incorrect, etc.), please flag it and let us know the reason." %} </div>
+                        <img class="recommender_previewingImg" style='display: none;' src="" aria-hidden="true"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='recommenderModify' style='display: none;' tabindex="0" role='region' aria-hidden="true">
+            <div class='recommenderModifyTitleContainer'>
+                <div class='recommender_backToViewButton' role='button' tabindex="0" aria-label='{% trans "cancel and go back to resource list" %}'>{% trans "&lt; Related resources" %}</div>
+                <div class='recommenderModifyTitle'></div>
+            </div>
+            <div class="recommender_importResourcePage" style='display: none;' aria-hidden="true">
+                <div class="recommender_modifyPageTitle"></div>
+                <form method="post" class="importResourceForm">
+                    {% trans "Resources (in JSON format):" %} <input type="file" name="file" aria-label='{% trans "Provide a file of resource list in JSON format" %}' class='importResourceFile'/><br/>
+                    <input type="button" value="{% trans 'Upload resources' %}" class="recommender_importResourceSubmit" disabled/>
+                </form>
+            </div>
+            <div class="recommender_removePage" style='display: none;' aria-hidden="true">
+                <div class="recommender_modifyPageTitle"></div>
+                <label>{% trans "Reason" %}&nbsp;
+                    <input type="text"
+                        class="recommender_removeReason" 
+                        name="removeRationale"
+                        placeholder="{% trans 'Reason for why this resource should be removed' %}"/>
+                </label>
+                <input type="button" value="Remove resource" class="recommender_removeResource"/>
+            </div>
+            <div class="recommender_endorsePage" style='display: none;' aria-hidden="true">
+                <div class="recommender_modifyPageTitle"></div>
+                <label>{% trans "Reason" %}&nbsp;
+                    <input type="text"
+                        class="recommender_endorseReason" 
+                        name="endorseRationale"
+                        placeholder="{% trans 'Reason for why this resource should be endorsed' %}"/>
+                </label>
+                <input type="button" value="Endorse resource" class="recommender_endorseResource"/>
+            </div>
+            <div class="recommender_flagResourcePage" style='display: none;' aria-hidden="true">
+                <div class="recommender_modifyPageTitle"></div>
+                <label>{% trans "Reason" %}&nbsp;
+                    <input type="text"
+                        class="recommender_flagReason" 
+                        name="flagRationale"
+                        placeholder="{% trans 'Reason for why this resource should be flagged' %}"/>
+                </label>
+                <input type="button" value="Flag resource" class="recommender_flagReasonSubmit"/>
+            </div>
+            <div class="recommender_editResourcePage" style='display: none;' aria-hidden="true">
+                <div class="recommender_modifyPageTitle"></div>
+                <label>{% trans "Title" %}&nbsp;<span class='recommender_redTxt' aria-hidden="true"></span>
+                    <textarea
+                        aria-label='{% trans "Provide a resource title, required" %}'
+                        class="recommender_editTitle"
+                        placeholder="{% trans 'Provide a meaningful title so other students know whether this is useful to them' %}"></textarea>
+                </label>
+                <label>{% trans "Location" %}&nbsp;<span class='recommender_redTxt' aria-hidden="true"></span>
+                    <input type="text"
+                        aria-label='{% trans "Provide a resource location in url, required" %}'
+                        class="recommender_editUrl"
+                        placeholder="http://en.wikipedia.org/wiki/edX"/>
+                </label>
+                <label>{% trans "Description" %}&nbsp;
+                    <textarea
+                        aria-label='Provide a resource description'
+                        class="recommender_editDescriptionText"
+                        placeholder="{% trans 'Provide a meaningful description so other students know whether this is useful to them' %}"></textarea>
+                </label>
+                <form method="post" class="editResourceForm">
+                    {% trans "Preview screenshot:" %} <input type="file" name="file" aria-label='{% trans "Provide a resource screenshot" %}' class='editResourceScreenshot'/><br/>
+                    <input type="button" value="{% trans 'Save change' %}" class="recommender_editSubmit" disabled/>
+                </form>
+            </div>
+            <div class="recommender_addResourcePage" style='display: none;' aria-hidden="true">
+                <div class="recommender_modifyPageTitle"></div>
+                <label>{% trans "Title" %}&nbsp;<span class='recommender_redTxt' aria-hidden="true"></span>
+                    <textarea
+                        aria-label='{% trans "Provide a resource title, required" %}'
+                        class="recommender_inTitle" 
+                        placeholder="{% trans 'Provide a meaningful title so other students know whether this is useful to them' %}"></textarea>
+                </label>
+                <label>Location&nbsp;<span class='recommender_redTxt' aria-hidden="true"></span>
+                    <input type="text"
+                        aria-label='{% trans "Provide a resource location in url, required" %}'
+                        class="recommender_inUrl"
+                        placeholder="http://en.wikipedia.org/wiki/edX"/>
+                </label>
+                <label>{% trans "Description" %}&nbsp;
+                    <textarea
+                        aria-label='{% trans "Provide a resource description" %}'
+                        class="recommender_inDescriptionText" 
+                        placeholder="{% trans 'Provide a meaningful description so other students know whether this is useful to them' %}"></textarea>
+                </label>
+                <form method="post" class="addResourceForm">
+                    Preview screenshot: <input type="file" name="file" aria-label='{% trans "Provide a file of resource screenshot" %}' class='addResourceScreenshot'/><br/>
+                    <input type="button" value="{% trans 'Add resource' %}" class="recommender_addSubmit" disabled/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
