@@ -1,0 +1,2 @@
+[console_scripts]
+postman_github_sync = postman_github_sync.main:main
