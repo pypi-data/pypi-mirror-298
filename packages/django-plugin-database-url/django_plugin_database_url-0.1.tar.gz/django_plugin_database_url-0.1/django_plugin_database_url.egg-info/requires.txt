@@ -1,0 +1,8 @@
+django
+djp
+dj-database-url
+
+[test]
+pytest
+pytest-django
+pytest-env

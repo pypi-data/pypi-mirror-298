@@ -1,0 +1,2 @@
+[djp]
+django_plugin_database_url = django_plugin_database_url
