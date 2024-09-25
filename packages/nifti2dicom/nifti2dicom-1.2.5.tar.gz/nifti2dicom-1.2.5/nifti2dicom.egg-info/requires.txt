@@ -1,0 +1,7 @@
+nibabel
+numpy
+emoji
+rich
+pydicom<3.0
+highdicom
+pyfiglet
