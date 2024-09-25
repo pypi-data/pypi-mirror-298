@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: locobuzz_python_orm
+Version: 1.1.2
+Summary: Python database orm functions for Locobuzz,  common code that is required in all projects
+Home-page: https://github.com/LocoBuzz-Solutions-Pvt-Ltd/locobuzz_database_orm
+Author: Atharva Udavant
+Author-email: atharva.udavant@locobuzz.com
+Keywords: locobuzz,python,database
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8, <=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: Cython
+Requires-Dist: sqlalchemy
+Requires-Dist: pyodbc
+Requires-Dist: pymysql
+Requires-Dist: psycopg2
+Requires-Dist: aioodbc
+Requires-Dist: aiomysql
+Requires-Dist: asyncpg
+Provides-Extra: dataframe
+Requires-Dist: pandas; extra == "dataframe"
+
+# Locobuzz Python ORM
+```markdown
+# Database Connection Manager
+
+A Python package for managing database connections in both synchronous and asynchronous contexts using SQLAlchemy. The package provides two main classes: `SyncDatabase` for synchronous operations and `AsyncDatabase` for asynchronous operations with PostgreSQL.
+
+## Features
+
+- Singleton pattern to ensure a single instance of the database connection.
+- Support for multiple databases with connection pooling.
+- Asynchronous support for improved performance in `AsyncDatabase`.
+- Easy switching between different databases.
+- Metadata initialization for table management.
+
+## Installation
+
+To install the package, you can use pip:
+
+```bash
+pip install locobuzz_python_orm  # Replace with the actual package name
+```
+
+## Usage
+
+### Synchronous Database Management
+
+To use the `SyncDatabase`, follow these steps:
+
+```python
+from database_helper.database.sync_db import SyncDatabase
+
+# Initialize the SyncDatabase
+sync_db = SyncDatabase(connection_string='postgresql://user:password@localhost/dbname')
+
+# Use the SyncDatabase context manager
+with sync_db:
+    # Execute a query
+    results = sync_db.execute_query("SELECT * FROM your_table;")
+    print(results)
+```
+
+### Asynchronous Database Management
+
+For the `AsyncDatabase`, you'll use `async` and `await` keywords:
+
+```python
+import asyncio
+from database_helper.database.async_db import AsyncDatabase
+
+async def main():
+    # Initialize the AsyncDatabase
+    async_db = AsyncDatabase(connection_string='postgresql://user:password@localhost/dbname')
+
+    async with async_db:
+        # Execute a query asynchronously
+        results = await async_db.execute_query("SELECT * FROM your_table;")
+        print(results)
+
+# Run the async main function
+asyncio.run(main())
+```
+
+### Switching Databases
+
+Both classes support switching databases on the fly:
+
+```python
+# For SyncDatabase
+sync_db.switch_database('new_dbname')
+
+# For AsyncDatabase
+await async_db.switch_database('new_dbname')
+```
+
+### Initializing Tables
+
+You can initialize tables metadata using:
+
+```python
+# For SyncDatabase
+sync_db.initialize_tables(['your_table1', 'your_table2'])
+
+# For AsyncDatabase
+await async_db.initialize_tables(['your_table1', 'your_table2'])
+```
+
+## Error Handling
+
+Both classes include basic error handling. If an error occurs during database operations, exceptions will be raised. You can implement additional logging as needed.
+
+## Dependencies
+
+- SQLAlchemy
+- Database connectors such as `pyodbc`, `pymysql`, `psycopg2`, `aioodbc`, `aiomysql`, `asyncpg` 
+
+## Author
+
+Atharva Udavant
+
+[GitHub Profile](https://github.com/Atharva17062002)  
+[Email](mailto:17.atharva@gmail.com)
