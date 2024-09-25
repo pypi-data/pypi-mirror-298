@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "timeseriesmetrics"
+version = "0.1.6"
+description = "This package is a set of metrics commonly used to analyze the performance of predictive models for time series, such as MAPE, Theil's U, ARV, ID (Index of Disagreement), WPOCID."
+license = "MIT"
+authors = ["danttis <juniordante01@gmail.com>"]
+readme = "README.md"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development",
+    "Topic :: Scientific/Engineering",
+    "Programming Language :: Python :: 3.10",
+
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.3"
+numpy = "^1.26.4"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
