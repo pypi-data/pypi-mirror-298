@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+imagecompress_svd/__init__.py
+imagecompress_svd/compression.py
+imagecompress_svd.egg-info/PKG-INFO
+imagecompress_svd.egg-info/SOURCES.txt
+imagecompress_svd.egg-info/dependency_links.txt
+imagecompress_svd.egg-info/requires.txt
+imagecompress_svd.egg-info/top_level.txt
