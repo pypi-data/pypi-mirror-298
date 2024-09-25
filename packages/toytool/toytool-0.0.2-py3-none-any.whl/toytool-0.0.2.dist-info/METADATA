@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: toytool
+Version: 0.0.2
+Summary: toy-tool
+Author: HandsomeBoy
+Author-email: putaoisapig@163.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+Requires-Dist: opencv-python
+Requires-Dist: opencv-python-headless
+
+This is a python library, which supports reading a picture in Pillow or opencv manner.
+
+
