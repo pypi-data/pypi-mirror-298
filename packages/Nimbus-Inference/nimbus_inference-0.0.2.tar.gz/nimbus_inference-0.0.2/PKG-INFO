@@ -1,0 +1,134 @@
+Metadata-Version: 2.3
+Name: Nimbus-Inference
+Version: 0.0.2
+Summary: A model for classification of cells into marker positive / negative
+Project-URL: Documentation, https://Nimbus-Inference.readthedocs.io/
+Project-URL: Source, https://github.com/angelolab/Nimbus-Inference
+Project-URL: Home-page, https://github.com/angelolab/Nimbus-Inference
+Author: Lorenz Rumberger, Noah F. Greenwald
+Maintainer-email: Lorenz Rumberger <jlrumber@stanford.edu>, "Noah F. Greenwald" <nfgreen@stanford.edu>, Sricharan Reddy Varra <srivarra@stanford.edu>
+License: MIT License
+        
+        Copyright (c) 2024, Lorenz Rumberger
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Requires-Python: >=3.9
+Requires-Dist: alpineer
+Requires-Dist: datasets
+Requires-Dist: huggingface-hub
+Requires-Dist: ipython
+Requires-Dist: ipywidgets
+Requires-Dist: joblib
+Requires-Dist: natsort
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pandas
+Requires-Dist: pathlib
+Requires-Dist: pyometiff
+Requires-Dist: scikit-image
+Requires-Dist: session-info
+Requires-Dist: torch>=2.2.0
+Requires-Dist: tqdm
+Requires-Dist: zarr
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: twine>=4.0.2; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: docutils!=0.18.*,!=0.19.*,>=0.8; extra == 'doc'
+Requires-Dist: ipykernel; extra == 'doc'
+Requires-Dist: ipython; extra == 'doc'
+Requires-Dist: pandas; extra == 'doc'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'doc'
+Requires-Dist: sphinx-copybutton; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme>1; extra == 'doc'
+Requires-Dist: sphinx>=5; extra == 'doc'
+Requires-Dist: sphinxext-opengraph; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+Requires-Dist: coveralls[toml]; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest-socket; extra == 'test'
+Description-Content-Type: text/markdown
+
+<p align="center">
+<img src="https://github.com/angelolab/Nimbus-Inference/blob/main/assets/nimbus_logo.png">
+</p>
+
+![CI](https://github.com/angelolab/Nimbus-Inference/actions/workflows/ci.yaml/badge.svg)
+[![Documentation Status](https://readthedocs.org/projects/nimbus-inference/badge/?version=latest)](https://nimbus-inference.readthedocs.io/en/latest/?badge=latest)
+
+
+The Nimbus repo contains code for inference of a machine learning model that classifies cells into marker positive/negative for arbitrary protein markers and different imaging platforms.
+
+## Installation instructions
+
+Clone the repository
+
+`git clone https://github.com/angelolab/Nimbus-Inference`
+
+
+Make a conda environment for Nimbus and activate it
+
+`conda create -n Nimbus python==3.10`
+
+`conda activate Nimbus`
+
+Install CUDA libraries if you have a NVIDIA GPU available 
+
+`conda install -c conda-forge cudatoolkit=11.8 cudnn=8.2.0`
+
+Install the package and all depedencies in the conda environment
+
+`python -m pip install -e Nimbus-Inference`
+
+
+Navigate to the example notebooks and start jupyter
+
+`cd Nimbus-Inference/templates`
+
+`jupyter notebook`
+
+
+## Release notes
+
+See the [changelog][changelog].
+
+## Contact
+
+If you found a bug, please use the [issue tracker][issue-tracker].
+For questions and help requests, you can also reach out in the [issue tracker][issue-tracker].
+
+## Citation
+
+```bash
+@article{rum2024nimbus,
+  title={Automated classification of cellular expression in multiplexed imaging data with Nimbus},
+  author={Rumberger, J. Lorenz and Greenwald, Noah F. and Ranek, Jolene S. and Boonrat, Potchara and Walker, Cameron and Franzen, Jannik and Varra, Sricharan Reddy and Kong, Alex and Sowers, Cameron and Liu, Candace C. and Averbukh, Inna and Piyadasa, Hadeesha and Vanguri, Rami and Nederlof, Iris and Wang, Xuefei Julie and Van Valen, David and Kok, Marleen and Hollman, Travis J. and Kainmueller, Dagmar and Angelo, Michael},
+  journal={bioRxiv},
+  pages={2024--05},
+  year={2024},
+  publisher={Cold Spring Harbor Laboratory}
+}
+```
+[issue-tracker]: https://github.com/angelolab/Nimbus-Inference/issues
+[changelog]: https://Nimbus-Inference.readthedocs.io/latest/changelog.html
+[link-docs]: https://Nimbus-Inference.readthedocs.io
+[link-api]: https://Nimbus-Inference.readthedocs.io/latest/api.html
