@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: qyout
+Version: 0.1
+Summary: Qt Youtube downloader GUI using yt-dlp and pyqt6 (say "cute")
+Home-page: https://github.com/guitouu31/qyout.git
+Author: Guitouu31
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: pyqt6
+Requires-Dist: yt-dlp
+
