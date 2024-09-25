@@ -1,0 +1,17 @@
+taichi>=1.7.1
+numpy<2.0
+scipy
+polars>=1.8.0
+matplotlib
+polyscope
+tqdm
+
+[all]
+k3d
+pyfftw
+
+[k3d]
+k3d
+
+[pyfftw]
+pyfftw
