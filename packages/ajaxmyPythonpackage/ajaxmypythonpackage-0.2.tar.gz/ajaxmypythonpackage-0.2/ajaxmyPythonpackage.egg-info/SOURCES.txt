@@ -1,0 +1,9 @@
+setup.py
+ajaxmyPythonpackage/__init__.py
+ajaxmyPythonpackage/main.py
+ajaxmyPythonpackage/module1.py
+ajaxmyPythonpackage/module2.py
+ajaxmyPythonpackage.egg-info/PKG-INFO
+ajaxmyPythonpackage.egg-info/SOURCES.txt
+ajaxmyPythonpackage.egg-info/dependency_links.txt
+ajaxmyPythonpackage.egg-info/top_level.txt
