@@ -1,0 +1,4 @@
+hspylib
+hspylib-datasource
+hspylib-clitt
+sqlparse>=0.5.1
