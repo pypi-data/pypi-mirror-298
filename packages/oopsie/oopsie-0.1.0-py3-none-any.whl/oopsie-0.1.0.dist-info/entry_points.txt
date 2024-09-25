@@ -1,0 +1,2 @@
+[console_scripts]
+oopsie = oopsie._cli:main

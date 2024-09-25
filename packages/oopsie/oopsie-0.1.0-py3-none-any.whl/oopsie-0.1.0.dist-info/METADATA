@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: oopsie
+Version: 0.1.0
+Summary: Suggest corrections for failed CLI commands
+Author-email: Cal Jacobson <cj81499@users.noreply.github.com>
+Maintainer-email: Cal Jacobson <cj81499@users.noreply.github.com>
+Requires-Python: >=3.10
+Requires-Dist: click>=8.1.7
+Requires-Dist: inquirer>=3.4.0
+Description-Content-Type: text/markdown
+
+# oopsie
+
+Suggest corrections for failed CLI commands.
+
+Inspired by [thef**k](https://github.com/nvbn/thefuck).
