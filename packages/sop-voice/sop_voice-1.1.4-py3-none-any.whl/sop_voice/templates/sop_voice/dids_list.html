@@ -1,0 +1,41 @@
+{% load helpers %}
+{% load static %}
+
+{% include 'generic/object_list.html' %}
+
+<!--
+    _______________________________
+    load my scripts for quicksearch
+-->
+<script src="{% static 'my_quicksearch.js' %}"></script>
+<script>
+/*
+ * just to normalize the string
+ */
+function lower_case(str)
+{
+    return str.toLowerCase();
+}
+ 
+document.addEventListener("DOMContentLoaded", function()
+{
+    const qs_target = document.querySelector('div.row.mb-3#results');
+    const table_target = document.querySelector('div.htmx-container.table-responsive:not([id])');
+
+    if (qs_target) {
+        qs_target.innerHTML = '<div class="col-auto d-print-none">\
+            <div class="input-group input-group-flat me-2 quicksearch"  hx-disinherit="hx-select hx-sw">\
+            <input type="search" name="q" class="form-control" id="quick-search" placeholder="Quick search numbers" />\
+            </div></div>'
+    }
+    if (table_target) {
+        table_target.id = 'DIDs';
+    }
+
+    const quicksearch = document.getElementById('quick-search');
+    quicksearch.addEventListener('input', function ()
+    {
+        init_voice_quick_search(quicksearch);
+    });
+});
+</script>
