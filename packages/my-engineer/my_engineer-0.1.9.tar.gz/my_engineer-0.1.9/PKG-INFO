@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: my-engineer
+Version: 0.1.9
+Summary: My Engineer is an AI coding assistant that is good at creating or editing multiple files at a time.
+Home-page: https://github.com/adrienlaurent/my-engineer
+Author: Adrien Laurent
+Author-email: adrien.laurent@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest==8.3.3
+Requires-Dist: anthropic==0.34.2
+Requires-Dist: astor==0.8.1
+Requires-Dist: PyYAML==6.0.2
+Requires-Dist: rich==13.8.1
+Requires-Dist: pydantic==2.9.2
+Requires-Dist: colorama==0.4.6
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: tiktoken==0.7.0
+
+My Engineer is an AI coding assistant that is good at creating or editing multiple files at a time.
+
+
+
+## Installation
+```
+python -m venv .venv
+source .venv/bin/activate
+pip install my-engineer
+```
+
+## Execution
+
+```
+# must run at the root of your application
+my-engineer
+```
+
+## How to use
+
+- my-engineer will open a blank vscode file, enter your instructions ("write a complete next.js application" or "add comments to all files in my codebase"). **Processing will start when you close the file** (⌘-W).
+
+
+# Things to know:
+
+- my-engineer uses Sonnet 3.5 to generate the code change instructions, but uses Haiku for everything else
+- Anthropic API requests are cached, so continuing a conversation is 10% of the cost of starting a new one
+- You have 5 minutes to continue a conversation before the Anthropic cache expires
+- A log of the interaction with the llm is created in the folder runs/ 
+- The file file_summaries.yaml is only update with new files, if you make significant changes to many files, delete it so it gets re-created
+
+# Recommended addition to .gitignore
+
+```
+runs/
+file_summaries.yaml
+```

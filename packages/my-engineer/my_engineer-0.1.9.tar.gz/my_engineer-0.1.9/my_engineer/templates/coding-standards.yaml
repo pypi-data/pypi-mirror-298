@@ -1,0 +1,58 @@
+coding_standards:
+  general_principles:
+    modularity:
+      description: Design components and features as independent, reusable modules
+      importance: High
+    encapsulation:
+      description: Hide implementation details and expose clean, simple interfaces
+      importance: High
+    testability:
+      description: Ensure code is easily testable, especially for critical functionality
+      importance: High
+    extensibility:
+      description: Allow for easy addition or modification of functionality
+      importance: Medium
+    code_structure:
+      description: Prefer many small, focused modules or classes over large, monolithic ones
+      importance: High
+
+  code_organization:
+    folder_structure:
+      - Organize modules and components into logical directories (e.g., core, features, utilities)
+      - Use index files to manage exports for better clarity
+      - Place unit tests in a tests directory within the respective module or component
+      - Place integration tests in a central tests/integration folder
+    naming_conventions:
+      - Use PascalCase for class or module names
+      - Use camelCase for functions, methods, and variables
+      - Use UPPER_CASE for constants
+      - Use kebab-case or snake_case for file names depending on language conventions
+    file_structure:
+      - Keep files focused on a single responsibility or purpose
+      - Break down large modules or classes into smaller, more manageable parts
+      - Prefer functional or modular design over tightly coupled structures
+
+  error_handling:
+    principles:
+      - Implement global error handling mechanisms (e.g., try-catch or language-specific error constructs)
+      - Use error handling blocks for async or I/O operations
+      - Provide meaningful error messages for both developers and users
+
+  configuration_management:
+    principles:
+      - Use environment variables or configuration files for environment-specific settings
+      - Keep sensitive data out of version control
+      - Implement a centralized configuration management approach
+
+  performance_optimization:
+    principles:
+      - Use caching, memoization, or other techniques to reduce redundant operations
+      - Implement lazy loading or code splitting to optimize large applications
+      - Optimize assets and external dependencies for improved performance
+
+  maintainability:
+    principles:
+      - Keep the codebase clean, simple, and easy to navigate
+      - Refactor regularly to improve structure and readability
+      - Document complex logic or significant decisions
+      - Follow the DRY (Don't Repeat Yourself) principle
