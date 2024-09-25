@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: use-random-quote
+Version: 0.1.0
+Summary: 
+Author: mahfooz.iiitian
+Author-email: mahfooz.iiitian@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: random-quote-malam (>=0.1.1,<0.2.0)
+Description-Content-Type: text/markdown
+
+

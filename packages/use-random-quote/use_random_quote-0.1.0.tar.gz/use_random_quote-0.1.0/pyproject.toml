@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "use-random-quote"
+version = "0.1.0"
+description = ""
+authors = ["mahfooz.iiitian <mahfooz.iiitian@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+random-quote-malam = "^0.1.1"
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
