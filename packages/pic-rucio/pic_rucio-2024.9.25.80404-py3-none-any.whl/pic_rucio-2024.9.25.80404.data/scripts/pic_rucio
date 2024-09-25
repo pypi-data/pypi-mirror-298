@@ -1,0 +1,67 @@
+#!python
+from __future__ import annotations
+
+import argparse
+
+from transfer_agents import config
+from transfer_agents.rucio_functions import RucioData
+
+
+def def_parser():
+    """Define the arguments of the program"""
+
+    parser = argparse.ArgumentParser(description="PIC Rucio client")
+
+    parser.add_argument(
+        "-c",
+        "--config",
+        help="A string with yaml configuration file path",
+        required=False,
+        default=config.get_config_file("sample.yaml"),
+    )
+    parser.add_argument(
+        "-e",
+        "--elastic",
+        help="A string with json template file path",
+        required=False,
+        default=config.get_config_file("es_body.json"),
+    )
+    parser.add_argument(
+        "-f",
+        "--file",
+        help="A string with transfer list CSV file path",
+        required=False,
+    )
+
+    return parser
+
+
+def main(args):
+
+    rucio_config = config.RucioClientConfig(args.config)
+
+    # Create instance of Rucio client class
+    rucio_client = RucioData(
+        config=rucio_config,
+        es_body=args.elastic,
+        csv_file=args.file,
+    )
+
+    rucio_client.check_scope()
+
+    # Process files replicated in ElasticSearch
+    # TODO: Remove this try/except. Errors should be handled at a lower level
+    try:
+        rucio_client.es.process_files(rucio_client.config.rucio_scope)
+    except Exception as e:
+        raise Exception(f"Error when processing files in ElasticSearch: {e}")
+
+    # Replicate files using Rucio
+    rucio_client.replication_files_rucio()
+
+
+if __name__ == "__main__":
+
+    parser = def_parser()
+    args = parser.parse_args()
+    main(args)

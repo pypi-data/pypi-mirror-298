@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: pic_rucio
+Version: 2024.9.25.80404
+Summary: PIC rucio client transfer package
+Home-page: https://gitlab.pic.es/rucio/rucio-client
+Author: Agustin Bruzzese
+Author-email: bruzzese@pic.es
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: coloredlogs==15.0.1
+Requires-Dist: elasticsearch<8
+Requires-Dist: gfal2-python==1.12.2
+Requires-Dist: psycopg2-binary
+Requires-Dist: PyYAML==6.0
+Requires-Dist: rucio==1.30.5
+Requires-Dist: rucio-clients==1.30.2
+Requires-Dist: tqdm
+Requires-Dist: wheel
+Requires-Dist: pandas
+Requires-Dist: setuptools
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-mock; extra == "dev"
+
+# Pic rucio client
+
+## Introduction
+
+The PIC Rucio client is a python package developed with the purpose
+of automating the transfers from an origin storage endpoint (e.g. Magic observatory)
+to a destination one (e.g. PIC).
+
+The package contains the `pic_rucio` executable that can be run
+as a cron to discover new files, trigger their transfer and update their status.
+
+## Requirements
+
+* python >= 3.6
+* python-gfal2: **WARNING** The installation of this package through pip may not be straightforward
+* rucio_clients
+
+## Installation
+
+From the root folder, in an environment with python and pip installed.
+
+`pip install .`
+
+
+## Documentation 
+
+### Configuration
+
+TBD
+
+### Workflow
+
+* File discovery through DB or CSV (WIP)
+* ES status check
+* Metadata construction
+* Origin RSE replica registry
+* Destination RSE replication rule creation
+* Outdated replica rule creation to purge replicas in the origin RSE (To be fixed)
+
+### Magic implementation
+
+The implementation of the PIC Rucio Client for Magic contains some 
+tricks that are crucial for its correct fuctioning
+
+* **Configuration**
+  * lfn2pfn algorithm: `identity`, the pfn is the lfn
+  * schema: allow additional characters (`/`, `+`, etc) in the DID name to allow storing paths in the `name`
+  * scope: `pnfs`
+* **RSEs**:
+  * Origin: `ORM-NON-DET`, non-deterministic GridFTP RSE at Roque de los Muchachos Observatory.
+  * Destination: `MAGIC-PRD`, deterministic GridFTP RSE pointing to `door05.pic.es` at PIC, with `prefix=//`
+* **DIDs** 
+  * Files: the name contains the full path to PIC storage without 
+  the leading `pnfs` added because it is the scope, e.g.: `pic.es/data/magic/Data/SuperStar/v1/4C+27.50/2024_09_12/20240912_05116784_S_4C+27.50-W0.40+180.root`. `{scope}/{name}` is the 
+  real path at PIC.
+  * Datasets:
+    * Run (e.g. 5116790), should contain the files in a run. All the ones I inspected are empty.
+    * Outdated replication dataset (e.g. pnfs:outdated_replication_dataset-3cef6bc5-1d8c-493d-aaad-2868b18a2f5e) The intention of this was to trigger the deletion of the replicas at ORM after successfully transferred, but this mechanism doesn't seem to be working.
+  * Containers:
+    * %Y_%M_%d: observation date, empty
+    * Source name: empty
+
+Check the [Magic example in the development environment](docker/test_env/README.md#magic-like-test)
+
+## Development
+
+### installation
+
+The same but will be installed in editable mode and some additional
+packages needed for development will be included.
+
+`pip install -e .[dev]`
+
+### pre-commit hooks
+
+Some pre-commit hooks are included to enforce best practices. See
+the [pre-commit documentation](https://pre-commit.com/)
+
+Install hooks: `pre-commit install`
+Run hooks manually: `pre-commit run --all-files`

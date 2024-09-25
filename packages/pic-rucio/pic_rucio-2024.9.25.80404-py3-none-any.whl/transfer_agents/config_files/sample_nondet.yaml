@@ -1,0 +1,144 @@
+Rucio:
+  account: root
+  destrse: XRD3
+  scope: test
+  sourcerse: XRD1
+  delsource: true
+
+psql:
+  db: rucio
+  host: dev-client-db-1
+  passwd: rucio
+  port: '5432'
+  user: rucio
+
+elasticsearch:
+  additional_search: true
+  enabled: true
+  host: dev-elasticsearch-1
+  mock_run: false
+  passwd: null
+  port: 9200
+  query_search: SELECT name FROM element where status = '{status}' and ( name like '%.root' or  name like '%.raw.gz' );
+  query_insert: "INSERT INTO status_history(element_id, timestamp, status) VALUES ('{}','{}','{}');"
+  query_update: "update element set status = '{}' where id = '{}';"
+  additional_query: "select id from element where name = '{0}' ;"
+  schema: http
+  user: null
+  status_changes: {
+          1: {'pql_id': '20_to_transfer', 'es_id':  'transfer-submitted', 'next_status': '25_transferring'},
+          2: {'pql_id': '25_transferring', 'es_id':  'transfer-done', 'next_status': '40_registered'}
+      }
+
+Data Sections:
+  Test:
+    options:
+      basedir: /
+      filename: test_${folder_id}_${attr1}\.root
+      transfer: True
+      query: SELECT name FROM element where status='20_to_transfer' and ( name like '%.root' or  name like '%.raw.gz' );
+      extra_metadata: False
+      rule_name: test_dataset
+      priority: 2
+      sourcedir: folder${folder_id}
+      destdir: folder${attr1}
+    reblocks:
+      folder_id: (?P<folder_id>\d+)
+      attr1:  (?P<attr1>[a-zA-Z]+)
+    organization:
+      dataset_1: dataset_${attr1}
+      container_1: test_dataset
+  RAW:
+    options:
+      # options may reference either predefined blocks or regex basic pieces
+      basedir:        /
+      # For example 20240912_M1_05116789.018_I_1LHAASOJ0007-W0.40+090.root
+      filename:       ${year}${month}${day}_${telnum}_${runsubrun}_${typechar}_${projectext}
+      sourcedir:      ${year}_${month}_${day}
+      destdir:        pic.es/data/magic/Data/RAW/M1/${sourcename}/${year}_${month}_${day}
+      datatype:       RAW
+      transfer:       True    
+      query:          SELECT name FROM element where status='20_to_transfer' and ( name like '%.root' or  name like '%.raw.gz' );
+      extra_metadata: False
+      priority:       2
+      rule_name:      RAW_M1
+    reblocks:
+      # just predefined pieces without regex group names (and little extra regex syntax)
+      obsdate:        (?P<obsdate>((${year}[_-]?${month}[_-]?${day})(_${tapevolume})?))
+      runsubrun:      (?P<runsubrun>${run}\.${subrun})
+      sequence:       (?P<sequence>${run}(\.${subrun})?)
+      project:        (?P<project>${sourcename}${wobble}?$)
+      projectext:     (?P<projectext>${sourcename}${wobble}?\.${extension}$)
+    regex: 
+      # basic regular expressions blocks, no need substitutions
+      tapevolume:     (?P<tapevolume>\d)
+      day:            (?P<day>\d{2})
+      month:          (?P<month>\d{2})
+      year:           (?P<year>\d{4})
+      telnum:         (?P<telnum>M[1-2])
+      run:            (?P<run>\d{8})
+      subrun:         (?P<subrun>\d{3})
+      typechar:       (?P<typechar>[BDPCLJNI])
+      sourcename:     (?P<sourcename>.*?)
+      wobble:         (?P<wobble>(-W\d\.\d{2}[+-]\d{3})|(-O[+-]\d\.\d[+-]W\d\.\d{2}))
+      extension:      (?P<extension>raw\.gz|root)
+    metadata:
+      datatype:        RAW
+      night:           ${year}_${month}_${day}
+      run_number:      ${run}
+      telnum:          M1
+    extra_metadata:
+      query_1:          select name from element where id = (select parent_id from element where name = '%s');
+      query_2:          select value from tag_element where element_id = (select id from element where name = '%s') and name = 'extra_metadata';
+    organization:
+      dataset_1:      ${run}
+      container_1:    ${year}_${month}_${day}
+      container_2:    ${sourcename}
+      container_3:    RAW_M1
+
+
+logging:
+  version: 1
+  disable_existing_loggers: true
+  formatters:
+    default:
+      datefmt: '%Y-%m-%d %H:%M:%S'
+      format: '%(asctime)s - %(filename)s:%(lineno)d - %(levelname)s - %(message)s'
+  handlers:
+    console:
+      class: logging.StreamHandler
+      formatter: default
+      level: DEBUG
+      stream: ext://sys.stdout
+    file:
+      class: logging.handlers.RotatingFileHandler
+      filename: './transfer.log'
+      level: DEBUG
+      maxBytes: 10000000
+      backupCount: 5
+  loggers:
+    rucio_functions:
+      handlers:
+      - console
+      - file
+      level: DEBUG
+    metadata:
+      handlers:
+      - console
+      - file
+      level: DEBUG
+    list_file:
+      handlers:
+      - console
+      - file
+      level: DEBUG
+    es_query:
+      handlers:
+      - console
+      - file
+      level: DEBUG
+    gfal2:
+      handlers:
+      - console
+      - file
+      level: DEBUG

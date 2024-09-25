@@ -1,0 +1,7 @@
+Rucio: &RUCIO
+    options: &OPTIONS
+        # options may reference either predefined blocks or regex basic pieces
+        account: root
+        scope: pnfs
+        destrse: MAGIC-PRD
+        sourcerse: ORM-NON-DET

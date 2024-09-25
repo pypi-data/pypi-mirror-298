@@ -1,0 +1,54 @@
+## REGULAR EXPRESSIONS
+Template: &TEMPLATE
+    options: &OPTIONS
+        # options may reference either predefined blocks or regex basic pieces
+        basedir:        
+        filename:       ${year}${month}${day}_${telnum}_${runsubrun}_${typechar}_${projectext}
+        sourcedir:      ${year}_${month}_${day}
+        destdir:        pic.es/data/magic/Data/${datatype}/M1/${sourcename}/${year}_${month}_${day}
+        datatype:       RAW
+        transfer:       False    
+        query:          SELECT name FROM element where status='20_to_transfer' and ( name like '%.root' or  name like '%.raw.gz' ) and project_id = ${project_id};
+        extra_metadata: False
+    reblocks: &REBLOCKS
+        # just predefined pieces without regex group names (and little extra regex syntax)
+        obsdate:        (?P<obsdate>((${year}[_-]?${month}[_-]?${day})(_${tapevolume})?))
+        runsubrun:      (?P<runsubrun>${run}\.${subrun})
+        sequence:       (?P<sequence>${run}(\.${subrun})?)
+        project:        (?P<project>${sourcename}${wobble}?$)
+        projectext:     (?P<projectext>${sourcename}${wobble}?\.${extension}$)
+    regex: &REGEX
+        # basic regular expressions blocks, no need substitutions
+        tapevolume:     (?P<tapevolume>\d)
+        day:            (?P<day>\d{2})
+        month:          (?P<month>\d{2})
+        year:           (?P<year>\d{4})
+        telnum:         (?P<telnum>M[1-2])
+        run:            (?P<run>\d{8})
+        subrun:         (?P<subrun>\d{3})
+        typechar:       (?P<typechar>[BDPCLNIYSQJ])
+        sourcename:     (?P<sourcename>.*?)
+        wobble:         (?P<wobble>(-W\d\.\d{2}[+-]\d{3})|(-O[+-]\d\.\d[+-]W\d\.\d{2}))
+        extension:      (?P<extension>raw\.gz|root)
+    metadata: &METADATA
+        datatype:        ${sourcename}
+        night:           ${year}_${month}_${day}
+        run_number:      ${run}
+        telescope:       M1
+    extra_metadata: &EXTRA
+        query_1:          select name from element where id = (select parent_id from element where name = '%s');
+        query_2:          select value from tag_element where element_id = (select id from element where name = '%s') and name = 'extra_metadata';
+    organitzation: &ORGANIZATION
+        dataset_1:      ${run}
+        container_1:    ${year}_${month}_${day}
+        container_2:    ${sourcename}
+        container_3:    RAW_M1
+
+
+Data Sections:
+
+    TEST:
+        <<: *TEMPLATE
+        options:
+            basedir: /
+            transfer: True
