@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pet-torch
+Version: 0.0.0
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: ase
+Requires-Dist: pathos
+Requires-Dist: jupyter
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+Requires-Dist: torch-geometric
+Requires-Dist: matscipy
+
