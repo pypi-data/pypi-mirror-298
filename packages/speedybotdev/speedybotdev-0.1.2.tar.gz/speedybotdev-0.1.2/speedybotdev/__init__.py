@@ -1,0 +1,1 @@
+from .speedybot import SpeedyBot
