@@ -1,0 +1,11 @@
+segmentation_lib/__init__.py,sha256=8GHIzifZvRMRKy1Un94Wd3xGpwJLTpZttzsBy8Ws6jQ,549
+segmentation_lib/example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+segmentation_lib/example/example_converter.py,sha256=KEPyJNOHwSpQQIgCx39Jz8aeehVfUesgEPcsH2tTW2E,601
+segmentation_lib/example/example_segmentation.py,sha256=DZOCvR-Tf4fM2Td2THAqiLr0GXL8J7VC9mUUCErK6qY,4208
+segmentation_lib/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+segmentation_lib/src/converter.py,sha256=-tsmCNOApDBi2T1r1rUo34-zUZK2nYj9dy1qY6CwKXQ,15328
+segmentation_lib/src/segmentation.py,sha256=V8ABZxUt-nC-byIUorHaMG7tBjozNXIlla0SgyzQAg8,115010
+segmentation_lib-0.0.2.dist-info/METADATA,sha256=SaKbdl4MNfwEdbjURmRBApyTAvh76sonjS8jVviJrLg,927
+segmentation_lib-0.0.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+segmentation_lib-0.0.2.dist-info/top_level.txt,sha256=_wDVWNw6Pb5ezzBTApz3IRu3qbSMsIKvKaYDucqtc4E,17
+segmentation_lib-0.0.2.dist-info/RECORD,,
