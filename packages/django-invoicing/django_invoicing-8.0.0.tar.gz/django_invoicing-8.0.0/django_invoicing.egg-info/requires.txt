@@ -1,0 +1,6 @@
+django>=4.2
+django-countries
+django-model-utils
+django-money
+django-localflavor
+django-internationalflavor
