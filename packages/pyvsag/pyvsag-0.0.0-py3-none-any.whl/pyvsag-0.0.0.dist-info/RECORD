@@ -1,0 +1,10 @@
+pyvsag/__init__.py,sha256=mOoVHOasIzP62MQfbE8GX8UIFOKGcuMeKCGU6dhjHQE,160
+pyvsag/_pyvsag.cpython-310-x86_64-linux-gnu.so,sha256=snazwF27oLwBFjmZ-n23VxhDf56NX5BOulUFOs24NiQ,208760
+pyvsag/libmkl_core.so,sha256=w_ghusFurumiSYr_TD3x2qF_Y2UvtnwDXI096qE1HmA,75534865
+pyvsag/libmkl_intel_lp64.so,sha256=ooMUQOUET0h6qByY_6kBG-NOx7mhjmTTf6vwX-g9wug,13568145
+pyvsag/libmkl_sequential.so,sha256=VKWfcWLC1-tapAlIi6qfP_H8_cwLiw0J5vnIzx1to0o,29874849
+pyvsag/libvsag.so,sha256=OEcBupxqq3f8hyDxtaf7I_xY1Y6NADn0mxATe9XMW-Q,11899728
+pyvsag-0.0.0.dist-info/METADATA,sha256=EF4v9HSykd-EqK7K3tnB0XCf4T9GmG8wUXCoPRSpn9Q,812
+pyvsag-0.0.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+pyvsag-0.0.0.dist-info/top_level.txt,sha256=mM3KGpGtVXllavkTAS7KRDONl99TnZ2pnIntKHAaYLE,7
+pyvsag-0.0.0.dist-info/RECORD,,
