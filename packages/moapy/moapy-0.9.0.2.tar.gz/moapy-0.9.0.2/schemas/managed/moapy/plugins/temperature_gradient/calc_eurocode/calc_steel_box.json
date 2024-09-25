@@ -1,0 +1,294 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "moapy",
+    "description": "Schema for moapy",
+    "version": "0.1.0"
+  },
+  "servers": [
+    {
+      "url": "https://moa.rpm.kr-dv-midasit.com/backend/python-executor/"
+    },
+    {
+      "url": "https://moa.rpm.kr-st-midasit.com/backend/function-executor/python-execute/"
+    }
+  ],
+  "paths": {
+    "/execute?functionId=moapy/plugins/temperature_gradient/calc_eurocode/calc_steel_box": {
+      "post": {
+        "summary": "Calc Steel Box",
+        "operationId": "calc steel box",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/calc_steel_box"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResultStressThermal"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "GirderMaterials": {
+        "properties": {
+          "E": {
+            "type": "number",
+            "title": "E",
+            "description": "Elastic Modulus",
+            "default": 210000.0,
+            "unit": "stress"
+          },
+          "thermal": {
+            "type": "number",
+            "title": "Thermal",
+            "description": "thermal expansion",
+            "default": 1.2e-05,
+            "unit": "celsius"
+          }
+        },
+        "type": "object",
+        "title": "GirderMaterials",
+        "description": "GirderMaterials"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "ResultStressThermal": {
+        "properties": {
+          "heating": {
+            "description": "Heating",
+            "$ref": "#/components/schemas/ResultThermal"
+          },
+          "cooling": {
+            "description": "Cooling",
+            "$ref": "#/components/schemas/ResultThermal"
+          }
+        },
+        "type": "object",
+        "title": "ResultStressThermal"
+      },
+      "ResultThermal": {
+        "properties": {
+          "y": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array",
+            "title": "Y",
+            "description": "Y"
+          },
+          "z": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array",
+            "title": "Z",
+            "description": "Z"
+          },
+          "temp": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array",
+            "title": "Temp",
+            "description": "Temperature"
+          },
+          "stress": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array",
+            "title": "Stress",
+            "description": "Stress"
+          }
+        },
+        "type": "object",
+        "title": "ResultThermal",
+        "description": "Result Thermal"
+      },
+      "SteelBoxSection": {
+        "properties": {
+          "top": {
+            "type": "number",
+            "title": "Top",
+            "description": "Top",
+            "default": 0.0,
+            "unit": "length"
+          },
+          "bot": {
+            "type": "number",
+            "title": "Bot",
+            "description": "Bottom",
+            "default": 100.0,
+            "unit": "length"
+          },
+          "b1": {
+            "type": "number",
+            "title": "B1",
+            "description": "B1",
+            "default": 150.0,
+            "unit": "length"
+          },
+          "b2": {
+            "type": "number",
+            "title": "B2",
+            "description": "B2",
+            "default": 900.0,
+            "unit": "length"
+          },
+          "b3": {
+            "type": "number",
+            "title": "B3",
+            "description": "B3",
+            "default": 150.0,
+            "unit": "length"
+          },
+          "b4": {
+            "type": "number",
+            "title": "B4",
+            "description": "B4",
+            "default": 150.0,
+            "unit": "length"
+          },
+          "b5": {
+            "type": "number",
+            "title": "B5",
+            "description": "B5",
+            "default": 700.0,
+            "unit": "length"
+          },
+          "b6": {
+            "type": "number",
+            "title": "B6",
+            "description": "B6",
+            "default": 150.0,
+            "unit": "length"
+          },
+          "h": {
+            "type": "number",
+            "title": "H",
+            "description": "H",
+            "default": 1000.0,
+            "unit": "length"
+          },
+          "t1": {
+            "type": "number",
+            "title": "T1",
+            "description": "t1",
+            "default": 25.0,
+            "unit": "length"
+          },
+          "t2": {
+            "type": "number",
+            "title": "T2",
+            "description": "t2",
+            "default": 25.0,
+            "unit": "length"
+          },
+          "tw1": {
+            "type": "number",
+            "title": "Tw1",
+            "description": "tw1",
+            "default": 30.0,
+            "unit": "length"
+          },
+          "tw2": {
+            "type": "number",
+            "title": "Tw2",
+            "description": "tw2",
+            "default": 30.0,
+            "unit": "length"
+          }
+        },
+        "type": "object",
+        "title": "SteelBoxSection",
+        "dataclassname": "moapy.plugins.temperature_gradient.calc_eurocode.SteelBoxSection"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "calc_steel_box": {
+        "properties": {
+          "sect": {
+            "$ref": "#/components/schemas/SteelBoxSection"
+          },
+          "matl": {
+            "$ref": "#/components/schemas/GirderMaterials"
+          }
+        },
+        "type": "object",
+        "required": [
+          "sect",
+          "matl"
+        ],
+        "title": "calc steel box"
+      }
+    }
+  }
+}
