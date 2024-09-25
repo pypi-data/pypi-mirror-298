@@ -1,0 +1,9 @@
+conda_rocker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conda_rocker/conda_extension.py,sha256=0JBmu_N88JOhZl243ocGgkTLhTKrQxd_E4fRUpAhXcc,1115
+conda_rocker/templates/conda_snippet.Dockerfile,sha256=VNGK0rAljAWRVQgHENYCQFARj5jO3GddcTRcyUDWmCg,139
+conda_rocker/templates/conda_user_snippet.Dockerfile,sha256=3qiEYyAsaN7AfmGrSAjIl2RqQMHyFW1aNvlUpetdW_s,452
+conda_rocker-0.0.2.dist-info/METADATA,sha256=e0dvGtanclFjQUjT2eXglhDoQJsv-f7gFkqR9fK61dY,2841
+conda_rocker-0.0.2.dist-info/WHEEL,sha256=fl6v0VwpzfGBVsGtkAkhILUlJxROXbA3HvRL6Fe3140,105
+conda_rocker-0.0.2.dist-info/entry_points.txt,sha256=WqEueAFgynj68gNIYjKvaKwwVAeQnWLctbKnvn-8sYE,82
+conda_rocker-0.0.2.dist-info/licenses/LICENSE,sha256=BELp7Z_UlGhotfEDzDkWiCw7MtJ12i7B3rhIjebfk0k,1075
+conda_rocker-0.0.2.dist-info/RECORD,,
