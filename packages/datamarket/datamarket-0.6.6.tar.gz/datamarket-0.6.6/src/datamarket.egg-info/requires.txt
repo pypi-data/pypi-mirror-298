@@ -1,0 +1,10 @@
+sqlalchemy
+clickhouse-driver
+requests[socks]
+retry
+stem
+pydrive2
+undetected-chromedriver
+pendulum
+boto3
+inflection
