@@ -1,0 +1,8 @@
+tkxterm/__init__.py,sha256=b4tIoiNM_Q2vzmwRk6_Zc_Ork1U411xGvrAfYw4fSAY,82
+tkxterm/_parser.py,sha256=3_b99Y6MGn5P-HyfeF80Op4OQTOmlT1C2tkeIyIM7LM,1016
+tkxterm/command.py,sha256=L4I-mzxCX7vk6mxJo8kcYnIU7QKPNPkLXdOgRfcCIW8,1428
+tkxterm/tkxterm.py,sha256=MgB94O3SvyxJ3JrLFh-JXLv9MQX4LzrlcSx66MKsZUM,12523
+tkxterm-1.0.3.dist-info/METADATA,sha256=LRzMzOM41PD9E-mzgq9QY0fy3-PPGJop3ZkX0Te8oRw,45133
+tkxterm-1.0.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+tkxterm-1.0.3.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+tkxterm-1.0.3.dist-info/RECORD,,
