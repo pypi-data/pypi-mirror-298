@@ -1,0 +1,13 @@
+LICENSE.txt
+setup.py
+malayalam_morpheme_splitter/__init__.py
+malayalam_morpheme_splitter/db_interface.py
+malayalam_morpheme_splitter.egg-info/PKG-INFO
+malayalam_morpheme_splitter.egg-info/SOURCES.txt
+malayalam_morpheme_splitter.egg-info/dependency_links.txt
+malayalam_morpheme_splitter.egg-info/entry_points.txt
+malayalam_morpheme_splitter.egg-info/top_level.txt
+malayalam_morpheme_splitter/data/__init__.py
+malayalam_morpheme_splitter/data/malayalam_words.py
+malayalam_morpheme_splitter/data/morph_examples.py
+tests/test_db_interface.py
