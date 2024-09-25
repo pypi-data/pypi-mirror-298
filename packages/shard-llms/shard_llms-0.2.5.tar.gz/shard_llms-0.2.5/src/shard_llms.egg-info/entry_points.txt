@@ -1,0 +1,2 @@
+[console_scripts]
+shard_model = shard_llms.src.sharding_model:main
