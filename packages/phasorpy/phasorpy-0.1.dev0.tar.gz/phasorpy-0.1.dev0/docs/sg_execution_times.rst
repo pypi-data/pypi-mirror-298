@@ -1,0 +1,67 @@
+
+:orphan:
+
+.. _sphx_glr_sg_execution_times:
+
+
+Computation times
+=================
+**00:16.424** total execution time for 11 files **from all galleries**:
+
+.. container::
+
+  .. raw:: html
+
+    <style scoped>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script type="text/javascript" class="init">
+    $(document).ready( function () {
+        $('table.sg-datatable').DataTable({order: [[1, 'desc']]});
+    } );
+    </script>
+
+  .. list-table::
+   :header-rows: 1
+   :class: table table-striped sg-datatable
+
+   * - Example
+     - Time
+     - Mem (MB)
+   * - :ref:`sphx_glr_tutorials_benchmarks_phasorpy_phasor_from_signal.py` (``..\tutorials\benchmarks\phasorpy_phasor_from_signal.py``)
+     - 00:07.989
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_api_phasorpy_components.py` (``..\tutorials\api\phasorpy_components.py``)
+     - 00:02.505
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_phasorpy_introduction.py` (``..\tutorials\phasorpy_introduction.py``)
+     - 00:02.487
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_phasorpy_lfd_workshop.py` (``..\tutorials\phasorpy_lfd_workshop.py``)
+     - 00:01.370
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_api_phasorpy_fret.py` (``..\tutorials\api\phasorpy_fret.py``)
+     - 00:00.877
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_api_phasorpy_phasorplot.py` (``..\tutorials\api\phasorpy_phasorplot.py``)
+     - 00:00.371
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_api_phasorpy_cursors.py` (``..\tutorials\api\phasorpy_cursors.py``)
+     - 00:00.324
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_api_phasorpy_phasor_from_lifetime.py` (``..\tutorials\api\phasorpy_phasor_from_lifetime.py``)
+     - 00:00.236
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_api_phasorpy_lifetime_to_signal.py` (``..\tutorials\api\phasorpy_lifetime_to_signal.py``)
+     - 00:00.135
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_api_phasorpy_pca.py` (``..\tutorials\api\phasorpy_pca.py``)
+     - 00:00.102
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_misc_phasorpy_logo.py` (``..\tutorials\misc\phasorpy_logo.py``)
+     - 00:00.028
+     - 0.0
