@@ -1,0 +1,10 @@
+spdx3_validate/__init__.py,sha256=padK4o0BFqq61kxAA1qQ0jYr2SuhA2mf90B3AaRkmJA,37
+spdx3_validate/__main__.py,sha256=fTIyU7HFhZBDCAv0pLrBg5x9-2_jQ7d-Nj5L9Esi2xI,122
+spdx3_validate/main.py,sha256=h293bjQSRSf1yYj3Ttu-xtMEetLabLiON_Ltk8HaCN4,9630
+spdx3_validate/spdx_versions.py,sha256=_2JLm5JZ2y3cdWW_SqomydynNRWlpTcieA3DJbqQUvA,901
+spdx3_validate/version.py,sha256=vu_LccLlmoyQR0cVgtNnwxsHCW5OZPM8ynpF_MLqapI,18
+spdx3_validate-0.0.4.dist-info/METADATA,sha256=eyUIkvZmz_ZyVGdDInw7wqDLqtWNpYgClL4JE5bz3s4,2363
+spdx3_validate-0.0.4.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+spdx3_validate-0.0.4.dist-info/entry_points.txt,sha256=oIl18qHgF2iJv2lq12f9LKPrTwHG4vkAXoBvnEmOITY,55
+spdx3_validate-0.0.4.dist-info/licenses/LICENSE,sha256=npUT32k_O0lU4UHJ8ZZ2_Ti0GR1oSbNGRzID9lSWkxs,1068
+spdx3_validate-0.0.4.dist-info/RECORD,,
