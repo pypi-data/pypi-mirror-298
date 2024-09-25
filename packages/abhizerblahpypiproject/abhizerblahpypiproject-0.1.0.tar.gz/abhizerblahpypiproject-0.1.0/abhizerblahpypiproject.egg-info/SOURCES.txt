@@ -1,0 +1,7 @@
+README.md
+hello.py
+pyproject.toml
+abhizerblahpypiproject.egg-info/PKG-INFO
+abhizerblahpypiproject.egg-info/SOURCES.txt
+abhizerblahpypiproject.egg-info/dependency_links.txt
+abhizerblahpypiproject.egg-info/top_level.txt
