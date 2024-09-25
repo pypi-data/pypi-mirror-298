@@ -1,0 +1,10 @@
+re_extensions/__init__.py,sha256=R7Ex9d2dH964rrNMRshx75LaqMqXfFNfx_qcVpszoNw,417
+re_extensions/__version__.py,sha256=qJWbLJggiV_o3xGO1kdXj9b_A1r4_77BnmbGop9IH8o,84
+re_extensions/_typing.py,sha256=6lVoBA7r2l5M7QRbJsc2KhUxmO7yYrzRcZVsI5NYmRw,695
+re_extensions/core.py,sha256=aW9CN_pw1Vy-SK1QMX8ZqviSu0TM2Yf5p0jECfamvDo,32769
+re_extensions/smart.py,sha256=HbMqVaAZJFlwseXC7hjCrr2GCD0YsP9t0VXVO5pmetQ,703
+re_extensions-0.0.5.dist-info/LICENSE,sha256=rlOb8JrIQs-p03IkqjgLlXbFGIwdABeHAaRckd4b8N8,1495
+re_extensions-0.0.5.dist-info/METADATA,sha256=OTbinN-ZTDVFijv3gKSYtjR1vmvbhtwbqw773xrQb0s,2062
+re_extensions-0.0.5.dist-info/WHEEL,sha256=fS9sRbCBHs7VFcwJLnLXN1MZRR0_TVTxvXKzOnaSFs8,110
+re_extensions-0.0.5.dist-info/top_level.txt,sha256=Jt_g70y9x45sjzegXBeitqXnZms8yaLW386MHwuHsN4,14
+re_extensions-0.0.5.dist-info/RECORD,,
