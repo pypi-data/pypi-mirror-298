@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: open_magvit2
+Version: 1.1
+Summary: Packaging of Open-source replication of Google's MAGVIT-v2 tokenizer
+Home-page: https://github.com/vinyesm/Open-MAGVIT2
+Download-URL: https://github.com/vinyesm/Open-MAGVIT2/archive/refs/tags/v1.0.tar.gz
+Author: vinyesm
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lightning==2.2.0
+Requires-Dist: jsonargparse[signatures]>=4.27.7
+Requires-Dist: tensorboard
+Requires-Dist: tensorboardx
+Requires-Dist: albumentations==1.4.4
+Requires-Dist: omegaconf
+Requires-Dist: einops
+Requires-Dist: requests
+Requires-Dist: transformers==4.37.2
+Requires-Dist: lpips
+
+## OPEN-MAGVIT2 package
+
+This is a fork of [OPEN-MAGVIT2: An Open-source Project Toward Democratizing Auto-Regressive Visual Generation](https://github.com/TencentARC/Open-MAGVIT2) in order to make it a package for easy usage.
+
+## Install
+```
+pip install open-magvit2
+```
+
+## Example of usage
+
+![reconstruction-examples](reconstruction-examples.png)
+
+### 1. Download the checkpoint from huggingface
+```bash
+wget https://huggingface.co/TencentARC/Open-MAGVIT2/resolve/main/imagenet_256_L.ckpt
+```
+### 2. Load the model
+```python
+import pkg_resources
+import torch
+from omegaconf import OmegaConf
+from open_magvit2.reconstruct import load_vqgan_new
+
+DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+config_path = pkg_resources.resource_filename('open_magvit2', 'configs/gpu/imagenet_lfqgan_256_L.yaml')
+config = OmegaConf.load(config_path)
+model = load_vqgan_new(config, "imagenet_256_L.ckpt").to(DEVICE)
+```
+### 3. Encode an image
+```python
+from PIL import Image
+import torchvision.transforms as transforms
+
+image = Image.open('1165.jpg')
+image_tensor = transforms.ToTensor()(image)
+batch = image_tensor.unsqueeze(0)
+with torch.no_grad():
+  quant, emb_loss, tokens, loss_breakdown = model.encode(image_tensor)
+```
+### 4. Decode
+- decode from embeddings
+```python
+from open_magvit2.reconstruct import custom_to_pil
+
+with torch.no_grad():
+    tensor = model.decode(quant)
+
+reconstructed_image = custom_to_pil(tensor[0])
+```
+- decode from tokens (i.e. ids)
+```python
+from einops import rearrange
+from open_magvit2.reconstruct import custom_to_pil
+
+x = rearrange(tokens, "(b s) -> b s", b=1)
+q = model.quantize.get_codebook_entry(x, (1, 16, 16, 18), order='')
+
+with torch.no_grad():
+    tensor2 = model.decode(q)
+
+reconstructed_image2 = custom_to_pil(tensor2[0])
+```
+### Example colab
+Check this notebook [open-MAGVIT2-package-inference-example.ipynb](https://colab.research.google.com/drive/1lpqnekYG__GgSTmW2y7w4FZEZms54Sc5?usp=sharing)
+
+
