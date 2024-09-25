@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+drugdetector/__init__.py
+drugdetector/detect.py
+drugdetector/utils.py
+drugdetector.egg-info/PKG-INFO
+drugdetector.egg-info/SOURCES.txt
+drugdetector.egg-info/dependency_links.txt
+drugdetector.egg-info/requires.txt
+drugdetector.egg-info/top_level.txt
+tests/test_drugdetector.py
