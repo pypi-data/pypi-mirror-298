@@ -1,0 +1,11 @@
+easyflowutils/__init__.py,sha256=qHODg2xSKt4EH4r5HhtlQ9Aulgw4VXtNyKT3GOcEWfg,94
+easyflowutils/fireberry_client.py,sha256=Sc2okCLTxNprhwDeTRFXevV4nxF_rVne_fYZ-MWJJTQ,2477
+easyflowutils/logger_utils.py,sha256=BSN6krzxL8TJdYXm7EyFx5iSMBBNf0XbwJ-33xQVZyY,470
+easyflowutils/main.py,sha256=735z6OQjIeKKeBB-WxuScNW2nKYhykhgIhAGKH1d_D8,53
+upgrade/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upgrade/update_package.py,sha256=esvZ4TXHRCiySWLJ2b6WJUcsg4ZGSueXDw-d89oS--Q,2056
+easyflowutils-0.2.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easyflowutils-0.2.1.dist-info/METADATA,sha256=cjDQtdE531VILZ6iVr7lW0uD46WbajuZxfz3E7IOJWQ,704
+easyflowutils-0.2.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+easyflowutils-0.2.1.dist-info/top_level.txt,sha256=mcVOsYUo9ml_PYeI3l0EEQ127V17gHMbGwEFjdjYhac,22
+easyflowutils-0.2.1.dist-info/RECORD,,
