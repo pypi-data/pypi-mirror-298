@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: feroxbuster-cli
+Version: 0.1.1
+Summary: A Python CLI tool to download and run Feroxbuster
+Author: Adithya A N
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Feroxbuster Automation Script
+
+This Python script automates the process of downloading, extracting, and running [Feroxbuster](https://github.com/epi052/feroxbuster) against a target URL using a wordlist for content discovery. It handles downloading the Feroxbuster binary, unzipping it, and fetching the wordlist from a popular repository.
+
+## Features
+
+- Automatically downloads the latest version of Feroxbuster.
+- Unzips the Feroxbuster binary.
+- Downloads the `common.txt` wordlist from [SecLists](https://github.com/danielmiessler/SecLists).
+- Runs Feroxbuster with the provided URL and wordlist.
+
+## Requirements
+
+- Python 3.x
+- Internet connection (for downloading Feroxbuster and the wordlist)
+- Windows operating system (as this downloads the Windows-specific executable for Feroxbuster)
+
+## Installation
+
+1. Clone the repository or download the script files.
+
+2. Install the required Python packages:
+
+   ```bash
+   pip install requests
+   
+   python script_name.py
