@@ -1,0 +1,7 @@
+redmine_loader/__init__.py,sha256=3_8N_kIbM40aqrDrP0onFfjZeu-ztFdWjbFiG56mfiY,105
+redmine_loader/loader.py,sha256=-PNBE1LBflCeTG7tKcJ5tkRATwdj6bbH8uID4HTDLeY,12862
+redmine_loader/models.py,sha256=hJ8Pv1v4Pfun5cI6FcAQDigKTEavu4SqPIJkxALQyzo,1440
+redmine_loader-0.0.1.dist-info/LICENSE,sha256=LfyqztVw1wFHUsgI-fFb1UH0a1aizEtiy09OPSWXKF0,1062
+redmine_loader-0.0.1.dist-info/METADATA,sha256=evsK9x-1OlQlB_uoOLs7eP4tKb-wojAicwkAiB0pZlo,2137
+redmine_loader-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+redmine_loader-0.0.1.dist-info/RECORD,,
