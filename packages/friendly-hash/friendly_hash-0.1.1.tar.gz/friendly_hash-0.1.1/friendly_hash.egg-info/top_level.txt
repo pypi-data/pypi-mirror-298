@@ -1,0 +1,2 @@
+friendly_hash
+tests

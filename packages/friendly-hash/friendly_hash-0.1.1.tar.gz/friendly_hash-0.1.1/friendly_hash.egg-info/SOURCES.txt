@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+friendly_hash/__init__.py
+friendly_hash/friendly_hash.py
+friendly_hash/version.py
+friendly_hash.egg-info/PKG-INFO
+friendly_hash.egg-info/SOURCES.txt
+friendly_hash.egg-info/dependency_links.txt
+friendly_hash.egg-info/entry_points.txt
+friendly_hash.egg-info/requires.txt
+friendly_hash.egg-info/top_level.txt
+tests/__init__.py
+tests/test_human_hash.py
