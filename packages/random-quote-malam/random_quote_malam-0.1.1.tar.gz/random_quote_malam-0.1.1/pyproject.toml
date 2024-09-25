@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "random-quote-malam"
+version = "0.1.1"
+description = ""
+authors = ["mahfooz.iiitian <mahfooz.iiitian@gmail.com>"]
+readme = "README.md"
+packages = [ {include="random_quote"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+
+[tool.poetry.scripts]
+random_quote = 'random_quote.main:main'
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
