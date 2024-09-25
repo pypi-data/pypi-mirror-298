@@ -1,0 +1,7 @@
+llama_index/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llama_index/vector_stores/mongodb/__init__.py,sha256=68X0H5KbfIEnO7hvadc7BPT8EIt1Oc_wgdFH_2h24pw,116
+llama_index/vector_stores/mongodb/base.py,sha256=s99p_tKtcrmm4DGCutmdj3xt4wo4XZi_wOKLJsQI8dU,15319
+llama_index/vector_stores/mongodb/pipelines.py,sha256=yjvCLRVgfve-Oxp_mTWVUzgLX5YxdM2bZVYt3wKjxCo,8200
+llama_index_vector_stores_mongodb-0.3.2.dist-info/METADATA,sha256=maUtzQFG23uuJBz0XfR_Hspadk18tqAZHQz9KHEga1A,6540
+llama_index_vector_stores_mongodb-0.3.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_vector_stores_mongodb-0.3.2.dist-info/RECORD,,
