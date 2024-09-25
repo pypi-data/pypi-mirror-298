@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: ActionMan
+Version: 0.0.0.dev19
+Requires-Python: >=3.10
+Requires-Dist: ProtocolMan==0.0.0.dev2
+Requires-Dist: rich==13.8.1
