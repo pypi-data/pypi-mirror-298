@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+airdrop/__init__.py
+airdrop/base.py
+airdrop.egg-info/PKG-INFO
+airdrop.egg-info/SOURCES.txt
+airdrop.egg-info/dependency_links.txt
+airdrop.egg-info/requires.txt
+airdrop.egg-info/top_level.txt
