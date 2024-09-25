@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+airflow_memray/__init__.py
+airflow_memray/core.py
+airflow_memray/plugin.py
+airflow_memray/policies.py
+airflow_memray.egg-info/PKG-INFO
+airflow_memray.egg-info/SOURCES.txt
+airflow_memray.egg-info/dependency_links.txt
+airflow_memray.egg-info/entry_points.txt
+airflow_memray.egg-info/requires.txt
+airflow_memray.egg-info/top_level.txt
+dags/memray_demo.py
+include/__init__.py
