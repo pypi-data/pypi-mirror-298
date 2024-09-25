@@ -1,0 +1,2 @@
+[console_scripts]
+eagent-eval = eagent_eval.cli:main
