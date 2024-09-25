@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lhw-send-email
+Version: 0.0.1
+Home-page: https://github.com/Th5200/SendEmail
+Author: 骆鸿威
+Author-email: 1959415641@qq.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7, <=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SendEmail
+用Python,使用SMTP服务器发送邮件(测试中)
