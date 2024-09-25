@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: processamento
+Version: 0.1
+Summary: Um pacote simples para processamento de imagens
+Author: Thiago
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow>=8.0.0
+
+# Pacote de Processamento de Imagens
+
+Este Ã© um pacote Python simples para abrir, aplicar filtros e salvar imagens. O pacote utiliza a biblioteca Pillow para manipulaÃ§Ã£o de imagens. O pacote transforma qualquer imagem em preto e branco.
+
+## InstalaÃ§Ã£o
+
+VocÃª pode instalar este pacote usando pip. Execute o seguinte comando no seu terminal:
+
+```bash
+pip install -e .
