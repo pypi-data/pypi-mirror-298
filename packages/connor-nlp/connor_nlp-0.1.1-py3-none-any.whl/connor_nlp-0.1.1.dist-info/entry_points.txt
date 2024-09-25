@@ -1,0 +1,3 @@
+[console_scripts]
+connor = cli.main:cli_main
+
