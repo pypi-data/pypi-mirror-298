@@ -1,0 +1,15 @@
+commit/proximals.cpython-311-darwin.so,sha256=yQdI-Qx4vHGHyEyXGMjhV6N3f54O9C0YJK3VorTsiGk,260600
+commit/models.py,sha256=Wwk_ku3RO5OxGKzB-ALE461BUv1f50cWYw_uRbNNSSg,3494
+commit/__init__.py,sha256=zcqHYnlDf7wQI6-PDBsG0SYOqj3uIrs6W1-WXDNh5nk,252
+commit/solvers.py,sha256=xj5J6GYoI-zQMjFhNDWw8PEEzgaLGJKi7EdfaapB6AE,17322
+commit/core.cpython-311-darwin.so,sha256=l1LVUPPyedkKrvC1tDsnq5N-cbfc9cWk8H-l5FvIw0I,1547904
+commit/trk2dictionary.cpython-311-darwin.so,sha256=EzLgOzEl8-p5k6aUSpWxt5EriSKnWVV-lf-HMxRLd9g,929288
+commit/operator/operator.cpython-311-darwin.so,sha256=O0YQiPwa2oniOv-BHhzXE9_XC4moFH-7ZVYvHq3-TRw,520336
+commit/operator/operator_c.c,sha256=YZluo1VsPXwcs6sTfBkknrJOLlxi0v7ijStdCLUQIWA,352115
+commit/operator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commit/operator/operator.pyx,sha256=odBy2Nmvr9ddkfiHt9c5bKbaw6frAKuJUdohfBTlEog,9154
+dmri_commit-2.3.1.dist-info/RECORD,,
+dmri_commit-2.3.1.dist-info/LICENSE,sha256=EedOv1ctIOrVRt7KG8iNXhwzLdWlziqg9uoUf30N3L0,4414
+dmri_commit-2.3.1.dist-info/WHEEL,sha256=9zOULKmQekvRbwxJbOzfVLr8_KhxRWoDZvmAuzRjW1o,110
+dmri_commit-2.3.1.dist-info/top_level.txt,sha256=UINu7ldOz_ed6jtP1AZz19AA96Xxd9imowALWceDg7g,7
+dmri_commit-2.3.1.dist-info/METADATA,sha256=bGGIFrwsmje1TE-yQmkEgmKM-BIUQAjlX5QTIEAb1EU,10269
