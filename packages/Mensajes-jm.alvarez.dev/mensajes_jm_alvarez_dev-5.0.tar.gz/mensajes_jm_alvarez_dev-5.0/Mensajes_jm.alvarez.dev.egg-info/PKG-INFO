@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Mensajes-jm.alvarez.dev
+Version: 5.0
+Summary: Un paquete para saludar y despedir
+Home-page: 
+Author: Jose Matias Alvarez
+Author-email: jm.alvarez.dev@gmail.com
+Classifier: Environment :: Console
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.23.0
+
+# Mensajes
+
+El paque de mensajeria para prueba de Jose Matias Alvarez
