@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/axes/media/videos/axes_example/720p30/partial_movie_files/MyAxesExampleScene/3456279373_3142538405_2358810818.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/axes/media/videos/axes_example/720p30/partial_movie_files/MyAxesExampleScene/275379283_794726108_2603655497.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/axes/media/videos/axes_example/720p30/partial_movie_files/MyAxesExampleScene/275379283_711869918_2994817803.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/axes/media/videos/axes_example/720p30/partial_movie_files/MyAxesExampleScene/275379283_1473777558_1084083607.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/axes/media/videos/axes_example/720p30/partial_movie_files/MyAxesExampleScene/275379283_3593094143_3989085084.mp4'

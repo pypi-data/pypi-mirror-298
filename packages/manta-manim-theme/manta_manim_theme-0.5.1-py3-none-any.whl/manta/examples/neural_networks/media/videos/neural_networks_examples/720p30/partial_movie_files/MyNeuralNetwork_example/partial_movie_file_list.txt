@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/neural_networks/media/videos/neural_networks_examples/720p30/partial_movie_files/MyNeuralNetwork_example/3456279373_1394004803_2358810818.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/neural_networks/media/videos/neural_networks_examples/720p30/partial_movie_files/MyNeuralNetwork_example/275379283_650920256_23472097.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/neural_networks/media/videos/neural_networks_examples/720p30/partial_movie_files/MyNeuralNetwork_example/275379283_2941579087_2951759236.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/neural_networks/media/videos/neural_networks_examples/720p30/partial_movie_files/MyNeuralNetwork_example/275379283_2169564490_23472097.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/neural_networks/media/videos/neural_networks_examples/720p30/partial_movie_files/MyNeuralNetwork_example/275379283_2801282035_23472097.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/neural_networks/media/videos/neural_networks_examples/720p30/partial_movie_files/MyNeuralNetwork_example/275379283_545438740_23472097.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/neural_networks/media/videos/neural_networks_examples/720p30/partial_movie_files/MyNeuralNetwork_example/275379283_1970112532_2131807221.mp4'

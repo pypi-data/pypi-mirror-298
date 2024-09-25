@@ -1,0 +1,5 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/neural_networks/media/videos/two_headed_neural_network_animation_example/720p30/partial_movie_files/MyNeuralNetwork_example/3456279373_3633883636_2358810818.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/neural_networks/media/videos/two_headed_neural_network_animation_example/720p30/partial_movie_files/MyNeuralNetwork_example/275379283_380672322_183842559.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/neural_networks/media/videos/two_headed_neural_network_animation_example/720p30/partial_movie_files/MyNeuralNetwork_example/275379283_313978994_2358178761.mp4'
+file 'file:/Users/qwerty/PycharmProjects/manta-manim-theme/manta/examples/neural_networks/media/videos/two_headed_neural_network_animation_example/720p30/partial_movie_files/MyNeuralNetwork_example/275379283_3340115907_579986792.mp4'
