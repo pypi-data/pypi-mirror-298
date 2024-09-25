@@ -1,0 +1,9 @@
+README.md
+setup.py
+dados_moeda/__init__.py
+dados_moeda/data_transform.py
+dados_moeda/validate_data.py
+dados_moeda.egg-info/PKG-INFO
+dados_moeda.egg-info/SOURCES.txt
+dados_moeda.egg-info/dependency_links.txt
+dados_moeda.egg-info/top_level.txt
