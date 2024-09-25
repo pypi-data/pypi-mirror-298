@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0","matplotlib","scikit-image","scipy","numpy","opencv-python"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iemtools"
+version = "0.1.4"
+authors = [
+  { name="Sely Papan", email="sely.papan@iem.cas.cz" },
+]
+description = "Behavioural tests analysis tool"
+readme = "README.md"
+requires-python = ">=3.12.4"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/selypapan/iem_cas_projects/blob/main/iemtools_package/"
+Issues = "https://github.com/selypapan/iem_cas_projects/issues"
