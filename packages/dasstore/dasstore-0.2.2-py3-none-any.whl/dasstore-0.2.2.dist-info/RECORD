@@ -1,0 +1,13 @@
+dasstore/__init__.py,sha256=-hZLHu8mUw_YJaZ8e3xJkqe5LK7_X-XbcII8cBT5OrM,165
+dasstore/_version.py,sha256=RrHB9KG1O3GPm--rbTedqmZbdDrbgeRLXBmT4OBUqqI,411
+dasstore/tiledb/__init__.py,sha256=MF64bwUCd4sm3dvcxZnkb4ujHtxT_KeuXdD0nVieEt4,27
+dasstore/tiledb/client.py,sha256=1aJU8oyCTtA5x3aqGowtVwd7AlNLg4_5fQSARfOz8hM,5085
+dasstore/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dasstore/utils/convert.py,sha256=u7cL6FeaYut7kzlY3Jq88Iskv1feT64KmACHR8NneiQ,2677
+dasstore/utils/credential.py,sha256=spRfVj7cA5fg2tAIpfWr8mCuxp_HDGIwdJwrp26snEc,4744
+dasstore/zarr/__init__.py,sha256=MF64bwUCd4sm3dvcxZnkb4ujHtxT_KeuXdD0nVieEt4,27
+dasstore/zarr/client.py,sha256=Mn1n5qaJo24Ua4FQy1h78xnSXStYCHUhXSMtinGotvk,4616
+dasstore-0.2.2.dist-info/METADATA,sha256=J4NhR4tAR4nXVqu0DOmQBcDONviq2Zi3lTDSav1zLJA,46149
+dasstore-0.2.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+dasstore-0.2.2.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dasstore-0.2.2.dist-info/RECORD,,
