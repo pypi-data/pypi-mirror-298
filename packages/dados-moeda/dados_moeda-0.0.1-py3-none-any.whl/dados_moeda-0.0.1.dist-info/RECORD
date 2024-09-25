@@ -1,0 +1,7 @@
+dados_moeda/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dados_moeda/data_transform.py,sha256=kQz27kqBstS7kIAt25hG4mNKjvYvVhUMEfyPaiIJoAg,2802
+dados_moeda/validate_data.py,sha256=r7FLFljghP0c-Ib831wabhcGb9Rnilu5LfloU5jLDJw,490
+dados_moeda-0.0.1.dist-info/METADATA,sha256=WMKWgQIUG2OTOLVpQKMUxw-z6qgNMSMQZ-pXIZ27ZuM,981
+dados_moeda-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+dados_moeda-0.0.1.dist-info/top_level.txt,sha256=Fi_xkdJabM4FKiCVl7A3qqYYWXBjhvhCMQS6dA1G-ZA,12
+dados_moeda-0.0.1.dist-info/RECORD,,
