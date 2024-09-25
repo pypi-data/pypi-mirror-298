@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: sfisop
+Version: 0.3.4
+Summary: 
+Author: Yo581515
+Author-email: 581515@stud.hvl.no
+Requires-Python: >=3.9,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyYAML (>=6.0.1,<7.0.0)
+Requires-Dist: annotated-types (>=0.6.0,<1.0.0)
+Requires-Dist: certifi (>=2024.2.2,<2025.0.0)
+Requires-Dist: charset-normalizer (>=3.3.2,<4.0.0)
+Requires-Dist: dnspython (>=2.6.1,<3.0.0)
+Requires-Dist: idna (>=3.6,<4.0.0)
+Requires-Dist: packaging (>=24.1,<25.0)
+Requires-Dist: paho-mqtt (>=2.0.0,<3.0.0)
+Requires-Dist: pydantic (>=1.10.9,<2.0.0)
+Requires-Dist: pydantic_core (>=2.16.3,<3.0.0)
+Requires-Dist: pymongo (>=4.6.2,<5.0.0)
+Requires-Dist: pytest (>=8.3.2,<9.0.0)
+Requires-Dist: python-dateutil (>=2.9.0.post0,<3.0.0)
+Requires-Dist: python-decouple (>=3.8,<4.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: six (>=1.16.0,<2.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: typing_extensions (>=4.6.3,<5.0.0)
+Requires-Dist: urllib3 (>=2.2.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# SFISOP package
+
+
+The purpose of this package is to contain all the needed models in one package.
+
+
+# Installation
+
+```bash
+pip install sfisop
+```
+```bash
+pip install --upgrade sfisop
+```
+
+```python
+# Example of using one of the subpackages
+from sfisop.datamodels.tsdatamodel.metadata import *
+import sfisop.datamodels.tsdatamodel.tsdata_utils as tsdata_utils
+from sfisop.datamodels.tsdatamodel.timeseriesdata import *
+
+from sfisop.messaging_sdk.subscriber import SubscriberClient
+from sfisop.messaging_sdk.publisher import PublisherClient
+
+from sfisop.data_forwarder.forwarder.mongodb.mongodb_client import MongoDBClient
+from sfisop.data_forwarder.forwarder.mongodb.mongodb_config import get_mongodb_forwarder_config
+from sfisop.data_forwarder.forwarder.mongodb import mongodb_utils as utils
+
+from sfisop.data_forwarder.forwarder.thingspeak.thingspeak_client import ThingsPeakClient
+from sfisop.data_forwarder.forwarder.thingspeak.thingspeak_config import get_thingspeak_forwarder_config
+import sfisop.data_forwarder.forwarder.thingspeak.thingspeak_utils as utils
+
+# Your code here
+```
+
+## Contact
+
+If you have any questions or need support, feel free to reach out:
+
+- **Author**: Yosafe Fesaha Oqbamecail
+- **Email**: [581515@stud.hvl.no](mailto:581515@stud.hvl.no)
+
+We appreciate any feedback or contributions to make these packages even better!
