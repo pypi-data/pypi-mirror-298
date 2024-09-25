@@ -1,0 +1,10 @@
+nerif/__init__.py,sha256=Y35X7ypxVurUQ7DOq8SvjdHApzmg9yPTDp8lvVDs99o,154
+nerif/nerif_agent/__init__.py,sha256=EQjelxHZew11Z66fTsGeIO8iE6kyysX8bxbhA2WzaqM,76
+nerif/nerif_agent/nerif_agent.py,sha256=_ufMpsunhGUELvMQTaAQIC81I9V8waJeip6HexGjA8k,11846
+nerif/nerif_core/__init__.py,sha256=ddWnnS6UxkyU-m52LUNEcs61sU2LMnr-8a9rIJ-11L8,321
+nerif/nerif_core/nerif.py,sha256=r6DE2fZOlIJDNSF_HQZhxOLrrm0cIU0ElUQui0LikG8,14372
+nerif/nerif_core/nerif_format.py,sha256=qoN4wFAS8Hf4lSkF5mBTzuIrTXTJ--5HD7GvyqYHloI,2950
+nerif-0.5.0.dist-info/METADATA,sha256=0YiubsoBPaNNLd8wOPDbl_VFsUc6N_LuZTEOBtjO4lA,41592
+nerif-0.5.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+nerif-0.5.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nerif-0.5.0.dist-info/RECORD,,
