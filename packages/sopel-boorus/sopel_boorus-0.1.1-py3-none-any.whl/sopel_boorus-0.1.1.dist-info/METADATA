@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: sopel-boorus
+Version: 0.1.1
+Summary: Image board (booru) plugins for Sopel IRC bots.
+Author-email: dgw <dgw@technobabbl.es>
+License: EFL-2.0
+Project-URL: Homepage, https://github.com/dgw/sopel-boorus
+Project-URL: Bug Tracker, https://github.com/dgw/sopel-boorus/issues
+Keywords: sopel,plugin,bot,irc
+Platform: Linux x86, x86-64
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Eiffel Forum License (EFL)
+Classifier: License :: OSI Approved :: Eiffel Forum License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: sopel>=8.0
+Requires-Dist: pylru~=1.2.0
+Requires-Dist: requests
+
+# sopel-boorus
+
+Image board (booru) plugins for Sopel IRC bots.
+
+## Installing
+
+Releases are hosted on PyPI, so after installing Sopel, all you need is `pip`:
+
+```shell
+$ pip install sopel-boorus
+```
+
+[**Depending on your Sopel bot's configuration**][sopel-endis-plugins], you
+might need to enable or disable the specific booru plugins ([see
+below](#booru-plugins-in-this-collection)) that you want your bot to use. You
+can do so with [the `sopel-plugins` command][cli-sopel-plugins], e.g.:
+
+```shell
+$ sopel-plugins enable gelbooru
+```
+
+[cli-sopel-plugins]: https://sopel.chat/docs/run/cli.html#sopel-plugins
+[sopel-endis-plugins]: https://sopel.chat/docs/run/plugin#enabling-or-disabling-plugins
+
+### Booru plugins in this collection
+
+* `danbooru`: Supports Danbooru (https://danbooru.donmai.us) links & searches
+* `gelbooru`: Supports Gelbooru (https://gelbooru.com) links & searches
+
+### Installation requirements
+
+The `sopel-boorus` package is written with Python 3 and Sopel 8.0+ in mind.
+Installation on Python 2, or usage with Sopel 7.x, is not supported.
+
+## Using
+
+### `danbooru`
+
+**Note: Danbooru strictly limits search capabilities for anonymous users,**
+making this plugin more useful for link handling than searching, though it will
+be able to handle a tag or two just fine if you want a random pic.
+
+Commands: `.danb` or `.danbooru` to search for a random post by tag(s)
+
+Links: Handles post links, e.g. `https://danbooru.donmai.us/posts/<post_id>`
+
+### `gelbooru`
+
+Commands: `.gelb` or `.gelbooru` to search for a random post by tag(s)
+
+Links: Handles post links, e.g.
+`https://gelbooru.com/index.php?page=post&s=view&id=<post_id>`
+
+## Changelog
+
+### 0.1.1
+
+Fixed:
+* Handle more error cases (#1)
+
+
+### 0.1.0
+
+First release of `sopel-boorus` plugin collection.
+
+Launch plugins are `danbooru` and `gelbooru`.
