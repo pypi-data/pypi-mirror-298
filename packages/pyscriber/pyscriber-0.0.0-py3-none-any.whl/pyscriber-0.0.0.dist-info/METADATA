@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pyscriber
+Version: 0.0.0
+Summary: python transcribe video files to text
+Home-page: http://github.com/SK/pyscriber
+Author: stephenking
+Author-email: stephen.ra.king@gmail.com
+License: MIT
+
