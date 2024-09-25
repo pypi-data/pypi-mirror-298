@@ -1,0 +1,8 @@
+loguru
+numpy
+pandas
+protobuf
+Requests
+scikit_learn
+setuptools
+tenacity
