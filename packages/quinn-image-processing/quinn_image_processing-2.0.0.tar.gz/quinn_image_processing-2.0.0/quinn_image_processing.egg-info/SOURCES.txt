@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+quinn_image_processing/__init__.py
+quinn_image_processing/moveImages.py
+quinn_image_processing/movetospecial.py
+quinn_image_processing/mvFiles.py
+quinn_image_processing/overlayScript.py
+quinn_image_processing/removeImages.py
+quinn_image_processing/script.py
+quinn_image_processing/test_image_overlay.py
+quinn_image_processing.egg-info/PKG-INFO
+quinn_image_processing.egg-info/SOURCES.txt
+quinn_image_processing.egg-info/dependency_links.txt
+quinn_image_processing.egg-info/entry_points.txt
+quinn_image_processing.egg-info/requires.txt
+quinn_image_processing.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+overlay-images = quinn_image_processing.overlayScript:main
+square-images = quinn_image_processing.script:main
