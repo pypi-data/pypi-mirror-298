@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: django_chart
+Version: 0.0.1
+Summary: A Django package for chart/graph
+Home-page: https://github.com/rimalsparsha/django_chart.git
+Author: Sparsha Rimal
+Author-email: sparsharimal@gmail.com
+License: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django :: 3.2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>=3.2
+
+Install the Package : pip install django_chart
+
+
+Add the App to INSTALLED_APPS
+INSTALLED_APPS = [
+
+    'chart', 
+]
+
+
+Run Migrations : python manage.py migrate
+
+
+![alt text](chart1.PNG)
+
+
+![alt text](chart2.PNG)
