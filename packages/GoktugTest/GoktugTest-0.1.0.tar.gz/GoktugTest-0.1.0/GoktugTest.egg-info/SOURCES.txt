@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+GoktugTest.egg-info/PKG-INFO
+GoktugTest.egg-info/SOURCES.txt
+GoktugTest.egg-info/dependency_links.txt
+GoktugTest.egg-info/requires.txt
+GoktugTest.egg-info/top_level.txt
+Packages/__init__.py
+Packages/my_module.py
