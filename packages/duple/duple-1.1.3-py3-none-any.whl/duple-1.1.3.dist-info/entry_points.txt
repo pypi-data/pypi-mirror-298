@@ -1,0 +1,4 @@
+[console_scripts]
+duple=duple.duple:cli
+sync_version=duple.publish_actions:sync_version
+
