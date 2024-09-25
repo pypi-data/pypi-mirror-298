@@ -1,0 +1,10 @@
+include README.md
+recursive-include templates *      # Includes all files in the root templates directory
+recursive-include static *         # Includes all files in the root static directory
+recursive-include media *          # Includes all files in the root media directory
+recursive-include dj_rest_tickets/templates *
+recursive-include dj_rest_tickets/static *
+recursive-include dj_rest_tickets/migrations *
+recursive-include dj_rest_tickets/tickets/templates *
+recursive-include dj_rest_tickets/tickets/static *
+recursive-include dj_rest_tickets/tickets/migrations *
