@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+duckdq/duckdq.egg-info/PKG-INFO
+duckdq/duckdq.egg-info/SOURCES.txt
+duckdq/duckdq.egg-info/dependency_links.txt
+duckdq/duckdq.egg-info/top_level.txt
