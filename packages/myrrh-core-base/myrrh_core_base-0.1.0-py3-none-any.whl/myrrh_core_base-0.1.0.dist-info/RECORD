@@ -1,0 +1,17 @@
+myrrh/core/delegation/__init__.py,sha256=YhWNfOgRWBmSsNdzAbJh25idRJTHxpjSDXpX4NdFMyw,46
+myrrh/core/delegation/_delegation.py,sha256=f5gSe-2n7O6FipSZN4w4dEeecV4SYQW0sgazRcONyG8,6942
+myrrh/core/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+myrrh/core/utils/_passwd.py,sha256=A78hKSuVRNaxf9b5w_E_tYVKAibtFwDxF1bq1abXqOQ,1762
+myrrh/core/utils/filemode.py,sha256=va6RBS82pmjus8jPsCjTbXJjJJD0n4lYhKEW-0PvX80,1305
+myrrh/core/utils/merrno.py,sha256=Ow7THYHJW62M2IEPzWUPr8_L8XhFhKXUlpR4nd1t5oY,1540
+myrrh/core/utils/mhandle.py,sha256=pZhxFF4NCf1kMnZagEzrN-Noz-aPRpeo67tBd51GiNw,955
+myrrh/core/utils/misc.py,sha256=ESEfDccPO1xEkhDR-nSsE4E4EeFxVfHTX5bKqQEnJ1Y,1229
+myrrh/core/utils/mshlex.py,sha256=AzaUS8VHz7y4OLShmeGETOxab3RJYd6tgy8YfnrEtck,6873
+myrrh/core/utils/mstring.py,sha256=wXNRCVFPMe21UJXkd63Ihp525V4Gr3JxxkKTIjHmtWU,4260
+myrrh/core/utils/mtimer.py,sha256=Y5SPpZz89pdjCp9g_hGTgU-1h7iBbvyH5GGDAqqjaBg,4424
+myrrh_core_base-0.1.0.dist-info/AUTHORS.md,sha256=yBRi3LXijZlg4ui88X1hwwApS0sfQ7y2zwcH9i6-0Xc,40
+myrrh_core_base-0.1.0.dist-info/LICENSE,sha256=oEqxpdXnVkLRNppKqV2ounKaAm5L1FRONtkygENlSQk,34752
+myrrh_core_base-0.1.0.dist-info/METADATA,sha256=OCJMKIoCPVr1Tbot8TeYj8fOwK529vJ11DMCvStPLuY,804
+myrrh_core_base-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+myrrh_core_base-0.1.0.dist-info/top_level.txt,sha256=dpz6zgV_ueAMh9RwSYQR0w1D4x6vDuaF14JsRKXgQ3I,6
+myrrh_core_base-0.1.0.dist-info/RECORD,,
