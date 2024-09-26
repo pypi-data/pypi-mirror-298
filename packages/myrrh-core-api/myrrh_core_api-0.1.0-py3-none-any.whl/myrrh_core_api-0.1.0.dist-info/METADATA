@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: myrrh_core_api
+Version: 0.1.0
+Summary: This package contains API definitions for the myrrh procject
+Author-email: PyAnjel7 <PyAnjel7@gmail.com>
+License: GNU General Public License v3.0 or later
+Keywords: baseline:Earendel.
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+
+# Readme
+
+## About myrrh_core_api
+
+This package is part of the Myrrh project.
+
+This package contains API definitions for the myrrh procject
+
+
+Baseline:earendel.
+
+## Requirements
+
+* Python >= 3.12
+
+## Installation
+
+This package should only be installed as a dependency.
+
+## License
+
+GNU General Public License v3.0 or later

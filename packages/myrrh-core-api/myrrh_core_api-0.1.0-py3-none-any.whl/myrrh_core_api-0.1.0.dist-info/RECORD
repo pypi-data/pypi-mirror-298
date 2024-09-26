@@ -1,0 +1,12 @@
+myrrh/core/interfaces/__init__.py,sha256=LmLdCtsNJeq69K-mJZua8jwc_STA6IRAni253at5u50,152
+myrrh/core/interfaces/ientity.py,sha256=ESWT3d3rQ7fC0JStuC4WByEXVAVyvXcrVfv6l6R9kCA,3175
+myrrh/core/interfaces/ieservices.py,sha256=1QXgZe5ASmUZiU-SeYVi-Rm37kAH2Q5DgSY9b9oZ-xA,10810
+myrrh/core/interfaces/iesystem.py,sha256=lm9SSlzjlG470ijNysVff5LzYY_s9f7pQkAOH7SV18g,8631
+myrrh/core/interfaces/iprovider.py,sha256=jjABHd4L7hS02kwkJYGqEV-gLLDLB3cwpkB6PqbeJqE,827
+myrrh/core/interfaces/iservices.py,sha256=d-188OZCdwe2u6GzQ0IO1HZ0xYQDTP0dBI6hI6SK840,3777
+myrrh_core_api-0.1.0.dist-info/AUTHORS.md,sha256=yBRi3LXijZlg4ui88X1hwwApS0sfQ7y2zwcH9i6-0Xc,40
+myrrh_core_api-0.1.0.dist-info/LICENSE,sha256=oEqxpdXnVkLRNppKqV2ounKaAm5L1FRONtkygENlSQk,34752
+myrrh_core_api-0.1.0.dist-info/METADATA,sha256=CT2143A2U1rjJ6pbGm1dupqRHwwTm6tzd5cEewRmjWU,824
+myrrh_core_api-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+myrrh_core_api-0.1.0.dist-info/top_level.txt,sha256=dpz6zgV_ueAMh9RwSYQR0w1D4x6vDuaF14JsRKXgQ3I,6
+myrrh_core_api-0.1.0.dist-info/RECORD,,
