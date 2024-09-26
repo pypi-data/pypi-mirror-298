@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: levutils
+Version: 0.1
+Summary: A package containing modules mybag and myutils 
+Home-page: https://github.com/yourusername/eais
+Author: Lev Selector
+Author-email: lev.selector@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: unidecode
+Requires-Dist: ipython
+
+# eais
+
+The "levutils" package contains several common utilities modules
+
+   ## Installation
+
+``` 
+     pip install levutils
+```
+
+   ## Usage
+
+``` python
+     import levutils.mybag
+     import levutils.myutils
+     import levutils.util_jupyter
+```
+
+   ## License
+
+   This project is licensed under the MIT License - see the LICENSE file for details.
