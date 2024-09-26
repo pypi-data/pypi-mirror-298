@@ -1,0 +1,13 @@
+setup.py
+pytest_report_plugin/__init__.py
+pytest_report_plugin/log_helper.py
+pytest_report_plugin/py.typed
+pytest_report_plugin/telegram.py
+pytest_report_plugin/zephyr.py
+pytest_report_plugin/zephyr_client.py
+pytest_zephyr_telegram.egg-info/PKG-INFO
+pytest_zephyr_telegram.egg-info/SOURCES.txt
+pytest_zephyr_telegram.egg-info/dependency_links.txt
+pytest_zephyr_telegram.egg-info/entry_points.txt
+pytest_zephyr_telegram.egg-info/requires.txt
+pytest_zephyr_telegram.egg-info/top_level.txt
