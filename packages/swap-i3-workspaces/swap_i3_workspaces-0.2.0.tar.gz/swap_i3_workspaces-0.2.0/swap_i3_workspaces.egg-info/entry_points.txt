@@ -1,0 +1,2 @@
+[console_scripts]
+swap_i3_workspaces = swap_i3_workspaces.main:main
