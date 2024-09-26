@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "pokeapi-sdk"
+version = "0.1.1"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.1.0"
+mypy = "^1.5.0"
+black = "23.9.0"
+isort = "^5.12.0"
+pre-commit = "^3.3.3"
+pytest = "^7.4.2"
+coverage = "6.4.1"
+pytest-cov = "^4.1.0"
+
+[tool.mypy]
+python_version = "3.9.14"
+explicit_package_bases = true
+disallow_untyped_defs = true
+show_error_codes = true
+no_implicit_optional = true
+warn_unused_ignores = true
+ignore_missing_imports = true
+disable_error_code = ["var-annotated", "import"]
+
+[tool.black]
+line-length = 120
+reformat_dict_literals = true
+exclude = '(\.venv|\.history)'
+
+[tool.isort]
+profile = "black"
+skip = [".venv", ".history"]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.urls]
+homepage = "https://github.com/ThomasN72/pokeapi-sdk"
+repository = "https://github.com/ThomasN72/pokeapi-sdk"
