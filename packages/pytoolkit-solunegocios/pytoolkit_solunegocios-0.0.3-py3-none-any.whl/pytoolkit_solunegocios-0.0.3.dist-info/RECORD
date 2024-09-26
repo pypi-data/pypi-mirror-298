@@ -1,0 +1,12 @@
+pytoolkit_solunegocios/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytoolkit_solunegocios/azure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytoolkit_solunegocios/azure/ai_search.py,sha256=1rBCb3s1sY4oE-xOXdHAWqgvwuitukCd98n1BrSGG9M,2996
+pytoolkit_solunegocios/azure/open_ai.py,sha256=EQc0OZIGqzWlSAuOKXJ6IvT35IljePmDA9v1UWAfbBw,2219
+pytoolkit_solunegocios/azure/azure_auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytoolkit_solunegocios/azure/azure_auth/auth.py,sha256=y6_Ls05wQglRVpE7_0BCG_KT7uICR547CZvTuhb311s,1503
+pytoolkit_solunegocios/azure/azure_auth/config.py,sha256=iW434iliQPMIcm2uuG-4zrZY-DJsqAAHBEFEJdV7zk8,450
+pytoolkit_solunegocios-0.0.3.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytoolkit_solunegocios-0.0.3.dist-info/METADATA,sha256=imu1JF2Ts3ABm9NkibDiIVR99SWkgjwnlDUviY6vgMo,550
+pytoolkit_solunegocios-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pytoolkit_solunegocios-0.0.3.dist-info/top_level.txt,sha256=KzjSlMIUayM8SJjUUrDDX7__EdkcZUS6g8gJ0zjBhRc,23
+pytoolkit_solunegocios-0.0.3.dist-info/RECORD,,
