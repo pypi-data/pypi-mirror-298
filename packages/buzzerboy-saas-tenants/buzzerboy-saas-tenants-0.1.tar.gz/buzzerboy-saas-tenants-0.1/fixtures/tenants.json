@@ -1,0 +1,34 @@
+[
+    {
+        "model": "apps_home.Tenant",
+        "pk": 1,
+        "fields": {
+            "uuid": "123e4567-e89b-12d3-a456-426614174000",
+            "company_name": "Example Corp",
+            "subdomain": "example",
+            "support_email_address": "support@example.com",
+            "company_slogan": "Innovating the Future",
+            "website": "https://www.example.com",
+            "address": "123 Example Street",
+            "city": "Example City",
+            "postalcode": "12345",
+            "state_province": 1,
+            "country": 1,
+            "telephone": "123-456-7890",
+            "fax": "123-456-7891",
+            "contract_status": 1,
+            "primary_account_email": "admin@example.com",
+            "primary_account_name": "Admin User",
+            "company_logo": "uploads/example_logo.png",
+            "billing_contact_name": "Billing Contact",
+            "billing_contact_address": "123 Billing Street",
+            "billing_contact_city": "Billing City",
+            "billing_contact_postalcode": "54321",
+            "billing_contact_country": 1,
+            "billing_contact_state_province": 1,
+            "billing_contact_email": "billing@example.com",
+            "billing_contact_telephone": "098-765-4321",
+            "beta_features_csv": "feature1,feature2"
+        }
+    }
+]

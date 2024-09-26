@@ -1,0 +1,22 @@
+[
+  {
+    "model": "apps_accounts.usertype",
+    "pk": 1,
+    "fields": {
+      "name": "Administrator",
+      "description": "Responsible for system management and configuration with full access",
+      "has_full_access": true,
+      "has_nonstaff_access": true
+    }
+  },
+  {
+    "model": "apps_accounts.usertype",
+    "pk": 2,
+    "fields": {
+      "name": "User",
+      "description": "Regular user with limited access to features and data",
+      "has_full_access": false,
+      "has_nonstaff_access": true
+    }
+  }
+]

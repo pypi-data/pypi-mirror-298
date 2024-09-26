@@ -1,0 +1,18 @@
+[
+    {
+        "model": "apps_localization.StateProvince",
+        "pk": 1,
+        "fields": {
+            "location_name": "California",
+            "country": 242
+        }
+    },
+    {
+        "model": "apps_localization.StateProvince",
+        "pk": 2,
+        "fields": {
+            "location_name": "Ontario",
+            "country": 39
+        }
+    }
+]

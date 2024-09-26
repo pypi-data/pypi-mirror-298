@@ -1,0 +1,298 @@
+[
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 1,
+        "fields": {
+            "timezone": "Baker Island Time",
+            "offset": "-12:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 2,
+        "fields": {
+            "timezone": "American Samoa Time",
+            "offset": "-11:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 3,
+        "fields": {
+            "timezone": "Hawaii-Aleutian Standard Time (HAST)",
+            "offset": "-10:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 4,
+        "fields": {
+            "timezone": "Marquesas Islands Time",
+            "offset": "-09:30"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 5,
+        "fields": {
+            "timezone": "Alaska Standard Time (AKST)",
+            "offset": "-09:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 6,
+        "fields": {
+            "timezone": "Pacific Standard Time (PST)",
+            "offset": "-08:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 7,
+        "fields": {
+            "timezone": "Mountain Standard Time (MST)",
+            "offset": "-07:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 8,
+        "fields": {
+            "timezone": "Central Standard Time (CST)",
+            "offset": "-06:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 9,
+        "fields": {
+            "timezone": "Eastern Standard Time (EST)",
+            "offset": "-05:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 10,
+        "fields": {
+            "timezone": "Atlantic Standard Time (AST)",
+            "offset": "-04:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 11,
+        "fields": {
+            "timezone": "Newfoundland Standard Time (NST)",
+            "offset": "-03:30"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 12,
+        "fields": {
+            "timezone": "Argentina Time",
+            "offset": "-03:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 13,
+        "fields": {
+            "timezone": "South Georgia & South Sandwich Islands Time",
+            "offset": "-02:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 14,
+        "fields": {
+            "timezone": "Azores Standard Time",
+            "offset": "-01:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 15,
+        "fields": {
+            "timezone": "Coordinated Universal Time (UTC)",
+            "offset": "+00:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 16,
+        "fields": {
+            "timezone": "Central European Time (CET)",
+            "offset": "+01:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 17,
+        "fields": {
+            "timezone": "Eastern European Time (EET)",
+            "offset": "+02:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 18,
+        "fields": {
+            "timezone": "Moscow Time",
+            "offset": "+03:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 19,
+        "fields": {
+            "timezone": "Iran Standard Time (IRST)",
+            "offset": "+03:30"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 20,
+        "fields": {
+            "timezone": "Gulf Standard Time (GST)",
+            "offset": "+04:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 21,
+        "fields": {
+            "timezone": "Afghanistan Time (AFT)",
+            "offset": "+04:30"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 22,
+        "fields": {
+            "timezone": "Pakistan Standard Time (PKT)",
+            "offset": "+05:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 23,
+        "fields": {
+            "timezone": "India Standard Time (IST)",
+            "offset": "+05:30"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 24,
+        "fields": {
+            "timezone": "Nepal Time (NPT)",
+            "offset": "+05:45"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 25,
+        "fields": {
+            "timezone": "Bangladesh Standard Time (BST)",
+            "offset": "+06:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 26,
+        "fields": {
+            "timezone": "Cocos Islands Time",
+            "offset": "+06:30"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 27,
+        "fields": {
+            "timezone": "Indochina Time (ICT)",
+            "offset": "+07:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 28,
+        "fields": {
+            "timezone": "China Standard Time (CST)",
+            "offset": "+08:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 29,
+        "fields": {
+            "timezone": "Australian Central Western Standard Time (ACWST)",
+            "offset": "+08:45"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 30,
+        "fields": {
+            "timezone": "Japan Standard Time (JST)",
+            "offset": "+09:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 31,
+        "fields": {
+            "timezone": "Australian Central Standard Time (ACST)",
+            "offset": "+09:30"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 32,
+        "fields": {
+            "timezone": "Australian Eastern Standard Time (AEST)",
+            "offset": "+10:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 33,
+        "fields": {
+            "timezone": "Lord Howe Standard Time (LHST)",
+            "offset": "+10:30"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 34,
+        "fields": {
+            "timezone": "Solomon Islands Time",
+            "offset": "+11:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 35,
+        "fields": {
+            "timezone": "Fiji Time",
+            "offset": "+12:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 36,
+        "fields": {
+            "timezone": "Tonga Time",
+            "offset": "+13:00"
+        }
+    },
+    {
+        "model": "apps_localization.Timezone",
+        "pk": 37,
+        "fields": {
+            "timezone": "Line Islands Time",
+            "offset": "+14:00"
+        }
+    }
+]

@@ -1,0 +1,50 @@
+[
+{
+  "model": "apps_tenant.subscriptionplan",
+  "pk": 1,
+  "fields": {
+    "name": "BASIC",
+    "price": "19.00",
+    "description": "Basic",
+    "user_limit": 10,
+    "department_limit": 3,
+    "vulnerability_limit": 10,
+    "storage_limit": 15,
+    "dashboard_access": true,
+    "api_access": false,
+    "advanced_support": false
+  }
+},
+{
+  "model": "apps_tenant.subscriptionplan",
+  "pk": 2,
+  "fields": {
+    "name": "PRO",
+    "price": "59.00",
+    "description": "",
+    "user_limit": 25,
+    "department_limit": 10,
+    "vulnerability_limit": 25,
+    "storage_limit": 50,
+    "dashboard_access": true,
+    "api_access": true,
+    "advanced_support": true
+  }
+},
+{
+  "model": "apps_tenant.subscriptionplan",
+  "pk": 3,
+  "fields": {
+    "name": "ENTERPRISE",
+    "price": "149.00",
+    "description": "Enterprise",
+    "user_limit": 0,
+    "department_limit": 0,
+    "vulnerability_limit": 0,
+    "storage_limit": 150,
+    "dashboard_access": true,
+    "api_access": true,
+    "advanced_support": true
+  }
+}
+]

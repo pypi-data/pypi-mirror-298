@@ -1,0 +1,654 @@
+{% extends "layouts/base-applications.html" %}
+{% load static i18n %}
+{% block title %} Settings General {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+{% endblock stylesheets %}
+
+{% block content %}
+<!--! ================================================================ !-->
+    <!--! [Start] Main Content !-->
+    <!--! ================================================================ !-->
+    <main class="nxl-container apps-container">
+        <div class="nxl-content without-header nxl-full-content">
+            <!-- [ Main Content ] start -->
+            <div class="main-content d-flex">
+                <!-- [ Content Sidebar ] start -->
+                <div class="content-sidebar content-sidebar-md" data-scrollbar-target="#psScrollbarInit">
+                    <div class="content-sidebar-header bg-white sticky-top hstack justify-content-between">
+                        <h4 class="fw-bolder mb-0">{% trans "Account Settings" %}</h4>
+                        <a href="javascript:void(0);" class="app-sidebar-close-trigger d-flex">
+                            <i class="feather-x"></i>
+                        </a>
+                    </div>
+
+                    {% include 'includes/accountsettingsnav.html' %}
+                    
+                </div>
+                <!-- [ Content Sidebar  ] end -->
+                <!-- [ Main Area  ] start -->
+            <form method="post" enctype="multipart/form-data">
+                <div class="content-area" data-scrollbar-target="#psScrollbarInit">
+                    <div class="content-area-header bg-white sticky-top">
+                        <div class="page-header-left d-flex align-items-center my-auto">
+                                <div class="page-header-title">
+                                    <h4 class="fw-bolder mb-0">{{segment.text}}</h4>
+                                </div>
+                            </div>
+                            <div class="page-header-right ms-auto">
+                                <div class="page-header-right-items">
+                                    <div class="d-flex align-items-center gap-2 page-header-right-items-wrapper">
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="feather-save"></i>
+                                            <span class="d-none d-md-block me-1"></span>
+                                            <span class="d-none d-md-block">{% trans "Save Changes" %}</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="content-area-body">
+                        <div class="col-xxl-12 col-xl-6" style="margin-bottom:5rem;">
+                            <div class="card stretch">
+                            <div class="card-header">
+                                <div class="hstack justify-content-between">
+                                    <div>
+                                        <h5 class="mb-1">{% trans "Profile Details Settings" %}</h5>
+                                        <span class="fs-12 text-muted">{% trans "Configure the user profile information and how it's managed in your systems." %}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {% csrf_token %} 
+                            {% if form.non_field_errors %}
+                                    <div style="color: red;">
+                                        {% for error in form.non_field_errors %}
+                                            <p>{{ error }}</p>
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            
+                                
+                            <div class="card-body">
+                                <div class="mb-4 d-flex align-items-center justify-content-between">
+                                    <h6 class="mb-0 me-4">
+                                        <span class="d-block mb-1">{% trans "Personal Information:" %}</span>
+                                        <span class="fs-11 fw-normal text-muted text-truncate-1-line">{% trans "Following information is publicly displayed, be careful!" %} </span>
+                                    </h6>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                    <strong class="fw-semibold">{% trans "Profile Picture" %}</strong>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="mb-4 mb-md-0 d-flex gap-4 your-brand">
+                                            <label class="wd-100 ht-100 position-relative overflow-hidden border border-gray-2 rounded" for="profile_picture">
+                                            
+                                                <img src="/media/{{user.profile.profile_picture}}" onerror="this.onerror=null; this.src='{% static 'assets/images/avatar/1.png' %}';" id="profile-picture-preview" class="upload-pic img-fluid rounded h-100 w-100" alt="">
+                                                <div class="position-absolute start-50 top-50 end-0 bottom-0 translate-middle h-100 w-100 hstack align-items-center justify-content-center c-pointer upload-button">
+                                                    <i class="feather feather-camera" aria-hidden="true"></i>
+                                                </div>
+                                            </label>
+                                            <div>
+
+                                                {% if form.profile_picture.errors %}
+                                                    <div class="text-danger">
+                                                        {% for error in form.profile_picture.errors %}
+                                                            <p>{{ error }}</p>
+                                                        {% endfor %}
+                                                    </div>
+                                                {% endif %}
+                                            <div class="d-none">
+                                                {{ form.profile_picture }}
+                                            </div>
+                                            </div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <div class="fs-11 text-gray-500 mt-2">{% trans "# Upload your profile" %}</div>
+                                                <div class="fs-11 text-gray-500">{% trans "# Avatar size 150x150" %}</div>
+                                                <div class="fs-11 text-gray-500">{% trans "# Max upload size 2mb" %}</div>
+                                                <div class="fs-11 text-gray-500">{% trans "# Allowed file types: png, jpg, jpeg" %}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label for="fullnameInput" class="fw-semibold text-capitalize">{% trans "First Name" %} : </label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="input-group">
+                                            {{form.first_name}}
+                                        {% if form.first_name.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.first_name.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label for="fullnameInput" class="fw-semibold">{% trans "Last Name: " %}</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="input-group">
+                                            {{form.last_name}}
+                                        {% if form.last_name.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.last_name.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label for="phoneInput" class="fw-semibold">{% trans "Phone: " %}</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="input-group">
+                                            {{form.phone_number}}
+                                        {% if form.phone_number.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.phone_number.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label for="addressInput_2" class="fw-semibold">{% trans "Address: " %}</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="input-group">
+                                            {{form.address}}
+                                        {% if form.address.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.address.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label for="addressInput_2" class="fw-semibold">{% trans "City: " %}</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="input-group">
+                                            {{form.city}}
+                                        {% if form.city.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.city.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label for="addressInput_2" class="fw-semibold">{% trans "State: " %}</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="input-group">
+                                            {{form.state_province}}
+                                        {% if form.state_province.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.state_province.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label for="addressInput_2" class="fw-semibold">{% trans "Country: " %}</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                    {{form.country}}
+                                        {% if form.country.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.country.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="row  align-items-center">
+                                    <div class="col-lg-4">
+                                        <label for="addressInput_2" class="fw-semibold">{% trans "Postal Code: " %}</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="input-group">
+                                            {{form.postalcode}}
+                                        {% if form.postalcode.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.postalcode.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="card-body  professional-information">
+                                <div class="mb-4 d-flex align-items-center justify-content-between">
+                                    <h6 class="fw-bold mb-0 me-4">
+                                        <span class="d-block mb-2"> {% trans "Professional Information:" %}</span>
+                                        <span class="fs-12 fw-normal text-muted text-truncate-1-line">{% trans "Communication details in case we want to connect with you." %}</span>
+                                    </h6>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label class="fw-semibold">{% trans "Job Title" %}: </label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        {{form.job_title}}
+                                        {% if form.job_title.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.job_title.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label class="fw-semibold">{% trans "Company" %}: </label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        {{form.company}}
+                                        {% if form.company.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.company.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label class="fw-semibold">{% trans "Website" %}: </label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        {{form.website}}
+                                        {% if form.website.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.website.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label class="fw-semibold">{% trans "LinkedIn Profile" %}: </label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        {{form.linkedin_profile}}
+                                        {% if form.linkedin_profile.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.linkedin_profile.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-4">
+                                        <label class="fw-semibold">{% trans "Github Profile" %}: </label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        {{form.github_profile}}
+                                        {% if form.github_profile.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.github_profile.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            
+                            {% comment %} PROFESIONAL INFORMATION {% endcomment %}
+                            <div class="card-body  professional-information">
+                                <div class="mb-4 d-flex align-items-center justify-content-between">
+                                    <h6 class="fw-bold mb-0 me-4">
+                                        <span class="d-block mb-2"> {% trans "Preferences and Settings:" %}</span>
+                                        <span class="fs-12 fw-normal text-muted text-truncate-1-line">{% trans "Communication details in case we want to connect with you." %}</span>
+                                    </h6>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label class="fw-semibold">{% trans "Language" %}: </label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        {{form.language}}
+                                        {% if form.language.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.language.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label class="fw-semibold">{% trans "Timezone" %}: </label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        {{form.timezone}}
+                                        {% if form.timezone.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.timezone.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-4">
+                                    <div class="col-12">
+                                    <div class="mb-4 d-flex align-items-center justify-content-between">
+                                        <label class="fw-semibold">{% trans "Notification Preferences" %}: </label>
+                                        </div>
+                                        <div class="hstack justify-content-between p-4 mb-3 border border-dashed border-gray-3 rounded-1">
+                                            <div class="hstack me-4">
+                                                <div class="avatar-text">
+                                                    <i class="bi-envelope"></i>
+                                                </div>
+                                                <div class="ms-4">
+                                                    <a href="javascript:void(0);" class="fw-bold mb-1 text-truncate-1-line">{% trans "Email Notifications" %}</a>
+                                                </div>
+                                            </div>
+                                            <div class="form-check form-switch form-switch-sm">
+                                                <label class="form-check-label fw-500 text-dark c-pointer" for="formSwitchComment"></label>
+                                                {{form.email_notifications}}
+                                            </div>
+                                        </div>
+                                        <div class="hstack justify-content-between p-4 mb-3 border border-dashed border-gray-3 rounded-1">
+                                            <div class="hstack me-4">
+                                                <div class="avatar-text">
+                                                    <i class="bi-chat-dots"></i>
+                                                </div>
+                                                <div class="ms-4">
+                                                    <a href="javascript:void(0);" class="fw-bold mb-1 text-truncate-1-line">{% trans "SMS Notifications" %}</a>
+                                                </div>
+                                            </div>
+                                            <div class="form-check form-switch form-switch-sm">
+                                                <label class="form-check-label fw-500 text-dark c-pointer" for="formSwitchReplie"></label>
+                                                {{form.sms_notifications}}
+                                            </div>
+                                        </div>
+                                        <div class="hstack justify-content-between p-4 mb-3 border border-dashed border-gray-3 rounded-1">
+                                            <div class="hstack me-4">
+                                                <div class="avatar-text">
+                                                    <i class="feather-bell"></i>
+                                                </div>
+                                                <div class="ms-4">
+                                                    <a href="javascript:void(0);" class="fw-bold mb-1 text-truncate-1-line">{% trans "Push Notifications" %}</a>
+                                                </div>
+                                            </div>
+                                            <div class="form-check form-switch form-switch-sm">
+                                                <label class="form-check-label fw-500 text-dark c-pointer" for="formSwitchFollow"></label>
+                                                {{form.push_notifications}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                    <div class="mb-4 d-flex align-items-center justify-content-between">
+                                        <label class="fw-semibold">{% trans "Privacy Settings" %}: </label>
+                                        </div>
+                                        <div class="hstack justify-content-between p-4 mb-3 border border-dashed border-gray-3 rounded-1">
+                                            <div class="hstack me-4">
+                                                <div class="avatar-text">
+                                                    <i class="bi-envelope"></i>
+                                                </div>
+                                                <div class="ms-4">
+                                                    <a href="javascript:void(0);" class="fw-bold mb-1 text-truncate-1-line">{% trans "Profile Visibility" %}</a>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                {{form.profile_visibility}}
+                                            </div>
+                                        </div> 
+                                        <div class="hstack justify-content-between p-4 mb-3 border border-dashed border-gray-3 rounded-1">
+                                            <div class="hstack me-4">
+                                                <div class="avatar-text">
+                                                    <i class="bi-chat-dots"></i>
+                                                </div>
+                                                <div class="ms-4">
+                                                    <a href="javascript:void(0);" class="fw-bold mb-1 text-truncate-1-line">{% trans "Search Engine Indexing" %}</a>
+                                                </div>
+                                            </div>
+                                            <div class="form-check form-switch form-switch-sm">
+                                                {{form.search_engine_indexing}}
+                                            </div>
+                                        </div>
+                                        <div class="hstack justify-content-between p-4 mb-3 border border-dashed border-gray-3 rounded-1">
+                                            <div class="hstack me-4">
+                                                <div class="avatar-text">
+                                                    <i class="feather-bell"></i>
+                                                </div>
+                                                <div class="ms-4">
+                                                    <a href="javascript:void(0);" class="fw-bold mb-1 text-truncate-1-line">{% trans "Data Sharing" %}</a>
+                                                </div>
+                                            </div>
+                                            <div class="form-check form-switch form-switch-sm">
+                                                <label class="form-check-label fw-500 text-dark c-pointer" for="formSwitchFollow"></label>
+                                                {{form.data_sharing}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-0">
+                            {% comment %} ADDITIONAL INFORMATION {% endcomment %}
+                            <div class="card-body additional-info">
+                                <div class="mb-4 d-flex align-items-center justify-content-between">
+                                    <h6 class="fw-bold mb-0 me-4">
+                                        <span class="d-block mb-2">{% trans "Additional Information:" %}</span>
+                                        <span class="fs-12 fw-normal text-muted text-truncate-1-line">{% trans "Communication details in case we want to connect with you." %}</span>
+                                    </h6>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label for="dateofBirth" class="fw-semibold">{% trans "Bio" %} </label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        {{form.bio}}
+                                        {% if form.bio.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.bio.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label for="dateofBirth" class="fw-semibold">{% trans "Interests" %} </label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        {{form.interests}}
+                                        {% if form.interests.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.interests.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label for="dateofBirth" class="fw-semibold">{% trans "Skills" %} </label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        {{form.skills}}
+                                        {% if form.skills.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.skills.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label for="dateofBirth" class="fw-semibold">{% trans "Education" %} </label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        {{form.education}}
+                                        
+                                        {% if form.education.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.education.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-lg-4">
+                                        <label for="dateofBirth" class="fw-semibold">{% trans "Experience" %} </label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        {{form.experience}}
+                                        {% if form.experience.errors %}
+                                            <div class="text-danger">
+                                                {% for error in form.experience.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="footer sticky-bottom"> 
+                        <p class="fs-11 text-muted fw-medium text-uppercase mb-0 copyright">
+                            <span>{% trans "Copyright" %} ©</span>
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                        </p>
+                        <div class="d-flex align-items-center gap-4">
+                            <a href="javascript:void(0);" class="fs-11 fw-semibold text-uppercase">{% trans "Help" %}</a>
+                            <a href="javascript:void(0);" class="fs-11 fw-semibold text-uppercase">{% trans "Terms" %}</a>
+                            <a href="javascript:void(0);" class="fs-11 fw-semibold text-uppercase">{% trans "Privacy" %}</a>
+                        </div>
+                    </footer>
+                    <!-- [ Footer ] end -->
+                </div>
+            </form>
+                <!-- [ Content Area ] end -->
+            </div>
+            <!-- [ Main Content ] end -->
+        </div>
+    </main>
+    <!--! ================================================================ !-->
+    <!--! [End] Main Content !-->
+    <!--! ================================================================ !-->
+{% endblock content %}
+
+{% block components %} 
+
+{% endblock components %}
+
+{% block javascripts %}
+
+<!--! BEGIN: Vendors JS !-->
+<script src="{% static 'assets/vendors/js/vendors.min.js' %}"></script>
+<script src="{% static '/ckeditor/ckeditor/ckeditor.js' %}"></script>
+<script src="{% static '/ckeditor/ckeditor-init.js' %}"></script>
+<!-- vendors.min.js {always must need to be top} -->
+{% comment %} <script src="{% static 'assets/vendors/js/select2.min.js' %}"></script> {% endcomment %}
+{% comment %} <script src="{% static 'assets/vendors/js/select2-active.min.js' %}"></script> {% endcomment %}
+
+<!--! BEGIN: Apps Init  !-->
+<script src="{% static 'assets/js/common-init.min.js' %}"></script>
+<script src="{% static 'assets/js/settings-init.min.js' %}"></script>
+
+<!--! END: Apps Init !-->
+<!--! BEGIN: Theme Customizer  !-->
+<script src="{% static 'assets/js/theme-customizer-init.min.js' %}"></script>
+<!--! END: Theme Customizer !-->
+
+<script>
+document.getElementById('profile_picture').addEventListener('change', function(event) {
+    var preview = document.getElementById('profile-picture-preview');
+    var file = event.target.files[0];
+    var profile_picture = "/media/{{ user.profile.profile_picture }}" || "/static/assets/images/avatar/1.png";
+
+    if (file) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            preview.src = e.target.result;
+        }
+
+        reader.readAsDataURL(file);
+    } else {
+        preview.src = profile_picture;
+    }
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+<script>
+    // Function to display toast messages
+    function showToast(message, type) {
+        Toastify({
+            text: message,
+            duration: 5000,
+            close: true,
+            gravity: "top",
+            position: "right",
+            backgroundColor: type === 'success' ? "linear-gradient(to right, #00b09b, #96c93d)" : type === 'error' ? "linear-gradient(to right, #FF5F5F, #FF5F5F)" : "linear-gradient(to right, #1e40af, #1d4ed8)",
+        }).showToast();
+    }
+
+    // Display toast notifications if messages exist
+    {% if messages %}
+        {% for message in messages %}
+            showToast("{{ message.message|safe }}", "{{ message.tags }}");
+        {% endfor %}
+    {% endif %}
+</script>
+{% endblock javascripts %}

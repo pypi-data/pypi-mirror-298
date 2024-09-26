@@ -1,0 +1,46 @@
+[
+    {
+    "model": "apps_accounts.userprofile",
+    "pk": "df37ec61-1011-43c9-a41c-9dfba6daaf5f",
+    "fields": {
+        "created": "2024-09-24T07:42:45.804Z",
+        "last_updated": "2024-09-24T07:42:58.589Z",
+        "added_by": null,
+        "last_updated_by": null,
+        "tenant": null,
+        "user_type": 2,
+        "user_object": 2,
+        "profile_picture": "",
+        "phone_number": "",
+        "address": "",
+        "city": "",
+        "state_province": null,
+        "postalcode": "",
+        "country": null,
+        "job_title": "",
+        "company": "",
+        "website": "",
+        "linkedin_profile": "",
+        "github_profile": "",
+        "language": null,
+        "timezone": null,
+        "notification_preferences": {
+        "email_notifications": true,
+        "sms_notifications": true,
+        "push_notifications": true
+        },
+        "privacy_settings": {
+        "profile_visibility": "public",
+        "search_engine_indexing": true,
+        "data_sharing": true
+        },
+        "bio": "",
+        "interests": "",
+        "skills": "",
+        "education": "",
+        "experience": "",
+        "user_token": "",
+        "status": "DISABLED"
+    }
+    }
+]

@@ -1,0 +1,807 @@
+{% extends "layouts/base.html" %} {% block title %} Customers View {% endblock%}
+{% load static i18n %}
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/css/dataTables.bs5.min.css'%}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+{% endblock stylesheets %} {% block pageheader %}
+<div class="page-header">
+  <div class="page-header-left d-flex align-items-center">
+    <div class="page-header-title">
+      <h5 class="m-b-10">{{segment.text}}</h5>
+    </div>
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+      <li class="breadcrumb-item">{{ segment.text }}</li>
+    </ul>
+  </div>
+  <div class="page-header-right ms-auto">
+    <div class="page-header-right-items">
+      <div class="d-flex d-md-none">
+        <a href="javascript:void(0)" class="page-header-right-close-toggle">
+          <i class="feather-arrow-left me-2"></i>
+          <span>{% trans "Back" %}</span>
+        </a>
+      </div>
+      <div
+        class="d-flex align-items-center gap-2 page-header-right-items-wrapper"
+      >
+      {% if user.profile.user_type.has_full_access %}
+        <a href="{% url 'team_invites' %}" class="btn btn-primary">
+          <i class="feather-users me-2"></i>
+          <span>{% trans "Invites" %}</span>
+        </a>
+      {%endif%}
+      </div>
+    </div>
+    <div class="d-md-none d-flex align-items-center">
+      <a href="javascript:void(0)" class="page-header-right-open-toggle">
+        <i class="feather-align-right fs-20"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock pageheader%} 
+
+{% block content %}
+  <div class="col-lg-12" style="margin-bottom: 4rem;">
+      <div class="card stretch stretch-full">
+          <div class="card-body p-0">
+              <div class="table-responsive">
+                  <table class="table table-hover" id="paymentList">
+                      <thead>
+                          <tr>
+                              <th>{% trans "Team Member" %}</th>
+                              <th>{% trans "Quick Contact" %}</th>
+                              <th>{% trans "Access Type" %}</th>
+                              <th>{% trans "Last Login" %}</th>
+                              <th>{% trans "Timezone" %}</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+
+                        {% for team_member in team_member_list %}
+
+                          <tr class="single-item">
+                              <td>
+                                  <a href="javascript:void(0)" class="hstack gap-3">
+                                      <div class="avatar-image avatar-md">
+                                          <img src="/media/{{ team_member.profile_picture }}" onerror="this.onerror=null; this.src='{% static 'assets/images/avatar/1.png' %}';" alt="profile picture" class="img-fluid">
+                                          
+                                      </div>
+                                      <div class="text-truncate-1-line" style="max-width:200px;">
+                                          <span>{{team_member.user_object.first_name}} {{team_member.user_object.last_name}}</span>
+                                          {% if team_member.user_object.email == user.email %}
+                                            <span>{% trans "(You)" %}</span>
+                                          {%endif%}
+                                      </div>
+                                  </a>
+                              </td>
+                              <td class="fw-bold text-dark"><div class="text-truncate-1-line" style="max-width:200px;">{{team_member.user_object.email}}</div></td>
+                              <td>
+                                <div class="text-truncate-1-line" style="max-width:150px;">
+                                  {% if team_member.user_type %}
+                                    {{team_member.user_type}}
+                                  {%else%}
+                                    {% if team_member.user_object.is_staff or team_member.user_object.is_superuser %}
+                                      <span>{% trans "Administrator" %}</span>
+                                    {% else %}
+                                      <span></span>
+                                    {% endif %}
+                                  {% endif %}
+                                </div>
+                              </td>
+                              <td><div class="text-truncate-1-line" style="max-width:150px;"><small class="fw-bold text-capitalize">{{team_member.user_object.last_login}}</small></div></td>
+                              <td>
+                                  <small class="text-secondary">{{ team_member.timezone }} </small> 
+                              </td>
+                          </tr>
+
+                        {% endfor %}
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+{% endblock content %} 
+
+{% block components %}
+
+<div class="modal fade-scale" id="searchModal" aria-hidden="true" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-top modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header search-form py-0">
+        <div class="input-group">
+          <span class="input-group-text">
+            <i class="feather-search fs-4 text-muted"></i>
+          </span>
+          <input
+            type="text"
+            class="form-control search-input-field"
+            placeholder="Search..."
+          />
+          <span class="input-group-text">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="searching-for mb-5">
+          <h4 class="fs-13 fw-normal text-gray-600 mb-3">
+            I'm searching for...
+          </h4>
+          <div class="row g-1">
+            <div class="col-md-4 col-xl-2">
+              <a
+                href="javascript:void(0);"
+                class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill"
+              >
+                <i class="feather-compass"></i>
+                <span>Recent</span>
+              </a>
+            </div>
+            <div class="col-md-4 col-xl-2">
+              <a
+                href="javascript:void(0);"
+                class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill"
+              >
+                <i class="feather-command"></i>
+                <span>Command</span>
+              </a>
+            </div>
+            <div class="col-md-4 col-xl-2">
+              <a
+                href="javascript:void(0);"
+                class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill"
+              >
+                <i class="feather-users"></i>
+                <span>Peoples</span>
+              </a>
+            </div>
+            <div class="col-md-4 col-xl-2">
+              <a
+                href="javascript:void(0);"
+                class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill"
+              >
+                <i class="feather-file"></i>
+                <span>Files</span>
+              </a>
+            </div>
+            <div class="col-md-4 col-xl-2">
+              <a
+                href="javascript:void(0);"
+                class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill"
+              >
+                <i class="feather-video"></i>
+                <span>Medias</span>
+              </a>
+            </div>
+            <div class="col-md-4 col-xl-2">
+              <a
+                href="javascript:void(0);"
+                class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill"
+              >
+                <span>More</span>
+                <i class="feather-chevron-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="recent-result mb-5">
+          <h4 class="fs-13 fw-normal text-gray-600 mb-3">
+            Recnet
+            <span class="badge small bg-gray-200 rounded ms-1 text-dark"
+              >3</span
+            >
+          </h4>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-start gap-3"
+            >
+              <i class="feather-airplay fs-5"></i>
+              <div class="fs-13 fw-semibold">CRM dashboard redesign</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark"
+              >/<i class="feather-command ms-1 fs-12"></i
+            ></a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-start gap-3"
+            >
+              <i class="feather-file-plus fs-5"></i>
+              <div class="fs-13 fw-semibold">Create new eocument</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark"
+              >N /<i class="feather-command ms-1 fs-12"></i
+            ></a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-start gap-3"
+            >
+              <i class="feather-user-plus fs-5"></i>
+              <div class="fs-13 fw-semibold">Invite project colleagues</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark"
+              >P /<i class="feather-command ms-1 fs-12"></i
+            ></a>
+          </div>
+        </div>
+        <div class="command-result mb-5">
+          <h4 class="fs-13 fw-normal text-gray-600 mb-3">
+            Command
+            <span class="badge small bg-gray-200 rounded ms-1 text-dark"
+              >5</span
+            >
+          </h4>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-start gap-3"
+            >
+              <i class="feather-user fs-5"></i>
+              <div class="fs-13 fw-semibold">My profile</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark"
+              >P /<i class="feather-command ms-1 fs-12"></i
+            ></a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-start gap-3"
+            >
+              <i class="feather-users fs-5"></i>
+              <div class="fs-13 fw-semibold">Team profile</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark"
+              >T /<i class="feather-command ms-1 fs-12"></i
+            ></a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-start gap-3"
+            >
+              <i class="feather-user-plus fs-5"></i>
+              <div class="fs-13 fw-semibold">Invite colleagues</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark"
+              >I /<i class="feather-command ms-1 fs-12"></i
+            ></a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-start gap-3"
+            >
+              <i class="feather-briefcase fs-5"></i>
+              <div class="fs-13 fw-semibold">Create new project</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark"
+              >CP /<i class="feather-command ms-1 fs-12"></i
+            ></a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-start gap-3"
+            >
+              <i class="feather-life-buoy fs-5"></i>
+              <div class="fs-13 fw-semibold">Support center</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark"
+              >SC /<i class="feather-command ms-1 fs-12"></i
+            ></a>
+          </div>
+        </div>
+        <div class="file-result mb-4">
+          <h4 class="fs-13 fw-normal text-gray-600 mb-3">
+            Files
+            <span class="badge small bg-gray-200 rounded ms-1 text-dark"
+              >3</span
+            >
+          </h4>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-start gap-3"
+            >
+              <i class="feather-folder-plus fs-5"></i>
+              <div class="fs-13 fw-semibold">
+                CRM Desing Project
+                <span class="fs-12 fw-normal text-muted">(56.74 MB)</span>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="file-download"
+              ><i class="feather-download"></i
+            ></a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-start gap-3"
+            >
+              <i class="feather-folder-plus fs-5"></i>
+              <div class="fs-13 fw-semibold">
+                Admin Dashboard Project
+                <span class="fs-12 fw-normal text-muted">(46.83 MB)</span>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="file-download"
+              ><i class="feather-download"></i
+            ></a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-start gap-3"
+            >
+              <i class="feather-folder-plus fs-5"></i>
+              <div class="fs-13 fw-semibold">
+                CRM Dashboard Project
+                <span class="fs-12 fw-normal text-muted">(68.59 MB)</span>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="file-download"
+              ><i class="feather-download"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--! ================================================================ !-->
+<!--! [End] Search Modal !-->
+<!--! ================================================================ !-->
+<!--! ================================================================ !-->
+<!--! [Start] Language Select !-->
+<!--! ================================================================ !-->
+<div
+  class="modal fade-scale"
+  id="languageSelectModal"
+  aria-hidden="true"
+  aria-labelledby="languageSelectModalLabel"
+  tabindex="-1"
+>
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="languageSelectModalLabel">
+          Select Language
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/sa.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Arabic </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/bd.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Bengali </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a href="javascript:void(0);"
+              class="d-flex align-items-center gap-2">
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/ch.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Chinese </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/hr.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Croatian </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/dk.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Danish </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/nl.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Dutch </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select active">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/us.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>English </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/fi.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Filipino </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/fr.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>French </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/de.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>German </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/il.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Hebrew </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/in.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Hindi </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/id.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Indonesian </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/it.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Italian </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/jp.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Japanese </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/kr.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Korean </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/ir.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Persian </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/pt.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Portuguese </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/ru.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Russian </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/es.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Spanish </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/sv.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Swedish </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/tr.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Turkish </span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/pk.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Urdo</span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a
+              href="javascript:void(0);"
+              class="d-flex align-items-center gap-2"
+            >
+              <div class="avatar-image avatar-sm">
+                <img
+                  src="{% static 'assets/vendors/img/flags/1x1/vi.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <span>Vietnamese</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--! ================================================================ !-->
+<!--! [End] Language Select !-->
+<!--! ================================================================ !-->
+<div id="toast-container">
+    {% if form.errors %}
+    <div class="toast">
+        {{ form.errors.email }}
+    </div>
+    {% endif %}
+</div>
+{% endblock components %} 
+
+{% block javascripts %}
+<!--! BEGIN: Vendors JS !-->
+<script src="{% static 'assets/vendors/js/vendors.min.js' %}"></script>
+<!-- vendors.min.js {always must need to be top} -->
+<script src="{% static 'assets/vendors/js/dataTables.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/dataTables.bs5.min.js' %}"></script>
+<!--! END: Vendors JS !-->
+<!--! BEGIN: Apps Init  !-->
+<script src="{% static 'assets/js/common-init.min.js' %}"></script>
+<script src="{% static 'assets/js/payment-init.min.js' %}"></script>
+<!--! END: Apps Init !-->
+<!--! BEGIN: Theme Customizer  !-->
+<script src="{% static 'assets/js/theme-customizer-init.min.js' %}"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+ <script>
+        // Function to display toast messages
+        function showToast(message, type) {
+            Toastify({
+                text: message,
+                duration: 5000,
+                close: true,
+                gravity: "top",
+                position: "right",
+                backgroundColor: type === 'success' ? "linear-gradient(to right, #00b09b, #96c93d)" : "linear-gradient(to right, #FF5F5F, #FF5F5F)",
+            }).showToast();
+        }
+
+        // Display toast notifications if messages exist
+        {% if messages %}
+            {% for message in messages %}
+                showToast("{{ message.message|safe }}", "{{ message.tags }}");
+            {% endfor %}
+        {% endif %}
+    </script>
+<!--! END: Theme Customizer !-->
+{% endblock javascripts %}

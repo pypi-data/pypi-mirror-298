@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: buzzerboy-saas-tenants
+Version: 0.1
+Summary: A reusable Django package containing multiple apps
+Home-page: https://your-package-repo-url
+Author: Buzzerboy Inc.
+Author-email: dev@buzzerboy.com
+License: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Description-Content-Type: text/markdown
+
+# Introduction 
+This is a standard starter Kit for a Django application with UI already built-in
+
+# Getting Started
+Installation process
+Recommend to use Linux or WSL, and ensure Python3 and Pip are installed. Run `pip3 install -r requirements.txt` from root directory, then `python3 manage.py runserver`
+
+# Build and Test
+TO DO: Create layout and base
+TO DO: Create templatetags for left menu and other components that occur on all pages
+
