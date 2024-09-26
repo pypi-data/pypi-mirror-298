@@ -1,0 +1,13 @@
+trame-client
+
+[build]
+build~=1.2
+
+[dev]
+pylint
+mypy
+black
+isort
+
+[test]
+pytest

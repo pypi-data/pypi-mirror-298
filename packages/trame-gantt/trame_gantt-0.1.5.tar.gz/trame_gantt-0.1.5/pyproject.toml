@@ -1,0 +1,93 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trame-gantt"
+version = "0.1.5"
+description = "Widget for gantt diagram for trame"
+authors = [{name = "Lionel Untereiner", email = "lionel.untereiner@geosiris.com"}]
+license = {text = "MIT or Apache-2.0" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: JavaScript",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = [
+    "Python",
+    "Interactive",
+    "Web",
+    "Application",
+    "Framework",
+]
+
+dependencies = [
+#    "trame",
+   "trame-client",
+#    "trame-vuetify",
+]
+
+[project.optional-dependencies]
+build = [
+  "build ~= 1.2"
+]
+dev = [
+    "pylint",
+    "mypy",
+    "black",
+    "isort"
+]
+test = [
+    "pytest",
+]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[tool.setuptools]
+license-files = ["LICENSE"]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ['trame*']
+# exclude = ['geos-trame*tests']
+
+[tool.setuptools.package-data]
+"*" = ["*.js", "*.css"]
+
+[tool.semantic_release]
+build_command = """
+    python -m pip install -e .[build]
+    python -m build .
+"""
+version_toml = ["pyproject.toml:project.version"]
+
+
+#[tool.pytest.ini_options]
+#addopts = "--cov --cov-report html --cov-report term-missing --cov-fail-under 95"
+
+#[tool.coverage.run]
+#source = ["src"]
+
+[tool.pylint]
+max-line-length = 88
+disable = [
+    "C0103", # (invalid-name)
+    "C0114", # (missing-module-docstring)
+    "C0115", # (missing-class-docstring)
+    "C0116", # (missing-function-docstring)
+    "R0903", # (too-few-public-methods)
+    "R0913", # (too-many-arguments)
+    "W0105", # (pointless-string-statement)
+]
+
+[tool.isort]
+profile = "black"
+src_paths = ["src", "test"]
+py_version=310
