@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: petowo-core
+Version: 1.0.2
+Home-page: https://github.com/fleshbound/petowo-core
+Author: Valeria Avdeykina
+Author-email: avdeykina@icloud.com
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
