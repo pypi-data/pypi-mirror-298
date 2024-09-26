@@ -1,0 +1,13 @@
+README.md
+setup.py
+nexusfm/__init__.py
+nexusfm/cli.py
+nexusfm/core.py
+nexusfm/gui.py
+nexusfm/terminal_commands.py
+nexusfm.egg-info/PKG-INFO
+nexusfm.egg-info/SOURCES.txt
+nexusfm.egg-info/dependency_links.txt
+nexusfm.egg-info/entry_points.txt
+nexusfm.egg-info/requires.txt
+nexusfm.egg-info/top_level.txt
