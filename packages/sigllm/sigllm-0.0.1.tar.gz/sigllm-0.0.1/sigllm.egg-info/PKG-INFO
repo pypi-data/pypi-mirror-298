@@ -1,0 +1,176 @@
+Metadata-Version: 2.1
+Name: sigllm
+Version: 0.0.1
+Summary: Signals plus LLMs
+Home-page: https://github.com/sintel-dev/sigllm
+Author: MIT Data To AI Lab
+Author-email: dailabmit@gmail.com
+License: MIT license
+Keywords: sigllm sigllm sigllm
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: numpy<2,>=1.17.5
+Requires-Dist: openai
+Requires-Dist: pandas<2,>=1
+Requires-Dist: orion-ml<0.8,>=0.5
+Requires-Dist: scikit-learn<1.2,>=0.22
+Requires-Dist: tiktoken
+Requires-Dist: transformers
+Requires-Dist: torch>=1.4
+Requires-Dist: accelerate
+Requires-Dist: sentencepiece
+Provides-Extra: test
+Requires-Dist: pytest>=3.4.2; extra == "test"
+Requires-Dist: pytest-cov>=2.6.0; extra == "test"
+Requires-Dist: rundoc<0.5,>=0.4.3; extra == "test"
+Provides-Extra: dev
+Requires-Dist: bumpversion>=0.5.3; extra == "dev"
+Requires-Dist: pip>=9.0.1; extra == "dev"
+Requires-Dist: watchdog>=0.8.3; extra == "dev"
+Requires-Dist: docutils<0.18,>=0.12; extra == "dev"
+Requires-Dist: m2r2<0.3,>=0.2.5; extra == "dev"
+Requires-Dist: nbsphinx<0.7,>=0.5.0; extra == "dev"
+Requires-Dist: Sphinx<3.3,>=3; extra == "dev"
+Requires-Dist: pydata-sphinx-theme<0.5; extra == "dev"
+Requires-Dist: markupsafe<2.1.0; extra == "dev"
+Requires-Dist: ipython<9,>=6.5; extra == "dev"
+Requires-Dist: Jinja2<3,>=2; extra == "dev"
+Requires-Dist: alabaster<=0.7.12; extra == "dev"
+Requires-Dist: sphinxcontrib-applehelp<1.0.8; extra == "dev"
+Requires-Dist: sphinxcontrib-devhelp<1.0.6; extra == "dev"
+Requires-Dist: sphinxcontrib-htmlhelp<2.0.5; extra == "dev"
+Requires-Dist: sphinxcontrib-serializinghtml<1.1.10; extra == "dev"
+Requires-Dist: sphinxcontrib-qthelp<1.0.7; extra == "dev"
+Requires-Dist: flake8<4,>=3.7.7; extra == "dev"
+Requires-Dist: isort<5,>=4.3.4; extra == "dev"
+Requires-Dist: autoflake<2,>=1.2; extra == "dev"
+Requires-Dist: autopep8<2,>=1.4.3; extra == "dev"
+Requires-Dist: importlib-metadata<5; extra == "dev"
+Requires-Dist: twine<4,>=1.10.0; extra == "dev"
+Requires-Dist: wheel>=0.30.0; extra == "dev"
+Requires-Dist: coverage<6,>=4.5.1; extra == "dev"
+Requires-Dist: tox<4,>=2.9.1; extra == "dev"
+Requires-Dist: invoke; extra == "dev"
+Requires-Dist: pytest>=3.4.2; extra == "dev"
+Requires-Dist: pytest-cov>=2.6.0; extra == "dev"
+Requires-Dist: rundoc<0.5,>=0.4.3; extra == "dev"
+
+<p align="left">
+<img width=15% src="https://dai.lids.mit.edu/wp-content/uploads/2018/06/Logo_DAI_highres.png" alt=“DAI-Lab” />
+<i>An open source project from Data to AI Lab at MIT.</i>
+</p>
+
+<!-- Uncomment these lines after releasing the package to PyPI for version and downloads badges -->
+<!--[![PyPI Shield](https://img.shields.io/pypi/v/sigllm.svg)](https://pypi.python.org/pypi/sigllm)-->
+<!--[![Downloads](https://pepy.tech/badge/sigllm)](https://pepy.tech/project/sigllm)-->
+[![Github Actions Shield](https://img.shields.io/github/workflow/status/sintel-dev/sigllm/Run%20Tests)](https://github.com/sintel-dev/sigllm/actions)
+
+
+
+# sigllm
+
+Signals plus LLMs
+
+- Documentation: https://sintel-dev.github.io/sigllm
+- Homepage: https://github.com/sintel-dev/sigllm
+
+# Overview
+
+TODO: Provide a short overview of the project here.
+
+# Install
+
+## Requirements
+
+**sigllm** has been developed and tested on [Python 3.8, 3.9, 3.10 and 3.11](https://www.python.org/downloads/)
+
+Also, although it is not strictly required, the usage of a [virtualenv](https://virtualenv.pypa.io/en/latest/)
+is highly recommended in order to avoid interfering with other software installed in the system
+in which **sigllm** is run.
+
+These are the minimum commands needed to create a virtualenv using python3.8 for **sigllm**:
+
+```bash
+pip install virtualenv
+virtualenv -p $(which python3.6) sigllm-venv
+```
+
+Afterwards, you have to execute this command to activate the virtualenv:
+
+```bash
+source sigllm-venv/bin/activate
+```
+
+Remember to execute it every time you start a new console to work on **sigllm**!
+
+<!-- Uncomment this section after releasing the package to PyPI for installation instructions
+## Install from PyPI
+
+After creating the virtualenv and activating it, we recommend using
+[pip](https://pip.pypa.io/en/stable/) in order to install **sigllm**:
+
+```bash
+pip install sigllm
+```
+
+This will pull and install the latest stable release from [PyPI](https://pypi.org/).
+-->
+
+## Install from source
+
+With your virtualenv activated, you can clone the repository and install it from
+source by running `make install` on the `stable` branch:
+
+```bash
+git clone git@github.com:sintel-dev/sigllm.git
+cd sigllm
+git checkout stable
+make install
+```
+
+## Install for Development
+
+If you want to contribute to the project, a few more steps are required to make the project ready
+for development.
+
+Please head to the [Contributing Guide](https://sintel-dev.github.io/sigllm/contributing.html#get-started)
+for more details about this process.
+
+# Quickstart
+
+In this short tutorial we will guide you through a series of steps that will help you
+getting started with **sigllm**.
+
+TODO: Create a step by step guide here.
+
+# What's next?
+
+For more details about **sigllm** and all its possibilities
+and features, please check the [documentation site](
+https://sintel-dev.github.io/sigllm/).
+
+
+# History
+
+## 0.0.1 - 2024-09-25
+
+First sigllm release to PyPI: https://pypi.org/project/sigllm/
+
+* Add README – [Issue #17](https://github.com/sintel-dev/sigllm/issues/17) by @sarahmish
+* Create a SigLLM API – [Issue #13](https://github.com/sintel-dev/sigllm/issues/13) by @sarahmish
+* Add a Quick Example – [Issue #12](https://github.com/sintel-dev/sigllm/issues/12) by @sarahmish
+* Forecasting Pipeline – [Issue #11](https://github.com/sintel-dev/sigllm/issues/11) by @sarahmish
+* Refactor Transformation Primitives – [Issue #7](https://github.com/sintel-dev/sigllm/issues/7) by @sarahmish
+* Forecasting Module – [Issue #2](https://github.com/sintel-dev/sigllm/issues/2) by @sarahmish
+
