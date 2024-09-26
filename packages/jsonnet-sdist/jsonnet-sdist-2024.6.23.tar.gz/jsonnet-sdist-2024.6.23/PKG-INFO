@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: jsonnet-sdist
+Version: 2024.6.23
+Summary: Python bindings for Jsonnet - The data templating language 
+Home-page: https://jsonnet.org
+Author: David Cunningham
+Author-email: dcunnin@google.com
+License: Apache License 2.0
+Project-URL: Source, https://github.com/google/jsonnet
+License-File: LICENSE
