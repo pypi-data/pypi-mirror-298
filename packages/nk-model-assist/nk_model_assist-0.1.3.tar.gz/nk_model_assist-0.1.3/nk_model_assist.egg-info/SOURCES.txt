@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+nk_model_assist/__init__.py
+nk_model_assist/data_checker.py
+nk_model_assist/data_loader.py
+nk_model_assist/modelling.py
+nk_model_assist/preprocess.py
+nk_model_assist.egg-info/PKG-INFO
+nk_model_assist.egg-info/SOURCES.txt
+nk_model_assist.egg-info/dependency_links.txt
+nk_model_assist.egg-info/requires.txt
+nk_model_assist.egg-info/top_level.txt
+tests/test_data_checker.py
+tests/test_modelling.py
+tests/test_preprocess.py
