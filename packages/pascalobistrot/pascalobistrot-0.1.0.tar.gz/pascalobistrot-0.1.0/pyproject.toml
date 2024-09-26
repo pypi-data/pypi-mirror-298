@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pascalobistrot"
+version = "0.1.0"
+description = ""
+authors = ["Marius-courquin <marius.courquin@ig2i.centralelille.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+opencv-python = "^4.10.0.84"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

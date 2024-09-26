@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pascalobistrot
+Version: 0.1.0
+Summary: 
+Author: Marius-courquin
+Author-email: marius.courquin@ig2i.centralelille.fr
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: opencv-python (>=4.10.0.84,<5.0.0.0)
+Description-Content-Type: text/markdown
+
+# Pascal Obistrot
+
+## L'objectif est de donnerdesous à pascalobistrot pour le donner des coups à boire
