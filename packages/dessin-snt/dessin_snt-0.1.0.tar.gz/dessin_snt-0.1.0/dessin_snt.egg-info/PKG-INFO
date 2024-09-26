@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dessin-snt
+Version: 0.1.0
+Summary: Débuter la programmation en dessinant
+Home-page: UNKNOWN
+Author: Christophe Viroulaud
+Author-email: christophe.viroulaud@ac-bordeaux.fr
+License: GPL V3
+Keywords: dessin SNT Python
+Platform: ALL
+Classifier: Topic :: Education
+Classifier: Topic :: Games/Entertainment
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+
+### Présentation
+
+Fonctions basiques pour dessiner en Python;
+
+
+
