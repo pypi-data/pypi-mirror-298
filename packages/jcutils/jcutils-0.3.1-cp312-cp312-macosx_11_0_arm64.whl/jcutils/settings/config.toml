@@ -1,0 +1,13 @@
+[app]
+name = "jcutils"
+name10 = "aaaa"
+
+[dirs]
+logs_dir = "logs"
+temp_dir = "temp"
+out_dir = "out"
+mail_dir = "mail"
+conf_dir = "/Users/lijicong/workspace/guoquan/guoquan-apocalypse-cron/src/api/settings"
+
+[common]
+app_log_path = "logs/app.log"
