@@ -1,0 +1,3 @@
+[console_scripts]
+vu1-monitor=vu1_monitor.main:main
+
