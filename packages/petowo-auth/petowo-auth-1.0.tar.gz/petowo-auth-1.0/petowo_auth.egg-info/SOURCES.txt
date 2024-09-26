@@ -1,0 +1,7 @@
+setup.py
+auth_provider/__init__.py
+petowo_auth.egg-info/PKG-INFO
+petowo_auth.egg-info/SOURCES.txt
+petowo_auth.egg-info/dependency_links.txt
+petowo_auth.egg-info/requires.txt
+petowo_auth.egg-info/top_level.txt
