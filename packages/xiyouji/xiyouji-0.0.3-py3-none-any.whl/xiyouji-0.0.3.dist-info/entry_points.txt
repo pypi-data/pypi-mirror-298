@@ -1,0 +1,2 @@
+[console_scripts]
+西游 = 西游记.中:中
