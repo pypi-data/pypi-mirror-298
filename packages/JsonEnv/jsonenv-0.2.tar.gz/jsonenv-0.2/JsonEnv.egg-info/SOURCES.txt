@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+JsonEnv/__init__.py
+JsonEnv/jsonenv.py
+JsonEnv.egg-info/PKG-INFO
+JsonEnv.egg-info/SOURCES.txt
+JsonEnv.egg-info/dependency_links.txt
+JsonEnv.egg-info/top_level.txt
