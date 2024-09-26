@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+heydenpdf.egg-info/PKG-INFO
+heydenpdf.egg-info/SOURCES.txt
+heydenpdf.egg-info/dependency_links.txt
+heydenpdf.egg-info/top_level.txt
