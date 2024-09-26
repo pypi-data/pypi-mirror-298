@@ -1,0 +1,2 @@
+[console_scripts]
+ascidia = ascidia.__main__:main
