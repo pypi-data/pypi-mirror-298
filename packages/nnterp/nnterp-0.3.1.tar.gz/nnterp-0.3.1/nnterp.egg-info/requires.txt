@@ -1,0 +1,5 @@
+nnsight
+pandas
+
+[display]
+plotly
