@@ -1,0 +1,89 @@
+/* The report's tab panels (dataframe sample, column summaries, column associations) */
+/* --------------------------------------------------------------------------------- */
+
+
+/* The tabs (buttons that allow selecting the tab panel) */
+/* ----------------------------------------------------- */
+
+.tab-list-wrapper {
+    align-items: flex-start;
+    border-bottom: 1px solid var(--darkg);
+    column-gap: 2rem;
+    row-gap: var(--micro);
+}
+
+.tab-list-scroller {
+    overflow: auto hidden;
+}
+
+.tab-list {
+    display: flex;
+    column-gap: var(--tiny);
+    padding-left: var(--tiny);
+    padding-right: var(--tiny);
+    align-items: stretch;
+    margin-bottom: -1.2px;
+}
+
+.tab-list > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 2px;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    column-gap: var(--micro);
+    border: 1px solid transparent;
+    border-bottom: none;
+    border-radius: var(--radius) var(--radius) 0 0;
+    padding: var(--tiny);
+    padding-top: var(--micro);
+    padding-bottom: var(--tiny);
+    font-size: var(--small);
+    background-color: transparent;
+    --color-muted: var(--darkg);
+    --color-default: inherit;
+    color: var(--color-muted);
+}
+
+.tab:hover {
+    color: var(--color-default);
+}
+
+.tab[data-is-selected] {
+    border-color: var(--darkg);
+    background-color: white;
+    color: var(--color-default);
+}
+
+/* When a tab contains critical content we highlight the corresponding button so */
+/* the user is more likely to click on it. ATM this is just used for the */
+/* associations tab when some columns are very strongly associated. */
+
+.tab-list .tab .warning-sign {
+    display: none;
+    width: 1em;
+    height: 1em;
+    margin: 1px;
+}
+
+.tab-list .tab[data-has-warning] .warning-sign {
+    display: inline-block;
+}
+
+.tab-list .tab[data-has-warning] {
+    --color-muted: var(--darkred);
+    --color-default: var(--red);
+
+}
+
+/* The panels (the main content) */
+/* ----------------------------- */
+
+.tab-panel {
+    padding-top: var(--tiny);
+    border-radius: 0 0 var(--radius) var(--radius);
+}
