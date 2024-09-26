@@ -1,0 +1,13 @@
+asyncpg>=0.24.0
+atimer>=1.2.0
+hy>=1.0.0
+hyrule>=0.7.0
+uvloop>=0.19.0
+
+[tests]
+mypy==1.11.2
+pytest-cov
+pytest-timeout
+pytest-asyncio
+pytest-mock
+ruff>=0.6.7
