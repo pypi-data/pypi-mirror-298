@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: taskpath
+Version: 0.0.12
+Summary: Webapp that breaks down tasks into smaller pieces and provides a checklist.
+Project-URL: Homepage, https://github.com/mizuki-hikaru/taskpath
+Project-URL: Issues, https://github.com/mizuki-hikaru/taskpath/issues
+Author-email: Mizuki Hikaru <mizuki@hikaru.org>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: authbase
+Requires-Dist: fastapi[standard]
+Requires-Dist: openai
+Requires-Dist: pydantic
+Description-Content-Type: text/markdown
+
+# TaskPath
+
+    pip install taskpath
+    taskpath
