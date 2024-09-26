@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/lhw_send_email.egg-info/PKG-INFO
+src/lhw_send_email.egg-info/SOURCES.txt
+src/lhw_send_email.egg-info/dependency_links.txt
+src/lhw_send_email.egg-info/top_level.txt
+src/send_email/__init__.py
+src/send_email/send_email.py
