@@ -1,0 +1,17 @@
+LICENSE.md
+MANIFEST.in
+Makefile
+README.rst
+setup.py
+sqlitedict.py
+restricted_sqlitedict.egg-info/PKG-INFO
+restricted_sqlitedict.egg-info/SOURCES.txt
+restricted_sqlitedict.egg-info/dependency_links.txt
+restricted_sqlitedict.egg-info/top_level.txt
+tests/accessories.py
+tests/autocommit.py
+tests/test_autocommit.py
+tests/test_core.py
+tests/test_named_db.py
+tests/test_onimport.py
+tests/test_temp_db.py
