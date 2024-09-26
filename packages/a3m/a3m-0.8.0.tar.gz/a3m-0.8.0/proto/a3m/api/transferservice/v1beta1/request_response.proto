@@ -1,0 +1,116 @@
+syntax = "proto3";
+
+package a3m.api.transferservice.v1beta1;
+
+option go_package = "github.com/artefactual-labs/a3m/proto/a3m/api/transferservice/v1beta1;transferservice";
+
+import "google/protobuf/timestamp.proto";
+
+message SubmitRequest {
+	string name = 1;
+	string url = 2;
+	ProcessingConfig config = 3;
+}
+
+message SubmitResponse {
+	string id = 1;
+}
+
+message ReadRequest {
+	string id = 1;
+}
+
+message ReadResponse {
+	PackageStatus status = 1;
+	string job = 2;
+	repeated Job jobs = 3;
+}
+
+message ListTasksRequest {
+	string job_id = 1;
+}
+
+message ListTasksResponse {
+	repeated Task tasks = 1;
+}
+
+message EmptyRequest {
+}
+
+message EmptyResponse {
+}
+
+enum PackageStatus {
+	PACKAGE_STATUS_UNSPECIFIED = 0;
+	PACKAGE_STATUS_FAILED = 1;
+	PACKAGE_STATUS_REJECTED = 2;
+	PACKAGE_STATUS_COMPLETE = 3;
+	PACKAGE_STATUS_PROCESSING = 4;
+}
+
+message Job {
+	string id = 1;
+	string name = 2;
+	string group = 3;
+	string link_id = 4;
+
+	enum Status {
+		STATUS_UNSPECIFIED = 0;
+		STATUS_COMPLETE = 1;
+		STATUS_PROCESSING = 2;
+		STATUS_FAILED = 3;
+	}
+
+	Status status = 5;
+	google.protobuf.Timestamp start_time = 6;
+}
+
+message Task {
+	string id = 1;
+	string file_id = 2;
+	int32 exit_code = 3;
+	string filename = 4;
+	string execution = 5;
+	string arguments = 6;
+	string stdout = 7;
+	string stderr = 8;
+	google.protobuf.Timestamp start_time = 9;
+	google.protobuf.Timestamp end_time = 10;
+}
+
+message ProcessingConfig {
+	bool assign_uuids_to_directories = 1;
+	bool examine_contents = 2;
+	bool generate_transfer_structure_report = 3;
+	bool document_empty_directories = 4;
+	bool extract_packages = 5;
+	bool delete_packages_after_extraction = 6;
+	bool identify_transfer = 7;
+	// identify_submission_and_metadata represents a single configuration
+	// attribute that controls two separate file format identification jobs
+	// in the workflow: one for objects/submissionDocumentation and one
+	// for objects/metadata
+	bool identify_submission_and_metadata = 8;
+	bool identify_before_normalization = 9;
+	bool normalize = 10;
+	bool transcribe_files = 11;
+	bool perform_policy_checks_on_originals = 12;
+	bool perform_policy_checks_on_preservation_derivatives = 13;
+
+	// AIP compression level (1 is the fastest, 9 is the smallest).
+	int32 aip_compression_level = 14;
+
+	// AIP compression algorithm
+	AIPCompressionAlgorithm aip_compression_algorithm = 15;
+
+	enum AIPCompressionAlgorithm {
+		AIP_COMPRESSION_ALGORITHM_UNSPECIFIED = 0;
+		AIP_COMPRESSION_ALGORITHM_UNCOMPRESSED = 1; // It breaks in verify_aip.
+		AIP_COMPRESSION_ALGORITHM_TAR = 2; // Not supported yet!
+		AIP_COMPRESSION_ALGORITHM_TAR_BZIP2 = 3;
+		AIP_COMPRESSION_ALGORITHM_TAR_GZIP = 4;
+		AIP_COMPRESSION_ALGORITHM_S7_COPY = 5;
+		AIP_COMPRESSION_ALGORITHM_S7_BZIP2 = 6;
+		AIP_COMPRESSION_ALGORITHM_S7_LZMA = 7;
+	}
+}

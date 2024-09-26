@@ -1,0 +1,41 @@
+.venv
+*.py[co]
+*.mo
+
+# PyPI
+/a3m.egg-info
+/build
+/dist
+
+# IDE specific
+*.directory
+.project
+.pydevproject
+.settings
+.vscode
+*.sublime-project
+*.sublime-workspace
+*.sw[po]
+*~
+
+# SQLite databases
+.sqlite
+
+# coverage data file
+.coverage
+.coverage.*
+coverage.*
+
+# pytest's working directory
+.cache
+.pytest_cache
+junit.xml
+
+# mypy cache
+.mypy_cache/
+
+# a3m data dir for Compose volume
+/hack/compose-volume
+
+# Sphinx
+_build/
