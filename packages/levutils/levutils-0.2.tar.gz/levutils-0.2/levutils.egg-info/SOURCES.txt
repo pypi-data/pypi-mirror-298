@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+levutils/__init__.py
+levutils/mybag.py
+levutils/myutils.py
+levutils/util_jupyter.py
+levutils.egg-info/PKG-INFO
+levutils.egg-info/SOURCES.txt
+levutils.egg-info/dependency_links.txt
+levutils.egg-info/requires.txt
+levutils.egg-info/top_level.txt
