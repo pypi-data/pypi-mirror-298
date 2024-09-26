@@ -1,0 +1,11 @@
+code,parent_code,name,level,prefixed_id
+B00_CL,,Primary coal and peat,0,fbc50bc1-9501-4109-a747-9b7bf52009c5
+B01_CP,,Coal and peat products,0,afc1781c-f289-41a1-bad5-ce9ef94d7662
+B02_PO,,Primary Oil,0,b009aef8-0a88-4659-8140-fe761621a7a4
+B03_OP,,Oil Products,0,ff9e3d66-a673-4ff1-88b4-413420578137
+B04_NG,,Natural Gas,0,eeaa78e3-94ba-4e4a-b63f-25fa04c1128a
+B05_BW,,Biofuels and waste,0,9d979faf-334a-4f6d-9a74-50f045c374c9
+B07_EL,,Electricity,0,fc0f3fd2-f016-44f4-abf0-91cb789c71bd
+B08_HT,,Heat,0,129face5-2dc7-4b5d-a51f-7779898f2a0a
+B06_NU,,Nuclear,0,bd66ca52-c593-40fc-8ee1-9a0b020ad54b
+B10_RE,,Memo: Renewables,0,08f433e0-fc43-43c7-8578-368c04d211c6
