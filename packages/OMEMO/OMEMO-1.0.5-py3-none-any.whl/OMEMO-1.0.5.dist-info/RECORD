@@ -1,0 +1,17 @@
+omemo/__init__.py,sha256=dMPlkxVHjtPDLh5sh6iRiM9fR9LSmFHxRTVG64fV7Z0,2220
+omemo/backend.py,sha256=mEWKHZzeV6LXeFvNJGPSiAtJB_b4NE6TjEKw99dspIA,17215
+omemo/bundle.py,sha256=5gQZHhvobav1_fgZBHtC8tr-5xxHLjmCitsBTLBhbRU,1589
+omemo/identity_key_pair.py,sha256=bwKkDpgszm02oMcQSJgssRbZFWvdrZHQT_yR14Yma6A,5652
+omemo/message.py,sha256=S9JZn0SaonKMkvPPm3JUOAwDnPvI4FH0PVeT62GzoV8,2459
+omemo/project.py,sha256=K5LE02gbWKrxnTtz_cmueyuj4A86YQ1sRR5ZHlhSw50,508
+omemo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omemo/session.py,sha256=JED7rj5xVgBQtMd_RUfKbrq4ecosea0Hch-4j7iu4qs,3626
+omemo/session_manager.py,sha256=euMyirwySdZgWFaoXsryeB54x4fOCE-qNHerpd1OwjA,105185
+omemo/storage.py,sha256=akZgKchSEk3PGK6BcKZlerTit6_bMQK_wJ_zj5JS-G0,13038
+omemo/types.py,sha256=VgXDdE0bKkwl-jAvczyH4nCor81bEbS3YtKrqdCJrTI,2085
+omemo/version.py,sha256=zYaRZFDJzfgH36Vm6jejBdUBbb-xwpYwgMBudNy-IlU,211
+OMEMO-1.0.5.dist-info/LICENSE,sha256=CVByuSP1V_UBhBJMi8MIQ5-wGG8i5B6GeIXZFf-h9vM,1081
+OMEMO-1.0.5.dist-info/METADATA,sha256=MicgNLXgdg1zzugHkEu5sI3YSqxULpCPYv2rDk3xdBE,3989
+OMEMO-1.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+OMEMO-1.0.5.dist-info/top_level.txt,sha256=cCguR6esNWISzNahZ-9ZQwlcmpFZZM5TKunC4VQP0Dc,6
+OMEMO-1.0.5.dist-info/RECORD,,
