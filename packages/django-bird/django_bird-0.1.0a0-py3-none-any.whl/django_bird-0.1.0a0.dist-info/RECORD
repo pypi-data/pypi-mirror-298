@@ -1,0 +1,11 @@
+django_bird/__init__.py,sha256=Pehd0ohR0Adq9lxqGym_GWlgLQec8lzs9fC8YJc58yE,60
+django_bird/_typing.py,sha256=YUNpr3aD2x4MSb5UtirkmOwUIt5cdG2r4cuXde_K8mk,282
+django_bird/compiler.py,sha256=_DZvLHahPtvshtPOB5Tthhzcc_lPadZxpvUNMOUsB44,448
+django_bird/conf.py,sha256=T0piTX_yoorKS5LrMHYPo-p8smmMM-r-asxsjhKrp2A,501
+django_bird/loader.py,sha256=xOQWXeNzxGz_viqinIGdVwAo4mv6vEWwq6Ae5VQOZK8,991
+django_bird/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_bird-0.1.0a0.dist-info/METADATA,sha256=YMuwwsZ1xPRcpCUTqX4KVZ3o2yE-j9pRots3_5Jw1-8,4436
+django_bird-0.1.0a0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+django_bird-0.1.0a0.dist-info/licenses/AUTHORS.md,sha256=pTEWsGysn8B0Zp5Z0POWlB11KNwtSmPhDjadNVq--7E,47
+django_bird-0.1.0a0.dist-info/licenses/LICENSE,sha256=FdZMz6vbhB-ED2GVlYRwrdBMVlSMXYNhWa2q7KK_5IY,1068
+django_bird-0.1.0a0.dist-info/RECORD,,
