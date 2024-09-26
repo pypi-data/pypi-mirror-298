@@ -1,0 +1,67 @@
+## custom_qr Library
+
+This library provides functionality to generate QR codes and a wide variety of options to customize them.
+
+### Installation
+
+1. **Install the library**:
+    ```sh
+    pip install custom_qr
+    ```
+
+2. **Verify Installation**:
+    ```sh
+    pip list
+    ```
+
+**NOTE: It is recommended to use a virtual environment.**
+
+### Usage 
+
+Here's how you can use the library to generate QR codes and customize them:
+
+1. **Import the library**:
+    ```python
+    from custom_qr import QrCode
+    from custom_qr import (
+        ERROR_CORRECTION_LEVEL_H,
+        ERROR_CORRECTION_LEVEL_Q,
+        ERROR_CORRECTION_LEVEL_M,
+        ERROR_CORRECTION_LEVEL_L
+    )
+    ```
+    **Note**: The constants `ERROR_CORRECTION_LEVEL_H`, `ERROR_CORRECTION_LEVEL_Q`, `ERROR_CORRECTION_LEVEL_M`, and `ERROR_CORRECTION_LEVEL_L` are not necessary if you do not want to specify the error correction level.
+
+2. **Create a QR Code**:
+   ```python
+   qr = QrCode()
+   matrix, version = qr.generate("https://www.qrcode.com/")
+   ```
+   To specify a version and/or an error correction level:
+   ```python
+   qr = QrCode()
+   matrix, version = qr.generate("https://www.qrcode.com/", version=6, error_correction=ERROR_CORRECTION_LEVEL_Q)
+   ```
+
+3. **Print on Console**:
+   ```python
+   qr.print_qr_console(matrix)
+   ```
+   **Note**: The QR code printed on the console is not scannable. To get a working version, display it on screen or save it to a file.
+
+4. **Get Image Version**:
+   To display on screen, it's important to get the image version of the QR code. The image version is needed for all customization functions and to save to a file:
+   ```python
+   img = qr.create_qr_image(matrix)
+   ```
+
+5. **Display**:
+   ```python
+   qr.display_qr(img)
+   ```
+
+6. **Save Image**:
+   ```python
+   qr.create_image_file(img, filename="qr.png")
+   ```
+   **Note**: The default filename is "qr.png".
