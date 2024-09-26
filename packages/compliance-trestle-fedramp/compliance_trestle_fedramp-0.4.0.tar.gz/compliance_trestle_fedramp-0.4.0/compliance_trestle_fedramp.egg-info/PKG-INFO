@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: compliance-trestle-fedramp
+Version: 0.4.0
+Summary: Trestle plugin for FedRAMP validation and format conversion
+Home-page: https://github.com/oscal-compass/compliance-trestle-fedramp
+Author: IBM
+Author-email: avikas@in.ibm.com
+License: Apache Software License v2
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: compliance-trestle>=3.3.0
+Requires-Dist: saxonche>=12.4.1.0
+Requires-Dist: python-docx>=1.1.0
+Provides-Extra: dev
+Requires-Dist: pytest>=5.4.3; extra == "dev"
+Requires-Dist: pytest-cov>=2.10.0; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Requires-Dist: pre-commit>=2.4.0; extra == "dev"
+Requires-Dist: setuptools; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: yapf; extra == "dev"
+Requires-Dist: python-semantic-release>=9.8.0; extra == "dev"
+Requires-Dist: pep8-naming; extra == "dev"
+Requires-Dist: pytest-random-order; extra == "dev"
+Requires-Dist: python-dateutil; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: mkdocs; extra == "dev"
+Requires-Dist: mkdocstrings; extra == "dev"
+Requires-Dist: mkdocs-material; extra == "dev"
+Requires-Dist: markdown-include; extra == "dev"
+Requires-Dist: pymdown-extensions; extra == "dev"
+Requires-Dist: livereload; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+
+# compliance-trestle-fedramp
+
+A plugin for [compliance-trestle](https://github.com/oscal-compass/compliance-trestle) to provide functionality specifically for FedRAMP.
+
+This plugin provides APIs and commands for validating a FedRAMP compliant SSP (in JSON or YAML format). In future it will also provide utilities for converting various OSCAL models from XML to JSON format and vice-versa.
+
+## Python codebase, easy installation via pip
+
+compliance-trestle-fedramp currently runs on  python platforms on Linux and Mac. Windows support is planned to be added soon. It is available on PyPi so it is easily installed via pip.  It is under active development and new releases are made available regularly.
+
+## Complete documentation and tutorials
+
+A tutorial on how this plugin is created can be found [here](https://oscal-compass.github.io/compliance-trestle/contributing/plugins). Instructions on how to use the CLI are described [here](https://oscal-compass.github.io/compliance-trestle/plugins/compliance-trestle-fedramp).
+
+## Development status
+
+Compliance trestle fedramp is currently in beta. The expectation is that in ongoing work there may be un-announced changes that are breaking within the trestle-fedramp codebase.
+
+## Contributing to Trestle-fedramp
+
+Our project welcomes external contributions. Please refer to the [Contributing guide](CONTRIBUTING.md) and the [Code of Conduct](https://github.com/oscal-compass/community/blob/main/CODE_OF_CONDUCT.md) for more information on how to contribute.
+
+## License & Authors
+
+If you would like to see the detailed LICENSE click [here](LICENSE).
+Consult [contributors](https://github.com/oscal-compass/compliance-trestle-fedramp/graphs/contributors) for a list of authors and [maintainers](MAINTAINERS.md) for the core team.
+
+```text
+# Copyright (c) 2020 IBM Corp. All rights reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+```
