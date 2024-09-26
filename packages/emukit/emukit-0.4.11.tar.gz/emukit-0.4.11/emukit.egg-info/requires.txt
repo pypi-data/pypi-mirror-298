@@ -1,0 +1,9 @@
+GPy>=1.13.0
+emcee>=2.2.1
+matplotlib>=3.9
+numpy>=1.23
+scipy>=1.1.0
+setuptools>=40.8.0
+
+[benchmarking]
+matplotlib
