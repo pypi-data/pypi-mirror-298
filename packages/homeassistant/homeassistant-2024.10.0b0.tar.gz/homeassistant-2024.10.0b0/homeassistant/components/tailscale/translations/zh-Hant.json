@@ -1,0 +1,64 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u670d\u52d9\u5df2\u7d93\u8a2d\u5b9a\u5b8c\u6210",
+            "reauth_successful": "\u91cd\u65b0\u8a8d\u8b49\u6210\u529f"
+        },
+        "error": {
+            "cannot_connect": "\u9023\u7dda\u5931\u6557",
+            "invalid_auth": "\u8eab\u4efd\u9a57\u8b49\u7121\u6548"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API \u91d1\u9470"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_key": "API \u91d1\u9470",
+                    "tailnet": "Tailnet"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "client": {
+                "name": "\u5ba2\u6236\u7aef"
+            },
+            "client_supports_hair_pinning": {
+                "name": "\u652f\u63f4 hairpinning"
+            },
+            "client_supports_ipv6": {
+                "name": "\u652f\u63f4 IPv6"
+            },
+            "client_supports_pcp": {
+                "name": "\u652f\u63f4 PCP"
+            },
+            "client_supports_pmp": {
+                "name": "\u652f\u63f4 NAT-PMP"
+            },
+            "client_supports_udp": {
+                "name": "\u652f\u63f4 UDP"
+            },
+            "client_supports_upnp": {
+                "name": "\u652f\u63f4 UPnP"
+            },
+            "key_expiry_disabled": {
+                "name": "\u5df2\u505c\u7528\u5bc6\u9470\u5230\u671f"
+            }
+        },
+        "sensor": {
+            "expires": {
+                "name": "\u904e\u671f"
+            },
+            "ip": {
+                "name": "IP \u4f4d\u5740"
+            },
+            "last_seen": {
+                "name": "\u4e0a\u6b21\u51fa\u73fe"
+            }
+        }
+    }
+}
