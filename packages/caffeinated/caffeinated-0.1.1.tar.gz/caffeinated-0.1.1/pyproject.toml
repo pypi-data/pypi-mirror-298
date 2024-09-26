@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "twine", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "caffeinated"
+version = "0.1.1"
+description = "Provide statistics about your caffeine level specifically when you'd be going to bed."
+readme = "README.md"
+authors = [{name = "Stephen Turner"}]
+license = {text = "GPL-3.0-or-later"}
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
+]
+dependencies = [
+    "click"
+]
+
+[project.urls]
+Homepage = "https://github.com/stephenturner/caffeinated"
+Changelog = "https://github.com/stephenturner/caffeinated/releases"
+Issues = "https://github.com/stephenturner/caffeinated/issues"
+CI = "https://github.com/stephenturner/caffeinated/actions"
+
+[project.scripts]
+caffeinated = "caffeinated.cli:caffeinated"
+
+[project.optional-dependencies]
+test = ["pytest"]
