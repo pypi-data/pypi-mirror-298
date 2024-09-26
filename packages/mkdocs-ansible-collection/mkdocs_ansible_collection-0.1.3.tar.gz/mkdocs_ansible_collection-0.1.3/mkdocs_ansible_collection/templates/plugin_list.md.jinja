@@ -1,0 +1,9 @@
+# {{ plugin_type }} list
+
+This is the list of {{ plugin_type }} plugins:
+
+| Plugin | Author |
+| ------ | ------ |
+{% for plugin, plugin_data in plugins.items() %}
+| {{ plugin }} | {{ plugin_data["doc"] | default("-") }}
+{% endfor %}

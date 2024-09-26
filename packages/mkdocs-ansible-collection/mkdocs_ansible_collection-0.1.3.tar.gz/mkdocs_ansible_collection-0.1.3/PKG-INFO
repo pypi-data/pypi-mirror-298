@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: mkdocs-ansible-collection
+Version: 0.1.3
+Summary: MkDocs Plugin that automatically generates pages for Ansible Collections.
+Home-page: https://github.com/cmsirbu/mkdocs-ansible-collection
+Author: Cristian Sirbu
+Author-email: cristian@trueneutral.eu
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Documentation
+Classifier: Topic :: Text Processing
+Requires-Dist: ansible-core (>=2.15,<3.0)
+Requires-Dist: mkdocs (>=1.6.0,<2.0.0)
+Project-URL: Repository, https://github.com/cmsirbu/mkdocs-ansible-collection
+Description-Content-Type: text/markdown
+
+# MkDocs Ansible Collection
+
+MkDocs Plugin that automatically generates pages for Ansible Collections. Uses metadata exported by the `ansible-doc` tool.
+
+## Work in Progress
+
+This plugin is under initial development - you can track progress towards the first functional release [here](https://github.com/cmsirbu/mkdocs-ansible-collection/milestone/1).
+
+Its latest functionality can be seen live on the [docs website](https://mkdocs-ansible-collection.readthedocs.io/en/latest/).
+
+## Developing
+
+To set up the development environment, run the following commands in the project root:
+
+```
+poetry install
+poetry run mkdocs serve
+```
+
