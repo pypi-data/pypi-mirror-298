@@ -1,0 +1,9 @@
+googlenews/__init__.py,sha256=wOH8dojnvS6vOhp5K2fi489HpcCoGJGJFxPHEqO2-zE,35
+googlenews/cli.py,sha256=7r4FzpSeoOf7ylZVbCzNSaMIqiXcEgd1wFdms9-2w2U,1247
+googlenews/googlenews.py,sha256=o4Jicc2z8QfkLe9xS8wOhsoiXz-wvA3uVwH-Q896upY,5812
+pynews_google-0.1.2.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynews_google-0.1.2.dist-info/METADATA,sha256=tryvQd8rudMT0IohW50MP5bByyLQNpsWdTO4X-5Qc-Y,1798
+pynews_google-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pynews_google-0.1.2.dist-info/entry_points.txt,sha256=0_4NnTmI9Rhp8Gi4hegGyU1hMwVu3ZRU-GGBHqZ52uY,52
+pynews_google-0.1.2.dist-info/top_level.txt,sha256=J7bqZ0nNVDx81GSd7dJXtbSEf82pXS1j5FwehBFDGTc,11
+pynews_google-0.1.2.dist-info/RECORD,,
