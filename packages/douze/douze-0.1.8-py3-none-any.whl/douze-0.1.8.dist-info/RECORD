@@ -1,0 +1,9 @@
+douze/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+douze/api.py,sha256=XfTrpPNS7ueOSVUVC4PZK9brnp4h5xnB3yQK2lTyFpk,8548
+douze/idem_api.py,sha256=svA08Tf0h8DVkZsP_yI9PP7OVTaR9qEFFj-RppaCiek,17708
+douze/models.py,sha256=QHtWIx6W3hcyA05l_2FCEf5jk5SBSeMjh1Bi6zGpY8k,6077
+douze/types.py,sha256=UC7xC9UeybTsKPzsrS90csU1MjiK4NggZZ2ZBkHO6h0,2803
+douze-0.1.8.dist-info/LICENSE,sha256=djc4a1-B6KcZyjNiMxSQBeX6KLXmBU6ntn3kk1WwrUA,484
+douze-0.1.8.dist-info/METADATA,sha256=nLge4i0xuwDfyg3moC5LbfdO8TghHB3cN9YrR9rFsIA,956
+douze-0.1.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+douze-0.1.8.dist-info/RECORD,,
