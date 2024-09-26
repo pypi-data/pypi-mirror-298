@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+custom_qr.egg-info/PKG-INFO
+custom_qr.egg-info/SOURCES.txt
+custom_qr.egg-info/dependency_links.txt
+custom_qr.egg-info/requires.txt
+custom_qr.egg-info/top_level.txt
+qr_code/__init__.py
+qr_code/charset.py
+qr_code/constraints.py
+qr_code/custom_qr.py
+qr_code/dataConverter.py
+qr_code/errorCorrection.py
+qr_code/generate_qr.py
+qr_code/qrCode.py
