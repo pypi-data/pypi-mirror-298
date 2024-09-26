@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: jkepler
+Version: 0.1.0
+Summary: jax tools for modeling Keplerian orbits
+Home-page: https://github.com/kemasuda/jkepler
+Author: Kento Masuda
+Author-email: kmasuda@ess.sci.osaka-u.ac.jp
+Maintainer: Kento Masuda
+Maintainer-email: kmasuda@ess.sci.osaka-u.ac.jp
+License: MIT
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jax
+Requires-Dist: exoplanet-core
+Requires-Dist: celerite2
+Requires-Dist: pandas
+Requires-Dist: jaxopt >=0.8.3
+Requires-Dist: astropy
+
+# jkepler
+
+[JAX](https://jax.readthedocs.io/en/latest/index.html) tools for modeling Keplerian orbits.
+
+
+
+## Installation
+
+``python setup.py install``
+
+or 
+
+``pip install jkepler``
