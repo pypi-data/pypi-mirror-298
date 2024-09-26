@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: finsolvepy
+Version: 1.0.0
+Summary: A package to solve financial problems
+Home-page: https://github.com/vengateshk18/finsolvepy
+Author: Vengatesh K
+Author-email: vengatesh00014@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7,<4.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# finsolvepy
+
+`finsolvepy` is a Python package designed to provide financial insights and detailed information about stocks and indices in the market. This package allows users to fetch stock details, validate stock symbols and indices, and retrieve descriptions for various market indices using data from CSV files and an external API (Alpha Vantage).
+
+## Features
+
+- Fetch detailed information for a specified stock symbol.
+- Validate stock symbols against a dataset and an external API.
+- Retrieve descriptions of various market indices.
+- List all indices present in the Indian and US markets.
+
