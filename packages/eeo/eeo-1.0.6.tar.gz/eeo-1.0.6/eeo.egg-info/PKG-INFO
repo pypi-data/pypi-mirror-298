@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: eeo
+Version: 1.0.6
+Summary: eeo ClassInAPI包
+Home-page: https://github.com/Qingche99/eeoAPI
+Author: QH
+Author-email: eeoapisupport@eeoa.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# ClassIn API - eeo
+
+**如果你有任何疑问，可以通过eeoapisupport@eeoa.com联系我们**
+
+**If you have any questions you can contact us at eeoapisupport@eeoa.com**
+
+**ClassIn APIDoc：https://docs.eeo.cn/api/**
+
+**GitHub：https://github.com/Qingche99/eeoAPI**
