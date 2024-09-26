@@ -1,0 +1,11 @@
+rsproduction/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rsproduction/styling/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rsproduction/styling/color/__init__.py,sha256=qvF9CJDX2mXT2fYuTDe0glX8jPiSeR0c398wkZX_LY8,20
+rsproduction/styling/color/color.py,sha256=IqRFTM_JD-H8Y6MVdRdk1a6sSie3I5VlO_fOEUs2YrQ,539
+rsproduction/userinterface/__init__.py,sha256=bC1f-XiK3qdFpz6wpj7JFHyIOzQGU-pA1n8xaHvKMJM,154
+rsproduction/userinterface/userinterface.py,sha256=y_As9L6wV4L4Lf1BA-x5zAxmsS9OWZHBcl0hpT1R_T4,19704
+rsproduction-0.0.17.dist-info/LICENSE,sha256=ZEDgnuK3AmyR2SDkaaOkIgC73xaE7EGBaobAzLH7lv0,1070
+rsproduction-0.0.17.dist-info/METADATA,sha256=_5ETB7TD5PGDyYMckm9KTwQVj8wPwHvmOeiDVHZLJbA,1760
+rsproduction-0.0.17.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+rsproduction-0.0.17.dist-info/top_level.txt,sha256=jCzvptYxcErM8Wnw5mJPXa0VTOnT38WgfqFFO8xEA5M,13
+rsproduction-0.0.17.dist-info/RECORD,,
