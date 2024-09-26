@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pynput_recorder
+Version: 1.0.0
+Summary: pynput_recorder: Recorder GUI Application for pynput
+Home-page: https://github.com/shigebeyond/pynput_recorder
+Author: shigebeyond
+Author-email: 772910474@qq.com
+License: BSD
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyutilb>=1.0.8
+Requires-Dist: pynput>=1.7.7
+
+[GitHub](https://github.com/shigebeyond/pynput_recorder) | [Gitee](https://gitee.com/shigebeyond/pynput_recorder)
+
+# pynput_recorder
+Recorder GUI Application for [pynput](https://pypi.org/project/pynput), to record and replay mouse and keyboard input action.  
+
+## Installation
+Install from PyPi via pip:
+
+```sh
+pip3 install pynput_recorder
+```
+
+## Usage
+1. python code
+```
+from pynput_recorder.recorder import run_recorder
+
+run_recorder()
+```
+
+2. run python code
+![](./recorder.png)
+
+3. click `start record` button, it will record mouse and keyboard input actions until you press `ESC`, and save actions to `action.yml`
+
+4. click `start replay` button, it will replay mouse and keyboard input actions
