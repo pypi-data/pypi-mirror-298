@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: gcs-logger
+Version: 0.1.3
+Summary: Logging tool for GameChange Solar projects
+License: MIT
+Author: GameChangeSolar Software Team
+Author-email: software@gamechangesolar.com
+Maintainer: David Aviles
+Maintainer-email: david.aviles@gamechangesolar.com
+Requires-Python: >=3.10,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# GCS Logger
+
+This is a simple logger wrapped by a Color Handler to use across GCS projects.
+
+## Installation
+
+```bash
+pip install gcs-logger
+```
+With poetry:
+
+```bash
+poetry add gcs-logger
+```
+
+## Usage
+
+```python
+from gcs_logger import get_gcs_logger
+
+get_logger = get_gcs_logger(__name__, 'DEBUG')
+```
+
