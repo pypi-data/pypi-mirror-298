@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pynput_recorder/__init__.py
+pynput_recorder/actionlistener.py
+pynput_recorder/actionrunner.py
+pynput_recorder/comm.py
+pynput_recorder/recorder.py
+pynput_recorder.egg-info/PKG-INFO
+pynput_recorder.egg-info/SOURCES.txt
+pynput_recorder.egg-info/dependency_links.txt
+pynput_recorder.egg-info/not-zip-safe
+pynput_recorder.egg-info/requires.txt
+pynput_recorder.egg-info/top_level.txt
