@@ -1,0 +1,12 @@
+inmanta_plugins/config/__init__.py,sha256=RKw0SuoA-9OKrVDCpvLQMKOKc8TxkG9XYAKycQeOuHg,22237
+inmanta_plugins/config/const.py,sha256=0cHeeipOkrc03oXRuwNRZ386Yx3f9yXN8hn1urOJg0M,2381
+inmanta_plugins/config/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inmanta_plugins/config/setup.cfg,sha256=3Xb_Stw4B4WaEgw6gqPYqr6jaGM46fJPbjg7o9oNPm4,2168
+inmanta_plugins/config/utils.py,sha256=zGcbosFUPVU-B7oFAllIw_TJyXS8F7zmQenuG4fxnnA,1394
+inmanta_plugins/config/files/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inmanta_plugins/config/model/_init.cf,sha256=0w9ceiVupuu5sB14NCzKIp5SZ87vZD3Ock-6r0f_UJg,2510
+inmanta_plugins/config/templates/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inmanta_module_config-0.4.0.dist-info/METADATA,sha256=z-EcKBtM7wqqvdakeHyGjkhzig2pGYTb3fXnQWl8j8k,211
+inmanta_module_config-0.4.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+inmanta_module_config-0.4.0.dist-info/top_level.txt,sha256=rb9c6eWQS8KFuSa3ktEcXpk-oSsCL9ZCVAgv7S0Eg_w,16
+inmanta_module_config-0.4.0.dist-info/RECORD,,
