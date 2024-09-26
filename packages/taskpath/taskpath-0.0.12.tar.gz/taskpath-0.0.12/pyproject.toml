@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "taskpath"
+version = "0.0.12"
+authors = [
+    { name="Mizuki Hikaru", email="mizuki@hikaru.org" },
+]
+description = "Webapp that breaks down tasks into smaller pieces and provides a checklist."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastapi[standard]",
+    "authbase",
+    "pydantic",
+    "openai",
+]
+
+[project.urls]
+Homepage = "https://github.com/mizuki-hikaru/taskpath"
+Issues = "https://github.com/mizuki-hikaru/taskpath/issues"
+
+[project.scripts]
+taskpath = "taskpath:main"
