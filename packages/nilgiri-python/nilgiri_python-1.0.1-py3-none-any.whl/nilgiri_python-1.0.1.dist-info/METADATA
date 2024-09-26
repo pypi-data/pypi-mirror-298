@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: nilgiri_python
+Version: 1.0.1
+Summary: An Automation tool with Python like Nilgiri
+Author: Priya
+Author-email: priyasenthil1712@gmail.com
+Requires-Dist: playwright
+Requires-Dist: pytest
+Requires-Dist: behave
+
