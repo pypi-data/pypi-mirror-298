@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+cell_feature_data.egg-info/PKG-INFO
+cell_feature_data.egg-info/SOURCES.txt
+cell_feature_data.egg-info/dependency_links.txt
+cell_feature_data.egg-info/entry_points.txt
+cell_feature_data.egg-info/not-zip-safe
+cell_feature_data.egg-info/requires.txt
+cell_feature_data.egg-info/top_level.txt
+tests/test_data_loader.py
+tests/test_user_input_handler.py
