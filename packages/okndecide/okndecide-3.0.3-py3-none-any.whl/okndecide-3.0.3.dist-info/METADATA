@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: okndecide
+Version: 3.0.3
+Summary: OKN config file modifier
+Home-page: https://github.com/jtur044/okndecide
+Author: Zaw Lin Tun
+Author-email: zawlintun1511@gmail.com
+License: Apache Software
+Keywords: OKN related config modifier
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools
+Requires-Dist: commentjson
+Requires-Dist: ehdg-tools (>=4.4.4)
+
+Command line program to produce modified config.
