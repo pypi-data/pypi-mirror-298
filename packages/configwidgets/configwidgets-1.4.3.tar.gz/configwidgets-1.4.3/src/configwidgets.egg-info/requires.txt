@@ -1,0 +1,12 @@
+qtpy>2
+
+[dev]
+pytest
+pytest-cov
+pytest-qt
+
+[doc]
+sphinx>5.3
+sphinx-qt-documentation
+pydata-sphinx-theme>0.14
+sphinx-copybutton
