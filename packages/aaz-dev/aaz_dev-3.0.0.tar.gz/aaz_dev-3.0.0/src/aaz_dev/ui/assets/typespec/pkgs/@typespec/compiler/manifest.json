@@ -1,0 +1,1 @@
+{"name":"@typespec/compiler","version":"0.58.0","imports":{".":"./index.js","./utils":"./utils.js","./module-resolver":"./module-resolver.js","./emitter-framework":"./emitter-framework.js"}}
