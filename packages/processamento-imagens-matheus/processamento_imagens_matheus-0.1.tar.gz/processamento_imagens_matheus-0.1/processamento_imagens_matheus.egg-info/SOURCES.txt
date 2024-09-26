@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+processamento_imagens_matheus.egg-info/PKG-INFO
+processamento_imagens_matheus.egg-info/SOURCES.txt
+processamento_imagens_matheus.egg-info/dependency_links.txt
+processamento_imagens_matheus.egg-info/requires.txt
+processamento_imagens_matheus.egg-info/top_level.txt
+processing/__init__.py
+processing/combination.py
+processing/transformation.py
+utils/__init__.py
+utils/io.py
+utils/plot.py
