@@ -1,0 +1,27 @@
+name: build and release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  pypi-publish:
+    name: upload release to PyPI
+    runs-on: ubuntu-latest
+    # Specifying a GitHub environment is optional, but strongly encouraged
+    environment: release
+    permissions:
+      # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+      - uses: yezz123/setup-uv@v4
+        with:
+          uv-venv: "venv"
+      - run: uv build
+
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
