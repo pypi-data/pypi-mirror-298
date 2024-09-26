@@ -1,0 +1,7 @@
+README.md
+setup.py
+SENTISCOPE.egg-info/PKG-INFO
+SENTISCOPE.egg-info/SOURCES.txt
+SENTISCOPE.egg-info/dependency_links.txt
+SENTISCOPE.egg-info/requires.txt
+SENTISCOPE.egg-info/top_level.txt
