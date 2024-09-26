@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ghana_nlp/__init__.py
+ghana_nlp/api.py
+ghana_nlp.egg-info/PKG-INFO
+ghana_nlp.egg-info/SOURCES.txt
+ghana_nlp.egg-info/dependency_links.txt
+ghana_nlp.egg-info/requires.txt
+ghana_nlp.egg-info/top_level.txt
+tests/test_api.py
