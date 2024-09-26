@@ -1,0 +1,13 @@
+.gitignore
+LICENCE
+README.md
+VERSION
+setup.cfg
+setup.py
+./VERSION
+gap_client.egg-info/PKG-INFO
+gap_client.egg-info/SOURCES.txt
+gap_client.egg-info/dependency_links.txt
+gap_client.egg-info/requires.txt
+gap_client.egg-info/top_level.txt
+gap_client.egg-info/zip-safe
