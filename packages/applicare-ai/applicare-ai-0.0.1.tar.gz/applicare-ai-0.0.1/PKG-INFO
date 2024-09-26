@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: applicare-ai
+Version: 0.0.1
+Summary: Welcome to applicare-ai
+Home-page: UNKNOWN
+Author: applicare-ai
+Author-email: support@applicare-ai.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+
+UNKNOWN
+

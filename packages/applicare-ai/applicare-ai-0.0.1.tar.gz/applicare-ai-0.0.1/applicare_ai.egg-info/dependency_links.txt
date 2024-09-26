@@ -1,0 +1,1 @@
+git+ssh://git@github.com/infinity-sandbox/predictive-monitoring.git@14c737c247f36e3264deea5c4b9e0b0b940d17ba#egg=applicare_ai&subdirectory=server

@@ -1,0 +1,3 @@
+[console_scripts]
+applicare-ai = utils.cli:cli
+
