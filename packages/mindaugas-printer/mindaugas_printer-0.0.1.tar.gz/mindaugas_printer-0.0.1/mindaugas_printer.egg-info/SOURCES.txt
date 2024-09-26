@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+mindaugas_printer/__init__.py
+mindaugas_printer/main.py
+mindaugas_printer.egg-info/PKG-INFO
+mindaugas_printer.egg-info/SOURCES.txt
+mindaugas_printer.egg-info/dependency_links.txt
+mindaugas_printer.egg-info/top_level.txt
