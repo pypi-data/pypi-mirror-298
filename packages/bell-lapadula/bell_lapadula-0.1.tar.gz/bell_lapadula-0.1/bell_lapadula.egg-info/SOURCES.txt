@@ -1,0 +1,6 @@
+README.md
+setup.py
+bell_lapadula.egg-info/PKG-INFO
+bell_lapadula.egg-info/SOURCES.txt
+bell_lapadula.egg-info/dependency_links.txt
+bell_lapadula.egg-info/top_level.txt
