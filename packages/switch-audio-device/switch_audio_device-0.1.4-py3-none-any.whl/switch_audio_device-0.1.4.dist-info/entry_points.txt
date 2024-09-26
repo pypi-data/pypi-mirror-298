@@ -1,0 +1,2 @@
+[console_scripts]
+switch_audio_device = switch_audio_device.main:main
