@@ -1,0 +1,17 @@
+ackl-2.1.0.dist-info/LICENSE,sha256=qxOm_eMpufNjTSLsczr7fJvBgEQvyZyG-9CY_D9QTcU,1087
+ackl-2.1.0.dist-info/METADATA,sha256=Yy7bKgF8T9wG_isdSTlp-_ovo2dmI3krwWXTUkuY2rk,1901
+ackl-2.1.0.dist-info/RECORD,,
+ackl-2.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ackl-2.1.0.dist-info/top_level.txt,sha256=nxWfDx9q_HLwaIhSbMN-oM3ygpQ28BNAgz8V-eve_80,5
+ackl/gui/static/bootstrap.css,sha256=x2LAKFVb9biTPj3vnaEogWV7HLwYSPcJh01AREVzlBo,202389
+ackl/gui/static/bootstrap.js,sha256=LKpkBN2w3iudGRseLItcNcaMpI8qlSEUC7-DsnwGNwA,136072
+ackl/gui/static/jquery-3.3.1.min.js,sha256=T-aPohYXbm0fRYDpJLr-zJ9RmYTswGsahAoIsNiMld4,86929
+ackl/gui/static/jquery.blockUI.js,sha256=ffusPTCVTvXqyYmywHhc8fcYAMHkhJr9M3EeRzboEDQ,24228
+ackl/gui/static/jquery.form.min.js,sha256=NYiu2EuztltbvG9t4yGji5A1gNw5pT6S2iMD2iH_rZc,17131
+ackl/gui/static/sample.csv,sha256=t88QphSnm2xPhVHFYPsj_tuzkoW7Uq8EFTD7GIWdFII,1477676
+ackl/gui/templates/home.html,sha256=qpKmfOE6U5x1wTaaPQXcndAIqBgWXudri_0W530ApGw,13445
+ackl\__init__.pyc,sha256=337qlkTquo4qpRu0k2zf_ya3YgZJgOvMCmnRRJ3z6NY,416
+ackl\gui\__init__.pyc,sha256=XJR0qn1fJ4FWMzyO13rvLSShthfaWSZixQl7ri9Ax-c,130
+ackl\gui\run.pyc,sha256=ybQQnNwmNBxI49eLzG70eaWcRvUOfYmbyxGFQmeAfO0,3892
+ackl\kernels.pyc,sha256=s35FOXAS7xxnqOzJxH768jo6VXk1qqebPylf_VD07vw,58725
+ackl\metrics.pyc,sha256=JpT-fNXs9CUrkWQvJH6Ys_1Fc2wBGzU_aF-RnFRD7F8,36746
