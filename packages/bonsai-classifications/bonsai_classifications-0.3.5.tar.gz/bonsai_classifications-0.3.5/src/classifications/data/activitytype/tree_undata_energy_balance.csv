@@ -1,0 +1,54 @@
+code,parent_code,name,level,prefixed_id
+B01_01,,Primary production,0,73e25488-3c74-4529-ae51-315c18c0131e
+B02_03,,Imports,0,2974a71b-b5e0-494a-9771-b14663747660
+B03_04,,Exports,0,95a304a5-87a5-4138-9f08-8290fb236543
+B04_051,,International marine bunkers,0,0e7c1635-5018-4c40-be13-7cad4232f591
+B05_052,,International aviation bunkers,0,55ee25dc-8ca4-4133-92ea-187c9af95e99
+B06_06,,Stock changes,0,48b4c792-6ec8-4554-accb-dd35fed95c24
+B07_GA,,Total energy supply,0,312d15b5-c057-4aa7-85ab-c98749189f53
+B08_SD,,Statistical differences,0,1c06c841-a489-4bb7-b747-e02adef23913
+B09_07,,Transfers and recycled products,0,4bf04de3-d361-42f6-80da-e0512488ea7b
+B10_08,,Transformation,0,2e2bd00c-9b73-49da-a15c-6019342c27a0
+B11_088,B10_08,"Electricity, Heat and CHP plants",1,20049f49-77e3-46cb-9c69-9f3ff3e013f1
+B11_08811,B11_088,Transformation in electricity plants - main activity producers,2,e6237142-3d7d-42b6-abac-f1edfd5b6d6a
+B12_08821,B11_088,Transformation in CHP plants - main activity producers,2,484296c7-b64f-4280-9fd0-add097f22ac6
+B13_08831,B11_088,Transformation in heat plants - main activity producers,2,6b75af04-d394-4fd1-aeb0-92989a048ae5
+B14_081,B10_08,Transformation in coke ovens,1,4ba70be1-d936-44c1-9631-924004e651fc
+B15_083,B10_08,Transformation in briquetting plants,1,091e8238-07b4-496a-bf27-58e932d2d429
+B16_085LP,B10_08,Transformation in liquefaction plants,1,cb84efd0-40c9-459c-9cfc-3f2531fa7fe8
+B17_082,B10_08,Transformation in gas works,1,15c3b6bb-bf5e-42af-b8c6-5e9c8c15d780
+B18_084,B10_08,Transformation in blast furnaces,1,7558f1d0-b1ff-4cfc-b502-36097278d4a2
+B19_087,B10_08,Transformation in natural gas blending plants,1,3bb71866-6a38-4370-82a7-986c90123d77
+B20_086,B10_08,Transformation in oil refineries,1,64004048-dae2-4e75-89d6-de32c097effa
+B21_089,B10_08,Other transformation,1,4aab8f71-bed6-44a3-ac38-1ff2517714b1
+B22_09,,Energy industries own use,0,bf50a90b-78d4-417f-b498-5cd0ae6011ec
+B23_101,,Losses,0,a713166b-e85f-4407-9483-d6dbcfd090db
+B24_NA,,Final consumption,0,a7d4d215-fb80-41d7-b37c-68456cf04b12
+B25_FEC,,Final Energy Consumption,0,f44c48af-1c7a-476d-b575-d13e369b8168
+B26_121,B24_NA,"Manufacturing, construction and non-fuel mining industries",1,c4fc6bb2-77e9-4fba-9673-e09152a1b321
+B27_1211,B26_121,Iron and steel,2,30adece3-d2f4-4aa7-b49f-9ae6598b595f
+B28_1213,B26_121,Chemical and petrochemical,2,543ed8d5-a670-4018-936f-18551f2aab30
+B29_1214a,B26_121,Non-ferrous metals,2,a955ad05-d7b6-4ed7-91d4-f39721ef54b5
+B30_1214b,B26_121,Non-metallic minerals,2,01ebc20f-8ebd-408f-92cf-8f00c97195b9
+B31_1214c,B26_121,Transport equipment,2,21947cc3-904a-4c2b-bd65-6e9b228cfdbd
+B32_1214d,B26_121,Machinery,2,c3db6140-d347-4630-b97d-4957c16a0b9a
+B33_1214e,B26_121,Mining and quarrying,2,1fb770a5-3af8-43ee-a3da-0ac160dd6e2f
+B34_1214f,B26_121,Food and tobacco,2,9888cee6-e3bb-4b0d-9865-92e7771c8e2e
+B35_1214g,B26_121,"Paper, pulp and printing",2,da2b1d2e-c2ed-41ad-96cb-d3d1a0a7d74c
+B36_1214h,B26_121,Wood and wood products,2,3db00f24-26ec-407e-8935-be34321bc437
+B37_1214j,B26_121,Textile and leather,2,e8c2182b-c340-4c7e-aa01-0a74b84fba45
+B38_1214i,B26_121,Construction,2,38058253-828f-476b-b6a0-f49a62a0dca6
+B39_1214o,B26_121,Industry consumption not elsewhere specified,2,f229651c-a71f-4bd7-b13d-2aa1940acf52
+B40_122,B24_NA,Transport,1,1b61b05e-c72d-41da-914f-81d2a5c887e4
+B41_1221,B40_122,Road,2,5fb49197-c39c-4518-aa50-c11a30fe4fb1
+B42_1222,B40_122,Rail,2,8dee14b5-e41d-4bf7-9936-dbd984165ccb
+B43_1223,B40_122,Domestic aviation,2,64760eab-5579-4327-905d-59b894e9fdc1
+B44_1224,B40_122,Domestic navigation,2,6b9e17bb-fc3f-48cd-ba84-12d6a6b923c0
+B45_1226,B40_122,Pipeline transport,2,5368e0f5-6fcf-4743-98da-cc0e74659c91
+B46_1225,B40_122,Transport not elsewhere specified,2,880741c8-a739-48d3-b0e1-0cfb866e66b5
+B47_123,B24_NA,Other Consumption,1,29ab9c24-11e8-4e64-93a9-3fdeddb4c41c
+B48_1232,B47_123,"Agriculture, forestry and fishing",2,dfc5a9d3-ab1c-43f5-9eb6-8643e3dac9e1
+B49_1235,B47_123,Commerce and public services,2,2f889934-2818-4828-955e-82cdc1643c6e
+B50_1231,B47_123,Households,2,b22547ef-6051-406e-b612-c33435b1b5f4
+B51_1234,B47_123,Other consumption not elsewhere specified,2,7ed7f0c2-ddff-4e87-8ebf-334d614aaed6
+B52_11,,Non-energy use,0,66722119-401c-4900-b964-c539359df536
