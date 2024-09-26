@@ -1,0 +1,32 @@
+[project]
+name = "sendme"
+description = ""
+authors = [
+    { name = "mikigo", email = "huangmingqiang@uniontech.com" },
+]
+dependencies = [
+    "requests",
+    "click",
+]
+dynamic = [
+    "version",
+]
+requires-python = ">=3.7"
+readme = "README.md"
+license = { text = "GPL2.0" }
+
+[project.scripts]
+sendme = "sendme.cli:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch]
+version = { path = "sendme/__version__.py" }
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "/sendme",
+]
+
