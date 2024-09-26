@@ -1,0 +1,3 @@
+[console_scripts]
+knoepfe=knoepfe.__main__:main
+
