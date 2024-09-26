@@ -1,0 +1,3 @@
+[pytest11]
+zephyr_telegram = plugin
+
