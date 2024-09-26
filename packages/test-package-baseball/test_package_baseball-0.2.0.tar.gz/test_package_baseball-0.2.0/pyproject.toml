@@ -1,0 +1,24 @@
+[project]
+name = "test-package-baseball"
+version = "0.2.0"
+description = "Default template for PDM package"
+authors = [
+    { name = "Bob Heynow", email = "53366531+gchait@users.noreply.github.com" },
+]
+dependencies = [
+    "requests>=2.32.3",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
