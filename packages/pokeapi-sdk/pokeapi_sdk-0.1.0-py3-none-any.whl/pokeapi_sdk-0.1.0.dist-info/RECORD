@@ -1,0 +1,6 @@
+pokeapi_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pokeapi_sdk/client.py,sha256=7ssIxrcSfjTJkMXXti2p0QWHjTTFanI1Nj7UYcNDc-c,2397
+pokeapi_sdk/errors.py,sha256=mdTXnC3jnnxjpAGwsqNoF4ZwGmaNTJjrTBlAyIDS6Cw,199
+pokeapi_sdk-0.1.0.dist-info/METADATA,sha256=gDcx0dNljymN6nGFpGKkiXyISQ2_Ipf5BwyOKztPfPU,468
+pokeapi_sdk-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pokeapi_sdk-0.1.0.dist-info/RECORD,,
