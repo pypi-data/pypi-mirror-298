@@ -1,0 +1,8 @@
+luigi_chromadb_target/__init__.py,sha256=LfOHeslQL0MN45Hr-mWH1-uPYhzwpiFV5gtuvU3VDw8,119
+luigi_chromadb_target/registry.py,sha256=P9IIItyvCApF9Sth8Gj1eD-mivqBCnnm5AYWiPlvYjg,2902
+luigi_chromadb_target/target.py,sha256=cnPLEiLgVfqSrh2B0gyM5kOUs9L3ToPdL5zmF-xjq-c,1374
+luigi_chromadb_target-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+luigi_chromadb_target-0.1.0.dist-info/METADATA,sha256=n4XAlnVD_Od4lDROBg4Vrah6hd5lSzg1OKk4vqzb1sQ,14315
+luigi_chromadb_target-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+luigi_chromadb_target-0.1.0.dist-info/top_level.txt,sha256=xd4ZGY2iRSMKB0uLc0O04nBqwMaXmaKDM52r3wqgh3M,22
+luigi_chromadb_target-0.1.0.dist-info/RECORD,,
