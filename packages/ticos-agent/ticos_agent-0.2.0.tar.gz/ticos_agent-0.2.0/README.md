@@ -1,0 +1,120 @@
+<img src="https://dash.ticos.ai/logo.svg" alt="Ticos Logo" width="80" height="auto">
+
+# Ticos Agent
+
+## What is Ticos?
+
+Ticos is an advanced Embodied AI platform for Humanoid Robotics. It provides a comprehensive suite of tools and frameworks for developing, deploying, and managing intelligent systems for humanoid robots. The Ticos Agent is a crucial component of this ecosystem, responsible for collecting and transmitting data from robotic systems to the Ticos cloud infrastructure.
+
+## Overview
+
+The Ticos Agent is an extensible, efficient, and secure data collection and transmission system designed for robotic applications, with a focus on humanoid robotics. It serves as the bridge between the physical robot and the Ticos cloud platform, enabling real-time monitoring, analytics, and AI-driven decision making.
+
+## Features
+
+- Real-time system information collection
+- Extensible architecture for custom data collection modules
+- Secure and efficient data transmission
+- Configurable data collection intervals
+- Support for running as a daemon process
+- Easy-to-use command-line interface
+
+## Installation
+
+To install the Ticos Agent, you can use pip:
+
+```bash
+pip install ticos-agent
+```
+
+Or clone the repository and install:
+
+```bash
+git clone https://github.com/your-repo/ticos-agent.git
+cd ticos-agent
+pip install .
+```
+
+## Configuration
+
+The Ticos Agent uses a YAML configuration file. By default, it looks for `/etc/ticos_agent.conf`. Here's an example configuration:
+
+```yaml
+endpoint: "https://data.ticos.ai/collect"
+interval: 60
+extensions_dir: "/etc/ticos_agent/extensions"
+```
+
+## Usage
+
+To run the Ticos Agent:
+
+```bash
+ticos-agent --config /path/to/config.yaml
+```
+
+To run as a daemon:
+
+```bash
+ticos-agent --config /path/to/config.yaml --daemon
+```
+
+## Extending the Ticos Agent
+
+The Ticos Agent supports custom extensions for data collection. To create an extension:
+
+1. Create a Python file in the `extensions_dir` specified in your config.
+2. Implement a `collect()` function that returns a dictionary of data.
+
+Example extension:
+
+```python
+def collect():
+    return {
+        "battery_level": get_battery_level(),
+        "arm_position": get_arm_position(),
+    }
+```
+
+## Project Structure
+
+```
+ticos_agent/
+├── LICENSE
+├── README.md
+├── pyproject.toml
+├── setup.py
+└── src/
+    └── ticos_agent/
+        ├── __init__.py
+        ├── __main__.py
+        ├── core/
+        │   ├── __init__.py
+        │   ├── agent.py
+        │   ├── collector.py
+        │   ├── config.py
+        │   ├── daemon.py
+        │   └── sender.py
+        ├── extensions/
+        │   ├── __init__.py
+        │   └── loader.py
+        └── utils/
+            ├── __init__.py
+            └── helpers.py
+```
+
+## Contributing
+
+We welcome contributions to the Ticos Agent! Please see our [Contributing Guide](CONTRIBUTING.md) for more details.
+
+## License
+
+The Ticos Agent is released under the [MIT License](LICENSE).
+
+## Support
+
+For support, please open an issue on our [GitHub repository](https://github.com/your-repo/ticos-agent) or contact our support team at support@ticos.ai.
+
+## Acknowledgements
+
+The Ticos Agent is developed and maintained by the Tiwater Intelligent Cloud OS team. We thank all our contributors and the open-source community for their valuable input and support.
