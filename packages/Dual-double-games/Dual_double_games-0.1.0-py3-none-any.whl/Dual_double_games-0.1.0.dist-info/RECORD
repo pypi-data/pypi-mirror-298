@@ -1,0 +1,8 @@
+games/__init__.py,sha256=5wKSzE3Wp1Ch9Q6-xXWgb6V6fIMFSc0cdd448nnmhmA,54
+games/hangman.py,sha256=K6tPIsY3z9pMvyicv9uj7LvhswAD3sM6W7PrDfBH6iI,2964
+games/rock_paper_scissors.py,sha256=YJ9z5iu-_EbEJwPuYc3PS-hkZryUD6eMyKbAhulXW3A,2585
+games/words.py,sha256=i6btOvo85k5g4J8Iow-kV0cPELN2UN4Suv2ITQfQmrg,22686
+Dual_double_games-0.1.0.dist-info/METADATA,sha256=6h4mQ-NvVs--vPk2yE8OjFJuOZvvu2rQ2aaau6SvXkI,495
+Dual_double_games-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Dual_double_games-0.1.0.dist-info/top_level.txt,sha256=8qzozd4eb6jhGO8TkDV93Zhc8fPc-7a_n3lBSf5zb5M,6
+Dual_double_games-0.1.0.dist-info/RECORD,,
