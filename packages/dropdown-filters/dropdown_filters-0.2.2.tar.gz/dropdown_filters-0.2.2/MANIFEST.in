@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include dropdown_filter/templates *
+recursive-include dropdown_filter/static *
