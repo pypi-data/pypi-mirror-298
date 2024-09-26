@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: rsproduction
+Version: 0.0.16
+Summary: An OpenCv-based frontend library
+Home-page: https://github.com/SchulzR97/OpenCV-UI
+Author: Robert Schulz
+Author-email: schulzr256@gmail.com
+License: MIT
+Keywords: python,OpenCV,UI,UserInterface,Frontend
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+
+# OpenCV-UI
+An OpenCV-based frontend library
