@@ -1,0 +1,129 @@
+{% macro render(table_data, cfg={}, table_cfg={}) %}
+{% if table_data %}
+{# Definimos otra macro que usa la primera como parámetro #}
+ <!-- Tabla de Vehículos para Comprar -->
+<div class="table-wrapper">
+    {% if cfg.title %}<h4 class="mt-5">{{ cfg.title }}</h4>{% endif %}
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                {% if table_cfg.head_names %}
+                    {% for colname in head_names %}
+                        <th>{{colname}}</th>
+                    {% endfor %}
+                {% else %}
+                    {% for colname in table_data[0] %}
+                        <th>{{colname.replace("_", " ").capitalize()}}</th>
+                    {% endfor %}
+                {% endif %}
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="rows-for-post">
+            <!-- Aquí se agregarán los vehículos a comprar -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // Datos de ejemplo de vehículos a la venta, con cantidad disponible
+    const rows = [    
+        {% for vrow in table_data %}                        
+        {
+        {% for item in vrow %}            
+            {% set value = vrow[item] if vrow is mapping else item %}
+            {{item}}:"{{ '-' if value is none or value == '' else value }}",
+        {% endfor %}
+        },
+        {% endfor %}
+    ];
+    // Array para almacenar los vehículos que el cliente quiere comprar
+    var vehiclesToPurchase = [];
+    const vehiclesMap = new Map();
+    const vehiclesToPurchaseMap = new Map();
+
+    function getItemKey(item) {
+        // Si el objeto tiene un ID, lo usamos como clave.
+        if (item.id) {
+            return item.id;
+        }
+        // Si no hay ID, generamos una clave basada en los atributos relevantes (generalizable).
+        const keyAsString = encodeURIComponent(JSON.stringify(item)); // Escapamos el JSON para pasarlo seguro al onclick
+        return keyAsString;
+        // return JSON.stringify(item);  // O una función de hash basada en atributos.
+    }
+
+    // Función para llenar la tabla de vehículos a la venta
+    function loadDataForPost() {
+        const dataBody = document.getElementById('rows-for-post');
+        dataBody.innerHTML = ''; // Limpiar tabla
+        rows.forEach((item, index) => {
+            let row = `<tr>`;
+            // Recorremos todas las propiedades del objeto 'item'
+            for (let key in item) {
+                if (item.hasOwnProperty(key)) {
+                    row += `<td>${item[key]}</td>`;
+                }
+            }
+            vehiclesMap.set(index, item)
+            // Agregamos el botón al final de la fila
+            // row += `<td><input type="checkbox" class="form-check-input" id="itemCheckbox${index}"></td>`;
+            // row += `<td><input type="checkbox" class="form-check-input" id="vehicleCheckbox${index}" onclick="updateItemsSelecteds(${index})"></td>`;
+            // row += `</tr>`;
+            row += `<td style=" padding-inline: 30px !important;text-align: center; vertical-align: center;margin:0;"><input type="checkbox" class="form-check-input" id="vehicleCheckbox${index}" onclick="updateItemsSelecteds(${index})"></td>`;
+            row += `</tr>`;
+
+            dataBody.innerHTML += row;
+
+        });
+
+    }
+
+    function updateItemsSelecteds(index) {
+        const checkbox = document.getElementById(`vehicleCheckbox${index}`);
+        const vehicle = vehiclesMap.get(index)
+        if (checkbox.checked) {
+            vehiclesToPurchaseMap.set(index, {
+                        ...vehicle,
+            });
+            console.log(`Checkbox ${index} is checked`);
+            // Aquí puedes añadir el vehículo a una lista de seleccionados
+        } else {
+            vehiclesToPurchaseMap.delete(index);
+            console.log(`Checkbox ${index} is unchecked`);
+            // Aquí puedes quitar el vehículo de la lista de seleccionados
+        }
+        updateHiddenFields();
+    }
+
+// Actualizar campos ocultos en el formulario
+function updateHiddenFields() {
+    const hiddenFieldsContainer = document.getElementById('hidden-data');
+    let hiddenField = hiddenFieldsContainer.querySelector('input[name="checkbox_selecteds"]');
+    
+    // Crear una lista de vehículos desde el mapa
+    let vehiclesToPurchase = [];
+    vehiclesToPurchaseMap.forEach(val => {
+        vehiclesToPurchase.push(val);
+    });
+    
+    // Si el campo oculto ya existe, actualizar su valor
+    if (hiddenField) {
+        hiddenField.value = JSON.stringify(vehiclesToPurchase);
+    } else {
+        // Si no existe, crearlo y agregarlo al contenedor
+        hiddenField = document.createElement('input');
+        hiddenField.type = 'hidden';
+        hiddenField.name = 'checkbox_selecteds';
+        hiddenField.value = JSON.stringify(vehiclesToPurchase);
+        hiddenFieldsContainer.appendChild(hiddenField);
+    }
+}
+
+    // Inicializar la tabla de vehículos a la venta
+    loadDataForPost();
+</script>
+
+
+{% endif %}
+{% endmacro %}
