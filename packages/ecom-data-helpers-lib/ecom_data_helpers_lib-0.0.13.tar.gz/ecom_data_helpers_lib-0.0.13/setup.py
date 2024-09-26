@@ -1,0 +1,16 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='ecom_data_helpers_lib',
+    version='0.0.13',
+    description='A library of reusable utilities for AWS Lambda functions in ECOM Data Projects',
+    author='Augusto Lorencatto',
+    author_email='augusto.lorencatto@ecomenergia.com.br',
+    packages=find_packages(),
+    install_requires=[
+        'boto3',
+        'python-docx==1.1.2',
+        'PyPDF2==3.0.1',
+        'pdf2image==1.17.0'
+    ],
+)
