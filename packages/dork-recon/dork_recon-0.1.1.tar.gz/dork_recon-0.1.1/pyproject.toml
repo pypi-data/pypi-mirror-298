@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "dork-recon"
+version = "0.1.1"
+description = "Simple recon tool using google dork"
+authors = ["Renato Pinheiro"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+rich = "^13.8.1"
+bs4 = "^0.0.2"
+logging = "^0.4.9.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+wayback-recon = "dork_recon.dork_recon:main"
