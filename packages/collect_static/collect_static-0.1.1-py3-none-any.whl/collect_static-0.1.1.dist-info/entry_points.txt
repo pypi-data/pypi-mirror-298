@@ -1,0 +1,3 @@
+[console_scripts]
+collect=collect_static.collect:collect_files_cli
+
