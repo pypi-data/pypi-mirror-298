@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: jsacm
+Version: 0.1.1
+Summary: jsacm helps programers :)
+Author: Jacob Browning
+Author-email: <jacobbrowning2008@gmail.com>
+Keywords: python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: deep_translator
+Requires-Dist: aspose.words
+Requires-Dist: datetime
+Requires-Dist: names
+Requires-Dist: pytubefix
+
+A python package to aid in programming (calculator credit to Oliver)
