@@ -1,0 +1,13 @@
+src/__init__.py,sha256=-lFla0qDttQI6mhrxlKGWGq20ZXmJzptfo2v6Oo8xuA,1102
+src/add_license.py,sha256=BSwklbMWDEq1sOHyW8NsMSkeesI_oShXuZaEgKe5TSM,3831
+src/choose_license.py,sha256=BYG4yZVBGx0tF0t6lsXHZCjrYCGB90F0d_dZdL3e2VE,1784
+src/detect_license.py,sha256=BgI4-8DjSVdtLnq5zFRQdSXDBtXhvzamMujnYjepqcQ,4807
+src/full_licenses.py,sha256=OpXDpp1E4vV0I8bw-PJ8rz3zXQ5uRRHYU2c4efSEHSA,52539
+src/get_license.py,sha256=K4higvOljfFSXSP4NDpBzenWfBbBtC2Rel2u2c7k_m4,3325
+src/main.py,sha256=zOzWjkR9Odjuh0HLiJDxOhgzNGvR56rM1va0kq2sWpo,2614
+licenser_h-1.0.dist-info/LICENSE,sha256=JgleOyBEd78oK34mxbtKbyYj_uwigPWuHGGhtS5eUdU,1068
+licenser_h-1.0.dist-info/METADATA,sha256=SRYlWmKNU7TCR6v0LOwSJVRTP3iSy1OH6ItNCfjQ_Yc,4555
+licenser_h-1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+licenser_h-1.0.dist-info/entry_points.txt,sha256=AShSxBPYCm1uHEPGntm_GoIKONCn7f7YREsm13GkI8s,45
+licenser_h-1.0.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+licenser_h-1.0.dist-info/RECORD,,
