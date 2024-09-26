@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dash-shadcn"
+version = "0.0.0"
+description = "Using shadcn-ui components in Dash"
+authors = ["Latent <guillaume.thibault.98@proton.me>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dash-shadcn
+Version: 0.0.0
+Summary: Using shadcn-ui components in Dash
+License: MIT
+Author: Latent
+Author-email: guillaume.thibault.98@proton.me
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Dash-Shadcn
+
+Using shadcn-ui components in Dash
+
+```
+pip install dash-shadcn
+```
+
+
