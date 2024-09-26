@@ -1,0 +1,13 @@
+skradar/__init__.py,sha256=__mX5OL1XWQXTmEMsBAInrWu8quqNuh4mF_gfP6-WG0,154
+skradar/misc.py,sha256=9tjgyuYYZ8BtGGSAxyN0BUiwZvWGhWIzrCferb8wjj4,942
+skradar/process.py,sha256=B4thDreDf9FX47ekB9qBz-XDuXsyiWdhf1qOGfmxF7s,5324
+skradar/radar_scene.py,sha256=XTP3FzWKOABq2V-N9sT14tIHM8YKxr6DFvQ2iPyM4d0,27734
+skradar/sim.py,sha256=Rw-ji2JTYEt68_oMUIB6JY0offUtU_yW_VHa6XzqoX4,4029
+skradar/version.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+skradar/detection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skradar/detection/cfar.py,sha256=FQsGCKYaqA0ijgO6EHMzCePFEiQfupST4UuTX4-zxdY,1503
+scikit_radar-0.0.2.dist-info/LICENSE,sha256=3VUPoZpRQ6C1Hp_RtVTTP1pS5MYQwWalsTwE7HYEYlk,1071
+scikit_radar-0.0.2.dist-info/METADATA,sha256=scgkuuAFrPIjcPGTQIzgzXMPwEt765DcG10IQT3o8wY,715
+scikit_radar-0.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+scikit_radar-0.0.2.dist-info/top_level.txt,sha256=EDCR65ZcJSy3Wvm1iyfi1Mnq4cR4DaWwjA-nGxSNjSU,8
+scikit_radar-0.0.2.dist-info/RECORD,,
