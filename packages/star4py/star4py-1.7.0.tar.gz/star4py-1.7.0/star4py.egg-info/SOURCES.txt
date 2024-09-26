@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+star4py.egg-info/PKG-INFO
+star4py.egg-info/SOURCES.txt
+star4py.egg-info/dependency_links.txt
+star4py.egg-info/entry_points.txt
+star4py.egg-info/top_level.txt
+starpy/__init__.py
+starpy/compile.py
+starpy/complie_test.py
+starpy/interface.py
+starpy/lexer.py
+starpy/lexer_test.py
+starpy/star.py
+starpy/vm.py
+starpy/vm_test.py
