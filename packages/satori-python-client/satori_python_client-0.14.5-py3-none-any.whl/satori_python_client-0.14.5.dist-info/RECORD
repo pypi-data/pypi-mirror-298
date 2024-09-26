@@ -1,0 +1,14 @@
+.mina/client.toml,sha256=dMJR9mcXLnJmUq7KGJU-n9D3FpQLTjou8TMmx_M5K94,993
+satori/client/__init__.py,sha256=d6n40AekVbAlcbYmrXXaTOrGqUn65M-ipiqzp_GvolE,11036
+satori/client/account.py,sha256=rl-dU4iAH4Iw5poK4pY4K8Bj5qCDRCJyq_5He0EmCu4,2407
+satori/client/account.pyi,sha256=cwy1lQOsx9fNGmgwW4DMWUk8yLZn2ct_GFEr0XKCzaI,17676
+satori/client/network/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+satori/client/network/base.py,sha256=3lB-yEmg_Loc9t0SU9CilgXuGAomQ8-ozHd7c9rHY3k,1286
+satori/client/network/util.py,sha256=h1iWnk85VPUhnEJou5bynqvnxpF7RfQ9QnESlooga6M,1263
+satori/client/network/webhook.py,sha256=W7vFSViMJtICOasHmGjkib11d9cfw79hsqYsj-a8KpU,5080
+satori/client/network/websocket.py,sha256=qhN0iGuCimQAOdi3cy3onZSK7mP1txIQGgIXdDBXDV0,7482
+satori/client/protocol.py,sha256=-ZzGCtBgKJYJPZ2BtfK70G4rm9KHunjr-k5z4F6lV70,25978
+satori_python_client-0.14.5.dist-info/METADATA,sha256=TLW7aDfXIP2LPkxlra-uiZKBs7YQBEvZDSvAclzjhpw,3819
+satori_python_client-0.14.5.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+satori_python_client-0.14.5.dist-info/licenses/LICENSE,sha256=LoDWgVSN8i0DchyM87lYNljkPWqsyWQFfmJsuGp5DwY,1090
+satori_python_client-0.14.5.dist-info/RECORD,,
