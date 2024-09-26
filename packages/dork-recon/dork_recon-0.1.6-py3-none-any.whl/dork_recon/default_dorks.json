@@ -1,0 +1,32 @@
+{
+    "files": [
+        "intitle:index.of mp3",
+        "intitle:index.of pdf",
+        "filetype:doc",
+        "filetype:xls",
+        "filetype:ppt",
+        "filetype:sql",
+        "filetype:bak"
+    ],
+    "pages": [
+        "inurl:login.php",
+        "inurl:admin.php",
+        "inurl:index.php?id=",
+        "inurl:dashboard",
+        "inurl:signup"
+    ],
+    "config_files": [
+        "intitle:index.of db",
+        "intitle:index.of config",
+        "inurl:config.php",
+        "filetype:xml inurl:config",
+        "filetype:json inurl:config"
+    ],
+    "backup_files": [
+        "filetype:bak",
+        "filetype:backup",
+        "inurl:backup",
+        "inurl:old",
+        "inurl:temp"
+    ]
+}
