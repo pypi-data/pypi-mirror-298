@@ -1,0 +1,9 @@
+setup.py
+aiextraction/Extract_with_OpenAi.py
+aiextraction/Extract_with_Pixtral.py
+aiextraction/__init__.py
+aiextraction.egg-info/PKG-INFO
+aiextraction.egg-info/SOURCES.txt
+aiextraction.egg-info/dependency_links.txt
+aiextraction.egg-info/requires.txt
+aiextraction.egg-info/top_level.txt
