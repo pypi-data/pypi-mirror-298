@@ -1,0 +1,16 @@
+bfsccylinder/__init__.py,sha256=OAsELjoq8v9amm_Qe_KfQSuvc78H-ZjsxPSjLg9QUcQ,579
+bfsccylinder/bfsccylinder.cpython-311-darwin.so,sha256=Sv4sw0xa_ayWga3nxOyWP0zo-M_2tvlbexRT_Mzt2UQ,1699112
+bfsccylinder/bfsccylinder.pyx,sha256=DHyiilLgRVy9Kf2i569MMtrIFK73T7pEo_BlGMLLTSM,1150855
+bfsccylinder/bfsccylinder_sanders.cpython-311-darwin.so,sha256=4E2Rzu0L5g6SsSN9ew9A-wTJzi6tGb_MkHvahscLzNU,2148032
+bfsccylinder/bfsccylinder_sanders.pyx,sha256=1N166kMxMlfeCf8YPq2xbQ1huJlCPtTX8xh9e6TwK6c,1733089
+bfsccylinder/quadrature.py,sha256=C6JMKSnjBHbPj0pSTqSLXr7KVW1cSMrM-tx76YsvpVU,8509
+bfsccylinder/sanders.py,sha256=qcAez__Vk4KaTPZ1rf9dSbTPwVOQ3Ysm0A2qPFLoE1s,735
+bfsccylinder/utils.py,sha256=FqcZWff0w_NqDGxE9vfBDzfvAA7ibRQbvIznwyFPoeg,676
+bfsccylinder/version.py,sha256=ErkLkI2TDBX1OIqi2GGa20CPeu4ZculEi-XffRbLU6M,22
+bfsccylinder-0.4.5.data/data/LICENSE,sha256=uQXsSayiq_YOEm6FllvP-Sq39oyo8uze9eIG-vEmGmA,1521
+bfsccylinder-0.4.5.data/data/README.md,sha256=-jxo54nu57u7S_5f4uXdLk9xW9O9xxW_ka0JwyBNkn0,698
+bfsccylinder-0.4.5.dist-info/LICENSE,sha256=uQXsSayiq_YOEm6FllvP-Sq39oyo8uze9eIG-vEmGmA,1521
+bfsccylinder-0.4.5.dist-info/METADATA,sha256=RD67tA4hC2pvNCsLPGMxa8t9EGFjxSmAF6etyRnng68,2031
+bfsccylinder-0.4.5.dist-info/WHEEL,sha256=rnFHg0UpMUvRKT-zPk12WGt0TON-DC_lAT_tDz7dwmw,114
+bfsccylinder-0.4.5.dist-info/top_level.txt,sha256=-ZxwRg1f4jcnTolfFatHW86P40EuzvmqcGgJTaZ0frQ,13
+bfsccylinder-0.4.5.dist-info/RECORD,,
