@@ -1,0 +1,12 @@
+LICENSE
+NEWS
+README.md
+pyproject.toml
+sopel_respects/__init__.py
+sopel_respects/plugin.py
+sopel_respects.egg-info/PKG-INFO
+sopel_respects.egg-info/SOURCES.txt
+sopel_respects.egg-info/dependency_links.txt
+sopel_respects.egg-info/entry_points.txt
+sopel_respects.egg-info/requires.txt
+sopel_respects.egg-info/top_level.txt
