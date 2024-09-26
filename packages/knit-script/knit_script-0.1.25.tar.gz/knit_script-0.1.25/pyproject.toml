@@ -1,0 +1,62 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "knit-script"
+dynamic = ["version"]
+description = 'Knit Script is a domain specific programming language for writing v-bed knitting machine instructions. The language is loosely based on conventions from Python 3 but includes support for controlling a knitting machine. The code is interpreted into knitout which can then be processed into instructions for different types of knitting machines.'
+homepage = "https://github.com/mhofmann-Khoury/knit_script"
+repository = "https://github.com/mhofmann-Khoury/knit_script"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+keywords = ["knit", "machine knit", "textile", "Northeastern", "ACT Lab", "fabrication"]
+authors = [
+  { name = "Megan Hofmann", email = "m.hofmann@northeastern.edu" },
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Natural Language :: English",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = [
+  "parglare~=0.16.1",
+  "networkx~=3.2",
+  "matplotlib~=3.8.0",
+  "virtual-knitting-machine~=0.0.3",
+  "knitout-interpreter~=0.0.5",
+  "importlib_resources~=6.4.0",
+]
+
+[project.urls]
+Documentation = "https://github.com/mhofmann-Khoury/knit_script#readme"
+Issues = "https://github.com/mhofmann-Khoury/knit_script/issues"
+Source = "https://github.com/mhofmann-Khoury/knit_script"
+
+[tool.hatch.version]
+path = "src/knit_script/__about__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "knit_script/*.py",
+  "knit_script/*.pg",
+  "knit_script/*.ks",
+]
+exclude = [
+  "/tests",
+  "requirements.txt",
+  ".gitignore",
+  "*.PNG",
+]
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/knit_script tests}"
