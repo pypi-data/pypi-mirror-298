@@ -1,0 +1,12 @@
+pepe_toolbox/__init__.py,sha256=erKZkaXxu-6ijNzi_2N-3lbiEBhdwsZEm9zQb3DZa24,80
+pepe_toolbox/File/__init__.py,sha256=lPsF1P8hFz0VE_oDooqBx4OdVrcfxTzV7p8TFVZMo-0,193
+pepe_toolbox/File/document_preprocessor.py,sha256=-y2u5872HY-OVq-sFu4te-XaaOkv16RGObAxCxIfh5M,3256
+pepe_toolbox/File/image_converter.py,sha256=ucNj8a6B3vsvdXj0HpB_s6FeQQDE2YK_0Z2drwxDTeM,8156
+pepe_toolbox/File/zipfile.py,sha256=0L09I1TREfDlnJm3pswZ_w5tXhfXiw9DTcTlUGtoPnI,3963
+pepe_toolbox/Slack/__init__.py,sha256=xjfPZzkSyWQVICXEOE-oyrFKssA1Gz7CHKOiMGzdW3k,105
+pepe_toolbox/Slack/slack_pepe.py,sha256=F7qUUTfPndwikV6y7dkPI0nYHVGdDpz2pL5QIjQZYtI,7081
+pepe_toolbox-0.3.6.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pepe_toolbox-0.3.6.dist-info/METADATA,sha256=elYHS9_39fV6m8mSV_ndZ8u6DRUyFc0Q-SV_uY6EZZA,1326
+pepe_toolbox-0.3.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pepe_toolbox-0.3.6.dist-info/top_level.txt,sha256=j4baMTehgVGMUpIdCBapKN32GRdyQuzEe2yDw5KqShg,13
+pepe_toolbox-0.3.6.dist-info/RECORD,,
