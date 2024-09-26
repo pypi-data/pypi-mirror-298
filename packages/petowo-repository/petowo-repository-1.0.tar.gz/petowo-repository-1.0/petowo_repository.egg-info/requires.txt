@@ -1,0 +1,8 @@
+dataclasses
+datetime
+logging
+petowo-core
+psycopg2
+pydantic==2.7.1
+sqlalchemy
+typing
