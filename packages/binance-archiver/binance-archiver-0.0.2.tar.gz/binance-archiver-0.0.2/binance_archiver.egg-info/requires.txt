@@ -1,0 +1,12 @@
+azure-storage-blob
+azure-identity
+azure-keyvault-secrets
+python-dotenv
+websocket-client
+pytest
+requests
+Flask
+Flask-CORS
+fastapi
+uvicorn
+orjson
