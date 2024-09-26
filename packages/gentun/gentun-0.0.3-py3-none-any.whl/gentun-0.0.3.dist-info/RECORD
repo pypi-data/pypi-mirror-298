@@ -1,0 +1,16 @@
+gentun/__init__.py,sha256=kjhE-3Aejc1d8TMRT1-Lf6lmDjjQx5ITkqZ0oO1cK8Y,148
+gentun/algorithms.py,sha256=F4NpkLAmlJ1diF0N1WCgOYJJtVw7-pI2rdosRdPHpjI,6736
+gentun/config.py,sha256=XEx_kUzQNL7jHZHUSvmTaaZ8kTgY_y9KctQIQcumCQk,304
+gentun/genes.py,sha256=XfsR2s5ElQwpJF0OaUSIrSiddGlWO2Vwb-ZHDPXd_c4,4316
+gentun/individuals.py,sha256=lYSxDP_U6DJhCmDa0lozqpIf0JhTpKD_owuliquJyCE,7346
+gentun/populations.py,sha256=Tn7cv6it8T4-A2AkY6PYPIqiRIw-IXIFc8H4VWrDa5o,6914
+gentun/services.py,sha256=tb7P3OnjTGj9p0Kq36frYt4jVpm1D_cqVqUUZPU8AOo,5239
+gentun/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gentun/models/base.py,sha256=isd4K9_NCNGpUWleSIi0U1tnNKVpVFdXnQ0ZQxnYxE8,2829
+gentun/models/sklearn.py,sha256=edwYE_2VXvfZdrRtbVSloDerXTjxMbFFiiOQL6Q70B8,1887
+gentun/models/tensorflow.py,sha256=vSVrx6s1jp14NHRBGK7lvfneEVgb8LVpdlSKDW_OBz8,7757
+gentun/models/xgboost.py,sha256=PQQkNrDVl97ah9k_LJh3tJNJbY8OwPKgVEcVoK_QttM,2677
+gentun-0.0.3.dist-info/LICENSE,sha256=QUj5EiNdnuQJx9zOT0hEf3kfBaIPpgmwW91BhKzB0BA,11346
+gentun-0.0.3.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+gentun-0.0.3.dist-info/METADATA,sha256=EYp1WEINeysj3zG2XQ0CNhWWNSNXGAtbcJHCtlGoB2A,13644
+gentun-0.0.3.dist-info/RECORD,,
