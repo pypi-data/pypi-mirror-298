@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: reinvent-hitl
+Version: 0.0.4
+Summary: Source code of Reinvent adapted to HITL_AL_GOMG workflow
+Home-page: https://github.com/yasminenahal/reinvent-hitl.git
+Download-URL: https://github.com/yasminenahal/reinvent-hitl/archive/v_04.tar.gz
+Author: Yasmine Nahal
+Author-email: yasmine.nahal@aalto.fi
+License: MIT
+Keywords: REINVENT,HITL,HITL_AL_GOMG
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Introduction
+
+This repository contains code to run REINVENT V3.2 for goal-oriented molecule generation, with a few fixes to adapt it to the HITL_AL_GOMG workflow.
+The original repository can be found [here](https://github.com/MolecularAI/Reinvent).
