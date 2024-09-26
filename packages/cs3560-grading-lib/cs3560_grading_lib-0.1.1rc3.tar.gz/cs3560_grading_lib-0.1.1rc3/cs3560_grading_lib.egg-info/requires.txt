@@ -1,0 +1,14 @@
+click
+tomli
+GitPython
+typing_extensions<5,>=4.12
+
+[:python_version >= "3.10"]
+importlib-metadata
+
+[dev]
+pytest
+pytest-cov
+mypy
+ruff
+tox
