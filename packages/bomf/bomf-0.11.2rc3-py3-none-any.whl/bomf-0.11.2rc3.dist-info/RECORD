@@ -1,0 +1,16 @@
+_bomf_version.py,sha256=P-1HhM4ZOQLv0gajhIoL8SYf8lbWyH0nYTFJvbhBRjk,22
+bomf/__init__.py,sha256=0z0n6pwWwcAJH-D5_wG1Z_k9ZeTLzUZHuzsnT9E0_c0,8094
+bomf/config.py,sha256=dfdjc0BTkjCYET4xBOF9tgoifpm1uIL4RCGkL0hWqQk,1694
+bomf/py.typed,sha256=ZvYa-_QF7Xg7F6Dow8m1zHvSP6kNHuhh3BEBVxjAdUQ,168
+bomf/filter/__init__.py,sha256=sEi0WuNo0psmYrAvpVNwf84Asc0Y-gJRf6pIZeOF9SI,6282
+bomf/filter/sourcedataproviderfilter.py,sha256=BTjwkdvQIZ9vW5slY2l5B7fNqwUs-fWxNbcvz1oYLX8,3675
+bomf/loader/__init__.py,sha256=qDMiMT6c34mwELnO4vsErqUAGv9pk_7Iw5Rb8wUDdBQ,82
+bomf/loader/entityloader.py,sha256=KfYSEnw5nQ_yRfDxcAAGi3q9-3K9LmxMNSPIQexrRlE,9015
+bomf/logging/__init__.py,sha256=oIIr030SIVKYq1vUS-3q5elN3VBr2QFJPEEj49yMiAQ,899
+bomf/mapper/__init__.py,sha256=Ml93TXggb_myZQKBWcacFv6ODvmlgmW1-9SxGODAkM8,5123
+bomf/model/__init__.py,sha256=K3Nfghz-ScRVaD7DuO8ov-OnnSYq9Rm4DiaWtzcRRP4,1046
+bomf/provider/__init__.py,sha256=0qbo3pWBqIfRIMtVBrTQPPt0Wn7rNBzoqXWjuCuhO0M,4871
+bomf-0.11.2rc3.dist-info/METADATA,sha256=0mzunIpZ1d554Adm7tw9QP1aRvfpFK6smNivQuWF9R8,6187
+bomf-0.11.2rc3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+bomf-0.11.2rc3.dist-info/licenses/LICENSE,sha256=qKFWCKq0x7vMZsaVL3gacXO43HKbi3LH7e55MHx7fZQ,1095
+bomf-0.11.2rc3.dist-info/RECORD,,
