@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+antpdf/__init__.py
+antpdf/pdf2image.py
+antpdf/pdf2text.py
+antpdf.egg-info/PKG-INFO
+antpdf.egg-info/SOURCES.txt
+antpdf.egg-info/dependency_links.txt
+antpdf.egg-info/top_level.txt
