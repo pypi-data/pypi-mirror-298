@@ -1,0 +1,8 @@
+common_utility_pepe/__init__.py,sha256=XqXe2WdZ3tri3Xswc9TUiJrhnO1mPgkvzDSIn-hqbpo,180
+common_utility_pepe/Slack/__init__.py,sha256=xjfPZzkSyWQVICXEOE-oyrFKssA1Gz7CHKOiMGzdW3k,105
+common_utility_pepe/Slack/slack_pepe.py,sha256=F7qUUTfPndwikV6y7dkPI0nYHVGdDpz2pL5QIjQZYtI,7081
+pepe_toolbox-0.3.3.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pepe_toolbox-0.3.3.dist-info/METADATA,sha256=n58GiAjNHK9aLa_zjYl-BsTbmsYL7VzkPMplnn8Hzdc,1326
+pepe_toolbox-0.3.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pepe_toolbox-0.3.3.dist-info/top_level.txt,sha256=qIyXdXg4X-JbrY2P2ZkbIyLF4LAWuAzBqrFDRF3nl7Y,20
+pepe_toolbox-0.3.3.dist-info/RECORD,,

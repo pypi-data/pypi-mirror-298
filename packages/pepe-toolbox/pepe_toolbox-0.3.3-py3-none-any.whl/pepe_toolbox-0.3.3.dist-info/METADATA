@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: pepe-toolbox
+Version: 0.3.3
+Summary: korean pepe lover
+Home-page: https://github.com/kinest1997
+Author: kinest1997
+Author-email: kinest1997@naver.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests ==2.32.3
+Requires-Dist: slack-sdk ==3.32.0
+Requires-Dist: Pillow
+Requires-Dist: pdf2image
+Requires-Dist: tqdm
+
+# pepe-toolbox
+
+## Before you start
+
+```bash
+python -m venv myenv
+source myenv/bin/activate  # macOS/Linux
+# i don't give a shit about windows
+pip install -r requirements.txt
+```
+
+## 1. slack_pepe
+
+### How to use
+
+#### 1.1. slack_pepe_webhook
+
+```python
+from common_utility_pepe.slack_pepe import SlackPepe
+
+slack_pepe_webhook = SlackPepe.from_webhook(
+    webhook_url="your_web_hook_url"
+)
+slack_pepe_webhook.send_slack_message(title="go away")
+```
+
+#### 1.2. slack_pepe_bot
+
+```python
+from common_utility_pepe.slack_pepe import SlackPepe
+
+slack_pepe_bot = SlackPepe.from_bot(
+    channel="your_channel_id",
+    bot_token="your_bot_token"
+)
+slack_pepe_bot.send_slack_message(title="hi there")
+
+slack_pepe_bot.update_slack_message(timestamp="your_timestamp", title="it's fake")
+```
