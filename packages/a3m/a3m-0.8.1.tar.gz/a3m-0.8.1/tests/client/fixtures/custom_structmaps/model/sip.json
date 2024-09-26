@@ -1,0 +1,12 @@
+[
+{
+    "pk": "3a915449-d1bb-4920-b274-c917c7bb5929",
+    "model": "main.sip",
+    "fields": {
+        "aip_filename": null,
+        "currentpath": "%sharedPath%watchedDirectories/workFlowDecisions/metadataReminder/custom-structmap-3a915449-d1bb-4920-b274-c917c7bb5929/",
+        "createdtime": "2019-04-10T23:13:02Z",
+        "hidden": false
+    }
+}
+]

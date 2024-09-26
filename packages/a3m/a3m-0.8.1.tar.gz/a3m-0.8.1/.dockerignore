@@ -1,0 +1,19 @@
+**
+
+# We need .git to not be excluded from the context (hatch-vcs).
+!/.git/**
+
+!/a3m/**
+!/.python-version
+!/uv.lock
+!/pyproject.toml
+!/README.rst
+!/LICENSE
+
+**/*~
+**/*.log
+**/.DS_Store
+**/Thumbs.db
+**/__pycache__
+**/*.pyc
+**/*.pyo
