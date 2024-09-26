@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pypi-test-capture"
+version = "0.0.1"
+description = "A simple package to capture audio from the microphone and transcribe it to text using OpenAI's Whisper API."
+authors = ["elba"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyaudio = "^0.2.14"
+openai = "^1.48.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+capture = "stream_capture.cli:main"
