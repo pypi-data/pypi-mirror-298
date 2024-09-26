@@ -1,0 +1,8 @@
+brig/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brig/PoolExecutor/__init__.py,sha256=C-ojnkbF91JGAb69cgsJk_19wkbOK20nb7ABFmMRN8w,49
+brig/PoolExecutor/base.py,sha256=575zRG8eE5NiY1aKShXInWMQwhHupEO_kt6x6-PGVfk,792
+brig/PoolExecutor/executor.py,sha256=6Eb7XPU_G3OTqsUFgFrkzOK7vvCX-3F3CI27y93wxWE,1341
+brig-0.0.1.dist-info/LICENSE,sha256=Nv6u1ubULm-E2y6q2-pQPK8s2BzkOltLaVlPKQ3tkcs,35182
+brig-0.0.1.dist-info/METADATA,sha256=S2tEokP-ME9SXvVpNLr0tmGu0h3VLctUJUOGEH4vZMc,1404
+brig-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+brig-0.0.1.dist-info/RECORD,,

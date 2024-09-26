@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: brig
+Version: 0.0.1
+Summary: It is a repository for all modified functions and classes.
+License: AGPL-3.0-or-later
+Author: Code63Reaper
+Author-email: akilangms542@gmail.com
+Maintainer: Code63Reaper
+Maintainer-email: akilangms542@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Utilities
+Requires-Dist: tqdm (>=4.66.5,<5.0.0)
+Description-Content-Type: text/markdown
+
+# BRIG
+It is a repository for all modified functions and classes.
+
+## Installation
+```
+pip install brig
+```
+
+## Usage
+### PoolExecutor
+It is a modified function of a Poolexecutor function in python to support 'tqdm' progress bar and showing error in thread. Below is the example code to import it,
+```
+import time
+from brig.PoolExecutor import ThreadPool
+
+def sleep(a, b, c, d):
+    time.sleep(1) 
+
+prog = tqdm.tqdm(total=300)
+with ThreadPool(max_workers=20, progressor=prog) as pool:
+    for i in range(300):
+        pool.submit(sleep, 1, 2, 3, 4)
+```
+
