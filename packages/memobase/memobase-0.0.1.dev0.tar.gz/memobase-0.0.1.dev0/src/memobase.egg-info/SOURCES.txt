@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+readme.md
+setup.py
+src/memobase.egg-info/PKG-INFO
+src/memobase.egg-info/SOURCES.txt
+src/memobase.egg-info/dependency_links.txt
+src/memobase.egg-info/requires.txt
+src/memobase.egg-info/top_level.txt
+src/memobase_client/__init__.py
+src/memobase_client/utils.py
