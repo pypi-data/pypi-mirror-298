@@ -1,0 +1,3 @@
+[console_scripts]
+ptv-deploy=public_transit_viewer.entrypoint:main
+
