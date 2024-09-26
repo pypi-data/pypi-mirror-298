@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dropsolver
+Version: 0.1.0.dev0
+Author-email: Valdemaras Milkus <valdemaras.milkus@bti.vu.lt>, Andrius Merkys <andrius.merkys@gmc.vu.lt>
+License: BSD-3-Clause
+Classifier: License :: OSI Approved :: BSD License
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: sympy
+Provides-Extra: test
+Requires-Dist: unittest; extra == "test"

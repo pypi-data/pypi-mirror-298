@@ -1,0 +1,14 @@
+LICENSE
+pyproject.toml
+src/dropsolver/__init__.py
+src/dropsolver/parameters.py
+src/dropsolver/progress.py
+src/dropsolver/surfactant.py
+src/dropsolver/util.py
+src/dropsolver.egg-info/PKG-INFO
+src/dropsolver.egg-info/SOURCES.txt
+src/dropsolver.egg-info/dependency_links.txt
+src/dropsolver.egg-info/requires.txt
+src/dropsolver.egg-info/top_level.txt
+tests/test_exceptions.py
+tests/test_surfactant.py
