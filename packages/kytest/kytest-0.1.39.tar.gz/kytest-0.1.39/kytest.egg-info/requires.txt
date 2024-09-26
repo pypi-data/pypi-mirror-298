@@ -1,0 +1,13 @@
+playwright==1.33.0
+uiautomator2==3.2.4
+uiautodev==0.5.0
+tidevice==0.12.9
+facebook-wda==1.4.6
+jmespath==0.9.5
+jsonschema==4.17.0
+pytest==6.2.5
+pytest-rerunfailures==10.2
+pytest-xdist==2.5.0
+allure-pytest==2.9.45
+click==8.1.7
+loguru==0.7.0
