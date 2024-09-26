@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: aimllabnew
+Version: 0.1.5
+Summary: A Python library with various useful AI/ML code snippets.
+Home-page: https://github.com/mdimado/aimllab
+Author: mdimado
+Author-email: mdimad005@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# aimllab
+
+`aimllab` is a Python library for solving the 0/1 knapsack problem.
+
+## Installation
+
+You can install `aimllab` via pip:
+
+
+
+
+This README provides a brief overview of the library, installation instructions, usage examples, and information about the license.
