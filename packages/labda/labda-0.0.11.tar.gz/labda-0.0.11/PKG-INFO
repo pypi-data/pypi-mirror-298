@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: labda
+Version: 0.0.11
+Summary: Library for Advanced Behavioural Data Analysis
+Home-page: https://labda.josefheidler.cz
+License: CC-BY-SA-4.0
+Keywords: analysis,health,behaviour,data,spatial,temporal
+Author: Josef Heidler
+Author-email: jheidler@health.sdu.dk
+Maintainer: Josef Heidler
+Maintainer-email: jheidler@health.sdu.dk
+Requires-Python: >=3.11,<3.13
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: actipy (>=3.1.0,<4.0.0)
+Requires-Dist: agcounts (>=0.2.5,<0.3.0)
+Requires-Dist: arrow (>=1.3.0,<2.0.0)
+Requires-Dist: colorlog (>=6.8.2,<7.0.0)
+Requires-Dist: fastparquet (>=2024.5.0,<2025.0.0)
+Requires-Dist: geopandas (>=1.0.1,<2.0.0)
+Requires-Dist: openpyxl (>=3.1.5,<4.0.0)
+Requires-Dist: osmnx (>=2.0.0b2,<3.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: pandera (>=0.20.1,<0.21.0)
+Requires-Dist: plotly (>=5.22.0,<6.0.0)
+Requires-Dist: polars (>=1.7.1,<2.0.0)
+Requires-Dist: pyarrow (>=16.1.0,<17.0.0)
+Requires-Dist: pydantic-settings (>=2.4.0,<3.0.0)
+Requires-Dist: pydeck (>=0.9.1,<0.10.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: sqlalchemy (>=2.0.25,<3.0.0)
+Requires-Dist: timezonefinder (>=6.5.2,<7.0.0)
+Project-URL: Documentation, https://labda.josefheidler.cz
+Project-URL: Repository, https://github.com/josefheidler/labda
+Description-Content-Type: text/markdown
+
+# LABDA: Library for Advanced Behavioural Data Analysis
+
+[![pypi](https://img.shields.io/pypi/v/labda.svg)](https://pypi.python.org/pypi/labda)
+[![downloads](https://static.pepy.tech/badge/labda/month)](https://pepy.tech/project/labda)
+[![versions](https://img.shields.io/pypi/pyversions/labda.svg)](https://github.com/josefheidler/labda)
+[![discord](https://img.shields.io/discord/1165947556807848016)](https://discord.gg/qu6ax5Q64j)
+
+**LABDA is currently under development and may undergo significant API changes that could result in breaking changes.**
+
+## What is it?
+
+TO-DO...
+
+## Main Features
+
+TO-DO...
+
+## License
+
+[Library for Advanced Behavioural Data Analysis](https://labda.josefheidler.cz/) by [Josef Heidler](https://labda.josefheidler.cz/) is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+## Documentation
+
+TO-DO...
+
+## Getting Help, Discussion and Development
+
+TO-DO...
+
+## Contributing to labda
+
+TO-DO..

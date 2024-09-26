@@ -1,0 +1,70 @@
+[tool.poetry]
+name = "labda"
+version = "0.0.11"
+description = "Library for Advanced Behavioural Data Analysis"
+authors = ["Josef Heidler <jheidler@health.sdu.dk>"]
+maintainers = ["Josef Heidler <jheidler@health.sdu.dk>"]
+
+readme = "README.md"
+license = "CC-BY-SA-4.0"
+homepage = "https://labda.josefheidler.cz"
+repository = "https://github.com/josefheidler/labda"
+documentation = "https://labda.josefheidler.cz"
+
+keywords = ["analysis", "health", "behaviour", "data", "spatial", "temporal"]
+
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+]
+
+packages = [{ include = "labda" }]
+include = ["CHANGELOG.md"]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+pandas = "^2.2.2"
+geopandas = "^1.0.1"
+timezonefinder = "^6.5.2"
+pyarrow = "^16.1.0"
+pandera = "^0.20.1"
+openpyxl = "^3.1.5"
+sqlalchemy = "^2.0.25"
+pydeck = "^0.9.1"
+plotly = "^5.22.0"
+requests = "^2.32.3"
+colorlog = "^6.8.2"
+arrow = "^1.3.0"
+actipy = "^3.1.0"
+fastparquet = "^2024.5.0"
+agcounts = "^0.2.5"
+pydantic-settings = "^2.4.0"
+osmnx = {version = "^2.0.0b2", allow-prereleases = true}
+polars = "^1.7.1"
+
+[tool.poetry.group.jupyter.dependencies]
+ipykernel = "^6.29.5"
+nbformat = "^5.10.4"
+folium = "^0.17.0"
+matplotlib = "^3.9.2"
+mapclassify = "^2.8.0"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = "^9.5.28"
+mkdocstrings-python = "^1.10.5"
+mkdocs-glightbox = "^0.4.0"
+mkdocs-jupyter = "^0.24.8"
+pillow = "^10.4.0"
+mkdocs-table-reader-plugin = "^2.2.2"
+
+
+[tool.poetry.group.dev.dependencies]
+scikit-learn = "^1.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
