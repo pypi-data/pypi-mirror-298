@@ -1,0 +1,8 @@
+setup.py
+pglogginghandler/__init__.py
+pglogginghandler/log_handler.py
+pglogginghandler.egg-info/PKG-INFO
+pglogginghandler.egg-info/SOURCES.txt
+pglogginghandler.egg-info/dependency_links.txt
+pglogginghandler.egg-info/requires.txt
+pglogginghandler.egg-info/top_level.txt
