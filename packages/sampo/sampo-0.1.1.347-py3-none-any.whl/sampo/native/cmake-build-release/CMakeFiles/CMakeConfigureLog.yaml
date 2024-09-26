@@ -1,0 +1,189 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C://Program Files//LLVM//bin//clang++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is Clang, found in:
+        C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/3.27.0-rc3/CompilerIdCXX/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1158 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1158 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-5cjiro"
+      binary: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-5cjiro"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-5cjiro'
+        
+        Run Build Command(s): C:/Users/Quarter/Documents/ninja.exe -v cmTC_4d2e1
+        [1/2] C:\\\\PROGRA~1\\\\LLVM\\\\bin\\\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_4d2e1.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_4d2e1.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_4d2e1.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp"
+        [2/2] cmd.exe /C "cd . && C:\\\\PROGRA~1\\\\LLVM\\\\bin\\\\CLANG_~1.EXE -fuse-ld=lld-link -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console CMakeFiles/cmTC_4d2e1.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_4d2e1.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_4d2e1.lib -Xlinker /pdb:cmTC_4d2e1.pdb -Xlinker /version:0.0     && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake:83 (_record_compiler_features)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake:121 (_record_compiler_features_cxx)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompileFeatures.cmake:70 (cmake_record_cxx_compile_features)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:70 (CMAKE_DETERMINE_COMPILE_FEATURES)"
+      - "CMakeLists.txt:21 (project)"
+    checks:
+      - "Detecting CXX compile features"
+    directories:
+      source: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-79wvri"
+      binary: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-79wvri"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_FEATURE_TEST"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-79wvri'
+        
+        Run Build Command(s): C:/Users/Quarter/Documents/ninja.exe -v cmTC_55fc2
+        [1/2] C:\\\\PROGRA~1\\\\LLVM\\\\bin\\\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_55fc2.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_55fc2.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_55fc2.dir/feature_tests.cxx.obj -c C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-79wvri/feature_tests.cxx
+        [2/2] cmd.exe /C "cd . && C:\\\\PROGRA~1\\\\LLVM\\\\bin\\\\CLANG_~1.EXE -fuse-ld=lld-link -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console CMakeFiles/cmTC_55fc2.dir/feature_tests.cxx.obj -o cmTC_55fc2.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_55fc2.lib -Xlinker /pdb:cmTC_55fc2.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake:83 (_record_compiler_features)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake:129 (_record_compiler_features_cxx)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompileFeatures.cmake:70 (cmake_record_cxx_compile_features)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:70 (CMAKE_DETERMINE_COMPILE_FEATURES)"
+      - "CMakeLists.txt:21 (project)"
+    checks:
+      - "Detecting CXX compile features"
+    directories:
+      source: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-9u1uge"
+      binary: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-9u1uge"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_FEATURE_TEST"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-9u1uge'
+        
+        Run Build Command(s): C:/Users/Quarter/Documents/ninja.exe -v cmTC_4b83c
+        [1/2] C:\\\\PROGRA~1\\\\LLVM\\\\bin\\\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_4b83c.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_4b83c.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_4b83c.dir/feature_tests.cxx.obj -c C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-9u1uge/feature_tests.cxx
+        [2/2] cmd.exe /C "cd . && C:\\\\PROGRA~1\\\\LLVM\\\\bin\\\\CLANG_~1.EXE -fuse-ld=lld-link -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console CMakeFiles/cmTC_4b83c.dir/feature_tests.cxx.obj -o cmTC_4b83c.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_4b83c.lib -Xlinker /pdb:cmTC_4b83c.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:63 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-07z0qs"
+      binary: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-07z0qs"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmplibomp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-07z0qs'
+        
+        Run Build Command(s): C:/Users/Quarter/Documents/ninja.exe -v cmTC_5a053
+        [1/2] C:\\\\PROGRA~1\\\\LLVM\\\\bin\\\\CLANG_~1.EXE   -fopenmp=libomp -O0 -g -Xclang -gcodeview -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_5a053.dir/OpenMPTryFlag.cpp.obj -MF CMakeFiles\\cmTC_5a053.dir\\OpenMPTryFlag.cpp.obj.d -o CMakeFiles/cmTC_5a053.dir/OpenMPTryFlag.cpp.obj -c C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-07z0qs/OpenMPTryFlag.cpp
+        [2/2] cmd.exe /C "cd . && C:\\\\PROGRA~1\\\\LLVM\\\\bin\\\\CLANG_~1.EXE -fuse-ld=lld-link -nostartfiles -nostdlib -fopenmp=libomp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console CMakeFiles/cmTC_5a053.dir/OpenMPTryFlag.cpp.obj -o cmTC_5a053.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_5a053.lib -Xlinker /pdb:cmTC_5a053.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:63 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-b97643"
+      binary: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-b97643"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake/"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-b97643'
+        
+        Run Build Command(s): C:/Users/Quarter/Documents/ninja.exe -v cmTC_a3bde
+        [1/2] C:\\\\PROGRA~1\\\\LLVM\\\\bin\\\\CLANG_~1.EXE   -fopenmp=libomp -O0 -g -Xclang -gcodeview -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_a3bde.dir/OpenMPCheckVersion.cpp.obj -MF CMakeFiles\\cmTC_a3bde.dir\\OpenMPCheckVersion.cpp.obj.d -o CMakeFiles/cmTC_a3bde.dir/OpenMPCheckVersion.cpp.obj -c C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-b97643/OpenMPCheckVersion.cpp
+        [2/2] cmd.exe /C "cd . && C:\\\\PROGRA~1\\\\LLVM\\\\bin\\\\CLANG_~1.EXE -fuse-ld=lld-link -nostartfiles -nostdlib -fopenmp=libomp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console CMakeFiles/cmTC_a3bde.dir/OpenMPCheckVersion.cpp.obj -o cmTC_a3bde.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_a3bde.lib -Xlinker /pdb:cmTC_a3bde.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        
+      exitCode: 0
+...
