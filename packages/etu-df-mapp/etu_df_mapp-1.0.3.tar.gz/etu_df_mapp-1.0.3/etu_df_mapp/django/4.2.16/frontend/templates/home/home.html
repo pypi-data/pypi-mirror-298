@@ -1,0 +1,29 @@
+{% extends 'common/nav_menu.html' %}
+
+{% block head %}
+<title>首页</title>
+{% endblock %}
+
+
+{% block body %}
+
+<div class="layui-container">
+  <div class="layui-progress" style="margin: 15px 0 30px;">
+    <div class="layui-progress-bar" lay-percent="100%"></div>
+  </div>
+
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+  layui.use(function () {
+    let layer = layui.layer;
+
+    // 欢迎信息
+    layer.msg('欢迎来到{{ request.session.frontend_name }}！', {icon: 6});
+
+  });
+
+</script>
+{% endblock %}
