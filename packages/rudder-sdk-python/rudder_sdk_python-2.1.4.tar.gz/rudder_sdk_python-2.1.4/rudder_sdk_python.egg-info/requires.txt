@@ -1,0 +1,10 @@
+requests<3.0,>=2.32.3
+monotonic<2.0,>=1.6
+backoff<3.0,>=2.2.1
+python-dateutil<3.0,>=2.2
+python-dotenv<2.0.0,>=1.0.1
+deprecation<3.0.0,>=2.1.0
+
+[test]
+mock==5.1.0
+flake8==7.1.1
