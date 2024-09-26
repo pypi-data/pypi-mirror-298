@@ -1,0 +1,33 @@
+{% extends 'common/base.html' %}
+
+{% block head %}
+<link href="{{ url_for('static', path='/other/css/error.css') }}" rel="stylesheet"/>
+<title>404</title>
+{% endblock %}
+
+
+{% block body %}
+<div class="content">
+  <img src="{{ url_for('static', path='/images/404.svg') }}" alt="">
+  <div class="content-r">
+    <h1>404</h1>
+    <p>抱歉，你访问的页面不存在或仍在开发中</p>
+    <div class="layui-btn-container">
+      <button class="layui-btn" active="back-home">返回首页</button>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block script %}
+<script>
+  layui.use(function () {
+    let util = layui.util;
+    // 触发事件
+    util.on('active', {
+      'back-home': function(){
+        window.location.href = "{{ url_for('index') }}";
+      },
+    });
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% load static %}
+<script src="{% static 'layui/layui.js' %}"></script>
+<script>
+layui.config({
+  base: "{% static '/layui_exts/' %}"
+}).extend({
+  xiezhiMod: 'xiezhiMod',
+});
+</script>

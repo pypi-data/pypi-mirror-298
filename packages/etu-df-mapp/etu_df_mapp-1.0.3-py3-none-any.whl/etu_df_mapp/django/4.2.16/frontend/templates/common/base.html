@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include 'common/header.html' %}
+  {% block head %}
+  
+  {% endblock %}
+</head>
+<body>
+<div class="layui-container">
+
+  {% block body %}
+
+  {% endblock %}
+
+</div>
+
+
+{% include 'common/footer.html' %}
+
+<script>
+  layui.use(['xiezhiMod'], function () {
+    let xiezhiMod = layui.xiezhiMod;
+    xiezhiMod.checkSessionKey('{{ request.COOKIES.session_key }}', "{% url 'login' %}");
+  });
+</script>
+{% block script %}
+
+{% endblock %}
+</body>
+</html>
