@@ -1,0 +1,30 @@
+<nav class="menu-scaffold col-md-3 col-lg-2 d-md-block sidebar">
+    <div class="mt-3 ml-2 sidebar-sticky">
+        <h5>{{menu_data.title}}</h5>
+        <ul class="nav flex-column">
+            {% for opt in menu_data.opts %}
+                {% if opt.childs %}
+                <li class="nav-item submenu">
+                    <input type="checkbox" id="toggle-{{ opt.text | lower | replace(' ', '-') }}" class="toggle-checkbox">
+                    <label for="toggle-{{ opt.text | lower | replace(' ', '-') }}" class="nav-link">{{ opt.text }}</label>                    
+                    <ul class="submenu-items">
+                    {% for child in opt.childs %}            
+                        <!-- Submenú que se despliega con clic -->
+                        <li class="nav-item">
+                            <a class="nav-link" {% if child.endpoint %}href="{{url_for(child.endpoint)}}"{% else %}href=""{% endif %}>{{child.text}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" {% if opt.endpoint %}href="{{url_for(opt.endpoint)}}"{% else %}href=""{% endif %}>{{opt.text}}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="">Cerrar Sesión</a>
+            </li> -->
+        </ul>
+    </div>
+</nav>

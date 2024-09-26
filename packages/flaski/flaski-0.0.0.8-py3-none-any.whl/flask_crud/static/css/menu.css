@@ -1,0 +1,46 @@
+/* Ocultar submenú por defecto */
+.submenu .submenu-items {
+    display: none;
+    padding-left: 15px;
+}
+
+/* Mostrar el submenú cuando el checkbox está activado */
+.toggle-checkbox:checked + label + .submenu-items {
+    display: block;
+}
+
+/* Opcional: ocultar el checkbox para que no se vea */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Ocultar viñetas de la lista */
+.nav ul {
+    list-style-type: none;
+    padding-left: 0;  /* Quitar el padding izquierdo predeterminado */
+}
+
+/* También puedes ajustar el estilo de los elementos de la lista, si es necesario */
+.nav ul li {
+    margin-left: 0; /* Ajusta el margen si es necesario */
+}
+
+.li-child {
+    /* display: inline-flex;
+    align-items: center; */
+    border: 1px solid #ccc !important; /* Asegura un borde completo */
+    margin-right: 5px !important; /* Deja un pequeño margen entre los items */
+    margin-bottom: 5px !important; /* Deja un pequeño margen entre los items */
+    /* padding: 8px; 
+    margin: 5px;  */
+    border-radius: 4px !important;
+}
+
+.square-btn {
+    width: 25px; /* Ajusta el tamaño según lo que desees */
+    height: 25px; /* Ajusta el tamaño según lo que desees */
+    padding: 0 !important; /* Elimina el padding */
+    /* display: flex !important; */
+    align-items: center !important;
+    justify-content: center !important;
+}
