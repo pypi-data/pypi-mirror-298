@@ -1,0 +1,13 @@
+qr_code/__init__.py,sha256=OpxPE5yBaNZioygR0_Z7nzkn9n1wv1dui-ykqOx3tGo,299
+qr_code/charset.py,sha256=Yia7UaFt4SxW1SRjBZ0Zd8wDPysKWIHZwr7fSwvvEr8,15457
+qr_code/constraints.py,sha256=MJ3OP2zHTF3CAzUZMPH2N3MQabSrZ3fravsDXOm3MKg,11124
+qr_code/custom_qr.py,sha256=k1VdVh9kWV7gLaCNoZVMfgQ5EJNk0xf1MUpAP8np4s4,10609
+qr_code/dataConverter.py,sha256=QgOEV_1VUSim_3aufLPHQXnDHb73LFKjTKRCrKM7-qA,7046
+qr_code/errorCorrection.py,sha256=s1ORKTn_b-q8Rb2EELyQcvq3r5T654EyLlNwInWvNbI,2712
+qr_code/generate_qr.py,sha256=LPQTpDkPiDfdun2aXzrHPCdM46ap3WtLZwRaEZxAMNg,13696
+qr_code/qrCode.py,sha256=3UyNxQc5F6wf6tfOk2NlTJ3wiqMrj-oMtUrSFT7u2yI,1535
+custom_qr-0.9.dist-info/LICENSE,sha256=bJw_b-bsZ6SGPVH-YMGUKRSL5_6ih7hn82AwBREsejs,1127
+custom_qr-0.9.dist-info/METADATA,sha256=y7LSJBQrA2OmJQDEDWU36LRH7SM6UKMzB5Dy0Q8pm_4,2676
+custom_qr-0.9.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+custom_qr-0.9.dist-info/top_level.txt,sha256=wW-S-6zA1r9PmLlZPfoNMkhOSPVeDQVRRgLbU1zA58g,8
+custom_qr-0.9.dist-info/RECORD,,
