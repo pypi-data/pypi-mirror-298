@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: kivy_glow
+Version: 1.0.4
+Summary: Kivy widget set
+Author-email: Leonid Gvozdev <leo.gvozdev.dev@gmail.com>
+Project-URL: Homepage, https://github.com/GvozdevLeonid/KivyGlow
+Project-URL: Bug Tracker, https://github.com/GvozdevLeonid/KivyGlow/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: Android
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: iOS
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+kivy widget set
+
+
+This is empty for now. As soon as I have time I will add documentation and update the readme.
