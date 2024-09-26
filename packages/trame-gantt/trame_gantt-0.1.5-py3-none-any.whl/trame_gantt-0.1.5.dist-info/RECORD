@@ -1,0 +1,16 @@
+trame/__init__.py,sha256=CfA3Ieac6h04pNL6ZUXTdmBg3zrq13S4oVUEsgXmeiI,64
+trame/modules/__init__.py,sha256=CfA3Ieac6h04pNL6ZUXTdmBg3zrq13S4oVUEsgXmeiI,64
+trame/modules/gantt.py,sha256=mvfzYM7RtUhflbdxNqTvedeQViSJp8Q9NnsoQjdKu-0,32
+trame/widgets/__init__.py,sha256=CfA3Ieac6h04pNL6ZUXTdmBg3zrq13S4oVUEsgXmeiI,64
+trame/widgets/gantt.py,sha256=3FFH--mkkBSE4UytpLF4x90zBnu582iHI7-vHQz64e8,134
+trame_gantt/__init__.py,sha256=koj8ekiqy4RjUeqS1uUnG-Ou22WQ31KSEwbiqlipYYw,92
+trame_gantt/module/__init__.py,sha256=rT2NY9tKQCy5nP7_vvTTPylkJkQ0D7tVmvSyNPyIaZU,725
+trame_gantt/module/serve/style.css,sha256=GdFHVjn4aOkb8zHk1jVQ25CTnbCUokL_fx3VNFbrFrQ,22162
+trame_gantt/module/serve/trame-gantt.umd.js,sha256=wn8Qh9oEgVIfJEzNhEBxSxYcLjKoQC8ph7Z_7HWUgwU,135018
+trame_gantt/widgets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trame_gantt/widgets/gantt.py,sha256=471EDW64TOlCEvaW3ataBxoHWBb1WODfZdD1Y8W52fg,1077
+trame_gantt-0.1.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+trame_gantt-0.1.5.dist-info/METADATA,sha256=y5p6WxUCRH5s1F0HSRrdNHwQXQZiCMRTYllWxz_gsGI,1512
+trame_gantt-0.1.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+trame_gantt-0.1.5.dist-info/top_level.txt,sha256=mNZYE1EVlIlAjtKgpJJXNpi2sIpmFkACSmVXYdc-Hns,18
+trame_gantt-0.1.5.dist-info/RECORD,,

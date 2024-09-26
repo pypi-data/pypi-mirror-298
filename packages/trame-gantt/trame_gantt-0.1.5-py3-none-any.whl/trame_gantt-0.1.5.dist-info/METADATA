@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: trame-gantt
+Version: 0.1.5
+Summary: Widget for gantt diagram for trame
+Author-email: Lionel Untereiner <lionel.untereiner@geosiris.com>
+License: MIT or Apache-2.0
+Keywords: Python,Interactive,Web,Application,Framework
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: JavaScript
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: trame-client
+Provides-Extra: build
+Requires-Dist: build ~=1.2 ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# trame-gantt
+
+Widget for gantt editor for trame
+
+# Licence
+
+Licensed under either of
+
+  - Apache License, Version 2.0, (LICENSE-APACHE or https://www.apache.org/licenses/LICENSE-2.0)
+  - MIT license (LICENSE-MIT or https://opensource.org/licenses/MIT)
+
+at your option. 
+
+# Development
+
+Build and install the Vue components
+
+```console
+cd  vue-components
+npm i
+npm run build
+cd -
+```
+
+Install the python library
+```console
+pip install -e .
+```
