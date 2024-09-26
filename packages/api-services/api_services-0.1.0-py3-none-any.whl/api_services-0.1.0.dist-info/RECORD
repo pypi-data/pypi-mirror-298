@@ -1,0 +1,12 @@
+api_calls/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api_calls/docs_client.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api_calls/drive_client.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api_calls/gmail_client.py,sha256=NMKn2fTGyCAdtqY9nDca-WLDv8RnQRfub9yO3SaKreI,4253
+api_calls/sheet_client.py,sha256=Woq2IEqaArzwPgNX7rQUSDN6qjkmtdxnzpXXJkN3v2c,13191
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_gmail_client.py,sha256=KMB6W6tVh6GmsbRnZN8ENT2xswqWN2W0ecbjets8S0E,5673
+tests/test_sheet_client.py,sha256=7XkbZWVoQOmR8bB5Fodz6Vt2YaCU-T9GE5mBpwc3vdY,6012
+api_services-0.1.0.dist-info/METADATA,sha256=V-1d2xSAdyzyAO6WnFHlLVS18vQcfSbdiYlgnSsMIw0,3727
+api_services-0.1.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+api_services-0.1.0.dist-info/top_level.txt,sha256=q6ZpUul5xjIxR_Fw-X1v9B2pFFK29WGuS4XHKoP10CM,16
+api_services-0.1.0.dist-info/RECORD,,
