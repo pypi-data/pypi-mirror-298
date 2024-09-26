@@ -1,0 +1,64 @@
+{
+   "templates":[
+      {
+         "title":"Starter Template for SQL",
+         "description":"A simple template to get you started.",
+         "file":"./sql/sql_starter_template.sql",
+         "language":"sql"
+      },
+      {
+         "title":"Starter Template for Python",
+         "description":"A simple template to get you started.",
+         "file":"./python/python_starter_template.py",
+         "language":"python"
+      },
+      {
+         "title":"Transform Cell result",
+         "description":"Transform Cell result to a pandas dataframe.",
+         "file":"./python/transform_cell_result.py",
+         "language":"python"
+      },
+      {
+         "title":"Transform SQL result",
+         "description":"Transform SQL result to a pandas dataframe.",
+         "file":"./python/transform_sql_result.py",
+         "language":"python"
+      },
+      {
+         "title":"Transform CSV file",
+         "description":"Transform CSV file to a pandas dataframe.",
+         "file":"./python/transform_csv_file.py",
+         "language":"python"
+      },
+      {
+         "title":"Visualization Template (Plotly)",
+         "description":"Create a chart template using plotly.",
+         "file":"./python/visualization_plotly.py",
+         "language":"python"
+      },
+      {
+         "title":"Visualization Template (Matplotlib)",
+         "description":"Create a chart template using matplotlib.",
+         "file":"./python/visualization_matplotlib.py",
+         "language":"python"
+      },
+      {
+         "title":"Report Template",
+         "description":"Generate a report from python results.",
+         "file":"./python/generate_report.py",
+         "language":"python"
+      },
+      {
+         "title":"Send email",
+         "description":"Send an email with an attachment from results in canvas.",
+         "file":"./python/send_email.py",
+         "language":"python"
+      },
+      {
+         "title":"API JSON Template",
+         "description":"Return and store output in json format.",
+         "file":"./python/api.py",
+         "language":"python"
+      }
+   ]
+}
