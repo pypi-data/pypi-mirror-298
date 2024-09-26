@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: mytb
+Version: 0.1.3
+Summary: my toolbox for everyday python projects
+Home-page: https://github.com/feenes/mytb
+License: MIT
+Author: Teledomic
+Author-email: info@teledomic.eu
+Requires-Python: >=3.6,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: all
+Provides-Extra: date
+Provides-Extra: gitlab
+Provides-Extra: minimal
+Requires-Dist: dateutils; extra == "all" or extra == "date"
+Requires-Dist: ddt; extra == "all" or extra == "gitlab"
+Requires-Dist: pytz; extra == "all" or extra == "date"
+Requires-Dist: pyyaml; extra == "all" or extra == "gitlab"
+Requires-Dist: tzlocal; extra == "all" or extra == "date"
+Requires-Dist: unidecode
+Project-URL: Repository, https://github.com/feenes/mytb.git
+Description-Content-Type: text/x-rst
+
+Welcome to MyTB (My Toolbox)
+
+MyTB is just another collection of handy and useful python functions and modules.
+
+
+.. image:: https://travis-ci.com/feenes/mytb.svg?branch=master
+    :target: https://travis-ci.com/feenes/mytb
+
+
+It can be found at https://github.com/feenes/mytb.git
+
+It tries to be modular in order to consume as little memory (RAM) as possible.
+
+Getting started
+===============
+
+Installation
+------------
+
+With pip ::
+
+    pip install mytb # basic installation with basic dependencies
+    pip install mytb[date] # with all dependencies for mytb.date
+    pip install mytb[gitlab] # with all dependencies for mytb.gitlab
+    pip install mytb[all] # with all dependencies
+
+    **!!version 0.1 is only python 3 compatible!!**
+    Use `pip install 'mytb<0.1'` to get the latest python2 compatible version
+
+Who's using mytb
+==================
+
+Please contact us if you want to be referenced
+
+Projects, that I know of are
+
+    * MHComm ( https://mhcomm.fr ) for most of their python projects
+    * The timon project ( https://github.com/feenes/timon )
+
+
