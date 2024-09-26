@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+lhw_send_email.egg-info/PKG-INFO
+lhw_send_email.egg-info/SOURCES.txt
+lhw_send_email.egg-info/dependency_links.txt
+lhw_send_email.egg-info/top_level.txt
