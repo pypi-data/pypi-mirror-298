@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+autopsypy/__init__.py
+autopsypy/autopsypy.py
+autopsypy.egg-info/PKG-INFO
+autopsypy.egg-info/SOURCES.txt
+autopsypy.egg-info/dependency_links.txt
+autopsypy.egg-info/requires.txt
+autopsypy.egg-info/top_level.txt
