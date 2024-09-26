@@ -1,0 +1,12 @@
+etcpak-0.9.12.dist-info/RECORD,,
+etcpak-0.9.12.dist-info/LICENSE,sha256=7TQ7Mb6Vzmu0LVXIDQC3x_qY2ZwDeeSFfw440oNBoW8,1062
+etcpak-0.9.12.dist-info/WHEEL,sha256=L5Yzp3Ie3qzhKJYO8ywXtZfSISbcpXt4-U2h3P52Hng,109
+etcpak-0.9.12.dist-info/top_level.txt,sha256=T2D0x7SQLUB3U1bXC2uotzkyB-VtZlC_mQ2wYZB9Y8E,7
+etcpak-0.9.12.dist-info/METADATA,sha256=aTHXTe5mxymfnuybqYd3x9oeokZPM9S7JMeeOJT-yIw,4387
+etcpak/__init__.pyi,sha256=2SOoTtnQItukL_amfq4inCsEm5-DRn1624APUkrGJPo,4522
+etcpak/_etcpak_simd.cpython-313-darwin.so,sha256=i5LmMNzHNpj6dzPrwtvdcsN1yNSPTHQNdd8VK0pYkhk,241664
+etcpak/_cpufeatures.cpython-313-darwin.so,sha256=pAezmrW0vqliljnHoEM4hGTTMncdzk-DlW1TMyZnaLw,50592
+etcpak/__init__.py,sha256=5nDWCjg6Egwt8MsWcat5no0gTzWX7ncAFGjDoWcIHcY,1260
+etcpak/_cpufeatures.pyi,sha256=Dh6XER0MSlMFXXOllxZ3jRsFBxnwiTlHfCEsplwLqpM,144
+etcpak/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+etcpak/_etcpak.cpython-313-darwin.so,sha256=72WbNRn0DkElSGfWmSGo8CI7bhFbVIKprWIARVGIcR0,241664
