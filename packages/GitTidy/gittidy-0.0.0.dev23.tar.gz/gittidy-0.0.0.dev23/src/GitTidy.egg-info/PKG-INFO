@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: GitTidy
+Version: 0.0.0.dev23
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: LoggerMan==0.0.0.dev31
+Requires-Dist: PyShellMan==0.0.0.dev2
