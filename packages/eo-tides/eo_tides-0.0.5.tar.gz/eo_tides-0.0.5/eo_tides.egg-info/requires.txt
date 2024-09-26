@@ -1,0 +1,16 @@
+geopandas
+numpy
+odc-geo[xr]
+pandas
+pyproj
+pyTMD==2.1.6
+scikit-learn
+scipy
+shapely
+tqdm
+
+[notebooks]
+odc-stac
+pystac-client
+folium
+matplotlib
