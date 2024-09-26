@@ -1,0 +1,15 @@
+.idea
+*.out
+*.err
+notebooks/.ipynb_checkpoints
+.ipynb_checkpoints
+nes/__pycache__
+nes/nc_projections/__pycache__
+*.pyc
+*.nc
+*.csv
+*.cpg
+*.dbf
+*.prj
+*.shp
+*.shx
