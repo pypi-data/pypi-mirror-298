@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+
+[project]
+name = "qtworker"
+authors = [
+    {name = "Kolja Wagner", email="k.wagner@meteo.uni-hannover.de"}
+]
+description = "Generic worker for QThreadpools"
+readme = "Readme.md"
+dynamic = ["version"]
+requires-python = ">=3.9"
+dependencies = [
+    "qtpy>2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov", "pytest-qt"]
+doc = [
+    "sphinx>5.3", 
+    "sphinx-qt-documentation",
+    "pydata-sphinx-theme>0.14",
+    "sphinx-copybutton"
+    ]
+    
+[project.urls]
+#Documentation = "https://configwidgets.readthedocs.io/en/latest/"
+Repository = "https://github.com/kolja-wagner/qtworker"
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "qtworker.__version__"}
+
+[tool.pytest.ini_options]
+addopts = "--cov=qtworker"
+testpaths = [
+    "tests",
+]
+log_cli_level = "info"
+qt_api = "pyqt5"

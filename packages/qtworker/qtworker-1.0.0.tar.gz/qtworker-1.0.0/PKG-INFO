@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: qtworker
+Version: 1.0.0
+Summary: Generic worker for QThreadpools
+Author-email: Kolja Wagner <k.wagner@meteo.uni-hannover.de>
+Project-URL: Repository, https://github.com/kolja-wagner/qtworker
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: qtpy>2
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-qt; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: sphinx>5.3; extra == "doc"
+Requires-Dist: sphinx-qt-documentation; extra == "doc"
+Requires-Dist: pydata-sphinx-theme>0.14; extra == "doc"
+Requires-Dist: sphinx-copybutton; extra == "doc"
+
+# qt Worker
+
+A generic worker class for QThreadpool use.
+
+
+The following snippet shows the basic usecase
+```
+from qtworker import Worker
+
+self.pool = QThreadpool()
+
+worker = Worker(function, *args, **kwargs)
+worker.signals.started.connect(self.handle_start)
+worker.signals.result.connect(self.handle_result)
+worker.signals.error.connect(self.handle_error)
+worker.signals.finished.connect(self.handle_cleanup)
+self.pool.start(worker)
+```
+
+> Todo: with full context
