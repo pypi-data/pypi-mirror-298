@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: manteia_qa_pylinac
+Version: 1.2.7
+Summary: pylinac custom made by manteia
+Home-page: 
+Author: dengjianping
+Author-email: 1601246283@qq.com
+License: BSD License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE.txt
+
+use like pylinac,but some change for manteia
