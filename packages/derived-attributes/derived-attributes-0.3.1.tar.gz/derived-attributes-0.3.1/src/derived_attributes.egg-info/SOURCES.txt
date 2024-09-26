@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/derived_attributes/__init__.py
+src/derived_attributes/derive.py
+src/derived_attributes/verbs.py
+src/derived_attributes.egg-info/PKG-INFO
+src/derived_attributes.egg-info/SOURCES.txt
+src/derived_attributes.egg-info/dependency_links.txt
+src/derived_attributes.egg-info/requires.txt
+src/derived_attributes.egg-info/top_level.txt
