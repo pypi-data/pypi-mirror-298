@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+contswi/__init__.py
+contswi/cli.py
+contswi.egg-info/PKG-INFO
+contswi.egg-info/SOURCES.txt
+contswi.egg-info/dependency_links.txt
+contswi.egg-info/entry_points.txt
+contswi.egg-info/top_level.txt
