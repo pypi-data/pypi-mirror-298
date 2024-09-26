@@ -1,0 +1,11 @@
+cgal_pybind/__init__.py,sha256=hmtHhl0brvCPPEp3Bn1k78m4D-aeFUkKvUIsXwQSHsI,296
+cgal_pybind/version.py,sha256=5PepZnIYBLPs0_MTfS5a4Gfbra-Q4r8FEzq6TZLy91o,74
+cgal_pybind/_cgal_pybind.cpython-312-x86_64-linux-gnu.so,sha256=P_YYRc6nkdVqo1_N7frfVA4nF7Dko8EQE9C2iwJQ490,1057521
+cgal_pybind-0.1.5.dist-info/AUTHORS.txt,sha256=wbh_ycsKUGLvqflwgFQ0E8u_LuD5cOA5dsjGHYJ234o,125
+cgal_pybind-0.1.5.dist-info/METADATA,sha256=xPDGnchijIasI1_njDK3AY5p8_mWi1KuQV7KM88wmeQ,3737
+cgal_pybind-0.1.5.dist-info/RECORD,,
+cgal_pybind-0.1.5.dist-info/top_level.txt,sha256=cp9LX-vJgROi86qqiuxIyartn_84LppIOhFkJWY8xrA,12
+cgal_pybind-0.1.5.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+cgal_pybind-0.1.5.dist-info/WHEEL,sha256=7B4nnId14TToQHuAKpxbDLCJbNciqBsV-mvXE2hVLJc,151
+cgal_pybind.libs/libgmp-afec2dd4.so.10.2.0,sha256=MNTiOnu9DKH49DN5Kmd9OeJIpS85qZGJKY__Hy3KWQ0,515857
+cgal_pybind.libs/libmpfr-54b13606.so.4.1.1,sha256=DRq9Ysm-Wxt0yrGfZyNij9Eqc4nFq9Mstv6r3ZJPgSI,406393
