@@ -1,0 +1,17 @@
+hybridrouter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hybridrouter/apps.py,sha256=Gm71-5Qpchd3EoNJQvhz0BwEk6T4fi7Ip_JtXMapqNg,156
+hybridrouter/hybridrouter.py,sha256=ApPApl5z5Z67n6iO0spuWFBu_14eA06MoZCHE-kbd0w,10299
+hybridrouter/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hybridrouter/tests/conftest.py,sha256=c8NB92-I-KRSjVZOKz7Sr5oeJ-efPle9pwcyOQuBsc8,3580
+hybridrouter/tests/models.py,sha256=Ufak4OJAHvE5o0eqv99K7Bmu5nRH8xX4-D1EunzZJs8,208
+hybridrouter/tests/serializers.py,sha256=YBbsZw32jJeizjgTowLFcJcoCf58skPc5hZVbKtSyzc,182
+hybridrouter/tests/test_hybrid_router.py,sha256=8Ku-h56HQ_gTfdDCZH9T61d-o2_X8XLmasZmzKG9eZg,19588
+hybridrouter/tests/urls.py,sha256=Bjdewssljt0LIefjixBem9JN0kkghPvmrIETj3GdXbY,17
+hybridrouter/tests/utils.py,sha256=tzDdLl07hMQiHa6-fpTBQ2QQVjL5RWMKqkAwP3z_HO0,427
+hybridrouter/tests/views.py,sha256=Oza5E32w-i1HBolf2cU9G7PaF-hLPhdPqtKGpxP_P9E,336
+hybridrouter/tests/viewsets.py,sha256=euKvn3JLuTXrg6-tBJPd1Xk1fapNifrqyT6Yb5iVT0c,358
+hybridrouter/utils.py,sha256=WJqCgtHbRKwcrr3J4Wp8WwBCwV07sg5ZFquiS6t2FV0,1460
+djangorestframework_hybridrouter-1.0.0.dist-info/LICENSE,sha256=MGjrGCg41KJ2nEWa9CxkfvOhRRrY6Bpc6TuAsynKdMY,1069
+djangorestframework_hybridrouter-1.0.0.dist-info/METADATA,sha256=GDFAg6b9iqRqysyv_8LDxfkbkmR4Zp2mV5EOqv5zmYQ,9592
+djangorestframework_hybridrouter-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+djangorestframework_hybridrouter-1.0.0.dist-info/RECORD,,
