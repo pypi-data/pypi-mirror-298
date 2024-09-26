@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: qbusmqttapi
+Version: 0.2.7
+Summary: MQTT API for Qbus Home Automation.
+Home-page: https://github.com/Qbus-iot/qbusmqttapi
+Author: Koen Schockaert
+Author-email: ks@qbus.be
+License: MIT License 2024
+Project-URL: Source Code, https://github.com/Qbus-iot/qbusmqttapi
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# qbusmqttapi
+Python MQTT API for Qbus Home Automation
