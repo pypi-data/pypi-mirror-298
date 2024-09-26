@@ -1,0 +1,2 @@
+[hatch]
+calver = hatch_calver.hatch_hooks
