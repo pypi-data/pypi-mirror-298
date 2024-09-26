@@ -1,0 +1,14 @@
+# 包含项目的根目录下的README.md和LICENSE文件
+include README.md LICENSE
+
+# 包含所有测试相关的Python文件
+recursive-include tests *.py
+
+# 排除.gitignore文件
+global-exclude .gitignore
+
+# 排除.git目录及其所有子目录
+prune .git
+
+# 在.git目录中包含特定的文件
+# graft .git docs
