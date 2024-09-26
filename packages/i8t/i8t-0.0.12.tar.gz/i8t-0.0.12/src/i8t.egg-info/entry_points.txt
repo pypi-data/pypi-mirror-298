@@ -1,0 +1,2 @@
+[console_scripts]
+i8t = i8t.cli:cli
