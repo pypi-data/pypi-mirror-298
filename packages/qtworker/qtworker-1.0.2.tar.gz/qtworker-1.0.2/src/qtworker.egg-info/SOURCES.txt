@@ -1,0 +1,12 @@
+LICENSE
+Readme.md
+pyproject.toml
+setup.py
+src/qtworker/__init__.py
+src/qtworker/worker.py
+src/qtworker.egg-info/PKG-INFO
+src/qtworker.egg-info/SOURCES.txt
+src/qtworker.egg-info/dependency_links.txt
+src/qtworker.egg-info/requires.txt
+src/qtworker.egg-info/top_level.txt
+tests/test_import.py
