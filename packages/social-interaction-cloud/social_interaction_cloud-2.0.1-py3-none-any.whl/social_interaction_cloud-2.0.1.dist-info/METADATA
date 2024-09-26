@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: social-interaction-cloud
+Version: 2.0.1
+Author: Koen Hindriks
+Author-email: k.v.hindriks@vu.nl
+Requires-Dist: numpy
+Requires-Dist: redis
+Requires-Dist: Pillow
+Requires-Dist: six
+Provides-Extra: local
+Requires-Dist: opencv-python; extra == "local"
+Requires-Dist: pyaudio; extra == "local"
+Requires-Dist: pyspacemouse; extra == "local"
+Requires-Dist: paramiko; extra == "local"
+Requires-Dist: scp; extra == "local"
+
