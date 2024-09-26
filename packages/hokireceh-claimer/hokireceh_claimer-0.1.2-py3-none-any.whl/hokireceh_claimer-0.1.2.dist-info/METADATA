@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: hokireceh-claimer
+Version: 0.1.2
+Summary: A package for airdrop automation.
+Home-page: https://github.com/hokireceh/hokireceh-claimer
+Author: Hoki Receh
+Author-email: ads.hokireceh@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+Requires-Dist: requests
+Requires-Dist: brotli
+
+# Hokireceh Claimer
+
+A Python package for automatically claiming airdrops.
+
+## Installation
+
+```bash
+pip install hokireceh-claimer
+```
