@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tia_otel_observability_tracer
+Version: 0.1.0
+Summary: A Python library for managing OpenTelemetry tracing
+Home-page: https://github.com/tiacloudconsult/observability.git
+Author: Tia Cloud
+Author-email: francis.poku@tiacloud.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: opentelemetry-distro>=0.48b0
+Requires-Dist: opentelemetry-exporter-otlp>=1.27.0
+Requires-Dist: opentelemetry-api>=1.27.0
+Requires-Dist: opentelemetry-sdk>=1.27.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-http>=1.27.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-grpc>=1.27.0
+Requires-Dist: opentelemetry-exporter-jaeger>=1.21.0
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
