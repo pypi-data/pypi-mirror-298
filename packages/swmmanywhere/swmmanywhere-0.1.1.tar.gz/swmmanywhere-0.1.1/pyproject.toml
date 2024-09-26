@@ -1,0 +1,135 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = [
+  "hatch-vcs",
+  "hatchling",
+]
+
+[project]
+name = "swmmanywhere"
+description = "SWMManywhere software"
+readme = "README.md"
+authors = [
+    { name = "Barnaby Dobson", email = "b.dobson@imperial.ac.uk" },
+    { name = "Imperial College London RSE Team", email = "ict-rse-team@imperial.ac.uk" }
+]
+requires-python = ">=3.10"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: GIS",
+  "Typing :: Typed",
+]
+dynamic = [
+  "version",
+]
+dependencies = [
+  "cdsapi",
+  "cytoolz",
+  "geopandas>=1",
+  "geopy",
+  "joblib",
+  "jsonschema",
+  "loguru",
+  "netcdf4",
+  "networkx>=3",
+  "numpy>=2",
+  "osmnx>=1.9.3",
+  "pandas",
+  "planetary_computer",
+  "pyarrow",
+  "pydantic",
+  "pyflwdir",
+  "pystac_client",
+  "pyswmm",
+  "pywbt>=0.2.2",
+  "PyYAML",
+  "rasterio",
+  "rioxarray",
+  "SciPy",
+  "shapely",
+  "tqdm",
+  "xarray",
+]
+[project.optional-dependencies]
+dev = [
+  "mypy",
+  "pip-tools",
+  "pre-commit",
+  "pytest",
+  "pytest-cov",
+  "pytest-mock",
+  "pytest-mypy",
+  "ruff",
+]
+doc = [
+  "mkdocs",
+  "mkdocs-coverage",
+  "mkdocs-include-markdown-plugin",
+  "mkdocs-jupyter",
+  "mkdocs-material",
+  "mkdocs-material-extensions",
+  "mkdocstrings[python]",
+]
+[project.urls]
+Documentation = "https://imperialcollegelondon.github.io/SWMManywhere/"
+Issues = "https://github.com/ImperialCollegeLondon/SWMManywhere/issues"
+Source = "https://github.com/ImperialCollegeLondon/SWMManywhere"
+
+[tool.hatch.build.targets.sdist]
+only-include = ["swmmanywhere", "netcomp"]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "_version.py"
+
+[tool.ruff.lint]
+select = ["D", "E", "F", "I"] # pydocstyle, pycodestyle, Pyflakes, isort
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D100", "D104"]
+"netcomp/*" = ["D", "F"] # Ignore all checks for netcomp
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
+
+[tool.codespell]
+skip = "swmmanywhere/defs/iso_converter.yml,*.inp"
+ignore-words-list = "gage,gages"
+
+[tool.pytest.ini_options]
+addopts = "-v --import-mode=importlib --cov=swmmanywhere --cov-report=html --doctest-modules --ignore=swmmanywhere/logging.py"
+markers = [
+  "downloads: mark a test as requiring downloads",
+]
+
+[tool.mypy]
+disallow_any_explicit = false
+disallow_any_generics = false
+warn_unreachable = true
+warn_unused_ignores = false
+disallow_untyped_defs = false
+exclude = [".venv/"]
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+
+[tool.refurb]
+ignore = [
+        184, # Because some frankly bizarre suggestions
+        109  # Because pyyaml doesn't support tuples
+        ]
