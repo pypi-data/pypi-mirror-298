@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+spoofagent/__init__.py
+spoofagent/user_agent_generator.py
+spoofagent.egg-info/PKG-INFO
+spoofagent.egg-info/SOURCES.txt
+spoofagent.egg-info/dependency_links.txt
+spoofagent.egg-info/top_level.txt
