@@ -1,0 +1,3 @@
+
+[console_scripts]
+parse2csv=parse2csv.cli:cli

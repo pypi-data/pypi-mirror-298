@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+parse2csv/__init__.py
+parse2csv/cli.py
+parse2csv/parse2csv.py
+parse2csv/reduct.py
+parse2csv/release.py
+parse2csv.egg-info/PKG-INFO
+parse2csv.egg-info/SOURCES.txt
+parse2csv.egg-info/dependency_links.txt
+parse2csv.egg-info/entry_points.txt
+parse2csv.egg-info/requires.txt
+parse2csv.egg-info/top_level.txt
