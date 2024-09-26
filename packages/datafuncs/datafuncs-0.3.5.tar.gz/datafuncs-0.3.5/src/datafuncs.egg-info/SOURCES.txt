@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/datafuncs/__init__.py
+src/datafuncs/datafuncs.py
+src/datafuncs.egg-info/PKG-INFO
+src/datafuncs.egg-info/SOURCES.txt
+src/datafuncs.egg-info/dependency_links.txt
+src/datafuncs.egg-info/top_level.txt
