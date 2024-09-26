@@ -1,0 +1,11 @@
+License
+MANIFEST.in
+README.md
+setup.py
+frostconnect/__init__.py
+frostconnect/frostconnect.py
+frostconnect.egg-info/PKG-INFO
+frostconnect.egg-info/SOURCES.txt
+frostconnect.egg-info/dependency_links.txt
+frostconnect.egg-info/requires.txt
+frostconnect.egg-info/top_level.txt
