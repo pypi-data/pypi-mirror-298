@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: hbsearch
+Version: 0.1.2
+Summary: Various BM25 algorithms for document ranking
+Author: Seth
+Author-email: ssyaigo@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: FlagEmbedding ==1.2.11
+Requires-Dist: rank-bm25 ==0.2.2
+Requires-Dist: jieba
+
+
+# Hybrid Search
+
+## Installation
+
+```
+pip install hbsearch
+```
+## Usage
+### Example
+```
+from hbsearch import hybird_search,hybird_search_top_k
+
+toy_doc_string = (
+    '精确模式，试图将句子最精确地切开，适合文本分析；全模式，'
+    '把句子中所有的可以成词的词语都扫描出来, 速度非常快，但是不能解决歧义；'
+    '搜索引擎模式，在精确模式的基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词。'
+    'I am from China, I like math.'
+  )
+
+query = '精确模式'
+
+#chunk size for long text
+chunk_size=10
+# search results
+results_and_score, results = hybird_search(query, toy_doc_string, chunk_size)
+
+# print the result list
+print(*results_and_score, sep="\n")
+
+
+# top k search results, 
+top_k = 5
+
+
+# get search results
+results_and_score = hybird_search_top_k(query, toy_doc_string,top_k, chunk_size)
+
+# print the result list
+print(*results_and_score, sep="\n")
+```
+### Output
+```
+----------using 2*GPUs----------
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.601 seconds.
+Prefix dict has been built successfully.
+('精确模式，试图将句子', 0.03278688524590164)
+('最精确地切开，适合文', 0.03200204813108039)
+('本分析；全模式，把句', 0.03149801587301587)
+('决歧义；搜索引擎模式', 0.031009615384615385)
+('，在精确模式的基础上', 0.030834914611005692)
+('词语都扫描出来, 速', 0.030309988518943745)
+('子中所有的可以成词的', 0.03007688828584351)
+('度非常快，但是不能解', 0.029857397504456328)
+('，对长词再次切分，提', 0.028985507246376812)
+('高召回率，适合用于搜', 0.02857142857142857)
+('索引擎分词。I am', 0.028169014084507043)
+(' from China', 0.027777777777777776)
+(', I like math', 0.0273972602739726)
+('.', 0.02702702702702703)
+----------using 2*GPUs----------
+('精确模式，试图将句子', 0.03278688524590164)
+('最精确地切开，适合文', 0.031024531024531024)
+('高召回率，适合用于搜', 0.0304147465437788)
+('本分析；全模式，把句', 0.030330882352941176)
+('，在精确模式的基础上', 0.03021353930031804)
+```
