@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: gencardhks
+Version: 1.0.3
+Summary: A simple class for identifying, validating, and formatting credit card
+Home-page: https://github.com/huykaiserOwO/creditcard
+Author: HuyKaiser
+Author-email: nguyenhuy34789@gmail.com
+Maintainer: huykaiser
+Maintainer-email: nguyenhuy34789@gmail.com
+License-File: LICENSE
