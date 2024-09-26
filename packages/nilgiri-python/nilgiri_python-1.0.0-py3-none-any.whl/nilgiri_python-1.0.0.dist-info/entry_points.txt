@@ -1,0 +1,2 @@
+[console_scripts]
+nilgiri_pyhton = nilgiri_python.main:main
