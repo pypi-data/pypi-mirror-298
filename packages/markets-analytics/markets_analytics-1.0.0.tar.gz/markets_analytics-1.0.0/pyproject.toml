@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "markets_analytics"
+version = "1.0.0"
+authors = [
+  { name="Danyal Imran", email="markets-analytics@zalando-lounge.de" },
+]
+description = "A utility package to handle data analytics"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.bus.zalan.do/lounge-sales-markets/markets_analytics"
+Issues = "https://github.bus.zalan.do/lounge-sales-markets/markets_analytics/issues"
