@@ -1,0 +1,12 @@
+finsolvepy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finsolvepy/calculation.py,sha256=s655kPKE6azN6EtJOoyOWQJ8uMdX5UfhmPS5RLLFrik,15771
+finsolvepy/information.py,sha256=-bJQb3kE6Fte-Ob9dxn5mrRc5cwixVm3aPn-g7jO_P4,11500
+finsolvepy/database/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finsolvepy/database/company_symbol_dict.py,sha256=_nLsaa_5NmLoIwyVU67g9je8jAB4VmKoBTWcR4Bs3cI,81005
+finsolvepy/database/complete_data.csv,sha256=MIftxDkKGTb31zEbL_N2kuK-MnV6Szo387x_JZXIwIA,357429
+finsolvepy/database/indices_descriptions.csv,sha256=kVVslTQKG-khzvRl2fhScZqWNHnAVk8_kYMcEOmz5Fk,5175
+finsolvepy-1.0.0.dist-info/LICENSE,sha256=gHFLtRR0582Qb2e6d4TZ-O3rT2jVmPJqZae2vGITqho,1087
+finsolvepy-1.0.0.dist-info/METADATA,sha256=-f55FkicrfApfb08EOk5LgIy4RD__WW300Bjk84r3bo,1448
+finsolvepy-1.0.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+finsolvepy-1.0.0.dist-info/top_level.txt,sha256=gah7v6EPO3Yo187vP87cVv2OyA9JCC6dxjEjiv44pE8,11
+finsolvepy-1.0.0.dist-info/RECORD,,
