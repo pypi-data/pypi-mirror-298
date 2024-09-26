@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: neuroanalysis
+Version: 0.0.4
+Summary: Functions and modular user interface tools for analysis of patch clamp experiment data.
+Home-page: https://github.com/AllenInstitute/neuroanalysis
+Author: Luke Campagnola
+Author-email: lukec@alleninstitute.org
+License: MIT
+Keywords: neuroscience analysis neurodata without borders nwb
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: lmfit
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+Neuroanalysis
+=============
+
+Modular and interactive tools for analysis of neurophysiology data, with emphasis on 
+patch-clamp electrophysiology.
+
+* Functions for running common analysis algorithms
+    * Synaptic/calcium event detection and characterization
+    * Synaptic release modeling
+    * VC and CC spike detection and characterization
+    * VC and CC test pulse analysis
+    * Basic signal processing (filtering, baseline removal, etc.)
+* Data abstraction layer to allow adapting new data formats (see neuroanalysis/data.py)
+* Re-usable user interface elements for implementing common analysis tasks
+
+
+Status
+------
+
+This project is early in development and does not yet have a stable API.
+Issues and pull requests are accepted (see CONTRIBUTING.md), but may not be 
+reviewed or accepted on any fixed schedule.
+
+
+
+
+
