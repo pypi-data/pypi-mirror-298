@@ -1,0 +1,20 @@
+## PROGRAM CONFIGURATION
+elasticsearch:
+    user: 
+    passwd: 
+    schema: http
+    host: es.pic.es
+    port: 9200
+    query_search: SELECT name FROM element where status = '${status}' and ( name like '%.root' or  name like '%.raw.gz' );
+    query_insert: "INSERT INTO status_history(element_id, timestamp, status) VALUES ('%s','%s','%s');"
+    query_update: "update element set status = '%s' where id = '%s';"
+    additional_search: True
+    additional_query: "select id from element where name = '%s' ;"   
+    mock_run: False 
+
+psql:
+    host: ''
+    user: ''
+    passwd: ''
+    db: 'multivac'
+    port: '5432'
