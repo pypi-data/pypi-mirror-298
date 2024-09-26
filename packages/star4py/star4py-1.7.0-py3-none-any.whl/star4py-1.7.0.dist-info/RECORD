@@ -1,0 +1,15 @@
+starpy/__init__.py,sha256=lM9jcSA0bwxt6wODZnTVw-QbTpM9rCSrATqKSY8p1MA,353
+starpy/compile.py,sha256=MEmkty5MY91MVOnq-CSEPQVr2M7IJcHdif4oFx36Lrk,8497
+starpy/complie_test.py,sha256=n2_gNBG1-V26uxaKilLwlyzwkw9uGvV1VV4ur8jTPrE,1687
+starpy/interface.py,sha256=aDWQN1VaVSxyVkCiMTBakiqHb0XPePPsShSHRIyFOKY,3176
+starpy/lexer.py,sha256=f82l7kl3ztxNDoByKqHfxeJyWsiFrZkUao4EFc-4nWU,2598
+starpy/lexer_test.py,sha256=XbRp0G6dpuMseGYi2A5fskTfMqoQeB1oaI8yTpbRVdA,328
+starpy/star.py,sha256=PbAYTnLj5iMR1XYuga1LgNsSGFZGhf4ifAlS76EizYo,1645
+starpy/vm.py,sha256=KKyKLMq6Hp5BLYDyai7Q-D1cJG1cVa72DXBDaL_g6Ms,5604
+starpy/vm_test.py,sha256=9i5c9zKoTsnckFrMo4Q2ZSMX8Kz-jwrCPWP2Mk5_ur0,3490
+star4py-1.7.0.dist-info/LICENSE,sha256=DSQGSMmlJMJyB-m1lXry7EbcEaa0wKegnYXR1brWid8,11011
+star4py-1.7.0.dist-info/METADATA,sha256=63dD6XxiPNoC_-oStcRxQP16jLFoeRYQUB5TZIU8Kk0,250
+star4py-1.7.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+star4py-1.7.0.dist-info/entry_points.txt,sha256=zFso2I-Zpj3ekV2mMKVOFHK9uSddzi8DosnA0K4szlY,42
+star4py-1.7.0.dist-info/top_level.txt,sha256=vPEUWiWojj9fNRnbIVcJUT0cfyD6Pbl7hrY0gVFrM14,7
+star4py-1.7.0.dist-info/RECORD,,
