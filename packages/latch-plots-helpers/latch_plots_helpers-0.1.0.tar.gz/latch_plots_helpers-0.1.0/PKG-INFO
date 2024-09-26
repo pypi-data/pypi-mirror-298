@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: latch-plots-helpers
+Version: 0.1.0
+Summary: Misc helper functions for Latch plots
+Author-email: aidanabd <aidan@latch.bio>
+License-File: LICENCE
+Requires-Python: <4.0,>=3.11
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: plotly>=5.24.1
+Requires-Dist: scikit-posthocs>=0.9.0
+Requires-Dist: scipy>=1.14.1
+Requires-Dist: statsmodels>=0.14.3
