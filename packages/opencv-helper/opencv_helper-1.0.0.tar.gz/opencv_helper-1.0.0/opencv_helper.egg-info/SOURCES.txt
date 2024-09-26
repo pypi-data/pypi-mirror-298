@@ -1,0 +1,10 @@
+README.md
+setup.py
+opencv_helper/__init__.py
+opencv_helper/main.py
+opencv_helper.egg-info/PKG-INFO
+opencv_helper.egg-info/SOURCES.txt
+opencv_helper.egg-info/dependency_links.txt
+opencv_helper.egg-info/requires.txt
+opencv_helper.egg-info/top_level.txt
+test/test.py
