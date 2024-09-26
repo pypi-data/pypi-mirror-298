@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: wisio
+Version: 0.0.5
+Author-Email: Izzet Yildirim <izzetcyildirim@gmail.com>
+Maintainer-Email: Izzet Yildirim <izzetcyildirim@gmail.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Typing :: Typed
+Project-URL: Documentation, https://grc.iit.edu/docs/category/wisio/
+Project-URL: Source, https://github.com/izzet/wisio
+Project-URL: Tracker, https://github.com/izzet/wisio/issues
+Requires-Python: >=3.8
+Requires-Dist: dask~=2023.5.0
+Requires-Dist: dask_jobqueue==0.8.2
+Requires-Dist: distributed~=2023.5.0
+Requires-Dist: hydra-core~=1.3.0
+Requires-Dist: inflect==7.0
+Requires-Dist: jinja2>=3.0
+Requires-Dist: numpy==1.24.3
+Requires-Dist: matplotlib>=3.6.0
+Requires-Dist: pandas>=2.0
+Requires-Dist: pyarrow>=13
+Requires-Dist: pyyaml>=5.4
+Requires-Dist: rich==13.6.0
+Requires-Dist: scikit-learn>=1.3
+Requires-Dist: scipy>=1.10
+Requires-Dist: venn==0.1.3
+Requires-Dist: darshan>=3.4; extra == "darshan"
+Requires-Dist: zindex_py==0.0.2; extra == "dftracer"
+Provides-Extra: darshan
+Provides-Extra: dftracer
+Description-Content-Type: text/markdown
+
+<p align="center">
+    <img src="https://grc.iit.edu/assets/images/logo-81e1c5c91f2ce84c3ea68ed772a4ef8c.png" width="300">
+</p>
+
+# WisIO: Workflow I/O Analysis Tool
+
+![Build and Test](https://github.com/izzet/wisio/actions/workflows/ci.yml/badge.svg)
+![PyPI - Version](https://img.shields.io/pypi/v/wisio?label=PyPI)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/wisio?label=Wheel)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/wisio?label=Python)
+
+## Overview
+
+WisIO is an open-source tool designed to efficiently analyze multi-terabyte-scale workflow performance data over distributed resources. It provides a comprehensive analysis of I/O performance, identifying bottlenecks and potential root causes through advanced rule-based analysis. With its extensible design, WisIO can be tailored to various use cases, providing actionable insights for improving application performance and resource utilization. By leveraging parallel computing and multi-perspective views, WisIO enables rapid detection of complex I/O issues, making it an invaluable asset for HPC professionals and researchers.
+
+## Installation
+
+To install WisIO through `pip`, you will need to use the following command.
+
+```bash
+spack -e tools install
+pip install wisio[darshan,dftracer]
+```
+
+To install WisIO from source, you will need to first install the dependencies:
+
+```bash
+spack -e tools install
+pip install .[darshan,dftracer]
+```
+
+## Usage
+
+```bash
+wisio analysis=recorder analysis.trace_path=/path/to/recorder/traces
+```
