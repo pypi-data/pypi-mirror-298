@@ -1,0 +1,10 @@
+moduleprofiler/__init__.py,sha256=ptf0jJE46ipTSuFrbczD8v0PtbTbJLWbBcML9AJDE8U,254
+moduleprofiler/io_size.py,sha256=Hs-Tm95tcewWFqUvZv4mNf-fIu7mJZ68zp7Q0xVgpyM,1627
+moduleprofiler/logger.py,sha256=Y8HNcR0abhuU5bi8o5B8YZyz0tomCLt7kxhFFcUu6-c,1814
+moduleprofiler/ops.py,sha256=yFyTSJQEQQNoOFhdiVypHQuD6lLFvFdVcPZv3R2SL0o,17457
+moduleprofiler/profiler.py,sha256=8jwArQ9GoWIqCaoIeK4VgSHpoz8x8gupdWy3ZKVHp5I,38427
+moduleprofiler/utils.py,sha256=QK4kkRZW3r-bWSI-rikoRffkHkAaOZuRazyMR87kZO0,6424
+moduleprofiler-0.0.4.dist-info/LICENSE,sha256=kl4bBvqC43m60iXrZ3I_fyliZtYbn-asg0RcyXeLjiw,20136
+moduleprofiler-0.0.4.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+moduleprofiler-0.0.4.dist-info/METADATA,sha256=dS9RxEygz7Q2DlxVAPF9klSn-YvF3tCIo8edg8slDbo,3510
+moduleprofiler-0.0.4.dist-info/RECORD,,
