@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: quick-token
+Version: 0.1.1
+Summary: 
+Author: James Allen-Robertson
+Author-email: minyall@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: gensim (>=4.3.3,<5.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: spacy (==3.7.5)
+Requires-Dist: tqdm (>=4.66.5,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Quick Token
+
+A set of functions to rapidly generate phrased tokens for document representation.
+
+## Installation
+Two steps
+
+### 1. Install via Pip as usual
+```
+pip install quick-token
+
+```
+### 2. Install the Spacy Model
+PyPi prohibits direct inclusion of this model in the requirements, so you'll need to run this commmand to ensure you have the spacy model.
+
+```
+python -m spacy download en_core_web_md
+
+```
+# Basic Example
+from quick_token import quick_token
+```
