@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+euler_product/__init__.py
+euler_product/lattice_invariant_euler_products.py
+euler_product/utils_euler_product.py
+sage_euler_product.egg-info/PKG-INFO
+sage_euler_product.egg-info/SOURCES.txt
+sage_euler_product.egg-info/dependency_links.txt
+sage_euler_product.egg-info/top_level.txt
