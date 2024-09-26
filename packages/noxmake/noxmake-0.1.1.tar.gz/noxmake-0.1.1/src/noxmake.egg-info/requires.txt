@@ -1,0 +1,11 @@
+GitPython>=3.1.43
+Jinja2>=3.1.4
+license_expression>=30.3.1
+namemaker>=1.2
+nox>=2024.4.15
+pip>=24.2
+pipreqs>=0.5.0
+Requests>=2.32.3
+requests_file>=2.1.0
+trove_classifiers>=2024.9.12
+wonderwords>=2.2.0
