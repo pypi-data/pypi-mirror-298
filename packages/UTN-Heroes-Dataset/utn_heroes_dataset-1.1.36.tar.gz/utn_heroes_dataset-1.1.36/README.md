@@ -1,0 +1,83 @@
+<table>
+    <tr>
+        <td align='center'>
+            <img alt="Logo UTN Large" src="https://github.com/caidevOficial/Logos/blob/master/Personales/Logo_Developer.png?raw=true" href="https://www.utnfravirtual.org.ar/" width="750px"/>
+        </td>
+    </tr>
+</table></br>
+
+### Set de datos con informaci&oacute;n de h&eacute;roes y villanos para los desaf&iacute;os:
+
+- Desafio 01: Listas
+- Desafio 02: Matr&iacute;z
+
+## ➡️ Para el Desaf&iacute;o 01:
+
+Te proveemos un gran set de datos de h&eacute;roes, dividido en listas paralelas
+para que puedas realizar tus ejercicios.
+
+Para poder usarlos importa en tus modulos lo siguiente
+
+```py
+from UTN_Heroes_Dataset.utn_listas import (
+    lista_alturas_heroes, lista_poder_heroes,
+    lista_identidades_heroes, lista_nombres_heroes,
+    lista_generos_heroes, lista_apodos_heroes
+)
+```
+
+A partir de este punto, estas en condiciones de utilizar las listas, imprimirlas, recorrerlas o hacer lo que se te plazca
+
+
+## ➡️ Para el Desaf&iacute;o 02:
+
+Te proveemos un gran set de datos de h&eacute;roes, dividido en una matr&iacute;z
+para que puedas realizar tus ejercicios.
+
+Para poder usarlos importa en tus modulos lo siguiente
+
+```py
+from UTN_Heroes_Dataset.utn_matrices import matriz_data_heroes
+```
+A partir de este punto, estas en condiciones de utilizar las listas, imprimirlas, recorrerlas o hacer lo que se te plazca
+
+
+## 🚀 Extras:
+
+El paquete tiene funciones que pueden utilizar para sus desaf&iacute;os.
+
+```py
+from UTN_Heroes_Dataset.utn_funciones import (
+    saludo, clear_console, play_sound
+)
+
+from UTN_Heroes_Dataset.utn_funciones.auxiliares import color_text
+```
+
+Estas funciones pueden usarse como auxiliares.
+
+```py
+# color_text retorna un string
+
+color_text('Tu texto', 'Info')
+# Salida -> > Information: Tu texto [Pintado de azul/violeta]
+
+color_text('Tu texto', 'Success')
+# Salida -> > Success: Tu texto [Pintado de verde]
+
+color_text('Tu texto', 'Error')
+# Salida -> > Error: Tu texto [Pintado de rojo]
+
+color_text('Tu texto')
+# Salida -> > System: Tu texto [Pintado de rojo]
+```
+
+```py
+# Esta funcion mostrara por consola el mensaje: "Presiona Enter para continuar...", al presionarla limpiara tu consola sin importar si tu SO es Windows o UNIX
+clear_console()
+```
+
+```py
+# Esta funcion reproduce un sonido que podes usar para darle un lindo efecto a tu aplicacion de consola.
+play_sound()
+```
