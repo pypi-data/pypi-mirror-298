@@ -1,0 +1,8 @@
+click
+inquirerpy
+pillow
+protobuf
+pybase62
+pycryptodome
+re-unplayplay
+yt-dlp
