@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pglogginghandler"
+version = "0.3"
+authors = [
+  { name="Marcus Oates", email="moates695@gmail.com" },
+]
+description = "Simple logging handler to enter logs directly to postgres databases"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/moates695/pglogging"
