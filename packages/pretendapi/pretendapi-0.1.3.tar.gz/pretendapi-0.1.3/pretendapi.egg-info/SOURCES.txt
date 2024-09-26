@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pretendapi.egg-info/PKG-INFO
+pretendapi.egg-info/SOURCES.txt
+pretendapi.egg-info/dependency_links.txt
+pretendapi.egg-info/requires.txt
+pretendapi.egg-info/top_level.txt
