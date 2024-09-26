@@ -1,0 +1,16 @@
+README.md
+setup.py
+src/generate_summary_of_injuries.egg-info/PKG-INFO
+src/generate_summary_of_injuries.egg-info/SOURCES.txt
+src/generate_summary_of_injuries.egg-info/dependency_links.txt
+src/generate_summary_of_injuries.egg-info/entry_points.txt
+src/generate_summary_of_injuries.egg-info/requires.txt
+src/generate_summary_of_injuries.egg-info/top_level.txt
+tests/test_date_extractor.py
+tests/test_dependencies.py
+tests/test_diagnosis_extractor.py
+tests/test_generate_summary_of_injuries.py
+tests/test_icd_code_determiner.py
+tests/test_main.py
+tests/test_pdf_creator.py
+tests/test_pdf_reader.py

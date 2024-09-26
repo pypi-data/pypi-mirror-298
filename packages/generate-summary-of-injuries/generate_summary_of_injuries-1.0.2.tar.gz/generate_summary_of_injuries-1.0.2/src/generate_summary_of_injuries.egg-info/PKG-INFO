@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: generate_summary_of_injuries
+Version: 1.0.2
+Summary: Automates the creation of demand letters based on medical PDF records.
+Home-page: https://github.com/izgorodin/generate_summary_of_injuries
+Author: Eduard Izgorodin
+Author-email: edizgorodin@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: reportlab
+Requires-Dist: spacy
+Requires-Dist: nltk
+Requires-Dist: python-dateutil
+Requires-Dist: pytest
+Requires-Dist: pytest-mock
+Requires-Dist: pypdf
+Requires-Dist: dateparser
+Requires-Dist: fuzzywuzzy
+
+# Injury Summary Generator
+
+This project automates the process of creating a demand letter for a client based on medical records in PDF format. It extracts relevant information from medical records and generates a "Summary of Injuries" section in a table format.
+
+## Data Source
+
+The ICD-10 codes used in this project are sourced from the Centers for Medicare & Medicaid Services (CMS) website. You can find the official ICD-10 code lists at:
+
+https://www.cms.gov/medicare/coordination-benefits-recovery/overview/icd-code-lists
+
+This authoritative source ensures that our project uses up-to-date and accurate ICD-10 codes for classifying diagnoses.
+
+## Features
+
+- **PDF Processing**: Reads multiple PDF files containing medical records and extracts text.
+- **Information Extraction**: Extracts key information such as visit dates, diagnoses, and page numbers.
+- **ICD-10 Code Determination**: Determines appropriate ICD-10 codes for extracted diagnoses.
+- **PDF Generation**: Creates a summary PDF with a formatted table of extracted information.
+
+## Installation
+
+You can install the Injury Summary Generator using pip:
+
+```bash
+pip install generate-summary-of-injuries
+```
+
+## Usage
+
+Run the main script with the following command:
+
+```bash
+generate_summary_of_injuries <input_folder> <output_folder>
+```
+
+Where:
+- `<input_folder>` is the path to the folder containing the medical record PDF files.
+- `<output_folder>` is the path where the output summary PDF will be saved.
+
+## Project Structure
+
+- `src/`: Contains the source code for the project.
+  - `main.py`: Entry point for the application.
+  - `generate_summary_of_injuries.py`: Main script that orchestrates the entire process.
+  - `pdf_reader.py`: Handles reading PDF files and extracting text.
+  - `date_extractor.py`: Extracts dates from PDF text.
+  - `diagnosis_extractor.py`: Extracts diagnoses from PDF text.
+  - `icd_code_determiner.py`: Determines ICD-10 codes based on diagnoses.
+  - `pdf_creator.py`: Creates the final summary PDF.
+- `tests/`: Contains unit tests for the project.
+  - `test_main.py`: Tests for the main entry point.
+  - `test_generate_summary_of_injuries.py`: Tests for the main summary generation.
+  - `test_icd_code_determiner.py`: Tests for ICD code determination.
+  - `test_pdf_reader.py`: Tests for PDF reading functionality.
+  - `test_pdf_creator.py`: Tests for PDF creation functionality.
+  - `test_dependencies.py`: Tests for project dependencies.
+- `setup.py`: Configuration file for packaging the project.
+- `requirements.txt`: Lists all Python dependencies for the project.
+- `README.md`: Provides information about the project and how to use it.
+- `.gitignore`: Specifies files and directories to be ignored by Git.
+
+## Contributing
+
+Contributions to this project are welcome. Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Make your changes and commit them (`git commit -am 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

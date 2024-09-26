@@ -1,0 +1,9 @@
+reportlab
+spacy
+nltk
+python-dateutil
+pytest
+pytest-mock
+pypdf
+dateparser
+fuzzywuzzy
