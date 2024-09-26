@@ -1,0 +1,20 @@
+# [Description]
+# This file is used to manage your local templates.
+#
+# [Syntax]
+# This file is written in YAML format. The following is an example of the syntax.
+#   E.g.)
+#     templates:
+#       - name: <template_name> [required]
+#         title: <template_title>
+#         description: <template_description>
+#         src: <template_source> [required] must be full path or relative path from this template.yaml
+#         language: <template_language> [required|options:"python", "sql"]
+#
+# [Compiling]
+# After editing this file, you need to compile it using the following command.
+# This command will validate the syntax of the file and make sure your templates are available.
+#   E.g.)
+#     $ morph template compile
+
+templates:
