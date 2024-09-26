@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pytest-zephyr-telegram
+Version: 0.2.1
+Summary: Плагин для отправки данных автотестов в Телеграм и Зефир
+Author: slug
+Author-email: 
+Description-Content-Type: text/markdown
+Requires-Dist: pytest==8.3.2
+Requires-Dist: pytelegrambotapi==4.22.1
+Requires-Dist: emoji==2.7.0
+Requires-Dist: pytz==2024.1
+Requires-Dist: curlify==2.2.1
+Requires-Dist: allure-pytest==2.13.5
+
+### РљР°Рє РЅР°СЃС‚СЂРѕРёС‚СЊ РѕС‚С‡РµС‚РЅРѕСЃС‚СЊ Telegram
+Р”Р»СЏ РІРєР»СЋС‡РµРЅРёСЏ РѕС‚С‡РµС‚РЅРѕСЃС‚Рё Telegram РґРѕР±Р°РІРёС‚СЊ РІР°С€РµРіРѕ Р±РѕС‚Р° РІ С‡Р°С‚ РѕС‚С‡РµС‚РѕРІ,
+РїРµСЂРµРґР°С‚СЊ РїСЂРё Р·Р°РїСѓСЃРєРµ 
+--telegram-token="..." С‡Р°С‚ РґР»СЏ РѕС‚РїСЂР°РІРєРё
+--telegram_id="..." С‚РѕРєРµРЅ Р±РѕС‚Р°    
+
+### РљР°Рє РЅР°СЃС‚СЂРѕРёС‚СЊ РѕС‚С‡РµС‚РЅРѕСЃС‚СЊ Zephyr
+Р”Р»СЏ РІРєР»СЋС‡РµРЅРёСЏ РѕС‚С‡РµС‚РЅРѕСЃС‚Рё Zephyr РґРѕР±Р°РІРёС‚СЊ РїРµСЂРµРјРµРЅРЅС‹Рµ РѕРєСЂСѓР¶РµРЅРёСЏ
+PROJECT_KEY
+JIRA_SERVER
+JIRA_USERNAME
+JIRA_TOKEN
+
+СЂР°СЃСЃС‚Р°РІРёС‚СЊ РґРµРєРѕСЂР°С‚РѕСЂС‹ СЃ РєР»СЋС‡Р°РјРё С‚РµСЃС‚РєРµР№СЃРѕРІ РЅР°Рґ С‚РµСЃС‚Р°РјРё:
+@pytest.mark.testcase(test_case_key="T3260")
+@pytest.mark.project(project_key="RNDAGB") - РµСЃР»Рё РїСЂРѕРµРєС‚ С‚РµСЃС‚РєРµР№СЃР° РѕС‚Р»РёС‡Р°РµС‚СЃСЏ РѕС‚ PROJECT_KEY
+
+РґР»СЏ РєР°СЃС‚РѕРјР°Р·РёС†РёРё РёРјРµРЅРё РїСЂРѕРіРѕРЅР° РІ Zephyr Р·Р°РґР°С‚СЊ РїРµСЂРµРјРµРЅРЅСѓСЋ РѕРєСЂСѓР¶РµРЅРёСЏ RUN_PREFIX_NAME
