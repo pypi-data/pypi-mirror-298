@@ -1,0 +1,52 @@
+{
+  "src/lib/components/DashReactSyntaxHighlighter.react.js": {
+    "description": "DashReactSyntaxHighlighter is a component for syntax highlighting.\nIt takes properties for the code to highlight, the programming language, and the style.",
+    "displayName": "DashReactSyntaxHighlighter",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "code": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The code string to be highlighted."
+      },
+      "language": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The programming language of the code.",
+        "defaultValue": {
+          "value": "'javascript'",
+          "computed": false
+        }
+      },
+      "styleName": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The name of the style to use for syntax highlighting.\nOptions are: 'dark', 'coy', 'okaidia', 'twilight', 'solarizedlight'",
+        "defaultValue": {
+          "value": "'okaidia'",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  }
+}
