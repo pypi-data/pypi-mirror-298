@@ -1,0 +1,14 @@
+spei/__init__.py,sha256=ikfAzdGycyPf8L-F63lZhjjF-WUV2wErMh00BZMztUw,150
+spei/_typing.py,sha256=7l6f9kP38c5F5f5Fg9eakH9MN2lHPl73hVFzW-6wOZo,277
+spei/_version.py,sha256=TNFGUYJi_VFM-FLBIn7-pUG0Tjd-fRHbo-_djT_Ln4I,417
+spei/climdex.py,sha256=knVF4MCk3uFlMjDLnL3h1pjjvo56BOpvHXr9mej5b7c,4383
+spei/dist.py,sha256=cVchYq1L4J-H1umOiZNBqc4JpXjCqak5OtNW9FmNp5w,5903
+spei/plot.py,sha256=xzJnkLDIUqqklCGkYrg5NRbxanfQVrWpQBBAySskDC0,14781
+spei/py.typed,sha256=QPIqsNETblYX8vmJ354NjcVQts2LluobpkVVIO0v_Kw,63
+spei/si.py,sha256=99IUoBEtUuRnppTEWghxYDNJzz0ZMr-KTbI0GZOcuPk,17064
+spei/utils.py,sha256=nkSok_0I_4COtf14C7QGw6mCzm5OzL82mco7TK5u9ZA,4755
+spei-0.5.1.dist-info/LICENSE,sha256=xGIpCt-i5PO3dvTnFomRokWfwuKU050T692xBVCMRBQ,1068
+spei-0.5.1.dist-info/METADATA,sha256=6wzZr3LOd1Oug3OvM_lLJFNaMHgkGnUwndLC-QeRdJ0,8062
+spei-0.5.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+spei-0.5.1.dist-info/top_level.txt,sha256=zKSV39319uovc3ohXSiat9q15BsQznvnctphlwTZ7Zs,5
+spei-0.5.1.dist-info/RECORD,,
