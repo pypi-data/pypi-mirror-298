@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: frostconnect
+Version: 0.0.2
+Summary: Small package that has db connection functionality.
+Home-page: https://www.github.com/mk732
+Author: MK732
+License: The Unlicense
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: asyncpg
+Requires-Dist: asyncio
+Requires-Dist: python-dotenv
+Provides-Extra: dev
+Requires-Dist: pytest >=7.0 ; extra == 'dev'
+Requires-Dist: twine >=4.0.2 ; extra == 'dev'
+
+# PyPI FTConnect DB connection
