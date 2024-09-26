@@ -1,0 +1,8 @@
+app/__init__.py,sha256=ddDfzw2bk8gcSGEfnrc8Uzgh0fhoQyFL20YlwpRihDw,36
+app/frostconnect/__init__.py,sha256=ddDfzw2bk8gcSGEfnrc8Uzgh0fhoQyFL20YlwpRihDw,36
+app/frostconnect/frostconnect.py,sha256=9DxM1AaDuGuREAATA_-HeQjTxKQXsWds-nPk9r9KuKE,2387
+app/frostconnect/ftechconnect.py,sha256=9DxM1AaDuGuREAATA_-HeQjTxKQXsWds-nPk9r9KuKE,2387
+frostconnect-0.0.3.dist-info/METADATA,sha256=macM0rCcam3U4y3I_yMoV6LBP9nIK0wR3Z6iFPeEXQ8,492
+frostconnect-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+frostconnect-0.0.3.dist-info/top_level.txt,sha256=io9g7LCbfmTG1SFKgEOGXmCFB9uMP2H5lerm0HiHWQE,4
+frostconnect-0.0.3.dist-info/RECORD,,
