@@ -1,0 +1,54 @@
+[build-system]
+requires = [ "poetry-core>=1.9.0",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "django-oscar-reports"
+version = "2.2.3"
+description = "An extension on-top of django-oscar that improves the Oscar Dashboard's report generation system"
+authors = ["thelab <thelabdev@thelab.co>"]
+readme = "README.rst"
+homepage = "https://gitlab.com/thelabnyc/django-oscar/django-oscar-reports"
+repository = "https://gitlab.com/thelabnyc/django-oscar/django-oscar-reports"
+license = "ISC"
+
+[[tool.poetry.packages]]
+include = "oscarreports"
+from = "src"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+celery = ">=5.4.0"
+Django = ">=4.2"
+django-oscar = "3.2.5"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.6.1"
+flake8 = "^7.1.1"
+freezegun = "^1.5.1"
+psycopg2-binary = "^2.9.9"
+PyYAML = "^6.0.2"
+sorl-thumbnail = "^12.11.0"
+tox = "^4.20.0"
+unittest-xml-reporting = "^3.2.0"
+django-webtest = "^1.9.12"
+WebTest = "^3.0.1"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+annotated_tag = true
+gpg_sign = true
+tag_format = "v$version"
+update_changelog_on_bump = true
+changelog_merge_prerelease = true
+version_provider = "poetry"
+version_scheme = "pep440"
+version_files = [
+    "pyproject.toml:version",
+]
+pre_bump_hooks = [
+    "pre-commit run --all-files || true",
+]
+post_bump_hooks = [
+    "git push origin master $CZ_POST_CURRENT_TAG_VERSION"
+]
