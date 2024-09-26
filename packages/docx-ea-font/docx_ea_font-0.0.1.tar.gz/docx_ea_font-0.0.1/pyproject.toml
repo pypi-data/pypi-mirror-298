@@ -1,0 +1,37 @@
+[build-system]
+build-backend = "pdm.backend"
+requires = [
+    "pdm-backend",
+]
+
+[project]
+authors = [
+    { name = "MakerBi", email = "andersonby@163.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "python-docx",
+]
+description = "Set east asia font in docx correctly."
+name = "docx-ea-font"
+readme = "README.md"
+requires-python = ">=3.8"
+version = "0.0.1"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/AndersonBY/docx-ea-font"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+excludes = [
+    "tests",
+]

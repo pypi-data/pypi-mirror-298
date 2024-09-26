@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: docx-ea-font
+Version: 0.0.1
+Summary: Set east asia font in docx correctly.
+Author-Email: MakerBi <andersonby@163.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Homepage, https://github.com/AndersonBY/docx-ea-font
+Requires-Python: >=3.8
+Requires-Dist: python-docx
+Description-Content-Type: text/markdown
+
+# docx-ea-font
+Fix the problem that the setting of East Asian fonts in python-docx is invalid or incorrect.
+
+修正 python-docx 中东亚字体设置无效、不正确的问题。
+
+## Installation
+
+```
+pip install docx-ea-font
+```
+
+## Example
+
+```Python
+from docx import Document
+import docx_ea_font
+
+
+doc = Document("tests/test.docx")
+for paragraph in doc.paragraphs:
+    for run in paragraph.runs:
+        docx_ea_font.set_font(run, "楷体")  # 传入一个 run 对象以及字体名称
+
+doc.save('font-changed.docx')
+```
