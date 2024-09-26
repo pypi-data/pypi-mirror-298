@@ -1,0 +1,464 @@
+"$schema" = "https://vega.github.io/schema/vega/v5.json"
+
+# Size of graphic
+width = 400
+height = 400
+padding.top = 40
+padding.bottom = 40
+padding.left = 40
+padding.right= 40
+
+[title]
+text = "Topology"
+anchor = "middle"
+fontSize = 16
+offset = 20
+
+# Variables
+[[signals]]
+name = "nodesize"
+value = 150
+
+[[signals]]
+name = "edgewidth"
+value = 4
+
+[[signals]]
+name = "conlength"
+value = 12
+
+[[signals]]
+name = "conwidth"
+value = 5
+
+[[signals]]
+name = "edgedash"
+value = [8, 2]
+
+[[signals]]
+name = "edgespace"
+value = [0, 6]
+
+# Mouseover
+[[signals]]
+name = "hover"
+value = "null"
+
+[[signals.on]]
+events = "*:mouseover"
+update = "datum"
+
+[[signals.on]]
+events = "*:mouseout"
+update = "null"
+
+[[signals]]
+name = "hovercoords"
+value = "null"
+
+[[signals.on]]
+events = "*:mouseover"
+update = "xy()"
+
+[[signals.on]]
+events = "*:mouseout"
+update = "null"
+
+[[signals]]
+name = "display"
+value = "null"
+update = "hover ? hover.display : null"
+
+[[signals]]
+name = "displaycoords"
+value = "[null, null]"
+update = "hovercoords ? hovercoords : [null, null]"
+
+# Zoom
+[[signals]]
+name = "zoom"
+value = 1
+
+[[signals.on]]
+events = "wheel!"
+update = "clamp(zoom*pow(1.001, -event.deltaY), 1, 100)"
+
+[[signals]]
+name = "scale"
+init = "max(width, height)/max(longr[1] - longr[0], latr[1] - latr[0])"
+
+[[signals.on]]
+events = { signal = "zoom" }
+update = "zoom*max(width, height)/max(longr[1] - longr[0], latr[1] - latr[0])"
+
+# Drag
+[[signals]]
+name = "projection"
+value = "null"
+
+[[signals.on]]
+events = "mousedown"
+update = "copy('projection')"
+
+[[signals]]
+name = "start"
+value = "null"
+
+[[signals.on]]
+events = "mousedown"
+update = "invert(projection, xy())"
+
+[[signals]]
+name = "drag"
+value = "null"
+
+[[signals.on]]
+events = "[mousedown, window:mouseup] > window:mousemove"
+update = "invert(projection, xy())"
+
+[[signals]]
+name = "center"
+init = "[(longr[1] + longr[0])/2, (latr[1] + latr[0])/2]"
+
+[[signals.on]]
+events = "mousedown"
+update = "[centerlong, centerlat]"
+
+[[signals]]
+name = "centerlong"
+init = "center[0]"
+
+[[signals.on]]
+events = { signal = "drag" }
+update = "center[0] - (drag[0] - start[0])"
+
+[[signals]]
+name = "centerlat"
+init = "center[1]"
+
+[[signals.on]]
+events = { signal = "drag" }
+update = "center[1] - (drag[1] - start[1])"
+
+# Node data
+[[data]]
+name = "nodes"
+
+[[data.transform]]
+type = "formula"
+as = "confdisplay"
+expr = "'Split: ' + datum.split"
+
+[[data.transform]]
+type = "formula"
+as = "display"
+expr = "[datum.name, datum.confdisplay]"
+
+[[data.transform]]
+type = "extent"
+field = "long"
+signal = "longr"
+
+[[data.transform]]
+type = "extent"
+field = "lat"
+signal = "latr"
+
+[[data.transform]]
+type = "geopoint"
+projection = "projection"
+fields = [ "long", "lat" ]
+
+# Node example values
+[[data.values]]
+name = "Geneva"
+long = 6.139970
+lat = 46.203812
+split = 0.0
+
+[[data.values]]
+name = "Aarau"
+long = 8.043740
+lat = 47.392849
+split = 1.0
+
+[[data.values]]
+name = "Sion"
+long = 7.358880
+lat = 46.231175
+split = 0.0
+
+# Edge data
+[[data]]
+name = "edges"
+
+[[data.transform]]
+type = "formula"
+as = "confdisplay"
+expr = "'Switch: ' + datum.switch"
+
+[[data.transform]]
+type = "formula"
+as = "flowdisplay"
+expr = "'Loading: ' + datum.loading"
+
+[[data.transform]]
+type = "formula"
+as = "display"
+expr = "[datum.name, datum.confdisplay, datum.flowdisplay]"
+
+[[data.transform]]
+type = "lookup"
+from = "nodes"
+key = "name"
+fields = [ "sourcenode", "sinknode" ]
+as = [ "source", "target" ]
+
+[[data.transform]]
+type = "formula"
+as = "edgedash"
+expr = "(1 - datum.switch)*edgedash[0] + datum.switch*edgedash[1]"
+
+[[data.transform]]
+type = "formula"
+as = "edgespace"
+expr = "(1 - datum.switch)*edgespace[0] + datum.switch*edgespace[1]"
+
+[[data.transform]]
+type = "formula"
+as = "dash"
+expr = "[datum.edgedash, datum.edgespace]"
+
+[[data.transform]]
+type = "formula"
+as = "dx"
+expr = "datum.target.x - datum.source.x"
+
+[[data.transform]]
+type = "formula"
+as = "dy"
+expr = "datum.target.y - datum.source.y"
+
+[[data.transform]]
+type = "formula"
+as = "length"
+expr = "sqrt(pow(datum.dx, 2) + pow(datum.dy, 2))"
+
+[[data.transform]]
+type = "formula"
+as = "conlength"
+expr = "datum.length == 0 ? 0 : min(conlength/datum.length, 1/3)"
+
+[[data.transform]]
+type = "formula"
+as = "x1"
+expr = "datum.source.x + datum.conlength*datum.dx"
+
+[[data.transform]]
+type = "formula"
+as = "y1"
+expr = "datum.source.y + datum.conlength*datum.dy"
+
+[[data.transform]]
+type = "formula"
+as = "x2"
+expr = "datum.target.x - datum.conlength*datum.dx"
+
+[[data.transform]]
+type = "formula"
+as = "y2"
+expr = "datum.target.y - datum.conlength*datum.dy"
+
+[[data.transform]]
+type = "linkpath"
+shape = "line"
+
+[[data.transform]]
+type = "linkpath"
+shape = "line"
+targetX = "x1"
+targetY = "y1"
+as = "sourcepath"
+
+[[data.transform]]
+type = "linkpath"
+shape = "line"
+sourceX = "x2"
+sourceY = "y2"
+as = "targetpath"
+
+# Example values
+[[data.values]]
+name = "Geneva-Aarau"
+sourcenode = "Geneva"
+sinknode = "Aarau"
+subsource = 0.0
+subsink = 1.0
+switch = 0.0
+loading = 1.0
+
+[[data.values]]
+name = "Geneva-Sion"
+sourcenode = "Geneva"
+sinknode = "Sion"
+subsource = 0.0
+subsink = 0.0
+switch = 0.0
+loading = 0.3
+
+[[data.values]]
+name = "Sion-Aarau"
+sourcenode = "Sion"
+sinknode = "Aarau"
+subsource = 0.0
+subsink = 1.0
+switch = 1.0
+loading = 0.0
+
+# Pojection
+[[projections]]
+name = "projection"
+type = "mercator"
+
+[projections.scale]
+signal = "scale*34"
+
+[[projections.center]]
+signal = "clamp(centerlong, longr[0], longr[1])"
+
+[[projections.center]]
+signal = "clamp(centerlat, latr[0], latr[1])"
+
+[[projections.translate]]
+signal = "width/2"
+
+[[projections.translate]]
+signal = "height/2"
+
+# Color scales
+[[scales]]
+name = "loading"
+domain = [ -2, 2 ]
+reverse = true
+range = { scheme = "redyellowgreen" }
+
+[[scales]]
+name = "subnode"
+domain = [ 0, 1 ]
+range = { scheme = "warmgreys" }
+
+[[scales]]
+name = "split"
+domain = [ -1, 1 ]
+range = { scheme = "blues" }
+
+# Color bar
+[[legends]]
+fill = "loading"
+type = "gradient"
+title = "Loading"
+titleFontSize = 12
+titlePadding = 20
+offset = 40
+gradientLength = { signal = "height - 72" }
+
+# Node symbols
+[[marks]]
+type = "symbol"
+clip = true
+zindex = 2
+from = { data = "nodes" }
+
+[marks.encode.enter]
+fill = { scale = "split", field = "split" }
+zindex = { field = "split" }
+
+[marks.encode.update]
+x = { field = "x" }
+y = { field = "y" }
+
+[[marks.encode.update.size]]
+test = "hover == datum"
+signal = "2*nodesize"
+
+[[marks.encode.update.size]]
+signal = "nodesize"
+
+# Edge symbols
+[[marks]]
+type = "path"
+clip = true
+zindex = 0
+from = { data = "edges" }
+
+[marks.encode.enter]
+strokeDash = { field = "dash" }
+stroke = { scale = "loading", field = "loading" }
+zindex = { field = "loading" }
+
+[marks.encode.update]
+path = { field = "path" }
+
+[[marks.encode.update.strokeWidth]]
+test = "hover == datum"
+signal = "2*edgewidth"
+
+[[marks.encode.update.strokeWidth]]
+signal = "edgewidth"
+
+# Connector symbols
+[[marks]]
+type = "path"
+clip = true
+zindex = 1
+from = { data = "edges" }
+
+[marks.encode.enter]
+stroke = { scale = "subnode", field = "subsource" }
+zindex = { field = "loading" }
+
+[marks.encode.update]
+path = { field = "sourcepath" }
+
+[[marks.encode.update.strokeWidth]]
+test = "hover == datum"
+signal = "2*conwidth"
+
+[[marks.encode.update.strokeWidth]]
+signal = "conwidth"
+
+[[marks]]
+type = "path"
+clip = true
+zindex = 1
+from = { data = "edges" }
+
+[marks.encode.enter]
+stroke = { scale = "subnode", field = "subsink" }
+zindex = { field = "loading" }
+
+[marks.encode.update]
+path = { field = "targetpath" }
+
+[[marks.encode.update.strokeWidth]]
+test = "hover == datum"
+signal = "2*conwidth"
+
+[[marks.encode.update.strokeWidth]]
+signal = "conwidth"
+
+# Hover text
+[[marks]]
+type = "text"
+interactive = false
+zindex = 4
+
+[marks.encode.enter]
+fill = { value = "black" }
+fontSize = { value = 10 }
+align = { value = "left" }
+
+[marks.encode.update]
+text = { signal = "display" }
+x = { signal = "displaycoords[0] + 10" }
+y = { signal = "displaycoords[1] + 30" }
