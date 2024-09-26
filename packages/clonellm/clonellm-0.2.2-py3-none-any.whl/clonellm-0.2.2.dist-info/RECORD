@@ -1,0 +1,13 @@
+clonellm/__init__.py,sha256=hlLdmq5DzeN1m475yJYMn-Y8rMEUyw2bkBa-SqFX32E,260
+clonellm/_base.py,sha256=7zK1tHjtsCB2GZLBPb46MmeRC5KS3mnBaiCE5kE37vc,719
+clonellm/_prompt.py,sha256=lTgXOLL0n9ZTqxPo6ATSKXxl41-MIFhdN3RRt-P5DBg,2004
+clonellm/core.py,sha256=WhYMJWdmSOgnVEqtELO82I8buYxrH6xYPjFL2hRz9Sk,20936
+clonellm/embed.py,sha256=wEAje7BIMLp4nboW7d8xN7D6ofe3JxHNwCWkKxRsdGk,3167
+clonellm/enums.py,sha256=7qVMx1-RskykNOdBR4HEx6zeeZFHuJH_ulKE5llYYgs,161
+clonellm/memory.py,sha256=-TddOne9i-FAvIXEZvURWoCXnSq5BqqSIvC8vuP1464,2431
+clonellm/models.py,sha256=LD152B3oxEZjCCMPTJi9jAUyTAlaMW3vAxdDcijLT5E,1127
+clonellm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clonellm-0.2.2.dist-info/LICENSE,sha256=r33S2NKjYysc_QTkegP1JEQ28EHtyjl9HEnc5fmfuRc,1070
+clonellm-0.2.2.dist-info/METADATA,sha256=YbQLOXiQkNXCpd3nSJmEgZlR4SEW9FoXvRxJwv1GkB0,11948
+clonellm-0.2.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+clonellm-0.2.2.dist-info/RECORD,,
