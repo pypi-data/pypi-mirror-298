@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: ffmpeg-cut
+Version: 1.0.0
+Summary: Cut and join CLI wrapper for ffmpeg.
+Home-page: https://github.com/ionelmc/python-ffmpeg-cut
+Author: Ionel Cristian Mărieș
+Author-email: contact@ionelmc.ro
+License: BSD-2-Clause
+Project-URL: Documentation, https://python-ffmpeg-cut.readthedocs.io/
+Project-URL: Changelog, https://python-ffmpeg-cut.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/ionelmc/python-ffmpeg-cut/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+========
+Overview
+========
+
+
+
+Cut and join CLI wrapper for ffmpeg.
+
+* Free software: BSD 2-Clause License
+
+Installation
+============
+
+::
+
+    pip install ffmpeg-cut
+
+You can also install the in-development version with::
+
+    pip install https://github.com/ionelmc/python-ffmpeg-cut/archive/main.zip
+
+
+Documentation
+=============
+
+
+https://python-ffmpeg-cut.readthedocs.io/
+
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+
+0.0.0 (2024-09-26)
+------------------
+
+* First release on PyPI.
