@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+hokireceh_claimer/__init__.py
+hokireceh_claimer/base.py
+hokireceh_claimer.egg-info/PKG-INFO
+hokireceh_claimer.egg-info/SOURCES.txt
+hokireceh_claimer.egg-info/dependency_links.txt
+hokireceh_claimer.egg-info/requires.txt
+hokireceh_claimer.egg-info/top_level.txt
