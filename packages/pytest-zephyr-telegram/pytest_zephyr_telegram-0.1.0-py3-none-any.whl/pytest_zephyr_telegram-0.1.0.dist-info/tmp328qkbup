@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pytest-zephyr-telegram
+Version: 0.1.0
+Summary: Плагин для отправки данных автотестов в Телеграм и Зефир
+Author: slug
+Author-email: 
+Requires-Dist: pytest==8.3.2
+Requires-Dist: pytelegrambotapi==4.22.1
+Requires-Dist: emoji==2.7.0
+Requires-Dist: pytz==2024.1
+Requires-Dist: curlify==2.2.1
+Requires-Dist: allure-pytest==2.13.5
