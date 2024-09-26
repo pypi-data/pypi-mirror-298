@@ -1,0 +1,25 @@
+test: foo
+
+localhost:
+  test_indirect: "{{ test }}"
+
+
+tokenlist:
+  - &my-server_1 blablabla
+  - &my-server_2 lolololol
+  - &my-server_3 foofoofoo
+  - &my-server_4 barbarbar
+
+anotherlist:
+
+  - key: bla
+    value: *my-server_1
+
+  - key: lol
+    value: *my-server_2
+
+  - key: foo
+    value: *my-server_3
+
+  - key: bar
+    value: *my-server_4
