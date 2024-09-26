@@ -1,0 +1,111 @@
+theory:
+  classy_szfast.classy_sz.classy_sz:
+    use_class_sz_fast_mode: 1
+    use_class_sz_no_cosmo_mode: 0
+    lensing_lkl: ACT
+    path: null
+    speed: 0.2
+    stop_at_error: false
+    extra_args:
+      output: tCl, lCl, pCl
+    ignore_obsolete: false
+    use_renames: false
+    renames:
+      As: A_s
+      ns: n_s
+      nrun: alpha_s
+      nrunrun: beta_s
+      nt: n_t
+      ntrun: alpha_t
+      rdrag: rs_drag
+      omegak: Omega_k
+      omegal: Omega_Lambda
+      w: w0_fld
+      wa: wa_fld
+      omegabh2: omega_b
+      omegab: Omega_b
+      omegach2: omega_cdm
+      omegac: Omega_cdm
+      omegam: Omega_m
+      omegan: Omega_nu
+      tau: tau_reio
+      zrei: z_reio
+      deltazrei: reionization_width
+      helium_redshift: helium_fullreio_redshift
+      helium_delta_redshift: helium_fullreio_width
+      yhe: YHe
+      yheused: YHe
+    version: v2.9.4
+    input_params:
+    - h
+    - logA
+    - ns
+    - omch2
+    - omegabh2
+    - tau
+    output_params:
+    - omegam
+    - sigma8
+likelihood:
+  act_dr6_lenslike.ACTDR6LensLike:
+    lmax: 4000
+    mock: false
+    nsims_act: 792.0
+    nsims_planck: 400.0
+    no_like_corrections: false
+    lens_only: false
+    trim_lmax: 2998
+    variant: act_baseline
+    apply_hartlap: true
+    limber: false
+    nz: 100
+    kmax: 10
+    zmax: null
+    scale_cov: null
+    varying_cmb_alens: false
+    type: []
+    speed: -1
+    stop_at_error: false
+    version: null
+    input_params: []
+    output_params: []
+params:
+  h:
+    derived: false
+    value: 0.6732
+  logA:
+    derived: false
+    value: 3.0448
+  ns:
+    derived: false
+    value: 0.9652
+    renames:
+    - n_s
+  omch2:
+    derived: false
+    value: 0.12038
+  omegabh2:
+    derived: false
+    value: 0.022383
+    renames:
+    - omega_b
+  omegam:
+    derived: true
+    renames:
+    - Omega_m
+  sigma8:
+    derived: true
+  tau:
+    derived: false
+    value: 0.0543
+    renames:
+    - tau_reio
+sampler:
+  evaluate:
+    N: 1
+    override: null
+    seed: null
+    version: null
+timing: true
+output: test_eval
+version: 3.4.1

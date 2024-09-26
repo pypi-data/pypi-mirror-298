@@ -1,0 +1,24 @@
+theory:
+  classy_szfast.classy_sz.classy_sz:
+    extra_args:
+      output: tCl, lCl, pCl
+      cosmo_model: 1
+likelihood:
+  act_dr6_lenslike.ACTDR6LensLike: {}
+params:
+  h:
+    latex: h
+    value: 0.674
+  ns:
+    latex: n_s
+    value: 0.965
+  omch2:
+    latex: \Omega_m h^2
+    value: 0.1407
+  sigma8:
+    latex: \sigma_8
+    value: 0.8
+sampler:
+  evaluate: {}
+timing: true
+output: test_config

@@ -1,0 +1,30 @@
+theory:
+  classy_szfast.classy_sz.classy_sz:
+    extra_args:
+      output: tCl, lCl, pCl
+likelihood:
+  act_dr6_lenslike.ACTDR6LensLike:
+    no_like_corrections: true
+params:
+  h:
+    value: 0.6766
+  n_s:
+    value: 0.9665
+  ombh2:
+    value: 0.02237
+  omch2:
+    value: 0.12
+  sigma_8:
+    value: 0.8
+  tau:
+    value: 0.0544
+  logA:
+    value: 4.5e-09
+  omegam:
+    derived: true
+  sigma8:
+    derived: true
+sampler:
+  evaluate: null
+timing: true
+output: test_eval_saved
