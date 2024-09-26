@@ -1,0 +1,5 @@
+bitarray>=2.3.4
+requests
+cryptography
+cython
+numpy
