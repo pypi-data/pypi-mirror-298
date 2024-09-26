@@ -1,0 +1,14 @@
+sigmatcher/__init__.py,sha256=MpAT5hgNoHnTtG1XRD_GV_A7QrHVU6vJjGSw_8qMGA4,22
+sigmatcher/__main__.py,sha256=hdBK0O-cQQWt03fh3sTdhjc4YK9Z2fSewcSos7e77Vk,71
+sigmatcher/analysis.py,sha256=VPuohoBLnCqQ0FhJJfEvmfikOVWsIPeAenO9dsDD7e0,10348
+sigmatcher/cli.py,sha256=SEjRcVl4rQIsFvz9evtgY58aVFdY6r2uYoW0PB6c60Q,5052
+sigmatcher/definitions.py,sha256=cgD9dEmqGdeB8RUgAd4gRFXWjMb7PJvkTsiUl2-KCX4,8387
+sigmatcher/formats.py,sha256=J4iRe5p1yD7hFV2MCx_ov7M2G6Dv4mzPzAQ27Wr9v4w,2799
+sigmatcher/grep.py,sha256=6lND5lSFtxMu-1Y1cBorXgfz-9_YicAswQcWKxRy5ZU,720
+sigmatcher/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sigmatcher/results.py,sha256=3ofysb5PQtEP3ztLR6dMgtiejEZwy64xXLedTRbtOGA,2422
+sigmatcher-1.2.0.dist-info/entry_points.txt,sha256=CORSLvE8UgoKraplaogtPUCsA6V6Q3P5u8rKMih_xiA,50
+sigmatcher-1.2.0.dist-info/LICENSE,sha256=69C6EofZufw7wfn7yOvNmMpDPBgXiLP7GylTHcyA98g,1076
+sigmatcher-1.2.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+sigmatcher-1.2.0.dist-info/METADATA,sha256=xKH-Mvnf0zlv2JJ6XKNl4Z0BKxK3cOnIGiWC1WFJ_N8,7352
+sigmatcher-1.2.0.dist-info/RECORD,,
