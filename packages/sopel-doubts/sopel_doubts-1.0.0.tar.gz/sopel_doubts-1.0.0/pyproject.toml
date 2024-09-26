@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=63.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+platforms = ["Linux x86, x86-64"]
+
+[tool.setuptools.packages.find]
+include = ["sopel_doubts", "sopel_doubts.*"]
+namespaces = false
+
+[tool.setuptools.dynamic]
+readme = { file=["README.md", "NEWS"], content-type="text/markdown" }
+
+[project]
+name = "sopel-doubts"
+version = "1.0.0"
+description = "Press X to doubt."
+
+authors = [
+  { name="xnaas", email="me@xnaas.info" },
+]
+maintainers = [
+  { name="dgw", email="dgw@technobabbl.es" },
+]
+
+license = { text="The Unlicense" }
+dynamic = ["readme"]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Communications :: Chat :: Internet Relay Chat",
+]
+requires-python = "<4,>=3.8"
+dependencies = [
+    "sopel>=7.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dgw/sopel-doubts"
+"Bug Tracker" = "https://github.com/dgw/sopel-doubts/issues"
+
+[project.entry-points."sopel.plugins"]
+doubts = "sopel_doubts.plugin"

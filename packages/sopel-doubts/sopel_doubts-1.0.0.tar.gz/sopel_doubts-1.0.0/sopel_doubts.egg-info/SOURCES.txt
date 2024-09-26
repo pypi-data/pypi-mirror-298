@@ -1,0 +1,12 @@
+LICENSE
+NEWS
+README.md
+pyproject.toml
+sopel_doubts/__init__.py
+sopel_doubts/plugin.py
+sopel_doubts.egg-info/PKG-INFO
+sopel_doubts.egg-info/SOURCES.txt
+sopel_doubts.egg-info/dependency_links.txt
+sopel_doubts.egg-info/entry_points.txt
+sopel_doubts.egg-info/requires.txt
+sopel_doubts.egg-info/top_level.txt
