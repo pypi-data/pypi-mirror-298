@@ -1,0 +1,7 @@
+betty.project.generate module
+=============================
+
+.. automodule:: betty.project.generate
+   :members:
+   :undoc-members:
+   :show-inheritance:

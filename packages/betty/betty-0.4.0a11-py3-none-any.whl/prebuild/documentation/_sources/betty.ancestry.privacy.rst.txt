@@ -1,0 +1,7 @@
+betty.ancestry.privacy module
+=============================
+
+.. automodule:: betty.ancestry.privacy
+   :members:
+   :undoc-members:
+   :show-inheritance:
