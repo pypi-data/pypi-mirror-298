@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: secsgem_cyg
+Version: 1.0.1
+Summary: 
+Home-page: https://github.com/ChangYuan-Semiconductor-Equipment/secsgem_cyg.git
+Author: WeiLiu
+Author-email: wei.l@cyg.com
+Requires-Python: >=3.10,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: python-dateutil (>=2.9.0.post0,<3.0.0)
+Requires-Dist: serial (>=0.0.97,<0.0.98)
+Project-URL: Repository, https://github.com/ChangYuan-Semiconductor-Equipment/secsgem_cyg.git
+Description-Content-Type: text/markdown
+
+### CYG secsgem
