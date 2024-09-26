@@ -1,0 +1,43 @@
+site_name: NiceTrace
+site_description: tracing tool for Python
+site_author: Ada Böhm
+repo_url: https://github.com/spirali/nicetrace
+
+
+nav:
+  - Home: index.md
+  - Installation: install.md
+  - Tracing: tracing.md
+  - Storing & View: view.md
+  - Integrations: integrations.md
+  - Serialization: serialization.md
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - toc:
+      permalink: "#"
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - footnotes
+  - admonition
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+      enable_creation_date: true
+  - mike:
+      canonical_version: stable

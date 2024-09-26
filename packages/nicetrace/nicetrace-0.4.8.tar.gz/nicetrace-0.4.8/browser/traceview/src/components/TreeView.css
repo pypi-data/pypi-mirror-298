@@ -1,0 +1,52 @@
+.nt-tree {
+    overflow: auto;
+    height: calc(100vh - 60px);
+}
+
+.nt-tree li {
+    display: block;
+    position: relative;
+}
+
+.nt-tree ul {
+    padding: 0px;
+    padding-left: 0em;
+}
+
+.nt-expand-icon {
+    width: 20px;
+}
+
+.nt-no-expand {
+    width: 20px;
+    display: inline-block;
+}
+
+.nt-tree-children {
+    margin-left: 1em;
+}
+
+.nt-tree-row {
+    cursor: pointer;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    padding-left: 1em;
+    font-size: 12px;
+}
+
+.nt-tree-selected {
+    background-color: #dddddd;
+}
+
+.nt-node-icon {
+    margin-right: 0.3em;
+}
+
+.nt-node-duration {
+    font-size: 85%;
+    color: #666;
+}
+
+.nt-group {
+    font-style: italic;
+}

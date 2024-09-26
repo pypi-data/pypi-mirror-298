@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/gh/spirali/nicetrace@22b384eccbf28d3df7ffe008efeb871c066d3811/src/nicetrace/html/static/icon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trace view</title>
+  <script>
+    function start() {
+       var node = {'name': 'Root', 'uid': '4lxOlE3w4x', 'children': [{'name': 'Child1', 'uid': 'qzyUIgq4I9', 'entries': [{'kind': 'input', 'value': 1, 'name': 'x'}], 'start_time': '2024-07-08T12:05:23.692644', 'end_time': '2024-07-08T12:05:23.692694'}], 'start_time': '2024-07-08T12:05:23.692621', 'end_time': '2024-07-08T12:05:23.692699', 'version': '4'};
+       window.mountTraceView(document.getElementById("root"), node)
+    }
+  </script>
+  <script type="module" crossorigin src="https://cdn.jsdelivr.net/gh/spirali/nicetrace@22b384eccbf28d3df7ffe008efeb871c066d3811/src/nicetrace/html/static//home/spirali/projects/nicetrace/src/nicetrace/html/static/index-B5tKe3YY.js"></script>
+  <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/spirali/nicetrace@22b384eccbf28d3df7ffe008efeb871c066d3811/src/nicetrace/html/static//home/spirali/projects/nicetrace/src/nicetrace/html/static/index-UldCyfPa.css">
+</head>
+
+<body onload="start()">
+  <div id="root"></div>
+</body>
+
+</html>

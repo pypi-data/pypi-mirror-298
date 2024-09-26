@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/gh/spirali/nicetrace@3f6c292e7e0b483c33e2a01e8be70c5f43f0d4a8/src/nicetrace/html/static/icon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trace view</title>
+  <script>
+    function start() {
+       var node = {"name": "root", "uid": "mzpS7gIDSh", "children": [{"name": "child-1", "uid": "2a2WGCiKZr", "children": [{"name": "child-1-1", "uid": "PN7kZruCYR", "start_time": "2024-07-08T16:28:44.391478", "end_time": "2024-07-08T16:28:44.391483"}, {"name": "child-1-2", "uid": "Fx2VMzwOwB", "start_time": "2024-07-08T16:28:44.391494", "end_time": "2024-07-08T16:28:44.391498"}], "start_time": "2024-07-08T16:28:44.391464", "end_time": "2024-07-08T16:28:44.391501"}, {"name": "child-2", "uid": "I3vBG4mAAM", "start_time": "2024-07-08T16:28:44.391512", "end_time": "2024-07-08T16:28:44.391516"}], "start_time": "2024-07-08T16:28:44.391449", "end_time": "2024-07-08T16:28:44.391519", "version": "4"};
+       window.mountTraceView(document.getElementById("root"), node)
+    }
+  </script>
+  <script type="module" crossorigin src="https://cdn.jsdelivr.net/gh/spirali/nicetrace@3f6c292e7e0b483c33e2a01e8be70c5f43f0d4a8/src/nicetrace/html/static/index-B5tKe3YY.js"></script>
+  <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/spirali/nicetrace@3f6c292e7e0b483c33e2a01e8be70c5f43f0d4a8/src/nicetrace/html/static/index-UldCyfPa.css">
+</head>
+
+<body onload="start()">
+  <div id="root"></div>
+</body>
+
+</html>

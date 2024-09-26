@@ -1,0 +1,5 @@
+
+[server]
+flask-cors>=5.0.0
+flask>=3.0.3
+waitress>=3.0.0

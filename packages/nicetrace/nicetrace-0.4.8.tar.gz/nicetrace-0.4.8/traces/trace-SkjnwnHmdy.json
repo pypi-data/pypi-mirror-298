@@ -1,0 +1,81 @@
+{
+    "name": "Experiment",
+    "uid": "SkjnwnHmdy",
+    "children": [
+        {
+            "name": "Query claude-3-5-sonnet-20240620",
+            "uid": "yVv2H6umsv",
+            "kind": "query",
+            "entries": [
+                {
+                    "kind": "input",
+                    "value": "Human: Name two colors xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxzzzzzzzzzzzxzxzxzxzxzxzxzxzxzxzxzxzxzxxxxxxzxzxzxzxzxzsadasdsadasdasdsadasdwqeqwe234324234234213424324dafsdsdsfjsldfjsalfjfjjjjjjjjjjjjjjjjjjalsfkjaslfjsl;fj23482304823048",
+                    "name": "prompt"
+                },
+                {
+                    "kind": "input",
+                    "value": {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                            "langchain",
+                            "chat_models",
+                            "anthropic",
+                            "ChatAnthropic"
+                        ],
+                        "kwargs": {
+                            "model": "claude-3-5-sonnet-20240620",
+                            "max_tokens": 1024,
+                            "max_retries": 2,
+                            "anthropic_api_url": "https://api.anthropic.com",
+                            "anthropic_api_key": {
+                                "lc": 1,
+                                "type": "secret",
+                                "id": [
+                                    "ANTHROPIC_API_KEY"
+                                ]
+                            },
+                            "stream_usage": true
+                        },
+                        "name": "ChatAnthropic"
+                    },
+                    "name": "serialized"
+                },
+                {
+                    "kind": "input",
+                    "value": {
+                        "ls_provider": "anthropic",
+                        "ls_model_name": "claude-3-5-sonnet-20240620",
+                        "ls_model_type": "chat",
+                        "ls_temperature": null,
+                        "ls_max_tokens": 1024
+                    },
+                    "name": "metadata"
+                },
+                {
+                    "kind": "output",
+                    "value": "Here are two colors:\n\n1. Blue\n2. Red"
+                }
+            ],
+            "start_time": "2024-09-24T17:50:25.063578",
+            "end_time": "2024-09-24T17:51:02.809645",
+            "meta": {
+                "icon": "query",
+                "counters": {
+                    "input_tokens": 10,
+                    "output_tokens": 16
+                },
+                "_type": "Metadata"
+            }
+        },
+        {
+            "name": "Subnode 0",
+            "uid": "tuPORkZ3wE",
+            "start_time": "2024-09-24T17:51:02.810032",
+            "end_time": "2024-09-24T17:51:02.810056"
+        }
+    ],
+    "start_time": "2024-09-24T17:50:24.974224",
+    "end_time": "2024-09-24T17:51:02.810064",
+    "version": "4"
+}
