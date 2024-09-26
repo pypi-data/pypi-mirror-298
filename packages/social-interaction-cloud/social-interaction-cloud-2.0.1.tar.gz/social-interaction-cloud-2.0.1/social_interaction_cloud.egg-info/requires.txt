@@ -1,0 +1,11 @@
+numpy
+redis
+Pillow
+six
+
+[local]
+opencv-python
+pyaudio
+pyspacemouse
+paramiko
+scp
