@@ -1,0 +1,15 @@
+janela/__init__.py,sha256=p73TYKHiIzzxTR67qLNn1HEEb6W_qvPgUPepdtE_J74,898
+janela/_impl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+janela/_impl/wmctrl_xdotool_xlib.py,sha256=WCqCuWCCZ-XefxJ8_Srs90Sfy2X0sA5d2O3FkhazFUs,13964
+janela/interfaces/__init__.py,sha256=N5dkcbyFbNSKMaFWjsC9SQhOWfwC-6My5qEGe2UcGEQ,122
+janela/interfaces/interface.py,sha256=OYOLOXnCxhs5hV5BHf5pq58aquhOGqPFgvVLypH_7TA,1906
+janela/interfaces/models.py,sha256=EHhJrch5_hBYW44aaNhShwHdluAte8LXTX-NtonbW2k,1921
+janela/logger.py,sha256=u5SRJfUCKEuR8Xsbk7dKI_wP3s20eIGVImJolPBeGA4,93
+janela/playground/__init__.py,sha256=tmBR-RjmximCVGuNhOn1pD1hIhQfp8anslarDI5rSA8,48
+janela/playground/mosaic.py,sha256=avw918P-WJQh97nCPAFIh790JDYA9hUm-ZbyRceGkYA,4074
+janela/util/__init__.py,sha256=yW432pSDD3jLfwOL7fgxNAZlb7l_z5nnymEmAx6b7ls,56
+janela/util/cmd.py,sha256=4l7a77by6NZ4DdeqzTZ-hmyIuEtE_OBvdTWZYwUwOzI,435
+janela-0.0.4.dist-info/LICENSE,sha256=baFJ0I1qqV2NQOwI18x5q9OKGfTSVZ-MgLudQR6yzWg,1071
+janela-0.0.4.dist-info/METADATA,sha256=OR8aWVs9k61aYIYEecSup-avCXEhZ-ZhmJSK8kxDpbo,8698
+janela-0.0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+janela-0.0.4.dist-info/RECORD,,
