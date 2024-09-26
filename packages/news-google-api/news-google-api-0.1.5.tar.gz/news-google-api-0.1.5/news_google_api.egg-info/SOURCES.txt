@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+googlenews/__init__.py
+googlenews/cli.py
+googlenews/googlenews.py
+news_google_api.egg-info/PKG-INFO
+news_google_api.egg-info/SOURCES.txt
+news_google_api.egg-info/dependency_links.txt
+news_google_api.egg-info/entry_points.txt
+news_google_api.egg-info/requires.txt
+news_google_api.egg-info/top_level.txt
