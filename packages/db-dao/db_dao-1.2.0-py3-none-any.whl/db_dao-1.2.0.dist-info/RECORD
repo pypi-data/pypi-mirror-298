@@ -1,0 +1,16 @@
+db_dao/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+db_dao/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+db_dao/data/DAO/GenericDAO.py,sha256=GKwAwiYCB6out6QhMGviXySJsRUZ2YJ5uFVOjYrdtqA,601
+db_dao/data/DAO/GenericDAOImp.py,sha256=UPDGVb_vnJguMy3PXNlQ-ZaE5he7nOz7OSpIWAkZJ_s,3829
+db_dao/data/DAO/__init__.py,sha256=CNTOJh0O0tMXNjm6TYy27vb8YCeIO4cGsMDcnYcLs8o,71
+db_dao/data/conn/__init__.py,sha256=dyop2l6E2YYx0Ewj4mfdTZlwjafCMChEgWRDXJ1nlTw,204
+db_dao/data/conn/adapters/DatabaseConnection.py,sha256=K-JZcFEaqKcDVtrn0rrJK9YDyyHNVtZUTbOKwRI-EbU,336
+db_dao/data/conn/adapters/DatabaseCursor.py,sha256=Jw_cP3m-DTBunYjCyeb1KfXWloD-ZMATiY7Ogz619EM,493
+db_dao/data/conn/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+db_dao/data/conn/implement/Psycopg2Connection.py,sha256=KkxGT1sg_kpoFrwbdxpSqZmBf92WmEQHpSMqnKi_bpk,1141
+db_dao/data/conn/implement/Psycopg2Cursor.py,sha256=kwBXI35-7CAfT62HCHav-qLhtFcg0IRn-5DMr7eWs-Q,794
+db_dao/data/conn/implement/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+db_dao-1.2.0.dist-info/METADATA,sha256=PzYIn3zPiEEdWvKeQiiJdI2Fz_1CXbVsqqArMeeyD1M,1173
+db_dao-1.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+db_dao-1.2.0.dist-info/top_level.txt,sha256=ouhCi1-fezK4E3WlaZHm8PgImTgCZ5zjsKzmEMlJ4PA,7
+db_dao-1.2.0.dist-info/RECORD,,
