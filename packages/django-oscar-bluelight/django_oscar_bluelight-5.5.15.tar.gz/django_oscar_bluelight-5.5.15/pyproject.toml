@@ -1,0 +1,40 @@
+[build-system]
+requires = [ "poetry-core>=1.9.0",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "django-oscar-bluelight"
+version = "5.5.15"
+description = "Bluelight Specials - Enhancements to the offer and vouchers features for Django Oscar."
+authors = ["thelab <thelabdev@thelab.co>"]
+readme = "README.md"
+homepage = "https://gitlab.com/thelabnyc/django-oscar-bluelight"
+repository = "https://gitlab.com/thelabnyc/django-oscar-bluelight"
+license = "ISC"
+
+[[tool.poetry.packages]]
+include = "oscarbluelight"
+from = "src"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+celery = "^5.4.0"
+Django = "^4.2.16"
+django-oscar = "3.2.5"
+thelabdb = "^0.1.2"
+djangorestframework = "^3.15.2"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.6.1"
+django-debug-toolbar = "^4.4.6"
+django-redis = "^5.4.0"
+flake8 = "^7.1.1"
+hiredis = "^3.0.0"
+psycopg2-binary = "^2.9.9"
+redis = "^5.0.8"
+sorl-thumbnail = "^12.11.0"
+tox = "^4.20.0"
+unittest-xml-reporting = "^3.2.0"
+
+# Fix currently unpublished Python 3.12 compat
+django-haystack = { git = "https://github.com/django-haystack/django-haystack.git", branch = "master" }
