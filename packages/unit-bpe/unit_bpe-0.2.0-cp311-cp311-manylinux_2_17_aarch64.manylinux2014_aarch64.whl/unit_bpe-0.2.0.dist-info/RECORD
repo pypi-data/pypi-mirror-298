@@ -1,0 +1,6 @@
+unit_bpe-0.2.0.dist-info/METADATA,sha256=IU3E3y3aGJ5n-HfAd2uzRC4XIksJBFBjafbrzG8165A,2733
+unit_bpe-0.2.0.dist-info/WHEEL,sha256=NH17x4ayrFtIWdO9sSXUCsh8sin4piK6oUlP45410co,131
+unit_bpe-0.2.0.dist-info/licenses/LICENSE,sha256=NYZVKVh-1eNmDrXRQ4tJKegGo5ytzFuvM9awIWeCYT8,558
+unit_bpe/__init__.py,sha256=D7wxn6JVliZXryCM6UcjyIKZuc8ZkrkdE-tYIP89ZXo,115
+unit_bpe/unit_bpe.cpython-311-aarch64-linux-gnu.so,sha256=NTr9Fns5ua8PwCQDVBwgtVFhxdb5R4kV-p8n3sv-nfc,829272
+unit_bpe-0.2.0.dist-info/RECORD,,
