@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyTubeStudio"
+version = "0.1.0"
+authors = [
+  { name="Jaarfi"},
+]
+description = "A library to interact with the VTubeStudio API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "pydantic>=2.7",
+    "websockets>=12.0",
+    "platformdirs",
+    "aiofiles"
+]
+
+[project.urls]
+Homepage = "https://github.com/jaarfi/PyTubeStudio"
+Repository = "https://github.com/jaarfi/PyTubeStudio"
+Issues = "https://github.com/jaarfi/PyTubeStudio/issues"
+Stream = "https://www.twitch.tv/jaarfi"
