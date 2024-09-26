@@ -1,0 +1,10 @@
+qml_essentials/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qml_essentials/ansaetze.py,sha256=KPi0jUR8WIiyZ47vb1MvHEv9RdxwJVQpAZsxLGrbvPc,15114
+qml_essentials/coefficients.py,sha256=s8vvvL1X2g_0h_TPblqOSiY3TvasmDueFwvDuoWVNSw,1209
+qml_essentials/entanglement.py,sha256=-fj43QW7lfctM0DIkYG59SQzzIFB_aa2Dygqu_C3kWE,3840
+qml_essentials/expressibility.py,sha256=0P49punBy8eGq74Z3j_mxTLO62bOfQFbA8pVuhaS_ck,8605
+qml_essentials/model.py,sha256=B9xoh6oOMxM4mff5XLkqPl-5xHttep-8QaiJ-Xp-Rsc,20225
+qml_essentials-0.1.13.dist-info/LICENSE,sha256=GYdULImK3JDmk-8LKrdmcELALedYR3Vhb9J-lVxWJuU,1276
+qml_essentials-0.1.13.dist-info/METADATA,sha256=Zhpbkbz4wOtycz7HpgD2aQNBy3sVSqqDydELmr6iZto,1719
+qml_essentials-0.1.13.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+qml_essentials-0.1.13.dist-info/RECORD,,
