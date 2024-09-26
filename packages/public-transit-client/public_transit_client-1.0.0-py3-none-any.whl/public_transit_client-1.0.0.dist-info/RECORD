@@ -1,0 +1,8 @@
+public_transit_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+public_transit_client/client.py,sha256=Vh-4qrVUTsWX6yW4X-hR4J1Qy8YwcxK_iXLHWFmFHsg,11313
+public_transit_client/model.py,sha256=9ufW63KgTkeCF7yio6krS94gNCH6eCzo7WGCMjJmttI,19427
+public_transit_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+public_transit_client-1.0.0.dist-info/LICENSE,sha256=th5aW9ebn1HPmewxLuqozHwU-nokHzgnyBdj1cb4twc,1065
+public_transit_client-1.0.0.dist-info/METADATA,sha256=FtxVwsI6N7sh7Kw9jaoUhMJUxtqNiPmUMXvQqHfLpCA,2535
+public_transit_client-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+public_transit_client-1.0.0.dist-info/RECORD,,
