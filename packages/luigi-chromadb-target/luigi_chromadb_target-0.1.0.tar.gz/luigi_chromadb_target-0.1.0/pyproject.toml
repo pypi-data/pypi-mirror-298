@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "luigi-chromadb-target"
+version = "0.1.0"
+description = "A Luigi Target implementation using ChromaDB."
+readme = "README.md"
+authors = [
+    { name = "Pawel Gasiorowski", email = "p.gasiorowski@axent.pl" }
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.6"
+keywords = ["luigi", "chromadb", "target"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "luigi",
+    "chromadb",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/axent-pl/luigi-chromadb-target"
+"Bug Tracker" = "https://github.com/axent-pl/luigi-chromadb-target/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
