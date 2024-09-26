@@ -1,0 +1,15 @@
+pillow
+numpy
+matplotlib
+scipy
+scikit-learn
+imagehash
+urllib3
+requests
+pandas
+
+[:sys_platform == "linux"]
+tflite-runtime
+
+[:sys_platform == "win32"]
+msvc-runtime
