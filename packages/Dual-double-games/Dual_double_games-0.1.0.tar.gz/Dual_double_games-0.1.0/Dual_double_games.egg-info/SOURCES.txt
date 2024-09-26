@@ -1,0 +1,11 @@
+README.md
+setup.py
+Dual_double_games.egg-info/PKG-INFO
+Dual_double_games.egg-info/SOURCES.txt
+Dual_double_games.egg-info/dependency_links.txt
+Dual_double_games.egg-info/requires.txt
+Dual_double_games.egg-info/top_level.txt
+games/__init__.py
+games/hangman.py
+games/rock_paper_scissors.py
+games/words.py
