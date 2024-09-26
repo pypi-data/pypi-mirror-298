@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: zyjared-color
+Version: 0.5.6
+Summary: Personal font color utility library for Python
+Author: zyjared
+Author-email: zyjared@outlook.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: documentation, https://github.com/zyjared/zyjared-color#readme
+Project-URL: homepage, https://github.com/zyjared/zyjared-color
+Project-URL: repository, https://github.com/zyjared/zyjared-color
+Description-Content-Type: text/markdown
+
+# zyjared-color
+
+## 安装
+
+```sh
+pip install zyjared-color
+```
+
+## 使用
+
+```py
+from zyjared_color import color, Color
+
+content = color('Hello World!').red() + ' -+-+-+- test'
+
+text = f'{color("Hello World!").blue():<15} -+-+-+- test'
+content = color(text)
+```
+
+### 拓展
+
+```py
+from zyjared_color import zprint
+
+zprint([
+    'Hello',
+    'World!',
+])
+
+zprint({
+    'Hello': 'World!'
+    'Hello': ['World!']
+    'Hello': {
+        'World!': 'Hello World!'
+    }
+})
+```
+
+## HTML / CSS
+
+```python
+from zyjared_color.html import ColorHtml, StaticColorHtml
+from zyjared_color.html import blue, red, bold, italic, underline, through
+
+text = ColorHtml('Hello World!').red().bold()
+print(text)
+
+# custom styles
+text = ColorHtml("Hello World!", {"opacity": 0.5, "font-weight": "bold"})
+print(text)
+```
+
+**example:** Display `ColorHtml` in Jupyter Notebook
+
+```python
+from zyjared_color.html import ColorHtml as Color, StaticColorHtml as StaticColor
+from zyjared_color.html import blue, red, bold, italic, underline, through
+from IPython.display import display, HTML
+
+text = Color('Hello World!').red().bold()
+
+# f'{text}' or str(text)
+display(HTML(f'{text}'))
+```
+
