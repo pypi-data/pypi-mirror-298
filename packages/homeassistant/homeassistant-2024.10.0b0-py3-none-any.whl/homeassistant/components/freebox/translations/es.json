@@ -1,0 +1,32 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositivo ya est\u00e1 configurado"
+        },
+        "error": {
+            "cannot_connect": "No se pudo conectar",
+            "register_failed": "No se pudo registrar, por favor, int\u00e9ntalo de nuevo",
+            "unknown": "Error inesperado"
+        },
+        "step": {
+            "link": {
+                "title": "Vincular router Freebox"
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "port": "Puerto"
+                },
+                "data_description": {
+                    "host": "El nombre de host o la direcci\u00f3n IP de tu router Freebox."
+                }
+            }
+        }
+    },
+    "services": {
+        "reboot": {
+            "description": "Reinicia el Freebox.",
+            "name": "Reiniciar"
+        }
+    }
+}

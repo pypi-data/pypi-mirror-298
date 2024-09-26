@@ -1,0 +1,12 @@
+{
+    "config": {
+        "error": {
+            "register_failed": "No se pudo registrar, intente de nuevo"
+        },
+        "step": {
+            "link": {
+                "title": "Enlazar enrutador Freebox"
+            }
+        }
+    }
+}
