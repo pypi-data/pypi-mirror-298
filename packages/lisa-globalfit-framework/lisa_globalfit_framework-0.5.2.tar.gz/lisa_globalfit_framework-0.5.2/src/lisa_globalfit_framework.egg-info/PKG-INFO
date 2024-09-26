@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: lisa-globalfit-framework
+Version: 0.5.2
+Summary: LISA GlobalFit Framework
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nats-py
+Requires-Dist: aiobotocore
+Requires-Dist: types-aiobotocore[s3]
+Requires-Dist: aiosqlite
+Requires-Dist: numpy<2.0.0
+Requires-Dist: scipy
+Requires-Dist: typing_extensions
+Requires-Dist: corner
+Requires-Dist: emcee
+Requires-Dist: h5py!=3.11.0
+Requires-Dist: matplotlib
+Requires-Dist: aiohttp
+Requires-Dist: jinja2
+Provides-Extra: dev
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: aiobotocore[awscli]; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+
+# LISA GlobalFit Framework
+
+## Purpose
+
+This is a prototype implementation of the LISA GlobalFit Framework.
+
+* [Development guide](docs/dev.md)
+* [Architecture](docs/architecture.md)
