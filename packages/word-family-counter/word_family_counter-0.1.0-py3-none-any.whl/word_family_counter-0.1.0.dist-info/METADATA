@@ -1,0 +1,107 @@
+Metadata-Version: 2.3
+Name: word_family_counter
+Version: 0.1.0
+Summary: A script for counting word families in a text file.
+Project-URL: Homepage, https://github.com/BlueBirdBack/word_family_counter
+Project-URL: Issues, https://github.com/BlueBirdBack/word_family_counter/issues
+Project-URL: Documentation, https://github.com/BlueBirdBack/word_family_counter#readme
+Project-URL: Repository, https://github.com/BlueBirdBack/word_family_counter.git
+Author-email: BlueBirdBack <avery@bluebirdback.com>
+License: MIT License
+License-File: LICENSE
+Keywords: linguistics,nlp,text analysis,word families
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.8
+Requires-Dist: contractions<1.0.0,>=0.1.0
+Requires-Dist: psutil<6.0.0,>=5.8.0
+Requires-Dist: spacy<4.0.0,>=3.0.0
+Description-Content-Type: text/markdown
+
+# word_family_counter
+
+A Python script for counting word families in a text file using advanced morphological analysis with spaCy.
+
+## Features
+
+- Processes text files to count word families
+- Uses spaCy for advanced linguistic analysis and lemmatization
+- Handles contractions, compound words, and various text preprocessing tasks
+- Supports multiple languages (depending on available spaCy models)
+- Provides detailed output with word family frequencies
+
+## Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/BlueBirdBack/word_family_counter.git
+   cd word_family_counter
+   ```
+
+2. Create a virtual environment (optional but recommended):
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```
+
+3. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. Download the spaCy language model:
+   ```
+   python -m spacy download en_core_web_sm
+   ```
+
+## Usage
+
+Run the script with a text file as an argument:
+
+```
+python src/word_family_counter/main.py path/to/your/text_file.txt
+```
+
+Optional arguments:
+- `--verbose`: Increase output verbosity for debugging purposes
+- `--language`: Specify the spaCy model to use (default: en_core_web_sm)
+
+Example:
+```
+python src/word_family_counter/main.py sample.txt --verbose --language en_core_web_md
+```
+
+## Output
+
+The script will display:
+1. Total number of words in the text
+2. Total number of unique word families
+3. A list of word families sorted by frequency (descending) and then alphabetically
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Contact
+
+BlueBirdBack - avery@bluebirdback.com
+
+Project Link: [https://github.com/BlueBirdBack/word_family_counter](https://github.com/BlueBirdBack/word_family_counter)
