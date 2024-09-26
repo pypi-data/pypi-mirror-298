@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: xtquant
+Version: 240920.1.1
+Summary: xtquant_240920_a
+Home-page: http://dict.thinktrader.net/?id=7zqjlm
+Author: Willows
+Author-email: 972210116@qq.com
+License: GNU GPLv3 
+Requires-Python: >=3.6, <3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## 修复
+修复xtdata.subscribe_quote()返回订阅号为None的问题
