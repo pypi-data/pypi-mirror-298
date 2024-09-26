@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: opengradient
+Version: 0.2.0
+Summary: A Python SDK for OpenGradient inference services
+Author-email: OpenGradient <oliver@opengradient.ai>
+License: MIT License
+        
+        Copyright (c) 2024 OpenGradient
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://opengradient.ai
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: web3
+Requires-Dist: pyarrow
+Requires-Dist: firebase-rest-api
+Requires-Dist: fastparquet
+Requires-Dist: pathlib
+
+# OpenGradient Python SDK
+
+Python SDK for OpenGradient inference services.
+
+## Installation
+```
+pip install opengradient
+```
+
+## Quick Start
+```
+import opengradient as og
+og.init(private_key="x", rpc_url="y", contract_address="z")
+```
+
+### Sign in with Email
+```
+og.sign_in_with_email_and_password(email="test@test.com", password="Test-123")
+```
+
+### Create a Model
+```
+og.create_model("test-network-model-5", "testing sdk")
+```
+
+### Create a Version of a Model
+```
+og.create_version(model_id=11, notes="test notes")
+```
+
+### Upload Files to a Model
+```
+og.upload(model_path, model_id, version=2)
+```
+
+### Run Inference
+```
+inference_mode = og.InferenceMode.VANILLA
+inference_cid = og.infer(model_cid, model_inputs, inference_mode)
+```
+
+```
+og.infer(model_id, inference_mode, model_input)
+```
