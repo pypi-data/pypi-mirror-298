@@ -1,0 +1,16 @@
+eltako14bus==0.0.63
+requests==2.31.0
+enocean==0.60.1
+pyserial
+pyserial-asyncio
+aiocoap
+tkScrolledFrame==1.0.4
+esp2_gateway_adapter==0.2.9
+zeroconf==0.132.2
+pyyaml
+termcolor
+strenum
+pillow
+numpy
+tkinterhtml
+xmltodict
