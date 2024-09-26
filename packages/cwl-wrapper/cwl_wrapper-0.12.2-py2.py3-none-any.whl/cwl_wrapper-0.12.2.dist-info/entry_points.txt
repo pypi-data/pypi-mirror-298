@@ -1,0 +1,2 @@
+[console_scripts]
+cwl-wrapper = cwl_wrapper.app:main
