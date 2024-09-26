@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "LLM00"
+version = "0.0.2"
+authors = [
+    { name="bib_inf", email="contact.bibinf@gmail.com" }
+]
+description = "An interface that allows you to use LLMs in an ultra-simple way"
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "ezpip",
+    "sout>=1.2.1",
+    "relpath",
+    "fies>=1.4.0"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+	"License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "Operating System :: OS Independent",
+]
+license = { file = "LICENSE" }
