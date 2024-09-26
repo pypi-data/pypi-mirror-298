@@ -1,0 +1,9 @@
+quarticequation/__init__.py,sha256=TradDMDwzHI6iwcy1pbHMeIM7eLc9okzfOCYDVVJG94,233
+quarticequation/__main__.py,sha256=eBFIBOGIzIVlXughFkE0bs0BSM26MlUlZj4Tf3O7qB8,189
+quarticequation/quarticcmd.py,sha256=F_n08shG1PJVwL5c1R68YNx_6PXJOCISgU8TsfDfd5Y,5853
+quarticequation/quarticequation.py,sha256=s6dsEWv3fm33I93yXkJw-6qVgWB1bJOYcDBxzgke6ok,20447
+quarticequation/version.py,sha256=7xX33Md-HHZslZtdCzl82EQJAz7gzvm5kyF2Ab5Ve0o,612
+quarticequation-0.0.1.dist-info/METADATA,sha256=sby6GCWQ9fyrv7UPo44lxJRvuLO4_KsXf2RfZUH8rkY,4059
+quarticequation-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+quarticequation-0.0.1.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+quarticequation-0.0.1.dist-info/RECORD,,
