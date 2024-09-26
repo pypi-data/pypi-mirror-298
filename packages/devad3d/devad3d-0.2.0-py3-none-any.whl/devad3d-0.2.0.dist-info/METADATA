@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: devad3d
+Version: 0.2.0
+Summary: a greeting messages deva.
+Author: DevaDharshini-ihub
+Author-email: deva.d.ihub@snsgroups.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Greeting Messages by Deva
+
+A Python package that provides different greeting messages from two different modules. You can import specific greetings and use them in your applications.
+
+## Installation
+
+You can install this package via pip:
+
+```bash
+pip install your-package-name
