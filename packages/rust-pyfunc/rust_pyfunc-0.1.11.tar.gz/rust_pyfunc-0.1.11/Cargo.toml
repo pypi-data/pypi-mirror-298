@@ -1,0 +1,16 @@
+[package]
+name = "rust_pyfunc"
+version = "0.1.11"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "rust_pyfunc"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.22.0"
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
