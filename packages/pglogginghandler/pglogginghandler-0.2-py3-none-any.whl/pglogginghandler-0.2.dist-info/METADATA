@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: pglogginghandler
+Version: 0.2
+Summary: Simple logging handler to enter logs directly to postgres databases
+Project-URL: Homepage, https://github.com/moates695/pglogging
+Author-email: Marcus Oates <moates695@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Postgres Logging Handler
+
+Simple logging handler to enter logs directly to postgres databases
