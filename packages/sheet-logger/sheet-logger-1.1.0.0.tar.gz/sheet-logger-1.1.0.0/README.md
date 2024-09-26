@@ -1,0 +1,167 @@
+# Sheet Logger
+
+`SheetLogger` is a simple utility tool that sends log prints to one or multiple Google Sheets. Developed for Locaria’s IMC team to centralize logging format, it is intended to be added to each project that utilizes or requires any kind of error or execution logging. The tool supports multiple sheets and multiple tabs, automatically adds timestamps, allows configurable batching, and includes API rate limit protection.  
+For any questions, please contact [Thorsten Brückner](mailto:thorsten.brueckner@locaria.com) or the [IMC team](mailto:data_team@locaria.com).
+
+## Installation
+
+You can install the package directly from PyPI:
+
+```bash
+pip install sheet-logger
+```
+
+## Example Output
+2024-09-18 17:54:37 - This message will be written to Logs sheet.  
+2024-09-18 17:54:38 - This message will be written to Logs sheet2.  
+2024-09-18 17:54:39 - This message will be written to Logs sheet3.  
+
+## Usage
+
+### Initiation
+To initiate the logger, import it, define scope, sheets, and tabs and then instantiate the `SheetLogger`.
+```python
+from sheet_logger import SheetLogger
+
+if __name__ == "__main__":
+
+    SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
+    LOGSHEET_ID = "123123123123123123123123123"
+
+    ERROR_LOGS = "Logs"
+    EXECUTION_LOGS = "Execution_logs"
+    OTHER_LOGS = "test"
+
+    ## Instantiate the logger
+    sheet_logger = SheetLogger(
+        LOGSHEET_ID, 
+        SCOPES, 
+        token_full_path="/your-Path/token.json"
+        )
+```
+
+### Execution prints / text prints
+
+`write_prints_to_sheet()` method is designed for regular text prints. 
+
+
+```python
+sheet_logger.write_prints_to_sheet(ERROR_LOGS, "Example Message 1.")
+sheet_logger.write_prints_to_sheet(ERROR_LOGS, "Example Message 2.")
+sheet_logger.write_prints_to_sheet(ERROR_LOGS, "Example Message 3.")
+```
+
+### Error Logging
+To utilize the `SheetLogger`, `try/except` blocks should be used to capture and log respective errors.  
+The `write_errors_to_sheet()`method is designed to print verbose error logs, including tracebacks.
+Here's an example:
+
+```python
+try:
+    # Code that may raise an error
+    result = 10 / 0  # This will raise a ZeroDivisionError
+except Exception as e:
+    # Log the error message
+    sheet_logger.write_errors_to_sheet("tab", f"Error occurred: {str(e)}")
+```
+
+### Features
+
+- **Timestamps**: Automatically adds timestamps (`"YYYY-MM-DD HH:MM:SS"`) to each log message.
+- **Batching**: Accumulates log entries and writes them in batches to reduce API calls. You can specify the batch size (default is 5).
+- **API Rate Limit Protection**: Protects against exceeding Google's limit of 60 requests per user per minute by automatically pausing for 60 seconds if necessary.
+- **Multiple Tabs**: Supports writing logs to multiple tabs in the same Google Spreadsheet.
+- **Multiple Instances**: If multiple spreadsheets need to be used, you can instantiate separate `SheetLogger` instances for each.
+
+### Initialization Arguments
+
+When initializing the `SheetLogger`, you have currently have one option for specifying the Google OAuth token:
+
+1. **Full Token Path**: Provide the full path to the token file by using the `token_file_name` argument.
+   
+Example initialization with full token path:
+
+```python
+sheet_logger = SheetLogger(
+    spreadsheet_id=LOGSHEET_ID, 
+    scopes=SCOPES, 
+    token_file_name="/full/path/to/token.json"
+)
+```
+
+### API Rate Limit Protection
+
+Google Sheets has a rate limit of 60 API requests per minute. `SheetLogger` monitors and enforces this limit by tracking the number of API write calls. If the limit is reached, it automatically pauses for 60 seconds before resuming.
+
+### Batching
+
+You can configure the batch size when initializing the logger. Instead of making individual API calls for each log entry, logs are collected and sent in batches, reducing the number of API requests. Once the batch size is reached, the logs are flushed to the sheet.
+
+Example with a batch size of 10:
+
+```python
+sheet_logger = SheetLogger(
+    spreadsheet_id=LOGSHEET_ID, 
+    scopes=SCOPES, 
+    batch_size=10
+)
+```
+
+### Multiple Tabs
+
+You can log messages to different tabs by passing the tab name to the `write_prints_to_sheet()` or `write_errors_to_sheet()` method. Each log entry is automatically timestamped and written to the specified tab.
+
+### Multiple Instances for Multiple Spreadsheets
+
+If you need to log to multiple Google Spreadsheets, you can create separate instances of the `SheetLogger` for each spreadsheet.
+
+Example:
+
+```python
+logger1 = SheetLogger(LOGSHEET_ID_1, SCOPES)
+logger2 = SheetLogger(LOGSHEET_ID_2, SCOPES)
+
+logger1.write_prints_to_sheet("Logs", "Message for Spreadsheet 1")
+logger2.write_prints_to_sheet("Logs", "Message for Spreadsheet 2")
+```
+
+### Server Mode
+
+If running on a server, you may want to disable all local print() statements to prevent console output. You can enable or disable server mode by passing True or False to the run_in_server_mode method.
+
+```python
+sheet_logger.run_in_server_mode(True)  # Disable print statements
+sheet_logger.run_in_server_mode(False)  # Enable print statements
+```
+
+### Release remaining logs
+To ensure all logs are written to the Google Sheet when your script finishes, even if the batch size hasn’t been reached, use the following method: 
+
+```python
+## your script ##
+
+sheet_logger.flush_all() ## release the remaining log prints, in the very end of the script.
+```
+
+### Publishing and Updating the Package
+
+To publish the package or update it with a new version, follow these steps:
+
+1. **Delete previous builds**:
+```bash
+rm -rf dist/ build/
+```
+
+2. **Build the package**:
+
+```bash
+python setup.py sdist bdist_wheel
+```
+
+3. **Upload to PyPI**:
+
+```bash
+twine upload dist/*
+```
+
+This will upload the package to PyPI, making it available for installation via `pip install sheet-logger`.
