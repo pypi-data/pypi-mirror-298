@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyndas/_init_.py
+pyndas/metrics.py
+pyndas/mongo.py
+pyndas/transform.py
+pyndas.egg-info/PKG-INFO
+pyndas.egg-info/SOURCES.txt
+pyndas.egg-info/dependency_links.txt
+pyndas.egg-info/entry_points.txt
+pyndas.egg-info/requires.txt
+pyndas.egg-info/top_level.txt
+tests/test_transform.py

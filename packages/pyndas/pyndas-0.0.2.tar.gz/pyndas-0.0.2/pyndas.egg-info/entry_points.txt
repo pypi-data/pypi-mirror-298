@@ -1,0 +1,2 @@
+[console-scripts]
+pyndas = pyndas.__init__:init
