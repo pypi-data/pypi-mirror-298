@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tests/test_envjson.py
+varjson/__init__.py
+varjson/envjson.py
+varjson.egg-info/PKG-INFO
+varjson.egg-info/SOURCES.txt
+varjson.egg-info/dependency_links.txt
+varjson.egg-info/top_level.txt
