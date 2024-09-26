@@ -1,0 +1,11 @@
+goodman_focus/__init__.py,sha256=I5QbZB04AXLR9azkWawo9-_6d50xL3JhqUntDyhe1Fs,193
+goodman_focus/goodman_focus.py,sha256=F7XK_2e9uagZlAo9ucHvhtxM35QGzCS6ZGYzASC3FT0,26889
+goodman_focus/version.py,sha256=dd-KZw8-eltAgI3rgXg7IQu4qJc9i2jbpZFwyH2XNrA,411
+goodman_focus/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+goodman_focus/tests/test_goodman_focus.py,sha256=pFv9ifBUoOuNMEkijdlaDQhUdvtt4JsNfHOL6yMzxl0,11068
+goodman_focus-2.0.4.dist-info/LICENSE,sha256=MiSpRRSFEwwwT9VXblIJ_T_D3jJKBbUYeK7QoAEhS70,1522
+goodman_focus-2.0.4.dist-info/METADATA,sha256=1r5PnzI_DZpGVE0L9slxxZuxOZC3ZadWukEYNfuS6VQ,4342
+goodman_focus-2.0.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+goodman_focus-2.0.4.dist-info/entry_points.txt,sha256=5SQeBFc6OfS4swvghAaERGQ-a0ak9EuIzyEicVazc10,66
+goodman_focus-2.0.4.dist-info/top_level.txt,sha256=8dTppA5JRhAbTF004fzWWK4A3FKAvP4GfT_R9B1hQSI,14
+goodman_focus-2.0.4.dist-info/RECORD,,
