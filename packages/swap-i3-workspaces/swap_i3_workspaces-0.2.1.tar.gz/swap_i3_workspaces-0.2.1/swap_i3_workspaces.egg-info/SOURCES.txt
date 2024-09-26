@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+swap_i3_workspaces/__init__.py
+swap_i3_workspaces/main.py
+swap_i3_workspaces.egg-info/PKG-INFO
+swap_i3_workspaces.egg-info/SOURCES.txt
+swap_i3_workspaces.egg-info/dependency_links.txt
+swap_i3_workspaces.egg-info/entry_points.txt
+swap_i3_workspaces.egg-info/requires.txt
+swap_i3_workspaces.egg-info/top_level.txt
