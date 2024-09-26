@@ -1,0 +1,3 @@
+[console_scripts]
+dbt-metric-utils = dbt_metric_utils.cli:cli
+dbtmu = dbt_metric_utils.cli:cli
