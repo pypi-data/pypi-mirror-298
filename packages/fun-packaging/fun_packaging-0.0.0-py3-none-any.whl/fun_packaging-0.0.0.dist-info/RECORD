@@ -1,0 +1,11 @@
+packaging2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packaging2/my_file.py,sha256=2IuKTwbQDiXqCQgP-sGpTOVqXPkwZ7le6H7XTkYNiZY,200
+packaging2/my_other_file.py,sha256=GU0zxFq8i96EXdnpw_mOQZFTZ9lwF5PRYIkxISd0PLc,27
+packaging2/states_info.py,sha256=A-Ij9PoMZshynmlby9YkI7MQeujlVbkM601NaELGWTs,681
+packaging2/my_folder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packaging2/my_folder/my_nested_file.py,sha256=tcgr1Nu7VqNUkut21Yq5lrOkpZk9kHfA2Q9VJRZ8tzI,97
+packaging2/my_folder/sub_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fun_packaging-0.0.0.dist-info/METADATA,sha256=BAdT7bQcwLPl2wWG04TenMbdAG0WvFYc-1S7-UDjvcU,966
+fun_packaging-0.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+fun_packaging-0.0.0.dist-info/top_level.txt,sha256=9DxE1oGFp4QUM0JcqnV-lZ4mKdhaMZE-a_8Cmrieag4,11
+fun_packaging-0.0.0.dist-info/RECORD,,
