@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+udotcolors/__init__.py
+udotcolors/_version.py
+udotcolors/colors.py
+udotcolors/palettes.py
+udotcolors.egg-info/PKG-INFO
+udotcolors.egg-info/SOURCES.txt
+udotcolors.egg-info/dependency_links.txt
+udotcolors.egg-info/requires.txt
+udotcolors.egg-info/top_level.txt

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: udotcolors
+Version: 0.1
+Summary: Colors and palettes for Seaborn that conform to the UDOT style guide
+Author-email: Hayden Atchley <hatchley@utah.gov>
+Project-URL: Homepage, https://github.com/atchley-sha/udot-colors-seaborn
+Project-URL: Issues, https://github.com/atchley-sha/udot-colors-seaborn/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: seaborn
+Requires-Dist: ColorKit
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.

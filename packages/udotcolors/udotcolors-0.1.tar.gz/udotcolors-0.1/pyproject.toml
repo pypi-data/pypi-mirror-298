@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_file = "udotcolors/_version.py"
+
+[project]
+name = "udotcolors"
+dynamic = ["version"]
+authors = [
+  { name="Hayden Atchley", email="hatchley@utah.gov" },
+]
+description = "Colors and palettes for Seaborn that conform to the UDOT style guide"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+	"seaborn",
+	"ColorKit"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/atchley-sha/udot-colors-seaborn"
+Issues = "https://github.com/atchley-sha/udot-colors-seaborn/issues"
