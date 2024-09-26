@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+zcache/__init__.py
+zcache.egg-info/PKG-INFO
+zcache.egg-info/SOURCES.txt
+zcache.egg-info/dependency_links.txt
+zcache.egg-info/top_level.txt
