@@ -1,0 +1,10 @@
+nexusfm/__init__.py,sha256=8v084BpTgoS8Kq3ywYefR8BUDOXakQrsVPMUHrJBhdI,246
+nexusfm/cli.py,sha256=PaO2NjJS9JHtQbqRtdwsxXK8WOe_VoCt5uU5pZDkSHQ,2549
+nexusfm/core.py,sha256=zuv4f10G3BMpkBcBMwhjURA2wAk9pWI622oMrW4jgDw,3089
+nexusfm/gui.py,sha256=OM4a6YMF_Yk0LWN-wccGEyt8r-0CND9t8njQPUPcO8Y,24116
+nexusfm/terminal_commands.py,sha256=H6MpNXnzPgWIlPUx2dsptpm7R8kY_4At4BvawddsN8s,8174
+nexusfm-0.4.0.dist-info/METADATA,sha256=Xcmc_SY2jhxvP7wJ9oGoLQyxIqcxDyS103ffBSPaK_0,1108
+nexusfm-0.4.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+nexusfm-0.4.0.dist-info/entry_points.txt,sha256=gxIUDiCnLIEqfBieeuKjQPsYjRxW8J_eb9ISXSBjfQU,49
+nexusfm-0.4.0.dist-info/top_level.txt,sha256=Z6rbbG12pAutXh5hohyFB0dzCIvpOiBV2Wim1Q-Yb3Q,8
+nexusfm-0.4.0.dist-info/RECORD,,
