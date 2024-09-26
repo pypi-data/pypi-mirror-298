@@ -1,0 +1,3 @@
+setuptools
+commentjson
+ehdg_tools>=4.4.4
