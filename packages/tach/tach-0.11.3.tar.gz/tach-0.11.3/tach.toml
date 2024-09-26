@@ -1,0 +1,207 @@
+exclude = [
+    "**/__pycache__",
+    "**/tests",
+    "build",
+    "dist",
+    "docs",
+    "tach.egg-info",
+]
+source_roots = [
+    "python",
+]
+exact = true
+forbid_circular_dependencies = true
+use_regex_matching = false
+
+[[modules]]
+path = "tach"
+depends_on = []
+strict = true
+
+[[modules]]
+path = "tach.__main__"
+strict = true
+depends_on = [
+    { path = "tach.start" },
+]
+
+[[modules]]
+path = "tach.cache"
+strict = true
+depends_on = [
+    { path = "tach" },
+    { path = "tach.filesystem" },
+]
+
+[[modules]]
+path = "tach.check_external"
+depends_on = [
+    { path = "tach.extension" },
+    { path = "tach.utils" },
+]
+
+[[modules]]
+path = "tach.cli"
+strict = true
+depends_on = [
+    { path = "tach" },
+    { path = "tach.cache" },
+    { path = "tach.check_external" },
+    { path = "tach.colors" },
+    { path = "tach.constants" },
+    { path = "tach.errors" },
+    { path = "tach.extension" },
+    { path = "tach.filesystem" },
+    { path = "tach.icons" },
+    { path = "tach.logging" },
+    { path = "tach.mod" },
+    { path = "tach.parsing" },
+    { path = "tach.report" },
+    { path = "tach.show" },
+    { path = "tach.sync" },
+    { path = "tach.test" },
+    { path = "tach.utils" },
+]
+
+[[modules]]
+path = "tach.colors"
+depends_on = []
+strict = true
+
+[[modules]]
+path = "tach.constants"
+depends_on = []
+strict = true
+
+[[modules]]
+path = "tach.errors"
+depends_on = []
+strict = true
+
+[[modules]]
+path = "tach.extension"
+depends_on = []
+
+[[modules]]
+path = "tach.filesystem"
+strict = true
+depends_on = [
+    { path = "tach.colors" },
+    { path = "tach.constants" },
+    { path = "tach.hooks" },
+    { path = "tach.utils" },
+]
+
+[[modules]]
+path = "tach.filesystem.git_ops"
+strict = true
+depends_on = [
+    { path = "tach.errors" },
+]
+
+[[modules]]
+path = "tach.hooks"
+strict = true
+depends_on = [
+    { path = "tach.constants" },
+]
+
+[[modules]]
+path = "tach.icons"
+depends_on = []
+strict = true
+
+[[modules]]
+path = "tach.interactive"
+strict = true
+depends_on = [
+    { path = "tach.errors" },
+    { path = "tach.filesystem" },
+    { path = "tach.utils" },
+]
+
+[[modules]]
+path = "tach.logging"
+strict = true
+depends_on = [
+    { path = "tach" },
+    { path = "tach.cache" },
+    { path = "tach.parsing" },
+]
+
+[[modules]]
+path = "tach.mod"
+strict = true
+depends_on = [
+    { path = "tach.colors" },
+    { path = "tach.errors" },
+    { path = "tach.filesystem" },
+    { path = "tach.interactive" },
+    { path = "tach.parsing" },
+]
+
+[[modules]]
+path = "tach.parsing"
+strict = true
+depends_on = [
+    { path = "tach.extension" },
+    { path = "tach.filesystem" },
+]
+
+[[modules]]
+path = "tach.report"
+strict = true
+depends_on = [
+    { path = "tach.colors" },
+    { path = "tach.errors" },
+    { path = "tach.extension" },
+    { path = "tach.filesystem" },
+    { path = "tach.utils" },
+]
+
+[[modules]]
+path = "tach.show"
+depends_on = []
+strict = true
+
+[[modules]]
+path = "tach.start"
+strict = true
+depends_on = [
+    { path = "tach.cli" },
+]
+
+[[modules]]
+path = "tach.sync"
+strict = true
+depends_on = [
+    { path = "tach.errors" },
+    { path = "tach.extension" },
+    { path = "tach.filesystem" },
+]
+
+[[modules]]
+path = "tach.test"
+strict = true
+depends_on = [
+    { path = "tach.errors" },
+    { path = "tach.extension" },
+    { path = "tach.filesystem.git_ops" },
+]
+
+[[modules]]
+path = "tach.utils"
+depends_on = []
+
+[cache]
+file_dependencies = [
+    "python/tests/**",
+    "src/*.rs",
+]
+
+[external]
+exclude = [
+    "pytest",
+    "pydot",
+    "eval_type_backport",
+]
