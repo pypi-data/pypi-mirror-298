@@ -1,0 +1,159 @@
+import argparse
+import requests
+import bs4
+import urllib.parse
+import re
+import json
+from abc import ABC, abstractmethod
+from typing import List, Optional
+from requests.exceptions import RequestException
+from rich.console import Console
+from rich.logging import RichHandler
+import logging
+import os
+
+# Configuração dos logs com Rich
+console = Console()
+logging.basicConfig(level=logging.INFO, format="%(message)s", handlers=[RichHandler()])
+logger = logging.getLogger("rich")
+
+DEFAULT_CONFIG_FILE = 'dorks_default.json'  # Arquivo de configuração padrão
+
+class SearchStrategy(ABC):
+    """
+    Interface para a estratégia de busca.
+    """
+    @abstractmethod
+    def search(self, dork: str, page: int) -> Optional[str]:
+        pass
+
+class GoogleSearchStrategy(SearchStrategy):
+    """
+    Implementação da estratégia de busca no Google.
+    """
+    def search(self, dork: str, page: int) -> Optional[str]:
+        start = page * 10
+        url = f'https://google.com/search?q={urllib.parse.quote(dork)}&start={start}'
+        try:
+            logger.info(f"[cyan]Realizando busca com dork: {dork}, Página: {page + 1}[/cyan]")
+            response = requests.get(url, timeout=10)
+            response.raise_for_status()
+            return response.text
+        except RequestException as e:
+            logger.error(f"[red]Erro na requisição HTTP: {e}[/red]")
+            return None
+
+class ParserStrategy(ABC):
+    """
+    Interface para a estratégia de parsing.
+    """
+    @abstractmethod
+    def parse(self, html: str) -> List[str]:
+        pass
+
+class GoogleParserStrategy(ParserStrategy):
+    """
+    Implementação da estratégia de parsing para resultados do Google.
+    """
+    def parse(self, html: str) -> List[str]:
+        soup = bs4.BeautifulSoup(html, "html.parser")
+        link_tags = soup.find_all('a')
+        params_to_remove = ['sa', 'ved', 'usg']
+        cleaned_urls = [
+            self.clean_url(link_tag.get('href', ''), params_to_remove)
+            for link_tag in link_tags
+            if link_tag.get('href', '').startswith('/url?q=')
+        ]
+        return [url for url in cleaned_urls if url]
+
+    def clean_url(self, href: str, params_to_remove: List[str]) -> str:
+        """
+        Limpa o URL, removendo parâmetros desnecessários e decodificando.
+        """
+        url = href[7:]  # Remove o prefixo '/url?q='
+        url = urllib.parse.unquote(url)  # Decodifica caracteres URL-encoded
+
+        if not (url.startswith('https://www.google.com') or
+                url.startswith('https://support.google.com') or
+                url.startswith('https://github.com') or
+                url.startswith('https://stackoverflow.com') or
+                url.startswith('https://accounts.google.com')):
+            cleaned_url = re.sub(r'&?(?:{})=.*?(?=&|$)'.format('|'.join(params_to_remove)), '', url)
+            return cleaned_url
+        return ''  # Retorna string vazia se o URL for irrelevante
+
+class DorkRecon:
+    """
+    Classe principal para a execução do reconhecimento com Google Dorks.
+    """
+    def __init__(self, search_strategy: SearchStrategy, parser_strategy: ParserStrategy):
+        self.search_strategy = search_strategy
+        self.parser_strategy = parser_strategy
+
+    def run(self, dorks: List[str], pages: int = 3) -> None:
+        """
+        Executa o reconhecimento passivo com uma lista de dorks.
+
+        Args:
+            dorks (List[str]): Lista de Google dorks a serem usados para a pesquisa.
+            pages (int): Número de páginas para processar.
+        """
+        for dork in dorks:
+            console.print(f"[bold yellow]Executando reconhecimento com o dork:[/bold yellow] [green]{dork}[/green]\n")
+            for page in range(pages):
+                html = self.search_strategy.search(dork, page)
+                if html:
+                    urls = self.parser_strategy.parse(html)
+                    for url in urls:
+                        console.print(f"[bold green]URL encontrado:[/bold green] {url}")
+                else:
+                    logger.warning(f"[yellow]Falha ao obter resultados para a página {page + 1}.[/yellow]")
+
+def load_dorks_from_file(config_file: str) -> dict:
+    """
+    Carrega as queries (dorks) de um arquivo JSON.
+
+    Args:
+        config_file (str): Caminho para o arquivo de configuração JSON.
+
+    Returns:
+        dict: Dicionário contendo as categorias e dorks.
+    """
+    try:
+        with open(config_file, 'r', encoding='utf-8') as file:
+            dorks = json.load(file)
+            logger.info(f"[green]Arquivo de configuração '{config_file}' carregado com sucesso.[/green]")
+            return dorks
+    except FileNotFoundError:
+        logger.error(f"[red]Arquivo de configuração '{config_file}' não encontrado![/red]")
+        return {}
+    except json.JSONDecodeError as e:
+        logger.error(f"[red]Erro ao decodificar o arquivo JSON: {e}[/red]")
+        return {}
+
+def main():
+    parser = argparse.ArgumentParser(description='Dork Recon')
+    parser.add_argument('-c', '--config', type=str, help='Arquivo de configuração JSON com dorks predefinidos. Se omitido, será usado o arquivo default.')
+    parser.add_argument('-t', '--type', type=str, choices=['files', 'pages', 'attack_points', 'config_files'], required=True, help='Tipo de dorks para buscar: "files", "pages", "attack_points" ou "config_files".')
+    args = parser.parse_args()
+
+    # Se nenhum arquivo de configuração for especificado, usa o arquivo default
+    config_file = args.config if args.config else DEFAULT_CONFIG_FILE
+
+    # Carregar dorks do arquivo de configuração
+    dorks_config = load_dorks_from_file(config_file)
+    dorks = dorks_config.get(args.type, [])
+
+    if not dorks:
+        logger.error(f"[red]Nenhum dork encontrado para o tipo '{args.type}'.[/red]")
+        return
+
+    # Configuração e execução do reconhecimento
+    search_strategy = GoogleSearchStrategy()
+    parser_strategy = GoogleParserStrategy()
+    dork_recon = DorkRecon(search_strategy, parser_strategy)
+    
+    dork_recon.run(dorks)
+
+if __name__ == '__main__':
+    main()
