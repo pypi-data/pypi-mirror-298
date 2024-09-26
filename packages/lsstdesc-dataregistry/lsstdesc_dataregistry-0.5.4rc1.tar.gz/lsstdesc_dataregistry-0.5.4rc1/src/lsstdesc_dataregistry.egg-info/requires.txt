@@ -1,0 +1,7 @@
+psycopg2
+sqlalchemy
+pyyaml
+pandas
+
+[docs]
+sphinx_rtd_theme
