@@ -1,0 +1,10 @@
+flake8_ecocode/__init__.py,sha256=4hQvmbMiUMnbW9EGAb6KgyV4sbX2WxAG8YXzKYuKYOs,63
+flake8_ecocode/plugin.py,sha256=eziIQd4-x_HP7p9UyAaXrbYngYDLQ4Gw694H0WrtHuA,569
+flake8_ecocode/rules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_ecocode/rules/ec_35.py,sha256=bDz0RnNNiT_MPcL7fC7PA1PDhxE0Ov08y1R_oJmFsPU,1285
+flake8_ecocode/rules/ec_404.py,sha256=k7IDwYOx1-SiY8iNEc0kQLIVENCu9s6lplUFWSg1JuU,2033
+flake8_ecocode/types.py,sha256=37x89-T83BoFhQHvhiUTxcqoF7LD0YjQGL4qOTNCwyw,139
+flake8_ecocode-0.1.0.dist-info/METADATA,sha256=OmCbpxoAABIbN8smZO6ZTOOkL-D9AwXOu9WS-6oR8XU,1439
+flake8_ecocode-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+flake8_ecocode-0.1.0.dist-info/entry_points.txt,sha256=0315vBojUijMSdT5FOohEnTnuIiSzODfJuwHIjKEGag,52
+flake8_ecocode-0.1.0.dist-info/RECORD,,
