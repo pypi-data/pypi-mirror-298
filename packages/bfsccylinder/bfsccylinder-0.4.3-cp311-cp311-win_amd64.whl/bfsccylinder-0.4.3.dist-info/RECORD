@@ -1,0 +1,16 @@
+bfsccylinder/__init__.py,sha256=rTIfmsoJXkQt2DzyIlsWGzSQPNrTwPtQ4emwlF1pcxA,605
+bfsccylinder/bfsccylinder.cp311-win_amd64.pyd,sha256=7FHX7vqDr-zUjvTFQkP7HVL3gzThvMVBgaU8kRZtXMc,2929664
+bfsccylinder/bfsccylinder.pyx,sha256=qGgIkITYqWW-PAr0OwoFWBxOT4RfGBQk-flAAFRVF9s,1170766
+bfsccylinder/bfsccylinder_sanders.cp311-win_amd64.pyd,sha256=qRU8TNhwrH5BQM38YXb4pv9DmdjWSndTWz3Xn1jaKWY,4829184
+bfsccylinder/bfsccylinder_sanders.pyx,sha256=ShuzYJcuQoyJxJ44YzjrgYl-25alo45sQ-ILEa_jWb0,1760635
+bfsccylinder/quadrature.py,sha256=lZK_XYTkcCW9lAPV6cKwFW4bLK4BLAnRldnoVdoeON4,8634
+bfsccylinder/sanders.py,sha256=yWHKerqWIdaDb09uwMdAcpBIAGoh8doQ8CVjSQUyFOA,565
+bfsccylinder/utils.py,sha256=GrB2MU-6WgY1xDh15RBdkrhRFChnj2b2ff2ph6kK_OM,696
+bfsccylinder/version.py,sha256=Nyg0pmk5ea9-SLCAFEIF96ByFx4-TJFtrqYPN-Zn6g4,22
+bfsccylinder-0.4.3.data/data/LICENSE,sha256=uHrC0zkY11Dj2UGiUH8cT0IDqTAdZVkS_xsJTihptOY,1533
+bfsccylinder-0.4.3.data/data/README.md,sha256=ttSVIDnWZUTOPrf75uW2gFKuYKk9AcZmNuN18XINYuk,720
+bfsccylinder-0.4.3.dist-info/LICENSE,sha256=uHrC0zkY11Dj2UGiUH8cT0IDqTAdZVkS_xsJTihptOY,1533
+bfsccylinder-0.4.3.dist-info/METADATA,sha256=UYwU3PLwOeN_SBfOaKHzjylFvzXqFTEQUfm6JX1eCKA,2085
+bfsccylinder-0.4.3.dist-info/WHEEL,sha256=qW4RD1rfHm8ZRUjJbXUnZHDNPCXHt6Rq0mgR8lv_JEg,101
+bfsccylinder-0.4.3.dist-info/top_level.txt,sha256=-ZxwRg1f4jcnTolfFatHW86P40EuzvmqcGgJTaZ0frQ,13
+bfsccylinder-0.4.3.dist-info/RECORD,,
