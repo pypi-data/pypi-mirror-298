@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: library_example
+Version: 0.4.0
+Description-Content-Type: text/markdown
+
+# Python Library Creation
+## This is a simple example
+
+### Required Libraries
+
+```
+pip install setuptools wheel twine
+```
+
+### Project Structure
+
+```
+library_example/
+	library_example/
+	  __init__.py
+	  main.py
+	setup.py
+	Readme.md
+```
+
+### Build library for distribution
+
+- sdist: distribute scripts
+- bdist_wheel: distribute binary
+
+```
+python setup.py sdist bdist_wheel
+```
+
+From the wheel (.whl) file created in the last step we can install the library locally.  This will make it available for testing.
+
+
+Local Install
+
+```
+pip install dist/library_example-0.1-py3-none-any.whl
+```
+
+
+## Create a CLI Command
+
+Extend the setup.py by adding the following entry_point section:
+
+```
+setup(
+  ...
+  entry_points={
+      "console_scripts": [
+        "library_example = library_example:hello",
+      ],
+  }
+)
+```
+
+## Pushing to PyPi
+
+```
+twine upload dist/*
+```
+
+As this command will ask for authentication one can instead of manually entering credentials use environment variables:
+
+This will work with api tokens or username/password
+***
+Actually I had a problem getting the username/password to work propertly and switched to using an API token
+
+
+```
+export TWINE_USERNAME=__token__
+export TWINE_PASSWORD=pypi-xxxx
+```
+
+
+
+## Pushing to a Test Repository
+
+Rather then sharing with the world you can push to a test repository:
+
+```
+# Upload to test repository
+twine upload --repository testpypi dist/*
+
+# Install from the test repository.
+pip install \
+  --index-url https://test.pypi.org/simple/ \
+  --no-deps library_example-YOUR-USERNAME-HERE
+  
+### Register a new test user
+
+[](https://packaging.python.org/en/latest/tutorials/packaging-projects/#uploading-the-distribution-archives)
+
+
+
+
+
