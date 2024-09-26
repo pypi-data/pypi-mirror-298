@@ -1,0 +1,5 @@
+prefect>=2.10.0
+
+[snowflake]
+coolname>=2.2.0
+snowflake-connector-python>=3.0.0
