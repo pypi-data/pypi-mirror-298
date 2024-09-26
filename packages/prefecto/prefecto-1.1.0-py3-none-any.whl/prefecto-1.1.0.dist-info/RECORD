@@ -1,0 +1,15 @@
+prefecto/__init__.py,sha256=iF7TMURifjQdewtXunpZzISSMJttw-Ff6Z1wxV-vXZo,129
+prefecto/_version.py,sha256=fXA83_231FVWr6cGuRgZ_W4Mk3M0uti3-YEt70jjzyY,497
+prefecto/blocks.py,sha256=Ri-xQgtrNUbwHSRTkKC95Aq2uWP37Wz7iMTBEwU0KUo,4993
+prefecto/logging.py,sha256=neTRRjel0RRVZwzD0CjZASok4v6jZ6k0lPyBAy_C-8E,831
+prefecto/states.py,sha256=Fhp_DpaPQKlAw1qE8UKyEH-jNWVVdA4EgOjNbZyEaCY,514
+prefecto/concurrency/__init__.py,sha256=OfI1ZAcYpFRBL9tDyVomYT9DtgoiZfPybt_U8jKTC_g,133
+prefecto/concurrency/batch_task.py,sha256=gVZ5NCmrGywevULrCuGYTJ0wiug2R_OCtbhuiFe-r54,9814
+prefecto/concurrency/kill_switch.py,sha256=K6EwoElamxx88DuOfmOJdIpNY7hsEO-n5RtNs8bxSdI,4396
+prefecto/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prefecto/ext/snowflake.py,sha256=1OCIrMPJSye5LXXbgJg7rEO6u1ivusiktIYKYG2ENsY,21820
+prefecto-1.1.0.dist-info/LICENSE,sha256=TApPv77b4idISWgNyVVhTwxbl274cGTgs1jOTT05Z4Y,1070
+prefecto-1.1.0.dist-info/METADATA,sha256=W9lWBnazmkiWH9rq-6CJjk0WeWPAZs5L0wDHb4ZlWUc,3409
+prefecto-1.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+prefecto-1.1.0.dist-info/top_level.txt,sha256=olncvCyIaZTSiREImubwFpWpQf4QwB5Mn54zlv8T7c0,9
+prefecto-1.1.0.dist-info/RECORD,,
