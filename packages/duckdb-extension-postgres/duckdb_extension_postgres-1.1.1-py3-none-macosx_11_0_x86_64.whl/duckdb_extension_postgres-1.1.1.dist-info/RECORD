@@ -1,0 +1,6 @@
+duckdb_extension_postgres/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+duckdb_extension_postgres/extensions/v1.1.1/postgres.duckdb_extension,sha256=t39_Pw-V0DXyKzoQNo6PFbeYgdQjldkCvh6mjp2lLnQ,86320022
+duckdb_extension_postgres-1.1.1.dist-info/METADATA,sha256=_JTDkPVnFsyZwlDGwS5dYLYfh4dIp4SUZ8LvDJBpk4U,2082
+duckdb_extension_postgres-1.1.1.dist-info/WHEEL,sha256=fic1ktR5qa8qLrG4GUvXD55amQcMceACg0DKhvXAHHw,102
+duckdb_extension_postgres-1.1.1.dist-info/licenses/LICENSE.txt,sha256=nnxZWPH56sIZcjI_d3lzGiShkm7fMUnNisNrUJKahaU,1090
+duckdb_extension_postgres-1.1.1.dist-info/RECORD,,
