@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: diegobmota_image_process
+Version: 0.0.1
+Summary: Pacote para Processamento de imagens
+Home-page: https://github.com/diegobritom
+Author: Diego Brito
+Author-email: 
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scikit-image>=0.16.1
+Requires-Dist: matplotlib
+
+# package_name
+
+Description. 
+The package package_name is used to:
+	Processing:
+		- Histograma matching
+		- Structural similarity
+		- Resize image
+	Util:
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install image_processing
+```
+
+## Author
+Diego Brito
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
