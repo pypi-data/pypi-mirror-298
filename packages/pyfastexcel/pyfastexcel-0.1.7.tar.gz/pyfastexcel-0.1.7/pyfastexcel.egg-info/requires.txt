@@ -1,0 +1,6 @@
+msgspec
+openpyxl-style-writer>=1.1.3
+pydantic
+
+[:python_version < "3.9"]
+eval-type-backport
