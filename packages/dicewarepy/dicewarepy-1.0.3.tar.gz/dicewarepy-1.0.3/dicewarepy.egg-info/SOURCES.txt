@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+dicewarepy/__init__.py
+dicewarepy/diceware.py
+dicewarepy.egg-info/PKG-INFO
+dicewarepy.egg-info/SOURCES.txt
+dicewarepy.egg-info/dependency_links.txt
+dicewarepy.egg-info/top_level.txt
+dicewarepy/wordlists/__init__.py
+dicewarepy/wordlists/de-7776-v1-diceware.txt
+dicewarepy/wordlists/eff_large_wordlist.txt
+tests/__init__.py
+tests/test_dice.py
+tests/test_diceware.py
+tests/test_wordlist.py
+tests/test_wordlist_integrity.py
