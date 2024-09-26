@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: fetchcode
+Version: 0.6.0
+Summary: fetchcode is a library to reliably fetch code via HTTP, FTP and version control systems.
+Home-page: https://github.com/aboutcode-org/fetchcode
+Author: nexB. Inc. and others
+Author-email: info@aboutcode.org
+License: Apache-2.0
+Keywords: utilities,package manager,dependencies,fetch,scancode,download,downloader
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: apache-2.0.LICENSE
+License-File: NOTICE
+License-File: AUTHORS.rst
+License-File: CHANGELOG.rst
+License-File: CODE_OF_CONDUCT.rst
+Requires-Dist: attrs
+Requires-Dist: commoncode
+Requires-Dist: htmllistparse
+Requires-Dist: packageurl-python
+Requires-Dist: requests
+Requires-Dist: python-dateutil
+Requires-Dist: python-dotenv
+Provides-Extra: testing
+Requires-Dist: pytest!=7.0.0,>=6; extra == "testing"
+Requires-Dist: pytest-xdist>=2; extra == "testing"
+Requires-Dist: aboutcode-toolkit>=7.0.2; extra == "testing"
+Requires-Dist: pycodestyle>=2.8.0; extra == "testing"
+Requires-Dist: twine; extra == "testing"
+Requires-Dist: black; extra == "testing"
+Requires-Dist: isort; extra == "testing"
+Provides-Extra: docs
+Requires-Dist: Sphinx>=5.0.2; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=1.0.0; extra == "docs"
+Requires-Dist: sphinx-reredirects>=0.1.2; extra == "docs"
+Requires-Dist: doc8>=0.11.2; extra == "docs"
+Requires-Dist: sphinx-autobuild; extra == "docs"
+Requires-Dist: sphinx-rtd-dark-mode>=1.3.0; extra == "docs"
+Requires-Dist: sphinx-copybutton; extra == "docs"
+
+FetchCode: Utilities to fetch code from purls, URLs and version control repos.
+================================================================================
+
+FetchCode is a library to reliably fetch code via HTTP, FTP and version control
+systems. It can work using plain HTTP and FTP URLs, as well as
+`Package URLs <https://github.com/package-url>`_ and version control (VCS) URLs
+as used in Python pip and as specified in `SPDX Package Download Location
+<https://spdx.github.io/spdx-spec/3-package-information/#37-package-download-location>`_
+
+Homepage and support: https://github.com/aboutcode-org/fetchcode
+
+
+Why FetchCode?
+--------------
+
+It is surprisingly difficult to have a simple API to consistently fetch code
+from package repositories, version control repositories and APIs: each site
+and each package manager has its own unique and peculiar ways. FetchCode goal
+is to abstract all these details and make it easy to fetch things reliably.
+
+
+Development installation
+--------------------------
+
+Clone the repo::
+
+    git clone https://github.com/aboutcode-org/fetchcode
+
+Then install all the requirements using this command (on POSIX)::
+
+    ./configure --dev
+
+
+Running tests
+----------------
+
+To run test suite use::
+
+    pytest -vvs
+
+
+Usage
+--------
+
+Fetch a code archive and get a ``fetchcode.fetch.Response`` object back::
+
+    >>> from fetchcode import fetch
+    >>> f = fetch('https://github.com/aboutcode-org/fetchcode/archive/ab65b2e645c889887227ea49eb3332d885fd0a54.zip')
+    >>> f.location
+    '/tmp/tmp_cm02xsg'
+    >>> f.content_type
+    'application/zip'
+    >>> f.url
+    'https://github.com/aboutcode-org/fetchcode/archive/ab65b2e645c889887227ea49eb3332d885fd0a54.zip'
+
+Fetch some package metadata and get a ``fetchcode.packagedcode_models.Package`` object back::
+
+    >>> from fetchcode import package
+    >>> list(package.info('pkg:rubygems/files'))
+    [Package(type='rubygems', namespace=None, name='files', version=None)]
+
+
+License
+--------
+
+- SPDX-License-Identifier: Apache-2.0
+
+Copyright (c) nexB Inc. and others.

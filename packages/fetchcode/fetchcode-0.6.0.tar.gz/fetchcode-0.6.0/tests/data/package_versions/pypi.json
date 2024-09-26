@@ -1,0 +1,638 @@
+[
+    {
+        "value": "0.5",
+        "release_date": null
+    },
+    {
+        "value": "0.5.1",
+        "release_date": null
+    },
+    {
+        "value": "0.5.2",
+        "release_date": null
+    },
+    {
+        "value": "0.5.3",
+        "release_date": null
+    },
+    {
+        "value": "0.5.4",
+        "release_date": null
+    },
+    {
+        "value": "0.5.5",
+        "release_date": null
+    },
+    {
+        "value": "0.5.6",
+        "release_date": null
+    },
+    {
+        "value": "0.5.7",
+        "release_date": null
+    },
+    {
+        "value": "0.5.8",
+        "release_date": null
+    },
+    {
+        "value": "0.5.9",
+        "release_date": null
+    },
+    {
+        "value": "0.5rc2",
+        "release_date": null
+    },
+    {
+        "value": "0.6",
+        "release_date": null
+    },
+    {
+        "value": "0.6.1",
+        "release_date": null
+    },
+    {
+        "value": "0.6.10",
+        "release_date": null
+    },
+    {
+        "value": "0.6.11",
+        "release_date": null
+    },
+    {
+        "value": "0.6.12",
+        "release_date": null
+    },
+    {
+        "value": "0.6.13",
+        "release_date": null
+    },
+    {
+        "value": "0.6.14",
+        "release_date": null
+    },
+    {
+        "value": "0.6.15",
+        "release_date": null
+    },
+    {
+        "value": "0.6.16",
+        "release_date": null
+    },
+    {
+        "value": "0.6.17",
+        "release_date": null
+    },
+    {
+        "value": "0.6.18",
+        "release_date": null
+    },
+    {
+        "value": "0.6.19",
+        "release_date": null
+    },
+    {
+        "value": "0.6.2",
+        "release_date": null
+    },
+    {
+        "value": "0.6.20",
+        "release_date": null
+    },
+    {
+        "value": "0.6.21",
+        "release_date": null
+    },
+    {
+        "value": "0.6.22",
+        "release_date": null
+    },
+    {
+        "value": "0.6.23",
+        "release_date": null
+    },
+    {
+        "value": "0.6.24",
+        "release_date": null
+    },
+    {
+        "value": "0.6.25",
+        "release_date": null
+    },
+    {
+        "value": "0.6.26",
+        "release_date": null
+    },
+    {
+        "value": "0.6.27",
+        "release_date": null
+    },
+    {
+        "value": "0.6.28",
+        "release_date": null
+    },
+    {
+        "value": "0.6.29",
+        "release_date": null
+    },
+    {
+        "value": "0.6.3",
+        "release_date": null
+    },
+    {
+        "value": "0.6.30",
+        "release_date": null
+    },
+    {
+        "value": "0.6.31",
+        "release_date": null
+    },
+    {
+        "value": "0.6.4",
+        "release_date": null
+    },
+    {
+        "value": "0.6.5",
+        "release_date": null
+    },
+    {
+        "value": "0.6.6",
+        "release_date": null
+    },
+    {
+        "value": "0.6.7",
+        "release_date": null
+    },
+    {
+        "value": "0.6.8",
+        "release_date": null
+    },
+    {
+        "value": "0.6.9",
+        "release_date": null
+    },
+    {
+        "value": "0.7",
+        "release_date": null
+    },
+    {
+        "value": "0.7.1",
+        "release_date": null
+    },
+    {
+        "value": "0.7.10",
+        "release_date": null
+    },
+    {
+        "value": "0.7.11",
+        "release_date": null
+    },
+    {
+        "value": "0.7.12",
+        "release_date": null
+    },
+    {
+        "value": "0.7.13",
+        "release_date": null
+    },
+    {
+        "value": "0.7.14",
+        "release_date": null
+    },
+    {
+        "value": "0.7.15",
+        "release_date": null
+    },
+    {
+        "value": "0.7.16",
+        "release_date": null
+    },
+    {
+        "value": "0.7.17",
+        "release_date": null
+    },
+    {
+        "value": "0.7.18",
+        "release_date": null
+    },
+    {
+        "value": "0.7.19",
+        "release_date": null
+    },
+    {
+        "value": "0.7.2",
+        "release_date": null
+    },
+    {
+        "value": "0.7.20",
+        "release_date": null
+    },
+    {
+        "value": "0.7.21",
+        "release_date": null
+    },
+    {
+        "value": "0.7.22",
+        "release_date": null
+    },
+    {
+        "value": "0.7.23",
+        "release_date": null
+    },
+    {
+        "value": "0.7.24",
+        "release_date": null
+    },
+    {
+        "value": "0.7.25",
+        "release_date": null
+    },
+    {
+        "value": "0.7.26",
+        "release_date": null
+    },
+    {
+        "value": "0.7.27",
+        "release_date": null
+    },
+    {
+        "value": "0.7.28",
+        "release_date": null
+    },
+    {
+        "value": "0.7.29",
+        "release_date": null
+    },
+    {
+        "value": "0.7.3",
+        "release_date": null
+    },
+    {
+        "value": "0.7.30",
+        "release_date": null
+    },
+    {
+        "value": "0.7.31",
+        "release_date": null
+    },
+    {
+        "value": "0.7.32",
+        "release_date": "2016-02-22T06:13:06.774750+00:00"
+    },
+    {
+        "value": "0.7.33",
+        "release_date": "2016-03-01T18:55:48.013515+00:00"
+    },
+    {
+        "value": "0.7.4",
+        "release_date": null
+    },
+    {
+        "value": "0.7.5",
+        "release_date": null
+    },
+    {
+        "value": "0.7.6",
+        "release_date": null
+    },
+    {
+        "value": "0.7.7",
+        "release_date": null
+    },
+    {
+        "value": "0.7.8",
+        "release_date": null
+    },
+    {
+        "value": "0.7.9",
+        "release_date": null
+    },
+    {
+        "value": "0.8",
+        "release_date": "2015-10-29T21:14:49.182641+00:00"
+    },
+    {
+        "value": "0.8.1",
+        "release_date": "2015-10-29T21:06:19.206843+00:00"
+    },
+    {
+        "value": "0.8.10",
+        "release_date": "2015-10-29T21:06:38.680140+00:00"
+    },
+    {
+        "value": "0.8.11",
+        "release_date": "2015-10-29T21:06:57.940593+00:00"
+    },
+    {
+        "value": "0.8.12",
+        "release_date": "2015-10-29T21:07:20.546698+00:00"
+    },
+    {
+        "value": "0.8.13",
+        "release_date": "2015-10-29T21:07:39.207404+00:00"
+    },
+    {
+        "value": "0.8.14",
+        "release_date": "2015-10-29T21:07:58.530827+00:00"
+    },
+    {
+        "value": "0.8.15",
+        "release_date": "2015-10-29T21:08:22.566012+00:00"
+    },
+    {
+        "value": "0.8.16",
+        "release_date": "2015-10-29T21:08:39.373749+00:00"
+    },
+    {
+        "value": "0.8.17",
+        "release_date": "2015-10-29T21:08:57.975915+00:00"
+    },
+    {
+        "value": "0.8.18",
+        "release_date": "2015-10-29T21:09:20.067292+00:00"
+    },
+    {
+        "value": "0.8.19",
+        "release_date": "2015-10-29T21:09:38.790874+00:00"
+    },
+    {
+        "value": "0.8.2",
+        "release_date": "2015-10-29T21:09:57.412044+00:00"
+    },
+    {
+        "value": "0.8.20",
+        "release_date": "2015-10-29T21:10:39.796073+00:00"
+    },
+    {
+        "value": "0.8.21",
+        "release_date": "2015-10-29T21:11:02.588393+00:00"
+    },
+    {
+        "value": "0.8.22",
+        "release_date": "2015-10-29T21:11:21.857612+00:00"
+    },
+    {
+        "value": "0.8.23",
+        "release_date": "2015-10-29T21:11:40.771833+00:00"
+    },
+    {
+        "value": "0.8.24",
+        "release_date": "2016-02-22T06:41:51.694397+00:00"
+    },
+    {
+        "value": "0.8.25",
+        "release_date": "2016-03-01T19:01:52.507584+00:00"
+    },
+    {
+        "value": "0.8.26",
+        "release_date": "2016-04-13T21:12:52.594112+00:00"
+    },
+    {
+        "value": "0.8.27",
+        "release_date": "2016-10-18T01:59:51.726624+00:00"
+    },
+    {
+        "value": "0.8.28",
+        "release_date": "2017-02-09T23:06:06.737009+00:00"
+    },
+    {
+        "value": "0.8.29",
+        "release_date": "2017-02-16T02:03:10.400432+00:00"
+    },
+    {
+        "value": "0.8.3",
+        "release_date": "2015-10-29T21:12:00.978974+00:00"
+    },
+    {
+        "value": "0.8.4",
+        "release_date": "2015-10-29T21:12:35.979475+00:00"
+    },
+    {
+        "value": "0.8.5",
+        "release_date": "2015-10-29T21:12:52.525366+00:00"
+    },
+    {
+        "value": "0.8.6",
+        "release_date": "2015-10-29T21:13:20.969507+00:00"
+    },
+    {
+        "value": "0.8.6.dev",
+        "release_date": null
+    },
+    {
+        "value": "0.8.7",
+        "release_date": "2015-10-29T21:13:40.939660+00:00"
+    },
+    {
+        "value": "0.8.8",
+        "release_date": "2015-10-29T21:14:00.169901+00:00"
+    },
+    {
+        "value": "0.8.9",
+        "release_date": "2015-10-29T21:14:42.996197+00:00"
+    },
+    {
+        "value": "0.9",
+        "release_date": "2015-10-29T21:04:02.806960+00:00"
+    },
+    {
+        "value": "0.9.1",
+        "release_date": "2016-02-22T06:49:11.661244+00:00"
+    },
+    {
+        "value": "0.9.2",
+        "release_date": "2016-03-01T19:05:05.497377+00:00"
+    },
+    {
+        "value": "0.9.3",
+        "release_date": "2016-04-13T21:14:46.224818+00:00"
+    },
+    {
+        "value": "0.9.4",
+        "release_date": "2016-10-18T02:17:04.972690+00:00"
+    },
+    {
+        "value": "0.9.5",
+        "release_date": "2017-02-09T23:14:25.588925+00:00"
+    },
+    {
+        "value": "0.9.6",
+        "release_date": "2017-02-16T02:07:31.869735+00:00"
+    },
+    {
+        "value": "0.9.7",
+        "release_date": "2017-05-26T04:49:30.085130+00:00"
+    },
+    {
+        "value": "0.9.8",
+        "release_date": "2017-06-19T23:11:07.980310+00:00"
+    },
+    {
+        "value": "0.9.9",
+        "release_date": "2017-08-01T19:55:53.085622+00:00"
+    },
+    {
+        "value": "1.0",
+        "release_date": "2017-11-21T07:29:52.294894+00:00"
+    },
+    {
+        "value": "1.0.1",
+        "release_date": "2017-12-05T23:40:07.861672+00:00"
+    },
+    {
+        "value": "1.0.10",
+        "release_date": "2019-02-19T10:36:04.556612+00:00"
+    },
+    {
+        "value": "1.0.11",
+        "release_date": "2019-03-19T07:53:06.333147+00:00"
+    },
+    {
+        "value": "1.0.12",
+        "release_date": "2019-06-12T05:21:43.341447+00:00"
+    },
+    {
+        "value": "1.0.13",
+        "release_date": "2020-06-30T06:35:47.512638+00:00"
+    },
+    {
+        "value": "1.0.14",
+        "release_date": "2020-12-10T09:50:55.012440+00:00"
+    },
+    {
+        "value": "1.0.15",
+        "release_date": "2021-01-20T09:11:15.176142+00:00"
+    },
+    {
+        "value": "1.0.16",
+        "release_date": "2021-02-12T07:22:49.844813+00:00"
+    },
+    {
+        "value": "1.0.17",
+        "release_date": "2021-04-14T02:11:20.188424+00:00"
+    },
+    {
+        "value": "1.0.18",
+        "release_date": "2021-06-15T07:17:02.882111+00:00"
+    },
+    {
+        "value": "1.0.2",
+        "release_date": "2018-01-09T08:40:36.936214+00:00"
+    },
+    {
+        "value": "1.0.3",
+        "release_date": "2018-02-06T07:52:11.555307+00:00"
+    },
+    {
+        "value": "1.0.4",
+        "release_date": "2018-03-20T06:40:21.420724+00:00"
+    },
+    {
+        "value": "1.0.5",
+        "release_date": "2018-03-23T07:12:22.151189+00:00"
+    },
+    {
+        "value": "1.0.6",
+        "release_date": "2018-06-05T07:54:08.985947+00:00"
+    },
+    {
+        "value": "1.0.7",
+        "release_date": "2018-10-12T07:40:17.609873+00:00"
+    },
+    {
+        "value": "1.0.8",
+        "release_date": "2018-11-06T11:05:03.005040+00:00"
+    },
+    {
+        "value": "1.0.9",
+        "release_date": "2019-01-29T09:23:50.140504+00:00"
+    },
+    {
+        "value": "2.0",
+        "release_date": "2020-12-17T04:59:25.614106+00:00"
+    },
+    {
+        "value": "2.1",
+        "release_date": "2021-01-20T09:53:55.441808+00:00"
+    },
+    {
+        "value": "2.1.1",
+        "release_date": "2021-01-20T10:50:04.217950+00:00"
+    },
+    {
+        "value": "2.2",
+        "release_date": "2021-03-02T09:27:28.223673+00:00"
+    },
+    {
+        "value": "2.2.1",
+        "release_date": "2021-05-20T22:40:46.954786+00:00"
+    },
+    {
+        "value": "2.2.2",
+        "release_date": "2021-06-15T07:22:30.602407+00:00"
+    },
+    {
+        "value": "2.2.3",
+        "release_date": "2021-06-29T06:39:50.246408+00:00"
+    },
+    {
+        "value": "2.3",
+        "release_date": "2022-02-08T11:23:56.597596+00:00"
+    },
+    {
+        "value": "2.3.1",
+        "release_date": "2022-06-14T06:32:56.736553+00:00"
+    },
+    {
+        "value": "2.3.2",
+        "release_date": "2022-07-27T04:51:45.416890+00:00"
+    },
+    {
+        "value": "2.3.3",
+        "release_date": "2022-07-27T05:09:03.986835+00:00"
+    },
+    {
+        "value": "2.3.4",
+        "release_date": "2022-09-29T07:10:49.861732+00:00"
+    },
+    {
+        "value": "3.0",
+        "release_date": "2022-10-04T21:44:10.883330+00:00"
+    },
+    {
+        "value": "3.1",
+        "release_date": "2022-11-02T06:37:00.468916+00:00"
+    },
+    {
+        "value": "3.2",
+        "release_date": "2023-02-07T07:14:55.780452+00:00"
+    },
+    {
+        "value": "3.3",
+        "release_date": "2023-06-20T05:03:33.610935+00:00"
+    },
+    {
+        "value": "4.0",
+        "release_date": "2023-10-17T07:55:37.827462+00:00"
+    },
+    {
+        "value": "5.0",
+        "release_date": "2024-06-06T08:38:33.983937+00:00"
+    },
+    {
+        "value": "5.0.1",
+        "release_date": "2024-06-07T18:44:31.459744+00:00"
+    },
+    {
+        "value": "5.0.2",
+        "release_date": "2024-06-12T07:07:06.679773+00:00"
+    },
+    {
+        "value": "5.1",
+        "release_date": "2024-07-02T06:08:58.290996+00:00"
+    },
+    {
+        "value": "5.1.1",
+        "release_date": "2024-08-20T04:56:19.606276+00:00"
+    }
+]
