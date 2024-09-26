@@ -1,0 +1,12 @@
+etcpak-0.9.12.dist-info/LICENSE,sha256=7TQ7Mb6Vzmu0LVXIDQC3x_qY2ZwDeeSFfw440oNBoW8,1062
+etcpak-0.9.12.dist-info/METADATA,sha256=aTHXTe5mxymfnuybqYd3x9oeokZPM9S7JMeeOJT-yIw,4387
+etcpak-0.9.12.dist-info/RECORD,,
+etcpak-0.9.12.dist-info/WHEEL,sha256=0LUMruz1qQG2-EekVp4I-4jhlItGIjSta7Y1ot6jCXk,147
+etcpak-0.9.12.dist-info/top_level.txt,sha256=T2D0x7SQLUB3U1bXC2uotzkyB-VtZlC_mQ2wYZB9Y8E,7
+etcpak/__init__.pyi,sha256=2SOoTtnQItukL_amfq4inCsEm5-DRn1624APUkrGJPo,4522
+etcpak/_etcpak_simd.cpython-38-x86_64-linux-gnu.so,sha256=xwB7OwzO0fZ4yGTt4KQ7ZxYjdme6VzoQ8YsIq3pEHyI,3534504
+etcpak/_cpufeatures.cpython-38-x86_64-linux-gnu.so,sha256=-pMax6UcnOK8OuHHFTgaM9u6HaA9QrsZi1HqsOK6PI4,48568
+etcpak/_cpufeatures.pyi,sha256=Dh6XER0MSlMFXXOllxZ3jRsFBxnwiTlHfCEsplwLqpM,144
+etcpak/_etcpak.cpython-38-x86_64-linux-gnu.so,sha256=Gw7mdszw3rcpwLWaSsgQwoFgVLLggodwLJrDFiDDL_o,2711392
+etcpak/__init__.py,sha256=5nDWCjg6Egwt8MsWcat5no0gTzWX7ncAFGjDoWcIHcY,1260
+etcpak/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
