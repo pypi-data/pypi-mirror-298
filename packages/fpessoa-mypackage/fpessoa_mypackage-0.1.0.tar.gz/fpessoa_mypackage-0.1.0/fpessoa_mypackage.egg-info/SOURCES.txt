@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+fpessoa_mypackage.egg-info/PKG-INFO
+fpessoa_mypackage.egg-info/SOURCES.txt
+fpessoa_mypackage.egg-info/dependency_links.txt
+fpessoa_mypackage.egg-info/top_level.txt
