@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "secsgem_cyg"
+version = "1.0.1"
+description = ""
+repository = "https://github.com/ChangYuan-Semiconductor-Equipment/secsgem_cyg.git"
+homepage = "https://github.com/ChangYuan-Semiconductor-Equipment/secsgem_cyg.git"
+authors = ["WeiLiu <wei.l@cyg.com>"]
+readme = "README.md"
+packages = [{include = "secsgem"},]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+serial = "^0.0.97"
+python-dateutil = "^2.9.0.post0"
+
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
