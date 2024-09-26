@@ -1,0 +1,7 @@
+setup.py
+nilgiri_python.egg-info/PKG-INFO
+nilgiri_python.egg-info/SOURCES.txt
+nilgiri_python.egg-info/dependency_links.txt
+nilgiri_python.egg-info/entry_points.txt
+nilgiri_python.egg-info/requires.txt
+nilgiri_python.egg-info/top_level.txt
