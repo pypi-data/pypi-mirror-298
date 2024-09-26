@@ -1,0 +1,7 @@
+ezmsg/zmq/__init__.py,sha256=8K4IcOA3-pfzadoM6s2Sfg5460KlJUocGgyTJTJl96U,52
+ezmsg/zmq/__version__.py,sha256=zMnMemknXglcJs59xkicNzeEJTVgYd1omSfLWj76yWw,411
+ezmsg/zmq/units.py,sha256=5xEZIqLRWfu8Ub-NQCmREqezCGEJXQsafTABdM7zvNk,7168
+ezmsg_zmq-1.2.0.dist-info/METADATA,sha256=_Yi46J7ru5vhTLgfFG_gliQygHO-I2iPZNqPcwFVSf4,918
+ezmsg_zmq-1.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+ezmsg_zmq-1.2.0.dist-info/licenses/LICENSE.txt,sha256=seu0tKhhAMPCUgc1XpXGGaCxY1YaYvFJwqFuQZAl2go,1100
+ezmsg_zmq-1.2.0.dist-info/RECORD,,
