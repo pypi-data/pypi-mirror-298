@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "brig"
+version = "0.0.1"
+description = "It is a repository for all modified functions and classes."
+authors = ["Code63Reaper <akilangms542@gmail.com>"]
+maintainers = ["Code63Reaper <akilangms542@gmail.com>"]
+readme = "README.md"
+license = "AGPL-3.0-or-later"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Utilities",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10"
+    ]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tqdm = "^4.66.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
