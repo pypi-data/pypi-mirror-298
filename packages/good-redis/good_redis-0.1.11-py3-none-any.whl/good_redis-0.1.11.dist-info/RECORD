@@ -1,0 +1,6 @@
+good_redis/__init__.py,sha256=ruDB2ku9DotV8oE1Kx90HGVZBawW06A90SlAXlJyZK0,287
+good_redis/_client.py,sha256=-RvRYRo4-kmavDXeIA2_rNDW9B-3Za9S0z4DaIvinkg,18046
+good_redis/_dictproxy.py,sha256=hYQb8liKeWoZAPmLmAAW3kyI5WS-7jegOmleTeUfsTc,2215
+good_redis-0.1.11.dist-info/METADATA,sha256=F6pkgl-Ob0hWK5rSoqSUynaSs8H2stlDKUVOuylvmho,10375
+good_redis-0.1.11.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+good_redis-0.1.11.dist-info/RECORD,,
