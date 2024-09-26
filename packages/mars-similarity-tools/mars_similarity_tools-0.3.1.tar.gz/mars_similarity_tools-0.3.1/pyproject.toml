@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mars-similarity-tools"
+version = "0.3.1"
+description = ""
+authors = ["znittzel <rikard@ourstudio.se>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mars-vectorizer-sdk = "^0.2.0"
+dill = "^0.3.8"
+maz = "^0.0.12"
+numpy = "^1.26.4"
+more-itertools = "^10.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
