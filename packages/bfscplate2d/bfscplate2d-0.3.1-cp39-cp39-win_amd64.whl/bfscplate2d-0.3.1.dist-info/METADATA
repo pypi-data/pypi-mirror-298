@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: bfscplate2d
+Version: 0.3.1
+Summary: Implementation of the BFSC plate finite element in 2D
+Home-page: https://github.com/saullocastro/bfscplate2d
+Author: Saullo G. P. Castro
+Author-email: S.G.P.Castro@tudelft.nl
+License: 3-Clause BSD
+Keywords: finite elements,plate,static analysis,buckling,vibration,structural dynamics
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: BSD License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: composites
+
+Implementation of the BFSC plate finite element in 2D, aiming linear and
+nonlinear analyses.
+
+Github Actions status:
+
+[![Actions Status](https://github.com/saullocastro/bfscplate2d/workflows/pytest/badge.svg)](https://github.com/saullocastro/bfscplate2d/actions)
+
+Coverage status:
+
+[![codecov](https://codecov.io/gh/saullocastro/bfscplate2d/branch/master/graph/badge.svg?token=W7W7WZV59A)](https://codecov.io/gh/saullocastro/bfscplate2d)
+
+License
+-------
+Distrubuted under the 3-Clause BSD license
+(https://raw.github.com/saullocastro/bfscplate2d/master/LICENSE).
+
+Contact: S.G.P.Castro@tudelft.nl
+

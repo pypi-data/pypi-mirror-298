@@ -1,0 +1,12 @@
+bfscplate2d/__init__.py,sha256=BFIldMCzW39Q_g_PGipJQ2NVMiwFIjsyMY0t5dmGlnY,585
+bfscplate2d/bfscplate2d.cp39-win_amd64.pyd,sha256=_6vhugtcMJMPRmBEaJ1iSPqa_J9jDbxdCxwIs4D68PA,2708480
+bfscplate2d/bfscplate2d.pyx,sha256=aPvOfxeFwiGhkWBVOwXUE5cx_Z1lBg5iK1Cd1B_9c0Q,1074196
+bfscplate2d/quadrature.py,sha256=lZK_XYTkcCW9lAPV6cKwFW4bLK4BLAnRldnoVdoeON4,8634
+bfscplate2d/version.py,sha256=r4xAFihOf72W9TD-lpMi6ntWSTKTP2SlzKP1ytkjRbI,22
+bfscplate2d-0.3.1.data/data/LICENSE,sha256=uHrC0zkY11Dj2UGiUH8cT0IDqTAdZVkS_xsJTihptOY,1533
+bfscplate2d-0.3.1.data/data/README.md,sha256=iqLn0QyNEpjh3JjcewoZtVyRL8tcSlNcqAnpeaGGPwg,617
+bfscplate2d-0.3.1.dist-info/LICENSE,sha256=uHrC0zkY11Dj2UGiUH8cT0IDqTAdZVkS_xsJTihptOY,1533
+bfscplate2d-0.3.1.dist-info/METADATA,sha256=OzlGOJ8jvOa2BdS9GtrOCPSLvEJIVqTF4iTac-358mo,1959
+bfscplate2d-0.3.1.dist-info/WHEEL,sha256=vq7bX_I37ZJK2gZz_HGA8eCPjBDKQSfb_9FNjesTNkk,99
+bfscplate2d-0.3.1.dist-info/top_level.txt,sha256=rTzIw-eEW4zSOXFXc7bfLBHIeA1LZiRCrUk9IcGkZtI,12
+bfscplate2d-0.3.1.dist-info/RECORD,,
