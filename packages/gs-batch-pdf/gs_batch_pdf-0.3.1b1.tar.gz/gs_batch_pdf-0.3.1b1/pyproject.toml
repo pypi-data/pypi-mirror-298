@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "gs-batch-pdf"
+version = "0.3.1b1"
+description = "cli tool wrapper for manipulating multiple pdfs file in parallel using ghostscript (compressing, convert to pdfa, etc.)"
+authors = ["kompre <s.follador@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [
+    { include = "gs_batch" },
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.urls]
+Homepage = "https://github.com/kompre/gs-batch"
+Issue = "https://github.com/kompre/gs-batch/issues"
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+tqdm = "^4.66.5"
+show-in-file-manager = "^1.1.5"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gs_batch = "gs_batch.gs_batch:gs_batch"
+gsb = "gs_batch.gs_batch:gs_batch"
