@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: akutils
+Version: 1.0.2
+Summary: A utility library providing generic methods for performing recurrent data manipulation in Pandas and Python.
+Author-email: Alex0x4b <alex0x4b.git.su1b4@slmail.me>
+Project-URL: Homepage, https://github.com/Alex0x4b/akutils
+Requires-Python: <3.11,>=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=2.2
+Requires-Dist: pyarrow>=14.0.0
+Requires-Dist: xlrd>=2.0.1
+Requires-Dist: openpyxl>=3.1.0
+Requires-Dist: pyxlsb>=1.0.10
+Requires-Dist: numpy>=1.26.0
+Requires-Dist: universal-pathlib==0.1.4
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: flake8>=5.0.4
+Requires-Dist: pytest>=7.2.2
+Requires-Dist: pytest-cov>=4.0.0
+Requires-Dist: mypy>=1.9.0
+Requires-Dist: pandas_stubs>=2.2.0.24
+Requires-Dist: types-setuptools>=69.2.0.20240317
+
+# What is it?
+
+**akutils** is a high-level Python library for recurring data manipulation (Pandas, Python
+data structure, API, file manipulation, etc.).
+
+# Main Features
+
+Some features supported:
+- Extends Pandas reader to natively include chunks, multiple files aggregation, etc.
+- Provide pd.Series converter for strings to types that handle the variety of ways to
+  write floats or dates.
+- Provide multiple high level methods to manipulate pd.Series (strip, delete special
+  characters, etc.)
+- Safe files and directories manipulation
+
+# Where to get it
+
+```bash
+# install from PyPI
+pip install akutils
+```
+*The source code is currently hosted on GitHub at: https://github.com/Alex0x4b/akutils*
+
+# Installation from sources
+
+```bash
+git clone https://github.com/Alex0x4b/akutils.git
+cd akutils
+pip install .
+```
