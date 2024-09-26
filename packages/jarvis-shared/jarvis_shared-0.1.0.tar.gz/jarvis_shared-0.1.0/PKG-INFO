@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: jarvis-shared
+Version: 0.1.0
+Summary: Safety placeholder
+Author: Team Diesel
+Author-email: puw-team-diesel@prima.it
+Requires-Python: >=3.10,<3.11

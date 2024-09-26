@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "jarvis-shared"
+version = "0.1.0"
+description = "Safety placeholder"
+authors = ["Team Diesel <[puw-team-diesel@prima.it](mailto:puw-team-diesel@prima.it)"]
+readme = "[README.md](http://readme.md/)"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
