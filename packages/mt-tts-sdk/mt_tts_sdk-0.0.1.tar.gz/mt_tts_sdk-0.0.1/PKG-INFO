@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mt_tts_sdk
+Version: 0.0.1
+Summary: 语音服务SDK
+Home-page: https://dev.sankuai.com/code/repo-detail/~ZHANGZHANG05/speechsdk/file/list
+Author: zhangzhang
+Author-email: zhangzhang05@sankuai.com
+License: MIT
+Description: # speech-sdk
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

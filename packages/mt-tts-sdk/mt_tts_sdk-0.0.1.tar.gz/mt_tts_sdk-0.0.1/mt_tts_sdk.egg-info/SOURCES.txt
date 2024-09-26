@@ -1,0 +1,9 @@
+README.md
+setup.py
+mt_tts_sdk/__init__.py
+mt_tts_sdk/mt_tts_sdk.py
+mt_tts_sdk.egg-info/PKG-INFO
+mt_tts_sdk.egg-info/SOURCES.txt
+mt_tts_sdk.egg-info/dependency_links.txt
+mt_tts_sdk.egg-info/requires.txt
+mt_tts_sdk.egg-info/top_level.txt
