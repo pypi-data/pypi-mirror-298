@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytoolkit_solunegocios"
+version = "0.0.3"  
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "azure-search-documents==11.5.1",
+    "azure-core==1.30.2",
+    "openai==1.43.1",
+    "msal==1.20.0",  # Microsoft Authentication Library para manejo de tokens
+    "requests>=2.25.1"  # Librería para realizar peticiones HTTP
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",  # Para pruebas automáticas
+    "black",        # Formateador de código
+    "flake8"        # Linter para asegurar calidad de código
+]

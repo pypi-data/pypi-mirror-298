@@ -1,0 +1,10 @@
+azure-search-documents==11.5.1
+azure-core==1.30.2
+openai==1.43.1
+msal==1.20.0
+requests>=2.25.1
+
+[dev]
+pytest>=6.0
+black
+flake8

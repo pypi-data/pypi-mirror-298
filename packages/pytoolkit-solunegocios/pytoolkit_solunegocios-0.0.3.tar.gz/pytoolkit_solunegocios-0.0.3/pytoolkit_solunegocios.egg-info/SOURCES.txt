@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pytoolkit_solunegocios/__init__.py
+pytoolkit_solunegocios.egg-info/PKG-INFO
+pytoolkit_solunegocios.egg-info/SOURCES.txt
+pytoolkit_solunegocios.egg-info/dependency_links.txt
+pytoolkit_solunegocios.egg-info/requires.txt
+pytoolkit_solunegocios.egg-info/top_level.txt
+pytoolkit_solunegocios/azure/__init__.py
+pytoolkit_solunegocios/azure/ai_search.py
+pytoolkit_solunegocios/azure/open_ai.py
+pytoolkit_solunegocios/azure/azure_auth/__init__.py
+pytoolkit_solunegocios/azure/azure_auth/auth.py
+pytoolkit_solunegocios/azure/azure_auth/config.py
+tests/test_modulo.py
