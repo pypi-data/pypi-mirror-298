@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gibbs-reconstructor
+Version: 0.1.0
+Summary: Gibbs Reconstruction for linear data reconstruction
+Home-page: https://github.com/flheight/spectral-bridges-pypi/
+Author: Félix Laplante
+Author-email: flheight0@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
