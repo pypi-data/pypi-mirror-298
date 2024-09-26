@@ -1,0 +1,9 @@
+senhasegura/__init__.py,sha256=IaJRdwX-PBWCwJuVmohrJYALN5CuAyyTVPkr1nIJ3ko,44
+senhasegura/modules/__init__.py,sha256=7M4inEWuvwI8gHNevEkhgFjf1HsxmXA2Rqf8LO0cw84,40
+senhasegura/modules/a2a.py,sha256=F6xtZS0RONiAsQsDaMsbzgwYlYjW6l-WTUYyw4SYFYk,1873
+senhasegura/utils/__init__.py,sha256=SITrKXbWTlsfcbglxpzxv6DezKXLp655rKICXl3bVN0,42
+senhasegura/utils/auth.py,sha256=U-LK6azAs8t6u0xKufHHyYG2-cpcijd2FZzyVey5SZo,2045
+senhasegura-0.1.1.dist-info/LICENSE,sha256=G2KM2yQu-A0_QvmOa5Nq9WX9BJtxgQZwRvj7Og2XlAI,1071
+senhasegura-0.1.1.dist-info/METADATA,sha256=YHGXlQMQ9H2Zkt9EBPMwtscmM_tC2vUeZOjJj8gCMJs,3400
+senhasegura-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+senhasegura-0.1.1.dist-info/RECORD,,
