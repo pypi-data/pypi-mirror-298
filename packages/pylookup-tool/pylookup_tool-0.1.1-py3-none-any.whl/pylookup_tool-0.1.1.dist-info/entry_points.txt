@@ -1,0 +1,3 @@
+[console_scripts]
+pylookup = pylookup.main:main
+pylookup-gui = pylookup.app.gui:main
