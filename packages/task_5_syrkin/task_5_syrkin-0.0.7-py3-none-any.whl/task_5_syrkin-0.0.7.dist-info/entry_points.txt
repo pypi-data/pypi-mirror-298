@@ -1,0 +1,3 @@
+[console_scripts]
+task_5_syrkin=task_5_syrkin.collection_app:main
+
