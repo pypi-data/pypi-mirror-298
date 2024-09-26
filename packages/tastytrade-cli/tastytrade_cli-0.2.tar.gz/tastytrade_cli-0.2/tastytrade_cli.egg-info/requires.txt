@@ -1,0 +1,3 @@
+asyncclick>=8.1.7.2
+rich>=13.8.1
+tastytrade>=8.3
