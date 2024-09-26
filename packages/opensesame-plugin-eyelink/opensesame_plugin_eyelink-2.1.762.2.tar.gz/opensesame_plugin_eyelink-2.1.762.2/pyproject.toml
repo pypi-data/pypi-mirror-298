@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "opensesame-plugin-eyelink"
+version = "2.1.762.2"
+description = "Extension package for OpenSesame which adds support for EyeLink devices by SR Research."
+authors = ["Jono Batten <jono@sr-research.com>", "Zhiguo Wang <zhiguo@sr-research.com>", "SR Research Support <support@sr-research.com>"]
+readme = "README.md"
+packages = [
+    {include = "opensesame_plugins"},
+]
+[tool.poetry.dependencies]
+python = ">= 3.9"
+opensesame-core = ">= 4.0.0a0"
+opensesame-eyelink-coregraphics = ">= 2.1.0"
+sr-research-pylink = ">= 2.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
