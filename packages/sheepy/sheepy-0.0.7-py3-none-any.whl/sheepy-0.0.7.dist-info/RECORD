@@ -1,0 +1,8 @@
+sheepy/__init__.py,sha256=uzKpLf1-m_lcbKfVd_ngfbdmlOdMXeCeRWoiCTuiK40,39
+sheepy/collector.py,sha256=KGmJt5X1PKaLCULdhVpqtm5eq-Ivf1aGw81APF5yRl4,461
+sheepy/sheeptest.py,sha256=II0tFWoQ-BdmvLTCVp84Mgki5GARIaAJgL9BnIfugug,3194
+sheepy-0.0.7.dist-info/LICENSE,sha256=MqfLJOgXj2dpRNELogvLMWVj1uP4vm-eYOnSdp0i4VQ,1096
+sheepy-0.0.7.dist-info/METADATA,sha256=PkAJnb5SSTgoczXIRv-TLWXYEvY3RJHid_z8XL-d33g,6924
+sheepy-0.0.7.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+sheepy-0.0.7.dist-info/top_level.txt,sha256=BkIqfpZMVqEwnmxO6r4TVlk0YDdgiBC-LRqI3pk5fUk,7
+sheepy-0.0.7.dist-info/RECORD,,
