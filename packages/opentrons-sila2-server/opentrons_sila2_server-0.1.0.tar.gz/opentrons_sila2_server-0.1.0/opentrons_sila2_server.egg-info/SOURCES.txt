@@ -1,0 +1,6 @@
+pyproject.toml
+opentrons_sila2_server.egg-info/PKG-INFO
+opentrons_sila2_server.egg-info/SOURCES.txt
+opentrons_sila2_server.egg-info/dependency_links.txt
+opentrons_sila2_server.egg-info/requires.txt
+opentrons_sila2_server.egg-info/top_level.txt
