@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: bittensor-wallet
+Version: 1.0.0
+Home-page: https://github.com/opentensor/btwallet
+Author: bittensor.com
+Author-email: 
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: py-bip39-bindings==0.1.11
+Requires-Dist: termcolor
+Requires-Dist: eth-utils<2.3.0
+Requires-Dist: substrate-interface~=1.7.9
+Requires-Dist: password-strength
+Requires-Dist: cryptography~=43.0.1
+Requires-Dist: ansible~=6.7
+Requires-Dist: ansible-vault~=2.1
+Requires-Dist: munch~=2.5.0
+Requires-Dist: rich
+Provides-Extra: dev
+Requires-Dist: pytest==7.2.0; extra == "dev"
+Requires-Dist: pytest-asyncio==0.23.7; extra == "dev"
+Requires-Dist: pytest-mock==3.12.0; extra == "dev"
+Requires-Dist: pytest-split==0.8.0; extra == "dev"
+Requires-Dist: pytest-xdist==3.0.2; extra == "dev"
+Requires-Dist: pytest-rerunfailures==10.2; extra == "dev"
+Requires-Dist: coveralls==3.3.1; extra == "dev"
+Requires-Dist: pytest-cov==4.0.0; extra == "dev"
+Requires-Dist: ddt==1.6.0; extra == "dev"
+Requires-Dist: hypothesis==6.81.1; extra == "dev"
+Requires-Dist: flake8==7.0.0; extra == "dev"
+Requires-Dist: mypy==1.8.0; extra == "dev"
+Requires-Dist: types-retry==0.9.9.4; extra == "dev"
+Requires-Dist: freezegun==1.5.0; extra == "dev"
+Requires-Dist: httpx==0.27.0; extra == "dev"
+Requires-Dist: ruff==0.4.7; extra == "dev"
+Requires-Dist: aioresponses==0.7.6; extra == "dev"
+Requires-Dist: factory-boy==3.3.0; extra == "dev"
+
+## Bittensor Wallet SDK
+
+# Install
+There are a few ways to install Bittensor
+
+1. From source for usage:
+```bash
+$ git clone https://github.com/opentensor/btwallet.git
+$ python3 -m pip install -e bittensor_wallet/
+```
+2. From source for development needs:
+```bash
+$ git clone https://github.com/opentensor/btwallet.git
+$ python3 -m venv venv  # create env
+$ source venv/bin/activate  # activate env
+$ pip install bittensor-wallet  # install bittensor-wallet
+$ python3 -m pip install -e .[dev] # installs dependencies for development and testing
+```
+
+3. From PyPI:
+```bash
+$ python3 -m venv venv  # create env
+$ source venv/bin/activate  # activate env
+$ pip install bittensor-wallet  # install bittensor-wallet
+```
+
+# To test your installation using python
+```python
+from bittensor_wallet import Wallet
+
+# creates wallet with name `default`
+wallet = Wallet()
+wallet.create()
+```
+If you want to pass arguments to the class other than the default, use the following:
+```python
+name (str): The name of the wallet, used to identify it among possibly multiple wallets.
+hotkey (str): String identifier for the hotkey.
+path (str): File system path where wallet keys are stored.
+config (Config): Bittensor configuration object.
+```
+
+To use your own config, you can do it like this:
+```python
+from bittensor_wallet.config import Config
+config = Config()
+```
