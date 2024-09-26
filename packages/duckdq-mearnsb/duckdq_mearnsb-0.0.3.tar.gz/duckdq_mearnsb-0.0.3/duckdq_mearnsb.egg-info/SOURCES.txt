@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+duckdq_mearnsb.egg-info/PKG-INFO
+duckdq_mearnsb.egg-info/SOURCES.txt
+duckdq_mearnsb.egg-info/dependency_links.txt
+duckdq_mearnsb.egg-info/requires.txt
+duckdq_mearnsb.egg-info/top_level.txt
