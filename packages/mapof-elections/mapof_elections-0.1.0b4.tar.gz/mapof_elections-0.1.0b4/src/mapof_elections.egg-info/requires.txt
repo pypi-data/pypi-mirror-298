@@ -1,0 +1,8 @@
+mapof>=0.0.2a4
+tqdm==4.66.5
+prefsampling==0.1.15
+
+[extras]
+abcvoting~=2.0.0b0
+pulp~=2.5.1
+permanent
