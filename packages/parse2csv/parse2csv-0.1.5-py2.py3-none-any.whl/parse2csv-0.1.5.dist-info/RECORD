@@ -1,0 +1,11 @@
+parse2csv/__init__.py,sha256=82Qr7HAPVJ8VzLXooj4k6g8GD4V61Ow3HkUp-6m-7sc,417
+parse2csv/cli.py,sha256=sPEd1IJEHSFKNhIiN0jfhm9a9EXeLAbWik_Fmaqs2xM,1337
+parse2csv/parse2csv.py,sha256=5jp97gL2rML48F5V8MY0Qla8FqKXOzVNqon8kC1hQKI,2619
+parse2csv/reduct.py,sha256=ksUIywxy2ytiwwJlseS973NQbARc_ZNcpWiSn74wzPU,3405
+parse2csv/release.py,sha256=oX3RqxSRdmQtRoHypREvapdWqV-JVki6Ptq8fy67Z-I,2148
+parse2csv-0.1.5.dist-info/LICENSE,sha256=qSiP59XEJUPZFoWOKcoHk6jVt0x4iN6f8cGvKgSpu70,1070
+parse2csv-0.1.5.dist-info/METADATA,sha256=7PkW9ugwadmsxII3nTlJa3CGEGu7-LFarnLhkM6q6H4,5498
+parse2csv-0.1.5.dist-info/WHEEL,sha256=fS9sRbCBHs7VFcwJLnLXN1MZRR0_TVTxvXKzOnaSFs8,110
+parse2csv-0.1.5.dist-info/entry_points.txt,sha256=Qe0KzhDwE8AmVUoAcmBUrx175zQVlkAOjy4bz2rcaNs,47
+parse2csv-0.1.5.dist-info/top_level.txt,sha256=j1QUqBuYK6TjN4d4SjF8ExwGHOtYHUAfGvN_pIYE8lM,10
+parse2csv-0.1.5.dist-info/RECORD,,
