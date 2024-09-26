@@ -1,0 +1,14 @@
+"""Qbus MQTT API constants."""
+
+TOPIC_PREFIX = "cloudapp/QBUSMQTTGW"
+
+KEY_OUTPUT_ACTION = "action"
+KEY_OUTPUT_ACTIONS = "actions"
+KEY_OUTPUT_ID = "id"
+KEY_OUTPUT_NAME = "name"
+KEY_OUTPUT_PROPERTIES = "properties"
+KEY_OUTPUT_REF_ID = "refId"
+KEY_OUTPUT_TYPE = "type"
+
+KEY_PROPERTIES_AUTHKEY = "authKey"
+KEY_PROPERTIES_VALUE = "value"
