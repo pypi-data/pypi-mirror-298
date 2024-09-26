@@ -1,0 +1,12 @@
+conjugate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conjugate/_compound_gamma.py,sha256=GzJ30x6W24NYX_lRiRQJnwa6kyOiY_Vhjr9WaqonsVw,894
+conjugate/_typing.py,sha256=ASpcCNAaKGLHPrnFNKlcA-WsDVqWZhNmel67M45YHyg,762
+conjugate/distributions.py,sha256=mMrgSX0oKaxfEXHQt0Uz_Cpyo_-2_AXQFm_KLFgfiH8,26821
+conjugate/models.py,sha256=VBskcCCy1nP6PjHFSBhoEtkW36X-K0SvXllWxs4WD-0,47640
+conjugate/plot.py,sha256=Xc9jpA2_0MH27EwLtCBNmfzMRJRW53C3YokwWIdAkoA,7512
+conjugate/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conjugate/slice.py,sha256=BVGfgK1EZCl6KkMMFmJaiKHWYi4kl015TZPojRNarVM,477
+conjugate_models-0.9.0.dist-info/LICENSE,sha256=dC1BuNHBb5qsK4nDA0C4clRupZzgbcbJROnWrmAfUfg,1066
+conjugate_models-0.9.0.dist-info/METADATA,sha256=PGpJ5BCcnZ3jpMDzeN1xdiq5NIemRall3pJIKFapr7Q,4591
+conjugate_models-0.9.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+conjugate_models-0.9.0.dist-info/RECORD,,
