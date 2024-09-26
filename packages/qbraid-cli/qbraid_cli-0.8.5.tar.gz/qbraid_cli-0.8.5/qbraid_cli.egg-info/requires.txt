@@ -1,0 +1,13 @@
+typer>=0.12.1
+rich>=10.11.0
+qbraid-core[environments]>=0.1.23
+
+[dev]
+ruff
+isort
+black
+pytest
+pytest-cov
+
+[jobs]
+amazon-braket-sdk>=1.48.1
