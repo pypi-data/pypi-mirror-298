@@ -1,0 +1,12 @@
+funcy
+mosaik-api<=3.0.3
+
+[dev]
+mypy~=1.0.1
+pytest
+coverage
+black~=24.1.0
+setuptools
+twine
+wheel
+palaestrai~=3.5.0

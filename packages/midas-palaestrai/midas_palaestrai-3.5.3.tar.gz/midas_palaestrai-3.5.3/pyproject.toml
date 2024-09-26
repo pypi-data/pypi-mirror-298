@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "midas-palaestrai"
+version = "3.5.3"
+authors = [{name="The ARL Developers", email="stephan.balduin@offis.de"}]
+description = "Everything needed to use MIDAS with palaestrAI."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "funcy",
+    "mosaik-api<=3.0.3"
+]
+
+[project.optional-dependencies]
+dev = [
+    "mypy~=1.0.1",
+    "pytest",
+    "coverage",
+    "black~=24.1.0",
+    "setuptools",
+    "twine",
+    "wheel",
+    "palaestrai~=3.5.0",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/midas-mosaik/midas-palaestrai"
+"Bug Tracker" = "https://gitlab.com/midas-mosaik/midas-palaestrai/-/issues"
+
+[tool.black]
+line-length = 79
