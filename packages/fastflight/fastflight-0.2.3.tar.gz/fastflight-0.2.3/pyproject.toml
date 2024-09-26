@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fastflight"
+authors = [{ name = "Chao Ning", email = "chao.ning.uk@gmail.com" }]
+description = "FastFlight is a high-performance data transfer framework that integrates Apache Arrow Flight to fetch and stream large-scale data from multiple sources, using a modular, pluggable architecture for various data services, and offers optional FastAPI integration for HTTP-based access."
+version = "0.2.3"
+readme = "README.md"
+requires-python = ">= 3.10"
+dependencies = [
+    "asyncpg",
+    "fastapi>=0.110.2",
+    "pandas",
+    "pyarrow>=14.0.0",
+    "pydantic>=2.0",
+    "sqlalchemy[asyncio]",
+]
+
+[project.optional-dependencies]
+dev = ["pre-commit"]
+test = ["pytest", "pytest-cov"]
+
+[tool.ruff]
+line-length = 120
+src = ["src", "tests", "demo"]
+
+[tool.ruff.format]
+skip-magic-trailing-comma = true
+
+[tool.ruff.lint]
+# On top of the default `select` (`E4`, E7`, `E9`, and `F`), enable isort (`I`)
+extend-select = ["I"]
