@@ -1,0 +1,11 @@
+guolei_py3_wisharetec/__init__.py,sha256=MUjJ4_CUW2jBHK48oK8n7H-SwJBtWqlfsrhrhtiVN5Y,433
+guolei_py3_wisharetec/scaasp.py,sha256=WR7Y6umggZyF3G_zQXNZNN3pvK0bQ5A_gNQDDu0KLBQ,104341
+guolei_py3_wisharetec/v1/__init__.py,sha256=yZgUhUsUnsGQXYV9aYe7CK5Ct3ypwlMBMNYQBufV8EY,280
+guolei_py3_wisharetec/v1/scaasp/__init__.py,sha256=FDmEKt7D-JorOZFUGECslPIeK0tm3bLapoAd7NSPa-E,281
+guolei_py3_wisharetec/v1/scaasp/admin/__init__.py,sha256=FDmEKt7D-JorOZFUGECslPIeK0tm3bLapoAd7NSPa-E,281
+guolei_py3_wisharetec/v1/scaasp/admin/api.py,sha256=6dfX0bEXctOjHxuTZ_qmw34npOzNwesr9Di5pdHyc0M,21752
+guolei_py3_wisharetec-1.10.10.dist-info/LICENSE,sha256=8KKNhftKNTfcOA9HplnjPYnrWMyY4t2p8nwzDEqsT_Q,1063
+guolei_py3_wisharetec-1.10.10.dist-info/METADATA,sha256=1ei4mERXfepMVBQZFCk5I-UYIit60zl7rug0-Qogj7I,512
+guolei_py3_wisharetec-1.10.10.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+guolei_py3_wisharetec-1.10.10.dist-info/top_level.txt,sha256=k2aLlEvOQmN5zbZnFkP2LcVs93KptSRVZdS_ogM2g4U,22
+guolei_py3_wisharetec-1.10.10.dist-info/RECORD,,
