@@ -1,0 +1,19 @@
+ARG BASE_IMAGE_TAG
+
+FROM 502071203139.dkr.ecr.us-west-2.amazonaws.com/uncountable/integrations/integration-server-base:$BASE_IMAGE_TAG
+
+ENV SETUPTOOLS_SCM_PRETEND_VERSION_FOR_UNCOUNTABLEPYTHONSDK=0
+
+RUN mkdir sdk_local
+COPY ./pyproject.toml sdk_local/
+RUN python -m pip install sdk_local/
+
+COPY ./examples/integration-server/pyproject.toml .
+RUN python -m pip install .
+
+ADD ./examples/integration-server/ .
+
+COPY ./uncountable uncountable
+
+ENV UNC_PROFILES_MODULE=jobs
+ENV UNC_SQLITE_URI=sqlite:////data/sqlite.db
