@@ -1,0 +1,6 @@
+numpy<2.0
+numba
+astropy
+nbsphinx
+nbsphinx-link
+sphinx-rtd-theme
