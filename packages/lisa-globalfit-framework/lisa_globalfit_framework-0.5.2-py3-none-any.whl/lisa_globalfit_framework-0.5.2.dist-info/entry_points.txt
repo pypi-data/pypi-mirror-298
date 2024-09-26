@@ -1,0 +1,2 @@
+[console_scripts]
+lgfk-cli = lisa.globalfit.framework.cli:main
