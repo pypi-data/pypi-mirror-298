@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "purr-petra"
+version = "0.1.4"
+description = "Python API to extract JSON data from S&P Global Petra projects"
+authors = ["R. Bryan Hughes <bryan@purr.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.0"
+loguru = "^0.7.2"
+pyodbc = "^5.1.0"
+alphashape = "^1.3.1"
+pandas = "^2.2.3"
+uvicorn = "^0.30.6"
+sqlalchemy = "^2.0.35"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+ignore_missing_imports = true
