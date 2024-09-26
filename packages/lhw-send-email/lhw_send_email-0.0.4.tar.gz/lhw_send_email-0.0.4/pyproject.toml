@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lhw-send-email"
+version = "0.0.4"
+authors = [
+  { name="骆鸿威", email="1959415641@qq.com" },
+]
+description = "由本人(骆鸿威)创作的,用于邮件发送的第三方库"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Th5200/SendEmail"
+Issues = "https://github.com/Th5200/SendEmail/issues"
