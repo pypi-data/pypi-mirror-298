@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: summer-ai
+Version: 0.0.3
+Summary: ai cli tool
+Home-page: https://github.com/aidan-wallace/summer
+Author: Aidan Wallace
+Author-email: aidanwallacedev@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pytest ==8.3.3
+Requires-Dist: requests ==2.32.3
+Requires-Dist: rich ==13.8.1
+Requires-Dist: ruff ==0.6.7
+Requires-Dist: setuptools ==75.1.0
+
+# Python Project
+
+## Usage
+
+```sh
+venv/bin/python main.py
+
+curl localhost:7869/api/generate -d '{
+	"model": "llama3.1",
+	"prompt": "hi",
+	"stream": false
+}'
+```
+
+## Environment
+
+| key             | type   | default                 | description                             |
+| --------------- | ------ | ----------------------- | --------------------------------------- |
+| HOST            | string | "http://localhost:7869" | base url to the Ollama server           |
+| MODEL           | string | "llama3.2"              | default model to use                    |
+| KEEP_ALIVE_MINS | int    | 20                      | max time to keep unused model in memory |

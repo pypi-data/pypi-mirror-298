@@ -1,0 +1,2 @@
+[console_scripts]
+summer = main:main
