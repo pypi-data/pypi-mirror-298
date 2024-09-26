@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tangible-shared-models
+Version: 1.0.1
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Requires-Dist: django
+Requires-Dist: python-decouple
+Requires-Dist: psycopg2-binary
+Requires-Dist: django-extensions
+
