@@ -1,0 +1,2 @@
+[console_scripts]
+agentChef = agentChef.cli:cli
