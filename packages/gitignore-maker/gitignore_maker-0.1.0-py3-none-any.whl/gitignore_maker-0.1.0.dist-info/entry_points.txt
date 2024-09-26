@@ -1,0 +1,2 @@
+[console_scripts]
+gitignore_maker = gitignore_maker:gitignore_maker
