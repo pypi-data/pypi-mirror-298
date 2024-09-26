@@ -1,0 +1,62 @@
+[cmake]
+version = "3.15"
+cmkr-include = "cmake/cmkr.cmake"
+
+[project]
+name = "re-unplayplay"
+languages = ["CXX"]
+msvc-runtime = "static"
+
+[options]
+RE_UNPP_BUILD_TESTS = false
+RE_UNPP_BUILD_PYTHON = false
+
+[target.re-unplayplay]
+alias = "unplayplay::lib"
+type = "library"
+compile-features = ["cxx_std_17"]
+compile-definitions = ["NOMINMAX"]
+sources = ["src/lib/**.cpp"]
+include-directories = ["src/lib/"]
+msvc.compile-options = ["/MP"]
+linux.compile-options = ["-fPIC"]
+
+[target.re-unplayplay-cli]
+type = "executable"
+link-libraries = ["unplayplay::lib"]
+sources = ["src/bin/**.cpp"]
+
+[fetch-content.GTest]
+git = "https://github.com/google/googletest"
+tag = "v1.15.2"
+condition = "re-unpp-build-tests"
+
+[target.re-unplayplay-tests]
+type = "executable"
+condition = "re-unpp-build-tests"
+sources = ["src/lib-tests/**.cpp"]
+include-directories = ["src/tests/"]
+link-libraries = ["unplayplay::lib", "GTest::gtest_main"]
+
+[fetch-content.pybind11]
+git = "https://github.com/pybind/pybind11.git"
+tag = "v2.13.6"
+condition = "re-unpp-build-python"
+
+[template.pyd]
+type = "shared"
+add-function = "pybind11_add_module"
+pass-sources = true
+
+#[find-package.Python]
+#condition = "re-unpp-build-python"
+#required = true
+#components = ["Interpreter", "Development.Module"]
+
+[target.re-unplayplay-python]
+type = "pyd"
+sources = ["src/python/**.cpp"]
+condition = "re-unpp-build-python"
+link-libraries = ["unplayplay::lib"]
+cmake-after = """set_property(TARGET re-unplayplay-python PROPERTY OUTPUT_NAME _re_unplayplay)
+install(TARGETS re-unplayplay-python LIBRARY DESTINATION .)"""
