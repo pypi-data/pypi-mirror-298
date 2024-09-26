@@ -1,0 +1,5 @@
+matplotlib
+numpy<2,>=1
+pandas
+pyvista
+scipy
