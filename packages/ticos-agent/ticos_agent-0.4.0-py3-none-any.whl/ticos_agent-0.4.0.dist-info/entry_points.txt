@@ -1,0 +1,3 @@
+[console_scripts]
+ticos-agent=ticos_agent.__main__:main
+
