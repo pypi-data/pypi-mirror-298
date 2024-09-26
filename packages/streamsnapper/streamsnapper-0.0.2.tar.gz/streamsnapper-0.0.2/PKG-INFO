@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: streamsnapper
+Version: 0.0.2
+Summary: StreamSnapper is an intuitive library designed to simplify and enhance YouTube media downloads. It offers efficient, high-speed media extraction with optional tools for advanced data retrieval from YouTube.
+Home-page: https://github.com/henrique-coder/streamsnapper
+Author: henrique-coder
+Author-email: hjyz6rqyb@mozmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scrapetube
+Requires-Dist: yt-dlp
+Provides-Extra: downloader
+Requires-Dist: pysmartdl2; extra == "downloader"
+Provides-Extra: merger
+Requires-Dist: pyffmpeg; extra == "merger"
+Provides-Extra: all
+Requires-Dist: pyffmpeg; extra == "all"
+Requires-Dist: pysmartdl2; extra == "all"
+
+### StreamSnapper
+
+StreamSnapper is an intuitive library designed to simplify and enhance YouTube media downloads. It offers efficient, high-speed media extraction with optional tools for advanced data retrieval from YouTube.

@@ -1,0 +1,12 @@
+scrapetube
+yt-dlp
+
+[all]
+pyffmpeg
+pysmartdl2
+
+[downloader]
+pysmartdl2
+
+[merger]
+pyffmpeg
