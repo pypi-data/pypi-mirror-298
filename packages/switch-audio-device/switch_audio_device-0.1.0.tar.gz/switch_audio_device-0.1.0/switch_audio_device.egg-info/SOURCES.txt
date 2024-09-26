@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+switch_audio_device/__init__.py
+switch_audio_device/main.py
+switch_audio_device.egg-info/PKG-INFO
+switch_audio_device.egg-info/SOURCES.txt
+switch_audio_device.egg-info/dependency_links.txt
+switch_audio_device.egg-info/entry_points.txt
+switch_audio_device.egg-info/requires.txt
+switch_audio_device.egg-info/top_level.txt
