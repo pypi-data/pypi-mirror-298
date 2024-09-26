@@ -1,0 +1,17 @@
+core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core/asgi.py,sha256=TZFU0uydvEDV2c6fD7V9XqBMX7QAIfjDZocfGwRjv3c,395
+core/email_service.py,sha256=yjALoeqlQLZG7DQTG3vvEcogveOUaN8EqdzVgEnyh08,914
+core/helpers.py,sha256=Ltz0M6Z6cjfZdl1ZzBuD8KTPXSckTXnN3jAJSVi6BVE,777
+core/jinja2_env.py,sha256=4KKinLrcmn28JCrNua5VGbpKrum8AqBEKKhPzkqvkOA,261
+core/middleware.py,sha256=AIkO5XVhq3tNu-ALi6KpwihQPNDwA8UmXFqHjbI_JNs,1121
+core/models.py,sha256=0Di9c0Vs52ZLwNz_EWTBcme_kCCDnZdea8XdolxhnZs,1059
+core/settings.py,sha256=BXBpg5dmwE7Xi7c3YChhbWNbkVeMhOzwlQ8dhhbW_84,7266
+core/shortcuts.py,sha256=NnJoz_BrQ_QZ5YOVsU3WHsMEVZWWtbX0DQE8zXnXsu4,3166
+core/urls.py,sha256=WQrtmCATpqFvD2gXx5BqnBEKZ1WljBfxMXrgj91gOsc,1804
+core/utils.py,sha256=dOQYEuxKUpz9fg_RY2rRDMTizDCTwTi9S3fwdj92JQ0,1292
+core/views.py,sha256=xTxJFR6RWhEf5VMatu3xuReK-djTBJt8O_OTsuo6DIM,689
+core/wsgi.py,sha256=UkqcOYSRzCJr0WHdJHKYZWYiWjrTTxWcgiAXH-ta3KY,395
+buzzerboy_saas_tenants-0.1.dist-info/METADATA,sha256=vn8tFyAKSJRSOebXZ1JiI_k6JNxjOs_l0Wy4dJ8lLkI,2426
+buzzerboy_saas_tenants-0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+buzzerboy_saas_tenants-0.1.dist-info/top_level.txt,sha256=0ebp8k35dOTHVwbY3UcokRsjC7cWLN_iaJ70tIcmODU,5
+buzzerboy_saas_tenants-0.1.dist-info/RECORD,,

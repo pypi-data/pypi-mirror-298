@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: buzzerboy-saas-tenants
+Version: 0.1
+Summary: A reusable Django package containing multiple apps
+Home-page: https://your-package-repo-url
+Author: Buzzerboy Inc.
+Author-email: dev@buzzerboy.com
+License: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Description-Content-Type: text/markdown
+Requires-Dist: django==4.2.9
+Requires-Dist: django-allauth==0.60.1
+Requires-Dist: PyJWT==2.8.0
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: str2bool==1.1
+Requires-Dist: django-quill-editor==0.1.40
+Requires-Dist: django-ckeditor==6.7.1
+Requires-Dist: django-ckeditor-5==0.2.13
+Requires-Dist: jinja2
+Requires-Dist: django-htmx==1.19.0
+Requires-Dist: django-js-asset==2.2.0
+Requires-Dist: celery==5.3.4
+Requires-Dist: redis==5.0.1
+Requires-Dist: hiredis==2.2.3
+Requires-Dist: pillow==10.4.0
+Requires-Dist: django-seed==0.3.1
+Requires-Dist: django-celery-results==2.5.1
+Requires-Dist: djangorestframework==3.14.0
+Requires-Dist: django-api-generator==1.0.17
+Requires-Dist: django-debug-toolbar==4.2.0
+Requires-Dist: drf-spectacular==0.26.5
+Requires-Dist: whitenoise==6.5.0
+Requires-Dist: gunicorn==21.2.0
+Requires-Dist: cryptography==42.0.2
+Requires-Dist: psycopg2-binary==2.9.9
+Requires-Dist: python-decouple==3.8
+Requires-Dist: pandas==2.2.0
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: asgiref==3.8.1
+Requires-Dist: Faker==28.0.0
+Requires-Dist: greenlet==3.0.3
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: MarkupSafe==2.1.5
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: six==1.16.0
+Requires-Dist: sqlparse==0.5.1
+Requires-Dist: toposort==1.10
+Requires-Dist: python-gettext
+
+# Introduction 
+This is a standard starter Kit for a Django application with UI already built-in
+
+# Getting Started
+Installation process
+Recommend to use Linux or WSL, and ensure Python3 and Pip are installed. Run `pip3 install -r requirements.txt` from root directory, then `python3 manage.py runserver`
+
+# Build and Test
+TO DO: Create layout and base
+TO DO: Create templatetags for left menu and other components that occur on all pages
+
