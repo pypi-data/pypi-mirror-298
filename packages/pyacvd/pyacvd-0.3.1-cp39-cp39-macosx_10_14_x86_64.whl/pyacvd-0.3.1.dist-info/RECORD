@@ -1,0 +1,8 @@
+pyacvd/clustering.py,sha256=aUhy6BoYEBOBdiHuO8AE6HJ5t4wOC1-SEYESxSMY17U,21233
+pyacvd/_clustering.cpython-39-darwin.so,sha256=yi6L3zj2TvDmUsr24kuAeTjFTvMph_6xJHiIEsDpB4M,192304
+pyacvd/__init__.py,sha256=cJZ18UCVliGdbpyXLLROJ-wchlAoIVwv9cTKFCufSoc,244
+pyacvd/_clustering.pyi,sha256=LgChfbaT-liGjJDZt3R7YtQ-GKEvs5jQXAFHEBk_wPA,1899
+pyacvd-0.3.1.dist-info/RECORD,,
+pyacvd-0.3.1.dist-info/WHEEL,sha256=B9GQQu16Uy3P4TO_vi0BR1mKBeIoBDrSMZPMK1T9HbE,114
+pyacvd-0.3.1.dist-info/METADATA,sha256=KEZfApTAMAwo2vR5NvSXZ0Yl8BVhCwf5sMe-JGdYZ2E,2240
+pyacvd-0.3.1.dist-info/licenses/LICENSE,sha256=Bkyxj_pIVdsAvd7Vid4AiDABr5-2WndlkeXMi8njnMM,1084
