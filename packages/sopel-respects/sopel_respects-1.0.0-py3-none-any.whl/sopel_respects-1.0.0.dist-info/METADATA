@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: sopel-respects
+Version: 1.0.0
+Summary: Press F to pay respects.
+Author-email: xnaas <me@xnaas.info>
+Maintainer-email: dgw <dgw@technobabbl.es>
+License: The Unlicense
+Project-URL: Homepage, https://github.com/dgw/sopel-respects
+Project-URL: Bug Tracker, https://github.com/dgw/sopel-respects/issues
+Platform: Linux x86, x86-64
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sopel>=7.1
+
+# sopel-respects
+
+A Sopel plugin letting users "Press F to pay respects".
+
+## Installing
+
+```sh
+pip install sopel-respects
+```
+
+## Using
+
+Triggers on these characters (case-insensitive):
+
+* F
+* 𝔽
+
+## Credits
+
+This is a continuation of [ActionSack's `sopel-respects`][asak-respects-source],
+which has been marked as archived and no longer maintained. It maintains the
+same license and authorship credits as the original.
+
+The new maintainer (dgw) has only made minor updates to documentation and
+package metadata, including changing the "maintainer" field to reflect
+upstream's archival status.
+
+[//]: # (asak-respects-source is also used in the NEWS file appended for PyPI)
+[asak-respects-source]: https://git.actionsack.com/xnaas-archived/sopel-respects
+
+## Changelog
+
+### 1.0.0
+
+First release of `sopel-respects` on PyPI.
+
+Repackaging of public domain work from the [ActionSack
+Git][asak-respects-source], where upstream has been marked as archived.
