@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/summer_ai.egg-info/PKG-INFO
+src/summer_ai.egg-info/SOURCES.txt
+src/summer_ai.egg-info/dependency_links.txt
+src/summer_ai.egg-info/entry_points.txt
+src/summer_ai.egg-info/requires.txt
+src/summer_ai.egg-info/top_level.txt
+test/test_blank.py
