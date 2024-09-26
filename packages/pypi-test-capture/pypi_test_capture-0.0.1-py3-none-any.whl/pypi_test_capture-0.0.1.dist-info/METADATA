@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pypi-test-capture
+Version: 0.0.1
+Summary: A simple package to capture audio from the microphone and transcribe it to text using OpenAI's Whisper API.
+Author: elba
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: openai (>=1.48.0,<2.0.0)
+Requires-Dist: pyaudio (>=0.2.14,<0.3.0)
+Description-Content-Type: text/markdown
+
+

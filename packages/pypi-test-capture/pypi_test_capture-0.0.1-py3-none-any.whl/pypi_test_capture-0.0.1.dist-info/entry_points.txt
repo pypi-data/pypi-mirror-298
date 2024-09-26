@@ -1,0 +1,3 @@
+[console_scripts]
+capture=stream_capture.cli:main
+
