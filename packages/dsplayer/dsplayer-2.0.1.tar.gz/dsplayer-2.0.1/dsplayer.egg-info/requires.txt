@@ -1,0 +1,7 @@
+requests
+bs4
+colorama
+selenium
+webdriver_manager
+yt-dlp
+PyNaCl
