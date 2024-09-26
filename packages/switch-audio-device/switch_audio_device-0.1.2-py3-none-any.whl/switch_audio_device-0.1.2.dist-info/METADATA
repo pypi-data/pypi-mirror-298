@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: switch_audio_device
+Version: 0.1.2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pulsectl
+
+Creates a [rofi](https://github.com/davatorium/rofi) menu to select primary audio device on machines running Pulse Audio for managing their audio. No need to have rofi installed on the system for this to work.
