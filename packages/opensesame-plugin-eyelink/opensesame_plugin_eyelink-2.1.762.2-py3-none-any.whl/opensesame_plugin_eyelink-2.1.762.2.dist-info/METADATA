@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: opensesame-plugin-eyelink
+Version: 2.1.762.2
+Summary: Extension package for OpenSesame which adds support for EyeLink devices by SR Research.
+Author: Jono Batten
+Author-email: jono@sr-research.com
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: opensesame-core (>=4.0.0a0)
+Requires-Dist: opensesame-eyelink-coregraphics (>=2.1.0)
+Requires-Dist: sr-research-pylink (>=2.1.0)
+Description-Content-Type: text/markdown
+
+# opensesame-plugin-eyelink
+
+OpenSesame plugin package for supporting various EyeLink eye tracker devices from [SR Research Ltd.](https://www.sr-research.com/).
+
+Please visit the [SR Research Support Forums](https://www.sr-research.com/support) for more information, educational material and Q&A.
