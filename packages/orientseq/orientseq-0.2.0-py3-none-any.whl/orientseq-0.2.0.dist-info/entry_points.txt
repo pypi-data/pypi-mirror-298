@@ -1,0 +1,3 @@
+[console_scripts]
+orient=orientseq.__main__:main
+
