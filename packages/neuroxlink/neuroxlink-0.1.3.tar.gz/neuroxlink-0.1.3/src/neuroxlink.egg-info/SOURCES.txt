@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+.github/workflows/publish.yml
+src/__init__.py
+src/neuroxlink.py
+src/neuroxlink.egg-info/PKG-INFO
+src/neuroxlink.egg-info/SOURCES.txt
+src/neuroxlink.egg-info/dependency_links.txt
+src/neuroxlink.egg-info/requires.txt
+src/neuroxlink.egg-info/top_level.txt

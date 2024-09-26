@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuroxlink"
+dynamic = ["version"]
+description = "An experimental mdast parser to browse MyST articles like cough publishers cough cannot even imagine."
+authors = [
+    { name="agahkarakuzu", email="agahkarakuzu@gmail.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+keywords = ["myst", "mdast", "markdown", "neurolibre"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+    "plotly",
+    "pandas",
+    "numpy"
+]
+
+[project.urls]
+Homepage = "https://github.com/neurolibre/neuroxlink"
+
+[tool.setuptools_scm]
+version_scheme = "post-release"
+local_scheme = "dirty-tag"
