@@ -1,0 +1,14 @@
+spatk/__init__.py,sha256=Ajl_9132HVc0GqyJ6okRgbX3Uh4Xs-YZLHJs25cZ3hE,840
+spatk/circuit.py,sha256=Vo1WrYy51tfTqj2Fq2nazuP5BG4Gqh0bl47y7x4OMGE,9727
+spatk/elements.py,sha256=aNVljyUk5AKgXe5FUlvk1w2EPn0SZ6kLIn8o1rPSn9o,3575
+spatk/genelems.py,sha256=GIaGhIltjP4T5f5XZwCEjGpbbc8EH2U7396yR9RTa6w,15936
+spatk/helpers.py,sha256=CvWTs4_AxnqwXzwvG5QcVCWGcXIy896wfQWIJ1rh_u4,10026
+spatk/flavours/generic.py,sha256=hQucFh3ne0XZxAvMsFAd-J0oMURFSZzMA4akTf_XcJw,3684
+spatk/flavours/hspice.py,sha256=njXm2KRF1jtPAvbw7Xn_Fh_io_LYzCG7pvonohxe8Bs,3860
+spatk/flavours/ngspice.py,sha256=-iyfT28Wazgd7jKDBu_VNpN5jV5CaHuH8tKdC-JN2QY,6634
+spatk/flavours/xyce.py,sha256=5YTS58PEjCyEmLicsBXCPiru1RbC82hmr6A6tF_HHU8,4758
+spatk-1.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+spatk-1.3.0.dist-info/METADATA,sha256=sCV4tJgTqkN4CM7m90FsNLh6mFQffDqoAB0Aan3-nkA,41647
+spatk-1.3.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+spatk-1.3.0.dist-info/top_level.txt,sha256=cKaLo5svj-OB_CAFc-BcUjmIDSYx0aUKHOGknEGyACo,6
+spatk-1.3.0.dist-info/RECORD,,
