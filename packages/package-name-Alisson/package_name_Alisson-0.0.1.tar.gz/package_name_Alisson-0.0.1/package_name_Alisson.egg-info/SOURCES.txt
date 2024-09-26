@@ -1,0 +1,9 @@
+README.md
+setup.py
+package_name_Alisson/__init__.py
+package_name_Alisson/file1_name.py
+package_name_Alisson/file2_name.py
+package_name_Alisson.egg-info/PKG-INFO
+package_name_Alisson.egg-info/SOURCES.txt
+package_name_Alisson.egg-info/dependency_links.txt
+package_name_Alisson.egg-info/top_level.txt
