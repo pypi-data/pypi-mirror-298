@@ -1,0 +1,36 @@
+[project]
+name = "djp"
+version = "0.2"
+description = "A plugin system for Django"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "django",
+    "pluggy",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/simonw/djp"
+Changelog = "https://github.com/simonw/djp/releases"
+Issues = "https://github.com/simonw/djp/issues"
+CI = "https://github.com/simonw/djp/actions"
+
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-django", "pytest-env"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "tests.test_project.settings"
+pythonpath = ["."]
+
+[tool.pytest_env]
+DJP_PLUGINS_DIR = "tests/plugins"

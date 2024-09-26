@@ -1,0 +1,7 @@
+django
+pluggy
+
+[test]
+pytest
+pytest-django
+pytest-env
