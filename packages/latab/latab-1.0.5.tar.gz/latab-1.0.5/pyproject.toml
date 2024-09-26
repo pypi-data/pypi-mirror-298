@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latab"
+version = "1.0.5"
+authors = [
+  { name="Balázs Klement", email="astro@bklement.com" }
+]
+description = "Tool to easily convert numpy arrays into latex tables with astropy units support."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable"
+]
+dependencies = [
+  "numpy",
+  "astropy"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/bklement/latab"
+"Bug Tracker" = "https://github.com/bklement/latab/issues"
