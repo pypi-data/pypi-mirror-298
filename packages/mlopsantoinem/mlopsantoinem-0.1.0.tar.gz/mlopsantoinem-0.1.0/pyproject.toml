@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "mlopsantoinem"
+version = "0.1.0"
+description = ""
+authors = ["Antoine <antoine.mol@ig2i.centralelille.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+opencv-python = "^4.10.0.84"
+coverage = "^7.6.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
