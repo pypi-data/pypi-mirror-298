@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: jynxzzz
+Version: 0.4
+Summary: A collection of custom functions for data analysis
+Author: Xingnan Zhou
+Author-email: zhouxingnan2016@gmail.com
+Requires-Dist: torch>=1.0
+Requires-Dist: matplotlib>=3.0
