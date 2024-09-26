@@ -1,0 +1,10 @@
+gsstatic/__init__.py,sha256=Tkvj18-LpE96WftqPXykxS-KdsLsaekl4YuX-nAqYB4,61
+gsstatic/_easywatch.py,sha256=Z5krLrl0X36aTup814x1WoELhEYM3fK2DKksapZXFg0,1312
+gsstatic/library.py,sha256=tIMLJzRIFX6EOmF8gy-ycq7E344-kpo0cuaLoRCJ9qA,1778
+gsstatic/reloader.py,sha256=IGjo0wtTnTBW4lRf37Gs-CbbzmNwCUWUu3LkVe7GoMg,1994
+gsstatic/static.py,sha256=Tu577SRdKQuLiCyuQl8vKE-FqR-E1fuRoTrtN8k-_4w,14077
+gsstatic/utils.py,sha256=nUTVqZavRm7gVp174bz1uk9oHTJdKykFzMkZCKJXZKA,2955
+gsstatic-0.0.1.dist-info/METADATA,sha256=2bZME2k5tCXo3qwCMfW3neBxTyZimr9T6W9WnxKabz4,1569
+gsstatic-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+gsstatic-0.0.1.dist-info/licenses/LICENSE,sha256=yeaWdZqgRKyykvHVsgEgT0Fq8Kfl0VCva_iETWmMsRA,1143
+gsstatic-0.0.1.dist-info/RECORD,,
