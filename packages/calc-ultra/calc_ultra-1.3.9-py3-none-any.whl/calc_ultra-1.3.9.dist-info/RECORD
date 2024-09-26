@@ -1,0 +1,16 @@
+calc_ultra/.DS_Store,sha256=ghfocybebrHb-FBXAmK0ErqWAPlcIdHDOyYyxxBRpY4,6148
+calc_ultra/__init__.py,sha256=u4w4cu3tS8B6JYYRPhyM94JHjIfT9tKEW8zQHkllXe8,97
+calc_ultra/example.py,sha256=wahNv5GWB7gJYba95Shl-mqVigbU8k9IyFpIZRvIA8k,297
+calc_ultra/main.py,sha256=XZTt7b4JsogLflW74uqHIIVlYRdq0a3jOgszymFaDDw,63347
+calc_ultra/texts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calc_ultra/texts/derivacalc.txt,sha256=-rYeA99DqRXzzqlKwAarCv_-NTBe6FR4pFd-3MgRLq8,220
+calc_ultra/texts/intecalc.txt,sha256=w6-RzqQeSfNWaMamFVxGGPy-NdTzPr4ZEjcKp1xXc4I,304
+calc_ultra/texts/limcalc.txt,sha256=x_sz9xIlnblOjy9qwgQSxyEis232rFU-XwJto7OivKo,114
+calc_ultra/texts/main_screen.txt,sha256=6PqU2Qd9pj030_598GfUviNCSzUBnKlnmHoOH6jqfFE,2420
+calc_ultra/texts/settings.txt,sha256=KU_UiT9gvRiZ9MDr5-t_Jp2v7z4al9-SVlWB3-6tHHw,235
+calc_ultra/texts/utils.txt,sha256=qnKHLNTiUOwZm38JC7lH5-R0IZ44TiEDtOxgIQiLnik,246
+calc_ultra-1.3.9.dist-info/LICENSE,sha256=UsJix9HkaOhZGHrnukLwDXHY6f62KOiyIvZcTAIQEB4,1068
+calc_ultra-1.3.9.dist-info/METADATA,sha256=Z6Sie5RFEL4oA1XrNE2DPOVwbL8NNf5x6QPKaUUN8tk,3403
+calc_ultra-1.3.9.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+calc_ultra-1.3.9.dist-info/top_level.txt,sha256=yXzqg-HevUD5iutcoc_2EA1ISSEih5fYGGdZ3Z-CD1E,11
+calc_ultra-1.3.9.dist-info/RECORD,,
