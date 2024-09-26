@@ -1,0 +1,4 @@
+DLMS-SPODES>=0.78.2
+DLMS-SPODES-communications>=1.4.6
+pycryptodomex>=3.15
+DLMSadapter>=0.4.1
