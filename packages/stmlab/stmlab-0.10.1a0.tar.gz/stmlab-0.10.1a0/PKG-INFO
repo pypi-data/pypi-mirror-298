@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: stmlab
+Version: 0.10.1a0
+Summary: Launch and runtime environment for software projects developed by the Department of Structural Mechanics at the Institute of Lightweight Structures (DLR).
+Home-page: https://gitlab.com/dlr-sy/stmlab
+License: MIT
+Keywords: stmlab,launcher,ui
+Author: Garbade, Marc
+Author-email: marc.garbade@dlr.de
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Provides-Extra: all
+Provides-Extra: beos
+Provides-Extra: boxbeam
+Provides-Extra: client
+Provides-Extra: codac
+Provides-Extra: damapper
+Provides-Extra: displam
+Provides-Extra: mcodac
+Provides-Extra: server
+Provides-Extra: vampire
+Requires-Dist: beos (>=1.3) ; (python_version >= "2.7" and python_version < "2.8" or python_version >= "3.5" and python_version < "4.0") and (extra == "all" or extra == "beos")
+Requires-Dist: boxbeam (==1.3) ; (python_version >= "2.7" and python_version < "2.8" or python_version >= "3.5" and python_version < "4.0") and (extra == "all" or extra == "boxbeam")
+Requires-Dist: damapper (>=1.7) ; (python_version >= "3.6" and python_version < "4.0") and (extra == "damapper" or extra == "codac")
+Requires-Dist: displam (>=1.3) ; (python_version >= "2.7" and python_version < "2.8" or python_version >= "3.5" and python_version < "4.0") and (extra == "all" or extra == "displam")
+Requires-Dist: mcodac (>=1.2) ; (python_version >= "2.7" and python_version < "2.8" or python_version >= "3.5" and python_version < "4.0") and (extra == "mcodac")
+Requires-Dist: pyc-client (>=1.10) ; (python_version >= "3.7" and python_version < "4.0") and (extra == "client")
+Requires-Dist: pyc-core ; (python_version >= "2.7" and python_version < "2.8" or python_version >= "3.5" and python_version < "4.0") and (extra == "all" or extra == "codac")
+Requires-Dist: pyc-webservice (>=1.10) ; (python_version >= "3.7" and python_version < "4.0") and (extra == "all" or extra == "server")
+Requires-Dist: pyx-client (>=1.15) ; (python_version >= "3.7" and python_version < "4.0") and (extra == "client")
+Requires-Dist: pyx-core ; python_version >= "2.7" and python_version < "2.8" or python_version >= "3.5" and python_version < "4.0"
+Requires-Dist: pyx-webservice (>=1.18) ; (python_version >= "3.7" and python_version < "4.0") and (extra == "all" or extra == "server")
+Requires-Dist: typer (>=0.12) ; python_version >= "3.7" and python_version < "4.0"
+Requires-Dist: vampire (>=0.2.5) ; (python_version >= "3.7" and python_version < "4.0") and (extra == "vampire")
+Project-URL: Changelog, https://gitlab.com/dlr-sy/stmlab/-/blob/master/CHANGELOG.md
+Project-URL: Documentation, https://gitlab.com/dlr-sy/stmlab/-/blob/main/README.md
+Project-URL: Repository, https://gitlab.com/dlr-sy/stmlab
