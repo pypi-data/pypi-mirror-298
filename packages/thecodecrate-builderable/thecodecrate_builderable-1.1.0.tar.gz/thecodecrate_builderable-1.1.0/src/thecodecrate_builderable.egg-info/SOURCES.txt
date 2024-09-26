@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/thecodecrate_builderable/__init__.py
+src/thecodecrate_builderable.egg-info/PKG-INFO
+src/thecodecrate_builderable.egg-info/SOURCES.txt
+src/thecodecrate_builderable.egg-info/dependency_links.txt
+src/thecodecrate_builderable.egg-info/requires.txt
+src/thecodecrate_builderable.egg-info/top_level.txt
+src/thecodecrate_builderable/core/builderable/builderable.py
+src/thecodecrate_builderable/core/builderable/types.py
+src/thecodecrate_builderable/traits/with_immutability/parent_class.py
+src/thecodecrate_builderable/traits/with_immutability/with_immutability.py
+src/thecodecrate_builderable/traits/with_parts/parent_class.py
+src/thecodecrate_builderable/traits/with_parts/with_parts.py
+tests/test_builderable.py
