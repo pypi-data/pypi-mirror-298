@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mysudoku/__init__.py
+mysudoku/sudoku.py
+mysudoku.egg-info/PKG-INFO
+mysudoku.egg-info/SOURCES.txt
+mysudoku.egg-info/dependency_links.txt
+mysudoku.egg-info/top_level.txt
