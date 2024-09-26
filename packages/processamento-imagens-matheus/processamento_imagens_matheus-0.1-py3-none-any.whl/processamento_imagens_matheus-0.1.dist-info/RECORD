@@ -1,0 +1,11 @@
+processing/__init__.py,sha256=_Oey-SMExfIODq5xzyEIUjPMAwYML78Bw_g00ZGGjWk,285
+processing/combination.py,sha256=LPvtbrpi_qxjTcAIFJjkA3itS_QNP-4_VplS5kIfXmY,778
+processing/transformation.py,sha256=H7sEJyfH3ZUamW6KXg4eJCSJPgCN2RBr-g0QywM5ec8,709
+utils/__init__.py,sha256=qNahcRKXvDdcQtoy8m1nSu-e5dzHIO077xp4HExDsOs,175
+utils/io.py,sha256=hKo68C2DqcswP3tUiik6og-EFVPVAVZUM57BN7LbV0o,199
+utils/plot.py,sha256=z-JI8pyUotMZnBO2Mjb26UQU6Oq3zhMRkrhELAaalrw,1466
+processamento_imagens_matheus-0.1.dist-info/LICENSE,sha256=kwq3pcYL9a9TgiDTMDMY6XHRvr-ogGjrtxb562Zp6R4,1085
+processamento_imagens_matheus-0.1.dist-info/METADATA,sha256=qLdVQWlIwv1x87Ry8mKSaJYVn5IJ7OLSEcbgE6dP0vU,1921
+processamento_imagens_matheus-0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+processamento_imagens_matheus-0.1.dist-info/top_level.txt,sha256=KhfL_5RtcNNVRR10g8GyDD_JLw_AHhOALziQsAPIJ7E,17
+processamento_imagens_matheus-0.1.dist-info/RECORD,,
