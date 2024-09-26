@@ -1,0 +1,13 @@
+/Users/lijicong/workspace/python/jcutils/target/release/deps/libpyo3_build_config-e003c08984fb04fd.rmeta: /Users/lijicong/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pyo3-build-config-0.19.2/src/lib.rs /Users/lijicong/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pyo3-build-config-0.19.2/src/errors.rs /Users/lijicong/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pyo3-build-config-0.19.2/src/impl_.rs /Users/lijicong/workspace/python/jcutils/target/release/build/pyo3-build-config-e4aa265fb7f9efb3/out/pyo3-build-config-file.txt /Users/lijicong/workspace/python/jcutils/target/release/build/pyo3-build-config-e4aa265fb7f9efb3/out/pyo3-build-config.txt
+
+/Users/lijicong/workspace/python/jcutils/target/release/deps/libpyo3_build_config-e003c08984fb04fd.rlib: /Users/lijicong/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pyo3-build-config-0.19.2/src/lib.rs /Users/lijicong/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pyo3-build-config-0.19.2/src/errors.rs /Users/lijicong/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pyo3-build-config-0.19.2/src/impl_.rs /Users/lijicong/workspace/python/jcutils/target/release/build/pyo3-build-config-e4aa265fb7f9efb3/out/pyo3-build-config-file.txt /Users/lijicong/workspace/python/jcutils/target/release/build/pyo3-build-config-e4aa265fb7f9efb3/out/pyo3-build-config.txt
+
+/Users/lijicong/workspace/python/jcutils/target/release/deps/pyo3_build_config-e003c08984fb04fd.d: /Users/lijicong/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pyo3-build-config-0.19.2/src/lib.rs /Users/lijicong/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pyo3-build-config-0.19.2/src/errors.rs /Users/lijicong/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pyo3-build-config-0.19.2/src/impl_.rs /Users/lijicong/workspace/python/jcutils/target/release/build/pyo3-build-config-e4aa265fb7f9efb3/out/pyo3-build-config-file.txt /Users/lijicong/workspace/python/jcutils/target/release/build/pyo3-build-config-e4aa265fb7f9efb3/out/pyo3-build-config.txt
+
+/Users/lijicong/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pyo3-build-config-0.19.2/src/lib.rs:
+/Users/lijicong/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pyo3-build-config-0.19.2/src/errors.rs:
+/Users/lijicong/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pyo3-build-config-0.19.2/src/impl_.rs:
+/Users/lijicong/workspace/python/jcutils/target/release/build/pyo3-build-config-e4aa265fb7f9efb3/out/pyo3-build-config-file.txt:
+/Users/lijicong/workspace/python/jcutils/target/release/build/pyo3-build-config-e4aa265fb7f9efb3/out/pyo3-build-config.txt:
+
+# env-dep:OUT_DIR=/Users/lijicong/workspace/python/jcutils/target/release/build/pyo3-build-config-e4aa265fb7f9efb3/out
