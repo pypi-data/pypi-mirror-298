@@ -1,0 +1,11 @@
+marshmallowqa/__init__.py,sha256=Kf_7S9bXabXwMXf3POWk2SolMTSh0f_vymP6RnY3JQI,319
+marshmallowqa/action.py,sha256=DATGWuLAGqtU0vIH7HcrLPWC5-fzrf6wg8TUQgzS-ew,2098
+marshmallowqa/const.py,sha256=lp_AO_yjS4TjNRYVXNEs9EHbdMOXZsBlwhi-Ygp7Qv8,162
+marshmallowqa/cookie.py,sha256=0huEF3CoyJm9cip3fCFrpUQTxdkSjpoclB_z08MIiXo,1888
+marshmallowqa/errors.py,sha256=lED1VJ9lE0PBBJZOaTj9ri-_VnXFA6Ov1n_5sf-3lUc,102
+marshmallowqa/marshmallow.py,sha256=Qoq412oaa29lXkbH-ECulsFC2PBrjKllHJ8dHr59g20,11639
+marshmallowqa/version.py,sha256=l0NEPKPDCQJKLmzKCpwSNGiu3f_oOaiqLz29RtkpsFs,18
+marshmallowqa_py-0.7.1.dist-info/METADATA,sha256=2bI0cz70QpxZ3q-n8AWStm0uknJqucFubFq_AwSuolc,423
+marshmallowqa_py-0.7.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+marshmallowqa_py-0.7.1.dist-info/licenses/LICENSE,sha256=ZXXRrXzL1UBiCUGxwraK8c9TWoGlu6hnIAnya3m51ow,1063
+marshmallowqa_py-0.7.1.dist-info/RECORD,,
