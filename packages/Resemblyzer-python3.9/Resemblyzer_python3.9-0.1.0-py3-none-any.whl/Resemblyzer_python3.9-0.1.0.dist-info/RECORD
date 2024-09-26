@@ -1,0 +1,10 @@
+resemblyzer/__init__.py,sha256=b96CA0mng0nGRrsAVge-aoYkh7scLLZofdAiy8OQf1c,232
+resemblyzer/audio.py,sha256=uaEW8eltRGK9ICzalY2R-djdC_eJEVu4RpzNV9Bt5yM,4349
+resemblyzer/hparams.py,sha256=f_KU2NWMgC56AjZv9H86oD3_hj3q8AQkFptHZHNlE08,913
+resemblyzer/pretrained.pt,sha256=OTc7hlmPo9qfzd7mFCOC7-CXd-jTfcnAVh9B8AcPE04,17090379
+resemblyzer/voice_encoder.py,sha256=HZy26R5lj8GPKu4G0eaSnFvTa2hqUYUHj2DD-vFSlkI,9191
+Resemblyzer_python3.9-0.1.0.dist-info/LICENSE,sha256=7EQmZpxOPnMVcSEgC3cqaP-cTHrz_rKY6pm2QRoRngU,10757
+Resemblyzer_python3.9-0.1.0.dist-info/METADATA,sha256=auw0qEg51DwSpy5XdJ21T2sNZAj6AOBfViNrzZD5WqE,5791
+Resemblyzer_python3.9-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+Resemblyzer_python3.9-0.1.0.dist-info/top_level.txt,sha256=IpEn86WuURtFosS3Tg9s7LfkvGYOo9qJAueWdCejj4g,12
+Resemblyzer_python3.9-0.1.0.dist-info/RECORD,,
