@@ -1,0 +1,10 @@
+rosetta_finder/__init__.py,sha256=_bbO4WApBWfyL7aD-9arr3mLOU0WwGQO0CPUNBJZHd8,623
+rosetta_finder/rosetta.py,sha256=xrdUzO4hn5MX_Hp0rCSqICiNsNc9wHRTB2RXlBhNVp8,9616
+rosetta_finder/rosetta_finder.py,sha256=mZ3DVrfbbZ92YFyR5E-TTPRQ_GDZBXv9xJJneIPlwJg,8017
+rosetta_finder/app/__init__.py,sha256=2s2RnAQXecCa7TwPGYV7JIAR15Tf3qhK-8i2ybXXUZg,64
+rosetta_finder/app/supercharge.py,sha256=TCPG42q-K7Ad8maAu0zEiVxP1QfWsBouG33NL66Me7Y,1540
+rosetta_finder-0.0.5rc57.post1.dist-info/entry_points.txt,sha256=i_2crfLqdt4esMHltyyqyADr-Ic5A4c-fuWviV-HiUg,52
+rosetta_finder-0.0.5rc57.post1.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+rosetta_finder-0.0.5rc57.post1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+rosetta_finder-0.0.5rc57.post1.dist-info/METADATA,sha256=UD7riOhmS8LqRCPtGrzVPVFFgT0ziEOLrMrX5Ec7DAs,9735
+rosetta_finder-0.0.5rc57.post1.dist-info/RECORD,,
