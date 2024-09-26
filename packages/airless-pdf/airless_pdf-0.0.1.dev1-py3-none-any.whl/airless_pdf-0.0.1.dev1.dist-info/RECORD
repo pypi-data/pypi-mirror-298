@@ -1,0 +1,8 @@
+airless/__init__.py,sha256=h-QyvMVzDNpT3jyVskcSbUVFXxGCRxieFPrvTveZG9k,64
+airless/pdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airless/pdf/hook/__init__.py,sha256=-__wfiwLStpsS7nlh6bGJRXGH3ZLfHvDUyIsVYd9Yn0,26
+airless/pdf/hook/pdf.py,sha256=oVGY9kp08GCq0vnzxiZC3lX2j6HA4DMdvpWKuffVR8k,2840
+airless_pdf-0.0.1.dev1.dist-info/METADATA,sha256=lT8b2ByGW8PrN0A6h3eHo6PXTP6e0xDiHdhLnEbEnbM,819
+airless_pdf-0.0.1.dev1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+airless_pdf-0.0.1.dev1.dist-info/top_level.txt,sha256=vPLzRICE7VNGvU-zceoZ1N7H2TkerQXR475zjg_xPzU,8
+airless_pdf-0.0.1.dev1.dist-info/RECORD,,
