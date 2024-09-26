@@ -1,0 +1,10 @@
+safetensors_dataset/__init__.py,sha256=R5tnInEXk-SaSNgceJn4TJApS8_77jbVxUsuRUc-HeE,126
+safetensors_dataset/safetensors.py,sha256=4CJob3MsU8cmOeRrwAjkeOW7bMaj0Ec0LYAFKxhUdNA,14052
+safetensors_dataset/safetensors.pyi,sha256=GWUOVS2TOAOeJtY1N0yilobRJf6ahMGe4nqOD0yqkF0,1825
+safetensors_dataset/utils.py,sha256=MTEWlf0CfHkzUnjc80oYZK7bCcnDZL8uAly9AdS6Zgw,371
+safetensors_dataset/version.py,sha256=eB5tEg_BNHHsJgQexgmpZJr4c2VbfooQZMXAWuDHoIg,22
+safetensors_dataset-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+safetensors_dataset-0.0.5.dist-info/METADATA,sha256=vi-m7sown5hygN-YJRinI_Hzq_qr0eS3pjoPqgl1eSY,1351
+safetensors_dataset-0.0.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+safetensors_dataset-0.0.5.dist-info/top_level.txt,sha256=MR8Q-XqQWOy5GMXozSvyDRI03pkANlw-FTdhsf_nubs,20
+safetensors_dataset-0.0.5.dist-info/RECORD,,
