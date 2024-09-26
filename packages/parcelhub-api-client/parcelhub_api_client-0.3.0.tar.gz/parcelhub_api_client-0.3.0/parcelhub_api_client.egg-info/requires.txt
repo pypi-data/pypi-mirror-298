@@ -1,0 +1,7 @@
+requests
+xmltodict
+
+[dev]
+ruff
+pre-commit
+python-dotenv
