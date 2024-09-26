@@ -1,0 +1,81 @@
+[tool.poetry]
+name = "climetlab-maelstrom-power-production"
+version = "0.2.2"
+description = "CliMetLab plugin for the dataset climetlab-plugin-a6/maelstrom-production-forecasts."
+authors = ["Fabian Emmerich <fabian.emmerich@4-cast.de>"]
+license = "Apache-2.0"
+homepage = "https://climetlab.readthedocs.io/en/latest/"
+repository = "https://github.com/4castRenewables/climetlab-plugin-a6"
+packages = [{ include = "climetlab_maelstrom_power_production" }]
+readme = "README.md"
+keywords = ["meteorology", "weather", "climate", "wind power"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Operating System :: OS Independent"]
+
+[tool.poetry.plugins]
+
+[tool.poetry.plugins."climetlab.datasets"]
+"maelstrom-constants-a-b" = "climetlab_maelstrom_power_production.constants.a_b:ABConstants"
+"maelstrom-power-production" = "climetlab_maelstrom_power_production.production.production:Production"
+"maelstrom-weather-model-level" = "climetlab_maelstrom_power_production.weather.model_level:ModelLevelWeather"
+"maelstrom-weather-pressure-level" = "climetlab_maelstrom_power_production.weather.pressure_level:PressureLevelWeather"
+"maelstrom-weather-surface-level" = "climetlab_maelstrom_power_production.weather.surface_level:SurfaceLevelWeather"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+climetlab = "^0.11.9"
+numpy = "^1.26.0"
+
+[tool.poetry.group.ci-tests]
+optional = true
+
+[tool.poetry.group.ci-tests.dependencies]
+pytest-custom-exit-code = "^0.3.0"
+
+[tool.poetry.group.notebooks]
+optional = true
+
+[tool.poetry.group.notebooks.dependencies]
+matplotlib = "^3.5.1"
+scikit-learn = "^1.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+pre-commit = "^2.18.1"
+jupyterlab = "^3.3.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+log_cli = false
+addopts = "--cov=climetlab_maelstrom_power_production --cov-report term-missing"
+
+[tool.black]
+max-line-length = 120
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 120
+per-file-ignores = [
+    "__init__.py:F401,E501",
+    "*.py:D100,D104",
+    "tests/**:D100,D103,S101"]
+
+[tool.mypy]
+ignore_missing_imports = true
+install_types = true
