@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+app/__init__.py
+app/frostconnect/__init__.py
+app/frostconnect/frostconnect.py
+frostconnect.egg-info/PKG-INFO
+frostconnect.egg-info/SOURCES.txt
+frostconnect.egg-info/dependency_links.txt
+frostconnect.egg-info/requires.txt
+frostconnect.egg-info/top_level.txt
