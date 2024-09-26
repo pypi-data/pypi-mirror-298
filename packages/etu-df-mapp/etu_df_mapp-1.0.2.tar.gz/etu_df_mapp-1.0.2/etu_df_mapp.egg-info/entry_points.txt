@@ -1,0 +1,2 @@
+[console_scripts]
+edfm-admin = etu_df_mapp.main:execute_from_command_line
