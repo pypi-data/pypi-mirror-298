@@ -1,0 +1,9 @@
+yandex_bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yandex_bot/bot.py,sha256=rbaeoWcpcRqRnIXcjCHp3X40aIqIBNjk-L_QMRk2acQ,6248
+yandex_bot/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yandex_bot/schemas/message.py,sha256=3LlkGfdGD3Jf2XTT9FMzKqWvKrUqrNGSaXQ9ZSDQFsc,1108
+yandex_bot-0.0.1.dist-info/LICENCE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+yandex_bot-0.0.1.dist-info/METADATA,sha256=EitnYT4RpWd_Kb3smkiJUaiLa7H4npVpf7mx1VMZuas,557
+yandex_bot-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+yandex_bot-0.0.1.dist-info/top_level.txt,sha256=ZPoIzHM2rWSkdX5P67twEqH-ZmV4XXuN4CLswGbEH24,11
+yandex_bot-0.0.1.dist-info/RECORD,,
