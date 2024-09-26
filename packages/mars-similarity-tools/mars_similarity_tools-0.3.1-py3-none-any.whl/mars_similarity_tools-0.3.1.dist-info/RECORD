@@ -1,0 +1,12 @@
+mars_similarity_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mars_similarity_tools/augmentation/__init__.py,sha256=FgkpGJFZ7CwxOCSEBlr9M7ooM8QDBuWLTMgIxAjHgjw,5188
+mars_similarity_tools/models/__init__.py,sha256=TI5z6QJddWZSIMRCZCjxPXR6mrbspRRxIURsDxO7sC4,466
+mars_similarity_tools/services/__init__.py,sha256=8Rsur-BsLo0gCVwuXF-oAmBniafUb7v0wY7jnl-ITmc,2140
+mars_similarity_tools/storages/__init__.py,sha256=5MxyIDQuICXte_XO177-dPYxhdQ_uoI3bVx40Xt1s5I,4011
+mars_similarity_tools/test_me.ipynb,sha256=emmLhV_qJXQf2yKTAQM6ZlzgbuKGzmbtfcUPEIYUFVs,18418
+mars_similarity_tools/vectorization_pb2.py,sha256=N0uKL6p2Dx4AER4vJOLsX48CV83Ns5zi2jU23vLR45o,2910
+mars_similarity_tools/vectorization_pb2.pyi,sha256=LsvnTW4RyIlvdWVQn05aZeXvHQS2ecioZLvJnDDZSJg,3126
+mars_similarity_tools/vectorization_pb2_grpc.py,sha256=86Gyc40V_aCsSQUdY-I0lxNiBKHmtQm8wgWpJSLax28,4091
+mars_similarity_tools-0.3.1.dist-info/METADATA,sha256=HH8zR9IsDSKOLh4tZCqJtDGHCV8gCOLFgjt_pD7Swlc,4778
+mars_similarity_tools-0.3.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mars_similarity_tools-0.3.1.dist-info/RECORD,,
