@@ -1,0 +1,152 @@
+Metadata-Version: 2.1
+Name: text-extractor-PT-BR
+Version: 0.1
+Summary: Um pacote para extrair textos de imagens usando pytesseract
+Home-page: https://github.com/sannlin9/text_extractor_package/tree/master/.venv/text_extractor-PT-BR
+Author: Sandra Costa
+Author-email: sandralin.9@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pytesseract>=0.3.7
+Requires-Dist: Pillow>=8.0.0
+Requires-Dist: opencv-python>=4.5.1.48
+
+# text_extractor-PT-BR
+
+#### Um pacote Python para extrair textos de imagens usando pytesseract, com suporte para prÃ©-processamento de imagens e extraÃ§Ã£o de texto em portuguÃªs.
+
+---
+
+### Funcionalidades
+
+- ExtraÃ§Ã£o de Texto: Extrai texto de imagens utilizando o Tesseract OCR.
+- PrÃ©-processamento de Imagens: ConversÃ£o para escala de cinza e binarizaÃ§Ã£o para melhorar a precisÃ£o do OCR.
+- Suporte a MÃºltiplos Idiomas: O idioma padrÃ£o Ã© o portuguÃªs, mas pode ser alterado para qualquer idioma suportado pelo Tesseract.
+
+### InstalaÃ§Ã£o
+
+Para instalar o pacote, use o pip:
+
+```bash
+pip install text_extractor-PT-BR
+```
+
+_DependÃªncias_
+O pacote depende das seguintes bibliotecas:
+```python
+pytesseract
+Pillow
+opencv-python
+```
+AlÃ©m disso, o Tesseract OCR precisa estar instalado no sistema.
+
+InstalaÃ§Ã£o do Tesseract
+Windows: Baixe e instale o Tesseract [aqui](https://github.com/UB-Mannheim/tesseract/wiki).
+
+Ubuntu:
+
+```bash
+sudo apt update
+sudo apt install tesseract-ocr
+```
+
+MacOS:
+
+```bash
+brew install tesseract
+```
+
+### Como Usar
+
+1. Importando o Pacote
+   Importe as funÃ§Ãµes extract_text e preprocess_image para utilizar no seu script:
+
+```python
+from text_extractor import extract_text, preprocess_image
+```
+
+2. Extraindo Texto de uma Imagem
+   A funÃ§Ã£o extract_text pode ser usada para extrair texto diretamente de uma imagem:
+
+```python
+# Extrair texto diretamente de uma imagem
+texto = extract_text('caminho/para/imagem.png', lang='por')
+print(texto)
+```
+
+3. Usando PrÃ©-processamento
+   Se a imagem precisar de processamento antes da extraÃ§Ã£o, como conversÃ£o para escala de cinza e binarizaÃ§Ã£o, vocÃª pode utilizar o parÃ¢metro preprocess:
+
+```python
+# Extrair texto de uma imagem com prÃ©-processamento
+texto = extract_text('caminho/para/imagem.png', lang='por', preprocess=True)
+print(texto)
+```
+
+4. Exemplos de Uso
+   ExtraÃ§Ã£o Simples
+
+```python
+from text_extractor import extract_text
+
+# Caminho para a imagem
+image_path = 'imagens/documento.png'
+
+# ExtraÃ§Ã£o de texto sem prÃ©-processamento
+texto = extract_text(image_path, lang='por')
+print("Texto extraÃ­do:")
+print(texto)
+ExtraÃ§Ã£o com PrÃ©-processamento
+python
+Copiar cÃ³digo
+from text_extractor import extract_text
+
+# Caminho para a imagem
+image_path = 'imagens/documento_ruidoso.png'
+
+# ExtraÃ§Ã£o de texto com prÃ©-processamento
+texto = extract_text(image_path, lang='por', preprocess=True)
+print("Texto extraÃ­do com prÃ©-processamento:")
+print(texto)
+```
+
+PrÃ©-processamento Manual e ExtraÃ§Ã£o
+
+```python
+
+from text_extractor import preprocess_image, extract_text
+
+# Caminho para a imagem
+image_path = 'imagens/documento.png'
+
+# Caminho para salvar a imagem prÃ©-processada
+processed_image_path = 'imagens/documento_processado.png'
+
+# PrÃ©-processamento da imagem
+preprocess_image(image_path, output_path=processed_image_path)
+
+# ExtraÃ§Ã£o de texto a partir da imagem prÃ©-processada
+texto = extract_text(processed_image_path, lang='por')
+print("Texto extraÃ­do apÃ³s prÃ©-processamento:")
+print(texto)
+```
+
+5. ParÃ¢metros DisponÃ­veis
+
+- extract_text(image_path, lang='eng', preprocess=False)
+- image_path: Caminho para a imagem de entrada.
+- lang: Idioma para o OCR (padrÃ£o: 'eng' para inglÃªs, 'por' para portuguÃªs).
+- preprocess: Se True, prÃ©-processa a imagem antes de extrair o texto (padrÃ£o: False).
+- preprocess_image(image_path, output_path=None)
+- image_path: Caminho para a imagem de entrada.
+- output_path: Caminho para salvar a imagem processada (opcional). Se nÃ£o for fornecido, retorna a imagem processada em formato array.
+
+### Contribuindo
+
+Sinta-se Ã  vontade para abrir issues e enviar pull requests. Toda ajuda Ã© bem-vinda!
+
+LicenÃ§a
+Este projeto Ã© licenciado sob a licenÃ§a MIT. Consulte o arquivo LICENSE para mais detalhes.
