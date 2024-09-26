@@ -1,0 +1,15 @@
+name: goodman_focus
+dependencies:
+  - python=3.12
+  - astropy
+  - matplotlib
+  - numpy
+  - pandas
+  - pip
+  - scipy
+  - pip:
+      - ccdproc
+      - coveralls
+      - pydata-sphinx-theme
+      - sphinx
+      - sphinxcontrib.napoleon
