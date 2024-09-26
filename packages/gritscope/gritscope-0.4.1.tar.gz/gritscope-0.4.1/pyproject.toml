@@ -1,0 +1,32 @@
+[project]
+name = "gritscope"
+version = "0.4.1"
+authors = [ { name="Koen van Walstijn", email="kbvw@pm.me" } ]
+description = "Power grid topology and scenario exploration"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy >= 1.24.2",
+    "scipy >= 1.10.1",
+    "pygrates >= 0.1.0",
+    "stylet >= 0.1.0",
+    "pandas >= 1.5.3",
+    "pyyaml >= 6.0",
+    "networkx >= 3.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+parquet = ['pyarrow >= 11.0.0']
+pandapower = ['pandapower >= 2.13.1']
+
+[project.urls]
+"Source" = "https://codeberg.org/kbvw/gritscope"
+
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
