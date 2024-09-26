@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: django-oscar-reports
+Version: 2.2.3
+Summary: An extension on-top of django-oscar that improves the Oscar Dashboard's report generation system
+Home-page: https://gitlab.com/thelabnyc/django-oscar/django-oscar-reports
+License: ISC
+Author: thelab
+Author-email: thelabdev@thelab.co
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Django (>=4.2)
+Requires-Dist: celery (>=5.4.0)
+Requires-Dist: django-oscar (==3.2.5)
+Project-URL: Repository, https://gitlab.com/thelabnyc/django-oscar/django-oscar-reports
+Description-Content-Type: text/x-rst
+
+====================
+django-oscar-reports
+====================
+
+|  |build| |coverage| |license| |kit| |format|
+
+An extension on-top of django-oscar that improves the Oscar Dashboard's report generation system.
+
+.. |build| image:: https://gitlab.com/thelabnyc/django-oscar/django-oscar-reports/badges/master/pipeline.svg
+    :target: https://gitlab.com/thelabnyc/django-oscar/django-oscar-reports/commits/master
+.. |coverage| image:: https://gitlab.com/thelabnyc/django-oscar/django-oscar-reports/badges/master/coverage.svg
+    :target: https://gitlab.com/thelabnyc/django-oscar/django-oscar-reports/commits/master
+.. |license| image:: https://img.shields.io/pypi/l/django-oscar-reports.svg
+    :target: https://pypi.python.org/pypi/django-oscar-reports
+.. |kit| image:: https://badge.fury.io/py/django-oscar-reports.svg
+    :target: https://pypi.python.org/pypi/django-oscar-reports
+.. |format| image:: https://img.shields.io/pypi/format/django-oscar-reports.svg
+    :target: https://pypi.python.org/pypi/django-oscar-reports
+
