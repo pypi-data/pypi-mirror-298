@@ -1,0 +1,9 @@
+# CODEOWNERS file
+
+# Protect workflow files
+/.github/ @theissenhelen @jesperdramsch @gmertes
+/.pre-commit-config.yaml @theissenhelen @jesperdramsch @gmertes
+/pyproject.toml @theissenhelen @jesperdramsch @gmertes
+
+# Protect package exemptions
+/src/anemoi/inference/checkpoint/package_exemptions.py @gmertes @hcookie @theissenhelen @jesperdramsch
