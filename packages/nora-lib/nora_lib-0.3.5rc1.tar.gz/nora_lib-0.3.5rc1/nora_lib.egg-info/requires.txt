@@ -1,0 +1,11 @@
+pydantic<3,>=2
+pyhocon==0.3.60
+requests
+boto3
+aws_requests_auth
+
+[dev]
+mypy
+pytest
+black
+types-requests
