@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dafpy"
+version = "0.1.1"
+description = "Data in Axes in Formats"
+authors = [
+    { name = "Oren Ben-Kiki", email = "oren@ben-kiki.org" },
+]
+readme = "README.rst"
+license = { file = "LICENSE.rst" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">= 3.10"
+dependencies = [
+    "juliacall",
+    "numpy",
+    "pandas",
+    "scipy",
+]
+
+[tool.setuptool]
+data_files = ["juliapkg.json"]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "bumpversion",
+    "flake8",
+    "isort",
+    "mypy",
+    "mypy_extensions",
+    "pandas-stubs",
+    "pylint",
+    "pytest",
+    "pytest-cov",
+    "sphinx",
+    "sphinx_rtd_theme",
+    "twine",
+]
+test = [
+    "pytest",
+    "pytest-cov",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/tanaylab/Daf.py"
+"Bug Tracker" = "https://github.com/tanaylab/Daf.py/issues"
+
+[tool.setuptools.packages.find]
+exclude = ["htmlcov"]
