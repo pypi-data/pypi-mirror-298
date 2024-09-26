@@ -1,0 +1,11 @@
+great_expectations<2,>=1.0.4
+kedro-datasets~=2.0
+kedro~=0.19
+pandas~=2.1
+
+[dev]
+black>=23.0
+twine~=4.0
+
+[test]
+pytest~=7.4
