@@ -1,0 +1,56 @@
+App {
+    layers: below above;
+}
+
+.hidden {
+    display: none;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.app-container {
+    layer: below;
+}
+
+
+.settings-radio-button {
+    width: 100%;
+}
+
+#settings-container {
+    padding: 1;
+    width: 25%;
+    background: $panel;
+    layer: above;
+    dock: right;
+}
+
+#documentation-container {
+    padding: 1;
+    width: 95%;
+    background: $panel;
+    layer: above;
+    dock: right;
+}
+
+#filter-container {
+    height: 3;
+    width: 100%;
+}
+
+#logger {
+    padding-left: 2;
+}
+
+#filter {
+    width: 97%;
+}
+
+#help-button {
+    padding: 0;
+    margin: 0;
+    min-width: 5;
+    width: 5;
+}

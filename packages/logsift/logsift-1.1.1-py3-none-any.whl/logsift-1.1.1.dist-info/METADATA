@@ -1,0 +1,71 @@
+Metadata-Version: 2.3
+Name: logsift
+Version: 1.1.1
+Summary: Quickly filter your logs from any command
+Project-URL: Homepage, https://github.com/hamolicious/LogSift
+Project-URL: Issues, https://github.com/hamolicious/LogSift/issues
+Author-email: hamolicious <hamolicious@hamolicious.net>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: aiohappyeyeballs==2.4.0
+Requires-Dist: aiohttp-jinja2==1.6
+Requires-Dist: aiohttp==3.10.5
+Requires-Dist: aiosignal==1.3.1
+Requires-Dist: attrs==24.2.0
+Requires-Dist: click==8.1.7
+Requires-Dist: frozenlist==1.4.1
+Requires-Dist: idna==3.10
+Requires-Dist: jinja2==3.1.4
+Requires-Dist: linkify-it-py==2.0.3
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: markupsafe==2.1.5
+Requires-Dist: mdit-py-plugins==0.4.2
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: msgpack==1.1.0
+Requires-Dist: multidict==6.1.0
+Requires-Dist: platformdirs==4.3.6
+Requires-Dist: pygments==2.18.0
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: rich==13.8.1
+Requires-Dist: textual-dev==1.6.1
+Requires-Dist: textual-serve==1.1.1
+Requires-Dist: textual==0.79.1
+Requires-Dist: typing-extensions==4.12.2
+Requires-Dist: uc-micro-py==1.0.3
+Requires-Dist: yarl==1.11.1
+Description-Content-Type: text/markdown
+
+![GitHub Repo stars](https://img.shields.io/github/stars/hamolicious/LogSift?style=flat-square&label=Github%20Stars)
+[![PyPI - Version](https://img.shields.io/pypi/v/logsift?style=flat-square)](https://pypi.org/project/logsift/)
+
+
+# LogSift
+Quickly filter your logs from any command.
+
+## Usage
+The below assumes you have added an alias (DOSKEY for windows) for LogSift, otherwise, replace references to `logsift` with `python -m logsift`.
+
+```bash
+logsift npm run somecommand
+logsift tail -f /var/log/syslog
+```
+
+## Documentation
+The documentation is available over in docs.md (/src/logsift/docs/docs.md) or within LogSift itself, simply run `logsift` and then hit `shift+h` to read the docs.
+
+## Installation
+```bash
+pip install logsift
+```
+
+## Cross compatibility
+### MacOS
+* Uses the built in `pbcopy` command
+
+### Linux
+* Assumes that you have `xclip` installed and configured to implement copy behaviour. (maybe replace with a library?)
+
+### Windows
+* Copy behaviour not currently implemented.
