@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: funcnodes-module
+Version: 0.1.14
+Summary: 
+License: MIT
+Author: Julian Kimmig
+Author-email: julian.kimmig@gmx.net
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: funcnodes
+Requires-Dist: licensecheck (>=2024.3)
+Description-Content-Type: text/markdown
+
+# common_workflows
