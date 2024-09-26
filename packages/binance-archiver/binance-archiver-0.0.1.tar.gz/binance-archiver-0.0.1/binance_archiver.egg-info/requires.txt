@@ -1,0 +1,9 @@
+aiofiles
+websockets
+azure-storage-blob
+python-dotenv
+aiohttp
+requests
+websocket
+websocket-client
+orjson

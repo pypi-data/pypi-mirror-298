@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: binance-archiver
+Version: 0.0.1
+Summary: A package for archiving Binance data
+Home-page: http://youtube.com
+Author: Daniel Lasota
+Author-email: grossmann.root@gmail.com
+Keywords: binance archiver quant data sprzedam opla
+Requires-Python: >=3.11
+Requires-Dist: aiofiles
+Requires-Dist: websockets
+Requires-Dist: azure-storage-blob
+Requires-Dist: python-dotenv
+Requires-Dist: aiohttp
+Requires-Dist: requests
+Requires-Dist: websocket
+Requires-Dist: websocket-client
+Requires-Dist: orjson
