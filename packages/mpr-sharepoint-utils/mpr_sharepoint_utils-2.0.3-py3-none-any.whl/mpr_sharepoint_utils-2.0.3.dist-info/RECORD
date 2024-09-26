@@ -1,0 +1,8 @@
+sharepoint_utils/__init__.py,sha256=AfHcP5j6lGafNp3DsR4jcDnOIq7XxVNMoulNVXY1rx0,53
+sharepoint_utils/basic_utils.py,sha256=F_ywkYro96HHBzR9-adVLs0y8rnbiWwedG3QiV6cFBg,17393
+sharepoint_utils/connection.py,sha256=hN5OYfK2QcUNkWaoYONWchSyE4fmBAWL8K0vW2xQz3o,1335
+sharepoint_utils/spreadsheet_utils.py,sha256=p0Xd3V7iQJv9Pnj-W2yLWCbPDv_WaJ02GuNjYOdK9Gw,6321
+mpr_sharepoint_utils-2.0.3.dist-info/METADATA,sha256=9sBlTUoZnsCGnibOjfoCL45gu3onZk_2NSA7fazur38,3269
+mpr_sharepoint_utils-2.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+mpr_sharepoint_utils-2.0.3.dist-info/top_level.txt,sha256=DO85atuWi5svKjQKJLGrRt15XN2iSpHs4wo68RmN4jI,17
+mpr_sharepoint_utils-2.0.3.dist-info/RECORD,,
