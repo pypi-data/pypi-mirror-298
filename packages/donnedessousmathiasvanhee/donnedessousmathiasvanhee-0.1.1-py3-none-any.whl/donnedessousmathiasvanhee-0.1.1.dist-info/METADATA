@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: donnedessousmathiasvanhee
+Version: 0.1.1
+Summary: 
+Author: Mathias Vanhée
+Author-email: mathiasvanhee59@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: coverage (>=7.6.1,<8.0.0)
+Requires-Dist: opencv-python (>=4.10.0.84,<5.0.0.0)
+Description-Content-Type: text/markdown
+
+
