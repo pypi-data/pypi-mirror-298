@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pglogging
+Version: 0.1
+Summary: Simple logging to postgres handler
+Home-page: https://github.com/moates695/pglogging
+Author: Marcus Oates
+Author-email: moates695@gmail.com
