@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "bstaple"
+version = "0.0.4"
+description = "Bayesian version of STAPLE"
+authors = [
+    "Davide Cazzorla <davide.cazzorla@uniba.it>",
+    "Corrado Mencar <corrado.mencar@uniba.it>"
+]
+readme = "README.md"
+homepage = "https://github.com/davideC00/Bayesian-STAPLE"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jax-tqdm = ">=0.2.1"
+jax = ">=0.4.12"
+xarray = ">=2024.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.2.0"]
+build-backend = "poetry.core.masonry.api"
