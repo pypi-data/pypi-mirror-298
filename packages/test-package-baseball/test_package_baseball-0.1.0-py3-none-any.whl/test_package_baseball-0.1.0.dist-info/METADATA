@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: test-package-baseball
+Version: 0.1.0
+Summary: Default template for PDM package
+Author-Email: Bob Heynow <53366531+gchait@users.noreply.github.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# test-package-baseball
