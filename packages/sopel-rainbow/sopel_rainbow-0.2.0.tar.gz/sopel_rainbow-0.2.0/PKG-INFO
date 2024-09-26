@@ -1,0 +1,145 @@
+Metadata-Version: 2.1
+Name: sopel-rainbow
+Version: 0.2.0
+Summary: A Sopel plugin to make things RAINBOW COLORED.
+Author-email: dgw <dgw@technobabbl.es>
+License: EFL-2.0
+Project-URL: Homepage, https://github.com/sopel-irc/sopel-rainbow
+Project-URL: Bug Tracker, https://github.com/sopel-irc/sopel-rainbow/issues
+Keywords: sopel,plugin,bot,irc
+Platform: Linux x86, x86-64
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Eiffel Forum License (EFL)
+Classifier: License :: OSI Approved :: Eiffel Forum License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: sopel>=7.1
+
+# sopel-rainbow
+
+A Sopel plugin to make things RAINBOW COLORED.
+
+## Installing
+
+Releases are hosted on PyPI, so after installing Sopel, all you need is `pip`:
+
+```shell
+$ pip install sopel-rainbow
+```
+
+## Configuring
+
+The easiest way to configure `sopel-rainbow` is via Sopel's configuration
+wizard—simply run `sopel-plugins configure rainbow` and enter the values for
+which it prompts you.
+
+### `order` setting
+
+By default, `sopel-rainbow` outputs colors in the "standard" rainbow `order`,
+ROYGBIV, subject to receiving clients' use of the customary meanings for IRC
+color codes 0-15. If set explicitly in your Sopel config file, this default
+value would look like:
+
+```ini
+[rainbow]
+order =
+    4
+    7
+    8
+    3
+    12
+    2
+    6
+```
+
+If you want to get creative (or cater to a community with shared color norms
+that differ from the "de facto" values established by mIRC and friends)
+override the `order` with your own list of _numeric_ codes:
+
+```ini
+[rainbow]
+order = # Americans and French can fight over this one
+    4
+    0
+    2
+```
+
+### `random_start` setting
+
+Starting the rainbow at the beginning of the `order` every time is also
+default behavior. If you want the rainbow to start at a random place every
+time instead, set the Boolean option `random_start` to `yes` or `on`:
+
+```ini
+[rainbow]
+random_start = on
+```
+
+## Dependencies
+
+* Sopel version 7.1 or higher
+* Python 3.8 or higher
+
+Sopel 7.x should still run on Python 2.7 or older Python 3 releases, but it's
+not maintained any more; and neither is this plugin tested on anything older.
+
+## Changelog
+
+The brief, illustrious history of `sopel-rainbow`, a silly little plugin
+spawned from [a tongue-in-cheek
+upstream issue](https://github.com/sopel-irc/sopel/issues/1962).
+
+
+### sopel-rainbow 0.2.0
+
+Changed:
+
+* Dropped support for Sopel<7.1 + Python<3.8
+  * `sopel.module` -> `sopel.plugin`
+  * Removed shim around `sopel.formatting.plain()` function
+  * Updated `__future__` imports
+  * Removed UTF-8 coding comment
+
+Added:
+
+* Use `unicodedata2` if it's installed
+
+Fixed:
+
+* `random_start` setting (broken by changes in [#1][])
+* Errors in `sopel-plugins configure rainbow`
+  * Wrong setting name (`rainbow` -> `order`)
+  * Wrong default value type (`list[int]` -> `list[str]`)
+
+Meta:
+
+* Reorganized to match current Sopel standard (mainly putting "the
+  actual plugin" in a `plugin.py` file, not `__init__.py`)
+* Updated packaging to use `pyproject.toml` metadata
+* Added release automation using PyPI Trusted Publishing
+
+[#1]: https://github.com/sopel-irc/sopel-rainbow/pull/1
+
+
+### sopel-rainbow 0.1.1
+
+Fixed:
+
+* Empty input raises exception on upcoming Sopel 7.1 release ([#2][])
+
+[#2]: https://github.com/sopel-irc/sopel-rainbow/pull/2
+
+
+### sopel-rainbow 0.1.0
+
+Initial release, featuring:
+
+* `.rainbow` command
+* Configurable color order
+* Optional randomized start point
+* Control-code stripping on Sopel 7.1+
+* Compatible with Sopel 7.0 through (planned) 8.x releases

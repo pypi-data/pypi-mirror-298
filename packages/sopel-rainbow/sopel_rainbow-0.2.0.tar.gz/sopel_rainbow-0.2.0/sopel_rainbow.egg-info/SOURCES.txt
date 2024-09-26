@@ -1,0 +1,13 @@
+COPYING
+MANIFEST.in
+NEWS
+README.md
+pyproject.toml
+sopel_rainbow/__init__.py
+sopel_rainbow/plugin.py
+sopel_rainbow.egg-info/PKG-INFO
+sopel_rainbow.egg-info/SOURCES.txt
+sopel_rainbow.egg-info/dependency_links.txt
+sopel_rainbow.egg-info/entry_points.txt
+sopel_rainbow.egg-info/requires.txt
+sopel_rainbow.egg-info/top_level.txt

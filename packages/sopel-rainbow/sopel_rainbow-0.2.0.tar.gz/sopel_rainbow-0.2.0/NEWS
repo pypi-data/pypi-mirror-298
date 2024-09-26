@@ -1,0 +1,56 @@
+## Changelog
+
+The brief, illustrious history of `sopel-rainbow`, a silly little plugin
+spawned from [a tongue-in-cheek
+upstream issue](https://github.com/sopel-irc/sopel/issues/1962).
+
+
+### sopel-rainbow 0.2.0
+
+Changed:
+
+* Dropped support for Sopel<7.1 + Python<3.8
+  * `sopel.module` -> `sopel.plugin`
+  * Removed shim around `sopel.formatting.plain()` function
+  * Updated `__future__` imports
+  * Removed UTF-8 coding comment
+
+Added:
+
+* Use `unicodedata2` if it's installed
+
+Fixed:
+
+* `random_start` setting (broken by changes in [#1][])
+* Errors in `sopel-plugins configure rainbow`
+  * Wrong setting name (`rainbow` -> `order`)
+  * Wrong default value type (`list[int]` -> `list[str]`)
+
+Meta:
+
+* Reorganized to match current Sopel standard (mainly putting "the
+  actual plugin" in a `plugin.py` file, not `__init__.py`)
+* Updated packaging to use `pyproject.toml` metadata
+* Added release automation using PyPI Trusted Publishing
+
+[#1]: https://github.com/sopel-irc/sopel-rainbow/pull/1
+
+
+### sopel-rainbow 0.1.1
+
+Fixed:
+
+* Empty input raises exception on upcoming Sopel 7.1 release ([#2][])
+
+[#2]: https://github.com/sopel-irc/sopel-rainbow/pull/2
+
+
+### sopel-rainbow 0.1.0
+
+Initial release, featuring:
+
+* `.rainbow` command
+* Configurable color order
+* Optional randomized start point
+* Control-code stripping on Sopel 7.1+
+* Compatible with Sopel 7.0 through (planned) 8.x releases
