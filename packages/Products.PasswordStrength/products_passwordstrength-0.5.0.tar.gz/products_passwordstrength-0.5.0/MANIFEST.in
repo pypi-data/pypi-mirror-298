@@ -1,0 +1,8 @@
+include *.txt *.rst
+recursive-include Products *.zcml *.xml *.txt
+recursive-include Products *.cpt *.metadata *.zpt *.pt
+recursive-include Products *.po *.pot
+recursive-include Products *.robot
+exclude bootstrap.py *.cfg *.yml
+recursive-exclude Products *.sh
+

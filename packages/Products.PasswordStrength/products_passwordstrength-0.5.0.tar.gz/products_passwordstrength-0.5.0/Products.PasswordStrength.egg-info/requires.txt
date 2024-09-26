@@ -1,0 +1,11 @@
+setuptools
+plone.api
+collective.monkeypatcher
+six
+z3c.jbot
+
+[test]
+plone.app.robotframework
+plone.app.testing
+plone.browserlayer
+robotsuite
