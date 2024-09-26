@@ -1,0 +1,1 @@
+from yandex_bot.types.message import Message

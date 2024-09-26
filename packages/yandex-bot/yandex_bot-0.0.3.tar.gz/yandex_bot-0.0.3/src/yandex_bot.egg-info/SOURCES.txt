@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+src/yandex_bot/__init__.py
+src/yandex_bot/bot.py
+src/yandex_bot.egg-info/PKG-INFO
+src/yandex_bot.egg-info/SOURCES.txt
+src/yandex_bot.egg-info/dependency_links.txt
+src/yandex_bot.egg-info/top_level.txt
+src/yandex_bot/types/__init__.py
+src/yandex_bot/types/message.py
