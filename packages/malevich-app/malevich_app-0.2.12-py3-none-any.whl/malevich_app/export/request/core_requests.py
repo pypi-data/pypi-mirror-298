@@ -1,0 +1,90 @@
+import json
+from io import StringIO
+from typing import Optional, Dict, Union, Any, List
+import aiohttp
+from malevich_app.export.abstract.abstract import FixScheme, SchemesMappingNames, SchemesMappingRaw, DocsCollectionRun
+from malevich_app.export.secondary.LogHelper import log_error
+import malevich_app.export.secondary.const as C
+from malevich_app.export.secondary.EntityException import EntityException
+from malevich_app.export.secondary.collection.Collection import Collection
+from malevich_app.export.secondary.collection.JsonCollection import JsonCollection
+from malevich_app.export.secondary.collection.MongoCollection import MongoCollection
+from malevich_app.export.secondary.collection.ObjectCollection import ObjectCollection
+from malevich_app.export.secondary.endpoints import MAPPING_SCHEMES_NAMES, MAPPING_SCHEMES_RAW, DOCS_COLLECTION
+from malevich_app.export.secondary.helpers import get_collection_pandas, obj_df, get_collection_json
+
+
+async def post_request_json(path: str, data: str, text: bool = False, buffer: Optional[StringIO] = None, fail_info: Optional[str] = None) -> Optional[Union[str, Dict[str, Any]]]:
+    async with aiohttp.ClientSession(timeout=C.AIOHTTP_TIMEOUT) as session:
+        async with session.post(path, data=data, headers=C.DEFAULT_HEADERS) as response:
+            if response.status == 204:
+                return None
+            if not response.ok:
+                res = await response.text()
+                try:
+                    res = json.loads(res)["result"]
+                except:
+                    pass
+                msg_prefix = fail_info if fail_info is not None else "post request failed"
+                log_error(f"error: {msg_prefix}: {res}")
+                if buffer is None:
+                    print(f"error: {msg_prefix}: {res}")
+                else:
+                    buffer.write(f"error: {msg_prefix}: {res}\n")
+            if not response.ok:
+                raise EntityException(fail_info)
+            # response.raise_for_status()
+            res = await response.text() if text else await response.json()
+            return res
+
+
+async def save_real_collection(collection: Collection, julius_app, name: Optional[str], index: int, *, group_name: Optional[str] = None) -> Collection:
+    is_doc = False
+    if isinstance(collection, ObjectCollection):
+        docs, scheme = obj_df(julius_app, collection.get(), with_prefix=False), None    # "obj" scheme
+        if not julius_app.is_local:
+            data = list(map(lambda row: row[1].drop(["__id__", "__name__"], errors="ignore").to_json(), docs.iterrows()))
+    else:
+        is_doc = isinstance(collection, JsonCollection)
+        if is_doc:
+            coll_id = collection.get(with_prefix=True)
+            docs, scheme, _ = get_collection_json(coll_id, julius_app.operation_id)
+            if not julius_app.is_local:
+                if isinstance(docs, List):
+                    data = [json.dumps(doc) for doc in docs]
+                else:
+                    data = [json.dumps(docs)]
+        else:
+            coll_id = collection.get()
+            docs, scheme, _ = get_collection_pandas(coll_id, julius_app.operation_id)
+            if not julius_app.is_local:
+                data = list(map(lambda row: row[1].drop(["__id__", "__name__"], errors="ignore").to_json(), docs.iterrows()))
+
+    if julius_app.is_local:
+        collection_id = julius_app._local_storage.save_data(julius_app.operation_id, julius_app.run_id, docs, scheme, name, group_name, index, is_doc)
+    else:
+        collection = DocsCollectionRun(operationId=julius_app.operation_id, runId=julius_app.run_id,
+                                       data=data, fixScheme=None if scheme is None else FixScheme(schemeName=scheme["schemeName"], mode=scheme["mode"]),
+                                       name=name, groupName=group_name, index=index, isDoc=is_doc)
+        collection_id = await post_request_json(DOCS_COLLECTION, collection.json(), text=True, buffer=julius_app.logs_buffer)     # save real collection
+    julius_app.logs_buffer.write(f"info: save collection: {name}\n")
+    return MongoCollection(collection_id)
+
+
+async def get_mapping_schemes(scheme_name_from: str, scheme_name_to: str, operation_id: str, buffer: StringIO, debug_mode: bool=False) -> Dict[str, str]:
+    schemes_mapping_names = SchemesMappingNames(operationId=operation_id, schemeFromName=scheme_name_from, schemeToName=scheme_name_to)
+    mapping = await post_request_json(MAPPING_SCHEMES_NAMES, schemes_mapping_names.json(), buffer=buffer, fail_info=f"schemes mapping, {scheme_name_from} -> {scheme_name_to}")
+    if debug_mode:
+        buffer.write(f"info: mapping: {mapping['data']}\n")
+    return mapping["data"]
+
+
+async def get_mapping_schemes_raw(columns: List[str], scheme_name_to: str, operation_id: Optional[str] = None, buffer: Optional[StringIO] = None, debug_mode: bool=False) -> Dict[str, str]:
+    schemes_mapping_raw = SchemesMappingRaw(operationId=operation_id, columns=columns, schemeToName=scheme_name_to)
+    mapping = await post_request_json(MAPPING_SCHEMES_RAW, schemes_mapping_raw.json(), buffer=buffer, fail_info=f"schemes mapping raw, {columns} -> {scheme_name_to}")
+    if debug_mode:
+        if buffer is None:
+            print(f"info: mapping: {mapping['data']}")
+        else:
+            buffer.write(f"info: mapping: {mapping['data']}\n")
+    return mapping["data"]
