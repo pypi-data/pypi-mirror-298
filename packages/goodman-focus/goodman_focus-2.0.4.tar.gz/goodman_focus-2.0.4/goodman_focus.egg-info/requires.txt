@@ -1,0 +1,7 @@
+astropy
+ccdproc
+matplotlib
+numpy
+packaging
+pandas
+scipy
