@@ -1,0 +1,9 @@
+pytwobit/__init__.py,sha256=4X9UIVNhjoj8x6AjVx4NxmtwmvrUlvYcZJKaIf8VAZ0,83
+pytwobit/data_view.py,sha256=ELDbbBkbonmsUCvQTvudVgXb1NGD3EoL7pgkRvsC1oc,704
+pytwobit/remote_file.py,sha256=M7-bfyy5jplredL9w6Swha3mjKDaLzKvLWSlNNsF0SQ,1127
+pytwobit/twobit.py,sha256=CWZcMsx3BfrJ00tItBRDZj6cBSeKx0eZ-OnOG55iCwU,8039
+pyTwobit-0.2.0.dist-info/LICENSE,sha256=_Hl4TdEiCn9r3E-dvEKi-uoAo_UDQsHxbli-bxHirsY,1069
+pyTwobit-0.2.0.dist-info/METADATA,sha256=Cji-qIG9bZ4dwwctkawGnHtplXg4kE2FrBrG5F1QRy0,1267
+pyTwobit-0.2.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+pyTwobit-0.2.0.dist-info/top_level.txt,sha256=BZ9wKQcQ8nt0uYKoCTbII06m7Z1s0kjvyIOI7HWWVLM,9
+pyTwobit-0.2.0.dist-info/RECORD,,
