@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "JsonEnv"
+version = "0.1"
+authors = [
+  { name="Greem", email="ianpichardo575@gmail.com" },
+]
+description = "JsonEnv allows you to make environment variables with Json, allowing you to write numbers and other types of variables"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+GitHub = "https://github.com/Greem3/JsonEnv"
