@@ -1,0 +1,12 @@
+python-magic
+dateparser
+pyyaml
+elasticsearch
+elasticsearch-dsl
+pandas
+docker
+flask
+flask-RESTful
+flask_cors
+requests
+shiny
