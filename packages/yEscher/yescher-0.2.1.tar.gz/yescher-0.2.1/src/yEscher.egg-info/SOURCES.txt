@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+src/yEscher.egg-info/PKG-INFO
+src/yEscher.egg-info/SOURCES.txt
+src/yEscher.egg-info/dependency_links.txt
+src/yEscher.egg-info/requires.txt
+src/yEscher.egg-info/top_level.txt
