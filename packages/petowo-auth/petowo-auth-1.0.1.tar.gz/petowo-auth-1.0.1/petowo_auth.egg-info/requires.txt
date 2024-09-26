@@ -1,0 +1,9 @@
+dataclasses
+datetime
+logging
+petowo-core
+pycryptodome
+pydantic==2.7.1
+pyjwt
+redis
+typing
