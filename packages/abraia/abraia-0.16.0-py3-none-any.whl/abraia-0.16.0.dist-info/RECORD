@@ -1,0 +1,17 @@
+abraia/__init__.py,sha256=UTciW0GXs5zYG0k_xi2FV4iie8gWa9LZMDoVRQC6xBQ,192
+abraia/client.py,sha256=NQIrFUE-1IQ4neNFZ7hsnIq21J2JUD1LBQyk8LyNx3Q,7277
+abraia/config.py,sha256=frEIabdnqwtwpqfSug6AOZlEJgSMOIexZ50OoqBTltw,1600
+abraia/detect.py,sha256=1qtwm9iuR35UPJipweJj440jzGfd3wA_4V9dzydKhQA,8760
+abraia/hsi.py,sha256=zcsqOjGDDoaVwGY855WljmYUJv9KzN65VNfFX07K-Ko,12179
+abraia/multiple.py,sha256=bkGzuXiYiaWMgb_ggwnO0d_bdTJLb5i_GASRC7uXQms,3169
+abraia/video.py,sha256=sS7xFbo4csxJp5NlbLouHkezSN1rSVAFnvBibZ8q7yE,1482
+abraia/training/__init__.py,sha256=O15fvItN5QaluGDA3FzP6ZKpAwVTyratPYxsxcyV5GY,5141
+abraia/training/classify.py,sha256=9UW94MWO3RueNwBctDMQGw3dupAGNqOcNo09Pd53Q80,9579
+abraia/training/detect.py,sha256=aFVrzjknWN_zYpG7h7UZhxD5g57VgeaW5HXh3zvaEQs,2053
+abraia-0.16.0.data/scripts/abraia,sha256=EDXRUkhMxcfOYgC-KDFSvKEkSqXCwVBMAJwiPnowi7o,6012
+abraia-0.16.0.data/scripts/abraia.bat,sha256=HNHeOb7g_mF71oWQSUHqPd_UbZckeg7H-D7eNmqF_pc,81
+abraia-0.16.0.dist-info/LICENSE,sha256=DtYfrcBXSPpOCr6__KobWH-efO9JCX4cZu07NwGmw4I,1072
+abraia-0.16.0.dist-info/METADATA,sha256=1xPKyJ5RPhdrrVbO-KSMEe53fp1ZaylFs2fvSexcTtg,9390
+abraia-0.16.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+abraia-0.16.0.dist-info/top_level.txt,sha256=fKlMObLKke9SAbV1mtb_W2GXZ5GRy8b6YTC6mz0KwZ8,7
+abraia-0.16.0.dist-info/RECORD,,
