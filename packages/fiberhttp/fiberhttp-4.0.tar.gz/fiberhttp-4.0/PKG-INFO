@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: fiberhttp
+Version: 4.0
+Summary: High Performance HTTP Requests Library
+Home-page: https://www.github.com/xsxo/fiberhttp
+Author: xsxo
+License: Apache-2.0
+Project-URL: Source, https://github.com/xsxo/fiberhttp
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: certifi>=2017.4.17
+
+# FiberHTTP [![Supported Versions](https://img.shields.io/pypi/pyversions/fiberhttp.svg)](https://pypi.org/project/fiberhttp)
+
+`FiberHTTP` High Performance HTTP Requests Library<br/>
+
+![GIF](media/1725894429188248.gif)
+
+The [benchmarks](https://github.com/xsxo/fiberhttp/tree/main/benchmarks) folder contains comparisons between `Fiberhttp` and other well-known libraries such as `requests`, `httpx`, `http.client`, and others. You will notice that `Fiberhttp` outperforms them every time<br/>
+
+
+## Fiberhttp might not for you
+
+Fiberhttp is designed to provide high performance but lacks many features like:
+
+**missing Features**:
+- No Support streaming requests
+- No Support redirects requests
+- No Support compressed requests
+- No Support chunked requests
+
+All these features are not supported by the library for the purpose of improving performance.<br/>
+If these features are important to you, and you value compatibility and functionality over performance, then the requests library might be a better choice for you.
+
+
+## Features:
+- Keep-alive (socket connection)
+- Upload & Download Multi Files
+- Prepare bytes request before send
+- Create Connection with server before send the request
+- High-performance SSL/TLS handshake, verify
+- Reading responses in various formats such as JSON, headers, Cookies
+
+
+## How to use
+install Fiberhttp (supported all os systems)
+```bash
+pip install fiberhttp
+```
+
+`with client session`
+```python3
+import fiberhttp
+
+# create client session with timeout
+# ! timeout arg not requierd
+cn = fiberhttp.client(timeout=10)
+
+# send get request
+res = cn.get('https://httpbin.org/ip')
+
+status_code = res.status_code()
+body = res.text()
+headers = res.headers()['Date']
+json = res.json()['origin']
+```
+
+
+`without client session`
+```python3
+import fiberhttp
+
+# send request without create client
+response = fiberhttp.get('https://httpbin.org/ip')
+```
+
+
+`with proxies`
+```python3
+import fiberhttp
+
+# create client proxy
+cn = fiberhttp.client_proxy('http://20.111.54.16:8123')
+
+# send request after the proxy in the client session
+response = cn.get('https://httpbin.org/ip').json()['origin']
+print(response)
+```
+
+
+`use prepare request to get high performance`
+
+```python3
+import fiberhttp
+
+cn = fiberhttp.client()
+
+# prepare request with this format
+request = fiberhttp.request('GET', 'https://httpbni.org/ip')
+
+# send request after prepare it
+response = cn.send('httpbin.org', request).json()
+```
+
+
+`create connection with host before send request to reduce response time`
+
+```python3
+import fiberhttp
+
+cn = fiberhttp.client()
+
+request = fiberhttp.request('GET', 'https://httpbni.org/ip')
+
+# create connection with host
+cn.connect('httpbin.org')
+
+response = cn.send('httpbin.org', request).text()
+print(response)
+```
