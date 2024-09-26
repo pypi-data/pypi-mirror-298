@@ -1,0 +1,16 @@
+v440/__init__.py,sha256=MQrVNWvZoxumw3SE5XBnGWje_gQ7V_DvfDLv29UX0SE,25
+v440/_core/Local.py,sha256=E3qKmtj8KFaGS_eJ8aAWyILaASL1gD1JHUApFrYb02c,1875
+v440/_core/Parser.py,sha256=yscFfB6Y89DghMEVB-dbO-Z3NtQTS_Ut8PKbvIscRbo,2906
+v440/_core/Pattern.py,sha256=wXxkEBqEzVdSTaaP2kuJfe0UVgQL8CA4B0k0RCq_MOU,698
+v440/_core/Pre.py,sha256=qjuQY5F0fuFjQ8Y-3lvTgQk5gSI-VuL__gZn8kRBvKk,845
+v440/_core/Release.py,sha256=orotp2JfG7btykggo6qbqeDRQW4DAgqMDZt3pTACi3U,5177
+v440/_core/Version.py,sha256=VQMHiiXhh0dP4Bz73W0xaN9-M1s3H2xfwS7EnadKJzY,8735
+v440/_core/__init__.py,sha256=uYjdaudy0Sc4ys1eoI8c7-WvW5394p5UNw2BI_thrRA,81
+v440/_core/utils.py,sha256=v_h3Jb9__8um26aQIR4NtJCvDTNBf7vuE6VNGwPzm6U,3358
+v440/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+v440/tests/test_version.py,sha256=K1IuS5hkSWbaZRoa_BMdrrCxqoeq2tHAFPPBcsSLDTI,44261
+v440-1.1.0.dist-info/LICENSE.txt,sha256=QwqYepQwTN5xG57cngKt6xxYD9z9hw9d3lcI8zSLiNg,1074
+v440-1.1.0.dist-info/METADATA,sha256=7RqNe-bhxNtFiVOBStosnJEAzTt99VBIXN2GALlYGzA,6650
+v440-1.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+v440-1.1.0.dist-info/top_level.txt,sha256=0KhvBmvlzcE4QlmK9pkVo1pXR2q-YDKG5Bj5yIXmWTE,5
+v440-1.1.0.dist-info/RECORD,,
