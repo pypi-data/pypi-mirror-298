@@ -1,0 +1,11 @@
+flake8_ecocode/__init__.py,sha256=euqZLOOdaPWSJfT_B6mKECP0DpTofhOssNNMqNEwgSg,99
+flake8_ecocode/plugin.py,sha256=c1AZrjZKxCuyKYN2JCoW35smr_sfreYIzhKU_wiCMhM,661
+flake8_ecocode/rules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_ecocode/rules/base.py,sha256=v7WSLH0MK1fKsV3ocNM6oSS-Mt9P9ZU7-WmQ-rFVolY,463
+flake8_ecocode/rules/ec_35.py,sha256=ROvJO7zgpS0GuSTE3y-3cLwETtqzftVUqJnmCFlig5Q,984
+flake8_ecocode/rules/ec_404.py,sha256=gluTLmoNq4x0EA2oirtbllhEMudOy5Yth40nZ6ULDMQ,1726
+flake8_ecocode/types.py,sha256=R17gq75ADcJjJ8SPtFr5-SBsqRiAiYcZJVfZCMVlLlI,149
+flake8_ecocode-0.1.2.dist-info/METADATA,sha256=GfS_i2huFZqCBI6xDVV-o8pWASsIAIbPuAiPTzU7Poo,2182
+flake8_ecocode-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+flake8_ecocode-0.1.2.dist-info/entry_points.txt,sha256=0315vBojUijMSdT5FOohEnTnuIiSzODfJuwHIjKEGag,52
+flake8_ecocode-0.1.2.dist-info/RECORD,,
