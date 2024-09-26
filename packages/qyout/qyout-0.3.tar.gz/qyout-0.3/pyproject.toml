@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qyout"
+version = "0.3"
+authors = [
+  { name="Guitouu31" },
+]
+description = "Qt YOUTube downloader GUI"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pyqt6",
+    "yt-dlp",
+]
+license = {text = "MIT License"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Environment :: X11 Applications :: Qt",
+    "Topic :: Utilities",
+]
+keywords = ["youtube", "qt", "gui", "download"]
+
+[project.urls]
+Homepage = "https://github.com/guitouu31/qyout.git"
+
+[project.scripts]
+qyout = "qyout.main:main"
