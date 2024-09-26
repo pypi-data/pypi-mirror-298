@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: commonlisteners
+Version: 0.0.6
+Summary: Let you subscribe and listen in right manner
+Project-URL: Github repo, https://github.com/akvilary/commonlisteners
+Project-URL: Bug tracker, https://github.com/akvilary/commonlisteners/issues
+Project-URL: Release notes in Telegram, https://t.me/commonlisteners
+Author-email: Andrey Smirnov <smirnovcode@mail.ru>
+License-File: LICENSE
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+**commonlisteners** is simple and powerful listening pattern tool.
+
+## How to install
+You could install from PyPi:
+```console
+$ python3 -m pip install commonlisteners
+```
