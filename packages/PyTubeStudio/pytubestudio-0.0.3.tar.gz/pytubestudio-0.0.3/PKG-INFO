@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: PyTubeStudio
+Version: 0.0.3
+Summary: A library to interact with the VTubeStudio API
+Author: Jaarfi
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic>=2.7
+Requires-Dist: websockets>=12.0
+Requires-Dist: platformdirs
+Requires-Dist: aiofiles

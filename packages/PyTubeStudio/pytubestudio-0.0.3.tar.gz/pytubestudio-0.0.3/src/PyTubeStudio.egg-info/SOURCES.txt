@@ -1,0 +1,12 @@
+LICENSE
+pyproject.toml
+src/PyTubeStudio/__init__.py
+src/PyTubeStudio/client.py
+src/PyTubeStudio.egg-info/PKG-INFO
+src/PyTubeStudio.egg-info/SOURCES.txt
+src/PyTubeStudio.egg-info/dependency_links.txt
+src/PyTubeStudio.egg-info/requires.txt
+src/PyTubeStudio.egg-info/top_level.txt
+src/PyTubeStudio/models/__init__.py
+src/PyTubeStudio/models/models.py
+tests/tests.py
