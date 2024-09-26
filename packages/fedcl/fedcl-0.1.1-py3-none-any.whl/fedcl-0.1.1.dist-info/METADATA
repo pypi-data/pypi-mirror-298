@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fedcl
+Version: 0.1.1
+Summary: 
+Author: Maciej Krzysztof Zuziak
+Author-email: maciej.k.zuziak@protonmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: datasets (>=2.17.0)
+Requires-Dist: numpy (==1.26.4)
+Requires-Dist: scikit-learn (>=1.4)
+Requires-Dist: timm (>=1.0.8)
+Requires-Dist: torch (>=2.2.0)
+Requires-Dist: torchvision (>=0.1.5)
+Description-Content-Type: text/markdown
+
+# Clustered-Federated-Learning
+A shared library for performing experiments on Clustered Federated Learning, published as a part of the paper by M.K.Zuziak, R.Pellungrini and S.Rinzivillo: One-Shot Clustering for Federated Learning
+
