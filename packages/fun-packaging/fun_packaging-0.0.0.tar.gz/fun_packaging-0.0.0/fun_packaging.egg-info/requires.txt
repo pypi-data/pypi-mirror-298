@@ -1,0 +1,26 @@
+requests
+
+[:python_version < "3.11"]
+importlib-metadata
+
+[dev]
+packaging2[release,static-code-qa,test]
+
+[pdf]
+ReportLab>=1.2
+RXP
+
+[release]
+build
+twine
+
+[rest]
+docutils>=0.3
+pack==1.1,==1.3
+
+[static-code-qa]
+pre-commit
+
+[test]
+pytest
+pytest-cov
