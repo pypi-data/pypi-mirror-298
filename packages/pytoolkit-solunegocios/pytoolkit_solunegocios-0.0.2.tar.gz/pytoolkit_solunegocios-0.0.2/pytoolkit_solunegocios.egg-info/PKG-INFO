@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pytoolkit-solunegocios
+Version: 0.0.2
+Home-page: 
+Author: Cristian Pavez
+Author-email: cpavezm@soluciones.cl
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: azure-search-documents==11.5.1
+Requires-Dist: azure-core==1.30.2
+Requires-Dist: openai==1.43.1
+Requires-Dist: msal==1.20.0
+Requires-Dist: requests>=2.25.1
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
