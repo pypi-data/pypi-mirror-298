@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: anansi-sdk
+Version: 1.0.6
+Summary: Anansi REST API
+Home-page: https://www.anansihub.com/
+Author-email: admin@suketa.in
+Keywords: Swagger,Anansi REST API
+License-File: LICENSE
+Requires-Dist: urllib3 >=1.15
+Requires-Dist: six >=1.10
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    These endpoints describe the REST API of the Anansi Data Lineage Tool. The Catalog endpoint is for saving data into Nodes. The Relationships endpoints is for connecting data between Nodes. The endpoints use JWT as the security mechanism.  # noqa: E501
+    
