@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: iddb
+Version: 0.0.0.dev3
+Summary: Interactive Distributed Debugger (iDDB)
+Project-URL: Homepage, https://github.com/
+Project-URL: Issues, https://github.com/
+Author-email: NSL <yiboyan@usc.edu>
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.8
+Requires-Dist: debugpy
+Requires-Dist: flask
+Requires-Dist: kubernetes
+Requires-Dist: opentelemetry-exporter-jaeger
+Requires-Dist: opentelemetry-sdk
+Requires-Dist: paho-mqtt
+Requires-Dist: paramiko
+Requires-Dist: pygdbmi
+Requires-Dist: pyyaml>=5.4.1
+Description-Content-Type: text/markdown
+
+# Interactive Distributed Debugger (DDB)
+
+## Usage
+
+``` bash
+ddb configs/dbg_auto_discovery.yaml
+```
+
+A configuration file is required. Simple example:
+
+``` yaml
+---
+SSH:
+  user: ybyan # you can skip this if the username used to connect is same as the current user
+
+ServiceDiscovery:
+  Broker:
+    hostname: 10.10.1.2 # the communication IP of starting machine that can be reached from other machines
+```
