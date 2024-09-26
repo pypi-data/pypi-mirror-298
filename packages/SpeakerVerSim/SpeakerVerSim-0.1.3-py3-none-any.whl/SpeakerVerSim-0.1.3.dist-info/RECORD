@@ -1,0 +1,14 @@
+SpeakerVerSim/__init__.py,sha256=mG2cs2e7h47eLegk3y6d4G5SWCiXuf9JF4LE5RKdurg,1361
+SpeakerVerSim/common.py,sha256=kkowU9LTqM4mdRzxZy5tDDrerXEuUpvt2X8Zp_IxEo8,13810
+SpeakerVerSim/server_double.py,sha256=mHehvuhSdy1VPPvWdwWUI6_-83kSUBJ5f1QAggU0UCg,6095
+SpeakerVerSim/server_single_hash.py,sha256=vn7yN14FJCO2GYdSNIpBdFzlHK6qYX-K51EWaPMP2Qc,1680
+SpeakerVerSim/server_single_multiprofile.py,sha256=qZBGONOuEF_Vq0v0jV48lbL19phek5hWStWA2zBkV6o,2861
+SpeakerVerSim/server_single_simple.py,sha256=V5xg8F33kiv9KyHb2aiPumi_9qEpFZhfadcTo-6k7nA,7189
+SpeakerVerSim/server_single_sync.py,sha256=dXhDPDDmpSj3z6Y4im0tKhjvgZY1MGzYZWG2yZaWNGk,5478
+SpeakerVerSim/simulator.py,sha256=GxYHApx7iT1iSC7uTeNu4_-XrWh9RpxPFsIYfnSdP18,1447
+SpeakerVerSim/test_simulation.py,sha256=Tfm-5bbiIB7WzJLoYr3DeohaHJ2rLOJe8hOwQ1rIvLY,4279
+SpeakerVerSim-0.1.3.dist-info/LICENSE,sha256=jVNTUnOkTYm3WtbngdCLErVS3AqxUuyS-loqWDwo3G4,11339
+SpeakerVerSim-0.1.3.dist-info/METADATA,sha256=c_ZxAI9EBDi99lV_SMviw-RbBAM3y6D8Z0LAATk5YXY,5353
+SpeakerVerSim-0.1.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+SpeakerVerSim-0.1.3.dist-info/top_level.txt,sha256=HnKEl8nPqj2sKqzWOeguSawHXIg7jS2MGa516L7iSr8,14
+SpeakerVerSim-0.1.3.dist-info/RECORD,,
