@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: swap_i3_workspaces
+Version: 0.2.0
+Summary: Swap i3 workspaces
+Project-URL: Source, https://gitlab.com/sandeep-datta/swap_i3_workspaces
+Project-URL: Tracker, https://gitlab.com/sandeep-datta/swap_i3_workspaces/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: i3ipc
+
