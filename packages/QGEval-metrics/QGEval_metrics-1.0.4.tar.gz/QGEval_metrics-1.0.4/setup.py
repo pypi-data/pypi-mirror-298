@@ -1,0 +1,32 @@
+from setuptools import setup, find_packages  
+  
+setup(  
+    name='QGEval_metrics',  
+    version='1.0.4',  
+    author='WeipingFu',  
+    author_email='fuweiping1993@foxmail.com',  
+    description='Auto metrics for evaluating generated questions',  
+    long_description=open('README.md').read(),  
+    long_description_content_type='text/markdown',  
+    url='https://github.com/WeipingFu/QGEval/tree/main',  
+    packages=find_packages(),  
+    package_data={  
+        'QGEval_metrics': ['BARTScore/*','bleurt/*','GPTScore/*','moverScore/*','QBLEU/*','QRelScore/*','QSTS/*','ROUGE/*','UniEval/*'],  # 指定要包含的文件夹或文件  
+    },
+    classifiers=[  
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Science/Research',
+        'License :: OSI Approved :: Apache Software License',
+        'Operating System :: OS Independent',  
+        'Programming Language :: Python',  
+        'Programming Language :: Python :: 3',  
+        'Programming Language :: Python :: 3.7',  
+        'Programming Language :: Python :: 3.8',  
+        'Programming Language :: Python :: 3.9',  
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Topic :: Database',  
+    ],  
+    python_requires='>=3.7',  
+    install_requires=open('requirements.txt').read().splitlines(),  
+)
