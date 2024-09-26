@@ -1,0 +1,2 @@
+[console_scripts]
+run_modeling_gui = modeling_gui.main:main
