@@ -1,0 +1,10 @@
+mapget/libmapget-model.a,sha256=2gQ2uuims-NLsLkj4uTwNI61qzQxQs3RlGsvHR42teM,2506888
+mapget/libmapget-http-datasource.a,sha256=7cH1Mf4VymeOi9bR41yD8SskJnq6M5hNZZgiDubx3W4,3404138
+mapget/__main__.py,sha256=D3V7pBxbNvOznznAzSutyJwgZFf6GJV_cq7hgMPfsLk,130
+mapget/LICENSE.txt,sha256=JeNdz5tf1QH7CIw_i5yqTWtlyhczLpjj3yhOyCRTEHE,1528
+mapget/pymapget.cpython-311-x86_64-linux-gnu.so,sha256=DERz-V-yN-0rOUYqJIjNrJmV2Ro8_hwW4NJJHQxa51E,22246712
+mapget/__init__.py,sha256=4BQ2UpmtSoX0x1dlQphfbboyPCDmEOruyuOTVc9niGQ,23
+mapget-2024.4.0.dist-info/METADATA,sha256=XX_QwK4QJxeHhFXvt16hs9nkBORNZJKQfxkPNcIr91M,228
+mapget-2024.4.0.dist-info/RECORD,,
+mapget-2024.4.0.dist-info/WHEEL,sha256=XihS4yPLFu_eB7R4sl7jUHiEAA7zQ3q0-_CuIzkpFkk,151
+mapget-2024.4.0.dist-info/top_level.txt,sha256=W-teDHSWuhlJr1wYlLvI3fWF1H42P9Etok_NjWZ9tsQ,16
