@@ -1,0 +1,9 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_benchmark.py,sha256=UNyb6lxnHzdWrlgfAP2lYfJ12KSeMig1B7D_3tTPrw8,644
+vector_db_benchmark/__init__.py,sha256=4chC-spqlYMT-I4Q63Rts8jA8iOxW67ukb6hRdCpu74,41
+vector_db_benchmark/benchmark.py,sha256=CrLb21X2pEsaeBme8c6PtRPm--ZrjDRciTp7D1PwD-w,7634
+vector_db_benchmark-1.0.0.dist-info/LICENSE,sha256=BKfn0uy5tD6ma-Z2QSZCdkYB_VSdCirq4ubTGbjE30k,1071
+vector_db_benchmark-1.0.0.dist-info/METADATA,sha256=RJUjjFMuuG1aBTw3aQC771K4OzjCXU9Yt7qMCh4tAsA,1353
+vector_db_benchmark-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+vector_db_benchmark-1.0.0.dist-info/top_level.txt,sha256=j497qsqq5QTpROJJY4lfMqd_aJ_pQsq9aHTP9GyZIaU,26
+vector_db_benchmark-1.0.0.dist-info/RECORD,,
