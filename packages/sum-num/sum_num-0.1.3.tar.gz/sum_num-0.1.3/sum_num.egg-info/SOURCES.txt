@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sum_num/__init__.py
+sum_num/math_exp.py
+sum_num.egg-info/PKG-INFO
+sum_num.egg-info/SOURCES.txt
+sum_num.egg-info/dependency_links.txt
+sum_num.egg-info/top_level.txt
