@@ -1,0 +1,7 @@
+ase
+numpy
+scikit-learn
+
+[dev]
+twine
+wheel
