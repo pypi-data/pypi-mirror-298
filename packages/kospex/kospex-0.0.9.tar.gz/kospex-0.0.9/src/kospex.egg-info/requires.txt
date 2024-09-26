@@ -1,0 +1,8 @@
+Click
+flask
+prettytable
+dateutils
+python-dotenv
+sqlite_utils
+requests
+PyYAML
