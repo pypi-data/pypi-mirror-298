@@ -1,0 +1,81 @@
+# HistoryArgumentParser
+
+## Why Track Command History?
+
+Have you ever found yourself wondering:
+- "What parameters did I use for that successful run last week?"
+- "How can I replicate the exact configuration from my previous experiments?"
+- "Is there an easy way to audit how my script has been used over time?"
+
+HistoryArgumentParser is here to solve these problems and more!
+
+## What is HistoryArgumentParser?
+
+HistoryArgumentParser is an extension of Python's built-in `argparse.ArgumentParser` that automatically tracks and stores the command-line arguments used in your scripts. It's designed to be a drop-in replacement for ArgumentParser, adding powerful history tracking capabilities with minimal changes to your existing code.
+
+## Key Features
+
+- 📜 Automatic command history tracking
+- 🕰️ Timestamped entries for easy reference
+- 🔍 Built-in history viewing functionality
+- 📁 Customizable history file location
+- 🔌 Seamless integration with existing argparse code
+
+## Installation
+
+Install HistoryArgumentParser with pip:
+
+```bash
+pip install argparse_history
+```
+
+## Quick Start
+Replace your existing ArgumentParser with HistoryArgumentParser:
+
+```python
+from history_argparse import HistoryArgumentParser
+
+parser = HistoryArgumentParser(description="Your script description")
+parser.add_argument('--input', help='Input file', required=True)
+parser.add_argument('--output', help='Output file', required=True)
+
+args = parser.parse_args()
+
+# Your script logic here
+
+```
+
+That's it! Your script now tracks command history automatically.
+
+### Viewing Command History
+To view the command history, simply run your script with the --show-history flag:
+
+```bash
+python your_script.py --show-history
+```
+
+This will display a list of previous runs with their timestamps and arguments.
+
+#### Customizing History File Location
+
+By default, the history is stored in the current directory. You can specify a custom directory:
+
+```bash
+python your_script.py --input in.txt --output out.txt --history-dir /path/to/history
+```
+
+## Why Choose HistoryArgumentParser?
+
+1. Effortless Integration: Minimal changes to your existing code.
+2. Improved Reproducibility: Easily recreate previous runs.
+3. Better Debugging: Quickly identify what parameters were used in past executions.
+4. Audit Trail: Keep track of how and when your script is being used.
+5. Time-Saving: No more manual logging of script parameters.
+
+## Contributing
+Your contributions are welcome! Please feel free to share if you use `argparse_history` and how it is useful to you. 
+Also let me know if you have any suggestions of how it could serve you even better!
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. Start tracking your command history today with HistoryArgumentParser!
