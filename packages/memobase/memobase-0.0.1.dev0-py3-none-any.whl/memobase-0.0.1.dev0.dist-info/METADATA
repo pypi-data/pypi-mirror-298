@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: memobase
+Version: 0.0.1.dev0
+Summary: Client library of MemoBase: manage user memory for your LLM applications
+Home-page: https://github.com/memodb-io/memobase
+Author: memodb.io
+License: Apache-2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic
+
+<div align="center">
+    <a href="https://memobase.io">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://assets.memodb.io/memobase-dark.svg">
+      <img alt="Shows the MemoBase logo" src="https://assets.memodb.io/memobase-light.svg" width="424">
+    </picture>
+  </a>
+  <p><strong>Manage user memory for your LLM applications</strong></p>
+  <p>
+    <img src="https://img.shields.io/badge/python->=3.10-blue">
+    <a href="https://pypi.org/project/memobase/">
+      <img src="https://img.shields.io/pypi/v/memobase.svg">
+    </a>
+  </p>
+</div>
+
