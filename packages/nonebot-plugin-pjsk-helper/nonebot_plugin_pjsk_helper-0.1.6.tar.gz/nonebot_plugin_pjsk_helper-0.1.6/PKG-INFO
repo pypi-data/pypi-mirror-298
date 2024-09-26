@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-pjsk-helper
+Version: 0.1.6
+Summary: Default template for PDM package
+Author-Email: Atr1ck <3126670240@qq.com>
+License: MIT
+Requires-Python: >=3.12
+Requires-Dist: beautifulsoup4>=4.12.3
+Requires-Dist: selenium>=4.25.0
+Requires-Dist: pathlib>=1.0.1
+Requires-Dist: webdriver-manager>=4.0.2
+Requires-Dist: nonebot>=1.9.1
+Description-Content-Type: text/markdown
+
+# nonebot-plugin-pjsk-helper
