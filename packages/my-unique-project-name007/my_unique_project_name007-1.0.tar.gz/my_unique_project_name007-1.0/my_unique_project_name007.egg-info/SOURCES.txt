@@ -1,0 +1,7 @@
+setup.py
+my_unique_project_name007.egg-info/PKG-INFO
+my_unique_project_name007.egg-info/SOURCES.txt
+my_unique_project_name007.egg-info/dependency_links.txt
+my_unique_project_name007.egg-info/top_level.txt
+mylib/Email.py
+mylib/__init__.py
