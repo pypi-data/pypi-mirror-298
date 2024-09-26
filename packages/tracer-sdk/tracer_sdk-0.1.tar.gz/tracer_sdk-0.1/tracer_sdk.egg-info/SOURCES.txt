@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+tests/test_sdk.py
+tracer/__init__.py
+tracer/sdk.py
+tracer_sdk.egg-info/PKG-INFO
+tracer_sdk.egg-info/SOURCES.txt
+tracer_sdk.egg-info/dependency_links.txt
+tracer_sdk.egg-info/top_level.txt

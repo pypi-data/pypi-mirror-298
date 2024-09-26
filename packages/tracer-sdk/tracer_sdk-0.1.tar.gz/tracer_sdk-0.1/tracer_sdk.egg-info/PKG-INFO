@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tracer-sdk
+Version: 0.1
+Summary: Ankit SDK
+Home-page: https://github.com/ankittripathi24/tracer-sdk
+Author: Ankit Tripathi
+Author-email: ankit.tripathi@siemens.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
