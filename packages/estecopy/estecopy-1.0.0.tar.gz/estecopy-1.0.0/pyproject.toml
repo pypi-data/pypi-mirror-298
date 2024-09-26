@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+dynamic = ["authors", "version"]
+name = "estecopy"
+requires-python = ">= 3.8"
+description = "Python library to support the proprietary modeFRONTER software"
+readme = "README.md"
+keywords = ["estecopy", "esteco", "modeFRONTIER", "pyFRONTIER", "optimization"]
+classifiers=[
+    'Development Status :: 5 - Production/Stable',
+    'Programming Language :: Python :: 3',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: MacOS',
+    'Operating System :: Unix',
+    'Operating System :: POSIX',
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development",
+    "Topic :: Office/Business",
+]
+
+
+[tool.setuptools]
+packages=[
+    "estecopy",
+    "estecopy._internal",
+    "estecopy._internal.utils",
+    "estecopy._utils",
+    "pyfrontier"
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "pyfrontier.get_estecopy_version"}
+
