@@ -1,0 +1,7 @@
+shinny_parsing/__init__.py,sha256=GsCutJ_AXjQ23qo0tCzO_GkAZHf6Xlkm7OPQG5PDtkA,38
+shinny_parsing/parse_settlement_infos.py,sha256=BibPkxeu3yiUXKpz_v7sjwgWPRKfQYEozX6GHtiS7WQ,12379
+shinny_parsing/parse_to_dataframe.py,sha256=J0-Vhi2aaLjWV5x7Ec-_9ZedOylDulE3G3MkiGI7jec,12523
+shinny_parsing-0.0.2.dist-info/METADATA,sha256=anirNlrQynB7U12-ZAXtUkuddI6AUHwTrSaMmF9YuLk,490
+shinny_parsing-0.0.2.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+shinny_parsing-0.0.2.dist-info/top_level.txt,sha256=ycFw5h4J9vZyHGZ4_MI4Bt-KRY4LgY_Y2bVpuzRXjpc,15
+shinny_parsing-0.0.2.dist-info/RECORD,,
