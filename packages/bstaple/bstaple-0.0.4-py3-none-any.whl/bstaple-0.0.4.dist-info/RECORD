@@ -1,0 +1,8 @@
+bstaple/__init__.py,sha256=LKynjOxc_2RJi0TbhqGK9TBaLoxmDmUyrzyWsRcpeJI,77
+bstaple/algorithm.py,sha256=C2xkKDh068_7xNbgQ2zhrEGHkYA-JMz8wYZt57Ob21k,1299
+bstaple/random_vars.py,sha256=LpsdNNGh0Pf6dug1XEtpAnyk8NlVKDczinMVQWniCI8,3544
+bstaple/sampling.py,sha256=VwY_2QMYcJqqc7cmLoQ8hhYmF_UzaicKrsVQWvf371M,2412
+bstaple-0.0.4.dist-info/LICENSE,sha256=4iswICdVk7lZ0aoc64K7YjywMZBFMKrDLD0PiGDVZ3Q,2216
+bstaple-0.0.4.dist-info/METADATA,sha256=hsWl8BuLjN5On7twZu0Nasq7MMpmX5_Qt_7MqXwMsF4,3148
+bstaple-0.0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+bstaple-0.0.4.dist-info/RECORD,,
