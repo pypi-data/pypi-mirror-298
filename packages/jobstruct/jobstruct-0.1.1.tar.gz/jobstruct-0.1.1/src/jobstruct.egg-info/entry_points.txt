@@ -1,0 +1,2 @@
+[console_scripts]
+jobstruct = jobstruct.__main__:main
