@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cru-dse-utils"
+version = "0.1.7"
+description = "Cru DSE Python Utils"
+readme = "README.md"
+authors = [{ name = "Cru DSE Team", email = "tony.guan@cru.org" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "requests",
+    "google-auth",
+    "google-cloud-bigquery",
+    "google-cloud-storage",
+    "pandas",
+]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+build = ["build", "twine"]
+dev = ["pytest"]
+
+[project.urls]
+repository = "https://github.com/CruGlobal/dse-python-utils"
+homepage = "https://github.com/CruGlobal/dse-python-utils"
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+filterwarnings = [
+    "ignore:::.*pkg_resources",
+    "ignore:Deprecated call to `pkg_resources.declare_namespace.*:DeprecationWarning",
+]

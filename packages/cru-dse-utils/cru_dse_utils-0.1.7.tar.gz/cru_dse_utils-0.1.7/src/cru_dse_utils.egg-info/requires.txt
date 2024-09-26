@@ -1,0 +1,12 @@
+requests
+google-auth
+google-cloud-bigquery
+google-cloud-storage
+pandas
+
+[build]
+build
+twine
+
+[dev]
+pytest
