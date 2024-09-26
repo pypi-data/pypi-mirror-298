@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: orientseq
+Version: 0.2.0
+Summary: Orients fa/fq/sam/bam file: reverse revcomp by finding polyA tails
+License: MIT
+Author: Dmitry Solovey
+Author-email: dsolovey@ist.ac.at
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: biopython (>=1.84,<2.0)
+Requires-Dist: pysam (>=0.22.1,<0.23.0)
+Description-Content-Type: text/markdown
+
+A simple tool to help with orienting fa/fq/sam/bam RNAseq files. If your data contains polyA tails but some reads are in reverse complement (i.e., starting with polyT instead of ending with polyA), this script will reverse complement those reads and will print statistics of processed reads to stdout
+
