@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+undidPyjl/__init__.py
+undidPyjl/julia_management.py
+undidPyjl.egg-info/PKG-INFO
+undidPyjl.egg-info/SOURCES.txt
+undidPyjl.egg-info/dependency_links.txt
+undidPyjl.egg-info/requires.txt
+undidPyjl.egg-info/top_level.txt
