@@ -1,0 +1,9 @@
+typer
+devgoldyutils
+watchdog
+pytest
+thefuzz
+
+[dev]
+ruff
+build
