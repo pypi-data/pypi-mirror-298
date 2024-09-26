@@ -1,0 +1,3 @@
+[console_scripts]
+hashpw = hashpw.cli:main
+
