@@ -1,0 +1,2 @@
+[sopel.plugins]
+rainbow = sopel_rainbow.plugin
