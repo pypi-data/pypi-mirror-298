@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/task_5_SYRKIN/__init__.py
+src/task_5_SYRKIN/collection_app.py
+src/task_5_syrkin.egg-info/PKG-INFO
+src/task_5_syrkin.egg-info/SOURCES.txt
+src/task_5_syrkin.egg-info/dependency_links.txt
+src/task_5_syrkin.egg-info/requires.txt
+src/task_5_syrkin.egg-info/top_level.txt
+tests/test_collection_app.py

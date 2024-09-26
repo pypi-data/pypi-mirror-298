@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: task_5_syrkin
+Version: 0.0.6
+Summary: Application counts the unique symbols in a string or file.
+Author-email: Andrii Syrkin <avvaan1981@gmail.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2024 Andrii Syrkin
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE.
+        
+Project-URL: Home, https://git.foxminded.ua/andrii-syrkin-py_ment/task_5.git
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest>=8.3.2
+Requires-Dist: coverage>=7.6.1
+Requires-Dist: parameterized>=0.9.0
+Requires-Dist: argparse>=1.4.0
+Requires-Dist: setuptools>=75.1.0
+
+# Unique Character Counter
+
+## Overview
+This Python package provides a tool for counting unique characters in a string or file. The tool can be useful for text analysis, file parsing, and general string processing tasks.
+
+## Features
+- Count unique characters in a string.
+- Count unique characters in a file.
+- Customizable options for ignoring case sensitivity or specific characters.
+
+## Installation
+```bash
+pip install task_5_syrkin
+```
+All modules will be installed automatically.
+
+## Usage
+In the command line, execute the `collection_app.py` file with the following parameters:
+
+```bash
+# To test the application
+python3 collection_app.py --test
+
+# For counting unique characters in a string
+python3 collection_app.py --string "your string here"
+
+# For counting unique characters in a file
+python3 collection_app.py --file "your file here"
+```
+
+## Contributing
+You can use this package as a function to count unique characters. For further contributions, please clone the repository and follow the guidelines below.
+
+## Changelog
+- **0.0.1 release**
+- **0.0.2**: Added doctests and README.md file
+- **0.0.4**: Added setup.py
+
+```bash
+git clone https://git.foxminded.ua/andrii-syrkin-py_ment/task_5.git
+
+
+```
