@@ -1,0 +1,14 @@
+katlas/__init__.py,sha256=46Yjk3fz9o8aTN8E95McnzpJcjGzVJmHmQqUZ5mXzfc,22
+katlas/_modidx.py,sha256=N4eRU0s8l9NGhHf-PZynH4p87iyw9ksebr7DKd8SLR0,11027
+katlas/core.py,sha256=RPxfxc-aVGj9G3p70EPSt0Yoa1tOoE1MIfYwIP0Fr28,36863
+katlas/dl.py,sha256=gV-rwTLU9IudwFyNJKo-MP8nmOzhqURZQt3rJalHoG8,10903
+katlas/feature.py,sha256=Wv94R0hnAovErifV2x5ky8uvRMNSGPjnS4ivyWVoZps,11548
+katlas/imports.py,sha256=-ZphRU8K1KspxMpgRxisE0OskrCw3S8JR8tvmeXBRY0,147
+katlas/plot.py,sha256=_bzvMwxzAjXg0Zxb5Sv7bfCIopxJegjCA-DutjrLybo,23668
+katlas/train.py,sha256=OhiR2ev1UhPBBSWLncwfNjy_UImSmB_kVhZp7DyCQ50,7671
+python_katlas-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+python_katlas-0.1.0.dist-info/METADATA,sha256=6AKfNrBdqpbiriyS-HR1D_RqD7ot1lrKvLMKi3oWH7w,15460
+python_katlas-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+python_katlas-0.1.0.dist-info/entry_points.txt,sha256=SF3xDlCmE84ECTBIMDo_FNg1aXGX2-lXkCvH5o4VgpM,34
+python_katlas-0.1.0.dist-info/top_level.txt,sha256=pKBKw9KOSJgnnFkoilkDij_iJ_tJbIO4XnrSXIleqNc,7
+python_katlas-0.1.0.dist-info/RECORD,,
