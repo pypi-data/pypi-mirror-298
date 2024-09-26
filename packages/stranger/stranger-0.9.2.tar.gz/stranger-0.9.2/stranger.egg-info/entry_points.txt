@@ -1,0 +1,2 @@
+[console_scripts]
+stranger = stranger.__main__:base_command
