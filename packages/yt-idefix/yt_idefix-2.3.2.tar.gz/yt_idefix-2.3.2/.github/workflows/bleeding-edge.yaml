@@ -1,0 +1,52 @@
+name: CI (bleeding edge)
+# goals: check stability against dev version of Python and yt
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    paths:
+    - .github/workflows/bleeding-edge.yaml
+  schedule:
+    # run this every Wednesday at 3 am UTC
+  - cron: 0 3 * * 3
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: CI w/ yt dev
+    timeout-minutes: 60
+
+    concurrency:
+      group: ${{ github.ref }}-dev
+      cancel-in-progress: true
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python Dev Version
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.13-dev
+
+    - uses: astral-sh/setup-uv@v2
+      with:
+        enable-cache: true
+
+    - name: Build
+      run: |
+        uv venv
+        uv pip install git+https://github.com/yt-project/yt.git
+        uv pip install .
+        uv pip install --requirement requirements/tests.txt
+
+    - run: uv pip list
+
+    - name: Run Tests
+      run: |
+        source .venv/bin/activate
+        pytest --color=yes -ra

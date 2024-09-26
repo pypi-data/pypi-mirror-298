@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    paths-ignore:
+    - README.md
+  schedule:
+    # run this every Wednesday at 3 am UTC
+  - cron: 0 3 * * 3
+  workflow_dispatch:
+
+jobs:
+  tests:
+    strategy:
+      matrix:
+        os:
+        - ubuntu-latest
+        python-version:
+        - '3.10'
+        - '3.12'
+        install-args:
+        - ''
+        - --extra HDF5
+
+        include:
+        - os: ubuntu-20.04
+          python-version: '3.10'
+          install-args: --extra HDF5 --resolution=lowest-direct
+
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v4
+    - uses: astral-sh/setup-uv@v2
+      with:
+        enable-cache: true
+
+    - name: Build
+      run: |
+        uv venv --python ${{ matrix.python-version }}
+        uv pip install . --no-deps
+        uv pip install --requirement pyproject.toml --no-build ${{ matrix.install-args }}
+        uv pip install --requirement requirements/tests.txt
+
+    - run: uv pip list
+
+    - name: run tests
+      run: |
+        source .venv/bin/activate
+        pytest --color=yes -ra
+
+
+  type-check:
+    runs-on: ubuntu-latest
+    name: type check
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: astral-sh/setup-uv@v2
+      with:
+        enable-cache: true
+
+    - name: Run mypy
+      # Match minimal supported Python version
+      # to make sure we're not using unparseable syntax
+      run: |
+        uvx --python 3.10 --with-requirements=requirements/typecheck.txt --with . \
+        mypy src/yt_idefix
