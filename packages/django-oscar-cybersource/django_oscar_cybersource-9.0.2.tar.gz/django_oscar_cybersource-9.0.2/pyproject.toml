@@ -1,0 +1,60 @@
+[build-system]
+requires = [ "poetry-core>=1.9.0",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "django-oscar-cybersource"
+version = "9.0.2"
+description = "Integration between django-oscar and the Cybersource Secure Acceptance."
+authors = ["thelab <thelabdev@thelab.co>"]
+readme = "README.rst"
+homepage = "https://gitlab.com/thelabnyc/django-oscar-cybersource"
+repository = "https://gitlab.com/thelabnyc/django-oscar-cybersource"
+license = "ISC"
+
+[[tool.poetry.packages]]
+include = "cybersource"
+from = "src"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.2.16"
+django-oscar = "3.2.5"
+django-oscar-api = "3.3.0"
+django-oscar-api-checkout = "^3.4.1"
+thelabdb = "^0.1.2"
+lxml = "^5.3.0"
+phonenumbers = "^8.13.45"
+python-dateutil = "^2.9.0"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.6.1"
+flake8 = "^7.1.1"
+instrumented-soap = "2.1.2"
+psycopg2-binary = "^2.9.9"
+PyYAML = "^6.0.2"
+sorl-thumbnail = "^12.11.0"
+sphinx-rtd-theme = "^2.0.0"
+sphinx = "^7.4.7"
+suds-community = "^1.2.0"
+tox = "^4.20.0"
+unittest-xml-reporting = "^3.2.0"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+annotated_tag = true
+gpg_sign = true
+tag_format = "v$version"
+update_changelog_on_bump = true
+changelog_merge_prerelease = true
+version_provider = "poetry"
+version_scheme = "pep440"
+version_files = [
+    "pyproject.toml:version",
+]
+pre_bump_hooks = [
+    "pre-commit run --all-files || true",
+]
+post_bump_hooks = [
+    "git push origin master $CZ_POST_CURRENT_TAG_VERSION"
+]
