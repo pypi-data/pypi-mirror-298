@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+Bourguiba.egg-info/PKG-INFO
+Bourguiba.egg-info/SOURCES.txt
+Bourguiba.egg-info/dependency_links.txt
+Bourguiba.egg-info/entry_points.txt
+Bourguiba.egg-info/requires.txt
+Bourguiba.egg-info/top_level.txt
+bourguiba/__init__.py
+bourguiba/bourguiba.py
+bourguiba/instruction.py
