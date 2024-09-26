@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tests/__init__.py
+tests/test_benchmark.py
+vector_db_benchmark/__init__.py
+vector_db_benchmark/benchmark.py
+vector_db_benchmark.egg-info/PKG-INFO
+vector_db_benchmark.egg-info/SOURCES.txt
+vector_db_benchmark.egg-info/dependency_links.txt
+vector_db_benchmark.egg-info/requires.txt
+vector_db_benchmark.egg-info/top_level.txt
