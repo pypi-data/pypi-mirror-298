@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: robo-gym
+Version: 2.0.1
+Summary: robo-gym: an open source toolkit for Distributed Deep Reinforcement Learning on real and simulated robots.
+Home-page: https://github.com/jr-robotics/robo-gym
+Author: Matteo Lucchi, Friedemann Zindler, Bernhard Reiterer, Thomas Gallien, Benjamim Breiling
+Author-email: bernhard.reiterer@joanneum.at
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+License-File: LICENSE
+
+UNKNOWN
+
