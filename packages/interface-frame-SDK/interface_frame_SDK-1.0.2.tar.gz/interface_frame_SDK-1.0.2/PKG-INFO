@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: interface_frame_SDK
+Version: 1.0.2
+Summary: 接口自动化框架
+Home-page: UNKNOWN
+Author: chengwenping
+Author-email: 18108278175@163.cn
+License: MIT License
+Description: 💯一款简洁、好用的接口自动化框架
+Keywords: 自动化
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Provides-Extra: GUI
