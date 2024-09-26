@@ -1,0 +1,12 @@
+interferopy/__init__.py,sha256=wR224U0OfHyu6ojL_kkQQVsdc0zApySzGaULCLBoAb0,312
+interferopy/casatools.py,sha256=R1RM_Mota0Bf6sdIg7ewshwk8EtEpQbbCGLDalUfsc0,382
+interferopy/casatools_vla_pipe.py,sha256=_MjZO1EctI7FlsY3QFAVQqQ_H90IiegWTxEOqMqny4w,7156
+interferopy/cube.py,sha256=vYon1cgwSTHssm13RpHxOsSFYLr1kepPMd2JLXFgb6s,69150
+interferopy/tools.py,sha256=M0Y5SSfCbCs1SZ74OnUDus19PK9IrwqZJA8WtgeZM98,36650
+interferopy/data/default.param,sha256=8Wb_tq9L2iZaclANjm188GLsQ4BwxLKq255Wrz0zjlU,38270
+interferopy/data/default.sex,sha256=2iYrzkSOtQFn9r0iDOGZKyeyYMYXvz-nUVsd3u3up7w,3756
+interferopy-1.0.4.dist-info/LICENSE,sha256=GL_kvQ1m7Jsrx9ATlW59_jyzsMIPOIaDJgjeLBcMYYM,1102
+interferopy-1.0.4.dist-info/METADATA,sha256=cyMGRygSNRVBsqIXziu18b6kWI-7ZaiAJyK-k5ZxT3o,2079
+interferopy-1.0.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+interferopy-1.0.4.dist-info/top_level.txt,sha256=7I3Lvr-dcVWkZIRR6Bt8eqa7ubPnoE-LCgvk2qEoSyA,12
+interferopy-1.0.4.dist-info/RECORD,,
