@@ -1,0 +1,11 @@
+markets_analytics/__init__.py,sha256=3k0ZbA7nXneWpOiYRgsNTEnpVuABhAtujTc58pqaLSQ,278
+markets_analytics/connectors.py,sha256=vwT5kIYTbX4coFLT-nZCHZmOUd8RUsRkVewLLz2KOvE,8981
+markets_analytics/dateutil.py,sha256=Zf7GCGE8iOCX__T_VtqqoTqcnC3_UHoU2tmh9-swZ1M,2635
+markets_analytics/email.py,sha256=ITrKFFjdTBVd2nezCRB8wiwM4GmiuzXyYedzBe-Wiqs,6031
+markets_analytics/etl.py,sha256=-ey73MYEkDgAcU0q3EA_V4QjWjgai30_QHmMcci8Wwg,3467
+markets_analytics/google_chat.py,sha256=qgXIOL0cctkGr12AqfLCo0RzMR1dOZPF2UbaQEB6uYQ,7057
+markets_analytics/gsheet_helper.py,sha256=nTcbM7z-PZp4yHPY79qIiCWMThuhADb2NDDUtkP_W54,3564
+markets_analytics-1.0.0.dist-info/METADATA,sha256=0rS4_qasXYlQNTlM3DnmbGQnqXe9tElH5LYNKef4MkE,2791
+markets_analytics-1.0.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+markets_analytics-1.0.0.dist-info/licenses/LICENSE,sha256=IHMcq11-SVrbo_LLgI-5wAjfQXinJzC3-bc53hBt4uM,1088
+markets_analytics-1.0.0.dist-info/RECORD,,
