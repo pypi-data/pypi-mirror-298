@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: donnedessousmtr
+Version: 0.1.0
+Summary: Donne des sous maxence
+License: MIT
+Author: maxencetroislouche
+Author-email: maxence62700@outlook.fr
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: opencv-python (>=4.10.0.84,<5.0.0.0)
+Description-Content-Type: text/markdown
+
+# Salut
+ceci est un readme [lien vers mon site frauduleux](https://google.com)
