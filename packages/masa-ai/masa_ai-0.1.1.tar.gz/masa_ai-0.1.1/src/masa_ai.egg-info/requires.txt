@@ -1,0 +1,17 @@
+pyyaml>=5.4
+requests
+numpy
+pandas
+python-dotenv
+tqdm
+colorlog
+dynaconf
+jupyter
+notebook
+ipykernel
+sphinx
+sphinx_rtd_theme
+recommonmark
+myst-parser
+psycopg[binary]
+feedparser
