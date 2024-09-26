@@ -1,0 +1,5 @@
+[console_scripts]
+mexts = myrrh.tools.mexts:main
+
+[myrrh.core.exts]
+/registry = myrrh.extensions.mregistry:ExtRegistry
