@@ -1,0 +1,3 @@
+[console_scripts]
+dork-recon=dork_recon.dork_recon:main
+
