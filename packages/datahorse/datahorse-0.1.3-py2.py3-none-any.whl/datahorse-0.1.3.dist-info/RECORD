@@ -1,0 +1,9 @@
+datahorse/__init__.py,sha256=hChChUA8udEsAAkmOoD5T3YqL_1cdaHMi2Zv_aWbSMA,33
+datahorse/__version__.py,sha256=Fb7uyWuDzYiar6S8yGGm4Z_l2bAXQNEakPwLN1_Osog,227
+datahorse/core.py,sha256=bE3P9CJs5yllIDc9uBNB8RAF-iZGadIm7-H9V7c4BN4,7907
+datahorse/logger.py,sha256=hOTftpHgNxA4FaotYsceW5JejHTJ4j7r6ZotLIhSqTo,1042
+datahorse-0.1.3.dist-info/LICENSE,sha256=w791VYabcUm0YN1_g9GukGLfSCKG9TUAxaJJaBRrQ7A,1090
+datahorse-0.1.3.dist-info/METADATA,sha256=MLv7ZMWF1I89Shg2w8829uRJZXO6I0LtRUcI3b_sY1o,3216
+datahorse-0.1.3.dist-info/WHEEL,sha256=ED2S3aolPA63OeAfpmbtiQd0NXmZX4SrTHXvXF6JNGc,109
+datahorse-0.1.3.dist-info/top_level.txt,sha256=qkmLqHLxv7Cvnl5o4z-4cts7QNVOComO1krOTEBxZsY,10
+datahorse-0.1.3.dist-info/RECORD,,
