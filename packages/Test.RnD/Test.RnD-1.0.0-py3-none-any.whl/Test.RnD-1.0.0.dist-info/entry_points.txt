@@ -1,0 +1,2 @@
+[console_scripts]
+my_start = RnD.PythonApp.Main:main

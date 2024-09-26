@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: Test.RnD
+Version: 1.0.0
+Summary: An AI-based Conversion Tool, a PoC
+Author: Raghu
+Author-email: RAGHU.SINGH@PUBLICISRESOURCES.COM
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# An AI-based Conversion Tool
+
+A AI-based Conversion Tool project created by RAGHU.
+
+This project excels an intelligenct automation over spreadsheets. The project 
+encapsulates few most important traversal algorithms and data engineering mechanism 
+which helps the extraction, categorization, cleansing and finally the organisation
+of data.
+
+This project does not aim to cover best practices for Python project
+development as a whole. For example, it does not provide guidance or tool
+recommendations for version control, documentation, or testing.
+
+----
+
+This is the README file for the project.
+
+The file should use UTF-8 encoding and can be written using
+[reStructuredText][rst] or [markdown][md use] with the appropriate [key set][md
+use]. It will be used to generate the project webpage on PyPI and will be
+displayed as the project homepage on common code-hosting services, and should be
+written for that purpose.
+
+Typical contents for this file would include an overview of the project, basic
+usage examples, etc. Generally, including the project changelog in here is not a
+good idea, although a simple “What's New” section for the most recent version
+may be appropriate.
