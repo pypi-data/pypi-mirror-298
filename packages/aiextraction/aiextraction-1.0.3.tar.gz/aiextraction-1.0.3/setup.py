@@ -1,0 +1,70 @@
+from setuptools import find_packages, setup
+import os
+
+
+setup(
+	# Project name:
+name='aiextraction',
+# Packages to include in the distribution:
+packages=find_packages(),
+# Project version number:
+version='1.0.3',
+# Short description of your library:
+description='A library for text extraction from images into json files using OpenAI and Pixtral',
+# Long description of your library:
+long_description="A library for text extraction from images into json files using OpenAI and Pixtral /n Takes as an input your API key the image path and the prompt /n and then saves the json file in a folder with this path ./data/json_pixtral or ./data/json_openAI",
+# Your name:
+author='John Petris',
+py_modules=['aiextraction'],
+# List project dependencies:
+install_requires=[
+    'annotated-types >= 0.7.0',
+    'anyio >= 4.6.0',
+    'certifi >= 2024.8.30',
+    'charset-normalizer >= 3.3.2',
+    'colorama >= 0.4.6',
+    'distro >= 1.9.0',
+    'docutils >= 0.21.2',
+    'eval_type_backport >= 0.2.0',
+    'h11 >= 0.14.0',
+    'httpcore >= 1.0.5',
+    'httpx >= 0.27.2',
+    'idna >= 3.10',
+    'importlib_metadata >= 8.5.0',
+    'jaraco.classes >= 3.4.0',
+    'jaraco.context >= 6.0.1',
+    'jaraco.functools >= 4.0.2',
+    'jiter >= 0.5.0',
+    'jsonpath-python >= 1.0.6',
+    'keyring >= 25.4.1',
+    'markdown-it-py >= 3.0.0',
+    'mdurl >= 0.1.2',
+    'mistralai >= 1.1.0',
+    'more-itertools >= 10.5.0',
+    'mypy-extensions >= 1.0.0',
+    'nh3 >= 0.2.18',
+    'openai >= 1.47.1',
+    'pkginfo >= 1.10.0',
+    'pydantic >= 2.9.2',
+    'pydantic_core >= 2.23.4',
+    'Pygments >= 2.18.0',
+    'python-dateutil >= 2.8.2',
+    'pywin32-ctypes >= 0.2.3',
+    'readme_renderer >= 44.0',
+    'requests >= 2.32.3',
+    'requests-toolbelt >= 1.0.0',
+    'rfc3986 >= 2.0.0',
+    'rich >= 13.8.1',
+    'setuptools >= 75.1.0',
+    'six >= 1.16.0',
+    'sniffio >= 1.3.1',
+    'tqdm >= 4.66.5',
+    'twine >= 5.1.1',
+    'typing-inspect >= 0.9.0',
+    'typing_extensions >= 4.12.2',
+    'urllib3 >= 2.2.3',
+    'wheel >= 0.44.0',
+    'zipp >= 3.20.2',
+
+],
+)
