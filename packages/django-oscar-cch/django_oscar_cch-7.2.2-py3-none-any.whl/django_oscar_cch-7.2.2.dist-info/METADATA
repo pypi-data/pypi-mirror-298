@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: django-oscar-cch
+Version: 7.2.2
+Summary: Integration between django-oscar and the CCH Sales Tax Office SOAP API.
+Home-page: https://gitlab.com/thelabnyc/django-oscar/django-oscar-cch
+License: ISC
+Author: thelab
+Author-email: thelabdev@thelab.co
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Django (>=4.2.16,<5.0.0)
+Requires-Dist: django-oscar (==3.2.5)
+Requires-Dist: instrumented-soap (>=2.1.2,<3.0.0)
+Project-URL: Repository, https://gitlab.com/thelabnyc/django-oscar/django-oscar-cch
+Description-Content-Type: text/x-rst
+
+================
+django-oscar-cch
+================
+
+|  |license| |kit| |format|
+
+This package handles integration between django-oscar based e-commerce sites and the `CCH Sales Tax Office <http://www.salestax.com/products/calculations-solutions/sales-tax-office.html>`_ SOAP API.
+
+**Full Documentation**: https://django-oscar-cch.readthedocs.io
+
+
+.. |license| image:: https://img.shields.io/pypi/l/django-oscar-cch.svg
+    :target: https://pypi.python.org/pypi/django-oscar-cch
+.. |kit| image:: https://badge.fury.io/py/django-oscar-cch.svg
+    :target: https://pypi.python.org/pypi/django-oscar-cch
+.. |format| image:: https://img.shields.io/pypi/format/django-oscar-cch.svg
+    :target: https://pypi.python.org/pypi/django-oscar-cch
+
