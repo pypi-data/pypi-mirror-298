@@ -1,0 +1,17 @@
+numpy
+
+[lap]
+lapx
+
+[lapjv]
+lapjv
+
+[lapsolver]
+lapsolver
+
+[scipy]
+scipy
+
+[sparse]
+scipy
+numba
