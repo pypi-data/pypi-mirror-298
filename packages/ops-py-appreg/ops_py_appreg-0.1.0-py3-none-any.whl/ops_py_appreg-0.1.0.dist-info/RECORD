@@ -1,0 +1,9 @@
+appreg/__init__.py,sha256=mLKrMmeC6fzFbGExMULorA2_slmViNxc21FZ42nKFyE,127
+appreg/appreg.py,sha256=obmuDWsN5zLEWTO25nGof01sTqMXKgQfVd5yLKn1Ayw,3444
+appreg/post_payloads.py,sha256=P4aJ-chZ8oax7Lkt4OjBIvNr4oDMujGwMZTP_DycWK4,1298
+appreg/set_timestamp.py,sha256=A8NON7DcMjbCTlQKTiRRee2dhLjxx5fZpwsm1_9Q5Zg,1114
+ops_py_appreg-0.1.0.dist-info/LICENSE,sha256=Oxa41JV9hC5O_nH03AF0a_AlLes9lXQYTtnEonhDljU,1064
+ops_py_appreg-0.1.0.dist-info/METADATA,sha256=kJ5Trr9ZyoJJ7TmBiOxFYD3TTGCmayfUmjyTCTE9ZpQ,1839
+ops_py_appreg-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ops_py_appreg-0.1.0.dist-info/top_level.txt,sha256=GUeXLWkwV0362Ig5oVxgbakJGPKHBZ4m0gdKEiOpANw,7
+ops_py_appreg-0.1.0.dist-info/RECORD,,
