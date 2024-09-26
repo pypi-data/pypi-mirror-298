@@ -1,0 +1,17 @@
+about_resource: pip
+attribute: yes
+copyright: Copyright (c) The Python Software Foundation and the pip authors
+ (see pip-AUTHORS.txt file for a list of pip authors)
+description: A tool for installing and managing Python packages.
+notes: this is a copy of pip vendored for stability.
+download_url: https://files.pythonhosted.org/packages/4d/87/fb90046e096a03aeab235e139436b3fe804cdd447ed2093b0d70eba3f7f8/pip-24.2.tar.gz
+homepage_url: https://pip.pypa.io
+license_expression: mit AND lgpl-2.1-plus AND python AND mit AND bsd-new AND (bsd-new OR apache-2.0)
+  AND apache-2.0 AND isc
+name: pip
+package_url: pkg:pypi/pip@24.2
+primary_language: Python
+redistribute: yes
+track_changes: yes
+type: pypi
+version: 24.2
