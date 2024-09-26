@@ -1,0 +1,5 @@
+datetime
+logging
+petowo-core
+pydantic==2.7.1
+typing
