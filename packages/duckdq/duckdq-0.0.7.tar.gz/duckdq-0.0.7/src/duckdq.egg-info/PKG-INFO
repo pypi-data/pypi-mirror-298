@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: duckdq
+Version: 0.0.7
+Summary: A DQ package
+Author-email: Brian Mearns <brian.mearns@gmail.com>
+Project-URL: Homepage, https://github.com/mearnsb/api-client
+Project-URL: Issues, https://github.com/mearnsb/api-client/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas==2.2.2
+Requires-Dist: duckdb==1.1.0
+Requires-Dist: supabase==2.7.4
+Requires-Dist: python-dotenv==1.0.1
+
+# Install
+```
+pip install duckdq 
+```
+
+# Import 
+```
+from duckdq import client
+```
+
+# Libraries
+```
+from supabase import create_client, Client # type: ignore
+from dotenv import load_dotenv # type: ignore
+import duckdb # type: ignore
+import os
+
+# env
+load_dotenv()
+URL = os.environ.get("API_URL")
+KEY = os.environ.get("API_KEY")
+BUCKET_KEY_ID = os.environ.get("BUCKET_KEY_ID")
+BUCKET_SECRET = os.environ.get("BUCKET_SECRET")
+
+# Session
+session: Client = create_client(URL, KEY)
+
+# Engine
+engine = duckdb.connect(':memory:')
+
+# Session
+dq = client.APIClient(session, engine)
+```
+
+# Job
+```
+# Name
+dataset = "test" 
+run_id = "2024-09-24"
+
+# Data
+engine.sql(f""" create or replace table {dataset} as select * from read_csv_auto('.csv/fake_customers.csv') limit 10000 """)
+```
+
+# Register (initial one-time only)
+```
+dq.register(dataset)
+```
+
+# Run
+```
+dq.run(dataset, run_id)
+```
+
+# Env
+.env File
+```
+API_KEY=xyz
+API_URL=xyz
+```
+Or
+Export variables 
+```
+export API_KEY=xyz
+export API_URL=xyz
+```
+
+# Database User
+```
+GRANT USAGE on schema "validation" to anon;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA "validation" TO anon;
+GRANT ALL ON SEQUENCE validation.rule_output_rule_output_id_seq TO anon;
+GRANT ALL ON SEQUENCE validation. connections_connection_id_seq TO anon;
+GRANT ALL ON SEQUENCE validation.owlcheck_q_job_id_seq TO anon;
+GRANT ALL ON SEQUENCE validation.job_log_log_id_seq TO anon;
+GRANT ALL ON SEQUENCE validation.assignment_q_id_seq TO anon;
+```
