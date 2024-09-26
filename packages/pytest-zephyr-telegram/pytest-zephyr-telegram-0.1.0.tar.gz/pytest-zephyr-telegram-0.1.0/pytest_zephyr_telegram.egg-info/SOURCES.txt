@@ -1,0 +1,10 @@
+plugin.py
+setup.py
+pytest_zephyr_telegram.egg-info/PKG-INFO
+pytest_zephyr_telegram.egg-info/SOURCES.txt
+pytest_zephyr_telegram.egg-info/dependency_links.txt
+pytest_zephyr_telegram.egg-info/entry_points.txt
+pytest_zephyr_telegram.egg-info/requires.txt
+pytest_zephyr_telegram.egg-info/tmp328qkbup
+pytest_zephyr_telegram.egg-info/tmphxsv0i9e
+pytest_zephyr_telegram.egg-info/top_level.txt
