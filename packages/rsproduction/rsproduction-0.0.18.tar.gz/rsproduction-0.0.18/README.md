@@ -1,0 +1,111 @@
+<h1>RSProduction</h1>
+
+A very usefull library for python development.
+
+<h2>Table of Contents</h2>
+
+- [1 Submodules](#1-submodules)
+  - [styling](#styling)
+    - [color](#color)
+      - [Constants](#constants)
+      - [Methods](#methods)
+  - [userinterface](#userinterface)
+
+
+# 1 Submodules
+rsproduction<br>
+┣ [styling](#styling)<br>
+┃ ┗ [color](#color)<br>
+┗ [userinterface](#userinterface)
+
+## styling
+### color
+
+#### Constants
+<h5>BLACK</h5>
+<span style="background-color:rgb(0, 0, 0)">__</span>
+
+<h5>WHITE</h5>
+<span style="background-color:rgb(255, 255, 255)">__</span>
+
+<h5>LIGHT_GRAY</h5>
+<span style="background-color:rgb(204, 204, 204)">__</span>
+
+<h5>DARK_GRAY</h5>
+<span style="background-color:rgb(102, 102, 102)">__</span>
+
+<h5>CORNFLOWER_BLUE</h5>
+<span style="background-color:rgb(153, 153, 255)">__</span>
+
+<h5>DARKRED</h5>
+<span style="background-color:rgb(139, 0, 0)">__</span>
+
+<h5>FOCUSED</h5>
+<span style="background-color:rgb(153, 153, 255)">__</span>
+
+<h5>FOREGROUND</h5>
+<span style="background-color:rgb(0, 0, 0)">__</span>
+
+<h5>FOREGROUND_DISABLED</h5>
+<span style="background-color:rgb(102, 102, 102)">__</span>
+
+#### Methods
+
+```python
+def bgr2rgb(color)  # convert a BGR color to RGB color
+def rgb2bgr(color)  # convert a RGB color to BGR color
+```
+
+<h5>bgr2rgb</h5>
+
+Convert a BGR color to RGB color
+```python
+import rsproduction.styling.color as color
+
+color_bgr = (56, 73, 54)
+color_rgb = color.bgr2rgb(color_bgr)
+
+print(f'color_bgr: {color_bgr}')    # >> color_bgr: (56, 73, 54)
+print(f'color_rgb: {color_rgb}')    # >> color_rgb: (54, 73, 56)
+```
+
+<h5>rgb2bgr</h5>
+
+Convert a RGB color to BGR color
+```python
+import rsproduction.styling.color as color
+
+color_rgb = (56, 73, 54)
+color_bgr = color.bgr2rgb(color_bgr)
+
+print(f'color_bgr: {color_bgr}')    # >> color_bgr: (54, 73, 56)
+print(f'color_rgb: {color_rgb}')    # >> color_rgb: (56, 73, 54)
+```
+
+<h5>as_float</h5>
+
+Convert byte color values to relative values [0..1]
+```python
+import rsproduction.styling.color as color
+
+color_byte = (125, 125, 125)
+color_rel = color.as_float(color_byte)
+
+print(f'color_byte: {color_byte}')  # >> color_byte: (125, 125, 125)
+print(f'color_rel: {color_rel}')    # >> color_rel: (0.49019608, 0.49019608, 0.49019608)
+```
+
+<h5>as_int</h5>
+
+Convert relative color values to byte values [0..255]
+```python
+import rsproduction.styling.color as color
+
+color_rel = (0.5, 0.5, 0.5)
+color_byte = color.as_int(color_rel)
+
+print(f'color_byte: {color_byte}')  # >> color_byte: (127, 127, 127)
+print(f'color_rel: {color_rel}')    # >> color_rel: (0.5, 0.5, 0.5)
+```
+
+## userinterface
