@@ -1,0 +1,2 @@
+[flask.commands]
+generate-deploy = vacolba_looker_data.deploy:generate
