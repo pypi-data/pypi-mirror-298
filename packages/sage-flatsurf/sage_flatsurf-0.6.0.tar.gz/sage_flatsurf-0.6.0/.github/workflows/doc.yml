@@ -1,0 +1,39 @@
+name: Build Documentation
+on:
+  push: { branches: [ "master" ] }
+  pull_request: { branches: [ "master" ] }
+
+concurrency:
+  group: doc-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-manual:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: prefix-dev/setup-pixi@v0.8.1
+        with: { pixi-version: v0.28.2 }
+      - name: build documentation
+        run: |
+          pixi run doc
+          # Do not run Jekyll to create GitHub Pages but take HTML files as they are.
+          touch doc/_build/html/.nojekyll
+      - name: provide documentation as artifact for netlify workflow
+        uses: actions/upload-artifact@v3
+        with:
+          name: doc
+          path: doc/_build/html
+      - uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: doc/_build/html
+          TARGET_FOLDER: docs
+        if: ${{ github.event_name == 'push' }}
+      - uses: flatsurf/actions/show-logs@main
+        if: ${{ always() }}
+
+env:
+  MAKEFLAGS: -j4
+  SAGE_NUM_THREADS: 4
