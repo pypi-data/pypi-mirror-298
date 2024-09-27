@@ -1,0 +1,6 @@
+disnake
+redis
+SQLAlchemy
+asyncpg
+quart
+quart-cors
