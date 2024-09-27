@@ -1,0 +1,18 @@
+<component name="ValidComponent">
+    <template>
+        <div>
+            <h1>Hello, JTML World!</h1>
+        </div>
+    </template>
+    <script>
+        function greet() {
+            console.log("Greeting from ValidComponent");
+        }
+    </script>
+    <style>
+        div {
+            color: blue;
+        }
+    </style>
+</component>
+
