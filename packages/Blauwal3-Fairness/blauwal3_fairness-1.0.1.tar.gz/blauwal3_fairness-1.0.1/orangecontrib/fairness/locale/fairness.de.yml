@@ -1,0 +1,65 @@
+de:
+  app_name: "Fairness"
+  app_desc: "Fairness"
+  utils:
+    missing_fairness_attributes: "Das Datenset enthält keine Fairness-Attribute. \nVerwenden Sie das Widget 'Als Fairness-Daten', um sie hinzuzufügen."
+    missing_values: "Fehlende Werte im Datenset erkannt. \nSie werden automatisch mit dem Durchschnittswert oder dem häufigsten Wert imputiert."
+    missing_class_variable: "Das Datenset enthält keine Klassenvariable. \nDie Fairness-Metriken können nur mit Datensätzen verwendet werden, die eine (kategorische) Klassenvariable enthalten. \nVerwenden Sie das Widget 'Disretisieren', um die Klassenvariable zu diskretisieren."
+    numerical_class_variable: "Die Klassenvariable ist numerisch. \nDie Fairness-Metriken können nur mit kategorischen Klassenvariablen verwendet werden. \nVerwenden Sie das Widget 'Disretisieren', um die Klassenvariable zu diskretisieren."
+    no_categorical_attributes: "Das Datenset enthält keine kategorischen Attribute außer der Klassenvariable. \nDie Fairness-Metriken können nur mit Datensätzen verwendet werden, die kategorische Attribute enthalten. \nVerwenden Sie das Widget 'Disretisieren', um einige der Attribute zu diskretisieren."
+    tensorflow_not_installed: "Das Adversarielle Entbiasung-Widget benötigt TensorFlow, das nicht installiert ist.\nKlicken Sie auf das Widget, um die Installationsanweisungen anzuzeigen."
+    reweighing_preprocessor: "Dieses Widget ist nicht mit dem Neugewichtungs-Vorprozessor kompatibel. \nDie benutzerdefinierte Vorverarbeitung wird daher ignoriert und \ndiese wird stattdessen die Standardvorverarbeitung verwendet."
+    reweighted_data: "Dieses Widget ist nicht mit Daten kompatibel, die durch einen Neugewichtungs-Vorprozessor vorbereitet wurden."
+      
+  owadversarialdebiasing:
+    name: "Adversarielle Entbiasung"
+    desc: "Adversarielle Entbiasung Klassifikationsalgorithmus mit oder ohne Fairness-Beschränkungen."
+    label_tips: "Das Adversarielle Entbiasung-Widget erfordert TensorFlow, das nicht installiert ist.\n Sie können es installieren, indem Sie unten auf die Schaltfläche 'TensorFlow installieren' klicken, \n das Kontrollkästchen neben dem Text 'tensorflow' auswählen und auf die Schaltfläche Ok klicken.\n Danach müssen Sie Orange neu starten."
+    install_tensorflow: "TensorFlow installieren"
+    ignore_default_preprocessing: "Ignoriert die Standardvorverarbeitung. \n Standardvorverarbeitung (Skalierung), wurde \n durch benutzerdefinierte Vorverarbeitungsmodule ersetzt. \n Probleme können auftreten, wenn diese für das gegebene Datenset unzureichend sind."
+    neurons_in_hidden_layers: "Neurons in hidden layers:"
+    number_of_epochs: "Anzahl der Epochen:"
+    batch_size: "Batchgröße:"
+    use_debiasing: "Entbiasung verwenden"
+    replicable_training: "Wiederholbares Training"
+    adversary_loss_weight: "Adversary Loss Weight"
+
+  owasfairness:
+    name: "Als Fairness-Daten"
+    desc: "Konvertiert ein Datenset in ein Fairness-Datenset mit markierten günstigen Klassenwerten, geschützten Attributen und privilegierten geschützten Attributwerten."
+    favorable_class_value: "Günstiger Klassenwert"
+    protected_attribute: "Geschütztes Attribut"
+    privileged_pa_values: "Privilegierte geschützte Attributwerte"
+    commit: "&Commit"
+
+  owcombinepreprocessors:
+    name: "Preprozessoren kombinieren"
+    desc: "Kombiniert mehrere Preprozessoren zu einem."
+    info: "Info"
+    info_text: "Der kombinierte Preprozessor wird zuerst den ersten Preprozessor \n und dann den zweiten Preprozessor auf die Daten anwenden."
+
+  owdatasetbias:
+    name: "Datensatzverzerrung"
+    desc: "Berechnet die Verzerrung eines Datensatzes. Genauer gesagt berechnet es die Metriken für ungleiche Auswirkungen und statistische Paritätsdifferenz für den Datensatz."
+    bias: "Verzerrung"
+    no_data_detected: "Keine Daten erkannt."
+
+  owequalizedodds:
+    name: "Gleichberechtigte Chancen Nachbearbeitung"
+    desc: "Nachbearbeitungsalgorithmus für Fairness, der die Vorhersagen eines Klassifikators ändert, um gleichberechtigte Chancen zu erfüllen."
+
+  owequalizedodds:
+    name: "Gleichberechtigte Chancen Nachbearbeitung"
+    desc: "Nachbearbeitungsalgorithmus für Fairness, der die Vorhersagen eines Klassifikators ändert, um gleichberechtigte Chancen zu erfüllen."
+    repeatable: "Replizierbares Training"
+    equalized_odds: "Gleichberechtigte Chancen:"
+
+  owreweighing:
+    name: "Neugewichtung"
+    desc: "Wendet den Neugewichtungsalgorithmus auf einen Datensatz an, der die Gewichte der Zeilen anpasst."
+    info: "Dieses Widget wendet den Neugewichtungsalgorithmus auf einen Datensatz an, der die Gewichte der Zeilen anpasst.\nDie Eingangsdaten müssen die zusätzlichen 'AsFairness'-Attribute haben und dürfen keine fehlenden Werte enthalten."
+
+  owweightedlogisticregression:
+    name: "Gewichtete logistische Regression"
+    desc: "Die modifizierte logistische Regressionsklassifikation mit LASSO (L1) oder Ridge (L2) Regularisierung, die Instanzgewichte im Trainings- und Vorhersageprozess verwenden kann."
+

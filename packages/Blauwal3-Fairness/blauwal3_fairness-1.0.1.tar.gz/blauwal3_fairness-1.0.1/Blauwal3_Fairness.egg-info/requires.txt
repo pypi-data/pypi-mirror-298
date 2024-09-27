@@ -1,0 +1,12 @@
+numpy
+Blauwal3
+aif360>=0.6.0
+aif360[all]
+torch<=2.2
+torchvision
+torchaudio
+
+[doc]
+sphinx
+sphinx_rtd_theme
+recommonmark
