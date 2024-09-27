@@ -1,0 +1,5 @@
+setup.py
+dud111222.egg-info/PKG-INFO
+dud111222.egg-info/SOURCES.txt
+dud111222.egg-info/dependency_links.txt
+dud111222.egg-info/top_level.txt
