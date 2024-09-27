@@ -1,0 +1,12 @@
+*.pyc
+__pycache__
+
+dist/
+*.egg-info
+
+tmp*
+
+*.html
+
+*.csv
+*.json
