@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyRXG"
+version = "1.0.0"
+authors = [
+  { name="Xander Wilcke", email="w.x.wilcke@vu.nl" },
+]
+description = "Regular Expression Generator and Generaliser"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = ['numpy']
+keywords = ['regex', 'regular expression', 'text processing', 'generator', 'clustering']
+
+[project.urls]
+"Homepage" = "https://wxwilcke.gitlab.io/pyRXG"
+"Bug Tracker" = "https://gitlab.com/wxwilcke/pyRXG/-/issues"

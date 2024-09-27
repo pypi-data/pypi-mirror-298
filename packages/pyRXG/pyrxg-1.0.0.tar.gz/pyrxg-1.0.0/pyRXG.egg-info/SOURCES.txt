@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pyRXG.egg-info/PKG-INFO
+pyRXG.egg-info/SOURCES.txt
+pyRXG.egg-info/dependency_links.txt
+pyRXG.egg-info/requires.txt
+pyRXG.egg-info/top_level.txt
+pyRXG.egg-info/zip-safe
+rxg/__init__.py
+rxg/charsets.py
+rxg/main.py
+rxg/structures.py
+rxg/utils.py
+tests/test_rxg.py
