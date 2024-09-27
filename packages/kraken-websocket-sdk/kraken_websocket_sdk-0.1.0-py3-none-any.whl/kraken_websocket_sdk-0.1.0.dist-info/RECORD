@@ -1,0 +1,13 @@
+config/__init__.py,sha256=gE0uAMO8afzkGtlTSEKedC07aKyIrpPx2CrkvsJRFXk,77
+config/logging_config.py,sha256=57CDrb4bSlVebp4jSQe9fPwidj-bFC0TjMEfElbwSgY,951
+kraken_ws/__init__.py,sha256=Kr0SPkcPzPj_NTpI-U68uPk9fJ1IpE6cSgU-YjXlThE,466
+kraken_ws/connect.py,sha256=mAbGrf-LGD1vVeNmXskAjmHTvse59GeVwmvFZRa56LM,1903
+kraken_ws/receive_messages.py,sha256=iHO_CQoS43NDPxnAYQrhpjjzCA-Fq0ehnBqyeihEKio,5945
+kraken_ws/requests.py,sha256=uxIcr0_9Ok4Oon_4SChtJF0mYr8mzMlJM6LHipuArwM,2840
+kraken_ws/send_messages.py,sha256=8kyPBMITcGJ22JllmQWBTOza1_9p3rmJ8ivnsAQuPjw,1346
+kraken_websocket_sdk-0.1.0.dist-info/LICENSE,sha256=qnlEaCp5uRsOkvrUePgBdZQQ-viac36C8mOHswlqV74,1077
+kraken_websocket_sdk-0.1.0.dist-info/METADATA,sha256=2DK7E3CqcnVoUjB8W3-soOrHeA7f4CuPQCY1kE63Z5g,713
+kraken_websocket_sdk-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+kraken_websocket_sdk-0.1.0.dist-info/entry_points.txt,sha256=siAmdcLlbFWi0dBwOR_1PDkDwDGJrIRCBh1qekZqQhE,63
+kraken_websocket_sdk-0.1.0.dist-info/top_level.txt,sha256=3nvDtAInUIq5JP9C6boIsJBJ2Z4fcWHuHYx2PCNTDIw,17
+kraken_websocket_sdk-0.1.0.dist-info/RECORD,,
