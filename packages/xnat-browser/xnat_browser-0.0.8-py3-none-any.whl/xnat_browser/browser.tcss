@@ -1,0 +1,31 @@
+Input {
+    width: 100%;
+    border: round;
+}
+
+Input.remove {
+    display: none;
+}
+
+RichLog.remove {
+    display: none;
+}
+
+Button {
+    width: auto;
+}
+
+#source_tabbed_content {
+    border: round;
+    height: 1fr;
+}
+
+#info_tabbed_content {
+    width: 75%;
+    border: round;
+}
+
+#rich_log {
+    height: 10;
+    border: hkey;
+}

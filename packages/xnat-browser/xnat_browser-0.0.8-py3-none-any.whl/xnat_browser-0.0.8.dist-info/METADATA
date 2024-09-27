@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: xnat-browser
+Version: 0.0.8
+Summary: Browse XNAT in the terminal
+Author-email: Patrick de Koning <pjhdekoning@lumc.nl>
+Project-URL: Homepage, https://gitlab.com/lkeb/xnat_browser
+Keywords: XNAT,TUI
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Environment :: Console
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: xnat
+Requires-Dist: typer
+Requires-Dist: textual
+Requires-Dist: humanize
+Requires-Dist: textual-fspicker
+Requires-Dist: textual-plotext
+Requires-Dist: textual-imageview
+Requires-Dist: pylibjpeg[all]
+
+![Python Version from PEP 621 TOML](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fgitlab.com%2Flkeb%2Fxnat_browser%2F-%2Fraw%2Fmain%2Fpyproject.toml)
+![Gitlab Pipeline Status](https://img.shields.io/gitlab/pipeline-status/lkeb%2Fxnat_browser)
+![PyPI - License](https://img.shields.io/pypi/l/xnat-browser)
+![PyPI - Status](https://img.shields.io/pypi/status/xnat-browser)
+![PyPI - Version](https://img.shields.io/pypi/v/xnat-browser)
+![PyPI - Format](https://img.shields.io/pypi/format/xnat-browser)
+![Pepy Total Downloads](https://img.shields.io/pepy/dt/xnat-browser)
+
+Browse or query a XNAT server from the terminal using [Textual](https://github.com/Textualize/textual) and 
+[xnatpy](https://gitlab.com/radiology/infrastructure/xnatpy).
+
+## browse
+`xnat-browser browse http://localhost`
+- ![XNAT info](https://gitlab.com/lkeb/xnat_browser/-/raw/main/XnatBrowser_XNAT_info.svg?ref_type=heads)
+- ![DICOM info](https://gitlab.com/lkeb/xnat_browser/-/raw/main/XnatBrowser_DICOM_info.svg?ref_type=heads)
+- ![image](https://gitlab.com/lkeb/xnat_browser/-/raw/main/XnatBrowser_image.svg?ref_type=heads)
+
+## query
+`xnat-browser query http://localhost`
+![](https://gitlab.com/lkeb/xnat_browser/-/raw/main/xnatquery.svg?ref_type=heads)
