@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: spec_mock
+Version: 1.0.0
+Summary: Powerful mocks with complete specs
+Home-page: https://github.com/AharonSambol/spec_mock
+Author: Aharon Sambol
+Author-email: aharon.sambol@gmail.com
+License: MIT License
+Keywords: mock,spec,test
+Description-Content-Type: text/markdown
+
+# spec_mock
+Powerful mocks with complete specs
