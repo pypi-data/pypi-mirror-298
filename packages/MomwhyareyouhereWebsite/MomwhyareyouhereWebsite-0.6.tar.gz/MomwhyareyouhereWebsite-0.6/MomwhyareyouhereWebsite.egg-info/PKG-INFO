@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: MomwhyareyouhereWebsite
+Version: 0.6
+Summary: A simple Python package to host a website without using Flask or external frameworks
+Author: Momwhyareyouhere
+Author-email: youremail@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
