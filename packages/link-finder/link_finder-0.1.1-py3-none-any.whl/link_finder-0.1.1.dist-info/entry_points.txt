@@ -1,0 +1,2 @@
+[console_scripts]
+gather_urls = gather_urls.gather_urls:main
