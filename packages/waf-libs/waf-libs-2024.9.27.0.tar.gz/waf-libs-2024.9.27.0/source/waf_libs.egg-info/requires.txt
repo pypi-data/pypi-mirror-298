@@ -1,0 +1,10 @@
+dnspython
+mysql-connector-python>=8.0
+psycopg-binary
+psycopg[binary]
+pyyaml
+bitwarden-sdk
+
+[test]
+unittest
+nose
