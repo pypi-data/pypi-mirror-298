@@ -1,0 +1,2 @@
+[console_scripts]
+kraken-ws = kraken_ws.kraken_ws_example:main
