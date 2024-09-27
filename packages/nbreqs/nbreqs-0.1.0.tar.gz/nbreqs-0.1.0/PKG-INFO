@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: nbreqs
+Version: 0.1.0
+Summary: Generate notebook_requirements.txt files for Jupyter Notebooks (.ipynb files).
+License: MIT
+Author: Michel Lavoie
+Author-email: lavoie.michel@gmail.com
+Requires-Python: >=3.10,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ipython (>=8.27.0,<9.0.0)
+Requires-Dist: nbconvert (>=7.16.4,<8.0.0)
+Requires-Dist: rich-click (>=1.8.3,<2.0.0)
+Requires-Dist: stdlib-list (>=0.10.0,<0.11.0)
+Description-Content-Type: text/markdown
+
+# nbreqs
+
+***WORK IN PROGRESS - NOT READY FOR USE***
+
+`nbreqs` is a lightweight Python tool designed to extract the external library dependencies from Jupyter notebooks.
+
+I'm working on this library because I manage repositories of notebooks with `poetry`, whereas users will only use single notebooks and copy them to other directories not managed by `poetry`. They thus need requirements files specific to each notebook instead of the repository's requirements.
+
+## Features
+
+- Extracts only external dependencies (ignores standard library modules).
+- Works on Jupyter notebooks.
+- Generates minimal `<notebook>_requirements.txt` files (one per notebook).
+  
+## Installation
+
+***TO BE DETERMINED***
+
+## How It Works
+
+`nbreqs` parses the Python code in memory, extracts all external libraries using `ast`, and filters out any standard library modules. It then queries the installed version of each library without needing to import them into your environment.
+
+## Development
+
+***MAYBE LATER***
+
+## License
+
+`nbreqs` is licensed under the MIT License.
