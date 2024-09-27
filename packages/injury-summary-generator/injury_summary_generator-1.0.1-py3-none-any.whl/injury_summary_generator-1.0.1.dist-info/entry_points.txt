@@ -1,0 +1,2 @@
+[console_scripts]
+injury-summary-generator = generate_summary_of_injuries:main
