@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: scrapit
+Version: 0.1.0a2
+Summary: Web testing utilities
+Requires-Python: >=3.12
+Requires-Dist: cssselect>=1.2
+Requires-Dist: lxml>=5.3
+Requires-Dist: pytz>=2024
+Description-Content-Type: text/markdown
+
+# Scrapit
