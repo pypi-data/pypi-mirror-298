@@ -1,0 +1,12 @@
+AI-DSTK/__init__.py,sha256=HfZmLxWbs_1E6JSJ9MGXtSzIyadNrRN8ELPMMEPOQDo,137
+AI-DSTK/functions.py,sha256=8alSiPXWlKZJIlGm_gZtoT-ZjYgxnPR4iSCyFwoLkzI,1222
+AI-DSTK/models.py,sha256=fRwlxAG_UrmvleBMfuK_Qh5LkOVxZ4bOlXQJtfaazWg,848
+AI-DSTK/configs/config1.json,sha256=EGhiA28XfFhAQyCwF0xQQECSbotS-qAgUJpLzQ6vpbQ,169
+AI-DSTK/configs/config2.json,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AI-DSTK/prompts/prompt1.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AI-DSTK/prompts/prompt2.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AI_DSTK-0.1.0.dist-info/LICENSE,sha256=G2LY4mMGhFa2kZ8KXByM4qJiSEUXEAIDWHFqyyHDFus,1088
+AI_DSTK-0.1.0.dist-info/METADATA,sha256=VhItqFvBsW8bg7RXHaXnAufjWnSC01V_Yg-wJkui0m4,545
+AI_DSTK-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+AI_DSTK-0.1.0.dist-info/top_level.txt,sha256=gHbCQLtzMrSKKTnZU1SvezafSfo6ZBFyhelpGiMP7hM,8
+AI_DSTK-0.1.0.dist-info/RECORD,,
