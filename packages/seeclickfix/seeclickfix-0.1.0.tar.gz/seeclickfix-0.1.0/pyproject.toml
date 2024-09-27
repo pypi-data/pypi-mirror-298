@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "seeclickfix"
+version = "0.1.0"
+description = ""
+authors = ["Nate Shoffner <nate.shoffner@gmail.com>"]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.9.1"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+"Homepage" = "https://github.com/NateShoffner/py-seeclickfix"
+"Bug Tracker" = "https://github.com/NateShoffner/py-seeclickfix/issues"
