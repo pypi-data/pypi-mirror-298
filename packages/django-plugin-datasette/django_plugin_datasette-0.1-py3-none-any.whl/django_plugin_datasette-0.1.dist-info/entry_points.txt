@@ -1,0 +1,2 @@
+[djp]
+django_plugin_datasette = django_plugin_datasette
