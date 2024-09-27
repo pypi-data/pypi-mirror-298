@@ -1,0 +1,2 @@
+[console_scripts]
+MRcalib = MRcalib:__main__.__main__

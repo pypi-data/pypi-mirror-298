@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: MagnetoResistance-tool
+Version: 0.0.3
+Summary: Tool to create calibration matrix allowing to correct for magneto-resistance in resisitive sensors.
+Author: Andrew Ammerlaan
+Author-email: <andrew.ammerlaan@ru.nl>
+Maintainer: Andrew Ammerlaan
+Maintainer-email: <andrew.ammerlaan@ru.nl>
+License: GPL-3.0-or-later
+Project-URL: homepage, https://gitlab.science.ru.nl/hfml/MRcalib
+Project-URL: repository, https://gitlab.science.ru.nl/hfml/MRcalib
+Keywords: magneto-resistance
+Requires-Python: >=3.8
+License-File: LICENCE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Provides-Extra: plot
+Requires-Dist: matplotlib ; extra == 'plot'
+
