@@ -1,0 +1,425 @@
+de:
+  package_label: "Einzelzelle"
+  package_desc: "Einzelzelle"
+
+  common:
+    data: "Daten"
+    genes: "Gene"
+    transformed_data: "Transformierte Daten"
+    genes_components: "Gene pro n. Komponenten"
+    selected_data: "Ausgewählte Daten"
+    contingency_table: "Kontingenztabelle"
+    scorer: "Bewertung"
+    reduced_data: "Reduzierte Daten"
+    scores: "Punkte"
+    preprocessed_data: "Vorverarbeitete Daten"
+
+  scbnorm:
+    identity_link: "Identitätslink"
+    log_link: "Log-Link"
+    err:
+      log_link: "Log-Link muss mit nonzero_only=True verwendet werden!"
+      value_tip: "Daten enthalten negative Werte. Entfernen Sie die Option 'nonzero_true'."
+      value: "Daten enthalten negative Werte."
+      func: "Transformierte Daten enthalten NaN/inf-Werte. Verwenden Sie eine andere Link-Funktion."
+
+  owspatialautocorrelation:
+    name: "Räumliche Autokorrelationsbewertung"
+    desc: "Berechnen Sie den räumlichen Autokorrelationswert von Moran's I oder Geary's C."
+    btn:
+      name: "Räumliche Autokorrelation"
+      info: "Info"
+      no_data: "Keine Daten im Eingang."
+      select_x: "Wählen Sie X:"
+      select_y: "Wählen Sie Y:"
+      method: "Methode"
+      variables: "Variablen"
+      apply: "Anwenden"
+      apply_auto: "Automatisch anwenden"
+      radius: "Radius (k):"
+    msg:
+      discrete_attributes: "Daten mit diskreten Attributen können nicht verarbeitet werden."
+      replaced: "Fehlende Werte wurden durch 0 ersetzt."
+      negative_values: "Aktuelle Einstellungen können aufgrund negativer Werte in den Daten nicht verwendet werden."
+      invalid_value: "Ungültiger Wert für k. Standardwert von 30 wird verwendet."
+      text: "Keine Daten im Eingang."
+      process: "Keine Daten zu verarbeiten."
+      calculating: "Berechnung der Adjazenzmatrix..."
+
+  owaligndatasets:
+    name: "Datensätze ausrichten"
+    desc: "Ausrichtung mehrerer Datensätze mit einem Diagramm der Korrelationsvisualisierung."
+    row_score: "Bewertung:"
+    btn:
+      apply: "Anwenden"
+      apply_automatically: "Automatisch anwenden"
+    label:
+      num_components: "Anzahl der Komponenten"
+      num_genes: "Anzahl der Gene"
+      correlation_component: "Korrelationskomponenten"
+      correlation_strength: "Korrelationsstärke"
+    box:
+      data_source_indicator: "Datenquellenindikator"
+      canonical_correlation_analysis: "Kanonische Korrelationsanalyse"
+      post-process: "Nachbearbeitung"
+      shared_genes: "Gemeinsame Gene"
+    msg:
+      no_features: "Mindestens 1 Merkmal ist erforderlich"
+      no_instances: "Mindestens 2 Dateninstanzen sind für jede Klasse erforderlich"
+      no_class: "Mindestens 1 diskrete Klassenvariable ist erforderlich"
+      nan_class: "Daten enthalten undefinierte Instanzen für den ausgewählten Datenquellenindikator"
+      nan_input: "Eingabedaten enthalten nicht numerische Werte"
+      sparse_data: "Sparsame Daten werden nicht unterstützt"
+      only_one_dataset: "Die Attributspalte des Datenquellenindikators muss mindestens zwei Datensätze anzeigen."
+    gbox:
+      pearson_correlation: "Pearson-Korrelation"
+      spearman_correlation: "Spearman-Korrelation"
+      biweights_midcorrelation: "Biweights-Mittlere Korrelation"
+      quantile_normalization: "Quantil-Normalisierung"
+      dynamic_time_warping: "Dynamische Zeitverzerrung"
+    report:
+      source_id: "Quellen-ID"
+      num_components: "Ausgewählte Anzahl der Komponenten"
+      num_genes: "Ausgewählte Anzahl der Gene"
+      score: "Bewertung"
+      quantile_normalization: "Quantil-Normalisierung"
+      quantile_normalization_percentage: "Quantil-Normalisierungsprozentsatz"
+      dynamic_time_warping: "Dynamische Zeitverzerrung"
+
+  owbatchnorm:
+    name: "Batch-Effekt-Entfernung"
+    desc: "Batch-Effekt-Normalisierung auf Einzelzell-Datensatz."
+    label:
+      var: "Variable"
+      score: "Bewertung"
+    checkbox:
+      skip_zeros: "Nullausdrücke überspringen"
+    box:
+      info: "Info"
+      info_label: "Keine Daten im Eingang."
+      method: "Methode"
+      batch_box: "Batch-Variablenauswahl"
+    msg:
+      discrete_attributes: "Daten mit diskreten Attributen können nicht verarbeitet werden."
+      missing_values: "Fehlende Werte wurden durch 0 ersetzt."
+      negative_values: "Aktuelle Einstellungen können aufgrund negativer Werte in den Daten nicht verwendet werden."
+    btn:
+      apply: "Anwenden"
+      apply_automatically: "Automatisch anwenden"
+    text:
+      input_no_data: "Keine Daten im Eingang."
+      cell_gene: "{} Zellen, {} Gene\n"
+      meta_features: "{} Meta-Merkmale"
+      no_meta_feature: "(keine Meta-Merkmale)"
+    report:
+      method: "Methode"
+      var: "Batch-Variablenauswahl"
+      none: "Keine"
+      skip_zero_expression: " (Nullausdrücke überspringen)"
+
+  owdotmatrix:
+    name: "Punktmatrix"
+    desc: "Clusteranalyse durchführen."
+    info_format_str: "{} Gene\n{} Zellen\n{} Cluster"
+    btn:
+      apply: "&Anwenden"
+    checkbox:
+      biclustering: "Zellen und Gene ordnen"
+      transpose: "Transponieren"
+      log_scale: "Log-Skala"
+      normalize: "Daten normalisieren"
+    box:
+      cluster_var: "Cluster-Variable"
+      aggregation: "Aggregation"
+      options: "Optionen"
+      plot_size: "Plotgröße"
+    msg:
+      no_discrete_variable: "Keine diskreten Variablen in den Daten."
+      to_many_attributes: "Zu viele Gene im Eingang, die ersten {} Gene werden angezeigt."
+    gbox:
+      mean: "Mittlerer Ausdruck"
+      median: "Medianer Ausdruck"
+      min: "Minimaler Ausdruck"
+      max: "Maximaler Ausdruck"
+      fraction: "Bruchteil, der ausdrückt"
+
+  owdropout:
+    name: "Dropout-Gen-Auswahl"
+    desc: "Dropout-basierte Gen-Auswahl"
+    label:
+      bottom: "Mittlerer log2 nicht-null Ausdruck"
+      left: "Häufigkeit des Nullausdrucks"
+    box:
+      info: "Info"
+      filter: "Filter"
+    btn:
+      send_selection: "Auswahl senden"
+      send_automatically: "Automatisch senden"
+      number_genes: "Anzahl der Gene:"
+      apply_exp: "Anwenden exp(-a(x-b))+c"
+    msg:
+      less_selected: "Es können nicht mehr als {} Gene ausgewählt werden."
+      missing_entrez_id: "'Entrez-ID' fehlt in der Gen-Tabelle."
+    text:
+      input_no_data: "Keine Daten im Eingang."
+    report:
+      number_genes: "Anzahl der Gene"
+
+  owfilter:
+    name: "Filter"
+    desc: "Zellen/Gene filtern"
+    btn:
+      min: "Min"
+      max: "Max"
+      data_points: "Datenpunkte anzeigen"
+      log_scale: "Log-Skala"
+      commit: "Übernehmen"
+      cells: "Zellen"
+      genes: "Gene"
+      data: "Daten"
+      select_all: "Alle auswählen"
+    box:
+      info: "Info"
+      info_label: "Keine Daten im Eingang\n"
+      filter_type: "Filtertyp"
+      filter: "Filter"
+      plot_options: "Plot-Optionen"
+    msg:
+      sampling_in_effect: "Zu viele Datenpunkte zum Anzeigen. {} von {} Datenpunkten werden abgetastet."
+      invalid_range: "Negative Werte in den Eingabedaten. Dieser Filter ist nur für nicht-negative Werte definiert."
+      invalid_domain: "Ungültige Domäne\n Domäne enthält nicht numerische Spalten."
+    gbox:
+      total_counts: "Gesamtanzahl"
+      total_counts_tip: "Summe aller Zählungen über Zelle/Gen"
+      detection_count: "Erkennungsanzahl"
+      detection_count_tip: "Anzahl der Zellen/Gene mit nicht-null Ausdruck"
+    label:
+      cell: "Zellfilter"
+      cell_tip: "Filterzellen (Zeilen) nach Gesamtanzahl (Bibliotheksgröße) oder Anzahl der ausgedrückten Gene."
+      genes: "Genfilter"
+      genes_tip: "Filtergene (Spalten) nach Gesamtanzahl, die einem Gen zugeordnet sind, oder Anzahl der Zellen, in denen das Gen ausgedrückt wird."
+      data: "Datenfilter"
+      data_tip: "Kleine Messungen (null) herausfiltern"
+      total_counts_library: "Gesamtanzahl (Bibliotheksgröße)"
+      express_genes: "Anzahl der ausgedrückten Gene"
+      total_counts: "Gesamtanzahl"
+      number_cells: "Anzahl der Zellen, in denen ein Gen ausgedrückt wird"
+      gene_expression: "Genexpression"
+      log_scale: "1 + '{}' <i>(in Log-Skala)</i>"
+    text:
+      missing_data: "Keine Daten im Eingang.\n"
+      info: "Daten mit {N} Zelle(n) und {M} Gen(en)"
+      select_subject: "{} {subject}(e) in der Auswahl"
+      out_filtered: "Alle {}s herausgefiltert"
+      cell: "Zelle"
+      gene: "Gen"
+
+  owloaddata:
+    label:
+      file: "Datei:"
+      file_tip: "Wählen Sie eine kürzlich verwendete Datei"
+    row:
+      data_start: "Daten beginnen mit"
+      header_row: "Kopfzeile(n)"
+      first: "Erste"
+      column_row_label: "Spalte(n) sind Zeilenbeschriftungen"
+      cell: "% der Zellen"
+      gene: "% der Gene"
+    box:
+      header_row_label: "Kopfzeilen und Zeilenbeschriftungen"
+      data_struct: "Eingabedatenstruktur"
+      sample_data: "Beispieldaten"
+      annotation_files: "Zell- und Genanmerkungsdateien"
+    btn:
+      gene_cell: "Gene in Zeilen, Zellen in Spalten"
+      cell_gene: "Zellen in Zeilen, Gene in Spalten"
+      cell_annotation: "Zellanmerkungen"
+      gene_annotation: "Genanmerkungen"
+      load_data: "Daten laden"
+      reload: "Neu laden"
+    text:
+      rows: "{:n} Zeilen"
+      columns: "{:n} Spalten"
+    format:
+      count: "Zählungsdatei (*.count)"
+      tab: "Tabulatorgetrennte Datei (*.tsv *.tab)"
+      csv: "Kommagetrennte Datei (*.csv)"
+      matrix: "10x Gen-Barcodematrix (matrix.mtx)"
+      xls: "Microsoft Excel-Tabelle (*.xls *.xlsx)"
+      pickle: "Pickled Python-Objektdatei (*.pkl *.pickle)"
+      all_file: "Alle Dateien (*.*)"
+      meta: "Metadatei (*.meta)"
+    msg:
+      modified: "Unveröffentlichte Änderungen\nDrücken Sie 'Daten laden', um Änderungen zu übermitteln"
+      sampling_in_effect: "Abtastung ist in Kraft."
+      row_annotation_mismatch: "Längenunterschied der Zeilenanmerkung\n Erwartet {} Zeilen, erhalten {}"
+      col_annotation_mismatch: "Längenunterschied der Spaltenanmerkung\n Erwartet {} Zeilen, erhalten {}"
+      inadequate_headers: "Fehler bei Kopfzeilen und Zeilenbeschriftungen"
+      reading_error: "Daten können mit den angegebenen Parametern nicht gelesen werden."
+      miss_file: " (Fehlt im Dateisystem)"
+
+  owmultisample:
+    name: "Daten laden"
+    desc: "Proben für die Mehrfachprobenanalyse laden"
+    tooltip_missing_file_system: "Fehlt im Dateisystem"
+    text:
+      recent_files: "Kürzlich verwendete Dateien"
+      add_files: "Datei hinzufügen:"
+      browse: "Durchsuchen..."
+    msg:
+      file_in_list: "Datei {} bereits in der Liste."
+    btn:
+      intersection: "Schnittmenge"
+      union: "Vereinigung"
+      output_genes: "Ausgabegene:"
+      load_data: "Daten laden"
+    label:
+      file: "Datei"
+      source_name: "Quellenname"
+      cells: "Zellen"
+      genes: "Gene"
+      size: "Größe"
+      sparsity: "Sparsamkeit"
+    report:
+      concatenated_sample: "Verkettete Proben"
+      file: "Dateien"
+      no_file: "Keine Dateien."
+      output_genes: "Ausgabegene"
+
+  owscdatasets:
+    name: "Einzelzell-Datensätze"
+    desc: "Laden Sie einen Datensatz aus einem Online-Repository"
+    label:
+      title: "Titel"
+      size: "Größe"
+      cells: "Zellen"
+      genes: "Gene"
+      organism: "Organismus"
+      target: "Ziel"
+      tags: "Tags"
+
+  owscorecells:
+    name: "Zellen bewerten"
+    desc: "Fügen Sie eine Zellbewertung basierend auf dem gegebenen Satz von Genen hinzu"
+    placeholder_column_name: "Spaltenname ..."
+    btn_apply: "&Anwenden"
+    report_gene: "Gen"
+    info:
+      data: "Daten: {} Zellen, {} Gene.\n"
+      markers: "Marker: {} Gene.\n"
+      missing_data: "Keine Gene im Eingang.\n"
+      gene_matching: "Genabgleich: {} Marker im Eingangsdaten gefunden.\n"
+    box:
+      input_info: "Eingabeinfo"
+      aggregation: "Aggregation"
+      column_name_output: "Bewertungsspaltenname in den Ausgabedaten: "
+    msg:
+      no_genes: "Keine übereinstimmenden Gene in den Daten"
+      some_genes : "{} (von {}) Gene nicht in den Daten gefunden"
+      organism_mismatch: "Organismus in den Eingangsdaten und Markergenen stimmt nicht überein"
+      missing_annotation_input: "Fehlende Anmerkung zu Gen-IDs und Organismus in den Eingangsdaten."
+      missing_gene_id_input: "Genidentifikationsinfo fehlt in den Eingangsdaten."
+      missin_organism_input: "Organismusinformation fehlt in den Eingangsdaten"
+      missing_annotation_marker: "Fehlende Anmerkung zu Gen-IDs und Organismus in den Markergenen."
+      missing_gene_id_marker: "Genidentifikationsinfo fehlt in den Markergenen."
+      missin_organism_marker: "Organismusinformation fehlt in den Markergenen"
+    gbox:
+      mean_expression: "Mittlerer Ausdruck"
+      mean_normalized: "Mittlerer normalisierter Ausdruck"
+      nanmedian: "Medianer Ausdruck"
+      nanmax: "Maximaler Ausdruck"
+      percent_nonzero: "Bruchteil der ausgedrückten Marker"
+      score: "Bewertung"
+
+  owscoregenes:
+    name: "Gene bewerten"
+    desc: "Gene nach ihrer Relevanz bewerten und filtern."
+    box:
+      scoring_methods: "Bewertungsmethoden"
+      select_genes: "Gene auswählen"
+    btn:
+      none: "Keine"
+      all: "Alle"
+      manual: "Manuell"
+      best_ranked: "Beste bewertet:"
+      send: "Senden"
+      mean: "Mittelwert"
+      variance: "Varianz"
+      dispersion: "Dispersion"
+      cv: "Variationskoeffizient (CV)"
+      info_gain: "Informationsgewinn"
+      univar_reg: "Univariate Regression"
+    lable:
+      info_gain: "Info. Gewinn"
+      univar_reg: "Univar. Reg."
+      mean: "Mittelwert"
+      variance: "Varianz"
+      dispersion: "Dispersion"
+      cv: "CV"
+    msg:
+      no_target_var: "Daten haben keine einzelne Zielvariable. Sie können immer noch unsupervised Scorer wie PCA verbinden."
+      missing_imputed: "Fehlende Werte werden bei Bedarf imputiert."
+      invalid_type: "Zielvariablentyp {} kann nicht verarbeitet werden"
+      inadequate_learner: "Scorer {} unzureichend: {}"
+      no_attributes: "Keine Attribute"
+    status:
+      running: "Läuft"
+    report:
+      input: "Eingabe"
+      ranks: "Ränge"
+      output: "Ausgabe"
+
+  owscpreprocess:
+    name: "Einzelzell-Vorverarbeitung"
+    desc: "Einzelzell-Datensatz vorverarbeiten"
+    label:
+      gene_groups: "Gen-Gruppen."
+      logarithmic_scale: "Logarithmische Skala"
+      logarithmic_scale_desc: "Logarithmische Skala"
+      binarize_exp: "Expression binarisieren"
+      binarize_exp_desc: "Expression binarisieren"
+      normalize: "Proben normalisieren"
+      normalize_desc: "Proben normalisieren"
+      standardize: "Gene standardisieren"
+      standardize_desc: "Gene standardisieren"
+      select_genes: "Variabelste Gene auswählen"
+      select_genes_desc: "Variabelste Gene auswählen"
+      dropout: "Dropout-Gen-Auswahl"
+      dropout_desc: "Dropout-Gen-Auswahl"
+    btn:
+      cpm: "Zählungen pro Million"
+      med: "Median"
+      cell_group: "Zellgruppen: "
+      lower_bound: "Untere Grenze: "
+      upper_bound: "Obere Grenze: "
+      dispersion: "Dispersion"
+      variance: "Varianz"
+      mean: "Mittelwert"
+      compute_statistics: "Statistiken berechnen für"
+    row:
+      logarithm_base: "Logarithmus-Basis:"
+      condition: "Bedingung:"
+      threshold: "Schwellenwert:"
+      clipping: "Clipping"
+      number_genes: "Anzahl der Gene:"
+      genes_number: "Anzahl der Gene:"
+    gbox:
+      binary_logarithm: "2 (Binärlogarithmus)"
+      natural_logarithm: "e (Natürlicher Logarithmus)"
+      common_logarithm: "10 (Dezilogarithmus)"
+      greater_equal: "Größer oder gleich"
+      greater: "Größer"
+    msg:
+      discrete_attributes: "Daten mit diskreten Merkmalen können nicht vorverarbeitet werden."
+      missing_values: "Fehlende Werte wurden durch 0 ersetzt."
+      bad_pp_combination: "Dropout sollte nicht nach Normalisierung/Log-Transformation angewendet werden."
+    report:
+      condition_threshold: "Bedingung: {}, Schwellwert: {}"
+      group_by: ", Gruppiert nach: {}"
+      method: "Methode: {}"
+      lower_bound: "Untere Grenze: {}"
+      upper_bound: "Obere Grenze: {}"
+      no_clipping: "Keine Beschränkung"
+      method_genes: "Methode: {}, Anzahl der Gene: {}"
+      number_groups: ", Anzahl der Gruppen: {}"
+      number_genes: "Anzahl der Gene: {}"
