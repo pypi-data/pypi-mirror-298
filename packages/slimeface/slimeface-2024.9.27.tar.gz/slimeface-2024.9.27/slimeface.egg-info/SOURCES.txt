@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+slimeface.egg-info/PKG-INFO
+slimeface.egg-info/SOURCES.txt
+slimeface.egg-info/dependency_links.txt
+slimeface.egg-info/top_level.txt
+src/main.cpp
+src/slimeface/__init__.py
+src/slimeface/__pycache__/__init__.cpython-312.pyc
+tests/test_basic.py

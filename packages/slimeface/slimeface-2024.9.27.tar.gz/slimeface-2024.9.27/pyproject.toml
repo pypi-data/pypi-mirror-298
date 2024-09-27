@@ -1,0 +1,42 @@
+[build-system]
+requires = [ 
+  "setuptools >= 42", 
+  "pybind11>=2.10.0", 
+]
+build-backend = "setuptools.build_meta"
+
+[tool.cibuildwheel]
+build = "*"
+build-frontend = "pip"
+config-settings = {}
+dependency-versions = "pinned"
+environment = {}
+environment-pass = []
+build-verbosity = 1
+
+before-all = ""
+before-build = ""
+
+test-skip = ""
+before-test = ""
+test-extras = []
+test-requires = "pytest"
+test-command = "pytest {project}/tests"
+
+container-engine = "docker"
+skip = ["pp*", "*-win32", "*-manylinux_i686", "*-musllinux_*", "*-manylinux_aarch64", "*-manylinux_ppc64le", "*-manylinux_s390x"]
+manylinux-x86_64-image = "manylinux2014"
+manylinux-aarch64-image = "manylinux2014"
+
+
+[tool.cibuildwheel.windows]
+archs = ["AMD64"]
+before-build = [
+    "pip install delvewheel",
+    "if exist build rmdir /s /q build",
+]
+
+[tool.cibuildwheel.linux]
+repair-wheel-command = "auditwheel repair -w {dest_dir} {wheel}"
+archs = ["x86_64", "aarch64"]
+before-build = "rm -rf {project}/build"
