@@ -1,0 +1,15 @@
+qiskit_research/__init__.py,sha256=jsOdfbSt2BuAYX_uuqx1RIdXq56tomtL6AZ4tOyML_Q,500
+qiskit_research/utils/__init__.py,sha256=mn8Y17PtztRm4_SEtQ6m2ehAlnRpLElRl1b1-utG1f8,1709
+qiskit_research/utils/backend.py,sha256=8BkQUKiHfL6V69VMs1jIdgCtvvMts_-vVL2D9nDvdVs,986
+qiskit_research/utils/convenience.py,sha256=uoUtyBL5Es2t8uHkq2E1R7OuKP0RybGJTHckCIx5JK0,8809
+qiskit_research/utils/cost_funcs.py,sha256=qpKgjM1zLkR3ObkwL5_0QWnmWX1btdDE59bF3jP0SGA,1550
+qiskit_research/utils/dynamical_decoupling.py,sha256=JWuqBg-hMqtXF_pUpbRksoZN3J1KiA_QP5kozF1oXls,24184
+qiskit_research/utils/gate_decompositions.py,sha256=st_stpw9rG6kgPfE37g8YKxCf4DqdS85lusk05ae-rQ,9728
+qiskit_research/utils/gates.py,sha256=jbWTnhT0GAD14EQ2dwP8stX7mw4N7sCpY8DJy9b5030,5824
+qiskit_research/utils/pauli_twirling.py,sha256=bHwd2nZ01IR8PJqpr2-kRDBB3Sxq3UtHd3V3tnSVFmw,5445
+qiskit_research/utils/periodic_dynamical_decoupling.py,sha256=G9-cS9OVK0wr4aw3N58T9he1ua3y0rmrp_2fk9XcAT4,18919
+qiskit_research/utils/pulse_scaling.py,sha256=ZLG4VlfqY9afdxIbIuyp0v99Z8VpXBjG1J0PKD73bmI,11900
+qiskit_research-0.0.3.dist-info/LICENSE.txt,sha256=5uwKvv95k5PXchg9tCU8MkgQ4SMFhUjen8A1LFrIemg,11416
+qiskit_research-0.0.3.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+qiskit_research-0.0.3.dist-info/METADATA,sha256=URu6P9nu1n68u0A0se-7iSXca8nza9dpA5m5VvSHR5E,2767
+qiskit_research-0.0.3.dist-info/RECORD,,
