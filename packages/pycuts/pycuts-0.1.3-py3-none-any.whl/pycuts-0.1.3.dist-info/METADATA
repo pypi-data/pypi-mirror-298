@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pycuts
+Version: 0.1.3
+Summary: A collection of Python shortcut scripts for common tasks.
+Author: Daniel Ialcin Misser Westergaard
+License: MIT
+Project-URL: homepage, https://github.com/dwancin/pycuts
+Project-URL: repository, https://github.com/dwancin/pycuts
+Keywords: shortcuts,pycuts,utilities
+Description-Content-Type: text/markdown
+
+# pycuts
+
+**pycuts** is a Python library that provides a collection of shortcut functions for common operations across various libraries.
+
+## Installation
+
+You can install pycuts directly from PyPI:
+
+```bash
+pip install pycuts
