@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+pydep_dot_to_uml/__init__.py
+pydep_dot_to_uml/dot.py
+pydep_dot_to_uml/file.py
+pydep_dot_to_uml/py.typed
+pydep_dot_to_uml/pydep_dot_to_uml.py
+pydep_dot_to_uml/util.py
+pydep_dot_to_uml.egg-info/PKG-INFO
+pydep_dot_to_uml.egg-info/SOURCES.txt
+pydep_dot_to_uml.egg-info/dependency_links.txt
+pydep_dot_to_uml.egg-info/entry_points.txt
+pydep_dot_to_uml.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pydep_dot_to_uml
+Version: 1.0.2
+Summary: A program which converts the dot output of `pydep` into PlantUML
+License: GPL
+Project-URL: Homepage, https://github.com/zwimer/pydep-dot-to-uml
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# `pydep-dot-to-uml`
+
+A program which converts the dot output of `pydep` into PlantUML
