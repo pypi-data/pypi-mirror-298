@@ -1,0 +1,9 @@
+django
+djp>=0.3
+datasette
+
+[test]
+pytest
+pytest-django
+pytest-asyncio
+httpx
