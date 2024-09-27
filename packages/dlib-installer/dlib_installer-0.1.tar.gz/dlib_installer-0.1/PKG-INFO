@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dlib_installer
+Version: 0.1
+Summary: A package to install the correct version of dlib on Windows.
+Home-page: https://github.com/yourusername/dlib_installer
+Author: Ibrahim Aloui
+Author-email: ibrahimaloui433@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dlib_installer
+
+This package installs the correct version of the `dlib` library for Python on Windows.
+
+## Usage
+
+After installing this package, you can call the `install_dlib` function to install the correct version of `dlib` based on your Python version.
+
+```python
+from dlib_installer import install_dlib
+
+install_dlib()

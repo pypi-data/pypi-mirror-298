@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+dlib_installer/__init__.py
+dlib_installer.egg-info/PKG-INFO
+dlib_installer.egg-info/SOURCES.txt
+dlib_installer.egg-info/dependency_links.txt
+dlib_installer.egg-info/top_level.txt
