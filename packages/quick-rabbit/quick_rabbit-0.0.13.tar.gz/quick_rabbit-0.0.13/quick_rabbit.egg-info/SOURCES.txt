@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+quick_rabbit/__init__.py
+quick_rabbit/core.py
+quick_rabbit/utils.py
+quick_rabbit.egg-info/PKG-INFO
+quick_rabbit.egg-info/SOURCES.txt
+quick_rabbit.egg-info/dependency_links.txt
+quick_rabbit.egg-info/requires.txt
+quick_rabbit.egg-info/top_level.txt
