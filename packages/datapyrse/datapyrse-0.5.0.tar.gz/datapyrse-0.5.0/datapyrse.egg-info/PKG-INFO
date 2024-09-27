@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: datapyrse
+Version: 0.5.0
+Summary: A package used to mimic the functionality of the Dataverse SDK.
+Author: Blake Bradford
+License: MIT License
+        
+        Copyright (c) 2024 blakeZTL
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/blakeZTL/datapyrse
+Keywords: Dataverse,Power Platform,Microsoft,SDK
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi==2024.8.30
+Requires-Dist: cffi==1.17.1
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: colorama==0.4.6
+Requires-Dist: cryptography==43.0.1
+Requires-Dist: idna==3.10
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: msal==1.31.0
+Requires-Dist: packaging==24.1
+Requires-Dist: pluggy==1.5.0
+Requires-Dist: pycparser==2.22
+Requires-Dist: PyJWT==2.9.0
+Requires-Dist: requests==2.32.3
+Requires-Dist: urllib3==2.2.3
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: bumpver; extra == "dev"
+Requires-Dist: pip-tools; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: setuptools; extra == "dev"
+
+# datapyrse
+
+## Overview
+`datapyrse` is a Python library designed to mimic the functionality of the Microsoft Dataverse SDK
+
+## Features
+- **Data Retrieval**: Easily retrieve data from Dataverse entities.
+- **Data Manipulation**: Perform CRUD operations on Dataverse data.
+- **Query Building**: Build complex queries to filter and sort data.
+- **Integration**: Seamlessly integrate with other data processing libraries.
+
+## Installation
+To install `datapyrse`, use pip:
+
+```sh
+pip install datapyrse
+```
+
+## Usage
+```py
+import uuid
+from datapyrse.core import *
+from datapyrse.core.query import *
+
+
+service: ServiceClient = ServiceClient(
+    tenant_id="YOUR_TENANT_ID",
+    resource_url="YOUR_RESOURCE_URL",  # e.g. https://yourorg.crm.dynamics.com
+)
+if not service.IsReady:
+    print("Service not ready")
+    exit(1)
+
+
+# Retrieve multiple entities
+query: QueryExpression = QueryExpression(
+    "new_tablename", ColumnSet(["new_name", "ownerid"])
+)
+entities: EntityCollection = service.retrieve_multiple(query)
+
+for ent in entities.entities:
+    print(f"\nId: {ent.entity_id}")
+    for attribute in ent.attributes:
+        print(f"  {attribute}: {ent.attributes[attribute]}")
+    print()
+
+# Retrieve a single entity
+entity: Entity = service.retrieve_single("new_tablename", uuid.UUID("YOUR_GUID"))
+
+# Create a new entity
+new_entity: Entity = Entity("new_tablename")
+new_entity["new_name"] = "New Entity"
+
+user_id: uuid.UUID = uuid.UUID("USER_GUID")
+new_entity["ownerid"] = EntityReference("systemuser", user_id)
+
+service.create(new_entity)
+
+```
+
+
