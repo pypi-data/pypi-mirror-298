@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: netbox_circuitmaintenance
+Version: 0.4.2
+Summary: NetBox plugin for circuitmaintenance.
+Home-page: https://github.com/jasonyates/netbox-circuitmaintenance
+Author: Jason Yates
+Author-email: me@jasonyates.co.uk
+Keywords: netbox_circuitmaintenance
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+License-File: LICENSE
