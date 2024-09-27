@@ -1,0 +1,2 @@
+[console_scripts]
+lumei = lumei.cli:main
