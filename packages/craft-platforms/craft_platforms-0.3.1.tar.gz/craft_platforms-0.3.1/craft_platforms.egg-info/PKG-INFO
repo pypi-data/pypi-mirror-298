@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: craft-platforms
+Version: 0.3.1
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: annotated-types>=0.3.0
+Requires-Dist: distro>=1.6.0
+Requires-Dist: typing_extensions>=4.0.0
+Provides-Extra: docs
+Requires-Dist: canonical-sphinx~=0.1; extra == "docs"
+Requires-Dist: sphinx-autobuild~=2024.2; extra == "docs"
+Requires-Dist: sphinx-pydantic~=0.1.1; extra == "docs"
+Requires-Dist: sphinx-toolbox~=3.5; extra == "docs"
+Requires-Dist: sphinx-lint~=1.0.0; extra == "docs"
+
+***************
+craft-platforms
+***************
+
+Utilities for handling platform information
+
+Description
+-----------
+TODO
