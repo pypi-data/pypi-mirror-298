@@ -1,0 +1,2 @@
+[console_scripts]
+devdocs2zim = devdocs2zim.entrypoint:main

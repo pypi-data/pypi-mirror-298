@@ -1,0 +1,17 @@
+devdocs2zim/__about__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+devdocs2zim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devdocs2zim/client.py,sha256=ko3Hn2dHk4e4bse4SAn7k8L2LiCTOAVtjphGkYq_ZPA,10069
+devdocs2zim/constants.py,sha256=_dV2wm2wEfTem7O3ypGsL17XwZUUh4YFfS8kuW6vD10,543
+devdocs2zim/entrypoint.py,sha256=c8DKXZXbRu95iIpgHB9Uqb4mOnKmtLSgFL2eYFQiLgY,2561
+devdocs2zim/generator.py,sha256=HdI5kkuUcZUlR-pXcreEG58aWxrtcbHUxTLVdV5koe0,19898
+devdocs2zim/templates/licenses.txt,sha256=P-YFQZsJpFkmcmoY1dqHZwDwAM3vZZ4VvnS8YLXabLU,275
+devdocs2zim/templates/page.html,sha256=FxaY1gsN6D-agmVphc5tYM1pdSFWU2UfrK7gcZ0YRVI,2531
+devdocs2zim/third_party/devdocs/COPYRIGHT,sha256=4qWnV2pzWhkoXekpUK1vUO6kyvX3jzTsWpHB9u7DAnk,648
+devdocs2zim/third_party/devdocs/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+devdocs2zim/third_party/devdocs/README.md,sha256=5-L_b_a7JyoydmYAPPDz9fOcyd8O9U-yp424assTLtc,233
+devdocs2zim/third_party/devdocs/devdocs_48.png,sha256=Qh-TiZq1KJ_p-13Z3WMvJeMOBKv2C9X84uQcK2yl78I,1108
+devdocs2zim-0.1.0.dist-info/METADATA,sha256=K59btgucBBbxNR1EKL4sed81xHG8d1ZLtDib-5VRbpQ,7534
+devdocs2zim-0.1.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+devdocs2zim-0.1.0.dist-info/entry_points.txt,sha256=5Rr5M_HSj9hi7qRxJvnVIqa9sTiBVC1nJ6mTFr31LsM,60
+devdocs2zim-0.1.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+devdocs2zim-0.1.0.dist-info/RECORD,,
