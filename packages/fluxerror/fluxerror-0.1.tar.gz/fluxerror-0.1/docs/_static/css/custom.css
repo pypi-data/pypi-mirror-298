@@ -1,0 +1,23 @@
+.wy-nav-top{
+    background: #232640;
+}
+
+.wy-nav-side{
+    background: #434C5E;
+    padding-left: 5px;
+    width: 310px;
+    }
+
+.wy-menu-vertical header, .wy-menu-vertical p.caption{
+    color: #FF7F50
+}
+
+.caption-text{
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+body > div > nav > div > div.wy-menu.wy-menu-vertical > p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}

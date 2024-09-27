@@ -1,0 +1,25 @@
+name: Build Read the Docs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Trigger Read the Docs build
+      env:
+        READTHEDOCS_API_TOKEN: ${{ secrets.READTHEDOCS_API_TOKEN }}
+      run: |
+        curl -X POST -H "Authorization: Token ${READTHEDOCS_API_TOKEN}" \
+          -d "fluxerror" \
+          https://readthedocs.org/api/v2/webhook/fluxerror/275236/
+
