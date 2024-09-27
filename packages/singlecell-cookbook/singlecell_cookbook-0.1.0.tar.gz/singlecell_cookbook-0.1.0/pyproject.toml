@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "singlecell-cookbook"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anndata",
+    "ipywidgets",
+    "numpy<2.0",
+    "pandas",
+    "plotly",
+    "scanpy",
+    "scikit-learn",
+    "scipy",
+]
+
+[project.optional-dependencies]
+rpy2 = [
+    "anndata2ri",
+    "rpy2"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/singlecell_cookbook"]
