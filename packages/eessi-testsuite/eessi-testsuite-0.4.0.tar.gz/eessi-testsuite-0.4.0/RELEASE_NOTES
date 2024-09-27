@@ -1,0 +1,115 @@
+This file contains a description of the major changes to the EESSI test suite.
+For more detailed information, please see the git log.
+
+v0.4.0 (26 September 2024)
+--------------------------
+
+This is a minor release of the EESSI test-suite
+
+New tests:
+
+* PyTorch (with torchvision) (#130)
+* LAMMPS (#131, #169)
+* CP2K (#133)
+
+Bug fixes:
+* Find and report duplicate modules (#167)
+* Specify memory as an extra resource in all ReFrame configs (#180)
+* Make req_memory_per_node hook print a warning if memory resource is not configured in ReFrame config (#182)
+* No longer test import of eessi.testsuite.utils directly in CI, as it fails (by design) for the ReFrame 4.6.2 version deployed in EESSI (#183)
+
+Other updates:
+* mpi4py reduction test for tutorial (#149, #172), to accompany [documentation](https://www.eessi.io/docs/test-suite/writing-portable-tests/) on writing portable tests for the EESSI test suite
+* Various updates to Snellius ReFrame config (#165, #168, #187, #188)
+* Make the use of EESSI optional in common_eessi_init, to better support testing of local software stacks (#166)
+* Remove hard-coded SLURM account from karolina and hortense configs in favour of using the `$SBATCH_ACCOUNT` environment variable (#171)
+* Add ReFrame config and CI config for EESSI Azure build cluster (#173, #176, #186)
+* Add hook for measuring memory usage in a job (#174)
+* Bump default ReFrame version used in CI config to 4.6.2 (#175)
+* Use ReFrame warning's to print warnings, amking them easier to spot (#178)
+* Limit runtime of ReFrame command in in CI config (#179)
+* Add release notes and bump versions (#189)
+
+v0.3.2 (29 June 2024)
+---------------------
+
+This is a bugfix release of the EESSI test-suite
+
+It includes:
+
+- Add config for Deucalion (#162)
+
+v0.3.1 (28 June 2024)
+---------------------
+
+This is a bugfix release of the EESSI test-suite
+
+It includes:
+
+- Correct required memory per node to MiB in ESPResSo test (#158)
+- Change behavior for assign_tasks_per_compute_unit(test, COMPUTE_UNIT[CPU]) on hyperthreading-enabled systems (#160)
+- Use compact process binding in ESPResSo test (#160)
+
+v0.3.0 (27 June 2024)
+---------------------
+
+This is a minor release of the EESSI test-suite
+
+It includes:
+
+* Update config AWS MC cluster to use `software.eessi.io` (#126)
+* Add test for QuantumESPRESSO (pw.x) (#128)
+* Fix compact process binding for OpenMPI mpirun (#137)
+* Use compact process binding for GROMACS (#139)
+* Rename scale tags 1_cpn_2_nodes and 1_cpn_4_nodes (#140)
+* Set SRUN_CPUS_PER_TASK for srun launcher (#141)
+* Fix for "Failed to modify UD QP to INIT on mlx5_0" on Karolina CI runs (#142)
+* Reduce the iteration count to make the OSU tests run faster, especially on slower interconnects (#143)
+* Add test for ESPResSo (P3M) (#144)
+* Use software.eessi.io repo in CI (#146)
+* Add notes on release management to README (#148)
+* Fix memory_per_node for Hortense (#151)
+* Use MiB units for memory per node (#152)
+* Added / updated memory for various systems in MiB units (#153)
+* Add additional test for ESPRESSO (LJ) (#155)
+* Bump default version used in CI (#157)
+
+v0.2.0 (7 March 2024)
+---------------------
+
+This is a minor release of the EESSI test-suite
+
+It includes:
+
+* Implement the CI for regular runs on a system (#93)
+* Add OSU tests and update the hooks and configs to make the tests portable (#54, #95, #96, #97, #110, #116, #117, #118, #121)
+* Add extra scales to filter tests(#94)
+* add new hook to filter out invalid scales based on features in the config (#111)
+* unify test names (#108)
+* updates to CI workflow ((#102, #103, #104, #105)
+* Update common_config (#114)
+* Add common config item to redirect the report file to the same directory as e.g. the perflog (#122)
+* Fix code formatting + enforce it in CI workflow  (#120)
+
+Bug fixes:
+
+* Fix hook _assign_num_tasks_per_node (#98)
+* fix import common-config vsc_hortense (#99)
+* fix typo in partition names in configuration file for vsc_hortense (#106)
+
+v0.1.0 (5 October 2023)
+-----------------------
+
+This is the first release of the EESSI test suite.
+
+It includes:
+
+* A well-structured `eessi.testsuite` Python package that provides constants, utilities, hooks, and tests, which can be installed with "`pip install`".
+* Tests for GROMACS and TensorFlow in `eessi.testsuite.tests.apps` that leverage the functionality provided by `eessi.testsuite.*`.
+* Examples of ReFrame configuration files for various systems in the `config` subdirectory.
+* A `common_logging_config()` function to facilitate the ReFrame logging configuration.
+* A set of standard device types and features that can be used in the partitions section of the ReFrame configuration file.
+* A set of tags (CI + scale) that can be used to filter checks.
+* Scripts that show how to run the test suite.
+
+For documentation, see https://eessi.io/docs/test-suite .
