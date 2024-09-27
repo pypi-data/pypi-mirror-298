@@ -1,0 +1,6 @@
+version: v1
+plugins:
+    - plugin: buf.build/protocolbuffers/python:v27.2
+      out: gen
+    - plugin: buf.build/protocolbuffers/pyi:v27.2
+      out: gen
