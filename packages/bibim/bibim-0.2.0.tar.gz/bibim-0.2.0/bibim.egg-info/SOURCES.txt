@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+bibim.egg-info/PKG-INFO
+bibim.egg-info/SOURCES.txt
+bibim.egg-info/dependency_links.txt
+bibim.egg-info/entry_points.txt
+bibim.egg-info/requires.txt
+bibim.egg-info/top_level.txt

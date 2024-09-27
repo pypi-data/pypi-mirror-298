@@ -1,0 +1,2 @@
+[console_scripts]
+bibim = bibim.__main__:main
