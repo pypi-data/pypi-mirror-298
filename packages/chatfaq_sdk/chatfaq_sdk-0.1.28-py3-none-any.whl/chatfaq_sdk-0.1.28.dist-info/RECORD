@@ -1,0 +1,13 @@
+chatfaq_sdk/__init__.py,sha256=FzU3g6llGwrsdjMWc53lDAdCVYrjxW2de-nNk7NfsTM,20444
+chatfaq_sdk/clients/__init__.py,sha256=fq5EM2c9Pl7m2LZc0mRpXdmCHgVLx0l-A44KaIr5lUY,2068
+chatfaq_sdk/conditions/__init__.py,sha256=Um2NweUTrmXOaSskD5xj75xcDCBUxskE9CY2x163s00,901
+chatfaq_sdk/data_source_parsers/__init__.py,sha256=mz3lS0O2EwBGGKcxowSEa3QMwyZaBbyGeYhXMxLJpqY,448
+chatfaq_sdk/fsm/__init__.py,sha256=c_r9cO0slL-J9xmIX9a_l-K4LrVSHXX6j4C3xWGzl-g,3533
+chatfaq_sdk/layers/__init__.py,sha256=yrNSDJ5qBhpqhh-LEq1zQtx7ObBImHetnRbq4o-rbDM,3920
+chatfaq_sdk/settings.py,sha256=YVzzEycdXjfd5GSuqwN4_ard71xPm_sa96-dPCeKVHU,371
+chatfaq_sdk/types/__init__.py,sha256=siEvyecJYjbB_xsSodyD0ujxYVSyuhewpHIiXghwtx4,1618
+chatfaq_sdk/types/messages.py,sha256=7978KwbDSP2Cqwo8tgo_fOyDJw-YKRSzrld1GuOKpcU,626
+chatfaq_sdk/utils.py,sha256=LlFJV5o-6X6E6GMnjvE-MZ-vK5zi0ZJn67WCZJ3ohP8,571
+chatfaq_sdk-0.1.28.dist-info/METADATA,sha256=Up1sdObxn5zSan23MyvRREiBHjdYeFviJlxCMeAfNO4,4693
+chatfaq_sdk-0.1.28.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+chatfaq_sdk-0.1.28.dist-info/RECORD,,
