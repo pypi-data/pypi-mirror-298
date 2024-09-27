@@ -1,0 +1,13 @@
+honeybee_energy_revive/__init__.py,sha256=GBKQUTndTGdzU1nCf87g__VBj_-kCr_Ksf_BLjRtoX0,639
+honeybee_energy_revive/_extend_honeybee_energy_revive.py,sha256=FuUxqjWQnVh24ZZuWbflMFaDFveRkRydHLgCjkertaM,13341
+honeybee_revive/CO2_measures.py,sha256=t0NjNM-u-hjapZNjcQN5eG3l1ADp0r9sF-ZgI3SjXBY,5027
+honeybee_revive/__init__.py,sha256=UzngpwMzJhDuiejAsxJrj8aWV399PgxZG6YFRcAv-kk,618
+honeybee_revive/_extend_honeybee_revive.py,sha256=0WoaAPjQmQpw8OK6IxKVF1iQ2UZ-TmASSBUnzDkq7SM,2132
+honeybee_revive/grid_region.py,sha256=mkLpLWbVPiRJntKYVXQRi_sunCeDKtHtoGjeltGwtmM,1745
+honeybee_revive/national_emissions.py,sha256=OgDut7pv31t3hlILGgVh_LU2tmezXsr4O6wK9WDBqLk,2247
+honeybee_revive_standards/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+honeybee_REVIVE-0.0.3.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+honeybee_REVIVE-0.0.3.dist-info/METADATA,sha256=fHM_twnkhhEhd6H7D4kq7phzIpFp-s4pJVLR_7_f9IQ,3076
+honeybee_REVIVE-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+honeybee_REVIVE-0.0.3.dist-info/top_level.txt,sha256=aIa16Q530s5stNUz86MHDfBRNWHQCtq3Gmzew9fk2Ng,65
+honeybee_REVIVE-0.0.3.dist-info/RECORD,,
