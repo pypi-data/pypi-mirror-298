@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+voibot/__init__.py
+voibot/chatbot.py
+voibot/config.py
+voibot/utils.py
+voibot.egg-info/PKG-INFO
+voibot.egg-info/SOURCES.txt
+voibot.egg-info/dependency_links.txt
+voibot.egg-info/requires.txt
+voibot.egg-info/top_level.txt
