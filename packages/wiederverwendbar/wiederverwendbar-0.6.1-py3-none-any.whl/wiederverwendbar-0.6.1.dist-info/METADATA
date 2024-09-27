@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: wiederverwendbar
+Version: 0.6.1
+Summary: A collection of scripts, classes and tools they are \"wiederverwendbar\".
+Author-Email: Julius Koenig <info@bastelquartier.de>
+License: GPL-3.0
+Requires-Python: >=3.9
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: pydantic-settings>=2.5.2
+Requires-Dist: devtools>=0.12.2
+Requires-Dist: nest-asyncio>=1.6.0
+Provides-Extra: full
+Requires-Dist: rich>=13.8.1; extra == "full"
+Requires-Dist: typer>=0.12.5; extra == "full"
+Requires-Dist: pythonping>=1.1.4; extra == "full"
+Requires-Dist: mongoengine>=0.29.1; extra == "full"
+Requires-Dist: nicegui>=2.1.0; extra == "full"
+Requires-Dist: uvicorn>=0.30.6; extra == "full"
+Requires-Dist: fastapi>=0.115.0; extra == "full"
+Requires-Dist: starlette-admin[i18n]>=0.14.1; extra == "full"
+Requires-Dist: pillow>=10.4.0; extra == "full"
+Requires-Dist: blinker>=1.8.2; extra == "full"
+Requires-Dist: kombu>=5.4.2; extra == "full"
+Provides-Extra: rich
+Requires-Dist: rich>=13.8.1; extra == "rich"
+Provides-Extra: typer
+Requires-Dist: typer>=0.12.5; extra == "typer"
+Provides-Extra: ping
+Requires-Dist: pythonping>=1.1.4; extra == "ping"
+Provides-Extra: mongoengine
+Requires-Dist: mongoengine>=0.29.1; extra == "mongoengine"
+Requires-Dist: blinker>=1.8.2; extra == "mongoengine"
+Provides-Extra: uvicorn
+Requires-Dist: uvicorn>=0.30.6; extra == "uvicorn"
+Provides-Extra: fastapi
+Requires-Dist: fastapi>=0.115.0; extra == "fastapi"
+Provides-Extra: nicegui
+Requires-Dist: nicegui>=2.1.0; extra == "nicegui"
+Provides-Extra: starlette-admin
+Requires-Dist: starlette-admin[i18n]>=0.14.1; extra == "starlette-admin"
+Requires-Dist: pillow>=10.4.0; extra == "starlette-admin"
+Requires-Dist: kombu>=5.4.2; extra == "starlette-admin"
+Description-Content-Type: text/markdown
+
+# wiederverwendbar
