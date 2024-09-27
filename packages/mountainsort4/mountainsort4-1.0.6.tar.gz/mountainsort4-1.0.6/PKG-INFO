@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mountainsort4
+Version: 1.0.6
+Summary: Spike sorting using MountainSort4 algorithm
+Home-page: https://github.com/magland/mountainsort4
+Author: Jeremy Magland
+Author-email: jmagland@flatironinstitute.org
+Project-URL: Bug Tracker, https://github.com/magland/mountainsort4/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Dist: dask
+Requires-Dist: pybind11
+Requires-Dist: isosplit5>=0.2.0
+Requires-Dist: numpy
+Requires-Dist: h5py
+Requires-Dist: scikit-learn
+Requires-Dist: spikeextractors>=0.9.5
