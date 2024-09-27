@@ -1,0 +1,14 @@
+focus_opt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+focus_opt/config_candidate.py,sha256=VRduHrSgVdW0d-ZXUl7UnzjkdUBFivSW4ZnwikOQSqM,4309
+focus_opt/helpers.py,sha256=Dd5piR1L-ZtwgS0F-P9FBt_29ELW28X-ICe9me0peEc,1927
+focus_opt/hp_space.py,sha256=m6siYrBQsT5A2AMQQA-r1-PsYUNBey3fYSadrqOwZNI,5166
+focus_opt/optimizers.py,sha256=h1Whl0rUt-jU_hG8d6bt_C5QDgS3lMu9tNNRONz1Who,14340
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_config_candidate.py,sha256=iZYrR4lFdGhkE6eEVY3QC7Zya26zHZ034ZrM-ux5QpE,1625
+tests/test_hp_space.py,sha256=kZc1kIH9yqcwQ7Ms0GkjG43o4YX3j2P7hibptB3YWcc,2032
+tests/test_opt.py,sha256=i2hp-qdvyw47YJ-BdH-GEFsDfjBHR3El5i3TPOA1bPU,4709
+focus_opt-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+focus_opt-0.1.0.dist-info/METADATA,sha256=_wVqSc-jVau9EeEddlf6zUo4LyGSS9kZMZJ-7do2kSk,13902
+focus_opt-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+focus_opt-0.1.0.dist-info/top_level.txt,sha256=7v59rk4e7SHaXGpRS4CZv2ntJovB8V4S8uj2QYkzc4w,16
+focus_opt-0.1.0.dist-info/RECORD,,
