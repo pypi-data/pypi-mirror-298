@@ -1,0 +1,55 @@
+site_name: MDminify
+site_url: https://kadykov.github.io/mdminify
+repo_url: https://github.com/kadykov/mdminify
+repo_name: kadykov/mdminify
+edit_uri: edit/main/docs/
+strict: true
+nav:
+  - Home: index.md
+  - Reference:
+      - mdminify.md
+      - cli.md
+  - changelog.md
+  # - Contributing: contributing.md
+theme:
+  name: material
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.path
+    - navigation.prune
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - header.autohide
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+plugins:
+  - search
+  - mkdocstrings
+  # - social
+markdown_extensions:
+  - pymdownx.snippets:

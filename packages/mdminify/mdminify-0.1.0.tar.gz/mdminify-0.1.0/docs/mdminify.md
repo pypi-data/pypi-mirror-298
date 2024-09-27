@@ -1,0 +1,3 @@
+# MDminify
+
+::: mdminify.mdminify

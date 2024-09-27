@@ -1,0 +1,63 @@
+Metadata-Version: 2.3
+Name: mdminify
+Version: 0.1.0
+Summary: Minifying and restoring markdown files by stripping unnecessary elements and reformatting content
+Project-URL: Documentation, https://kadykov.github.io/mdminify
+Project-URL: Issues, https://github.com/kadykov/mdminify/issues
+Project-URL: Source, https://github.com/kadykov/mdminify
+Author-email: Aleksandr Kadykov <dev@kadykov.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: click
+Provides-Extra: dev
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: ipykernel; extra == 'dev'
+Requires-Dist: mkdocs; extra == 'dev'
+Requires-Dist: mkdocs-material; extra == 'dev'
+Requires-Dist: mkdocstrings-python; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs; extra == 'docs'
+Requires-Dist: mkdocs-material; extra == 'docs'
+Requires-Dist: mkdocstrings-python; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest; extra == 'tests'
+Requires-Dist: pytest-cov; extra == 'tests'
+Description-Content-Type: text/markdown
+
+# mdminify
+
+[![PyPI - Version](https://img.shields.io/pypi/v/mdminify.svg)](https://pypi.org/project/mdminify)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mdminify.svg)](https://pypi.org/project/mdminify)
+[![Build Status](https://github.com/kadykov/mdminify/actions/workflows/ci.yml/badge.svg)](https://github.com/kadykov/mdminify/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/kadykov/mdminify/branch/main/graphs/badge.svg)](https://codecov.io/github/kadykov/mdminify)
+-----
+
+A Python tool for minifying and restoring markdown files by stripping unnecessary elements and reformatting content
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install mdminify
+```
+
+## License
+
+`mdminify` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
