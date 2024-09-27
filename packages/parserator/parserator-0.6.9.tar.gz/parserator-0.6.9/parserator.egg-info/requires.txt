@@ -1,0 +1,9 @@
+lxml>=3.7.3
+python-crfsuite>=0.7
+chardet
+
+[dev]
+pytest
+black
+isort
+flake8
