@@ -1,0 +1,17 @@
+SynapseAI/__init__.py,sha256=7apro3sFuAocDzGzOqyo5TiheSA5V2ZwhIa_gJIsh8Y,374
+SynapseAI/config.py,sha256=SZG81fr0sSj4GvEjsKISn1dXA9dO2pbIaOQpDP1rQ10,282
+SynapseAI/main.py,sha256=1W4xjNGpWdipi_p12RVUvitKbRMLWGwuS2PeKHY5A20,757
+SynapseAI/pdf_processor.py,sha256=wy2pSdufZ0oci9F51FN5gAv-UHV-UcLLVbYn5c3wKjk,1787
+SynapseAI/utils.py,sha256=S-bBMdo5Agd8s_jJFndv3HzYHJeUz6S0pHZWDROQ-2g,720
+SynapseAI/web_crawler.py,sha256=1RhjsYpnf4C2vPvTQdeBlDsRXcY5ptG1w-OMhl_7vm8,1990
+enginex/__init__.py,sha256=7apro3sFuAocDzGzOqyo5TiheSA5V2ZwhIa_gJIsh8Y,374
+enginex/config.py,sha256=SZG81fr0sSj4GvEjsKISn1dXA9dO2pbIaOQpDP1rQ10,282
+enginex/main.py,sha256=1W4xjNGpWdipi_p12RVUvitKbRMLWGwuS2PeKHY5A20,757
+enginex/pdf_processor.py,sha256=wy2pSdufZ0oci9F51FN5gAv-UHV-UcLLVbYn5c3wKjk,1787
+enginex/utils.py,sha256=S-bBMdo5Agd8s_jJFndv3HzYHJeUz6S0pHZWDROQ-2g,720
+enginex/web_crawler.py,sha256=1RhjsYpnf4C2vPvTQdeBlDsRXcY5ptG1w-OMhl_7vm8,1990
+engineX-0.5.5.dist-info/METADATA,sha256=viLoZgp9xRS40GVPYBcIaxAaBGE7P6OcjNgc0beoGvg,4594
+engineX-0.5.5.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+engineX-0.5.5.dist-info/entry_points.txt,sha256=Buzs2Pjv-YMhRoWkaZxpYfscCO2GoV7_j9yAKCcP-SE,46
+engineX-0.5.5.dist-info/top_level.txt,sha256=js44T6BkcmBy_AKy0RPRXKzrHYCk9O0qJ7Ho9JPQi3g,8
+engineX-0.5.5.dist-info/RECORD,,
