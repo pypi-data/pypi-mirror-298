@@ -1,0 +1,70 @@
+name: Test & Doc
+
+on:
+  push:
+    branches: [ devel ]
+  pull_request:
+    branches: [ devel ]
+
+permissions:
+  contents: write
+
+jobs:
+
+  Test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        python-version: [ "3.8", "3.9", "3.10", "3.11", "3.12" ]
+        include:
+          - os: ubuntu-latest
+          # - os: windows-latest
+          - os: macos-latest
+
+    runs-on: ${{ matrix.os }}
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install package and dependencies on ${{ matrix.os }}
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev]
+
+      - name: Run tests on ${{ matrix.os }}
+        run: |
+          ruff check . --select=E9,F63,F7,F82
+          pytest
+
+  Doc:
+    runs-on: ubuntu-latest
+    needs: Test 
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+
+      - name: Buid Sphinx doc 
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/devel' }} 
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev,docs]
+          make -C docs html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/devel' }} 
+        with:
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/build/html
+          force_orphan: true

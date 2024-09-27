@@ -1,0 +1,58 @@
+*.swp
+*.swo
+*~
+
+*.py[cod]
+__pycache__
+
+# test and coverage artifacts
+.cache
+.pytest_cache
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+tiledb/
+
+# docs artifacts
+docs/**/logo.ai
+
+# setup and build artifacts
+docs/_*
+*.egg-info/
+dist/
+build/
+MANIFEST
+
+# dev and virtual environment
+.venv/
+venv/
+.idea/
+
+# User resources
+paper/
+data
+momics-paper.md
+test.fa
+test.csv
+*bw
+*bins*bed
+*bins*tsv
+out.*
+*test.bed*
+
+# OS-generated files
+.DS_Store
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+tmp/
+_scratch/
+.vscode
+example.py
+*.momics/
+.tox
+benchmark.py
+/*py
+.secrets
