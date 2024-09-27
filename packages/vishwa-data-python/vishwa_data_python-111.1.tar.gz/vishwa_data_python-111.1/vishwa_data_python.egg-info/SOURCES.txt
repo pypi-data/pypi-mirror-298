@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+packages/__init__.py
+packages/vishwa.py
+packages/vishwa1.py
+vishwa_data_python.egg-info/PKG-INFO
+vishwa_data_python.egg-info/SOURCES.txt
+vishwa_data_python.egg-info/dependency_links.txt
+vishwa_data_python.egg-info/top_level.txt
