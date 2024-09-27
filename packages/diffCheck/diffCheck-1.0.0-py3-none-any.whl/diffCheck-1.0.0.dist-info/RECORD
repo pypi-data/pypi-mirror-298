@@ -1,0 +1,15 @@
+diffCheck/__init__.py,sha256=5GWKmXKgoFyhUUdTmiSXLo7KUhGpepdi50mBUshiFYk,397
+diffCheck/df_cvt_bindings.py,sha256=TkiTRB0ucN_LdhLFRNiP8eZlIHNB6DtuPn3SV6G_d2c,8781
+diffCheck/df_error_estimation.py,sha256=5e7xiz41U25mHu8dmsWroVDM9VdYyfqBILIZZGmfuPo,6882
+diffCheck/df_geometries.py,sha256=mr_wzNPPNdCUA4qRZSS5SB7rvKM8BJuxK1mqPxa1-o0,17113
+diffCheck/df_joint_detector.py,sha256=YDpFioDxpo_fSdglUgSTaG5dYwVH23bhteg4brJQsf0,7131
+diffCheck/df_transformations.py,sha256=IKC8F4iPxyCDkwWb_0WUOOm1Ej0M86du4DY_Keck0A8,4610
+diffCheck/df_util.py,sha256=8iqaeDWbB1vn3QYVYPK8JnczStZoBmykOacsvN0O9cQ,6471
+diffCheck/df_visualization.py,sha256=U4Ico0RTK2yJJH6ws9-pZCjG8JGIRq7PuTc2WNc4AkU,13705
+diffCheck/diffcheck_bindings.cp39-win_amd64.pyd,sha256=bi6odbXW2DYXbwi0fP-d__oAwy2CX76TcTBVoerSJx8,267264
+diffCheck/dlls/Open3D.dll,sha256=qaqnamE0kQNZaXPFvv6oQ8oEIsODcqnA6kq0d2yFsF8,123384832
+diffCheck/dlls/diffCheck.dll,sha256=UjE8ef5wS16fOqdCvmxkS16HfnvKmmXLhbP2BOQBPVg,593408
+diffCheck-1.0.0.dist-info/METADATA,sha256=cspd5XLeDtmdyjCYeqzmBMXPirE1xPSfnGp0G0G2raI,1540
+diffCheck-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+diffCheck-1.0.0.dist-info/top_level.txt,sha256=E3UbltVp-yr21RtlaZIGVKY7k57TZxtYIA6ERGBIpzY,10
+diffCheck-1.0.0.dist-info/RECORD,,
