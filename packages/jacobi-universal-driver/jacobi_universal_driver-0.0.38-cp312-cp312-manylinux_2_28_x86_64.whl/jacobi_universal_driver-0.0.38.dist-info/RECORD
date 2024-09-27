@@ -1,0 +1,7 @@
+jacobi_driver_universal.cpython-312-x86_64-linux-gnu.so,sha256=DlflkcSGNTXLT7woclf1TzYC78x-spjrAOXxdwP4QLQ,432745
+libjacobi-universal-driver.so,sha256=UwGrQYnrhbIDz5HHKdjIGrvLjvipQ1cCeEJQ92CXew4,1627177
+jacobi_universal_driver-0.0.38.dist-info/METADATA,sha256=bmYdsvn1dHXxUHpmdEEhi8Hd9KYzb2V4mZjSCOcm7Yw,5566
+jacobi_universal_driver-0.0.38.dist-info/WHEEL,sha256=r-2IFAd1u-pV6BWObZVlkKZ5VlduYio7YfTNXXafSi4,118
+jacobi_universal_driver-0.0.38.dist-info/RECORD,,
+jacobi_universal_driver-0.0.38.dist-info/licenses/LICENSE,sha256=aOoSTZXfCLkJEh1SwiDvRcxqbW-GEe-zl4VUAwA89wA,3859
+jacobi_universal_driver.libs/libboost_system-69a6c43e.so.1.66.0,sha256=sd_lA0coUWXm-bluxkOkNrzrxFSAXYDphjPDwBekik8,22905
