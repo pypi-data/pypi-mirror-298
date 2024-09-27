@@ -1,0 +1,2 @@
+[salt.loader]
+saltext.splunk = saltext.splunk
