@@ -1,0 +1,291 @@
+{% extends "layouts/base-applications.html" %} 
+{% load static i18n %} 
+{% block title %} Settings General {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'assets/vendors/css/dataTables.bs5.min.css'%}"
+/>
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'assets/vendors/css/select2.min.css'%}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'assets/vendors/css/select2-theme.min.css'%}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'assets/vendors/css/tagify.min.css'%}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'assets/vendors/css/tagify-data.min.css'%}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'assets/vendors/css/quill.min.css'%}"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+/>
+<style>
+  .hidden-scrollbar {
+    overflow: auto; /* Allows scrolling */
+    scrollbar-width: none; /* Firefox */
+  }
+</style>
+{% endblock stylesheets %} {% block content %}
+<!--! ================================================================ !-->
+<!--! [Start] Main Content !-->
+<!--! ================================================================ !-->
+<main class="nxl-container apps-container">
+  <div class="nxl-content without-header nxl-full-content">
+    <!-- [ Main Content ] start -->
+    <div class="main-content d-flex">
+      <!-- [ Content Sidebar ] start -->
+      <div
+        class="content-sidebar content-sidebar-md"
+        data-scrollbar-target="#psScrollbarInit"
+      >
+        <div
+          class="content-sidebar-header bg-white sticky-top hstack justify-content-between"
+        >
+          <h4 class="fw-bolder mb-0">{% trans "Settings" %}</h4>
+          <a
+            href="javascript:void(0);"
+            class="app-sidebar-close-trigger d-flex"
+          >
+            <i class="feather-x"></i>
+          </a>
+        </div>
+
+        {% include 'includes/tenantsettingsnav.html' %}
+      </div>
+      <div class="content-area" data-scrollbar-target="#psScrollbarInit">
+        <div class="content-area-header bg-white sticky-top">
+            <div class="page-header-left d-flex align-items-center my-auto">
+                <div class="page-header-title">
+                    <h4 class="fw-bolder mb-0">{{segment.text}}</h4>
+                </div>
+            </div>
+        </div>
+        <div class="content-area-body min-vh-100">
+          <div class="card">
+            <div class="card-body">
+             <form method="post" id="tenantForm" enctype="multipart/form-data">
+                {% csrf_token %} {{ form.non_field_errors }}
+                <!-- Display non-field errors here -->
+                  {{ form.as_p }}
+
+              <div class="subscription-plan px-4 pt-4">
+                    {% comment %} <div class="mb-4 d-flex align-items-center justify-content-between">
+                        <h5 class="fw-bold mb-0">Subscription & Plan:</h5>
+                        <a href="javascript:void(0);" class="btn btn-sm btn-light-brand">4 days remaining</a>
+                    </div> {% endcomment %}
+                    <div class="p-4 mb-4 d-xxl-flex d-xl-block d-md-flex align-items-center justify-content-between gap-4 border border-dashed border-gray-5 rounded-1 position-relative">
+                        <div>
+                            <div class="fs-14 fw-bold text-dark mb-1">Your current plan is <a href="javascript:void(0);" class="badge bg-primary text-white ms-2">{{current_plan}}</a></div>
+                            <div class="fs-12 text-muted">{{current_plan.description}}</div>
+                        </div>
+                        <div class="my-3 my-xxl-0 my-md-3 my-md-0">
+                            <div class="fs-12 text-muted mt-1">Billed Monthly for</div>
+                            <div class="fs-20 text-dark"><span class="fw-bold">${{current_plan.price}}</span></div>
+                        </div>
+                        {% comment %} <div class="hstack gap-3">
+                            <a href="javascript:void(0);" class="text-danger">Cancel Plan</a>
+                            <a href="javascript:void(0);" class="btn btn-light-brand">Update Plan</a>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+              
+              <div class="row">
+                {% for plan in plans %}
+                 <div class="col-xxl-4 col-xl-12 col-lg-4">
+                      <div class="p-4 mb-4 d-block bg-soft-100 border border-dashed border-gray-5 rounded-1 position-relative">
+                          <h6 class="fs-13 fw-bold text-uppercase">{{ plan.get_name_display }}</h6>
+                          <span class="fs-12 fw-normal text-muted">{{ plan.description }}</span>
+                          <span class="fs-12 fw-normal text-muted text-truncate-2-line">User Limit: {% if plan.user_limit == 0 %} Unlimited {% else %} {{plan.user_limit}} {% endif %}</span>
+                          <span class="fs-12 fw-normal text-muted text-truncate-2-line">Department Limit: {% if plan.department_limit == 0 %} Unlimited {% else %} {{plan.department_limit}} {% endif %}</span>
+                          <span class="fs-12 fw-normal text-muted text-truncate-2-line">Vulnerability Limit: {% if plan.vulnerability_limit == 0 %} Unlimited {% else %} {{plan.vulnerability_limit}} {% endif %}</span>
+                          <span class="fs-12 fw-normal text-muted text-truncate-2-line">Storage Limit: {% if plan.storage_limit == 0 %} Unlimited {% else %} {{plan.storage_limit}} {% endif %} GB</span>
+                          <span class="fs-12 fw-normal text-muted text-truncate-2-line">Dashboard Access: {{ plan.dashboard_access|yesno:"Yes,No" }}</span>
+                          <span class="fs-12 fw-normal text-muted text-truncate-2-line">API Access: {{ plan.api_access|yesno:"Yes,No" }}</span>
+                          <span class="fs-12 fw-normal text-muted text-truncate-2-line">Advanced Support: {{ plan.advanced_support|yesno:"Yes,No" }}</span>
+                          <div class="mt-4"><span class="fs-20 fw-bold text-dark">${{ plan.price }}</span> / <em class="fs-11 fw-medium">Month</em></div>
+                          {% if form.subscription_plan.value == plan.id %}
+                            <div class="position-absolute top-0 start-50 translate-middle">
+                                <i class="feather-check fs-12 bg-primary text-white p-1 rounded-circle"></i>
+                            </div>
+                          {% endif %}
+
+                          {% if form.subscription_plan.value == plan.id %}
+                            <div type="button" class="btn btn-secondary mt-4">
+                              Current Plan
+                            </div>
+                          {%else%}
+                            <button type="button" class="btn btn-primary mt-4 form-control" id="{{plan.id}}">
+                              Switch with this plan
+                            </button>
+                          {% endif %}
+                      
+                    </div>
+                  </div>
+                  {% endfor %}
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- [ Footer ] start -->
+        <footer class="footer sticky-bottom">
+          <p class="fs-11 text-muted fw-medium text-uppercase mb-0 copyright">
+            <span>{% trans "Copyright" %} ©</span>
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
+          <div class="d-flex align-items-center gap-4">
+            <a
+              href="javascript:void(0);"
+              class="fs-11 fw-semibold text-uppercase"
+              >{% trans "Help" %}</a
+            >
+            <a
+              href="javascript:void(0);"
+              class="fs-11 fw-semibold text-uppercase"
+              >{% trans "Terms" %}</a
+            >
+            <a
+              href="javascript:void(0);"
+              class="fs-11 fw-semibold text-uppercase"
+              >{% trans "Privacy" %}</a
+            >
+          </div>
+        </footer>
+        <!-- [ Footer ] end -->
+      </div>
+      <!-- [ Content Area ] end -->
+    </div>
+    <!-- [ Main Content ] end -->
+  </div>
+</main>
+<!--! ================================================================ !-->
+<!--! [End] Main Content !-->
+<!--! ================================================================ !-->
+{% endblock content %} 
+{% block components %} {% endblock components %} 
+{% block javascripts %}
+<!--! ================================================================ !-->
+<!--! BEGIN: Vendors JS !-->
+<script src="{% static 'assets/vendors/js/vendors.min.js' %}"></script>
+<!-- vendors.min.js' %} {always must need to be top} -->
+<script src="{% static 'assets/vendors/js/dataTables.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/dataTables.bs5.min.js' %}"></script>
+
+<script src="{% static 'assets/vendors/js/select2.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/select2-active.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/tagify.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/tagify-data.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/quill.min.js' %}"></script>
+<!--! END: Vendors JS !-->
+<!--! BEGIN: Apps Init  !-->
+<script src="{% static 'assets/js/common-init.min.js' %}"></script>
+<script src="{% static 'assets/js/payment-init.min.js' %}"></script>
+<script src="{% static 'assets/js/settings-init.min.js' %}"></script>
+<script src="{% static 'assets/js/apps-email-init.min.js' %}"></script>
+
+<script src="{% static 'assets/js/apps-storage-init.min.js' %}"></script>
+<!--! END: Apps Init !-->
+<!--! BEGIN: Theme Customizer  !-->
+<script src="{% static 'assets/js/projects-create-init.min.js' %}"></script>
+<script src="{% static 'assets/js/theme-customizer-init.min.js' %}"></script>
+<script src="{% static '/ckeditor/ckeditor/ckeditor.js' %}"></script>
+<script src="{% static '/ckeditor/ckeditor-init.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+<script>
+  // Function to display toast messages
+  function showToast(message, type) {
+    Toastify({
+        text: message,
+        duration: 5000,
+        close: true,
+        gravity: "top",
+        position: "right",
+        backgroundColor: type === 'success' ? "linear-gradient(to right, #00b09b, #96c93d)" : type === 'error' ? "linear-gradient(to right, #FF5F5F, #FF5F5F)" : "linear-gradient(to right, #1e40af, #1d4ed8)",
+    }).showToast();
+  }
+
+  // Display toast notifications if messages exist
+{% if messages %}
+    {% for message in messages %}
+        showToast("{{ message.message|safe }}", "{{ message.tags }}");
+    {% endfor %}
+{% endif %}
+</script>
+<script>
+const form = document.getElementById("tenantForm");
+const select = document.getElementById('id_subscription_plan');
+const buttons = form.querySelectorAll('button');
+
+// Add event listener to each button
+buttons.forEach(button => {
+    button.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent default button action
+
+        // Set the select value based on button ID
+        select.value = button.id;
+
+        // Optionally trigger a change event if you have listeners for it
+        const changeEvent = new Event('change');
+        select.dispatchEvent(changeEvent);
+
+        // Submit the form after changing the select value
+        form.submit();
+    });
+});
+
+// Add change event listener to the select element
+select.addEventListener('change', () => {
+    // Only submit if the select value is valid (not empty)
+    if (select.value) {
+        form.submit();
+    }
+});
+</script>
+<script>
+  document
+    .getElementById("company_logo")
+    .addEventListener("change", function (event) {
+      var preview = document.getElementById("profile-picture-preview");
+      var file = event.target.files[0];
+      var company_logo =
+        "/media/{{ user.profile.company_logo }}" ||
+        "/static/assets/images/avatar/1.png";
+
+      if (file) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+          preview.src = e.target.result;
+        };
+
+        reader.readAsDataURL(file);
+      } else {
+        preview.src = company_logo;
+      }
+    });
+</script>
+<!--! END: Theme Customizer !-->
+{% endblock javascripts %}

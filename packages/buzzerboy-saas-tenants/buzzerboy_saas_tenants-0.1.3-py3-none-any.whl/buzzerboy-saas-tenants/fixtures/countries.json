@@ -1,0 +1,2082 @@
+[
+    {
+        "model": "apps_localization.Country",
+        "pk": 1,
+        "fields": {
+            "name": "Ascension Island",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ac.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 2,
+        "fields": {
+            "name": "Andorra",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ad.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 3,
+        "fields": {
+            "name": "United Arab Emirates",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ae.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 4,
+        "fields": {
+            "name": "Afghanistan",
+            "flag_url": "static/assets/vendors/img/flags/4x3/af.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 5,
+        "fields": {
+            "name": "Antigua and Barbuda",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ag.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 6,
+        "fields": {
+            "name": "Anguilla",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ai.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 7,
+        "fields": {
+            "name": "Albania",
+            "flag_url": "static/assets/vendors/img/flags/4x3/al.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 8,
+        "fields": {
+            "name": "Armenia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/am.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 9,
+        "fields": {
+            "name": "Angola",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ao.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 10,
+        "fields": {
+            "name": "Antarctica",
+            "flag_url": "static/assets/vendors/img/flags/4x3/aq.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 11,
+        "fields": {
+            "name": "Argentina",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ar.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 12,
+        "fields": {
+            "name": "American Samoa",
+            "flag_url": "static/assets/vendors/img/flags/4x3/as.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 13,
+        "fields": {
+            "name": "Austria",
+            "flag_url": "static/assets/vendors/img/flags/4x3/at.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 14,
+        "fields": {
+            "name": "Australia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/au.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 15,
+        "fields": {
+            "name": "Aruba",
+            "flag_url": "static/assets/vendors/img/flags/4x3/aw.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 16,
+        "fields": {
+            "name": "Åland Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ax.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 17,
+        "fields": {
+            "name": "Azerbaijan",
+            "flag_url": "static/assets/vendors/img/flags/4x3/az.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 18,
+        "fields": {
+            "name": "Bosnia and Herzegovina",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ba.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 19,
+        "fields": {
+            "name": "Barbados",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bb.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 20,
+        "fields": {
+            "name": "Bangladesh",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bd.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 21,
+        "fields": {
+            "name": "Belgium",
+            "flag_url": "static/assets/vendors/img/flags/4x3/be.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 22,
+        "fields": {
+            "name": "Burkina Faso",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bf.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 23,
+        "fields": {
+            "name": "Bulgaria",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bg.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 24,
+        "fields": {
+            "name": "Bahrain",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bh.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 25,
+        "fields": {
+            "name": "Burundi",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bi.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 26,
+        "fields": {
+            "name": "Benin",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bj.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 27,
+        "fields": {
+            "name": "Saint Barthélemy",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bl.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 28,
+        "fields": {
+            "name": "Bermuda",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bm.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 29,
+        "fields": {
+            "name": "Brunei",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bn.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 30,
+        "fields": {
+            "name": "Bolivia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bo.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 31,
+        "fields": {
+            "name": "Caribbean Netherlands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bq.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 32,
+        "fields": {
+            "name": "Brazil",
+            "flag_url": "static/assets/vendors/img/flags/4x3/br.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 33,
+        "fields": {
+            "name": "Bahamas",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bs.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 34,
+        "fields": {
+            "name": "Bhutan",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bt.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 35,
+        "fields": {
+            "name": "Bouvet Island",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bv.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 36,
+        "fields": {
+            "name": "Botswana",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bw.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 37,
+        "fields": {
+            "name": "Belarus",
+            "flag_url": "static/assets/vendors/img/flags/4x3/by.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 38,
+        "fields": {
+            "name": "Belize",
+            "flag_url": "static/assets/vendors/img/flags/4x3/bz.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 39,
+        "fields": {
+            "name": "Canada",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ca.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 40,
+        "fields": {
+            "name": "Cocos (Keeling) Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cc.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 41,
+        "fields": {
+            "name": "Democratic Republic of the Congo",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cd.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 42,
+        "fields": {
+            "name": "Central European Free Trade Agreement",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cefta.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 43,
+        "fields": {
+            "name": "Central African Republic",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cf.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 44,
+        "fields": {
+            "name": "Republic of the Congo",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cg.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 45,
+        "fields": {
+            "name": "Switzerland",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ch.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 46,
+        "fields": {
+            "name": "Ivory Coast",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ci.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 47,
+        "fields": {
+            "name": "Cook Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ck.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 48,
+        "fields": {
+            "name": "Chile",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cl.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 49,
+        "fields": {
+            "name": "Cameroon",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cm.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 50,
+        "fields": {
+            "name": "China",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cn.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 51,
+        "fields": {
+            "name": "Colombia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/co.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 52,
+        "fields": {
+            "name": "Clipperton Island",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cp.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 53,
+        "fields": {
+            "name": "Costa Rica",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cr.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 54,
+        "fields": {
+            "name": "Cuba",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cu.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 55,
+        "fields": {
+            "name": "Cape Verde",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cv.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 56,
+        "fields": {
+            "name": "Curaçao",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cw.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 57,
+        "fields": {
+            "name": "Christmas Island",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cx.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 58,
+        "fields": {
+            "name": "Cyprus",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cy.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 59,
+        "fields": {
+            "name": "Czech Republic",
+            "flag_url": "static/assets/vendors/img/flags/4x3/cz.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 60,
+        "fields": {
+            "name": "Germany",
+            "flag_url": "static/assets/vendors/img/flags/4x3/de.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 61,
+        "fields": {
+            "name": "Diego Garcia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/dg.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 62,
+        "fields": {
+            "name": "Djibouti",
+            "flag_url": "static/assets/vendors/img/flags/4x3/dj.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 63,
+        "fields": {
+            "name": "Denmark",
+            "flag_url": "static/assets/vendors/img/flags/4x3/dk.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 64,
+        "fields": {
+            "name": "Dominica",
+            "flag_url": "static/assets/vendors/img/flags/4x3/dm.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 65,
+        "fields": {
+            "name": "Dominican Republic",
+            "flag_url": "static/assets/vendors/img/flags/4x3/do.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 66,
+        "fields": {
+            "name": "Algeria",
+            "flag_url": "static/assets/vendors/img/flags/4x3/dz.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 67,
+        "fields": {
+            "name": "Ceuta",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ea.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 68,
+        "fields": {
+            "name": "Ecuador",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ec.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 69,
+        "fields": {
+            "name": "Estonia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ee.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 70,
+        "fields": {
+            "name": "Egypt",
+            "flag_url": "static/assets/vendors/img/flags/4x3/eg.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 71,
+        "fields": {
+            "name": "Western Sahara",
+            "flag_url": "static/assets/vendors/img/flags/4x3/eh.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 72,
+        "fields": {
+            "name": "Eritrea",
+            "flag_url": "static/assets/vendors/img/flags/4x3/er.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 73,
+        "fields": {
+            "name": "Spain",
+            "flag_url": "static/assets/vendors/img/flags/4x3/es.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 74,
+        "fields": {
+            "name": "Ethiopia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/et.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 75,
+        "fields": {
+            "name": "European Union",
+            "flag_url": "static/assets/vendors/img/flags/4x3/eu.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 76,
+        "fields": {
+            "name": "Finland",
+            "flag_url": "static/assets/vendors/img/flags/4x3/fi.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 77,
+        "fields": {
+            "name": "Fiji",
+            "flag_url": "static/assets/vendors/img/flags/4x3/fj.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 78,
+        "fields": {
+            "name": "Falkland Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/fk.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 79,
+        "fields": {
+            "name": "Micronesia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/fm.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 80,
+        "fields": {
+            "name": "Faroe Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/fo.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 81,
+        "fields": {
+            "name": "France",
+            "flag_url": "static/assets/vendors/img/flags/4x3/fr.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 82,
+        "fields": {
+            "name": "Gabon",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ga.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 83,
+        "fields": {
+            "name": "United Kingdom",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gb.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 84,
+        "fields": {
+            "name": "Grenada",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gd.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 85,
+        "fields": {
+            "name": "Georgia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ge.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 86,
+        "fields": {
+            "name": "French Guiana",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gf.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 87,
+        "fields": {
+            "name": "Guernsey",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gg.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 88,
+        "fields": {
+            "name": "Ghana",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gh.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 89,
+        "fields": {
+            "name": "Gibraltar",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gi.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 90,
+        "fields": {
+            "name": "Greenland",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gl.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 91,
+        "fields": {
+            "name": "Gambia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gm.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 92,
+        "fields": {
+            "name": "Guinea",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gn.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 93,
+        "fields": {
+            "name": "Guadeloupe",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gp.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 94,
+        "fields": {
+            "name": "Equatorial Guinea",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gq.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 95,
+        "fields": {
+            "name": "Greece",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gr.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 96,
+        "fields": {
+            "name": "South Georgia and the South Sandwich Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gs.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 97,
+        "fields": {
+            "name": "Guatemala",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gt.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 98,
+        "fields": {
+            "name": "Guam",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gu.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 99,
+        "fields": {
+            "name": "Guinea-Bissau",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gw.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 100,
+        "fields": {
+            "name": "Guyana",
+            "flag_url": "static/assets/vendors/img/flags/4x3/gy.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 101,
+        "fields": {
+            "name": "Hong Kong",
+            "flag_url": "static/assets/vendors/img/flags/4x3/hk.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 102,
+        "fields": {
+            "name": "Heard Island and McDonald Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/hm.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 103,
+        "fields": {
+            "name": "Honduras",
+            "flag_url": "static/assets/vendors/img/flags/4x3/hn.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 104,
+        "fields": {
+            "name": "Croatia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/hr.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 105,
+        "fields": {
+            "name": "Haiti",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ht.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 106,
+        "fields": {
+            "name": "Hungary",
+            "flag_url": "static/assets/vendors/img/flags/4x3/hu.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 107,
+        "fields": {
+            "name": "Canary Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ic.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 108,
+        "fields": {
+            "name": "Indonesia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/id.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 109,
+        "fields": {
+            "name": "Ireland",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ie.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 110,
+        "fields": {
+            "name": "Israel",
+            "flag_url": "static/assets/vendors/img/flags/4x3/il.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 111,
+        "fields": {
+            "name": "Isle of Man",
+            "flag_url": "static/assets/vendors/img/flags/4x3/im.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 112,
+        "fields": {
+            "name": "India",
+            "flag_url": "static/assets/vendors/img/flags/4x3/in.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 113,
+        "fields": {
+            "name": "British Indian Ocean Territory",
+            "flag_url": "static/assets/vendors/img/flags/4x3/io.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 114,
+        "fields": {
+            "name": "Iraq",
+            "flag_url": "static/assets/vendors/img/flags/4x3/iq.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 115,
+        "fields": {
+            "name": "Iran",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ir.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 116,
+        "fields": {
+            "name": "Iceland",
+            "flag_url": "static/assets/vendors/img/flags/4x3/is.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 117,
+        "fields": {
+            "name": "Italy",
+            "flag_url": "static/assets/vendors/img/flags/4x3/it.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 118,
+        "fields": {
+            "name": "Jersey",
+            "flag_url": "static/assets/vendors/img/flags/4x3/je.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 119,
+        "fields": {
+            "name": "Jamaica",
+            "flag_url": "static/assets/vendors/img/flags/4x3/jm.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 120,
+        "fields": {
+            "name": "Jordan",
+            "flag_url": "static/assets/vendors/img/flags/4x3/jo.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 121,
+        "fields": {
+            "name": "Japan",
+            "flag_url": "static/assets/vendors/img/flags/4x3/jp.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 122,
+        "fields": {
+            "name": "Kenya",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ke.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 123,
+        "fields": {
+            "name": "Kyrgyzstan",
+            "flag_url": "static/assets/vendors/img/flags/4x3/kg.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 124,
+        "fields": {
+            "name": "Cambodia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/kh.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 125,
+        "fields": {
+            "name": "Kiribati",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ki.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 126,
+        "fields": {
+            "name": "Comoros",
+            "flag_url": "static/assets/vendors/img/flags/4x3/km.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 127,
+        "fields": {
+            "name": "Saint Kitts and Nevis",
+            "flag_url": "static/assets/vendors/img/flags/4x3/kn.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 128,
+        "fields": {
+            "name": "North Korea",
+            "flag_url": "static/assets/vendors/img/flags/4x3/kp.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 129,
+        "fields": {
+            "name": "South Korea",
+            "flag_url": "static/assets/vendors/img/flags/4x3/kr.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 130,
+        "fields": {
+            "name": "Kuwait",
+            "flag_url": "static/assets/vendors/img/flags/4x3/kw.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 131,
+        "fields": {
+            "name": "Cayman Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ky.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 132,
+        "fields": {
+            "name": "Kazakhstan",
+            "flag_url": "static/assets/vendors/img/flags/4x3/kz.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 133,
+        "fields": {
+            "name": "Laos",
+            "flag_url": "static/assets/vendors/img/flags/4x3/la.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 134,
+        "fields": {
+            "name": "Lebanon",
+            "flag_url": "static/assets/vendors/img/flags/4x3/lb.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 135,
+        "fields": {
+            "name": "Saint Lucia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/lc.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 136,
+        "fields": {
+            "name": "Liechtenstein",
+            "flag_url": "static/assets/vendors/img/flags/4x3/li.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 137,
+        "fields": {
+            "name": "Sri Lanka",
+            "flag_url": "static/assets/vendors/img/flags/4x3/lk.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 138,
+        "fields": {
+            "name": "Liberia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/lr.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 139,
+        "fields": {
+            "name": "Lesotho",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ls.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 140,
+        "fields": {
+            "name": "Lithuania",
+            "flag_url": "static/assets/vendors/img/flags/4x3/lt.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 141,
+        "fields": {
+            "name": "Luxembourg",
+            "flag_url": "static/assets/vendors/img/flags/4x3/lu.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 142,
+        "fields": {
+            "name": "Latvia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/lv.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 143,
+        "fields": {
+            "name": "Libya",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ly.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 144,
+        "fields": {
+            "name": "Morocco",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ma.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 145,
+        "fields": {
+            "name": "Monaco",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mc.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 146,
+        "fields": {
+            "name": "Moldova",
+            "flag_url": "static/assets/vendors/img/flags/4x3/md.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 147,
+        "fields": {
+            "name": "Montenegro",
+            "flag_url": "static/assets/vendors/img/flags/4x3/me.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 148,
+        "fields": {
+            "name": "Saint Martin",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mf.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 149,
+        "fields": {
+            "name": "Madagascar",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mg.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 150,
+        "fields": {
+            "name": "Marshall Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mh.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 151,
+        "fields": {
+            "name": "North Macedonia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mk.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 152,
+        "fields": {
+            "name": "Mali",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ml.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 153,
+        "fields": {
+            "name": "Myanmar",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mm.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 154,
+        "fields": {
+            "name": "Mongolia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mn.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 155,
+        "fields": {
+            "name": "Macau",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mo.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 156,
+        "fields": {
+            "name": "Northern Mariana Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mp.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 157,
+        "fields": {
+            "name": "Martinique",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mq.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 158,
+        "fields": {
+            "name": "Mauritania",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mr.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 159,
+        "fields": {
+            "name": "Montserrat",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ms.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 160,
+        "fields": {
+            "name": "Malta",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mt.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 161,
+        "fields": {
+            "name": "Mauritius",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mu.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 162,
+        "fields": {
+            "name": "Maldives",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mv.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 163,
+        "fields": {
+            "name": "Malawi",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mw.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 164,
+        "fields": {
+            "name": "Mexico",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mx.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 165,
+        "fields": {
+            "name": "Malaysia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/my.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 166,
+        "fields": {
+            "name": "Mozambique",
+            "flag_url": "static/assets/vendors/img/flags/4x3/mz.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 167,
+        "fields": {
+            "name": "Namibia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/na.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 168,
+        "fields": {
+            "name": "New Caledonia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/nc.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 169,
+        "fields": {
+            "name": "Niger",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ne.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 170,
+        "fields": {
+            "name": "Norfolk Island",
+            "flag_url": "static/assets/vendors/img/flags/4x3/nf.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 171,
+        "fields": {
+            "name": "Nigeria",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ng.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 172,
+        "fields": {
+            "name": "Nicaragua",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ni.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 173,
+        "fields": {
+            "name": "Netherlands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/nl.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 174,
+        "fields": {
+            "name": "Norway",
+            "flag_url": "static/assets/vendors/img/flags/4x3/no.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 175,
+        "fields": {
+            "name": "Nepal",
+            "flag_url": "static/assets/vendors/img/flags/4x3/np.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 176,
+        "fields": {
+            "name": "Nauru",
+            "flag_url": "static/assets/vendors/img/flags/4x3/nr.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 177,
+        "fields": {
+            "name": "Niue",
+            "flag_url": "static/assets/vendors/img/flags/4x3/nu.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 178,
+        "fields": {
+            "name": "New Zealand",
+            "flag_url": "static/assets/vendors/img/flags/4x3/nz.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 179,
+        "fields": {
+            "name": "Oman",
+            "flag_url": "static/assets/vendors/img/flags/4x3/om.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 180,
+        "fields": {
+            "name": "Panama",
+            "flag_url": "static/assets/vendors/img/flags/4x3/pa.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 181,
+        "fields": {
+            "name": "Peru",
+            "flag_url": "static/assets/vendors/img/flags/4x3/pe.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 182,
+        "fields": {
+            "name": "French Polynesia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/pf.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 183,
+        "fields": {
+            "name": "Papua New Guinea",
+            "flag_url": "static/assets/vendors/img/flags/4x3/pg.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 184,
+        "fields": {
+            "name": "Philippines",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ph.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 185,
+        "fields": {
+            "name": "Pakistan",
+            "flag_url": "static/assets/vendors/img/flags/4x3/pk.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 186,
+        "fields": {
+            "name": "Poland",
+            "flag_url": "static/assets/vendors/img/flags/4x3/pl.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 187,
+        "fields": {
+            "name": "Saint Pierre and Miquelon",
+            "flag_url": "static/assets/vendors/img/flags/4x3/pm.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 188,
+        "fields": {
+            "name": "Pitcairn Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/pn.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 189,
+        "fields": {
+            "name": "Puerto Rico",
+            "flag_url": "static/assets/vendors/img/flags/4x3/pr.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 190,
+        "fields": {
+            "name": "Palestine",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ps.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 191,
+        "fields": {
+            "name": "Portugal",
+            "flag_url": "static/assets/vendors/img/flags/4x3/pt.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 192,
+        "fields": {
+            "name": "Palau",
+            "flag_url": "static/assets/vendors/img/flags/4x3/pw.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 193,
+        "fields": {
+            "name": "Paraguay",
+            "flag_url": "static/assets/vendors/img/flags/4x3/py.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 194,
+        "fields": {
+            "name": "Qatar",
+            "flag_url": "static/assets/vendors/img/flags/4x3/qa.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 195,
+        "fields": {
+            "name": "Réunion",
+            "flag_url": "static/assets/vendors/img/flags/4x3/re.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 196,
+        "fields": {
+            "name": "Romania",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ro.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 197,
+        "fields": {
+            "name": "Serbia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/rs.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 198,
+        "fields": {
+            "name": "Russia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ru.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 199,
+        "fields": {
+            "name": "Rwanda",
+            "flag_url": "static/assets/vendors/img/flags/4x3/rw.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 200,
+        "fields": {
+            "name": "Saudi Arabia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sa.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 201,
+        "fields": {
+            "name": "Solomon Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sb.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 202,
+        "fields": {
+            "name": "Seychelles",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sc.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 203,
+        "fields": {
+            "name": "Sudan",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sd.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 204,
+        "fields": {
+            "name": "Sweden",
+            "flag_url": "static/assets/vendors/img/flags/4x3/se.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 205,
+        "fields": {
+            "name": "Singapore",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sg.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 206,
+        "fields": {
+            "name": "Saint Helena",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sh.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 207,
+        "fields": {
+            "name": "Slovenia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/si.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 208,
+        "fields": {
+            "name": "Svalbard and Jan Mayen",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sj.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 209,
+        "fields": {
+            "name": "Slovakia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sk.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 210,
+        "fields": {
+            "name": "Sierra Leone",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sl.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 211,
+        "fields": {
+            "name": "San Marino",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sm.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 212,
+        "fields": {
+            "name": "Senegal",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sn.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 213,
+        "fields": {
+            "name": "Somalia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/so.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 214,
+        "fields": {
+            "name": "Suriname",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sr.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 215,
+        "fields": {
+            "name": "South Sudan",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ss.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 216,
+        "fields": {
+            "name": "Sao Tome and Principe",
+            "flag_url": "static/assets/vendors/img/flags/4x3/st.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 217,
+        "fields": {
+            "name": "El Salvador",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sv.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 218,
+        "fields": {
+            "name": "Sint Maarten",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sx.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 219,
+        "fields": {
+            "name": "Syria",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sy.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 220,
+        "fields": {
+            "name": "Eswatini",
+            "flag_url": "static/assets/vendors/img/flags/4x3/sz.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 221,
+        "fields": {
+            "name": "Tanzania",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ta.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 222,
+        "fields": {
+            "name": "Turks and Caicos Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/tc.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 223,
+        "fields": {
+            "name": "Chad",
+            "flag_url": "static/assets/vendors/img/flags/4x3/td.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 224,
+        "fields": {
+            "name": "French Southern Territories",
+            "flag_url": "static/assets/vendors/img/flags/4x3/tf.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 225,
+        "fields": {
+            "name": "Togo",
+            "flag_url": "static/assets/vendors/img/flags/4x3/tg.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 226,
+        "fields": {
+            "name": "Thailand",
+            "flag_url": "static/assets/vendors/img/flags/4x3/th.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 227,
+        "fields": {
+            "name": "Tajikistan",
+            "flag_url": "static/assets/vendors/img/flags/4x3/tj.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 228,
+        "fields": {
+            "name": "Tokelau",
+            "flag_url": "static/assets/vendors/img/flags/4x3/tk.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 229,
+        "fields": {
+            "name": "Timor-Leste",
+            "flag_url": "static/assets/vendors/img/flags/4x3/tl.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 230,
+        "fields": {
+            "name": "Turkmenistan",
+            "flag_url": "static/assets/vendors/img/flags/4x3/tm.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 231,
+        "fields": {
+            "name": "Tunisia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/tn.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 232,
+        "fields": {
+            "name": "Tonga",
+            "flag_url": "static/assets/vendors/img/flags/4x3/to.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 233,
+        "fields": {
+            "name": "Turkey",
+            "flag_url": "static/assets/vendors/img/flags/4x3/tr.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 234,
+        "fields": {
+            "name": "Trinidad and Tobago",
+            "flag_url": "static/assets/vendors/img/flags/4x3/tt.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 235,
+        "fields": {
+            "name": "Tuvalu",
+            "flag_url": "static/assets/vendors/img/flags/4x3/tv.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 236,
+        "fields": {
+            "name": "Taiwan",
+            "flag_url": "static/assets/vendors/img/flags/4x3/tw.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 237,
+        "fields": {
+            "name": "Tanzania",
+            "flag_url": "static/assets/vendors/img/flags/4x3/tz.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 238,
+        "fields": {
+            "name": "Ukraine",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ua.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 239,
+        "fields": {
+            "name": "Uganda",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ug.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 240,
+        "fields": {
+            "name": "United States Minor Outlying Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/um.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 241,
+        "fields": {
+            "name": "United Nations",
+            "flag_url": "static/assets/vendors/img/flags/4x3/un.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 242,
+        "fields": {
+            "name": "United States",
+            "flag_url": "static/assets/vendors/img/flags/4x3/us.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 243,
+        "fields": {
+            "name": "Uruguay",
+            "flag_url": "static/assets/vendors/img/flags/4x3/uy.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 244,
+        "fields": {
+            "name": "Uzbekistan",
+            "flag_url": "static/assets/vendors/img/flags/4x3/uz.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 245,
+        "fields": {
+            "name": "Vatican City",
+            "flag_url": "static/assets/vendors/img/flags/4x3/va.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 246,
+        "fields": {
+            "name": "Saint Vincent and the Grenadines",
+            "flag_url": "static/assets/vendors/img/flags/4x3/vc.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 247,
+        "fields": {
+            "name": "Venezuela",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ve.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 248,
+        "fields": {
+            "name": "British Virgin Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/vg.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 249,
+        "fields": {
+            "name": "U.S. Virgin Islands",
+            "flag_url": "static/assets/vendors/img/flags/4x3/vi.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 250,
+        "fields": {
+            "name": "Vietnam",
+            "flag_url": "static/assets/vendors/img/flags/4x3/vn.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 251,
+        "fields": {
+            "name": "Vanuatu",
+            "flag_url": "static/assets/vendors/img/flags/4x3/vu.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 252,
+        "fields": {
+            "name": "Wallis and Futuna",
+            "flag_url": "static/assets/vendors/img/flags/4x3/wf.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 253,
+        "fields": {
+            "name": "Samoa",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ws.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 254,
+        "fields": {
+            "name": "Kosovo",
+            "flag_url": "static/assets/vendors/img/flags/4x3/xk.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 255,
+        "fields": {
+            "name": "Not applicable",
+            "flag_url": "static/assets/vendors/img/flags/4x3/xx.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 256,
+        "fields": {
+            "name": "Yemen",
+            "flag_url": "static/assets/vendors/img/flags/4x3/ye.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 257,
+        "fields": {
+            "name": "Mayotte",
+            "flag_url": "static/assets/vendors/img/flags/4x3/yt.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 258,
+        "fields": {
+            "name": "South Africa",
+            "flag_url": "static/assets/vendors/img/flags/4x3/za.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 259,
+        "fields": {
+            "name": "Zambia",
+            "flag_url": "static/assets/vendors/img/flags/4x3/zm.svg"
+        }
+    },
+    {
+        "model": "apps_localization.Country",
+        "pk": 260,
+        "fields": {
+            "name": "Zimbabwe",
+            "flag_url": "static/assets/vendors/img/flags/4x3/zw.svg"
+        }
+    }
+]

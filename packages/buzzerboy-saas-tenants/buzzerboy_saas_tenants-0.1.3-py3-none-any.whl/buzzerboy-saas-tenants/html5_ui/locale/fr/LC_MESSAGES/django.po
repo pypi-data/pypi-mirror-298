@@ -1,0 +1,2507 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-10 15:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: apps/authentication/forms.py:23 apps/authentication/forms.py:26
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: apps/authentication/forms.py:32 apps/authentication/forms.py:36
+msgid "Password"
+msgstr "Mot de passe"
+
+#: apps/authentication/forms.py:51 html5_ui/pages/home/teams/invites.html:65
+msgid "Email"
+msgstr "E-mail"
+
+#: apps/authentication/forms.py:54
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1915
+msgid "Email address"
+msgstr "Adresse e-mail"
+
+#: apps/authentication/forms.py:74 apps/authentication/forms.py:83
+#: apps/authentication/forms.py:85 apps/authentication/forms.py:135
+#: apps/authentication/forms.py:137
+msgid "Confirm New Password"
+msgstr "Confirmez le nouveau mot de passe"
+
+#: apps/authentication/forms.py:76 apps/authentication/forms.py:124
+#: apps/authentication/forms.py:126
+msgid "New Password"
+msgstr "Nouveau mot de passe"
+
+#: apps/authentication/forms.py:94
+msgid "The two password fields must match."
+msgstr "Les deux champs de mot de passe doivent correspondre."
+
+#: apps/authentication/forms.py:112 apps/authentication/forms.py:114
+msgid "Old Password"
+msgstr "Ancien mot de passe"
+
+#: apps/authentication/views.py:112 apps/home/views.py:345
+#: apps/home/views.py:361 apps/home/views.py:404 apps/home/views.py:446
+#: html5_ui/includes/navigation.html:52
+#: html5_ui/pages/home/account_settings/change-password.html:21
+#: html5_ui/pages/home/account_settings/edit-profile.html:21
+#: html5_ui/pages/home/account_settings/user-info.html:22
+msgid "Account Settings"
+msgstr "Paramètres du compte"
+
+#: apps/authentication/views.py:113 apps/home/views.py:447
+#: html5_ui/includes/accountsettingsnav.html:19
+#: html5_ui/includes/header.html:329
+#: html5_ui/pages/authentication/password-reset-confirm.html:34
+msgid "Change Password"
+msgstr "Changer le mot de passe"
+
+#: apps/home/forms.py:69 apps/home/forms.py:138 apps/home/forms.py:252
+#: html5_ui/pages/home/account_settings/edit-profile.html:117
+msgid "First Name"
+msgstr "Prénom"
+
+#: apps/home/forms.py:70 apps/home/forms.py:139 apps/home/forms.py:253
+msgid "Last Name"
+msgstr "Nom de famille"
+
+#: apps/home/forms.py:77 apps/home/forms.py:141
+msgid "Phone Number"
+msgstr "Numéro de téléphone"
+
+#: apps/home/forms.py:78 apps/home/forms.py:142
+msgid "Address"
+msgstr "Adresse"
+
+#: apps/home/forms.py:79 apps/home/forms.py:143 apps/home/forms.py:409
+msgid "City"
+msgstr "Ville"
+
+#: apps/home/forms.py:81 apps/home/forms.py:145 apps/home/forms.py:410
+msgid "Postal Code"
+msgstr "Code postal"
+
+#: apps/home/forms.py:83 apps/home/forms.py:147
+#: html5_ui/pages/home/account_settings/edit-profile.html:262
+msgid "Job Title"
+msgstr "Titre de poste"
+
+#: apps/home/forms.py:84 apps/home/forms.py:148
+#: html5_ui/pages/home/account_settings/edit-profile.html:277
+msgid "Company"
+msgstr "Entreprise"
+
+#: apps/home/forms.py:85 apps/home/forms.py:149
+#: html5_ui/pages/home/account_settings/edit-profile.html:292
+msgid "Website"
+msgstr "Site web"
+
+#: apps/home/forms.py:86 apps/home/forms.py:150
+#: html5_ui/pages/home/account_settings/edit-profile.html:307
+msgid "LinkedIn Profile"
+msgstr "Profil LinkedIn"
+
+#: apps/home/forms.py:87 apps/home/forms.py:151
+msgid "GitHub Profile"
+msgstr "Profil GitHub"
+
+#: apps/home/forms.py:140
+#: html5_ui/pages/home/account_settings/edit-profile.html:82
+msgid "Profile Picture"
+msgstr "Photo de profil"
+
+#: apps/home/forms.py:144 apps/home/forms.py:411
+msgid "State/Province"
+msgstr "État/Province"
+
+#: apps/home/forms.py:146 apps/home/forms.py:412
+msgid "Country"
+msgstr "Pays"
+
+#: apps/home/forms.py:152
+#: html5_ui/pages/home/account_settings/edit-profile.html:351
+msgid "Language"
+msgstr "Langue"
+
+#: apps/home/forms.py:153
+#: html5_ui/pages/home/account_settings/edit-profile.html:366
+#: html5_ui/pages/home/teams/index.html:61
+msgid "Timezone"
+msgstr "Fuseau horaire"
+
+#: apps/home/forms.py:154
+#: html5_ui/pages/home/account_settings/edit-profile.html:390
+msgid "Email Notifications"
+msgstr "Notifications par courrier électronique"
+
+#: apps/home/forms.py:155
+#: html5_ui/pages/home/account_settings/edit-profile.html:404
+msgid "SMS Notifications"
+msgstr "Notifications par SMS"
+
+#: apps/home/forms.py:156
+#: html5_ui/pages/home/account_settings/edit-profile.html:418
+msgid "Push Notifications"
+msgstr "Notifications push"
+
+#: apps/home/forms.py:157
+#: html5_ui/pages/home/account_settings/edit-profile.html:439
+msgid "Profile Visibility"
+msgstr "Visibilité du profil"
+
+#: apps/home/forms.py:158
+#: html5_ui/pages/home/account_settings/edit-profile.html:452
+msgid "Search Engine Indexing"
+msgstr "Indexation par les moteurs de recherche"
+
+#: apps/home/forms.py:159
+#: html5_ui/pages/home/account_settings/edit-profile.html:465
+msgid "Data Sharing"
+msgstr "Partage des données"
+
+#: apps/home/forms.py:160
+#: html5_ui/pages/home/account_settings/edit-profile.html:489
+msgid "Bio"
+msgstr "Biographie"
+
+#: apps/home/forms.py:161
+#: html5_ui/pages/home/account_settings/edit-profile.html:504
+msgid "Interests"
+msgstr "Intérêts"
+
+#: apps/home/forms.py:162
+#: html5_ui/pages/home/account_settings/edit-profile.html:519
+msgid "Skills"
+msgstr "Compétences"
+
+#: apps/home/forms.py:163
+#: html5_ui/pages/home/account_settings/edit-profile.html:534
+msgid "Education"
+msgstr "Éducation"
+
+#: apps/home/forms.py:164
+#: html5_ui/pages/home/account_settings/edit-profile.html:550
+msgid "Experience"
+msgstr "Expérience"
+
+#: apps/home/forms.py:242
+msgid "Select Access Role"
+msgstr "Sélectionnez un rôle d'accès"
+
+#: apps/home/forms.py:243
+msgid "Enter email address"
+msgstr "Entrez l'adresse e-mail"
+
+#: apps/home/forms.py:244
+msgid "Enter first name"
+msgstr "Entrez le prénom"
+
+#: apps/home/forms.py:245
+msgid "Enter last name"
+msgstr "Entrez le nom de famille"
+
+#: apps/home/forms.py:246
+msgid "Enter notes"
+msgstr "Entrez des notes"
+
+#: apps/home/forms.py:250 html5_ui/pages/home/teams/invites.html:66
+msgid "Access Role"
+msgstr "Rôle d'accès"
+
+#: apps/home/forms.py:251
+#, fuzzy
+#| msgid "Email Address:"
+msgid "Email Address"
+msgstr "Adresse e-mail :"
+
+#: apps/home/forms.py:254
+msgid "Notes"
+msgstr "Remarques"
+
+#: apps/home/forms.py:255
+msgid "Expiration Date"
+msgstr "Date d'expiration"
+
+#: apps/home/forms.py:276
+msgid "An invite with this email already exists."
+msgstr "Une invitation avec cet e-mail existe déjà."
+
+#: apps/home/forms.py:295
+msgid "User is already part of the team."
+msgstr "L'utilisateur fait déjà partie de l'équipe."
+
+#: apps/home/forms.py:300
+msgid "Team Member Invitation"
+msgstr "Invitation d'un membre de l'équipe"
+
+#: apps/home/forms.py:338
+msgid "Enter Subject Title"
+msgstr "Entrez le titre du sujet"
+
+#: apps/home/forms.py:348
+msgid "Invite Email Subject"
+msgstr "Objet de l'e-mail d'invitation"
+
+#: apps/home/forms.py:349
+msgid "Invite Email Template"
+msgstr "Modèle d'e-mail d'invitation"
+
+#: apps/home/forms.py:403
+msgid "Company Name"
+msgstr "Nom de l'entreprise"
+
+#: apps/home/forms.py:404
+msgid "Subdomain"
+msgstr "Sous-domaine"
+
+#: apps/home/forms.py:405
+msgid "Support Email"
+msgstr "E-mail de support"
+
+#: apps/home/forms.py:406
+msgid "Company Slogan"
+msgstr "Slogan de l'entreprise"
+
+#: apps/home/forms.py:407
+msgid "Website URL"
+msgstr "URL du site web"
+
+#: apps/home/forms.py:408
+msgid "Company Address"
+msgstr "Adresse e-mail :"
+
+#: apps/home/forms.py:413
+msgid "Telephone"
+msgstr "Téléphone"
+
+#: apps/home/forms.py:414
+msgid "Fax"
+msgstr "Fax"
+
+#: apps/home/forms.py:415
+msgid "Contract Status"
+msgstr "Statut du contrat"
+
+#: apps/home/forms.py:416
+msgid "Primary Account Email"
+msgstr "Adresse e-mail du compte principal"
+
+#: apps/home/forms.py:417
+msgid "Primary Account Name"
+msgstr "Nom du compte principal"
+
+#: apps/home/forms.py:418
+msgid "Company Logo"
+msgstr "Logo de l'entreprise"
+
+#: apps/home/forms.py:419
+msgid "Billing Contact Name"
+msgstr "Nom du contact de facturation"
+
+#: apps/home/forms.py:420
+msgid "Billing Contact Address"
+msgstr "Adresse du contact de facturation"
+
+#: apps/home/forms.py:421
+msgid "Billing Contact City"
+msgstr "Ville de contact pour la facturation"
+
+#: apps/home/forms.py:422
+msgid "Billing Contact Postal Code"
+msgstr "Contact de facturation Code postal"
+
+#: apps/home/forms.py:423
+msgid "Billing Contact Country"
+msgstr "Pays du contact de facturation"
+
+#: apps/home/forms.py:424
+msgid "Billing Contact State/Province"
+msgstr "État/province du contact pour la facturation"
+
+#: apps/home/forms.py:425
+msgid "Billing Contact Email"
+msgstr "Adresse e-mail du contact de facturation"
+
+#: apps/home/forms.py:426
+msgid "Billing Contact Telephone"
+msgstr "Téléphone du contact de facturation"
+
+#: apps/home/forms.py:427
+msgid "Beta Features (CSV)"
+msgstr "Fonctionnalités bêta (CSV)"
+
+#: apps/home/forms.py:441
+msgid "Subdomain can only contain letters and numbers."
+msgstr "Le sous-domaine ne peut contenir que des lettres et des chiffres."
+
+#: apps/home/models.py:359
+msgid "Enabled"
+msgstr "Activé"
+
+#: apps/home/models.py:360
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: apps/home/models.py:361
+msgid "Invited"
+msgstr "Invité"
+
+#: apps/home/views.py:57 html5_ui/pages/home/profile/index.html:20
+#: html5_ui/pages/home/teams/index.html:16
+#: html5_ui/pages/home/teams/invite_form.html:18
+#: html5_ui/pages/home/teams/invites.html:16
+msgid "Home"
+msgstr "Accueil"
+
+#: apps/home/views.py:57
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: apps/home/views.py:78 html5_ui/includes/navigation.html:46
+#: html5_ui/pages/home/profile/index.html:55
+msgid "Profile"
+msgstr "Profil"
+
+#: apps/home/views.py:78 html5_ui/includes/header.html:325
+msgid "Profile Details"
+msgstr "Détails du profil"
+
+#: apps/home/views.py:109 apps/home/views.py:184 apps/home/views.py:260
+msgid "Team"
+msgstr "Équipe"
+
+#: apps/home/views.py:111
+msgid "Team Member List"
+msgstr "Liste des membres de l'équipe"
+
+#: apps/home/views.py:157 apps/home/views.py:234
+msgid "Invite sent successfully!"
+msgstr "Invitation envoyée avec succès !"
+
+#: apps/home/views.py:177
+msgid "Error in form submission. Please correct the errors."
+msgstr "Erreur lors de la soumission du formulaire. Veuillez corriger les erreurs."
+
+#: apps/home/views.py:186
+msgid "Team Invites"
+msgstr "Invitations d'équipe"
+
+#: apps/home/views.py:229
+msgid "You can't invite yourself to the team since you're already part of it."
+msgstr ""
+"Vous ne pouvez pas vous inviter dans l'équipe car vous en faites déjà partie."
+
+#: apps/home/views.py:262 html5_ui/pages/home/teams/invites.html:42
+msgid "Invite Team Member"
+msgstr "Inviter un membre de l'équipe"
+
+#: apps/home/views.py:308 apps/home/views.py:558 apps/home/views.py:575
+#: html5_ui/includes/navigation.html:76
+#: html5_ui/pages/home/organization_settings/index.html:35
+#: html5_ui/pages/home/organization_settings/organization-details.html:36
+msgid "Settings"
+msgstr "Paramètres"
+
+#: apps/home/views.py:309 html5_ui/pages/home/teams/invites.html:38
+msgid "Message Templates"
+msgstr "Modèles de message"
+
+#: apps/home/views.py:346 apps/home/views.py:362
+#: html5_ui/includes/accountsettingsnav.html:13
+#: html5_ui/pages/home/profile/index.html:35
+msgid "Edit Profile"
+msgstr "Modifier le profil"
+
+#: apps/home/views.py:405 html5_ui/includes/accountsettingsnav.html:7
+msgid "User Information"
+msgstr "Informations de l'utilisateur"
+
+#: apps/home/views.py:505
+msgid "User successfully activated."
+msgstr "Utilisateur activé avec succès."
+
+#: apps/home/views.py:506
+msgid ""
+"The user has been successfully activated. You can now explore other sections "
+"of our site."
+msgstr ""
+"L'utilisateur a été activé avec succès. Vous pouvez maintenant explorer "
+"d'autres sections de notre site."
+
+#: apps/home/views.py:515
+msgid "Invalid user token"
+msgstr "Jeton utilisateur invalide"
+
+#: apps/home/views.py:516
+msgid ""
+"The user token provided is invalid. Please double-check the token or request "
+"a new one to proceed."
+msgstr ""
+"Le jeton utilisateur fourni est invalide. Veuillez vérifier le jeton ou en "
+"demander un nouveau pour continuer."
+
+#: apps/home/views.py:559 apps/home/views.py:576
+#: html5_ui/includes/tenantsettingsnav.html:10
+msgid "Organization Details"
+msgstr "Détails de l'organisation"
+
+#: apps/home/views.py:567
+msgid "Please double-check your inputs. It seems some fields have errors."
+msgstr ""
+"Veuillez vérifier vos saisies. Il semble que certains champs contiennent des "
+"erreurs."
+
+#: core/settings.py:228 html5_ui/includes/header.html:120
+#: html5_ui/pages/home/profile/index.html:397
+msgid "English"
+msgstr "Anglais"
+
+#: core/settings.py:229 html5_ui/includes/header.html:132
+#: html5_ui/pages/home/profile/index.html:389
+msgid "French"
+msgstr "Français"
+
+#: env/lib/python3.11/site-packages/ckeditor_uploader/forms.py:6
+msgid "Search files"
+msgstr "Rechercher des fichiers"
+
+#: env/lib/python3.11/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:5
+msgid "Select an image to embed"
+msgstr "Sélectionnez une image à intégrer"
+
+#: env/lib/python3.11/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:27
+msgid "Browse for the image you want, then click 'Embed Image' to continue..."
+msgstr ""
+"Parcourez l'image que vous souhaitez, puis cliquez sur 'Intégrer l'image' "
+"pour continuer..."
+
+#: env/lib/python3.11/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:29
+msgid ""
+"No images found. Upload images using the 'Image Button' dialog's 'Upload' "
+"tab."
+msgstr ""
+"Aucune image trouvée. Téléchargez des images à l'aide de l'onglet "
+"'Télécharger' de la boîte de dialogue 'Bouton Image'."
+
+#: env/lib/python3.11/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:50
+msgid "Images in: "
+msgstr "Images dans : "
+
+#: env/lib/python3.11/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:62
+#: env/lib/python3.11/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:80
+msgid "Embed Image"
+msgstr "Intégrer l'image"
+
+#: env/lib/python3.11/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:146
+msgid "Play Slideshow"
+msgstr "Lancer le diaporama"
+
+#: env/lib/python3.11/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:147
+msgid "Pause Slideshow"
+msgstr "Mettre le diaporama en pause"
+
+#: env/lib/python3.11/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:148
+msgid "&lsaquo; Previous Photo"
+msgstr "&lsaquo; Photo précédente"
+
+#: env/lib/python3.11/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:149
+msgid "Next Photo &rsaquo;"
+msgstr "Photo suivante &rsaquo;"
+
+#: env/lib/python3.11/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:150
+msgid "Next &rsaquo;"
+msgstr "Suivant &rsaquo;"
+
+#: env/lib/python3.11/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:151
+msgid "&lsaquo; Prev"
+msgstr "&lsaquo; Précédent"
+
+#: env/lib/python3.11/site-packages/django/contrib/messages/apps.py:16
+msgid "Messages"
+msgstr "Messages"
+
+#: env/lib/python3.11/site-packages/django/contrib/sitemaps/apps.py:8
+msgid "Site Maps"
+msgstr "Plans du site"
+
+#: env/lib/python3.11/site-packages/django/contrib/staticfiles/apps.py:9
+msgid "Static Files"
+msgstr "Fichiers statiques"
+
+#: env/lib/python3.11/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr "Syndication"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: env/lib/python3.11/site-packages/django/core/paginator.py:30
+msgid "…"
+msgstr "…"
+
+#: env/lib/python3.11/site-packages/django/core/paginator.py:32
+msgid "That page number is not an integer"
+msgstr "Ce numéro de page n'est pas un entier"
+
+#: env/lib/python3.11/site-packages/django/core/paginator.py:33
+msgid "That page number is less than 1"
+msgstr "Ce numéro de page est inférieur à 1"
+
+#: env/lib/python3.11/site-packages/django/core/paginator.py:34
+msgid "That page contains no results"
+msgstr "Cette page ne contient aucun résultat"
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:22
+msgid "Enter a valid value."
+msgstr "Entrez une valeur valide."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:70
+msgid "Enter a valid domain name."
+msgstr "Entrez un nom de domaine valide."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:152
+#: env/lib/python3.11/site-packages/django/forms/fields.py:768
+msgid "Enter a valid URL."
+msgstr "Entrez une URL valide."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:213
+msgid "Enter a valid integer."
+msgstr "Entrez un entier valide."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:224
+msgid "Enter a valid email address."
+msgstr "Entrez une adresse email valide."
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: env/lib/python3.11/site-packages/django/core/validators.py:307
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+"Entrez un 'slug' valide composé de lettres, de chiffres, de traits de "
+"soulignement ou de tirets."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:315
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+"Entrez un 'slug' valide composé de lettres Unicode, de chiffres, de traits "
+"de soulignement ou de tirets."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:327
+#: env/lib/python3.11/site-packages/django/core/validators.py:336
+#: env/lib/python3.11/site-packages/django/core/validators.py:350
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2215
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr "Entrez une adresse %(protocol)s valide."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:329
+msgid "IPv4"
+msgstr "IPv4"
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:338
+#: env/lib/python3.11/site-packages/django/utils/ipv6.py:30
+msgid "IPv6"
+msgstr "IPv6"
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:352
+msgid "IPv4 or IPv6"
+msgstr "IPv4 ou IPv6"
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:393
+msgid "Enter only digits separated by commas."
+msgstr "Saisissez uniquement des chiffres séparés par des virgules."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:399
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+"Assurez-vous que cette valeur est %(limit_value)s (c'est %(show_value)s)."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:434
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+"Assurez-vous que cette valeur est inférieure ou égale à %(limit_value)s."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:443
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+"Assurez-vous que cette valeur est supérieure ou égale à %(limit_value)s."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:452
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr ""
+"Assurez-vous que cette valeur est un multiple de la taille de pas "
+"%(limit_value)s."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:459
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+"Assurez-vous que cette valeur est un multiple de la taille de pas "
+"%(limit_value)s, à partir de %(offset)s, par ex. %(offset)s, "
+"%(valid_value1)s, %(valid_value2)s, etc."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:491
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+"Assurez-vous que cette valeur contient au moins %(limit_value)d caractère "
+"(elle en a %(show_value)d)."
+msgstr[1] ""
+"Assurez-vous que cette valeur contient au moins %(limit_value)d caractères "
+"(elle en a %(show_value)d)."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:509
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+"Assurez-vous que cette valeur contient au maximum %(limit_value)d caractère "
+"(elle en a %(show_value)d)."
+msgstr[1] ""
+"Assurez-vous que cette valeur contient au maximum %(limit_value)d caractères "
+"(elle en a %(show_value)d)."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:532
+#: env/lib/python3.11/site-packages/django/forms/fields.py:359
+#: env/lib/python3.11/site-packages/django/forms/fields.py:398
+msgid "Enter a number."
+msgstr "Entrez un nombre."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:534
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] "Assurez-vous qu'il n'y a pas plus de %(max)s chiffre au total."
+msgstr[1] "Assurez-vous qu'il n'y a pas plus de %(max)s chiffres au total."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:539
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] "Assurez-vous qu'il n'y a pas plus de %(max)s décimale."
+msgstr[1] "Assurez-vous qu'il n'y a pas plus de %(max)s décimales."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:544
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+"Assurez-vous qu'il n'y a pas plus de %(max)s chiffre avant le point décimal."
+msgstr[1] ""
+"Assurez-vous qu'il n'y a pas plus de %(max)s chiffres avant le point décimal."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:615
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+"L'extension de fichier « %(extension)s » n'est pas autorisée. Les extensions "
+"autorisées sont : %(allowed_extensions)s."
+
+#: env/lib/python3.11/site-packages/django/core/validators.py:677
+msgid "Null characters are not allowed."
+msgstr "Les caractères nuls ne sont pas autorisés."
+
+#: env/lib/python3.11/site-packages/django/db/models/base.py:1571
+#: env/lib/python3.11/site-packages/django/forms/models.py:908
+msgid "and"
+msgstr "et"
+
+#: env/lib/python3.11/site-packages/django/db/models/base.py:1573
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "Un %(model_name)s avec ce %(field_labels)s existe déjà."
+
+#: env/lib/python3.11/site-packages/django/db/models/constraints.py:22
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr "La contrainte « %(name)s » est violée."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:134
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr "La valeur %(value)r n'est pas un choix valide."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:135
+msgid "This field cannot be null."
+msgstr "Ce champ ne peut pas être nul."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:136
+msgid "This field cannot be blank."
+msgstr "Ce champ ne peut pas être vide."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:137
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "Un %(model_name)s avec ce %(field_label)s existe déjà."
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:141
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+"%(field_label)s doit être unique pour %(date_field_label)s %(lookup_type)s."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:180
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "Champ de type : %(field_type)s"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1156
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr "La valeur « %(value)s » doit être soit True, soit False."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1157
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr "La valeur « %(value)s » doit être soit True, soit False, soit None."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1159
+msgid "Boolean (Either True or False)"
+msgstr "Booléen (Soit True, soit False)"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1209
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr "Chaîne (jusqu'à %(max_length)s)"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1211
+msgid "String (unlimited)"
+msgstr "Chaîne (illimitée)"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1320
+msgid "Comma-separated integers"
+msgstr "Entiers séparés par des virgules"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1421
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+"La valeur « %(value)s » a un format de date invalide. Elle doit être au "
+"format YYYY-MM-DD."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1425
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1560
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+"La valeur « %(value)s » a le format correct (YYYY-MM-DD) mais c'est une date "
+"invalide."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1429
+msgid "Date (without time)"
+msgstr "Date (sans heure)"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1556
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+"La valeur « %(value)s » a un format invalide. Elle doit être au format YYYY-"
+"MM-DD HH:MM[:ss[.uuuuuu]][TZ]."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1564
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+"La valeur « %(value)s » a le format correct (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) mais c'est une date/heure invalide."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1569
+msgid "Date (with time)"
+msgstr "Date (avec heure)"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1696
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr "La valeur « %(value)s » doit être un nombre décimal."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1698
+msgid "Decimal number"
+msgstr "Nombre décimal"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1859
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
+msgstr ""
+"La valeur « %(value)s » a un format invalide. Elle doit être au format [DD] "
+"[[HH:]MM:]ss[.uuuuuu]."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1863
+msgid "Duration"
+msgstr "Durée"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1940
+msgid "File path"
+msgstr "Chemin du fichier"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2018
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr "La valeur « %(value)s » doit être un nombre à virgule flottante."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2020
+msgid "Floating point number"
+msgstr "Nombre à virgule flottante"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2060
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr "La valeur « %(value)s » doit être un entier."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2062
+msgid "Integer"
+msgstr "Entier"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2158
+msgid "Big (8 byte) integer"
+msgstr "Grand entier (8 octets)"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2175
+msgid "Small integer"
+msgstr "Petit entier"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2183
+msgid "IPv4 address"
+msgstr "Adresse IPv4"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2214
+msgid "IP address"
+msgstr "Adresse IP"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2305
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2306
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr "La valeur « %(value)s » doit être None, True ou False."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2308
+msgid "Boolean (Either True, False or None)"
+msgstr "Booléen (True, False ou None)"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2359
+msgid "Positive big integer"
+msgstr "Grand entier positif"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2374
+msgid "Positive integer"
+msgstr "Entier positif"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2389
+msgid "Positive small integer"
+msgstr "Petit entier positif"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2405
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr "Slug (jusqu’à %(max_length)s)"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2441
+msgid "Text"
+msgstr "Texte"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2521
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+"La valeur « %(value)s » a un format invalide. Elle doit être au format HH:"
+"MM[:ss[.uuuuuu]]."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2525
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+"La valeur « %(value)s » a le format correct (HH:MM[:ss[.uuuuuu]]) mais c'est "
+"une heure invalide."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2529
+msgid "Time"
+msgstr "Heure"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2637
+msgid "URL"
+msgstr "URL"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2661
+msgid "Raw binary data"
+msgstr "Données binaires brutes"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2726
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr "« %(value)s » n'est pas un UUID valide."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2728
+msgid "Universally unique identifier"
+msgstr "Identifiant universel unique"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/files.py:244
+msgid "File"
+msgstr "Fichier"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/files.py:420
+msgid "Image"
+msgstr "Image"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/json.py:24
+msgid "A JSON object"
+msgstr "Un objet JSON"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/json.py:26
+msgid "Value must be valid JSON."
+msgstr "La valeur doit être un JSON valide."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/related.py:932
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr "L'instance %(model)s avec %(field)s %(value)r n'existe pas."
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/related.py:934
+msgid "Foreign Key (type determined by related field)"
+msgstr "Clé étrangère (type déterminé par le champ lié)"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/related.py:1228
+msgid "One-to-one relationship"
+msgstr "Relation un-à-un"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/related.py:1285
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr "Relation %(from)s-%(to)s"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/related.py:1287
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr "Relations %(from)s-%(to)s"
+
+#: env/lib/python3.11/site-packages/django/db/models/fields/related.py:1335
+msgid "Many-to-many relationship"
+msgstr "Relation plusieurs-à-plusieurs"
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: env/lib/python3.11/site-packages/django/forms/boundfield.py:185
+msgid ":?.!"
+msgstr ":?.!"
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:95
+msgid "This field is required."
+msgstr "Ce champ est requis."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:308
+msgid "Enter a whole number."
+msgstr "Entrez un nombre entier."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:479
+#: env/lib/python3.11/site-packages/django/forms/fields.py:1260
+msgid "Enter a valid date."
+msgstr "Entrez une date valide."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:502
+#: env/lib/python3.11/site-packages/django/forms/fields.py:1261
+msgid "Enter a valid time."
+msgstr "Entrez une heure valide."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:529
+msgid "Enter a valid date/time."
+msgstr "Entrez une date/heure valide."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:563
+msgid "Enter a valid duration."
+msgstr "Entrez une durée valide."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:564
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr "Le nombre de jours doit être compris entre {min_days} et {max_days}."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:633
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+"Aucun fichier n'a été soumis. Vérifiez le type d'encodage du formulaire."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:634
+msgid "No file was submitted."
+msgstr "Aucun fichier n'a été soumis."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:635
+msgid "The submitted file is empty."
+msgstr "Le fichier soumis est vide."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:637
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+"Assurez-vous que ce nom de fichier a au maximum %(max)d caractère (il en a "
+"%(length)d)."
+msgstr[1] ""
+"Assurez-vous que ce nom de fichier a au maximum %(max)d caractères (il en a "
+"%(length)d)."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:642
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+"Veuillez soit soumettre un fichier, soit cocher la case de suppression, mais "
+"pas les deux."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:710
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+"Veuillez télécharger une image valide. Le fichier que vous avez téléchargé "
+"n'était pas une image ou était une image corrompue."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:882
+#: env/lib/python3.11/site-packages/django/forms/fields.py:968
+#: env/lib/python3.11/site-packages/django/forms/models.py:1592
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+"Sélectionnez un choix valide. %(value)s n'est pas l'un des choix disponibles."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:970
+#: env/lib/python3.11/site-packages/django/forms/fields.py:1089
+#: env/lib/python3.11/site-packages/django/forms/models.py:1590
+msgid "Enter a list of values."
+msgstr "Entrez une liste de valeurs."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:1090
+msgid "Enter a complete value."
+msgstr "Entrez une valeur complète."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:1329
+msgid "Enter a valid UUID."
+msgstr "Entrez un UUID valide."
+
+#: env/lib/python3.11/site-packages/django/forms/fields.py:1359
+msgid "Enter a valid JSON."
+msgstr "Entrez un JSON valide."
+
+#. Translators: This is the default suffix added to form field labels
+#: env/lib/python3.11/site-packages/django/forms/forms.py:94
+msgid ":"
+msgstr ":"
+
+#: env/lib/python3.11/site-packages/django/forms/forms.py:230
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr "(Champ caché %(name)s) %(error)s"
+
+#: env/lib/python3.11/site-packages/django/forms/formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+"Les données de ManagementForm sont manquantes ou ont été modifiées. Champs "
+"manquants : %(field_names)s. Vous devrez peut-être signaler un bug si le "
+"problème persiste."
+
+#: env/lib/python3.11/site-packages/django/forms/formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] "Veuillez soumettre au maximum %(num)d formulaire."
+msgstr[1] "Veuillez soumettre au maximum %(num)d formulaires."
+
+#: env/lib/python3.11/site-packages/django/forms/formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] "Veuillez soumettre au moins %(num)d formulaire."
+msgstr[1] "Veuillez soumettre au moins %(num)d formulaires."
+
+#: env/lib/python3.11/site-packages/django/forms/formsets.py:484
+#: env/lib/python3.11/site-packages/django/forms/formsets.py:491
+msgid "Order"
+msgstr "Ordre"
+
+#: env/lib/python3.11/site-packages/django/forms/formsets.py:499
+msgid "Delete"
+msgstr "Supprimer"
+
+#: env/lib/python3.11/site-packages/django/forms/models.py:901
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr "Veuillez corriger les données dupliquées pour %(field)s."
+
+#: env/lib/python3.11/site-packages/django/forms/models.py:906
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+"Veuillez corriger les données dupliquées pour %(field)s, qui doivent être "
+"uniques."
+
+#: env/lib/python3.11/site-packages/django/forms/models.py:913
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+"Veuillez corriger les données dupliquées pour %(field_name)s qui doivent "
+"être uniques pour le %(lookup)s dans %(date_field)s."
+
+#: env/lib/python3.11/site-packages/django/forms/models.py:922
+msgid "Please correct the duplicate values below."
+msgstr "Veuillez corriger les valeurs dupliquées ci-dessous."
+
+#: env/lib/python3.11/site-packages/django/forms/models.py:1359
+msgid "The inline value did not match the parent instance."
+msgstr "La valeur en ligne ne correspondait pas à l'instance parente."
+
+#: env/lib/python3.11/site-packages/django/forms/models.py:1450
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+"Sélectionnez un choix valide. Ce choix n'est pas l'un des choix disponibles."
+
+#: env/lib/python3.11/site-packages/django/forms/models.py:1594
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr "“%(pk)s” n'est pas une valeur valide."
+
+#: env/lib/python3.11/site-packages/django/forms/utils.py:227
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+"%(datetime)s n'a pas pu être interprété dans le fuseau horaire "
+"%(current_timezone)s ; il peut être ambigu ou il peut ne pas exister."
+
+#: env/lib/python3.11/site-packages/django/forms/widgets.py:461
+msgid "Clear"
+msgstr "Effacer"
+
+#: env/lib/python3.11/site-packages/django/forms/widgets.py:462
+msgid "Currently"
+msgstr "Actuellement"
+
+#: env/lib/python3.11/site-packages/django/forms/widgets.py:463
+msgid "Change"
+msgstr "Changer"
+
+#: env/lib/python3.11/site-packages/django/forms/widgets.py:800
+msgid "Unknown"
+msgstr "Inconnu"
+
+#: env/lib/python3.11/site-packages/django/forms/widgets.py:801
+msgid "Yes"
+msgstr "Oui"
+
+#: env/lib/python3.11/site-packages/django/forms/widgets.py:802
+msgid "No"
+msgstr "Non"
+
+#. Translators: Please do not add spaces around commas.
+#: env/lib/python3.11/site-packages/django/template/defaultfilters.py:873
+msgid "yes,no,maybe"
+msgstr "oui,non,peut-être"
+
+#: env/lib/python3.11/site-packages/django/template/defaultfilters.py:903
+#: env/lib/python3.11/site-packages/django/template/defaultfilters.py:920
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] "%(size)d octet"
+msgstr[1] "%(size)d octets"
+
+#: env/lib/python3.11/site-packages/django/template/defaultfilters.py:922
+#, python-format
+msgid "%s KB"
+msgstr "%s KB"
+
+#: env/lib/python3.11/site-packages/django/template/defaultfilters.py:924
+#, python-format
+msgid "%s MB"
+msgstr "%s MB"
+
+#: env/lib/python3.11/site-packages/django/template/defaultfilters.py:926
+#, python-format
+msgid "%s GB"
+msgstr "%s GB"
+
+#: env/lib/python3.11/site-packages/django/template/defaultfilters.py:928
+#, python-format
+msgid "%s TB"
+msgstr "%s TB"
+
+#: env/lib/python3.11/site-packages/django/template/defaultfilters.py:930
+#, python-format
+msgid "%s PB"
+msgstr "%s PB"
+
+#: env/lib/python3.11/site-packages/django/utils/dateformat.py:74
+msgid "p.m."
+msgstr "p.m."
+
+#: env/lib/python3.11/site-packages/django/utils/dateformat.py:75
+msgid "a.m."
+msgstr "a.m."
+
+#: env/lib/python3.11/site-packages/django/utils/dateformat.py:80
+msgid "PM"
+msgstr "PM"
+
+#: env/lib/python3.11/site-packages/django/utils/dateformat.py:81
+msgid "AM"
+msgstr "AM"
+
+#: env/lib/python3.11/site-packages/django/utils/dateformat.py:153
+msgid "midnight"
+msgstr "minuit"
+
+#: env/lib/python3.11/site-packages/django/utils/dateformat.py:155
+msgid "noon"
+msgstr "midi"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:7
+msgid "Monday"
+msgstr "Lundi"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:8
+msgid "Tuesday"
+msgstr "Mardi"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:9
+msgid "Wednesday"
+msgstr "Mercredi"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:10
+msgid "Thursday"
+msgstr "Jeudi"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:11
+msgid "Friday"
+msgstr "Vendredi"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:12
+msgid "Saturday"
+msgstr "Samedi"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:13
+msgid "Sunday"
+msgstr "Dimanche"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:16
+msgid "Mon"
+msgstr "Lun"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:17
+msgid "Tue"
+msgstr "Mar"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:18
+msgid "Wed"
+msgstr "Mer"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:19
+msgid "Thu"
+msgstr "Jeu"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:20
+msgid "Fri"
+msgstr "Ven"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:21
+msgid "Sat"
+msgstr "Sam"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:22
+msgid "Sun"
+msgstr "Dim"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:25
+msgid "January"
+msgstr "Janvier"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:26
+msgid "February"
+msgstr "Février"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:27
+msgid "March"
+msgstr "Mars"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:28
+msgid "April"
+msgstr "Avril"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:29
+msgid "May"
+msgstr "Mai"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:30
+msgid "June"
+msgstr "Juin"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:31
+msgid "July"
+msgstr "Juillet"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:32
+msgid "August"
+msgstr "Août"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:33
+msgid "September"
+msgstr "Septembre"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:34
+msgid "October"
+msgstr "Octobre"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:35
+msgid "November"
+msgstr "Novembre"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:36
+msgid "December"
+msgstr "Décembre"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:39
+msgid "jan"
+msgstr "jan"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:40
+msgid "feb"
+msgstr "fév"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:41
+msgid "mar"
+msgstr "mar"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:42
+msgid "apr"
+msgstr "avr"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:43
+msgid "may"
+msgstr "mai"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:44
+msgid "jun"
+msgstr "juin"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:45
+msgid "jul"
+msgstr "juil"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:46
+msgid "aug"
+msgstr "août"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:47
+msgid "sep"
+msgstr "sep"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:48
+msgid "oct"
+msgstr "oct"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:49
+msgid "nov"
+msgstr "nov"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:50
+msgid "dec"
+msgstr "déc"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr "Jan."
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr "Fév."
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr "Mars"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr "Avril"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr "Mai"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr "Juin"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr "Juil."
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr "Août"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr "Sep."
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr "Oct."
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr "Nov."
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr "Déc."
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr "Janvier"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr "Février"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr "Mars"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr "Avril"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr "Mai"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr "Juin"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr "Juillet"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr "Août"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr "Septembre"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr "Octobre"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr "Novembre"
+
+#: env/lib/python3.11/site-packages/django/utils/dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr "Décembre"
+
+#: env/lib/python3.11/site-packages/django/utils/ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr "Ce n'est pas une adresse IPv6 valide."
+
+#: env/lib/python3.11/site-packages/django/utils/text.py:75
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr "%(truncated_text)s…"
+
+#: env/lib/python3.11/site-packages/django/utils/text.py:286
+msgid "or"
+msgstr "ou"
+
+#. Translators: This string is used as a separator between list elements
+#: env/lib/python3.11/site-packages/django/utils/text.py:305
+#: env/lib/python3.11/site-packages/django/utils/timesince.py:135
+msgid ", "
+msgstr ", "
+
+#: env/lib/python3.11/site-packages/django/utils/timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] "%(num)d an"
+msgstr[1] "%(num)d ans"
+
+#: env/lib/python3.11/site-packages/django/utils/timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] "%(num)d mois"
+msgstr[1] "%(num)d mois"
+
+#: env/lib/python3.11/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] "%(num)d semaine"
+msgstr[1] "%(num)d semaines"
+
+#: env/lib/python3.11/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] "%(num)d jour"
+msgstr[1] "%(num)d jours"
+
+#: env/lib/python3.11/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] "%(num)d heure"
+msgstr[1] "%(num)d heures"
+
+#: env/lib/python3.11/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] "%(num)d minute"
+msgstr[1] "%(num)d minutes"
+
+#: env/lib/python3.11/site-packages/django/views/csrf.py:29
+msgid "Forbidden"
+msgstr "Interdit"
+
+#: env/lib/python3.11/site-packages/django/views/csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr "La vérification CSRF a échoué. Requête annulée."
+
+#: env/lib/python3.11/site-packages/django/views/csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+"Vous voyez ce message car ce site HTTPS nécessite qu'un « en-tête Referer » "
+"soit envoyé par votre navigateur web, mais aucun n'a été envoyé. Cet en-tête "
+"est requis pour des raisons de sécurité, afin de garantir que votre "
+"navigateur n'est pas détourné par des tiers."
+
+#: env/lib/python3.11/site-packages/django/views/csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+"Si vous avez configuré votre navigateur pour désactiver les en-têtes "
+"« Referer », merci de les réactiver, au moins pour ce site, ou pour les "
+"connexions HTTPS, ou pour les requêtes « même origine »."
+
+#: env/lib/python3.11/site-packages/django/views/csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+"Si vous utilisez la balise <meta name=\"referrer\" content=\"no-referrer\"> "
+"ou incluez l'en-tête « Referrer-Policy: no-referrer », veuillez les "
+"supprimer. La protection CSRF nécessite l'en-tête « Referer » pour effectuer "
+"un contrôle strict du référent. Si vous êtes préoccupé par la "
+"confidentialité, utilisez des alternatives comme <a rel=\"noreferrer\" …> "
+"pour les liens vers des sites tiers."
+
+#: env/lib/python3.11/site-packages/django/views/csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+"Vous voyez ce message car ce site nécessite un cookie CSRF lors de la "
+"soumission de formulaires. Ce cookie est requis pour des raisons de "
+"sécurité, afin de garantir que votre navigateur n'est pas détourné par des "
+"tiers."
+
+#: env/lib/python3.11/site-packages/django/views/csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+"Si vous avez configuré votre navigateur pour désactiver les cookies, merci "
+"de les réactiver, au moins pour ce site, ou pour les requêtes « même "
+"origine »."
+
+#: env/lib/python3.11/site-packages/django/views/csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr "Plus d'informations sont disponibles avec DEBUG=True."
+
+#: env/lib/python3.11/site-packages/django/views/generic/dates.py:44
+msgid "No year specified"
+msgstr "Aucune année spécifiée"
+
+#: env/lib/python3.11/site-packages/django/views/generic/dates.py:64
+#: env/lib/python3.11/site-packages/django/views/generic/dates.py:115
+#: env/lib/python3.11/site-packages/django/views/generic/dates.py:214
+msgid "Date out of range"
+msgstr "Date hors de portée"
+
+#: env/lib/python3.11/site-packages/django/views/generic/dates.py:94
+msgid "No month specified"
+msgstr "Aucun mois spécifié"
+
+#: env/lib/python3.11/site-packages/django/views/generic/dates.py:147
+msgid "No day specified"
+msgstr "Aucun jour spécifié"
+
+#: env/lib/python3.11/site-packages/django/views/generic/dates.py:194
+msgid "No week specified"
+msgstr "Aucune semaine spécifiée"
+
+#: env/lib/python3.11/site-packages/django/views/generic/dates.py:349
+#: env/lib/python3.11/site-packages/django/views/generic/dates.py:380
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr "Aucun %(verbose_name_plural)s disponible"
+
+#: env/lib/python3.11/site-packages/django/views/generic/dates.py:652
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+"Les %(verbose_name_plural)s futurs ne sont pas disponibles car "
+"%(class_name)s.allow_future est Faux."
+
+#: env/lib/python3.11/site-packages/django/views/generic/dates.py:692
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr "Chaîne de date invalide « %(datestr)s » avec le format « %(format)s »"
+
+#: env/lib/python3.11/site-packages/django/views/generic/detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "Aucun %(verbose_name)s correspondant à la requête"
+
+#: env/lib/python3.11/site-packages/django/views/generic/list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr "La page n'est pas « dernière », ni ne peut être convertie en entier."
+
+#: env/lib/python3.11/site-packages/django/views/generic/list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr "Page invalide (%(page_number)s) : %(message)s"
+
+#: env/lib/python3.11/site-packages/django/views/generic/list.py:169
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr "Liste vide et « %(class_name)s.allow_empty » est Faux."
+
+#: env/lib/python3.11/site-packages/django/views/static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr "Les index de répertoire ne sont pas autorisés ici."
+
+#: env/lib/python3.11/site-packages/django/views/static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr "« %(path)s » n'existe pas"
+
+#: env/lib/python3.11/site-packages/django/views/static.py:68
+#: env/lib/python3.11/site-packages/django/views/templates/directory_index.html:8
+#: env/lib/python3.11/site-packages/django/views/templates/directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr "Index de %(directory)s"
+
+#: env/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:7
+#: env/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr "L'installation a réussi ! Félicitations !"
+
+#: env/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+"Consultez les <a href=\"https://docs.djangoproject.com/en/%(version)s/"
+"releases/\" target=\"_blank\" rel=\"noopener\">notes de version</a> pour "
+"Django %(version)s"
+
+#: env/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+"Vous voyez cette page car <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> est dans votre fichier de paramètres et vous "
+"n'avez pas configuré d'URL."
+
+#: env/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:217
+msgid "Django Documentation"
+msgstr "Documentation Django"
+
+#: env/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr "Sujets, références et tutoriels"
+
+#: env/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr "Tutoriel : Une application de sondage"
+
+#: env/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:227
+msgid "Get started with Django"
+msgstr "Commencez avec Django"
+
+#: env/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:235
+msgid "Django Community"
+msgstr "Communauté Django"
+
+#: env/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr "Connectez-vous, obtenez de l'aide ou contribuez"
+
+#: env/lib/python3.11/site-packages/django_ckeditor_5/views.py:77
+msgid "Page not found."
+msgstr "Page non trouvée."
+
+#: env/lib/python3.11/site-packages/django_ckeditor_5/widgets.py:43
+msgid "Check the correct settings.CKEDITOR_5_CONFIGS "
+msgstr "Vérifiez les paramètres corrects.CKEDITOR_5_CONFIGS"
+
+#: html5_ui/includes/footer.html:5
+#: html5_ui/pages/home/account_settings/change-password.html:92
+#: html5_ui/pages/home/account_settings/edit-profile.html:569
+#: html5_ui/pages/home/account_settings/user-info.html:79
+#: html5_ui/pages/home/organization_settings/index.html:103
+#: html5_ui/pages/home/organization_settings/organization-details.html:446
+msgid "Copyright"
+msgstr "Droit d'auteur"
+
+#: html5_ui/includes/footer.html:11
+#: html5_ui/pages/home/account_settings/change-password.html:98
+#: html5_ui/pages/home/account_settings/edit-profile.html:575
+#: html5_ui/pages/home/account_settings/user-info.html:85
+#: html5_ui/pages/home/organization_settings/index.html:109
+#: html5_ui/pages/home/organization_settings/organization-details.html:452
+msgid "Help"
+msgstr "Aide"
+
+#: html5_ui/includes/footer.html:12
+#: html5_ui/pages/home/account_settings/change-password.html:99
+#: html5_ui/pages/home/account_settings/edit-profile.html:576
+#: html5_ui/pages/home/account_settings/user-info.html:86
+#: html5_ui/pages/home/organization_settings/index.html:110
+#: html5_ui/pages/home/organization_settings/organization-details.html:453
+msgid "Terms"
+msgstr "Conditions"
+
+#: html5_ui/includes/footer.html:13
+#: html5_ui/pages/home/account_settings/change-password.html:100
+#: html5_ui/pages/home/account_settings/edit-profile.html:577
+#: html5_ui/pages/home/account_settings/user-info.html:87
+#: html5_ui/pages/home/organization_settings/index.html:111
+#: html5_ui/pages/home/organization_settings/organization-details.html:454
+msgid "Privacy"
+msgstr "Confidentialité"
+
+#: html5_ui/includes/header.html:46 html5_ui/pages/home/profile/index.html:29
+#: html5_ui/pages/home/teams/index.html:25
+#: html5_ui/pages/home/teams/invite_form.html:27
+#: html5_ui/pages/home/teams/invites.html:25
+msgid "Back"
+msgstr "Retour"
+
+#: html5_ui/includes/header.html:334 html5_ui/includes/navigation.html:84
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: html5_ui/includes/navigation.html:25
+msgid "Dashboards"
+msgstr "Tableaux de bord"
+
+#: html5_ui/includes/navigation.html:33
+msgid "Staffing"
+msgstr "Personnel"
+
+#: html5_ui/includes/navigation.html:39
+msgid "User"
+msgstr "Utilisateur"
+
+#: html5_ui/includes/navigation.html:59
+msgid "Organization"
+msgstr "Organisation"
+
+#: html5_ui/includes/navigation.html:67
+msgid "Teams"
+msgstr "Équipes"
+
+#: html5_ui/includes/tenantsettingsnav.html:19
+msgid "Message Template"
+msgstr "Modèle de message"
+
+#: html5_ui/pages/authentication/auth-login-minimal.html:4
+msgid "Login Minimal"
+msgstr "Connexion Minimale"
+
+#: html5_ui/pages/authentication/auth-login-minimal.html:20
+#: html5_ui/pages/authentication/auth-login-minimal.html:56
+#: html5_ui/pages/authentication/password-reset-form.html:37
+msgid "Login"
+msgstr "Connexion"
+
+#: html5_ui/pages/authentication/auth-login-minimal.html:22
+msgid "Login to your account"
+msgstr "Connectez-vous à votre compte"
+
+#: html5_ui/pages/authentication/auth-login-minimal.html:47
+msgid "Remember Me"
+msgstr "Se souvenir de moi"
+
+#: html5_ui/pages/authentication/auth-login-minimal.html:51
+msgid "Forget password?"
+msgstr "Mot de passe oublié ?"
+
+#: html5_ui/pages/authentication/auth-login-minimal.html:61
+msgid "Don't have an account?"
+msgstr "Vous n'avez pas de compte ?"
+
+#: html5_ui/pages/authentication/auth-login-minimal.html:62
+msgid "Create an Account"
+msgstr "Créer un compte"
+
+#: html5_ui/pages/authentication/password-create-complete.html:16
+msgid "Password creation complete"
+msgstr "Création du mot de passe terminée"
+
+#: html5_ui/pages/authentication/password-create-complete.html:17
+#: html5_ui/pages/authentication/password-reset-complete.html:17
+msgid "Your password has been set. You may go ahead and log in now."
+msgstr ""
+"Votre mot de passe a été défini. Vous pouvez maintenant vous connecter."
+
+#: html5_ui/pages/authentication/password-create-complete.html:19
+#: html5_ui/pages/authentication/password-reset-complete.html:19
+#: html5_ui/pages/authentication/password-reset-done.html:20
+msgid "Back to Login"
+msgstr "Retour à la connexion"
+
+#: html5_ui/pages/authentication/password-create.html:16
+#: html5_ui/pages/authentication/password-create.html:34
+#: html5_ui/pages/states/team_invite.html:23
+msgid "Create Password"
+msgstr "Créer un mot de passe"
+
+#: html5_ui/pages/authentication/password-create.html:17
+msgid ""
+"Please enter your password twice so we can verify you typed it in correctly."
+msgstr ""
+"Veuillez entrer votre mot de passe deux fois pour que nous puissions "
+"vérifier qu'il a été saisi correctement."
+
+#: html5_ui/pages/authentication/password-reset-complete.html:16
+msgid "Password reset complete"
+msgstr "Réinitialisation du mot de passe terminée"
+
+#: html5_ui/pages/authentication/password-reset-confirm.html:16
+msgid "Enter new password"
+msgstr "Entrez un nouveau mot de passe"
+
+#: html5_ui/pages/authentication/password-reset-confirm.html:17
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"Veuillez entrer votre nouveau mot de passe deux fois pour que nous puissions "
+"vérifier qu'il a été saisi correctement."
+
+#: html5_ui/pages/authentication/password-reset-done.html:16
+msgid "Password reset sent."
+msgstr "Réinitialisation du mot de passe envoyée."
+
+#: html5_ui/pages/authentication/password-reset-done.html:17
+msgid ""
+"We've emailed you instructions for setting your password, if an account "
+"exists with the email you entered. You should receive them shortly."
+msgstr ""
+"Nous vous avons envoyé par e-mail des instructions pour définir votre mot de "
+"passe, si un compte existe avec l'adresse e-mail que vous avez saisie. Vous "
+"devriez les recevoir sous peu."
+
+#: html5_ui/pages/authentication/password-reset-done.html:18
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+"Si vous ne recevez pas d'e-mail, veuillez vous assurer que vous avez saisi "
+"l'adresse avec laquelle vous vous êtes inscrit, et vérifiez votre dossier de "
+"spam."
+
+#: html5_ui/pages/authentication/password-reset-form.html:16
+msgid "Reset"
+msgstr "Réinitialiser"
+
+#: html5_ui/pages/authentication/password-reset-form.html:17
+msgid "Reset to your password"
+msgstr "Réinitialiser votre mot de passe"
+
+#: html5_ui/pages/authentication/password-reset-form.html:18
+msgid ""
+"Enter your email and a reset link will sent to you, let's access our the "
+"best recommendation for you."
+msgstr ""
+"Entrez votre e-mail et un lien de réinitialisation vous sera envoyé, "
+"consultez nos meilleures recommandations pour vous."
+
+#: html5_ui/pages/authentication/password-reset-form.html:32
+msgid "Reset Now"
+msgstr "Réinitialiser maintenant"
+
+#: html5_ui/pages/authentication/password-reset-form.html:36
+msgid "Back to"
+msgstr "Retour à"
+
+#: html5_ui/pages/home/account_settings/change-password.html:43
+#: html5_ui/pages/home/account_settings/edit-profile.html:46
+#: html5_ui/pages/home/account_settings/user-info.html:44
+#: html5_ui/pages/home/organization_settings/index.html:56
+#: html5_ui/pages/home/organization_settings/organization-details.html:57
+#: html5_ui/pages/home/teams/invite_form.html:40
+msgid "Save Changes"
+msgstr "Enregistrer les modifications"
+
+#: html5_ui/pages/home/account_settings/change-password.html:57
+msgid "Your password has been changed successfully."
+msgstr "Votre mot de passe a été changé avec succès."
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:58
+#: html5_ui/pages/home/account_settings/user-info.html:56
+msgid "Profile Details Settings"
+msgstr "Paramètres des détails du profil"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:59
+#: html5_ui/pages/home/account_settings/user-info.html:57
+msgid ""
+"Configure the user profile information and how it's managed in your systems."
+msgstr ""
+"Configurez les informations du profil utilisateur et leur gestion dans vos "
+"systèmes."
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:76
+#: html5_ui/pages/home/profile/index.html:66
+msgid "Personal Information:"
+msgstr "Informations personnelles :"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:77
+msgid "Following information is publicly displayed, be careful!"
+msgstr ""
+"Les informations suivantes sont affichées publiquement, soyez prudent !"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:107
+msgid "# Upload your profile"
+msgstr "# Téléchargez votre profil"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:108
+msgid "# Avatar size 150x150"
+msgstr "# Taille de l'avatar 150x150"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:109
+#: html5_ui/pages/home/organization_settings/organization-details.html:97
+msgid "# Max upload size 2mb"
+msgstr "# Taille maximale de téléchargement 2 Mo"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:110
+#: html5_ui/pages/home/organization_settings/organization-details.html:98
+msgid "# Allowed file types: png, jpg, jpeg"
+msgstr "# Types de fichiers autorisés : png, jpg, jpeg"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:134
+msgid "Last Name: "
+msgstr "Nom de famille :"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:151
+msgid "Phone: "
+msgstr "Téléphone :"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:168
+msgid "Address: "
+msgstr "Adresse :"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:185
+msgid "City: "
+msgstr "Ville :"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:202
+msgid "State: "
+msgstr "État :"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:219
+msgid "Country: "
+msgstr "Pays :"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:234
+msgid "Postal Code: "
+msgstr "Code postal :"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:256
+#: html5_ui/pages/home/profile/index.html:107
+msgid "Professional Information:"
+msgstr "Informations professionnelles :"
+
+# #: html5_ui/pages/home/account_settings/edit-profile.html:257
+#: html5_ui/pages/home/account_settings/edit-profile.html:257
+#: html5_ui/pages/home/account_settings/edit-profile.html:346
+#: html5_ui/pages/home/account_settings/edit-profile.html:484
+msgid "Communication details in case we want to connect with you."
+msgstr "Détails de communication au cas où nous voudrions vous contacter."
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:322
+msgid "Github Profile"
+msgstr "Profil Github"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:345
+#: html5_ui/pages/home/profile/index.html:132
+msgid "Preferences and Settings:"
+msgstr "Préférences et paramètres :"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:382
+msgid "Notification Preferences"
+msgstr "Préférences de notification"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:431
+msgid "Privacy Settings"
+msgstr "Paramètres de confidentialité"
+
+#: html5_ui/pages/home/account_settings/edit-profile.html:483
+#: html5_ui/pages/home/profile/index.html:163
+msgid "Additional Information:"
+msgstr "Informations supplémentaires :"
+
+#: html5_ui/pages/home/organization_settings/organization-details.html:95
+msgid "# Upload your company logo"
+msgstr "# Téléchargez le logo de votre entreprise"
+
+#: html5_ui/pages/home/organization_settings/organization-details.html:96
+msgid "# Logo size 150x150"
+msgstr "# Taille du logo 150x150"
+
+#: html5_ui/pages/home/profile/index.html:4
+msgid "Customers View"
+msgstr "Vue des clients"
+
+#: html5_ui/pages/home/profile/index.html:69
+msgid "First Name:"
+msgstr "Prénom :"
+
+#: html5_ui/pages/home/profile/index.html:73
+msgid "Last Name:"
+msgstr "Nom de famille :"
+
+#: html5_ui/pages/home/profile/index.html:77
+msgid "Email Address:"
+msgstr "Adresse e-mail :"
+
+#: html5_ui/pages/home/profile/index.html:81
+msgid "Phone:"
+msgstr "Téléphone :"
+
+#: html5_ui/pages/home/profile/index.html:85
+msgid "Address:"
+msgstr "Adresse :"
+
+#: html5_ui/pages/home/profile/index.html:89
+msgid "City:"
+msgstr "Ville :"
+
+#: html5_ui/pages/home/profile/index.html:93
+msgid "State/Province:"
+msgstr "État/Province :"
+
+#: html5_ui/pages/home/profile/index.html:97
+msgid "Country:"
+msgstr "Pays :"
+
+#: html5_ui/pages/home/profile/index.html:101
+msgid "Postal Code:"
+msgstr "Code postal :"
+
+#: html5_ui/pages/home/profile/index.html:110
+msgid "Job Title:"
+msgstr "Titre du poste :"
+
+#: html5_ui/pages/home/profile/index.html:114
+msgid "Company:"
+msgstr "Entreprise :"
+
+#: html5_ui/pages/home/profile/index.html:118
+msgid "Website:"
+msgstr "Site web :"
+
+#: html5_ui/pages/home/profile/index.html:122
+msgid "LinkedIn Profile:"
+msgstr "Profil LinkedIn :"
+
+#: html5_ui/pages/home/profile/index.html:126
+msgid "Github Profile:"
+msgstr "Profil Github :"
+
+#: html5_ui/pages/home/profile/index.html:135
+msgid "Language:"
+msgstr "Langue :"
+
+#: html5_ui/pages/home/profile/index.html:139
+msgid "Timezone:"
+msgstr "Fuseau horaire :"
+
+#: html5_ui/pages/home/profile/index.html:143
+msgid "Notification preferences:"
+msgstr "Préférences de notification :"
+
+#: html5_ui/pages/home/profile/index.html:144
+msgid "Email Notifications:"
+msgstr "Notifications par courrier électronique :"
+
+#: html5_ui/pages/home/profile/index.html:145
+#: html5_ui/pages/home/profile/index.html:147
+#: html5_ui/pages/home/profile/index.html:149
+msgid "Enabled,Disabled"
+msgstr "Activé,Désactivé"
+
+#: html5_ui/pages/home/profile/index.html:146
+msgid "SMS Notifications:"
+msgstr "Notifications par SMS :"
+
+#: html5_ui/pages/home/profile/index.html:148
+msgid "Push Notifications:"
+msgstr "Notifications push :"
+
+#: html5_ui/pages/home/profile/index.html:152
+msgid "Privacy Settings:"
+msgstr "Paramètres de confidentialité :"
+
+#: html5_ui/pages/home/profile/index.html:153
+msgid "Profile Visibility:"
+msgstr "Visibilité du profil :"
+
+#: html5_ui/pages/home/profile/index.html:155
+msgid "Search Engine Indexing:"
+msgstr "Indexation par les moteurs de recherche :"
+
+#: html5_ui/pages/home/profile/index.html:156
+#: html5_ui/pages/home/profile/index.html:158
+msgid "Allowed,Not Allowed"
+msgstr "Autorisé,Non autorisé"
+
+#: html5_ui/pages/home/profile/index.html:157
+msgid "Data Sharing:"
+msgstr "Partage des données :"
+
+#: html5_ui/pages/home/profile/index.html:166
+msgid "Bio:"
+msgstr "Biographie :"
+
+#: html5_ui/pages/home/profile/index.html:170
+msgid "Interest:"
+msgstr "Intérêt :"
+
+#: html5_ui/pages/home/profile/index.html:174
+msgid "Skills:"
+msgstr "Compétences :"
+
+#: html5_ui/pages/home/profile/index.html:178
+msgid "Education:"
+msgstr "Éducation :"
+
+#: html5_ui/pages/home/profile/index.html:182
+msgid "Experience:"
+msgstr "Expérience :"
+
+#: html5_ui/pages/home/profile/index.html:203
+msgid "Search..."
+msgstr "Recherche..."
+
+#: html5_ui/pages/home/profile/index.html:205
+#: html5_ui/pages/home/profile/index.html:380
+#: html5_ui/pages/home/profile/index.html:415
+msgid "Close"
+msgstr "Fermer"
+
+#: html5_ui/pages/home/profile/index.html:212
+msgid "I'm searching for..."
+msgstr "Je cherche..."
+
+#: html5_ui/pages/home/profile/index.html:218
+#: html5_ui/pages/home/profile/index.html:255
+msgid "Recent"
+msgstr "Récent"
+
+#: html5_ui/pages/home/profile/index.html:224
+#: html5_ui/pages/home/profile/index.html:282
+msgid "Command"
+msgstr "Commande"
+
+#: html5_ui/pages/home/profile/index.html:230
+msgid "Peoples"
+msgstr "Personnes"
+
+#: html5_ui/pages/home/profile/index.html:236
+#: html5_ui/pages/home/profile/index.html:323
+msgid "Files"
+msgstr "Fichiers"
+
+#: html5_ui/pages/home/profile/index.html:242
+msgid "Medias"
+msgstr "Médias"
+
+#: html5_ui/pages/home/profile/index.html:247
+msgid "More"
+msgstr "Plus"
+
+#: html5_ui/pages/home/profile/index.html:261
+msgid "CRM dashboard redesign"
+msgstr "Refonte du tableau de bord CRM"
+
+#: html5_ui/pages/home/profile/index.html:268
+msgid "Create new document"
+msgstr "Créer un nouveau document"
+
+#: html5_ui/pages/home/profile/index.html:275
+msgid "Invite project colleagues"
+msgstr "Inviter des collègues de projet"
+
+#: html5_ui/pages/home/profile/index.html:288
+msgid "My profile"
+msgstr "Mon profil"
+
+#: html5_ui/pages/home/profile/index.html:295
+msgid "Team profile"
+msgstr "Profil de l'équipe"
+
+#: html5_ui/pages/home/profile/index.html:302
+msgid "Invite colleagues"
+msgstr "Inviter des collègues"
+
+#: html5_ui/pages/home/profile/index.html:309
+msgid "Create new project"
+msgstr "Créer un nouveau projet"
+
+#: html5_ui/pages/home/profile/index.html:316
+msgid "Support center"
+msgstr "Centre de support"
+
+#: html5_ui/pages/home/profile/index.html:330
+msgid "CRM Design Project"
+msgstr "Projet de conception CRM"
+
+#: html5_ui/pages/home/profile/index.html:342
+msgid "Admin Dashboard Project"
+msgstr "Projet de tableau de bord Admin"
+
+#: html5_ui/pages/home/profile/index.html:354
+msgid "CRM Dashboard Project"
+msgstr "Projet de tableau de bord CRM"
+
+#: html5_ui/pages/home/profile/index.html:378
+msgid "Select Language"
+msgstr "Sélectionner la langue"
+
+#: html5_ui/pages/home/profile/index.html:414
+msgid "Downloading..."
+msgstr "Téléchargement..."
+
+#: html5_ui/pages/home/teams/index.html:34
+msgid "Invites"
+msgstr "Invitations"
+
+#: html5_ui/pages/home/teams/index.html:57
+msgid "Team Member"
+msgstr "Membre de l'équipe"
+
+#: html5_ui/pages/home/teams/index.html:58
+msgid "Quick Contact"
+msgstr "Contact rapide"
+
+#: html5_ui/pages/home/teams/index.html:59
+msgid "Access Type"
+msgstr "Type d'accès"
+
+#: html5_ui/pages/home/teams/index.html:60
+msgid "Last Login"
+msgstr "Dernière connexion"
+
+#: html5_ui/pages/home/teams/index.html:78
+msgid "(You)"
+msgstr "(Vous)"
+
+#: html5_ui/pages/home/teams/index.html:90
+msgid "Administrator"
+msgstr "Administrateur"
+
+#: html5_ui/pages/home/teams/invite_form.html:36
+msgid "Cancel"
+msgstr "Annuler"
+
+#: html5_ui/pages/home/teams/invites.html:34
+msgid "Team Members"
+msgstr "Membres de l'équipe"
+
+#: html5_ui/pages/home/teams/invites.html:67
+msgid "Template"
+msgstr "Modèle"
+
+#: html5_ui/pages/home/teams/invites.html:68
+msgid "Expiration"
+msgstr "Expiration"
+
+#: html5_ui/pages/home/teams/invites.html:69
+msgid "Status"
+msgstr "Statut"
+
+#: html5_ui/pages/states/errors/400.html:17
+msgid "Bad Request - Something's not right."
+msgstr "Mauvaise demande - Quelque chose ne va pas."
+
+#: html5_ui/pages/states/errors/400.html:18
+msgid ""
+"It looks like your request couldn't be processed due to a mistake in the "
+"input. Please double-check your information and try again. If the issue "
+"persists, feel free to reach out for assistance. Thanks for your patience!"
+msgstr ""
+"Il semble que votre demande n'ait pas pu être traitée en raison d'une erreur "
+"dans les informations fournies. Veuillez vérifier vos informations et "
+"réessayer. Si le problème persiste, n'hésitez pas à demander de l'aide. "
+"Merci pour votre patience !"
+
+#: html5_ui/pages/states/errors/400.html:20
+#: html5_ui/pages/states/errors/403.html:20
+#: html5_ui/pages/states/errors/404.html:20
+#: html5_ui/pages/states/errors/500.html:17
+#: html5_ui/pages/states/team_invite.html:25
+#, fuzzy
+#| msgid "Back to"
+msgid "Back Home"
+msgstr "Retour à la maison"
+
+#: html5_ui/pages/states/errors/403.html:17
+msgid "Access Denied - You don't have permission to view this page."
+msgstr "Accès refusé - Vous n'avez pas la permission de voir cette page."
+
+#: html5_ui/pages/states/errors/403.html:18
+msgid ""
+"It looks like you don't have permission to access this page. If you believe "
+"this is an error, please contact support for assistance or check your login "
+"credentials. Thank you for your understanding."
+msgstr ""
+"Il semble que vous n'ayez pas la permission d'accéder à cette page. Si vous "
+"pensez qu'il s'agit d'une erreur, veuillez contacter le support pour obtenir "
+"de l'aide ou vérifier vos informations de connexion. Merci pour votre "
+"compréhension."
+
+#: html5_ui/pages/states/errors/404.html:17
+msgid "Sorry, the page you are looking for can't be found."
+msgstr "Désolé, la page que vous recherchez est introuvable."
+
+#: html5_ui/pages/states/errors/404.html:18
+msgid ""
+"We couldn't find the page you were looking for. It might have been moved or "
+"deleted. Please check the URL or try navigating to a different page on our "
+"site. If you need further assistance, feel free to contact us. Thank you!"
+msgstr ""
+"Nous n'avons pas pu trouver la page que vous recherchez. Elle a peut-être "
+"été déplacée ou supprimée. Veuillez vérifier l'URL ou essayer de naviguer "
+"vers une autre page de notre site. Si vous avez besoin d'aide "
+"supplémentaire, n'hésitez pas à nous contacter. Merci !"
+
+#: html5_ui/pages/states/errors/500.html:14
+msgid "Oops, something went wrong on our end."
+msgstr "Oups, quelque chose s'est mal passé de notre côté."
+
+#: html5_ui/pages/states/errors/500.html:15
+msgid ""
+"We apologize for the inconvenience, but it seems that something went wrong "
+"on our server. Please try again later, or contact support if the issue "
+"persists. Thank you for your understanding."
+msgstr ""
+"Nous nous excusons pour le désagrément, mais il semble qu'il y ait eu un "
+"problème sur notre serveur. Veuillez réessayer plus tard ou contacter le "
+"support si le problème persiste. Merci pour votre compréhension."
+
+#~ msgid "Enter New Password"
+#~ msgstr "Entrez un nouveau mot de passe"

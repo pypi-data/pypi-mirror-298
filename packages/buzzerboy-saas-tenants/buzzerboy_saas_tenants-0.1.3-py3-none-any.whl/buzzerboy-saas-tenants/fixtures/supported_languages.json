@@ -1,0 +1,20 @@
+[
+    {
+        "model": "apps_localization.SupportedLanguage",
+        "pk": 1,
+        "fields": {
+            "language_key": "en",
+            "description": "English",
+            "flag_pic": "static/assets/vendors/img/flags/4x3/um.svg"
+        }
+    },
+    {
+        "model": "apps_localization.SupportedLanguage",
+        "pk": 2,
+        "fields": {
+            "language_key": "fr",
+            "description": "French",
+            "flag_pic": "static/assets/vendors/img/flags/4x3/fr.svg"
+        }
+    }
+]

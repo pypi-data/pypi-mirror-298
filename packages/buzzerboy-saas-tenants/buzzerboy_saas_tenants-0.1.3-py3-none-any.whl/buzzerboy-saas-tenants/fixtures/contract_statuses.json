@@ -1,0 +1,18 @@
+[
+    {
+        "model": "apps_tenant.ContractStatus",
+        "pk": 1,
+        "fields": {
+            "description": "Active",
+            "desc_prefix": "<i class='bg-success'></i>"
+        }
+    },
+    {
+        "model": "apps_tenant.ContractStatus",
+        "pk": 2,
+        "fields": {
+            "description": "Inactive",
+            "desc_prefix": "<i class='bg-danger'></i>"
+        }
+    }
+]
