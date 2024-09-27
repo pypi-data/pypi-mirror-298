@@ -1,0 +1,9 @@
+motives/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+motives/equations.py,sha256=Ma9RI23yNvtHN-5trMCTfxzNRvz26zGNwUKTAPSJxG8,14098
+motives/expression_tree.py,sha256=ORfBa7HDApOfvfnBBYqHdeDpbJI_TKKQ2ztSBPkm2cI,93277
+motives/grothGroupContext.py,sha256=brGcRkPDFPZnxXIjzd_j4yVlN-fY_D0q8RFaPM-D8Lg,19351
+motives/utils.py,sha256=uDAKaOleFHzEJ9c4a5uiDcsXPXAq9RcvHiPvONX8GgE,27044
+motives-0.0.0.dev2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+motives-0.0.0.dev2.dist-info/METADATA,sha256=305gwucZgjK1_pHsdA8S_KHCPLAv9sfyZ5FNYMAQ61w,4049
+motives-0.0.0.dev2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+motives-0.0.0.dev2.dist-info/RECORD,,
