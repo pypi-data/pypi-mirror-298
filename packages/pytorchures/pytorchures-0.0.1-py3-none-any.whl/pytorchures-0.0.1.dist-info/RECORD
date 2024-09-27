@@ -1,0 +1,9 @@
+pytorchures/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytorchures/run_profiling.py,sha256=3t3kV9TQQHWris4T3ikALVsk6uPZWSsK9t2A5W1agVc,3438
+pytorchures/timing.py,sha256=q11YzV7bLNQmgswRxU92JAB1pqQ8sJVXz6fR_ocR-NM,2540
+pytorchures/torchvision_pipeline.py,sha256=cXMpVGAzqP8K_1eJsDL8x388v7NsWlgKzcLvimm8xgU,1556
+pytorchures-0.0.1.dist-info/LICENSE,sha256=pQajuJJVaIzxLnlw7y_oKkEanSbM9BfynUSY8s_SgPs,1055
+pytorchures-0.0.1.dist-info/METADATA,sha256=geMg9f9nOKwKj3bQtWoWXTjYSZ8PKzd_yaPaO0wo364,4118
+pytorchures-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pytorchures-0.0.1.dist-info/top_level.txt,sha256=v3F6Vxn5v5DScHQwBPipqLZaPzXJk--hWV2FwlYbLs8,12
+pytorchures-0.0.1.dist-info/RECORD,,
