@@ -1,0 +1,16 @@
+funcy
+midas-mosaik>=2.0.0a4
+mosaik_api
+
+[arl]
+palaestrai-mosaik>=3.5.4a1
+palaestrai>=3.5.3
+
+[dev]
+mypy~=1.0.1
+pytest
+coverage
+black~=24.1.0
+setuptools
+twine
+wheel
