@@ -1,0 +1,2869 @@
+{
+    "simple_vector_flux_lora": {
+        "required": {
+            "prompt": "v3ct0r style, simple vector art, salesman giving a thumbs up in front of a car, character asset, clip art"
+        },
+        "optional": {
+            "steps": 25,
+            "seed": 6652105,
+            "scheduler": "simple",
+            "sampler_name": "euler",
+            "aspect_ratio": "1:1",
+            "lora_strength": 1
+        }
+    },
+    "ideogram_text_to_image": {
+        "required": {
+            "prompt": "A cinematic black and white medium shot of Albert Einstein in a lab. He is writing a text and looking at the blackboard. The text on the blackboard says 'Stay calm and use Segmind'. The background is filled with scientific equipment."
+        },
+        "optional": {
+            "magic_prompt_option": "AUTO",
+            "negative_prompt": "low quality,blurry",
+            "resolution": "RESOLUTION_1024_1024",
+            "seed": 56698,
+            "style_type": "GENERAL"
+        }
+    },
+    "openvoice": {
+        "required": {
+            "input_audio": "https://segmind-sd-models.s3.amazonaws.com/display_images/openvoice-ip.mp3",
+            "speed": 1,
+            "text": "Did you ever hear a folk tale about a giant turtle?"
+        },
+        "optional": {
+            "language": "EN_NEWEST"
+        }
+    },
+    "cog_videox_image_to_video": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/cog_vid_i2v_ip.png",
+            "prompt": "Animate this serene lakeside night scene with a flickering campfire, gentle water ripples, and subtle movements from the three people sitting around the campfire under the full moon."
+        },
+        "optional": {
+            "negative_prompt": "The video is not of a high quality, it has a low resolution. Watermark present in each frame. Strange motion trajectory.",
+            "seed": 42
+        }
+    },
+    "expression_editor": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/ep-editor-ip.png"
+        },
+        "optional": {
+            "aaa": 0,
+            "blink": 0,
+            "eee": 0,
+            "eyebrow": 0,
+            "image_format": "png",
+            "image_quality": 95,
+            "pupil_x": 0,
+            "pupil_y": 0,
+            "ref_expression_image": null,
+            "rotate_pitch": 0,
+            "rotate_roll": 0,
+            "rotate_yaw": 0,
+            "sample_parts": "OnlyExpression",
+            "smile": 1,
+            "wink": 0,
+            "woo": 0
+        }
+    },
+    "esrgan_video_upscaler": {
+        "required": {
+            "input_video": "https://segmind-sd-models.s3.amazonaws.com/display_images/video-upscale-input.mp4"
+        },
+        "optional": {
+            "crop_to_fit": true,
+            "res_model": "RealESRGAN_x4plus",
+            "resolution": "FHD"
+        }
+    },
+    "consistent_character_with_pose": {
+        "required": {
+            "face_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/ccpose_ip.png",
+            "pose_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/cc_pose_img.png",
+            "prompt": "A candid photo of a woman wearing a blue denim shirt and matching jeans. light smile on her face",
+            "samples": 1,
+            "seed": 2778725438
+        },
+        "optional": {
+            "base_64": false,
+            "custom_height": 1024,
+            "custom_width": 1024,
+            "output_format": "png",
+            "quality": 95,
+            "use_input_img_dimension": true
+        }
+    },
+    "luma_text_to_video": {
+        "required": {
+            "prompt": "An arc shot around an old wizard casting a spell, glowing energy swirling around them as the camera moves in a circular path."
+        },
+        "optional": {
+            "loop": false,
+            "aspect_ratio": "1:1"
+        }
+    },
+    "luma_image_to_video": {
+        "required": {
+            "prompt": "circular pan shot showing perfume advertising"
+        },
+        "optional": {
+            "start_frame": "https://segmind-sd-models.s3.amazonaws.com/display_images/luma-i2v-input.png",
+            "loop": false,
+            "aspect_ratio": "1:1"
+        }
+    },
+    "flux_pulid": {
+        "required": {
+            "prompt": "portrait of woman, neon color, cinematic",
+            "main_face_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/flux-pulid-ip.jpeg"
+        },
+        "optional": {
+            "seed": 720558,
+            "width": 896,
+            "height": 1152,
+            "true_cfg": 1,
+            "id_weight": 1.05,
+            "num_steps": 20,
+            "start_step": 0,
+            "num_outputs": 1,
+            "output_format": "webp",
+            "guidance_scale": 4,
+            "output_quality": 80,
+            "negative_prompt": "bad quality, worst quality, text, signature, watermark, extra limbs, low resolution, partially rendered objects, deformed or partially rendered eyes, deformed, deformed eyeballs, cross-eyed, blurry",
+            "max_sequence_length": 128
+        }
+    },
+    "flux_ipadapter": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/assets_statue.jpeg",
+            "prompt": "wearing sunglasses with red hair"
+        },
+        "optional": {
+            "adapter_strength": 1,
+            "base64": false,
+            "guidance_scale": 3.5,
+            "image_format": "jpeg",
+            "num_inference_steps": 20,
+            "quality": 95,
+            "samples": 1,
+            "seed": 32556,
+            "strength": 1,
+            "true_gs": 2
+        }
+    },
+    "flux_inpaint": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/flux-inapint-ip.jpg",
+            "mask": "https://segmind-sd-models.s3.amazonaws.com/display_images/flux-inpaint-mask.jpeg",
+            "prompt": "huge ship sailing"
+        },
+        "optional": {
+            "base64": false,
+            "guidance_scale": 3.5,
+            "image_format": "jpeg",
+            "negative_prompt": "bad quality, painting, blur",
+            "num_inference_steps": 25,
+            "quality": 95,
+            "sampler": "euler",
+            "samples": 1,
+            "scheduler": "simple",
+            "seed": 12467,
+            "strength": 0.9
+        }
+    },
+    "flux_controlnets": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/model_1.png",
+            "prompt": "Young woman in leather jacket and black mini skirt, busy city street, bokeh background, Kodak film, sunglasses on head, high quality photo, photorealistic, sharp focus, vibrant colors, urban fashion, street style, natural lighting, 35mm lens",
+            "sampler": "euler",
+            "scheduler": "simple",
+            "seed": 652889
+        },
+        "optional": {
+            "base64": false,
+            "cn_stop": 0.5,
+            "cn_strength": 0.4,
+            "cn_type": "pose",
+            "custom_height": 1024,
+            "custom_width": 1024,
+            "guidance": 3.5,
+            "image_format": "jpeg",
+            "quality": 95,
+            "samples": 1,
+            "steps": 20,
+            "use_input_img_dimension": true
+        }
+    },
+    "openai_o1_mini": {
+        "required": {},
+        "optional": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "openai_o1_preview": {
+        "required": {},
+        "optional": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "text_overlay": {
+        "required": {
+            "blend_mode": "normal",
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/txt_overlay_in.png.jpeg",
+            "text": "TRAVEL TODAY"
+        },
+        "optional": {
+            "align": "right",
+            "base64": false,
+            "color": "#FFF",
+            "font": "JosefinSans-Bold",
+            "font_size": 150,
+            "graphspace": 0,
+            "image_format": "jpeg",
+            "image_quality": 90,
+            "linespace": 10,
+            "margin_x": 97,
+            "margin_y": 300,
+            "outline_color": "#11ff00",
+            "outline_size": 0,
+            "text_underlay": true,
+            "wrap": 50
+        }
+    },
+    "cog_video_x_5b": {
+        "required": {
+            "prompt": "A golden retriever, sporting sleek black sunglasses, with its lengthy fur flowing in the breeze, sprints playfully across a rooftop terrace, recently refreshed by a light rain. The scene unfolds from a distance, the dog's energetic bounds growing larger as it approaches the camera, its tail wagging with unrestrained joy, while droplets of water glisten on the concrete behind it. The overcast sky provides a dramatic backdrop, emphasizing the vibrant golden coat of the canine as it dashes towards the viewer."
+        },
+        "optional": {
+            "negative_prompt": "low quality, blurry",
+            "input_frames": 49,
+            "steps": 45,
+            "guidance_scale": 6,
+            "seed": 806286757407563,
+            "frame_rate": 8
+        }
+    },
+    "fast_flux_1_schnell": {
+        "required": {
+            "prompt": "A wallpaper image of sports car with 'Flux' written on it, motion blur, side view, long shot"
+        },
+        "optional": {
+            "steps": 4,
+            "seed": 1184522,
+            "aspect_ratio": "1:1",
+            "base64": false
+        }
+    },
+    "consistent_character_ai_neolemon_v2": {
+        "required": {
+            "prompt": "Pixar animation style, A young cute girl, 5 years old girl, brown skin and large expressive eyes, prominent eyelashes, dark and very curly hair, vibrant pink dress with short sleeves and a slight flare at the waist, joyful, wide smile, rosy cheeks, cheerful appearance"
+        },
+        "optional": {
+            "input_image": "null",
+            "seed": 4898558797
+        }
+    },
+    "flux_realism_lora_with_upscale": {
+        "required": {
+            "prompt": "a young woman smiling while speaking onstage from segmind, white background with corporate logos blurred out, tech conference"
+        },
+        "optional": {
+            "steps": 20,
+            "seed": 6652105,
+            "scheduler": "simple",
+            "sampler_name": "euler",
+            "aspect_ratio": "2:3",
+            "width": 1024,
+            "height": 1024,
+            "upscale_value": 2,
+            "lora_strength": 0.8,
+            "samples": 1,
+            "upscale": false
+        }
+    },
+    "sam_v2_image": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/sam-v2-ip.jpg",
+            "prompt": "boy"
+        },
+        "optional": {
+            "base64": false,
+            "overlay_mask": true
+        }
+    },
+    "sam_v2_video": {
+        "required": {
+            "input_video": "https://segmind-resources.s3.amazonaws.com/input/650fd563-ca86-4c29-8bce-165b6e23bd41-couple_dance.mp4",
+            "prompt": "man",
+            "overlay_mask": true
+        },
+        "optional": {}
+    },
+    "consistent_character_v1": {
+        "required": {
+            "prompt": "((masterpiece, best quality, highly detailed)), simple background, character sheet, multiple poses, multiple actions, visible face, (one person), portrait, full body, young african american girl, white sweater, jeans, short curly brown hair, 2D illustration style",
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/testing_imgs/ref.pose.png",
+            "num_inference_steps": 20,
+            "guidance_scale": 7,
+            "seed": 4898558797,
+            "samples": 1,
+            "strength": 0.8,
+            "scheduler": "karras",
+            "sampler": "dpmpp_2m",
+            "upscale_by": 2,
+            "upscale_steps": 20,
+            "upscale_guidance_scale": 7,
+            "upscale_scheduler": "karras",
+            "upscale_sampler": "dpmpp_2m",
+            "upscale_mode_type": "Linear",
+            "fd_steps": 20,
+            "fd_guidance_scale": 7,
+            "fd_scheduler": "karras",
+            "fd_sampler": "dpmpp_2m"
+        },
+        "optional": {
+            "negative_prompt": "text, watermark, underexposed, ugly, jpeg, (worst quality, low quality, lowres, low details, oversaturated, undersaturated, overexposed, grayscale, bw, bad photo, bad art:1.4), (font, username, error, logo, words, letters, digits, autograph, trademark, name:1.2), (blur, blurry, grainy), cropped, out of frame, cut off, jpeg artifacts, out of focus, glitch, duplicate, (amateur:1.3), merging, clipping, (nsfw), multiple hands, mutant, glitch, uncanny, cross eye, broken face, astronaut, helmet, blurry,"
+        }
+    },
+    "flux_1_image_to_image": {
+        "required": {
+            "prompt": "anime style",
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/flux-i2i-ip.png",
+            "steps": 20,
+            "denoise": 0.75,
+            "scheduler": "simple",
+            "sampler_name": "euler"
+        },
+        "optional": {
+            "seed": 46588,
+            "base64": false
+        }
+    },
+    "easy_animate": {
+        "required": {
+            "input_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/easy-animate/easy-animate-ip.png",
+            "prompt": "photo of a beautiful woman in a night party. The video is of high quality, and the view is very clear. High quality, masterpiece, best quality, highres, ultra-detailed, fantastic"
+        },
+        "optional": {
+            "negative_prompt": "The video is not of a high quality, it has a low resolution, and the audio quality is not clear. Strange motion trajectory, a poor composition and deformed video, low resolution, duplicate and ugly, strange body structure, long and strange neck, bad teeth, bad eyes, bad limbs, bad hands, rotating camera, blurry camera, shaking camera. Deformation, low-resolution, blurry, ugly, distortion.",
+            "video_length": 72,
+            "seed": 43,
+            "steps": 25,
+            "cfg": 7,
+            "scheduler": "Euler",
+            "frame_rate": 24
+        }
+    },
+    "flux_1_dev": {
+        "required": {
+            "prompt": "detailed cinematic dof render of an old dusty detailed CRT monitor on a wooden desk in a dim room with items around, messy dirty room. On the screen are the letters \u201cFLUX dev\u201d glowing softly. High detail hard surface render"
+        },
+        "optional": {
+            "samples": 1,
+            "guidance": 3.5,
+            "steps": 25,
+            "prompt_strength": 0.8,
+            "aspect_ratio": "1:1",
+            "seed": 46588,
+            "output_format": "webp",
+            "output_quality": 80
+        }
+    },
+    "flux_1_schnell": {
+        "required": {
+            "prompt": "a bengal tiger in an astronaut suit on mars, cubist style holding a sign saying 'awesome text gen'"
+        },
+        "optional": {
+            "steps": 4,
+            "seed": 123456789,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "samples": 1,
+            "width": 1024,
+            "height": 1024,
+            "denoise": 1
+        }
+    },
+    "flux__1_pro": {
+        "required": {
+            "prompt": "A mesmerizing 4D rendering illustration masterpiece, capturing the name '1 million users congratulations'under in a captivating, dripping, melting style. The bright, bold white letters are illuminated with vivid hues and emit a whimsical, fun movement. The surrounding abstract shapes, splashes, and drops in various bright colors add to the dynamic atmosphere. The pristine white background contrasts with the bold, striking colors of the text and its surroundings, showcasing the artist's exceptional skills in 3D rendering and illustration. The artist's innovative fusion of typography, 3D rendering, and illustration results in an awe-inspiring piece that is visually stunning, transcending the boundaries of painting, 3D rendering, and vibrant typography., 3d render"
+        },
+        "optional": {
+            "guidance": 3,
+            "steps": 25,
+            "interval": 2,
+            "safety_tolerance": 2,
+            "aspect_ratio": "1:1",
+            "seed": 46588,
+            "output_format": "webp",
+            "output_quality": 80
+        }
+    },
+    "text_embedding_3_small": {
+        "required": {
+            "prompt": "You are beautiful"
+        },
+        "optional": {}
+    },
+    "text_embedding_3_large": {
+        "required": {
+            "prompt": "You are beautiful"
+        },
+        "optional": {}
+    },
+    "realdream_pony_v9": {
+        "required": {
+            "prompt": "score_9, score_8_up, score_7_up, portrait photo of mature woman from brasil, sitting in restaurant, sun set"
+        },
+        "optional": {
+            "negative_prompt": "worst quality, low quality,cleavage,nfsw,naked, illustration, 3d, 2d, painting, cartoons, sketch",
+            "samples": 1,
+            "scheduler": "DPM++ 2M SDE Karras",
+            "num_inference_steps": 25,
+            "guidance_scale": 7,
+            "seed": 968875,
+            "img_width": 768,
+            "img_height": 1152,
+            "base64": false
+        }
+    },
+    "ai_product_photo_editor": {
+        "required": {
+            "product_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/ppv3-test/main-ip.jpeg",
+            "background_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/ppv3-test/bg6.png",
+            "prompt": "photo of a mixer grinder in modern kitchen",
+            "num_inference_steps": 21,
+            "sampler": "dpmpp_3m_sde_gpu"
+        },
+        "optional": {
+            "negative_prompt": "illustration, bokeh, low resolution, bad anatomy, painting, drawing, cartoon, bad quality, low quality",
+            "guidance_scale": 6,
+            "seed": 2566965,
+            "scheduler": "karras",
+            "samples": 1,
+            "ipa_weight": 0.3,
+            "ipa_weight_type": "linear",
+            "ipa_start": 0,
+            "ipa_end": 0.5,
+            "ipa_embeds_scaling": "V only",
+            "cn_strenght": 0.85,
+            "cn_start": 0,
+            "cn_end": 0.8,
+            "dilation": 10,
+            "mask_threshold": 220,
+            "gaussblur_radius": 8,
+            "base64": false
+        }
+    },
+    "realdream_lightning": {
+        "required": {
+            "prompt": "girl in a hat, in a dress Russian patterns, freckles, cornfield, nature background, beautiful landscape, retro style, fashion, magazine cover, professional quality, aesthetics, gentle, beautiful, realism,high detail,high quality, 64k, high resolution, professional photo"
+        },
+        "optional": {
+            "negative_prompt": "blemishes,(worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth",
+            "samples": 1,
+            "scheduler": "DPM++ SDE",
+            "num_inference_steps": 8,
+            "guidance_scale": 1.2,
+            "seed": 968875,
+            "img_width": 768,
+            "img_height": 1152,
+            "base64": false
+        }
+    },
+    "llama_3_1_405b": {
+        "required": {},
+        "optional": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "llama_3_1_70b": {
+        "required": {},
+        "optional": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "llama_3_1_8b": {
+        "required": {},
+        "optional": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "stable_diffusion_3_medium_image_to_image": {
+        "required": {
+            "prompt": "photo of a boy holding phone on table,3d pixar style",
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/sd3-img2img-ip.jpg"
+        },
+        "optional": {
+            "negative_prompt": "low quality,less details",
+            "num_inference_steps": 20,
+            "guidance_scale": 5,
+            "seed": 698845,
+            "samples": 1,
+            "strength": 0.7,
+            "sampler": "dpmpp_2m",
+            "scheduler": "sgm_uniform",
+            "base64": false
+        }
+    },
+    "sd3_medium_tile_controlnet": {
+        "required": {
+            "prompt": "Anime style illustration of a girl wearing a suit. A moon in sky. In the background we see a big rain approaching.",
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/sd3m-controlnet/sd3-tile.jpg"
+        },
+        "optional": {
+            "negative_prompt": "low quality,less details",
+            "num_inference_steps": 20,
+            "guidance_scale": 7,
+            "seed": 698845,
+            "samples": 1,
+            "strength": 0.8,
+            "sampler": "dpmpp_2m",
+            "scheduler": "sgm_uniform",
+            "base64": false
+        }
+    },
+    "sd3_medium_canny_controlnet": {
+        "required": {
+            "prompt": "Anime style illustration of a girl wearing a suit. A moon in sky. In the background we see a big rain approaching.",
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/sd3m-controlnet/sd3-canny-ip.jpg"
+        },
+        "optional": {
+            "negative_prompt": "low quality,less details",
+            "num_inference_steps": 20,
+            "guidance_scale": 7,
+            "seed": 698845,
+            "samples": 1,
+            "strength": 0.8,
+            "sampler": "dpmpp_2m",
+            "scheduler": "sgm_uniform",
+            "base64": false
+        }
+    },
+    "sd3_medium_pose_controlnet": {
+        "required": {
+            "prompt": "Anime style illustration of a girl wearing a suit. A moon in sky. In the background we see a big rain approaching.",
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/sd3m-controlnet/sd3-canny-ip.jpg"
+        },
+        "optional": {
+            "negative_prompt": "low quality,less details",
+            "num_inference_steps": 20,
+            "guidance_scale": 7,
+            "seed": 698845,
+            "samples": 1,
+            "strength": 0.8,
+            "sampler": "dpmpp_2m",
+            "scheduler": "sgm_uniform",
+            "base64": false
+        }
+    },
+    "motion_control_svd": {
+        "required": {
+            "input_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/motion-control-svd/motionctrl_ip.png",
+            "fps": 7,
+            "motion": "CW",
+            "motion_bucket_id": 127,
+            "cond_aug": 0.02
+        },
+        "optional": {
+            "seed": 985445,
+            "decoding_t": 1,
+            "maintain_aspect_ratio": true,
+            "motion_speed": 1,
+            "base64": false
+        }
+    },
+    "live_portrait_video_to_video": {
+        "required": {
+            "input_video": "https://segmind-sd-models.s3.amazonaws.com/display_images/live-portrait-v2v/live_portrait_v2v_input_vid.mp4",
+            "driving_video": "https://segmind-sd-models.s3.amazonaws.com/display_images/live-portrait-v2v/livie_portrait_driving_vid.mp4",
+            "dsize": 512,
+            "scale": 2.3,
+            "input_face_index": 0,
+            "drive_face_index": 0,
+            "mismatch_method": "cut",
+            "video_frame_load_cap": 120
+        },
+        "optional": {
+            "driving_audio": false,
+            "vx_ratio": 0,
+            "vy_ratio": -0.125,
+            "crop_drive_face": false,
+            "lip_zero": true,
+            "lip_zero_threshold": 0.03,
+            "eye_retargeting": false,
+            "eyes_retargeting_multiplier": 1,
+            "lip_retargeting": false,
+            "lip_retargeting_multiplier": 1,
+            "stitching": true,
+            "relative": true,
+            "base64": false
+        }
+    },
+    "image_superimpose_v2": {
+        "required": {
+            "base_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/superimpose-v2-model.jpeg",
+            "overlay_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/tshirt-logo-2.png"
+        },
+        "optional": {
+            "mask": null,
+            "rescale_factor": 0.4,
+            "resize_method": "nearest",
+            "bg_remove_model": "Bria",
+            "mirror": "None",
+            "blend_mode": "screen",
+            "opacity": 90,
+            "x_percent": 50,
+            "y_percent": 65,
+            "rotation": 0,
+            "base64": false
+        }
+    },
+    "video_faceswap": {
+        "required": {
+            "source_img": "https://segmind-sd-models.s3.amazonaws.com/display_images/videoFaceSwap/faceswap-image.jpg",
+            "video_input": "https://segmind-sd-models.s3.amazonaws.com/display_images/videoFaceSwap/faceswap-input.mp4",
+            "input_faces_index": 0,
+            "source_faces_index": 0,
+            "frame_load_cap": 0
+        },
+        "optional": {
+            "face_restore": true,
+            "face_restore_visibility": 1,
+            "codeformer_weight": 0.95,
+            "detect_gender_input": "no",
+            "detect_gender_source": "no",
+            "base_64": false
+        }
+    },
+    "aura_flow": {
+        "required": {},
+        "optional": {
+            "cfg": 5,
+            "seed": 2425367,
+            "shift": 1.73,
+            "steps": 25,
+            "width": 1024,
+            "height": 1024,
+            "prompt": "A mesmerizing 3D render displaying a vibrant, dark fantasy-inspired birthday message for Mehtap. The letters 'Happy birthday' are written in a dreamy, pastel-colored cursive script, floating elegantly above a gradient background that transitions seamlessly from deep purple to soft pink. The dreamy atmosphere is accentuated by a vibrant swirling array of decorative elements, including a rainbow, heart-shaped objects in various sizes and textures, twinkling stars, and a collection of colorful, abstract shapes. The overall design pays homage to Ukiyo-e and graffiti art, creating a unique and captivating visual experience., 3d render, graffiti, vibrant, dark fantasy, typography, ukiyo-e, conceptual art",
+            "sampler": "uni_pc",
+            "scheduler": "normal",
+            "output_format": "webp",
+            "output_quality": 80,
+            "number_of_images": 1
+        }
+    },
+    "live_portrait": {
+        "required": {
+            "face_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/liveportrait-input.jpg",
+            "driving_video": "https://segmind-sd-models.s3.amazonaws.com/display_images/liveportrait-video.mp4"
+        },
+        "optional": {
+            "live_portrait_dsize": 512,
+            "live_portrait_scale": 2.3,
+            "video_frame_load_cap": 128,
+            "live_portrait_lip_zero": true,
+            "live_portrait_relative": true,
+            "live_portrait_vx_ratio": 0,
+            "live_portrait_vy_ratio": -0.12,
+            "live_portrait_stitching": true,
+            "video_select_every_n_frames": 1,
+            "live_portrait_eye_retargeting": false,
+            "live_portrait_lip_retargeting": false,
+            "live_portrait_lip_retargeting_multiplier": 1,
+            "live_portrait_eyes_retargeting_multiplier": 1
+        }
+    },
+    "dubbing": {
+        "required": {
+            "source_url": "https://segmind-sd-models.s3.amazonaws.com/display_images/dubbing-op.mp3"
+        },
+        "optional": {
+            "source_lang": "auto",
+            "target_lang": "hi"
+        }
+    },
+    "claude_3_haiku": {
+        "required": {},
+        "optional": {
+            "instruction": "Respond in a playful and humorous manner, keeping the tone light and entertaining.",
+            "temperature": 0.1,
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "claude_3_opus": {
+        "required": {},
+        "optional": {
+            "instruction": "Respond in a playful and humorous manner, keeping the tone light and entertaining.",
+            "temperature": 0.1,
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "gemini_pro": {
+        "required": {},
+        "optional": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "gemini_flash": {
+        "required": {},
+        "optional": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "claude_3_5_sonnet": {
+        "required": {},
+        "optional": {
+            "instruction": "Respond in a playful and humorous manner, keeping the tone light and entertaining.",
+            "temperature": 0.1,
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "kolors": {
+        "required": {
+            "prompt": "In this lively 2D illustration, three animated boys joyfully have their laughter filling the air. , adding warmth and charm. The agave field behind them radiates warmth, emphasizing the authenticity of this gathering spot and the togetherness of the boys sharing a moment of joy."
+        },
+        "optional": {
+            "cfg": 6,
+            "seed": 441234134,
+            "steps": 25,
+            "width": 1024,
+            "height": 1024,
+            "scheduler": "EulerDiscreteScheduler",
+            "output_format": "webp",
+            "output_quality": 80,
+            "number_of_images": 1
+        }
+    },
+    "playground_v2_5": {
+        "required": {
+            "prompt": "(solo), anthro, male, protogen, high detailed fur, smile, hyperdetailed,realistic"
+        },
+        "optional": {
+            "negative_prompt": "bad anatomy, bad hands, missing fingers,low quality,blurry",
+            "samples": 1,
+            "num_inference_steps": 25,
+            "guidance_scale": 3,
+            "seed": 36446545871,
+            "base64": false
+        }
+    },
+    "image_superimpose": {
+        "required": {
+            "base_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/tshirt+mock.jpg",
+            "overlay_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/tshirt+logo.png"
+        },
+        "optional": {
+            "mask": "undefined",
+            "rescale_factor": 0.4,
+            "resize_method": "nearest-exact",
+            "overlay_resize": "Resize by rescale_factor",
+            "opacity": 1,
+            "height": 1024,
+            "width": 1024,
+            "x_offset": 320,
+            "y_offset": 620,
+            "rotation": 0,
+            "base64": false
+        }
+    },
+    "sdxl_img2img": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/sdxl-img2img-ip.jpg",
+            "prompt": "photorealistic, high-quality, ultra-detailed, image of (an origami bird with a layer that makes each folded polygonal section of the origami a different vivid c olor, an origami rainbow of color in a forest of origami plants and trees in the background), best quality, masterpiece, masterful composition, award, extremely detailed, incredibly high resolution, 32k, 16k, 8k, 4k, UHD, HDR, hyperrealistic, photo studio quality, amazing clarity, tack sharp, sharp focus, volumetric lighting, cinematic style"
+        },
+        "optional": {
+            "samples": 1,
+            "negative_prompt": "nude, disfigured, blurry",
+            "scheduler": "UniPC",
+            "base_model": "juggernaut",
+            "num_inference_steps": 30,
+            "guidance_scale": 6.5,
+            "strength": 0.65,
+            "seed": 98877465625,
+            "base64": false
+        }
+    },
+    "sdxl_controlnet": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/sdxl-controlnet-input.jpeg",
+            "prompt": "American woman, smiling, waving, eyeglasses, casual clothing, sitting at desk, laptop, home office, indoor, daylight, modern decor, house plants, bookshelf, natural lighting"
+        },
+        "optional": {
+            "negative_prompt": "low quality, ugly, painting, extra fingers, deformed",
+            "samples": 1,
+            "scheduler": "UniPC",
+            "cn_model": "sdxl_canny",
+            "num_inference_steps": 30,
+            "guidance_scale": 6,
+            "seed": 760941192,
+            "controlnet_scale": 0.9,
+            "base64": false
+        }
+    },
+    "story_diffusion": {
+        "required": {},
+        "optional": {
+            "seed": 42,
+            "num_ids": 3,
+            "sd_model": "Unstable",
+            "num_steps": 25,
+            "image_width": 768,
+            "image_height": 768,
+            "sa32_setting": 0.5,
+            "sa64_setting": 0.5,
+            "output_format": "webp",
+            "guidance_scale": 5,
+            "output_quality": 80,
+            "negative_prompt": "bad anatomy, bad hands, missing fingers, extra fingers, three hands, three legs, bad arms, missing legs, missing arms, poorly drawn face, bad face, fused face, cloned face, three crus, fused feet, fused thigh, extra crus, ugly fingers, horn, cartoon, cg, 3d, unreal, animate, amputation, disconnected limbs",
+            "character_description": "a man, wearing black suit",
+            "comic_description": "at home, read new paper #at home, The newspaper says there is a treasure house in the forest.on the road, near the forest[NC] The car on the road, near the forest #He drives to the forest in search of treasure.[NC]A tiger appeared in the forest, at night very frightened, open mouth, in the forest, at nightrunning very fast, in the forest, at night[NC] A house in the forest, at night #Suddenly, he discovers the treasure house!in the house filled with  treasure, laughing, at night #He is overjoyed inside the house.",
+            "style_strength_ratio": 20,
+            "style_name": "Disney Charactor",
+            "comic_style": "Classic Comic Style"
+        }
+    },
+    "elevenlabs_sound_generation": {
+        "required": {
+            "text": "Looking good"
+        },
+        "optional": {
+            "duration_seconds": 1,
+            "prompt_influence": 0.3
+        }
+    },
+    "elevenlabs_speech_to_speech": {
+        "required": {
+            "input_audio": "https://segmind-sd-models.s3.amazonaws.com/display_images/sad_talker/sad_talker_audio_input.mp3"
+        },
+        "optional": {
+            "voice": "Sarah"
+        }
+    },
+    "elevenlabs_text_to_speech": {
+        "required": {
+            "prompt": "In today's fast-paced world, many of us find ourselves racing against time. We're always planning, worrying, or reminiscing."
+        },
+        "optional": {
+            "voice": "Sarah"
+        }
+    },
+    "omni_zero": {
+        "required": {
+            "style_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/omni-zero-style.jpg",
+            "identity_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/omni-zero-identity.jpg"
+        },
+        "optional": {
+            "seed": 42,
+            "prompt": "A person",
+            "base_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/omni-zero-base.jpg",
+            "guidance_scale": 3,
+            "negative_prompt": "blurry, out of focus",
+            "number_of_steps": 10,
+            "number_of_images": 1,
+            "composition_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/omni-zero-base.jpg",
+            "base_image_strength": 0.15,
+            "depth_image_strength": 0.5,
+            "style_image_strength": 1,
+            "identity_image_strength": 1,
+            "composition_image_strength": 1
+        }
+    },
+    "llava_1_6_7b": {
+        "required": {
+            "images": "https://segmind-sd-models.s3.amazonaws.com/display_images/llava-input.jpg",
+            "prompt": "Describe meta data of the image in this format, keep them short and factually correct:1. Category,2. Primary Colors,3. Additional Colors,4. Primary Material,5. Secondary Materials,6. Style and a couple others if you can find any according to the product. give it in json"
+        },
+        "optional": {}
+    },
+    "llava_13b": {
+        "required": {},
+        "optional": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "tooncrafter": {
+        "required": {
+            "image_1": "https://segmind-sd-models.s3.amazonaws.com/display_images/tooncrafter/t1.jpg",
+            "image_2": "https://segmind-sd-models.s3.amazonaws.com/display_images/tooncrafter/t2.jpg"
+        },
+        "optional": {
+            "loop": false,
+            "seed": 42,
+            "prompt": "cartoon character animation",
+            "image_3": "https://segmind-sd-models.s3.amazonaws.com/display_images/tooncrafter/t3.jpg",
+            "image_4": "https://segmind-sd-models.s3.amazonaws.com/display_images/tooncrafter/t4.jpg",
+            "image_5": "https://segmind-sd-models.s3.amazonaws.com/display_images/tooncrafter/t5.jpg",
+            "image_6": "https://segmind-sd-models.s3.amazonaws.com/display_images/tooncrafter/t6.jpg",
+            "max_width": 512,
+            "max_height": 512,
+            "interpolate": false,
+            "negative_prompt": "low quality",
+            "color_correction": true
+        }
+    },
+    "v_express": {
+        "required": {
+            "input_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/v_express/v-express-ip.jpg",
+            "input_audio": "https://segmind-sd-models.s3.amazonaws.com/display_images/v_express/v_express_audio.mp3"
+        },
+        "optional": {
+            "fps": 30,
+            "num_inference_steps": 20,
+            "guidance_scale": 2,
+            "retarget_strategy": "fix_face",
+            "base64": false
+        }
+    },
+    "sadtalker": {
+        "required": {
+            "input_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/sad_talker/sad-talker-input.png",
+            "input_audio": "https://segmind-sd-models.s3.amazonaws.com/display_images/sad_talker/sad_talker_audio_input.mp3"
+        },
+        "optional": {
+            "pose_style": 4,
+            "expression_scale": 1.4,
+            "preprocess": "full",
+            "image_size": 256,
+            "enhancer": true,
+            "base64": false
+        }
+    },
+    "hallo": {
+        "required": {
+            "input_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/hallo/hallo-input.png",
+            "input_audio": "https://segmind-sd-models.s3.amazonaws.com/display_images/hallo/hallo-audio-2.mp3"
+        },
+        "optional": {
+            "pose_weight": 1.4,
+            "face_weight": 1,
+            "lip_weight": 1.2,
+            "face_expand_ratio": 1.2,
+            "base64": false
+        }
+    },
+    "relighting": {
+        "required": {
+            "prompt": "cat, photoshoot, 4k",
+            "subject_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/ic-lighting-input.jpeg"
+        },
+        "optional": {
+            "cfg": 2,
+            "seed": 42,
+            "steps": 25,
+            "width": 512,
+            "height": 640,
+            "light_source": "None",
+            "highres_scale": 1.5,
+            "output_format": "webp",
+            "lowres_denoise": 0.9,
+            "output_quality": 80,
+            "appended_prompt": "best quality",
+            "highres_denoise": 0.5,
+            "negative_prompt": "lowres, bad anatomy, bad hands, cropped, worst quality",
+            "number_of_images": 1
+        }
+    },
+    "automatic_mask_generator": {
+        "required": {
+            "prompt": "Sofa",
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/automask-ip.jpg"
+        },
+        "optional": {
+            "threshold": 0.2,
+            "invert_mask": false,
+            "return_mask": true,
+            "grow_mask": 10,
+            "seed": 468685,
+            "base64": false
+        }
+    },
+    "magic_eraser": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/ai-majic-erase-ip.jpg",
+            "mask": "https://segmind-sd-models.s3.amazonaws.com/display_images/ai-majic-erase-mask.jpeg"
+        },
+        "optional": {
+            "invert_mask": false,
+            "grow_mask": 10,
+            "seed": 468685,
+            "base64": false
+        }
+    },
+    "inpaint_mask_maker": {
+        "required": {
+            "prompt": "white horse",
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/inpaint-mask-maker-input.jpg"
+        },
+        "optional": {
+            "invert_mask": false,
+            "confidence_thresh": 0.5,
+            "iou_thresh": 0.2,
+            "return_mask": false,
+            "grow_mask": 10,
+            "base64": false
+        }
+    },
+    "background_eraser": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/background-eraser-ip.png",
+            "return_mask": true
+        },
+        "optional": {
+            "invert_mask": false,
+            "grow_mask": 0,
+            "base64": false
+        }
+    },
+    "clarity_upscaler": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/clarity_upscale_input.png"
+        },
+        "optional": {
+            "seed": 1337,
+            "prompt": "masterpiece, best quality, highres, <lora:more_details:0.5> <lora:SDXLrender_v2.0:1>",
+            "dynamic": 6,
+            "handfix": "disabled",
+            "sharpen": 0,
+            "sd_model": "juggernaut_reborn.safetensors [338b85bc4f]",
+            "scheduler": "DPM++ 3M SDE Karras",
+            "creativity": 0.35,
+            "downscaling": false,
+            "resemblance": 0.6,
+            "scale_factor": 1,
+            "tiling_width": 112,
+            "output_format": "png",
+            "tiling_height": 144,
+            "negative_prompt": "(worst quality, low quality, normal quality:2) JuggernautNegative-neg",
+            "num_inference_steps": 18,
+            "downscaling_resolution": 768
+        }
+    },
+    "consistent_character": {
+        "required": {},
+        "optional": {
+            "seed": 42,
+            "prompt": "a photo of a man at a beach, wearing hawaiian shirt, looking directly at the camera",
+            "subject": "https://segmind-sd-models.s3.amazonaws.com/display_images/consistant-character-ip.png",
+            "output_format": "webp",
+            "output_quality": 80,
+            "negative_prompt": "low quality,blur",
+            "randomise_poses": true,
+            "number_of_outputs": 1,
+            "number_of_images_per_pose": 1
+        }
+    },
+    "idm_vton": {
+        "required": {
+            "human_img": "https://segmind-sd-models.s3.amazonaws.com/display_images/idm-ip.png",
+            "garm_img": "https://segmind-sd-models.s3.amazonaws.com/display_images/idm-viton-dress.png"
+        },
+        "optional": {
+            "crop": false,
+            "seed": 42,
+            "steps": 30,
+            "category": "upper_body",
+            "force_dc": false,
+            "mask_only": false,
+            "garment_des": "Green colour semi Formal Blazer"
+        }
+    },
+    "stable_diffusion_3_medium_text_to_image": {
+        "required": {
+            "prompt": "A whimsical and high-resolution highly realistic image of a panda in a vintage cosmonaut suit. The panda is holding a sign that reads 'I love flying to the moon!' in playful lettering. The panda's helmet has a small propeller on top and a Indian flag patch, adding to the cosmic vibe. The background features a retro-styled spaceship with rockets and stars, giving the impression of a thrilling journey through space"
+        },
+        "optional": {
+            "negative_prompt": "bad quality, poor quality, doll, disfigured, jpg, toy, bad anatomy, missing limbs, missing fingers, 3d, cgi",
+            "samples": 1,
+            "scheduler": "DPM++ 2M",
+            "num_inference_steps": 25,
+            "guidance_scale": 5,
+            "denoise": 1,
+            "seed": 468685,
+            "img_width": 1024,
+            "img_height": 1024,
+            "modelsamplingsd3_shift": 3,
+            "conditioningsettimesteprange_start": 0.1,
+            "conditioningsettimesteprange_stop": 1,
+            "base64": false
+        }
+    },
+    "fooocus": {
+        "required": {
+            "prompt": "cinematic 3D caricature of a woman, smiling, looking happy",
+            "aspect_ratio": "1024*1024"
+        },
+        "optional": {
+            "negative_prompt": "lowquality, badquality, sketches",
+            "steps": 30,
+            "samples": 1,
+            "styles": "V2,Enhance,Sharp",
+            "seed": 1849415,
+            "guidance_scale": 4,
+            "scheduler": "DPM++ 2M SDE Karras",
+            "base_model": "protovisionxl",
+            "faceswap_img": "https://segmind-sd-models.s3.amazonaws.com/display_images/fooocus-face-image.jpg",
+            "faceswap_cn_stop": 0.9,
+            "faceswap_cn_weight": 0.8,
+            "imageprompt_img": "https://segmind-sd-models.s3.amazonaws.com/display_images/fooocus-image-prompt.png",
+            "imageprompt_cn_stop": 0.5,
+            "imageprompt_cn_weight": 0.6,
+            "pyracanny_img": "undefined",
+            "pyracanny_cn_stop": 0.5,
+            "pyracanny_cn_weight": 1,
+            "cpds_img": "undefined",
+            "cpds_cn_stop": 0.5,
+            "cpds_cn_weight": 1,
+            "base64": false
+        }
+    },
+    "ipadapter_style_transfer": {
+        "required": {
+            "style_image": "https://segmind-inference-io.s3.amazonaws.com/sample_images/40548cb9-ae1f-4caa-969d-382c913a74ef.webp"
+        },
+        "optional": {
+            "model": "fast",
+            "width": 1024,
+            "height": 1024,
+            "prompt": "A panda running on a jogging track",
+            "output_format": "webp",
+            "output_quality": 80,
+            "number_of_images": 1,
+            "structure_depth_strength": 1,
+            "structure_denoising_strength": 0.65
+        }
+    },
+    "profile_photo_style_transfer": {
+        "required": {},
+        "optional": {
+            "image": "https://segmind-inference-io.s3.us-east-1.amazonaws.com/sample_images/image_71.webp",
+            "prompt": "a person",
+            "image_to_become": "https://segmind-inference-io.s3.amazonaws.com/sample_images/40548cb9-ae1f-4caa-969d-382c913a74ef.webp",
+            "prompt_strength": 2,
+            "number_of_images": 2,
+            "denoising_strength": 1,
+            "instant_id_strength": 1,
+            "image_to_become_noise": 0.3,
+            "control_depth_strength": 0.8,
+            "disable_safety_checker": true,
+            "image_to_become_strength": 0.75
+        }
+    },
+    "illusion_diffusion_hq": {
+        "required": {
+            "prompt": "(masterpiece:1.4), (best quality), (detailed), Medieval village scene with busy streets and castle in the distance"
+        },
+        "optional": {
+            "seed": -1,
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/spiral.png",
+            "width": 768,
+            "border": 1,
+            "height": 768,
+            "num_outputs": 1,
+            "guidance_scale": 7.5,
+            "negative_prompt": "ugly, disfigured, low quality, blurry, nsfw",
+            "qrcode_background": "gray",
+            "num_inference_steps": 40,
+            "controlnet_conditioning_scale": 1
+        }
+    },
+    "pulid": {
+        "required": {
+            "face_image": "https://segmind-sd-models.s3.amazonaws.com/outputs/realvis_xl.jpeg"
+        },
+        "optional": {
+            "seed": 451312,
+            "width": 1024,
+            "height": 1024,
+            "prompt": "anime middle aged professional guy",
+            "face_style": "high-fidelity",
+            "output_format": "png",
+            "output_quality": 80,
+            "negative_prompt": "None",
+            "checkpoint_model": "general - dreamshaperXL_alpha2Xl10",
+            "number_of_images": 1
+        }
+    },
+    "yamers_realistic_sdxl": {
+        "required": {
+            "prompt": "1girl, a beautiful shieldmaiden from Rohan before Edoras, (masterpiece, extremely detailed, professional photography), (beautiful detailed face, high cheek bones, pointy chin, slim face, beautiful green eyes), horse-shaped golden earrings, braided hair, (freckles:0.5, moles:0.5), standing on a green prairie with evergreen flowers, slender, fit, long eyelashes, black eyeshadow, eyeliner, focus on eyes, intricate detailed background, intricate fantasy cloths, stunningly pretty, hyper realistic details, cinematic lighting, cinematic quality, sharpen, fighting stance, scale mail, half helmet, round wooden shield, broadsword in hand, redhead, braids, leather armbands, snowed White Mountains can be seen far in the background, conysv3-1400, remarkable colors, ultra realistic, textured skin, remarkable detailed pupils, perfect symmetric eyes, realistic dull skin noise, visible skin detail, skin fuzz, dry skin, shallow depth of field, highly detailed, OverallDetail, gorgeous, eye catchlights, skin pores, imperfections, natural, dark mascara,eyeliner2"
+        },
+        "optional": {
+            "negative_prompt": "old, ugly, easynegative, Unspeakable-Horrors-Composition-4v By bad artist -neg bad-hands-5 bad_prompt_version2 verybadimagenegative_v1.3 (elf, elf ears, elf maiden), FastNegativeV2, Watermark, Text, censored, deformed, bad anatomy, disfigured, poorly drawn face, mutated, extra limb, ugly, poorly drawn hands, missing limb, floating limbs, disconnected limbs, disconnected head, malformed hands, long neck, mutated hands and fingers, bad hands, missing fingers, cropped, worst quality, low quality, mutation, poorly drawn, huge calf, bad hands, fused hand, missing hand, disappearing arms, disappearing thigh, disappearing calf, disappearing legs, missing fingers, fused fingers, abnormal eye proportion, Abnormal hands, abnormal legs, abnormal feet, abnormal fingers",
+            "samples": 1,
+            "scheduler": "DPM++ 2M Karras",
+            "num_inference_steps": 30,
+            "guidance_scale": 7,
+            "seed": 565481734,
+            "img_width": 896,
+            "img_height": 1152,
+            "base64": false
+        }
+    },
+    "gpt_4_turbo": {
+        "required": {},
+        "optional": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "gpt_4o": {
+        "required": {},
+        "optional": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "gpt_4": {
+        "required": {},
+        "optional": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "mixtral_8x7b": {
+        "required": {},
+        "optional": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "mixtral_8x22b": {
+        "required": {},
+        "optional": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "pulid_lightning": {
+        "required": {
+            "face_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/Pid_ip.png.png"
+        },
+        "optional": {
+            "seed": 412431,
+            "width": 1024,
+            "height": 1024,
+            "prompt": "A photo of a person",
+            "face_style": "high-fidelity",
+            "output_format": "png",
+            "output_quality": 80,
+            "negative_prompt": "None",
+            "checkpoint_model": "default",
+            "number_of_images": 1
+        }
+    },
+    "fashion_ai": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/Fai_ip.png.png",
+            "prompt": "a person wearing blue jeans"
+        },
+        "optional": {
+            "clothing": "topwear"
+        }
+    },
+    "face_to_many": {
+        "required": {},
+        "optional": {
+            "seed": 1321321,
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/Ftm_ip.png.jpg",
+            "style": "3D",
+            "prompt": "a person",
+            "lora_scale": 1,
+            "prompt_strength": 4.5,
+            "denoising_strength": 0.65,
+            "instant_id_strength": 1,
+            "control_depth_strength": 0.8
+        }
+    },
+    "face_to_sticker": {
+        "required": {},
+        "optional": {
+            "seed": 411,
+            "image": "https://segmind-sd-models.s3.amazonaws.com/display_images/face-to-sticker-input.jpg",
+            "steps": 20,
+            "width": 1024,
+            "height": 1024,
+            "prompt": "a person",
+            "upscale": false,
+            "upscale_steps": 10,
+            "prompt_strength": 7,
+            "ip_adapter_noise": 0.5,
+            "ip_adapter_weight": 0.2,
+            "instant_id_strength": 1
+        }
+    },
+    "llama_3_8b": {
+        "required": {},
+        "optional": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "material_transfer": {
+        "required": {
+            "subject_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/bird.png",
+            "material_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/ruby.png"
+        },
+        "optional": {
+            "steps": 6,
+            "prompt": "marble sculpture",
+            "max_width": 1920,
+            "max_height": 1920,
+            "output_format": "webp",
+            "guidance_scale": 2,
+            "output_quality": 80,
+            "material_strength": "medium",
+            "return_intermediate_images": false
+        }
+    },
+    "llama_3_70b": {
+        "required": {},
+        "optional": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "tell me a joke on cats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "here is a joke about cats..."
+                },
+                {
+                    "role": "user",
+                    "content": "now a joke on dogs"
+                }
+            ]
+        }
+    },
+    "faceswap_v2": {
+        "required": {
+            "source_img": "https://www.segmind.com/elon.jpg",
+            "target_img": "https://segmind-sd-models.s3.amazonaws.com/display_images/faceswapv2_target.jpg",
+            "input_faces_index": 0,
+            "source_faces_index": 0,
+            "face_restore": "codeformer-v0.1.0.pth"
+        },
+        "optional": {
+            "base64": false
+        }
+    },
+    "insta_depth": {
+        "required": {
+            "prompt": "Photo of a woman wearing a Superman costume",
+            "face_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/insta-depth-ip.png",
+            "pose_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/insta-dept-pose.png"
+        },
+        "optional": {
+            "negative_prompt": "lowquality, badquality, sketches",
+            "num_inference_steps": 10,
+            "guidance_scale": 4,
+            "seed": 354849415,
+            "base64": false
+        }
+    },
+    "background_removal_v2": {
+        "required": {
+            "image": "https://www.segmind.com/bg-removal.jpg"
+        },
+        "optional": {
+            "type": "transparent"
+        }
+    },
+    "newreality_lightning_sdxl": {
+        "required": {
+            "prompt": "Thelema-themed, ethereal fantasy concept art of  Dystopian style Grim-noire, wide angle shot, (establishing shot:1.7), Perfect photograph, ((Hell hath no queen! But, o thou red mouthed curving In kisses that bring blood, shall I be alone? What of the accomplice of these deeds unswerving? Will not your dead hot kisses match mine own? As here your ardours brand me bone and marrow Biting like fire and poison in my veins, Shall you not there still ply your nameless harrow. Mingle a cup from those our common pains To intoxicate us with an extreme pleasure Keener than life, more dolorous than death Till these infernal blisses pass the measure Of heaven imagined by the tremulous breaths Of silly saints and silly sinners, swaying From scraps of blasphemy to scraps of praying?)), perfect composition, dynamic lighting, dramatic action, trending on artstation, sharp focus, studio photo, intricate details, highly detailed,  Bleak, post-apocalyptic, somber, dramatic, highly detailed, dramatic , Zeiss Master Prime Lenses, Panavision, Film Stock Footage, Kodak Eastman 100T 5247 Cinematic .magnificent, celestial, ethereal, painterly, epic, majestic, magical, fantasy art, cover art, dreamy, misc, . highly detailed"
+        },
+        "optional": {
+            "negative_prompt": "((close up)),(octane render, render, drawing, bad photo, bad photography:1.3), (worst quality, low quality, blurry:1.2), (bad teeth, deformed teeth, deformed lips), (bad anatomy, bad proportions:1.1), (deformed iris, deformed pupils), (deformed eyes, bad eyes), (deformed face, ugly face, bad face), (deformed hands, bad hands, fused fingers), morbid, mutilated, mutation, disfigured",
+            "samples": 1,
+            "scheduler": "DPM++ SDE",
+            "num_inference_steps": 7,
+            "guidance_scale": 1,
+            "seed": 1220429729,
+            "img_width": 1024,
+            "img_height": 1024,
+            "base64": false
+        }
+    },
+    "dreamshaper_lightning_sdxl": {
+        "required": {
+            "prompt": "1girl,on stage,beautiful,rich details,bokeh,"
+        },
+        "optional": {
+            "negative_prompt": "((close up)),(octane render, render, drawing, bad photo, bad photography:1.3), (worst quality, low quality, blurry:1.2), (bad teeth, deformed teeth, deformed lips), (bad anatomy, bad proportions:1.1), (deformed iris, deformed pupils), (deformed eyes, bad eyes), (deformed face, ugly face, bad face), (deformed hands, bad hands, fused fingers), morbid, mutilated, mutation, disfigured",
+            "samples": 1,
+            "scheduler": "DPM++ SDE",
+            "num_inference_steps": 7,
+            "guidance_scale": 1,
+            "seed": 2644125604,
+            "img_width": 1024,
+            "img_height": 1024,
+            "base64": false
+        }
+    },
+    "colossus_lightning_sdxl": {
+        "required": {
+            "prompt": "half body,cinematic film still, a cat mage, armor, wrathful eyes,  dark atmosphere, shallow depth of field, vignette, highly detailed, high budget, bokeh, cinemascope, moody, epic"
+        },
+        "optional": {
+            "negative_prompt": "((close up)),(octane render, render, drawing, bad photo, bad photography:1.3), (worst quality, low quality, blurry:1.2), (bad teeth, deformed teeth, deformed lips), (bad anatomy, bad proportions:1.1), (deformed iris, deformed pupils), (deformed eyes, bad eyes), (deformed face, ugly face, bad face), (deformed hands, bad hands, fused fingers), morbid, mutilated, mutation, disfigured",
+            "samples": 1,
+            "scheduler": "DPM++ SDE",
+            "num_inference_steps": 9,
+            "guidance_scale": 1,
+            "seed": 902448,
+            "img_width": 1024,
+            "img_height": 1024,
+            "base64": false
+        }
+    },
+    "samaritan_lightning_sdxl": {
+        "required": {
+            "prompt": "hyper realistic, anthropomorphic tyrannosaurus rex, smiling, highly detailed lizard skin, wearing colorful aztec armour with feathers, drinking a milkshake, tropical jungle with aztec temples in the background, dramatic studio lighting, shadows"
+        },
+        "optional": {
+            "negative_prompt": "((close up)),(octane render, render, drawing, bad photo, bad photography:1.3), (worst quality, low quality, blurry:1.2), (bad teeth, deformed teeth, deformed lips), (bad anatomy, bad proportions:1.1), (deformed iris, deformed pupils), (deformed eyes, bad eyes), (deformed face, ugly face, bad face), (deformed hands, bad hands, fused fingers), morbid, mutilated, mutation, disfigured",
+            "samples": 1,
+            "scheduler": "DPM++ SDE",
+            "num_inference_steps": 10,
+            "guidance_scale": 1,
+            "seed": 951102,
+            "img_width": 1024,
+            "img_height": 1024,
+            "base64": false
+        }
+    },
+    "realism_lightning_sdxl": {
+        "required": {
+            "prompt": "A movie still of a fat old man laughing, glasses, suit and tie, white shirt"
+        },
+        "optional": {
+            "negative_prompt": "((close up)),(octane render, render, drawing, bad photo, bad photography:1.3), (worst quality, low quality, blurry:1.2), (bad teeth, deformed teeth, deformed lips), (bad anatomy, bad proportions:1.1), (deformed iris, deformed pupils), (deformed eyes, bad eyes), (deformed face, ugly face, bad face), (deformed hands, bad hands, fused fingers), morbid, mutilated, mutation, disfigured",
+            "samples": 1,
+            "scheduler": "DPM++ SDE",
+            "num_inference_steps": 10,
+            "guidance_scale": 1.4,
+            "seed": 98556327,
+            "img_width": 1024,
+            "img_height": 1024,
+            "base64": false
+        }
+    },
+    "protovision_lightning_sdxl": {
+        "required": {
+            "prompt": "Disney Animation, Pixar Studios, 3D Rendering, bear in a wooden rocking chair, wearing a red pastel dress with beautiful embellishments, reading a book, near a fireplace, in a log cabin, with blue sky and clouds with a rainbow in the window"
+        },
+        "optional": {
+            "negative_prompt": "(octane render, render, drawing, bad photo, bad photography:1.3), (worst quality, low quality, blurry:1.2), (bad teeth, deformed teeth, deformed lips), (bad anatomy, bad proportions:1.1), (deformed iris, deformed pupils), (deformed eyes, bad eyes), (deformed face, ugly face, bad face), (deformed hands, bad hands, fused fingers), morbid, mutilated, mutation, disfigured",
+            "samples": 1,
+            "scheduler": "DPM++ SDE",
+            "num_inference_steps": 9,
+            "guidance_scale": 1,
+            "seed": 2897745,
+            "img_width": 1024,
+            "img_height": 1024,
+            "base64": false
+        }
+    },
+    "nightvis_lightning_sdxl": {
+        "required": {
+            "prompt": "a young 25 y.o. beautiful nymph holding a tortoiseshell cat, realistic heterochromia eyes, looking into camera, gloving red hair, photorealistic, dynamic lighting, sparkles, colorful flame, atmospheric scene, medieval style, (masterpiece, top quality, best quality, official art, beautiful and aesthetic:1.2), depth of field, 8k quality, extreme detailed, colorful, award-winning masterpiece"
+        },
+        "optional": {
+            "negative_prompt": "(octane render, render, drawing, anime, bad photo, bad photography:1.3), (worst quality, low quality, blurry:1.2), (bad teeth, deformed teeth, deformed lips), (bad anatomy, bad proportions:1.1), (deformed iris, deformed pupils), (deformed eyes, bad eyes), (deformed face, ugly face, bad face), (deformed hands, bad hands, fused fingers), morbid, mutilated, mutation, disfigured",
+            "samples": 1,
+            "scheduler": "DPM++ SDE",
+            "num_inference_steps": 10,
+            "guidance_scale": 1,
+            "seed": 9985638,
+            "img_width": 1024,
+            "img_height": 1024,
+            "base64": false
+        }
+    },
+    "wildcard_lightning_sdxl": {
+        "required": {
+            "prompt": "instagram photo, upper body photo of 18 years old Annika, pouted mouth, dressed in dirndl, traditional bavarian dress, corsage, long gold blond hair, (put-up hairdo), pale skin, happy, standing on a farm, soft, beautiful eyes, hard shadows, warm, sunrise, dimm light"
+        },
+        "optional": {
+            "negative_prompt": "(octane render, render, drawing, anime, bad photo, bad photography:1.3), (worst quality, low quality, blurry:1.2), (bad teeth, deformed teeth, deformed lips), (bad anatomy, bad proportions:1.1), (deformed iris, deformed pupils), (deformed eyes, bad eyes), (deformed face, ugly face, bad face), (deformed hands, bad hands, fused fingers), morbid, mutilated, mutation, disfigured",
+            "samples": 1,
+            "scheduler": "DPM++ SDE",
+            "num_inference_steps": 9,
+            "guidance_scale": 1,
+            "seed": 3290939592,
+            "img_width": 1024,
+            "img_height": 1024,
+            "base64": false
+        }
+    },
+    "dynavis_lightning_sdxl": {
+        "required": {
+            "prompt": "a very close up, beautiful woman dressed in a velure dress, very happy"
+        },
+        "optional": {
+            "negative_prompt": "(worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth",
+            "samples": 1,
+            "scheduler": "DPM++ SDE",
+            "num_inference_steps": 8,
+            "guidance_scale": 1,
+            "seed": 84865431,
+            "img_width": 1024,
+            "img_height": 1024,
+            "base64": false
+        }
+    },
+    "juggernaut_lightning_sdxl": {
+        "required": {
+            "prompt": "Medium shot, Adorable creature with big reflective eyes, moody lighting, best quality, full body portrait, real picture, intricate details, depth of field, in a forest, fujifilm xt3, outdoors, bright day, beautiful lighting, raw photo, 8k uhd, film grain, unreal engine 5, ray tracing"
+        },
+        "optional": {
+            "negative_prompt": "((close up)),(octane render, render, drawing, bad photo, bad photography:1.3), (worst quality, low quality, blurry:1.2), (bad teeth, deformed teeth, deformed lips), (bad anatomy, bad proportions:1.1), (deformed iris, deformed pupils), (deformed eyes, bad eyes), (deformed face, ugly face, bad face), (deformed hands, bad hands, fused fingers), morbid, mutilated, mutation, disfigured",
+            "samples": 1,
+            "scheduler": "DPM++ SDE",
+            "num_inference_steps": 5,
+            "guidance_scale": 1,
+            "seed": 2360370499,
+            "img_width": 1024,
+            "img_height": 1024,
+            "base64": false
+        }
+    },
+    "realvis_lightning_sdxl": {
+        "required": {
+            "prompt": "mountains, snow, fog, volumetric, closeup portrait photo of young woman in dark clothes, perfect detailed eyes, natural skin, film grain, kayrissnovem, grey eyes"
+        },
+        "optional": {
+            "negative_prompt": "(worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth",
+            "samples": 1,
+            "scheduler": "DPM++ SDE",
+            "num_inference_steps": 8,
+            "guidance_scale": 1,
+            "seed": 968875,
+            "img_width": 1024,
+            "img_height": 1024,
+            "base64": false
+        }
+    },
+    "try_on_diffusion": {
+        "required": {
+            "model_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/model.png",
+            "cloth_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/cloth.jpg",
+            "category": "Upper body"
+        },
+        "optional": {
+            "num_inference_steps": 35,
+            "guidance_scale": 2,
+            "seed": 12467,
+            "base64": false
+        }
+    },
+    "background_replace": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/outputs/bg_replace_input.jpg",
+            "ref_image": "https://segmind-sd-models.s3.amazonaws.com/outputs/bg_input_reference.jpg",
+            "prompt": "Pefume bottle placed on top of a rock, in a jungle"
+        },
+        "optional": {
+            "negative_prompt": "bad quality, painting, blur",
+            "samples": 1,
+            "scheduler": "DDIM",
+            "num_inference_steps": 25,
+            "guidance_scale": 7.5,
+            "seed": 12467,
+            "strength": 1,
+            "cn_weight": 0.9,
+            "ip_adapter_weight": 0.5,
+            "base64": false
+        }
+    },
+    "fooocus_inpainting": {
+        "required": {
+            "prompt": "Photo of a car on a road in a hill station",
+            "aspect_ratios": "1024*1024",
+            "input_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/focus-inpaint-input.jpg",
+            "input_mask": "https://segmind-sd-models.s3.amazonaws.com/display_images/focus-inpaint-mask.jpg"
+        },
+        "optional": {
+            "negative_prompt": "lowquality, badquality, sketches",
+            "steps": 30,
+            "samples": 1,
+            "styles": [
+                "Fooocus V2",
+                "Fooocus Sharp",
+                "Fooocus Enhance"
+            ],
+            "seed": 354849415,
+            "guidance_scale": 4,
+            "scheduler": "karras",
+            "base_model": "juggernaut_v8",
+            "sampler": "dpmpp_2m_sde_gpu",
+            "inpaint_erode_or_dilate": 1,
+            "inpaint_respective_field": 0.618,
+            "inpaint_strength": 1,
+            "invert_mask_checkbox": "false",
+            "mixing_image_prompt_and_inpaint": "true",
+            "faceswap_img": "undefined",
+            "faceswap_cn_stop": 0.9,
+            "faceswap_cn_weight": 0.8,
+            "imageprompt_img": "undefined",
+            "imageprompt_cn_stop": 0.5,
+            "imageprompt_cn_weight": 0.6,
+            "pyracanny_img": "undefined",
+            "pyracanny_cn_stop": 0.5,
+            "pyracanny_cn_weight": 1,
+            "cpds_img": "undefined",
+            "cpds_cn_stop": 0.5,
+            "cpds_cn_weight": 1,
+            "base64": false
+        }
+    },
+    "fooocus_outpainting": {
+        "required": {
+            "prompt": "Photo of man standing in a street",
+            "aspect_ratios": "1024*1024",
+            "input_image": "https://segmind-sd-models.s3.amazonaws.com/display_images/focus-outpaint-input.png"
+        },
+        "optional": {
+            "negative_prompt": "lowquality, badquality, sketches",
+            "steps": 30,
+            "samples": 1,
+            "styles": "V2,Enhance,Sharp",
+            "seed": 354849415,
+            "guidance_scale": 4,
+            "scheduler": "karras",
+            "sampler": "dpmpp_2m_sde_gpu",
+            "base_model": "juggernaut_v8",
+            "outpaint_selections": "Right, Left, Top, Bottom",
+            "base64": false
+        }
+    },
+    "instantid": {
+        "required": {
+            "prompt": "photo of a man",
+            "face_image": "https://segmind-sd-models.s3.amazonaws.com/outputs/instantid_input.jpg"
+        },
+        "optional": {
+            "pose_image": "undefined",
+            "negative_prompt": "lowquality, badquality, sketches",
+            "style": "Vibrant Color",
+            "samples": 1,
+            "num_inference_steps": 10,
+            "guidance_scale": 5,
+            "seed": 354849415,
+            "identity_strength": 0.8,
+            "adapter_strength": 0.8,
+            "enhance_face_region": true,
+            "base64": false
+        }
+    },
+    "samaritan_3d_xl": {
+        "required": {
+            "prompt": "3D cinematic film.(Bob Marley:2.0) 50 years old (caricature:0.2). bokeh, professional, 4k, highly detailed, drunk. tired. concert lights."
+        },
+        "optional": {
+            "negative_prompt": "drawing, painting, crayon, sketch, graphite, impressionist, noisy, blurry, soft, deformed, ugly. young. long neck. (cross eyed:1.5). multiple characters",
+            "samples": 1,
+            "scheduler": "Euler a",
+            "num_inference_steps": 25,
+            "guidance_scale": 7.5,
+            "seed": 4896513168,
+            "img_width": 896,
+            "img_height": 1152,
+            "base64": false
+        }
+    },
+    "stable_video_diffusion": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/outputs/svd_input.png"
+        },
+        "optional": {
+            "fps": 7,
+            "motion": 127,
+            "seed": 452361789,
+            "cond_aug": 0.1,
+            "frames": 14,
+            "resize_method": "maintain_aspect_ratio",
+            "base64": false
+        }
+    },
+    "segmind_vega": {
+        "required": {
+            "prompt": "cinematic photo detailed closeup portrait of a Beautiful cyberpunk woman, robotic parts, cables, lights, text; high quality photography, 3 point lighting, flash with softbox, 4k, Canon EOS R3, hdr, smooth, sharp focus, high resolution, award winning photo, 80mm, f2.8, bokeh. 35mm photograph, film, bokeh, professional, 4k, highly detailed, high quality photography, 3 point lighting, flash with softbox, 4k, Canon EOS R3, hdr, smooth, sharp focus, high resolution, award winning photo, 80mm, f2.8, bokeh"
+        },
+        "optional": {
+            "negative_prompt": "(worst quality, low quality)",
+            "samples": 1,
+            "scheduler": "UniPC",
+            "num_inference_steps": 25,
+            "guidance_scale": 9,
+            "seed": 1232788698,
+            "img_width": 1024,
+            "img_height": 1024,
+            "base64": false
+        }
+    },
+    "segmind_vegart": {
+        "required": {
+            "prompt": "backlight, wilderness woman hunting in jungle hiding behind leaves, face paintings closeup face portrait, detailed eyes, nature documentary, dry skin, fuzzy skin, lens flare"
+        },
+        "optional": {
+            "num_inference_steps": 4,
+            "seed": 758143278,
+            "img_width": 1024,
+            "img_height": 1024,
+            "base64": false
+        }
+    },
+    "ip_adapter_openpose_xl": {
+        "required": {
+            "prompt": "ballerina",
+            "input_image": "https://segmind-sd-models.s3.amazonaws.com/outputs/sdxl_input_openpose.jpg",
+            "ip_image": "https://segmind-sd-models.s3.amazonaws.com/outputs/pose_ip_input.jpeg"
+        },
+        "optional": {
+            "negative_prompt": "lowquality, badquality, sketches",
+            "samples": 1,
+            "scheduler": "Euler a",
+            "num_inference_steps": 25,
+            "guidance_scale": 7,
+            "seed": 354849415,
+            "controlnet_scale": 0.5,
+            "ip_adapter_scale": 0.5,
+            "strength": 0.9,
+            "base64": false
+        }
+    },
+    "ip_adapter_canny_xl": {
+        "required": {
+            "prompt": "woman sculpture",
+            "input_image": "https://segmind-sd-models.s3.amazonaws.com/outputs/canny_img_input.jpeg",
+            "ip_image": "https://segmind-sd-models.s3.amazonaws.com/outputs/canny_ip_input.png"
+        },
+        "optional": {
+            "negative_prompt": "lowquality, badquality, sketches",
+            "samples": 1,
+            "scheduler": "Euler a",
+            "num_inference_steps": 25,
+            "guidance_scale": 7,
+            "seed": 354849415,
+            "controlnet_scale": 0.8,
+            "ip_adapter_scale": 0.5,
+            "strength": 0.9,
+            "base64": false
+        }
+    },
+    "ip_adapter_depth_xl": {
+        "required": {
+            "prompt": "living room",
+            "input_image": "https://segmind-sd-models.s3.amazonaws.com/outputs/depth_img_input.jpg",
+            "ip_image": "https://segmind-sd-models.s3.amazonaws.com/outputs/depth_ip_input.jpg"
+        },
+        "optional": {
+            "negative_prompt": "lowquality, badquality, sketches",
+            "samples": 1,
+            "scheduler": "Euler a",
+            "num_inference_steps": 25,
+            "guidance_scale": 7,
+            "seed": 56433128,
+            "controlnet_scale": 1,
+            "ip_adapter_scale": 0.7,
+            "strength": 1,
+            "base64": false
+        }
+    },
+    "sdxl_inpaint": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/outputs/sdxl_inpaint.jpeg",
+            "mask": "https://segmind-sd-models.s3.amazonaws.com/outputs/sdxl_inpaint_mask.png",
+            "prompt": "A man with black sun glasses"
+        },
+        "optional": {
+            "negative_prompt": "bad quality, painting, blur",
+            "samples": 1,
+            "scheduler": "DDIM",
+            "num_inference_steps": 25,
+            "guidance_scale": 7.5,
+            "seed": 12467,
+            "strength": 0.9,
+            "base64": false
+        }
+    },
+    "ssd_img2img": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/outputs/ssd_img2img_input.jpeg",
+            "prompt": "photo of beautiful age 18 girl, pink hair, beautiful, close up, young, dslr, 8k, 4k, ultrarealistic, realistic, natural skin, textured skin"
+        },
+        "optional": {
+            "negative_prompt": "painting, drawing, sketch, cartoon, anime, manga, render, CG, 3d, watermark, signature, label, long neck",
+            "samples": 1,
+            "scheduler": "Euler a",
+            "num_inference_steps": 30,
+            "guidance_scale": 7.5,
+            "seed": 452361789,
+            "strength": 0.9,
+            "base64": false
+        }
+    },
+    "sdxl_openpose": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/outputs/sdxl_input_openpose.jpg",
+            "prompt": "A ballerina dancing on stage with two legs"
+        },
+        "optional": {
+            "negative_prompt": "low quality, ugly, painting",
+            "samples": 1,
+            "scheduler": "Euler a",
+            "num_inference_steps": 30,
+            "guidance_scale": 7.5,
+            "seed": 65312568548,
+            "controlnet_scale": 0.5,
+            "base64": false
+        }
+    },
+    "ssd_depth": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/outputs/ssd_depth_input.jpeg",
+            "prompt": "cinematic photo kung-fu-panda in mountains"
+        },
+        "optional": {
+            "negative_prompt": "low quality, ugly, painting",
+            "samples": 1,
+            "scheduler": "UniPC",
+            "num_inference_steps": 30,
+            "guidance_scale": 7.5,
+            "seed": 5357285110,
+            "controlnet_scale": 0.5,
+            "base64": false
+        }
+    },
+    "ssd_canny": {
+        "required": {
+            "image": "https://segmind-sd-models.s3.amazonaws.com/outputs/ssd_canny_input.png",
+            "prompt": "beautiful lady, scandanavian, natural skin, big smile, black hair, dark makeup, wearing a black top, hyperdetailed photography, sharp focus on face, soft light, dark background, head and shoulders portrait, cover, city bokeh background"
+        },
+        "optional": {
+            "negative_prompt": "low quality, ugly, painting",
+            "samples": 1,
+            "scheduler": "UniPC",
+            "num_inference_steps": 30,
+            "guidance_scale": 7.5,
+            "seed": 760941192,
+            "controlnet_scale": 0.5,
+            "base64": false
+        }
+    },
+    "ssd_1b": {
+        "required": {
+            "prompt": "with smoke, half ice and half fire and ultra realistic in detail.wolf, typography, dark fantasy, wildlife photography, vibrant, cinematic and on a black background"
+        },
+        "optional": {
+            "negative_prompt": "scary, cartoon, painting",
+            "samples": 1,
+            "scheduler": "UniPC",
+            "num_inference_steps": 25,
+            "guidance_scale": 9,
+            "seed": 36446545871,
+            "img_width": 1024,
+            "img_height": 1024,
+            "base64": false
+        }
+    },
+    "copax_timeless_sdxl": {
+        "required": {
+            "prompt": "tangerine tango and ultramarine green color blocking, (sci-fi aesthetic:1.4), bright instagram LUT, shot of a (Danish 20 yo woman:1.2) retro-futuristic cosmonaut with a shy smile wearing a glass dome helmet and spacesuit with harness (with futuristic power plant in the background:1.2), skindentation, hourglass figure, waist cincher, on alien landscape with its surface covered in impact craters, valleys, plains and mountains, grey dust, a heavy rain storm, at sunrise, geometric gradients, sci-fi, 1950s retro-futurism, hyperrealistic, cinematic lighting, digital art, concept art, design and details, ultra-detailed, highest detail quality, ultra-realistic, photography lighting, photorealistic, cinematic, movie quality rendering, octane rendering, focused, 8k, depth of field, real shadow, vfx post-production, rtx ray tracing lighting"
+        },
+        "optional": {
+            "negative_prompt": "(worst quality, low quality:1.4), signature, artist name, text, web address, logo, error, cropped, artifacts, watermark, username, blurry, collage, grid, lens, camera lens, car, truck, road, fat, obese, armor, badges, patches, usa, nasa",
+            "samples": 1,
+            "scheduler": "UniPC",
+            "num_inference_steps": 25,
+            "guidance_scale": 7,
+            "seed": 1502673077,
+            "img_width": 896,
+            "img_height": 1152,
+            "base64": false
+        }
+    },
+    "zavychroma_sdxl": {
+        "required": {
+            "prompt": "An astronaut riding a rainbow unicorn, cinematic, dramatic"
+        },
+        "optional": {
+            "negative_prompt": "(deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation. tattoo, watermark, text, anime, illustration, sketch, 3d, vector art, cartoon, painting",
+            "samples": 1,
+            "scheduler": "Euler a",
+            "num_inference_steps": 35,
+            "guidance_scale": 7,
+            "seed": 5645189598,
+            "img_width": 896,
+            "img_height": 1152,
+            "base64": false
+        }
+    },
+    "realvis_sdxl": {
+        "required": {
+            "prompt": "analog photo, closeup portrait photo of 28 y.o asian man, natural skin, looks at viewer, city street, (cinematic shot, film grain:1.1)"
+        },
+        "optional": {
+            "negative_prompt": "(worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth",
+            "samples": 1,
+            "scheduler": "UniPC",
+            "num_inference_steps": 25,
+            "guidance_scale": 7,
+            "seed": 3195698736,
+            "img_width": 896,
+            "img_height": 1152,
+            "base64": false
+        }
+    },
+    "dreamshaper_sdxl": {
+        "required": {
+            "prompt": "cinematic photo of portrait of cyberpunk (the Grumpy Cat:1.25) in a spacesuit, looking with endless sadness at the universe passing by, cyberpunk 2077 city bg,  2d masterpiece by john Wilhelm, (grumpy:1.2), (cyberpunk:1.4), photo-realistic, octane render, hdr, neon, lens flares, ( best quality:1.9), active asymmetrical pose, (action-packed:1.8),  trending on artstation, 8k, 35mm photograph, film, bokeh, professional, 4k, highly detailed"
+        },
+        "optional": {
+            "negative_prompt": "drawing, painting, crayon, sketch, graphite, impressionist, noisy, blurry, soft, deformed, ugly, [deformed | disfigured], poorly drawn, [bad : wrong] anatomy, [extra | missing | floating | disconnected] limb, (mutated hands and fingers), blurry",
+            "samples": 1,
+            "scheduler": "UniPC",
+            "num_inference_steps": 35,
+            "guidance_scale": 7,
+            "seed": 1135424276,
+            "img_width": 896,
+            "img_height": 1152,
+            "base64": false
+        }
+    },
+    "stable_diffusion_2_1": {
+        "required": {},
+        "optional": {
+            "samples": 1,
+            "prompt": "calico cat wearing a cosmonaut suit, 3d render, pixar style, 8k, high resolution",
+            "negative_prompt": "None",
+            "scheduler": "DDIM",
+            "num_inference_steps": 25,
+            "guidance_scale": 7.5,
+            "strength": 1,
+            "seed": 17123564234,
+            "img_width": 512,
+            "img_height": 512,
+            "base64": false
+        }
+    },
+    "stable_diffusion_xl_0_9": {
+        "required": {},
+        "optional": {
+            "prompt": "a beautiful stack of rocks sitting on top of a beach, a picture, red black white golden colors, chakras, packshot, stock photo",
+            "negative_prompt": "asian, african, makeup, fake, cgi, 3d, doll, art, anime, cartoon, illustration, painting, digital, blur, sepia, b&w, unnatural, unreal, photoshop, filter, airbrush, poor anatomy, lr",
+            "samples": 1,
+            "scheduler": "dpmpp_sde_ancestral",
+            "num_inference_steps": 25,
+            "guidance_scale": 8,
+            "strength": 1,
+            "seed": 2784983004,
+            "img_width": 768,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "word2img": {
+        "required": {
+            "image": "https://segmind.com/word2img_input.png",
+            "prompt": "top-view, A mouth-watering pizza topped with gooey cheese and fresh ingredients,Food Photography"
+        },
+        "optional": {
+            "negative_prompt": "square, poorly drawn, low quality",
+            "scheduler": "ddim",
+            "num_inference_steps": 25,
+            "guidance_scale": 7.5,
+            "control_scale": 1.9,
+            "control_start": 0.19,
+            "control_end": 1,
+            "samples": 1,
+            "seed": 6130473235,
+            "size": 768,
+            "base64": false
+        }
+    },
+    "segmind_tiny_sd": {
+        "required": {
+            "prompt": "cyborg in a battlefield, explosions, highly detailed"
+        },
+        "optional": {
+            "negative_prompt": "(deformed iris, deformed pupils, semi-realistic, cgi, render, sketch, cartoon, drawing, anime), text, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, BadDream, UnrealisticDream",
+            "scheduler": "dpmpp_2m",
+            "num_inference_steps": 100,
+            "guidance_scale": 7.5,
+            "samples": 1,
+            "seed": 2313248373,
+            "img_width": 512,
+            "img_height": 512,
+            "base64": false
+        }
+    },
+    "stable_diffusion_inpainting": {
+        "required": {
+            "prompt": "mecha robot sitting on a bench",
+            "image": "https://segmind.com/inpainting-input-image.jpeg",
+            "mask": "https://segmind.com/inpainting-input-mask.jpeg"
+        },
+        "optional": {
+            "negative_prompt": "Disfigured, cartoon, blurry, nude",
+            "samples": 1,
+            "scheduler": "DDIM",
+            "num_inference_steps": 25,
+            "guidance_scale": 7.5,
+            "strength": 1,
+            "seed": 17123564234,
+            "img_width": 512,
+            "img_height": 512
+        }
+    },
+    "stable_diffusion_img2img": {
+        "required": {
+            "image": "/sd-img2img-input.jpeg",
+            "prompt": "A fantasy landscape, trending on artstation, mystical sky"
+        },
+        "optional": {
+            "samples": 1,
+            "negative_prompt": "nude, disfigured, blurry",
+            "scheduler": "DDIM",
+            "num_inference_steps": 25,
+            "guidance_scale": 10.5,
+            "strength": 0.75,
+            "seed": 98877465625,
+            "img_width": 512,
+            "img_height": 512,
+            "base64": false
+        }
+    },
+    "segmind_small_sd": {
+        "required": {
+            "prompt": "a toy panda standing on a pile of broccoli"
+        },
+        "optional": {
+            "negative_prompt": "(deformed iris, deformed pupils, semi-realistic, cgi, render, sketch, cartoon, drawing, anime), text, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, BadDream, UnrealisticDream",
+            "scheduler": "dpmpp_2m",
+            "num_inference_steps": 100,
+            "guidance_scale": 7.5,
+            "samples": 1,
+            "seed": 2313248373,
+            "img_width": 512,
+            "img_height": 512,
+            "base64": false
+        }
+    },
+    "stable_diffusion_xl_1_0": {
+        "required": {
+            "prompt": "cinematic film still, 4k, realistic, ((cinematic photo:1.3)) of panda wearing a blue spacesuit, sitting in a bar, Fujifilm XT3, long shot, ((low light:1.4)), ((looking straight at the camera:1.3)), upper body shot, somber, shallow depth of field, vignette, highly detailed, high budget Hollywood movie, bokeh, cinemascope, moody, epic, gorgeous, film grain, grainy"
+        },
+        "optional": {
+            "negative_prompt": "ugly, tiling, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, extra limbs, disfigured, deformed, body out of frame, blurry, bad anatomy, blurred, watermark, grainy, signature, cut off, draft",
+            "style": "base",
+            "samples": 1,
+            "scheduler": "UniPC",
+            "num_inference_steps": 25,
+            "guidance_scale": 8,
+            "strength": 0.2,
+            "high_noise_fraction": 0.8,
+            "seed": 468685,
+            "img_width": 896,
+            "img_height": 1152,
+            "refiner": true,
+            "base64": false
+        }
+    },
+    "scifi": {
+        "required": {
+            "prompt": "futuristic sci-fi high-tech city of Atlantis in late afternoon light, wispy clouds in a blue sky"
+        },
+        "optional": {
+            "negative_prompt": "blurry, blurred, amateur, ugly, low quality, sketch, low resolution, warped, crooked, deformed, cartoony, low detail",
+            "scheduler": "dpmpp_2m",
+            "num_inference_steps": 30,
+            "guidance_scale": 5,
+            "samples": 1,
+            "seed": 516797155652,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "samaritan": {
+        "required": {
+            "prompt": "1 beautiful woman, office suit, coat, shirt, silver hair, hand Sui Ishida (best quality, masterpiece)"
+        },
+        "optional": {
+            "negative_prompt": "EasyNegativeV2 ng_deepnegative_v1_75t greyscale (worst quality, low quality)",
+            "scheduler": "euler_a",
+            "num_inference_steps": 20,
+            "guidance_scale": 7.5,
+            "samples": 1,
+            "seed": 692203384,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "rpg": {
+        "required": {
+            "prompt": "warrior, warhammer 40k, space marine, intricate ornamented, Smoke Gray Aluminum Beige armor, adepta sororitas, dynamic posture, Alpine desert landscape background, volumetric cinematic lighting, (highly detailed skull:0.8), realistic reflections, cinematic composition"
+        },
+        "optional": {
+            "negative_prompt": "boring, poorly drawn, bad artist, (worst quality:1.4), simple background, uninspired, (bad quality:1.4), monochrome, low background contrast, background noise, duplicate, crowded, (nipples:1.2), big breasts",
+            "scheduler": "ddim",
+            "num_inference_steps": 25,
+            "guidance_scale": 9,
+            "samples": 1,
+            "seed": 2601738487234,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "reliberate": {
+        "required": {
+            "prompt": "a photo of catherine, solo, in frame, smiling, summer floral outfit, dark theme, extremely detailed eyes, detailed symmetric realistic face extremely detailed natural skin texture, peach fuzz, messy hair, masterpiece, absurdres, artillery fire in the background, award winning"
+        },
+        "optional": {
+            "negative_prompt": "airbrushed,3d, render, painting, anime, manga, illustration, (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation,bige yes, teeth,nose piercing,(((extra arms)))cartoon,young,child ",
+            "scheduler": "dpmpp_sde_ancestral",
+            "num_inference_steps": 25,
+            "guidance_scale": 9,
+            "samples": 1,
+            "seed": 1045216760,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "realistic_vision": {
+        "required": {
+            "prompt": "((selfie)) photo of an american girl and guy, smiling, (yosemite:1.3), mountains, wearing a backpack, red top, hiking jacket, rocks, river, wood, analog style (look at viewer:1.2) (skin texture), close up, cinematic light, ((night sky:1.2)), (milkiway:1.4), sidelighting, Fujiflim XT3, DSLR, 50mm, (long windblown hair)"
+        },
+        "optional": {
+            "negative_prompt": "(deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation, render, 3d, 2d, sketch, painting, digital art, drawing, disfigured, ((nsfw)), ((breasts))",
+            "scheduler": "dpmpp_2m",
+            "num_inference_steps": 25,
+            "guidance_scale": 6,
+            "samples": 1,
+            "seed": 4082622942,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "rcnz___cartoon": {
+        "required": {
+            "prompt": "a duck, warm vibrant colours, natural lighting, dappled lighting, diffused lighting, absurdres, highres, 8k, uhd, hdr, rtx, unreal 5, octane render, RAW photo, photorealistic, global illumination, subsurface scattering"
+        },
+        "optional": {
+            "negative_prompt": "beard, EasyNegative, lowres, chromatic aberration, depth of field, motion blur, blurry, bokeh, bad quality, worst quality, multiple arms, badhandv4",
+            "scheduler": "dpmpp_2m",
+            "num_inference_steps": 30,
+            "guidance_scale": 7,
+            "samples": 1,
+            "seed": 53094109118,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "paragon": {
+        "required": {
+            "prompt": "a photo of Jason, solo, in frame, somber, apocalyptic city, dark theme, extremely detailed eyes, detailed symmetric realistic face extremely detailed natural skin texture, peach fuzz, messy hair, masterpiece, absurdres, artillery fire in the background, award winning "
+        },
+        "optional": {
+            "negative_prompt": "airbrushed,3d, render, painting, anime, manga, illustration, (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation,bige yes, teeth,nose piercing,(((extra arms)))cartoon,young,child ",
+            "scheduler": "dpmpp_sde_ancestral",
+            "num_inference_steps": 25,
+            "guidance_scale": 7.5,
+            "samples": 1,
+            "seed": 945216760,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "sd_outpainting": {
+        "required": {
+            "image": "https://segmind.com/image5.png",
+            "prompt": "streets in italy"
+        },
+        "optional": {
+            "negative_prompt": "NONE",
+            "scheduler": "DDIM",
+            "num_inference_steps": 25,
+            "img_width": 1024,
+            "img_height": 1024,
+            "scale": 1,
+            "strength": 1,
+            "offset_x": 256,
+            "offset_y": 256,
+            "guidance_scale": 7.5,
+            "mask_expand": 8,
+            "seed": 124567
+        }
+    },
+    "manmarumix": {
+        "required": {
+            "prompt": "masterpiece,best quality, dog, 1girl, sitting,park,looking at viewer"
+        },
+        "optional": {
+            "negative_prompt": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, nswf",
+            "scheduler": "dpmpp_2m",
+            "num_inference_steps": 20,
+            "guidance_scale": 7,
+            "samples": 1,
+            "seed": 277487585,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "majicmix": {
+        "required": {
+            "prompt": "best quality, masterpiece, (photorealistic:1.4), 1boy, (50 years old:1.2) beard, dramatic lighting, hyper quality, intricate detail, ultra realistic, maximum detail, foreground focus, instagram, 8k, volumetric light, cinematic, octane render, uplight, no blur, 8k"
+        },
+        "optional": {
+            "negative_prompt": "nsfw, ng_deepnegative_v1_75t,badhandv4, (worst quality:2), (low quality:2), (normal quality:2), lowres,watermark, monochrome",
+            "scheduler": "dpmpp_2m",
+            "num_inference_steps": 40,
+            "guidance_scale": 7,
+            "samples": 1,
+            "seed": 720692316127,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "juggernaut_final": {
+        "required": {
+            "prompt": "Portrait photo of bearded guy in a worn mech suit, ((light bokeh)), intricate, (steel metal [rust]), elegant, sharp focus, photo by greg rutkowski, soft lighting, vibrant colors, (masterpiece), ((streets)), (detailed face)+, eye iris"
+        },
+        "optional": {
+            "negative_prompt": "(worst quality, low quality, normal quality, lowres, low details, oversaturated, undersaturated, overexposed, underexposed, grayscale, bw, bad photo, bad photography, bad art)++++, (watermark, signature, text font, username, error, logo, words, letters, digits, autograph, trademark, name)+, (blur, blurry, grainy), morbid, ugly, asymmetrical, mutated malformed, mutilated, poorly lit, bad shadow, draft, cropped, out of frame, cut off, censored, jpeg artifacts, out of focus, glitch, duplicate, (airbrushed, cartoon, anime, semi-realistic, cgi, render, blender, digital art, manga, amateur)++, (3D ,3D Game, 3D Game Scene, 3D Character), (bad hands, bad anatomy, bad body, bad face, bad teeth, bad arms, bad legs, deformities)++",
+            "scheduler": "dpmpp_2m",
+            "num_inference_steps": 25,
+            "guidance_scale": 5,
+            "samples": 1,
+            "seed": 5873893888003329,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "fruit_fusion": {
+        "required": {
+            "prompt": "few large strawberries falling into a pink liquid, milk bath photography, strawberry, slow - mo high speed photography, flowing milk, realistic jelly splashes, super high speed photography, berries dripping juice, fight with strawberries, strawberry granules, inspired by Alberto Seveso, berries dripping, high speed photography, award winning macro photography, culinary art photography, splash image"
+        },
+        "optional": {
+            "negative_prompt": "(deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation",
+            "scheduler": "euler_a",
+            "num_inference_steps": 20,
+            "guidance_scale": 7.5,
+            "samples": 1,
+            "seed": 38330276112,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "flat_2d": {
+        "required": {
+            "prompt": "(best-quality:0.8), perfect anime illustration of a Celestial Morbid Gaelic [Doghouse:Toyota:5] with a face, detailed with Cloth patterns, inside a Worn-Out Bar, Summer, equirectangular 360, Masterpiece, Sad, Surrealism Art, backlight, telephoto lens, Kodak portra, Lavender background, full of color, trending on artstation, trending on CGSociety"
+        },
+        "optional": {
+            "negative_prompt": "(worst quality:0.8), verybadimagenegative_v1.3 easynegative, (surreal:0.8), (modernism:0.8), (art deco:0.8), (art nouveau:0.8)",
+            "scheduler": "dpmpp_2m",
+            "num_inference_steps": 20,
+            "guidance_scale": 7,
+            "samples": 1,
+            "seed": 80952715457,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "fantassified_icons": {
+        "required": {
+            "prompt": "a magical  sailor moon themed shield intricate, pastel color scheme, high quality, 8k, highly detailed"
+        },
+        "optional": {
+            "negative_prompt": "nil",
+            "scheduler": "dpmpp_2m",
+            "num_inference_steps": 30,
+            "guidance_scale": 10,
+            "samples": 1,
+            "seed": 95722011,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "epic_realism": {
+        "required": {
+            "prompt": "RAW commercial photo the pretty instagram fashion model, ((smiling)), in the red full wrap around dress posing, in the style of colorful geometrics, guy aroch, helene knoop, glowing pastels, bold lines, bright colors, sun-soaked colours, Fujifilm X-T4, Sony"
+        },
+        "optional": {
+            "negative_prompt": "airbrushed,3d, render, painting, anime, manga, illustration, (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation,bige yes, teeth,nose piercing,(((extra arms)))cartoon,young,child, nsfw ",
+            "scheduler": "dpmpp_sde_ancestral",
+            "num_inference_steps": 25,
+            "guidance_scale": 9,
+            "samples": 1,
+            "seed": 10452167572,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "edge_of_realism": {
+        "required": {
+            "prompt": "RAW commercial photo the pretty instagram fashion model, ((smiling)), in the red sweater, yellow cap posing in new york city, in the style of colorful geometrics, guy aroch, helene knoop, glowing pastels, bold lines, bright colors, sun-soaked colours, Fujifilm X-T4, Sony"
+        },
+        "optional": {
+            "negative_prompt": "airbrushed,3d, render, painting, anime, manga, illustration, (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation,bige yes, teeth,nose piercing,(((extra arms)))cartoon,young,child, nsfw ",
+            "scheduler": "dpmpp_sde_ancestral",
+            "num_inference_steps": 25,
+            "guidance_scale": 9,
+            "samples": 1,
+            "seed": 104521676572,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "dvarch": {
+        "required": {
+            "prompt": "dvArchModern, 85mm, f1.8, portrait, photo realistic, hyperrealistic, orante, super detailed, intricate, dramatic, sun lighting, shadows, high dynamic range, modern interior, beach house, mexico"
+        },
+        "optional": {
+            "negative_prompt": "signature, soft, single floor,unclear, watermark, blurry, drawing, sketch, poor quality, ugly, text, type, word, logo, pixelated, low resolution, saturated, high contrast, oversharpened",
+            "scheduler": "euler_a",
+            "num_inference_steps": 20,
+            "guidance_scale": 7,
+            "samples": 1,
+            "seed": 5499784543,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "dream_shaper": {
+        "required": {
+            "prompt": "(masterpiece, best quality, absurdres, intricate), fantasy, (woman, extremely delicate and beautiful, looking at viewer, (floating long hair)), (standing over tiny village), colorhalf00d, fog, smoke, haunting, spooky, creepy, dark themed, 8k GC wallpaper, Trending on artstation, octance render, unreal engine, volumetrics dtx, award winning digital art, ink, official art, painting by anna dittmann"
+        },
+        "optional": {
+            "negative_prompt": "cartoon, 3d, sketches, (painting by bad-artist), (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, bad anatomy, (bad-hands-5), (badhandv4), fat, curvy, thick, dull, simple background, ugly, mole, skin tags, acne, freckles, lightning. veil, hat, hood, ((blurry)), ((monochrome)), ((from side)), ((back turned)), Far away, back turned,",
+            "scheduler": "dpmpp_2m",
+            "num_inference_steps": 20,
+            "guidance_scale": 7,
+            "samples": 1,
+            "seed": 165577282,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "deep_spaced_diffusion": {
+        "required": {
+            "prompt": "jwst, nebula, spiral galaxy,mixed colors,outerspace, hyper quality, intricate detail, ultra realistic, maximum detail, foreground focus, instagram, 8k, volumetric light, cinematic, octane render, uplight, no blur, 8k"
+        },
+        "optional": {
+            "negative_prompt": "ng_deepnegative_v1_75t,badhandv4, (worst quality:2), (low quality:2), (normal quality:2), lowres,watermark, single color, monochrome",
+            "scheduler": "dpmpp_2m",
+            "num_inference_steps": 30,
+            "guidance_scale": 7,
+            "samples": 1,
+            "seed": 720692329,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "cyber_realistic": {
+        "required": {
+            "prompt": "Photo of a burger with cheese from food photograph, food photography, photorealistic, ultra realistic, maximum detail, foreground focus, recipes.com, epicurious, instagram, 8k, volumetric light, cinematic, octane render, uplight, no blur, depth of field, dof, bokeh, 8k"
+        },
+        "optional": {
+            "negative_prompt": "CyberRealistic_Negative",
+            "scheduler": "dpmpp_2m",
+            "num_inference_steps": 25,
+            "guidance_scale": 7.5,
+            "samples": 1,
+            "seed": 945216760,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "cute_rich_style": {
+        "required": {
+            "prompt": "cbzbb , elon musk ,charachter ,cute, little,  beautiful, devian art, trending artstation, digital art, detailed, cute, realistic, humanoide, character, tiny,cinematic sho ,cinematic lights,elon musk,looks happy"
+        },
+        "optional": {
+            "negative_prompt": "pencil draw, bad photo, bad draw , anime,ironman,robot,animals,explosions,text,letters,ugly",
+            "scheduler": "dpmpp_sde_ancestral",
+            "num_inference_steps": 20,
+            "guidance_scale": 7,
+            "samples": 1,
+            "seed": 630080558,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "colorful": {
+        "required": {
+            "prompt": "((( splash of colorful paint))) Colorful, beautiful cat lady, dark, splash, disembodied head, Black ink flow, photorealistic, intricately detailed, fluid gouache, calligraphy, acrylic, watercolor art, 8k concept art, intricately detailed, complex, elegant, expansive, fantastical, (style-paintmagic),(style of Kim Keever:1.2),  (cat), disembodied head, photorealistic, intricately detailed, 8k concept art, intricately detailed, complex, elegant, expansive, fantastical"
+        },
+        "optional": {
+            "negative_prompt": "(low quality:1.4), (worst quality:1.4), (monochrome:1.1), normal quality, cropped, fingers, deformed, distorted, disfigured, limb, hands, anatomy, long neck, negative_hand-neg, skin blemishes, flowers",
+            "scheduler": "dpmpp_sde_ancestral",
+            "num_inference_steps": 25,
+            "guidance_scale": 9,
+            "samples": 1,
+            "seed": 573528313,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "all_in_one_pixe": {
+        "required": {
+            "prompt": "futuristic abandoned city landscape, pale colors, 16 bit style, pixelart, gamedev, game asset background"
+        },
+        "optional": {
+            "negative_prompt": "out of frame, duplicate, watermark, signature, text, error, deformed",
+            "scheduler": "euler",
+            "num_inference_steps": 20,
+            "guidance_scale": 7.5,
+            "samples": 1,
+            "seed": 587685639,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "526mix": {
+        "required": {
+            "prompt": "POV photo of an amazing snozboffle milkshake with chocolate syrup on a plain glass. busy retro diner interior background, people in background, kodak vision 3"
+        },
+        "optional": {
+            "negative_prompt": "<neg-sketch-2>, illustration, unreal, unclear",
+            "scheduler": "dpmpp_sde_ancestral",
+            "num_inference_steps": 20,
+            "guidance_scale": 7,
+            "samples": 1,
+            "seed": 3111376584,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "qr_generator": {
+        "required": {
+            "prompt": "A mouth-watering pizza topped with gooey cheese and fresh ingredients, Close-up, Realistic Style, Art Inspirations from Food Photography",
+            "qr_text": "www.segmind.com"
+        },
+        "optional": {
+            "negative_prompt": "half baked, unrealistic, ugly, worst quality",
+            "scheduler": "dpmpp_2m",
+            "num_inference_steps": 25,
+            "guidance_scale": 7.5,
+            "control_scale": 1.8,
+            "control_start": 0.19,
+            "control_end": 1,
+            "samples": 1,
+            "seed": 26423251312141,
+            "size": 768,
+            "invert": false,
+            "base64": false
+        }
+    },
+    "segmind_tiny_sd_(portrait)": {
+        "required": {
+            "prompt": "RAW closeup portrait photo of a 25-year-old american, long brunette hair, pale skin, deep smile."
+        },
+        "optional": {
+            "negative_prompt": "(deformed iris, deformed pupils, semi-realistic, cgi, render, sketch, cartoon, drawing, anime), text, cropped, out of frame, worst quality, low quality, ugly, tiling, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, extra limbs, disfigured, deformed, body out of frame, blurry, bad anatomy, blurred, watermark, grainy, signature, cut off, draft, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, BadDream, UnrealisticDream",
+            "scheduler": "dpmpp_2m",
+            "num_inference_steps": 30,
+            "guidance_scale": 7.5,
+            "samples": 1,
+            "seed": 531327,
+            "img_width": 768,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "kandinsky_2_1": {
+        "required": {},
+        "optional": {
+            "prompt": "tiny isometric city on a tiny floating island, highly detailed, 3d render",
+            "negative_prompt": "NONE",
+            "scheduler": "DDIM",
+            "samples": 1,
+            "num_inference_steps": 25,
+            "guidance_scale": 7.5,
+            "seed": 1024,
+            "img_width": 512,
+            "img_height": 512,
+            "base64": false
+        }
+    },
+    "controlnet_soft_edge": {
+        "required": {
+            "image": "https://segmind.com/soft-edge-input.jpeg",
+            "prompt": "royal chamber with fancy bed"
+        },
+        "optional": {
+            "samples": 1,
+            "negative_prompt": "Disfigured, cartoon, blurry, nude",
+            "scheduler": "UniPC",
+            "num_inference_steps": 25,
+            "guidance_scale": 7.5,
+            "strength": 1,
+            "seed": 131487365682,
+            "base64": false
+        }
+    },
+    "controlnet_scribble": {
+        "required": {
+            "image": "https://segmind.com/scribble-input.jpeg",
+            "prompt": "steampunk underwater helmet, dark ocean background"
+        },
+        "optional": {
+            "samples": 1,
+            "negative_prompt": "Disfigured, cartoon, blurry, nude",
+            "scheduler": "UniPC",
+            "num_inference_steps": 25,
+            "guidance_scale": 7.5,
+            "strength": 1,
+            "seed": 85497675147333,
+            "base64": false
+        }
+    },
+    "controlnet_depth": {
+        "required": {
+            "image": "https://segmind.com/depth.jpeg",
+            "prompt": "young african american man, black suit, smiling, white background"
+        },
+        "optional": {
+            "samples": 1,
+            "negative_prompt": "mangled ears, Disfigured, cartoon, blurry, nude",
+            "scheduler": "UniPC",
+            "num_inference_steps": 25,
+            "guidance_scale": 7.5,
+            "strength": 1,
+            "seed": 9715432854,
+            "base64": false
+        }
+    },
+    "controlnet_canny": {
+        "required": {
+            "image": "https://segmind.com/canny-input.jpeg",
+            "prompt": "a colorful bird, 4k"
+        },
+        "optional": {
+            "samples": 1,
+            "negative_prompt": "Disfigured, cartoon, blurry, nude",
+            "scheduler": "UniPC",
+            "num_inference_steps": 25,
+            "guidance_scale": 7.5,
+            "strength": 1,
+            "seed": 3131738736286,
+            "base64": false
+        }
+    },
+    "codeformer": {
+        "required": {
+            "image": "https://segmind.com/codeformer_input.png"
+        },
+        "optional": {
+            "scale": 1,
+            "fidelity": 0.5,
+            "bg": true,
+            "face": true
+        }
+    },
+    "segment_anything_model": {
+        "required": {
+            "image": "https://segmind.com/kitchen.jpg"
+        },
+        "optional": {}
+    },
+    "faceswap": {
+        "required": {
+            "input_face_image": "https://www.segmind.com/elon.jpg",
+            "target_face_image": "https://www.segmind.com/burn.gif"
+        },
+        "optional": {
+            "file_type": "gif",
+            "face_restore": true
+        }
+    },
+    "revanimated": {
+        "required": {
+            "prompt": "advanced aircraft, gundam, dark black robot, spaceship, long, giant guns, futuristic design, scifi, in space, supernova, stars, planets, (8k, RAW photo, best quality, ultra high res, photorealistic, masterpiece, ultra-detailed, Unreal Engine),best quality, warrior,((cinematic look)), insane details, advanced weapon, fight, battle, epic, power, combat, shoot, shooting, missiles, bombs, explosions, rockets, jetpack, defence, attacking,wide angle"
+        },
+        "optional": {
+            "negative_prompt": "boring, poorly drawn, bad artist, (worst quality:1.4), simple background, uninspired, (bad quality:1.4), monochrome, low background contrast, background noise, duplicate, crowded, (nipples:1.2), big breasts",
+            "scheduler": "ddim",
+            "num_inference_steps": 25,
+            "guidance_scale": 9,
+            "samples": 1,
+            "seed": 3426017487234,
+            "img_width": 512,
+            "img_height": 768,
+            "base64": false
+        }
+    },
+    "background_removal": {
+        "required": {
+            "image": "/bg-removal.jpg"
+        },
+        "optional": {
+            "method": "object"
+        }
+    },
+    "esrgan": {
+        "required": {
+            "image": "https://www.segmind.com/butterfly.png"
+        },
+        "optional": {
+            "scale": 2
+        }
+    },
+    "controlnet_openpose": {
+        "required": {
+            "image": "https://segmind.com/fashion2.jpeg",
+            "prompt": "a beautiful fashion model, wearing a red polka dress, red door background. hyperrealistic. photorealism, 4k, extremely detailed"
+        },
+        "optional": {
+            "samples": 1,
+            "negative_prompt": "Disfigured, cartoon, blurry, nude",
+            "scheduler": "UniPC",
+            "num_inference_steps": 25,
+            "guidance_scale": 7.5,
+            "strength": 1,
+            "seed": 919194474388,
+            "base64": false
+        }
+    }
+}
