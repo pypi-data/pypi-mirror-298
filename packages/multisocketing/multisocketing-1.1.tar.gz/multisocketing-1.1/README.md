@@ -1,0 +1,50 @@
+# Multisocket
+A library that handles all of the socket backend, While you can focus on making your application.
+
+It's easy to set it up, Just make a Server (multisocket.server.Server) and some Clients (multisocket.client.Client),
+Start the server, And connect the clients to the server.
+
+You can give the client or the server a callback function, So that you can change their behaviour!
+
+If you give the client a callback function, It will be called every frame and be given these arguments.
+
+client - The client that called this function.
+packets - All of the packets that the client recieved from the server, In a list.
+
+This callback function can return a single packet, Or a list of them, And the client will send them to the server.
+
+
+Similarly, If you give the server a callback function, It will also be called every frame, And get these arguments.
+
+server - The server that called this function.
+client - The client that the packets will be sent to.
+packets - All of the packets that the server recieved from the client, In a list.
+
+This callback function can also return packets to send to the client.
+
+
+This is a simple script that uses multisocket to communicate between servers and clients:
+```python
+from multisocket import client, server, packet
+import threading
+
+def serverCallback(server, client, packets):
+    print("Packets from client:")
+    print(packets)
+    return packet.Packet()
+
+def clientCallback(client, packets):
+    print("Packets from server:")
+    print(packets)
+    return packet.Packet()
+
+c = client.Client(clientCallback)
+s = server.Server(serverCallback, "127.0.0.1", 5000)
+
+thread = threading.Thread(target=s.start)
+thread.start()
+
+c.connect("127.0.0.1", 5000)
+```
+
+Hope this library makes it easier for you to make socket-related applications!
