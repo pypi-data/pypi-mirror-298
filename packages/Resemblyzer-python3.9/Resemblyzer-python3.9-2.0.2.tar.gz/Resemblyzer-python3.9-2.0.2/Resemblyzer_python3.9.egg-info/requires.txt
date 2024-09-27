@@ -1,0 +1,9 @@
+librosa>=0.9.1
+matplotlib>=3.0.0
+numpy>=1.20.0
+scipy>=1.2.1
+sounddevice
+torch==1.7.0
+tqdm
+umap-learn
+webrtcvad-wheels>=2.0.14
