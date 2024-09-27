@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mbedext
+Version: 0.0.11
+Summary: Visualize and cluster your text in a modular way
+Author-email: Ahmed Kooli <ahmed.kooli@hotmail.fr>
+Project-URL: Homepage, https://github.com/ahmedkooli/mbedext
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch ~=2.3.1
+Requires-Dist: tqdm ~=4.66.4
+Requires-Dist: transformers ~=4.41.2
+Requires-Dist: sentence-transformers ~=3.0.1
+Requires-Dist: pandas ~=2.2.2
+Requires-Dist: scikit-learn ~=1.5.0
+Requires-Dist: plotly ~=5.22.0
+Requires-Dist: numpy ~=1.26.4
+Requires-Dist: accelerate ~=0.33.0
+
+# Welcome to mbedext
