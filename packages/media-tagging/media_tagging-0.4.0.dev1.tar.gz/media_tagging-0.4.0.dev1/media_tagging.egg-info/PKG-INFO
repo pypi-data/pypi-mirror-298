@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: media-tagging
+Version: 0.4.0.dev1
+Author: Google Inc. (gTech gPS CSE team)
+Author-email: no-reply@google.com
+License: Apache 2.0
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi==0.111.0
+Requires-Dist: pillow
+Requires-Dist: google-cloud-vision
+Requires-Dist: google-cloud-videointelligence
+Requires-Dist: smart_open
+Requires-Dist: google-ads-api-report-fetcher==1.14.3
+Requires-Dist: langchain==0.2.7
+Requires-Dist: langchain-core==0.2.21
+Requires-Dist: langchain-community==0.2.7
+Requires-Dist: langchain-google-genai==1.0.7
+Requires-Dist: langchain-google-vertexai
+Requires-Dist: jq
