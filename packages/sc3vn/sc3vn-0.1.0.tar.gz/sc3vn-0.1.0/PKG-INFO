@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: sc3vn
+Version: 0.1.0
+Summary: A package which lets you make terminal-based Visual Novels
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: Swiftcode3 <swiftcode3.studio@gmail.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
