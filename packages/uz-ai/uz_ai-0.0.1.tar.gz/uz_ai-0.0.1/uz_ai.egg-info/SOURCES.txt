@@ -1,0 +1,7 @@
+README.md
+setup.py
+uz-ai/__init__.py
+uz_ai.egg-info/PKG-INFO
+uz_ai.egg-info/SOURCES.txt
+uz_ai.egg-info/dependency_links.txt
+uz_ai.egg-info/top_level.txt
