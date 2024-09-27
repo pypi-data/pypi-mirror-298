@@ -1,0 +1,11 @@
+image_marciano/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_marciano/processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_marciano/processing/combination.py,sha256=y2jcVO6rFRaRx2UutnmMOBjbxTvFG0z6ZsL0dgVrhTA,797
+image_marciano/processing/transformation.py,sha256=sxr01snA7jlzs9r9aaFUsbtyd0Ga-8VGWHGxTckvo38,351
+image_marciano/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_marciano/utils/io.py,sha256=xIZDQ_rqSswiJi2tuLWuuAJUe1hhwwkjCiyV-YuhnhQ,200
+image_marciano/utils/plot.py,sha256=y2hh6zYQJTb-JzuE-p6KpIriF4BovUI2SlwPCgK3PJI,1006
+image_processing_marciano-0.0.1.dist-info/METADATA,sha256=tKZK9PqRYgPCrYIfjnhPdr268z6xu7VI4ALpPfBQenc,900
+image_processing_marciano-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+image_processing_marciano-0.0.1.dist-info/top_level.txt,sha256=c-VW3PKXbHqa5s2NBKK8R9NJ1VSFIpjU_1d-zog8-64,15
+image_processing_marciano-0.0.1.dist-info/RECORD,,
