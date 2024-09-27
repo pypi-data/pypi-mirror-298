@@ -1,0 +1,2 @@
+[console_scripts]
+azure-voice-list = azure_voice_list.main:main
