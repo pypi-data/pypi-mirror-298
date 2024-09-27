@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: dpk_html2parquet_transform_python
+Version: 0.2.1
+Summary: HTML2PARQUET Python Transform
+Author-email: Sungeun An <sungeun.an@ibm.com>, Syed Zawad <szawad@ibm.com>
+License: Apache-2.0
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: data-prep-toolkit==0.2.1
+Requires-Dist: trafilatura==1.12.0
+Provides-Extra: dev
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: pytest>=7.3.2; extra == "dev"
+Requires-Dist: pytest-dotenv>=0.5.2; extra == "dev"
+Requires-Dist: pytest-env>=1.0.0; extra == "dev"
+Requires-Dist: pre-commit>=3.3.2; extra == "dev"
+Requires-Dist: pytest-cov>=4.1.0; extra == "dev"
+Requires-Dist: pytest-mock>=3.10.0; extra == "dev"
+Requires-Dist: moto==5.0.5; extra == "dev"
+Requires-Dist: markupsafe==2.0.1; extra == "dev"
+
+# html2parquet Transform 
+
+This tranforms iterate through zip of HTML files or single HTML files and generates parquet files containing the converted document in string.
+
+The HTML conversion is using the [Trafilatura](https://trafilatura.readthedocs.io/en/latest/usage-python.html).
+
+## Output format
+
+The output format will contain the following colums
+
+```jsonc
+{
+	"title": "string"             // the member filename
+	"document": "string"          // the base of the source archive
+	"contents": "string"          // the content of the HTML
+    "document_id": "string",      // the document id, a hash of `contents`
+    "size": "string",             // the size of `contents`
+    "date_acquired": "date",      // the date when the transform was executing
+}
+```
+## Parameters
+The transform can be initialized with the following parameters.
+
+| Parameter  | Default  | Description  |
+|------------|----------|--------------|
+| `output_format`         | `markdown`        | The output type for the `contents` column. Valid types are `markdown` and `text`. |
+
+When invoking the CLI, the parameters must be set as `--html2parquet_<name>`, e.g. `--html2parquet_output_format='markdown'`.

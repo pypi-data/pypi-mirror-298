@@ -1,0 +1,4 @@
+html2parquet_local
+html2parquet_local_python
+html2parquet_transform
+html2parquet_transform_python
