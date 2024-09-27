@@ -1,0 +1,81 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rezolve_ai_ingestion"
+version = "0.1.3"
+description = "A private package for ingesting and processing SharePoint data with AI capabilities"
+readme = "README.md"
+authors = [
+    { name = "Joshua O'Brien", email = "josh@rezolve.ai" }
+]
+license = { text = "Proprietary and Confidential" }
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3 :: Only",
+]
+keywords = ["sharepoint", "ai", "ingestion", "data processing", "rezolve"]
+dependencies = [
+    "langchain_openai==0.1.20",
+    "langchain_pinecone==0.1.3",
+    "langchain_text_splitters==0.2.2",
+    "pinecone-client==5.0.1",
+    "nltk==3.8.1",
+    "msal==1.30.0",
+    "tempenv==2.0.0",
+    "pandas",
+    "opencv-python",
+    # Remove textract from here
+]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+textract = [
+    "textract==1.6.5",
+    "extract-msg==0.28.7",  # Specify a version that works
+    "beautifulsoup4==4.8.2",
+    "six==1.12.0",
+]
+
+
+[project.urls]
+Homepage = "https://your-private-repo-url.com/rezolve-ai-ingestion"
+Repository = "https://your-private-repo-url.com/rezolve-ai-ingestion.git"
+
+[tool.setuptools]
+packages = [
+    "SharepointConnect",
+    "SharepointConnect.Models",
+]
+
+[tool.setuptools.package-data]
+SharepointConnect = ["data/*.json"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=SharepointConnect"
+testpaths = [
+    "tests",
+]
+
+[tool.mypy]
+mypy_path = "src"
+check_untyped_defs = true
+disallow_any_generics = true
+ignore_missing_imports = true
+no_implicit_optional = true
+show_error_codes = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+no_implicit_reexport = true
+
+

@@ -1,0 +1,15 @@
+langchain_openai==0.1.20
+langchain_pinecone==0.1.3
+langchain_text_splitters==0.2.2
+pinecone-client==5.0.1
+nltk==3.8.1
+msal==1.30.0
+tempenv==2.0.0
+pandas
+opencv-python
+
+[textract]
+textract==1.6.5
+extract-msg==0.28.7
+beautifulsoup4==4.8.2
+six==1.12.0
