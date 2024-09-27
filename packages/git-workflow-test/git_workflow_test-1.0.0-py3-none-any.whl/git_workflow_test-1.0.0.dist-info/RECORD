@@ -1,0 +1,6 @@
+git_workflow_test/__init__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+git_workflow_test/app.py,sha256=zh64B06t8oib3pmatEzMdi76eHp6m2sDUHjFoROOLVM,354
+git_workflow_test/config.py,sha256=LZSmiTaihPjlgkP4pM_ZlEfJSJ3icfsn86jy4FhiDpc,539
+git_workflow_test-1.0.0.dist-info/METADATA,sha256=CDwWBAF0IrQtpcQ-OoImPcyTW_w5vFWVJHBVFTg7CUM,1763
+git_workflow_test-1.0.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+git_workflow_test-1.0.0.dist-info/RECORD,,
