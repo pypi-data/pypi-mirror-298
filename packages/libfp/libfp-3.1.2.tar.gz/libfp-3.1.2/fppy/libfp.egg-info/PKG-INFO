@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: libfp
+Version: 3.1.2
+Summary: This is the libfp module.
+Author-email: Zhu Research Group <li.zhu@rutgers.edu>
+License: MIT
+Project-URL: Homepage, https://github.com/Rutgers-ZRG/libfp
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: numpy
