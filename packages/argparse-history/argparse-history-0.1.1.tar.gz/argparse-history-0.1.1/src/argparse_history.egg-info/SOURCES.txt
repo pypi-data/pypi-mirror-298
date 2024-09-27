@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/argparse_history.egg-info/PKG-INFO
+src/argparse_history.egg-info/SOURCES.txt
+src/argparse_history.egg-info/dependency_links.txt
+src/argparse_history.egg-info/top_level.txt
