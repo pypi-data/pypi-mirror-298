@@ -1,0 +1,139 @@
+Metadata-Version: 2.1
+Name: kinetic-energy
+Version: 0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>1.11.1)
+
+# Onicescu Energy
+
+A Python package for computing Onicescu's Informational Energy, particularly useful in quantum physics and information theory applications.
+
+## Overview
+
+The `onicescu_energy` package provides a simple function to calculate Onicescu's Informational Energy for a given probability distribution. This measure quantifies the concentration or dispersion within a distribution and is defined as:
+
+$$
+E = \sum_{i=1}^{n} p_i^2
+$$
+
+For continuous distributions, it adapts to:
+
+$$
+E = \int [\rho(x)]^2 \, dx
+$$
+
+This concept is particularly relevant in quantum mechanics, where it can be used to analyze the localization properties of quantum states.
+
+## Installation
+
+Install the package via pip:
+
+```bash
+pip install onicescu_energy
+```
+
+## Dependencies
+
+- [NumPy](https://numpy.org/): A fundamental package for numerical computations in Python.
+
+## Usage
+
+Import the necessary modules and the `onicescu_energy` function:
+
+```python
+import numpy as np
+from onicescu_energy import onicescu_energy
+```
+
+### Computing Onicescu's Informational Energy
+
+For a discrete probability distribution:
+
+```python
+# Example discrete probability distribution
+probabilities = np.array([0.2, 0.5, 0.3])
+
+# Calculate Onicescu's Informational Energy
+E = onicescu_energy(probabilities)
+
+print(f"Onicescu's Informational Energy: {E}")
+```
+
+### Computing for Quantum States
+
+Suppose you have a quantum state represented by a wavefunction, and you want to compute the informational energy.
+
+```python
+# Define the probability density function |(x)|Â²
+def probability_density(x):
+    # Example: |(x)|Â² = 2/L * sinÂ²(nÏ€x/L)
+    L = 1.0  # Width of the potential well
+    n = 1    # Energy level
+    return (2 / L) * np.sin(n * np.pi * x / L)**2
+
+# Generate a range of x values
+x_values = np.linspace(0, 1, 1000)
+dx = x_values[1] - x_values[0]
+
+# Compute the probability densities
+prob_densities = probability_density(x_values)
+
+# For continuous distributions, approximate the integral
+E = onicescu_energy(prob_densities) * dx
+
+print(f"Onicescu's Informational Energy for the quantum state: {E}")
+```
+
+## Function Definition
+
+The `onicescu_energy` function computes the informational energy for a given array of probabilities or probability densities.
+
+```python
+def onicescu_energy(probabilities):
+    """
+    Calculates Onicescu's Informational Energy.
+
+    Parameters:
+        probabilities (numpy.array): An array of probabilities or probability densities.
+
+    Returns:
+        float: The calculated informational energy.
+    """
+    return np.sum(probabilities**2)
+```
+
+## Important Notes
+
+- Ensure that the probabilities or probability densities provided are properly normalized.
+
+    - **Discrete distributions**: Probabilities should sum up to 1.
+
+    - **Continuous distributions**: The integral of the probability density over the entire space should be 1.
+
+- When working with continuous distributions, multiplying by the differential element (e.g., `dx`) is necessary to approximate the integral.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Author
+
+[Daia Alexandru]
+
+## Contribution
+
+Contributions are welcome! Please feel free to submit issues or pull requests.
+
+## Contact
+
+For any questions or inquiries, please contact [your.email@example.com](mailto:alexandru130586@yandex.com).
+
+# Acknowledgments
+
+- Inspired by the work on Onicescu's Informational Energy in quantum physics.
+- Special thanks to the open-source community for providing the tools that make this package possible.
+
