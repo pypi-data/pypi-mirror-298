@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "mplstadium"
+version = "0.1.0"
+description = "A python plotting library for visualisation of stadium data"
+authors = ["Peter4137 <peter.robinson4137@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matplotlib = "^3.9.2"
+numpy = "^2.1.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-mpl = "^0.17.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
