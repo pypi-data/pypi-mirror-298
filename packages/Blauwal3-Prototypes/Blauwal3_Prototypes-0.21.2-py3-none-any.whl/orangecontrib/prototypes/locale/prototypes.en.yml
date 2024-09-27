@@ -1,0 +1,119 @@
+en:
+  app_name: "Prototypes"
+  app_desc: "Various widgets not polished for regular use."
+
+  owchatgpt:
+    name: "ChatGPT Summarize"
+    desc: "Summarize content using a ChatGPT."
+    answer: "Answer"
+    thinking: "Thinking..."
+    custom_model_name: "Custom Model Name"
+    data: "Data"
+    model: "Model"
+    custom_model_name_label: "Custom Model Name:"
+    text_variable_label: "Text variable:"
+    prompt: "Prompt"
+    start_label: "Start:"
+    end_label: "End:"
+    missing_key: "The Access key is missing."
+    missing_str_var: "Data has no text variables."
+    unknown_error: "An error occurred while creating an answer.\n{}"
+  
+  owchatgptconstructor:
+    name: "ChatGPT Constructor"
+    desc: "Create a ChatGPT prompt from a data table."
+    thinking: "Thinking..."
+ 
+  owdfdisplay:
+    name: "Data Frame Display"
+    desc: "Display a data frame."
+  
+  owgrep:
+    name: "Grep"
+    desc: "Grep for a pattern in a data frame."
+    no_lines: "Pattern not found"
+    no_header_row: "Blocks do not appear to have headers."
+    unreadable: "Data is not readable."
+    file_not_found: "File not found."
+    block_too_short: "Block with headers must more than 1 line."
+    has_header_row: "Block(s) start with header row"
+    has_header_row_tooltip: "Only the header at the first block will be used."
+    skip_lines: "Skipped lines"
+    block_length: "Block length"
+    case_sensitive: "Case sensitive"
+    regular_expression: "Regular expression"
+    find: "Find"
+    find_tooltip: "Find text in the data frame."
+    input_text: "Input text"
+    used_lines: "Used lines"
+  
+  owinteractions:
+    name: "Interactions"
+    desc: "Find interactions between variables."
+    get_combinations: "Getting combinations..."
+    get_scores: "Getting scores..."
+    random_search: "Random Search"
+    low_information_gain_first: "Low Information Gain First"
+    removed_cons_feat: "Constant features have been removed."
+    not_enough_vars: "At least two features are needed."
+    not_enough_inst: "At least two instances are needed."
+    no_class_var: "Target feature missing"
+    all_combinations: "(All combinations)"
+    interaction: "Interaction"
+    information_gain: "Information Gain"
+    feature_1: "Feature 1"
+    feature_2: "Feature 2"
+    start: "Start"
+    finished: "Finished"
+    interactions: "Interactions"
+
+  oworaclesql:
+    name: "Oracle SQL"
+    desc: "Select data from oracle databases"
+    no_backends: "Please install cx_Oracle package. It is either missing or not working properly"
+    database_connection: "Database connection"
+    user_name: "User name"
+    password: "Password"
+    database: "Database"
+    run_sql: "Run SQL"
+
+  owquickselect:
+    name: "Quick Select"
+    desc: "Select instances with specific feature value."
+    variable: "Variable:"
+    value: "Value:"
+    no_categorical: "No categorical variables"
+
+  owscoringsheet:
+    name: "Scoring Sheet"
+    desc: "A fast and explainable classifier."
+    custom_number_of_input_features_used: "If the number of input features used is too low for the number of decision parameters,\n the number of decision parameters will be adjusted to fit the model."
+    preprocessing: "Preprocessing"
+    number_of_attributes_after_feature_selection: "Number of Attributes After Feature Selection:"
+    model_parameters: "Model Parameters"
+    maximum_number_of_decision_parameters: "Maximum Number of Decision Parameters:"
+    maximum_points_per_decision_parameter: "Maximum Points per Decision Parameter:"
+    custom_number_of_input_features: "Custom number of input features"
+    number_of_input_features_used: "Number of Input Features Used:"
+
+  owscoringsheetviewer:
+    name: "Scoring Sheet Viewer"
+    desc: "Visualize the scoring sheet model."
+    invalid_classifier: "Scoring Sheet Viewer only accepts a Scoring Sheet model."
+    multiple_instances: "The input data contains multiple instances. Only the first instance will be used."
+    target_class: "Target class:"
+    total: "<b>Total:</b>"
+    probabilities: "<b>Probabilities:</b>"
+    attribute_name: "Attribute Name"
+    points: "Points"
+    selected: "Selected"
+
+  owtexttocolumns:
+    name: "Text to Columns"
+    desc: "Split text or categorical variables into binary indicators"
+    no_disc: "Data contains only numeric variables."
+    variable: "Variable"
+
+
+
+
