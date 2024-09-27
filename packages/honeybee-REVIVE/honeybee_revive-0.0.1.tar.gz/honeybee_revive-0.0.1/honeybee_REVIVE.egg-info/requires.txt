@@ -1,0 +1,12 @@
+honeybee-energy>=1.109.1
+ph-units>=1.5.13
+pydantic<=1.10.18
+rich>=13.8.1
+
+[dev]
+black
+isort
+pytest
+coverage
+Grasshopper-stubs
+Rhino-stubs
