@@ -1,0 +1,11 @@
+bluewhale3
+========
+
+[bluewhale] 是一个基于组件的数据挖掘软件。它包括一系列数据可视化、探索、预处理和建模技术。
+它可以通过一个漂亮且直观的用户界面使用，或者对于更高级的用户，可以作为 Python 编程语言的模块使用。
+
+要从命令行启动 Orange GUI，请运行：
+
+    orange-canvas
+    # 或者
+    python3 -m Orange.canvas
