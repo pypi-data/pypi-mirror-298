@@ -1,0 +1,15 @@
+Usage: main [OPTIONS] CWL
+
+  The cwl-parser
+
+Options:
+  --output TEXT       default main cel template assets/maincwl.yaml
+  --stagein TEXT      default stagein template assets/stagein.yaml
+  --stageout TEXT     default "stageout" template assets/stageout.yaml
+  --maincwl TEXT      default maincwl assets/maincwl.yaml
+  --rulez TEXT        rules default file assets/rules.yaml
+  --assets TEXT       use <value> as maincwl from assets/<values>
+  --workflow-id TEXT  workflow id
+  -c, --conf FILE     Read options from FILE instead of command line; default
+                      file: /home/jovyan/.cwlwrapper/default.conf
+  --help              Show this message and exit.
