@@ -1,0 +1,64 @@
+zh:
+  app_name: "解释"
+  app_desc: "解释模型预测和特征重要性。"
+
+  explainer:
+    order_instances_by_similarity: "按相似度排序实例"
+    original_instance_ordering: "原始实例顺序"
+    order_instances_by_output_value: "按输出值排序实例"
+
+  owexplainfeaturebase:
+    name: "解释"
+    display: "显示"
+    top_features: "主要特征："
+    zoom: "缩放："
+    data_sampled: "数据已采样。"
+    unknown_err: "发生错误。\n{}"
+
+  owexplainmodel:
+    name: "模型解释"
+    desc: "模型解释组件。"
+    target_class: "目标类别"
+    show_legend: "显示图例"
+    
+  owexplainprediction:
+    name: "预测解释"
+    desc: "预测解释组件。"
+    target_class: "目标类别"
+    zoom: "缩放"
+    prediction_info: "预测信息"
+    average_prediction: "所选类别的平均预测值。"
+
+  owexplainpredictions:
+    name: "预测解释"
+    desc: "预测解释组件。"
+    target_class: "目标类别"
+    instance_order: "实例顺序"
+    annotation: "注释"
+    show_tooltip: "显示工具提示"
+    highlight_feature: "鼠标悬停时突出显示特征"
+    instances_ordered_by: "实例按 {} 排序"
+    hierarhical_clustering: "层次聚类"
+    output_value: "输出值"
+    original_ordering: "原始排序"
+
+  owice:
+    name: "ICE"
+    desc: "目标与感兴趣特征之间的依赖关系。"
+    display: "显示"
+    color: "颜色"
+    centered: "居中"
+    show_mean: "显示均值"
+    order_by_importance: "按重要性排序"
+    target_class: "目标类别"
+    feature: "特征"
+    not_enough_data: "至少需要两个实例。"
+    no_cont_features: "至少需要一个数值特征。"
+
+  owpermutationimportance:
+    name: "特征重要性"
+    desc: "使用置换特征重要性技术检查模型。"
+    parameters: "参数"
+    score: "得分："
+    permutations: "置换次数："
+    missing_target: "数据中未知目标值的实例已被移除。"

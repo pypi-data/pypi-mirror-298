@@ -1,0 +1,64 @@
+de:
+  app_name: "Erklären"
+  app_desc: "Erklären Sie Modelle und Merkmalswichtigkeit."
+
+  explainer:
+    order_instances_by_similarity: "Instanzen nach Ähnlichkeit sortieren"
+    original_instance_ordering: "Originalinstanzreihenfolge"
+    order_instances_by_output_value: "Instanzen nach Ausgabewert sortieren"
+
+  owexplainfeaturebase:
+    name: "Erklären"
+    display: "Anzeigen"
+    top_features: "Top-Merkmale:"
+    zoom: "Zoom:"
+    data_sampled: "Daten wurden abgetastet."
+    unknown_err: "Ein Fehler ist aufgetreten.\n{}"
+
+  owexplainmodel:
+    name: "Modell erklären"
+    desc: "Widget zur Erklärung des Modells."
+    target_class: "Zielklasse"
+    show_legend: "Legende anzeigen"
+    
+  owexplainprediction:
+    name: "Vorhersage erklären"
+    desc: "Widget zur Erklärung von Vorhersagen."
+    target_class: "Zielklasse"
+    zoom: "Zoom"
+    prediction_info: "Vorhersage-Information"
+    average_prediction: "Die durchschnittliche Vorhersage für die ausgewählte Klasse."
+
+  owexplainpredictions:
+    name: "Vorhersagen erklären"
+    desc: "Widget zur Erklärung von Vorhersagen."
+    target_class: "Zielklasse"
+    instance_order: "Instanzreihenfolge"
+    annotation: "Anmerkung"
+    show_tooltip: "Tooltips anzeigen"
+    highlight_feature: "Merkmal beim Überfahren hervorheben"
+    instances_ordered_by: "Instanzen sortiert nach {}"
+    hierarhical_clustering: "Hierarchisches Clustering"
+    output_value: "Ausgabewert"
+    original_ordering: "Originalreihenfolge"
+
+  owice:
+    name: "ICE"
+    desc: "Abhängigkeit zwischen einem Ziel und einem interessanten Merkmal."
+    display: "Anzeigen"
+    color: "Farbe"
+    centered: "Zentriert"
+    show_mean: "Mittelwert anzeigen"
+    order_by_importance: "Nach Wichtigkeit sortieren"
+    target_class: "Zielklasse"
+    feature: "Merkmal"
+    not_enough_data: "Mindestens zwei Instanzen sind erforderlich."
+    no_cont_features: "Mindestens ein numerisches Merkmal ist erforderlich."
+
+  owpermutationimportance:
+    name: "Merkmalswichtigkeit"
+    desc: "Modell mit der Permutation Feature Importance-Technik untersuchen."
+    parameters: "Parameter"
+    score: "Punktzahl:"
+    permutations: "Permutationen:"
+    missing_target: "Instanzen mit unbekannten Zielwerten wurden aus den Daten entfernt."
