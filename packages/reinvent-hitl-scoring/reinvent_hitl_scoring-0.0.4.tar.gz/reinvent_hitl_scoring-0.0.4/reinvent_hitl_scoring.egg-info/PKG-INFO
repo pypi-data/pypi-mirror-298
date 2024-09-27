@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: reinvent-hitl-scoring
+Version: 0.0.4
+Summary: Scoring functions for Reinvent adapted to HITL_AL_GOMG workflow
+Home-page: https://github.com/yasminenahal/reinvent_hitl_scoring.git
+Author: Yasmine Nahal
+Author-email: yasminenahal@aalto.fi
+License: UNKNOWN
+Description: # Introduction
+        This package contains the scoring functions for REINVENT.
+        
+        # Installation
+        To install in REINVENT's environment either install from repo or use `pip install reinvent-scoring` for the latest
+        official release.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
