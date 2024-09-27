@@ -1,0 +1,9 @@
+nmdc_geoloc_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nmdc_geoloc_tools/data/ENVO_Landuse_Systems_lookup.csv,sha256=-wP1Ss7DlK8KPema89C00d22NGLykwEzU-BsbKsMxOU,460
+nmdc_geoloc_tools/data/ENVO_Landuse_lookup.csv,sha256=E3ti2KrS6YIEsjflPjSggGsAFnaYG-NViVYIYocr8nM,27177
+nmdc_geoloc_tools/data/README.md,sha256=GOe7CS1dPhC_x_UjK4z4WUYVZev9-45glpK4cmdaUg0,338
+nmdc_geoloc_tools/data/zobler_540_MixS_lookup.csv,sha256=pB2Rtj3SOX0sJpYUEf8ZVxYNCnulG-k-03xOOYDLqQ4,2753
+nmdc_geoloc_tools/geotools.py,sha256=KmyKkyTe7IJTAhoEctnjeDMk4TkqwS0aE-aXpvF3qwc,10071
+nmdc_geoloc_tools-0.1.0.dist-info/METADATA,sha256=hvKmUTyA17bUAzgqGcqrBrNAL_Z9vL4K_a4Is9SpsC0,1544
+nmdc_geoloc_tools-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nmdc_geoloc_tools-0.1.0.dist-info/RECORD,,
