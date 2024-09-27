@@ -1,0 +1,10 @@
+LICENSE.md
+setup.py
+multisocket/__init__.py
+multisocket/client.py
+multisocket/packet.py
+multisocket/server.py
+multisocket.egg-info/PKG-INFO
+multisocket.egg-info/SOURCES.txt
+multisocket.egg-info/dependency_links.txt
+multisocket.egg-info/top_level.txt
