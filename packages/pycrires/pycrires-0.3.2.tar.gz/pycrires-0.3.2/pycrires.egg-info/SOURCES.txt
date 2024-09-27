@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+pyproject.toml
+pycrires.egg-info/PKG-INFO
+pycrires.egg-info/SOURCES.txt
+pycrires.egg-info/dependency_links.txt
+pycrires.egg-info/top_level.txt
+tests/test_pipeline.py
