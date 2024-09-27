@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+simple_todo_list_manager.egg-info/PKG-INFO
+simple_todo_list_manager.egg-info/SOURCES.txt
+simple_todo_list_manager.egg-info/dependency_links.txt
+simple_todo_list_manager.egg-info/requires.txt
+simple_todo_list_manager.egg-info/top_level.txt
+todo_list_manager/__init__.py
+todo_list_manager/tasks_creator.py
+todo_list_manager/tasks_list_manager.py
