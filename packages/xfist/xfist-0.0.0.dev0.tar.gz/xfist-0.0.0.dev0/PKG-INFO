@@ -1,0 +1,29 @@
+Metadata-Version: 2.3
+Name: xfist
+Version: 0.0.0.dev0
+Summary: X(stands for eXtensible and fleXible) FIle STructure handler.
+Project-URL: Homepage, https://xoani.github.io
+Author-email: SungHo Lee <shlee@unc.edu>
+Maintainer-email: SungHo Lee <shlee@unc.edu>
+License: MIT
+Keywords: dynamic loading,extensible,file stricture handler,flexible
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Requires-Dist: packaging>=23.0
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: requests>=2.31.0
+Requires-Dist: tqdm>=4.66.1
+Provides-Extra: dev
+Requires-Dist: flake8; extra == 'dev'
+Requires-Dist: nbmake; extra == 'dev'
+Requires-Dist: numpy; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: types-pyyaml; extra == 'dev'
