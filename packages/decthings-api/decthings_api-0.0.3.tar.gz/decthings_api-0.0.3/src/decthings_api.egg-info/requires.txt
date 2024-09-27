@@ -1,0 +1,4 @@
+aiohttp>=3
+numpy>=2
+requests>=2
+websockets>=13
