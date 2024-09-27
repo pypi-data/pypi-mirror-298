@@ -1,0 +1,231 @@
+de:
+  package_label: "Bildung"
+  package_desc: "Bildung"
+
+  common:
+    data: "Daten"
+    model: "Modell"
+    coefficient: "Koeffizienten"
+    annotated_data: "Anotierte Daten"
+    centroid: "Zentroiden"
+    learner: "Lerner"
+
+  ow1ka:
+    name: "EnKlik Anketa"
+    desc: "Daten von EnKlikAnketa (1ka.si) öffentliche URL importieren."
+    dialog: "Sie können Daten von öffentlichen Links zu 1ka-Umfrageergebnissen importieren. Klicken Sie hier, um mehr darüber zu erfahren, wie Sie eine freigegebene öffentliche Link-URL für 1ka-Umfragen erhalten, die Sie verwalten."
+    box_import_data: "Daten importieren"
+    tooltip_format: "Format: "
+    row_public_link_url: "Öffentliche Link-URL:"
+    row_reload_every: "Neu laden alle:"
+    box_column: "Spalten (Doppelklick zum Bearbeiten)"
+    box_info: "Info"
+    btn_commit: "Übernehmen"
+    row_no_spreadsheet_load: "Keine Tabelle geladen."
+    msg:
+      cannot_load_data: "Daten konnten nicht geladen werden: {}. Stellen Sie sicher, dass die Netzwerkverbindung, die Firewall ..."
+      cannot_parse_data: "Daten konnten nicht analysiert werden: {}. Stellen Sie sicher, dass die Daten gut formatiert sind oder reichen Sie einen Fehlerbericht ein."
+      invalid_url: "Ungültige URL. Der öffentliche freigegebene Link sollte übereinstimmen: "
+      need_data_public_link: "Die bereitgestellte URL ist ein öffentlicher Link zu 'Analyse'. Benötigen öffentlichen Link zu 'Daten'."
+      response_data_empty: "Antwortdaten sind leer. Holen Sie sich zuerst einige Antworten."
+    gbox:
+      no_reload: "Kein Neuladen"
+      5s: "5 s"
+      10s: "10 s"
+      30s: "30 s"
+      1min: "1 min"
+      2min: "2 min"
+      5min: "5 min"
+    text:
+      cannot_load_data: "Daten konnten nicht geladen werden von: %s"
+      parsing_error: "Analysefehler: %s"
+      data_instruction: "{}\n\n{} Instanz(en), {} Merkmal(e), {} Meta-Attribut(e)\n"
+      data_entry: "\nErster Eintrag: {} \nLetzter Eintrag: {}"
+
+  owcreatetable:
+    name: "Tabelle erstellen"
+    msg:
+      transform_err: "Daten passen nicht zur Domäne"
+    box:
+      control: "Steuerung"
+    label:
+      rows: "Zeilen:"
+      columns: "Spalten:"
+
+  owgooglesheets:
+    name: "Google Tabellen"
+    desc: "Daten aus einer Google Tabellen-Tabelle lesen."
+    box_google_sheet: "Google Tabellen"
+    tooltip_format: "Format: "
+    row_url: "URL:"
+    row_reload_every: "Neu laden alle:"
+    box_info: "Info"
+    btn_commit: "Übernehmen"
+    msg_cannot_load_spreadsheet: "Tabelle konnte nicht geladen werden: {}. Stellen Sie sicher, dass die Zugriffsberechtigungen korrekt sind; rechteckige, links oben ausgerichtete Tabellendaten ..."
+    row_no_spreadsheet_load: "Keine Tabelle geladen."
+    text:
+      cannot_load_data: "Daten konnten nicht geladen werden von: %s"
+      data_instruction: "{}\n\n{} Instanz(en), {} Merkmal(e), {} Meta-Attribut(e)\n"
+      data_entry: "\nErster Eintrag: {} \nLetzter Eintrag: {}"
+    gbox:
+      no_reload: "Kein Neuladen"
+      5s: "5 s"
+      10s: "10 s"
+      30s: "30 s"
+      1min: "1 min"
+      2min: "2 min"
+      5min: "5 min"
+
+  owgradientdescent:
+    name: "Gradientenabstieg"
+    desc: "Demonstration des Gradientenabstiegs in der logistischen oder linearen Regression"
+    btn:
+      run: "Starten"
+      stop: "Stoppen"
+      restart: "Neustart"
+      step: "Schritt"
+      step_back: "Schritt zurück"
+    msg:
+      no_class: "Daten müssen ein einzelnes Klassenattribut haben"
+      num_features: "Daten müssen mindestens {} enthalten."
+      no_class_values: "Zielvariable muss mindestens zwei Werte haben."
+      no_nonnan_data: "Keine Punkte mit definierten Werten."
+      same_variable: "Wählen Sie zwei verschiedene Variablen."
+    box:
+      property: "Eigenschaften"
+      variables: "Variablen"
+    row:
+      stochastic_descent: "Stochastischer Abstieg"
+      learn_rate: "Lernrate: "
+      step_size: "Schrittgröße: "
+      target: "Ziel: "
+    caption:
+      cost: "<b>Kosten: {:.3f}</b>"
+      cost_xy: "{:.3f}, {:.3f}<br/>Kosten: {:.5f}"
+      cost_step: "<b>Schritt {}:</b><br/>{:.3f}, {:.3f}<br/>Kosten: {:.5f}"
+      target_class: "Zielklasse"
+      learn_rate: "Lernrate"
+      stochastic: "Stochastisch"
+      stochastic_step_size: "Stochastische Schrittgröße"
+
+  owkmeans:
+    name: "Interaktives k-Means"
+    desc: "Widget demonstriert die Funktionsweise des k-Means-Algorithmus."
+    msg:
+      num_features: "Daten müssen mindestens zwei numerische Variablen enthalten."
+      no_nonnan_data: "Keine Punkte mit definierten Werten."
+    btn:
+      reassign_membership: "Mitgliedschaft neu zuweisen"
+      recompute_centroid: "Zentroiden neu berechnen"
+      stop: "Stoppen"
+      run_simulation: "Simulation starten"
+      randomize: "Randomisieren"
+      step_back: "Schritt zurück"
+    label:
+      variables: "Variablen:"
+      tip: "Zentroiden ziehen, um sie zu bewegen, klicken, um sie hinzuzufügen und zu entfernen."
+
+  owpiecharts:
+    name: "Kreisdiagramm"
+    desc: "Sich über Kreisdiagramme lustig machen."
+    box_split: "Aufteilen nach"
+    checkbox_explode_pie: "Kreisdiagramme explodieren"
+    row_widget_demonstrate_pie_chart: "Das Ziel dieses Widgets ist es,\n zu demonstrieren, dass Kreisdiagramme\n eine schreckliche Visualisierung sind. Bitte\n verwenden Sie es nicht für andere Zwecke."
+    placeholder_none: "Keine"
+
+  owpolynomialclassification:
+    name: "Polynomklassifikation"
+    desc: "Widget, das die Klassifikation in zwei Klassen mit polynomischer Erweiterung der Variablen demonstriert."
+    box:
+      var: "Variablen"
+    checkbox:
+      show_legend: "Legende anzeigen"
+      show_contour: "Konturen anzeigen"
+    msg:
+      num_features: "Daten müssen mindestens zwei numerische Variablen enthalten."
+      no_class: "Daten müssen ein einzelnes Zielattribut haben."
+      no_nonnan_data: "Keine Punkte mit definierten Werten."
+      same_variable: "Wählen Sie zwei verschiedene Variablen."
+      others: "Andere"
+    row:
+      x: "X: "
+      y: "Y: "
+      target: "Ziel: "
+      polynomial_expansion: "Polynomische Erweiterung:"
+      contour_step: "Konturenschritt:"
+    report:
+      polynomial_expansion: "Modell mit polynomischer Erweiterung {}"
+
+  owpolynomialregression:
+    name: "Polynomregression"
+    desc: "Univariate Regression mit polynomischer Erweiterung."
+    placeholder_name: "Polynomregression"
+    msg:
+      all_none: "Alle Zeilen haben undefinierte Daten."
+      no_cont_variables: "Regression erfordert mindestens zwei numerische Variablen."
+      same_dep_indepvar: "Abhängige und unabhängige Variablen müssen unterschiedlich sein."
+    box:
+      predictor: "Prädiktor"
+      target: "Ziel"
+      info: "Info"
+    label:
+      polynomial_degree: "Polynomgrad: "
+      fit_intercept: "Achsenabschnitt anpassen"
+      error_bars: "Fehlerbalken anzeigen"
+    row:
+      regressor: "Regressor: %(regressor_name).30s"
+      mean_absolute_error: "Mittlerer absoluter Fehler: %(mae).6s"
+      root_mean_square_error: "Wurzel des mittleren quadratischen Fehlers: %(rmse).6s"
+      linear_regression: "Lineare Regression"
+    tip:
+      fit_intercept: "Einen Achsenabschnitt hinzufügen;\n Dies ist immer aktiviert, wenn das Modell auf Eingabe definiert ist."
+    report:
+      polynomial_expansion: "Polynomische Erweiterung"
+      fit_intercept: "Achsenabschnitt anpassen"
+
+  owrandomdata:
+    name: "Zufallsdaten"
+    desc: "Zufällige Datenprobe generieren"
+    msg_sample_error_check_argument: "Fehler beim Sampling. Überprüfen Sie die Verteilungsargumente."
+    btn_add_var: "Weitere Variablen hinzufügen ..."
+    btn_generate: "Generieren"
+    row:
+      var: "Variablen"
+      name_prefix: "Namenspräfix"
+      probability: "Wahrscheinlichkeit"
+      low_bound: "Untere Grenze"
+      high_bound: "Obere Grenze"
+      num_of_value: "Anzahl der Werte"
+      probabilities: "Wahrscheinlichkeiten"
+      num_of_trial: "Anzahl der Versuche"
+      num_of_object: "Anzahl der Objekte"
+      num_of_positive: "Anzahl der Positiven"
+      mean_x: "Mittelwert x"
+      variance_x: "Varianz x"
+      mean_y: "Mittelwert y"
+      variance_y: "Varianz y"
+      covariance: "Kovarianz"
+      mean: "Mittelwert"
+      variance: "Varianz"
+      standard: "Standardabweichung"
+      probability_of_success: "Erfolgswahrscheinlichkeit"
+      num_of_success: "Anzahl der Erfolge"
+      event_rate: "Ereignisrate (λ)"
+      shape: "Form (α)"
+      scale: "Skalierung"
+      degree_of_freedom: "Freiheitsgrade"
+      sample_size: "Stichprobengröße"
+    box:
+      bernoulli_distribution: "Bernoulli-Verteilung"
+      uniform_distribution: "Gleichverteilung"
+      discrete_uniform_distribution: "Diskrete Gleichverteilung"
+      multinomial_distribution: "Multinomialverteilung"
+      hypergeometric_distribution: "Hypergeometrische Verteilung"
+      bivariate_normal_distribution: "Bivariate Normalverteilung"
+      normal_distribution: "Normalverteilung"
+      binomial_distribution: "Binomialverteilung"
+      negative_binomial_distribution: "Negative Binomialverteilung"
+      poisson_distribution: "Poisson-Verteilung"
+      exponential_distribution: "Exponentialverteilung"
+      gamma_distribution: "Gamma-Verteilung"
+      student_distribution: "Student's t-Verteilung"
