@@ -1,0 +1,2 @@
+[console_scripts]
+meetup-notifier = meetup_notifier:app
