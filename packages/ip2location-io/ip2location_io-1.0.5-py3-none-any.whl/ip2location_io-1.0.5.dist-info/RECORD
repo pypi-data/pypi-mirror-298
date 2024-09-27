@@ -1,0 +1,10 @@
+ip2locationio/__init__.py,sha256=1Qb8Zgs5TbjaLtrZoWwfzT7MwX-FTVGmjkKpIvM-C80,159
+ip2locationio/common.py,sha256=hQ2QSKfyt6GBw-1yPwS98YVBUuzxJ7TDEtc5QXM6mck,1390
+ip2locationio/configuration.py,sha256=Mi-f2n_2hBT80rs9OO9F8e89NZnGwJRNQ0PNfeE-yj8,248
+ip2locationio/domainwhois.py,sha256=VSBWLoWlfZj1lTEcaIp5b8vtzB0QS_x2RAl_p-TzX-w,21851
+ip2locationio/ipgeolocation.py,sha256=9VX3ASYvTPQqzvMMNZoya00T_CKlpSQNG9E5N9pJyUk,1852
+ip2location_io-1.0.5.dist-info/LICENSE.TXT,sha256=g-HbDk7jCJdyc7tzdQTHr1DfTEojFypBGbUMA-BPFbI,1097
+ip2location_io-1.0.5.dist-info/METADATA,sha256=MNXH_-NxsKCESO8-lreSbLhf9gGCYzR5BIpWuz-VnZc,2368
+ip2location_io-1.0.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ip2location_io-1.0.5.dist-info/top_level.txt,sha256=94ZTrJ-ziMH_VRbw35cRRU4rYLFyjbGgwcBBcFsTJ4o,14
+ip2location_io-1.0.5.dist-info/RECORD,,
