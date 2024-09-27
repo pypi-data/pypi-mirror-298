@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: opensdpc
+Version: 1.0.0
+Summary: Python library for processing whole slide images (WSIs) in sdpc format
+Author: Jiawen Li
+Author-email: jw-li24@mails.tsinghua.edu.cn
+License: MIT License
+Platform: Linux
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Requires-Dist: opencv-python
