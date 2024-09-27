@@ -1,0 +1,3 @@
+[console_scripts]
+mypyq = pyastrx.frontend.mypyq:mypy_query
+pyastrx = pyastrx.frontend.cli:pyastrx
