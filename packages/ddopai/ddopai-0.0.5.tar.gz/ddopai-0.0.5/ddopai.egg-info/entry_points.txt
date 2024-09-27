@@ -1,0 +1,2 @@
+[nbdev]
+ddopai = ddopai._modidx:d
