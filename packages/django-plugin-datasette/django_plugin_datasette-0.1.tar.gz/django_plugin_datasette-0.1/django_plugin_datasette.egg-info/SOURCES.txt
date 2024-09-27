@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+django_plugin_datasette/__init__.py
+django_plugin_datasette.egg-info/PKG-INFO
+django_plugin_datasette.egg-info/SOURCES.txt
+django_plugin_datasette.egg-info/dependency_links.txt
+django_plugin_datasette.egg-info/entry_points.txt
+django_plugin_datasette.egg-info/requires.txt
+django_plugin_datasette.egg-info/top_level.txt
+tests/test_django_plugin_datasette.py
