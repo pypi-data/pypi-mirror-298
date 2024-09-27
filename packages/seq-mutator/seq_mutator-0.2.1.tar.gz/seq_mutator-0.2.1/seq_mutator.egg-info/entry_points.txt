@@ -1,0 +1,3 @@
+[console_scripts]
+seq_mutator = src.app:app
+
