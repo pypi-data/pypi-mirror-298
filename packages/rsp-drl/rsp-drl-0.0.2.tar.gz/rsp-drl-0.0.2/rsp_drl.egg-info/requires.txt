@@ -1,0 +1,7 @@
+torch
+torch-vision
+torch-audio
+rsp-common
+numpy
+opencv-python
+gym
