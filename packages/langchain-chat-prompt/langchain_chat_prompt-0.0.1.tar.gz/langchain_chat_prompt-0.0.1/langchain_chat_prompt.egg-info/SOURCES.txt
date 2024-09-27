@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+chat_prompt/__init__.py
+chat_prompt/prompt.py
+langchain_chat_prompt.egg-info/PKG-INFO
+langchain_chat_prompt.egg-info/SOURCES.txt
+langchain_chat_prompt.egg-info/dependency_links.txt
+langchain_chat_prompt.egg-info/requires.txt
+langchain_chat_prompt.egg-info/top_level.txt

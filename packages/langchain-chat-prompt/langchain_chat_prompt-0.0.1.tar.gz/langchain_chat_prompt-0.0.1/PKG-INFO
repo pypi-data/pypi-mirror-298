@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: langchain_chat_prompt
+Version: 0.0.1
+Summary: Langchain chat prompt
+Author: Kamal Bahadur Shahi
+Author-email: <kamal.shahi@olivegroup.io>
+Keywords: python,lang chain,openai,package,prompt engineering
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: langchain_openai
+Requires-Dist: langchain
+
+A package that allows to build prompt engineering with easy steps.
