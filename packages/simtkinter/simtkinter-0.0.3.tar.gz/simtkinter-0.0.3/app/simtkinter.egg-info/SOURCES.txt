@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+app/hackerakos/__init__.py
+app/hackerakos/src/__init__.py
+app/hackerakos/src/hackerakos.py
+app/simtkinter.egg-info/PKG-INFO
+app/simtkinter.egg-info/SOURCES.txt
+app/simtkinter.egg-info/dependency_links.txt
+app/simtkinter.egg-info/top_level.txt
