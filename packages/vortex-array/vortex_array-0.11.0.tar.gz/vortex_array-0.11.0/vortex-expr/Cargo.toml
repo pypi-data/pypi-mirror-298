@@ -1,0 +1,50 @@
+[package]
+name = "vortex-expr"
+version = { workspace = true }
+description = "Vortex Expressions"
+homepage = { workspace = true }
+repository = { workspace = true }
+authors = { workspace = true }
+license = { workspace = true }
+keywords = { workspace = true }
+include = { workspace = true }
+edition = { workspace = true }
+rust-version = { workspace = true }
+readme = "README.md"
+
+[lib]
+name = "vortex_expr"
+path = "src/lib.rs"
+bench = false
+
+[lints]
+workspace = true
+
+[dependencies]
+arrow-schema = { workspace = true, optional = true }
+datafusion-common = { workspace = true, optional = true }
+datafusion-expr = { workspace = true, optional = true }
+datafusion-physical-expr = { workspace = true, optional = true }
+prost = { workspace = true, optional = true }
+serde = { workspace = true, optional = true, features = ["derive"] }
+vortex-array = { workspace = true }
+vortex-dtype = { workspace = true }
+vortex-error = { workspace = true }
+vortex-proto = { workspace = true, optional = true }
+vortex-scalar = { workspace = true }
+vortex-schema = { workspace = true }
+
+[features]
+datafusion = [
+    "dep:datafusion-common",
+    "dep:datafusion-expr",
+    "dep:datafusion-physical-expr",
+    "vortex-scalar/datafusion",
+]
+proto = [
+    "dep:prost",
+    "vortex-dtype/proto",
+    "vortex-scalar/proto",
+    "vortex-proto/expr",
+]
+serde = ["dep:serde", "vortex-dtype/serde", "vortex-scalar/serde"]

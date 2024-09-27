@@ -1,0 +1,50 @@
+[package]
+name = "vortex-datafusion"
+description = "Apache Datafusion integration for Vortex"
+version = { workspace = true }
+homepage = { workspace = true }
+repository = { workspace = true }
+authors = { workspace = true }
+license = { workspace = true }
+keywords = { workspace = true }
+include = { workspace = true }
+edition = { workspace = true }
+rust-version = { workspace = true }
+
+[lib]
+name = "vortex_datafusion"
+path = "src/lib.rs"
+
+[dependencies]
+arrow-array = { workspace = true }
+arrow-schema = { workspace = true }
+async-trait = { workspace = true }
+chrono = { workspace = true }
+datafusion = { workspace = true }
+datafusion-common = { workspace = true }
+datafusion-execution = { workspace = true }
+datafusion-expr = { workspace = true }
+datafusion-physical-expr = { workspace = true }
+datafusion-physical-plan = { workspace = true }
+futures = { workspace = true }
+itertools = { workspace = true }
+lazy_static = { workspace = true }
+log = { workspace = true }
+object_store = { workspace = true }
+pin-project = { workspace = true }
+vortex-array = { workspace = true }
+vortex-datetime-dtype = { workspace = true }
+vortex-dtype = { workspace = true }
+vortex-error = { workspace = true, features = ["datafusion"] }
+vortex-expr = { workspace = true, features = ["datafusion"] }
+vortex-scalar = { workspace = true, features = ["datafusion"] }
+vortex-serde = { workspace = true, features = ["object_store", "tokio"] }
+
+[dev-dependencies]
+anyhow = { workspace = true }
+tempfile = { workspace = true }
+tokio = { workspace = true, features = ["test-util", "rt-multi-thread", "fs"] }
+url = { workspace = true }
+
+[lints]
+workspace = true

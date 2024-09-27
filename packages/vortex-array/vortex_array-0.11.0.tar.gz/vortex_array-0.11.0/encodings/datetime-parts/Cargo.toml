@@ -1,0 +1,18 @@
+[package]
+name = "vortex-datetime-parts"
+description = "Vortex physical encoding that compresses temporal components individually"
+version = { workspace = true }
+edition = "2021"
+license = { workspace = true }
+
+[lints]
+workspace = true
+
+[dependencies]
+log = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+vortex-array = { workspace = true }
+vortex-datetime-dtype = { workspace = true }
+vortex-dtype = { workspace = true }
+vortex-error = { workspace = true }
+vortex-scalar = { workspace = true }
