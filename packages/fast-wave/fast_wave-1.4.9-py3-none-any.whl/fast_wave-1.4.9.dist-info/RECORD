@@ -1,0 +1,9 @@
+fast_wave/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_wave/wavefunction_cython.cp311-win_amd64.pyd,sha256=WBbnGpd8vDbAU5l2iJqlkJdK9JESdmjZjYp9BC-v6Jc,118784
+fast_wave/wavefunction_mpmath.py,sha256=O53_QK8C2J-OelOuzVDnb4nqRfILSweN38H--HChPSk,13024
+fast_wave/wavefunction_numba.py,sha256=Ofh4Clcjkbrj0V999MqNtrfC_bKUO4YmHECGfdWq2cA,20572
+fast_wave-1.4.9.dist-info/LICENSE,sha256=j3yw2aSsnUajb6Gmcc5Bw9WB8qMBD12iMLs-CVcsoP0,1538
+fast_wave-1.4.9.dist-info/METADATA,sha256=k3u8ze_E5o-ajTgCkl8TyIikoJY5WLP98W5boJ3x-JA,14887
+fast_wave-1.4.9.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+fast_wave-1.4.9.dist-info/top_level.txt,sha256=nJeKEjk3yB3kuoTcoZ7BAKgHnQx2bLmUoAT9n987Qzc,10
+fast_wave-1.4.9.dist-info/RECORD,,
