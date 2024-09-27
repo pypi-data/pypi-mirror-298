@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: lazyauto
+Version: 1.0.9
+Summary: A python package for analysis and model development.
+Home-page: https://github.com/kaansnmez/lazyauto
+Download-URL: https://github.com/user/lazyauto/archive/v_01.tar.gz
+Author: Ahmet Kaan Sonmez
+Author-email: kaan.sonmez97@gmail.com
+License: MIT license
+Keywords: lazyauto,pipeline,optuna
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: optuna
+Requires-Dist: seaborn
+Requires-Dist: catboost
+Requires-Dist: numpy
+Requires-Dist: plotly
+Requires-Dist: xgboost
+Requires-Dist: lightgbm
+
+You can find example in my github: https://github.com/kaansnmez/lazyauto
