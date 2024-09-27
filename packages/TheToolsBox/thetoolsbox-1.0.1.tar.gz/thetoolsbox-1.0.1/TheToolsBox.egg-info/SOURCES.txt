@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+TheToolsBox.egg-info/PKG-INFO
+TheToolsBox.egg-info/SOURCES.txt
+TheToolsBox.egg-info/dependency_links.txt
+TheToolsBox.egg-info/requires.txt
+TheToolsBox.egg-info/top_level.txt
