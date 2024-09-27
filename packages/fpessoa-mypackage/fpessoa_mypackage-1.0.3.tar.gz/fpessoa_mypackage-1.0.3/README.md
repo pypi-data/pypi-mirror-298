@@ -1,0 +1,1 @@
+pip install --index-url https://__token__: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@pypi.github.com/fpessoa64/myproject fpessoa-myproject==v1.0.1
