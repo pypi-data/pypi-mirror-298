@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+researchchain.egg-info/PKG-INFO
+researchchain.egg-info/SOURCES.txt
+researchchain.egg-info/dependency_links.txt
+researchchain.egg-info/requires.txt
+researchchain.egg-info/top_level.txt
