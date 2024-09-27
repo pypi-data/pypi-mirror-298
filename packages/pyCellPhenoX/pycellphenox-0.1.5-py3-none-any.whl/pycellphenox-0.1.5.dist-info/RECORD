@@ -1,0 +1,15 @@
+pyCellPhenoX/CellPhenoX.py,sha256=mAJ8akrC84YEiIUnXvZVm8QOlX1F37o8EXPRq_emaH0,17934
+pyCellPhenoX/__init__.py,sha256=YjAfO2SmTdDfggbZBWrZny4_60_rfznd3C2GCxJChvM,552
+pyCellPhenoX/marker_discovery.py,sha256=Op0piPOsZOQj10vWgHfHHmAsscy_UQ2ie9JD1-ITXgQ,3516
+pyCellPhenoX/nonnegativeMatrixFactorization.py,sha256=qn9WqQC-hsqUHeP27ifu1nufZl73MlsXXUrjzZhlR5o,1372
+pyCellPhenoX/preprocessing.py,sha256=HRQp2fQXwa1lOu_yEi-iTwARHYSf5KcyEzT07ABvTSo,2293
+pyCellPhenoX/principalComponentAnalysis.py,sha256=Wzfm9Gd5tjBiQLVgPgKfO6fpzXNJXIy2ln01pRt6KI8,1858
+pyCellPhenoX/utils/__init__.py,sha256=6bzNLji49XyZllx__MYTEGLBTvtSD5XRWpZGlgaUUb8,232
+pyCellPhenoX/utils/balanced_sample.py,sha256=-254XLlNHgE8BPKA82kUYh_xkuLbHVObVqQyxO6eAxE,589
+pyCellPhenoX/utils/reducedim.py,sha256=kbuRHtKJCF2jZ-CBIemhXvbx59hloXYmPBfW98JzTac,1259
+pyCellPhenoX/utils/select_num_components.py,sha256=LMpvLFGifI7i6y4Vza-x6NOzBFTgcYMvvldeJasgG7I,920
+pyCellPhenoX/utils/select_optimal_k.py,sha256=AVHrDiWwq8UaC08CBZTA195KROpSLePxPSoZQqMweH0,1905
+pycellphenox-0.1.5.dist-info/LICENSE,sha256=CYaFylpkndiItOq9YQKlWCPu37MTS1raGZzFnMhxRs8,1070
+pycellphenox-0.1.5.dist-info/METADATA,sha256=k7hBhnoeqVDYgB6GfpClfSc6SbiO972MtHX4eKkp6h8,3995
+pycellphenox-0.1.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pycellphenox-0.1.5.dist-info/RECORD,,
