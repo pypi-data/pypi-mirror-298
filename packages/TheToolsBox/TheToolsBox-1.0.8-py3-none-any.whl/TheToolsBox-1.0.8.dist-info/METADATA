@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: TheToolsBox
+Version: 1.0.8
+Summary: Description de ma librairie
+Home-page: https://github.com/VectraNoxCorp/TheToolsBox
+Author: Vectra
+Author-email: Jarvis.noxingcorporation@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: python-docx
+Requires-Dist: openpyxl
+Requires-Dist: gtts
+Requires-Dist: requests
+Requires-Dist: time
+Requires-Dist: psutil
+
+# metaCore
+
+metaCore is a Python package 
+## Features
+
+- Feature 1: A utility for efficient data processing.
+- Feature 2: Functions to simplify web scraping tasks.
+
+## Installation
+
+You can install the latest version of My Library using `pip`:
+
+```bash
+pip install TheToolsBox
