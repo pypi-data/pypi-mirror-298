@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: platrock
+Version: 0.4.3
+Summary: Scientific multi-model software for the numerical simulation of rockfalls.
+Home-page: http://platrock.org/
+License: GPL-3.0-only
+Keywords: rockfall,scientific,modeling
+Author: Francois Kneib
+Author-email: francois.kneib@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: descartes (>=1.1.0,<2.0.0)
+Requires-Dist: fasteners (>=0.19,<0.20)
+Requires-Dist: h5py (>=3.11.0,<4.0.0)
+Requires-Dist: ipython (>=8.27.0,<9.0.0)
+Requires-Dist: jsonpickle (>=3.3.0,<4.0.0)
+Requires-Dist: matplotlib (>=3.9.2,<4.0.0)
+Requires-Dist: numba (>=0.60.0,<0.61.0)
+Requires-Dist: numpy (<2.1)
+Requires-Dist: numpy-quaternion (>=2023.0.4,<2024.0.0)
+Requires-Dist: numpy-stl (>=3.1.2,<4.0.0)
+Requires-Dist: plotly (>=5.24.1,<6.0.0)
+Requires-Dist: psutil (>=6.0.0,<7.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: scikit-image (>=0.24.0,<0.25.0)
+Requires-Dist: scipy (>=1.14.1,<2.0.0)
+Requires-Dist: shapely (>=2.0.6,<3.0.0)
+Requires-Dist: yappi (>=1.6.0,<2.0.0)
+Project-URL: Repository, https://gitlab.com/platrock/platrock
+Description-Content-Type: text/markdown
+
+# Description
+PlatRock is a multi-model software for the numerical simulation of rockfalls. This scientific tool implements rock propagation algorithms on 2D and 3D terrain and gives statistical data about resulting trajectories.
+
+
+# Prerequisites
+At the moment PlatRock is only tested on debian-based platform unix distros. Prior to PlatRock installation, please check that the following dependencies are satisfied. 
+* python >= 3.10, which is the default on modern linux distros ;
+* [gdal](https://gdal.org/) (which can be installed on debian-based systems with `sudo apt install libgdal-dev`).
+
+All other dependencies should be automatically installed by pip.
+
+# Installation
+Modern python package uses python virtual environments, so do PlatRock. You can use the virtual environment manager you want, below are two examples.
+
+In any case, don't forget to install the `libgdal-dev` package as mentionned above.
+
+## Using pipx
+Install pipx on your disto:
+> `sudo apt install pipx`
+
+Then install PlatRock from pypi repository or gitlab:
+> `pipx install platrock #the more stable release, from pipy`
+
+or
+> `pipx install git+https://gitlab.com/platrock/platrock.git@dev #the latest development banch, may be unstable`
+
+You should normally be able to launch PlatRock by simply invoking it:
+> `platrock myscript.py`
+
+You can also import it in your own python script, but in this case you must activate the corresponding venv created by pipx before:
+> `pipx list #shows all pipx venv created, find platrock venv path`
+
+Usually, the command to activate PlatRock venv would be:
+> `source "/home/$USER/.local/share/pipx/venvs/platrock/bin/activate"`
+
+In your script:
+> `import platrock`
+
+
+## Using poetry
+PlatRock uses poetry as packaging/dependency manager. You can install PlatRock using poetry. First install [poetry](https://python-poetry.org/docs/), and git.
+
+Then download platrock:
+> `git clone https://gitlab.com/platrock/platrock.git`
+
+> `cd platrock`
+
+Install PlatRock in ./.venv/:
+> `poetry install`
+
+Launch PlatRock:
+> `poetry run platrock myscript.py`
+
+Or import PlatRock from your own script, don't forget to activate PlatRock venv first:
+> `poetry shell`
+
+In your script:
+> `import platrock`
+
+# Examples
+Examples for all PlatRock simulation models are available on [PlatRock gitlab](https://gitlab.com/platrock/platrock/-/tree/master/examples).
+ 
+
+# Source code
+The source code of platrock is also available on the [gitlab repository](https://gitlab.com/platrock/platrock). The master branch fits the version that is hosted on pypi.
+
+# Licence
+PlatRock is licenced under the GNU General Public License v3 (GPLv3).
+
+# Contributors
+* François Kneib
+* Franck Bourrier
+* David Toe
+* Frédéric Berger
+* Stéphane Lambert
+
+

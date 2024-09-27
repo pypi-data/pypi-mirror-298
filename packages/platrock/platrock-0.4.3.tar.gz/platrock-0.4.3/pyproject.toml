@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "platrock"
+version = "0.4.3"
+description = "Scientific multi-model software for the numerical simulation of rockfalls."
+authors = ["Francois Kneib <francois.kneib@gmail.com>"]
+readme = "README.md"
+license = "GPL-3.0-only"
+homepage = "http://platrock.org/"
+repository = "https://gitlab.com/platrock/platrock"
+keywords = ["rockfall", "scientific", "modeling"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: Unix"
+]
+# Mandatory to install platrock with pip:
+# (tell pip to copy all cython compiled modules to the install venv dir, because build resides somewhere in /tmp/[...] dir)
+# Note: for Windows support, *.pyd may be used some day.
+include = ["**/*.so"]
+# Don't package the venv, wich is in-project (see poetry.toml file).
+exclude = [".venv"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "<2.1"
+numpy-quaternion = "^2023.0.4"
+yappi = "^1.6.0"
+ipython = "^8.27.0"
+jsonpickle = "^3.3.0"
+matplotlib = "^3.9.2"
+numba = "^0.60.0"
+h5py = "^3.11.0"
+shapely = "^2.0.6"
+descartes = "^1.1.0"
+plotly = "^5.24.1"
+scipy = "^1.14.1"
+scikit-image = "^0.24.0"
+psutil = "^6.0.0"
+numpy-stl = "^3.1.2"
+requests = "^2.32.3"
+fasteners = "^0.19"
+
+[build-system]
+requires = ["poetry-core", "setuptools", "Cython", "numpy"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.build]
+generate-setup-file = false
+script = 'build.py'
+
+[tool.poetry.scripts]
+# Set platrock entrypoint.
+platrock = "platrock.__main__:main"
