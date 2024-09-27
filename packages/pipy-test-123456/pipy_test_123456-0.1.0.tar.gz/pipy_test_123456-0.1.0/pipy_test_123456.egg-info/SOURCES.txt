@@ -1,0 +1,8 @@
+README.rst
+setup.py
+pipy_test_123456/__init__.py
+pipy_test_123456/test.py
+pipy_test_123456.egg-info/PKG-INFO
+pipy_test_123456.egg-info/SOURCES.txt
+pipy_test_123456.egg-info/dependency_links.txt
+pipy_test_123456.egg-info/top_level.txt
