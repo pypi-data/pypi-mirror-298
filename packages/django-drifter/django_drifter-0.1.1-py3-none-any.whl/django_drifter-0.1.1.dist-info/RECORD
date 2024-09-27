@@ -1,0 +1,11 @@
+drifter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drifter/apps.py,sha256=ZhGYsYxaspKzSGltISHWBYIK9K64QUgndhS-jqYy6dY,184
+drifter/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drifter/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drifter/management/commands/redo_migration.py,sha256=38B35KKmZMeOYrgzMLfARnwgdEHeQ4A7OwD-Hp70mSg,2235
+drifter/management/commands/reset_database.py,sha256=5bAP4a6Ea0qzCKoT4SXfGhIp7gZCjmPzXjt1lvCECV0,2019
+drifter/management/commands/revert_migration.py,sha256=wWrA_D0qzFhRd2KR_ngqniwngDfG7cXWF2CHobOsNsM,2265
+django_drifter-0.1.1.dist-info/LICENSE.txt,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+django_drifter-0.1.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+django_drifter-0.1.1.dist-info/METADATA,sha256=q4TVvYcbLhaDmoKD7GmOBLYVyN9rujFzDFbtltTphQg,788
+django_drifter-0.1.1.dist-info/RECORD,,
