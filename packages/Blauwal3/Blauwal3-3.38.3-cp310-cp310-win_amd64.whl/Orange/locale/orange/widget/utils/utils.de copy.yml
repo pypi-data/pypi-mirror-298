@@ -1,0 +1,344 @@
+ de:
+  common:
+    data: "Daten"
+    selected: "Ausgewählt"
+
+  owplotgui:
+    box:
+      zoom_select: "Zoom/Auswählen"
+      theme: "Thema"
+      attributes: "Attribute"
+    checkbox:
+      jitter_numeric: "Numerische Werte streuen"
+      show_all_data: "Alle Daten bei Mausüberfahrt anzeigen"
+      show_color_region: "Farbregionen anzeigen"
+      show_regression_line: "Regressionslinie anzeigen"
+      label_content: "Nur Auswahl und Untermenge beschriften"
+      show_fill_symbol: "Gefüllte Symbole anzeigen"
+      show_gridline: "Gitternetzlinien anzeigen"
+      use_animation: "Animationen verwenden"
+      use_antialiasing: "Antialiasing verwenden"
+      animate_plot: "Diagramm animieren"
+      animate_points: "Punkte animieren"
+      antialias_plot: "Diagramm antialiasen"
+      antialias_points: "Punkte antialiasen"
+      antialias_lines: "Linien antialiasen"
+      auto_adjust_performance: "Effekte für große Datensätze deaktivieren"
+    btn:
+      add: "Hinzufügen"
+      delete: "Löschen"
+      zoom: "Zoom"
+      zoom_reset: "Zoom zurücksetzen"
+      pan: "Schwenken"
+      simple_select: "Auswählen"
+      select: "Auswählen"
+      selection_add: "Zur Auswahl hinzufügen"
+      selection_remove: "Aus Auswahl entfernen"
+      selection_toggle: "Auswahl umschalten"
+      selection_one: "Auswahl ersetzen"
+      send_selection: "Auswahl senden"
+      clear_selection: "Auswahl löschen"
+      shuffle_points: "Punkte mischen"
+    placeholder:
+      same_color: "(Gleiche Farbe)"
+      same_shape: "(Gleiche Form)"
+      same_size: "(Gleiche Größe)"
+      no_labels: "(Keine Beschriftungen)"
+    label:
+      symbol_size: "Symbolgröße:   "
+      opacity: "Deckkraft: "
+      shape: "Form: "
+      size: "Größe: "
+      label: "Beschriftung: "
+      jittering: "Streuung"
+
+  owplotgui_obs:
+    window_title_hidden_axes: "Versteckte Achsen"
+    tip:
+      add_class_label: "Neue Klassenbeschriftung hinzufügen"
+      remove_class_label: "Ausgewählte Klassenbeschriftung entfernen"
+    label:
+      jittering: "Streuung: "
+      symbol_size:  "Symbolgröße:   "
+      opacity: "Deckkraft: "
+      shape: "Form: "
+      size: "Größe: "
+      label: "Beschriftung: "
+    checkbox:
+      jitter_numeric: "Numerische Werte streuen"
+      show_all_data: "Alle Daten bei Mausüberfahrt anzeigen"
+      class_density: "Klassendichte anzeigen"
+      show_regression_line: "Regressionslinie anzeigen"
+      label_select_point: "Nur ausgewählte Punkte beschriften"
+      show_fill_symbol: "Gefüllte Symbole anzeigen"
+      show_gridline: "Gitternetzlinien anzeigen"
+      use_animation: "Animationen verwenden"
+      animate_plot: "Diagramm animieren"
+      animate_points: "Punkte animieren"
+      antialias_plot: "Diagramm antialiasen"
+      antialias_points: "Punkte antialiasen"
+      antialias_lines: "Linien antialiasen"
+      auto_adjust_performance: "Effekte für große Datensätze deaktivieren"
+    btn:
+      add: "Hinzufügen"
+      delete: "Löschen"
+      zoom: "Zoom"
+      zoom_reset: "Zoom zurücksetzen"
+      pan: "Schwenken"
+      simple_select: "Auswählen"
+      select: "Auswählen"
+      selection_add: "Zur Auswahl hinzufügen"
+      selection_remove: "Aus Auswahl entfernen"
+      selection_toggle: "Auswahl umschalten"
+      selection_one: "Auswahl ersetzen"
+      send_selection: "Auswahl senden"
+      clear_selection: "Auswahl löschen"
+      shuffle_points: "Punkte mischen"
+    box:
+      display_axes: "Angezeigte Achsen"
+      point: "Punkte"
+      plot_property: "Diagrammeigenschaften"
+      visual_effect: "Visuelle Effekte"
+      theme: "Thema"
+    placeholder:
+      same_color: "(Gleiche Farbe)"
+      same_shape: "(Gleiche Form)"
+      same_size: "(Gleiche Größe)"
+      no_labels: "(Keine Beschriftungen)"
+
+  owsavebase:
+    file_dialog_save_file: "Datei speichern"
+    save_file_dialog: "Datei speichern"
+    checkbox_autosave_receive_new_data: "Automatisch speichern bei neuen Daten"
+    msg:
+      input_empty: "Eingabe leer; nichts wurde gespeichert."
+      ignore_file_name: "Dateiname ist nicht gesetzt."
+      overwrite_file: "Datei überschreiben?"
+      overwrite_file_content:  "Datei {} existiert bereits.\nÜberschreiben?"
+      unsupported_format: "Dateiformat wird nicht unterstützt.\n{}"
+    text:
+      save_as: "Speichern als {}"
+    btn:
+      something_save_as: "Speichern als {}"
+      save: "Speichern"
+      save_as: "Speichern als ..."
+
+  colorgradientselection:
+    slider:
+      low: "Niedrige Gradientenschwelle"
+      low_tip: "Ein niedriger Schwellenwert komprimiert den Gradienten vom unteren Ende"
+      high: "Hohe Gradientenschwelle"
+      high_tip: "Ein hoher Schwellenwert komprimiert den Gradienten vom oberen Ende"
+    row:
+      low: "Niedrig:"
+      high: "Hoch:"
+    label:
+      centered_at: "Zentriert bei"
+
+  colorpalette:
+    window_title:
+      color_palette: "Farbpalette"
+      color_palette_list: "Farbenpalettenliste"
+      palette_edit: "Paletteneditor"
+    btn:
+      edit_palette: "Palette bearbeiten"
+      edit_palette_tip: "Reihenfolge und Farben der Palette bearbeiten"
+      load_palette: "Palette laden"
+      load_palette_tip: "Vordefinierte Farbpalette laden"
+    checkbox:
+      pass_through_black: "Schwarz durchlassen"
+      pass-through_color: "Durchlassfarben verwenden"
+    box:
+      save_profile: "Gespeicherte Profile"
+      pass-through_color: "Durchlassfarben"
+      info: "Information"
+      default_palette: "Standardpalette"
+      default_palette_tip: "Standardfarbpalette"
+    msg:
+      update_color_palette: "Modul colorpalette ist veraltet; verwenden Sie colorpalettes"
+      question_title: "Frage"
+      question_content: "Das Farbschema hat sich geändert. Speichern?"
+      save_palette_as: "Aktuelle Palette speichern als..."
+      save_changes_tip: "Benennen Sie die aktuellen Farbeinstellungen.\n Durch Drücken von 'Abbrechen' werden Ihre Änderungen abgebrochen und der Dialog geschlossen."
+      name_color_settings: "Benennen Sie Ihre Farbeinstellungen"
+      rename_setting: "Die 'Standard'-Einstellungen können nicht geändert werden. Geben Sie einen anderen Namen ein:"
+      change_color: "<p align='center'>Sie können die Farben in der Liste mit den<br/>Tasten rechts oder durch Ziehen und Ablegen der Elemente neu anordnen.<br/>Um eine bestimmte Farbe zu ändern, doppelklicken Sie auf das Element in der Liste.</p>"
+      move_select_color_up: "Ausgewählte Farben nach oben verschieben"
+      move_select_color_down: "Ausgewählte Farben nach unten verschieben"
+
+  concurrent:
+    msg:
+      submit_task_run_task: "Verwenden Sie `submit_task`, um `Task`s auszuführen"
+      submit_task_deprecate: "`submit_task` wird veraltet sein"
+      task_deprecate: "`Task` ist veraltet"
+
+  colorpalettes:
+    msg_parameter_replace: "LimitedDiscretePalette: Argument 'force_hsv' ist veraltet; verwenden Sie stattdessen 'force_glasbey'"
+    palettes:
+      blue_green_yellow: "Blau-Grün-Gelb"
+      blue_magenta_yellow: "Blau-Magenta-Gelb"
+      dim_gray: "Dunkelgrau"
+      inferno: "Inferno"
+      viridis: "Viridis"
+      coolwarm: "Coolwarm"
+      green_red: "Grün-Rot"
+      diverging_protanopic: "Divergierend protanopisch"
+      diverging_tritanopic: "Divergierend tritanopisch"
+      linear_protanopic: "Linear protanopisch"
+      linear_tritanopic: "Linear tritanopisch"
+      isoluminant: "Isoluminant"
+      rainbow: "Regenbogen"
+    category:
+      linear: "Linear"
+      diverging: "Divergierend"
+      color_blind_friendly: "Farbenblind-freundlich"
+      other: "Andere"
+
+  encodings:
+    btn_select_all: "Alle auswählen"
+    text_select_visible: "Wählen Sie Codierungen aus, die in Textcodierungsmenüs sichtbar sind"
+
+  graphicsview:
+    btn:
+      zoom_in: "Vergrößern"
+      zoom_out: "Verkleinern"
+      actual_size: "Tatsächliche Größe"
+      zoom_to_fit: "Anpassen"
+    gbox:
+      aspect_mode: "Seitenverhältnismodus"
+      ignore: "Ignorieren"
+      keep: "Beibehalten"
+      keep_by_expand: "Durch Erweitern beibehalten"
+
+  domaineditor:
+    place:
+      feature: "Merkmal"
+      target: "Ziel"
+      meta: "Meta"
+      skip: "Überspringen"
+    typename:
+      categorical: "Kategorisch"
+      numeric: "Numerisch"
+      text: "Text"
+      datetime: "Datum/Zeit"
+    label:
+      name: "Name"
+      type: "Typ"
+      role: "Rolle"
+      values: "Werte"
+
+  itemmodels:
+    msg_sorted_modify_error: "PyTableModel kann nicht geändert werden, wenn es sortiert ist"
+    text:
+      variable_label: "<br/>Variablenbeschriftungen:<br/>"
+      categorical_value: "<b>%s</b><br/>Kategorisch mit %i Werten: "
+      time: "<b>%s</b><br/>Zeit"
+      numeric: "<b>%s</b><br/>Numerisch"
+      text: "<b>%s</b><br/>Text"
+
+  listfilter:
+    tooltip_filter_available_variable: "Liste der verfügbaren Variablen filtern."
+    placeholder_filter: "Filter"
+
+  owbasesql:
+    btn_connect: "Verbinden"
+    box:
+      server: "Server"
+      server_tip: "Server"
+    report:
+      no_db_connect: "Keine Datenbankverbindung."
+      database: "Datenbank"
+      data: "Daten"
+    placeholder:
+      server: "Server"
+      database: "Datenbank[/Schema]"
+      database_tip: "Datenbank oder optional Datenbank/Schema"
+      username: "Benutzername"
+      username_tip: "Benutzername"
+      password: "Passwort"
+      password_tip: "Passwort"
+
+  owlearnerwidget:
+    msg:
+      fit_fail: "Anpassung fehlgeschlagen.\n{}"
+      unsupported_sparse_data: "Sparse-Daten werden nicht unterstützt."
+      out_of_memory: "Nicht genügend Speicher."
+      change_apply: "Drücken Sie 'Anwenden', um Änderungen zu übernehmen."
+    error:
+      class_vars: "Daten enthalten mehrere Zielvariablen.\n Wählen Sie eine einzelne mit dem Widget 'Spalten auswählen'."
+      data_error: "Daten haben keine Zielvariable.\n Wählen Sie eine mit dem Widget 'Spalten auswählen'."
+      dataset_empty: "Datensatz ist leer."
+      no_single_target_value: "Daten enthalten einen einzigen Zielwert."
+      data_no_learn_feature: "Daten haben keine Lernmerkmale."
+    report:
+      name: "Name"
+      model_parameter: "Modellparameter"
+      data: "Daten"
+    box:
+      classification: "Klassifikation"
+      regression: "Regression"
+    row:
+      name: "Name"
+      name_tip: "Der Name identifiziert dieses Modell in anderen Widgets"
+
+  progressbar:
+    msg_argument_error:  "'processEvents'-Argument ist veraltet.\nEs tut nichts und wird in Zukunft entfernt (das Übergeben wird einen TypeError auslösen)."
+
+  state_summary:
+    categorical: "kategorisch"
+    numeric: "numerisch"
+    time: "Zeit"
+    string: "Zeichenkette"
+    format: "{} {}"
+    untitled: "unbenannt"
+    detail:
+      data: "{} Instanz(en), {} Variable(n)"
+      features: "\nMerkmale: {} {}"
+      target: "\nZiel: {}"
+      metas: '\nMetas: {}'
+      no_miss_value: "(Keine fehlenden Werte)"
+      no_data: "Keine Daten zu {}."
+      miss_value_percentage: "(%.1f%s fehlende Werte)"
+      empty_list: "leere Liste"
+      distance_matrix: "{}×{} Distanzmatrix"
+      instance: "{} Methode{} auf {} Testinstanz{}"
+
+  stickygraphicsview:
+    btn:
+      zoom_in: "Vergrößern"
+      zoom_out: "Verkleinern"
+
+  textimport:
+    window_title:
+      customize_encodings_list: "Codierungsliste anpassen"
+    btn:
+      skip: "Überspringen"
+      header: "Kopfzeile"
+    tip:
+      select_encoding_format: "Textcodierung der Datei auswählen"
+      select_cell_delimiter: "Zelltrennzeichen auswählen."
+      thousands_group_separator: "Tausendertrennzeichen"
+      csv_parse_error: "CSV-Parsing-Fehler: "
+    row:
+      encoding: "Codierung"
+      cell_delimiter: "Zelltrennzeichen"
+      quote_character: "Anführungszeichen"
+      group: "Gruppierung:"
+      decimal: "Dezimal:"
+      number_separators: "Zahlentrennzeichen:"
+      column_type: "Spaltentyp"
+    gbox:
+      tab: "Tab"
+      comma: "Komma"
+      semicolon: "Semikolon"
+      space: "Leerzeichen"
+      other: "Andere"
+      customize_encodings_list: "Codierungsliste anpassen..."
+      no_separator: "Kein Trennzeichen"
+      auto: "Auto"
+      automatic_determine_type: "Der Typ wird automatisch basierend auf dem Spalteninhalt bestimmt."
+      numeric: "Numerisch"
+      categorical: "Kategorisch"
+      datetime: "Datum/Zeit"
+      ignore: "Ignorieren"
+      column_not_load: "Die Spalte wird nicht geladen"
