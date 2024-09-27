@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pubgapi-ku
+Version: 0.11
+Summary: PUBG API wrapper module
+Author-email: ThrypsisJ <gjzprdl@gmail.com>
+Project-URL: Homepage, https://github.com/ThrypsisJ/pubgapi
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Under development
