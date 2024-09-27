@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: quafel
+Version: 0.1.0
+Summary: 
+Author: lc3267
+Author-email: melvin.strobl@kit.edu
+Requires-Python: >=3.10,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bokeh (>=3.3.0,<4.0.0)
+Requires-Dist: cirq (>=1.2.0,<2.0.0)
+Requires-Dist: distributed (>=2023.10.0,<2024.0.0)
+Requires-Dist: jax (>=0.4.25,<0.5.0)
+Requires-Dist: jaxlib (>=0.4.25,<0.5.0)
+Requires-Dist: kaleido (==0.2.1)
+Requires-Dist: kedro (>=0.18.13,<0.19.0)
+Requires-Dist: kedro-viz (==6.6.0)
+Requires-Dist: pennylane (>=0.33.1,<0.34.0)
+Requires-Dist: pennylane-qiskit (>=0.32.0,<0.33.0)
+Requires-Dist: plotly (>=5.18.0,<6.0.0)
+Requires-Dist: qibo (>=0.2.2,<0.3.0)
+Requires-Dist: qiskit (>=0.45.0,<0.46.0)
+Requires-Dist: qrisp (>=0.3.0,<0.4.0)
+Requires-Dist: qulacs (>=0.6.2,<0.7.0)
+Description-Content-Type: text/markdown
+
+# QUAFEL - QUAntum Framework EvaLuation
+
+[![Quality](https://github.com/cirKITers/quafel/actions/workflows/quality.yml/badge.svg)](https://github.com/cirKITers/quafel/actions/workflows/quality.yml) [![Testing](https://github.com/cirKITers/quafel/actions/workflows/test.yml/badge.svg)](https://github.com/cirKITers/quafel/actions/workflows/test.yml) [![Documentation](https://github.com/cirKITers/quafel/actions/workflows/docs.yml/badge.svg)](https://github.com/cirKITers/quafel/actions/workflows/docs.yml)
+
+## 📜 About
+
+Not to be confused with the [Quaffle](https://harrypotter.fandom.com/wiki/Quaffle) :wink:
+
+![Overview](docs/overview.png)
+
+See [our poster](https://bwsyncandshare.kit.edu/s/CdnD6MEsNwYgJMd) contributed to the [QTML23](https://indico.cern.ch/event/1288979/) for more details.
+
+## 🚀 Getting Started
+
+```
+pip install quafel
+```
+or
+```
+poetry add quafel
+```
+
+To install our package from [PyPI](https://pypi.org/project/quafel/).
+You can find details on how to use it and further documentation on the corresponding [Github Page](https://cirkiters.github.io/quafel/).
+
+We're also working on a [software](https://github.com/cirKITers/Quafel-PSE-2024) to make the benchmarking results available online. Stay tuned!
+
+## 🚧 Contributing
+
+Contributions are very welcome! See [Contribution Guidelines](https://github.com/cirKITers/quafel/blob/main/CONTRIBUTING.md).
