@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+greetish/__init__.py
+greetish/default_greeting.py
+greetish/named_greeting.py
+greetish.egg-info/PKG-INFO
+greetish.egg-info/SOURCES.txt
+greetish.egg-info/dependency_links.txt
+greetish.egg-info/top_level.txt
