@@ -1,0 +1,13 @@
+pyvsag/__init__.py,sha256=THHsssB7d_vmTWGjjSfu5tYOXjony6dOTGObx62rkKU,160
+pyvsag/_pyvsag.cpython-310-x86_64-linux-gnu.so,sha256=snazwF27oLwBFjmZ-n23VxhDf56NX5BOulUFOs24NiQ,208760
+pyvsag/libmkl_core.so,sha256=w_ghusFurumiSYr_TD3x2qF_Y2UvtnwDXI096qE1HmA,75534865
+pyvsag/libmkl_gf_lp64.so,sha256=41C7Eff-12Wt7bwdvSCbQqLzAY-HKMZeBzBCBbY4uHY,13116249
+pyvsag/libmkl_intel_lp64.so,sha256=ooMUQOUET0h6qByY_6kBG-NOx7mhjmTTf6vwX-g9wug,13568145
+pyvsag/libmkl_intel_thread.so,sha256=tmqSjRuiaTP8xVrXdpH-clWyYl-Y5DAI1MEHulskGic,64332620
+pyvsag/libmkl_sequential.so,sha256=VKWfcWLC1-tapAlIi6qfP_H8_cwLiw0J5vnIzx1to0o,29874849
+pyvsag/libomp.so.5,sha256=Hpq2W5PTlw_prBv46HWesZtEBHQbVzo4JsClpM7lPGM,1202801
+pyvsag/libvsag.so,sha256=OEcBupxqq3f8hyDxtaf7I_xY1Y6NADn0mxATe9XMW-Q,11899728
+pyvsag-0.0.1.dist-info/METADATA,sha256=1NlbYcBoXqPsctK9dW0poturRz-C0UfEenyaW3KMEYE,812
+pyvsag-0.0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+pyvsag-0.0.1.dist-info/top_level.txt,sha256=mM3KGpGtVXllavkTAS7KRDONl99TnZ2pnIntKHAaYLE,7
+pyvsag-0.0.1.dist-info/RECORD,,
