@@ -1,0 +1,9 @@
+cgodme/__init__.py,sha256=oxx9BbZqAiP-gBJAD26YgZId_gFqsK9_cpPj2SBsEN8,83
+cgodme/calibration.py,sha256=5Ivm-_Cw7HYwH5ESZjz9LQVMhGcOupQgfiob-tKO2rU,7699
+cgodme/config.yaml,sha256=vsT7NfAPtno0W6c2QoD1aNDEynmVwov3VFmBd0WZd4o,765
+cgodme/data.py,sha256=hN2hmj8px9K6DKY5l4Yx878BYwMFgvkbShnTqKJiZT0,10135
+cgodme/run.py,sha256=Jvydk5Ew85fGdAva1V8D8JD5Zdzf4_CkQs2YOc9R4LI,9269
+cgodme-0.1.3.dist-info/METADATA,sha256=hYwYMKEC8ZIeMykZeMgOTWVVSFQ-JxmbTS9WSpu44xg,1073
+cgodme-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cgodme-0.1.3.dist-info/top_level.txt,sha256=2u4sL7dLDZ601IlS7GvZIizxqDglNbo0S6whZFYlmYE,7
+cgodme-0.1.3.dist-info/RECORD,,
