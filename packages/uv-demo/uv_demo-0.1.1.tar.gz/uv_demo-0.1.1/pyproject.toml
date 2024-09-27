@@ -1,0 +1,17 @@
+# Pyproject TOML specification
+# https://packaging.python.org/en/latest/specifications/pyproject-toml/
+[project]
+    dependencies    = ["loguru~=0.7.2", "rich>=13.7.1", "torch>=2.4.0", "numpy>=2.1.0"]
+    description     = "Just a demo of the uv package manager for Python."
+    license         = { file = "LICENSE" }
+    name            = "uv-demo"
+    readme          = "README.md"
+    requires-python = ">=3.12"
+    version         = "0.1.1"
+
+[build-system]
+    build-backend = "hatchling.build"
+    requires      = ["hatchling"]
+
+[tool.uv]
+    dev-dependencies = ["ruff>=0.6.1", "pytest>=8.3.2"]
