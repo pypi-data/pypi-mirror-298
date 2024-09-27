@@ -1,0 +1,11 @@
+FlowQ/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FlowQ/client/FlowQlient.py,sha256=_FWtijsqvwVxFeNTJFwlaIBgY5BGcFKhMXsgP0vlvMc,4619
+FlowQ/client/__init__.py,sha256=eISfw0yHP7-DI6N3dlWTBuStN8ujcseDmzLg5AXP5sM,52
+FlowQ/cluster/FlowQluster.py,sha256=tWZfk639OYE_50Lqd9vVSjHthPI4mWEbDU14hKHkyVg,4260
+FlowQ/cluster/__init__.py,sha256=NFa3VgYuhjsqdua9FXBEI85OEl1qZfb1vFx-eI-f990,54
+FlowQ/cluster/__main__.py,sha256=JVS-YIdY3LByPAfSK1uKcjUUKyiQ6Sm31t5MkcAGXJs,481
+FlowQ-0.0.4.dist-info/LICENSE,sha256=O5Dz5JQkRCsCJKAQFBSuXnBtxwsdnB_HMhSkjMwwDNk,1059
+FlowQ-0.0.4.dist-info/METADATA,sha256=HJLFBKCtwCPQfCUtA5bt-0tnpJraWfjpnt5M48_O09Q,2756
+FlowQ-0.0.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+FlowQ-0.0.4.dist-info/top_level.txt,sha256=bN8MTTKKqpl1yX8i-OGjzqd55QKthv7BuEptYb1ZgsM,6
+FlowQ-0.0.4.dist-info/RECORD,,
