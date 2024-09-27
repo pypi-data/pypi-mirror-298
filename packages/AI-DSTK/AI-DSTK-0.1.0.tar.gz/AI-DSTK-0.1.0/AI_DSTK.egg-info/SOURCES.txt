@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+AI-DSTK/__init__.py
+AI-DSTK/functions.py
+AI-DSTK/models.py
+AI-DSTK/configs/config1.json
+AI-DSTK/configs/config2.json
+AI-DSTK/prompts/prompt1.txt
+AI-DSTK/prompts/prompt2.txt
+AI_DSTK.egg-info/PKG-INFO
+AI_DSTK.egg-info/SOURCES.txt
+AI_DSTK.egg-info/dependency_links.txt
+AI_DSTK.egg-info/requires.txt
+AI_DSTK.egg-info/top_level.txt
