@@ -1,0 +1,12 @@
+aiohttp
+
+[chat]
+fire
+asyncstdlib
+textual
+fasthtml
+
+[native]
+openai
+anthropic
+fireworks-ai
