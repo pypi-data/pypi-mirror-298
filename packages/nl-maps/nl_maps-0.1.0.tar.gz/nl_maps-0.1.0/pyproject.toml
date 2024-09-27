@@ -1,0 +1,26 @@
+[project]
+name = "nl_maps"
+version = "0.1.0"
+authors = [
+  { name="Bert de Bruijn", email="lpdebruijn@gmail.com" },
+]
+dependencies = [
+    "Pillow"
+]
+description = "Create informative maps of the Netherlands, including the BES islands."
+readme = "README.md"
+license = {text = "MIT License"}
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/debruijn/nl_maps"
+"Bug Tracker" = "https://github.com/debruijn/nl_maps/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

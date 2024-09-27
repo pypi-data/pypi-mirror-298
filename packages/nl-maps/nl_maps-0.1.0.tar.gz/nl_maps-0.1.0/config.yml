@@ -1,0 +1,177 @@
+# BES config
+bes_source_config:  &bes_source_default
+  islands: [BO, SA, ST]
+  colors:
+    background: {'lb': [200, 200, 200], 'ub': [256, 256, 256]}
+    foreground: {'lb': [100, 100, 100], 'ub': [200, 200, 200]}
+  crops:
+    BO: [0, 1060, 990, 2050]
+    SA: [0, 0, 250, 200]
+    ST: [640, 560 , 990, 950]
+  files:
+    BO: 'source/bes_islands.png'
+    SA: 'source/bes_islands.png'
+    ST: 'source/bes_islands.png'
+
+# NL config
+target_config_default:  &target_config_default
+  image_scale: 1
+  fill_NL: True
+  do_crop: True
+  add_inset_border: False
+  bes_colors:  &bes_colors_default
+    BO: [ 0, 255, 0 ]
+    SA: [ 0, 0, 255 ]
+    ST: [ 255, 0, 0 ]
+    background: [ 249, 249, 249 ]
+  locations:
+    BO: [ 100, 300 ]
+    SA: [ 120, 50 ]
+    ST: [ 220, 150 ]
+  nl_colors:
+    ZH: [255, 255, 0, 255]
+    NH: [255, 0, 255]
+    UT: [0, 255, 255]
+    ZE: [255, 0, 0]
+    NB: [0, 255, 0]
+    LI: [0, 0, 255]
+    GE: [255, 0, 0]
+    FL: [0, 0, 255]
+    OV: [255, 255, 0]
+    DR: [0, 255, 0]
+    FR: [0, 255, 255]
+    GR: [255, 0, 255]
+  nl_locs:
+    ZH: [[538, 1132], [392, 1318]]
+    NH: [[700, 700], [700, 350]]
+    UT: [[900, 1000]]
+    ZE: [[300, 1350], [380, 1430], [230, 1430], [250, 1500], [300, 1600]]
+    NB: [[900, 1400]]
+    LI: [[1250, 1500]]
+    GE: [[1100, 1000]]
+    OV: [[1400, 800]]
+    FL: [[1000, 800], [1100, 600]]
+    DR: [[1500, 500]]
+    GR: [[1400, 200], [1380, 25], [1430, 25]]
+    FR: [[750, 240], [900, 125], [1100, 88], [1250, 70], [1100, 400]]
+  crop_nl: [875, 500, 2125, 1750]
+  inset_loc: [360, 580]
+  inset_color: [192, 192, 192]
+  legend: False # TODO: add legend func
+
+# Configs that are used
+use_config: ['example_insert_config']  # , 'vote_europe_biggest_party', 'vote_provincie_kiescollege_biggest',
+ # 'vote_provincie_kiescollege_2nd_biggest']
+
+example_insert_config:
+  bes_config:
+    <<: *bes_source_default
+  nl_config:
+    <<: *target_config_default
+    filename_in: 'nl_provinces.png'
+    folder_in: 'source'
+    filename_out: 'nl_provinces_colorized_example.png'
+    folder_out: 'out'
+    do_crop: False
+    add_inset_border: True
+    legend: True
+    bes_colors:
+      <<: *bes_colors_default
+      BO: [ 0, 255, 0 ]
+      SA: [ 0, 0, 255 ]
+      ST: [ 255, 0, 0 ]
+      background: [ 0, 0, 0, 0]
+    nl_colors:
+      ZH: [ 255, 255, 0 , 255]
+      NH: [ 255, 0, 255, 255 ]
+      UT: [ 0, 255, 255, 255 ]
+      ZE: [ 255, 0, 0, 255 ]
+      NB: [ 0, 255, 0, 255 ]
+      LI: [ 0, 0, 255, 255 ]
+      GE: [ 255, 0, 0, 255 ]
+      FL: [ 0, 0, 255, 255 ]
+      OV: [ 255, 255, 0, 255 ]
+      DR: [ 0, 255, 0, 255 ]
+      FR: [ 0, 255, 255, 255 ]
+      GR: [ 255, 0, 255, 255 ]
+
+vote_provincie_kiescollege_biggest:
+  bes_config:
+    <<: *bes_source_default
+  nl_config:
+    <<: *target_config_default
+    filename_in: 'nl_provinces.png'
+    folder_in: 'source'
+    filename_out: 'provinciale_&_kiescollege_verkiezingen_grootste_partij.png'
+    folder_out: 'out'
+    do_crop: False
+    bes_colors:
+      <<: *bes_colors_default
+      BO: [ 153, 22, 23 ]  # DEMOKRAT
+      SA: [ 255, 94, 26 ]  # WIPM
+      ST: [ 227, 12, 31 ]  # Democratic Party of St Eustatius
+    nl_colors:
+      ZH: [ 100, 220, 175, 255 ]
+      NH: [ 100, 220, 175, 255  ]
+      UT: [ 100, 220, 175, 255  ]
+      ZE: [ 100, 220, 175, 255  ]
+      NB: [ 100, 220, 175, 255  ]
+      LI: [ 100, 220, 175, 255  ]
+      GE: [ 100, 220, 175, 255  ]
+      FL: [ 100, 220, 175, 255  ]
+      OV: [ 100, 220, 175, 255  ]
+      DR: [ 100, 220, 175, 255  ]
+      FR: [ 100, 220, 175, 255  ]
+      GR: [ 100, 220, 175, 255  ]
+
+vote_provincie_kiescollege_2nd_biggest:
+  bes_config:
+    <<: *bes_source_default
+  nl_config:
+    <<: *target_config_default
+    filename_in: 'nl_provinces.png'
+    folder_in: 'source'
+    filename_out: 'provinciale_&_kiescollege_verkiezingen_2e_grootste_partij.png'
+    folder_out: 'out'
+    do_crop: False
+    bes_colors:
+      <<: *bes_colors_default
+      BO: [ 0, 123, 95 ]  # UPB  (CDA)
+      SA: [ 168, 59, 159 ]  # SLP
+      ST: [ 0, 123, 95 ]  # CDA
+    nl_colors:
+      ZH: [ 10, 44, 202, 255  ]  # VVD
+      NH: [ 10, 44, 202, 255  ]  # VVD
+      UT: [ 59, 168, 55, 255  ]  # GL
+      ZE: [ 240, 136, 54, 255  ]  # SGP  (Pvda/GL)
+      NB: [ 10, 44, 202, 255  ]  # VVD
+      LI: [ 112, 212, 255, 255  ]  # PVV
+      GE: [ 10, 44, 202, 255  ]  # VVD
+      FL: [ 10, 44, 202, 255  ]  # VVD
+      OV: [ 0, 123, 95, 255  ]  # CDA
+      DR: [ 169, 0, 0, 255  ]  # PvdA
+      FR: [ 0, 123, 95, 255  ]  # CDA
+      GR: [ 169, 0, 0, 255  ]  # PvdA
+
+vote_europe_biggest_party:
+  bes_config:
+    <<: *bes_source_default
+  nl_config:
+    <<: *target_config_default
+    filename_in: 'NOS ruwe kaart.png'
+    folder_in: 'local'
+    filename_out: 'NOS europese_verkiezingen_grootste_partij.png'
+    folder_out: 'out'
+    do_crop: False
+    add_inset_border: True
+    fill_NL: False
+    bes_colors:
+      <<: *bes_colors_default
+      BO: [ 169, 0, 0 ]
+      SA: [ 100, 220, 175 ]
+      ST: [ 100, 220, 175 ]
+      background: [ 34, 34, 34 ]
+    locations:
+      BO: [ 100, 300 ]
+      SA: [ 120, 50 ]
+      ST: [ 220, 150 ]

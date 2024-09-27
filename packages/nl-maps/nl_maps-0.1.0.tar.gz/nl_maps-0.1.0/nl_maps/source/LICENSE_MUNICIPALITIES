@@ -1,0 +1,37 @@
+The copyright holder of this file, Centraal Bureau voor de Statistiek,
+allows anyone to use it for any purpose, that the copyright holder is
+properly attributed. Redistribution, derivative work, commercial use,
+and all other use is permitted.
+
+This image is (in part or entirely) based on geographical data from
+Statistics Netherlands (Centraal Bureau voor de Statistiek). Digital
+geometry files in ESRI format can be downloaded from their website [1].
+
+In particular, boundary data of statistical districts is based on
+either the Wijk- en buurtkaart 2005, or the Wijk- en buurtkaart 2003
+("CBS/TOPgrenzen"). Data on localities (bevolkingskernen) are from the
+ publication Bevolkingskernen in Nederland 2001.
+
+Conditions of use (in Dutch):
+
+    Bij visualisering van gegevens met behulp van het digitale bestand
+    Wijk- en buurtkaart 2005 dient te worden vermeld:
+
+    Bron: © 2006, Centraal Bureau voor de Statistiek / Topografische
+    Dienst Kadaster
+
+    Bij visualisering van gegevens met behulp van het digitale bestand
+    CBS/TOPgrenzen dient te worden vermeld:
+
+    Grenzen ondergrond: © 2003, Centraal Bureau voor de Statistiek/
+    Topografische Dienst Kadaster
+
+    Bij visualisering van gegevens met behulp van het digitale bestand
+     "Bevolkingskernen 2001" dient te worden vermeld:
+
+    Bron: © 2005, Centraal Bureau voor de Statistiek
+
+Unless otherwise specified, data on waterways and lakes are from the
+public domain Digital Chart of the World.
+
+[1] https://www.cbs.nl
