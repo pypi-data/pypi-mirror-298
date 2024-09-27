@@ -1,0 +1,156 @@
+de:
+  package_label: "Datenfusion"
+  package_desc: "Datenfusion"
+
+  common:
+    relation: "Beziehung"
+    fit_fusion_graph: "Angepasster Fusionsgraph"
+    fusion_graph: "Fusionsgraph"
+    filter: "Filter"
+    movie_actor: "Filmschauspieler"
+    costar_actor: "Mitwirkende Schauspieler"
+    mean_fit_fusion_graph: "Mittelwertangepasster Fusionsgraph"
+    row_type: "Reihenart"
+    genres: "Genres"
+    ratings: "Bewertungen"
+    data: "Daten"
+    in_sample_data: "In-Sample-Daten"
+    out_sample_data: "Out-of-Sample-Daten"
+
+  object:
+    user: "Benutzer"
+    movie: "Filme"
+    actor: "Schauspieler"
+    genres: "Genres"
+
+  relation:
+    like: "mögen"
+    fans: "sind Fans von"
+    rated: "bewertet"
+    mated: "gepaart"
+    play_in: "spielen in"
+    prefer: "bevorzugen"
+    belong_to: "gehören zu"
+    dislike: "nicht mögen"
+    marry_to: "verheiratet mit"
+    feature: "Merkmal"
+    feature_in: "Merkmal in"
+
+  owchaining:
+    name: "Verkettung"
+    desc: "Profilieren Sie Objekte eines Typs im Merkmalsraum eines anderen Typs durch Verkettung latenter Faktoren."
+    box_latent_chains: "Latente Ketten"
+    label_complete_chain_to: "Kette vervollständigen zu:"
+    btn_latent_space: "latenter Raum"
+    btn_feature_space: "Merkmalsraum"
+
+  owcompletionscoring:
+    name: "Vervollständigungsbewertung"
+    desc: "Bewerten Sie die Qualität der Matrixvervollständigung mit dem Root Mean Squared Error (RMSE)."
+    box_rmse: "RMSE"
+    warn_relation_miss_value: "Beziehung '{}' hat keine fehlenden Werte (Maske)"
+    label_my_dfmc: "Mein dfmc<3"
+
+  owfusiongraph:
+    name: "Fusionsgraph"
+    desc: "Konstruiere einen Datenfusionsgraphen und führe kollektive Matrixfaktorisierung durch."
+    label:
+      object_type: "%(n_object_types)d Objekttypen"
+      relation: "%(n_relations)d Beziehungen"
+    row:
+      fuser_name: "Fusionsname:"
+      maximum_iterations: "Maximale Anzahl von Iterationen"
+      factorization_rank: "Faktorisierungsrang"
+    btn:
+      decomposition_algorithm: "Dekompositionsalgorithmus"
+      initialization_algorithm: "Initialisierungsalgorithmus"
+      run_after_change: "Nach jeder Änderung ausführen"
+      run: "Ausführen"
+      random: "Zufällig"
+      random_c: "Zufällig C"
+      random_vcol: "Zufällig Vcol"
+      matrix_tri-factorization: "Matrix-Tri-Faktorisierung"
+      matrix_tri-completion: "Matrix-Tri-Vervollständigung"
+    box:
+      info: "Info"
+      relation: "Beziehungen"
+
+  owimdbactors:
+    name: "IMDb-Schauspieler"
+    desc: "Konstruiere eine Film-Schauspieler- und Schauspieler-Schauspieler-Beziehungsmatrix."
+    box_select_actor: "Schauspieler auswählen"
+    btn_apply: "&Anwenden"
+
+  owlatentfactors:
+    name: "Latente Faktoren"
+    desc: "Visualisieren Sie den Datenfusionsgraphen mit latenten Faktoren. Ein latenter Faktor kann für weitere Analysen ausgewählt werden."
+    box:
+      info: "Info"
+      recipe_factor: "Rezeptfaktoren"
+      backbone_factor: "Rückgratfaktoren"
+      complete_relation: "Vervollständigte Beziehungen"
+    label:
+      object_type: "%(n_object_types)d Objekttypen"
+      relation: "%(n_relations)d Beziehungen"
+
+  owmeanfuser:
+    name: "Mittelwert-Fusionierer"
+    box:
+      mean_fuser: "Mittelwert-Fusionierer"
+      output_completed_relation: "Vervollständigte Beziehung ausgeben"
+    label:
+      masked_value_mean: "Berechne maskierte Werte als Mittelwert von:"
+      not_mask: "(nicht maskiert)"
+    gbox:
+      rows: "Reihen"
+      columns: "Spalten"
+      all_values: "Alle Werte"
+
+  owmoviegenres:
+    name: "Filmgenres"
+    desc: "Konstruiere eine Film-Genres- oder Schauspieler-Genres-Beziehungsmatrix."
+    box:
+      genre: "Genres"
+
+  owmovieratings:
+    name: "Filmbewertungen"
+    desc: "Konstruiere eine Beziehungsmatrix von Benutzerbewertungen für Filme."
+    box_movie_selection: "Filmauswahl (von %d)"
+    btn:
+      fraction_movie: "Bruchteil der Filme"
+      time_period: "Zeitraum:"
+      apply: "&Anwenden"
+    label:
+      start_year: "Startjahr: "
+      end_year: "Endjahr: "
+
+  owsamplematrix:
+    name: "Matrix-Sampler"
+    desc: "Eine Beziehungsmatrix sampeln."
+    box_sample_method: "Sampling-Methode"
+    box_data_sample_proportion: "Datenanteil in der Stichprobe"
+    row:
+      row_type: "Reihenart"
+      column_type: "Spaltenart"
+    btn:
+      rows: "Reihen"
+      columns: "Spalten"
+      rows_columns: "Reihen und Spalten"
+      entries: "Einträge"
+      apply: "&Anwenden"
+
+  owtabletorelation:
+    name: "Tabelle zu Beziehung"
+    desc: "Konvertiere Datentabelle in Beziehungsmatrix. Beschrifte Matrixachse."
+    checkbox_transpose: "Transponieren"
+    btn_send: "Senden"
+    placeholder_none: "(Keine)"
+    box:
+      relation: "Beziehung"
+      row: "Reihe"
+      object_name: "Objektnamen"
+    row:
+      name: "Name"
+      column: "Spalte"
+      object_type: "Objekttyp"
+      auto_send: "Automatisch senden"
