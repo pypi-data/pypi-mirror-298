@@ -1,0 +1,6 @@
+[console_scripts]
+glance-imgsync=imgsync.cmd.cli:main
+
+[oslo.config.opts]
+imgsync=deepaas.opts:list_opts
+
