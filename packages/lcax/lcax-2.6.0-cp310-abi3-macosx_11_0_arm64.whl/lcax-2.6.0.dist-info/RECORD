@@ -1,0 +1,8 @@
+lcax-2.6.0.dist-info/METADATA,sha256=g5S6FFhm9DwC1442H7_dnRw6HUkJ5jDyO-cBXxjTMfw,2639
+lcax-2.6.0.dist-info/WHEEL,sha256=i-5e1nGSEdQbR_kAzcSB5cV7omUpJT_GdwQP7UpE6S0,103
+lcax-2.6.0.dist-info/licenses/LICENSE,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+lcax/__init__.py,sha256=SCPsqym15BI2TH0tcfdZaXIqJ8-92ybt511lORF3Sgk,3735
+lcax/pydantic.py,sha256=xvR6TcDWzxRAXImsRpqJe8ADXELEfupJkou8qPiAvdE,16460
+lcax/lcax.pyi,sha256=ypKM0xFumY85h8Glaq4N7n0ZgSb1TKCbr8kV-vOOKo4,408
+lcax/lcax.abi3.so,sha256=vuDpPk1z_erfym5-wxM_XwiwwZVc8XKjbkc7SePUPqY,2700528
+lcax-2.6.0.dist-info/RECORD,,
