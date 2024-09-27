@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+mongomock_persistence/__init__.py
+mongomock_persistence/database.py
+mongomock_persistence/store.py
+mongomock_persistence.egg-info/PKG-INFO
+mongomock_persistence.egg-info/SOURCES.txt
+mongomock_persistence.egg-info/dependency_links.txt
+mongomock_persistence.egg-info/not-zip-safe
+mongomock_persistence.egg-info/requires.txt
+mongomock_persistence.egg-info/top_level.txt
+tests/test__persistence.py
