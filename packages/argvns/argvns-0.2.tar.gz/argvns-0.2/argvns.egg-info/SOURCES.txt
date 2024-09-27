@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+argvns/__init__.py
+argvns/argvns.py
+argvns.egg-info/PKG-INFO
+argvns.egg-info/SOURCES.txt
+argvns.egg-info/dependency_links.txt
+argvns.egg-info/top_level.txt
