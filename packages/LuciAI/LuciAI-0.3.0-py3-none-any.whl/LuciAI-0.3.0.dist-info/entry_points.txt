@@ -1,0 +1,2 @@
+[console_scripts]
+luci-cli = Luci.cli:main
