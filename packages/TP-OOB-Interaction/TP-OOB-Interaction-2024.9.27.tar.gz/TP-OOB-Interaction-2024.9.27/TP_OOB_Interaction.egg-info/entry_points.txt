@@ -1,0 +1,2 @@
+[console_scripts]
+TP-OOB-Interaction = TP_OOB_Interaction:main
