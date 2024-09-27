@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: chatfusion
+Version: 0.0.1
+Summary: A flexible and powerful Python library for interacting with various AI language models
+Home-page: https://github.com/QusaiAlbonni/chatbots
+Author: Qusai Albonni
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+
