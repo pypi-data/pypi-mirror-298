@@ -1,0 +1,12 @@
+mosparo_django/__init__.py,sha256=VoRNm8IyXPN0gwKZor10t7eLRkxB5OjgH275Sc8LH4Q,798
+mosparo_django/apps.py,sha256=egFcOnWukdzRIBdSkOE5xBhM3R0AqX52-QETWqPT_Z8,142
+mosparo_django/config.py,sha256=cTR529t3aCjcMySLrS9GGUQzj9lesG0f5lQCCwphucY,403
+mosparo_django/fields.py,sha256=-X1UWYad9X_Vyh3OjwGaIVrwTwieFBNDFLuU3utIjEs,5586
+mosparo_django/forms.py,sha256=xt9DvYD3q1BUEdl5dRXTju-DntUp5OZ5b6pL_go6bzQ,524
+mosparo_django/widgets.py,sha256=KX7eF4KfGc33htYntSAVXSG7EkzLrKCkgxSssymcv-w,878
+mosparo_django/templates/mosparo/box.html,sha256=W70koGMJrzdQom-43N8ZAWGEcJbDKLyoc_OFdENRDNU,331
+mosparo_django-1.0.1.dist-info/LICENSE,sha256=UrDM4YaTPugKsrl1A0Q498GGAs4TdfZV-2-oT_gMbMc,1108
+mosparo_django-1.0.1.dist-info/METADATA,sha256=tIo-ApESo686sY3HEp18c-3GUgApRQPbhJdPCMLOkfo,8376
+mosparo_django-1.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+mosparo_django-1.0.1.dist-info/top_level.txt,sha256=1xMCX1HunRGo9Y7XuoXWxrbCB3jvpsZeSASux9sajyo,15
+mosparo_django-1.0.1.dist-info/RECORD,,
