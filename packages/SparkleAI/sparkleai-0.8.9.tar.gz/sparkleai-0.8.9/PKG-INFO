@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: SparkleAI
+Version: 0.8.9
+Summary: Sparkle is a Programming by Optimisation (PbO)-based problem-solving platform designed to enable the widespread and effective use of PbO techniques for improving the state-of-the-art in solving a broad range of prominent AI problems, including SAT and AI Planning.
+Home-page: https://github.com/thijssnelleman/Sparkle
+Author: Thijs Snelleman
+Author-email: fkt_sparkle@aim.rwth-aachen.de
+Keywords: ai sat planning
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: pandas==2.2.2
+Requires-Dist: filelock==3.15.1
+Requires-Dist: tabulate==0.9.0
+Requires-Dist: tqdm==4.66.5
+Requires-Dist: RunRunner==0.1.6.4
+Requires-Dist: plotly==5.23.0
+Requires-Dist: kaleido==0.2.1
+Requires-Dist: xgboost==2.0.3
+Requires-Dist: scikit-learn==1.3.2
+Requires-Dist: liac-arff==2.5.0
+Requires-Dist: smac==2.2.0
