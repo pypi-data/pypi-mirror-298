@@ -1,0 +1,8 @@
+ai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ai/openai.py,sha256=1rUlaogh1g3jpRYwqDAt1D-8gUPzE4zceKq1Ua3P1GY,890
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/request.py,sha256=ncumGKaxml2AeK8439md9K4O313YjGYYWZNHUY79vtU,1603
+aitools_schuanhe-0.1.dist-info/METADATA,sha256=1rItIMh68X70KPkF9mnMP0EOit1iVOdU0YNh-q7TqDs,796
+aitools_schuanhe-0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+aitools_schuanhe-0.1.dist-info/top_level.txt,sha256=Dp7gJgWOvPUv2DafuZRHek-upCJEzusxvneTI634fK4,9
+aitools_schuanhe-0.1.dist-info/RECORD,,
