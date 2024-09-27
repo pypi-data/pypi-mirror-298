@@ -1,0 +1,10 @@
+Metadata-Version: 2.3
+Name: robosource_common
+Version: 0.0.1
+Summary: A package offering common-use functionality for RoboSource developers, making it easy to do the right thing
+Author-email: John Hasenmyer <john.hasenmyer@robosource.us>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
