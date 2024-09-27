@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+tests/test_chatbot.py
+voi_lib/__init__.py
+voi_lib/chatbot.py
+voi_lib/config.py
+voi_lib/utils.py
+voichatlib.egg-info/PKG-INFO
+voichatlib.egg-info/SOURCES.txt
+voichatlib.egg-info/dependency_links.txt
+voichatlib.egg-info/requires.txt
+voichatlib.egg-info/top_level.txt
