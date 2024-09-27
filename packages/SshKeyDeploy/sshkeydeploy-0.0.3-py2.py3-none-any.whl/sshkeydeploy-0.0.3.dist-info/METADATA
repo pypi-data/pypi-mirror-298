@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: SshKeyDeploy
+Version: 0.0.3
+Summary: A CLI tool to create and deploy SSH keys
+Project-URL: Homepage, https://github.com/Juliyo/SshKeyDeploy
+Author-email: Julio Zamora <julio17795@gmail.com>
+License-File: LICENSE
+Requires-Dist: paramiko
+Requires-Dist: scp
+Description-Content-Type: text/markdown
+
+# SshKeyDeploy
+
+A CLI tool to create and deploy SSH keys
+
+# Usage
+
+```bash
+SshKeyDeploy [-h]
+```
+
+# Development
+
+## Prerequisites
+
+```bash
+python -m pip install --upgrade build
+```
+
+```bash
+python -m pip install --upgrade twine
+```
+
+## Build package
+
+```bash
+python -m build
+```
+
+## Upload package
+
+```bash
+python -m twine upload dist/*
+```
