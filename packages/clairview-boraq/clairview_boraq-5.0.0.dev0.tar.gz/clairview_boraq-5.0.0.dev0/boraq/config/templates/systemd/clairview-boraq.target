@@ -1,0 +1,6 @@
+[Unit]
+After=network.target
+Requires={{ boraq_name }}-web.target {{ boraq_name }}-workers.target {{ boraq_name }}-redis.target
+
+[Install]
+WantedBy=multi-user.target
