@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pep723
+Version: 0.0.1
+Summary: Implementation of PEP 723 (inline script metadata)
+Author-email: nikkie <takuyafjp+develop@gmail.com>
+License: Apache Software License
+Project-URL: Repository, https://github.com/ftnext/pep723
+Keywords: inline script metadata
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: taskipy ; extra == 'dev'
+Requires-Dist: autoflake ; extra == 'dev'
+Requires-Dist: pyupgrade ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-randomly ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+
+# pep723
+
+Implementation of [PEP 723](https://peps.python.org/pep-0723/#reference-implementation)
+
+## Usage
+
+```
+$ pip install pep723
+```
+
+Run a script which has **inline script metadata**.
+
+```
+$ python -m pep723.tool example/script_with_metadata.py
+```
+
+## ⚠️Caution
+
+This project is for self-education.  
+DO NOT USE IN PRODUCTION.
+
+If you are looking for tools which support PEP 723, recommendations are
+
+* pipx
+* uv
+* Hatch
+* PDM
