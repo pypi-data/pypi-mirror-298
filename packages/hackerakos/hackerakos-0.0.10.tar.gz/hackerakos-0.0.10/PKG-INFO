@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: hackerakos
+Version: 0.0.10
+Summary: Hackerakos library
+Home-page: http://hacker-bin.com
+Author: Hackerakos
+Author-email: hackerakos@hacker-bin.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: twine>=4.0.2; extra == "dev"
+
+# Hackerakos 
+## Makes tkinter simpler.
+
+
+---
+
+
+## How to use
+
+First install the package using pip command: **pip install hackerakos**
+
+After installing the package use following import:
+**from hackerakos import ***
