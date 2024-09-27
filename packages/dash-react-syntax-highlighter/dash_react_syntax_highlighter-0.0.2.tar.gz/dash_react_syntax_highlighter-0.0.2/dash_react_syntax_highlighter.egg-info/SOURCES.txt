@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+dash_react_syntax_highlighter/DashReactSyntaxHighlighter.py
+dash_react_syntax_highlighter/__init__.py
+dash_react_syntax_highlighter/_imports_.py
+dash_react_syntax_highlighter/dash_react_syntax_highlighter.min.js
+dash_react_syntax_highlighter/dash_react_syntax_highlighter.min.js.map
+dash_react_syntax_highlighter/metadata.json
+dash_react_syntax_highlighter/package-info.json
+dash_react_syntax_highlighter.egg-info/PKG-INFO
+dash_react_syntax_highlighter.egg-info/SOURCES.txt
+dash_react_syntax_highlighter.egg-info/dependency_links.txt
+dash_react_syntax_highlighter.egg-info/top_level.txt
+tests/test_usage.py
