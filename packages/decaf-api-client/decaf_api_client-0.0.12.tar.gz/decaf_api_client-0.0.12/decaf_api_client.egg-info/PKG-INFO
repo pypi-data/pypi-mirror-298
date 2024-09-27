@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: decaf-api-client
+Version: 0.0.12
+Summary: DECAF API Client
+Author-email: Vehbi Sinan Tunalioglu <vst@vsthost.com>
+Maintainer-email: Vehbi Sinan Tunalioglu <vst@vsthost.com>
+License: Copyright (2017-2019) Vehbi Sinan Tunalioglu.
+        Copyright (2019-2024) Teloscube Pte Ltd.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are
+        met:
+        
+        1. Redistributions of source code must retain the above copyright
+        notice, this list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright
+        notice, this list of conditions and the following disclaimer in the
+        documentation and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+        contributors may be used to endorse or promote products derived from
+        this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+        "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+        LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+        A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+        HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+        SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+        LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+        DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+        THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+        (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: homepage, https://github.com/telostat/decaf-api-client-python
+Project-URL: documentation, https://github.com/telostat/decaf-api-client-python
+Project-URL: repository, https://github.com/telostat/decaf-api-client-python
+Project-URL: changelog, https://github.com/teloscube/decaf-client-python/blob/main/CHANGELOG.md
+Keywords: decaf,api,client,finance
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic<3,>=2
+Requires-Dist: requests<3,>=2
+Provides-Extra: test
+Requires-Dist: black; extra == "test"
+Requires-Dist: flake8; extra == "test"
+Requires-Dist: isort; extra == "test"
+Requires-Dist: mypy; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: types-requests; extra == "test"
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: pip; extra == "dev"
+Requires-Dist: pyls-flake8; extra == "dev"
+Requires-Dist: pyls-isort; extra == "dev"
+Requires-Dist: pylsp-mypy; extra == "dev"
+Requires-Dist: pylsp-rope; extra == "dev"
+Requires-Dist: python-lsp-black; extra == "dev"
+Requires-Dist: python-lsp-server; extra == "dev"
+Requires-Dist: rope; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+
+# DECAF API Client (Python)
+
+[![Test](https://github.com/teloscube/decaf-client-python/actions/workflows/test.yml/badge.svg)](https://github.com/teloscube/decaf-client-python/actions/workflows/test.yml)
+
+> **TODO:** Provide a complete README file.
+
+## Development
+
+A Nix shell is provided for development:
+
+```sh
+nix develop
+```
+
+Build to run tests:
+
+```sh
+nix build
+```
+
+## Build and Publish
+
+Build the source distribution:
+
+```sh
+python -m build --sdist --wheel
+```
+
+Check the distribution(s):
+
+```sh
+twine check dist/*
+```
+
+Upload the distribution:
+
+```sh
+twine upload -s dist/*
+```
+
+## License and Copyrights
+
+This software is licensed under [The 3-Clause BSD License].
+
+<!-- REFERENCES -->
+
+[The 3-Clause BSD License]: https://opensource.org/licenses/BSD-3-Clause
