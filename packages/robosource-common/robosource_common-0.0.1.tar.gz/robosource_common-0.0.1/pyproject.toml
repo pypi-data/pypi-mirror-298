@@ -1,0 +1,18 @@
+[project]
+name = "robosource_common"
+version = "0.0.1"
+authors = [
+  { name="John Hasenmyer", email="john.hasenmyer@robosource.us" },
+]
+description = "A package offering common-use functionality for RoboSource developers, making it easy to do the right thing"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
