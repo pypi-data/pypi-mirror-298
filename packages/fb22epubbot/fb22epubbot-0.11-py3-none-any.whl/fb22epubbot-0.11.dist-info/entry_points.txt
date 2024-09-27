@@ -1,0 +1,3 @@
+[console_scripts]
+fb22epubbot=fb22epubbot.bot:main
+
