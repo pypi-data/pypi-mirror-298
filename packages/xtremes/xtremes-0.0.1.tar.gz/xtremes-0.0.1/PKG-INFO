@@ -1,0 +1,33 @@
+Metadata-Version: 2.3
+Name: xtremes
+Version: 0.0.1
+Summary: Some utilities to perform Extreme Value Analysis
+Project-URL: Homepage, https://github.com/haufse/xtremes
+Project-URL: Repository, https://github.com/haufse/xtremes
+Project-URL: Documentation, https://xtremes.readthedocs.io/en/latest/
+Author-email: Erik Haufs <erik.haufs@rub.de>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pynverse
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+[![Readthedocs Status](https://readthedocs.org/projects/xtremes/badge/?version=latest)](https://xtremes.readthedocs.io/en/latest/)
+
+
+Welcome to xtremes!
+===================
+
+**xtremes** is a Python library for various utilities useful in Extreme Value Statistics. It is created within the ClimXtreme project 
+and will provide supplementary code and simulations for the papers yet to come.
+
+Check out <https://test.pypi.org/project/test-xtremes/> for installation and <https://xtremes.readthedocs.io/en/latest/> for further information!
+
+Note:
+-----
+   This project is under active & heavy development.
