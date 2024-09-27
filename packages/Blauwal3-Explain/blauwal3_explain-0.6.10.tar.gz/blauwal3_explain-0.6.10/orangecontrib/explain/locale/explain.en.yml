@@ -1,0 +1,65 @@
+en:
+  app_name: "Explain"
+  app_desc: "Explain model predictions and feature importance."
+  explainer:
+    order_instances_by_similarity: "Order instances by similarity"
+    original_instance_ordering: "Original instance ordering"
+    order_instances_by_output_value: "Order instances by output value"
+
+  owexplainfeaturebase:
+    name: "Explain"
+    display: "Display"
+    top_features: "Top features:"
+    zoom: "Zoom:"
+    data_sampled: "Data has been sampled."
+    unknown_err: "An error occurred.\n{}"
+
+  owexplainmodel:
+    name: "Explain Model"
+    desc: "Model explanation widget."
+    target_class: "Target class"
+    show_legend: "Show legend"
+    
+  owexplainprediction:
+    name: "Explain Prediction"
+    desc: "Prediction explanation widget."
+    target_class: "Target class"
+    zoom: "Zoom"
+    prediction_info: "Prediction info"
+    average_prediction: "The average prediction for selected class."
+
+  owexplainpredictions:
+    name: "Explain Predictions"
+    desc: "Predictions explanation widget."
+    target_class: "Target class"
+    instance_order: "Instance order"
+    annotation: "Annotation"
+    show_tooltip: "Show tooltips"
+    highlight_feature: "Highlight feature on hover"
+    instances_ordered_by: "Instances ordered by {}"
+    hierarhical_clustering: "Hierarchical clustering"
+    output_value: "Output value"
+    original_ordering: "Original ordering"
+
+  owice:
+    name: "ICE"
+    desc: "Dependence between a target and a feature of interest."
+    display: "Display"
+    color: "Color"
+    centered: "Centered"
+    show_mean: "Show mean"
+    order_by_importance: "Order by importance"
+    target_class: "Target class"
+    feature: "Feature"
+    not_enough_data: "At least two instances are needed."
+    no_cont_features: "At least one numeric feature is required."
+
+
+  owpermutationimportance:
+    name: "Feature Importance"
+    desc: "Inspect model using Permutation Feature \n Importance technique."
+    parameters: "Parameters"
+    score: "Score:"
+    permutations: "Permutations:"
+    missing_target: "Instances with unknown target values were removed from data."
+
