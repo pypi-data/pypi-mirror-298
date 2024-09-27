@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: hwamsmartctrl
+Version: 0.2.1
+Summary: Python API to interface HWAM® SmartControl™
+Author-email: lordyavin <taa02kgvj@mozmail.com>
+Project-URL: Homepage, https://github.com/lordyavin/hwam-smart-control
+Project-URL: Issues, https://github.com/lordyavin/hwam-smart-control/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Home Automation
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: aiodns
+
+# HWAM® SmartControl™ API for Python
+Python API to interface HWAM® SmartControl™
+
+HWAM® SmartControl™ is an electronic air control system developed in collaboration with DTU (Denmarks Technical University)
+to achieve the cleanest possible combustion. HWAM® SmartControl™ controls the whole process, whereby you automatically achieve the best possible combustion every time.
+
+# Trademark Legal Notices
+
+All product names, trademarks and registered trademarks named or referenced in this repository, are property of their respective owners.
+The use of these names, trademarks and brands appearing in documentation or code, do not imply endorsement.

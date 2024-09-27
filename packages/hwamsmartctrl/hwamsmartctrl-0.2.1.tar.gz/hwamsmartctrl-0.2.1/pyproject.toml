@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hwamsmartctrl"
+version = "0.2.1"
+authors = [
+  { name="lordyavin", email="taa02kgvj@mozmail.com" },
+]
+description = 'Python API to interface HWAM® SmartControl™'
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "aiohttp", "aiodns"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+    'Topic :: Home Automation',
+]
+
+[project.urls]
+Homepage = 'https://github.com/lordyavin/hwam-smart-control'
+Issues = 'https://github.com/lordyavin/hwam-smart-control/issues'
+
+[tool.setuptools.packages.find]
+exclude = ["tests*"]
