@@ -1,0 +1,3 @@
+include CHANGELOG.rst .flake8
+recursive-include doc *.py *.rst *.png *.ico *.ipynb
+global-exclude .ipynb_checkpoints/*
