@@ -1,0 +1,7 @@
+setup.py
+MomwhyareyouhereTextAnalyzer.egg-info/PKG-INFO
+MomwhyareyouhereTextAnalyzer.egg-info/SOURCES.txt
+MomwhyareyouhereTextAnalyzer.egg-info/dependency_links.txt
+MomwhyareyouhereTextAnalyzer.egg-info/top_level.txt
+textanalyzer/__init__.py
+textanalyzer/analysis.py
