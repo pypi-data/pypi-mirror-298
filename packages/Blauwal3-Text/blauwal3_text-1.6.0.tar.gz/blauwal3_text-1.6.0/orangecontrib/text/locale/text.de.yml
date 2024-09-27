@@ -1,0 +1,888 @@
+de:
+  package_label: "Text Mining"
+  package_desc: "Text Mining"
+
+  filter:
+    filtering: "Filtering..."
+    stopwords: "Stopwords"
+    lexicon: "Lexikon"
+    regexp: "RegExp"
+    fit_filter: "Filter anpassen..."
+    document_frequency: "Dokumentenhäufigkeit"
+    frequent_tokens: "Häufigste Tokens"
+    pos_tags: "POS-Tags"
+
+  pos:
+    pos_tag: "POS-Tagging..."
+    stanford_pos_tag: "Stanford POS-Tagger"
+    averaged_perceptron_tag: "Durchschnittlicher Perzeptron-Tagger"
+    treebank_pos_tag: "Treebank POS-Tagger (MaxEnt)"
+
+  normalize:
+    normalizing: "Normalisieren..."
+    wordnet_lemmatizer: "WordNet-Lemmatisierer"
+    porter_stemmer: "Porter-Stemmer"
+    snowball_stemmer: "Snowball-Stemmer"
+    udpipe_lemmatizer: "UDPipe-Lemmatisierer"
+
+  transform:
+    transform: "Transformieren..."
+    lowercase: "Kleinbuchstaben"
+    remove_accents: "Akzent entfernen"
+    parse_html: "HTML parsen"
+    remove_urls: "URLs entfernen"
+
+  tokenize:
+    tokenizing: "Tokenisieren..."
+    word_punctuation: "Wort & Interpunktion"
+    sentence: "Satz"
+    whitespace: "Leerzeichen"
+    regexp: "RegExp"
+    tweet: "Tweet"
+
+  bagofwords:
+    count: "Zählen"
+    binary: "Binär"
+    sublinear: "Sublinear"
+    none: "(Keine)"
+    idf: "IDF"
+    smooth_idf: "Glättendes IDF"
+    l1: "L1 (Summe der Elemente)"
+    l2: "L2 (Euklidisch)"
+
+  guardian:
+    headline: "Überschrift"
+    content: "Inhalt"
+    trail_text: "Nachrichtentext"
+    html: "HTML"
+    type: "Typ"
+    language: "Sprache"
+    tags: "Tags"
+    word_count: "Wortanzahl"
+    publication_date: "Veröffentlichungsdatum"
+
+  owannotator:
+    name: "Annotiertes Korpus-Map"
+    desc: "Annotiert Projektionscluster."
+    btn:
+      cluster_label: "Clusterbezeichnungen:"
+      show_cluster_hull: "Cluster-Hülle anzeigen"
+      color_point: "Punkte nach Cluster färben"
+      fdr: "FDR-Schwelle:"
+      epsilon: "Epsilon:"
+      gaussian_mixture_models: "Gaussian Mixture Models"
+      clusters: "Cluster:"
+      from_variable: "Von Variable"
+      annotation: "Annotation"
+    msg:
+      selected_features: "Ausgewählte Merkmale für Achse x \n und Achse y sollten unterschiedlich sein."
+      no_continuous_vars: "Daten enthalten keine kontinuierlichen Variablen."
+      not_enough_inst: "Nicht genügend Instanzen in den Daten."
+      proj_error: "Beim Annotieren der Daten ist ein Fehler aufgetreten.\n{}"
+      no_valid_embedding: "Keine gültigen Einbettungsdaten."
+
+  owontology:
+    name: "Ontologie"
+    desc: ""
+    update: "Aktualisieren"
+    more: "Mehr"
+    import_file: "Ontologie aus Datei importieren"
+    import_url: "Ontologie aus URL importieren"
+    save_file: "Ontologie in Datei speichern"
+    input: "Eingabe"
+    output: "Ausgabe"
+    ontology_info: "Ontologie-Informationen"
+    include_subtree: "Teilbaum einbeziehen"
+    score_label: "Punktzahl: {score}"
+    run_button: "Generieren"
+    inc_button: "Einbeziehen"
+    library: "Bibliothek"
+    tips:
+      add: "Ein neues Wort hinzufügen"
+      remove: "Wort entfernen"
+      remove_recursive: "Wort rekursiv entfernen (einschließlich Kinder)"
+      undo: "Rückgängig"
+      redo: "Wiederherstellen"
+      add_ontology: "Eine neue Ontologie zur Bibliothek hinzufügen"
+      remove_ontology: "Ontologie aus der Bibliothek entfernen"
+      save_change: "Änderungen im Editor in der Bibliothek speichern"
+      include_selected_words: "Ausgewählte Wörter in die Ontologie einbeziehen"
+    msg:
+      no_readers: "Keine Leser für Datei {name}"
+      no_words_column: "Eingabe fehlt 'Wörter'-Spalte."
+      skipped_words: "{} Begriffe wurden aufgrund eines Serververbindungsfehlers übersprungen."
+
+  owsemanticviewer:
+    name: "Semantischer Viewer"
+    desc: "Finden Sie Dokumente und Teile von Dokumenten, die semantisch ähnlich zu den Eingabewörtern sind"
+    document: "Dokument"
+    section: "Abschnitt"
+    sentence: "Satz"
+    filtering: "Filtern"
+    threshold: "Schwelle: "
+    display: "Anzeige"
+    match: "Übereinstimmung"
+    score: "Punktzahl"
+
+  owcollocations:
+    name: "Kollokationen"
+    desc: "Berechnet signifikante Bigrams und Trigrams."
+    bigrams: "Bigrams"
+    trigrams: "Trigrams"
+    settings: "Einstellungen"
+    frequency: "Häufigkeit"
+    scoring_method: "Bewertungsmethode"
+    restore: "Originalreihenfolge wiederherstellen"
+    tips: "Zeilen in der Originalreihenfolge anzeigen"
+    collocation: "Kollokation"
+    score: "Punktzahl"
+    method:
+      pointwise_mutual_information: "Punktweise wechselseitige Information"
+      chi_square: "Chi-Quadrat"
+      dice: "Dice"
+      fisher: "Fisher"
+      jaccard: "Jaccard"
+      likelihood_ratio: "Wahrscheinlichkeitsverhältnis"
+      mi_like: "Mi Like"
+      phi_square: "Phi-Quadrat"
+      poisson_stirling: "Poisson-Stirling"
+      raw_frequency: "Rohhäufigkeit"
+      students_t: "Student's T"
+
+  nyt:
+    headline: "Überschrift"
+    abstract: "Zusammenfassung"
+    snippet: "Ausschnitt"
+    lead_paragraph: "Einleitender Absatz"
+    subject_keywords: "Themen-Keywords"
+    locations: "Orte"
+    persons: "Personen"
+    organizations: "Organisationen"
+    creative_works: "Kreative Arbeiten"
+    article_type: "Artikeltyp"
+    word_count: "Wortanzahl"
+    publication_date: "Veröffentlichungsdatum"
+
+  twitter:
+    content: 'Inhalt'
+    language: 'Sprache'
+    location: 'Ort'
+    likes: 'Anzahl der Likes'
+    retweets: 'Anzahl der Retweets'
+    reply_to: 'Antwort auf'
+    latitude: 'Breitengrad'
+    longitude: "Längengrad"
+    author:
+      name: 'Autorname'
+      description: 'Autorbeschreibung'
+      status_count: 'Anzahl der Statusmeldungen des Autors'
+      favourites_count: 'Anzahl der Favoriten des Autors'
+      friends_count: 'Anzahl der Freunde des Autors'
+      followers_count: 'Anzahl der Follower des Autors'
+      listed_count: 'Anzahl der Listungen des Autors'
+      verified: 'Verifiziert'
+      tweet_count: 'Anzahl der Tweets des Autors'
+      following_count: 'Anzahl der Personen, denen der Autor folgt'
+    msg:
+      toomany: "TooManyRequests ausgelöst"
+
+  wikipedia:
+    title: "Titel"
+    content: "Inhalt"
+    summary: "Zusammenfassung"
+    page_id: "Seiten-ID"
+    revision_id: "Revisions-ID"
+    query: "Abfrage"
+
+  item:
+    mean: "Mittelwert"
+    median: "Median"
+    min: "Min"
+    max: "Max"
+
+  common:
+    corpus: "Korpus"
+    query_word: "Suchwort"
+    selected_document: "Ausgewählte Dokumente"
+    concordance: "Konkordanz"
+    data: "Daten"
+    network: "Netzwerk"
+    node_data: "Knotendaten"
+    match_doc: "Übereinstimmende Dokumente"
+    other_doc: "Andere Dokumente"
+    distance: "Distanzen"
+    corpus_without_duplicates: "Korpus ohne Duplikate"
+    duplicates: "Duplikat-Cluster"
+    select_topic: "Ausgewähltes Thema"
+    all_topic: "Alle Themen"
+    topic: "Thema"
+    select_word: "Ausgewählte Wörter"
+    word_count: "Wortanzahl"
+    select_data: "Ausgewählte Daten"
+    lda_wrapper: "Latent Dirichlet Allocation"
+    lsi_wrapper: "Latent Semantic Indexing"
+    hdp_wrapper: "Hierarchical Dirichlet Process"
+    skip_document: "Übersprungene Dokumente"
+    embeddings: "Einbettungen"
+    words: "Wörter"
+
+  owbasevectorizer:
+    options: "Optionen"
+    commit: "Commit"
+    hide_attrs: "BOW-Attribute ausblenden"
+
+  owbagofwords:
+    name: "Bag of Words"
+    desc: "Erzeugt ein Bag of Words aus dem Eingabekorpus."
+    row_term_frequency: "Termfrequenz:"
+    row_document_frequency: "Dokumentenfrequenz:"
+    row_regular: "Regularisierung:"
+
+  owcreatecorpus:
+    name: "Korpus erstellen"
+    desc: "Dokumente schreiben/einfügen, um ein Korpus zu erstellen"
+    language: "Sprache"
+    box:
+      document_title: "Dokumenttitel"
+      document_text: "Dokumenttext"
+      add_document: "Dokument hinzufügen"
+
+  owldavis:
+    name: "LDAvis"
+    desc: "Interaktive Erkundung von LDA-Themen."
+    relevance: "Relevanz"
+    topics: "Themen"
+    mtp: "Marginale Themenwahrscheinlichkeit"
+    words: "Wörter"
+    token_num: "Anzahl der Tokens"
+    msg:
+      lda: "Relevante Begriffe akzeptiert nur Ausgaben von LDA."
+
+  owconcordance:
+    name: "Konkordanz"
+    desc: "Zeigt den Kontext des Wortes an."
+    msg_multiple_words_on_input: "Mehrere Suchwörter eingegeben. Nur das erste wird berücksichtigt!"
+    box_info: "Info"
+    btn_commit: "Bestätigen"
+    btn_auto_commit: "Automatische Bestätigung ist aktiviert"
+    row:
+      token: "Tokens: %(n_tokens)s"
+      type: "Typen: %(n_types)s"
+      match: "Übereinstimmungen: %(n_matching)s"
+      num_of_word: "Anzahl der Wörter:"
+      query: "Abfrage:"
+    dialog:
+      name: "Konkordanzen"
+      label_query: "Abfrage"
+      label_token: "Tokens"
+      label_type: "Typen"
+      label_match: "Übereinstimmungen"
+
+  owcorpus:
+    name: "Korpus"
+    desc: "Laden Sie ein Korpus von Textdokumenten."
+    msg_cannot_read_file: "Datei kann nicht gelesen werden ({})"
+    msg_no_text_features_used: "Mindestens ein Textmerkmal muss verwendet werden."
+    msg_corpus_without_text_features: "Korpus hat keine textuellen Merkmale."
+    btn_reload: "Neu laden"
+    btn_browse: "Durchsuchen"
+    placeholder_no_title: "(kein Titel)"
+    btn_browse_documentation: "Durchsuchen Sie die Dokumentationskorpora"
+    status:
+      load: "Laden"
+      none: '(keine)'
+    box:
+      corpus_file: "Korpusdatei"
+      title_var: "Titelvariable"
+      use_text_feature: "Verwendete Textmerkmale"
+      ignore_text_feature: "Ignorierte Textmerkmale"
+    dialog:
+      open: "Orange Dokumentenkorpus öffnen"
+      all_readable_file: "Alle lesbaren Dateien ({});;"
+      name: "Korpus"
+      label_file: "Datei"
+      label_document: "Dokumente"
+      label_use_text_feature: "Verwendete Textmerkmale"
+      label_ignore_text_feature: "Ignorierte Textmerkmale"
+      label_other_feature: "Andere Merkmale"
+      label_target: "Ziel"
+
+  owcorpustonetwork:
+    name: "Korpus zu Netzwerk"
+    desc: "Konstruiert ein Netzwerk aus dem angegebenen Korpus."
+    msg_unknown_error: "Unbekannter Fehler: {}"
+    msg_no_network_addon: "Bitte installieren Sie das Netzwerk-Add-on, um dieses Widget zu verwenden."
+    msg_params_changed: "Parameter wurden geändert. Drücken Sie Start, um mit den neuen Parametern zu starten."
+    gbox_document: "Dokument"
+    gbox_word: "Wort"
+    box_set: "Einstellungen"
+    btn_start: "Start"
+    btn_stop: "Stopp"
+    row:
+      node_type: "Knotentyp"
+      threshold: "Schwellenwert"
+      window_size: "Fenstergröße"
+      freq_threshold: "Häufigkeitsschwelle"
+
+  owcorpusviewer:
+    name: "Korpus-Viewer"
+    desc: "Zeigt den Inhalt des Korpus an."
+    msg_no_feats_search: "Keine Merkmale in der Suche enthalten."
+    msg_no_feats_display: "Keine Merkmale zur Anzeige ausgewählt."
+    box_info: "Informationen"
+    box_search_feature: "Suchmerkmale"
+    box_display_feature: "Anzeige Merkmale"
+    checkbox_show_token_tag: "Token & Tags anzeigen"
+    btn_send_data: "Daten senden"
+    btn_auto_send: "Automatisches Senden ist aktiviert"
+    label_regexp_filter: "RegExp-Filter:"
+    row:
+      token: "Tokens: %(n_tokens)s"
+      type: "Typen: %(n_types)s"
+      match: "Übereinstimmungen: %(n_matching)s"
+      match_documents: "Übereinstimmende Dokumente: %(n_matching)s"
+    dialog:
+      label_query: "Abfrage"
+      label_match_document: "Übereinstimmende Dokumente"
+      label_matches: "Übereinstimmungen"
+
+  owdocmap:
+    name: "Dokumentenkarte"
+    gbox_world: "Welt"
+    gbox_europe: "Europa"
+    gbox_usa: "USA"
+    gbox_m_world: "Welt"
+    gbox_m_europe: "Europa"
+    gbox_m_usa: "USA"
+    label_region_attr: "Region Attribut:"
+    label_map_type: "Kartenart:"
+
+  owdocumentembedding:
+    name: "Dokumenten-Einbettung"
+    desc: "Dokumenteneinbettung mit vortrainierten Modellen."
+    msg_no_connection: "Keine Internetverbindung. Bitte stellen Sie eine Verbindung her oder verwenden Sie einen anderen Vektorisierer."
+    msg_unexpected_error: "Einbettungsfehler: {}"
+    msg_unsuccessful_embeddings: "Einige Einbettungen waren nicht erfolgreich."
+    mean: "Mittelwert"
+    sum: "Summe"
+    max: "Max"
+    min: "Min"
+    box_set: "Einstellungen"
+    row_language: "Sprache: "
+    row_aggregator: "Aggregator: "
+    btn_apply: "Anwenden"
+    btn_cancel: "Abbrechen"
+
+  owduplicates:
+    name: "Duplikaterkennung"
+    desc: "Erkennen & Entfernen von Duplikaten aus einem Korpus."
+    msg_dist_matrix_invalid_shape: "Duplikaterkennung unterstützt nur Abstände, die zwischen Zeilen berechnet wurden."
+    msg_too_little_documents: "Mehr als ein Dokument ist erforderlich."
+    label_cluster: "Cluster"
+    label_size: "Größe"
+    gbox:
+      single: "Einzeln"
+      average: "Durchschnitt"
+      complete: "Vollständig"
+      weight: "Gewichtet"
+      ward: "Ward"
+      attr: "Attribute"
+      class: "Klasse"
+      meta: "Metadaten"
+    box:
+      info: "Informationen"
+      linkage: "Verknüpfung"
+      distance: "Abstände"
+      output: "Ausgabe"
+    row:
+      document: "Dokumente: %(n_documents)s"
+      unique: "  ◦ einzigartig: %(n_unique)s"
+      duplicate: "  ◦ Duplikate: %(n_duplicates)s"
+      distance_threshold: "Distanzschwelle"
+      append_cluster_id: "Cluster-IDs anfügen an:"
+    dialog:
+      linkage: "Verknüpfung"
+      distance_threshold: "Distanzschwelle"
+      document: "Dokument"
+      unique: "Einzigartig"
+      duplicates: "Duplikate"
+
+  owguardian:
+    btn_key: "The Guardian API-Schlüssel"
+    name: "The Guardian"
+    desc: "Artikel von der The Guardian API abrufen."
+    btn_api_key: "The Guardian API-Schlüssel"
+    box_query: "Abfrage"
+    box_text_include: "Text enthält"
+    box_output: "Ausgabe"
+    row_article: "Artikel: %(output_info)s"
+    btn_search: "Suche"
+    btn_stop: "Stopp"
+    dialog:
+      name: "The Guardian Anmeldeinformationen"
+      key_input: "test"
+      msg_invalid_credentials: "Diese Anmeldeinformationen sind ungültig."
+      row: "Schlüssel:"
+      btn: "OK"
+      query: "Abfrage"
+      date_from: "Datum von"
+      date_to: "Datum bis"
+      text_include: "Text enthält"
+      output: "Ausgabe"
+    msg:
+      no_text_fields: "Textmerkmale werden abgeleitet, wenn keine ausgewählt sind."
+      no_api: "Bitte geben Sie einen gültigen API-Schlüssel an."
+      no_query: "Bitte geben Sie eine Abfrage an."
+      limit_exceeded: "Anfragenlimit erreicht."
+
+  owimportdocuments:
+    name: "Dokumente importieren"
+    desc: "Textdokumente aus Ordnern importieren."
+    tooltip_select_folder_to_load: "Wählen Sie einen Ordner aus, aus dem die Dokumente geladen werden sollen"
+    tooltip_reload_document_set: "Aktuelles Dokumentenset neu laden"
+    row_no_select_document_set: "Kein Dokumentensatz ausgewählt"
+    btn:
+      open: "Dokumente öffnen/laden"
+      reload: "Neu laden"
+      cancel: "Abbrechen"
+    box:
+      source: "Quelle"
+      folder: "Ordner:"
+      info: "Informationen"
+      options: "Conllu-Importoptionen"
+    checkbox:
+      lemma: "Lemma"
+      pos_tags: "POS-Tags"
+      ner: "NER"
+    msg:
+      read_error: "{} konnte nicht gelesen werden."
+      document: "{} Dokument(e)"
+      category: "{} Dokumente / {} Kategorien"
+      skip: ", {} übersprungen"
+      cancel: "Abgebrochen"
+      error: "Fehlerzustand"
+      not_exist: "'{}' existiert nicht"
+      not_folder: "'{}' ist kein Ordner"
+    text:
+      select_document: "Kein Dokumentensatz ausgewählt"
+      process: "Verarbeitung"
+      cancel: "Abgebrochen"
+      process_error: "Fehler bei der Verarbeitung"
+    dialog:
+      open: "Wählen Sie den obersten Ordner aus"
+    report:
+      path: "Pfad"
+      document_number: "Anzahl der Dokumente"
+      categories: "Kategorien"
+      skip_number: "Anzahl der übersprungenen"
+
+  owkeywords:
+    name: "Schlüsselwörter extrahieren"
+    desc: "Charakteristische Wörter aus dem Eingabekorpus ableiten."
+    msg:
+      no_words_column: "Eingabe fehlt die 'Wörter'-Spalte."
+    box:
+      score_methods: "Bewertungsmethoden"
+      agg: "Aggregation"
+      select_word: "Wörter auswählen"
+      words: "Wörter"
+    status:
+      calculate: "Berechnen..."
+    placeholder:
+      filter: "Filtern..."
+    item:
+      none: "Keine"
+      all: "Alle"
+      manual: "Manuell"
+      top_words: "Top-Wörter"
+    report:
+      corpus: "Korpus"
+      words: "Wörter"
+      keywords: "Schlüsselwörter"
+
+  ownyt:
+    name: "NY Times"
+    desc: "Artikel von der New York Times-Such-API abrufen."
+    btn_api_key: "Artikel-API-Schlüssel"
+    box_query: "Abfrage"
+    box_include: "Text enthält"
+    btn_output: "Ausgabe"
+    row_article: "Artikel: %(output_info)s"
+    btn_search: "Suche"
+    btn_stop: "Stopp"
+    msg:
+      no_text_fields: "Textmerkmale werden abgeleitet, wenn keine ausgewählt sind."
+      no_api: "Bitte geben Sie einen gültigen API-Schlüssel an."
+      no_query: "Bitte geben Sie eine Abfrage an."
+      offline: "Keine Internetverbindung."
+      api_error: "API-Fehler: {}"
+      rate_limit: "Rate-Limit überschritten. Bitte versuchen Sie es später noch einmal."
+    dialog:
+      name: "New York Times API-Schlüssel"
+      cm_key: "NY Times API-Schlüssel"
+      msg_invalid_credentials: "Diese Anmeldeinformationen sind ungültig. Überprüfen Sie den Schlüssel und Ihre Internetverbindung."
+      row_key: "Schlüssel:"
+      btn_ok: "OK"
+      query: "Abfrage"
+      date_from: "Datum von"
+      date_to: "Datum bis"
+      text_include: "Text enthält"
+      output: "Ausgabe"
+
+  owpreprocess:
+    name: "Text vorverarbeiten"
+    desc: "Erstellen Sie eine Pipeline zur Textvorverarbeitung."
+    box:
+      preview: "Vorschau"
+      udpipe_tokenizer: "UDPipe-Tokenisierer"
+      language: "Sprache:"
+    msg:
+      udpipe_offline_no_models: "Kein UDPipe-Modell ausgewählt."
+      file_not_found: "Datei nicht gefunden."
+      invalid_encoding: "Ungültige Dateicodierung. Bitte speichern Sie die Datei als UTF-8 und versuchen Sie es erneut."
+      stanford_tagger: "Problem beim Laden des Stanford POS-Taggers:\n{}"
+      no_token_left: "Keine Tokens im Output."
+      udpipe_offline: "Keine Internetverbindung. UDPipe funktioniert mit lokalen Modellen."
+      udpipe_offline_no_model: "Keine Internetverbindung. UDPipe-Modell ist nicht verfügbar."
+      tokenizer_propagated: "Tokenisierung sollte vor Normalisierung, Filterung, n-Grammen und POS-Tagger erfolgen."
+      tokenizer_ignored: "Tokenisierung wurde aufgrund des UDPipe-Tokenisierers ignoriert."
+      filtering_ignored: "Filterung wurde aufgrund des UDPipe-Tokenisierers ignoriert."
+      preprocess_method: "Einige Vorverarbeitungsmethoden erfordern Daten (wie Wortbeziehungen, Stoppwörter, Zeichensetzungsregeln usw.) aus dem NLTK-Paket. Diese Daten wurden heruntergeladen nach:"
+    dialog:
+      open: "Öffnen..."
+      text_file: "Textdateien (*.txt)"
+      all_file: "Alle Dateien (*)"
+    row:
+      transform: "Transformation"
+      tokenize: "Tokenisierung"
+      normalize: "Normalisierung"
+      filter: "Filterung"
+      ngrams: "n-Gramm-Bereich"
+      pos: "POS-Tagger"
+      range: "Bereich:"
+      none: "(keine)"
+      pattern: "Muster:"
+
+  owpubmed:
+    name: "Pubmed"
+    desc: "Daten von Pubmed abrufen."
+    box_retrieve: "Abrufen"
+    btn_retrieve_record: "Datensätze abrufen"
+    btn_stop_retrieve: "Abrufen stoppen"
+    tooltip_retrieve_document: "Die angegebenen Dokumente abrufen."
+    btn_email: "E-Mail"
+    btn_find_record: 'Datensätze finden'
+    tab_regular_search: "Normale Suche"
+    tab_advance_search: "Erweiterte Suche"
+    tooltip_search: "Durchsucht Artikel, die den angegebenen Parametern entsprechen."
+    box_text_include: "Text enthält"
+    msg:
+      no_query: "Bitte geben Sie die Schlüsselwörter für diese Abfrage an."
+      api_error: "API-Fehler: {}."
+      email_error: "E-Mail nicht festgelegt. Bitte setzen Sie sie mit der E-Mail-Schaltfläche."
+      num_of_retrieve: "Anzahl der abrufbaren Datensätze für diese Suchabfrage: {}"
+      record_from: "Datensätze von {}."
+      num_of_record: "Anzahl der abgerufenen Datensätze: {}"
+    row:
+      author: "Autor:"
+      from: "Von:"
+      to: "bis:"
+      query: "Abfrage:"
+      num_of_record: "Anzahl der gefundenen Datensätze: /"
+      record_from: "Datensätze von /."
+      orchid: "Orchid"
+      hypertension: "Bluthochdruck"
+      blood_pressure: "Blutdruck"
+      radiology: "Radiologie"
+    checkbox:
+      author: "Autoren"
+      article_title: "Artikelüberschrift"
+      mesh_head: "Mesh-Überschriften"
+      abstract: "Zusammenfassung"
+      url: "URL"
+    dialog:
+      name:  "Pubmed E-Mail"
+      email: "E-Mail"
+      msg: "Diese E-Mail ist ungültig."
+      row_email: "E-Mail:"
+      btn_ok: "OK"
+    report:
+      query: "Abfrage"
+      authors: "Autoren"
+      date: "Datum"
+      num_of_record: "Anzahl der abgerufenen Datensätze"
+
+  owscoredocuments:
+    name: "Dokumente bewerten"
+    msg:
+      missing_words: "Wörter im Eingabefeld angeben"
+      missing_corpus: "Korpus im Eingabefeld angeben"
+      corpus_not_normalized: "Verwenden Sie Textvorverarbeitung zur Normalisierung des Korpus."
+    box:
+      method: "Wortbewertungsmethoden"
+      agg: "Aggregation"
+      select_documents: "Dokumente auswählen"
+    placeholder:
+      filter: "Filter..."
+    item:
+      none: "Keine"
+      all: "Alle"
+      manual: "Manuell"
+      top_documents: "Top-Dokumente"
+    label:
+      word_count: "Wortanzahl"
+      word_count_tip: "Häufigkeit des Wortes im Dokument."
+      word_presence: "Wortpräsenz"
+      word_presence_tip: "Bewerten Sie das Wort mit eins, wenn es im Dokument erscheint, sonst mit null."
+      similarity: "Ähnlichkeit"
+      similarity_tip: "Kosinusähnlichkeit zwischen der Dokumenten-Einbettung und der Wort-Einbettung."
+
+  owsentimentanalysis:
+    name: "Sentimentanalyse"
+    desc: "Sentiment aus Text berechnen."
+    gbox_english: "Englisch"
+    gbox_slovenian: "Slowenisch"
+    msg:
+      senti_offline: "Keine Internetverbindung! Sentiment funktioniert jetzt nur mit lokalen Modellen."
+      senti_offline_no_lang: "Keine Internetverbindung und keine lokalen Sprachressourcen verfügbar."
+      one_dict_only: "Nur ein Wörterbuch geladen."
+      no_dicts_loaded: "Keine Wörterbücher geladen."
+      unavailable_local: "Sentiment kann nicht berechnet werden, da Sie offline sind und das erforderliche Wörterbuch lokal nicht verfügbar ist."
+    box:
+      mulitilingua_sent: "Mehrsprachiges Sentiment"
+      method: "Methode"
+      custom_list: "Benutzerdefiniertes Wörterbuch"
+    btn:
+      liu_hu: "Liu Hu"
+      vader: "Vader"
+      commit: "Bestätigen"
+      auto_commit: "Automatische Bestätigung ist aktiviert"
+    row:
+      language: "Sprache:"
+      positive: "Positiv:"
+      negative: "Negativ:"
+    dialog:
+      method: "Methode"
+
+  owsimhash:
+    name: "Ähnlichkeits-Hashing"
+    desc: "Berechnet Hashes für Dokumente."
+    row_simhash_size: "Simhash-Größe:"
+    row_shingle_length: "Shingle-Länge:"
+
+  owstatistics:
+    name: "Statistiken"
+    desc: "Erstellen Sie neue statistische Variablen für Dokumente."
+    msg_not_computed: "{} Statistiken können nicht berechnet werden und sind von den Ergebnissen ausgeschlossen."
+    btn_apply: "Anwenden"
+    row_feature: "Merkmal"
+    row_pattern: "Muster"
+    compute_for: "Berechnen für"
+    gbox:
+      word_count: "Wortanzahl"
+      character_count: "Zeichenanzahl"
+      n_gram_count: "N-Gramm-Anzahl"
+      average_word_length: "Durchschnittliche Wortlänge"
+      punctuation_count: "Zeichenzahl"
+      capital_count: "Anzahl der Großbuchstaben"
+      vowel_count: "Anzahl der Vokale"
+      consonant_count: "Anzahl der Konsonanten"
+      per_cent_unique_word: "Prozent der einzigartigen Wörter"
+      start_with: "Beginnt mit"
+      end_with: "Endet mit"
+      contain: "Enthält"
+      regex: "Regex"
+      pos_tag: "POS-Tag"
+      yule: "Yules I"
+      lix: "LIX-Index"
+
+  owtopicmodeling:
+    row_num_of_topic: "Anzahl der Themen"
+    name: "Themenmodellierung"
+    desc: "Entdecken Sie die verborgene thematische Struktur in einem Korpus."
+    msg_less_topics_found: "Weniger Themen gefunden als angefordert."
+    btn_commit: "Bestätigen"
+    box:
+      option: "Optionen"
+      topic_evaluation: "Themenbewertung"
+    label:
+      topic: "Themen"
+      topic_key: "Themen-Schlüsselwörter"
+      perplexity: "Log-Perglexität: %(perplexity)s"
+      coherence: "Themenkohärenz: %(coherence)s"
+    gbox:
+      first_level_concentration: "Konzentration auf erster Ebene (γ)"
+      second_level_concentration: "Konzentration auf zweiter Ebene (α)"
+      the_topic_direchlet: "Thema Dirichlet (α)"
+      top_level_truncation: "Trunkierungsebene oben (Τ)"
+      second_level_truncation: "Trunkierungsebene unten (Κ)"
+      learn_rate: "Lernrate (κ)"
+      slow_down_parameter: "Verlangsamungsparameter (τ)"
+    dialog:
+      topic: "Themen"
+
+  owtweetprofiler:
+    name: "Tweet-Profil"
+    desc: "Erkennen Sie Ekman-, Plutchik- oder Profile of Mood States-Emotionen in Tweets."
+    msg_server_down: "Unsere Server antworten nicht. Bitte versuchen Sie es später erneut."
+    msg_unexpected_error: "Unbekannter Fehler: {}"
+    btn_commit: "Bestätigen"
+    btn_cancel: "Abbrechen"
+    box_option: "Optionen"
+    row_attr: "Attribut:"
+    row_emotion: "Emotionen:"
+    row_output: "Ausgabe:"
+    output_mode:
+      classes: "Klassen"
+      probability: "Wahrscheinlichkeiten"
+      embeddings: "Einbettungen"
+    dialog:
+      attr: "Attribut"
+      emotion: "Emotionen"
+      output: "Ausgabe"
+
+  owtwitter:
+    name: "Twitter"
+    desc: "Lade Tweets von der Twitter API."
+    gbox_content: "Inhalt"
+    gbox_author: "Autor"
+    btn_twitter_api_key: "Twitter API-Schlüssel"
+    tooltip_set_api: "Setze den API-Schlüssel für dieses Widget."
+    box_query: "Abfrage"
+    box_text_include: "Text enthält"
+    btn_search: "Suche"
+    btn_stop: "Stopp"
+    placeholder_multiple_line: "Mehrere Zeilen werden mit OR verbunden."
+    btn_twitter_bearer_token: "Twitter Bearer Token"
+    btn_bearer_token: "Bearer Token"
+    msg:
+      no_text_fields: "Textmerkmale werden angenommen, wenn keine ausgewählt sind."
+      api: "API-Fehler ({})"
+      rate_limit: "Rate-Limit überschritten. Bitte später erneut versuchen."
+      empty_authors: "Bitte gib einige Autoren an."
+      wrong_authors: "Autor '{}' existiert nicht."
+      key_missing: "Bitte gib ein gültiges API-Token an."
+      empty_query: "Bitte gib {} an."
+      not_enough_tweets: "Weniger Tweets heruntergeladen als angefordert, da nicht genügend Tweets oder Rate-Limit erreicht wurde"
+      api_error: "API-Fehler: {}. Überprüfe, ob dein API-Plan die Abrufung von Tweets beinhaltet. \n Der kostenlose Plan erlaubt keine Tweet-Abrufe mehr."
+    row:
+      query_word_list: "Abfrage-Wortliste:"
+      language: "Sprache:"
+      max_tweet: "Maximale Tweets:"
+      search_by: "Suche nach:"
+      allow_retweet: "Retweets erlauben:"
+      collect_result: "Ergebnisse sammeln:"
+    dialog:
+      name: "Twitter API-Anmeldeinformationen"
+      cm_key: "Twitter API-Schlüssel"
+      cm_secret: "Twitter API-Geheimnis"
+      msg_invalid_credential: "Diese Anmeldeinformationen sind ungültig."
+      row_key: "Schlüssel:"
+      row_secret: "Geheimnis:"
+      btn_ok: "OK"
+
+  owwikipedia:
+    name: "Wikipedia"
+    box_query: "Abfrage"
+    placeholder_each_line_separate_query: "Jede Zeile stellt eine separate Abfrage dar."
+    box_text_include: "Text enthält"
+    box_info: "Info"
+    btn_search: "Suche"
+    btn_stop: "Stopp"
+    dialog:
+      language: "Sprache"
+      query: "Abfrage"
+      article_count: "Anzahl der Artikel"
+    row:
+      query_word_list: "Abfrage-Wortliste:"
+      language: "Sprache:"
+      article_per_query: "Artikel pro Abfrage:"
+    msg:
+      info_label: "Anzahl der Artikel {:d}"
+      api_error: "API-Fehler: {}"
+      no_text_field: "Textmerkmale werden angenommen, wenn keine ausgewählt sind."
+
+  owwordcloud:
+    name: "Wortwolke"
+    box_cloud_preference: "Wolkenpräferenzen"
+    checkbox_color_word: "Wörter färben"
+    row_words_tilt: "Wörterneigung:"
+    box_word: "Wörter & Gewichte"
+    label_weight: "Gewicht"
+    label_word: "Wort"
+    value_no: "nein"
+    table_name: "Wortanzahlen"
+    topic_name: "Ausgewählte Wörter"
+    msg:
+      topic_precedence: "Eingangssignal-Thema hat Vorrang vor Corpus"
+      bow_weight: "Zeigt Gewicht der Bag-of-Words."
+      data_info: "{} Dokumente mit {} Wörtern"
+      word_in_topic: "Wörter in einem Thema."
+      datas_info: "{} Dokumente\n{} ausgewählte Wörter\n{} Wörter mit Zählungen"
+    state:
+      calculate: "Berechne"
+
+  owwordenrichment:
+    name: "Wortanreicherung"
+    desc: "Wortanreicherungsanalyse für ausgewählte Dokumente."
+    box_info: "Info"
+    row_word_display: "Angezeigte Wörter: 0"
+    box_filter: "Filter"
+    checkbox_p_value: "p-Wert"
+    tooltip_filter_p_value: "Nach Wort-p-Wert filtern"
+    tooltip_max_p_value: "Maximaler p-Wert für Wort"
+    checkbox_fdr: "FDR"
+    tooltip_filter_fdr: "Nach Wort-FDR filtern"
+    label_word: "Wort"
+    label_p_value: "p-Wert"
+    label_fdr: "FDR"
+    msg:
+      no_bow_features: "Keine Bag-of-Words-Merkmale!"
+      no_words_overlap: "Keine Wortüberlappungen!"
+      empty_selection: "Ausgewählte Daten sind leer!"
+      all_selected: "Alle Beispiele können nicht ausgewählt werden!"
+      data_word: "Angezeigte Wörter: {}"
+    dialog:
+      enriche_word: "Anreicherungswörter"
+
+  owwordlist:
+    name: "Wortliste"
+    desc: "Erstelle eine Liste von Wörtern."
+    msg:
+      no_string_vars: "Eingabe benötigt mindestens eine Textvariable."
+    box:
+      library: "Bibliothek"
+      input: "Eingabe"
+    tip:
+      add: "Eine neue Wortliste zur Bibliothek hinzufügen"
+      add_word: "Ein neues Wort hinzufügen"
+      remove: "Wortliste aus der Bibliothek entfernen"
+      update: "Änderungen im Editor in der Bibliothek speichern"
+      more: "Weitere Aktionen"
+      remove_word: "Wort entfernen"
+      sort: "Wörter alphabetisch sortieren"
+    btn:
+      update: "Aktualisieren"
+      more: "Mehr"
+      import_file: "Wörter aus Datei importieren"
+      save_file: "Wörter in Datei speichern"
+      open: "Wortliste öffnen"
+      open_type: "Textdateien (*.txt)\nAlle Dateien(*.*)"
+      save_word: "Wortliste speichern"
+      sort: "Sortieren"
+    label:
+      word_variable: "Wortvariable:"
+      update: "Aktualisieren: "
+    report:
+      library: "Bibliothek"
+      input_words: "Eingabewörter"
+      word_var: "Wortvariable"
+      update: "Aktualisieren"
+      settings: "Einstellungen"
+      words: "Wörter"
+    item:
+      intersection: "Schnittmenge"
+      union: "Vereinigung"
+      only_input: "Nur Eingabe"
+      ignore_input: "Eingabe ignorieren"
+
