@@ -1,0 +1,3 @@
+[console_scripts]
+zulip-exporter=zulip-expoter.__main__:main
+

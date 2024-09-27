@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: zulip-exporter
+Version: 0.0.4
+Summary: A Zulip exporter for Prometheus
+License: MIT
+Author: Mikke Schirén
+Author-email: mikke.schiren@digitalist.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: certifi (==2024.8.30)
+Requires-Dist: cffi (==1.17.1)
+Requires-Dist: chardet (==5.2.0)
+Requires-Dist: cryptography (==43.0.1)
+Requires-Dist: distro (==1.9.0)
+Requires-Dist: idna (==3.10)
+Requires-Dist: matrix-client (==0.4.0)
+Requires-Dist: prometheus-client (==0.21.0)
+Requires-Dist: pyOpenSSL (==24.2.1)
+Requires-Dist: pycparser (==2.22)
+Requires-Dist: requests (==2.32.3)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: urllib3 (==1.26.20)
+Requires-Dist: zulip (==0.9.0)
+Description-Content-Type: text/markdown
+
+# Zulip prom exporter
+
+## Usage
+
+- Start exporter
+
+
+### Environment variable
+
+|     Environment Variable     | Description                                                    | Default   | Required |
+|:----------------------------:|----------------------------------------------------------------|-----------|:--------:|
+|         `ZULIP_EMAIL`        | Zulip email from zuliprc                                       |           |    ✅    |
+|        `ZULIP_API_KEY`       | Zulip api-key from zuliprc                                     |           |    ✅    |
+|          `ZULIP_SITE`        | URL where your Zulip server is located                         |           |    ✅    |
+|            `PORT`            | Http port to listen on                                         |  `9863`   |    ❌    |
+|            `SLEEP`           | Time to wait in seconds beetween metric grabbing cycles        |  `120`    |    ❌    |
+
+## Docker compose example
+
+```
+  zulip-exporter:
+    container_name: zulip-exporter
+    restart: unless-stopped
+    image: quay.io/brokenpip3/zulip-exporter:0.0.1
+    labels:
+      io.prometheus.scrape: true
+      io.prometheus.port: 9863
+      io.prometheus.path: /metrics
+    env_file:
+      - .env-zulip
+    ports:
+      - "9863"
+```
+
+## Kubernetes
+
+see [example](./kubernetes)
+
+## Metrics
+
+- Server info: `zulip_server`
+
+- Users info: `zulip_user_*`
+
+- Streams info: `zulip_stream_*`
+
+## Prometheus rules examples
+
+see [rules examples](./kubernetes/zulip-rules.yaml)
+
+## Grafana dashboard
+
+![image](./grafana/example.png)
+
+see [example dashboard](./grafana/dashboard.json)
+
+## Development
+
+### Setup
+
+- poetry install
+- poetry run python3 zulip-exporter
+
+### Publish
+
+- poetry install
+- poetry build
+- poetry publish
+
