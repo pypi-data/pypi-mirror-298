@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: numpy-typing
+Version: 1.0.0
+Summary: Improved numpy typing anotations
+Author: Pirolley Melvyn
+Author-email: 
+Keywords: python,deep learning,tensorflow,aircraft,classification,ADS-B
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+
+    This package adds cleaner typing to numpy arrays.  It
+    has been designed for deep learning and data processing tasks which generally
+    need a lot of numpy arrays of large dimensions.'
