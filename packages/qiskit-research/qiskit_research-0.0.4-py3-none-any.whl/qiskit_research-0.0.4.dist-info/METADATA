@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: qiskit-research
+Version: 0.0.4
+Summary: Research using Qiskit, demonstrating best practices for running quantum computing experiments.
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: qiskit==1.1.1
+Requires-Dist: qiskit-aer
+Requires-Dist: qiskit-ibm-runtime
+Requires-Dist: black[jupyter] ; extra == "dev"
+Requires-Dist: coverage ; extra == "dev"
+Requires-Dist: ddt ; extra == "dev"
+Requires-Dist: importlib_metadata ; extra == "dev"
+Requires-Dist: mypy ; extra == "dev"
+Requires-Dist: jupyter-sphinx ; extra == "dev"
+Requires-Dist: nbmake ; extra == "dev"
+Requires-Dist: nbsphinx ; extra == "dev"
+Requires-Dist: pylint ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: qiskit[visualization] ; extra == "dev"
+Requires-Dist: qiskit_sphinx_theme ; extra == "dev"
+Requires-Dist: sphinx-autodoc-typehints ; extra == "dev"
+Provides-Extra: dev
+
+# Qiskit Research
+
+This repository contains useful software utilities for running quantum computing research experiments using Qiskit and the IBM Quantum Services.
+
+## Installation
+
+Clone this repository and install from source. For example,
+
+    git clone https://github.com/qiskit-research/qiskit-research.git
+    cd qiskit-research
+    pip install .
+
+## Documentation
+
+Documentation is located [here](https://qiskit-community.github.io/qiskit-research/).
+
+## Contributing
+
+For information on how to contribute to this project, please take a look at our [contribution guidelines](CONTRIBUTING.md).
+
+## Citing
+
+[![DOI](https://zenodo.org/badge/498756635.svg)](https://zenodo.org/badge/latestdoi/498756635)
+
+Qiskit Research is automatically uploaded to Zenodo with every release. Click the badge above to see all citation formats for all versions, or just use [this BibTeX file](CITATION.bib).
+
+## Moved content
+
+Previously, this repository also contained the code for several research papers that used Qiskit and the IBM Quantum Services. The code for these papers has moved to the following locations:
+
+- Majorana zero mode generation: <https://github.com/qiskit-community/mzm-generation>
+- Protein folding: <https://github.com/qiskit-community/quantum-protein-folding>
+- Quantum simulation tutorial: <https://github.com/qiskit-community/tutorial-quantum-sim>
+
