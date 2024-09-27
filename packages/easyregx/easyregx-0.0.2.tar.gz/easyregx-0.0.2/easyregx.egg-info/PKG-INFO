@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: easyregx
+Version: 0.0.2
+Summary: This python tool help to regex code easier
+Home-page: https://github.com/pypa/easyregx
+Author: Balakrishnan
+Author-email: admin@reccebird.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Added wordsearch function
