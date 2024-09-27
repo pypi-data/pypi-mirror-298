@@ -1,0 +1,40 @@
+[project]
+name = "shopcube"
+version = "4.6.1"
+description = "E-commerce solution"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Abdur-Rahmaan Janhangeer & contributors", email = "arj.python@gmail.com"}
+]
+keywords = ["flask", "pos", "management", "shop", "ecommerce", "cms", "erp", "e-commerce"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["reqs/app.txt"]}
+
+[project.urls]
+"Bug Reports" = "https://github.com/Abdur-RahmaanJ/shopcube/issues"
+"Source" = "https://github.com/Abdur-RahmaanJ/shopcube/"
+
+
+[options]
+include_package_data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[project.scripts]
+shopcube = "shopcube.__main__:main"
