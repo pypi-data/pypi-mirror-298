@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=70.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mbedext"
+version = "0.0.11"
+authors = [
+  { name="Ahmed Kooli", email="ahmed.kooli@hotmail.fr" },
+]
+description = "Visualize and cluster your text in a modular way"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch~=2.3.1",
+  "tqdm~=4.66.4",
+  "transformers~=4.41.2",
+  "sentence-transformers~=3.0.1",
+  "pandas~=2.2.2",
+  "scikit-learn~=1.5.0",
+  "plotly~=5.22.0",
+  "numpy~=1.26.4",
+  "accelerate~=0.33.0"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ahmedkooli/mbedext"
