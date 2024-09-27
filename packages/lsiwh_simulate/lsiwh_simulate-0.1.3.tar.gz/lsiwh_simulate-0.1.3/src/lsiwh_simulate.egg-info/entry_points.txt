@@ -1,0 +1,2 @@
+[console_scripts]
+start = lsiwh_simulate.customer:start
