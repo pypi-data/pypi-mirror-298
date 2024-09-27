@@ -1,0 +1,4 @@
+tensorflow>=2.0
+tensorflow-probability>=0.20
+pandas
+python-dateutil
