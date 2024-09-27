@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: simple_rate
+Version: 0.1
+Summary: A simple ROS Rate implementation with pure Python
+Home-page: https://github.com/eadali/simple-rate
+Author: Erkan Adali
+Author-email: erkanadali91@gmail.com.com
+License-File: LICENSE
+
+A simple ROS Rate implementation with pure Python
