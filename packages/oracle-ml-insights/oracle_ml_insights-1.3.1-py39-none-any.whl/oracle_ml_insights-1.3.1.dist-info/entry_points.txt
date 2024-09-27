@@ -1,0 +1,2 @@
+[console_scripts]
+mlm = mlm_insights.mlm_insights_cli.cli_tool:init
