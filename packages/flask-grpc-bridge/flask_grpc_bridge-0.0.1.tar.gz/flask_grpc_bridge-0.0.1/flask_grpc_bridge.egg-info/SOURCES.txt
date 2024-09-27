@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flask_grpc_bridge/__init__.py
+flask_grpc_bridge/bridge.py
+flask_grpc_bridge/py.typed
+flask_grpc_bridge.egg-info/PKG-INFO
+flask_grpc_bridge.egg-info/SOURCES.txt
+flask_grpc_bridge.egg-info/dependency_links.txt
+flask_grpc_bridge.egg-info/requires.txt
+flask_grpc_bridge.egg-info/top_level.txt
