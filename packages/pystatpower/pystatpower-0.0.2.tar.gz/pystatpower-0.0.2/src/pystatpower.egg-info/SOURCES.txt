@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/pystatpower/__init__.py
+src/pystatpower/__main__.py
+src/pystatpower/basic.py
+src/pystatpower/exception.py
+src/pystatpower.egg-info/PKG-INFO
+src/pystatpower.egg-info/SOURCES.txt
+src/pystatpower.egg-info/dependency_links.txt
+src/pystatpower.egg-info/requires.txt
+src/pystatpower.egg-info/top_level.txt
+src/pystatpower/models/__init__.py
+src/pystatpower/models/one_proportion.py
+src/pystatpower/models/two_proportion.py
+tests/test_basic.py
