@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+eazylogger/__init__.py
+eazylogger.egg-info/PKG-INFO
+eazylogger.egg-info/SOURCES.txt
+eazylogger.egg-info/dependency_links.txt
+eazylogger.egg-info/top_level.txt
+eazylogger/core/__init__.py
+eazylogger/core/logger.py
