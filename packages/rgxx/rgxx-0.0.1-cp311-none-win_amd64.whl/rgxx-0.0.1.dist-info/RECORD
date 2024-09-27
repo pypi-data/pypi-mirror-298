@@ -1,0 +1,5 @@
+rgxx-0.0.1.dist-info/METADATA,sha256=DhvAhRHasmVqU2kaDbuqYI4WhRrnk9MxwZwOXg9NjY0,4950
+rgxx-0.0.1.dist-info/WHEEL,sha256=bNtRK4IG-ZINiRwRhIvmsDSb0Vife_pt6vsyhyhjHi8,95
+rgxx/__init__.py,sha256=Y73akX4PWJePh9VghfwBXpEPUgWh0yzCm0luOOxi__0,99
+rgxx/rgxx.cp311-win_amd64.pyd,sha256=nP_VihctX1vb1-_ZcJq19gaPbnl4mVJ25ttEIKuCHxY,296448
+rgxx-0.0.1.dist-info/RECORD,,
