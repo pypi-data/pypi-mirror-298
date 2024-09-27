@@ -1,0 +1,50 @@
+## SPDX-FileCopyrightText: (C) 2024 Avnet Embedded GmbH
+## SPDX-License-Identifier: GPL-3.0-only
+
+targets:
+  main:
+    features:
+      - LED
+    resources:
+      RemotePlace:
+        name: place-sm2s-intel-all
+    drivers:
+      power_plug_driver:
+        cls: "TasmotaPowerDriver"
+      serial_port_driver:
+        cls: "SerialDriver"
+        name: "serial_port_driver"
+        bindings:
+          port: 'serial_port1'
+      gpio_expander_port_driver:
+        cls: "SerialDriver"
+        name: 'gpio_expander_serial_driver'
+        bindings:
+          port: 'gpio_expander_port14'
+      sdwire_driver:
+        cls: "USBSDWireDriver"
+      storage_driver:
+        cls: "USBStorageDriver"
+      shell_driver:
+        cls: "ShellDriver" 
+        name: 'shell_driver'
+        bindings:
+          console: 'serial_port_driver'
+        prompt: 'root@\w+-\w+-\w+:[^ ]#'
+        login_prompt: ' login: '
+        username: 'root'
+      strategy_driver:
+        cls: "SimpleSwitchStrategy"
+        bindings:
+          console: 'serial_port_driver'
+      gpio_expander_driver:
+        cls: "GPIOExpanderDriver"
+        name: 'gpio_expander_driver'
+        bindings:
+          port: 'gpio_expander_port14'
+
+images:
+  sd_image: "/tmp/simplecore-simpleswitch-os-weston-image-sm2s-intel-all.wic"
+imports:
+  - /home/labgrid-files/gpioexpanderdriver.py
+  - /home/labgrid-files/simpleswitchstrategy.py
