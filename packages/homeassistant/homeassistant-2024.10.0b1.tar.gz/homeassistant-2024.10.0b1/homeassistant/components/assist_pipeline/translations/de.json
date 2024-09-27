@@ -1,0 +1,36 @@
+{
+    "entity": {
+        "binary_sensor": {
+            "assist_in_progress": {
+                "name": "Assist in Verwendung"
+            }
+        },
+        "select": {
+            "pipeline": {
+                "state": {
+                    "preferred": "Bevorzugt"
+                }
+            },
+            "vad_sensitivity": {
+                "name": "Zu Ende gesprochen Erkennung",
+                "state": {
+                    "aggressive": "Aggressiv",
+                    "default": "Standard",
+                    "relaxed": "Entspannt"
+                }
+            }
+        }
+    },
+    "issues": {
+        "assist_in_progress_deprecated": {
+            "fix_flow": {
+                "step": {
+                    "confirm_disable_entity": {
+                        "description": "Der {integration_name} Bin\u00e4re Sensor zur Verwendung \u201e{entity_id}\u201c ist veraltet.\n\nMigriere deine Konfiguration, um die entsprechende \u201e{assist_satellite_domain}\u201c Entit\u00e4t zu nutzen und klicke dann auf SENDEN, um den Bin\u00e4ren Sensor zur Verwendung zu deaktivieren und dieses Problem zu beheben."
+                    }
+                }
+            },
+            "title": "{integration_name} bin\u00e4re Sensoren zur Verwendung sind veraltet"
+        }
+    }
+}

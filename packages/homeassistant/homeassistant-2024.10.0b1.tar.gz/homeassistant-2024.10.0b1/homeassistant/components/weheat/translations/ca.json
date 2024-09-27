@@ -1,0 +1,19 @@
+{
+    "entity": {
+        "sensor": {
+            "electricity_used": {
+                "name": "Electricitat utilitzada"
+            },
+            "heat_pump_state": {
+                "state": {
+                    "cooling": "Refredant",
+                    "defrosting": "Descongelant",
+                    "standby": "En espera"
+                }
+            },
+            "outside_temperature": {
+                "name": "Temperatura exterior"
+            }
+        }
+    }
+}
