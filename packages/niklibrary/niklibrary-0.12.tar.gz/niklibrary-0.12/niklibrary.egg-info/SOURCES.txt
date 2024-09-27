@@ -1,0 +1,11 @@
+README.md
+setup.py
+helper/P.py
+helper/T.py
+helper/__init__.py
+niklibrary.egg-info/PKG-INFO
+niklibrary.egg-info/SOURCES.txt
+niklibrary.egg-info/dependency_links.txt
+niklibrary.egg-info/entry_points.txt
+niklibrary.egg-info/requires.txt
+niklibrary.egg-info/top_level.txt
