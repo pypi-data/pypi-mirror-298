@@ -1,0 +1,14 @@
+sisicepy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sisicepy/traces/__init__.py,sha256=U8WDfJtPQNncizxh-wToCAUu-WsKqs86UmNoVmB8Knc,134
+sisicepy/traces/captor/digos.py,sha256=j8kT2NtjT4QbHlC1zglh0e_hQx38-OxenD2-TcZADu4,429
+sisicepy/traces/captor/geobit.py,sha256=ibLWMkXAzVn8IN7Yq-jZ9yhH4RrMqaC0hmdoMme0uGY,861
+sisicepy/traces/io/datacube_loader.py,sha256=PKvg1YKltzwZcUSd9XlBiOA-E1aiphBOPPKd59GVKbE,2993
+sisicepy/traces/recorder/datacube.py,sha256=mxWZrDIk2AWqs_BJXxIjyFFEYXLyB_VCoYWeks1bk0c,660
+sisicepy/traces/signal/freq_filter.py,sha256=iSxJRFpf6QmgZppzfCNHdUXdxHW_C1zl483lFmL5XKs,5325
+sisicepy/traces/signal/processing.py,sha256=k0rScm9Flqioxo4Dn2wFzuL2tO1UFAJrZwFUcb7vL-k,1894
+sisicepy/traces/signal/utils.py,sha256=zwMZSjkAVi_K-Gw-bnbCulSRQ54gL_BIFaByf0DZJzY,763
+sisicepy/traces/traces.py,sha256=S-ynKci3tfmHLG4Po2DGMBJ9yMMKiXwjCuKWArOk_qg,687
+sisicepy-0.1.5.dist-info/LICENSE,sha256=HXQwgKFssv3EPSHtXLjm7munM_FAaTDPmv0zYAVImpE,34518
+sisicepy-0.1.5.dist-info/METADATA,sha256=-ZIrI460fuWKeDR0HyJb5N7_eRiA8dg468RafMSP_9E,2518
+sisicepy-0.1.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sisicepy-0.1.5.dist-info/RECORD,,
