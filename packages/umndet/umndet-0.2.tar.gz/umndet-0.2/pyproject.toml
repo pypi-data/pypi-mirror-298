@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools >= 61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ['umndet']
+
+[project]
+requires-python = ">= 3.11"
+version = "0.2"
+name = "umndet"
+description = 'Flight and ground code for the IMPRESS/EXACT/IMPISH small-payload missions'
+readme = 'readme.md'
+dependencies = [
+    # We have none for the "core"
+]
+
+[project.optional-dependencies]
+all = [
+    "numpy",
+    "matplotlib"
+]
+
+[project.scripts]
+# For in-flight use
+impress-rebinner = "umndet.rebinner.file_based_rebinner:main"
+
+# Tools (simulations, ...)
+simulate-impress-health = "umndet.tools.simulate_health:main"
+simulate-impress-science = "umndet.tools.simulate_slices:main"
+generate-impress-bin-txt = "umndet.tools.generate_binning:main"
+
+# Ground (decoders, ...)
+decode-impress-health = "umndet.ground.json_decoders:decode_health"
+
+decode-impress-hafx = "umndet.ground.json_decoders:decode_hafx_sci"
+decode-hafx-debug-hist = "umndet.ground.json_decoders:decode_hafx_debug_hist"
+
+decode-x123-science = "umndet.ground.json_decoders:decode_x123_sci"

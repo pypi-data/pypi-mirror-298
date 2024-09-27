@@ -1,0 +1,12 @@
+LICENSE
+pyproject.toml
+readme.md
+tests/test_rebinner_core.py
+umndet/__init__.py
+umndet/plotting.py
+umndet.egg-info/PKG-INFO
+umndet.egg-info/SOURCES.txt
+umndet.egg-info/dependency_links.txt
+umndet.egg-info/entry_points.txt
+umndet.egg-info/requires.txt
+umndet.egg-info/top_level.txt
