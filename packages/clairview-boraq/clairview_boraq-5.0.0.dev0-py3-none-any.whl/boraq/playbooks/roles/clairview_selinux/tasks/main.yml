@@ -1,0 +1,25 @@
+---
+- name: Install deps
+  yum:
+    name:
+      - policycoreutils-python
+      - selinux-policy-devel
+    state: present
+  when: ansible_distribution == 'CentOS'
+
+- name: Check enabled SELinux modules
+  shell: semanage module -l
+  register: enabled_modules
+  when: ansible_distribution == 'CentOS'
+
+- name: Copy clairview_selinux policy
+  copy: src=clairview_selinux.te dest=/root/clairview_selinux.te
+  register: dest_clairview_selinux_te
+  when: ansible_distribution == 'CentOS'
+
+- name: Compile clairview_selinux policy
+  shell: "make -f /usr/share/selinux/devel/Makefile clairview_selinux.pp && semodule -i clairview_selinux.pp"
+  args:
+    chdir: /root/
+  when: "ansible_distribution == 'CentOS' and enabled_modules.stdout.find('clairview_selinux') == -1 or dest_clairview_selinux_te.changed"
+...

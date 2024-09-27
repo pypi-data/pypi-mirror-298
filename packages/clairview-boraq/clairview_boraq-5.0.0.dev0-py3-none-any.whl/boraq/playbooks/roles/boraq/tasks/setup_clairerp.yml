@@ -1,0 +1,29 @@
+---
+  - name: Check if CLAIRerp App exists
+    stat: path="{{ boraq_path }}/apps/clairerp"
+    register: app
+
+  - name: Get the CLAIRerp app
+    command: boraq get-app clairerp {{ clairerp_repo_url }} --branch {{ clairerp_branch }}
+    args:
+      creates: "{{ boraq_path }}/apps/clairerp"
+      chdir: "{{ boraq_path }}"
+    when: not app.stat.exists and not without_clairerp
+
+  - name: Check whether the site already exists
+    stat: path="{{ boraq_path }}/sites/{{ site }}"
+    register: site_folder
+    when: not without_site
+
+  - name: Create a new site
+    command: "boraq new-site {{ site }} --admin-password '{{ admin_password }}' --mariadb-root-password '{{ mysql_root_password }}'"
+    args:
+      chdir: "{{ boraq_path }}"
+    when: not without_site and not site_folder.stat.exists
+
+  - name: Install CLAIRerp to default site
+    command: "boraq --site {{ site }} install-app clairerp"
+    args:
+      chdir: "{{ boraq_path }}"
+    when: not without_site and not without_clairerp
+...
