@@ -1,0 +1,10 @@
+{
+    "ABSORTION": 3,
+    "DISTRIBUTION": 1,
+    "TOXICITY": 8,
+    "TOX21_PATHWAY": 2,
+    "METABOLISM": 2,
+    "TOXICOPHORE_RULES": 3,
+    "EXCRETION": 1,
+    "MEDICINAL_CHEMISTRY": 5
+}

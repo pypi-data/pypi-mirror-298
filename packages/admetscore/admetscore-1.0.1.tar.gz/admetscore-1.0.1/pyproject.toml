@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "admetscore"
+version = "1.0.1"
+description = "The ADMETSCORE is a software that aims to facilitate the ADMET analysis of molecules resulting from pharmacophore research."
+authors = ["Julio Cesar Xavier <jcaxavier2@gmail.com>"]
+readme = "README.md"
+include = ["weights.json"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+openpyxl = "^3.1.5"
+rdkit = "^2023.9.3"
+selenium = "^4.23.1"
+webdriver-manager = "^4.0.2"
+XlsxWriter = "^3.2.0"
+numpy = "1.26.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+admetscore = "admetscore.app:main"
+
+
+

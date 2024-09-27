@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: admetscore
+Version: 1.0.1
+Summary: The ADMETSCORE is a software that aims to facilitate the ADMET analysis of molecules resulting from pharmacophore research.
+Author: Julio Cesar Xavier
+Author-email: jcaxavier2@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: XlsxWriter (>=3.2.0,<4.0.0)
+Requires-Dist: numpy (==1.26.4)
+Requires-Dist: openpyxl (>=3.1.5,<4.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: rdkit (>=2023.9.3,<2024.0.0)
+Requires-Dist: selenium (>=4.23.1,<5.0.0)
+Requires-Dist: webdriver-manager (>=4.0.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+# ADMETSCORE
+
+## summary
+- [Installation](#Installation)
+- [Usage](#Usage)
+  - [COMMANDS](#COMMANDS)
+  - [OPTIONS](#OPTIONS)
+
+## Installation
+
+Go to the pip_install folder and download the .whl file with the latest version. The file will have the following name, changing only the version part: admetscore-version-py3-none-any.whl.
+For further explanations this [folder](https://drive.google.com/drive/folders/15bk7o-0kES7QtORbMgVqBEI7S-RQ4V-x) contains the manual.
+
+## Usage
+Admetscore is a software that automates the comparison of ADMET analyses between molecules. It accepts molecules in .sdf files and performs analyses on ADMETlab 3.0, assigning scores from 0 to 10 for ADMET properties based on the site's classification. The tool ranks the molecules by their overall score and generates a spreadsheet with IDs, SMILES, scores, and ADMET details, using colors to indicate the quality of the analyzed parameters, making the results easier to interpret.
+
+### COMMANDS
+
+```bash
+admetscore --search [search for sdf files in the current directory] [OPTIONS]
+```
+
+```bash
+admetscore -i [PATH TO THE SDF] [OPTIONS] 
+```
+
+```bash
+admetscore split -i [PATH TO THE SDF] [OPTIONS] 
+```
+
+```bash
+admetscore evaluate -i [PATH TO THE CSV FILE] -s [PATH TO THE SDF] [OPTIONS]
+```
+
+### OPTIONS
+- `-n, --batch_number`: Use this parameter to specify the number of molecules in each partition. By default, the tool will create partitions with 299 molecules.
+- `-ps, --pharmit_score_docking:`Use this parameter to partition the sdf from the specified docking score. This will reduce the number of partitions created, since by default the entire SDF file is partitioned.
+- `-t, --best_hits_number`: Specify the number of top-scoring molecules you want to view. The spreadsheet will be non-cumulative and a separate file will be created in the score folder. By default, a spreadsheet is created with the 50 best results.
+
+
+## Change logs
+
+
+* Version 1.0.1 - Release Date: 10/09/2024
+
+  --- Key Features ---
+  
+Evaluate module: The possibility of running the evaluate module without the sdf file.
+
+Spreadsheet: Creation of a new column called match, this column says which method was used to merge the information from the SDF file with the CSV file coming from AdmetLab.
+
+* Version 1.0.0 - Release Date: 02/09/2024
+
+  --- Key Features ---
+
+SDF Files: Import of SDF format files for molecule analysis.
+
+ADMET Analysis: Perform ADMET analysis for multiple molecules using the ADMETlab 3.0 site.
+
+Spreadsheet: Generate spreadsheets with molecule IDs, performance scores, detailed ADMET parameters, and molecule rankings.
+Color Visualization: Implemented color-coding system to highlight the quality of ADMET parameters in the spreadsheets.
+
+Documentation and Help: Basic documentation included, with help texts for each parameter.
+
