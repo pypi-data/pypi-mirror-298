@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+nimble_data/main.py
+nimble_data.egg-info/PKG-INFO
+nimble_data.egg-info/SOURCES.txt
+nimble_data.egg-info/dependency_links.txt
+nimble_data.egg-info/top_level.txt
