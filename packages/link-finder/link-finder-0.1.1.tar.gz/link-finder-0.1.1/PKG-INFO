@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: link-finder
+Version: 0.1.1
+Summary: A tool to crawl websites and gather all valid Internal URLs.
+Home-page: https://github.com/josephvore/link-finder
+Author: Joseph Vore
+Author-email: joseph@connectmodern.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
