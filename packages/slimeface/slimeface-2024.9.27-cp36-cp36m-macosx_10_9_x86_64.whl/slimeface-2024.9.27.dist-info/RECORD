@@ -1,0 +1,10 @@
+slimeface/__init__.py,sha256=8kcROub5PJRnd2PC1ZzFI3ffLLRMsxX2I6Dd3UBAnPg,529
+slimeface/libfacedetection.v0.0.3.dylib,sha256=Ksv97EV1xMdo3VpGGJCuMOshxppnjbQsNBgzQ-AJSMM,295008
+slimeface/slimeface.cpython-36m-darwin.so,sha256=JGz5uL9uBhTMx0HCOsngDtMt8GgMcbP-gnI5-LyLIJg,161488
+slimeface/libfacedetection.dylib,sha256=Ksv97EV1xMdo3VpGGJCuMOshxppnjbQsNBgzQ-AJSMM,295008
+slimeface/.dylibs/libfacedetection.v0.0.3.dylib,sha256=dMINC8KsjSVlNaV1VIXjNSNG9bQUIW62g3nNQ_0KSJU,317200
+slimeface-2024.9.27.dist-info/RECORD,,
+slimeface-2024.9.27.dist-info/LICENSE,sha256=wGfrgLwwnNAUUHSG1OCzsZXaCPEkt8e8VM-W2H9pEYA,1803
+slimeface-2024.9.27.dist-info/WHEEL,sha256=ye8A2lA8pjGNe7-ueOpggarJAhczq3EZGqnLZzzfQYQ,110
+slimeface-2024.9.27.dist-info/top_level.txt,sha256=h9yFR-E8BtzINL76I7IqvWUhTStGzHTFII8pkfMIdms,10
+slimeface-2024.9.27.dist-info/METADATA,sha256=qxVcKKzM6hr_TLd6Gt4BbkD8hcaMIh2G0S6xADkl2kQ,2877
