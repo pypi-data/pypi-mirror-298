@@ -1,0 +1,12 @@
+grdp
+setup.py
+grdpcli/.version
+grdpcli/__init__.py
+grdpcli/cmd_exec.py
+grdpcli/help_content.py
+grdpcli/variables.py
+kpischanskyi.egg-info/PKG-INFO
+kpischanskyi.egg-info/SOURCES.txt
+kpischanskyi.egg-info/dependency_links.txt
+kpischanskyi.egg-info/requires.txt
+kpischanskyi.egg-info/top_level.txt
