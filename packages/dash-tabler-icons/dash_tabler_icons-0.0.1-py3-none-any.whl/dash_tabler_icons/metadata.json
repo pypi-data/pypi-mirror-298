@@ -1,0 +1,60 @@
+{
+  "src/lib/components/DashTablerIcons.react.js": {
+    "description": "DashTablerIcons is a component that renders the IconAward from @tabler/icons-react.",
+    "displayName": "DashTablerIcons",
+    "methods": [],
+    "props": {
+      "size": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The size of the icon (width and height).",
+        "defaultValue": {
+          "value": "24",
+          "computed": false
+        }
+      },
+      "color": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The color of the icon (stroke color).",
+        "defaultValue": {
+          "value": "'black'",
+          "computed": false
+        }
+      },
+      "stroke": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The stroke width of the icon.",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "strokeLinejoin": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The stroke line join of the icon.",
+        "defaultValue": {
+          "value": "'miter'",
+          "computed": false
+        }
+      },
+      "icon": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The name of the icon to render."
+      }
+    }
+  }
+}
