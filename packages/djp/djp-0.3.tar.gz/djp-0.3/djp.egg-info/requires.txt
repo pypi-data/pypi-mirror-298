@@ -1,0 +1,9 @@
+django
+pluggy
+
+[test]
+pytest
+pytest-django
+pytest-env
+pytest-asyncio
+httpx
