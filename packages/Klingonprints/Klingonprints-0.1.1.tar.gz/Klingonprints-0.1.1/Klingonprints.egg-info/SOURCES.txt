@@ -1,0 +1,9 @@
+setup.py
+Klingonprints/Theme.py
+Klingonprints/Translate.py
+Klingonprints/__init__.py
+Klingonprints.egg-info/PKG-INFO
+Klingonprints.egg-info/SOURCES.txt
+Klingonprints.egg-info/dependency_links.txt
+Klingonprints.egg-info/requires.txt
+Klingonprints.egg-info/top_level.txt
