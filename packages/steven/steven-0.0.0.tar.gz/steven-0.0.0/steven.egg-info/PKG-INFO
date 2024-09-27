@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: steven
+Version: 0.0.0
+Author: Michael Peter Dunne
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+# Steven
+
+Steven (Sample Things EVENly) helps you sample your data in nice easy ways, evenly across the range of the data!
