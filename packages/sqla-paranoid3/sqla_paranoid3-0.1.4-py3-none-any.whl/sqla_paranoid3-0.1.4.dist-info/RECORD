@@ -1,0 +1,8 @@
+paranoid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paranoid/flask.py,sha256=6KpxKPgLB_aYpD_Nk00pa09UaRC3YPvlaVZhcPdfrIY,744
+paranoid/models.py,sha256=nlVWsY9fSRsQmqjoij_dJBmPRQfCSGQuIKesuWvxMDY,5910
+paranoid/tests.py,sha256=JDDycN0dKBOCXua1UTMUJHyz-tFHk5Qs3h9UWs9qq74,4865
+sqla_paranoid3-0.1.4.dist-info/METADATA,sha256=OnxgIzKcnQKOv4ozCvfyQ65xeL95Fm6dUhri37lZ0VE,2184
+sqla_paranoid3-0.1.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+sqla_paranoid3-0.1.4.dist-info/top_level.txt,sha256=aiIsyFSXp9iGG-VHFCvyxn7UpJ0EdwYOkdA4BmOjPE8,9
+sqla_paranoid3-0.1.4.dist-info/RECORD,,
