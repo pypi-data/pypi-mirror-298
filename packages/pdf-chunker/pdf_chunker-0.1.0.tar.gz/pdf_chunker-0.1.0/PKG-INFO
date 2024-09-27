@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pdf_chunker
+Version: 0.1.0
+Summary: A Python library for splitting PDF files into smaller chunks
+Home-page: https://github.com/yourusername/pdf_chunker
+Author: Your Name
+Author-email: youremail@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PDF Chunker
+
+PDF Chunker is a Python library that allows you to split PDF files into smaller chunks, based on the number of pages.
+
+## Installation
+
+```bash
+pip install pdf_chunker

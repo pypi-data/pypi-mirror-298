@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pdf_chunker/__init__.py
+pdf_chunker/chunker.py
+pdf_chunker.egg-info/PKG-INFO
+pdf_chunker.egg-info/SOURCES.txt
+pdf_chunker.egg-info/dependency_links.txt
+pdf_chunker.egg-info/requires.txt
+pdf_chunker.egg-info/top_level.txt
