@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+set -x # print executed commands to the terminal
+
+uv run pytest --ignore venv --cov=mangum --cov=tests --cov-fail-under=100 --cov-report=term-missing "${@}"
