@@ -1,0 +1,6 @@
+python-docx
+openpyxl
+gtts
+requests
+time
+psutil
