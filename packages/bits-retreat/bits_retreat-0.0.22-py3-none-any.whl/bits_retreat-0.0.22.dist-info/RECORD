@@ -1,0 +1,13 @@
+bits/__init__.py,sha256=EtOD91ivU_kXxRA8lopap-Ihis3DvCkFVpiaQIdypM4,89
+bits/retreat/__init__.py,sha256=ZmUAVsLgfWz8B5Wv9VpqLdTFQXfhCnzIttTSApuNY5w,1906
+bits/retreat/firestore.py,sha256=U01WnGf8bOSvMi2rdjvjHBcdyRloS8lR0h-un9LsGZk,3268
+bits/retreat/hopin.py,sha256=HAJs1IfLQ6kq0-vt148PMt0qIn18F8OkJnyqY1Fl2-0,3875
+bits/retreat/pathable.py,sha256=kGkgAXETIs0ipVeeycKjNEyGMwo0yRDI_r4-0mc3Tuc,6930
+bits/retreat/registrant.py,sha256=739Tf1kWAvy3rIObRrhKoVFdofeSJJo0kIeIIYbCQJ0,7105
+bits/retreat/sendgrid.py,sha256=Uyrfi_1VhTFIr4w_FBuBK_cJsZlJm7JVNFDqqFBF4RI,1488
+bits/retreat/slack.py,sha256=B0dqsDFCXjeSuFzBJlzyoITFf-XJ9s1p366RFEJ0xRQ,158
+bits/retreat/swoogo.py,sha256=E0jTfwISc9DkziBWmcHPXsO0p0yKer-85aYblVBpsXQ,6036
+bits_retreat-0.0.22.dist-info/METADATA,sha256=KtokfV0kkgp7j8TOsHazz7XCZZHw4_PgB8em4cRuAOE,267
+bits_retreat-0.0.22.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+bits_retreat-0.0.22.dist-info/top_level.txt,sha256=r0CPtEdvhPhtNI1RzFMKlSds-wmUFadHdR_o8lZNEOg,5
+bits_retreat-0.0.22.dist-info/RECORD,,
