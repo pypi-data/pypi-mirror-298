@@ -1,0 +1,10 @@
+xfist/__init__.py,sha256=7_6npK0sxDIKH6tN_smIbbXAhM9jYSW_WhGpC27GjCo,398
+xfist/types.py,sha256=qXQGnsdnn67x5NTjtADwLrjMT1xTkur6cQ9hWhwW7Eg,128
+xfist/objects/__init__.py,sha256=Vifp-RT7XUJnz6IiO4FJsAfKPxK6mX_J3TgUE9Laf6I,27
+xfist/objects/base.py,sha256=BMMp4Pfunehw8AcBySBKioxM0SoLNjCprak586ernoQ,222
+xfist/objects/dir.py,sha256=dub4y0ybVIFGsEFUR3_JHXF3PDigPw6EnB62qb5dzZI,134
+xfist/objects/file.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xfist/struct/__init__.py,sha256=26QvtKxO_Y10q-p1raCk0j0s7mSqwD-ys_fS_DT9lPE,164
+xfist-0.0.0.dev0.dist-info/METADATA,sha256=iUfXwnWe-UAOT8ezKHZeYNuuCXDOD223wAuZz3sabbw,1159
+xfist-0.0.0.dev0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+xfist-0.0.0.dev0.dist-info/RECORD,,
