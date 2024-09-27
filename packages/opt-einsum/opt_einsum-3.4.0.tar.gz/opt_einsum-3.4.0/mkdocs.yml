@@ -1,0 +1,105 @@
+site_name: Optimized Einsum
+repo_url: https://github.com/dgasmith/opt_einsum
+repo_name: dgasmith/opt_einsum
+theme:
+  name: material
+  features:
+    - navigation.instant
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+
+plugins:
+  - search
+  - awesome-pages
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          # paths: [opt_einsum]
+          options:
+            docstring_style: google
+          docstring_options:
+            ignore_init_summary: true
+          docstring_section_style: list
+          filters: ["!^_"]
+          heading_level: 1
+          inherited_members: true
+          merge_init_into_class: true
+          parameter_headings: true
+          preload_modules: [mkdocstrings]
+          separate_signature: true
+          show_root_heading: true
+          show_root_full_path: false
+          show_signature_annotations: true
+          show_source: false
+          show_symbol_type_heading: true
+          show_symbol_type_toc: true
+          signature_crossrefs: true
+          summary: true
+          unwrap_annotated: true
+
+extra_javascript:
+  - javascript/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - css/custom.css
+
+markdown_extensions:
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown_include.include:
+      base_path: docs
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - codehilite
+  - extra
+  - pymdownx.extra
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      toc_depth: 2
+
+nav:
+  - Overview: index.md
+  - Getting Started:
+    - Installing: getting_started/install.md
+    - Input Format: getting_started/input_format.md
+    - "Backends & GPU Support": getting_started/backends.md
+    - Reusing Paths: getting_started/reusing_paths.md
+    - Sharing Intermediates: getting_started/sharing_intermediates.md
+  - Path Information:
+    - Introduction: paths/introduction.md
+    - Optimal Path: paths/optimal_path.md
+    - Branching Path: paths/branching_path.md
+    - Greedy Path: paths/greedy_path.md
+    - Random-Greedy Path: paths/random_greedy_path.md
+    - Dynamic Programming Path: paths/dp_path.md
+    - Custom Path Optimizers: paths/custom_paths.md
+  - Examples:
+    - Reusing Intermediaries with Dask: examples/dask_reusing_intermediaries.md
+    - Large Expressions with Greedy: examples/large_expr_with_greedy.md
+  - API Reference: api_reference.md
+  - Changelog: changelog.md
