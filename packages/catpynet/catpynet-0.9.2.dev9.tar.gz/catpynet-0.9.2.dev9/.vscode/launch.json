@@ -1,0 +1,110 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+
+        {
+            "name": "Max Caf Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "-c", "max caf",
+                "-i", "G:\\Github\\BA-Jan\\test_results\\test_reactions.crs",
+                "-o", "G:\\Github\\BA-Jan\\test_results\\test_reactions_max_caf.crs",
+                "-of", ".crs",
+                "-an", "USES_EQUALS",
+                "-rn", "TABBED",
+                "-ow", "True"
+            ]
+        },
+        {
+            "name": "Core Raf Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "-c", "core raf",
+                "-i", "G:\\Github\\BA-Jan\\test_results\\test_reactions.crs",
+                "-o", "G:\\Github\\BA-Jan\\test_results\\test_reactions_core_raf.crs",
+                "-of", ".crs",
+                "-an", "USES_EQUALS",
+                "-rn", "TABBED",
+                "-ow", "True"
+            ]
+        },
+        {
+            "name": "Max Raf Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "-c", "max raf",
+                "-i", "G:\\Github\\BA-Jan\\test_files\\",
+                "-o", "G:\\Github\\BA-Jan\\test_results.crs",
+                "-of", ".crs",
+                "-an", "USES_EQUALS",
+                "-rn", "TABBED",
+                "-ow", "True"
+            ]
+        },
+        {
+            "name": "MinIRAF Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "-c", "iRAF",
+                "-i", "G:\\Github\\BA-Jan\\test_results\\test_reactions.crs",
+                "-o", "G:\\Github\\BA-Jan\\test_results\\test_reactions_min_irr_raf.crs",
+                "-of", ".crs",
+                "-an", "USES_EQUALS",
+                "-rn", "TABBED",
+                "-ow", "True",
+                "-r", "100"
+            ]
+        },
+        {
+            "name": "MinRAF Generating Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "-c", "Min RAF Generating Element",
+                "-c", "iRAF",
+                "-i", "G:\\Github\\BA-Jan\\test_results\\test_reactions.crs",
+                "-o", "G:\\Github\\BA-Jan\\test_results\\test_reactions_min_raf_gen.crs",
+                "-of", ".crs",
+                "-an", "USES_EQUALS",
+                "-rn", "TABBED",
+                "-ow", "True",
+                "-t", "C00041",
+                "-r", "100"
+            ]
+        },
+        {
+            "name": "Polymer Debugger Ranges: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "-a", "2",
+                "-k", "2",
+                "-n", "3",
+                "-m", "1.0",
+                "-r", "1",
+                "-f", "pm_a#a_k#k_n#n_m#m_r#r.crs",
+                "-rn", "TABBED"
+            ]
+        }
+    ]
+}
