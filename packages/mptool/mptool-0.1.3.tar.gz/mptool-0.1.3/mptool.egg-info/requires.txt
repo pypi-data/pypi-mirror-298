@@ -1,0 +1,5 @@
+cobra>=0.17.1
+gurobipy>=9.1.0
+networkx>=2.4
+numpy>=1.18.1
+pytest>=4.6.9
