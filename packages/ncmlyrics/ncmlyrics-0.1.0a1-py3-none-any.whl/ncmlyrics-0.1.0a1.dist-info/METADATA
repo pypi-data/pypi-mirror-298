@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: ncmlyrics
+Version: 0.1.0a1
+Project-URL: Homepage, https://github.com/Puqns67/ncmlyrics
+Project-URL: Issues, https://github.com/Puqns67/ncmlyrics/issues
+Author-email: Puqns67 <me@puqns67.icu>
+License: GPL-3.0-or-later
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Requires-Dist: brotli>=1.1.0
+Requires-Dist: click>=8.1.7
+Requires-Dist: h2>=4.1.0
+Requires-Dist: httpx>=0.27.2
+Requires-Dist: platformdirs>=4.3.6
+Requires-Dist: rich>=13.8.1
+Requires-Dist: zstandard>=0.23.0
+Description-Content-Type: text/markdown
+
+# ncmlyrics

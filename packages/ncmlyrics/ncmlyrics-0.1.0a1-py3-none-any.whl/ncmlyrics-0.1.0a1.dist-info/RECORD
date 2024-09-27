@@ -1,0 +1,11 @@
+ncmlyrics/__init__.py,sha256=CTW3OJrkaSoA8KfP3RtPQljFrXmYhv5O1uax2kCixKE,76
+ncmlyrics/__main__.py,sha256=A6ifAly4xTqKeklJCJDzwKMG2B4RywDO8N0J_DpMICY,5126
+ncmlyrics/api.py,sha256=qx2j_PdVOQ5rt6yl_G8bkyGxCbojBunJJ1ghIkdCLP8,7305
+ncmlyrics/constant.py,sha256=nvsLKGnkrgYQtWYSBHKXYScCl2tWS-jSU7JHZGzkzuA,341
+ncmlyrics/error.py,sha256=qcOFH87JKShW1IpHClKMyGyrURyPgkCvLD8H2mncnVw,658
+ncmlyrics/lrc.py,sha256=Iul-Oc6Fpa8s4D5g3mrdnf67Dag3e0uw-f2RmJ9uRw0,5398
+ncmlyrics/util.py,sha256=I59P7WEv2FogQcHiwcNY777C62VIBmi5zF4MESVsovo,4012
+ncmlyrics-0.1.0a1.dist-info/METADATA,sha256=w0sMh2no6-Ez97xdXhEJYrgInJUzb45IC6FEWySEM04,919
+ncmlyrics-0.1.0a1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+ncmlyrics-0.1.0a1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ncmlyrics-0.1.0a1.dist-info/RECORD,,
