@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/binarychain.py
+src/binarychain.egg-info/PKG-INFO
+src/binarychain.egg-info/SOURCES.txt
+src/binarychain.egg-info/dependency_links.txt
+src/binarychain.egg-info/requires.txt
+src/binarychain.egg-info/top_level.txt
+tests/test_binarychain.py
