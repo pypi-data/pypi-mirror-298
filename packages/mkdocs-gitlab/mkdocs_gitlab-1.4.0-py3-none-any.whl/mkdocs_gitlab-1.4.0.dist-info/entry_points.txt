@@ -1,0 +1,8 @@
+[markdown.extensions]
+gitlab=mkdocs_gitlab.markdown:TOCExtension
+mkdocs-gitlab=mkdocs_gitlab.markdown:TOCExtension
+
+[mkdocs.plugins]
+gitlab=mkdocs_gitlab.plugin:MkDocsGitlabPlugin
+mkdocs-gitlab=mkdocs_gitlab.plugin:MkDocsGitlabPlugin
+

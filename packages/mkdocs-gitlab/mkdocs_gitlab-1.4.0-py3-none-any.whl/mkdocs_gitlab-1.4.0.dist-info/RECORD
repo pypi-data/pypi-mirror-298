@@ -1,0 +1,9 @@
+mkdocs_gitlab/__init__.py,sha256=8UhoYEXHs1Oai7BW_ExBmuwWnRI-yMG_u1fQAXMizHQ,22
+mkdocs_gitlab/markdown.py,sha256=DHATDsL9ubzA10z0djslwyrlCiYCv7y64NH8HOtjrRQ,785
+mkdocs_gitlab/plugin.py,sha256=zHLMPYEC3RraziH5RXH0aj0rsHsLkOxjX7MijaJg6J8,1703
+mkdocs_gitlab/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocs_gitlab-1.4.0.dist-info/LICENSE,sha256=UDFIQQFQ8ZCm4ivf_U4uw0uag4cdIBU9AKP-dFnS4Hw,1092
+mkdocs_gitlab-1.4.0.dist-info/METADATA,sha256=BniNQShvbiY1eqc-HghIsEruADqIk2qtxywBF9BqasM,1681
+mkdocs_gitlab-1.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mkdocs_gitlab-1.4.0.dist-info/entry_points.txt,sha256=eoLjaSoaX0tYbIoFpnuukZx6ZW1qUDgpFEL6vqAHItk,235
+mkdocs_gitlab-1.4.0.dist-info/RECORD,,
