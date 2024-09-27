@@ -1,0 +1,6 @@
+pytest
+transformers
+Pillow
+assure
+mmry
+embd
