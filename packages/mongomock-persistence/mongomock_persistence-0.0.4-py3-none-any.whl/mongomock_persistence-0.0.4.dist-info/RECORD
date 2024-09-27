@@ -1,0 +1,8 @@
+mongomock_persistence/__init__.py,sha256=lL6jqsGK3lQ93mSbf4sIOiaRJG0F8PaoneOaddAhfHQ,96
+mongomock_persistence/database.py,sha256=txH1OokbI-AgnqQr461gos9ip3-vgqx5smobYmXukZs,1030
+mongomock_persistence/store.py,sha256=NGYLdfs03Bodsas16Ekes4FAd4iTx3IrJynDU3n6CMw,2529
+mongomock_persistence-0.0.4.dist-info/LICENSE,sha256=0ffnmlHk7855FOWJf3evAyKWjN817awYjip8MJ52lrQ,1498
+mongomock_persistence-0.0.4.dist-info/METADATA,sha256=CuXfUxT2QR52XKCL3GuS3l6Mr9ghUpa-9Z3V-WXirqw,3691
+mongomock_persistence-0.0.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+mongomock_persistence-0.0.4.dist-info/top_level.txt,sha256=WbnfBcLln9ceaAC6UydTYmpOqxd4B1mRS-1gj0hLk98,22
+mongomock_persistence-0.0.4.dist-info/RECORD,,
