@@ -1,0 +1,14 @@
+anyqt
+numpy
+Blauwal3>=3.38.3
+scikit-learn
+scipy
+pyqtgraph
+
+[doc]
+sphinx
+recommonmark
+sphinx_rtd_theme
+
+[test]
+coverage

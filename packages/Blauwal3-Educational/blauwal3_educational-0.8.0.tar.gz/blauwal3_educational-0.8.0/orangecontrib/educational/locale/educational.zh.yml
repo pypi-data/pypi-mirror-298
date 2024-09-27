@@ -1,0 +1,231 @@
+zh:
+  package_label: "教学模式"
+  package_desc: "教学模式"
+
+  common:
+    data: "数据"
+    model: "模型"
+    coefficient: "系数"
+    annotated_data: "注释数据"
+    centroid: "质心"
+    learner: "学习者"
+
+  ow1ka:
+    name: "EnKlik Anketa"
+    desc: "从EnKlikAnketa导入数据 (1ka.si) 公共URL。"
+    dialog: "您可以将数据从公共链接导入1ka调查结果。单击此处了解有关如何获取您管理的1ka调查的可共享公共链接URL的更多信息。"
+    box_import_data: "导入数据"
+    tooltip_format: "格式："
+    row_public_link_url: "公共链接URL："
+    row_reload_every: "每隔多久重新加载："
+    box_column: "列（双击编辑）"
+    box_info: "信息"
+    btn_commit: "提交"
+    row_no_spreadsheet_load: "未加载电子表格。"
+    msg:
+      cannot_load_data: "无法加载数据：{}。请检查网络连接和防火墙…"
+      cannot_parse_data: "无法分析数据：{}。确保数据格式正确或提交错误报告。"
+      invalid_url: "无效URL。公共共享链接应匹配："
+      need_data_public_link: "提供的URL是到“分析”的公共链接。需要到“数据”的公共链接。"
+      response_data_empty: "响应数据为空。先得到一些相应。"
+    gbox:
+      no_reload: "不重新加载"
+      5s: "5秒"
+      10s: "10秒"
+      30s: "30秒"
+      1min: "1分钟"
+      2min: "2分钟"
+      5min: "5分钟"
+    text:
+      cannot_load_data: "无法从数据加载：%s"
+      parsing_error: "分析错误：%s"
+      data_instruction: "{}\n\n{}实例，{}特征，{}元属性\n"
+      data_entry: "\n首次进入：{} \n最后一次进入：{}"
+
+  owcreatetable:
+    name: "创建表"
+    msg:
+      transform_err: "数据不适合域"
+    box:
+      control: "设置"
+    label:
+      rows: "行:"
+      columns: "列："
+
+  owgooglesheets:
+    name: "谷歌工作表"
+    desc: "从谷歌工作表电子表格读取数据。"
+    box_google_sheet: "谷歌工作表"
+    tooltip_format: "格式："
+    row_url: "URL:"
+    row_reload_every: "每隔多久重新加载："
+    box_info: "信息"
+    btn_commit: "提交"
+    msg_cannot_load_spreadsheet: "无法加载电子表格：{}。确保正确的访问权限；矩形，左上对齐的工作表数据…"
+    row_no_spreadsheet_load: "未加载电子表格。"
+    text:
+      cannot_load_data: "无法从%s加载数据"
+      data_instruction: "{}\n\n{}实例，{}特征，{}元属性\n"
+      data_entry: "\n首次进入：{} \n最后一次进入：{}"
+    gbox:
+      no_reload: "不重新加载"
+      5s: "5秒"
+      10s: "10秒"
+      30s: "30秒"
+      1min: "1分钟"
+      2min: "2分钟"
+      5min: "5分钟"
+
+  owgradientdescent:
+    name: "梯度下降"
+    desc: "逻辑回归或线性回归中梯度下降的证明。"
+    btn:
+      run: "运行"
+      stop: "停止"
+      restart: "重新开始"
+      step: "下一步"
+      step_back: "上一步"
+    msg:
+      no_class: "数据必须有一个单一类属性"
+      num_features: "数据必须至少包含{}。"
+      no_class_values: "目标变量必须至少有两个值。"
+      no_nonnan_data: "没有定义值的点。"
+      same_variable: "选择两个不同的变量。"
+    box:
+      property: "属性"
+      variables: "变量"
+    row:
+      stochastic_descent: "随机下降"
+      learn_rate: "学习率："
+      step_size: "步长："
+      target: "目标："
+    caption:
+      cost: "<b>损失：{:.3f}</b>"
+      cost_xy: "{:.3f}, {:.3f}<br/>损失：{:.5f}"
+      cost_step: "<b>第 {} 步：</b><br/>{:.3f}, {:.3f}<br/>损失：{:.5f}"
+      target_class: "目标类"
+      learn_rate: "学习率"
+      stochastic: "随机"
+      stochastic_step_size: "随机步长"
+
+  owkmeans:
+    name: "交互式k-Means"
+    desc: "组件演示k-means算法的过程。"
+    msg:
+      num_features: "数据必须至少包含两个数值变量."
+      no_nonnan_data: "没有定义值的点."
+    btn:
+      reassign_membership: "重新指派成员"
+      recompute_centroid: "重新计算质心"
+      stop: "停止"
+      run_simulation: "运行模拟"
+      randomize: "随机化"
+      step_back: "后退一步"
+    label:
+      variables: "变量:"
+      tip: "拖动质心来移动质心的位置，单击质心对质心进行添加或者删除操作"
+
+  owpiecharts:
+    name: "饼图"
+    desc: "了解饼图在哪些情况下是不适用于数据分析工作的."
+    box_split: "拆分依据"
+    checkbox_explode_pie: "分离饼图"
+    row_widget_demonstrate_pie_chart: "推荐使用“可视化”模块中信息量\n更丰富的可视化图表，如分布图\n、马赛克图等。"
+    placeholder_none: "无"
+
+  owpolynomialclassification:
+    name: "多项式分类"
+    desc: "该组件演示了用属性的多项式展开分为两个变量。"
+    box:
+      var: "变量"
+    checkbox:
+      show_legend: "显示图例"
+      show_contour: "显示等高线"
+    msg:
+      num_features: "数据必须至少包含两个数值变量。"
+      no_class: "数据必须具有单个目标属性。"
+      no_nonnan_data: "没有定义值的点。"
+      same_variable: "选择两个不同的变量。"
+      others: "其他"
+    row:
+      x: "X："
+      y: "Y："
+      target: "目标："
+      polynomial_expansion: "多项式展开："
+      contour_step: "轮廓步骤："
+    report:
+      polynomial_expansion: "多项式展开{}模型"
+
+  owpolynomialregression:
+    name: "多项式回归"
+    desc: "多项式展开的一元回归。"
+    placeholder_name: "多项式回归"
+    msg:
+      all_none: "所有行都有未定义的数据。"
+      no_cont_variables: "回归至少需要两个数值变量。"
+      same_dep_indepvar: "因变量和自变量必须不同。"
+    box:
+      predictor: "预测期"
+      target: "目标"
+      info: "信息"
+    label:
+      polynomial_degree: "多项式次数: "
+      fit_intercept: "拟合截距"
+      error_bars: "显示误差线"
+    row:
+      regressor: "回归因子：%(regressor_name).30s"
+      mean_absolute_error: "平均绝对误差：%(mae).6s"
+      root_mean_square_error: "均方根误差：%(rmse).6s"
+      linear_regression: "线性回归"
+    tip:
+      fit_intercept: "添加截距项；\n 如果模型是在输入上定义的，则始终检查此项."
+    report:
+      polynomial_expansion: "多项式展开:"
+      fit_intercept: "拟合截距"
+
+  owrandomdata:
+    name: "随机数据"
+    desc: "生成随机数据样本"
+    msg_sample_error_check_argument: "采样时出错。检查分布参数。"
+    btn_add_var: "添加更多变量…"
+    btn_generate: "生成"
+    row:
+      var: "变量"
+      name_prefix: "名称前缀"
+      probability: "概率"
+      low_bound: "下限"
+      high_bound: "上限"
+      num_of_value: "值的数量"
+      probabilities: "概率"
+      num_of_trial: "实验次数"
+      num_of_object: "对象个数"
+      num_of_positive: "正数数量"
+      mean_x: "均值x"
+      variance_x: "方差x"
+      mean_y: "均值y"
+      variance_y: "方差y"
+      covariance: "协方差"
+      mean: "均值"
+      variance: "方差"
+      standard: "标准差"
+      probability_of_success: "成功概率"
+      num_of_success: "成功次数"
+      event_rate: "事件率(λ)"
+      shape: "形状(α)"
+      scale: "刻度"
+      degree_of_freedom: "自由度"
+      sample_size: "样本大小"
+    box:
+      bernoulli_distribution: "伯努利分布"
+      uniform_distribution: "均匀分布"
+      discrete_uniform_distribution: "离散均匀分布"
+      multinomial_distribution: "多项式分布"
+      hypergeometric_distribution: "超几何分布"
+      bivariate_normal_distribution: "二元正态分布"
+      normal_distribution: "正态分布"
+      binomial_distribution: "二项分布"
+      negative_binomial_distribution: "负二项分布"
+      poisson_distribution: "泊松分布"
+      exponential_distribution: "指数分布"
+      gamma_distribution: "γ分布"
+      student_distribution: "学生t分布"
