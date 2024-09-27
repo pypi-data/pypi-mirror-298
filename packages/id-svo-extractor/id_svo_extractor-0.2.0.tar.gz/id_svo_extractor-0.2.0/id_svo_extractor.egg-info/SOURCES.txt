@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+id_svo_extractor/__init__.py
+id_svo_extractor/pipeline.py
+id_svo_extractor/svo_extractor.py
+id_svo_extractor/utils.py
+id_svo_extractor.egg-info/PKG-INFO
+id_svo_extractor.egg-info/SOURCES.txt
+id_svo_extractor.egg-info/dependency_links.txt
+id_svo_extractor.egg-info/requires.txt
+id_svo_extractor.egg-info/top_level.txt
