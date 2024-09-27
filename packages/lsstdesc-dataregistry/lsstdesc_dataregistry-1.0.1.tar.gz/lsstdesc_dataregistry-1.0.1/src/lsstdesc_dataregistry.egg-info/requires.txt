@@ -1,0 +1,7 @@
+psycopg2
+sqlalchemy>=2.0.16
+pyyaml
+pandas
+
+[docs]
+sphinx_rtd_theme
