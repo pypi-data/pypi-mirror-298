@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: kskimtestmodule3
+Version: 0.0.3
+Summary: A simple Python library for test spark in zeppelin
+Author: kisun3.kim
+License-File: LICENSE
+
