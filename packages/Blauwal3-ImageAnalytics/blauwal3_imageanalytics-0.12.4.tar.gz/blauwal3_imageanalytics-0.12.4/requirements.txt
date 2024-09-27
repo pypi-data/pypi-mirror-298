@@ -1,0 +1,11 @@
+# change when release >0.7.0 of hyper will be available
+numpy>=1.26.*
+Blauwal3-widget-base
+Blauwal3>=3.38.0
+pillow>=10.4.0
+requests
+cachecontrol
+lockfile
+ndf>=0.1.4
+scipy
+dataclasses; python_version<"3.12"
