@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fb22epubbot"
+version = "0.12"
+description = "Telegram bot for converting FB2 files to EPUB"
+authors = ["Andrew Levin <your.email@example.com>"]
+license = "MIT"
+homepage = "https://github.com/username/fb22epubbot"  # URL вашего проекта
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiogram = "^3.0.0"
+aiofiles = "^23.1.0"
+python-dotenv = "^1.0.0"
+python-slugify = "^8.0.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.0"
+
+[tool.poetry.scripts]
+fb22epubbot = "fb22epubbot.bot:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
