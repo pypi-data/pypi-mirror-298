@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+my_package/__init__.py
+veron_package_2312.egg-info/PKG-INFO
+veron_package_2312.egg-info/SOURCES.txt
+veron_package_2312.egg-info/dependency_links.txt
+veron_package_2312.egg-info/top_level.txt
