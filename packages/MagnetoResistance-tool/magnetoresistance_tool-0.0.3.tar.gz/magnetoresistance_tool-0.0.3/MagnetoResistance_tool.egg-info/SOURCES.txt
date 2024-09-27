@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+MRcalib/__init__.py
+MRcalib/__main__.py
+MagnetoResistance_tool.egg-info/PKG-INFO
+MagnetoResistance_tool.egg-info/SOURCES.txt
+MagnetoResistance_tool.egg-info/dependency_links.txt
+MagnetoResistance_tool.egg-info/entry_points.txt
+MagnetoResistance_tool.egg-info/requires.txt
+MagnetoResistance_tool.egg-info/top_level.txt
