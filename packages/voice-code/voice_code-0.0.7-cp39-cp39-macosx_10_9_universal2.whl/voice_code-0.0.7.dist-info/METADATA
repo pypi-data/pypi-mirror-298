@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: voice-code
+Version: 0.0.7
+Summary: voice_code project
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography (>=42.0.5)
+Requires-Dist: pyaudio (>=0.2.14)
+Requires-Dist: openai (>=1.36.1)
+Requires-Dist: vosk (>=0.3.44)
+Requires-Dist: numpy (>=1.15.4)
+Requires-Dist: scipy (>=1.13.1)
+Requires-Dist: send2trash (>=1.8.2)
+Requires-Dist: jsonpickle (>=1.4.1)
+Requires-Dist: python-docx (>=0.8.10)
+Requires-Dist: sounddevice (>=0.4.1)
+Requires-Dist: pyqt6 (>=6.5.2)
+Requires-Dist: setuptools (>=58.1.0)
+Requires-Dist: fastdtw (>=0.3.4)
+Requires-Dist: python-speech-features (>=0.6)
+Requires-Dist: pygments (>=2.17.2)
+Requires-Dist: beautifulsoup4 (>=4.12.3)
+Requires-Dist: metaphone (>=0.6)
+Requires-Dist: qtmodern (>=0.2.0)
+Requires-Dist: Levenshtein (>=0.25.1)
+
+# voice_code Project
+
+voice_code is now only for Python and Mac.
+## Key Advantages:
+If the first input content is a letter, it will automatically enter the letter input state until silence is recognized.So entering letters and entering words are switched through automatic recognition.
+Reading keywords will output the corresponding structure at the same time.
+Use 'switch' command to switch the main operating area. Reused commands have different effects in different operating areas.
+You can conveniently enter the string behind the cursor through the 'import' command.'import' is one of the reuse commands.
+Target selection and cursor movement and word completion by reading numbers updated in real time. You can also use your mouse.
+
+The factors that affect the accuracy of letter recognition include pronunciation accuracy, volume level, and word pronunciation intervals. When you read aloud, your accuracy will significantly improve.
+
+Accurate recognition can be achieved through simple exercises.
+
+## Supported Platforms Now
+
+- **Operating Systems**
+  - macOS
+
+- **Python Versions**
+  - Python 3.9
+
+
+## Installation
+
+```sh
+pip3 install voice_code
+```
+
+## Usage
+
+run 'voice_code' in terminal
+
+## Commands
+
+    'delete' delete
+    'copy' copy words between cursors or add content in the small input widget into canvas.
+    'click' shows right-click menu on the canvas, and the by reading 21-99 to choose the operation.
+    'revert' undo in the small input widget.
+    'setp'   redo in the small input widget.
+    'reset'  clears all content in the small input widget.
+    'beginning' cursor moves to the beginning in the small input widget, if cursor is already at the beginning, it will move to the end.
+    'cursor' records the current cursor position, then you can copy or delete the words between two cursors./Set the current cursor position as the starting point for range selection on the canvas.
+    'finish' completes the editing in the small input widget and change the editing code line on the canvas.
+    'indent' adjusts the indentation, it will delete all indentation if indentation enough.
+    'again'  repeats the last command.
+    'switch' switch between the canvas and the small input widget / if you just read 'quote', " will change to '/if you just read 'zoom', smaller will change to greater.
+    'left'   cursor moves to the left/ view shows left of the canvas.
+    'left'+[1-9] cursor moves to the left 1-9 words more.
+    'and' for multiple selections of code lines on the canvas.
+    'upper' cursor moves up/ view shows upper of the canvas.
+    'lower'  moves down or creates new line in the small input widget if cursor is already in the last line/ view shows lower of the canvas.
+    'zoom' changes size of the canvas, use 'switch' after 'zoom' to switch between bigger state and smaller state.
+    'return' reuse command, execute in priority order:it will exit additional window/ it will exit range selection state/ or it will input 'return' in the small input widget.
+    'correct' writes the current code line into the small input widget for editing and you can wiite more lines after it, and use 'finish' to finish editing.
+    'ask' (API key needed first) asks AI questions in the small input widget and after seconds, the answer will be shown in the small input widget.
+
+Punctuation and numbers
+
+    comma: ','
+    dot: '.'
+    question: '?'
+    unequal: '!='
+    semicolon: ';'
+    separator: ':'
+    quote: '"'
+    parent: '()'
+    bracket: '[]'
+    brace: '{}'
+    slash: '/'
+    underscore: '_'
+    at: '@'
+    note: '#'
+    percent: '%'
+    star: '*'
+    plus: '+'
+    plumb: '+'
+    minus: '-'
+    equal: '='
+    less: '<'
+    greater: '>'
+    pipe: '|'
+    zero: '0'
+    one: '1'
+    two: '2'
+    three: '3'
+    four: '4'
+    five: '5'
+    phi: '5'
+    six: '6'
+    seven: '7'
+    eight: '8'
+    nine: '9'
+## other
+    You can pronounce 'need' to input word 'n'.
+    You can pronounce 'zoo' to input word 'z' and you can also read 'z' directly.
+    You can pronounce the first half of Jack's pronunciation  to input word 'j' and you can also read 'j' directly.
+
+## Features
+
+
+## License
+
+
+
+
+
