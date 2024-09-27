@@ -1,0 +1,64 @@
+# Template Engine V1
+Hello there! Thank you for using the Template Engine. Please review our commercial license for legal use and contact us at support@entinco.com for inquiries and clarification.
+
+### Current Features
+- Create software component skeletons from templates
+    - The Template Engine takes a component template, copies it to a new directory, and performs search & replaces on targeted keywords.
+
+### Installation
+- Install this package from pypi.org using the package installer for Python (Pip) or a suitable alternative.
+```sh
+pip install templateengine
+```
+
+### Usage
+- In the command line / terminal, run the Template Engine with `templateengine` followed by the arguments you need to specify.
+- `--help` is a utility argument that displays the arguments available for usage.
+    - Utility, not meant for execution
+    - Shorthand form: `-h`
+- `--version` is a utility argument that displays the current version of the Template Engine.
+    - Optional, meant for utility
+- `--template` is a required argument that specifies the folder or directory path where the component template is located.
+    - Required, will not run without argument
+    - Shorthand form: `-t`
+- `--output` is a required argument that specifies the folder or directory path where the resulting component will be saved.
+    - Required, will not run without argument
+    - Shorthand form: `-o`
+- `--ignore` is an optional argument that specifies the file name or relative path in the component template directory where a list of ignored keywords can be found. By default, it looks for a .gitignore file in the root directory of the template.
+    - Optional
+    - Default: `.gitignore`
+    - Shorthand form: `-g`
+- `--name` is a repeatable, optional argument that specifies a keyword search and replacement to perform onto the template for the output. The argument must follow a syntax of the old keyword name, followed by the new keyword name, separated by a colon with no whitespace, for the Template Engine to properly replace the names.
+    - Optional but recommended
+    - Can be used multiple times
+    - Shorthand form: `-n`
+    - Syntax: `--name=<old_name>:<new_name>`
+- `--verbose` is an optional argument that includes verbose line output when running in the terminal.
+    - Optional
+    - Shorthand form: `-v`
+- `--quiet` is an optional argument that mutes all output when running in the terminal.
+    - Optional
+    - Overwrites `--verbose`
+    - Shorthand form: `-q`
+- `--version` is an optional argument that show the version of the package.
+    - Optional    
+- We highly recommend writing batch or shell scripts for easier argument inputs and repeatable usage.
+
+### Example
+Here is an example of a Powershell script utilizing the Template Engine.
+
+```sh
+#!/usr/bin/env pwsh
+
+templateengine `
+--template=../../templates/backend/node/service-cruddata-pipservices `
+--output=../../output/service-products-pipservices `
+--name=cruddata:products `
+--name=entity:product `
+--name=entities:products `
+--verbose
+
+```
+
+### Contact
+Please contact us at support@entinco.com for inquiries and clarification.

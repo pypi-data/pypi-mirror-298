@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+templateengine/__init__.py
+templateengine/main.py
+templateengine.egg-info/PKG-INFO
+templateengine.egg-info/SOURCES.txt
+templateengine.egg-info/dependency_links.txt
+templateengine.egg-info/entry_points.txt
+templateengine.egg-info/top_level.txt
+templateengine.egg-info/zip-safe
