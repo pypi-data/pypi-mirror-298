@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: Blauwal3-Fairness
+Version: 1.0.1
+Summary: 蓝鲸的的公平性意识机器学习扩展，需要安装tensorflow和pytorch，占用资源较大，无特殊需要，可不安装。
+Home-page: https://github.com/biolab/orange3-fairness
+Author: Bioinformatics Laboratory, FRI UL
+Author-email: info@biolab.si
+Maintainer: Zan Mervic
+License: GPL3+
+Keywords: orange3 add-on,orange3 fairness
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: Blauwal3
+Requires-Dist: aif360>=0.6.0
+Requires-Dist: aif360[all]
+Requires-Dist: torch<=2.2
+Requires-Dist: torchvision
+Requires-Dist: torchaudio
+Provides-Extra: doc
+Requires-Dist: sphinx; extra == "doc"
+Requires-Dist: sphinx-rtd-theme; extra == "doc"
+Requires-Dist: recommonmark; extra == "doc"
+
+Orange3 Fairness
+================
+
+Orange3 Fairness is an add-on for the [Orange3](http://orangedatamining.com/) data mining suite. 
+It provides extensions for fairness-aware AI, which includes algorithms for detecting and mitigating 
+different types of biases in the data and the predictions of machine learning models. 
+See [documentation](https://orange3-fairness.readthedocs.io/).
+
+Features
+--------
+#### Bias detection
+* detect bias present in the data
+* detect bias present in model predictions
+
+#### Bias mitigation
+* pre-processing, in-processing and post-processing methods for bias mitigation
+

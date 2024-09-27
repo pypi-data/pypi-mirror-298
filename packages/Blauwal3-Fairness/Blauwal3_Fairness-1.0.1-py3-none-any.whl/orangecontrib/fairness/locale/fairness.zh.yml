@@ -1,0 +1,64 @@
+zh:
+  app_name: "公平性"
+  app_desc: "公平性"
+  utils:
+    missing_fairness_attributes: "数据集中不包含公平性属性。 \n使用'作为公平性数据'小部件来添加它们。"
+    missing_values: "数据中检测到缺失值。 \n它们将自动用平均值或最常出现的值填充。"
+    missing_class_variable: "数据集中不包含类变量。 \n公平性指标只能用于包含（分类）类变量的数据集。 \n使用离散化小部件来离散化类变量。"
+    numerical_class_variable: "类变量是数值型的。 \n公平性指标只能用于分类类变量。 \n使用离散化小部件来离散化类变量。"
+    no_categorical_attributes: "数据集中除类变量外不包含任何分类属性。 \n公平性指标只能用于包含分类属性的数据集。 \n使用离散化小部件来离散化一些属性。"
+    tensorflow_not_installed: "对抗性去偏小部件需要TensorFlow，但尚未安装。\n点击小部件查看安装说明。"
+    reweighing_preprocessor: "此小部件与重新加权预处理器不兼容。 \n因此，自定义预处理将被忽略，并将使用默认预处理。"
+    reweighted_data: "此小部件与经过重新加权预处理器处理的数据不兼容。"
+
+  owadversarialdebiasing:
+    name: "对抗去偏"
+    desc: "带有或不带有公平性约束的对抗去偏分类算法。"
+    label_tips: "对抗去偏组件需要 TensorFlow，但尚未安装。\n您可以通过点击下方的 '安装 TensorFlow' 按钮进行安装，\n勾选 'tensorflow' 旁的复选框，然后点击确定按钮。\n安装完成后，您需要重新启动 Orange。"
+    install_tensorflow: "安装 TensorFlow"
+    ignore_default_preprocessing: "忽略默认预处理。 \n默认预处理（缩放）已被 \n用户指定的预处理器替换。 \n如果这些预处理器对于给定的数据集不充分，可能会出现问题。"
+    neurons_in_hidden_layers: "隐藏层中的神经元数量："
+    number_of_epochs: "迭代次数:"
+    batch_size: "批量大小:"
+    use_debiasing: "使用去偏"
+    replicable_training: "可重复训练"
+    adversary_loss_weight: "对抗损失权重"
+
+  owasfairness:
+    name: "作为公平性数据"
+    desc: "将数据集转换为带有标记的有利类别值、受保护属性和特权受保护属性值的公平性数据集。"
+    favorable_class_value: "有利类别值"
+    protected_attribute: "受保护属性"
+    privileged_pa_values: "特权受保护属性值"
+    commit: "&提交"
+
+  owcombinepreprocessors:
+    name: "组合预处理器"
+    desc: "将多个预处理器组合为一个。"
+    info: "信息"
+    info_text: "组合的预处理器将首先应用第一个预处理器，\n然后再将第二个预处理器应用于数据。"
+
+  owdatasetbias:
+    name: "数据集偏差"
+    desc: "计算数据集的偏差。具体而言，它计算数据集的不平等影响和统计平等差异度量。"
+    bias: "偏差"
+    no_data_detected: "未检测到数据。"
+
+  owequalizedodds:
+    name: "平等机会后处理"
+    desc: "后处理公平性算法，它会更改分类器的预测结果以满足平等机会。"
+
+  owequalizedodds:
+    name: "平等机会后处理"
+    desc: "后处理公平性算法，它会更改分类器的预测结果以满足平等机会。"
+    repeatable: "可重复训练"
+    equalized_odds: "平等机会："
+
+  owreweighing:
+    name: "重新加权"
+    desc: "将重新加权算法应用于数据集，该算法调整行的权重。"
+    info: "此组件将重新加权算法应用于数据集，调整行的权重。\n输入数据必须具有额外的 'AsFairness' 属性，并且不能有任何缺失值。"
+
+  owweightedlogisticregression:
+    name: "加权逻辑回归"
+    desc: "逻辑回归分类算法的修改版本，带有 LASSO (L1) 或 Ridge (L2) 正则化，可以在训练和预测过程中使用实例权重。"

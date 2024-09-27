@@ -1,0 +1,66 @@
+en:
+  app_name: "Fairness"
+  app_desc: "Fairness"
+  utils:
+    missing_fairness_attributes: "The dataset does not contain the fairness attributes. \nUse the 'As Fairness Data' widget to add them."
+    missing_values: "Missing values detected in the data. \nThey will automatically be imputed with the average or most frequent value."
+    missing_class_variable: "The dataset does not contain a class variable. \nThe fairness metrics can only be used with datasets containing a (categorical) class variable. \nUse the discretize widget to discretize the class variable."
+    numerical_class_variable: "The class variable is numerical. \nThe fairness metrics can only be used with categorical class variables. \nUse the discretize widget to discretize the class variable."
+    no_categorical_attributes: "The dataset does not contain any categorical attributes except the class variable. \nThe fairness metrics can only be used with datasets containing categorical attributes. \nUse the discretize widget to discretize some of the attributes."
+    tensorflow_not_installed: "The Adversarial Debiasing widget requires TensorFlow, which is not installed.\nClick on the widget to see the installation instructions."
+    reweighing_preprocessor: "This widget is not compatible with the reweighing preprocessor. \nThe custom preprocessing is therefore being ignored and \nthe default preprocessing is being used instead."
+    reweighted_data: "This widget is not compatible with data which was preprocessed by a reweighing preprocessor."
+    
+  owadversarialdebiasing:
+    name: "Adversarial Debiasing"
+    desc: "Adversarial Debiasing classification algorithm with or without fairness constraints."
+    label_tips: "The Adversarial Debiasing widget requires TensorFlow, which is not installed.\n You can install it by clicking the 'Install TensorFlow' button below, selecting \n the checkbox next to the 'tensorflow' text and clicking the Ok button.\n After that, you will need to restart Orange."
+    install_tensorflow: "Install TensorFlow"
+    ignore_default_preprocessing: "Ignoring default preprocessing. \n Default preprocessing (scaling), has been \n replaced with user-specified preprocessors. \nProblems may occur if these are inadequate for the given data."
+    neurons_in_hidden_layers: "Neurons in hidden layers:"
+    number_of_epochs: "Number of epochs:"
+    batch_size: "Batch size:"
+    use_debiasing: "Use debiasing"
+    replicable_training: "Replicable training"
+    adversary_loss_weight: "Adversary Loss Weight"
+
+
+  owasfairness:
+    name: "As Fairness Data"
+    desc: "Converts a dataset to a fairness dataset with marked favorable class values, protected attributes and priviliged protected attribute values."
+    favorable_class_value: "Favorable Class Value"
+    protected_attribute: "Protected Attribute"
+    privileged_pa_values: "Privileged Protected Attribute Values"
+    commit: "&Commit"
+
+  owcombinepreprocessors:
+    name: "Combine Preprocessors"
+    desc: "Combine multiple preprocessors into one."
+    info: "Info"
+    info_text: "The combined preprocessor will apply the first preprocessor \n and then the second preprocessor to the data."
+
+  owdatasetbias:
+    name: "Dataset Bias"
+    desc: "Computes the bias of a dataset. More specifically, it computes the disparate impact and statistical parity difference metrics for the dataset."
+    bias: "Bias"
+    no_data_detected: "No data detected."
+
+  owequalizedodds:
+    name: "Equalized Odds Postprocessing"
+    desc: "Postprocessing fairness algorithm which changes the predictions of a classifier to satisfy equalized odds."
+
+  owequalizedodds:
+    name: "Equalized Odds Postprocessing"
+    desc: "Postprocessing fairness algorithm which changes the predictions of a classifier to satisfy equalized odds."
+    repeatable: "Replicable training"
+    equalized_odds: "Equalized Odds:"
+
+
+  owreweighing:
+    name: "Reweighing"
+    desc: "Applies the reweighing algorithm to a dataset, which adjusts the weights of rows."
+    info: "This widget applies the reweighing algorithm to a dataset, which adjusts the weights of rows.\nThe input data must have the additional 'AsFairness' attributes and be without any missing values."
+
+  owweightedlogisticregression:
+    name: "Weighted Logistic Regression"
+    desc: "The logistic regression classification algorithm modification with LASSO (L1) or ridge (L2) regularization, that can use instance weights in the training and prediction process."
