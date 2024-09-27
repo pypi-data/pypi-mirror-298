@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nimble_data
+Version: 0.1.6
+Summary: Nimble SDK.
+Home-page: https://github.com/Nimbleway/sdk
+Author: Nimble
+Author-email: alonb@nimbleway.com
+Project-URL: Source Code, https://github.com/Nimbleway/sdk
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Requires-Dist: requests
+Requires-Dist: httpx
+
+Nimble SDK
