@@ -1,0 +1,11 @@
+LICENSE.TXT
+MANIFEST.in
+README.md
+ip2locationpy.py
+setup.py
+IP2Locationpy.egg-info/PKG-INFO
+IP2Locationpy.egg-info/SOURCES.txt
+IP2Locationpy.egg-info/dependency_links.txt
+IP2Locationpy.egg-info/entry_points.txt
+IP2Locationpy.egg-info/requires.txt
+IP2Locationpy.egg-info/top_level.txt
