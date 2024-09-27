@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+cfgdict/__init__.py
+cfgdict/__version__.py
+cfgdict/config.py
+cfgdict/utils.py
+cfgdict.egg-info/PKG-INFO
+cfgdict.egg-info/SOURCES.txt
+cfgdict.egg-info/dependency_links.txt
+cfgdict.egg-info/not-zip-safe
+cfgdict.egg-info/requires.txt
+cfgdict.egg-info/top_level.txt
+tests/test_config.py
+tests/test_utils.py
