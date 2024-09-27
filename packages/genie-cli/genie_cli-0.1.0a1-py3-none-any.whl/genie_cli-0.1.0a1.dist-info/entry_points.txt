@@ -1,0 +1,3 @@
+[console_scripts]
+genie=src.genie_cli.__main__:cli
+
