@@ -1,0 +1,8 @@
+opencv_helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opencv_helper/capcity.py,sha256=90F0usswBwdhX09PtB8Bm3wsO9iz_3lFM3C9Pkmydec,6052
+opencv_helper/cv.py,sha256=t1k9TEAwUwQjuZiWAWo_TyZRD2o5S2ZcgPixzbPsBn4,13291
+opencv_helper/utils.py,sha256=jJ9r8YbzJejoiZGKid4rfb7Rca4SUbyIWIR0NuUPEwo,330
+opencv_helper-2.0.0.dist-info/METADATA,sha256=WW1MV-JnADepqInyow4wt_BfqgKL0haKUGD9SjzdQiI,641
+opencv_helper-2.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+opencv_helper-2.0.0.dist-info/top_level.txt,sha256=ySDqEgZWWBfWS-cKVe2j164kmmFGDM1dX7717OZ8EC0,14
+opencv_helper-2.0.0.dist-info/RECORD,,
