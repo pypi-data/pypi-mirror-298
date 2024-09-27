@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+crop_indices/__init__.py
+crop_indices/indices.py
+crop_indices/spei_utils.py
+crop_indices/utils.py
+crop_indices.egg-info/PKG-INFO
+crop_indices.egg-info/SOURCES.txt
+crop_indices.egg-info/dependency_links.txt
+crop_indices.egg-info/requires.txt
+crop_indices.egg-info/top_level.txt

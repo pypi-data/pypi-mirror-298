@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: crop_indices
+Version: 0.0.1
+Summary: Calculate the HMD (Heat Magnitude Day), SPEI (Standardized Precipitation-Evapotranspiration Index) and CSI (Combined Stress Index) indices to estimate weather impact on crops.
+Home-page: 
+Author: Florian Ellsäßer
+Author-email: f.j.ellsaesser@utwente.nl
+License: GPL-3.0
+Project-URL: Documentation, https://github.com/FloEll/crop_indices
+Project-URL: Source, https://github.com/FloEll/crop_indices
+Project-URL: Tracker, https://github.com/FloEll/crop_indices/issues
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: xarray
+Requires-Dist: shapely
+Requires-Dist: datetime
+Requires-Dist: scikit-learn
