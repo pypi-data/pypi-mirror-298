@@ -1,0 +1,8 @@
+[workspace]
+
+resolver = "2"
+members = ["bindings", "test_utils"]
+default-members = ["core"]
+
+[profile.release]
+debug = 1

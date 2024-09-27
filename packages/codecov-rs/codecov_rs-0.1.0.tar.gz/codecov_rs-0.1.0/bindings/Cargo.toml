@@ -1,0 +1,14 @@
+[package]
+name = "codecov-rs-bindings"
+version = "0.1.0"
+publish = false
+edition = "2021"
+
+[lib]
+name = "_bindings"
+crate-type = ["cdylib"]
+
+[dependencies]
+codecov-rs = { path = "../core" }
+
+pyo3 = { version = "0.22.3", features = ["extension-module", "abi3-py312"] }
