@@ -1,0 +1,1 @@
+send_mail(subject, content, server_ip, server_port, sender, receiver, authorized_code)
