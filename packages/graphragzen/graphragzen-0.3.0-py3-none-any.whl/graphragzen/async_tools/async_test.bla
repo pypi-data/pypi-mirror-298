@@ -1,0 +1,231 @@
+import asyncio
+
+from graphragzen.llm import OpenAICompatibleClient
+
+# class MyLibrary:
+#     @async_compatible
+#     async def sync_function(self, x):
+#         # Call another_sync_function multiple times in parallel
+#         tasks = [self.another_sync_function(x + i, (1/i)*2) for i in range(1, 5)]
+#         # tasks += [self.truely_sync_function(x + i) for i in range(3)]
+#         results = await asyncio.gather(*tasks)
+#         return results
+
+#     @async_compatible
+#     async def another_sync_function(self, y, sleeptime):
+#         # Simulate an I/O-bound operation
+#         print(f"y={y} - sleeping {sleeptime}")
+#         await asyncio.sleep(sleeptime)
+#         print(f"y={y} - done sleeping")
+#         return y * 2
+
+#     @async_compatible
+#     async def truely_sync_function(self, y):
+#         return y * 2
+
+#     @async_compatible
+#     async def main_function(self, z):
+#         result = await self.sync_function(z)
+#         return result
+
+# import asyncio
+
+# lib = MyLibrary()
+
+# # Synchronous call in a context without an event loop
+# def sync_usage():
+#     result = lib.main_function(5)
+#     print("Synchronous result:", result)
+
+# # Asynchronous call in an async context
+# async def async_usage():
+#     result = await lib.main_function(5)
+#     print("Asynchronous result:", result)
+
+# # Example usage
+# sync_usage()  # Runs in a synchronous context
+# asyncio.run(async_usage())  # Runs in an asynchronous context
+
+
+# # @async_compatible
+# async def sync_function():
+#     tasks = [another_sync_function(i) for i in range(4)]
+#     results = await asyncio.gather(*tasks)
+#     print(results)
+
+
+# @async_compatible
+# def another_sync_function(x):
+#     return x+1
+
+
+# asyncio.run(sync_function())
+# sync_function()
+
+
+# # Communicate with an LLM running on a server
+# llm = OpenAICompatibleClient(
+#     base_url = "http://localhost:8081",
+#     context_size = 32768,
+#     use_cache = False,
+# )
+
+# class MyLibrary:
+#     @async_compatible
+#     async def sync_function(self, llm):
+#         texts = [
+#             "What is the circumverence of the moon",
+#             "What is the distance of the earth to jupyter",
+#         ]
+#         # Call another_sync_function multiple times in parallel
+#         tasks = [self.call_llm(text, llm) for text in texts]
+#         results = await asyncio.gather(*tasks)
+#         return results
+
+#     @async_compatible
+#     async def call_llm(self, text, llm):
+#         print(f"processing text: {text}")
+#         results = await llm(text, max_tokens=50)
+#         return results
+
+#     @async_compatible
+#     async def test_chat(self, llm):
+#         chats = [
+#             llm.format_chat([("user", "What is the circumverence of the moon")]),
+#             llm.format_chat([("user", "What is the distance of the earth to jupyter")]),
+#         ]
+
+#         tasks = [self.run_chat(chat, llm) for chat in chats]
+#         results = await asyncio.gather(*tasks)
+#         return results
+
+#     @async_compatible
+#     async def run_chat(self, chat, llm):
+#         print(f"processing chat {chat}")
+#         results = await llm.run_chat(chat, max_tokens=50)
+#         return results
+
+
+#     @async_compatible
+#     async def main_function(self, z):
+#         result = await self.test_chat(z)
+#         return result
+
+# import asyncio
+
+# lib = MyLibrary()
+
+# # Synchronous call in a context without an event loop
+# def sync_usage(llm):
+#     result = lib.main_function(llm)
+#     print("Synchronous result:", result)
+
+# # Asynchronous call in an async context
+# async def async_usage(llm):
+#     result = await lib.main_function(llm)
+#     print("Asynchronous result:", result)
+
+# # Example usage
+# sync_usage(llm)  # Runs in a synchronous context
+# asyncio.run(async_usage(llm))  # Runs in an asynchronous context
+
+# @async_compatible
+# async def test_llm(llm):
+#     texts = [
+#         "What is the circumverence of the moon",
+#         "What is the distance of the earth to jupyter",
+#     ]
+
+#     tasks = [call_llm(text, llm) for text in texts]
+#     results = await asyncio.gather(*tasks)
+#     return results
+
+# @async_compatible
+# async def call_llm(text, llm):
+#     print(f"processing text: {text}")
+#     results = await llm(text)
+#     return results
+
+# @async_compatible
+# async def test_chat(llm):
+#     chats = [
+#         llm.format_chat([("user", "What is the circumverence of the moon")]),
+#         llm.format_chat([("user", "What is the distance of the earth to jupyter")]),
+#     ]
+
+#     tasks = [run_chat(chat, llm) for chat in chats]
+#     results = await asyncio.gather(*tasks)
+#     return results
+
+# @async_compatible
+# async def run_chat(chat, llm):
+#     print(f"processing chat {chat}")
+#     results = await llm.run_chat(chat)
+#     return results
+
+# @async_compatible
+# async def main():
+#     result = await test_llm(llm)
+#     print(result)
+
+# asyncio.run(main())
+
+
+# Communicate with an LLM running on a server
+llm = OpenAICompatibleClient(
+    base_url="http://localhost:8081",
+    context_size=32768,
+    persistent_cache_file="./asycn_test.yaml",
+)
+
+from graphragzen import entity_extraction, load_documents, preprocessing
+
+
+def test_async():
+    print("Loading raw documents")
+    raw_documents = load_documents.load_text_documents(
+        raw_documents_folder="/home/bens/projects/GraphRAGZen/documents/sample-python-3.10.13-documentation"  # noqa: E501
+    )
+
+    # Split documents into chunks based on tokens
+    print("Chunking documents")
+    chunked_documents = preprocessing.chunk_documents(
+        raw_documents,
+        llm,
+    )
+
+    chunked_documents = chunked_documents.iloc[100:110]
+
+    # Extract entities from the chunks
+    print("Extracting raw entities")
+    raw_entities = entity_extraction.extract_raw_entities(
+        chunked_documents, llm, max_gleans=1, async_llm_calls=True
+    )
+
+    1 + 1
+
+
+def test_sync():
+    print("Loading raw documents")
+    raw_documents = load_documents.load_text_documents(
+        raw_documents_folder="/home/bens/projects/GraphRAGZen/documents/sample-python-3.10.13-documentation"  # noqa: E501
+    )
+
+    # Split documents into chunks based on tokens
+    print("Chunking documents")
+    chunked_documents = preprocessing.chunk_documents(
+        raw_documents,
+        llm,
+    )
+
+    chunked_documents = chunked_documents.iloc[100:110]
+
+    # Extract entities from the chunks
+    print("Extracting raw entities")
+    raw_entities = entity_extraction.extract_raw_entities(chunked_documents, llm, max_gleans=1)
+
+    1 + 1
+
+
+asyncio.run(test_async())
+# test_sync()
