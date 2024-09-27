@@ -1,0 +1,26 @@
+from google.cloud import storage
+
+def delete_file_content(file_path):
+    with open(file_path, 'w') as file:
+        file.truncate(0)
+
+def check_if_file_exists(bucket_name, key):
+    client = storage.Client()
+    bucket = client.bucket(bucket_name)
+    blob = bucket.blob(key)
+    return blob.exists()
+
+def upload_to_gcs(local_file_name, bucket_name, object_key):
+    client = storage.Client()
+    bucket = client.bucket(bucket_name)
+    blob = bucket.blob(object_key)
+    blob.upload_from_filename(local_file_name)
+    print(f"File {local_file_name} uploaded to {bucket_name}/{object_key}")
+
+def download_from_gcs(bucket_name, object_key, local_file_name):
+    delete_file_content(local_file_name)
+    client = storage.Client()
+    bucket = client.bucket(bucket_name)
+    blob = bucket.blob(object_key)
+    blob.download_to_filename(local_file_name)
+    print(f"File {object_key} downloaded from {bucket_name} to {local_file_name}")
