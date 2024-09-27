@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+main.py
+setup.py
+RDGen/__init__.py
+RDGen/generator.py
+RDGen.egg-info/PKG-INFO
+RDGen.egg-info/SOURCES.txt
+RDGen.egg-info/dependency_links.txt
+RDGen.egg-info/requires.txt
+RDGen.egg-info/top_level.txt
