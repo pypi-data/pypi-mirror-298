@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+TheToolsBox/APILinkIA.py
+TheToolsBox/__init__.py
+TheToolsBox.egg-info/PKG-INFO
+TheToolsBox.egg-info/SOURCES.txt
+TheToolsBox.egg-info/dependency_links.txt
+TheToolsBox.egg-info/manageFile.py
+TheToolsBox.egg-info/requires.txt
+TheToolsBox.egg-info/top_level.txt
