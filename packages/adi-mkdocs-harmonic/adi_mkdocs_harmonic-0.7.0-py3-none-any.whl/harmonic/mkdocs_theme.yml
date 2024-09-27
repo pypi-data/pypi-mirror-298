@@ -1,0 +1,27 @@
+extends: material
+
+logo: assets/images/adi-logo.png
+favicon: assets/images/favicon.svg
+font:
+  text: Inter
+  code: Roboto Mono
+icon:
+  repo: fontawesome/brands/github
+
+features:
+  - navigation.footer
+  - navigation.instant
+  - navigation.instant.progress
+  - navigation.indexes
+
+palette:
+  # Palette for light mode
+  - scheme: harmonic-light
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  # Palette for dark mode
+  - scheme: harmonic-dark
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode

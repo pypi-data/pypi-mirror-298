@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: adi-mkdocs-harmonic
+Version: 0.7.0
+Summary: An ADI Harmonic theme for mkdocs based on mkdocs-material
+Home-page: https://github.com/analogdevicesinc/harmonic-mkdocs-theme
+License: Apache-2.0
+Keywords: mkdocs,mkdocs-material,harmonic
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: mkdocs (>=1.5.3,<2.0.0)
+Requires-Dist: mkdocs-material (>=9.5.11,<10.0.0)
+Project-URL: Issue Tracker, https://github.com/analogdevicesinc/harmonic-mkdocs-theme/issues
+Project-URL: Repository, https://github.com/analogdevicesinc/harmonic-mkdocs-theme
+Description-Content-Type: text/markdown
+
+# Installing & Using the ADI Harmonic Theme for MkDocs
+
+The `mkdocs-harmonic` theme provides a consistent look and feel for documentation of [Analog Devices](https://analog.com) products generated using [MkDocs](https://www.mkdocs.org/). This guide will walk you through the steps needed to install and configure the theme for your MkDocs based documentation project.
+
+## Installation
+
+### Prerequisites
+
+- [Python 3.10](https://www.python.org/downloads/) or greater
+
+## Install using Pip
+
+```sh
+pip install adi-mkdocs-harmonic
+```
+
+## Creating and running a skeleton MkDocs project
+
+1. Create a `mkdocs.yml` file in the project directory with the following contents:
+
+    ```yml
+    site_name: My Project
+    theme:
+        name: harmonic
+    ```
+
+1. Create a `docs` folder with an `index.md` file in it with the following contents:
+
+    ```md
+    ---
+    title: My project
+    ---
+
+    Some overview text
+
+    ## A subheading
+
+    Subheading text
+    ```
+
+1. Run `mkdocs serve` in the terminal and open your web browser to <https://localhost:8000>
+
