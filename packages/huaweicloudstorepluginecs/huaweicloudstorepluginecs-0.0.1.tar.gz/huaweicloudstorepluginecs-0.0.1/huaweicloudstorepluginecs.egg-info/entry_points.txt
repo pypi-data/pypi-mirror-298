@@ -1,0 +1,2 @@
+[mlflow.artifact_repository]
+obs = huaweicloudstorepluginecs.store.artifact.huaweicloud_obs_ecs_artifact_repo:HuaweiCloudObsEcsArtifactRepository
