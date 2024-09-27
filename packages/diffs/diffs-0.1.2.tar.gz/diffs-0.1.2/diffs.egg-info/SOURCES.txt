@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+diffs/__init__.py
+diffs/__main__.py
+diffs/diffs.py
+diffs/main.py
+diffs/version.py
+diffs.egg-info/PKG-INFO
+diffs.egg-info/SOURCES.txt
+diffs.egg-info/dependency_links.txt
+diffs.egg-info/entry_points.txt
+diffs.egg-info/requires.txt
+diffs.egg-info/top_level.txt
