@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: github-api-python
+Version: 0.3.0
+Summary: GitHub API Client
+Home-page: http://github-api.hive.pt
+Author: Hive Solutions Lda.
+Author-email: development@hive.pt
+License: Apache License, Version 2.0
+Description: # [GitHub API](http://github-api.hive.pt)
+        
+        Standard GitHub API implementation in python.
+        
+        ## Configuration
+        
+        | Name                    | Type  | Default | Description                                                        |
+        | ----------------------- | ----- | ------- | ------------------------------------------------------------------ |
+        | **GITHUB_USERNAME**     | `str` | `None`  | The username to be used in the authentication with the GitHub API. |
+        | **GITHUB_PASSWORD**     | `str` | `None`  | The password to be used in the authentication with the GitHub API. |
+        | **GITHUB_ID**           | `str` | `None`  | While using OAuth provides a way to define the client identifier.  |
+        | **GITHUB_SECRET**       | `str` | `None`  | While using OAuth provides a way to define the client secret.      |
+        | **GITHUB_REDIRECT_URL** | `str` | `None`  | To be used in the OAuth process as the target redirect URL.        |
+        | **GITHUB_TOKEN**        | `str` | `None`  | If defined allows a statically generated OAuth Token to be used.   |
+        
+        ## License
+        
+        GitHub API is currently licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/).
+        
+        ## Build Automation
+        
+        [![Build Status](https://github.com/hivesolutions/github-api/workflows/Main%20Workflow/badge.svg)](https://github.com/hivesolutions/github-api/actions)
+        [![Coverage Status](https://coveralls.io/repos/hivesolutions/github-api/badge.svg?branch=master)](https://coveralls.io/r/hivesolutions/github-api?branch=master)
+        [![PyPi Status](https://img.shields.io/pypi/v/github-api-python.svg)](https://pypi.python.org/pypi/github-api-python)
+        [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://www.apache.org/licenses/)
+        
+Keywords: github api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
