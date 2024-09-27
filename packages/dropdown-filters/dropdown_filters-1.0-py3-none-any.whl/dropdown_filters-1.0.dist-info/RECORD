@@ -1,0 +1,11 @@
+dropdown_filters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dropdown_filters/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+dropdown_filters/apps.py,sha256=RnVo2eo03YuKxMLd3FowXw6W9H2fURNZrBpYaoOe63g,104
+dropdown_filters/filters.py,sha256=x1HtrCWIDnNrm6GWJi06MIr1rBGoWFWz3NP_tFI7PKs,1342
+dropdown_filters/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+dropdown_filters/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dropdown_filters-1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dropdown_filters-1.0.dist-info/METADATA,sha256=k5ucPDGHK-ZNNcy_0nskfmXipgNMuH4D0fQ9IvBVN4k,3124
+dropdown_filters-1.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+dropdown_filters-1.0.dist-info/top_level.txt,sha256=oKnwawtnjhvqFQxiG8IvpNlyrO3JeMXSwnt4lZtjz7I,17
+dropdown_filters-1.0.dist-info/RECORD,,
