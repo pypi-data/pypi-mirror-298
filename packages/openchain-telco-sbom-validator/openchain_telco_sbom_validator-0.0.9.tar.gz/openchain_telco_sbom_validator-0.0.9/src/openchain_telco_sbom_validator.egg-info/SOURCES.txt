@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/open-chain-telco-sbom-validator/__init__.py
+src/open-chain-telco-sbom-validator/cli.py
+src/open-chain-telco-sbom-validator/reporter.py
+src/open-chain-telco-sbom-validator/validator.py
+src/openchain_telco_sbom_validator.egg-info/PKG-INFO
+src/openchain_telco_sbom_validator.egg-info/SOURCES.txt
+src/openchain_telco_sbom_validator.egg-info/dependency_links.txt
+src/openchain_telco_sbom_validator.egg-info/entry_points.txt
+src/openchain_telco_sbom_validator.egg-info/requires.txt
+src/openchain_telco_sbom_validator.egg-info/top_level.txt
+src/openchain_telco_sbom_validator.egg-info/zip-safe
