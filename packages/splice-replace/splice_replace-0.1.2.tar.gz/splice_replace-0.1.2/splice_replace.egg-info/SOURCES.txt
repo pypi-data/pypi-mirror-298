@@ -1,0 +1,11 @@
+README.md
+setup.py
+splice_replace/__init__.py
+splice_replace/splice_replace.py
+splice_replace.egg-info/PKG-INFO
+splice_replace.egg-info/SOURCES.txt
+splice_replace.egg-info/dependency_links.txt
+splice_replace.egg-info/entry_points.txt
+splice_replace.egg-info/top_level.txt
+tests/__init__.py
+tests/test_splice_replace.py
