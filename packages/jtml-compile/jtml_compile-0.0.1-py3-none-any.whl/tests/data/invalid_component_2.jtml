@@ -1,0 +1,16 @@
+<component name="InvalidComponent">
+    <template>
+        <div>
+            <h1>Invalid Syntax</h1>
+        <!-- Missing closing tag for <div> -->
+    </template>
+    <script>
+        function brokenFunction() {
+            console.log("This function has a syntax error"
+        }
+    </script>
+    <style>
+        div {
+            color: red;
+    <!-- Missing closing braces and tags -->
+

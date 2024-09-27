@@ -1,0 +1,8 @@
+<component name="InvalidComponent">
+    <template>
+        <div>
+            <h1>Missing Script and Style Sections</h1>
+        </div>
+    </template>
+    <!-- Missing <script> and <style> sections -->
+</component>
