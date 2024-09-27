@@ -1,0 +1,8 @@
+README.md
+setup.py
+fx_requi/__init__.py
+fx_requi.egg-info/PKG-INFO
+fx_requi.egg-info/SOURCES.txt
+fx_requi.egg-info/dependency_links.txt
+fx_requi.egg-info/entry_points.txt
+fx_requi.egg-info/top_level.txt
