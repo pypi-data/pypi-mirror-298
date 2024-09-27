@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Klingonprints
+Version: 0.1.0
+Summary: 4 Theme options to change string appearance and option to translate to Klingon Language
+Home-page: UNKNOWN
+Author: Ole Wegener
+Author-email: ole.wegener@aol.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Requires-Dist: random
+Requires-Dist: requests
+Requires-Dist: string-color
+
+UNKNOWN
+
