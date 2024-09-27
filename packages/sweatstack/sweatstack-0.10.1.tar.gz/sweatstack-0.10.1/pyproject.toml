@@ -1,0 +1,44 @@
+[project]
+name = "sweatstack"
+version = "0.10.1"
+description = "The official Python library for SweatStack"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "pydantic",
+    "requests",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project.optional-dependencies]
+dev = [
+    "datamodel-code-generator",
+]
+parquet = [
+    "pyarrow",
+]
+jupyterlab = [
+    "jupyterlab",
+    "matplotlib",
+    "plotly",
+    "pyarrow",
+]
+ipython = [
+    "ipython",
+    "pyarrow",
+]
+plotting = [
+    "matplotlib",
+    "plotly",
+    "nbformat",  # For plotting in JupyterLite
+]
+
+[project.scripts]
+generate-response-models = "sweatstack.cli:generate_response_models"
+sweatshell = "sweatstack.sweatshell:run_ipython"
+sweatlab = "sweatstack.jupyterlab_oauth2_startup:start_jupyterlab_with_oauth"
