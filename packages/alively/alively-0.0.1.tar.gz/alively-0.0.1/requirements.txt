@@ -1,0 +1,7 @@
+dbt-core
+dbt-duckdb
+dbt-postgres
+pydantic==2.9.2
+pytest==8.3.3
+rich==13.8.1
+setuptools==75.1.0

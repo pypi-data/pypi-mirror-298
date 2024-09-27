@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alively"
+authors = [
+    {name = "Tom Waterman", email = "tjwaterman99@gmail.com"},
+]
+description = "A dynamic, colorful cli for dbt"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "pydantic==2.9.2",
+    "rich==13.8.1"
+]
+version = "0.0.1"
+
+[tool.setuptools]
+packages = ["alively"]
+
+[project.scripts]
+live = "alively.__main__:main"

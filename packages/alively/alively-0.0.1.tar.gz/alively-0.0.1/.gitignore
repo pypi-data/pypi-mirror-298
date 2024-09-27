@@ -1,0 +1,5 @@
+build/
+alively.egg-info/
+__pycache__/
+dev.duckdb
+prod.duckdb

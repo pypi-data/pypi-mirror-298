@@ -1,0 +1,12 @@
+demo:
+  outputs:
+    dev:
+      dbname: demo
+      host: 0.0.0.0
+      pass: password
+      port: 5432
+      schema: demo
+      threads: 2
+      type: postgres
+      user: demo
+  target: dev
