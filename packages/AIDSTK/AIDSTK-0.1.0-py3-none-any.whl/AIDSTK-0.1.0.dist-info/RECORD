@@ -1,0 +1,12 @@
+AIDSTK/__init__.py,sha256=NXKnsV7PUGlzR68nguzOWM2b_5QRqeQR6txDhcKx1gM,108
+AIDSTK/functions.py,sha256=8alSiPXWlKZJIlGm_gZtoT-ZjYgxnPR4iSCyFwoLkzI,1222
+AIDSTK/models.py,sha256=fRwlxAG_UrmvleBMfuK_Qh5LkOVxZ4bOlXQJtfaazWg,848
+AIDSTK/configs/config1.json,sha256=EGhiA28XfFhAQyCwF0xQQECSbotS-qAgUJpLzQ6vpbQ,169
+AIDSTK/configs/config2.json,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AIDSTK/prompts/prompt1.txt,sha256=FVgYx6eesjdCyt8H1u73MgaHej8qH-dZshQ87RuZX8o,1882
+AIDSTK/prompts/prompt2.txt,sha256=2lPrrb0goXpnOWdXTHQbm2CnSkKrYIWyymJZJNchbD8,1423
+AIDSTK-0.1.0.dist-info/LICENSE,sha256=G2LY4mMGhFa2kZ8KXByM4qJiSEUXEAIDWHFqyyHDFus,1088
+AIDSTK-0.1.0.dist-info/METADATA,sha256=J7ps_8zVdkfOpsrEiPvMRCUarT52qNbm-RoHqplS0Aw,543
+AIDSTK-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+AIDSTK-0.1.0.dist-info/top_level.txt,sha256=h6dx1zeGCNK7GKB1XXLWZ34EWj62fWLdGLto3x-b_vs,7
+AIDSTK-0.1.0.dist-info/RECORD,,
