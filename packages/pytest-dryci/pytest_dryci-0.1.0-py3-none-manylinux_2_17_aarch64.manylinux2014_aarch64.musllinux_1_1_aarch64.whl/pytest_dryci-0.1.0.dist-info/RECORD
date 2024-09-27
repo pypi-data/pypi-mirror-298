@@ -1,0 +1,7 @@
+pytest_dryci/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_dryci/plugin.py,sha256=j5uWrVgyWTXCVsQl8LeTY26pjvtTkdA9Y95jVqWfBSg,9394
+pytest_dryci-0.1.0.data/scripts/repo_dagger,sha256=Pw8N5xYe0Tbz4hPoZuB_6x5EP9da2XvqlK11a9nBrYw,4020390
+pytest_dryci-0.1.0.dist-info/METADATA,sha256=JmYESs4xGH0V_5ZqdfyTRbRVfFzmyyXRcMeuHmrqQUQ,3628
+pytest_dryci-0.1.0.dist-info/WHEEL,sha256=776Lfs0XFtG5iVMEZ_E1fUbvnJv4oDvZoineyZPc1Cw,178
+pytest_dryci-0.1.0.dist-info/entry_points.txt,sha256=moh9K8aJM4_FqTTRcEsRxNDimBOCKl1WyFEELABXElM,46
+pytest_dryci-0.1.0.dist-info/RECORD,,
