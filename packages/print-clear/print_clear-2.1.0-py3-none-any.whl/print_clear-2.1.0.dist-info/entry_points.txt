@@ -1,0 +1,2 @@
+[console_scripts]
+print-clear = print_clear.print_clear:cli
