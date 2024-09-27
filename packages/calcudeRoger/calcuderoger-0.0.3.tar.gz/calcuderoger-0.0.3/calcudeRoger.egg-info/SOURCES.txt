@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+calcudeRoger/__init__.py
+calcudeRoger/tests.py
+calcudeRoger.egg-info/PKG-INFO
+calcudeRoger.egg-info/SOURCES.txt
+calcudeRoger.egg-info/dependency_links.txt
+calcudeRoger.egg-info/requires.txt
+calcudeRoger.egg-info/top_level.txt
+calcudeRoger/otrom/__init__.py
+calcudeRoger/otrom/calcapp.py
+calcudeRoger/otrom/controller.py
+calcudeRoger/otrom/model_calc.py
+calcudeRoger/otrom/view.py
