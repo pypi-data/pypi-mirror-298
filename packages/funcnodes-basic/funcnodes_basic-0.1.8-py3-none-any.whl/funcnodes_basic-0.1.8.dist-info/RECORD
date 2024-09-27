@@ -1,0 +1,11 @@
+funcnodes_basic/__init__.py,sha256=BG1nvOaC2eeBoq5rtSfKwqxeB5nZd7YK3Kn6QQeSD4o,517
+funcnodes_basic/dicts.py,sha256=koNJEwIq9ryC7evBpnI-QmR7MBIbgUWqpPpwhB3M69Y,2507
+funcnodes_basic/lists.py,sha256=Sm4u1lqCbB9dQcY_YOTMRsBccUYfKGXaU_3kiqX8YhY,1566
+funcnodes_basic/logic.py,sha256=ecWXzkgjxYMfMdvm0Gdt-agsSbe9-_ilCNfhLz5OFXk,3575
+funcnodes_basic/math_nodes.py,sha256=tOwKty1x2TSXiHMFTFJQThZ1Ef0hSNUbCrOEhBPIpEM,10606
+funcnodes_basic/strings.py,sha256=3K0VvObVLdXpQmw1Aaxz3ZOdX6jkw9pUh_IB2qITmX0,16430
+funcnodes_basic-0.1.8.dist-info/LICENSE,sha256=VcvnA4LohgMs8yTDTS1sS3aZbSFa3Ei9YeJogeosE7Y,1070
+funcnodes_basic-0.1.8.dist-info/METADATA,sha256=n_i6ia25ifBwz60QQw4-S7B9OaEfXMlyB2Qq0-EHAbM,2065
+funcnodes_basic-0.1.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+funcnodes_basic-0.1.8.dist-info/entry_points.txt,sha256=Y7-9Rw_0qbyg8MrdLG6zjiEmUYBug_K4TBdJz9MAKxA,76
+funcnodes_basic-0.1.8.dist-info/RECORD,,
