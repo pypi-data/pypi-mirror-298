@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: forecasters
+Version: 0.0.1
+Summary: Unified toolbox for pretrained time-series models to perform forecasting tasks
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# 🔮 Forecasters
+
+`forecasters` provides a unified toolbox and semantics for pretrained time-series models to perform forecasting tasks. Currently a work in progress. Inspired by 🤗 `transformers`.
+
+## Installation
+
+```bash
+# in a virtual environment
+python -m pip install forecasters
+```
