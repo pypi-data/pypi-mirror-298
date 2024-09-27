@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: big3_test_integration
+Version: 0.1.dev5
+Summary: Тестовая интеграция для использования при запуске тестов конструктора.
+Author-email: BIG3 <info@big3.ru>, Нестеренко Михаил Васильевич <m.nesterenko@big3.ru>
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+
+* Интеграция с внешней системой — АСУ ОДС
+
+* Требуется версия платформы — 16
+
