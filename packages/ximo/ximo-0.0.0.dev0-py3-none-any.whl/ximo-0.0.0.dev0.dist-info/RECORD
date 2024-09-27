@@ -1,0 +1,12 @@
+ximo/__init__.py,sha256=WgPAarnnhV5yl5NW09eogQr-9NP5xfCG_qk5Ob0Blok,1214
+ximo/affine.py,sha256=4T4ngwDRf4wC15YUkf34J8jLsM_A8_0a1TVTyF1xc9w,296
+ximo/atlas.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ximo/axis.py,sha256=YQxT-5hynDBmxU6sXwXj8vQzJyWkx3fYQqJeTU8f7MA,1117
+ximo/freq.py,sha256=paSjEwI0xuj1px_RgPVC-h98hIK-G0b2ZTbqMRkGkXQ,151
+ximo/side.py,sha256=5TEh1P9MYEXoHMQhWibri_mKYapZj39X2nO7oE9hgrw,837
+ximo/spat.py,sha256=v7ku4PADJ2zBUjN84X30_bDPf-GUSjs1BwzZa-FNVyQ,530
+ximo/temp.py,sha256=NWH6NRkN90xFxh5fMlz_pSaZXVJKRQ2njVB7nCSRSOE,301
+ximo/tensor.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ximo-0.0.0.dev0.dist-info/METADATA,sha256=apqw4hBOmC9-h-gvDSFKFbyKteSr5nKCUQ9p5oNJZ-c,1210
+ximo-0.0.0.dev0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+ximo-0.0.0.dev0.dist-info/RECORD,,
