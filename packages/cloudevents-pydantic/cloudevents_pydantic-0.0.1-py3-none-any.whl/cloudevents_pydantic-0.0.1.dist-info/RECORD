@@ -1,0 +1,14 @@
+cloudevents_pydantic/__init__.py,sha256=B6CsL7SLsP4EkWW859NQBiDK3iIXFfY8-PtGC0ON-_4,1835
+cloudevents_pydantic/bindings/__init__.py,sha256=c1XN_ZU5k7CkT4V_vgXUKTtrLpGdtgfjiFDvOw5wcSE,1782
+cloudevents_pydantic/bindings/http.py,sha256=qvjIu1KM857CuFm9yCgCqep0udCcuWjTVNP4CpyUJOE,4276
+cloudevents_pydantic/events/__init__.py,sha256=LKp5MRk4lBGGck-QUA-ASdpZHaiN3tAf36mBazfNMBw,1815
+cloudevents_pydantic/events/_event.py,sha256=ZsZvWktqTS6D9-4SxMKrMwA7EevmQ2g0HESmLuJIU28,7978
+cloudevents_pydantic/events/field_types/__init__.py,sha256=FiHcuOq21DbToznxmXI3VEh-O1Gc6UG-0Hvuy4PlXaI,1923
+cloudevents_pydantic/events/field_types/_canonic_types.py,sha256=RtN_Stne3be33jV1bLFuU4iuPpsnSyuN4nOkKNTHadU,5148
+cloudevents_pydantic/formats/__init__.py,sha256=c1XN_ZU5k7CkT4V_vgXUKTtrLpGdtgfjiFDvOw5wcSE,1782
+cloudevents_pydantic/formats/json.py,sha256=6CBRvxrp2tsbNzMloa0ulfdw1uktys9Vw_lmA6eYYDc,3803
+cloudevents_pydantic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudevents_pydantic-0.0.1.dist-info/LICENSE,sha256=3EiThr891awQxkB-uv9tc7F8wyt5KUKCi0ADQMxDkHU,1073
+cloudevents_pydantic-0.0.1.dist-info/METADATA,sha256=9HG67kQuv52-fCde8dshiZAilpkeHOtkuwbvO8ydKac,5557
+cloudevents_pydantic-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cloudevents_pydantic-0.0.1.dist-info/RECORD,,
