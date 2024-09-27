@@ -1,0 +1,8 @@
+setup.py
+py_sphviewer2.egg-info/PKG-INFO
+py_sphviewer2.egg-info/SOURCES.txt
+py_sphviewer2.egg-info/dependency_links.txt
+py_sphviewer2.egg-info/requires.txt
+py_sphviewer2.egg-info/top_level.txt
+sphviewer2/__init__.py
+sphviewer2/sphviewer2.py
