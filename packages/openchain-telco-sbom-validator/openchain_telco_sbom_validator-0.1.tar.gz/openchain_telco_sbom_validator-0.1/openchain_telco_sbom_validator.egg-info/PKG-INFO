@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: openchain_telco_sbom_validator
+Version: 0.1
+Summary: Validator against version 1 of the OpenChain Telco SBOM Guide
+Home-page: https://github.com/OpenChain-Project/Telco-WG/tree/main/tools
+Author: Gergely Csatari, Marc-Etienne Vargenau
+Author-email: gergely.csatari@nokia.com, marc-etienne.vargenau@nokia.com
+License: Apache License 2.0
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Communications :: Telephony
+Classifier: Topic :: Communications
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: spdx-tools>=0.8.2
+Requires-Dist: requests>=2.32.3
+Requires-Dist: prettytable>=3.11.0
+Requires-Dist: packageurl-python>=0.15.6
+Requires-Dist: ntia-conformance-checker>=3.0.0
+Requires-Dist: validators>=0.33.0
