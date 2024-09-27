@@ -1,0 +1,9 @@
+parquetdb/__init__.py,sha256=DGD4EX3J6mfptcYQBQc8qcOGc-xyfxvp3_HMAT7JVTc,36
+parquetdb/core.py,sha256=l4Iy8N4NLB7sCanYd8bMCQh3qE3AGPcElbx4v9_axps,41457
+parquetdb/types.py,sha256=rw11EzUa4_0bNk5M5Kc-Xhn5VPv_78yumizTmd-qTTY,425
+parquetdb/utils.py,sha256=F8Z06vO2fHOQN8jReJaJFqRocDH5UjOb2tItshkLrQU,1947
+parquetdb-0.2.0.dist-info/LICENSE,sha256=HQRcNGIZLdXgeI9-x5zhDYqJx2PSe95RYWp6k-g7pAI,1084
+parquetdb-0.2.0.dist-info/METADATA,sha256=NxhQ_RZ7WRekGatkz2BEhTjg_9TIEKoIIJmtBVKfgmk,7901
+parquetdb-0.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+parquetdb-0.2.0.dist-info/top_level.txt,sha256=8LPTcNXV25cdI4hvn-xg_4oKQixZ9uy112ZRiEjKiT0,10
+parquetdb-0.2.0.dist-info/RECORD,,
