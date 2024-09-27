@@ -1,0 +1,6 @@
+rgxx-0.1.0.dist-info/METADATA,sha256=TLxLVdxgOjPO8SvkhB-367H8xX1v75M-KSvusRjUy6c,4020
+rgxx-0.1.0.dist-info/WHEEL,sha256=Pw1rTMFEM9YbMRCplAtTLegt9HMzeR45FiD03Pwyddc,91
+rgxx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rgxx/__main__.py,sha256=g2NUZD3mJFqn1cDAx0rd8R6Lc4uIQaUtVr7tDWVZS2I,1418
+rgxx/rgxx.cp310-win32.pyd,sha256=ZMttB81oS5MgIsq8mw1byVUx1xf_I-PKc7Z_XFTA4Gs,250880
+rgxx-0.1.0.dist-info/RECORD,,
