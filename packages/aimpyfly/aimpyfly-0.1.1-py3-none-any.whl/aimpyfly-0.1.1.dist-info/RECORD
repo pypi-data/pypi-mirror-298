@@ -1,0 +1,8 @@
+aimpyfly/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aimpyfly/aim_client.py,sha256=EjP8V5JYaVe4v5ok8IXPlQxtNz8sQSMQ3TCdEsL_lE0,32631
+aimpyfly/log_utils.py,sha256=u0R_78F9cUETlhYNlrWPXiokI4Dk3o0iva5Mdlt0V_4,1057
+aimpyfly/oscar_protocol.py,sha256=NJkAJ7TjsHSY4rGMvk7fosCjFo3JIr8wEBUMfMXOoEQ,5874
+aimpyfly-0.1.1.dist-info/METADATA,sha256=SrmxkyKg2dpjGMVRh1xoL0r2r5aksittCBNGXiofHZg,4049
+aimpyfly-0.1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+aimpyfly-0.1.1.dist-info/top_level.txt,sha256=bObz0YYCyl0kPjMEHECdioqqia8_f1LKMBPu6N2VHK4,9
+aimpyfly-0.1.1.dist-info/RECORD,,
