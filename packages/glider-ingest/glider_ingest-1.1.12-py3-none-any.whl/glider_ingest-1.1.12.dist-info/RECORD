@@ -1,0 +1,12 @@
+glider_ingest/__init__.py,sha256=1aQa12a467-qtSKoD13P6HwONkstoGrHq_WnwvirXHY,477
+glider_ingest/example.py,sha256=pJhNyLv_o4YtwMZ-9OtfygQZros4fxKANWIupK44pWI,679
+glider_ingest/FlightProcessor.py,sha256=yuar5ItxWxx1RI8zeL77DeNdAEwfgAT4P0CwFSRWaQY,6209
+glider_ingest/Gridder.py,sha256=GqwEgj_UM1RbNVHOv_wYp7NgFqScyr8UtCVHwhihhF8,13904
+glider_ingest/MissionData.py,sha256=om7a0QeAOcQTDyivm1P90yvWvpOewn79mS_DvydJkFk,6002
+glider_ingest/MissionProcessor.py,sha256=chZpcIckeL61kR33DZfurLPNPWIzCwqyNQqoaW80enI,6773
+glider_ingest/ScienceProcessor.py,sha256=BhILx_p0uMBnLUEmElxLAl5x5iE_9cM5Qz8OmsPkdQU,11754
+glider_ingest/utils.py,sha256=qW4wpc_oCWGNWpgysN9MoXpz_osAgzcTL-6iObFK7f8,2223
+glider_ingest-1.1.12.dist-info/LICENSE,sha256=2zjcqjxK1u8cd6mPZbVUldqpMlc2a2sTz4oKc2Xo1PA,1094
+glider_ingest-1.1.12.dist-info/METADATA,sha256=2jgwNouhB9gtBJ9QqXSURjxlmmGZBidD3sKZ7CKExFY,6321
+glider_ingest-1.1.12.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+glider_ingest-1.1.12.dist-info/RECORD,,
