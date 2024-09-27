@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+search_x_likes/__init__.py
+search_x_likes/list_likes_in_archive.py
+search_x_likes.egg-info/PKG-INFO
+search_x_likes.egg-info/SOURCES.txt
+search_x_likes.egg-info/dependency_links.txt
+search_x_likes.egg-info/top_level.txt
+tests/test_load_likes.py
