@@ -1,0 +1,3 @@
+[console_scripts]
+platrock=platrock.__main__:main
+
