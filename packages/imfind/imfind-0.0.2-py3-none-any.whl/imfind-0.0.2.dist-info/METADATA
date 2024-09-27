@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: imfind
+Version: 0.0.2
+Summary: Local AI image finder.
+Author-email: Ramya Kottapalli <rskottap@gmail.com>
+Project-URL: source, https://github.com/rskottap/imfind
+Project-URL: download, https://pypi.org/project/imfind/#files
+Requires-Dist: pytest
+Requires-Dist: transformers
+Requires-Dist: Pillow
+Requires-Dist: assure
+Requires-Dist: mmry
+Requires-Dist: embd
+
