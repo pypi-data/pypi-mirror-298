@@ -1,0 +1,30 @@
+{
+    "login": {
+        "header": "T",
+        "fields": {
+            "serial": {"bytes": 0, "type": "string"}
+        }
+    },
+    "report": {
+        "header": "P",
+        "fields": {
+            "positions": {"bytes": 19, "type": "array", "array": {
+                "time": {"bytes": 6, "type": "datetime"},
+                "lng": {"bytes": 4, "type": "float", "decimals": 6},
+                "lat": {"bytes": 4, "type": "float", "decimals": 6},
+                "speed": {"bytes": 1, "type": "unsigned"},
+                "mark": {"bytes": 2, "type": "unsigned"},
+                "busstop": {"bytes": 2, "type": "unsigned"}}
+            },
+            "trip": {"bytes": 4, "type": "unsigned"},
+            "route": {"bytes": 1, "type": "unsigned"},
+            "direction": {"bytes": 1, "type": "bool"},
+            "state": {"bytes": 1, "type": "char"},
+            "sales": {"bytes": 3, "type": "unsigned"},
+            "events": {"bytes": 3, "type": "array", "array": {
+                "id": {"bytes": 2, "type": "unsigned"},
+                "value": {"bytes": 1, "type": "unsigned"}}
+            }
+        }
+    }
+}
