@@ -1,0 +1,101 @@
+[tool.poetry]
+name = "imgsync"
+version = "2.0.0"
+description = "imgsync will download sync images from several distribution repositories and send them to an OpenStack Image service (Glance)."
+readme  = "README.md"
+license = "Apache-2.0"
+
+authors = [
+    "Alvaro Lopez Garcia <aloga@ifca.unican.es>"
+]
+
+homepage = "http://github.com/alvarolopez/imgsync/"
+repository = "http://github.com/alvarolopez/imgsync/"
+
+classifiers = [
+    "Environment :: OpenStack",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+include = [
+    "etc/imgsync/imgsync.conf.sample",
+]
+
+
+[tool.poetry.urls]
+"Bug Tracker" = "http://github.com/alvarolopez/imgsync/issues"
+
+
+[tool.poetry.scripts]
+glance-imgsync = "imgsync.cmd.cli:main"
+
+
+[tool.poetry.plugins] # Optional super table
+
+
+[tool.poetry.plugins."oslo.config.opts"]
+imgsync = "deepaas.opts:list_opts"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.3"
+oslo-config = "^9.6.0"
+oslo-log = "^6.1.2"
+dateutils = "^0.6.12"
+python-glanceclient = "^4.7.0"
+keystoneauth1 = "^5.8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+tox = "^4.15.1"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.2"
+pytest-cov = "^5.0.0"
+
+
+[tool.poetry.group.test-flake8.dependencies]
+flake8 = "^7.0.0"
+flake8-bugbear = "^24.4.26"
+flake8-docstrings = "^1.7.0"
+flake8-typing-imports = "^1.15.0"
+flake8-colors = "^0.1.9"
+pep8-naming = "^0.14.1"
+pydocstyle = "^6.3.0"
+
+
+[tool.poetry.group.test-black.dependencies]
+black = "^24.4.2"
+
+
+[tool.poetry.group.test-bandit.dependencies]
+bandit = "^1.7.8"
+
+
+[tool.poetry.group.test-mypy.dependencies]
+mypy = "^1.10.0"
+
+
+[tool.poetry.group.test-pypi.dependencies]
+twine = "^5.1.0"
+
+
+[tool.poetry.group.test-pip-missing-reqs.dependencies]
+pip-check-reqs = "^2.5.3"
+poetry-plugin-export = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
