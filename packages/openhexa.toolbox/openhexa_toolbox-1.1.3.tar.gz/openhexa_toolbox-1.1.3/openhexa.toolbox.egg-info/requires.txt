@@ -1,0 +1,17 @@
+requests
+python-dateutil
+pandas
+shapely
+geopandas
+polars
+diskcache
+pyjwt
+
+[dev]
+ruff~=0.6.5
+pytest~=8.3.2
+build~=1.2.1
+pytest-cov~=5.0.0
+black~=24.8.0
+pre-commit
+responses
