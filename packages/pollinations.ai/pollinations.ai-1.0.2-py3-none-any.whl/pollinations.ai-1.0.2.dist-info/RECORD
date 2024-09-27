@@ -1,0 +1,17 @@
+pollinations/__init__.py,sha256=HmL2C0Wl7uw4PRMFRXGz-j4RWyL6avC-6fdbUDS3HIg,1926
+pollinations/setup_tools.py,sha256=NOp6hbA1h6coQ0GSejavImXxgkZ8N5LpolH93Q2n8Vs,277
+pollinations/abc/__init__.py,sha256=aOledpe0TTdGhW_NZZLgVl7DLho4LbcqI4fiTbf596Q,32491
+pollinations/abc/gitprotocol.py,sha256=Fc_dIlZY-LCk3eroIQZqrWd9oV4K6krH-NYb0EhiuNQ,306
+pollinations/abc/imageprotocol.py,sha256=0TB_Yl2wi-F-ZvdHt8LsuNqh-XL_Fb7lRLI3vfJVJyg,388
+pollinations/ai/__init__.py,sha256=TPHB3JniNvlklZ-MUp2nmQJaoXg1DLqohRTxodod0-0,2177
+pollinations/ext/__init__.py,sha256=rtm5Ui6JqByL7woFgUmKi4K6rQ-_7joU6Oik3XA0sGo,1671
+pollinations/models/__init__.py,sha256=OuqCQnqESQSgQSugDqJ2nkPnzXgSMrpmpiM9qUf2jeI,123
+pollinations/models/imagemodel.py,sha256=bX0yVCjEa8zNJLj4aYmfyNoufS-2vVmF7YkCjrinYh8,9070
+pollinations/types/__init__.py,sha256=HO5YRUXfCdt9eYAHM7h-dQYvRlqGc1ae2fn0bVXiKG4,207
+pollinations/types/gitobject.py,sha256=ekgWXRA9V0YFiUPIYpWyFAFoZYc587mpBLNXGkeAzUY,1190
+pollinations/types/imageobject.py,sha256=6Cs-W94IneaAbCqr_TZXBd3TkeZLqTGxYO5XCevpHXs,1959
+pollinations.ai-1.0.2.dist-info/LICENSE.txt,sha256=aafscfLcggDgtoNqu1q_oM9escnxDsFzFRQybhmsnBA,1074
+pollinations.ai-1.0.2.dist-info/METADATA,sha256=yFTYlibsaWLk4QW20EF54_bxxA1MyPk6ri0KHbFauCA,4494
+pollinations.ai-1.0.2.dist-info/WHEEL,sha256=T5oNQLb20esdG_07S4BF-Kj-qE6bfPE4KNpyeSgAYEQ,97
+pollinations.ai-1.0.2.dist-info/top_level.txt,sha256=jMmBfZ_TXnTnPRSyYcEA6-6LaJ1_Hw2-yngPHvLxy4c,13
+pollinations.ai-1.0.2.dist-info/RECORD,,
