@@ -1,0 +1,2069 @@
+# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+
+from typing import Dict, List, Union, Optional
+from datetime import datetime
+from typing_extensions import Literal, Annotated, TypeAlias
+
+from .._utils import PropertyInfo
+from .._models import BaseModel
+from .application_configuration import ApplicationConfiguration
+
+__all__ = [
+    "PaginatedApplicationVariants",
+    "Item",
+    "ItemApplicationVariantV0Response",
+    "ItemApplicationVariantAgentsServiceResponse",
+    "ItemApplicationVariantAgentsServiceResponseConfiguration",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParams",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluation",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigJinjaNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigJinjaNodeConfigDataTransformations",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigJinjaNodeConfigOutputTemplate",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigChunkEvaluationNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigRerankerNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigRetrieverNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCitationNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCitationNodeConfigCitationContext",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigSearchCitationNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigDataTransformNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigAlternatingRoleMessages",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSingleRoleMessages",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigInsertMessagesConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigRemoveMessageConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigTokenizerChatTemplateConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigLlmEngineNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigLlmEngineNodeConfigBatchSysKwargs",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigResponseParserNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigIngestorConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigProcessingNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigProcessingNodeConfigFunctionSpecs",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigSqlExecutorNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigStaticNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigGenerationNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsPlan",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsPlanPlanWorkflowItem",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsPlanPlanBranchConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsPlanPlanBranchConfigConditionalWorkflow",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1Config",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigJinjaNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigJinjaNodeConfigDataTransformations",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigJinjaNodeConfigOutputTemplate",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigChunkEvaluationNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigRerankerNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigRetrieverNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCitationNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCitationNodeConfigCitationContext",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigSearchCitationNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigDataTransformNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfigMessageConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfigMessageConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfigMessageConfigAlternatingRoleMessages",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfigMessageConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfigMessageConfigSingleRoleMessages",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigInsertMessagesConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigRemoveMessageConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigTokenizerChatTemplateConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigLlmEngineNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigLlmEngineNodeConfigBatchSysKwargs",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigResponseParserNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigIngestorConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigProcessingNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigProcessingNodeConfigFunctionSpecs",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigSqlExecutorNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigStaticNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigGenerationNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParams",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluation",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigJinjaNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigJinjaNodeConfigDataTransformations",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigJinjaNodeConfigOutputTemplate",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigChunkEvaluationNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigRerankerNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigRetrieverNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCitationNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCitationNodeConfigCitationContext",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigSearchCitationNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigDataTransformNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigAlternatingRoleMessages",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSingleRoleMessages",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigInsertMessagesConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigRemoveMessageConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigTokenizerChatTemplateConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigLlmEngineNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigLlmEngineNodeConfigBatchSysKwargs",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigResponseParserNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigIngestorConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigProcessingNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigProcessingNodeConfigFunctionSpecs",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigSqlExecutorNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigStaticNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigGenerationNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflow",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigJinjaNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigJinjaNodeConfigDataTransformations",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigJinjaNodeConfigOutputTemplate",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigChunkEvaluationNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigRerankerNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigRetrieverNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCitationNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCitationNodeConfigCitationContext",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigSearchCitationNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigDataTransformNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCreateMessagesNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCreateMessagesNodeConfigMessageConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCreateMessagesNodeConfigMessageConfigWorkflowConfigCreateMessagesNodeConfigMessageConfigAlternatingRoleMessages",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCreateMessagesNodeConfigMessageConfigWorkflowConfigCreateMessagesNodeConfigMessageConfigSingleRoleMessages",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigInsertMessagesConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigRemoveMessageConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigTokenizerChatTemplateConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigLlmEngineNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigLlmEngineNodeConfigBatchSysKwargs",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigResponseParserNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigIngestorConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigProcessingNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigProcessingNodeConfigFunctionSpecs",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigSqlExecutorNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigStaticNodeConfig",
+    "ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigGenerationNodeConfig",
+    "ItemOfflineApplicationVariantResponse",
+    "ItemOfflineApplicationVariantResponseConfiguration",
+]
+
+
+class ItemApplicationVariantV0Response(BaseModel):
+    id: str
+
+    account_id: str
+    """The ID of the account that owns the given entity."""
+
+    application_spec_id: str
+
+    configuration: ApplicationConfiguration
+
+    created_at: datetime
+    """The date and time when the entity was created in ISO format."""
+
+    created_by_user_id: str
+    """The user who originally created the entity."""
+
+    name: str
+
+    version: Literal["V0"]
+
+    description: Optional[str] = None
+    """Optional description of the application variant"""
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigNodeConfig(
+    BaseModel
+):
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigJinjaNodeConfigDataTransformations(
+    BaseModel
+):
+    jinja_helper_functions: Optional[List[Union[str, object]]] = None
+
+    jinja_template_path: Optional[str] = None
+
+    jinja_template_str: Optional[str] = None
+
+    jinja_template_str_loaded: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigJinjaNodeConfigOutputTemplate(
+    BaseModel
+):
+    jinja_helper_functions: Optional[List[Union[str, object]]] = None
+
+    jinja_template_path: Optional[str] = None
+
+    jinja_template_str: Optional[str] = None
+
+    jinja_template_str_loaded: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigJinjaNodeConfig(
+    BaseModel
+):
+    data_transformations: Optional[
+        Dict[
+            str,
+            ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigJinjaNodeConfigDataTransformations,
+        ]
+    ] = None
+
+    log_output: Optional[bool] = None
+
+    log_prefix: Optional[str] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    output_template: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigJinjaNodeConfigOutputTemplate
+    ] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigChunkEvaluationNodeConfig(
+    BaseModel
+):
+    fuzzy_match_threshold: Optional[float] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    require_all: Optional[bool] = None
+
+    top_k_thresholds: Optional[List[int]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigRerankerNodeConfig(
+    BaseModel
+):
+    node_metadata: Optional[List[str]] = None
+
+    num_to_return: Optional[int] = None
+
+    num_workers: Optional[int] = None
+
+    score_threshold: Optional[float] = None
+
+    scorers: Optional[List[object]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigRetrieverNodeConfig(
+    BaseModel
+):
+    exact_knn_search: Optional[bool] = None
+
+    knowledge_base_id: Optional[str] = None
+
+    knowledge_base_name: Optional[str] = None
+
+    metadata: Optional[Dict[str, str]] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_to_return: Optional[int] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCitationNodeConfigCitationContext(
+    BaseModel
+):
+    generate_with_llm: Optional[bool] = None
+
+    metric: Optional[str] = None
+
+    min_similarity: Optional[float] = None
+
+    score: Optional[Literal["precision", "recall", "fmeasure"]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCitationNodeConfig(
+    BaseModel
+):
+    citation_context: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCitationNodeConfigCitationContext
+    ] = None
+
+    citation_type: Optional[Literal["rouge", "model_defined"]] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    s3_path_override: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigSearchCitationNodeConfig(
+    BaseModel
+):
+    end_search_regex: Optional[str] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    search_regex: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigDataTransformNodeConfig(
+    BaseModel
+):
+    action: Optional[str] = None
+
+    additional_inputs: Optional[object] = None
+
+    apply_to_dictlist_leaves: Optional[bool] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigAlternatingRoleMessages(
+    BaseModel
+):
+    role_value_pairs: Optional[List[Dict[str, str]]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSingleRoleMessages(
+    BaseModel
+):
+    content: Optional[str] = None
+
+    role: Optional[str] = None
+
+
+ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfig: TypeAlias = Union[
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigAlternatingRoleMessages,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSingleRoleMessages,
+]
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfig(
+    BaseModel
+):
+    message_configs: Optional[
+        List[
+            ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfig
+        ]
+    ] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigInsertMessagesConfig(
+    BaseModel
+):
+    index: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigRemoveMessageConfig(
+    BaseModel
+):
+    index: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigTokenizerChatTemplateConfig(
+    BaseModel
+):
+    add_generation_prompt: Optional[bool] = None
+
+    kwargs: Optional[object] = None
+
+    llm_model: Optional[str] = None
+
+    max_length: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    padding: Optional[bool] = None
+
+    truncation: Optional[bool] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigLlmEngineNodeConfigBatchSysKwargs(
+    BaseModel
+):
+    checkpoint_path: Optional[str] = None
+
+    labels: Optional[Dict[str, str]] = None
+
+    num_shards: Optional[int] = None
+
+    seed: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigLlmEngineNodeConfig(
+    BaseModel
+):
+    batch_run_mode: Optional[Literal["sync", "async"]] = None
+
+    batch_sys_kwargs: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigLlmEngineNodeConfigBatchSysKwargs
+    ] = None
+
+    frequency_penalty: Optional[float] = None
+
+    guided_choice: Optional[List[str]] = None
+
+    guided_json: Optional[object] = None
+
+    guided_regex: Optional[str] = None
+
+    include_stop_str_in_output: Optional[bool] = None
+
+    llm_model: Optional[str] = None
+
+    max_tokens: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    presence_penalty: Optional[float] = None
+
+    stop_sequences: Optional[List[str]] = None
+
+    temperature: Optional[float] = None
+
+    timeout: Optional[int] = None
+
+    top_k: Optional[int] = None
+
+    top_p: Optional[float] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigResponseParserNodeConfig(
+    BaseModel
+):
+    action: Optional[str] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    reference_value: Optional[object] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigIngestorConfig(
+    BaseModel
+):
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigProcessingNodeConfigFunctionSpecs(
+    BaseModel
+):
+    kwargs: Optional[object] = None
+
+    path: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigProcessingNodeConfig(
+    BaseModel
+):
+    function_specs: Optional[
+        Dict[
+            str,
+            ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigProcessingNodeConfigFunctionSpecs,
+        ]
+    ] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    return_key: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigSqlExecutorNodeConfig(
+    BaseModel
+):
+    connector_kwargs: Optional[Dict[str, str]] = None
+
+    connector_type: Optional[Literal["snowflake"]] = None
+
+    log_queries: Optional[bool] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    return_type: Optional[Literal["df", "dicts", "markdown", "json", "str"]] = None
+
+    schema_remapping_file: Optional[str] = None
+
+    secrets: Optional[List[str]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigStaticNodeConfig(
+    BaseModel
+):
+    from_file: Union[List[object], str, object, None] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    value: Optional[object] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigGenerationNodeConfig(
+    BaseModel
+):
+    llm_model: Optional[str] = None
+
+    llm_model_deployment: Optional[str] = None
+
+    llm_model_instance: Optional[str] = None
+
+    max_tokens: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    stop_sequences: Optional[List[str]] = None
+
+    strip_whitespace: Optional[bool] = None
+
+    temperature: Optional[float] = None
+
+    tool_name: Optional[str] = None
+
+
+ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfig: TypeAlias = Union[
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigJinjaNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigChunkEvaluationNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigRerankerNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigRetrieverNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCitationNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigSearchCitationNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigDataTransformNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigCreateMessagesNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigInsertMessagesConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigRemoveMessageConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigTokenizerChatTemplateConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigLlmEngineNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigResponseParserNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigIngestorConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigProcessingNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigSqlExecutorNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigStaticNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfigSGPAgentsTypesPlanConfigParamEvaluationConfigGenerationNodeConfig,
+]
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluation(
+    BaseModel
+):
+    config: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluationConfig
+    ] = None
+
+    inputs: Optional[Dict[str, Union[str, Dict[str, Union[str, object]]]]] = None
+
+    name: Optional[str] = None
+
+    type: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsPlanPlanWorkflowItem(
+    BaseModel
+):
+    request_user_input: Optional[Literal["never", "maybe", "always"]] = None
+
+    workflow_inputs: Union[str, Dict[str, Union[str, Dict[str, Union[str, object]]]], None] = None
+
+    workflow_name: Optional[str] = None
+
+    workflow_save_outputs: Optional[Dict[str, str]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsPlanPlanBranchConfigConditionalWorkflow(
+    BaseModel
+):
+    condition: Optional[Literal["if", "elif", "else"]] = None
+
+    condition_input_var: Optional[str] = None
+
+    operator: Optional[str] = None
+
+    reference_var: Optional[str] = None
+
+    request_user_input: Optional[Literal["never", "maybe", "always"]] = None
+
+    workflow_inputs: Union[str, Dict[str, Union[str, Dict[str, Union[str, object]]]], None] = None
+
+    workflow_name: Optional[str] = None
+
+    workflow_nodes: Optional[List[str]] = None
+
+    workflow_save_outputs: Optional[Dict[str, str]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsPlanPlanBranchConfig(
+    BaseModel
+):
+    branch: Optional[str] = None
+
+    conditional_workflows: Optional[
+        List[
+            ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsPlanPlanBranchConfigConditionalWorkflow
+        ]
+    ] = None
+
+    merge_outputs: Optional[Dict[str, List[str]]] = None
+
+    request_user_input: Optional[Literal["never", "maybe", "always"]] = None
+
+
+ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsPlan: TypeAlias = Union[
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsPlanPlanWorkflowItem,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsPlanPlanBranchConfig,
+]
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigNodeConfig(
+    BaseModel
+):
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigJinjaNodeConfigDataTransformations(
+    BaseModel
+):
+    jinja_helper_functions: Optional[List[Union[str, object]]] = None
+
+    jinja_template_path: Optional[str] = None
+
+    jinja_template_str: Optional[str] = None
+
+    jinja_template_str_loaded: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigJinjaNodeConfigOutputTemplate(
+    BaseModel
+):
+    jinja_helper_functions: Optional[List[Union[str, object]]] = None
+
+    jinja_template_path: Optional[str] = None
+
+    jinja_template_str: Optional[str] = None
+
+    jinja_template_str_loaded: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigJinjaNodeConfig(
+    BaseModel
+):
+    data_transformations: Optional[
+        Dict[
+            str,
+            ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigJinjaNodeConfigDataTransformations,
+        ]
+    ] = None
+
+    log_output: Optional[bool] = None
+
+    log_prefix: Optional[str] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    output_template: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigJinjaNodeConfigOutputTemplate
+    ] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigChunkEvaluationNodeConfig(
+    BaseModel
+):
+    fuzzy_match_threshold: Optional[float] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    require_all: Optional[bool] = None
+
+    top_k_thresholds: Optional[List[int]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigRerankerNodeConfig(
+    BaseModel
+):
+    node_metadata: Optional[List[str]] = None
+
+    num_to_return: Optional[int] = None
+
+    num_workers: Optional[int] = None
+
+    score_threshold: Optional[float] = None
+
+    scorers: Optional[List[object]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigRetrieverNodeConfig(
+    BaseModel
+):
+    exact_knn_search: Optional[bool] = None
+
+    knowledge_base_id: Optional[str] = None
+
+    knowledge_base_name: Optional[str] = None
+
+    metadata: Optional[Dict[str, str]] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_to_return: Optional[int] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCitationNodeConfigCitationContext(
+    BaseModel
+):
+    generate_with_llm: Optional[bool] = None
+
+    metric: Optional[str] = None
+
+    min_similarity: Optional[float] = None
+
+    score: Optional[Literal["precision", "recall", "fmeasure"]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCitationNodeConfig(
+    BaseModel
+):
+    citation_context: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCitationNodeConfigCitationContext
+    ] = None
+
+    citation_type: Optional[Literal["rouge", "model_defined"]] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    s3_path_override: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigSearchCitationNodeConfig(
+    BaseModel
+):
+    end_search_regex: Optional[str] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    search_regex: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigDataTransformNodeConfig(
+    BaseModel
+):
+    action: Optional[str] = None
+
+    additional_inputs: Optional[object] = None
+
+    apply_to_dictlist_leaves: Optional[bool] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfigMessageConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfigMessageConfigAlternatingRoleMessages(
+    BaseModel
+):
+    role_value_pairs: Optional[List[Dict[str, str]]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfigMessageConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfigMessageConfigSingleRoleMessages(
+    BaseModel
+):
+    content: Optional[str] = None
+
+    role: Optional[str] = None
+
+
+ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfigMessageConfig: TypeAlias = Union[
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfigMessageConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfigMessageConfigAlternatingRoleMessages,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfigMessageConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfigMessageConfigSingleRoleMessages,
+]
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfig(
+    BaseModel
+):
+    message_configs: Optional[
+        List[
+            ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfigMessageConfig
+        ]
+    ] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigInsertMessagesConfig(
+    BaseModel
+):
+    index: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigRemoveMessageConfig(
+    BaseModel
+):
+    index: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigTokenizerChatTemplateConfig(
+    BaseModel
+):
+    add_generation_prompt: Optional[bool] = None
+
+    kwargs: Optional[object] = None
+
+    llm_model: Optional[str] = None
+
+    max_length: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    padding: Optional[bool] = None
+
+    truncation: Optional[bool] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigLlmEngineNodeConfigBatchSysKwargs(
+    BaseModel
+):
+    checkpoint_path: Optional[str] = None
+
+    labels: Optional[Dict[str, str]] = None
+
+    num_shards: Optional[int] = None
+
+    seed: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigLlmEngineNodeConfig(
+    BaseModel
+):
+    batch_run_mode: Optional[Literal["sync", "async"]] = None
+
+    batch_sys_kwargs: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigLlmEngineNodeConfigBatchSysKwargs
+    ] = None
+
+    frequency_penalty: Optional[float] = None
+
+    guided_choice: Optional[List[str]] = None
+
+    guided_json: Optional[object] = None
+
+    guided_regex: Optional[str] = None
+
+    include_stop_str_in_output: Optional[bool] = None
+
+    llm_model: Optional[str] = None
+
+    max_tokens: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    presence_penalty: Optional[float] = None
+
+    stop_sequences: Optional[List[str]] = None
+
+    temperature: Optional[float] = None
+
+    timeout: Optional[int] = None
+
+    top_k: Optional[int] = None
+
+    top_p: Optional[float] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigResponseParserNodeConfig(
+    BaseModel
+):
+    action: Optional[str] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    reference_value: Optional[object] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigIngestorConfig(
+    BaseModel
+):
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigProcessingNodeConfigFunctionSpecs(
+    BaseModel
+):
+    kwargs: Optional[object] = None
+
+    path: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigProcessingNodeConfig(
+    BaseModel
+):
+    function_specs: Optional[
+        Dict[
+            str,
+            ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigProcessingNodeConfigFunctionSpecs,
+        ]
+    ] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    return_key: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigSqlExecutorNodeConfig(
+    BaseModel
+):
+    connector_kwargs: Optional[Dict[str, str]] = None
+
+    connector_type: Optional[Literal["snowflake"]] = None
+
+    log_queries: Optional[bool] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    return_type: Optional[Literal["df", "dicts", "markdown", "json", "str"]] = None
+
+    schema_remapping_file: Optional[str] = None
+
+    secrets: Optional[List[str]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigStaticNodeConfig(
+    BaseModel
+):
+    from_file: Union[List[object], str, object, None] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    value: Optional[object] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigGenerationNodeConfig(
+    BaseModel
+):
+    llm_model: Optional[str] = None
+
+    llm_model_deployment: Optional[str] = None
+
+    llm_model_instance: Optional[str] = None
+
+    max_tokens: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    stop_sequences: Optional[List[str]] = None
+
+    strip_whitespace: Optional[bool] = None
+
+    temperature: Optional[float] = None
+
+    tool_name: Optional[str] = None
+
+
+ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1Config: TypeAlias = Union[
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigJinjaNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigChunkEvaluationNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigRerankerNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigRetrieverNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCitationNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigSearchCitationNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigDataTransformNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigCreateMessagesNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigInsertMessagesConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigRemoveMessageConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigTokenizerChatTemplateConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigLlmEngineNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigResponseParserNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigIngestorConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigProcessingNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigSqlExecutorNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigStaticNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1ConfigWorkflowsUnionMember1ConfigGenerationNodeConfig,
+]
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1(
+    BaseModel
+):
+    config: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1Config
+    ] = None
+
+    inputs: Optional[Dict[str, Union[str, Dict[str, Union[str, object]]]]] = None
+
+    name: Optional[str] = None
+
+    type: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParams(BaseModel):
+    id: Optional[str] = None
+
+    account_id: Optional[str] = None
+
+    concurrency_default: Optional[bool] = None
+
+    datasets: Optional[List[object]] = None
+
+    egp_api_key_override: Optional[str] = None
+
+    evaluations: Optional[
+        List[ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsEvaluation]
+    ] = None
+
+    final_output_nodes: Optional[List[str]] = None
+
+    nodes_to_log: Union[str, List[str], None] = None
+
+    num_workers: Optional[int] = None
+
+    plan: Optional[
+        List[ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsPlan]
+    ] = None
+
+    streaming_nodes: Optional[List[str]] = None
+
+    workflows: Optional[
+        Dict[
+            str,
+            Union[
+                str,
+                List[
+                    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParamsWorkflowsUnionMember1
+                ],
+            ],
+        ]
+    ] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfig(BaseModel):
+    params: ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfigParams
+
+    type: Literal["PLAN"]
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigNodeConfig(
+    BaseModel
+):
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigJinjaNodeConfigDataTransformations(
+    BaseModel
+):
+    jinja_helper_functions: Optional[List[Union[str, object]]] = None
+
+    jinja_template_path: Optional[str] = None
+
+    jinja_template_str: Optional[str] = None
+
+    jinja_template_str_loaded: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigJinjaNodeConfigOutputTemplate(
+    BaseModel
+):
+    jinja_helper_functions: Optional[List[Union[str, object]]] = None
+
+    jinja_template_path: Optional[str] = None
+
+    jinja_template_str: Optional[str] = None
+
+    jinja_template_str_loaded: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigJinjaNodeConfig(
+    BaseModel
+):
+    data_transformations: Optional[
+        Dict[
+            str,
+            ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigJinjaNodeConfigDataTransformations,
+        ]
+    ] = None
+
+    log_output: Optional[bool] = None
+
+    log_prefix: Optional[str] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    output_template: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigJinjaNodeConfigOutputTemplate
+    ] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigChunkEvaluationNodeConfig(
+    BaseModel
+):
+    fuzzy_match_threshold: Optional[float] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    require_all: Optional[bool] = None
+
+    top_k_thresholds: Optional[List[int]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigRerankerNodeConfig(
+    BaseModel
+):
+    node_metadata: Optional[List[str]] = None
+
+    num_to_return: Optional[int] = None
+
+    num_workers: Optional[int] = None
+
+    score_threshold: Optional[float] = None
+
+    scorers: Optional[List[object]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigRetrieverNodeConfig(
+    BaseModel
+):
+    exact_knn_search: Optional[bool] = None
+
+    knowledge_base_id: Optional[str] = None
+
+    knowledge_base_name: Optional[str] = None
+
+    metadata: Optional[Dict[str, str]] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_to_return: Optional[int] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCitationNodeConfigCitationContext(
+    BaseModel
+):
+    generate_with_llm: Optional[bool] = None
+
+    metric: Optional[str] = None
+
+    min_similarity: Optional[float] = None
+
+    score: Optional[Literal["precision", "recall", "fmeasure"]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCitationNodeConfig(
+    BaseModel
+):
+    citation_context: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCitationNodeConfigCitationContext
+    ] = None
+
+    citation_type: Optional[Literal["rouge", "model_defined"]] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    s3_path_override: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigSearchCitationNodeConfig(
+    BaseModel
+):
+    end_search_regex: Optional[str] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    search_regex: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigDataTransformNodeConfig(
+    BaseModel
+):
+    action: Optional[str] = None
+
+    additional_inputs: Optional[object] = None
+
+    apply_to_dictlist_leaves: Optional[bool] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigAlternatingRoleMessages(
+    BaseModel
+):
+    role_value_pairs: Optional[List[Dict[str, str]]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSingleRoleMessages(
+    BaseModel
+):
+    content: Optional[str] = None
+
+    role: Optional[str] = None
+
+
+ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfig: TypeAlias = Union[
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigAlternatingRoleMessages,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfigSingleRoleMessages,
+]
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfig(
+    BaseModel
+):
+    message_configs: Optional[
+        List[
+            ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfigMessageConfig
+        ]
+    ] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigInsertMessagesConfig(
+    BaseModel
+):
+    index: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigRemoveMessageConfig(
+    BaseModel
+):
+    index: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigTokenizerChatTemplateConfig(
+    BaseModel
+):
+    add_generation_prompt: Optional[bool] = None
+
+    kwargs: Optional[object] = None
+
+    llm_model: Optional[str] = None
+
+    max_length: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    padding: Optional[bool] = None
+
+    truncation: Optional[bool] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigLlmEngineNodeConfigBatchSysKwargs(
+    BaseModel
+):
+    checkpoint_path: Optional[str] = None
+
+    labels: Optional[Dict[str, str]] = None
+
+    num_shards: Optional[int] = None
+
+    seed: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigLlmEngineNodeConfig(
+    BaseModel
+):
+    batch_run_mode: Optional[Literal["sync", "async"]] = None
+
+    batch_sys_kwargs: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigLlmEngineNodeConfigBatchSysKwargs
+    ] = None
+
+    frequency_penalty: Optional[float] = None
+
+    guided_choice: Optional[List[str]] = None
+
+    guided_json: Optional[object] = None
+
+    guided_regex: Optional[str] = None
+
+    include_stop_str_in_output: Optional[bool] = None
+
+    llm_model: Optional[str] = None
+
+    max_tokens: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    presence_penalty: Optional[float] = None
+
+    stop_sequences: Optional[List[str]] = None
+
+    temperature: Optional[float] = None
+
+    timeout: Optional[int] = None
+
+    top_k: Optional[int] = None
+
+    top_p: Optional[float] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigResponseParserNodeConfig(
+    BaseModel
+):
+    action: Optional[str] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    reference_value: Optional[object] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigIngestorConfig(
+    BaseModel
+):
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigProcessingNodeConfigFunctionSpecs(
+    BaseModel
+):
+    kwargs: Optional[object] = None
+
+    path: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigProcessingNodeConfig(
+    BaseModel
+):
+    function_specs: Optional[
+        Dict[
+            str,
+            ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigProcessingNodeConfigFunctionSpecs,
+        ]
+    ] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    return_key: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigSqlExecutorNodeConfig(
+    BaseModel
+):
+    connector_kwargs: Optional[Dict[str, str]] = None
+
+    connector_type: Optional[Literal["snowflake"]] = None
+
+    log_queries: Optional[bool] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    return_type: Optional[Literal["df", "dicts", "markdown", "json", "str"]] = None
+
+    schema_remapping_file: Optional[str] = None
+
+    secrets: Optional[List[str]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigStaticNodeConfig(
+    BaseModel
+):
+    from_file: Union[List[object], str, object, None] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    value: Optional[object] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigGenerationNodeConfig(
+    BaseModel
+):
+    llm_model: Optional[str] = None
+
+    llm_model_deployment: Optional[str] = None
+
+    llm_model_instance: Optional[str] = None
+
+    max_tokens: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    stop_sequences: Optional[List[str]] = None
+
+    strip_whitespace: Optional[bool] = None
+
+    temperature: Optional[float] = None
+
+    tool_name: Optional[str] = None
+
+
+ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfig: TypeAlias = Union[
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigJinjaNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigChunkEvaluationNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigRerankerNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigRetrieverNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCitationNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigSearchCitationNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigDataTransformNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigCreateMessagesNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigInsertMessagesConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigRemoveMessageConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigTokenizerChatTemplateConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigLlmEngineNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigResponseParserNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigIngestorConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigProcessingNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigSqlExecutorNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigStaticNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfigSGPAgentsTypesWorkflowConfigParamEvaluationConfigGenerationNodeConfig,
+]
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluation(
+    BaseModel
+):
+    config: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluationConfig
+    ] = None
+
+    inputs: Optional[Dict[str, Union[str, Dict[str, Union[str, object]]]]] = None
+
+    name: Optional[str] = None
+
+    type: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigNodeConfig(
+    BaseModel
+):
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigJinjaNodeConfigDataTransformations(
+    BaseModel
+):
+    jinja_helper_functions: Optional[List[Union[str, object]]] = None
+
+    jinja_template_path: Optional[str] = None
+
+    jinja_template_str: Optional[str] = None
+
+    jinja_template_str_loaded: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigJinjaNodeConfigOutputTemplate(
+    BaseModel
+):
+    jinja_helper_functions: Optional[List[Union[str, object]]] = None
+
+    jinja_template_path: Optional[str] = None
+
+    jinja_template_str: Optional[str] = None
+
+    jinja_template_str_loaded: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigJinjaNodeConfig(
+    BaseModel
+):
+    data_transformations: Optional[
+        Dict[
+            str,
+            ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigJinjaNodeConfigDataTransformations,
+        ]
+    ] = None
+
+    log_output: Optional[bool] = None
+
+    log_prefix: Optional[str] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    output_template: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigJinjaNodeConfigOutputTemplate
+    ] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigChunkEvaluationNodeConfig(
+    BaseModel
+):
+    fuzzy_match_threshold: Optional[float] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    require_all: Optional[bool] = None
+
+    top_k_thresholds: Optional[List[int]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigRerankerNodeConfig(
+    BaseModel
+):
+    node_metadata: Optional[List[str]] = None
+
+    num_to_return: Optional[int] = None
+
+    num_workers: Optional[int] = None
+
+    score_threshold: Optional[float] = None
+
+    scorers: Optional[List[object]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigRetrieverNodeConfig(
+    BaseModel
+):
+    exact_knn_search: Optional[bool] = None
+
+    knowledge_base_id: Optional[str] = None
+
+    knowledge_base_name: Optional[str] = None
+
+    metadata: Optional[Dict[str, str]] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_to_return: Optional[int] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCitationNodeConfigCitationContext(
+    BaseModel
+):
+    generate_with_llm: Optional[bool] = None
+
+    metric: Optional[str] = None
+
+    min_similarity: Optional[float] = None
+
+    score: Optional[Literal["precision", "recall", "fmeasure"]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCitationNodeConfig(
+    BaseModel
+):
+    citation_context: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCitationNodeConfigCitationContext
+    ] = None
+
+    citation_type: Optional[Literal["rouge", "model_defined"]] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    s3_path_override: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigSearchCitationNodeConfig(
+    BaseModel
+):
+    end_search_regex: Optional[str] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    search_regex: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigDataTransformNodeConfig(
+    BaseModel
+):
+    action: Optional[str] = None
+
+    additional_inputs: Optional[object] = None
+
+    apply_to_dictlist_leaves: Optional[bool] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCreateMessagesNodeConfigMessageConfigWorkflowConfigCreateMessagesNodeConfigMessageConfigAlternatingRoleMessages(
+    BaseModel
+):
+    role_value_pairs: Optional[List[Dict[str, str]]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCreateMessagesNodeConfigMessageConfigWorkflowConfigCreateMessagesNodeConfigMessageConfigSingleRoleMessages(
+    BaseModel
+):
+    content: Optional[str] = None
+
+    role: Optional[str] = None
+
+
+ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCreateMessagesNodeConfigMessageConfig: TypeAlias = Union[
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCreateMessagesNodeConfigMessageConfigWorkflowConfigCreateMessagesNodeConfigMessageConfigAlternatingRoleMessages,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCreateMessagesNodeConfigMessageConfigWorkflowConfigCreateMessagesNodeConfigMessageConfigSingleRoleMessages,
+]
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCreateMessagesNodeConfig(
+    BaseModel
+):
+    message_configs: Optional[
+        List[
+            ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCreateMessagesNodeConfigMessageConfig
+        ]
+    ] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigInsertMessagesConfig(
+    BaseModel
+):
+    index: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigRemoveMessageConfig(
+    BaseModel
+):
+    index: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigTokenizerChatTemplateConfig(
+    BaseModel
+):
+    add_generation_prompt: Optional[bool] = None
+
+    kwargs: Optional[object] = None
+
+    llm_model: Optional[str] = None
+
+    max_length: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    padding: Optional[bool] = None
+
+    truncation: Optional[bool] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigLlmEngineNodeConfigBatchSysKwargs(
+    BaseModel
+):
+    checkpoint_path: Optional[str] = None
+
+    labels: Optional[Dict[str, str]] = None
+
+    num_shards: Optional[int] = None
+
+    seed: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigLlmEngineNodeConfig(
+    BaseModel
+):
+    batch_run_mode: Optional[Literal["sync", "async"]] = None
+
+    batch_sys_kwargs: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigLlmEngineNodeConfigBatchSysKwargs
+    ] = None
+
+    frequency_penalty: Optional[float] = None
+
+    guided_choice: Optional[List[str]] = None
+
+    guided_json: Optional[object] = None
+
+    guided_regex: Optional[str] = None
+
+    include_stop_str_in_output: Optional[bool] = None
+
+    llm_model: Optional[str] = None
+
+    max_tokens: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    presence_penalty: Optional[float] = None
+
+    stop_sequences: Optional[List[str]] = None
+
+    temperature: Optional[float] = None
+
+    timeout: Optional[int] = None
+
+    top_k: Optional[int] = None
+
+    top_p: Optional[float] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigResponseParserNodeConfig(
+    BaseModel
+):
+    action: Optional[str] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    reference_value: Optional[object] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigIngestorConfig(
+    BaseModel
+):
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigProcessingNodeConfigFunctionSpecs(
+    BaseModel
+):
+    kwargs: Optional[object] = None
+
+    path: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigProcessingNodeConfig(
+    BaseModel
+):
+    function_specs: Optional[
+        Dict[
+            str,
+            ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigProcessingNodeConfigFunctionSpecs,
+        ]
+    ] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    return_key: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigSqlExecutorNodeConfig(
+    BaseModel
+):
+    connector_kwargs: Optional[Dict[str, str]] = None
+
+    connector_type: Optional[Literal["snowflake"]] = None
+
+    log_queries: Optional[bool] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    return_type: Optional[Literal["df", "dicts", "markdown", "json", "str"]] = None
+
+    schema_remapping_file: Optional[str] = None
+
+    secrets: Optional[List[str]] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigStaticNodeConfig(
+    BaseModel
+):
+    from_file: Union[List[object], str, object, None] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    value: Optional[object] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigGenerationNodeConfig(
+    BaseModel
+):
+    llm_model: Optional[str] = None
+
+    llm_model_deployment: Optional[str] = None
+
+    llm_model_instance: Optional[str] = None
+
+    max_tokens: Optional[int] = None
+
+    node_metadata: Optional[List[str]] = None
+
+    num_workers: Optional[int] = None
+
+    stop_sequences: Optional[List[str]] = None
+
+    strip_whitespace: Optional[bool] = None
+
+    temperature: Optional[float] = None
+
+    tool_name: Optional[str] = None
+
+
+ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfig: TypeAlias = Union[
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigJinjaNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigChunkEvaluationNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigRerankerNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigRetrieverNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCitationNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigSearchCitationNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigDataTransformNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigCreateMessagesNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigInsertMessagesConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigRemoveMessageConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigTokenizerChatTemplateConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigLlmEngineNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigResponseParserNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigIngestorConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigProcessingNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigSqlExecutorNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigStaticNodeConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfigWorkflowConfigGenerationNodeConfig,
+]
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflow(
+    BaseModel
+):
+    config: Optional[
+        ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflowConfig
+    ] = None
+
+    inputs: Optional[Dict[str, Union[str, Dict[str, Union[str, object]]]]] = None
+
+    name: Optional[str] = None
+
+    type: Optional[str] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParams(BaseModel):
+    id: Optional[str] = None
+
+    account_id: Optional[str] = None
+
+    concurrency_default: Optional[bool] = None
+
+    datasets: Optional[List[object]] = None
+
+    egp_api_key_override: Optional[str] = None
+
+    evaluations: Optional[
+        List[
+            ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsEvaluation
+        ]
+    ] = None
+
+    final_output_nodes: Optional[List[str]] = None
+
+    nodes_to_log: Union[str, List[str], None] = None
+
+    num_workers: Optional[int] = None
+
+    streaming_nodes: Optional[List[str]] = None
+
+    workflow: Optional[
+        List[
+            ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParamsWorkflow
+        ]
+    ] = None
+
+
+class ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfig(BaseModel):
+    params: ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfigParams
+
+    type: Literal["WORKFLOW"]
+
+
+ItemApplicationVariantAgentsServiceResponseConfiguration: TypeAlias = Union[
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServicePlanConfig,
+    ItemApplicationVariantAgentsServiceResponseConfigurationApplicationAgentsServiceWorkflowConfig,
+]
+
+
+class ItemApplicationVariantAgentsServiceResponse(BaseModel):
+    id: str
+
+    account_id: str
+    """The ID of the account that owns the given entity."""
+
+    application_spec_id: str
+
+    configuration: ItemApplicationVariantAgentsServiceResponseConfiguration
+
+    created_at: datetime
+    """The date and time when the entity was created in ISO format."""
+
+    created_by_user_id: str
+    """The user who originally created the entity."""
+
+    name: str
+
+    version: Literal["AGENTS_SERVICE"]
+
+    description: Optional[str] = None
+    """Optional description of the application variant"""
+
+
+class ItemOfflineApplicationVariantResponseConfiguration(BaseModel):
+    metadata: Optional[object] = None
+    """User defined metadata about the offline application"""
+
+    output_schema_type: Optional[Literal["completion_only", "context_string", "context_chunks"]] = None
+    """An enumeration."""
+
+
+class ItemOfflineApplicationVariantResponse(BaseModel):
+    id: str
+
+    account_id: str
+    """The ID of the account that owns the given entity."""
+
+    application_spec_id: str
+
+    configuration: ItemOfflineApplicationVariantResponseConfiguration
+
+    created_at: datetime
+    """The date and time when the entity was created in ISO format."""
+
+    created_by_user_id: str
+    """The user who originally created the entity."""
+
+    name: str
+
+    version: Literal["OFFLINE"]
+
+    description: Optional[str] = None
+    """Optional description of the application variant"""
+
+
+Item: TypeAlias = Annotated[
+    Union[
+        ItemApplicationVariantV0Response,
+        ItemApplicationVariantAgentsServiceResponse,
+        ItemOfflineApplicationVariantResponse,
+    ],
+    PropertyInfo(discriminator="version"),
+]
+
+
+class PaginatedApplicationVariants(BaseModel):
+    current_page: int
+    """The current page number."""
+
+    items: List[Item]
+    """The data returned for the current page."""
+
+    items_per_page: int
+    """The number of items per page."""
+
+    total_item_count: int
+    """The total number of items of the query"""
