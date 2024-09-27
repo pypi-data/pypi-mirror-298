@@ -1,0 +1,11 @@
+literate_python/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+literate_python/__main__.py,sha256=u_ZdrCtQy7wupckgrsbDGKpysOVT18RG9DbcZnQiepU,43
+literate_python/inspector.py,sha256=mNTkSczUUwSsGa2ZWxcK60lzmcUERaaCRvnqDJOnQf4,3929
+literate_python/json.py,sha256=RsQVdNsuIA76zxiFgJPQMC51HGbzBc_CkbOGH5AeGnU,393
+literate_python/loader.py,sha256=7WAFIdQtv0ZjRLVYsiA2OrRzrat6rVjHVamxSDmhJ_4,2285
+literate_python/server.py,sha256=z44Eq9JqjIXtQfA091sU7A772i-4NLjQTTXM-iNFIlY,5418
+literate_python-0.0.3.dist-info/LICENSE,sha256=w3xqlpqGvN7OHsGSASkNmVtpDkkYdB95uOdQn-dM1mo,1067
+literate_python-0.0.3.dist-info/METADATA,sha256=uqbNkmBWUdE7QUgusqYjoIrHr1EDzT2J4X1Cd4b8bmo,2057
+literate_python-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+literate_python-0.0.3.dist-info/top_level.txt,sha256=yxFojNgGWvI2EN22Fy5zM5pCX5vR5TP8hxtCNqe2Bdk,16
+literate_python-0.0.3.dist-info/RECORD,,
