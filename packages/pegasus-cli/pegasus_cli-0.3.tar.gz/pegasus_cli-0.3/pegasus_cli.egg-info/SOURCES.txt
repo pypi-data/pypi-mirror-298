@@ -1,0 +1,31 @@
+LICENSE
+README.md
+pyproject.toml
+pegasus/__init__.py
+pegasus/__main__.py
+pegasus/cli.py
+pegasus/jinja.py
+pegasus/startapp.py
+pegasus/templates.py
+pegasus/templates/app_template/__init__.py.j2
+pegasus/templates/app_template/admin.py.j2
+pegasus/templates/app_template/apps.py.j2
+pegasus/templates/app_template/forms.py.j2
+pegasus/templates/app_template/models.py.j2
+pegasus/templates/app_template/urls.py.j2
+pegasus/templates/app_template/views.py.j2
+pegasus/templates/app_template/migrations/__init__.py.j2
+pegasus/templates/app_template/tests/__init__.py.j2
+pegasus/templates/app_template_templates/^^ app_name ^^_home.html
+pegasus/templates/internal/cli_output.txt
+pegasus/templates/model_templates/^^ model_name_lower ^^_detail.html
+pegasus/templates/model_templates/^^ model_name_lower ^^_form.html
+pegasus/templates/model_templates/^^ model_name_lower ^^_list.html
+pegasus_cli.egg-info/PKG-INFO
+pegasus_cli.egg-info/SOURCES.txt
+pegasus_cli.egg-info/dependency_links.txt
+pegasus_cli.egg-info/entry_points.txt
+pegasus_cli.egg-info/requires.txt
+pegasus_cli.egg-info/top_level.txt
+tests/test_cli.py
+tests/test_templates.py
