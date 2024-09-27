@@ -1,0 +1,3 @@
+[console_scripts]
+deng=rudydesplan_de_toolkit.main:cli
+
