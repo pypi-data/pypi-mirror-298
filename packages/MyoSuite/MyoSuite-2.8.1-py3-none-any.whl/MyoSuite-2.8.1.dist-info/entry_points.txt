@@ -1,0 +1,4 @@
+[console_scripts]
+myoapi_clean = myosuite_init:clean_simhive
+myoapi_init = myosuite_init:fetch_simhive
+
