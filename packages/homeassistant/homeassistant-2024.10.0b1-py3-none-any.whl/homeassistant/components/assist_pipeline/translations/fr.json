@@ -1,0 +1,36 @@
+{
+    "entity": {
+        "binary_sensor": {
+            "assist_in_progress": {
+                "name": "Assist en cours"
+            }
+        },
+        "select": {
+            "pipeline": {
+                "state": {
+                    "preferred": "Pr\u00e9f\u00e9r\u00e9"
+                }
+            },
+            "vad_sensitivity": {
+                "name": "D\u00e9tection de fin de la parole",
+                "state": {
+                    "aggressive": "Agressif",
+                    "default": "Par d\u00e9faut",
+                    "relaxed": "D\u00e9tendu"
+                }
+            }
+        }
+    },
+    "issues": {
+        "assist_in_progress_deprecated": {
+            "fix_flow": {
+                "step": {
+                    "confirm_disable_entity": {
+                        "description": "Le capteur binaire en cours d'ex\u00e9cution {integration_name} `{entity_id}` est obsol\u00e8te. Migrez votre configuration pour utiliser l'entit\u00e9 `{assist_satellite_domain}` correspondante, puis cliquez sur ENVOYER pour d\u00e9sactiver le capteur binaire en cours d'ex\u00e9cution et r\u00e9soudre ce probl\u00e8me."
+                    }
+                }
+            },
+            "title": "{integration_name} les capteurs binaires en cours d'ex\u00e9cution sont obsol\u00e8tes"
+        }
+    }
+}

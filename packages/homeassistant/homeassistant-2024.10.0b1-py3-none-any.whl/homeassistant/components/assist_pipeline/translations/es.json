@@ -1,0 +1,24 @@
+{
+    "entity": {
+        "binary_sensor": {
+            "assist_in_progress": {
+                "name": "Assist en progreso"
+            }
+        },
+        "select": {
+            "pipeline": {
+                "state": {
+                    "preferred": "Preferido"
+                }
+            },
+            "vad_sensitivity": {
+                "name": "Detecci\u00f3n de fin de habla",
+                "state": {
+                    "aggressive": "Agresivo",
+                    "default": "Predeterminado",
+                    "relaxed": "Relajado"
+                }
+            }
+        }
+    }
+}
