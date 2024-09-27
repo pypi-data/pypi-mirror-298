@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: obynutils
+Version: 0.1.0
+Summary: A set of utility functions for Obyn bots
+Home-page: https://github.com/gizmoshiba/obyn-utils
+Author: GizmoShiba
+Author-email: gizmoshiba@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: disnake
+Requires-Dist: redis
+Requires-Dist: SQLAlchemy
+Requires-Dist: asyncpg
+Requires-Dist: quart
+Requires-Dist: quart-cors
+
+# Obyn Utils
+
+A set of utility functions for Obyn bots
