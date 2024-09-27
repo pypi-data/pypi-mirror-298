@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: it-feature-framework
+Version: 0.0.0
+Summary: Feature Framework
+Author: menion93
+Author-email: andrea.salvoni@prima.it
+Requires-Python: >=3.10,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aiohttp (>=3.10.5,<4.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# it-feature-framework
+Used to query information from the Feature Framework
+
