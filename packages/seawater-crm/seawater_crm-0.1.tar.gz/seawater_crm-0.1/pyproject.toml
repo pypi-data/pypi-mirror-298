@@ -1,0 +1,37 @@
+[build-system]
+requires = [
+    "setuptools",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seawater_crm"
+description = "Certified values for seawater reference materials"
+readme = "README.md"
+classifiers =[
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Oceanography",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+]
+dynamic = ["version"]
+
+[tool.setuptools.packages.find]
+include = ["seawater_crm*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "seawater_crm.meta.__version__"}

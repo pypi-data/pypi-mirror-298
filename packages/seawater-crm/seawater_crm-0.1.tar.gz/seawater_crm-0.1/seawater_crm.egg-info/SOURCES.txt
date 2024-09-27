@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+seawater_crm/__init__.py
+seawater_crm/dickson.py
+seawater_crm/meta.py
+seawater_crm.egg-info/PKG-INFO
+seawater_crm.egg-info/SOURCES.txt
+seawater_crm.egg-info/dependency_links.txt
+seawater_crm.egg-info/requires.txt
+seawater_crm.egg-info/top_level.txt
+tests/test_dickson.py
