@@ -1,0 +1,10 @@
+airless/__init__.py,sha256=h-QyvMVzDNpT3jyVskcSbUVFXxGCRxieFPrvTveZG9k,64
+airless/email/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airless/email/hook/__init__.py,sha256=_gJZg522mp-mF8iIF4BWPPxQFOfpDpdwthNJNKBPyg0,36
+airless/email/hook/email.py,sha256=jWgI7htNZfHPs7qPVGq02zLCrObaK5anHOcspP1rEtA,857
+airless/email/operator/__init__.py,sha256=RuA74t7WQqFZpH5Yu-tkTu3tl2RerQKO00ySMBFN6Ns,44
+airless/email/operator/email.py,sha256=fe2nllI8emwSEaZkrTxYv5kQacnynmIUg9XLdlgY6F8,1044
+airless_email-0.0.3.dist-info/METADATA,sha256=dU4XkI3eweKmMHXTAKSEc4lIf-qye4-b4DdNxIg2JEA,899
+airless_email-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+airless_email-0.0.3.dist-info/top_level.txt,sha256=vPLzRICE7VNGvU-zceoZ1N7H2TkerQXR475zjg_xPzU,8
+airless_email-0.0.3.dist-info/RECORD,,
