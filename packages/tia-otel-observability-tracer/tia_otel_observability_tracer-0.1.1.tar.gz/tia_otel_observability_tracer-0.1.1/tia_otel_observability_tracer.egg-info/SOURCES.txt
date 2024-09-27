@@ -1,0 +1,9 @@
+README.md
+setup.py
+tia_otel_observability_tracer/__init__.py
+tia_otel_observability_tracer/tia_otel_observability_tracer.py
+tia_otel_observability_tracer.egg-info/PKG-INFO
+tia_otel_observability_tracer.egg-info/SOURCES.txt
+tia_otel_observability_tracer.egg-info/dependency_links.txt
+tia_otel_observability_tracer.egg-info/requires.txt
+tia_otel_observability_tracer.egg-info/top_level.txt
