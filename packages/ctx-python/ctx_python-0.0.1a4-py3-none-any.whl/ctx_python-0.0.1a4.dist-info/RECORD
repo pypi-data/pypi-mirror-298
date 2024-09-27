@@ -1,0 +1,16 @@
+ctxpy/__init__.py,sha256=xb4qRR7lo1hx51heVgEIXYLuKFvHs8il8F7K5W93SFw,3309
+ctxpy/base.py,sha256=AEaOCQiDqzEWy3dKpKtyIW40pOMCzZX7_H3XSrjhA1Q,3495
+ctxpy/bioactivity.py,sha256=gaGJkCeEcURuC4ygv9UhwQiwS5ptq0SzntXKkLeWVZw,72
+ctxpy/chemical.py,sha256=Z37AD_4-3Saa7-yzoRg0nrxdOTfpq3Ejzgks_Da0G-w,17161
+ctxpy/command_line.py,sha256=j1PoTRnlqaHHXDNlnXxpEVarBBPdwyiOlQFWRqFMvLE,2436
+ctxpy/data/toxprints.txt,sha256=0JmzcV9KFt6Oh4P6FANDFW6-9GsgUwGoUf0V9DR-Bpo,24452
+ctxpy/ecotox.py,sha256=9WDKTMKOMaJ79o4MHOCI1Ay9PF8gzjdt55dY7RROgAc,89
+ctxpy/exceptions.py,sha256=LG0W8rr20p9XnzT9IwMegjcA7nrW-f1yPGhzLw0-1FA,328
+ctxpy/exposure.py,sha256=4rbg234ltmZ2e7FHwYz4La3fdrX9cNhPl42ymr6KR68,7939
+ctxpy/hazard.py,sha256=WqcT1UsQ9HfFrqYLW1QN_3vXAb_2GH1E8XayCRu0Vhs,7315
+ctxpy/utils.py,sha256=0eypW_HcJOmTOP6babrlraCtKAxksUGP2veuO_62wkY,2241
+ctx_python-0.0.1a4.dist-info/LICENSE,sha256=6RIrCjbo7x_TiZS6O2i0C7TReIl-WLyzWVIIesm3svY,35130
+ctx_python-0.0.1a4.dist-info/METADATA,sha256=2g2DhztR5vXxplvOrnf9J7LLpj1l0AUfZhCLPvd45jY,5287
+ctx_python-0.0.1a4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ctx_python-0.0.1a4.dist-info/entry_points.txt,sha256=5M3xJDReR2c7cbCDGl2GyXohgUrVokU39_6dXfuPG_E,52
+ctx_python-0.0.1a4.dist-info/RECORD,,
