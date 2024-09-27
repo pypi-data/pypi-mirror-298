@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: obyn-obynverifications
+Version: 0.1.1
+Summary: An verification plugin for ObynBot
+Author: GizmoShiba
+Author-email: gizmoshiba@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: disnake
+Requires-Dist: obynutils
+Requires-Dist: quart
+Requires-Dist: sqlalchemy
+
+# Obyn Verification
+
+Verification System for OBYN Bots
