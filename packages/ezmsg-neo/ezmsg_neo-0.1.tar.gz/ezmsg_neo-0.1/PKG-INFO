@@ -1,0 +1,35 @@
+Metadata-Version: 2.3
+Name: ezmsg-neo
+Version: 0.1
+Summary: Load and stream data from neo files into ezmsg.
+Author-email: Chadwick Boulay <chadwick.boulay@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: >=3.9
+Requires-Dist: ezmsg>=3.5.0
+Requires-Dist: neo>=0.13.3
+Provides-Extra: tests
+Requires-Dist: pytest>=8.3.3; extra == 'tests'
+Description-Content-Type: text/markdown
+
+# ezmsg-neo
+
+Load and stream data from [neo](https://github.com/NeuralEnsemble/python-neo) files into [ezmsg](https://github.com/iscoe/ezmsg).
+
+## Installation
+
+TODO: `pip install ezmsg-neo`
+
+For now `pip install ezmsg-neo@git+https://github.com/ezmsg-org/ezmsg-neo`
+
+## Dependencies
+* `ezmsg`
+* `neo`
+
+## Setup (Development)
+
+1. Clone this repo
+2. `uv init`
+3. ezmsg-neo modules are available under `import ezmsg.neo`
+
+TODO: See the `examples` folder for more details.
