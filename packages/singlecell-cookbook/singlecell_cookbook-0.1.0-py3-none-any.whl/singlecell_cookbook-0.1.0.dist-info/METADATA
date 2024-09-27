@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: singlecell-cookbook
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.12
+Requires-Dist: anndata
+Requires-Dist: ipywidgets
+Requires-Dist: numpy<2.0
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: scanpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Provides-Extra: rpy2
+Requires-Dist: anndata2ri; extra == 'rpy2'
+Requires-Dist: rpy2; extra == 'rpy2'
