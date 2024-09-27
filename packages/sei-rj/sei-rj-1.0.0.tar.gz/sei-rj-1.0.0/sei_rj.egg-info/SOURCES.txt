@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+SEI-RJ/SEI-RJ.py
+SEI-RJ/__init__.py
+sei_rj.egg-info/PKG-INFO
+sei_rj.egg-info/SOURCES.txt
+sei_rj.egg-info/dependency_links.txt
+sei_rj.egg-info/top_level.txt
