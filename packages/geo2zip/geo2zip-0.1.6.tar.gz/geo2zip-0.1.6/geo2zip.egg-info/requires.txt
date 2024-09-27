@@ -1,0 +1,5 @@
+haversine
+scipy
+
+[dev]
+pytest
