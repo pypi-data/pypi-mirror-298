@@ -1,0 +1,8 @@
+setup.py
+Calendar/__init__.py
+Calendar/calendar_functions.py
+py_calendar_entry_management_functions.egg-info/PKG-INFO
+py_calendar_entry_management_functions.egg-info/SOURCES.txt
+py_calendar_entry_management_functions.egg-info/dependency_links.txt
+py_calendar_entry_management_functions.egg-info/requires.txt
+py_calendar_entry_management_functions.egg-info/top_level.txt
