@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: alively
+Version: 0.0.1
+Summary: A dynamic, colorful cli for dbt
+Author-email: Tom Waterman <tjwaterman99@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic ==2.9.2
+Requires-Dist: rich ==13.8.1
+
+# alively
+
+A dynamic, colorful cli for dbt, built with [rich](https://github.com/Textualize/rich). Currently a WIP.
+
+![Demo](/demo/demo.gif)
+
+## Install
+
+```
+pip install alively-cli
+```
+
+## Usage
+
+Add `live` before the dbt command you want to run. For example,
+
+```
+live dbt build -s user+
+```
+
+## Help
+
+Please submit a GitHub issue.
