@@ -1,0 +1,14 @@
+plain/loginlink/README.md,sha256=3GAIkgE73KwrP9g5T265oB6nb1UXzNFyHqdGSZFIn3A,56
+plain/loginlink/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plain/loginlink/forms.py,sha256=RdwoBz7wxAnxN7ao0ufRLuW42TyCReN1FknYCQcNTzs,1149
+plain/loginlink/links.py,sha256=3LqXHY5WyLA4hGd52J_iNngoEUZT8hLjhM0xMpAeXI4,1209
+plain/loginlink/signing.py,sha256=JtRN7OkLPClEFBW48XeZA1_MQxh64BlvfgpLxGA5xqk,3744
+plain/loginlink/templates/loginlink/failed.html,sha256=k1w8pIAHNjQIiRTfGnTvS8x5QKqiOQ3rkGFgeXrF6-g,530
+plain/loginlink/templates/loginlink/sent.html,sha256=Z5zEkJRPr4jAhaWVaElgoh3uSefs-wThSGndy_IoEI0,313
+plain/loginlink/templates/mail/loginlink.html,sha256=6P-JjxgBHWTl1ymfNnZ_ssGcMUMUcNOcuz-3ExEqi_0,70
+plain/loginlink/urls.py,sha256=X9WSSBVIlIRf4SJiHcUJgRiYq6mViKmNT9P8iKlKlbI,324
+plain/loginlink/views.py,sha256=w41J8W-uCAFbAFwlBI3pPQ4xQ8ygzQZRcNRt6ZKfV28,1927
+plain_loginlink-0.1.1.dist-info/LICENSE,sha256=fDBdDshcGpZr-JaShIbSznVs4NYH1f_RdoWeVq2-wHc,1553
+plain_loginlink-0.1.1.dist-info/METADATA,sha256=rEvqvqF4batFcPRSmxD4McOe_Cv2QaLQD1cZnJYNKcU,411
+plain_loginlink-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+plain_loginlink-0.1.1.dist-info/RECORD,,
