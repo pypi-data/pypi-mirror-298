@@ -1,0 +1,9 @@
+gitlab-ci-verify-bin==0.*
+
+[dev]
+setuptools==70.*
+setuptools-scm==8.*
+twine==5.1.*
+wheel==0.43.*
+pydoctor==24.3.*
+build==1.*
