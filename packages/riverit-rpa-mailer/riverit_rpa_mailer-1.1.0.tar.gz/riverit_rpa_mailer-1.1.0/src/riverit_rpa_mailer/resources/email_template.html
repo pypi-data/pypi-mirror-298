@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template</title>
+  </head>
+
+  <body>
+    <div
+      style="
+
+        padding: 1cm;
+        margin: 1cm;
+        max-width: 20cm;
+        border-color: rgb(211, 197, 133);
+        border-width: 10px;
+        border-style: double;
+      "
+    >
+      <h1>Hei,</h1>
+      ${statusmessage}
+      <br/>
+
+      ${message}
+      <div
+        style="max-width: min-content; min-width: 0%"
+
+      >
+        ${listitems}
+      </div>
+      <br />
+      <p style="font-weight: bold">Terveisin,</p>
+      <p style="font-weight: bold">${process} -robotti</p>
+    </div>
+  </body>
+</html>

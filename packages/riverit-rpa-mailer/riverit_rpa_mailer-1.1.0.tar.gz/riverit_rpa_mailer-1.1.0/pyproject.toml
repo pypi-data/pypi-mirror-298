@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "riverit-rpa-mailer"
+version = "1.1.0"
+dependenices = [
+    "msal>=1.31.0",
+]
+authors = [
+    {name = "Saku Ylimäki", email="saku.ylimaki@riverit.fi"}
+]
+description = "A mailer designed to be used by robots to send process reports"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
