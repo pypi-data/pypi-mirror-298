@@ -1,0 +1,12 @@
+*.egg-info
+*.pyc
+*.directory
+*.save
+
+dist/
+build/
+public/
+
+.venv
+
+cadorchestrator/server/app
