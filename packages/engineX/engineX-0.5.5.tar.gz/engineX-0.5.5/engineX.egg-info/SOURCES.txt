@@ -1,0 +1,14 @@
+README.md
+setup.py
+engineX.egg-info/PKG-INFO
+engineX.egg-info/SOURCES.txt
+engineX.egg-info/dependency_links.txt
+engineX.egg-info/entry_points.txt
+engineX.egg-info/requires.txt
+engineX.egg-info/top_level.txt
+enginex/__init__.py
+enginex/config.py
+enginex/main.py
+enginex/pdf_processor.py
+enginex/utils.py
+enginex/web_crawler.py
