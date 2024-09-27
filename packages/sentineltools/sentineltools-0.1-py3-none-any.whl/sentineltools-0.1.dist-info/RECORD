@@ -1,0 +1,9 @@
+sentineltools/__init__.py,sha256=ovguP4wzQEDNguczwiZnhMm4dRRVcvnzmHrfQtlRCNQ,15
+sentineltools/files/__init__.py,sha256=DnHViMene20RixnQfgyP-y_XgVvSvqU3z_5ki6TE81o,290
+sentineltools/files/testing.py,sha256=lmT1BZPJ0uAw2rockt9Mbp9A8Zbrr0VEPDAV5ZQHjwo,47
+sentineltools/utils/__init__.py,sha256=ovguP4wzQEDNguczwiZnhMm4dRRVcvnzmHrfQtlRCNQ,15
+sentineltools-0.1.dist-info/LICENSE,sha256=Ieq174Inu5VEMUCohJubnmYs-xo_BmjArbx7HozDw7w,1093
+sentineltools-0.1.dist-info/METADATA,sha256=HraoI-2sBhMqvKPi0NW344skLiiL3rCELLkPfh3D9Ew,636
+sentineltools-0.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+sentineltools-0.1.dist-info/top_level.txt,sha256=FpkFGvNFIyCKdotpG2UgwvHxM13mX4XX2TcceI324JA,14
+sentineltools-0.1.dist-info/RECORD,,
