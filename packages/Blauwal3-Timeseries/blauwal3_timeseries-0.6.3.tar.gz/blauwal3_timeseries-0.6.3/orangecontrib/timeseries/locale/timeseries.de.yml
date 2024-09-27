@@ -1,0 +1,396 @@
+de:
+  package_label: "Zeitreihen"
+  package_desc: "Zeitreihen"
+
+  common:
+    time_series: "Zeitreihe"
+    time_series_model: "Zeitreihenmodell"
+    forecast: "Prognose"
+    fit_value: "Angepasste Werte"
+    residual: "Residuen"
+    exogenous_data: "Exogene Daten"
+    interpolated_time_series: "Interpolierte Zeitreihe"
+    data: "Daten"
+    subset: "Teilmenge"
+    features: "Merkmale"
+
+  common_btn:
+    apply: "&Anwenden"
+
+  adddesc:
+    mean: "Mittelwert"
+    sum: "Summe"
+    product: "Produkt"
+    min: "Minimum"
+    max: "Maximum"
+    span: "Spanne"
+    median: "Median"
+    mode: "Modus"
+    std: "Standardabweichung"
+    var: "Varianz"
+    lin_ma: "Lineares MA"
+    exp_ma: "Exponentielles MA"
+    harmonic: "Harmonisches Mittel"
+    geometric: "Geometrisches Mittel"
+    non_zero: "Nicht-Null-Zählung"
+    defined: "Definierte Zählung"
+    cumsum: "Kumulative Summe"
+    cumprod: "Kumulatives Produkt"
+    years: "Jahre"
+    months: "Monate"
+    days: "Tage"
+    hours: "Stunden"
+    minutes: "Minuten"
+    seconds: "Sekunden"
+    week: "Woche"
+    month_of_year: "Monat des Jahres"
+    week_of_year: "Woche des Jahres"
+    day_of_year: "Tag des Jahres"
+    day_of_month: "Tag des Monats"
+    day_of_week: "Wochentag"
+    hour_of_day: "Stunde des Tages"
+
+  owmodel:
+    msg:
+      target_var_type: "Die Zielvariable der Zeitreihe sollte kontinuierlich und nicht diskret sein."
+      missing_target_var: "Die Eingabezeitreihe enthält keine Zielvariable. Bearbeiten Sie die Domäne und machen Sie eine Variable zur Zielvariable."
+      err: "Fehler {}: {}: {}"
+    report:
+      name: "Name"
+      model_type: "Modelltyp"
+      forecast_step: "Prognoseschritte"
+      confidence_interval: "Konfidenzintervall"
+      time_series: "Zeitreihe"
+    box:
+      name: "Name"
+      name_tip: "Der Name identifiziert dieses Modell in anderen Widgets"
+      forecast: "Prognose"
+    label:
+      forecast_steps_ahead: "Prognoseschritte voraus:"
+      confidence_intervals: "Konfidenzintervalle:"
+
+  owaggregate:
+    name: "Aggregieren"
+    desc: "Daten in Bins nach Sekunde, Minute, Stunde, Tag, Woche, Monat oder Jahr aggregieren."
+    aggregation_time_var: "Die Aggregation erfordert derzeit eine Zeitreihe mit einer Zeitvariable."
+    label:
+      aggregate_by: "Aggregieren nach:"
+      attribute: "Attribut"
+      aggregation_function: "Aggregationsfunktion"
+    gbox:
+      second: "Sekunde"
+      minute: "Minute"
+      hour: "Stunde"
+      day: "Tag"
+      week: "Woche"
+      month: "Monat"
+      year: "Jahr"
+
+  owarimamodel:
+    name: "ARIMA-Modell"
+    desc: "Modellieren Sie die Zeitreihe mit ARMA, ARIMA oder ARIMAX."
+    checkbox_use_exogenous_var: "Exogene (unabhängige) Variablen verwenden (ARMAX)"
+    box_parameters: "Parameter"
+    warn:
+      arima: "ARIMA(0,1,0) entspricht einem Random-Walk-Modell, das ein AR(1)-Modell mit dem Autoregressionskoeffizienten gleich 1 und dem Konstanten Term (d.h. der periodischen Änderung) gleich dem langfristigen Drift der Serie ist."
+    label:
+      auto-regression_order: "Autoregressionsordnung (p):"
+      difference_degree: "Differenzierungsgrad (d):"
+      move_average_order: "Ordnung des gleitenden Durchschnitts (q):"
+
+  owcorrelogram:
+    name: "Korrelogramm"
+    desc: "Visualisieren Sie die Autokorrelation von Variablen."
+    box_option: "Optionen"
+    box_all_attrs: "Autokorrelierte Attribute"
+    label:
+      pacf: "Partielle Autokorrelation (PACF) berechnen"
+    msg:
+      no_instances: "Mindestens 2 Dateninstanzen sind erforderlich"
+      use_confint: "95% Signifikanzintervall plotten"
+      correlation_at_period: "Korrelation bei Periode: {point.key:.2f}<br/>"
+
+  owdifference:
+    name: "Differenzieren"
+    desc: "Machen Sie die Zeitreihe stationär, indem Sie sie durch 1. oder 2. Ordnung diskrete Differenz entlang ihrer Werte ersetzen."
+    msg_series_order: "Serien können bis zur 2. Ordnung differenziert werden. Wenn die Serie jedoch um mehr als 1 Schritt verschoben wird, wird immer eine Differenzierungsordnung von 1 angenommen."
+    box_difference: "Differenzierung"
+    checkbox_invert_direction: "Differenzierungsrichtung umkehren"
+    checkbox_invert_direction_tip: "Beeinflusst, wo die Serie mit NaN-Werten aufgefüllt wird — am Anfang oder am Ende."
+    assume_zeros: "Nullen vor dem Start annehmen"
+    label:
+      compute: "Berechnen:"
+      difference_order: "Differenzierungsordnung:"
+      difference_order_tip: "Der Wert entspricht der n-ten Ordnung der numerischen Ableitung der Serie. \nDie Ordnung ist auf 1 festgelegt, wenn die Verschiebungsperiode ungleich 1 ist."
+      shift: "Verschiebung:"
+      shift_tip: "Legt den Abstand zwischen den Punkten fest; 1 für aufeinanderfolgende Punkte"
+    gbox:
+      difference: "Erste Ordnung Differenz"
+      difference2: "Zweite Ordnung Differenz"
+      quotient: "Änderungsquotient"
+      percentage_change: "Prozentuale Änderung"
+      apply: "&Anwenden"
+      operation: "Operation"
+
+  owgrangercausality:
+    name: "Granger-Kausalität"
+    desc: "Testen Sie, ob eine Zeitreihe eine andere Granger-verursacht (d.h. ein Indikator für eine andere sein kann)."
+    box_granger_test: "Granger-Test"
+    btn_test: "&Testen"
+    msg_unexpect_error: "Unerwarteter Fehler: {}"
+    user_advice_messages: "Wir sagen, <i>X</i> verursacht <i>Y</i> nach Granger, wenn die Vorhersagen der Werte von <i>Y</i> basierend auf seinen eigenen vergangenen Werten und den vergangenen Werten von <i>X</i> besser sind als die Vorhersagen von <i>Y</i> basierend auf seinen eigenen vergangenen Werten allein.<br><br> Es bedeutet NICHT, dass <i>X</i> <i>Y</i> verursacht!"
+    label:
+      confidence: "Vertrauen:"
+      max_lag: "Maximale Verzögerung:"
+
+  owinterpolate:
+    name: "Interpolieren"
+    desc: "Induzieren Sie fehlende Werte (NaN) in der Zeitreihe durch Interpolation."
+    box_interpolation_parameters: "Interpolationsparameter"
+    btn_apply: "Anwenden"
+    msg_interpolation_method: "Während Sie die Interpolationsmethode für kontinuierliche Variablen frei wählen können, können diskrete Variablen nur mit der <i>nächsten</i> Methode oder ihrem Modus (d.h. dem häufigsten Wert) interpoliert werden."
+    linear_interpolation: "Lineare Interpolation"
+    cubic_interpolation: "Kubische Interpolation"
+    nearest_point_interpolation: "Nächste Punktinterpolation"
+    mean_interpolation: "Mittelwert/Modus-Interpolation"
+    label:
+      interpolation_missing_values: "Interpolation fehlender Werte:"
+      multi-variate_interpolation: "Multivariate Interpolation"
+    gbox:
+      linear: "linear"
+      cubic: "kubisch"
+      nearest: "nächste"
+      mean: "Mittelwert"
+    msg:
+      categorical: "Kategorische Variablen:\n fehlende Werte werden durch den häufigsten Wert ersetzt"
+
+  owlinechart:
+    name: "Liniendiagramm"
+    desc: "Visualisieren Sie die Sequenz und den Verlauf der Zeitreihe."
+    label_type: "Typ:"
+    checkbox_logarithmic_axis: "Logarithmische Achse"
+    btn_add_plot: " &Plot hinzufügen"
+    gbox:
+      line: "Linie"
+      step_line: "Stufenlinie"
+      column: "Spalte"
+      area: "Fläche"
+      spline: "Spline"
+
+  owmodelevaluation:
+    name: "Modellbewertung"
+    desc: |-
+      Bewerten Sie verschiedene Zeitreihenmodelle, indem Sie die
+      Fehler vergleichen, die sie in Bezug auf:
+      Root Mean Squared Error (RMSE),
+      Median Absolute Error (MAE),
+      Mean Absolute Percent Error (MAPE),
+      Prediction of Change in Direction (POCID),
+      Bestimmtheitsmaß (R²),
+      Akaike-Informationskriterium (AIC) und
+      Bayes'sches Informationskriterium (BIC) machen.
+    box_evaluation_parameters: "Bewertungsparameter"
+    label_number_folds: "Anzahl der Falten:"
+    forecast_steps: "Prognoseschritte:"
+    btn_apply: "&Anwenden"
+    msg:
+      error: "Unerwarteter Fehler: {}"
+      model_setting_err: "Ein oder mehrere Modelle sind fehlgeschlagen."
+
+  owmovingtransform:
+    name: "Gleitende Transformation"
+    desc: "Wenden Sie Rollfensterfunktionen auf die Zeitreihe an."
+    box_move_transform: "Gleitende Transformation"
+    tooltip_non_overlapping: "Wenn dies aktiviert ist, werden die Rollfenster nicht durch die Serie gerollt, sondern nebeneinander angewendet, sodass die resultierende Ausgabeserie um die Länge des festen Fensters kürzer ist."
+    label:
+      fix_window_width: "Feste Fensterbreite:"
+      series: "Serie"
+      window_width: "Fensterbreite:"
+      aggregation_function: "Aggregationsfunktion"
+    btn:
+      non-overlap_windows: "Nicht überlappende Fenster"
+      transform: "Transformieren"
+      add: "Hinzufügen "
+      delete_selected: "&Ausgewählte löschen"
+      apply: "&Anwenden"
+      aggregation_type: "Aggregationstyp"
+      sliding_window: "Gleitendes Fenster"
+      window_width: "Fensterbreite:"
+      show_numeric: "Nur numerische Variablen anzeigen"
+      block_width: "Blockbreite:"
+      aggregate_time_periods: "Zeitperioden aggregieren"
+      year: "Jahre"
+      consecutive_block: "Aufeinanderfolgende Blöcke"
+      filter: "Filter..."
+    msg:
+      get_sma: "Erhalten Sie den einfachen gleitenden Durchschnitt (SMA) einer Serie, indem Sie die Aggregationsfunktion auf '{}' setzen."
+      non-overlapping: "Wenn '{}' aktiviert ist, überlappen sich die Rollfenster nicht. Stattdessen laufen sie nebeneinander durch die Serie, sodass die resultierende transformierte Serie um die Länge des festen Fensters kürzer ist."
+      add_transform: "Mindestens eine Transformation sollte hinzugefügt werden."
+      no_selected: "Keine (anwendbaren) Aggregationen ausgewählt"
+      only_sliding_window: "Einige Aggregationen sind nur für das gleitende Fenster anwendbar ({})"
+      window_large: "Fensterbreite ist zu groß"
+      block_large: "Blockbreite ist zu groß"
+      replaced: "Aggregation wurde durch Gleitende Transformation ersetzt; \n Widget manuell neu einstellen"
+    ref_options:
+      discard_original: "Originaldaten verwerfen"
+      keep_first_instance: "Erste Instanz behalten"
+      keep_middle_instance: "Mittlere Instanz behalten"
+      keep_last_instance: "Letzte Instanz behalten"
+    keep_options:
+      discard_original: "Originaldaten verwerfen"
+      keep_original: "Originaldaten behalten"
+      include_leading_instances: "Führende Instanzen einbeziehen"
+    keep_options_tooltips:
+      discard_original: "Ausgabedaten enthalten nur Aggregate."
+      keep_original: "Ausgabedaten enthalten Originaldateninstanzen,\naußer den ersten N-1 (wobei N die Fensterbreite ist)."
+      include_leading_instances: "Ausgabedaten enthalten alle Originalinstanzen,\neinschließlich der führenden, für die das Aggregat\nnicht berechnet wird."
+
+  owperiodogram:
+    name: "Periodogramm"
+    desc: "Visualisieren Sie die Zyklen, Saisonalität, Periodizität und die bedeutendsten Frequenzen der Zeitreihe."
+    tooltip_period: "Periode: {}<br/>"
+    box:
+      periodogram_attribute: "Periodogramm-Attribut(e)"
+
+  owseasonaladjustment:
+    name: "Saisonale Anpassung"
+    desc: "Entfernen Sie die saisonale Komponente einer Zeitreihe, die ein saisonales Muster aufweist."
+    box_seasonal_adjustment: "Saisonale Anpassung"
+    row_season_period: "Saisonperiode:"
+    row_season_period_tip: "Die erwartete Länge des vollständigen Zyklus. Wenn Sie z.B. monatliche Daten haben und die scheinbare Saison sich jedes Jahr wiederholt, geben Sie 12 ein."
+    msg:
+      usage_method: "Ein additives Modell ist geeignet, wenn die Größe der saisonalen Schwankungen nicht mit dem Niveau variiert. Andernfalls ist ein multiplikatives Modell geeignet. Die Logarithmierung der Serie verwandelt eine multiplikative Beziehung in eine additive. Multiplikative Zerlegung ist bei wirtschaftlichen Zeitreihen häufiger."
+      season_period: "Die Saisonperiode ist die Länge des gesamten Saisonzyklus. Wenn Sie z.B. stündliche Stromverbrauchsdaten haben und die Serie anscheinend jeden Tag einen Zyklus macht, ist die geeignete Periode 24. Der Wert sollte wahrscheinlich einer der bedeutendsten Perioden im Periodogramm entsprechen."
+      not_enough_instances: "Die Zeitreihe muss mindestens 3 Instanzen haben."
+    btn:
+      additive: "additiv"
+      multiplicative: "multiplikativ"
+      decomposition_model: "Zerlegungsmodell:"
+      apply: "&Anwenden"
+
+  owspiralogram:
+    name: "Spiralogramm"
+    desc: "Visualisieren Sie die Periodizität der Zeitreihe in einem Spiral-Heatmap."
+    checkbox_invert_order: "Y-Achsen-Reihenfolge umkehren"
+    msg_no_time_variable: "Spiralogramm erfordert eine Zeitreihe mit einer Zeitvariable."
+    bin_width: "Bin-Breite"
+    time_period: "Zeitperiode"
+    box:
+      axes: "Achsen"
+      y_axis: "Y-Achse:"
+      radial: "Radial:"
+      aggregation: "Aggregation"
+      unction: "Funktion:"
+    btn:
+      Radial: "Radial"
+      color: "Farbe"
+      show_instance: "(Instanzanzahl anzeigen)"
+      hide_label: "Innere Beschriftungen ausblenden"
+      none: "(Keine)"
+
+  owtabletotimeseries:
+    name: "Zeitreihe bilden"
+    desc: "Interpretieren Sie die Datentabelle als Zeitreihe neu."
+    msg_omit_null: "Einige Werte des gewählten sequentiellen Attributs '{}' sind NaN und wurden weggelassen"
+    box_sequence: "Sequenz"
+    btn:
+      sequential_attribute: "Sequentielles Attribut:"
+      sequence_instance_order: "Sequenz wird durch Instanzreihenfolge impliziert"
+      apply: "&Anwenden"
+      select_column: "Spalte mit Datum auswählen"
+      sequence_imply: "Sequenz durch Instanzreihenfolge impliziert"
+      variable: "Variable: "
+      start: "Start: "
+    msg:
+      invalid_time: "Ungültige Zeit"
+      missing_values: "Zeilen mit fehlenden Werten von '{}' werden übersprungen"
+    month:
+      january: "Januar"
+      february: "Februar"
+      march: "März"
+      april: "April"
+      may: "Mai"
+      june: "Juni"
+      july: "Juli"
+      august: "August"
+      september: "September"
+      october: "Oktober"
+      november: "November"
+      december: "Dezember"
+    data:
+      seconds: "Sekunden"
+      minutes: "Minuten"
+      hours: "Stunden"
+      days: "Tage"
+      weeks: "Wochen"
+      months: "Monate"
+      years: "Jahre"
+      centuries: "Jahrhunderte"
+    box:
+      include_time: "Uhrzeit im Zeitstempel einschließen"
+      include_date: "Datum im Zeitstempel einschließen"
+      step: "Schritt: "
+      filter: "Filter..."
+
+  owtimeslice:
+    name: "Zeitscheibe"
+    desc: "Wählen Sie einen Messbereich in einem Zeitintervall aus."
+    label_delay: "Verzögerung:"
+    sec: '%.2g Sek'
+    msg:
+      miss_time_var: "Daten enthalten keine Zeitvariable"
+      no_time_delta: "Daten enthalten nur einen Zeitpunkt"
+    btn:
+      loop_playback: "Wiedergabe wiederholen"
+      custom_step_size: "Benutzerdefinierte Schrittgröße:"
+      custom_step_size_tip: "Wenn nicht gewählt, bewegt sich das aktive Intervall vorwärts (rückwärts) in Schritten seiner eigenen Größe."
+    box:
+      time_slice: "Wählen Sie einen Zeitbereich"
+      play_through: "Schritt / Durchspielen"
+      track_interval: "Wiedergabe-/Verfolgungsintervall"
+      track_interval_tip: "In Millisekunden, legen Sie die Verzögerung für die Wiedergabe und das Senden von Daten beim manuellen Bewegen des Intervalls fest."
+
+  owvarmodel:
+    name: "VAR Modell"
+    desc: "Modellieren Sie die Zeitreihe mit Vektorautoregression (VAR)."
+    msg_series_stationary: "Hinweis: Das VAR-Modell erfordert, dass die Serie stationär ist."
+    box:
+      parameter: "Parameter"
+      information_criterion: "Informationskriterium"
+      trend: "Trend"
+    label:
+      maxlags: "Maximale Autoregressionsordnung:"
+      optimize_ar_order: "AR-Ordnung optimieren nach:"
+      add_trend_vector: "Trendvektor(en) hinzufügen:"
+    btn:
+      none: "Keine"
+      aic: "Akaikes Informationskriterium (AIC)"
+      bic: "Bayessches Informationskriterium (BIC)"
+      hannan–quinn: "Hannan–Quinn"
+      fpe: "Finaler Vorhersagefehler (FPE)"
+      average_of_the_above: "Durchschnitt der obigen"
+      constant: "Konstant"
+      constant_linear: "Konstant und linear"
+      constant_linear_quadratic: "Konstant, linear und quadratisch"
+
+owyahoofinance:
+    name: "Yahoo Finance"
+    desc: "Erzeugen Sie Zeitreihen aus Yahoo Finance Aktienmarktdaten."
+    msg_download_fail: "Fehler beim Herunterladen der Daten (HTTP-Fehler {}). Falsches Aktienkürzel?"
+    box_yahoo_finance_stock_data: "Yahoo Finance Aktienmarktdaten"
+    btn_download: "Herunterladen"
+    label:
+      ticker: "Ticker:"
+      from: "Von:"
+      to: "Bis:"
+    gbox:
+      amzn: "AMZN"
+      aapl: "AAPL"
+      goog: "GOOG"
+      fb: "FB"
+      spy: "SPY"
+      dji: "^DJI"
+      tnx: "^TNX"
+
+
+
