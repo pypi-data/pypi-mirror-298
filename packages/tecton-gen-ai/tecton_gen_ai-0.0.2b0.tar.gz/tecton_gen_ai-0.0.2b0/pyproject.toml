@@ -1,0 +1,66 @@
+[project]
+name = "tecton-gen-ai"
+description = "[private preview] Tecton Gen AI SDK"
+authors = [
+    {name = "Tecton, Inc.", email = "support@tecton.ai"},
+]
+dependencies = [
+    "typing_extensions>=4.5",
+]
+readme = "README.pypi.md"
+requires-python = ">=3.8"
+license = {text = "Tecton Proprietary"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: Other/Proprietary License",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://tecton.ai"
+Documentation = "https://docs.tecton.ai"
+
+
+[project.entry-points."pytest11"]
+tecton-tests = "tecton_gen_ai.testing.fixtures"
+
+[project.optional-dependencies]
+realtime = ["aws-secretsmanager-caching"]
+tecton = ["tecton[rift]~=1.0.0"]
+langchain = ["langchain", "langchain-core", "langchain-community"]
+llama-index = ["llama-index"]
+dev = ["rich", "markdown", "ipywidgets"]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "tecton_gen_ai/_version.py"
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+managed = true
+dev-dependencies = [
+    "setuptools",
+    "wheel",
+    "pytest",
+    "pytest-cov>=5.0.0",
+    "pre-commit>=3.7.1",
+    "pylint>=3.2.6",
+    "ruff>=0.6.3",
+    "langchain-openai>=0.1.23",
+    "lancedb>=0.12.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.coverage.run]
+source = ['tecton_gen_ai']
+
+[tool.pytest.ini_options]
+addopts = "-p pytest_cov -p tecton_gen_ai -vvv --cov=tecton_gen_ai --cov-report=term-missing:skip-covered --cov-append"
