@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Blauwal3-Recommendation
+Version: 0.1.4
+Summary: 蓝鲸数据挖掘软件包的推荐系统附加组件。
+Home-page: https://github.com/biolab/orange3-recommendation
+Download-URL: https://github.com/biolab/orange3-recommendation/tarball/0.1.4
+Author: 大圣实验楼
+Author-email: dashenglab@163.com
+Keywords: orange3-recommendation,data mining,orange3 add-on
+License-File: LICENSE.txt
+Requires-Dist: Blauwal3
+Requires-Dist: mock
+Requires-Dist: numpy>=1.9.0
+Requires-Dist: scikit-learn>=0.17
+Requires-Dist: setuptools-git
+
+Orange3 Recommendation
+======================
+
+Orange3 add-on for recommendation. A Python module that extends Orange3 to
+include support for recommender systems. All features can be combined with
+powerful data mining techniques from the Orange data mining framework.
