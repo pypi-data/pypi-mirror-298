@@ -1,0 +1,2 @@
+[console_scripts]
+PToolkit = PToolkit.cmd:main
