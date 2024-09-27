@@ -1,0 +1,10 @@
+package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/rsp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/rsp/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/rsp/common/color/__init__.py,sha256=qvF9CJDX2mXT2fYuTDe0glX8jPiSeR0c398wkZX_LY8,20
+package/rsp/common/color/color.py,sha256=IqRFTM_JD-H8Y6MVdRdk1a6sSie3I5VlO_fOEUs2YrQ,539
+rsp_common-0.0.6.dist-info/LICENSE,sha256=ZEDgnuK3AmyR2SDkaaOkIgC73xaE7EGBaobAzLH7lv0,1070
+rsp_common-0.0.6.dist-info/METADATA,sha256=IOFRhLU2WOCDlQ9We3Teg0kouYDhwmiWUyGrpYIm_Uw,791
+rsp_common-0.0.6.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+rsp_common-0.0.6.dist-info/top_level.txt,sha256=TpQW7893uEAT8mPh-QCMZWhhKYvlqryC9Fjm5Hxg2f8,8
+rsp_common-0.0.6.dist-info/RECORD,,
