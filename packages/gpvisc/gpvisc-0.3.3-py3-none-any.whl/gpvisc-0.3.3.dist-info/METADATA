@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: gpvisc
+Version: 0.3.3
+Summary: A Python module containing a Gaussian Process - Artificial Neural Network model of melt viscosity
+Author-email: Charles Le Losq <lelosq@ipgp.fr>, Clément Ferraina <ferraina@ipgp.fr>
+Keywords: viscosity,liquid,glass,magma,phosphate,aluminosilicate
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy >=1.12
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: xlrd
+Requires-Dist: matplotlib
+Requires-Dist: torch
+Requires-Dist: gpytorch
+Requires-Dist: h5py
+
+# GPVisc
+=========
+
+[![Build Status](https://travis-ci.org/charlesll/rampy.svg?branch=master)](https://travis-ci.org/charlesll/rampy)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1168729.svg)](https://doi.org/10.5281/zenodo.1168729) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/charlesll/rampy.git/master)
+![GitHub](https://img.shields.io/github/license/charlesll/rampy)
+
+
+GPVisc is a Python module containing a Gaussian Process - Artificial Neural Network of melt viscosity.
+
+- **Documentation:** http://charlesll.github.io/gpvisc/html/index.html
+- **Examples:** https://github.com/charlesll/gpvisc/tree/master/examples
+- **Source code:** https://github.com/charlesll/gpvisc/tree/master/src/gpvisc
+- **License:** https://github.com/charlesll/gpvisc/tree/master/LICENSE.txt
+- **Contributing:** https://github.com/charlesll/gpvisc/blob/master/CONTRIBUTING.md
+- **Bug reports:** https://github.com/charlesll/gpvisc/issues
+- **Contact:** lelosq@ipgp.fr
+
+See the documentation for more information.
