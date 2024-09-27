@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+pyprettifier/__init__.py
+pyprettifier/emoji_converter.py
+pyprettifier/logger.py
+pyprettifier.egg-info/PKG-INFO
+pyprettifier.egg-info/SOURCES.txt
+pyprettifier.egg-info/dependency_links.txt
+pyprettifier.egg-info/requires.txt
+pyprettifier.egg-info/top_level.txt
