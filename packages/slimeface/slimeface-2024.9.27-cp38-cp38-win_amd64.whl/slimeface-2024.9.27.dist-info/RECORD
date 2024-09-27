@@ -1,0 +1,10 @@
+slimeface/__init__.py,sha256=cUu_cJ1DXHjwVDEN9fcoZ61mhJ6PiA6zkbXdHR7d6o8,544
+slimeface/facedetection.dll,sha256=waWoOXysyPCEC6QagW9XkYAxpgo5Epfxw15ynvzPHTc,285696
+slimeface/facedetection.exp,sha256=6a5cLIo3a9LJ1Wt08o54noDTj89PCkMvMk0qkC4O_88,52558
+slimeface/facedetection.lib,sha256=tsfv_DIoysWrRTLjJs3fmJ-FCdlCX3Cfv-Em12jzWTc,78268
+slimeface/slimeface.cp38-win_amd64.pyd,sha256=midfu0WMDPg-CHUPL0rWUHO7XElP4tdYFGZfhWo5a60,107008
+slimeface-2024.9.27.dist-info/LICENSE,sha256=srrB7CzcyFnDf7zPGhUllhV1lppisgtn2qaWhJm3ndE,1837
+slimeface-2024.9.27.dist-info/METADATA,sha256=jld40Wz-AzuwlZKowHK9MSRFXOeDXAfK-VAzWc7lB80,2938
+slimeface-2024.9.27.dist-info/WHEEL,sha256=1rwUt2BQv3N5S0pE0N9WlEu1uiKd-mQhEp4H-4r377U,99
+slimeface-2024.9.27.dist-info/top_level.txt,sha256=h9yFR-E8BtzINL76I7IqvWUhTStGzHTFII8pkfMIdms,10
+slimeface-2024.9.27.dist-info/RECORD,,
