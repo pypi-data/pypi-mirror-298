@@ -1,0 +1,94 @@
+{% load i18n %}
+<div class="content-sidebar-body">
+  <ul class="nav flex-column nxl-content-sidebar-item">
+    <li class="nav-item">
+      <a
+        class="nav-link {% if segment.url == 'message_templates' %} active {%endif%}"
+        href="{% url 'message_templates' %}"
+      >
+        <i class="feather-mail"></i>
+        <span>{% trans "Message Template" %}</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link {% if segment.url == 'tenant_subscription_plans' %} active {%endif%}"
+        href="{% url 'tenant_subscription_plans' %}"
+      >
+        <i class="feather-dollar-sign"></i>
+        <span>{% trans "Subscription Plans" %}</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link {% if segment.url == 'tenant_billing_and_payment' %} active {%endif%}"
+        href="{% url 'tenant_billing_and_payment' %}"
+      >
+        <i class="feather-credit-card"></i>
+        <span>{% trans "Billing and Payment" %}</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link {% if segment.url == 'tenant_user_management' %} active {%endif%}"
+        href="{% url 'tenant_user_management' %}"
+      >
+        <i class="feather-users"></i>
+        <span>{% trans "User Management" %}</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link {% if segment.url == 'tenant_audit_trail' %} active {%endif%}"
+        href="{% url 'tenant_audit_trail' %}"
+      >
+        <i class="feather-database"></i>
+        <span>{% trans "Audit Trail" %}</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link {% if segment.url == 'tenant_notifications' %} active {%endif%}"
+        href="{% url 'tenant_notifications' %}"
+      >
+        <i class="feather-bell"></i>
+        <span>{% trans "Notifications" %}</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link {% if segment.url == 'organization_details' %} active {%endif%}"
+        href="{% url 'organization_details' %}"
+      >
+        <i class="feather-home"></i>
+        <span>{% trans "Organization Details" %}</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link {% if segment.url == 'tenant_address' %} active {%endif%}"
+        href="{% url 'tenant_address' %}"
+      >
+        <i class="feather-map-pin"></i>
+        <span>{% trans "Address" %}</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link {% if segment.url == 'tenant_support' %} active {%endif%}"
+        href="{% url 'tenant_support' %}"
+      >
+        <i class="feather-life-buoy"></i>
+        <span>{% trans "Support Case" %}</span>
+      </a>
+    </li>
+  </ul>
+</div>

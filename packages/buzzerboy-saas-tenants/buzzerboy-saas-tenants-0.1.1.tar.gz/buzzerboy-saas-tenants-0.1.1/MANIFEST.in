@@ -1,0 +1,8 @@
+include README.md
+include manage.py
+include buzzerboy-saas-tenants/Dockerfile
+include buzzerboy-saas-tenants/entrypoint.sh
+recursive-include buzzerboy-saas-tenants/static/ *
+recursive-include buzzerboy-saas-tenants/html5_ui/ *
+recursive-include buzzerboy-saas-tenants/media/ *
+recursive-include buzzerboy-saas-tenants/fixtures/ *

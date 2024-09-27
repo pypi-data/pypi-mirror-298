@@ -1,0 +1,288 @@
+
+{% extends "layouts/base-applications.html" %}
+{% load static i18n %}
+{% block title %} Settings General {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/css/dataTables.bs5.min.css'%}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/css/select2.min.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/css/select2-theme.min.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/css/tagify.min.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/css/tagify-data.min.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/css/quill.min.css'%}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<style>
+    .hidden-scrollbar {
+            overflow: auto; /* Allows scrolling */
+            scrollbar-width: none; /* Firefox */
+        }
+</style>
+{% endblock stylesheets %}
+
+{% block content %}
+<!--! ================================================================ !-->
+    <!--! [Start] Main Content !-->
+    <!--! ================================================================ !-->
+    <main class="nxl-container apps-container">
+        <div class="nxl-content without-header nxl-full-content">
+            <!-- [ Main Content ] start -->
+            <div class="main-content d-flex">
+                <!-- [ Content Sidebar ] start -->
+                <div class="content-sidebar content-sidebar-md" data-scrollbar-target="#psScrollbarInit">
+                    <div class="content-sidebar-header bg-white sticky-top hstack justify-content-between">
+                        <h4 class="fw-bolder mb-0">{% trans "Settings" %}</h4>
+                        <a href="javascript:void(0);" class="app-sidebar-close-trigger d-flex">
+                            <i class="feather-x"></i>
+                        </a>
+                    </div>
+
+                    {% include 'includes/tenantsettingsnav.html' %}
+
+                    
+                </div>
+                <div class="content-area"  data-scrollbar-target="#psScrollbarInit">
+                    <div class="content-area-header bg-white sticky-top">
+                        <div class="page-header-left d-flex align-items-center my-auto">
+                            <div class="page-header-title">
+                                <h4 class="fw-bolder mb-0">{{segment.text}}</h4>
+                            </div>
+                        </div>
+                        <div class="page-header-right ms-auto">
+                            <div class="d-flex align-items-center gap-3 page-header-right-items-wrapper">
+                                <button id="btnSubmitTenantForm" class="btn btn-primary">
+                                    <i class="feather-save me-2"></i>
+                                    <span>{% trans "Save Changes" %}</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-area-body min-vh-100">
+                         <div class="card">
+                                <div class="card-body">
+                                    <form method="post" id="tenantForm" enctype="multipart/form-data">
+                                        {% csrf_token %}
+                                        {{ form.non_field_errors }}  <!-- Display non-field errors here -->
+                                        
+                                        <div class="mb-4">
+                                            <label for="{{ form.billing_contact_name.label }}"  class="form-label mb-0">{{ form.billing_contact_name.label }}</label>
+                                            <div class="">
+                                                {{form.billing_contact_name}}
+                                            </div>
+                                            {% if form.billing_contact_name.errors %}
+                                                <div class="text-danger">
+                                                    {% for error in form.billing_contact_name.errors %}
+                                                        <p>{{ error }}</p>
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                        
+                                        <div class="mb-4">
+                                            <label for="{{ form.billing_contact_address.label }}"  class="form-label mb-0">{{ form.billing_contact_address.label }}</label>
+                                            <div class="">
+                                                {{form.billing_contact_address}}
+                                            </div>
+                                            {% if form.billing_contact_address.errors %}
+                                                <div class="text-danger">
+                                                    {% for error in form.billing_contact_address.errors %}
+                                                        <p>{{ error }}</p>
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                        
+                                        <div class="mb-4">
+                                            <label for="{{ form.billing_contact_city.label }}"  class="form-label mb-0">{{ form.billing_contact_city.label }}</label>
+                                            <div class="">
+                                                {{form.billing_contact_city}}
+                                            </div>
+                                            {% if form.billing_contact_city.errors %}
+                                                <div class="text-danger">
+                                                    {% for error in form.billing_contact_city.errors %}
+                                                        <p>{{ error }}</p>
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                        
+                                        <div class="mb-4">
+                                            <label for="{{ form.billing_contact_postalcode.label }}"  class="form-label mb-0">{{ form.billing_contact_postalcode.label }}</label>
+                                            <div class="">
+                                                {{form.billing_contact_postalcode}}
+                                            </div>
+                                            {% if form.billing_contact_postalcode.errors %}
+                                                <div class="text-danger">
+                                                    {% for error in form.billing_contact_postalcode.errors %}
+                                                        <p>{{ error }}</p>
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                        
+                                        <div class="mb-4">
+                                            <label for="{{ form.billing_contact_country.label }}"  class="form-label mb-0">{{ form.billing_contact_country.label }}</label>
+                                            <div class="">
+                                                {{form.billing_contact_country}}
+                                            </div>
+                                            {% if form.billing_contact_country.errors %}
+                                                <div class="text-danger">
+                                                    {% for error in form.billing_contact_country.errors %}
+                                                        <p>{{ error }}</p>
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                        
+                                        <div class="mb-4">
+                                            <label for="{{ form.billing_contact_state_province.label }}"  class="form-label mb-0">{{ form.billing_contact_state_province.label }}</label>
+                                            <div class="">
+                                                {{form.billing_contact_state_province}}
+                                            </div>
+                                            {% if form.billing_contact_state_province.errors %}
+                                                <div class="text-danger">
+                                                    {% for error in form.billing_contact_state_province.errors %}
+                                                        <p>{{ error }}</p>
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                        
+                                        <div class="mb-4">
+                                            <label for="{{ form.billing_contact_email.label }}"  class="form-label mb-0">{{ form.billing_contact_email.label }}</label>
+                                            <div class="">
+                                                {{form.billing_contact_email}}
+                                            </div>
+                                            {% if form.billing_contact_email.errors %}
+                                                <div class="text-danger">
+                                                    {% for error in form.billing_contact_email.errors %}
+                                                        <p>{{ error }}</p>
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                        
+                                        <div class="mb-4">
+                                            <label for="{{ form.billing_contact_telephone.label }}"  class="form-label mb-0">{{ form.billing_contact_telephone.label }}</label>
+                                            <div class="">
+                                                {{form.billing_contact_telephone}}
+                                            </div>
+                                            {% if form.billing_contact_telephone.errors %}
+                                                <div class="text-danger">
+                                                    {% for error in form.billing_contact_telephone.errors %}
+                                                        <p>{{ error }}</p>
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                    </div>
+                    <!-- [ Footer ] start -->
+                    <footer class="footer sticky-bottom"> 
+                        <p class="fs-11 text-muted fw-medium text-uppercase mb-0 copyright">
+                            <span>{% trans "Copyright" %} ©</span>
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                        </p>
+                        <div class="d-flex align-items-center gap-4">
+                            <a href="javascript:void(0);" class="fs-11 fw-semibold text-uppercase">{% trans "Help" %}</a>
+                            <a href="javascript:void(0);" class="fs-11 fw-semibold text-uppercase">{% trans "Terms" %}</a>
+                            <a href="javascript:void(0);" class="fs-11 fw-semibold text-uppercase">{% trans "Privacy" %}</a>
+                        </div>
+                    </footer>
+                    <!-- [ Footer ] end -->
+                </div>
+                <!-- [ Content Area ] end -->
+            </div>
+            <!-- [ Main Content ] end -->
+        </div>
+    </main>
+    <!--! ================================================================ !-->
+    <!--! [End] Main Content !-->
+    <!--! ================================================================ !-->
+{% endblock content %}
+
+{% block components %} 
+
+{% endblock components %}
+
+{% block javascripts %}
+<!--! ================================================================ !-->
+<!--! BEGIN: Vendors JS !-->
+<script src="{% static 'assets/vendors/js/vendors.min.js' %}"></script>
+<!-- vendors.min.js' %} {always must need to be top} -->
+<script src="{% static 'assets/vendors/js/dataTables.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/dataTables.bs5.min.js' %}"></script>
+
+<script src="{% static 'assets/vendors/js/select2.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/select2-active.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/tagify.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/tagify-data.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/quill.min.js' %}"></script>
+<!--! END: Vendors JS !-->
+<!--! BEGIN: Apps Init  !-->
+<script src="{% static 'assets/js/common-init.min.js' %}"></script>
+<script src="{% static 'assets/js/payment-init.min.js' %}"></script>
+<script src="{% static 'assets/js/settings-init.min.js' %}"></script>
+<script src="{% static 'assets/js/apps-email-init.min.js' %}"></script>
+
+<script src="{% static 'assets/js/apps-storage-init.min.js' %}"></script>
+<!--! END: Apps Init !-->
+<!--! BEGIN: Theme Customizer  !-->
+<script src="{% static 'assets/js/theme-customizer-init.min.js' %}"></script>
+<script src="{% static '/ckeditor/ckeditor/ckeditor.js' %}"></script>
+<script src="{% static '/ckeditor/ckeditor-init.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+<script>
+    // Function to display toast messages
+    function showToast(message, type) {
+        Toastify({
+            text: message,
+            duration: 5000,
+            close: true,
+            gravity: "top",
+            position: "right",
+            backgroundColor: type === 'success' ? "linear-gradient(to right, #00b09b, #96c93d)" : type === 'error' ? "linear-gradient(to right, #FF5F5F, #FF5F5F)" : "linear-gradient(to right, #1e40af, #1d4ed8)",
+        }).showToast();
+    }
+
+    // Display toast notifications if messages exist
+    {% if messages %}
+        {% for message in messages %}
+            showToast("{{ message.message|safe }}", "{{ message.tags }}");
+        {% endfor %}
+    {% endif %}
+</script>
+<script>
+    document.getElementById('btnSubmitTenantForm').addEventListener('click', function() {
+        document.getElementById('tenantForm').submit();
+    });
+</script>
+<script>
+document.getElementById('company_logo').addEventListener('change', function(event) {
+    var preview = document.getElementById('profile-picture-preview');
+    var file = event.target.files[0];
+    var company_logo = "/media/{{ user.profile.company_logo }}" || "/static/assets/images/avatar/1.png";
+
+    if (file) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            preview.src = e.target.result;
+        }
+
+        reader.readAsDataURL(file);
+    } else {
+        preview.src = company_logo;
+    }
+});
+</script>
+<!--! END: Theme Customizer !-->
+{% endblock javascripts %}
+

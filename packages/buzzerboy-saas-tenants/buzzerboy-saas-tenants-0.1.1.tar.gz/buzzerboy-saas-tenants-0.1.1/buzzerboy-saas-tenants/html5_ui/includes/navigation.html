@@ -1,0 +1,91 @@
+{% load static i18n %}
+<nav class="nxl-navigation">
+  <div class="navbar-wrapper">
+    <div class="m-header">
+      <a href="{% url 'home' %}" class="b-brand">
+        <!-- ========   change your logo hear   ============ -->
+        <img
+          src="{% static 'assets/images/logo-full.png'%}"
+          alt=""
+          class="logo logo-lg"
+        />
+        <img
+          src="{% static 'assets/images/logo-abbr.png'%}"
+          alt=""
+          class="logo logo-sm"
+        />
+      </a>
+    </div>
+
+    <div class="navbar-content">
+      <ul class="nxl-navbar">
+        <li class="nxl-item">
+          <a href="{% url 'home' %}" class="nxl-link">
+            <span class="nxl-micon"><i class="feather-airplay"></i></span>
+            <span class="nxl-mtext">{% trans "Dashboards" %}</span
+            ><span class="nxl-arrow"></span>
+          </a>
+        </li>
+
+        <hr class="m-1 mt-3 p-0" />
+
+        <li class="nxl-item nxl-caption">
+          <label>{% trans "Staffing" %}</label>
+        </li>
+
+        <hr class="m-1 mt-3 p-0" />
+
+        <li class="nxl-item nxl-caption">
+          <label>{% trans "User" %}</label>
+        </li>
+        <li
+          class="nxl-item nxl-hasmenu {% if title == 'Profile' %} active {%endif%}"
+        >
+          <a href="{% url 'profile' %}" class="nxl-link">
+            <span class="nxl-micon"><i class="feather-user"></i></span>
+            <span class="nxl-mtext">{% trans "Profile" %}</span>
+          </a>
+        </li>
+        <li class="nxl-item nxl-hasmenu {% if title == 'Account Settings' %} active {%endif%}">
+          <a href="{% url 'user_information' %}" class="nxl-link">
+            <span class="nxl-micon"><i class="feather-settings"></i></span>
+            <span class="nxl-mtext">{% trans "Account Settings" %}</span>
+          </a>
+        </li>
+
+        <hr class="m-1 mt-3 p-0" />
+
+        <li class="nxl-item nxl-caption">
+          <label>{% trans "Organization" %}</label>
+        </li>
+
+
+        <!-- All users have Team access -->
+        <li class="nxl-item nxl-hasmenu {% if title == 'Team' %} active {%endif%}">
+            <a href="{% url 'team_member_list' %}" class="nxl-link">
+                <span class="nxl-micon"><i class="feather-users"></i></span>
+                <span class="nxl-mtext">{% trans "Teams" %}</span>
+            </a>
+        </li>
+
+        <!-- Only administrator users or user with administrator type have access -->
+       {% if user.profile.user_type.has_full_access%}
+        <li class="nxl-item nxl-hasmenu {% if title == 'Settings' %} active {%endif%}">
+            <a href="{% url 'organization_details' %}" class="nxl-link">
+            <span class="nxl-micon"><i class="feather-settings"></i></span>
+                <span class="nxl-mtext">{% trans "Settings" %}</span>
+            </a>
+        </li>
+       {% endif %}
+       <hr class="m-1 mt-3 p-0" />
+       <li class="nxl-item nxl-hasmenu">
+            <a href="{% url 'logout' %}" class="nxl-link">
+                <span class="nxl-micon"><i class="feather-log-out"></i></span>
+                <span class="nxl-mtext">{% trans "Logout" %}</span>
+            </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
