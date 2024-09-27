@@ -1,0 +1,4 @@
+Wetsuite aims to be a toolset to make it easier for researchers to apply natural language processing and other analysis to legal text,
+much of it specific to Dutch governmental documents, though some of it translates well to other souces.
+
+This is the library core of a larger project.
