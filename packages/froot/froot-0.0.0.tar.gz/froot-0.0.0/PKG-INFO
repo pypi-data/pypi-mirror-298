@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: froot
+Version: 0.0.0
+Author: Michael Peter Dunne
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+# Froot
+
+Froot helps you easily perform training loops in PyTorch!

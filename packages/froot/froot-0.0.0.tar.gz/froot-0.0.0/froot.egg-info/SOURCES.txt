@@ -1,0 +1,7 @@
+README.md
+setup.py
+froot/__init__.py
+froot.egg-info/PKG-INFO
+froot.egg-info/SOURCES.txt
+froot.egg-info/dependency_links.txt
+froot.egg-info/top_level.txt
