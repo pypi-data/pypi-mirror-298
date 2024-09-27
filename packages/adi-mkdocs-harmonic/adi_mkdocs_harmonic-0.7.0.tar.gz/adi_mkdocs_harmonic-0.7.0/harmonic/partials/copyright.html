@@ -1,0 +1,16 @@
+<div class="md-copyright">
+  {% if config.copyright %}
+    <div class="md-copyright__highlight">
+      {{ config.copyright }}
+    </div>
+  {% else %}
+    <div class="md-copyright__highlight">
+      Copyright &copy;
+      <span id="copyright-year"></span>
+      Analog Devices, Inc. All Rights Reserved.
+    </div>
+    <script type="text/javascript">
+      document.getElementById("copyright-year").innerText = new Date().getFullYear().toString();
+    </script> 
+  {% endif %}
+</div>

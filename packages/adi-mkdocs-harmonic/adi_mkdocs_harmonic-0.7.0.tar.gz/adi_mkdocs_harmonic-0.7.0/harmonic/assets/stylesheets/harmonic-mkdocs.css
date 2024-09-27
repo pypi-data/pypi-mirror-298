@@ -1,0 +1,120 @@
+/**
+ * Core color definitions
+ * @see https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors
+ */
+:root > * {
+  /* primary colors */
+  --md-primary-fg-color: var(--hmc-color-system-primary-default);
+  --md-primary-fg-color--light: var(--hmc-color-system-primary-subtle);
+  --md-primary-fg-color--dark: var(--hmc-color-system-primary-strong);
+  --md-primary-bg-color: var(--hmc-color-layout-container);
+  --md-primary-bg-color--light: var(--hmc-color-layout-container);
+
+  /* accent colors */
+  --md-accent-fg-color: var(--hmc-color-system-primary-default);
+  --md-accent-fg-color--transparent: var(--hmc-color-layout-canvas);
+  --md-accent-bg-color: var(--hmc-color-system-primary-subtle);
+  --md-accent-bg-color--light: var(--hmc-color-system-primary-subtle);
+
+  /* default colors */
+  --md-default-bg-color: var(--hmc-color-layout-container);
+  --md-default-bg-color--light: var(--hmc-color-gray-400);
+  --md-default-bg-color--lighter: var(--hmc-color-gray-200);
+  --md-default-bg-color--lightest: var(--hmc-color-gray-white);
+  --md-default-fg-color: var(--hmc-color-content-default);
+  --md-default-fg-color--light: var(--hmc-color-gray-800);
+  --md-default-fg-color--lighter: var(--hmc-color-gray-600);
+  --md-default-fg-color--lightest: var(--hmc-color-gray-400);
+
+  /* text colors */
+  --md-typeset-color: var(--md-default-fg-color);
+  --md-typeset-a-color: var(--hmc-color-interactive-primary-idle);
+
+  /* admonition colors */
+  --md-admonition-fg-color: var(--hmc-color-content-default);
+  --md-admonition-bg-color: var(--hmc-color-layout-canvas);
+
+  /* code block colors */
+  --md-code-fg-color: var(--hmc-color-content-default);
+  --md-code-bg-color: var(--hmc-color-layout-canvas);
+  --md-code-hl-name-color: var(--md-code-fg-color);
+  --md-code-hl-operator-color: var(--md-code-fg-color);
+  --md-code-hl-punctuation-color: var(--md-code-fg-color);
+  --md-code-hl-comment-color: var(--hmc-color-green-400);
+  --md-code-hl-variable-color: var(--hmc-color-blue-600);
+
+  /* footer colors */
+  --md-footer-fg-color: var(--hmc-color-content-default);
+  --md-footer-fg-color--light: var(--md-footer-fg-color);
+  --md-footer-fg-color--lighter: var(--md-footer-fg-color);
+  --md-footer-bg-color: var(--hmc-color-layout-container);
+  --md-footer-bg-color--dark: var(--hmc-color-layout-container);
+}
+
+/**
+ * Header/Nav
+ */
+
+nav {
+  height: 100%;
+}
+
+/* adjust height & divider per HMC guidelines */
+header.md-header {
+  height: 72px;
+  box-shadow: none;
+  border-bottom: 1px solid var(--hmc-color-layout-divider-default);
+}
+
+/* customize the header to not use primary colors */
+header.md-header {
+  color: var(--hmc-color-content-default);
+  background-color: var(--hmc-color-layout-container);
+}
+
+/* adjust the search bar colors */
+body[data-md-color-scheme="harmonic-light"] nav .md-search__form {
+  color: var(--hmc-color-content-default);
+  background-color: var(--hmc-color-layout-container);
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 5px;
+}
+nav .md-search__input::placeholder,
+nav .md-search__input + .md-search__icon {
+  color: var(--md-default-fg-color--light);
+}
+
+/* override link background color in search results */
+.md-search-result__link:focus,
+.md-search-result__link:hover {
+  background-color: var(--hmc-color-layout-canvas);
+}
+body[data-md-color-scheme="harmonic-dark"] .md-search-result__meta {
+  color: var(--hmc-color-content-default);
+  background-color: var(--hmc-color-layout-content);
+}
+
+/* adjust the tabs bar when `navigation.tabs` is enabled */
+nav.md-tabs {
+  color: var(--hmc-color-content-default);
+  background-color: var(--hmc-color-layout-canvas);
+}
+
+/*
+ * add support for automatic light/dark images
+ * @see https://squidfunk.github.io/mkdocs-material/reference/images/#light-and-dark-mode
+ */
+body[data-md-color-scheme="harmonic-light"] img[src$="#only-dark"],
+body[data-md-color-scheme="harmonic-light"] img[src$="#gh-dark-mode-only"],
+body[data-md-color-scheme="harmonic-dark"] img[src$="#only-light"],
+body[data-md-color-scheme="harmonic-dark"] img[src$="#gh-light-mode-only"] {
+  display: none; /* Hide dark images in light mode and vice versa */
+}
+
+/* adjust the toc colors in dark mode for better readability */
+body[data-md-color-scheme="harmonic-dark"] .md-nav__link--passed {
+  color: var(--md-default-fg-color--lightest);
+}
+body[data-md-color-scheme="harmonic-dark"] .md-nav__title {
+  color: var(--md-default-fg-color--lighter);
+}

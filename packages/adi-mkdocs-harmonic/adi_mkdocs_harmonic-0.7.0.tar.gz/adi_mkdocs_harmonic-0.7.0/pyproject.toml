@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "adi-mkdocs-harmonic"
+version = "0.7.0"
+description = "An ADI Harmonic theme for mkdocs based on mkdocs-material"
+authors = []
+readme = "README.md"
+license = "Apache-2.0"
+homepage = "https://github.com/analogdevicesinc/harmonic-mkdocs-theme"
+repository = "https://github.com/analogdevicesinc/harmonic-mkdocs-theme"
+keywords = ["mkdocs", "mkdocs-material", "harmonic"]
+packages = [{ include = "harmonic" }]
+include = ["mkdocs.yml", "README.md"]
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/analogdevicesinc/harmonic-mkdocs-theme"
+"Repository" = "https://github.com/analogdevicesinc/harmonic-mkdocs-theme"
+"Issue Tracker" = "https://github.com/analogdevicesinc/harmonic-mkdocs-theme/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.5.11"
+
+[tool.poetry.plugins."mkdocs.themes"]
+harmonic = "harmonic"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
