@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/cloudshovel/__init__.py
+src/cloudshovel/main.py
+src/cloudshovel.egg-info/PKG-INFO
+src/cloudshovel.egg-info/SOURCES.txt
+src/cloudshovel.egg-info/dependency_links.txt
+src/cloudshovel.egg-info/entry_points.txt
+src/cloudshovel.egg-info/requires.txt
+src/cloudshovel.egg-info/top_level.txt
+src/cloudshovel/utils/__init__.py
+src/cloudshovel/utils/digger.py
+src/cloudshovel/utils/bash_scripts/install_ntfs_3g.sh
+src/cloudshovel/utils/bash_scripts/mount_and_dig.sh
