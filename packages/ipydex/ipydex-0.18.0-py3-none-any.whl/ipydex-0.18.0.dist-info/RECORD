@@ -1,0 +1,11 @@
+ipydex/__init__.py,sha256=kBIfimpqGOfmEEXzIYCY53lEwIPEfsZdsQrok1R0Nrg,91
+ipydex/cli.py,sha256=Ywbjn9deXzxqdqsee6hzsu2VsKiLSd1Pk5LoVMUEuoo,862
+ipydex/core.py,sha256=1wRz2dW2G8mnnZX-knqtILscLWxrXS02LP4W7PKg7nk,39765
+ipydex/displaytools.py,sha256=lF4krI7cuElm-be9G6PVA81bAPejGlg2PBauafxV89Y,26047
+ipydex/release.py,sha256=0EHw4xygmgkGSyfwNfEoMlQyN0uHxjHtlSFF79s6120,23
+ipydex-0.18.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+ipydex-0.18.0.dist-info/METADATA,sha256=Mxvq7_vnPg34X_5HFNWjvzHQX3DTdzzt1_cz2tQcG-o,5101
+ipydex-0.18.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ipydex-0.18.0.dist-info/entry_points.txt,sha256=hsBjfW7ElY10LJ_AOWdpbzjY9GbgtS8IUpif4ZGrm-c,78
+ipydex-0.18.0.dist-info/top_level.txt,sha256=oroqhsQT6jAbrIrdLVfuOEkEkB1AWWNtC03z8-4cWtA,7
+ipydex-0.18.0.dist-info/RECORD,,
