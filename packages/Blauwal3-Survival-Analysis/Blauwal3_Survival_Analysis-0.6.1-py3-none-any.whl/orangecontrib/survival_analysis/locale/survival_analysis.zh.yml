@@ -1,0 +1,86 @@
+zh:
+  app_name: 生存分析
+  app_desc: 生存分析
+
+  data:
+    time_var: '时间'
+    event_var: '事件'
+    time_to_event_var: '_时间到事件变量'
+    missing_rows: '检测到缺失值的行。它们将被忽略。'
+    missing_survival_data: '未检测到生存数据。请使用“作为生存数据”组件或查阅文档。'
+
+  owassurvivaldata:
+    name: '作为生存数据'
+    desc: '将特征 时间 和 事件 标记为目标变量。'
+    time: '时间'
+    event: '事件'
+    commit: '提交(&C)'
+
+  owchorts:
+    name: '队列'
+    desc: '将样本分层为低/高风险组。'
+    stratify_on: '分层依据'
+    splitting_criteria: '划分标准'
+    commit: '提交(&C)'
+    median: '中位数'
+    mean: '均值'
+    log_rank_test: '对数秩检验'
+    cox_risk_score: 'Cox风险评分'
+
+  owcoxregression:
+    name: 'Cox回归'
+    desc: 'Cox比例风险回归，可选L1（LASSO）、L2（岭回归）或L1L2（弹性网络）正则化。'
+    no_regularization: '无正则化'
+    ridge_regression_l2: '岭回归 (L2)'
+    lasso_regression_l1: 'Lasso回归 (L1)'
+    elastic_net_regression: '弹性网络回归'
+    regularization: '正则化'
+    regularization_strength: '正则化强度：'
+    elastic_net_mixing: '弹性网络混合：'
+    dataset_is_empty: '数据集为空。'
+    data_has_no_features_to_learn_from: '数据没有可学习的特征。'
+
+  owkaplanmeier:
+    name: 'Kaplan-Meier图'
+    desc: 'Kaplan-Meier估计量的可视化。'
+    group: '分组'
+    display_options: '显示选项'
+    confidence_intervals: '置信区间'
+    median: '中位数'
+    censored_data: '删失数据'
+    commit: '提交(&C)'
+
+  owranksurvivalfeatures:
+    name: '生存特征排名'
+    desc: '通过单变量Cox回归分析对特征进行排名。'
+    score_method: '评分方法'
+    select_attributes: '选择属性'
+    none: '无'
+    manual: '手动'
+    best_ranked: '最佳排名：'
+    commit: '提交(&C)'
+    multivariate_log_rank_test: '多变量对数秩检验'
+    log_likelihood_ratio_test: '对数似然比检验'
+    cox_regression: 'Cox回归'
+
+  owstepwisecoxregression:
+    name: '逐步Cox回归'
+    desc: '使用向后消除进行特征选择。'
+    commit: '提交(&C)'
+
+  owsurvivalnomogram:
+    name: '生存列线图'
+    desc: '生存列线图'
+    display_features: '显示特征'
+    all: '全部'
+    best_ranked: '最佳排名：'
+    rank_by: '排序依据：'
+    numeric_features: '数值特征：'
+    original_order: '原始顺序'
+    alphabetically: '字母顺序'
+    absolute_importance: '绝对重要性'
+    positive_influence: '正向影响'
+    negative_influence: '负向影响'
+    one_d_projection: '一维投影'
+    two_d_curve: '二维曲线'
+

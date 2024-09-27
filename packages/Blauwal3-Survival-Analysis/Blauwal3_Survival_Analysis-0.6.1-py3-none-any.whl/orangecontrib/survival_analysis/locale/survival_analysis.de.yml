@@ -1,0 +1,86 @@
+de:
+  app_name: Überlebensanalyse
+  app_desc: Überlebensanalyse
+
+  data:
+    time_var: 'Zeit'
+    event_var: 'Ereignis'
+    time_to_event_var: '_zeit_bis_ereignis_var'
+    missing_rows: 'Zeilen mit fehlenden Werten erkannt. Sie werden ausgelassen.'
+    missing_survival_data: 'Keine Überlebensdaten erkannt. Verwenden Sie das Widget "Als Überlebensdaten" oder konsultieren Sie die Dokumentation.'
+
+  owassurvivaldata:
+    name: 'Als Überlebensdaten'
+    desc: 'Markieren Sie die Merkmale Zeit und Ereignis als Zielvariablen.'
+    time: 'Zeit'
+    event: 'Ereignis'
+    commit: '&Übernehmen'
+
+  owchorts:
+    name: 'Kohorten'
+    desc: 'Einteilung der Proben in Gruppen mit niedrigem/hohem Risiko.'
+    stratify_on: 'Stratifizieren nach'
+    splitting_criteria: 'Teilungskriterien'
+    commit: '&Übernehmen'
+    median: 'Median'
+    mean: 'Mittelwert'
+    log_rank_test: 'Log-Rank-Test'
+    cox_risk_score: 'Cox-Risiko-Score'
+
+  owcoxregression:
+    name: 'Cox-Regression'
+    desc: 'Cox-Proportional-Hazard-Regression mit optionaler L1 (LASSO), L2 (Ridge) oder L1L2 (Elastisches Netz) Regularisierung.'
+    no_regularization: 'Keine Regularisierung'
+    ridge_regression_l2: 'Ridge-Regression (L2)'
+    lasso_regression_l1: 'Lasso-Regression (L1)'
+    elastic_net_regression: 'Elastische Netz-Regression'
+    regularization: 'Regularisierung'
+    regularization_strength: 'Stärke der Regularisierung:'
+    elastic_net_mixing: 'Mischung des elastischen Netzes:'
+    dataset_is_empty: 'Datensatz ist leer.'
+    data_has_no_features_to_learn_from: 'Die Daten haben keine Merkmale zum Lernen.'
+
+  owkaplanmeier:
+    name: 'Kaplan-Meier-Diagramm'
+    desc: 'Visualisierung des Kaplan-Meier-Schätzers.'
+    group: 'Gruppe'
+    display_options: 'Anzeigeoptionen'
+    confidence_intervals: 'Konfidenzintervalle'
+    median: 'Median'
+    censored_data: 'Zensierte Daten'
+    commit: '&Übernehmen'
+
+  owranksurvivalfeatures:
+    name: 'Überlebensmerkmale Rangliste'
+    desc: 'Rangliste der Merkmale durch univariate Cox-Regression-Analyse.'
+    score_method: 'Bewertungsmethode'
+    select_attributes: 'Attribute auswählen'
+    none: 'Keine'
+    manual: 'Manuell'
+    best_ranked: 'Am besten bewertet:'
+    commit: '&Übernehmen'
+    multivariate_log_rank_test: 'Multivariater Log-Rank-Test'
+    log_likelihood_ratio_test: 'Log-Likelihood-Ratio-Test'
+    cox_regression: 'Cox-Regression'
+
+  owstepwisecoxregression:
+    name: 'Schrittweise Cox-Regression'
+    desc: 'Merkmalsauswahl mit Rückwärtselimination.'
+    commit: '&Übernehmen'
+
+  owsurvivalnomogram:
+    name: 'Überlebensnomogramm'
+    desc: 'Überlebensnomogramme'
+    display_features: 'Merkmale anzeigen'
+    all: 'Alle'
+    best_ranked: 'Am besten bewertet:'
+    rank_by: 'Rangliste nach:'
+    numeric_features: 'Numerische Merkmale: '
+    original_order: 'Originalreihenfolge'
+    alphabetically: 'Alphabetisch'
+    absolute_importance: 'Absolute Wichtigkeit'
+    positive_influence: 'Positiver Einfluss'
+    negative_influence: 'Negativer Einfluss'
+    one_d_projection: '1D-Projektion'
+    two_d_curve: '2D-Kurve'
+

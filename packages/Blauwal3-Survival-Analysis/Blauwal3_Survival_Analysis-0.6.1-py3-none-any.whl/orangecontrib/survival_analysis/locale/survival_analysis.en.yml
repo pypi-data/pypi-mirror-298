@@ -1,0 +1,88 @@
+en:
+  app_name: Survival Analysis
+  app_desc: Survival Analysis
+
+  data:
+    time_var: 'Time'
+    event_var: 'Event'
+    time_to_event_var: '_time_to_event_var'
+    missing_rows: 'Rows with missing values detected. They will be omitted.'
+    missing_survival_data: 'No survival data detected. Use the "As Survival Data" widget or consult the documentation.'
+  
+  owassurvivaldata:
+    name: 'As Survival Data'
+    desc: 'Mark features Time and Event as target variables.'
+    time: 'Time'
+    event: 'Event'
+    commit: '&Commit'
+   
+  owchorts:
+    name: 'Cohorts'
+    desc: 'Stratify samples into low/high risk groups.'
+    stratify_on: 'Stratify on'
+    splitting_criteria: 'Splitting Criteria'
+    commit: '&Commit'
+    median: 'Median'
+    mean: 'Mean'
+    log_rank_test: 'Log Rank Test'
+    cox_risk_score: 'Cox Risk Score'
+
+  owcoxregression:
+    name: 'Cox regression'
+    desc: 'Cox proportional-hazards regression with optional L1 (LASSO), L2 (ridge) or L1L2 (elastic net) regularization.'
+    no_regularization: 'No regularization'
+    ridge_regression_l2: 'Ridge regression (L2)'
+    lasso_regression_l1: 'Lasso regression (L1)'
+    elastic_net_regression: 'Elastic net regression'
+    regularization: 'Regularization'
+    regularization_strength: 'Regularization strength:'
+    elastic_net_mixing: 'Elastic net mixing:'
+    dataset_is_empty: 'Dataset is empty.'
+    data_has_no_features_to_learn_from: 'Data has no features to learn from.'
+    
+  owkaplanmeier:
+    name: 'Kaplan-Meier Plot'
+    desc: 'Visualisation of Kaplan-Meier estimator.'
+    group: 'Group'
+    display_options: 'Display options'
+    confidence_intervals: 'Confidence intervals'
+    median: 'Median'
+    censored_data: 'Censored data'
+    commit: '&Commit'
+
+  owranksurvivalfeatures:
+    name: 'Rank Survival Features'
+    desc: 'Ranking of features by univariate Cox regression analysis.'
+    score_method: 'Score method'
+    select_attributes: 'Select attributes'
+    none: 'None'
+    manual: 'Manual'
+    best_ranked: 'Best ranked:'
+    commit: '&Commit'
+    multivariate_log_rank_test: 'Multivariate log-rank test'
+    log_likelihood_ratio_test: 'Log-Likelihood Ratio test'
+    cox_regression: 'Cox regression'
+
+  owstepwisecoxregression:
+    name: 'Stepwise Cox Regression'
+    desc: 'Feature selection with backward elimination.'
+    commit: '&Commit'
+
+  owsurvivalnomogram:
+    name: 'Survival Nomogram'
+    desc: 'Survival Nomograms'
+    display_features: 'Display features'
+    all: 'All'
+    best_ranked: 'Best ranked:'
+    rank_by: 'Rank by:'
+    numeric_features: 'Numeric features: '
+    original_order: 'Original order'
+    alphabetically: 'Alphabetically'
+    absolute_importance: 'Absolute importance'
+    positive_influence: 'Positive influence'
+    negative_influence: 'Negative influence'
+    one_d_projection: '1D projection'
+    two_d_curve: '2D curve'
+
+
+
