@@ -1,0 +1,6 @@
+[submodule "lib/libsndfile"]
+	path = lib/libsndfile
+	url = https://github.com/libsndfile/libsndfile
+[submodule "lib/pybind11"]
+	path = lib/pybind11
+	url = https://github.com/pybind/pybind11
