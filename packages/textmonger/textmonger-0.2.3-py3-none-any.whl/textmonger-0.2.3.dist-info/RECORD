@@ -1,0 +1,13 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_project.py,sha256=ZfYhjf_tdX9pG-xtTurhnbhdfv0uPEb0ZXqJy1oXtWA,614
+textmonger/__init__.py,sha256=6o1vAtGVT23uwACVtEfxQGPgE_ReHHuWHhrkH6dFOoU,132
+textmonger/power.py,sha256=2MfGmLv4SE6rnrJ90FOeowETjCUJEFmx4LyHX26CL_Q,1341
+textmonger/power_words.csv,sha256=kQfEZt7XQWISGTd6LuXa5lCH_eeC84yWIz7P1apHeaE,22690
+textmonger/project.py,sha256=cY3XhGunw6SkJlgTatpDO4ahsLXgaboX1GZ_n5Lua3g,1921
+textmonger/readability.py,sha256=dnF2JenxEFG97OSRQLWkWZkj6O8RT5wRpbCesdmn3HA,1926
+textmonger-0.2.3.dist-info/LICENSE,sha256=WY0k6W4WL6D6N6Flu9ODGCsjLIqapH2_6Wibl896Qi0,1068
+textmonger-0.2.3.dist-info/METADATA,sha256=HcRZChFWzMT3wj7Tz-5WRAPgCK27s7KDJN_Qu8nmP_E,4243
+textmonger-0.2.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+textmonger-0.2.3.dist-info/entry_points.txt,sha256=JUhQ2aEc-Tlr0vJEFd3kk9OWRrPhr8BcL-XJ72_6kIY,55
+textmonger-0.2.3.dist-info/top_level.txt,sha256=kvSf72AxXPbxHpsFpjWdzL2G9iBXyPv7mnL8_FRytls,17
+textmonger-0.2.3.dist-info/RECORD,,
