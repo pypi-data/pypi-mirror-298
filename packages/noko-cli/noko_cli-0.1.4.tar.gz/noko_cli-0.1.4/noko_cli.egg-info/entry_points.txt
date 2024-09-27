@@ -1,0 +1,7 @@
+[console_scripts]
+call_sync = source.gcal_sync.call_sync:sync
+cs = source.gcal_sync.call_sync:sync
+ncs = source.setup.setup:setup
+nl = source.noko_logger.time_logger:log
+noko_cli_setup = source.setup.setup:setup
+noko_log = source.noko_logger.time_logger:log

@@ -1,0 +1,16 @@
+click
+python-freckle-client
+python-dotenv
+google-api-python-client
+google_auth_oauthlib
+
+[call_sync]
+click
+python-dotenv
+google-api-python-client
+google_auth_oauthlib
+
+[noko_log]
+click
+python-dotenv
+python-freckle-client
