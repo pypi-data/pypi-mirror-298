@@ -1,0 +1,12 @@
+thecodecrate_builderable/__init__.py,sha256=reTwbhuykK2Ub1XbgRnBo3oYtZ13LRd25ah2_gFsjhc,752
+thecodecrate_builderable/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thecodecrate_builderable/core/builderable/builderable.py,sha256=XiBsgodl2AajPSF05cfV-eJFDtSM4CuHqzHHH-LafBU,324
+thecodecrate_builderable/core/builderable/types.py,sha256=zXun2VaeDno_CiFDPFmmK5__8BAfKb2Xl6uy0ajWjxE,127
+thecodecrate_builderable/traits/with_build_parts/with_build_parts.py,sha256=mDmKgmgfgIS6kItneMi0DeCiLjF86soAtEXND1QeFB4,449
+thecodecrate_builderable/traits/with_immutable_parts/with_immutable_parts.py,sha256=9-GlbDbpr1w96Thzno51d0ZdA-7Ugj5lgDBOibdEu44,462
+thecodecrate_builderable/traits/with_parts/with_parts.py,sha256=2-J2EMT6_lfnbjpEMuqTZ-q78QERlFjeYw7x1Nii2VA,501
+thecodecrate_builderable-1.4.0.dist-info/LICENSE,sha256=tp9Z3fObZ8DwNpsZ_28ejQCJpEKQDjm5O2VbllOmUko,1102
+thecodecrate_builderable-1.4.0.dist-info/METADATA,sha256=lFy3SFKaghD0d5clcx0afcNrdbsE-Qa7RL4-32497mc,2637
+thecodecrate_builderable-1.4.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+thecodecrate_builderable-1.4.0.dist-info/top_level.txt,sha256=9XyrNBaq0pFvRCPwlrl9fbaGa8fzP7nkyblN-cKoowA,25
+thecodecrate_builderable-1.4.0.dist-info/RECORD,,
