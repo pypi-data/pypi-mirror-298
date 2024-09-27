@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: endpoint-filter
+Version: 0.1.3
+Summary: An endpoint filter for the standard library logging module.
+Home-page: https://github.com/eivl/endpoint_filter
+License: MIT
+Author: Eivind Teig
+Author-email: eivind.teig@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Description-Content-Type: text/markdown
+
+# Endpoint filter for the standard librarys logging module.
+This package provides a filter for the standard librarys logging module 
+that filters out log messages based on the request path of a FastAPI 
+application.
+
+## Usage
+
+```python
+from fastapi import FastAPI
+import logging
+from endpoint_filter import EndpointFilter
+
+app = FastAPI()
+uvicorn_logger = logging.getLogger("uvicorn.access")
+uvicorn_logger.addFilter(EndpointFilter(path="/live"))
+uvicorn_logger.addFilter(EndpointFilter(path="/live", verb="POST"))
+uvicorn_logger.addFilter(EndpointFilter(path="/endpoint"))
+
+
+
+@app.get('/endpoint') # This endpoint will be ignored by the filter
+async def endpoint():
+    return {"message": "Hello endpoint"}
+
+@app.get('/live') # This endpoint will be ignored by the filter
+async def live():
+    return {"message": "Hello live"}
+
+@app.get('/')
+async def root():
+    return {"message": "Hello root"}
+```
+
