@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: MPpackage
+Version: 0.1
+Summary: My custom Python package with a .pyd file
+Home-page: https://github.com/thuholinh5/mypackage
+Author: MP
+Author-email: thuholinh5@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
