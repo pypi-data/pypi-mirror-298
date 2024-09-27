@@ -1,0 +1,1 @@
+This module is the client that is pushed to artifactory and can be installed by third parties to query the feature framework data
