@@ -1,0 +1,31 @@
+# Britannica Dictionary Crawler
+
+This package allows you to scrape word entries, definitions, parts of speech, and the word of the day from the Britannica Dictionary.
+
+## Installation
+
+You can install the package directly from GitHub using pip:
+
+```bash
+pip install git+https://github.com/Esubaalew/Dictionary.git
+```
+
+Alternatively, after publishing to PyPI, you can install the package like this:
+```bash
+pip install britannica-dictionary
+```
+```Python
+from dictionary.britannica import get_entries, get_definitions, get_word_of_the_day
+
+# Get related entries for a word
+entries = get_entries('python')
+print(entries)
+
+# Get word definitions
+definitions = get_definitions('python')
+print(definitions)
+
+# Get word of the day
+word_of_the_day = get_word_of_the_day()
+print(word_of_the_day)
+```

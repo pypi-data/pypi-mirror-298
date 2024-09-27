@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+britannica_dictionary.egg-info/PKG-INFO
+britannica_dictionary.egg-info/SOURCES.txt
+britannica_dictionary.egg-info/dependency_links.txt
+britannica_dictionary.egg-info/requires.txt
+britannica_dictionary.egg-info/top_level.txt
+dictionary/__init__.py
+dictionary/britannica.py
+dictionary/tools.py
