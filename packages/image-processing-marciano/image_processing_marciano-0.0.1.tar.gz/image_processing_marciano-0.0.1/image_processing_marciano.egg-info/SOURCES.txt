@@ -1,0 +1,14 @@
+README.md
+setup.py
+image_marciano/__init__.py
+image_marciano/processing/__init__.py
+image_marciano/processing/combination.py
+image_marciano/processing/transformation.py
+image_marciano/utils/__init__.py
+image_marciano/utils/io.py
+image_marciano/utils/plot.py
+image_processing_marciano.egg-info/PKG-INFO
+image_processing_marciano.egg-info/SOURCES.txt
+image_processing_marciano.egg-info/dependency_links.txt
+image_processing_marciano.egg-info/requires.txt
+image_processing_marciano.egg-info/top_level.txt
