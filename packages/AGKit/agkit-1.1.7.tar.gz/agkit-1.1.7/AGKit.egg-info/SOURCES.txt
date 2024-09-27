@@ -1,0 +1,17 @@
+README.md
+requirements.txt
+setup.py
+AG/CodeGen.py
+AG/DirUtil.py
+AG/Excel.py
+AG/FileUtil.py
+AG/IOUtil.py
+AG/Logger.py
+AG/PathUtil.py
+AG/Setting.py
+AG/Singleton.py
+AG/__init__.py
+AGKit.egg-info/PKG-INFO
+AGKit.egg-info/SOURCES.txt
+AGKit.egg-info/dependency_links.txt
+AGKit.egg-info/top_level.txt
