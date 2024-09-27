@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: experiment-notification
+Version: 0.1.0
+Summary: This package can send you an notification when your experiments are done!
+Author: Steven Li
+Author-email: stevenazy@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

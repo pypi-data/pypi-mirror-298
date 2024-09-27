@@ -1,0 +1,5 @@
+setup.py
+experiment_notification.egg-info/PKG-INFO
+experiment_notification.egg-info/SOURCES.txt
+experiment_notification.egg-info/dependency_links.txt
+experiment_notification.egg-info/top_level.txt
