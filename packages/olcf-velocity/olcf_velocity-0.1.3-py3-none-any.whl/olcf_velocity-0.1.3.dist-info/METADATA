@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: olcf-velocity
+Version: 0.1.3
+Summary: A container build manager
+Project-URL: Homepage, https://github.com/olcf/velocity
+Project-URL: Issues, https://github.com/olcf/velocity/issues
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pyyaml
+Requires-Dist: networkx
+Requires-Dist: colorama
+Requires-Dist: loguru
+Requires-Dist: typing-extensions
+
+![icon.drawio.png](misc/artwork/icon_name.drawio.png)
+
+-----------------------------------------------------------
+
+## Description
+Velocity is a tool to help with the maintenance of container build scripts on 
+multiple systems, backends (e.g podman or apptainer) and distros.
+
+## Documentation
+See <https://olcf.github.io/velocity/>.
+
+## Installation
+``` commandline
+pip install olcf-velocity
+alias velocity="python3 -m velocity"
+```
