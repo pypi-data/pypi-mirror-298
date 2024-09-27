@@ -1,0 +1,8 @@
+Blauwal3>=3.14.0
+setuptools
+future
+LTTL>=2.0.12
+chardet
+treetaggerwrapper
+appdirs
+pycountry

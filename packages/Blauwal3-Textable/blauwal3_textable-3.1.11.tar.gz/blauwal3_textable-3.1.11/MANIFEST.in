@@ -1,0 +1,9 @@
+recursive-include _textable *.png *.svg
+recursive-include docs/rst *
+include docs/Makefile
+include LICENSE
+include *.py *.rst
+include README.rst
+recursive-include _textable/widgets/icons *.svg
+recursive-include _textable/widgets/tests *.tab
+recursive-include _textable/locale *.yml
