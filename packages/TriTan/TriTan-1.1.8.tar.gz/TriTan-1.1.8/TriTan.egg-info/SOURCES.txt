@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+TriTan/__init__.py
+TriTan/tritan_module.py
+TriTan.egg-info/PKG-INFO
+TriTan.egg-info/SOURCES.txt
+TriTan.egg-info/dependency_links.txt
+TriTan.egg-info/requires.txt
+TriTan.egg-info/top_level.txt
