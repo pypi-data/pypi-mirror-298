@@ -1,0 +1,2 @@
+[console_scripts]
+generate-sso-profiles = aws_sso_config_builder.gen_config:cli
