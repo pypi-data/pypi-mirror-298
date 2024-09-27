@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: kraken-websocket-sdk
+Version: 0.1.4
+Summary: A Python package for interacting with Kraken WebSocket API
+Home-page: https://github.com/moesmufti/kraken-websocket-sdk
+Author: Mustafa "Moes" Mufti
+Author-email: moes.mufti@icloud.com
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: websockets>=13.1
+
+A Python package for interacting with Kraken WebSocket API
