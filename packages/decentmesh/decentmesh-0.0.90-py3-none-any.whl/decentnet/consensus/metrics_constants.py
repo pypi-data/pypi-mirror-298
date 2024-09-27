@@ -1,0 +1,4 @@
+import os
+
+METRICS_SERVER_HOST = os.environ.get('METRICS_SERVER_HOST', '127.0.0.1')
+METRICS_SERVER_PORT = int(os.environ.get('METRICS_SERVER_PORT', 8008))
