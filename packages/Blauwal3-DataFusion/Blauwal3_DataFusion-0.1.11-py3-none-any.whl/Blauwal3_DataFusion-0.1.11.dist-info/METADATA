@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Blauwal3-DataFusion
+Version: 0.1.11
+Summary: 蓝鲸数据挖掘软件包的数据融合附加组件。
+Home-page: https://github.com/biolab/orange3-datafusion
+Author: 大圣实验楼
+Author-email: dashenglab@163.com
+Keywords: data mining,orange3 add-on
+License-File: LICENSE
+Requires-Dist: Blauwal3
+Requires-Dist: scikit-fusion
+
