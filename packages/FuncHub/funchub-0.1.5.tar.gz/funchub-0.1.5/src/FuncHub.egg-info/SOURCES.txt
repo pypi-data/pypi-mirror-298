@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/FuncHub/Common.py
+src/FuncHub/__init__.py
+src/FuncHub.egg-info/PKG-INFO
+src/FuncHub.egg-info/SOURCES.txt
+src/FuncHub.egg-info/dependency_links.txt
+src/FuncHub.egg-info/requires.txt
+src/FuncHub.egg-info/top_level.txt
+tests/test.py
