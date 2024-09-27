@@ -1,0 +1,9 @@
+multisocket/__init__.py,sha256=8hkMKJJm2PY2W3uzxaHcRnZosdc5U2SPZ1rsDUkURas,497
+multisocket/client.py,sha256=khl7C3UU-DASM3vItpeGlSsARlP2hq85CHdFdLT0Ht4,2711
+multisocket/packet.py,sha256=D33daATcKUXSM4s3lqNYs8kBIpOt3i-eGYlkNiEJQ4I,1084
+multisocket/server.py,sha256=bhIwjK3X1LZ666Nnu76yZj9sNJqXD27hYmWyUF1XKvc,3175
+multisocket-0.0.1.dist-info/LICENSE.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multisocket-0.0.1.dist-info/METADATA,sha256=pTMOFOM4leLkrdQx7jyx1C9XEsP-r_WOE1SWg8tfq4c,680
+multisocket-0.0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+multisocket-0.0.1.dist-info/top_level.txt,sha256=WtC6B8I-VdfOaTfm1PqvQ8bU0zOmWMJVbDUWMCy30vM,12
+multisocket-0.0.1.dist-info/RECORD,,
