@@ -1,0 +1,17 @@
+waveletec/__init__.py,sha256=tkEdE65cfbGbMwMq5azcU567qowqODYPtQJSYNJgO9w,111
+waveletec/handler.py,sha256=spK1DNAVJFQ-IP2kbTR5tWxuQvTlSMFijbCuwq3ofUE,11404
+waveletec/version.py,sha256=I2mpZe2WhdNwyhFtYSV6BLfRzEk24T-OpJU_lscdMVY,166
+waveletec/_core/__init__.py,sha256=sUrHnQGzEhq2w7vppLSXM7cOkaEo9UJzIA0zZFEaisc,232
+waveletec/_core/addons.py,sha256=f5kkgZSw1kBeLSpISmx2VMv9b0fJ6lq4_LCH7E5-nhY,2759
+waveletec/_core/commons.py,sha256=f_7Zg5kOppdZ7CNXgK7lI8d6hHYbv1tUE40i7oEM89Y,30711
+waveletec/_core/corrections.py,sha256=zU4ptRQMO5V5PVIMYbinrslpuezoXJyMMq4mSB-oDqE,1271
+waveletec/_core/eddypro_tools.py,sha256=w4MIgBl3xCis0ezK_1h7CO-t7EEdEN84k4_OHAw7Zrc,5427
+waveletec/_core/meteo.py,sha256=mGe0ZtCzyprk0NZzrnjoyqUhqfJ0RBeEfUZMl-r4LLw,1331
+waveletec/_core/partition.py,sha256=O_UQUe1gedm8ANNVqBZZBUzzND18hUUF8Y5WTobCJTU,4237
+waveletec/_core/wavelet_functions.py,sha256=n-a8XpUipNfWDluTt2rwEF0q5GRsPbW4ClTg_J8_APE,64704
+waveletec/_core/wavelet_misc.py,sha256=Yld6fBHeYz8wRPD2LWE50TKyFoqhbv5JYWHcakNnkIE,2071
+waveletec-0.2.1.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+waveletec-0.2.1.0.1.dist-info/METADATA,sha256=xvp4-mb7uHjw1zXSt4osFkUqxO8hFE22lCT3hnTerUo,3005
+waveletec-0.2.1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+waveletec-0.2.1.0.1.dist-info/top_level.txt,sha256=uDcIPjTloy53nFia-7B9qicGpxQw3twkVM5-EJMWeBg,10
+waveletec-0.2.1.0.1.dist-info/RECORD,,
