@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+ldjango/__init__.py
+ldjango/cli.py
+ldjango/main.py
+ldjango/views.py
+ldjango.egg-info/PKG-INFO
+ldjango.egg-info/SOURCES.txt
+ldjango.egg-info/dependency_links.txt
+ldjango.egg-info/entry_points.txt
+ldjango.egg-info/requires.txt
+ldjango.egg-info/top_level.txt
+ldjango/templates/landing_page.html
