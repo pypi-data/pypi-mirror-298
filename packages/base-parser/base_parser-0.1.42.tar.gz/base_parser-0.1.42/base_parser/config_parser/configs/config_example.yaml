@@ -1,0 +1,146 @@
+source:
+  """ Use base url """
+  host: https://bdu.fstec.ru/
+  """ Use port """
+  port: 443
+  """ Use type of parsing """
+  type: 5  # types: 0 - custom, 1 - scratch(html), 2 - api, 3 - pdf, 4 - excel, 5 - json_file, 6 - rss
+  send_limit: 5 # How many vulns send to VulnDB per pequest
+
+evasion:
+  """ Use proxy """
+  proxy: 1 #1/0
+  """ Use vpn """
+  vpn: 0 #1/0
+  """ Use emulation of internet spider """
+  robots: 0 #1/0
+  """ Use sleep as a timeout """
+  sleep: 1000 # milliseconds
+  """ Use captcha evade """
+  captcha: 0 #1/0
+
+priorities:
+  vuln_description: 1 #0/6
+  vendor_name: 1 #0/6
+  component_name: 1 #0/6
+  soft_version: 1 #0/6
+  patch_link: 1 #0/6
+  soft_type: 1 #0/6
+  vuln_type: 1 #0/6
+  other_ids: 1 #0/6
+  cwe_id: 1 #0/6
+  cwe_name: 1 #0/6
+  vuln_date: 1 #0/6
+  publish_date: 1 #0/6
+  cvss3_vector: 2 #0/6
+  cvss4_vector: 2 #0/6
+  cvss2_vector: 2 #0/6
+  cvss3_timevector: 2 #0/6
+  cvss4_timevector: 2 #0/6
+  cvss2_timevector: 2 #0/6
+  cvss3_base: 2 #0/6
+  cvss4_base: 2 #0/6
+  cvss2_base: 2 #0/6
+  cvss3_timebase: 2 #0/6
+  cvss4_timebase: 2 #0/6
+  cvss2_timebase: 2 #0/6
+  vuln_mitigation: 2 #0/6
+  poc_link: 1 #0/6
+  vuln_source: 1 #0/6
+  researcher_info: 1 #0/6
+  affected_products: 6 #0/6
+ #todo отсекать обновления по годам
+ #todo возможность парсить каждую уязвимость
+
+html_template:
+  """ Mapping of source fields with VulnDB fields """
+xml_template:
+ """ Mapping of source fields with VulnDB fields """
+pdf_template:
+ """ Mapping of source fields with VulnDB fields """
+excel_template:
+ """ Mapping of source fields with VulnDB fields """
+json_template:
+ """ Mapping of source fields with VulnDB fields """
+   vuln_description: "vul_desc" #string, max=8192
+   vendor_name: "vnd_name" #string, max=1024
+   component_names: "sft_name" + "sft_desc" + "plf_name" + "plf_note" #array, max=1024 todo separator for fields
+   component_versions: "ver_name" #array, max=1024
+   orig_component_version: None #string, max=2048
+   cpe: None # array, max=256
+   patch_links: "vul_infou" #array, max=256 (нарезать в массив). 1 - "Уязвимость устранена", 0 - "Данные уточняются", ""
+   other_ids: "vul_oiddat"+"-"+"vul_oidnum" #array, max=256 todo
+   cwe_id: "cwe_id" #string, max=256
+   vuln_date: "vul_datv" #date YY:MM:DD todo
+   publish_date: "vul_refdat" #date YY:MM:DD todo
+   update_dates: "vul_upddate" #date YY:MM:DD todo
+   cvss3_vector: "cvss_av+..."  #string, max=256
+   cvss4_vector: None #string, max=256
+   cvss2_vector: "cvss_av+..." #string, max=256
+   cvss5_vector: None #string, max=256
+   cvss3_metric_vector: None #string, max=256
+   cvss4_metric_vector: None #string, max=256
+   cvss2_metric_vector: None #string, max=256
+   cvss5_metric_vector: None #string, max=256
+   cvss3_base: "cvss3_bsc" #float 0.0-10.0
+   cvss4_base: None #float 0.0-10.0
+   cvss5_base: None #float 0.0-10.0
+   cvss2_base: "cvss_bsc" #float 0.0-10.0
+   cvss3_metric_base: None #float 0.0-10.0
+   cvss4_metric_base: None #float 0.0-10.0
+   cvss2_metric_base: None #float 0.0-10.0
+   cvss5_metric_base: None #float 0.0-10.0
+   cve: "CVE-"+"idv_val" if "idv_id"==1 # todo
+   vuln_mitigation: "vul_vmer" #string, max=8192
+   poc_links: None #array, max=256 todo research
+   vuln_sources: "vul_link" + "vul_bdu_link" + "idv_url" #array, max=1024
+   parser_source: "БДУ ФСТЭК" #string, max=256
+   researcher_info: None #string, max=256
+   capec_id: None #string, max=256
+
+features:
+  auth: #if auth is needed
+    type: "4" # 1 - OAuth2, 2 - API key, 3 - Basic Auth, 4 - Login and Pass json
+    url: "api/v1/auth"
+    password: "D+J@5njSn8EKcq~"
+    username: "i.karpov@bi.zone"
+
+  additional_fields:
+    #each endpoint is a bunch of requests. If only one endpoint is provided - only endpoint1 is needed.
+    # endpoint name must start with endpoint*, the other part could vary, e.g.: endpoint_vulns, endpoint1, endpoint_main
+    endpoint1:
+      limit: 5 #how many vulns per request
+      source: "api/v1/Vuls?" # Main endpoint (concatenating with main source)
+      filter: "include=versions.soft.vendor&page[limit]" # filter to concat with main endpoint
+      attr: "attributes" #main attribute in json
+      fields: # mapping of fields: VulnDB_field: "<source_field>". Fully Dynamic.
+        vuln_description: "vul_desc" # single field to single field mapping
+        vuln_sources: #single field to list of source fields mapping
+          - "vul_link"
+          - "vul_bdu_link"
+          - "idv_url"
+
+#        example:
+#        vuln_description: "vul_desc"
+#        component_versions: "ver_name"
+#        patch_links: "vul_infou"
+#        vuln_date: "vul_datv"
+#        publish_date: "vul_refdat"
+#        update_dates: "vul_upddate"
+#        vuln_mitigation: "vul_vmer"
+#        vuln_sources:
+#          - "vul_link"
+#          - "vul_bdu_link"
+#          - "idv_url"
+#        other_ids:
+#          - "vul_oiddat"
+#          - "vul_oidnum"
+#        component_names:
+#          - "sft_name"
+#          - "sft_desc"
+#        vendor_name: "vnd_name"
+
+api_template:
+ """ Mapping of source fields with VulnDB fields """
+rss_template:
+ """ Mapping of source fields with VulnDB fields """
