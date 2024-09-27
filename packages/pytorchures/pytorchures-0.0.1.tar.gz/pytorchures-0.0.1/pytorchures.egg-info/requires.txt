@@ -1,0 +1,7 @@
+torch
+torchvision
+
+[dev]
+black
+isort
+pytest

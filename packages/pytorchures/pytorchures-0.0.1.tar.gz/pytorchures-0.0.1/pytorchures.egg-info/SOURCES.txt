@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+pytorchures/__init__.py
+pytorchures/run_profiling.py
+pytorchures/timing.py
+pytorchures/torchvision_pipeline.py
+pytorchures.egg-info/PKG-INFO
+pytorchures.egg-info/SOURCES.txt
+pytorchures.egg-info/dependency_links.txt
+pytorchures.egg-info/requires.txt
+pytorchures.egg-info/top_level.txt
+tests/test_timing.py
+tests/test_torchvision_oo_pipeline.py

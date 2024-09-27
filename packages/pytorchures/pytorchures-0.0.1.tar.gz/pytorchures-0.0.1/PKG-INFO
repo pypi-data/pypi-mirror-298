@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: pytorchures
+Version: 0.0.1
+Summary: Measure execution time of every layer in your pytorch model.
+License: Copyright (c) 2024 Cezary Bloch
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: Homepage, https://github.com/cezbloch/pytorchures
+Keywords: pytorch,performance,layers,profiling
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: torchvision
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+
+# Pytorch profiler
+Pytorchures is a simple model profiler intended for any pytorch model. 
+It measures execution time of model layers individually. Every layer of a model is wrapped with timing class which measures latency when called.
+
+TLDR;
+
+Install
+```
+git clone https://github.com/cezbloch/pytorchures.git
+
+pip install -e .
+```
+
+Run
+```
+from pytorchures.timing import wrap_model_layers
+
+wrap_model_layers(model)
+
+model(inputs)
+```
+
+Execution time of every layer is stored in ```profiling.log``` file.
+
+# Setup
+
+This repo was developed under WSL 2 running Ubuntu 20.04 LTS. The editor of choice is VS Code. 
+
+## Install python 
+
+The code was tested for Python 3.11 and 3.10, if you want to run Python 3.10 or other future version please subsitute the python version in the command below.
+
+In case of running new WSL below are required packages and commands.
+
+```sudo apt-get update```
+
+```sudo apt-get install python3.11```
+
+```sudo apt-get install python3.11-venv```
+
+Install for PIL image.show() to work on WSL
+```sudo apt install imagemagick```
+
+## Install relevant VS Code extentions.
+
+If you choose to use the recommended VS Code as editor please install the extensions from  ```extensions.json```.
+
+## Create virtual environment
+
+Create venv 
+
+```python3.11 -m venv .venv```
+
+Install requirements.txt
+
+```pip install -r requirements.txt```
+
+To activate venv type - VS Code should automatically detect your new venv, so select it as your default interpreter.
+
+```source venv/bin/activate```
+
+## Install package in editable mode
+
+In order to be able to develop and run the code install this repo in editable mode.
+
+```pip install -e .```
+
+# Running
+
+The entry point to profiling the sample object detection models is 
+```run_profiling.py``` file.
+
+## Examples
+
+Running on CPU
+```python pytorchures/run_profiling.py --device 'cpu' --nr_images 3```
+
+Running on GPU
+```python pytorchures/run_profiling.py --device 'cuda' --nr_images 3```
+
+The script will print CPU wall time of every layer encountered in the model.
+Values are printed in a nested manner showing deeper layers at further indentation.
+
+# Testing
+
+All tests are located in 'tests' folder. Please follow Arange-Act-Assert pattern for all tests.
+The tests should load in the test explorer.
+
+# Formatting
+
+This repo uses 'Black' code formatter.
