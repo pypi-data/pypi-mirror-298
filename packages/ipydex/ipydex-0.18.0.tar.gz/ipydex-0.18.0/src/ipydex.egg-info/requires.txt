@@ -1,0 +1,4 @@
+ipython>=8.0.0
+pexpect
+pickleshare
+stack_data
