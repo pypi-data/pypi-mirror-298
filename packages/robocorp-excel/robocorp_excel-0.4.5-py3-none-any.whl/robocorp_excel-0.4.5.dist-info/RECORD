@@ -1,0 +1,11 @@
+robocorp/excel/__init__.py,sha256=nm-Va6fwycfwTXvPxbVXmoMsZnzL71cEuQmrtO6x4Gk,462
+robocorp/excel/_types.py,sha256=sjXc2U3H-RgOnEvnQvEaJBgWZ6BZOI450DTpT7oCDF0,77
+robocorp/excel/_workbooks.py,sha256=gHFsCe-99wlRAIoZMU2VaxHRzvlp7mygY5XClROWcxU,23682
+robocorp/excel/excel.py,sha256=250hRXRZJYXVPFnuSugk5ja25HNztFVAU7b6DhFdlzs,2689
+robocorp/excel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robocorp/excel/tables.py,sha256=RvIWf18ZXVUhwzRvVx7MSb-zv15ahq6pPopunM9belY,67352
+robocorp/excel/workbook.py,sha256=DFRc2BRsqtXpiQ9kff3LAJdg3fUlxXRDNiVI5XN3jF4,2681
+robocorp/excel/worksheet.py,sha256=6Do4jmqRMdFpmpfB1ZbkGCxO2Y8koEda97bJ_IsHn3M,5082
+robocorp_excel-0.4.5.dist-info/METADATA,sha256=oarToJJ7kp-yvDvrgrOqBdgy7hXXT9tNFo21l4pr9fc,2700
+robocorp_excel-0.4.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+robocorp_excel-0.4.5.dist-info/RECORD,,
