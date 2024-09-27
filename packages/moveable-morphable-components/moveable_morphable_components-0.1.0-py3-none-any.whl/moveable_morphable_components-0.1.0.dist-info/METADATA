@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: moveable-morphable-components
+Version: 0.1.0
+Summary: 
+Author: Jonathan Raines
+Author-email: jr0278@bristol.ac.uk
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: jax[cuda12] (>=0.4.31,<0.5.0)
+Requires-Dist: networkx (>=3.3,<4.0)
+Requires-Dist: numpy (>=2.1.1,<3.0.0)
+Requires-Dist: optax (>=0.2.3,<0.3.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: pillow (>=10.4.0,<11.0.0)
+Requires-Dist: plotly (>=5.23.0,<6.0.0)
+Requires-Dist: scipy (==1.14)
+Requires-Dist: sympy (>=1.13.1,<2.0.0)
+Requires-Dist: tqdm (>=4.66.5,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Moveable Morphable Components (Work In Progress)
+
+This is a Python package for doing Topology Optimisation using the Moveable Morphable Components (MMC) method (Guo et. al 2014).
+
+Much of the code is adapted from the 2D-MMC 218-line MATLAB code from _An efficient and easy-to-extend Matlab code of the Moving Morphable Component (MMC) method for three-dimensional topology optimization_, Du et. al. 2022.
+
+![Animation of MMC](images/uniform_beam_grid.gif)
+
+## Aims
+
+- An implementation of the method based on open-source tools.
+- Integration with Machine Learning libraries.
+- Easy adaptation, for example defining new types of component.
+
+## Installation
+
+- TODO PyPI - `pip install moveable-morphable-components`
+- Git - `pip install git+https://github.com/JonathanRaines/moveable-morphable-components.git`
+
