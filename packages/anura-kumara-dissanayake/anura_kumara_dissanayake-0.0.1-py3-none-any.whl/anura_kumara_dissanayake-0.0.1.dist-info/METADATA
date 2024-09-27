@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: anura_kumara_dissanayake
+Version: 0.0.1
+Author-email: Anura Kumara Dissanayake <sth@here.com>
+Project-URL: Google page, https://www.google.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
