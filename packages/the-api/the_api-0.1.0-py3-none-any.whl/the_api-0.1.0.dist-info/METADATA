@@ -1,0 +1,49 @@
+Metadata-Version: 2.3
+Name: the-api
+Version: 0.1.0
+Summary: Base for a full-featured API built with FastAPI.
+Project-URL: Pull Requests, https://github.com/seapagan/the-api/pulls
+Project-URL: Bug Tracker, https://github.com/seapagan/the-api/issues
+Project-URL: Changelog, https://github.com/seapagan/the-api/blob/main/CHANGELOG.md
+Project-URL: Repository, https://github.com/seapagan/the-api
+Author-email: Grant Ramsay <grant@gnramsay.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: FastAPI
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: fastapi[standard]>=0.115.0
+Description-Content-Type: text/markdown
+
+# The API
+
+This project will be a new project based on the lessons I have learned in my
+[fastapi-template](https://github.com/seapagan/fastapi-template) project.
+
+It will be built from the ground up as an installable package which will give
+you a solid foundation for building your own FastAPI projects, containing the
+features from the template project including auth, user management, async
+database access, a useful CLI and more. Docker integration will be included as
+standard.
+
+At moment I am still in the planning stages, but have put this out in public to
+save the name, and document my intentions, there is no usable code here yet.
+
+There is a package available on PyPI (`the-api`) which is a placeholder for now,
+but will develop into the tool I couldn't have written a couple of years ago.

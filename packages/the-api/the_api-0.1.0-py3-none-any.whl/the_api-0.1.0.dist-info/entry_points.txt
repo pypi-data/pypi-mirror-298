@@ -1,0 +1,2 @@
+[console_scripts]
+the-api = the_api:main
