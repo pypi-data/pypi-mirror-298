@@ -1,0 +1,9 @@
+[console_scripts]
+decode-hafx-debug-hist = umndet.ground.json_decoders:decode_hafx_debug_hist
+decode-impress-hafx = umndet.ground.json_decoders:decode_hafx_sci
+decode-impress-health = umndet.ground.json_decoders:decode_health
+decode-x123-science = umndet.ground.json_decoders:decode_x123_sci
+generate-impress-bin-txt = umndet.tools.generate_binning:main
+impress-rebinner = umndet.rebinner.file_based_rebinner:main
+simulate-impress-health = umndet.tools.simulate_health:main
+simulate-impress-science = umndet.tools.simulate_slices:main
