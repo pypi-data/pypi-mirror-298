@@ -1,0 +1,10 @@
+README.md
+setup.py
+MyPackagevab.egg-info/PKG-INFO
+MyPackagevab.egg-info/SOURCES.txt
+MyPackagevab.egg-info/dependency_links.txt
+MyPackagevab.egg-info/top_level.txt
+MyPackagevab.egg-info/.ipynb_checkpoints/PKG-INFO-checkpoint
+MyPackagevab.egg-info/.ipynb_checkpoints/SOURCES-checkpoint.txt
+MyPackagevab.egg-info/.ipynb_checkpoints/dependency_links-checkpoint.txt
+MyPackagevab.egg-info/.ipynb_checkpoints/top_level-checkpoint.txt

@@ -1,0 +1,5 @@
+setup.py
+MyPackagevab.egg-info/PKG-INFO
+MyPackagevab.egg-info/SOURCES.txt
+MyPackagevab.egg-info/dependency_links.txt
+MyPackagevab.egg-info/top_level.txt
