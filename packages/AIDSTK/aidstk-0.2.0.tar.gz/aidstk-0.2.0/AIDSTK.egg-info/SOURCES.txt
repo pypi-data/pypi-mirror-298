@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+AIDSTK/__init__.py
+AIDSTK/functions.py
+AIDSTK/models.py
+AIDSTK.egg-info/PKG-INFO
+AIDSTK.egg-info/SOURCES.txt
+AIDSTK.egg-info/dependency_links.txt
+AIDSTK.egg-info/requires.txt
+AIDSTK.egg-info/top_level.txt
+AIDSTK/configs/gemma2_T1_00.json
+AIDSTK/configs/llama3_1_T0_00.json
+AIDSTK/configs/llama3_2_T0_80.json
+AIDSTK/prompts/IT_Categorizer.txt
+AIDSTK/prompts/Sentiment_Analyzer.txt

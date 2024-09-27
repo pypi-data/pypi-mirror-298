@@ -1,0 +1,2 @@
+include AIDSTK/prompts/*.txt
+include AIDSTK/configs/*.json

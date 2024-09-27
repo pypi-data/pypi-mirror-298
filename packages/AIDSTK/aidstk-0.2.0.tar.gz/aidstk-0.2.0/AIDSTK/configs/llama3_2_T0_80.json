@@ -1,0 +1,8 @@
+{
+    "base_url": "http://192.168.0.73:11434",
+    "model": "llama3.1",
+    "temperature": 0.8,
+    "tfs_z": 2,
+    "metadata": {"seed": 42},
+    "format": "json"
+}

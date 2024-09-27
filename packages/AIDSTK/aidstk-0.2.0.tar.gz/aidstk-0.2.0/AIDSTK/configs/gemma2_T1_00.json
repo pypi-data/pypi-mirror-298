@@ -1,0 +1,8 @@
+{
+    "base_url": "http://192.168.0.73:11434",
+    "model": "gemma2:2b",
+    "temperature": 1,
+    "tfs_z": 2,
+    "metadata": {"seed": 42},
+    "format": "json"
+}
