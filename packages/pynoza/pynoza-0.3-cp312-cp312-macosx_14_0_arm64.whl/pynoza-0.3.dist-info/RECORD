@@ -1,0 +1,12 @@
+pynoza/__init__.py,sha256=WFrveVqSQ5FKFfuyA-CswTCCG-qQDUfm4BXlUmQTf9Q,110
+pynoza/from_mathematica.py,sha256=MHH6HSRlHaoJw9ypJzuWtRKnwaokxSeOIniINyylRwg,177131
+pynoza/helpers.py,sha256=xFZofeklikH7TUWnwnSm27NmXc1kMyXf3I3xbY6olhM,8640
+pynoza/inverse_problem.py,sha256=BolMwDPf423B2Mcl9o4coQRUobwfm-K7PFqncdvqM5Y,10577
+pynoza/solution.c,sha256=QtOrBN_gImjPWcPLVfnO2QWzv01V0nymbQnY6riaoyg,1453911
+pynoza/solution.cpython-312-darwin.so,sha256=8gSTpERBZudpgdzreSI2pgpVu51Hhe61yDEBQF9-yJI,376448
+pynoza/solution.py,sha256=ZT9DMiHsV9S6CBhb-2VtRGuEaQDEMgurZUvCeJt72ys,27790
+pynoza-0.3.dist-info/LICENSE,sha256=t3tmzEMVVut3AZ04Ihwjvxr8-tTP6ANs8XKyUxfcMlg,34504
+pynoza-0.3.dist-info/METADATA,sha256=L-h99tNxkQhuuofRF19B80lrptsMQ604ANZnOFEg5rQ,4574
+pynoza-0.3.dist-info/WHEEL,sha256=zkD0VVdMbiBKkyskezjhEitQj6-1hhoYWMU4UAACeCg,109
+pynoza-0.3.dist-info/top_level.txt,sha256=6k0a0C1LhgqeYuqI2eeRNj-BTa67Ad_3IfbHib-TH7Q,7
+pynoza-0.3.dist-info/RECORD,,
