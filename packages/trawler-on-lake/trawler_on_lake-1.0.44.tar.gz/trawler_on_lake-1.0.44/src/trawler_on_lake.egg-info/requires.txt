@@ -1,0 +1,8 @@
+pyspark==3.4.0
+confluent-kafka
+requests
+delta-spark==2.4.0
+google-analytics-data==0.17.1
+
+[:python_version < "3.11"]
+tomli
