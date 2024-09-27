@@ -1,0 +1,13 @@
+parserator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parserator/data_prep_utils.py,sha256=YNu6zbXStmbccCJfYJdTxf4kWcX9UJJWcNrjOHQ7EG8,1934
+parserator/main.py,sha256=-pYkpqC39oZbm5IW-F5LF16zbRB75GoiGbf9ScD0Lf0,6987
+parserator/manual_labeling.py,sha256=wos6G0RfV4VjLVbdFNLGPw8Qe1RiAWnLp1hZ00-YHzY,6664
+parserator/parser_template.py,sha256=t1k8ztqcIJGhXGJCmjQMEWLlVTgIkZjaGfOh5zl8amY,6627
+parserator/spotcheck.py,sha256=UgVSgSZmT3IB5rlQK2NZFE1CXxMisZHfb49wbi-JP4c,3357
+parserator/training.py,sha256=UgCYPBEgYDE2Ii5kBs0FvjLcexxHErxMoUBxkWX57jk,1594
+parserator-0.6.9.dist-info/LICENSE,sha256=giyh1DBDFX33rzHLDgxLgZA94FecdwJXwQ3g_nVH6Bo,1076
+parserator-0.6.9.dist-info/METADATA,sha256=J7FbRujYtPbvLCk8x6aa_fIIFFh-Jge1etC2dgn6ttA,7366
+parserator-0.6.9.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+parserator-0.6.9.dist-info/entry_points.txt,sha256=qtEjQ8NM4Uae6TQOfrA4kjqxn1EYzIGKtosen2Hex-o,56
+parserator-0.6.9.dist-info/top_level.txt,sha256=xptOYsoSFdkyFbU0Fn4yBzIUJopCoO6RfQo96M65U5U,11
+parserator-0.6.9.dist-info/RECORD,,
