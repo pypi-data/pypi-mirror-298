@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: voichatlib
+Version: 0.1.1
+Summary: A Python library for creating virtual assistants using OpenAI and document retrieval
+Home-page: https://github.com/mertincesu/voi_lib.git
+Author: Mert Incesu
+Author-email: mert.incesu03@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: openai
+Requires-Dist: langchain
+Requires-Dist: langchain_openai
+Requires-Dist: langchain_community
+Requires-Dist: chromadb
+
+# VoiLib
+
+VoiLib is a Python library for creating virtual assistants using OpenAI and document retrieval.
+
+## Features
+- Support for OpenAI's GPT models
+- Retrieval-Augmented Generation (RAG)
+- Custom intents and automatic replies
