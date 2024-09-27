@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: RandStrGen
+Version: 0.2.0
+Summary: A simple and flexible random string generator
+Home-page: https://github.com/yourusername/RandStrGen
+Author: lsw
+Author-email: lsw@lwco.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RandStrGen
+
+RandStrGen is a simple and flexible random string generator for Python. It allows you to generate random strings with customizable character types and constraints.
+
+## Features
+
+- **Customizable Character Types:** Include uppercase, lowercase, digits, symbols, or a combination.
+- **First Character Constraints:** Specify if the first character should be a letter, uppercase, or lowercase.
+- **Batch Generation:** Generate multiple random strings at once.
+- **Secure Randomness:** Utilizes Python's `secrets` module for cryptographic security.
+
+## Installation
+
+Install RandStrGen using pip:
+
+```bash
+pip install RandStrGen
