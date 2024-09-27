@@ -1,0 +1,8 @@
+README.rst
+setup.py
+src/outlook_email_sender.egg-info/PKG-INFO
+src/outlook_email_sender.egg-info/SOURCES.txt
+src/outlook_email_sender.egg-info/dependency_links.txt
+src/outlook_email_sender.egg-info/entry_points.txt
+src/outlook_email_sender.egg-info/requires.txt
+src/outlook_email_sender.egg-info/top_level.txt
