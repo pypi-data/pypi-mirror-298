@@ -1,0 +1,599 @@
+
+{% extends "layouts/base-applications.html" %}
+{% load static i18n %}
+{% block title %} Settings General {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/css/dataTables.bs5.min.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/css/select2.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/css/select2-theme.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/css/tagify.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/css/tagify-data.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/css/quill.min.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<style>
+    .hidden-scrollbar {
+            overflow: auto; /* Allows scrolling */
+            scrollbar-width: none; /* Firefox */
+        }
+</style>
+{% endblock stylesheets %}
+
+{% block content %}
+<!--! ================================================================ !-->
+    <!--! [Start] Main Content !-->
+    <!--! ================================================================ !-->
+    <main class="nxl-container apps-container">
+        <div class="nxl-content without-header nxl-full-content">
+            <!-- [ Main Content ] start -->
+            <div class="main-content d-flex">
+                <!-- [ Content Sidebar ] start -->
+                <div class="content-sidebar content-sidebar-md" data-scrollbar-target="#psScrollbarInit">
+                    <div class="content-sidebar-header bg-white sticky-top hstack justify-content-between">
+                        <h4 class="fw-bolder mb-0">{% trans "Settings" %}</h4>
+                        <a href="javascript:void(0);" class="app-sidebar-close-trigger d-flex">
+                            <i class="feather-x"></i>
+                        </a>
+                    </div>
+
+                    {% include 'includes/tenantsettingsnav.html' %}
+
+                    
+                </div>
+                <div class="content-area"  data-scrollbar-target="#psScrollbarInit">
+                    <div class="content-area-header bg-white sticky-top">
+                        <div class="page-header-left d-flex align-items-center my-auto">
+                            <div class="page-header-title">
+                                <h4 class="fw-bolder mb-0">{{segment.text}}</h4>
+                            </div>
+                        </div>
+                        <div class="page-header-right ms-auto">
+                            <div class="d-flex align-items-center gap-3 page-header-right-items-wrapper">
+                                <button id="btnSubmitMessageTemplate" class="btn btn-primary">
+                                    <i class="feather-save me-2"></i>
+                                    <span>{% trans "Save Changes" %}</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-area-body min-vh-100">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <form method="post" id="messageTemplatesForm">
+                                        {% csrf_token %}
+                                        <div class="mb-4">
+                                            <label for="{{ form.user_invite_subject.label }}"  class="form-label mb-0">{% trans "Invite Email Subject" %}</label>
+                                            <div class="">
+                                                {{form.user_invite_subject}}
+                                            </div>
+                                            {% if form.skills.errors %}
+                                                <div class="text-danger">
+                                                    {% for error in form.user_invite_subject.errors %}
+                                                        <p>{{ error }}</p>
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="{{ form.user_invite_template.label }}"  class="form-label mb-0">{% trans "Invite Email Template" %}</label>
+                                            <div class="">
+                                                {{form.user_invite_template}}
+                                            </div>
+                                            {% if form.skills.errors %}
+                                                <div class="text-danger">
+                                                    {% for error in form.user_invite_template.errors %}
+                                                        <p>{{ error }}</p>
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
+
+                                        </div>
+                                    </form> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [ Footer ] start -->
+                    <footer class="footer sticky-bottom"> 
+                        <p class="fs-11 text-muted fw-medium text-uppercase mb-0 copyright">
+                            <span>{% trans "Copyright" %} ©</span>
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                        </p>
+                        <div class="d-flex align-items-center gap-4">
+                            <a href="javascript:void(0);" class="fs-11 fw-semibold text-uppercase">{% trans "Help" %}</a>
+                            <a href="javascript:void(0);" class="fs-11 fw-semibold text-uppercase">{% trans "Terms" %}</a>
+                            <a href="javascript:void(0);" class="fs-11 fw-semibold text-uppercase">{% trans "Privacy" %}</a>
+                        </div>
+                    </footer>
+                    <!-- [ Footer ] end -->
+                </div>
+                <!-- [ Content Area ] end -->
+            </div>
+            <!-- [ Main Content ] end -->
+        </div>
+    </main>
+    <!--! ================================================================ !-->
+    <!--! [End] Main Content !-->
+    <!--! ================================================================ !-->
+{% endblock content %}
+
+{% block components %} 
+
+
+    <!--! ================================================================ !-->
+    <!--! [Start] Search Modal !-->
+    <!--! ================================================================ !-->
+    <!--! ================================================================ !-->
+    <!--! [End] Search Modal !-->
+    <!--! ================================================================ !-->
+    <!--! ================================================================ !-->
+    <!--! [Start] Language Select !-->
+    <!--! ================================================================ !-->
+    <div class="modal fade-scale" id="languageSelectModal" aria-hidden="true" aria-labelledby="languageSelectModalLabel" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="languageSelectModalLabel">Select Language</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/sa.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Arabic </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/bd.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Bengali </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/ch.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Chinese </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/hr.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Croatian </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/dk.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Danish </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/nl.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Dutch </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select active">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/us.svg' %}" alt="" class="img-fluid"></div>
+                                <span>English </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/fi.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Filipino </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/fr.svg' %}" alt="" class="img-fluid"></div>
+                                <span>French </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/de.svg' %}" alt="" class="img-fluid"></div>
+                                <span>German </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/il.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Hebrew </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/in.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Hindi </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/id.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Indonesian </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/it.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Italian </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/jp.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Japanese </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/kr.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Korean </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/ir.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Persian </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/pt.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Portuguese </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/ru.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Russian </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/es.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Spanish </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/sv.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Swedish </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/tr.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Turkish </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/pk.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Urdo</span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 language_select">
+                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+                                <div class="avatar-image avatar-sm"><img src="{% static 'assets/vendors/img/flags/1x1/vi.svg' %}" alt="" class="img-fluid"></div>
+                                <span>Vietnamese</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! ================================================================ !-->
+    <!--! [End] Language Select !-->
+    <!--! ================================================================ !-->
+    <!--! ================================================================ !-->
+    <!--! BEGIN: Downloading Toast !-->
+    <!--! ================================================================ !-->
+    <div class="position-fixed" style="right: 5px; bottom: 5px; z-index: 999999">
+        <div id="toast" class="toast bg-black hide" data-bs-delay="3000" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header px-3 bg-transparent d-flex align-items-center justify-content-between border-bottom border-light border-opacity-10">
+                <div class="text-white mb-0 mr-auto">Downloading...</div>
+                <a href="javascript:void(0)" class="ms-2 mb-1 close fw-normal" data-bs-dismiss="toast" aria-label="Close">
+                    <span class="text-white">&times;</span>
+                </a>
+            </div>
+            <div class="toast-body p-3 text-white">
+                <h6 class="fs-13 text-white">Project.zip</h6>
+                <span class="text-light fs-11">4.2mb of 5.5mb</span>
+            </div>
+            <div class="toast-footer p-3 pt-0 border-top border-light border-opacity-10">
+                <div class="progress mt-3" style="height: 5px">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated w-75 bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! ================================================================ !-->
+    <!--! END: Downloading Toast !-->
+    <!--! ================================================================ !-->
+{% endblock components %}
+
+{% block javascripts %}
+<!--! ================================================================ !-->
+<!--! BEGIN: Vendors JS !-->
+<script src="{% static 'assets/vendors/js/vendors.min.js' %}"></script>
+<script src="{% static '/ckeditor/ckeditor/ckeditor.js' %}"></script>
+<script src="{% static '/ckeditor/ckeditor-init.js' %}"></script>
+<!-- vendors.min.js' %} {always must need to be top} -->
+<script src="{% static 'assets/vendors/js/dataTables.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/dataTables.bs5.min.js' %}"></script>
+
+<script src="{% static 'assets/vendors/js/select2.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/select2-active.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/tagify.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/tagify-data.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/quill.min.js' %}"></script>
+<!--! END: Vendors JS !-->
+<!--! BEGIN: Apps Init  !-->
+<script src="{% static 'assets/js/common-init.min.js' %}"></script>
+<script src="{% static 'assets/js/payment-init.min.js' %}"></script>
+<script src="{% static 'assets/js/settings-init.min.js' %}"></script>
+<script src="{% static 'assets/js/apps-email-init.min.js' %}"></script>
+
+<script src="{% static 'assets/js/apps-storage-init.min.js' %}"></script>
+<!--! END: Apps Init !-->
+<!--! BEGIN: Theme Customizer  !-->
+<script src="{% static 'assets/js/theme-customizer-init.min.js' %}"></script>
+
+{% for template in templates %}
+
+
+    <!--! ================================================================ !-->
+    <!--! BEGIN: View Template Modal !-->
+    <!--! ================================================================ !-->
+    <div class="modal fade-scale hidden-scrollbar" id="viewTemplate{{ template.id }}_Modal" tabindex="1" aria-labelledby="viewTemplate{{ template.id }}Label_Modal" aria-hidden="true" data-bs-dismiss="ou">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="viewTemplate{{ template.id }}Label_Modal">Message Template</h4>
+                    <a href="javascript:void(0)" class="avatar-text avatar-md bg-soft-danger close-icon" data-bs-dismiss="modal">
+                        <i class="feather-x text-danger"></i>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="about-section mb-5">
+                        <div class="mb-4 d-flex gap-2 align-items-center justify-content-start">
+                            <label class="fw-bold mb-0">Subject:</label>
+                            <h6 class="fw-bold mb-0 text-capitalize">{{template.subject}}</h6>
+                        </div>
+                        <div class="mb-4 d-flex gap-2 align-items-center justify-content-start">
+                            <label class="fw-bold mb-0">Message Type:</label>
+                            <h6 class="fw-bold mb-0 text-capitalize">{{template.message_type_description}}</h6>
+                        </div>
+                       <div class="mb-4 ">
+                            <div class="mb-2 d-flex gap-2 align-items-center justify-content-start">
+                                <label class="fw-bold mb-0">Body:</label>
+                            </div>
+                            <div class="p-4 bg-gray-100">
+                               <blockquote> {{ template.body|safe }}</blockquote>
+                            </div>
+                       </div>
+                       <div class="mb-4 ">
+                            <div class="mb-2 d-flex gap-2 align-items-center justify-content-start">
+                                <label class="fw-bold mb-0">Email Signature:</label>
+                            </div>
+                            <div class="p-4 bg-gray-100">
+                                <blockquote>  {{ template.email_signature|safe }} </blockquote>
+                            </div>
+                       </div>
+                       <div class="mb-4 ">
+                            <div class="mb-2 d-flex gap-2 align-items-center justify-content-start">
+                                <label class="fw-bold mb-0">Notes:</label>
+                            </div>
+                            <div class="p-4 bg-gray-100">
+                                <blockquote>  {{ template.notes|safe }} </blockquote>
+                            </div>
+                       </div>   
+                        
+                   </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! ================================================================ !-->
+    <!--! [End] View Template Modal !-->
+    <!--! ================================================================ !-->
+
+    <!--! ================================================================ !-->
+    <!--! BEGIN: Delete Template Modal !-->
+    <!--! ================================================================ !-->
+    <div class="modal fade-scale hidden-scrollbar" id="deleteModal_{{ template.id }}" tabindex="1" aria-labelledby="deleteModalLabel-{{ template.id }}" aria-hidden="true" data-bs-dismiss="ou">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="viewTemplate{{ template.id }}Label_Modal">Confirm Deletion</h4>
+                    <a href="javascript:void(0)" class="avatar-text avatar-md bg-soft-danger close-icon" data-bs-dismiss="modal">
+                        <i class="feather-x text-danger"></i>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <p class="fs-18 text-center">Are you sure you want to delete the message template <strong class="text-gray-600 text-capitalize">"{{ template.subject }}"</strong>?</p>
+                </div>
+                <div class="modal-footer">
+                    <form method="post" action="{% url 'message_templates' %}">
+                        {% csrf_token %}
+                        <div class="d-flex justify-content-end align-items-center gap-4">
+                            <input type="hidden" name="delete_template_id" value="{{ template.id }}">
+                            <button type="submit" class="btn btn-danger">Yes, Delete it!</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">No, Cancel!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! ================================================================ !-->
+    <!--! [End] Delete Template Modal !-->
+    <!--! ================================================================ !-->
+
+    <!--! ================================================================ !-->
+    <!--! BEGIN: Create Template Modal !-->
+    <!--! ================================================================ !-->
+    <form method="POST" id="editMessageTemplatesForm" action="{% url 'message_templates' %}">
+        <input type="hidden" name="update_template_id" value="{{ template.id }}">
+        <div class="modal fade-scale" id="editTemplate{{template.id}}" tabindex="-1" aria-labelledby="editTemplate{{template.id}}" aria-hidden="true" data-bs-dismiss="ou">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <!--! BEGIN: [modal-header] !-->
+                <div class="modal-header">
+                    <h2 class="d-flex flex-column mb-0">
+                        <span class="fs-18 fw-bold mb-1">Edit Message Template</span>
+                        <small class="d-block fs-11 fw-normal text-muted">Modify Your Message Template</small>
+                    </h2>
+                    <a href="javascript:void(0)" class="avatar-text avatar-md bg-soft-danger close-icon" data-bs-dismiss="modal">
+                        <i class="feather-x text-danger"></i>
+                    </a>
+                </div>
+                <!--! BEGIN: [modal-body] !-->
+                <div class="modal-body">
+                    {% csrf_token %}
+                    <div class="mb-4">
+                        <label for="{{ form.subject.label }}"  class="form-label mb-0">{{ form.subject.label }}</label>
+                        <div class="">
+                            <input type="text" name="subject" id="edit_subject" class="form-control" maxlength="255" placeholder="Enter Subject Title" value="{{ template.subject|default_if_none:'' }}">
+                        </div>
+                        <small class="form-text text-muted text-danger">{{ form.subject.errors }}</small>  
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="{{ form.body.label }}"  class="form-label mb-0">{{ form.body.label }}</label>
+                         <textarea name="body" id="edit_body" class="form-control" rows="10">
+                            {{ template.body }}
+                        </textarea>
+                        <script>
+                            CKEDITOR.replace('edit_body');
+                        </script>
+                        <small class="form-text text-muted text-danger">{{ form.body.errors }}</small>  
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="{{ form.email_signature.label }}"  class="form-label mb-0">{{ form.email_signature.label }}</label>
+                         <textarea name="email_signature" id="edit_email_signature" class="form-control" rows="10">
+                            {{ template.email_signature }}
+                        </textarea>
+                        <script>
+                            CKEDITOR.replace('edit_email_signature');
+                        </script>
+                        <small class="form-text text-muted text-danger">{{ form.email_signature.errors }}</small>  
+                    </div>
+
+
+                    <div class="mb-4">
+                        <label for="{{ form.notes.label }}"  class="form-label mb-0">{{ form.notes.label }}</label>
+                        <div class="">
+                            <textarea name="notes" id="edit_notes" class="form-control" rows="3" placeholder="Enter email notes">{{ template.notes|default_if_none:'' }}</textarea>
+                        </div>
+                        <small class="form-text text-muted text-danger">{{ form.notes.errors }}</small>  
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="{{ form.message_type.label }}"  class="form-label mb-0">{{ form.message_type.label }}</label>
+                        <div class="">
+                            <select name="message_type" id="edit_message_type" class="form-control">
+                                {% for key, value in form.message_type.field.choices %}
+                                    <option value="{{ key }}" {% if template.message_type == key %}selected{% endif %}>{{ value }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <small class="form-text text-muted text-danger">{{ form.message_type.errors }}</small> 
+                    </div>
+
+                </div>
+
+
+                <!--! BEGIN: [modal-footer] !-->
+                <div class="modal-footer d-flex align-items-center justify-content-end">
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="javascript:void(0);" data-bs-dismiss="modal">
+                            <span class="btn btn-icon">
+                                Cancel
+                            </span>
+                        </a>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+    <!--! ================================================================ !-->
+    <!--! END: Create Template Modal !-->
+    <!--! ================================================================ !-->
+
+{% endfor %}
+
+<script>
+    // Initialize CKEditor for your fields
+    CKEDITOR.replace('user_invite_template');
+
+    document.getElementById('messageTemplatesForm').onsubmit = function(e) {
+        // Get the CKEditor instances
+        var bodyContent = CKEDITOR.instances['user_invite_template'].getData().trim();
+
+        // Check if the content is empty
+        if (!bodyContent || !emailSignatureContent) {
+            Swal.fire({
+                toast: true,
+                icon: 'error',
+                title: 'Please fill out all required fields.',
+                position: 'top-end',
+                showConfirmButton: false,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            });
+            e.preventDefault(); // Prevent form submission
+            return false;
+        }
+    };
+</script>
+<script>
+    document.getElementById('btnSubmitMessageTemplate').addEventListener('click', function() {
+        document.getElementById('messageTemplatesForm').submit();
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+<script>
+    // Function to display toast messages
+    function showToast(message, type) {
+        Toastify({
+            text: message,
+            duration: 5000,
+            close: true,
+            gravity: "top",
+            position: "right",
+            backgroundColor: type === 'success' ? "linear-gradient(to right, #00b09b, #96c93d)" : type === 'error' ? "linear-gradient(to right, #FF5F5F, #FF5F5F)" : "linear-gradient(to right, #1e40af, #1d4ed8)",
+        }).showToast();
+    }
+
+    // Display toast notifications if messages exist
+    {% if messages %}
+        {% for message in messages %}
+            showToast("{{ message.message|safe }}", "{{ message.tags }}");
+        {% endfor %}
+    {% endif %}
+</script>
+<!--! END: Theme Customizer !-->
+{% endblock javascripts %}
+

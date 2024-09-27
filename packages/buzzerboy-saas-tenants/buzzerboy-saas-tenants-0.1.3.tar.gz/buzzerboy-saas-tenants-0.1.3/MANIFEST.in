@@ -1,0 +1,5 @@
+include README.md
+recursive-include buzzerboy-saas-tenants/static *
+recursive-include buzzerboy-saas-tenants/html5_ui *
+recursive-include buzzerboy-saas-tenants/media *
+recursive-include buzzerboy-saas-tenants/fixtures *
