@@ -1,0 +1,8 @@
+yandexbot/__init__.py,sha256=ST58Rd0Pdg8LcWxCEBk9-7IfLEiSSVDJKGX_k8Fil_k,32
+yandexbot/bot.py,sha256=63YKiVTMQh1kM3Xz91j9DD25PDAEaPTt9zmV7MvHag0,5722
+yandexbot/dependency_links.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+yandexbot/types/__init__.py,sha256=7lowqCCBM8KsfLgIamCaTrtQw75or_EVTsqAFhzonKQ,43
+yandexbot/types/message.py,sha256=3LlkGfdGD3Jf2XTT9FMzKqWvKrUqrNGSaXQ9ZSDQFsc,1108
+yandexbot-0.2.1.dist-info/METADATA,sha256=u9Usxz95j6O1T4O-kp5J5_HSmj80JtleSPvB-uNA2x0,3617
+yandexbot-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+yandexbot-0.2.1.dist-info/RECORD,,

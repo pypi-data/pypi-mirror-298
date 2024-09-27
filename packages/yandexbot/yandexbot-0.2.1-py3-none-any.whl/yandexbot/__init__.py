@@ -1,0 +1,1 @@
+from yandexbot.bot import BotAPI
