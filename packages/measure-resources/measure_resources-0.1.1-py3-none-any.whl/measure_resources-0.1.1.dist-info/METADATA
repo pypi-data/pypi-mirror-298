@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: measure_resources
+Version: 0.1.1
+Summary: Measure system resources
+Project-URL: Homepage, https://github.com/BlueBirdBack/measure_resources
+Project-URL: Repository, https://github.com/BlueBirdBack/measure_resources.git
+Author-email: BlueBirdBack <avery@bluebirdback.com>
+License: MIT License
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Requires-Dist: psutil>=5.8.0
+Description-Content-Type: text/markdown
+
+# measure_resources
