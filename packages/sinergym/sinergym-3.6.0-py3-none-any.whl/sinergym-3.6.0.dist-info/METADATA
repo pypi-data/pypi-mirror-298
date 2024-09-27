@@ -1,0 +1,519 @@
+Metadata-Version: 2.1
+Name: sinergym
+Version: 3.6.0
+Summary: The goal of sinergym is to create an environment following OpenAI Gym interface for wrapping simulation engines for building control using deep reinforcement learning.
+Home-page: https://github.com/ugr-sail/sinergym
+License: MIT
+Keywords: reinforcement-learning,buildings,simulation,Control,reinforcement-learning-environments
+Author: Alejandro Campoy Nieves
+Author-email: alejandroac79@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: eppy (>=0.5.63,<0.6.0)
+Requires-Dist: gymnasium (>=0.29.1,<0.30.0)
+Requires-Dist: numpy (>=2.1.1,<3.0.0)
+Requires-Dist: opyplus (>=2.0.7,<3.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: tqdm (>=4.66.5,<5.0.0)
+Requires-Dist: xlsxwriter (>=3.2.0,<4.0.0)
+Project-URL: Documentation, https://ugr-sail.github.io/sinergym
+Project-URL: Repository, https://github.com/ugr-sail/sinergym
+Description-Content-Type: text/markdown
+
+# Sinergym
+
+<div align="center">
+  <img src="images/logo.png" width=40%><br><br>
+</div>
+
+</p>
+  <p align="center">
+    <a href="https://github.com/ugr-sail/sinergym/releases">
+      <img alt="Github latest release" src="https://img.shields.io/github/release-date/ugr-sail/sinergym" />
+    </a>
+    <a href="https://github.com/ugr-sail/sinergym/commits/main">
+      <img alt="Github last commit" src="https://img.shields.io/github/last-commit/ugr-sail/sinergym" />
+    </a>
+    <a href="https://pypi.org/project/sinergym/">
+      <img alt="Pypi version" src="https://img.shields.io/pypi/v/sinergym" />
+    </a>
+    <a href="https://github.com/ugr-sail/sinergym/stargazers">
+      <img alt="Pypi downloads" src="https://img.shields.io/pypi/dm/sinergym" />
+    </a>
+    <a href="https://codecov.io/gh/ugr-sail/sinergym">
+      <img src="https://codecov.io/gh/ugr-sail/sinergym/branch/main/graph/badge.svg" />
+    </a>
+    <a href="https://github.com/ugr-sail/sinergym/graphs/contributors">
+      <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/ugr-sail/sinergym" />
+    </a>
+    <a href="https://github.com/ugr-sail/sinergym/issues">
+      <img alt="Github issues" src="https://img.shields.io/github/issues/ugr-sail/sinergym?color=0088ff" />
+    </a>
+    <a href="https://github.com/ugr-sail/sinergym/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/ugr-sail/sinergym?color=0088ff" />
+    </a>
+    <a href="https://github.com/ugr-sail/sinergym/blob/main/LICENSE">
+      <img alt="Github License" src="https://img.shields.io/github/license/ugr-sail/sinergym" />
+    </a>
+    <a href="https://www.python.org/downloads/release/python-3120/">
+      <img alt="Pypi Python version" src="https://img.shields.io/pypi/pyversions/sinergym" />
+    </a>
+    <a href="https://hub.docker.com/r/sailugr/sinergym/tags">
+      <img alt="DockerHub last version" src="https://img.shields.io/docker/v/sailugr/sinergym?color=blue&label=Docker%20Image%20Version&logo=docker" />
+    </a>
+    <br />
+    <br />
+    <a href="https://code.visualstudio.com/">
+      <img src="https://img.shields.io/badge/Supported%20by-VSCode%20Power%20User%20%E2%86%92-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/>
+    </a>
+  </p>
+
+**Welcome to Sinergym!**
+
+<div align="center">
+  <img src="images/general_blueprint.png" width=80%><br><br>
+</div>
+
+The goal of this project is to create an environment following *Gymnasium* interface for wrapping 
+simulation engines (*EnergyPlus*) for building control using **deep reinforcement learning** 
+or any external control.
+
+For more information about Sinergym, please visit our [documentation](https://ugr-sail.github.io/sinergym/compilation/main/index.html).
+
+To report questions and issues, please use our [issue tracker](https://github.com/ugr-sail/sinergym/issues). We appreciate your feedback and contributions. Check out our [CONTRIBUTING.md](https://github.com/ugr-sail/sinergym/blob/main/CONTRIBUTING.md) for more details on how to contribute.
+
+The main functionalities of *Sinergym* are the following:
+
+- **Simulation Engine Compatibility**: Uses [EnergyPlus Python API](https://energyplus.readthedocs.io/en/latest/api.html) for Python-EnergyPlus communication. Future plans include more engines like [OpenModelica](https://openmodelica.org/).
+
+- **Benchmark Environments**: Designs environments for benchmarking and testing deep RL algorithms or other external strategies, similar to *Atari* or *Mujoco*.
+
+- **Customizable Environments**: Allows easy modification of experimental settings. Users can create their own environments or modify pre-configured ones in *Sinergym*.
+
+- **Customizable Components**: Enables creation of new custom components for new environments, making *Sinergym* scalable, such as function rewards, wrappers, controllers, etc.
+
+- **Automatic Building Model Adaptation**: *Sinergym* automates the process of adapting the building model to user changes in the environment definition.
+
+- **Automatic Actuators Control**: Controls actuators through the Gymnasium interface based on user specification, only actuators names are required and *Sinergym* will do the rest.
+
+- **Extensive Environment Information**: Provides comprehensive information about *Sinergym* background components from the environment interface.
+
+- **Stable Baseline 3 Integration**: Customizes functionalities for easy testing of environments with SB3 algorithms, such as callbacks and customizable training real-time logging. However, *Sinergym* is agnostic to any DRL algorithm.
+
+- **Google Cloud Integration**: Offers guidance on using *Sinergym* with Google Cloud infrastructure.
+
+- **Weights & Biases Compatibility**: Automates and facilitates training, reproducibility, and comparison of agents in simulation-based building control problems. [WandB](https://wandb.ai/site) assists in managing and monitoring model lifecycle.
+
+- **Notebook Examples**: Provides code in notebook format for user familiarity with the tool.
+
+- **Extensive Documentation, Unit Tests, and GitHub Actions Workflows**: Ensures *Sinergym* is an efficient ecosystem for understanding and development.
+
+- And much more!
+
+_This is a project in active development. Stay tuned for upcoming releases._
+
+<div align="center">
+  <img src="images/operation_diagram.png"><br><br>
+</div>
+
+## Project Structure
+
+This repository is organized into the following directories:
+
+- `sinergym/`: Contains the source code for *Sinergym*, including the environment, modeling, simulator, and tools such as wrappers and reward functions.
+- `docs/`: Online documentation generated with Sphinx and using Restructured Text (RST).
+- `examples/`: Jupyter notebooks illustrating use cases with Sinergym.
+- `tests/`: Unit tests for Sinergym to ensure stability.
+- `scripts/`: Scripts for various tasks such as agent training and performance checks, allowing configuration using JSON format.
+
+## Available Environments
+
+For a complete and up-to-date list of available environments, please refer to [our documentation](https://ugr-sail.github.io/sinergym/compilation/main/pages/environments.html#).
+
+## Installation
+
+Please visit [INSTALL.md](https://github.com/ugr-sail/sinergym/blob/main/INSTALL.md) for detailed installation instructions.
+
+## Usage example
+
+
+If you used our Dockerfile during installation, you should have the *try_env.py* file in your workspace as soon as you enter in. In case you have installed everything on your local machine directly, place it inside our cloned repository. In any case, we start from the point that you have at your disposal a terminal with the appropriate python version and *Sinergym* running correctly.
+
+*Sinergym* uses the standard Gymnasium API. So a basic loop should look like:
+
+```python
+
+import gymnasium as gym
+import sinergym
+# Create the environment
+env = gym.make('Eplus-datacenter-mixed-continuous-stochastic-v1')
+# Initialize the episode
+obs, info = env.reset()
+truncated = terminated = False
+R = 0.0
+while not (terminated or truncated):
+    a = env.action_space.sample() # random action selection
+    obs, reward, terminated, truncated, info = env.step(a) # get new observation and reward
+    R += reward
+print('Total reward for the episode: %.4f' % R)
+env.close()
+```
+
+A folder will be created in the working directory after creating the environment. It will contain the Sinergym outputs produced during the simulation.
+
+For more examples and details, please visit our [usage examples](https://ugr-sail.github.io/sinergym/compilation/main/pages/notebooks/basic_example.html#Basic-example) documentation section.
+
+
+## Google Cloud Platform support
+
+For more information about this functionality, please, visit our documentation [here](https://ugr-sail.github.io/sinergym/compilation/main/pages/gcloudAPI.html#sinergym-with-google-cloud).
+
+## Projects using Sinergym
+
+The following are some of the projects benefiting from the advantages of Sinergym:
+
+- [Demosthen/ActiveRL](https://github.com/Demosthen/ActiveRL)
+- [VectorInstitute/HV-Ai-C](https://github.com/VectorInstitute/HV-Ai-C)
+- [rdnfn/beobench](https://github.com/rdnfn/beobench)
+
+:pencil: If you want to appear in this list, do not hesitate to send us a PR and include the following badge in your repository:
+
+<p align="center">
+  <a href="https://github.com/ugr-sail/sinergym">
+      <img src="https://img.shields.io/badge/Powered%20by-Sinergym%20%E2%86%92-gray.svg?colorA=00BABF&colorB=4BF2F7&style=for-the-badge"/>
+  </a>
+</p>
+
+## Repo Activity
+
+![Alt](https://repobeats.axiom.co/api/embed/d8dc96d423d6996351e728a2412dba2551f99cca.svg "Repobeats analytics image")
+
+## Citing Sinergym
+
+If you use *Sinergym* in your work, please cite our [paper](https://dl.acm.org/doi/abs/10.1145/3486611.3488729):
+
+```bibtex
+@inproceedings{2021sinergym,
+    title={Sinergym: A Building Simulation and Control Framework for Training Reinforcement Learning Agents}, 
+    author={Jiménez-Raboso, Javier and Campoy-Nieves, Alejandro and Manjavacas-Lucas, Antonio and Gómez-Romero, Juan and Molina-Solana, Miguel},
+    year={2021},
+    isbn = {9781450391146},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3486611.3488729},
+    doi = {10.1145/3486611.3488729},
+    booktitle = {Proceedings of the 8th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation},
+    pages = {319–323},
+    numpages = {5},
+}
+```
+
+For more detailed information, please visit our [documentation](https://ugr-sail.github.io/sinergym/compilation/main/index.html).
+
+# Installation
+
+*Sinergym* relies on several dependencies, the specifics of which vary by version. 
+The table below provides a summary of the versions supported by *Sinergym* across its releases:
+
+| **Sinergym version** | **Ubuntu version** | **Python version** | **EnergyPlus version** | **Building model file**   |
+|----------------------|--------------------|--------------------|------------------------|---------------------------|
+| **0.0**              | 18.04 LTS          | 3.6                | 8.3.0                  | IDF                       |
+| **1.1.0**            | 18.04 LTS          | 3.6                | **9.5.0**              | IDF                       |
+| **1.7.0**            | 18.04 LTS          | **3.9**            | 9.5.0                  | IDF                       |
+| **1.9.5**            | **22.04 LTS**      | **3.10.6**         | 9.5.0                  | IDF                       |
+| **2.4.0**            | 22.04 LTS          | 3.10.6             | 9.5.0                  | **epJSON**                |
+| **2.5.0**            | 22.04 LTS          | 3.10.6             | **23.1.0**             | epJSON                    |
+| **3.3.6**            | **24.04 LTS**      | **3.12.3**         | 23.1.0                 | epJSON                    |
+| **3.5.8**            | 24.04 LTS          | 3.12.3             | **24.1.0**             | epJSON                    |
+
+
+We recommend always using the latest version of *Sinergym* that is supported by the container. 
+This approach helps you avoid the complexities of the installation process. However, 
+if you prefer to manually install *Sinergym* on your computer, we provide the necessary 
+documentation in the subsequent sections.
+
+## Docker container
+
+We provide a **Dockerfile** to install all dependencies and prepare the 
+image for running *Sinergym*. This is the **recommended** option, since it
+ensures that all dependencies and versions are correctly installed and configured.
+
+In essence, this Dockerfile installs the compatible operating system, EnergyPlus, 
+Python, and **Sinergym**, along with the necessary dependencies for its proper functioning. 
+If you have cloned the repository, it can be used as follows:
+
+```bash
+$ docker build -t <tag_name> .
+```
+
+However, Sinergym has a set of optional dependencies that enhance the tool's usage. These 
+dependencies can be installed in the following way when building the image:
+
+```bash
+$ docker build -t <tag_name> --build-arg SINERGYM_EXTRAS=format,test,doc,DRL,gcloud .
+```
+
+These optional dependencies allow you to format code, run tests, generate documentation, 
+have pre-existing DRL algorithms available, etc. For more information, please refer to 
+the `pyproject.toml` file at the root of the repository. If you desire to install all optional
+packages, you can use `dev` directly in the `SINERGYM_EXTRAS` argument.
+
+> :memo: **Note:** Our container can also be directly installed from the [Docker Hub repository](https://hub.docker.com/repository/docker/sailugr/sinergym). It contains all the project's releases with secondary dependencies or lite versions.
+
+Once the container image is ready, you can execute any command as follows:
+
+```bash
+$ docker run -it --rm <tag_name> <command>
+```
+
+By default, the command executed is `python scripts/try_env.py`, which is a minimal working example.
+
+If you want to run a DRL experiment, for example, you can do it like this:
+
+```bash
+$ docker build -t example/sinergym:latest --build-arg SINERGYM_EXTRAS=DRL,platforms .
+$ docker run -e WANDB_API_KEY=$WANDB_API_KEY -it --rm example/sinergym:latest python scripts/train/train_agent.py -conf scripts/train/train_agent_PPO.json
+```
+
+If the script you want to use requires a WandB account, remember to include the environment variable 
+in the container with the token.
+
+It’s also possible to keep a session open in the image to copy and run your own scripts. For more 
+information, please refer to the Docker documentation. This can be useful when you want to run your 
+own scripts in the container.
+
+```bash
+$ docker run -it <tag_name> /bin/bash
+```
+
+> :memo: **Note:** For [Visual Studio Code](https://code.visualstudio.com/) users, simply open the root directory and click on the *Reopen in container* pop-up button. This action will automatically install all dependencies and enable you to run *Sinergym* in an isolated environment. For more details on this feature, refer to the [VSCode Containers extension documentation](https://code.visualstudio.com/docs/remote/containers).
+
+## Manual installation
+
+If you prefer not to use containers and have everything installed natively on your system, we’ll explain 
+how to do it.
+
+First, make sure that you meet the compatibility matrix; otherwise, no support or guarantees of 
+functionality will be provided by the development team.
+
+### Configure Python Environment
+
+Start by installing the desired version of Python and pip. It is recommended to set up a working 
+environment for Python (multiple options are available). Finally, install the necessary 
+dependencies for Sinergym in that environment:
+
+```sh
+$ pip install sinergym
+```
+
+You can also install the optional packages from here, just like in the Docker container:
+
+```sh
+$ pip install sinergym[format,test,doc,DRL,gcloud]
+```
+
+If you want to install the cloned repository directly, you can do so by running the following 
+command in its root.
+
+```sh
+$ poetry install --with format,test,doc,DRL,gcloud
+```
+
+With this, you have the correct Python version and the necessary modules to run 
+*Sinergym*. Let's proceed with the installation of other required programs 
+outside of Python to run the simulations.
+
+### Install EnergyPlus 24.1.0
+
+You need to install *EnergyPlus*. We have tested and confirmed compatibility 
+with version `24.1.0`. The code might work with other versions, but we 
+have not tested them.
+
+Follow the instructions [here](https://energyplus.net/downloads) to install 
+it for Linux (we only support **Ubuntu**). You can choose any location for the 
+installation. After installation, a folder named `Energyplus-24-1-0` should 
+appear in the chosen location.
+
+### Include Energyplus Python API in Python Path
+
+*Sinergym* uses the *Energyplus* Python API as its backend. The modules of this 
+API are located in the *Energyplus* folder that you installed in the previous 
+step. You must add this installation path to the `PYTHONPATH` environment 
+variable so that the interpreter can access these modules.
+
+
+## Verify Installation
+
+This project is automatically monitored using **tests** specifically developed for it. 
+To verify that *Sinergym* has been installed correctly, execute `pytest tests/ -vv` 
+in the **repository root**.
+
+Furthermore, each time the *Sinergym* repository is updated, the tests are automatically executed in a remote container 
+built using the Dockerfile. This task is performed by [Github Action](https://docs.github.com/es/actions/) 
+(refer to the `Github Actions` section for more details).
+
+## Cloud Computing
+
+You also have the option to run your experiments in the Cloud. We utilize [Google Cloud](https://cloud.google.com/) 
+for this purpose. Our team is working on setting up an account to run our *Sinergym* container 
+with **remote storage** and **Weights&Biases tracking**.
+For more information on installation and preparing the Google Cloud SDK to run your experiments, 
+please visit our `Preparing Google Cloud` section.
+# Contributor Covenant Code of Conduct
+
+## Our Pledge
+
+We as members, contributors, and leaders pledge to make participation in our
+community a harassment-free experience for everyone, regardless of age, body
+size, visible or invisible disability, ethnicity, sex characteristics, gender
+identity and expression, level of experience, education, socio-economic status,
+nationality, personal appearance, race, religion, or sexual identity
+and orientation.
+
+We pledge to act and interact in ways that contribute to an open, welcoming,
+diverse, inclusive, and healthy community.
+
+## Our Standards
+
+Examples of behavior that contributes to a positive environment for our
+community include:
+
+* Demonstrating empathy and kindness toward other people
+* Being respectful of differing opinions, viewpoints, and experiences
+* Giving and gracefully accepting constructive feedback
+* Accepting responsibility and apologizing to those affected by our mistakes,
+  and learning from the experience
+* Focusing on what is best not just for us as individuals, but for the
+  overall community
+
+Examples of unacceptable behavior include:
+
+* The use of sexualized language or imagery, and sexual attention or
+  advances of any kind
+* Trolling, insulting or derogatory comments, and personal or political attacks
+* Public or private harassment
+* Publishing others' private information, such as a physical or email
+  address, without their explicit permission
+* Other conduct which could reasonably be considered inappropriate in a
+  professional setting
+
+## Enforcement Responsibilities
+
+Community leaders are responsible for clarifying and enforcing our standards of
+acceptable behavior and will take appropriate and fair corrective action in
+response to any behavior that they deem inappropriate, threatening, offensive,
+or harmful.
+
+Community leaders have the right and responsibility to remove, edit, or reject
+comments, commits, code, wiki edits, issues, and other contributions that are
+not aligned to this Code of Conduct, and will communicate reasons for moderation
+decisions when appropriate.
+
+## Scope
+
+This Code of Conduct applies within all community spaces, and also applies when
+an individual is officially representing the community in public spaces.
+Examples of representing our community include using an official e-mail address,
+posting via an official social media account, or acting as an appointed
+representative at an online or offline event.
+
+## Enforcement
+
+Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported to the community leaders responsible for enforcement at
+[INSERT CONTACT METHOD].
+All complaints will be reviewed and investigated promptly and fairly.
+
+All community leaders are obligated to respect the privacy and security of the
+reporter of any incident.
+
+## Enforcement Guidelines
+
+Community leaders will follow these Community Impact Guidelines in determining
+the consequences for any action they deem in violation of this Code of Conduct:
+
+### 1. Correction
+
+**Community Impact**: Use of inappropriate language or other behavior deemed
+unprofessional or unwelcome in the community.
+
+**Consequence**: A private, written warning from community leaders, providing
+clarity around the nature of the violation and an explanation of why the
+behavior was inappropriate. A public apology may be requested.
+
+### 2. Warning
+
+**Community Impact**: A violation through a single incident or series
+of actions.
+
+**Consequence**: A warning with consequences for continued behavior. No
+interaction with the people involved, including unsolicited interaction with
+those enforcing the Code of Conduct, for a specified period of time. This
+includes avoiding interactions in community spaces as well as external channels
+like social media. Violating these terms may lead to a temporary or
+permanent ban.
+
+### 3. Temporary Ban
+
+**Community Impact**: A serious violation of community standards, including
+sustained inappropriate behavior.
+
+**Consequence**: A temporary ban from any sort of interaction or public
+communication with the community for a specified period of time. No public or
+private interaction with the people involved, including unsolicited interaction
+with those enforcing the Code of Conduct, is allowed during this period.
+Violating these terms may lead to a permanent ban.
+
+### 4. Permanent Ban
+
+**Community Impact**: Demonstrating a pattern of violation of community
+standards, including sustained inappropriate behavior,  harassment of an
+individual, or aggression toward or disparagement of classes of individuals.
+
+**Consequence**: A permanent ban from any sort of public interaction within
+the community.
+
+## Attribution
+
+This Code of Conduct is adapted from the [Contributor Covenant][homepage],
+version 2.0, available at
+[https://www.contributor-covenant.org/version/2/0/code_of_conduct.html][v2.0].
+
+Community Impact Guidelines were inspired by 
+[Mozilla's code of conduct enforcement ladder][Mozilla CoC].
+
+For answers to common questions about this code of conduct, see the FAQ at
+[https://www.contributor-covenant.org/faq][FAQ]. Translations are available 
+at [https://www.contributor-covenant.org/translations][translations].
+
+[homepage]: https://www.contributor-covenant.org
+[v2.0]: https://www.contributor-covenant.org/version/2/0/code_of_conduct.html
+[Mozilla CoC]: https://github.com/mozilla/diversity
+[FAQ]: https://www.contributor-covenant.org/faq
+[translations]: https://www.contributor-covenant.org/translations
+MIT License
+
+Copyright (c) 2021 Javier Jiménez
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
