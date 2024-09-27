@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+parquetdb/__init__.py
+parquetdb/core.py
+parquetdb/types.py
+parquetdb/utils.py
+parquetdb.egg-info/PKG-INFO
+parquetdb.egg-info/SOURCES.txt
+parquetdb.egg-info/dependency_links.txt
+parquetdb.egg-info/requires.txt
+parquetdb.egg-info/top_level.txt
+tests/test_parquetdb.py
