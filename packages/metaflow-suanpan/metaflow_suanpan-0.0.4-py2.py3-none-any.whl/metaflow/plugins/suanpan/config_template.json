@@ -1,0 +1,27 @@
+{
+    "caseSensitive": false,
+    "properties": {
+        "globalVars": [],
+        "predictConfig": {
+            "isolationMode": "v2",
+            "nodeConfig": {
+                "mode": "",
+                "ids": []
+            }
+        },
+        "x": -514,
+        "y": -385,
+        "scale": 2.801,
+        "preview": false
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {},
+    "connections": [],
+    "timestamp": 1726623798249,
+    "commit": {
+        "userId": "9f8a7d6bc54e4aafb3ca5d63f8e65a7c",
+        "appId": "56015"
+    }
+}

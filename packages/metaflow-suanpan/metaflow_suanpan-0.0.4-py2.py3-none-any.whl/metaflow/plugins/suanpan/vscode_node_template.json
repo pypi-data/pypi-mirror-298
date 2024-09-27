@@ -1,0 +1,195 @@
+{
+    "component": 13477,
+    "metadata": {
+        "def": {
+            "description": {
+                "zh_CN": "",
+                "en_US": ""
+            },
+            "type": 5,
+            "docUrl": "",
+            "author": "",
+            "codeName": "",
+            "codePath": "",
+            "params": {
+                "__nodeName": {
+                    "type": "string",
+                    "controlInstUuid": "2c4dd1d076f411ef8cafc38798e7c2c7"
+                },
+                "inputData1": {
+                    "type": "string",
+                    "propertyName": "dataName",
+                    "defInPortUuid": "in1"
+                },
+                "outputData1": {
+                    "type": "string",
+                    "propertyName": "dataName",
+                    "defOutPortUuid": "out1"
+                },
+                "__coreNumPerExecutor": {
+                    "type": "string",
+                    "controlInstUuid": "system-core-num",
+                    "value": "",
+                    "isRequired": false
+                },
+                "__executorNum": {
+                    "type": "string",
+                    "controlInstUuid": "system-executor-num",
+                    "isRequired": false,
+                    "value": ""
+                },
+                "__memSizePerExecutor": {
+                    "type": "string",
+                    "controlInstUuid": "system-mem-size",
+                    "value": "",
+                    "isRequired": false
+                },
+                "__queue": {
+                    "type": "string",
+                    "controlInstUuid": "system-queue",
+                    "value": "",
+                    "isRequired": false
+                }
+            },
+            "ports": [
+                {
+                    "uuid": "in1",
+                    "id": "e30cc52f78a44a898b34dbf762a0b7a3",
+                    "description": {
+                        "en_US": "input data",
+                        "zh_CN": "输入数据"
+                    },
+                    "display": true,
+                    "type": "data",
+                    "subType": "json",
+                    "ioType": "in",
+                    "options": [
+                        "json"
+                    ],
+                    "angle": 180
+                },
+                {
+                    "uuid": "out1",
+                    "id": "e30cc52f78a44a898b34dbf762a0b7a2",
+                    "description": {
+                        "en_US": "output data",
+                        "zh_CN": "输出数据"
+                    },
+                    "display": true,
+                    "type": "data",
+                    "subType": "json",
+                    "ioType": "out",
+                    "options": [
+                        "json"
+                    ],
+                    "angle": 0
+                }
+            ],
+            "portsActionable": false,
+            "dockerRepo": "metaflow_suanpan_cuda:v0.4",
+            "dockerCmd": "sh run.sh"
+        },
+        "ui": {
+            "tabs": {
+                "fields": {
+                    "tabName": {
+                        "en_US": "Fields Setting",
+                        "zh_CN": "字段设置"
+                    },
+                    "controls": []
+                },
+                "params": {
+                    "tabName": {
+                        "en_US": "Parameters Setting",
+                        "zh_CN": "参数设置"
+                    },
+                    "controls": []
+                },
+                "tune": {
+                    "tabName": {
+                        "en_US": "Tuning",
+                        "zh_CN": "执行调优"
+                    },
+                    "controls": [
+                        {
+                            "uuid": "system-executor-num",
+                            "type": "string",
+                            "label": {
+                                "zh_CN": "executor数目",
+                                "en_US": "No. of executor"
+                            },
+                            "placeholder": {
+                                "zh_CN": "默认自动选择",
+                                "en_US": "Automatically allocate resources by default"
+                            }
+                        },
+                        {
+                            "uuid": "system-core-num",
+                            "type": "string",
+                            "label": {
+                                "zh_CN": "每个executor的core数目",
+                                "en_US": "No. of cpu cores limit per executor"
+                            },
+                            "placeholder": {
+                                "zh_CN": "默认自动选择",
+                                "en_US": "Automatically allocate resources by default"
+                            }
+                        },
+                        {
+                            "uuid": "system-mem-size",
+                            "type": "string",
+                            "label": {
+                                "zh_CN": "每个executor的内存数(GB)",
+                                "en_US": "Memory limit per executor"
+                            },
+                            "placeholder": {
+                                "zh_CN": "默认自动选择",
+                                "en_US": "Automatically allocate resources by default"
+                            }
+                        },
+                        {
+                            "uuid": "system-queue",
+                            "type": "string",
+                            "label": {
+                                "zh_CN": "队列",
+                                "en_US": "Queue"
+                            },
+                            "placeholder": {
+                                "zh_CN": "默认自动选择",
+                                "en_US": "Automatically allocate resources by default"
+                            }
+                        },
+                        {
+                            "uuid": "2c4dd1d076f411ef8cafc38798e7c2c7",
+                            "type": "string",
+                            "label": {
+                                "zh_CN": "GPU节点选择",
+                                "en_US": "Text Field"
+                            },
+                            "placeholder": {
+                                "zh_CN": "占位提示文本",
+                                "en_US": "Prompt Text"
+                            },
+                            "relations": {
+                                "hide": {
+                                    "operator": "=="
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "locale": "zh_CN",
+        "type": "my_component",
+        "receieveMsgType": "sync",
+        "icon": "cube",
+        "shape": "default",
+        "label": "metaflow_suanpan",
+        "x": 427,
+        "y": 221,
+        "sublabel": "metaflow_suanpan",
+        "width": 90,
+        "height": 90
+    }
+}
