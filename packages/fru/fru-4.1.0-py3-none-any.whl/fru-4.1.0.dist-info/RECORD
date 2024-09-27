@@ -1,0 +1,13 @@
+CHANGELOG.rst,sha256=5kB0_jGlw96kiTFu-gBgJ6NwE-pN1rtau9FkXCFrDUI,1634
+fru/__init__.py,sha256=885gv4vTD1-USvrcUtiMCalRq1YN-WUQbnmLxI4f3rQ,335
+fru/__main__.py,sha256=wZENfd3PcczkCLxWOpdvGuqym5HqgxtOEE8yE_TFpM8,308
+fru/console.py,sha256=YTIwPQLtP-S_xq2Bm_bOHmQQvJ63tIY3zqnhEpaLSF8,3225
+fru/exceptions.py,sha256=ZMn4Y8EmVT8EEufoqWwERQYj5f6npWGt4RHjHNsHucc,788
+fru/fru_format.py,sha256=9l-ZZ81cY9ClDgu9oNxxL_soJ_cMEFhDrNeZoI3Jqcw,12247
+fru/shared.py,sha256=foeSVrov2V91RzynPIiRENhk89-Dno7r8Eln4MHyA10,2646
+fru/toml_format.py,sha256=SUcTnb6t1fFMmm_mv_G1PQstaehYW64zm09pPvnK94I,11282
+fru-4.1.0.dist-info/LICENSE.txt,sha256=G_rapEWYgwuzsGyS-qVaEkJNBB3vJAfWtQOjuQo_qYY,1074
+fru-4.1.0.dist-info/METADATA,sha256=pl90kz49EMZlj6rCr82wNumxIfKDslwITTk739QR4HY,6626
+fru-4.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fru-4.1.0.dist-info/entry_points.txt,sha256=bxkkSbi7qw-pdtExOmu9l7oCaqk7OdpZCcaFVaJaNK0,43
+fru-4.1.0.dist-info/RECORD,,
