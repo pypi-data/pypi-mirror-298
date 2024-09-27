@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+AIDSTK/__init__.py
+AIDSTK/functions.py
+AIDSTK/models.py
+AIDSTK.egg-info/PKG-INFO
+AIDSTK.egg-info/SOURCES.txt
+AIDSTK.egg-info/dependency_links.txt
+AIDSTK.egg-info/requires.txt
+AIDSTK.egg-info/top_level.txt
+AIDSTK/configs/config1.json
+AIDSTK/configs/config2.json
+AIDSTK/prompts/prompt1.txt
+AIDSTK/prompts/prompt2.txt
