@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: tomoscan
+Version: 2.0.9
+Summary: "utilitary to access tomography data at esrf"
+Home-page: https://gitlab.esrf.fr/tomotools/tomoscan
+Author: data analysis unit
+Author-email: henri.payno@esrf.fr
+License: MIT
+Project-URL: Bug Tracker, https://gitlab.esrf.fr/tomotools/tomoscan/-/issues
+Description: # tomoscan
+        
+        This library offers an abstraction to:
+        
+        * access tomography data from spec acquisitions (EDF) and bliss acquisitions (HDF5)
+        * read and write volumes from / to HDF5, JP2K, TIFF and EDF
+        
+        
+        ## installation
+        
+        
+        ### using pypi
+        
+        To install the latest 'tomoscan' pip package
+        
+        ``` bash
+        pip install tomoscan
+        ```
+        
+        ### using gitlab repository
+        
+        ``` bash
+        pip install git+https://gitlab.esrf.fr/tomotools/tomoscan.git
+        ```
+        
+        ## documentation
+        
+        General documentation can be found here: [https://tomotools.gitlab-pages.esrf.fr/tomoscan/](https://tomotools.gitlab-pages.esrf.fr/tomoscan/)
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Operating System :: POSIX
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: doc
+Provides-Extra: full
+Provides-Extra: setup_requires
+Provides-Extra: test
