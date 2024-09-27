@@ -1,0 +1,92 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositivo ya est\u00e1 configurado"
+        },
+        "error": {
+            "cannot_connect": "No se pudo conectar",
+            "invalid_auth": "Autenticaci\u00f3n no v\u00e1lida",
+            "unknown": "Error inesperado"
+        },
+        "step": {
+            "authentication": {
+                "data": {
+                    "password": "Contrase\u00f1a",
+                    "username": "Nombre de usuario"
+                },
+                "description": "Introducir nombre de usuario y contrase\u00f1a",
+                "title": "Configurar las credenciales de la API Rest"
+            },
+            "modbus_tcp": {
+                "data": {
+                    "address": "Direcci\u00f3n Modbus",
+                    "port": "Puerto"
+                },
+                "data_description": {
+                    "address": "La direcci\u00f3n Modbus se puede encontrar en el men\u00fa de configuraci\u00f3n del dispositivo.",
+                    "port": "El n\u00famero de puerto se puede encontrar en el men\u00fa de configuraci\u00f3n del dispositivo."
+                },
+                "description": "Introduce el puerto Modbus TCP y la direcci\u00f3n Modbus del dispositivo.",
+                "title": "Configurar Modbus TCP"
+            },
+            "user": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "Nombre de host o direcci\u00f3n IP de tu dispositivo Iskra."
+                },
+                "description": "Introduce la direcci\u00f3n IP de tu dispositivo Iskra y selecciona el protocolo.",
+                "title": "Configurar dispositivo Iskra"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "phase1_current": {
+                "name": "Corriente de la fase 1"
+            },
+            "phase1_power": {
+                "name": "Potencia de la fase 1"
+            },
+            "phase1_voltage": {
+                "name": "Tensi\u00f3n de la fase 1"
+            },
+            "phase2_current": {
+                "name": "Corriente de la fase 2"
+            },
+            "phase2_power": {
+                "name": "Potencia de la fase 2"
+            },
+            "phase2_voltage": {
+                "name": "Tensi\u00f3n de la fase 2"
+            },
+            "phase3_current": {
+                "name": "Corriente de la fase 3"
+            },
+            "phase3_power": {
+                "name": "Potencia de la fase 3"
+            },
+            "phase3_voltage": {
+                "name": "Tensi\u00f3n de la fase 3"
+            },
+            "total_active_power": {
+                "name": "Potencia activa total"
+            },
+            "total_apparent_power": {
+                "name": "Potencia aparente total"
+            },
+            "total_reactive_power": {
+                "name": "Potencia reactiva total"
+            }
+        }
+    },
+    "selector": {
+        "protocol": {
+            "options": {
+                "modbus_tcp": "Modbus TCP",
+                "rest_api": "API Rest"
+            }
+        }
+    }
+}
