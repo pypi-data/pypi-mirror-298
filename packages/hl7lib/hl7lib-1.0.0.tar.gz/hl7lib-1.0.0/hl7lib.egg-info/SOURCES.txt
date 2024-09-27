@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+hl7lib/__init__.py
+hl7lib/constants.py
+hl7lib/hl7_test.py
+hl7lib/hl7fields.py
+hl7lib/parser.py
+hl7lib/test_messages.py
+hl7lib.egg-info/PKG-INFO
+hl7lib.egg-info/SOURCES.txt
+hl7lib.egg-info/dependency_links.txt
+hl7lib.egg-info/not-zip-safe
+hl7lib.egg-info/top_level.txt
