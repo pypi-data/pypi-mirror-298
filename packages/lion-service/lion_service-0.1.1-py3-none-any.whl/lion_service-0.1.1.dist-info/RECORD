@@ -1,0 +1,11 @@
+lion_service/__init__.py,sha256=H3jpvJspGriLTf7P7I301fy447X7wqW_5hnZihZPlik,307
+lion_service/complete_request_info.py,sha256=Vvs4NVQK_7Tx5YyDponcvgadYCeSOTLi_pW05MF_rms,287
+lion_service/rate_limiter.py,sha256=a82RHFbHgIsWMsUV0EFyF8VOi2N_vTlFcGw7yQIxI2s,3663
+lion_service/service.py,sha256=ha6jwc7BLxVWNGRXdst0jAvp5P3POjC1sBxYTiRVQno,1016
+lion_service/service_util.py,sha256=nkE9Dv5X5XQ2RagAOvR7H9rlyWAb_jtTaTNo_KuPPuU,2809
+lion_service/token_calculator.py,sha256=TbYABQADaOIRKBEU66eHFZr1ltJaAka3H_7igh0RhRo,1464
+lion_service/version.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+lion_service-0.1.1.dist-info/LICENSE,sha256=LJlVh7F7PbC2ggd_-KtN5_lSLUUjEjTAxoHhoq1OVqQ,1065
+lion_service-0.1.1.dist-info/METADATA,sha256=3Yigr7d90daOj6xDunuKTEZuoNXh2NqC80QW1J1WYqI,544
+lion_service-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lion_service-0.1.1.dist-info/RECORD,,
