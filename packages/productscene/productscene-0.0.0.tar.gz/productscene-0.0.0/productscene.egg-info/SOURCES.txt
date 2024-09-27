@@ -1,0 +1,6 @@
+README.md
+setup.py
+productscene.egg-info/PKG-INFO
+productscene.egg-info/SOURCES.txt
+productscene.egg-info/dependency_links.txt
+productscene.egg-info/top_level.txt
