@@ -1,0 +1,51 @@
+name: Publish to PyPI
+
+on:
+    push:
+        paths:
+            - 'src/cstq/__version__.py'
+        branches:
+            - main
+
+permissions:
+  contents: write
+  deployments: write
+
+jobs:
+  main:
+    name: Publish artifacts
+    runs-on: ubuntu-latest
+
+    steps:
+        -   uses: actions/checkout@v3
+
+        -   name: Set up latest Python
+            uses: actions/setup-python@v4
+            with:
+                python-version: '3.10'
+
+        -   name: Install latest pip, hatch
+            run: |
+                python -m pip install --upgrade --disable-pip-version-check pip
+                python -m pip install --upgrade hatch
+    
+        -   name: build package
+            run: hatch build
+        
+        -   name: Create github tag
+            env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            run: |
+                VERSION=$(hatch run python -c 'from cstq.__version__ import __version__;print(__version__)')
+                git config user.name github-actions
+                git config user.email github-actions@github.com
+                git tag -a "v$VERSION" -m "release new v$VERSION version"
+                git push origin --tags
+        
+        -   name: Upload to PyPI via hatch
+            env:
+                HATCH_INDEX_USER: __token__
+                HATCH_INDEX_AUTH: ${{ secrets.PYPI_API_TOKEN }}
+            run: hatch publish
+        
+        
