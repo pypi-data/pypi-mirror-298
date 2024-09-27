@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: robosource_common
+Version: 20240926.2
+Summary: A package offering common-use functionality for RoboSource developers, making it easy to do the right thing
+Author-email: John Hasenmyer <john.hasenmyer@robosource.us>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# RoboSource Common (Python Edition)
+
+This package contains functionality that RoboSource developers use over and over across multiple client automations. It is public and free to use at your own convenience. We offer no official external support of this package, but drop us a line if you have a suggestion or bugfix to include! If you are using this package and don't know the values for any of the secrets, reach out and we may be able to help you out.
+
+## CoachBot API
+
+### Configuration
+
+In order to call the CoachBot API, you must have endpoint URLs configured in your project:
+
+```
+os.getenv('COACHBOT_ATTACH_FILE_ENDPOINT')
+os.getenv('COACHBOT_COMPLETE_STEP_ENDPOINT')
+os.getenv('COACHBOT_FAIL_STEP_ENDPOINT')
+```
+
+### Usage
+
