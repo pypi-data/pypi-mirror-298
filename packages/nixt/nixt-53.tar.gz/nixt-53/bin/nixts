@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+
+"service"
+
+
+import getpass
+import os
+import pathlib
+import pwd
+
+
+from nixt.modules import face
+from nixt.persist import Workdir
+from nixt.runtime import errors, forever, init, wrap
+
+
+from nixt import NAME as PROGNAME
+
+
+def pidfile(name):
+    "write the pid to a file."
+    filename = os.path.join(Workdir.wdr, f"{name}.pid")
+    if os.path.exists(filename):
+        os.unlink(filename)
+    path = pathlib.Path(filename)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(filename, "w", encoding="utf-8") as fds:
+        fds.write(str(os.getpid()))
+
+
+def privileges(username):
+    "privileges."
+    pwnam = pwd.getpwnam(username)
+    os.setgid(pwnam.pw_gid)
+    os.setuid(pwnam.pw_uid)
+
+
+def main():
+    "main"
+    privileges(getpass.getuser())
+    pidfile(PROGNAME)
+    init(face)
+    forever()
+
+
+if __name__ == "__main__":
+    wrap(main, print)
+    errors(print)
