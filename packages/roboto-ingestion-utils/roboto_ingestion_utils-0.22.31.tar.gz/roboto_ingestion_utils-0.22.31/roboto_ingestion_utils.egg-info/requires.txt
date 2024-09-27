@@ -1,0 +1,12 @@
+roboto
+pytest
+mcap
+genson
+pandas
+Pillow
+mcap
+mcap-protobuf-support
+foxglove_schemas_protobuf
+rosbags
+mcap-ros2-support
+rosbags-image
