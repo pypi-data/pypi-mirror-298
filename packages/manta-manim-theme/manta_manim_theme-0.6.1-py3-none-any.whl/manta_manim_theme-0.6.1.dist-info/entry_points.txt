@@ -1,0 +1,3 @@
+[console_scripts]
+manta=manta.cli.typer_cli:app
+
