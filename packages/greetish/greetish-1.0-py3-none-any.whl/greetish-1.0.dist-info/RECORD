@@ -1,0 +1,8 @@
+greetish/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+greetish/default_greeting.py,sha256=Ev3ty0LXJGzeVICcniCA1tQWTnaXbwqEjplX2UCOiE4,36
+greetish/named_greeting.py,sha256=LMSWrOI2PTOYGZlHsm6naKVCyje-ObrVVhsscXFUXzk,49
+greetish-1.0.dist-info/LICENCE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+greetish-1.0.dist-info/METADATA,sha256=h8YXDCr0y8sfT__sdjBiSYfNviXKDLfP4ak_0p4w6Wk,110
+greetish-1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+greetish-1.0.dist-info/top_level.txt,sha256=4d2iXuK25FcHjwOihUVzEfk5yGeEz7wvqn5UsJewKMI,9
+greetish-1.0.dist-info/RECORD,,
