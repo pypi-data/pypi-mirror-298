@@ -1,0 +1,9 @@
+pydocks/__init__.py,sha256=H63GWqOXA1lnbCRhtcPutkUPoAmEjhiWrrubPdBkzIo,379
+pydocks/plugin.py,sha256=3F9StEr7Ihg4Lr4GMGFplNKUkSph8FazDL6DM2-AwkE,1752
+pydocks/postgresql.py,sha256=slpi8kN4sey-EGXU23XhBjRxcUDz83al0WL3C5eEj3I,4357
+pydocks/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydocks-1.0.0.dist-info/METADATA,sha256=1_v71wJ1SpOrJGSaoJpQYehWf6IOm5qZIgoOuStuqW0,4082
+pydocks-1.0.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pydocks-1.0.0.dist-info/entry_points.txt,sha256=xM0EPrcMDdbClZ8xZedU09BiL6dyq1B70eZuS2Cb_6M,29
+pydocks-1.0.0.dist-info/licenses/LICENSE,sha256=apw6aefq1u6QAh-QZbpNI5ZDDfjM5Uv3hjDPAQsrsC0,1064
+pydocks-1.0.0.dist-info/RECORD,,
