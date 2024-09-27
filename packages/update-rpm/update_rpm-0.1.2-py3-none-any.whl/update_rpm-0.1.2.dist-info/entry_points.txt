@@ -1,0 +1,3 @@
+[console_scripts]
+update_rpm=update_rpm.update_rpm:main
+
