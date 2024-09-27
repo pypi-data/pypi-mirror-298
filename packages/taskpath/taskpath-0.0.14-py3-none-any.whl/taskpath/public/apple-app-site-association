@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "B6YTBNR82P.org.hikaru.taskpath",
+        "paths": [ "/#/signed-in"],
+      }
+    ]
+  }
+}
