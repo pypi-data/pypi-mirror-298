@@ -1,0 +1,14 @@
+include LICENSE
+include Makefile
+
+recursive-include src *.yml
+recursive-include src *.md
+recursive-include src *.svg
+recursive-include src *.ttf
+recursive-include src *.css
+recursive-include src *.ico
+
+recursive-include src/aegis_gui/assets *
+
+prune src/aegis_sim.egg-info
+prune src/aegis_gui/__pycache__

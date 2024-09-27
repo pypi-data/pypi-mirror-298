@@ -1,0 +1,40 @@
+/* PLOT TAB */
+
+.col-3 label {
+  vertical-align: middle;
+  margin-top: 0.4rem;
+  margin-left: 0.1rem;
+  color: darkgray;
+}
+
+.plot-dropdown {
+  height: 2.5rem;
+}
+
+#dropdown-multi {
+  height: 2.5rem;
+}
+
+/* CONFIG TAB */
+
+.card {
+  margin-bottom: 1rem;
+}
+
+#config-make-text-group {
+  /* width: 300px; */
+  display: inline-block;
+}
+
+#sim-config-select-group {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* #sim-config-select {
+  display: inline-block;
+} */
+
+#config-accordion {
+  margin-bottom: 1rem;
+}
