@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+detox/__init__.py
+detox/__main__.py
+detox/logger.py
+detox/runner.py
+detox_jar.egg-info/PKG-INFO
+detox_jar.egg-info/SOURCES.txt
+detox_jar.egg-info/dependency_links.txt
+detox_jar.egg-info/entry_points.txt
+detox_jar.egg-info/top_level.txt
