@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: fb22epubbot
+Version: 0.11
+Summary: Telegram bot for converting FB2 files to EPUB
+Home-page: https://github.com/username/fb22epubbot
+License: MIT
+Author: Andrew Levin
+Author-email: your.email@example.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiofiles (>=23.1.0,<24.0.0)
+Requires-Dist: aiogram (>=3.0.0,<4.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: python-slugify (>=8.0.4,<9.0.0)
