@@ -1,0 +1,9 @@
+bandit
+black
+flake8
+isort
+pip
+setuptools
+tox
+virtualenv
+wheel
