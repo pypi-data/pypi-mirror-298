@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: alexgalt_framework
+Version: 0.0.1
+Summary: Alexgalt Python Web Framework built for learning purposes.
+Author: Alexey Shishkin
+Author-email: alexeygalt@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11.0
+Description-Content-Type: text/markdown
+Requires-Dist: Jinja2==2.10.3
+Requires-Dist: parse==1.12.1
+Requires-Dist: requests==2.22.0
+Requires-Dist: requests-wsgi-adapter==0.4.1
+Requires-Dist: WebOb==1.8.5
+Requires-Dist: whitenoise==4.1.4
+
+Alexgalt Python Web Framework built for learning purposes.
