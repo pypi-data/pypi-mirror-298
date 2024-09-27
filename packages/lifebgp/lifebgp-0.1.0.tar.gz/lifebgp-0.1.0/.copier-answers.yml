@@ -1,0 +1,14 @@
+# Changes here will be overwritten by Copier
+_commit: 0.6.1
+_src_path: https://github.com/nlesc/python-template.git
+copyright_holder: Wenjie Cheng
+email: w.cheng-1@student.utwente.nl
+full_name: Wenjie Cheng
+github_organization: Wenjie-Cheng
+keywords: Conway's Game of Life
+license: MIT
+package_name: lifegame
+package_short_description: A Conway's Game of Life code. Part of Big Geodata Processing
+    course
+template_profile: minimum
+version: 0.1.0

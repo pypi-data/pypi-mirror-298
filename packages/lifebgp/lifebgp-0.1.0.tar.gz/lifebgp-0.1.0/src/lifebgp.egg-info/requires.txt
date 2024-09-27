@@ -1,0 +1,15 @@
+line_profiler
+memory_profiler
+bitarray
+
+[dev]
+build
+bump-my-version
+ruff
+tox
+myst_parser
+
+[publishing]
+build
+twine
+wheel

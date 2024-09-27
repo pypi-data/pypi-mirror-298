@@ -1,0 +1,17 @@
+.copier-answers.yml
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+data/10000x10000_0.1.txt
+data/1000x1000_0.1.txt
+data/life.txt
+src/__init__.py
+src/life.py
+src/lifebgp.egg-info/PKG-INFO
+src/lifebgp.egg-info/SOURCES.txt
+src/lifebgp.egg-info/dependency_links.txt
+src/lifebgp.egg-info/requires.txt
+src/lifebgp.egg-info/top_level.txt
+test/life.ipynb

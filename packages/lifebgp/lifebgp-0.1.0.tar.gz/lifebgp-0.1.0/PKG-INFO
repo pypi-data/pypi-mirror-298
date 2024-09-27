@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: lifebgp
+Version: 0.1.0
+Summary: A Conway's Game of Life code. Part of Big Geodata Processing course
+Author-email: Wenjie Cheng <w.cheng-1@student.utwente.nl>
+License: MIT License
+        
+        Copyright (c) 2024, Wenjie Cheng
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+        documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
+        rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
+        persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+        Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+        WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+        COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+        OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: Repository, https://github.com/Wenjie-Cheng/Game-of-Life
+Project-URL: Issues, https://github.com/Wenjie-Cheng/Game-of-Life/issues
+Keywords: Conway's Game of Life
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: line_profiler
+Requires-Dist: memory_profiler
+Requires-Dist: bitarray
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: bump-my-version; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: tox; extra == "dev"
+Requires-Dist: myst_parser; extra == "dev"
+Provides-Extra: publishing
+Requires-Dist: build; extra == "publishing"
+Requires-Dist: twine; extra == "publishing"
+Requires-Dist: wheel; extra == "publishing"
+
+## Badges
+
+| Badges | |
+| :-- | :--  |
+| (1/2) code repository              | [![github repo badge](https://img.shields.io/badge/github-repo-000.svg?logo=github&labelColor=gray&color=blue)](https://github.com/Wenjie-Cheng/Game-of-Life) |
+| (2/2) license                      | [![github license badge](https://img.shields.io/github/license/Wenjie-Cheng/Game-of-Life)](https://github.com/Wenjie-Cheng/Game-of-Life/blob/master/LICENSE) |
+
+
+## Description
+
+A Conway's Game of Life code. Part of Big Geodata Processing course
+
+## Installation
+
+To install Game-of-Life from GitHub repository, do:
+
+```console
+git clone https://github.com/Wenjie-Cheng/Game-of-Life.git
+cd Game-of-Life
+python -m pip install .
+```
+
+
+## Credits
+
+This package was created with [Copier](https://github.com/copier-org/copier) and the [NLeSC/python-template](https://github.com/NLeSC/python-template).
