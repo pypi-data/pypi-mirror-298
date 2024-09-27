@@ -1,0 +1,5 @@
+rgxx-0.0.1.dist-info/METADATA,sha256=K3toO3tNfP0jiERg7--GhPHxBBrE9qe7M8HRyCu8O6E,4845
+rgxx-0.0.1.dist-info/WHEEL,sha256=wVUDehZi_2blNKOf5E4Q320pqdfV86gwG4opkThRX6Y,131
+rgxx/__init__.py,sha256=Y73akX4PWJePh9VghfwBXpEPUgWh0yzCm0luOOxi__0,99
+rgxx/rgxx.cpython-311-aarch64-linux-gnu.so,sha256=lOKeeflzAVfI4cumygMTkAqb8wG96d_TuAdmSrTU--E,649456
+rgxx-0.0.1.dist-info/RECORD,,
