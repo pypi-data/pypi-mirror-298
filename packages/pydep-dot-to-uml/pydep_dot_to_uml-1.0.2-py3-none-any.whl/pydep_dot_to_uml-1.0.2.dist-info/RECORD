@@ -1,0 +1,12 @@
+pydep_dot_to_uml/__init__.py,sha256=76sQ9TDDLMcneoBYAi-Jf3UPE4yEfQCaG-2dH5uNPac,47
+pydep_dot_to_uml/dot.py,sha256=DT3wQaV-Yfw-S_5l5tUxaP3mFfpRJsHNbl_xiRzj0Jc,3067
+pydep_dot_to_uml/file.py,sha256=uh8u9tr6IR2gmnce23SLklmu1QKm0TOrV_ZDAwmfx2A,5255
+pydep_dot_to_uml/py.typed,sha256=RA7As2lOH7eQPv5iX3k5Y1mOmlpXe_hxf0REB73oXt0,8
+pydep_dot_to_uml/pydep_dot_to_uml.py,sha256=EROHsiUee3KDjy-L5_sYEx5ZHKkzEHOBBlfmyOLFnZU,626
+pydep_dot_to_uml/util.py,sha256=g0WA_jUUMatvppvJQ-tZVs1uccNSZRadtZfrd-l5uPg,373
+pydep_dot_to_uml-1.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pydep_dot_to_uml-1.0.2.dist-info/METADATA,sha256=BdSF6AK_aUX1NY2MSQbCRxUZ8DwR6xPbAjuSHCS1Iz0,486
+pydep_dot_to_uml-1.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pydep_dot_to_uml-1.0.2.dist-info/entry_points.txt,sha256=6--Kdv0A-zHh4wxZLFNh4yRv0O1nlqkGVvW4n5sYqug,58
+pydep_dot_to_uml-1.0.2.dist-info/top_level.txt,sha256=1WYxxcJ-OFjjlxKYzdfn--6MIhc_ifPpvUclVp-v6Q0,17
+pydep_dot_to_uml-1.0.2.dist-info/RECORD,,

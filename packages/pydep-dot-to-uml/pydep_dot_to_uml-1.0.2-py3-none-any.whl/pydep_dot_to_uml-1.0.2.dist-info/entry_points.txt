@@ -1,0 +1,2 @@
+[console_scripts]
+pydep-dot-to-uml = pydep_dot_to_uml:cli
