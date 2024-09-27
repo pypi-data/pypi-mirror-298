@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dropdown_filters/__init__.py
+dropdown_filters/admin.py
+dropdown_filters/apps.py
+dropdown_filters/filters.py
+dropdown_filters/models.py
+dropdown_filters.egg-info/PKG-INFO
+dropdown_filters.egg-info/SOURCES.txt
+dropdown_filters.egg-info/dependency_links.txt
+dropdown_filters.egg-info/requires.txt
+dropdown_filters.egg-info/top_level.txt
+dropdown_filters/migrations/__init__.py
