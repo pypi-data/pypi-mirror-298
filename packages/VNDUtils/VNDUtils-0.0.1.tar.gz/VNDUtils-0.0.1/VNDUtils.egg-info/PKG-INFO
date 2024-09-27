@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: VNDUtils
+Version: 0.0.1
+Summary: A package that includes utils for spiking neural network design
+Author: Aykut Gorkem GELEN
+Author-email: Aykut Gorkem GELEN <aykut.gelen@erzincan.edu.tr>
+Project-URL: Homepage, https://github.com/vnd-ogrenme/VNDUtils
+Project-URL: Issues, https://github.com/vnd-ogrenme/VNDUtils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# VNDUtils
+
+This is a minimal python package. It includes utils for spiking neural network design.
+
+Will be updated!
