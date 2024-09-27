@@ -1,0 +1,14 @@
+ovld/__init__.py,sha256=GEhOdG64GPUY5Y5BMnaik7UMgcq12mWVhxN9quIonYw,1476
+ovld/abc.py,sha256=4qpZyYwI8dWgY1Oiv5FhdKg2uzNcyWxIpGmGJVcjXrs,1177
+ovld/core.py,sha256=vzrYgUdagsQH6gbw32kzYzd-MvnCE3O9LjUyc-vVk1M,25366
+ovld/dependent.py,sha256=vvWjjOHNtw8PegZVDj1fRKpyp6SCg1WdOWoXNxZSVrk,9288
+ovld/mro.py,sha256=0cJK_v-POCiuwjluwf8fWeQ3G-2chEUv3KYe57GC61Q,4552
+ovld/recode.py,sha256=NWAM0qyOQqXgVCZxtmhtnkygWe-NV5FRwdXGtqikGTg,18494
+ovld/typemap.py,sha256=PH5dy8ddVCcqj2TkQbgsM7fmCdHsJT9WGXFPn4JZsCA,13131
+ovld/types.py,sha256=EZNv8pThbo47KBULYM3R0R3sM2C5LC4DWraXZImkiNs,12877
+ovld/utils.py,sha256=BsE7MmW5sfnO4Ym8hcEL8JNZZ1JIX_pgVRAAidh_8_w,2085
+ovld/version.py,sha256=Qk6wsgzl7cSMWWZ902odoQ-wBV5Fda2ShX82NN7uHzM,18
+ovld-0.4.4.dist-info/METADATA,sha256=wUsEDZyoQPooCN7P7q4MyObKAeSjg7DqpR-vRne5BW8,7713
+ovld-0.4.4.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+ovld-0.4.4.dist-info/licenses/LICENSE,sha256=cSwNTIzd1cbI89xt3PeZZYJP2y3j8Zus4bXgo4svpX8,1066
+ovld-0.4.4.dist-info/RECORD,,
