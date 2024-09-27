@@ -1,0 +1,86 @@
+site_name: "Project Cards"
+site_url: https://network-wrangler.github.io/projectcard
+repo_url: https://github.com/network-wrangler/projectcard
+
+nav:
+    - 'index.md'
+    - 'json-schemas.md'
+    - 'datamodels.md'
+    - 'api.md'
+    - 'examples.md'
+    - 'development.md'
+
+theme:
+  name: material
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - navigation.tabs
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: amber
+  icon:
+    logo: material/playlist-check
+
+plugins:
+  - autorefs
+  - awesome-pages
+  - mike
+  - macros
+  - mermaid2
+  - mkdocs-jupyter:
+      include_source: True
+  - mkdocstrings:
+      default_handler: python
+      enable_inventory: true
+      handlers:
+        python:
+          selection:
+            new_path_syntax: true
+          rendering:
+            show_root_heading: true
+            show_source: true
+            heading_level: 3
+  - search
+
+extra:
+  version:
+    provider: mike
+    default: latest
+
+extra_javascript:
+  - https://code.jquery.com/jquery-3.4.1.min.js
+  - https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js
+  - javascript/schema_doc.min.js
+
+extra_css:
+
+  - extra_css/extra.css
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+  - meta
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.smartsymbols
+  - smarty
+  - toc:
+      # insert a blank space before the character
+      permalink: " ¶"
