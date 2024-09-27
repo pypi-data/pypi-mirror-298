@@ -1,0 +1,12 @@
+LICENCE,sha256=5HWh7T9llUFNKwkOWu9HaTfI-4lUHjnkPsk9rsNAJK4,1515
+openscm_zenodo-0.3.1.dist-info/METADATA,sha256=9LR1IvITmRU7H6IW5v9AHW-thTXMVCWm64deqhejg2k,7858
+openscm_zenodo-0.3.1.dist-info/WHEEL,sha256=Vza3XR51HW1KmFP0iIMUVYIvz0uQuKJpIXKYOBGQyFQ,90
+openscm_zenodo-0.3.1.dist-info/entry_points.txt,sha256=ut7Zmz_BKfdBxPXg2HccCsUtDaE-jEXfoqg0F6JyhXU,74
+openscm_zenodo-0.3.1.dist-info/licenses/LICENCE,sha256=5HWh7T9llUFNKwkOWu9HaTfI-4lUHjnkPsk9rsNAJK4,1515
+openscm_zenodo/__init__.py,sha256=IoTIH4D9Kd8_eAOkU9pvx2AxPaij-_YcTpNPqT8MAtY,198
+openscm_zenodo/cli/__init__.py,sha256=EKCFTj4WmObekJyhUvYxUQFrEYKy-EB949ji8eEljQk,184
+openscm_zenodo/cli/app.py,sha256=IsxLO5zHrjp4eplyOq4ePZjqs203Gw8TvHRHAAblTaA,10563
+openscm_zenodo/logging.py,sha256=XwltKqN-by_dpeAVPSGxAEGLxW-rJjeYblXlPRwaZIk,4024
+openscm_zenodo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openscm_zenodo/zenodo.py,sha256=QwHTVA_FLJSJKCRW6WoKB0ZxLDvYEARZn1VZJjdD5yU,30941
+openscm_zenodo-0.3.1.dist-info/RECORD,,
