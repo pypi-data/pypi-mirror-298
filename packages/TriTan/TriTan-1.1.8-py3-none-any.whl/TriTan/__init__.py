@@ -1,0 +1,1 @@
+from .tritan_module import TriTan
