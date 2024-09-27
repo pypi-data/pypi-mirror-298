@@ -1,0 +1,62 @@
+# KaggleDownloader
+
+**KaggleDownloader** is a Python package designed to simplify the process of downloading and extracting datasets from [Kaggle](https://www.kaggle.com). With this package, you can search for datasets by theme, authenticate your Kaggle account, download any available dataset, and extract the contents of zip files, all with a simple interface.
+
+## Features
+
+- **Authenticate with Kaggle**: Easily authenticate using your Kaggle API credentials.
+- **Search for Datasets**: Search for datasets on Kaggle based on specific themes.
+- **Download Datasets**: Download any dataset from Kaggle using its slug.
+- **Extract Zip Files**: Extract the contents of zip files downloaded from Kaggle.
+- **Directory Management**: Automatically create directories to store datasets if they don't exist.
+
+## Installation
+
+First, install the package using [Poetry](https://python-poetry.org/). Make sure you have Poetry installed.
+
+```bash
+poetry install
+```
+
+## Usage
+
+You can use KaggleDownloader through the command line. Here’s an example:
+
+```bash
+python -m kaggle_downloader <dataset_slug> --path <download_path>
+```
+
+Replace `<dataset_slug>` with the identifier of the Kaggle dataset and `<download_path>` with the location where you want the dataset to be saved.
+
+Example:
+
+```bash
+python -m kaggle_downloader zynicide/wine-reviews --path ./datasets
+```
+
+## Methods
+
+### Authentication
+The method `authenticate_kaggle()` allows you to authenticate with your Kaggle account by providing the path to your `kaggle.json` file, which contains your API credentials.
+
+### Searching for Datasets
+The method `search_datasets(dataset_theme)` allows you to search for datasets on Kaggle related to a specific theme.
+
+### Downloading Datasets
+The method `download_dataset(dataset_slug, path)` allows you to download a dataset by providing its Kaggle slug and specifying the location to save it.
+
+### Extracting Zip Files
+The method `extract_zip(zip_path, extract_to)` enables you to extract the contents of a zip file. If the file is not a valid zip or doesn’t exist, an error is raised.
+
+## Contributing
+
+Feel free to contribute to this project by submitting issues, feature requests, or pull requests on GitHub.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Author
+
+**Mariano Gobea Alcoba**  
+Email: gobeamariano@gmail.com
