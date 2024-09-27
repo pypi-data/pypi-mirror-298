@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: genie-cli
+Version: 0.1.0a1
+Summary: A CLI tool from Valory to interact with the Genie service to generate Olas autonomous services from natural language
+Author: Keshav Mishra
+Author-email: keshav.mishra0298@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: certifi (>=2024.8.30,<2025.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: click-default-group (>=1.2.4,<2.0.0)
+Requires-Dist: humanize (>=4.9.0,<5.0.0)
+Requires-Dist: litellm (>=1.40.9,<2.0.0)
+Requires-Dist: pyperclip (>=1.9.0,<2.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: textual (>=0.67.1,<0.68.0)
+Requires-Dist: types-requests (>=2.32.0.20240907,<3.0.0.0)
+Requires-Dist: xdg-base-dirs (>=6.0.1,<7.0.0)
+Description-Content-Type: text/markdown
+
+# Genie CLI
+
+Genie CLI is a command-line tool designed to interact with [Valory's Genie service](https://www.valory.xyz/post/propel-genie) to generate [Olas autonomous services](https://docs.autonolas.network/open-autonomy/get_started/what_is_an_agent_service/) using natural language. This tool leverages various libraries to provide a seamless experience for developers.
+
+## Genie Signup Process
+Please signup on this link to be added to the waitlist to get access credentials to run genie cli. [Valory's Genie Signup](https://www.valory.xyz/propel-genie).
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [License](#license)
+
+## Installation
+
+To install the Genie CLI, you need to have Python 3.9 or higher. You can install the dependencies using the following command:
+
+```sh
+pipx install genie-cli
+pipx ensurepath
+```
+
+## Usage
+
+To use the Genie CLI, you can run the following command:
+
+```sh
+genie
+```
+
+This will start the CLI and you can follow the prompts to generate AEA agents.
+
+## Project Structure
+
+The project is organized as follows:
+
+```
+genie-cli/
+├── src/
+│   ├── genie_cli/
+│   │   ├── prompts/
+│   │   │   └── behaviour_prompts.py
+│   │   ├── widgets/
+│   │   │   ├── prompt_input.py
+│   │   │   └── chatbox.py
+│   │   └── __main__.py
+├── pyproject.toml
+├── README.md
+└── .gitignore
+```
+
+### Key Files
+
+- **`pyproject.toml`**: Contains project metadata and dependencies.
+- **`src/genie_cli/prompts/behaviour_prompts.py`**: Contains prompt templates for generating behavior plans.
+- **`src/genie_cli/widgets/prompt_input.py`**: Defines the `PromptInput` widget for user input.
+- **`src/genie_cli/widgets/chatbox.py`**: Defines the `Chatbox` widget for displaying messages.
+
+## License
+
+This project is licensed under the Valory License. See the [LICENSE](LICENSE) file for details.
+
