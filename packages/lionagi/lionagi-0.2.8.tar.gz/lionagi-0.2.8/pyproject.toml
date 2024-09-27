@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "lionagi"
+version = "0.2.8"
+description = "Towards automated general intelligence."
+authors = ["HaiyangLi <quantocean.li@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+lionfuncs = "1.0.1"
+lion-openai = "^0.1.4"
+ipython = "^8.27.0"
+pandas = "^2.2.3"
+aiocache = "^0.12.3"
+python-dotenv = "^1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+isort = "^5.13.2"
+setuptools = "^75.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
