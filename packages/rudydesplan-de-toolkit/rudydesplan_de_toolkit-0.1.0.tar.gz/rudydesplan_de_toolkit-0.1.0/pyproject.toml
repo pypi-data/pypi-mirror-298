@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "rudydesplan-de-toolkit"
+version = "0.1.0"
+description = ""
+authors = ["rudy desplan <desrudy@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "rudydesplan_de_toolkit"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+deng = 'rudydesplan_de_toolkit.main:cli'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
