@@ -1,0 +1,26 @@
+name: Build and push pypi package
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: gap-client
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+          architecture: 'x64'
+      - name: Show environment info
+        env:
+          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+        run: make ver info env
+      - name: Intall requirements
+        run: make req
+      - name: Build package
+        run: make pypi-build
+      - name: Push package
+        env:
+          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+        run: make pypi-push
+
