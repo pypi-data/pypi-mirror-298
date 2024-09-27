@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lion-service
+Version: 0.1.0
+Summary: 
+Author: OceanLi
+Author-email: 122793010+ohdearquant@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: tiktoken (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# lion-service
