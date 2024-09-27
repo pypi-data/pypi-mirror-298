@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/isodd.py
+src/new_is_odd.egg-info/PKG-INFO
+src/new_is_odd.egg-info/SOURCES.txt
+src/new_is_odd.egg-info/dependency_links.txt
+src/new_is_odd.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: new_is_odd
+Version: 0.0.1
+Summary: A new and updated isOdd library
+Author-email: Cyrus Mante <cyrus2952@gmail.com>
+Project-URL: Homepage, https://github.com/mattekudacy/new_is_odd
+Project-URL: Issues, https://github.com/new_is_odd/mattekudacy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
