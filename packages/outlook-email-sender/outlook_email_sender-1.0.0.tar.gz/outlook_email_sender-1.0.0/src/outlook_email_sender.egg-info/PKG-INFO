@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: outlook_email_sender
+Version: 1.0.0
+Summary: A Python package for authenticating to Outlook Web and sending emails using Playwright.
+Author: Rudolph Pienaar
+Author-email: rudolph.pienaar@childrens.harvard.edu
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Requires-Dist: playwright==1.38.0
+Requires-Dist: loguru
