@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: print_clear
+Version: 2.1.0
+Summary: A tiny CLI used for quoting input lines
+License: GPL
+Project-URL: Homepage, https://github.com/zwimer/print_clear
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: termcolor
+
+# print-clear
+
+A tiny CLI tool used to print strings without ambiguity.
+
+It does so by printing out its argument with the numbers, uppercase, lowercase, and special characters color coded.
+Pass `--legend` to see the color code legend.

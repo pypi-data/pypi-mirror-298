@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+print_clear/__init__.py
+print_clear/_version.py
+print_clear/print_clear.py
+print_clear/py.typed
+print_clear.egg-info/PKG-INFO
+print_clear.egg-info/SOURCES.txt
+print_clear.egg-info/dependency_links.txt
+print_clear.egg-info/entry_points.txt
+print_clear.egg-info/requires.txt
+print_clear.egg-info/top_level.txt
