@@ -1,0 +1,3 @@
+[console_scripts]
+admetscore=admetscore.app:main
+
