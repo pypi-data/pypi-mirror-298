@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "yandexbot"
+version = "0.2.0"
+description = ""
+authors = ["Ivan.Utkin"]
+readme = "README.md"
+packages = [{include = "yandexbot", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.9.2"
+httpx = "^0.27.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
