@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ramannoodle"
+version = "0.4.0"
+authors = [
+    {name = "Willis O'Leary", email = "wolearyc@gmail.com"},
+]
+description = "Calculate Raman spectra from first-principles calculations."
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["raman", "spectrum", "vasp", "dft", "phonons", "molecular", "dynamics", "polarizability" ]
+license = {text = "MIT"}
+dependencies = [
+    "defusedxml >= 0.6.0", # min working
+    "numpy >= 1.24.0;python_version=='3.10'", # min recommended
+    "numpy >= 1.24.0;python_version=='3.11'", # min recommended
+    "numpy >= 1.26.0;python_version=='3.12'", # min working
+    "scipy >= 1.10.0;python_version=='3.10'", # min recommended
+    "scipy >= 1.10.0;python_version=='3.11'", # min recommended
+    "scipy >= 1.11.2;python_version=='3.12'", # min working
+    "spglib >= 1.16.4", # min working
+    "tabulate >= 0.8.8", # min working
+    "tqdm >= 2.0", # min working
+]
+
+[project.optional-dependencies]
+torch = [
+    "aiohttp >= 3.8.0;python_version=='3.10'", # min working
+    "aiohttp >= 3.8.3;python_version=='3.11'", # min working
+    "aiohttp >= 3.9.0;python_version=='3.12'", # min working
+    "dill >= 0.3.4", # min working
+    "frozenlist >= 1.2.0;python_version=='3.10'", # min working
+    "frozenlist >= 1.3.3;python_version=='3.11'", # min working
+    "frozenlist >= 1.4.1;python_version=='3.12'", # min working
+    "fsspec>= 2021.4.0", # min working
+    "jinja2 >= 3.0.2", # min working
+    "pyparsing >= 3.0.0", # min working
+    "scikit-learn >= 1.2.0;python_version=='3.10'", # min working
+    "scikit-learn >= 1.2.0;python_version=='3.11'", # min working
+    "scikit-learn >= 1.3.0;python_version=='3.12' and sys_platform=='darwin'", # min working
+    "scikit-learn >= 1.3.0;python_version=='3.12' and sys_platform=='linux'", # min working
+    "scikit-learn >= 1.4.0;python_version=='3.12' and sys_platform=='win32'", # min working
+    "torch_geometric >= 2.3.0", # min working
+]
+
+[project.urls]
+Documentation = "https://ramannoodle.readthedocs.io/en/latest/"
+Repository = "https://github.com/wolearyc/ramannoodle"
+Issues = "https://github.com/wolearyc/ramannoodle/issues"
+
+[tool.setuptools.packages.find]
+include = ["ramannoodle*"]  # ["*"] by default
+exclude = ["reports"]  # empty by default
+
+
+[tool.pylint.MASTER]
+ignore-paths = [ "^docs/.*$",
+                 "setup.py" ]
+
+[tool.black]
+line-length = 88
+force-exclude = '''
+
+(
+  /(
+      \.git          # root of the project
+    | docs
+  )/
+  | setup.py
+)
+'''
+
+[tool.mypy]
+warn_return_any = "True"
+warn_unused_configs = "True"
+ignore_missing_imports = "True"
+follow_imports = "silent"
+disable_error_code = ["method-assign"]
+strict = "True"
