@@ -1,0 +1,5 @@
+include src/cuda/gpu.cuh
+include src/hipims/banner.txt
+include src/hipims/sample/input/*
+include src/hipims/sample/output/*
+recursive-include hipims *.py *.cu *.cc *.h *.cuh CMakeLists.txt *.gz *.png *.npy *.asc *.csv
