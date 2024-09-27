@@ -1,0 +1,17 @@
+AIDSTK/__init__.py,sha256=NXKnsV7PUGlzR68nguzOWM2b_5QRqeQR6txDhcKx1gM,108
+AIDSTK/functions.py,sha256=NaDOcIokAzLygUX7MMqFXxi1LaC0PTSjUEcxzmLTIOg,1331
+AIDSTK/models.py,sha256=fRwlxAG_UrmvleBMfuK_Qh5LkOVxZ4bOlXQJtfaazWg,848
+AIDSTK/configs/config1.json,sha256=EGhiA28XfFhAQyCwF0xQQECSbotS-qAgUJpLzQ6vpbQ,169
+AIDSTK/configs/config2.json,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AIDSTK/configs/gemma2_T1_00.json,sha256=rD0JRSwgdXQW8N6DDRVzHmF4NikzZI1cU0k11DUrTHY,170
+AIDSTK/configs/llama3_1_T0_00.json,sha256=EGhiA28XfFhAQyCwF0xQQECSbotS-qAgUJpLzQ6vpbQ,169
+AIDSTK/configs/llama3_2_T0_80.json,sha256=hANEF0c0nVKOH3mKT65q-8VizWw5gFrgLNpFhgGXSPA,171
+AIDSTK/prompts/IT_Categorizer.txt,sha256=L4mW7C0IuM1HtvCtpm8wZexKwzvYXssbsaaEIekKI4M,2074
+AIDSTK/prompts/Sentiment_Analyzer.txt,sha256=2lPrrb0goXpnOWdXTHQbm2CnSkKrYIWyymJZJNchbD8,1423
+AIDSTK/prompts/prompt1.txt,sha256=FVgYx6eesjdCyt8H1u73MgaHej8qH-dZshQ87RuZX8o,1882
+AIDSTK/prompts/prompt2.txt,sha256=2lPrrb0goXpnOWdXTHQbm2CnSkKrYIWyymJZJNchbD8,1423
+AIDSTK-0.2.0.dist-info/LICENSE,sha256=G2LY4mMGhFa2kZ8KXByM4qJiSEUXEAIDWHFqyyHDFus,1088
+AIDSTK-0.2.0.dist-info/METADATA,sha256=7KUZbsLFL2WgVacl0FrK8iHxs6mdM0R9I2PiiXxwRWs,515
+AIDSTK-0.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+AIDSTK-0.2.0.dist-info/top_level.txt,sha256=h6dx1zeGCNK7GKB1XXLWZ34EWj62fWLdGLto3x-b_vs,7
+AIDSTK-0.2.0.dist-info/RECORD,,
