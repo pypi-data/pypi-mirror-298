@@ -1,0 +1,7 @@
+README.md
+setup.py
+easyloader/__init__.py
+easyloader.egg-info/PKG-INFO
+easyloader.egg-info/SOURCES.txt
+easyloader.egg-info/dependency_links.txt
+easyloader.egg-info/top_level.txt
