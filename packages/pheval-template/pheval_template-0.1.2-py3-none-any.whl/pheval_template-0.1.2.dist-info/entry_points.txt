@@ -1,0 +1,3 @@
+[pheval.plugins]
+template=pheval_template.runner:TemplatePhEvalRunner
+
