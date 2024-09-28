@@ -1,0 +1,22 @@
+## Changelog
+
+### 0.1.2
+
+Changed:
+
+* Allow `http://` links too, and tighten up the pattern matching (#4)
+
+Fixed:
+
+* Catch error if `memedict` library randomly returns `None` for the URL (#3)
+
+
+### 0.1.1
+
+Fixed:
+* "Unexpected TypeError" after the bot says "No results."
+
+
+### 0.1.0
+
+First release of `sopel-kym`.
