@@ -1,0 +1,4 @@
+[report]
+omit =
+    colorevo/__main__.py
+    tests/*
