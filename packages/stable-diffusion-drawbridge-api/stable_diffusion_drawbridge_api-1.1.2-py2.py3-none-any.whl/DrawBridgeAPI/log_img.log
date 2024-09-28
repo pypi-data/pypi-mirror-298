@@ -1,0 +1,2087 @@
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.vibrou.com/sd-images/241544e513a8ccbe61d66ea59cca1ce3545668773a28119a69f2fb1ca8e03f1d.png
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.vibrou.com/sd-images/1f4c13ee4cf606154e0947a618ffed4298e14c744dfc8e420b287ce2ea792003.png
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.vibrou.com/sd-images/d4dcdfc7833aa29050710d1cab038f1ee79ba173637a964112fc8f95c69de796.png
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.vibrou.com/sd-images/4146c1b878479f31d285fe773a67f63692881e06897105ec67310f97ec3f574e.png
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.vibrou.com/sd-images/356685a6f8fc6e77e4f5e26e31170add77de590fb02a1502932ff2878dd0121d.png
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.vibrou.com/sd-images/4def2964671f192fb963371b12a409b9d9d0adffe518cc6c3a6f1ed84ec457d3.png
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 603, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 176, in posting
+    await self.heart_beat(task_id)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 40, in heart_beat
+    raise RuntimeError('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½')
+RuntimeError: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 603, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 202, in posting
+    await self.heart_beat(task_id)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 40, in heart_beat
+    raise RuntimeError('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½')
+RuntimeError: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 603, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 203, in posting
+    await self.heart_beat(task_id)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 40, in heart_beat
+    raise RuntimeError('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½')
+RuntimeError: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 603, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 204, in posting
+    await self.heart_beat(task_id)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 40, in heart_beat
+    raise RuntimeError('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½')
+RuntimeError: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 603, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 203, in posting
+    await self.heart_beat(task_id)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 40, in heart_beat
+    raise RuntimeError('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½')
+RuntimeError: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½
+
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.vibrou.com/sd-images/646a996cdb04ea930e30e39f27c44ff7d4b12eff0e4a23eedb28e3dbe8fa3d4f.png
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.vibrou.com/sd-images/715748c94e0f167ab511c59f6c5c86744f83ca95274e3888034b5fa9607214aa.png
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 603, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 201, in posting
+    await self.heart_beat(task_id)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 40, in heart_beat
+    raise RuntimeError('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½')
+RuntimeError: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 603, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 201, in posting
+    await self.heart_beat(task_id)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 40, in heart_beat
+    raise RuntimeError('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½')
+RuntimeError: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½
+
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.vibrou.com/sd-images/1353d0951eccea3addfc37c2a965f9db7fe84d9e5cd9124ce23bde33126caf42.png
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.vibrou.com/sd-images/8228dcdd3c146a64a598e1abff537417ae931e9acc69211fbb11d5847ca1307f.png
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 603, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 203, in posting
+    await self.heart_beat(task_id)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 40, in heart_beat
+    raise RuntimeError('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½')
+RuntimeError: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½
+
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.vibrou.com/sd-images/15301b141e81bc58effc2930fbcba4df9ccf5f8c09e70c5303ecf6d5f3b630cf.png
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.vibrou.com/sd-images/2da8694b7a3a3b6afd40b86036781cbb0437b64caab8633173de13a22932b3a2.png
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 181, in txt2img
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 247, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 296, in choice_backend
+    logger.info(f"ï¿½Ö¶ï¿½Ñ¡ï¿½ï¿½Ä£ï¿½ï¿½{self.model_to_backend}, ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½{key[:24]}")
+TypeError: 'NoneType' object is not subscriptable
+
+[94m[Civitai][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 1036, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohappyeyeballs\impl.py", line 104, in start_connection
+    raise all_exceptions[0]
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohappyeyeballs\impl.py", line 82, in start_connection
+    sock = await _connect_sock(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohappyeyeballs\impl.py", line 159, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "c:\python310\lib\asyncio\proactor_events.py", line 709, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "c:\python310\lib\asyncio\windows_events.py", line 821, in _poll
+    value = callback(transferred, key, ov)
+  File "c:\python310\lib\asyncio\windows_events.py", line 608, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] Ô¶ï¿½Ì¼ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 603, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\SD_civitai_API.py", line 113, in posting
+    await self.check_backend_usability()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\SD_civitai_API.py", line 71, in check_backend_usability
+    async with session.get(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\client.py", line 1344, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\client.py", line 648, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 546, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 952, in _create_connection
+    _, proto = await self._create_proxy_connection(req, traces, timeout)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 1338, in _create_proxy_connection
+    transport, proto = await self._create_direct_connection(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 1313, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 1282, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 1051, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:7890 ssl:default [Ô¶ï¿½Ì¼ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½]
+
+[94m[Civitai][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 1036, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohappyeyeballs\impl.py", line 104, in start_connection
+    raise all_exceptions[0]
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohappyeyeballs\impl.py", line 82, in start_connection
+    sock = await _connect_sock(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohappyeyeballs\impl.py", line 159, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "c:\python310\lib\asyncio\proactor_events.py", line 709, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "c:\python310\lib\asyncio\windows_events.py", line 821, in _poll
+    value = callback(transferred, key, ov)
+  File "c:\python310\lib\asyncio\windows_events.py", line 608, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] Ô¶ï¿½Ì¼ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 603, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\SD_civitai_API.py", line 113, in posting
+    await self.check_backend_usability()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\SD_civitai_API.py", line 71, in check_backend_usability
+    async with session.get(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\client.py", line 1344, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\client.py", line 648, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 546, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 952, in _create_connection
+    _, proto = await self._create_proxy_connection(req, traces, timeout)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 1338, in _create_proxy_connection
+    transport, proto = await self._create_direct_connection(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 1313, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 1282, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 1051, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:7890 ssl:default [Ô¶ï¿½Ì¼ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½]
+
+[94m[Civitai][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 1036, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohappyeyeballs\impl.py", line 104, in start_connection
+    raise all_exceptions[0]
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohappyeyeballs\impl.py", line 82, in start_connection
+    sock = await _connect_sock(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohappyeyeballs\impl.py", line 159, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "c:\python310\lib\asyncio\proactor_events.py", line 709, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "c:\python310\lib\asyncio\windows_events.py", line 821, in _poll
+    value = callback(transferred, key, ov)
+  File "c:\python310\lib\asyncio\windows_events.py", line 608, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] Ô¶ï¿½Ì¼ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 603, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\SD_civitai_API.py", line 113, in posting
+    await self.check_backend_usability()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\SD_civitai_API.py", line 71, in check_backend_usability
+    async with session.get(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\client.py", line 1344, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\client.py", line 648, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 546, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 952, in _create_connection
+    _, proto = await self._create_proxy_connection(req, traces, timeout)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 1338, in _create_proxy_connection
+    transport, proto = await self._create_direct_connection(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 1313, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 1282, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\aiohttp\connector.py", line 1051, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:7890 ssl:default [Ô¶ï¿½Ì¼ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½]
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ï¿½ï¿½ï¿½a1111-RTX2060ï¿½ï¿½ï¿½ï¿½
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 294, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 263, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 346, in choice_backend
+    raise RuntimeError("Ã»ï¿½Ð¿ï¿½ï¿½Ãºï¿½ï¿½")
+RuntimeError: Ã»ï¿½Ð¿ï¿½ï¿½Ãºï¿½ï¿½
+
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 187, in txt2img
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 259, in txt2img
+    self.instance_list, self.enable_backend = await TXT2IMGHandler(self.payload).get_all_instance()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 190, in get_all_instance
+    await self.get_enable_task(man_enable_task)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 63, in get_enable_task
+    all_backend_instance = await asyncio.gather(*tasks)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 173, in get_t4wefan_task
+    aidraw_instance = AIDRAW9(count=counter, payload=self.payload)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\t4wenfan.py", line 18, in __init__
+    token = self.config.yunjie[self.count]
+IndexError: list index out of range
+
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 187, in txt2img
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 260, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 283, in choice_backend
+    reverse_dict = {value: key for key, value in backend_url_dict.items()}
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 283, in <dictcomp>
+    reverse_dict = {value: key for key, value in backend_url_dict.items()}
+TypeError: unhashable type: 'list'
+
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 187, in txt2img
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 260, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 284, in choice_backend
+    reverse_dict = {value: key for key, value in backend_url_dict.items()}
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 284, in <dictcomp>
+    reverse_dict = {value: key for key, value in backend_url_dict.items()}
+TypeError: unhashable type: 'list'
+
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 187, in txt2img
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 259, in txt2img
+    self.instance_list, self.enable_backend = await TXT2IMGHandler(self.payload).get_all_instance()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 190, in get_all_instance
+    await self.get_enable_task(man_enable_task)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 63, in get_enable_task
+    all_backend_instance = await asyncio.gather(*tasks)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 173, in get_t4wefan_task
+    aidraw_instance = AIDRAW9(count=counter, payload=self.payload)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\t4wenfan.py", line 18, in __init__
+    token = self.config.t4wefan['token'][self.count]
+TypeError: list indices must be integers or slices, not str
+
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 187, in txt2img
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 260, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 284, in choice_backend
+    reverse_dict = {value: key for key, value in backend_url_dict.items()}
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 284, in <dictcomp>
+    reverse_dict = {value: key for key, value in backend_url_dict.items()}
+TypeError: unhashable type: 'list'
+
+[94m[T4-NAI3][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 603, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\t4wenfan.py", line 73, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\t4wenfan.py", line 46, in formating_to_sd_style
+    self.format_api_respond()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 217, in format_api_respond
+    image = Image.open(BytesIO(self.img_btyes[0]))
+IndexError: list index out of range
+
+[94m[T4-NAI3][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 603, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\t4wenfan.py", line 73, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\t4wenfan.py", line 46, in formating_to_sd_style
+    self.format_api_respond()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 217, in format_api_respond
+    image = Image.open(BytesIO(self.img_btyes[0]))
+IndexError: list index out of range
+
+[94m[T4-NAI3][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 603, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\t4wenfan.py", line 73, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\t4wenfan.py", line 46, in formating_to_sd_style
+    self.format_api_respond()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 217, in format_api_respond
+    image = Image.open(BytesIO(self.img_btyes[0]))
+IndexError: list index out of range
+
+[94m[SD-A1111][0m [91m[ERROR][0m {'detail': [{'type': 'string_type', 'loc': ['body', 'sampler_name'], 'msg': 'Input should be a valid string', 'input': None}, {'type': 'string_type', 'loc': ['body', 'refiner_checkpoint'], 'msg': 'Input should be a valid string', 'input': None}, {'type': 'string_type', 'loc': ['body', 'hr_upscaler'], 'msg': 'Input should be a valid string', 'input': None}, {'type': 'string_type', 'loc': ['body', 'hr_checkpoint_name'], 'msg': 'Input should be a valid string', 'input': None}, {'type': 'string_type', 'loc': ['body', 'hr_sampler_name'], 'msg': 'Input should be a valid string', 'input': None}, {'type': 'string_type', 'loc': ['body', 'script_name'], 'msg': 'Input should be a valid string', 'input': None}]}
+[94m[SD-A1111][0m [91m[ERROR][0m {'detail': [{'type': 'string_type', 'loc': ['body', 'refiner_checkpoint'], 'msg': 'Input should be a valid string', 'input': None}, {'type': 'string_type', 'loc': ['body', 'hr_upscaler'], 'msg': 'Input should be a valid string', 'input': None}, {'type': 'string_type', 'loc': ['body', 'hr_checkpoint_name'], 'msg': 'Input should be a valid string', 'input': None}, {'type': 'string_type', 'loc': ['body', 'hr_sampler_name'], 'msg': 'Input should be a valid string', 'input': None}, {'type': 'string_type', 'loc': ['body', 'script_name'], 'msg': 'Input should be a valid string', 'input': None}]}
+[94m[SD-A1111][0m [91m[ERROR][0m {'detail': [{'type': 'string_type', 'loc': ['body', 'refiner_checkpoint'], 'msg': 'Input should be a valid string', 'input': None}, {'type': 'string_type', 'loc': ['body', 'hr_upscaler'], 'msg': 'Input should be a valid string', 'input': None}, {'type': 'string_type', 'loc': ['body', 'hr_checkpoint_name'], 'msg': 'Input should be a valid string', 'input': None}, {'type': 'string_type', 'loc': ['body', 'hr_sampler_name'], 'msg': 'Input should be a valid string', 'input': None}, {'type': 'string_type', 'loc': ['body', 'script_name'], 'msg': 'Input should be a valid string', 'input': None}]}
+[94m[SD-A1111][0m [91m[ERROR][0m {'detail': 'Ã»ï¿½Ð¿ï¿½ï¿½Ãºï¿½ï¿½'}
+[94m[SD-A1111][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 599, in send_result_to_api
+    resp = response.json()
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_models.py", line 764, in json
+    return jsonlib.loads(self.content, **kwargs)
+  File "c:\python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "c:\python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "c:\python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[94m[SD-A1111][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 599, in send_result_to_api
+    resp = response.json()
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_models.py", line 764, in json
+    return jsonlib.loads(self.content, **kwargs)
+  File "c:\python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "c:\python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "c:\python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[94m[SD-A1111][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 599, in send_result_to_api
+    resp = response.json()
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_models.py", line 764, in json
+    return jsonlib.loads(self.content, **kwargs)
+  File "c:\python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "c:\python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "c:\python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ï¿½ï¿½ï¿½a1111-RTX2060ï¿½ï¿½ï¿½ï¿½
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 294, in proxy
+    task_handler = TaskHandler({}, request, path)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 263, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 346, in choice_backend
+    raise RuntimeError("Ã»ï¿½Ð¿ï¿½ï¿½Ãºï¿½ï¿½")
+RuntimeError: Ã»ï¿½Ð¿ï¿½ï¿½Ãºï¿½ï¿½
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ï¿½ï¿½ï¿½a1111-RTX2060ï¿½ï¿½ï¿½ï¿½
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 294, in proxy
+    task_handler = TaskHandler({}, request, path)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 263, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 346, in choice_backend
+    raise RuntimeError("Ã»ï¿½Ð¿ï¿½ï¿½Ãºï¿½ï¿½")
+RuntimeError: Ã»ï¿½Ð¿ï¿½ï¿½Ãºï¿½ï¿½
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ï¿½ï¿½ï¿½a1111-RTX2060ï¿½ï¿½ï¿½ï¿½
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 294, in proxy
+    task_handler = TaskHandler({}, request, path)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 263, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 346, in choice_backend
+    raise RuntimeError("Ã»ï¿½Ð¿ï¿½ï¿½Ãºï¿½ï¿½")
+RuntimeError: Ã»ï¿½Ð¿ï¿½ï¿½Ãºï¿½ï¿½
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ï¿½ï¿½ï¿½a1111-default2ï¿½ï¿½ï¿½ï¿½
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 187, in txt2img
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 247, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 346, in choice_backend
+    raise RuntimeError("Ã»ï¿½Ð¿ï¿½ï¿½Ãºï¿½ï¿½")
+RuntimeError: Ã»ï¿½Ð¿ï¿½ï¿½Ãºï¿½ï¿½
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 276, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 264, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 348, in choice_backend
+    raise RuntimeError("Ã»ÓÐ¿ÉÓÃºó¶Ë")
+RuntimeError: Ã»ÓÐ¿ÉÓÃºó¶Ë
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 276, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 264, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 348, in choice_backend
+    raise RuntimeError("Ã»ÓÐ¿ÉÓÃºó¶Ë")
+RuntimeError: Ã»ÓÐ¿ÉÓÃºó¶Ë
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 276, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 264, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 348, in choice_backend
+    raise RuntimeError("Ã»ÓÐ¿ÉÓÃºó¶Ë")
+RuntimeError: Ã»ÓÐ¿ÉÓÃºó¶Ë
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 276, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 264, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 348, in choice_backend
+    raise RuntimeError("Ã»ÓÐ¿ÉÓÃºó¶Ë")
+RuntimeError: Ã»ÓÐ¿ÉÓÃºó¶Ë
+
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 276, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 288, in sd_api
+    self.instance_list, self.enable_backend = await A1111WebuiHandler(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 221, in get_all_instance
+    await self.get_enable_task([1])
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 64, in get_enable_task
+    all_backend_instance = await asyncio.gather(*tasks)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 174, in get_comfyui_task
+    aidraw_instance = AIDRAW9(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 17, in __init__
+    token = self.config.comfyui[self.count]
+KeyError: 0
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 276, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 294, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 378, in choice_backend
+    raise RuntimeError("Ã»ÓÐ¿ÉÓÃºó¶Ë")
+RuntimeError: Ã»ÓÐ¿ÉÓÃºó¶Ë
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 276, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 294, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 378, in choice_backend
+    raise RuntimeError("Ã»ÓÐ¿ÉÓÃºó¶Ë")
+RuntimeError: Ã»ÓÐ¿ÉÓÃºó¶Ë
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 276, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 294, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 378, in choice_backend
+    raise RuntimeError("Ã»ÓÐ¿ÉÓÃºó¶Ë")
+RuntimeError: Ã»ÓÐ¿ÉÓÃºó¶Ë
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 276, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 294, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 378, in choice_backend
+    raise RuntimeError("Ã»ÓÐ¿ÉÓÃºó¶Ë")
+RuntimeError: Ã»ÓÐ¿ÉÓÃºó¶Ë
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 276, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 294, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 378, in choice_backend
+    raise RuntimeError("Ã»ÓÐ¿ÉÓÃºó¶Ë")
+RuntimeError: Ã»ÓÐ¿ÉÓÃºó¶Ë
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 276, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 294, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 378, in choice_backend
+    raise RuntimeError("Ã»ÓÐ¿ÉÓÃºó¶Ë")
+RuntimeError: Ã»ÓÐ¿ÉÓÃºó¶Ë
+
+[94m[YunJie][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\yunjie.py", line 137, in posting
+    async with aiohttp.ClientSession(headers=self.headers) as session:
+NameError: name 'aiohttp' is not defined
+
+[94m[YunJie][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\yunjie.py", line 137, in posting
+    async with aiohttp.ClientSession(headers=self.headers) as session:
+NameError: name 'aiohttp' is not defined
+
+[94m[YunJie][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\yunjie.py", line 137, in posting
+    async with aiohttp.ClientSession(headers=self.headers) as session:
+NameError: name 'aiohttp' is not defined
+
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 147, in txt2img_api
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 278, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 301, in choice_backend
+    reverse_dict = {value: key for key, value in backend_url_dict.items()}
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 301, in <dictcomp>
+    reverse_dict = {value: key for key, value in backend_url_dict.items()}
+TypeError: unhashable type: 'list'
+
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 147, in txt2img_api
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 278, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 303, in choice_backend
+    reverse_dict = {value: key for key, value in backend_url_dict.items()}
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 303, in <dictcomp>
+    reverse_dict = {value: key for key, value in backend_url_dict.items()}
+TypeError: unhashable type: 'list'
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëcomfyui-defaultµôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 147, in txt2img_api
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 278, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 380, in choice_backend
+    raise RuntimeError("Ã»ÓÐ¿ÉÓÃºó¶Ë")
+RuntimeError: Ã»ÓÐ¿ÉÓÃºó¶Ë
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëcomfyui-defaultµôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 147, in txt2img_api
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 278, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 379, in choice_backend
+    raise RuntimeError("Ã»ÓÐ¿ÉÓÃºó¶Ë")
+RuntimeError: Ã»ÓÐ¿ÉÓÃºó¶Ë
+
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 147, in txt2img_api
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 278, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 398, in choice_backend
+    logger.info(f"ÒÑÑ¡Ôñºó¶Ë{reverse_dict[ava_url][:24]}")
+KeyError: None
+
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 147, in txt2img_api
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 278, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 396, in choice_backend
+    logger.info(f"ÒÑÑ¡Ôñºó¶Ë{reverse_dict[ava_url][:24]}")
+KeyError: None
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 147, in txt2img_api
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 278, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 396, in choice_backend
+    logger.info(f"ÒÑÑ¡Ôñºó¶Ë{reverse_dict[ava_url][:24]}")
+KeyError: None
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 147, in txt2img_api
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 278, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 396, in choice_backend
+    logger.info(f"ÒÑÑ¡Ôñºó¶Ë{reverse_dict[ava_url][:24]}")
+KeyError: None
+
+[94m[SD-A1111][0m [91m[ERROR][0m ÇëÇóÊ§°Ü£¬´íÎóÐÅÏ¢: 
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 147, in txt2img_api
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 278, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 396, in choice_backend
+    logger.info(f"ÒÑÑ¡Ôñºó¶Ë{reverse_dict[ava_url][:24]}")
+KeyError: None
+
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 147, in txt2img_api
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 278, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 396, in choice_backend
+    logger.info(f"ÒÑÑ¡Ôñºó¶Ë{reverse_dict[ava_url][:24]}")
+KeyError: None
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 84, in posting
+    self.update_api_json()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 103, in update_api_json
+    api_json = copy.deepcopy(self.comfyui_api_json)
+AttributeError: 'AIDRAW' object has no attribute 'comfyui_api_json'
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 84, in posting
+    self.update_api_json()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 103, in update_api_json
+    api_json = copy.deepcopy(self.comfyui_api_json)
+AttributeError: 'AIDRAW' object has no attribute 'comfyui_api_json'
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 84, in posting
+    self.update_api_json()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 103, in update_api_json
+    api_json = copy.deepcopy(self.comfyui_api_json)
+AttributeError: 'AIDRAW' object has no attribute 'comfyui_api_json'
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 102, in posting
+    await self.heart_beat(respone['prompt_id'])
+KeyError: 'prompt_id'
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 102, in posting
+    await self.heart_beat(respone['prompt_id'])
+KeyError: 'prompt_id'
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 102, in posting
+    await self.heart_beat(respone['prompt_id'])
+KeyError: 'prompt_id'
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 104, in posting
+    await self.heart_beat(respone['prompt_id'])
+KeyError: 'prompt_id'
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 104, in posting
+    await self.heart_beat(respone['prompt_id'])
+KeyError: 'prompt_id'
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 104, in posting
+    await self.heart_beat(respone['prompt_id'])
+KeyError: 'prompt_id'
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 105, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 105, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 105, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 105, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 105, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 105, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 105, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 105, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 105, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 105, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 105, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 105, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 104, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 104, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 104, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 104, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 104, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m {'error': 'HTTP error', 'status_code': 400, 'details': "Client error '400 Bad Request' for url 'http://10.147.20.155:8188/prompt'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"}
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 104, in posting
+    raise RuntimeError(respone["status_code"])
+RuntimeError: 400
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 109, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 83, in formating_to_sd_style
+    await self.download_img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 735, in download_img
+    img_data = await response.read()
+TypeError: object bytes can't be used in 'await' expression
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 109, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 83, in formating_to_sd_style
+    await self.download_img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 735, in download_img
+    img_data = await response.read()
+TypeError: object bytes can't be used in 'await' expression
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 109, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 83, in formating_to_sd_style
+    await self.download_img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 735, in download_img
+    img_data = await response.read()
+TypeError: object bytes can't be used in 'await' expression
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 110, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 84, in formating_to_sd_style
+    await self.download_img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 735, in download_img
+    img_data = await response.read()
+TypeError: object bytes can't be used in 'await' expression
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 110, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 84, in formating_to_sd_style
+    await self.download_img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 735, in download_img
+    img_data = await response.read()
+TypeError: object bytes can't be used in 'await' expression
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 110, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 84, in formating_to_sd_style
+    await self.download_img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 735, in download_img
+    img_data = await response.read()
+TypeError: object bytes can't be used in 'await' expression
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 110, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 84, in formating_to_sd_style
+    await self.download_img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 735, in download_img
+    img_data = await response.read()
+TypeError: object bytes can't be used in 'await' expression
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 110, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 84, in formating_to_sd_style
+    await self.download_img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 735, in download_img
+    img_data = await response.read()
+TypeError: object bytes can't be used in 'await' expression
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 110, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 84, in formating_to_sd_style
+    await self.download_img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 735, in download_img
+    img_data = await response.read()
+TypeError: object bytes can't be used in 'await' expression
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 110, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 84, in formating_to_sd_style
+    await self.download_img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 742, in download_img
+    self.img_bytes.append(img_data)
+AttributeError: 'AIDRAW' object has no attribute 'img_bytes'. Did you mean: 'img_btyes'?
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 110, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 84, in formating_to_sd_style
+    await self.download_img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 742, in download_img
+    self.img_bytes.append(img_data)
+AttributeError: 'AIDRAW' object has no attribute 'img_bytes'. Did you mean: 'img_btyes'?
+
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 644, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 110, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 84, in formating_to_sd_style
+    await self.download_img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 742, in download_img
+    self.img_bytes.append(img_data)
+AttributeError: 'AIDRAW' object has no attribute 'img_bytes'. Did you mean: 'img_btyes'?
+
+[94m[Comfyui][0m [91m[ERROR][0m ÇëÇóÊ§°Ü£¬´íÎóÐÅÏ¢: 
+[94m[Comfyui][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 646, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 110, in posting
+    await self.formating_to_sd_style()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\comfyui.py", line 84, in formating_to_sd_style
+    self.format_api_respond()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 226, in format_api_respond
+    image = Image.open(BytesIO(self.img_btyes[0]))
+IndexError: list index out of range
+
+[94m[SD-A1111][0m [91m[ERROR][0m ÇëÇóÊ§°Ü£¬´íÎóÐÅÏ¢: 
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 155, in txt2img_api
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 279, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 373, in choice_backend
+    if len(normal_backend) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+[94m[SD-A1111][0m [91m[ERROR][0m ÇëÇóÊ§°Ü£¬´íÎóÐÅÏ¢: 
+[94m[SD-A1111][0m [91m[ERROR][0m ÇëÇóÊ§°Ü£¬´íÎóÐÅÏ¢: 
+[94m[SD-A1111][0m [91m[ERROR][0m ÇëÇóÊ§°Ü£¬´íÎóÐÅÏ¢: 
+[94m[SD-A1111][0m [91m[ERROR][0m ÇëÇóÊ§°Ü£¬´íÎóÐÅÏ¢: 
+[94m[SD-A1111][0m [91m[ERROR][0m ÇëÇóÊ§°Ü£¬´íÎóÐÅÏ¢: 
+[94m[SD-A1111][0m [91m[ERROR][0m ÇëÇóÊ§°Ü£¬´íÎóÐÅÏ¢: 
+[94m[SD-A1111][0m [91m[ERROR][0m ÇëÇóÊ§°Ü£¬´íÎóÐÅÏ¢: 
+[94m[SD-A1111][0m [91m[ERROR][0m <svg width="576" height="576" viewBox="0 0 576 576" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M287.5 229L86 344.5L287.5 460L489 344.5L287.5 229Z" stroke="url(#paint0_linear_102_7)" stroke-width="59" stroke-linejoin="round"/>
+<path d="M287.5 116L86 231.5L287.5 347L489 231.5L287.5 116Z" stroke="url(#paint1_linear_102_7)" stroke-width="59" stroke-linejoin="round"/>
+<path d="M86 344L288 229" stroke="url(#paint2_linear_102_7)" stroke-width="59" stroke-linejoin="bevel"/>
+<defs>
+<linearGradient id="paint0_linear_102_7" x1="60" y1="344" x2="429.5" y2="344" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F9D100"/>
+<stop offset="1" stop-color="#F97700"/>
+</linearGradient>
+<linearGradient id="paint1_linear_102_7" x1="513.5" y1="231" x2="143.5" y2="231" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F9D100"/>
+<stop offset="1" stop-color="#F97700"/>
+</linearGradient>
+<linearGradient id="paint2_linear_102_7" x1="60" y1="344" x2="428.987" y2="341.811" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F9D100"/>
+<stop offset="1" stop-color="#F97700"/>
+</linearGradient>
+</defs>
+</svg>
+
+[94m[SD-A1111][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    resp = response.json()
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_models.py", line 764, in json
+    return jsonlib.loads(self.content, **kwargs)
+  File "c:\python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "c:\python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "c:\python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 645, in send_result_to_api
+    raise RuntimeError('ºó¶Ë·µ»Ø´íÎó')
+RuntimeError: ºó¶Ë·µ»Ø´íÎó
+
+[94m[SD-A1111][0m [91m[ERROR][0m <svg width="576" height="576" viewBox="0 0 576 576" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M287.5 229L86 344.5L287.5 460L489 344.5L287.5 229Z" stroke="url(#paint0_linear_102_7)" stroke-width="59" stroke-linejoin="round"/>
+<path d="M287.5 116L86 231.5L287.5 347L489 231.5L287.5 116Z" stroke="url(#paint1_linear_102_7)" stroke-width="59" stroke-linejoin="round"/>
+<path d="M86 344L288 229" stroke="url(#paint2_linear_102_7)" stroke-width="59" stroke-linejoin="bevel"/>
+<defs>
+<linearGradient id="paint0_linear_102_7" x1="60" y1="344" x2="429.5" y2="344" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F9D100"/>
+<stop offset="1" stop-color="#F97700"/>
+</linearGradient>
+<linearGradient id="paint1_linear_102_7" x1="513.5" y1="231" x2="143.5" y2="231" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F9D100"/>
+<stop offset="1" stop-color="#F97700"/>
+</linearGradient>
+<linearGradient id="paint2_linear_102_7" x1="60" y1="344" x2="428.987" y2="341.811" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F9D100"/>
+<stop offset="1" stop-color="#F97700"/>
+</linearGradient>
+</defs>
+</svg>
+
+[94m[SD-A1111][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    resp = response.json()
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_models.py", line 764, in json
+    return jsonlib.loads(self.content, **kwargs)
+  File "c:\python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "c:\python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "c:\python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 645, in send_result_to_api
+    raise RuntimeError('ºó¶Ë·µ»Ø´íÎó')
+RuntimeError: ºó¶Ë·µ»Ø´íÎó
+
+[94m[SD-A1111][0m [91m[ERROR][0m <svg width="576" height="576" viewBox="0 0 576 576" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M287.5 229L86 344.5L287.5 460L489 344.5L287.5 229Z" stroke="url(#paint0_linear_102_7)" stroke-width="59" stroke-linejoin="round"/>
+<path d="M287.5 116L86 231.5L287.5 347L489 231.5L287.5 116Z" stroke="url(#paint1_linear_102_7)" stroke-width="59" stroke-linejoin="round"/>
+<path d="M86 344L288 229" stroke="url(#paint2_linear_102_7)" stroke-width="59" stroke-linejoin="bevel"/>
+<defs>
+<linearGradient id="paint0_linear_102_7" x1="60" y1="344" x2="429.5" y2="344" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F9D100"/>
+<stop offset="1" stop-color="#F97700"/>
+</linearGradient>
+<linearGradient id="paint1_linear_102_7" x1="513.5" y1="231" x2="143.5" y2="231" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F9D100"/>
+<stop offset="1" stop-color="#F97700"/>
+</linearGradient>
+<linearGradient id="paint2_linear_102_7" x1="60" y1="344" x2="428.987" y2="341.811" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F9D100"/>
+<stop offset="1" stop-color="#F97700"/>
+</linearGradient>
+</defs>
+</svg>
+
+[94m[SD-A1111][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 642, in send_result_to_api
+    resp = response.json()
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_models.py", line 764, in json
+    return jsonlib.loads(self.content, **kwargs)
+  File "c:\python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "c:\python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "c:\python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 645, in send_result_to_api
+    raise RuntimeError('ºó¶Ë·µ»Ø´íÎó')
+RuntimeError: ºó¶Ë·µ»Ø´íÎó
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 302, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 295, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 373, in choice_backend
+    if len(normal_backend) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+[93m[SeaArt][0m [93m[IMG][0m Í¼Æ¬url: https://image2.cdn.seaart.me/2024-08-28/cr7k5tle878c73fj1glg/769d9ed5de3885a77b46e068f38f480a02cb6ab3_high.webp
+[93m[SeaArt][0m [93m[IMG][0m Í¼Æ¬url: https://image2.cdn.seaart.me/2024-08-28/cr7kp15e878c738e33og/a33a2a34bce2ab41e54524c5fbfe1008a3e3d528_high.webp
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.vibrou.com/sd-images/569907708574c1da040ac2be1749f7e54665922758f38df9ea4359866cd8e67a.png
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 649, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 198, in posting
+    response = await self.http_request(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 583, in http_request
+    response = await client.request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1574, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 154, in _connect
+    stream = await stream.start_tls(**kwargs)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 80, in start_tls
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 71, in start_tls
+    ssl_stream = await anyio.streams.tls.TLSStream.wrap(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\anyio\streams\tls.py", line 132, in wrap
+    await wrapper._call_sslobject_method(ssl_object.do_handshake)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\anyio\streams\tls.py", line 140, in _call_sslobject_method
+    result = func(*args)
+  File "c:\python310\lib\ssl.py", line 975, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 649, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 198, in posting
+    response = await self.http_request(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 583, in http_request
+    response = await client.request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1574, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 154, in _connect
+    stream = await stream.start_tls(**kwargs)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 80, in start_tls
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 71, in start_tls
+    ssl_stream = await anyio.streams.tls.TLSStream.wrap(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\anyio\streams\tls.py", line 132, in wrap
+    await wrapper._call_sslobject_method(ssl_object.do_handshake)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\anyio\streams\tls.py", line 140, in _call_sslobject_method
+    result = func(*args)
+  File "c:\python310\lib\ssl.py", line 975, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 649, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 198, in posting
+    response = await self.http_request(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 583, in http_request
+    response = await client.request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1574, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 154, in _connect
+    stream = await stream.start_tls(**kwargs)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 80, in start_tls
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 71, in start_tls
+    ssl_stream = await anyio.streams.tls.TLSStream.wrap(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\anyio\streams\tls.py", line 132, in wrap
+    await wrapper._call_sslobject_method(ssl_object.do_handshake)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\anyio\streams\tls.py", line 140, in _call_sslobject_method
+    result = func(*args)
+  File "c:\python310\lib\ssl.py", line 975, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 650, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 211, in posting
+    if task['msg'] == 'Insufficient power':
+KeyError: 'msg'
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 650, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 211, in posting
+    if task['msg'] == 'Insufficient power':
+KeyError: 'msg'
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 650, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 211, in posting
+    if task['msg'] == 'Insufficient power':
+KeyError: 'msg'
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 650, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 215, in posting
+    task_id = task['data']
+KeyError: 'data'
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 650, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 215, in posting
+    task_id = task['data']
+KeyError: 'data'
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 650, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 215, in posting
+    task_id = task['data']
+KeyError: 'data'
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 650, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 216, in posting
+    await self.heart_beat(task_id)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 32, in heart_beat
+    response = await self.http_request(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 584, in http_request
+    response = await client.request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1574, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 154, in _connect
+    stream = await stream.start_tls(**kwargs)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 80, in start_tls
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 71, in start_tls
+    ssl_stream = await anyio.streams.tls.TLSStream.wrap(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\anyio\streams\tls.py", line 132, in wrap
+    await wrapper._call_sslobject_method(ssl_object.do_handshake)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\anyio\streams\tls.py", line 140, in _call_sslobject_method
+    result = func(*args)
+  File "c:\python310\lib\ssl.py", line 975, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 650, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 216, in posting
+    await self.heart_beat(task_id)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 32, in heart_beat
+    response = await self.http_request(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 584, in http_request
+    response = await client.request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1574, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 154, in _connect
+    stream = await stream.start_tls(**kwargs)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 80, in start_tls
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 71, in start_tls
+    ssl_stream = await anyio.streams.tls.TLSStream.wrap(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\anyio\streams\tls.py", line 132, in wrap
+    await wrapper._call_sslobject_method(ssl_object.do_handshake)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\anyio\streams\tls.py", line 140, in _call_sslobject_method
+    result = func(*args)
+  File "c:\python310\lib\ssl.py", line 975, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)
+
+[94m[LiblibAI][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 650, in send_result_to_api
+    await self.posting()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 216, in posting
+    await self.heart_beat(task_id)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\liblibai.py", line 32, in heart_beat
+    response = await self.http_request(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 584, in http_request
+    response = await client.request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1574, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 154, in _connect
+    stream = await stream.start_tls(**kwargs)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 80, in start_tls
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 71, in start_tls
+    ssl_stream = await anyio.streams.tls.TLSStream.wrap(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\anyio\streams\tls.py", line 132, in wrap
+    await wrapper._call_sslobject_method(ssl_object.do_handshake)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\anyio\streams\tls.py", line 140, in _call_sslobject_method
+    result = func(*args)
+  File "c:\python310\lib\ssl.py", line 975, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)
+
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.liblib.cloud/sd-images/e60ead7221b79a6ccc1cd9aa9d279becee75aa85aa382afbcfdfc35b39725cdd.png
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 359, in proxy
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 309, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 387, in choice_backend
+    if len(normal_backend) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.liblib.cloud/sd-images/c8fbed504d9e938cce47e3ca3c727939a7c6f0d4569c8bd883c3eaf4730ab1f3.png
+[94m[SD-A1111][0m [93m[WARNING][0m »ñÈ¡Ä£ÐÍÊ§°Ü£¬´íÎóÐÅÏ¢: Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 122, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\auto.py", line 30, in connect_tcp
+    return await self._backend.connect_tcp(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 114, in connect_tcp
+    with map_exceptions(exc_map):
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 896, in get_models
+    respond = await http_request(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\utils\__init__.py", line 15, in http_request
+    response = await client.request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1574, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 372, in handle_async_request
+    with map_httpcore_exceptions():
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+[94m[SD-A1111][0m [93m[WARNING][0m »ñÈ¡Ä£ÐÍÊ§°Ü£¬´íÎóÐÅÏ¢: Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 122, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\auto.py", line 30, in connect_tcp
+    return await self._backend.connect_tcp(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 114, in connect_tcp
+    with map_exceptions(exc_map):
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 896, in get_models
+    respond = await http_request(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\utils\__init__.py", line 15, in http_request
+    response = await client.request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1574, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 372, in handle_async_request
+    with map_httpcore_exceptions():
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+[94m[SD-A1111][0m [93m[WARNING][0m »ñÈ¡Ä£ÐÍÊ§°Ü£¬´íÎóÐÅÏ¢: Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 122, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\auto.py", line 30, in connect_tcp
+    return await self._backend.connect_tcp(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 114, in connect_tcp
+    with map_exceptions(exc_map):
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 896, in get_models
+    respond = await http_request(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\utils\__init__.py", line 15, in http_request
+    response = await client.request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1574, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 372, in handle_async_request
+    with map_httpcore_exceptions():
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+[94m[SD-A1111][0m [93m[WARNING][0m »ñÈ¡Ä£ÐÍÊ§°Ü£¬´íÎóÐÅÏ¢: Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 122, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\auto.py", line 30, in connect_tcp
+    return await self._backend.connect_tcp(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 114, in connect_tcp
+    with map_exceptions(exc_map):
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 896, in get_models
+    respond = await http_request(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\utils\__init__.py", line 15, in http_request
+    response = await client.request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1574, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 372, in handle_async_request
+    with map_httpcore_exceptions():
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+[94m[SD-A1111][0m [93m[WARNING][0m »ñÈ¡Ä£ÐÍÊ§°Ü£¬´íÎóÐÅÏ¢: Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 122, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\auto.py", line 30, in connect_tcp
+    return await self._backend.connect_tcp(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 114, in connect_tcp
+    with map_exceptions(exc_map):
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 896, in get_models
+    respond = await http_request(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\utils\__init__.py", line 15, in http_request
+    response = await client.request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1574, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 372, in handle_async_request
+    with map_httpcore_exceptions():
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+[94m[SD-A1111][0m [93m[WARNING][0m »ñÈ¡Ä£ÐÍÊ§°Ü£¬´íÎóÐÅÏ¢: Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 122, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\auto.py", line 30, in connect_tcp
+    return await self._backend.connect_tcp(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 114, in connect_tcp
+    with map_exceptions(exc_map):
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 896, in get_models
+    respond = await http_request(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\utils\__init__.py", line 15, in http_request
+    response = await client.request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1574, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 372, in handle_async_request
+    with map_httpcore_exceptions():
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+[94m[SD-A1111][0m [93m[WARNING][0m »ñÈ¡Ä£ÐÍÊ§°Ü£¬´íÎóÐÅÏ¢: Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 122, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\auto.py", line 30, in connect_tcp
+    return await self._backend.connect_tcp(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 114, in connect_tcp
+    with map_exceptions(exc_map):
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 896, in get_models
+    respond = await http_request(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\utils\__init__.py", line 15, in http_request
+    response = await client.request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1574, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 372, in handle_async_request
+    with map_httpcore_exceptions():
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+[94m[SD-A1111][0m [93m[WARNING][0m »ñÈ¡Ä£ÐÍÊ§°Ü£¬´íÎóÐÅÏ¢: Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 122, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\auto.py", line 30, in connect_tcp
+    return await self._backend.connect_tcp(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 114, in connect_tcp
+    with map_exceptions(exc_map):
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 896, in get_models
+    respond = await http_request(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\utils\__init__.py", line 15, in http_request
+    response = await client.request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1574, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 372, in handle_async_request
+    with map_httpcore_exceptions():
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+[94m[SD-A1111][0m [93m[WARNING][0m »ñÈ¡Ä£ÐÍÊ§°Ü£¬´íÎóÐÅÏ¢: Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 373, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_async\connection.py", line 122, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\auto.py", line 30, in connect_tcp
+    return await self._backend.connect_tcp(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_backends\anyio.py", line 114, in connect_tcp
+    with map_exceptions(exc_map):
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\base.py", line 896, in get_models
+    respond = await http_request(
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\utils\__init__.py", line 15, in http_request
+    response = await client.request(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1574, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1661, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1689, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1726, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_client.py", line 1763, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 372, in handle_async_request
+    with map_httpcore_exceptions():
+  File "c:\python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\43701\github\diao\sd_api\venv\lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+[94m[SD-A1111][0m [93m[WARNING][0m »ñÈ¡Ä£ÐÍÊ§°Ü
+[94m[SD-A1111][0m [93m[WARNING][0m »ñÈ¡Ä£ÐÍÊ§°Ü
+[94m[SD-A1111][0m [93m[WARNING][0m »ñÈ¡Ä£ÐÍÊ§°Ü
+[94m[SD-A1111][0m [93m[WARNING][0m »ñÈ¡Ä£ÐÍÊ§°Ü
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.liblib.cloud/sd-images/8db722936bb23bce66fa1b012551377f069183ddcb7006d8c13ad707b998a859.png
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 367, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 309, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 387, in choice_backend
+    if len(normal_backend) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 367, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 309, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 387, in choice_backend
+    if len(normal_backend) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 367, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 309, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 387, in choice_backend
+    if len(normal_backend) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 367, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 309, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 387, in choice_backend
+    if len(normal_backend) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 367, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 309, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 387, in choice_backend
+    if len(normal_backend) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 368, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 309, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 387, in choice_backend
+    if len(normal_backend) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 369, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 309, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 387, in choice_backend
+    if len(normal_backend) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 369, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 309, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 387, in choice_backend
+    if len(normal_backend) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 372, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 309, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 387, in choice_backend
+    if len(normal_backend) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 372, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 309, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 387, in choice_backend
+    if len(normal_backend) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+[94m[LOAD_BALANCE][0m [93m[WARNING][0m ºó¶Ëa1111-RTX2060µôÏß
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 372, in proxy
+    result = await task_handler.sd_api()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 309, in sd_api
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 387, in choice_backend
+    if len(normal_backend) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.liblib.cloud/sd-images/60a1b9cc40effb8417c5ec04c9ce248cc4077c3b377dd499e7f8a4fd8fe8efb8.png
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 143, in txt2img_api
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 306, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 349, in choice_backend
+    logger.info(f"Ëø¶¨ºó¶Ë{key[:24]}")
+TypeError: 'NoneType' object is not subscriptable
+
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 143, in txt2img_api
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 306, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 351, in choice_backend
+    logger.info(f"Ëø¶¨ºó¶Ë{key[:24]}")
+TypeError: 'NoneType' object is not subscriptable
+
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.liblib.cloud/sd-images/7bf8836e39b02dd15b539cdc769a26a3b0b4fae3dee107a16930611c561fa601.png
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.liblib.cloud/sd-images/29593e08960b890575b9f1401338e9182f371f5ff119766a3d66fb5810b1b503.png
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.liblib.cloud/sd-images/f228744cbb8d12c18dc3add4211ac93e089d7ba570050653f0ed34f2a6e2b9cf.png
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 143, in txt2img_api
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 307, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 353, in choice_backend
+    logger.info(f"Ëø¶¨ºó¶Ë{key[:24]}")
+TypeError: 'NoneType' object is not subscriptable
+
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 143, in txt2img_api
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 307, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 353, in choice_backend
+    logger.info(f"Ëø¶¨ºó¶Ë{key[:24]}")
+TypeError: 'NoneType' object is not subscriptable
+
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.liblib.cloud/sd-images/b4eaff53bca0ee19b9ba3845e9c3be8d68e4bf4f847747a0747fc1a5e1c1b0d1.png
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.liblib.cloud/sd-images/a42cd14e87d5d6f1ab2f5712448fe750ee10b61c6090d59e703bbd6e024ff2a3.png
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.liblib.cloud/sd-images/98eaf270a90783a9221b3dc6f8cf7da17cef858dee5a5bbcd58ab6067c7ade92.png?Token=03dffe197118462e899f6e0a4024c2bd
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.liblib.cloud/sd-images/ebfe4ac0e37182d4e6b9cb9c69a73ce161f637aedc63325c87614489c66d3cff.png
+[94m[API][0m [91m[ERROR][0m Traceback (most recent call last):
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\api_server.py", line 143, in txt2img_api
+    result = await task_handler.txt2img()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 308, in txt2img
+    await self.choice_backend()
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 364, in choice_backend
+    key = self.get_backend_name(self.model_to_backend)
+  File "C:\Users\43701\github\diao\sd_api\DrawBridgeAPI\backend\__init__.py", line 296, in get_backend_name
+    if model_name in model.get("title") or model_name in model.get("model_name"):
+TypeError: 'in <string>' requires string as left operand, not NoneType
+
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.liblib.cloud/sd-images/7d5e8d70d258a2d0cc88066a150b51224a01f04af2696e15f048fa921d2a8141.png
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.liblib.cloud/sd-images/7e33f810676d59532ac33c08f5cb76ffef56ec74e91925cb2584a4670f0e5c3b.png
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.liblib.cloud/sd-images/840421c02a146a9d85328ee2b9b9cf1b38a236117e8908e6bb0cda44d5115d5c.png
+[93m[LiblibAI][0m [93m[IMG][0m Í¼Æ¬url: https://liblibai-tmp-image.liblib.cloud/sd-images/09e3e8914b873d47904a819a4d96293a572960cfc7c1339d770c66f9d9f01618.png

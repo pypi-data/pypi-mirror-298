@@ -1,0 +1,188 @@
+civitai_setting: # {"token": []}
+  token:
+    - b0ab2e10591ae5bb107846f62a049f58
+  model:
+    ''
+  proxy:
+    - http://127.0.0.1:7890
+a1111webui_setting:
+  backend_url:
+    - http://192.168.1.104:789
+    - http://127.0.0.1:200224
+  name:
+    - RTX2060
+    - default2
+  auth:
+    - false
+    - false
+  username:
+    - admin
+    - admin
+  password:
+    - admin
+    - admin
+  max_resolution:
+    - null
+    - 1572864
+  flux:
+    - false
+    - false
+  xl:
+    - false
+    - false
+fal_ai_setting: # {"token": []}
+  token:
+    - 6e3c0665-f84a-4fb1-8f85-d1d00c99bb1d:072e22dfb0f88822d31a4a0d953b96d6
+  model:
+    ''
+replicate_setting: # {"token": []}
+  token:
+    - r8_bBAjALaOpmlc0hUCEJHW45V0Xk5fVop0Bfi9b
+  model:
+    ''
+liblibai_setting:
+# https://www.liblib.art/ # 按下F12 -> 应用 -> cookies -> https://www.liblib.art -> usertoken 的值 d812c12d83c640.....
+  token:  #
+    - f45123447d43451fb3469b481e4c5a33 # 大号
+    - 4de16d49bf7c44c08ff3cca5fdedbff3 # 2580120068
+    - 66c70f855fd64a5d9f6f7ab7ad5ff6cd # 微信
+    - d6af3d44509e4a7ba6c5de109aa13c98  # 联通
+# 模型id获取方法 https://www.liblib.art/sd 先选择喜欢的模型 先按下F12 再 生图
+# 回到开发者控制台,网络选项 -> 找到名为 image 的请求,点击 负载 ， 请求负载 找到 checkpointId
+  model:  # 模型id
+    - 2332049
+    - 2676318
+    - 2676318  # pony
+    - 2675606
+  model_name:  # 模型名字，仅用作标记
+    - "liblib.art/modelinfo/d2f55cf374a7431cac13382182aed20c"
+    - "liblib.art/modelinfo/5ecc3218f1ef483ab63eeb4e4cff30cc"
+    - "liblib.art/modelinfo/5ecc3218f1ef483ab63eeb4e4cff30cc"
+    - "liblib.art/modelinfo/fe3aac47589d4a20b24d0a6b045d607e"
+  xl:  # 是否为XL模型
+    - false
+    - true
+    - true
+    - false
+  flux:  # 是否为FLUX模型
+    - false
+    - false
+    - false
+    - false
+  preference:
+    - pretags:  # 内置prompt
+        1.5:  #  1.5模式下的预设词条，上面为正面，下面为负面
+          - ''  # prompt
+          - 'easynegative'  # negative prompt
+        xl:  # xl 同上
+          - ""
+          - ""
+        flux:
+          - ''
+          - ''
+      steps: 20  # 步数
+    - pretags:
+        1.5:
+          - ''
+          - ''
+        xl:
+          - "score_9,score_8_up,score_7_up,score_anime,"
+          - "score_3,poorly drawn,bad anatomy,bad proportions, watercolor painting, brush strokes,3d,2.5d,signature,watermark,bad face,distorted face,messed up eyes,deformed,(low quality, bad quality, worst quality:1.2),bad hand"
+        flux:
+          - ''
+          - ''
+      steps: 20
+    - pretags:
+        1.5:
+          - ''
+          - ''
+        xl:
+          - "score_9,score_8_up,score_7_up,score_anime,"
+          - "score_3,poorly drawn,bad anatomy,bad proportions, watercolor painting, brush strokes,3d,2.5d,signature,watermark,bad face,distorted face,messed up eyes,deformed,(low quality, bad quality, worst quality:1.2),bad hand"
+        flux:
+          - ''
+          - ''
+      steps: 20
+    - pretags:
+        1.5:
+          - ''
+          - 'easynegative'
+        xl:
+          - ""
+          - ""
+        flux:
+          - ''
+          - ''
+      steps: 20
+tusiart_setting:
+  token:
+    - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjc1OTc3OTk4MDk3MTM4MDI4NywiZGV2aWNlSWQiOiI0MjcyODQiLCJyZWZyZXNoVG9rZW4iOiJOV1UzTWpNME9EUXpPVE15T0RReFlYaW9JU1J3NnNRZS9EN1pXRnVqNlh6Wi9IU1U1R0gwdkd4SFVUMDRkYngxRVY5Y1V3PT0iLCJleHBpcmVUaW1lIjoyNTkyMDAwLCJleHAiOjE3MjU3NjQwNjJ9.UsgqY4BrLfiNC3vSlbq5UwG0t3QgKoSNqPEGcb3Yijs
+  model:
+    - 758751795863586176
+  note:
+    - 移动
+  referer:
+    - https://tusiart.com/u/759779980971380287
+    -
+seaart_setting:
+  token:
+    - eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzZWEtYXJ0IiwiYXVkIjpbImxvZ2luIl0sImV4cCI6MTcyODM4MDY4MywiaWF0IjoxNzIzMTk2NjgzLCJqdGkiOiI0NzAyNDg0NTU5ODIzMjU4MSIsInBheWxvYWQiOnsiaWQiOiJlNmJiZWViNDg5Mjg4MGZkYTVkZTA4NzExNDg4NTY4NiIsImVtYWlsIjoiIiwiY3JlYXRlX2F0IjoxNzIzMTk2Njc0NDAwLCJ0b2tlbl9zdGF0dXMiOjAsInN0YXR1cyI6MX19.J_ZMSO2DHrTuFxTnCHF7ICdgQFP-BiiX7Ozkzlk-r7qxa9F47a3p4E7NZkLx_avu3UayiCSv57_I5TqlS1YFQr13cGw8768O5blkcfbtlyrjVaCscKZorVqr4LK1BaBQvKrlVBpozSGOXPRB-Af5mnDHf3_VM34UcWYNTmB2HKkNfF0W8lgBfa3WSsWOK-fOA5zc4LuF31zxq8YavM04JWSiLEqNadEq-eaCX41npcS2MKSEkjX78WPewJ2dotzEBA0VBvWRYlwjhbVce6JKqL4UILcy8xif4SA6UvQmrPyqUuwuHa7mGEEO3PpYq0IoXrhyoQs1NxdQUM2haDgnkg
+  model:
+    -
+yunjie_setting:
+  token:
+    - "rsat:TvmxZO0L10rIt9Ec1XZGCc1N0E6"
+  model:
+    -
+  note:
+      - 移动
+
+comfyui_setting:
+  backend_url:
+    - http://10.147.20.155:8188
+  name:
+    - default
+
+server_settings:
+  enable_txt2img_backends: [5, 6 ,7,8]
+  enable_img2img_backends: [1]
+  enable_sdapi_backends: [1]
+  redis_server:
+    - 127.0.0.1
+    - 6379
+    - null
+  enable_nsfw_check:
+    false
+  save_image:
+    true
+  build_in_tagger:
+    false
+  llm_caption:
+    enable:
+      false
+    clip:
+      google/siglip-so400m-patch14-384
+    llm:
+      unsloth/Meta-Llama-3.1-8B-bnb-4bit
+    image_adapter:  # https://huggingface.co/spaces/fancyfeast/joy-caption-pre-alpha/tree/main/wpkklhc6
+      image_adapter.pt
+  build_in_photoai:
+    exec_path:
+      "C:\\Program Files\\Topaz Labs LLC\\Topaz Photo AI\\tpai.exe"
+
+  start_gradio:
+    False
+  same_port_with_api:
+    False
+
+backend_name_list:
+  - civitai
+  - a1111
+  - falai
+  - replicate
+  - liblibai
+  - tusiart
+  - seaart
+  - yunjie
+  - comfyui
+
