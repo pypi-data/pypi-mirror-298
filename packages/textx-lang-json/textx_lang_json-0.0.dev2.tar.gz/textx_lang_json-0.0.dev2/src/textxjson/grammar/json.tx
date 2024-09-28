@@ -1,0 +1,75 @@
+/*  Javascript Object Notation (JSON)
+    https://www.rfc-editor.org/rfc/rfc8259
+    TextX version by Jean-François Baget (Boreal, Inria, 2024)
+*/
+
+JsonText:
+    value = JsonValue
+;
+
+JsonValue:
+    JsonObject | JsonArray | JsonLiteral | JsonNumber | JsonString
+;
+
+JsonObject:
+    "{"
+        value *= __Member [","]
+    "}"
+;
+
+__Member:
+    name = JsonString
+    ":"
+    value = JsonValue
+;
+
+JsonArray:
+    "["
+        value *= JsonValue [","]
+    "]"
+;
+
+JsonLiteral:
+    value = "true" | value = "false" | value = "null"
+;
+
+
+JsonNumber:
+    /*
+        number = [ minus ] int [ frac ] [ exp ]
+        decimal-point = %x2E       ; .
+        digit1-9 = %x31-39         ; 1-9
+        e = %x65 / %x45            ; e E
+        exp = e [ minus / plus ] 1*DIGIT
+        frac = decimal-point 1*DIGIT
+        int = zero / ( digit1-9 *DIGIT )
+        minus = %x2D               ; -
+        plus = %x2B                ; +
+        zero = %x30                ; 0
+    */
+    value = /-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][-\+]?[0-9]+)?/
+;
+
+JsonString:
+    /*
+        string = quotation-mark *char quotation-mark
+        char =  unescaped /
+                escape (
+                    %x22 /          ; "    quotation mark  U+0022
+                    %x5C /          ; \    reverse solidus U+005C
+                    %x2F /          ; /    solidus         U+002F
+                    %x62 /          ; b    backspace       U+0008
+                    %x66 /          ; f    form feed       U+000C
+                    %x6E /          ; n    line feed       U+000A
+                    %x72 /          ; r    carriage return U+000D
+                    %x74 /          ; t    tab             U+0009
+                    %x75 4HEXDIG )  ; uXXXX                U+XXXX
+        escape = %x5C              ; \
+        quotation-mark = %x22      ; "
+        unescaped = %x20-21 / %x23-5B / %x5D-10FFFF
+
+        NOTE: HEXDIG not defined in https://www.rfc-editor.org/rfc/rfc8259
+        I assumed [0-9A-F] (only uppercase).
+    */
+    value = /"([\u0020\u0021\u0023-\u005B\u005D-\uFFFF\U00010000-\U0010FFFF]|\\["\\/bfnrt]|\\u[0-9A-F]{4})*"/
+;

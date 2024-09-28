@@ -1,0 +1,2 @@
+[textx_languages]
+json = textxjson:textxjson_lang
