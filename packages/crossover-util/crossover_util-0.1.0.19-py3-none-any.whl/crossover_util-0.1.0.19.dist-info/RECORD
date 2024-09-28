@@ -1,0 +1,17 @@
+crossover_util/__init__.py,sha256=GVSjHhw4L6OQUN1bTeaLkkSlvrh4aETRrq4sePg0Lt0,64
+crossover_util/cli.py,sha256=Fks83HBMbAQ3MIIZJrvNsFR-TMAuWEb60rMSRy-nPGo,941
+crossover_util/config.py,sha256=v0G9D-Z2gl4DvjP6u-vwO_XywXUZZkSH3WBrrJPjVc4,2436
+crossover_util/plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crossover_util/plugin/context.py,sha256=e_vnWVozAMMzyci6WNu-ojUm5Bc2PWdQu00lPpmaAHY,416
+crossover_util/plugin/deps.py,sha256=YvuwowAlN4OPzG084VsnA3H-t8zwLl6Vq7MA3bGIaE0,2997
+crossover_util/plugin/dxvk.py,sha256=B0Rs9LSgKueIK-Ay4zYiHX5AqHRmkGanwFc2tHxIn5M,1007
+crossover_util/plugin/fastmath.py,sha256=Frll6iVda_j9hwzcGKwP0gZN5fEf8umAkd83VGAzK1E,978
+crossover_util/plugin/linux.py,sha256=r-qyj6bEdJ4q6_4dqp2DIJqWeD6_G6J0nLkDrJJdeBk,244
+crossover_util/plugin/mac.py,sha256=sZ9xsiTe49d0WeqC8tCmR-JvAN4SpWtBPCiFeqjmoPs,8091
+crossover_util/plugin/plugin.py,sha256=njWJN-ewbiWJxUZLnFvGKYfByfo1MKCqn072c95hdW0,4794
+crossover_util/plugin/ue4.py,sha256=FjMYSkr5XDeYZyS9_rIIM0E7GPg5s-t9lyzEkxggN7Y,934
+crossover_util-0.1.0.19.dist-info/LICENSE,sha256=sQ6XRJyaUx7kqNRrSskrcmGxk0j0IK57TfvgJcyPy-E,1073
+crossover_util-0.1.0.19.dist-info/METADATA,sha256=WpX_CEX9DW7x5f6QDP6x3tVTor704zff2W3vO70lhJk,2263
+crossover_util-0.1.0.19.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+crossover_util-0.1.0.19.dist-info/entry_points.txt,sha256=et8hBJVnIAaRkFLkIhfT_ysxm1AhVQeidW-ykkQL_AQ,58
+crossover_util-0.1.0.19.dist-info/RECORD,,
