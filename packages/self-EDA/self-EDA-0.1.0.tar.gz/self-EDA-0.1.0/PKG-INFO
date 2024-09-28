@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: self-EDA
+Version: 0.1.0
+Summary: EasyData now includes advanced exploratory data analysis (EDA) tools that provide key insights and visualizations from your data.
+Author: Jaimin Patel
+Author-email: pateljaimin1707@gmail.com
+Requires-Python: >=3.6

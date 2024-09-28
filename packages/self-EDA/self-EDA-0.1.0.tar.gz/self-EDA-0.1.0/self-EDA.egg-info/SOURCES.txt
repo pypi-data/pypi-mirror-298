@@ -1,0 +1,10 @@
+setup.py
+self-EDA/__init__.py
+self-EDA/data_analysis.py
+self-EDA/exploratory_data_analysis.py
+self-EDA.egg-info/PKG-INFO
+self-EDA.egg-info/SOURCES.txt
+self-EDA.egg-info/dependency_links.txt
+self-EDA.egg-info/top_level.txt
+test/test_EDA.py
+test/test_data_analysis.py
