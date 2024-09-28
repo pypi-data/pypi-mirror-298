@@ -1,0 +1,2 @@
+recursive-include zoey/templates *
+graft zoey/templates
