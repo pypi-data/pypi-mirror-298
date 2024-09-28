@@ -1,0 +1,2 @@
+[console_scripts]
+pal_app = pal_app.pal_app:main

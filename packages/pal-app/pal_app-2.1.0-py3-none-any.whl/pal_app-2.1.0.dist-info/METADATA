@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pal_app
+Version: 2.1.0
+Summary: A tool to create application controllers skeletons for interactive robots
+Author: Séverin Lemaignan
+Author-email: severin.lemaignan@pal-robotics.com
+License: Apache License 2.0
+License-File: LICENSE
+Requires-Dist: setuptools
+
