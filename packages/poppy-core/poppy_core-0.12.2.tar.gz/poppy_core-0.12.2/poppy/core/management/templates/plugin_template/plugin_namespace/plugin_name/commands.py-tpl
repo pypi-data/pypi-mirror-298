@@ -1,0 +1,50 @@
+# from poppy.core.command import Command
+# from poppy.pop import Pop
+# from .tasks import MyTask1, MyTask2, MyTask3
+#
+# __all__ = ['{{ camel_case_plugin_name }}DoSomeStuffCommand']
+#
+# class {{ camel_case_plugin_name }}DoSomeStuffCommand(Command):
+#     """
+#     My job command description
+#     """
+#     __command__ = "{{ plugin_name }}_do_some_stuff"
+#     __command_name__ = "do_some_stuff"
+#     __parent__ = "{{ plugin_name }}"
+#     __parent_arguments__ = ["base"]
+#     __help__ = """
+#         Command to do some stuff
+#     """
+#
+#     def add_arguments(self, parser):
+#         # my arg1
+#         parser.add_argument(
+#             '--my_arg1',
+#             help="""
+#             Arg1 help
+#             """,
+#         )
+#
+#         # my arg2
+#         parser.add_argument(
+#             '-m2', '--my_arg2',
+#             help="""
+#             Arg2 help
+#             """,
+#         )
+#
+#     def setup_tasks(self, pipeline):
+#
+#         # instantiate tasks
+#         my_task1 = MyTask1()
+#         my_task3 = MyTask3()
+#
+#         # setup the pipeline topology
+#         pipeline | (
+#             my_task1 | MyTask2() | my_task3
+#         )
+#
+#         # define the start points of the pipeline
+#         pipeline.start = my_task1
+#         pipeline.end = my_task3
+#
