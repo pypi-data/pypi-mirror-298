@@ -1,0 +1,113 @@
+<LoadDialog>:
+    BoxLayout:
+        size: root.size
+        pos: root.pos
+        orientation: "vertical"
+        FileChooserIconView:
+            id: filechooser
+			path: root.last_path
+            font_name: app.theme.font.name
+			multiselect: root.multiselect
+			dirselect: root.dirselect
+			filters: root.filters
+            sort_func: root.sort_dirs
+            on_entries_cleared: root.on_entry_added(filechooser) or load_button.set_disabled(not filechooser.selection)
+            on_selection: load_button.set_disabled(not [x for x in filechooser.selection if not x.startswith('..')])
+        BoxLayout:
+            size_hint_y: None
+            height: self.minimum_height
+			spacing: app.theme.spacing
+			padding_y: app.theme.pad()
+            LargeButton:
+                text: "CANCEL"
+                on_release: root.on_cancel()
+            LargeSuccessButton:
+                id: load_button
+                text: "LOAD"
+                on_release: root.on_load(filechooser.selection) or root.on_cancel()
+
+            
+<SaveDialog>:
+    text_input: text_input
+    save_button: save_button
+    BoxLayout:
+        size: root.size
+        pos: root.pos
+        orientation: "vertical"
+        spacing: app.theme.spacing
+        FileChooserIconView:
+            id: filechooser
+			path: root.last_path
+            font_name: app.theme.font.name
+            on_entries_cleared: root.on_entry_added(filechooser)
+            on_selection: text_input.text = self.selection and self.selection[0] or ''
+        TextInput:
+            id: text_input
+            size_hint_y: None
+            font_size: app.theme.font.size('ml')
+            height: self.minimum_height
+            hint_text: 'e.g. my audio mosaic.wav'
+            multiline: False
+        BoxLayout:
+            size_hint_y: None
+            height: self.minimum_height
+			spacing: app.theme.spacing
+			padding_y: app.theme.pad()
+            LargeButton:
+                text: "CANCEL"
+                disabled: False
+                on_release: root.on_cancel()
+            LargeSuccessButton:
+                id: save_button
+                text: "SAVE"
+                on_release: root.on_save(filechooser.path, text_input.text) or root.on_cancel()
+
+<SummaryLabel@LeftTextLabel>:
+    color: app.theme.colors.txt2
+    valign: 'top'
+    text_size: self.width, None
+    size_hint_y: None
+    height: self.texture_size[1]
+
+<SummaryField>:
+    size_hint_y: None
+    height: self.minimum_height
+    spacing: app.theme.spacing
+    padding: app.theme.pad()
+    SummaryLabel:
+        size_hint_x: 0.5
+        size_hint_y: 1
+        text: root.key
+        bold: True
+    SummaryLabel:
+        text: root.value
+        color: app.theme.colors.txt_hl
+    
+<Summary>:
+    body: body
+    BoxLayout:
+        orientation: 'vertical'
+        pos: root.pos
+        size: root.size
+        ScrollView:
+            GridLayout:
+                id: body
+                cols: 1
+                size_hint_y: None
+                height: self.minimum_height
+                spacing: app.theme.spacing
+                padding: [app.theme.pad(), app.theme.pad(4), app.theme.pad(), app.theme.pad(4)]
+        BoxLayout:
+            size_hint_y: None
+            height: self.minimum_height
+            spacing: app.theme.spacing
+            padding: app.theme.pad()
+            Label:
+            LargeButton:
+                text: "CLOSE"
+                disabled: False
+                on_release: root.on_cancel()
+            Label:
+
+
+        
