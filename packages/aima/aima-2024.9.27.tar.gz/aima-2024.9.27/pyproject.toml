@@ -1,0 +1,122 @@
+[tool.poetry]
+name = "aima"
+version = "2024.9.27"
+description = "Artificial Intelligence a Modern Approach 4th Ed by Peter Norvig and Stuart Russel"
+authors = [
+    'Peter Norvig (norvig) <peter.norvig@gmail.com>',
+    'Darius Bacon (darius) <withal@gmail.com>',
+    'Spotted Metal <spottedMetal@gmail.com>',
+    'S R Burnet <srburnet@gmail.com>',
+    'Phil Ruggera',
+    # 'Peng Shao',
+    # 'Amit Patil',
+    # 'Ted Nienstedt',
+    # 'Jim Martin',
+    # 'Ben Catanzariti',
+    "antmarakis <antmarakis@user.github.com>",
+    "roberthoenig <roberthoenig@user.github.com>",
+    "dshahid380 <dshahid380@user.github.com>",
+    "tmrts <tmrts@user.github.com>",
+    "chashiv <chashiv@user.github.com>", 
+    "Hobson Lane <hobson@tangibleai.com>",
+    ]
+license = "AGPL3"
+readme = "README.md"
+homepage = "https://gitlab.com/tangibleai/community/aima"
+repository = "https://gitlab.com/tangibleai/community/aima"
+documentation = "https://gitlab.com/tangibleai/community/aima"
+
+# include = [
+#    "src/aima/data/datasets.yml",
+#    "src/aima/data/constants/nltk_stopwords_english.json",
+#    "src/aima/data/*",
+#    "src/aima/data/constants/*",
+#  ]
+
+# https://python-poetry.org/docs/pyproject/#keywords
+keywords = [
+    'AI', "Artificial Intelligence",
+    'Artificial Intelligence a Modern Approach',
+    'NLP', 'Natural Language Processing',
+    'Virtual Assistant',
+    'chatbot',
+    'agent', 
+    'Text Processing',
+    'Machine Learning',
+    'Graph Search',
+    'Search',
+    'AGI',
+    'AIMA',
+    ]
+
+# https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Linguistic",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+[tool.poetry.build]
+generate-setup-file = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+# https://python-poetry.org/docs/pyproject/#scripts
+"aima" = "aima.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.7,<3.11"
+# scikit-learn = "^0"
+cvxopt = "*"
+image = "*"
+ipython = "*"
+ipythonblocks = "*"  # includes jupyter
+ipywidgets = "*"
+keras = "*"
+matplotlib = "*"
+networkx = "*"
+numpy = "*"
+opencv-python = "*"
+pandas = "*"
+pillow = "*"
+pytest-cov = "*"
+qpsolvers = "*"
+scipy = "*"
+sortedcontainers = "*"
+tensorflow = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2"
+pytest-cov = "^3.0"
+
+[tool.black]
+# https://github.com/psf/black
+line-length = 80
+target-version = ["py37"]
+
+[tool.isort]
+# https://github.com/timothycrosley/isort/
+py_version = 37
+profile = "black"
+force_single_line = true
+combine_as_imports = true
+lines_between_types = 1
+lines_after_imports = 2
+src_paths = ["src", "tests"]
+extend_skip = ["setup.py"]
+known_typing = "typing,types,typing_extensions,mypy,mypy_extensions"
+sections = "FUTURE,TYPING,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+include_trailing_comma = true
+line_length = 80
+indent = 4
+use_parentheses = true
