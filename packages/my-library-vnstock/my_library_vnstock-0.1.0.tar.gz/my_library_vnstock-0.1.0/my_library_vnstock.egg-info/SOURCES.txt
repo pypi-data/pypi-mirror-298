@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+my_library_vnstock/__init__.py
+my_library_vnstock/my_module.c
+my_library_vnstock.egg-info/PKG-INFO
+my_library_vnstock.egg-info/SOURCES.txt
+my_library_vnstock.egg-info/dependency_links.txt
+my_library_vnstock.egg-info/top_level.txt
