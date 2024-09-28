@@ -1,0 +1,9 @@
+limetrend/__init__.py,sha256=oKsCpoiQSSXx57DGs2VfYzeO1ukJQxdGnV-2hC3BI0M,42
+limetrend/aws_client.py,sha256=J2OHMAmiGHGt8cNFrW7Kg1YeyAY26PV6CVftfa7YxmA,1375
+limetrend/cli.py,sha256=vBqA8gMIL6q1AOfRyu0Yh7ZC7YtnQfEx5fjQj_dxZDc,1027
+limetrend/dynamodb.py,sha256=34_KE-HqaAXxYJMJekISD5Y2SZ-ZZIODTmwWhUHaSpE,1047
+limetrend/report.py,sha256=O01a3wjDw7a4YhWpxb2hXvJBkD4a4KnTCgekh1X2unI,4264
+limetrend-0.1.1.dist-info/METADATA,sha256=nhbm9S-42iTXSAZ_pSzn3x2N3pKrMHOpvV7bq9E-Bd4,152
+limetrend-0.1.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+limetrend-0.1.1.dist-info/entry_points.txt,sha256=WYB_WYQYWu4foQaMgXDxqF_kX-dt7KknckMp2NpS2v0,49
+limetrend-0.1.1.dist-info/RECORD,,
