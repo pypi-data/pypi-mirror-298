@@ -1,0 +1,15 @@
+README.rst
+pyproject.toml
+src/pywisdom/__init__.py
+src/pywisdom/abheader.py
+src/pywisdom/ablocus.py
+src/pywisdom/abmatrix.py
+src/pywisdom/absample.py
+src/pywisdom.egg-info/PKG-INFO
+src/pywisdom.egg-info/SOURCES.txt
+src/pywisdom.egg-info/dependency_links.txt
+src/pywisdom.egg-info/requires.txt
+src/pywisdom.egg-info/top_level.txt
+tests/test_ab2parq.py
+tests/test_methods.py
+tests/test_parquet.py
