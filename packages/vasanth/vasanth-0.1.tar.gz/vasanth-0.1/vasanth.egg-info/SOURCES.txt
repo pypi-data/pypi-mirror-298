@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Algorithms/LinearRegression.py
+Algorithms/LogisticRegression.py
+Algorithms/SVM.py
+Algorithms/__init__.py
+vasanth.egg-info/PKG-INFO
+vasanth.egg-info/SOURCES.txt
+vasanth.egg-info/dependency_links.txt
+vasanth.egg-info/top_level.txt
