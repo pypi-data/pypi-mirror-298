@@ -1,0 +1,5 @@
+setup.py
+dudespackag.egg-info/PKG-INFO
+dudespackag.egg-info/SOURCES.txt
+dudespackag.egg-info/dependency_links.txt
+dudespackag.egg-info/top_level.txt
