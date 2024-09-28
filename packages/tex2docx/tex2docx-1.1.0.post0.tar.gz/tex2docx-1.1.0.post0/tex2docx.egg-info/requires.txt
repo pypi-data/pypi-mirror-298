@@ -1,0 +1,7 @@
+regex
+tqdm
+
+[dev]
+ruff
+mypy
+pytest
