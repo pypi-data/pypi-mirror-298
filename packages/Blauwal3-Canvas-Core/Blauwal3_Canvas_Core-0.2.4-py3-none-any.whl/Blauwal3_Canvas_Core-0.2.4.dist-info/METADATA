@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: Blauwal3-Canvas-Core
+Version: 0.2.4
+Summary: 蓝鲸核心
+Home-page: https://bo.dashenglab.com/
+Author: 大圣实验楼
+Author-email: dashenglab@163.com
+License: GPLv3
+Project-URL: Bug Reports, https://github.com/biolab/orange-canvas-core/issues
+Project-URL: Source, https://github.com/biolab/orange-canvas-core/
+Project-URL: Documentation, https://orange-canvas-core.readthedocs.io/en/latest/
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: AnyQt>=0.2.0
+Requires-Dist: docutils
+Requires-Dist: commonmark>=0.8.1
+Requires-Dist: requests
+Requires-Dist: requests-cache
+Requires-Dist: pip>=18.0
+Requires-Dist: dictdiffer
+Requires-Dist: qasync>=0.10.0
+Requires-Dist: typing-extensions
+Requires-Dist: packaging
+Requires-Dist: numpy
+Requires-Dist: python-i18n
+Requires-Dist: importlib-metadata>=4.6; python_version < "3.10"
+Requires-Dist: importlib-resources; python_version < "3.9"
+Provides-Extra: docbuild
+Requires-Dist: sphinx; extra == "docbuild"
+Requires-Dist: sphinx-rtd-theme; extra == "docbuild"
+
+Orange Canvas Core
+==================
+
+Blauwal3-Canvas-Core是一个用于构建图形用户界面的框架，用于编辑工作流。它是用于构建蓝鲸画布数据挖掘应用程序的组件。
