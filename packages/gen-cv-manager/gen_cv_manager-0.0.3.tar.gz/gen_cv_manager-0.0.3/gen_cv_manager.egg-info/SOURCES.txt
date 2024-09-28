@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+gen_cv_manager.egg-info/METADATA
+gen_cv_manager.egg-info/PKG-INFO
+gen_cv_manager.egg-info/SOURCES.txt
+gen_cv_manager.egg-info/dependency_links.txt
+gen_cv_manager.egg-info/require.txt
+gen_cv_manager.egg-info/top_level.txt
+resumeGenerator/__init__.py
+sample_MetaData/__init__.py
