@@ -1,0 +1,5 @@
+include LICENSE.txt
+include README.md
+recursive-include ipservice *
+recursive-include macservice *
+recursive-include common *
