@@ -1,0 +1,82 @@
+---
+  - name: Check if /tmp/.boraq exists
+    stat:
+      path: /tmp/.boraq
+    register: tmp_boraq
+
+  - name: Check if boraq_repo_path exists
+    stat:
+      path: '{{ boraq_repo_path }}'
+    register: boraq_repo_register
+
+  - name: move /tmp/.boraq if it exists
+    command: 'cp -R /tmp/.boraq {{ boraq_repo_path }}'
+    when: tmp_boraq.stat.exists and not boraq_repo_register.stat.exists
+
+  - name: install boraq
+    pip:
+      name: '{{ boraq_repo_path }}'
+      extra_args: '-e'
+    become: yes
+    become_user: root
+
+  - name: Overwrite boraq if required
+    file:
+      state: absent
+      path: "{{ boraq_path }}"
+    when: overwrite
+
+  - name: Check whether boraq exists
+    stat:
+      path: "{{ boraq_path }}"
+    register: boraq_stat
+
+  - name: Fix permissions
+    become_user: root
+    command: chown {{ clairview_user }} -R {{ user_directory }}
+
+  - name:  python3 boraq init for develop
+    command: boraq init {{ boraq_path }} --clairview-path {{ clairview_repo_url }} --clairview-branch {{ clairview_branch }} --python {{ python }}
+    args:
+      creates: "{{ boraq_path }}"
+    when: not boraq_stat.stat.exists and not production
+
+  - name: python3 boraq init for production
+    command: boraq init {{ boraq_path }} --clairview-path {{ clairview_repo_url }} --clairview-branch {{ clairview_branch }} --python {{ python }}
+    args:
+      creates: "{{ boraq_path }}"
+    when: not boraq_stat.stat.exists and production
+
+  # setup common_site_config
+  - name: setup config
+    command: boraq setup config
+    args:
+      creates: "{{ boraq_path }}/sites/common_site_config.json"
+      chdir: "{{ boraq_path }}"
+
+  - include_tasks: setup_inputrc.yml
+
+  # Setup Procfile
+  - name: Setup Procfile
+    command: boraq setup procfile
+    args:
+      creates: "{{ boraq_path }}/Procfile"
+      chdir: "{{ boraq_path }}"
+
+  # Setup Redis env for RQ
+  - name: Setup Redis
+    command: boraq setup redis
+    args:
+      creates: "{{ boraq_path }}/config/redis_socketio.conf"
+      chdir: "{{ boraq_path }}"
+
+  # Setup an CLAIRerp site
+  - include_tasks: setup_clairerp.yml
+    when: not run_travis
+
+  # Setup Boraq for production environment
+  - include_tasks: setup_boraq_production.yml
+    vars:
+      boraq_path: "{{ user_directory }}/{{ boraq_name }}"
+    when: not run_travis and production
+...

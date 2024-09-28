@@ -1,0 +1,13 @@
+[Unit]
+After={{ boraq_name }}-clairview-web.service
+Description="{{ boraq_name }}-node-socketio"
+PartOf={{ boraq_name }}-web.target
+
+[Service]
+User={{ user }}
+Group={{ user }}
+Restart=always
+ExecStart={{ node }} {{ boraq_dir }}/apps/clairview/socketio.js
+StandardOutput=file:{{ boraq_dir }}/logs/node-socketio.log
+StandardError=file:{{ boraq_dir }}/logs/node-socketio.error.log
+WorkingDirectory={{ boraq_dir }}
