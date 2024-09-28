@@ -1,0 +1,1 @@
+Upgrade dkist-processing-core to 4.2.0 which includes the upgrade of airflow to 2.10.2.
