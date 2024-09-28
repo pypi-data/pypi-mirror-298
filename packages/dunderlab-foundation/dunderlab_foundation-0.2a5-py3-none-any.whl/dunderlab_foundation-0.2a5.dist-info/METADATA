@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: dunderlab-foundation
+Version: 0.2a5
+Author-email: Yeison Cardona <yencardonaal@unal.edu.co>
+Maintainer-email: Yeison Cardona <yencardonaal@unal.edu.co>
+License: BSD-2-Clause
+Project-URL: Repository, https://github.com/dunderlab/python-dunerlab.foundation
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: docker
+Requires-Dist: radiant-framework
+Requires-Dist: colorama
+Requires-Dist: chaski-confluent
+Requires-Dist: netifaces
+Requires-Dist: psutil
+
+# Foundation
+
+Documentation will be here...
+
+
+[python-dunerlab.foundation](https://github.com/dunderlab/python-dunerlab.foundation)
