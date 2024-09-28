@@ -1,0 +1,12 @@
+zoey/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zoey/cli.py,sha256=xUfT07Y0VSpMJWt9YFDu-HwBqUsg8wga82_Ve6kpSHA,515
+zoey/scopes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zoey/scopes/generators.py,sha256=9LMAo13HOK4IzS3b7qBYa4An4APOlQ9vBWEmJaIYHTM,10355
+zoey/scopes/groups.py,sha256=y0R9-RjxC0okltTcOcgoMRFd2PCMMI4IZF9Y4Oj9vi8,905
+zoey/scopes/pages.py,sha256=WMN0qpiI-L4StwNmJMAdJxawfDk40XHahPI2qfaCfs4,1075
+zoey/scopes/sites.py,sha256=P5bCJCAJ8jy8BBIxdCoy5mHAHTPVGO4ANcOgiGYEFDQ,457
+zoey-0.1.0.dist-info/METADATA,sha256=Z56qZKO9AuXzvDFW0W3E5g4qx4vbVFdglOl9WZhzasU,3615
+zoey-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+zoey-0.1.0.dist-info/entry_points.txt,sha256=ifqBO9kSOQ_hzOQqVSVNVdY__ndi0ECeybFchvqYUeU,39
+zoey-0.1.0.dist-info/top_level.txt,sha256=fYQhJBFUzjtIfxekOd-4vqYioRQHlN9JS8nIIXjNqII,5
+zoey-0.1.0.dist-info/RECORD,,
