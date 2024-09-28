@@ -1,0 +1,21 @@
+name: romstools
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python>=3.10
+  # testing
+  - zarr
+  - pytest
+  - pytest-xdist
+  - flake8
+  - black
+  - pre-commit
+  - coverage
+  # docs
+  - sphinx
+  - nbsphinx
+  - sphinx-book-theme
+  - sphinxcontrib-bibtex
+  # for running jupyter notebooks
+  - ipykernel
