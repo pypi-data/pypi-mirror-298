@@ -1,0 +1,12 @@
+README.md
+setup.py
+django_static_converter/__init__.py
+django_static_converter/converter.py
+django_static_converter.egg-info/PKG-INFO
+django_static_converter.egg-info/SOURCES.txt
+django_static_converter.egg-info/dependency_links.txt
+django_static_converter.egg-info/requires.txt
+django_static_converter.egg-info/top_level.txt
+django_static_converter/management/__init__.py
+django_static_converter/management/commands/__init__.py
+django_static_converter/management/commands/convert-static.py
