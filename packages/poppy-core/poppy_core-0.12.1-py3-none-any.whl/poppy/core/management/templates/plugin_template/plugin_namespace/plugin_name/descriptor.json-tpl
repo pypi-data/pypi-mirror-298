@@ -1,0 +1,26 @@
+{
+    "identification": {
+        "project": "PROJECT",
+        "identifier": "{{plugin_namespace}}.{{plugin_name}}",
+        "name": "Human readable name",
+        "description": "A short description of your plugin"
+    },
+    "release": {
+        "version": "0.0.1",
+        "date": "YYYY-MM-DD",
+        "author": "Your Name",
+        "contact": "email@something.com",
+        "institute": "INSTITUTE",
+        "modification": "Starting version",
+        "reference": "reference_document.pdf"
+    },
+    "tasks": [
+        {
+            "name": "task_name",
+            "category": "Category",
+            "description": "",
+            "inputs": {},
+            "outputs": {}
+        }
+    ]
+}

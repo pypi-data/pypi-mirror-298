@@ -1,0 +1,63 @@
+# from poppy.core.test import TaskTestCase, CommandTestCase
+#
+#
+# class {{ camel_case_plugin_name }}TaskTests(TaskTestCase):
+#     def test_task1(self):
+#         # --- initialize the task ---
+#         from {{ plugin_namespace }}.{{ plugin_name }}.tasks import task1
+#
+#         self.task = task1()
+#
+#         # --- create some fake data ---
+#         # (you can use directly pipeline attributes)
+#
+#         self.task.pipeline.properties.input_dir = 'my_input_dir'
+#         self.task.pipeline.properties.output = 'my_output_dir'
+#
+#         # (...)
+#
+#         # --- run the task ---
+#
+#         self.run_task()
+#
+#         # --- make assertions ---
+#
+#         # test the result
+#         assert self.task.pipeline.properties.result == 'my_result'
+#
+#         # (...)
+#
+#     def test_task2(self):
+#         # --- initialize the task ---
+#         from {{plugin_namespace}}.{{plugin_name}}.tasks import task2
+#
+#         self.task = task2()
+#
+#         # (...)
+#
+# class {{ camel_case_plugin_name }}CommandTests(CommandTestCase):
+#     def test_sub_command1(self):
+#         # --- create some fake data ---
+#
+#         value1 = 'value1'
+#         value2 = 'value2'
+#
+#         # --- initialize the command ---
+#
+#         self.command = ['pop',
+#                         '{{ plugin_name }}',
+#                         'my_sub_command',
+#                         '--my_option1', value1,
+#                         '--my_option2', value2]
+#
+#         # --- run the command ---
+#
+#         self.run_command()
+#
+#         # --- make assertions ---
+#
+#         # test the result
+#         assert sorted(['file1', 'file2']) == sorted(os.listdir('my_result_path'))
+#
+#         # (...)
+#

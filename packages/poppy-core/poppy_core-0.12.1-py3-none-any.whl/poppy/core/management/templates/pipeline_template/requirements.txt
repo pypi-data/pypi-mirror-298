@@ -1,0 +1,3 @@
+git+https://gitlab.obspm.fr/POPPY/POPPyCore.git@develop#egg=poppy.core
+git+https://gitlab.obspm.fr/POPPY/POP.git@develop#egg=poppy.pop
+git+https://gitlab.obspm.fr/POPPY/PIPER.git@develop#egg=poppy.piper
