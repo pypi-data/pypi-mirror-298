@@ -1,0 +1,6 @@
+pygsielev/__init__.py,sha256=qOMzgQCB6i4iVgU8PDT1KJaqb_ZhiVP6QbWdl4umQYg,74
+pygsielev/elevation.py,sha256=cozVzPlApoqr1oagzZr2UQlqTwnUl3w9DtRrmEFd1jM,7183
+pygsielev/standard_meshcode.py,sha256=YuOs9lQzSOz_rKzsg39SRZvDXsKlsd95A16g3pn1eGQ,11842
+pygsielev-0.1.0.dist-info/METADATA,sha256=0aYjbcCPVHzjulN87PeA69hZgOaoXqOW2vLX1-myKvA,1645
+pygsielev-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pygsielev-0.1.0.dist-info/RECORD,,
