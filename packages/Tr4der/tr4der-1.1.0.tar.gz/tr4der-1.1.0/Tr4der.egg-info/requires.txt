@@ -1,0 +1,10 @@
+matplotlib
+numpy
+openai<2.0.0,>=1.0.0
+pandas
+PyYAML
+seaborn
+yfinance
+tensorflow
+scikit-learn
+setuptools>=65.6.3
