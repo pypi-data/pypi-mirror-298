@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: aind-flake8-extensions
+Version: 0.6.2
+Summary: Generated from aind-library-template
+Author: Allen Institute for Neural Dynamics
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flake8
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: interrogate ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: Sphinx ; extra == 'dev'
+Requires-Dist: furo ; extra == 'dev'
+
+# aind-flake8-extensions: Pydantic Formatting checks
+
+## Install 
+
+Install in your dev dependencies `aind-flake8-extensions`, make sure to pin to a release if you don't want to get random future additions.
+
+Add to your .flake8 file
+
+```
+[flake8:local-plugins]
+extension =
+    PF = aind_flake8_extensions.plugin:run_ast_checks
+```
+## Usage
+
+### PF001 - checks for default= and Optional[type] 
+
+### PF003 - ensures all usage of datetime is replaced with AwareDatetimeWithDefault
