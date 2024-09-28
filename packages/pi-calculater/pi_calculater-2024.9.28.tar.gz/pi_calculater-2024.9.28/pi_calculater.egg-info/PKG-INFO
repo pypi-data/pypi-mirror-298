@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pi_calculater
+Version: 2024.9.28
+Summary: 计算π的库
+Home-page: https://github.com/longliangzhe/pi_calculater
+Author: LightingLong
+Author-email: 17818883308@139.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+一个使用Chudnovsky公式计算圆周率的库
+
+chudnovsky_naive函数以普通Chudnovsky公式计算π
+
+chudnovsky_binsplit函数使用了Chudnovsky 公式和 binary splitting 算法计算圆周率，计算速度更快

@@ -1,0 +1,5 @@
+一个使用Chudnovsky公式计算圆周率的库
+
+chudnovsky_naive函数以普通Chudnovsky公式计算π
+
+chudnovsky_binsplit函数使用了Chudnovsky 公式和 binary splitting 算法计算圆周率，计算速度更快
