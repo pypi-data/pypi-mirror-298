@@ -1,0 +1,13 @@
+wordly/__init__.py,sha256=RGoiFCaiXXZnYIDSIig1U3nxNGvTnGgkXy-DIADl3nw,405
+wordly/__main__.py,sha256=j6Enm75xGjXlpqSyVNHZA6auearZ82br_T4QZOvNPJ4,146
+wordly/cli.py,sha256=1G1FAJ-SCb4495s-SiNFn3mwjm61ActdfSxZ7bDFHIY,1213
+wordly/client.py,sha256=4fUMLWZkx5PGlfU7n7v2ABZftZivzClljb_TSXE5yGc,3410
+wordly/parser.py,sha256=plvYF3h-luDdsIfIIOZ37RdqVvRIIkgCtpZZ73zDFGI,985
+wordly/status_codes.py,sha256=IpQ9WwoaC6fLBrCLrBNq7I5GCMVcHIHecLFimc1EOGU,1856
+wordly/words.py,sha256=P3pGhQJWfU0VXabo5LrVAuwr_203VGaUxcGu5i5T-TU,918
+wordly-0.0.3.dist-info/LICENSE,sha256=D-quN-99SpNJqHmEoHPZDhD-7OMZX3L3waihR2RK-_4,1069
+wordly-0.0.3.dist-info/METADATA,sha256=jUKP0Q9EQYOPEkMr0iGC9td_qup0t0NM0hHBxi8YrtM,2959
+wordly-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+wordly-0.0.3.dist-info/entry_points.txt,sha256=3KBG633rVGDLFFy_7Sr0jwijOt0MERp1WYL30A9d4z8,47
+wordly-0.0.3.dist-info/top_level.txt,sha256=AWQTMc01-Le6-kIMUhhWQv9RCrPXPFVG8RRSUd1bxxc,7
+wordly-0.0.3.dist-info/RECORD,,
