@@ -1,0 +1,8 @@
+scikit-learn
+sympy
+pybind11
+pandas
+matplotlib
+
+[test]
+pytest
