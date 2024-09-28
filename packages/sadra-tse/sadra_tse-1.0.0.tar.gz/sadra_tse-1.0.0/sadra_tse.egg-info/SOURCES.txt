@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+sadra_tse/__init__.py
+sadra_tse.egg-info/PKG-INFO
+sadra_tse.egg-info/SOURCES.txt
+sadra_tse.egg-info/dependency_links.txt
+sadra_tse.egg-info/requires.txt
+sadra_tse.egg-info/top_level.txt
