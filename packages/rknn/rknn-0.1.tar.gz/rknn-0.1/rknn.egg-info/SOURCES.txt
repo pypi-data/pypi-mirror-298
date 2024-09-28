@@ -1,0 +1,6 @@
+setup.py
+rknn.egg-info/PKG-INFO
+rknn.egg-info/SOURCES.txt
+rknn.egg-info/dependency_links.txt
+rknn.egg-info/requires.txt
+rknn.egg-info/top_level.txt
