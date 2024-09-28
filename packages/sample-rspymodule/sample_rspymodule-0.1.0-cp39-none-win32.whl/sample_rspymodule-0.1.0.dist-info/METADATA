@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: sample_rspymodule
+Version: 0.1.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Rust
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Typing :: Typed
+License-File: LICENSE.txt
+Summary: Add your description here
+Author-email: Sonokawa Hayato <SONOKAWA.Hayato@nims.go.jp>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# sample-rspymodule
+
+> <https://rye.astral.sh/guide/rust/>
+
+## Setup
+
+```shell
+rye init my-project --build-system maturin
+cd my-project
+
+rye install maturin
+
+rye sync
+
+rye build
+```
+
+* License: MIT
+
