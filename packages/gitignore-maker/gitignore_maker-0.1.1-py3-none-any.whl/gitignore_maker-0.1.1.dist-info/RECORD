@@ -1,0 +1,9 @@
+gitignore_maker/__init__.py,sha256=SCIcTdOvfEkrZd1doOtOnvCj8PmdRuXu18YYJQxfFrs,24
+gitignore_maker/constants.py,sha256=rtsbBqMPUi3LDoEblX45uDpHWpl1mmfRxUsmeIAniAg,10402
+gitignore_maker/main.py,sha256=ic6xInU5nWF_VSX-OcjBDDfwgS-FZD-QXNkoH787Nio,7992
+gitignore_maker-0.1.1.dist-info/LICENSE,sha256=CnOtAHFsmRXVaBpO-DoR6Ut6dJoZfYFAsFF3d-nYt-o,1087
+gitignore_maker-0.1.1.dist-info/METADATA,sha256=DDhG3CMEe5MrvZ1dTW-oM32CB3_gKJGfXDTmYo1k2Q4,4785
+gitignore_maker-0.1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+gitignore_maker-0.1.1.dist-info/entry_points.txt,sha256=OfRbSt_xUYZCh4kXi4T_VJu_vNae3Qdi2kSomDBl4lU,57
+gitignore_maker-0.1.1.dist-info/top_level.txt,sha256=NJ0GT3kMoS6F-xiwFoz7wDy4eucwEyJ-ft9OpRAiSg0,16
+gitignore_maker-0.1.1.dist-info/RECORD,,
