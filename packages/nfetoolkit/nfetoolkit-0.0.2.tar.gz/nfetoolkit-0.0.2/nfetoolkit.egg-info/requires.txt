@@ -1,0 +1,5 @@
+xsdata
+nfelib
+spedpy
+six
+tdqm
