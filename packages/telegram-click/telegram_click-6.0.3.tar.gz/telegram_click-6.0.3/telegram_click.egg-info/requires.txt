@@ -1,0 +1,9 @@
+anyio
+certifi
+emoji
+h11
+httpcore
+httpx
+idna
+python-telegram-bot
+sniffio
