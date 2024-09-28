@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block fixed_action %}
+{{ macros.ical_action(title="S'abonner au séminaire") }}
+{% endblock fixed_action %}
+
+{% block content %}
+
+<div class="section center title">
+  <div class="container">
+    <h1 class="header center teal-text">
+      <a href="#">{{ page.seminar.full_title }}</a>
+    </h1>
+    <h3 class="header col s12 light black-text">
+      {{ page.seminar.teams | organizing_teams }}
+    </h3>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section event">
+    <div class="row">
+      <div class="col s12">
+        <ul class="collapsible">
+          {% for event in page.events|sort(attribute='date') if event|event_selector(page) %}
+          <li>
+            <div class="collapsible-header {{ 'hoverable' if event.abstract else 'noabstract' }}" id="{{ event.slug }}">
+              <p class="title">
+              <h5>{{ event.speaker }}{% if event.affiliation %}, {{ event.affiliation }}{% endif %}</h5>
+              </p>
+              <p><em>{{ event.title }}</em></p>
+              <p><span class="date">{{ event.date.strftime("%-d %B %Y") }} -  {{ event.date.strftime("%H:%M") }}</span><span class="place secondary-content">{{ event.place }}</span></p>
+            </div>
+            <div class="collapsible-body">
+              {% if event.abstract %}
+              <span>
+                {{ event.abstract }}
+              </span>
+              {% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  {% if page.paginator %}
+  {{ macros.pagination(page.paginator, page.name) }}
+  {% endif %}
+
+</div>
+
+{% endblock content %}

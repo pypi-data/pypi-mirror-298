@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="section center title">
+  <div class="container">
+    <h1 class="header center teal-text">
+      <a href="#">{{ page.title }}</a>
+    </h1>
+    {% if page.subtitle %}
+    <h3 class="header col s12 light black-text">
+      page.subtitle
+    </h3>
+    {% endif %}
+  </div>
+</div>
+
+{% if page.toc|length > 1 %}
+<div class="container toc">
+  <div class="row">
+    {% for section in page.toc %}
+    <div class="col s3 m6"><a href="#{{ section.id }}">{{ section.name }}</a></div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% for section in page.sections %}
+<div class="section center title" id="{{ section.id }}">
+  <div class="container">
+    <h2 class="header center teal-text">
+      <a href="#{{ section.id }}">{{ section.title }}</a>
+    </h2>
+  </div>
+</div>
+
+<div class="container text ">
+  <div class="section">
+    {{ section.content }}
+  </div>
+</div>
+
+{% endfor %}
+
+{% endblock content %}

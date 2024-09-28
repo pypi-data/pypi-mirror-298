@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="homepage">
+  <div class="section center title">
+    <div class="container">
+      <h1 class="header teal-text" id="title">
+        {{ page.title }}
+      </h1>
+    </div>
+  </div>
+
+  <div class="section top">
+    <div class="row">
+      {% for card in page.cards %}
+      <div class="col l16 xl6">
+        <h2 class="header light">{{ card.title }}</h2>
+        {% for class in ["horizontal medium hide-on-small-only", "hide-on-med-and-up"] %}
+        <div class="card {{ class }}">
+          {% if card.img -%}
+          <div class="card-image hoverable">
+            <a href="{{ card.links[0].href | url }}" {{ card.links[0].href | external_url }}><img src="{{ card.img.src }}" alt="{{ card.img.alt }}"></a>
+          </div>
+          {%- endif %}
+          <div class="card-stacked">
+            <div class="card-content">
+              <h3 class="header teal-text">{{ card.header }}</h3>
+              {{ card.text }}
+            </div>
+            <div class="card-action">
+              {% for link in card.links %}
+              <a href="{{ link.href | url }}" {{ link.href | external_url }} class="{{ link.color }}">{{ link.text }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container event">
+      <h2 class="center teal-text section-title" id="agenda"><a href="#agenda">Agenda</a></h2>
+      {{ macros.event_cards(events|homepage, homepage=True)}}
+      <div class="center">
+        <a class="waves-effect waves-light btn" href="a_venir.html">Tout l'agenda</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section center news">
+    <h2 class="teal-text section-title" id="actualites"><a href="#actualites">Actualités</a></h2>
+    <div class="carousel carousel-slider hide-on-med-and-up">
+      {% for actu in news | homepage_news %}
+      <div class="carousel-item">
+        <h2> {{ actu.title }}</h2>
+        <p class="grey-text">{{ actu.date.strftime("%-d %B %Y") }}</p>
+        <p>{{ actu.chapo }}</p>
+        {% include "partial/news_button.html" %}
+      </div>
+      {% endfor %}
+    </div>
+    <div class="carousel hide-on-small-only">
+      {% for actu in news | homepage_news %}
+      <div class="carousel-item">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">{{ actu.title }}</span>
+            <p class="card-date grey-text">{{ actu.date.strftime("%-d %B %Y") }}</p>
+            <p>{{ actu.chapo }}</p>
+          </div>
+          <div class="card-action">
+            {% include "partial/news_button.html" %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <a class="waves-effect waves-light btn" href="actualites/index.html">Toutes les actualités</a>
+  </div>
+
+</div>
+{% endblock content %}

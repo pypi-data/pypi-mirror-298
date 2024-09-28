@@ -1,0 +1,54 @@
+<footer class="page-footer teal">
+  <div class="container">
+    <div class="row valign-wrapper">
+      <div class="col l12 xl6">
+        <div class="row">
+          <div class="col xs12 m6">
+            <img src="{{ site.footer.img.src | url }}" alt="{{ site.footer.img.alt }}" height="{{ site.footer.img.height }}" class="right" />
+          </div>
+          <div class="col xs12 m6">
+            <h5 class="white-text">{{ site.footer.name }}</h5>
+            <p class="grey-text text-lighten-4">
+              {% for line in site.footer.address -%}
+              {{ line }}<br>
+              {%- endfor %}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col l12 xl6">
+        <div class="row valign-wrapper">
+          {% for logo in site.footer.logos %}
+          <div class="{{ logo.class }}">
+            <a href="{{ logo.href }}" {{ logo.href | external_url }}><img src="{{ logo.img.src | url }}" alt="{{ logo.img.alt }}" height="{{ logo.img.height }}" class="{{ logo.img.class }}" /></a> 
+          </div>          
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% if site.footer.logos_partners %}
+    <hr style="max-width: 300px; margin-bottom: 40px">
+    <div class="row valign-wrapper">
+      <div class="col l12">
+        <div class="row valign-wrapper">
+          {% for logo in site.footer.logos_partners %}
+          <div class="{{ logo.class }}">
+            <a href="{{ logo.href }}" {{ logo.href | external_url }}><img src="{{ logo.img.src | url }}" alt="{{ logo.img.alt }}" height="{{ logo.img.height }}" class="{{ logo.img.class }}" /></a> 
+          </div>          
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+  <div class="footer-copyright">
+    <div class="container center">
+      Généré par <a class="brown-text text-lighten-3" href="https://gitlab.math.unistra.fr/irma/sgelt">SGELT v{{ sgelt_version }}</a> basé sur
+      <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      {% for link in site.footer.additional_links %}
+      &nbsp;&nbsp; &mdash; &nbsp;&nbsp;
+      <a class="brown-text text-lighten-3" href="{{ link.href | url }}">{{ link.name }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</footer>

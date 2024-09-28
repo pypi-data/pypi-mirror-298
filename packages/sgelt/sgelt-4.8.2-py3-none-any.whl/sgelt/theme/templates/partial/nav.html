@@ -1,0 +1,46 @@
+{% macro nav_macro(dropdown_id) -%}
+    {% for nav_item, nav_value in site.nav_items.items() %}
+    <li {% if nav_item == page.menu_item %}class="active"{% endif %}>
+        {% if nav_value is mapping %}
+        <a class="dropdown-trigger" href="#!" data-target="dropdown_{{ nav_item }}_{{ dropdown_id }}">{{ nav_item }}
+            <svg role="button" class="icon-svg icon_arrow_drop_down">
+                <title>Menu déroulant</title><use href="#icon_arrow_drop_down" />
+            </svg></a>
+
+        {% else %}
+        <a href="{{ nav_value|url }}" {{ nav_value | external_url }}>{{ nav_item }}</a>
+        {% endif %}
+    </li>
+    {% endfor %}
+{%- endmacro %}
+
+{% for nav_item, dropdown_list in site.nav_items.items() if dropdown_list is mapping %}
+    {% for dropdown_id in 1, 2 %}
+    <ul id="dropdown_{{ nav_item }}_{{ dropdown_id }}" class="dropdown-content">
+        {% for item, url in dropdown_list.items() %}
+        <li>
+            <a href="{{ url|url }}" {{ url | external_url }}>{{ item }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+{% endfor %}
+
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="{{ 'index.html'|url }}" class="brand-logo"><img src="{{ site.logo.src | url }}" alt="{{ site.logo.alt if site.logo.alt else 'Site logo' }}"
+                style="height: {{ site.logo.height if site.logo.height else '40px' }}; vertical-align: middle;" /></a>
+        <ul class="right hide-on-med-and-down">
+            {{ nav_macro(1) }}
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+            {{ nav_macro(2) }}
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+            <svg role="button" viewBox="0 0 24 24" class="icon-svg icon-menu">
+                <title>Menu</title><use href="#icon_menu" />
+            </svg>
+        </a>
+    </div>
+</nav>

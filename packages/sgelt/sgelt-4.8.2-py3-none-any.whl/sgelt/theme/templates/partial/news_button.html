@@ -1,0 +1,16 @@
+{% if actu.external %}
+{% set href = actu.href %}
+{% set target = '_blank' %}
+{% set icon = 'open_in_new' %}
+{% set icon_title = 'Lien externe' %}
+{% else %}
+{% set href = actu.href | url %}
+{% set target = '_self' %}
+{% set icon = 'add' %}
+{% set icon_title = 'En savoir plus' %}
+{% endif %}
+<a class="btn-floating waves-effect waves-light teal lighten-2" href="{{ href }}" target="{{ target }}">
+    <svg role="button" class="icon-svg icon-white">
+        <title>{{ icon_title }}</title><use href="#icon_{{ icon }}" />
+    </svg>
+</a>

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="section center title">
+  <div class="container">
+    <h1 class="header center teal-text">
+      {% block title %}{% endblock title %}
+    </h1>
+  </div>
+</div>
+
+{% block toc %}{% endblock toc %}
+
+<div class="container text">
+  <div class="section">
+    <div class="row">
+      <div class="col s12">
+        {% block page_content %}{% endblock page_content %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

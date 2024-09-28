@@ -1,0 +1,17 @@
+<div class="container conference">
+    <div class="row">
+        {% if page.event.date %}
+        <div class="col s12 m6">
+            <i class="material-icons" aria-hidden="true">event</i>
+            <br>
+            <span>{{ page.event|event_date_time(weekday=True) }}</span>
+        </div>
+        {% endif %}
+        {% if page.event.place %}
+        <div class="col s12 m6">
+            <i class="material-icons" aria-hidden="true">place</i><br>
+            <span>{{ page.event.place }}</span>
+        </div>
+        {% endif %}
+    </div>
+</div>

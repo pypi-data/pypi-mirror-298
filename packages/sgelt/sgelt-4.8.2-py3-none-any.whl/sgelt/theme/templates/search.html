@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="banner"></div>
+
+<div class="container search">
+    <div class="card-panel">
+        <form class="search" action="{{ 'search.html'|url }}" onsubmit="return validateForm(this.elements['q'].value);">
+            <input type="text" placeholder="Votre recherche" name="q" id="lunr_input">
+        </form>
+    </div>
+</div>
+
+<div class="section center title">
+    <div class="container">
+        <h3 class="header center teal-text">
+            <header id="lunr-search-result-heading"></header>
+        </h3>
+    </div>
+</div>
+
+<div class="container lunr-search-result">
+    <div class="section event">
+        <div class="row">
+            <div class="col s12">
+                <div id="lunr-search-result"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block script %}
+<script src="{{ 'lunr_content.js'|url }}"></script>
+<script src="{{ 'js/lunr.js'|url }}"></script>
+<script src="{{ 'js/lunr-search-result.js'|url }}"></script>
+<script>
+    function validateForm(query) {
+        console.log(query);
+        return (query.length > 0);
+    }
+</script>
+{{ super() }}
+{% endblock script %}
