@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+src/pydaggerjl/__init__.py
+src/pydaggerjl/core.py
+src/pydaggerjl.egg-info/PKG-INFO
+src/pydaggerjl.egg-info/SOURCES.txt
+src/pydaggerjl.egg-info/dependency_links.txt
+src/pydaggerjl.egg-info/requires.txt
+src/pydaggerjl.egg-info/top_level.txt
+tests/test_daggerjl.py
