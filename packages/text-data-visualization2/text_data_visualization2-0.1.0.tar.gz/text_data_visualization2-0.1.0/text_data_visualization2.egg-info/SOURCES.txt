@@ -1,0 +1,19 @@
+LICENSE
+README.md
+setup.py
+Textual Data Visualization/FileRelated.py
+Textual Data Visualization/OptionsColumn.py
+Textual Data Visualization/OptionsVis.py
+Textual Data Visualization/VisBokeh.py
+Textual Data Visualization/VisMatplotlib.py
+Textual Data Visualization/VisMissingno.py
+Textual Data Visualization/VisPlotly.py
+Textual Data Visualization/VisSeaborn.py
+Textual Data Visualization/VisVegaAltair.py
+Textual Data Visualization/VisWordCloud.py
+Textual Data Visualization/__init__.py
+text_data_visualization2.egg-info/PKG-INFO
+text_data_visualization2.egg-info/SOURCES.txt
+text_data_visualization2.egg-info/dependency_links.txt
+text_data_visualization2.egg-info/requires.txt
+text_data_visualization2.egg-info/top_level.txt
