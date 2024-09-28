@@ -1,0 +1,1 @@
+from j2gpt.template import J2

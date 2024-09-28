@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+j2gpt/__init__.py
+j2gpt/template.py
+j2gpt/tcp/__init__.py
+j2gpt/tcp/client.py
+j2gpt/tcp/manager.py
+j2gpt_template.egg-info/PKG-INFO
+j2gpt_template.egg-info/SOURCES.txt
+j2gpt_template.egg-info/dependency_links.txt
+j2gpt_template.egg-info/top_level.txt
