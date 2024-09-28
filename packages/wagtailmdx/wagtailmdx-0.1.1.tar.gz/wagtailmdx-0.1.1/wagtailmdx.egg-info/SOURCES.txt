@@ -1,0 +1,17 @@
+LICENSE
+pyproject.toml
+readme.md
+wagtailmdx/__init__.py
+wagtailmdx/apps.py
+wagtailmdx/fields.py
+wagtailmdx/widgets.py
+wagtailmdx.egg-info/PKG-INFO
+wagtailmdx.egg-info/SOURCES.txt
+wagtailmdx.egg-info/dependency_links.txt
+wagtailmdx.egg-info/requires.txt
+wagtailmdx.egg-info/top_level.txt
+wagtailmdx/../oss-licenses.json
+wagtailmdx/static/wagtailmdx/css/main.css
+wagtailmdx/static/wagtailmdx/js/434.mdx.js
+wagtailmdx/static/wagtailmdx/js/mdx.js
+wagtailmdx/static/wagtailmdx/js/mdx.js.LICENSE.txt
