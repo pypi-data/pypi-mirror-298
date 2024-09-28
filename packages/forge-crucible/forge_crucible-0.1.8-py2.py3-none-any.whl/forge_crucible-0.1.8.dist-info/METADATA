@@ -1,0 +1,5 @@
+Metadata-Version: 2.3
+Name: forge-crucible
+Version: 0.1.8
+Summary: TUI for running interacting with Foundry's Forge Tests.
+License-Expression: MIT
