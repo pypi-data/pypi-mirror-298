@@ -1,0 +1,7 @@
+dask==2024.9.1
+pyarrow>=14.0.1
+pandas>=2
+
+[analyze]
+crick
+distributed
