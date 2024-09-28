@@ -1,0 +1,3 @@
+[console_scripts]
+crossover-util=crossover_util.cli:main
+
