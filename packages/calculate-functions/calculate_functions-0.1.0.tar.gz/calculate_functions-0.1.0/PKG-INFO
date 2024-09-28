@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: calculate_functions
+Version: 0.1.0
+Summary: A sample Python library
+Home-page: 
+Author: shivajiwankhede
+Author-email: shivaji.wankhede@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+twine upload -u shivajiwankhede -p Renuka@9850 --repository-url https://test.pypi.org/legacy/ dist/*
+
+twine upload -u shivajiwankhede -p Renuka@9850 --repository-url https://upload.pypi.org/legacy/ dist/* -p pypi-AgEIcHlwaS5vcmcCJDM0MzBkOGQ3LTZlYWYtNGIyNC04ODEzLWRjY2UyM2QzMjA2YgACKlszLCI4YjkzY2RmNy05YWRjLTQwYmYtYWE2OC04NmRjZDY5N2FiNDYiXQAABiBi6voRO4ad9KEu4SsEZ5me18GVdxFk1UDMWXfjwagMpA
