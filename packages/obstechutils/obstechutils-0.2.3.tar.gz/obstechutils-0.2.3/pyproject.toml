@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "obstechutils"
+description = "Utilities for obstech"
+readme = "README.md"
+authors = [
+  { name="Régis Lachaume", email="regis.lachaume@gmail.com" },
+]
+requires-python = ">=3.9"
+dynamic=["dependencies", "classifiers", "version"]
+
+[project.scripts]
+report_device_status = "obstechutils.scripts.device_status:main_script"
+report_pc_status = "obstechutils.scripts.device_status:list_computers"
+list_roofs = "obstechutils.scripts.list_roofs:main"
+mqtt_console = "obstechutils.scripts.mqtt_console:main"
+mix_weather_sensors = "obstechutils.scripts.mix_weather_sensors:main"
+monitor_weather_sensor = "obstechutils.scripts.monitor_weather_sensor:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+classifiers = {file = ["classifiers.txt"]}
+version = {attr = "obstechutils.__version__"}
