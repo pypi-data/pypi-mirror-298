@@ -1,0 +1,5 @@
+[console_scripts]
+dhkdao-airdrop = dhkdao_airdrop:cli
+
+[gui_scripts]
+

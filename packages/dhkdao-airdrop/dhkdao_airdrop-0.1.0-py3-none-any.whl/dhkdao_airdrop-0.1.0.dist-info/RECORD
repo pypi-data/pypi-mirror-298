@@ -1,0 +1,9 @@
+dhkdao_airdrop-0.1.0.dist-info/METADATA,sha256=rEE5XwL6GilXDXka173R710O5fY8qn6zcRH1rp29TVQ,5741
+dhkdao_airdrop-0.1.0.dist-info/WHEEL,sha256=Vza3XR51HW1KmFP0iIMUVYIvz0uQuKJpIXKYOBGQyFQ,90
+dhkdao_airdrop-0.1.0.dist-info/entry_points.txt,sha256=43VwrfTZbNjimEcVm92D912rLu8byNXcR7WJhQPyPSI,70
+dhkdao_airdrop-0.1.0.dist-info/licenses/LICENSE,sha256=36T5mGQiHDnsvqpa2UmEEN0DgDUs-eONXXOS1Vh13I0,1064
+dhkdao_airdrop/__init__.py,sha256=b3gJ4ZkHEkQxb4n35BSKaE5gWXUBNBnVgSxJLyD6QA8,212
+dhkdao_airdrop/airdrop.py,sha256=1EXBpjztOhAjeB96ijV7uZOrSNIQ4EOCQt6VAyFciEY,6142
+dhkdao_airdrop/cli.py,sha256=_79Cy8zYtaAYH-ALbl2CI1wbCBp1LYXi99hu3xMdIZI,1566
+dhkdao_airdrop/utils.py,sha256=Sm1WqBU8QN9nyHs8toBY4BOeKJLxd3YknNZ72w1OHoQ,917
+dhkdao_airdrop-0.1.0.dist-info/RECORD,,
