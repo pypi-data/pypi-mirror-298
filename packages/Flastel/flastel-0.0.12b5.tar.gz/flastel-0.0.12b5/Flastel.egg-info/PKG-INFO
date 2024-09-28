@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Flastel
+Version: 0.0.12b5
+Summary: Flastel – Telegram Bot API.
+Home-page: https://github.com/DepyXa/Flastel
+Author: DepyXa
+Author-email: dere96632@gmail.com
+Project-URL: GitHub, https://github.com/DepyXa/Flastel
+Keywords: Telegram Bot API bot python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+Requires-Dist: aiohttp>=3.8.6
+
+<h1>Flastel</h1>
+  <h4>A new module for creating Telegram bot's.</h4>
+  Designed specifically to create a bot on your site using a webhook. You will be able to create multiple bots on your site by configuring them on your host. Mode is also supported "polling" to create a bot on another server without requesting your site's code. With the method "webhook" you won't need your host to support multimode. No need to create a bot background anymore.
+This module is a support for weak hosting, which allows you to save money. 
