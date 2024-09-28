@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "pheval-template"
+version = "0.1.2"
+description = ""
+authors = ["Yasemin Bridges <y.bridges@qmul.ac.uk>"]
+readme = "README.md"
+packages = [{include = "pheval_template", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0.0"
+pheval = ">=0.3.2, <0.5.0"
+
+
+[tool.poetry.plugins."pheval.plugins"]
+template = "pheval_template.runner:TemplatePhEvalRunner"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pylint = "^2.15.6"
+pycodestyle = "^2.10.0"
+coverage = "^6.5.0"
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src"
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 100
+include_trailing_comma = true
+reverse_relative = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
