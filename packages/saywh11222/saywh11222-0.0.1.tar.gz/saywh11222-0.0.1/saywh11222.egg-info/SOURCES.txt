@@ -1,0 +1,6 @@
+setup.py
+saywh11222.egg-info/PKG-INFO
+saywh11222.egg-info/SOURCES.txt
+saywh11222.egg-info/dependency_links.txt
+saywh11222.egg-info/top_level.txt
+src/__init__.py
