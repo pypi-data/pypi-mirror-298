@@ -1,0 +1,3 @@
+[console_scripts]
+crucible=forge-crucible.app:crucible
+
