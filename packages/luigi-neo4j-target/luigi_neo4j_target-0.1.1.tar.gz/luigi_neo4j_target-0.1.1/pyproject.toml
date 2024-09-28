@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "luigi-neo4j-target"
+version = "0.1.1"
+description = "A Luigi Target implementation for Neo4j."
+readme = "README.md"
+authors = [
+    { name = "Pawel Gasiorowski", email = "p.gasiorowski@axent.pl" }
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.6"
+keywords = ["luigi", "neo4j", "target"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "luigi",
+    "neo4j",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/axent-pl/luigi-neo4j-target"
+"Bug Tracker" = "https://github.com/axent-pl/luigi-neo4j-target/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
