@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+carousel_api.egg-info/PKG-INFO
+carousel_api.egg-info/SOURCES.txt
+carousel_api.egg-info/dependency_links.txt
+carousel_api.egg-info/entry_points.txt
+carousel_api.egg-info/requires.txt
+carousel_api.egg-info/top_level.txt

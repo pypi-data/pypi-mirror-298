@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: carousel_api
+Version: 0.1.0
+Summary: API para el control del carrusel vertical  VERTICAL PIC de Industrias Pico a través de un PLC
+Author: IA Punto: Soluciones Integrales de Tecnología y Marketing
+Author-email: desarrollo@iapunto.com
+License-File: LICENSE
+Requires-Dist: Flask
+Requires-Dist: flask-cors
+Requires-Dist: flasgger
+Requires-Dist: waitress
