@@ -1,0 +1,33 @@
+DynamoDB Costs and Usage:
+Period: {{ data.start_date }} to {{ data.end_date }}
+
+Detailed Results:
+{% for day in data.daily_data %}
+Date: {{ day.date }} ({{ day.days_ago }} days ago)
+{% for ut in day.usage_types %}
+  Usage Type: {{ ut.usage_type }}
+    Region: {{ ut.region }}
+    {% if ut.table_name %}Table: {{ ut.table_name }}{% else %}Table: Not specified{% endif %}
+    Cost: ${{ "%.2f"|format(ut.cost) }}
+    Usage Quantity: {{ "%.2f"|format(ut.usage) }}
+{% endfor %}
+Total Daily Cost: ${{ "%.2f"|format(day.cost) }}
+Estimated: {{ "Yes" if day.estimated else "No" }}
+{% endfor %}
+
+Total Cost Breakdown by Usage Type:
+{% for ut in data.usage_type_summary %}
+{{ "%-40s"|format(ut.usage_type) }}: ${{ "%8.2f"|format(ut.cost) -}}
+{% endfor %}
+
+Total Cost Breakdown by Region:
+{% for region in data.region_cost_summary %}
+{{ "%-40s"|format(region.region) }}: ${{ "%8.2f"|format(region.cost) -}}
+{% endfor %}
+
+Total Cost Breakdown by Table:
+{% for table in data.table_cost_summary %}
+{{ "%-40s"|format(table.table_name) }}: ${{ "%8.2f"|format(table.cost) -}}
+{% endfor %}
+
+Total Cost for the period: ${{ "%.2f"|format(data.total_cost) }}
