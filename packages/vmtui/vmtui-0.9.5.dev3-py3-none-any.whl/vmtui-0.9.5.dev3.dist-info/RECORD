@@ -1,0 +1,12 @@
+vmtui/__init__.py,sha256=9a5Z--NN04VTHQKSB-9j3FIeozJO2db0AQgApjE8v20,53
+vmtui/gen_libvirt_polkit_acl.py,sha256=osVrxNfHBz7qe6PDauREpzI0AktN0edESJzO274ERMs,3581
+vmtui/vmtui.py,sha256=LpHELU-gR_apSFDbPb6dDfDxXido3d5EPhRDg_9AnT8,20798
+vmtui/static/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vmtui/static/vmtui.css,sha256=wYpEjtLxVcnJ6b7lYEMXR8ri3xdz0QEMJ6aizOZRLuI,485
+vmtui-0.9.5.dev3.dist-info/AUTHORS,sha256=ZVGOnQWsVnIZKs7z-oL25QYU_orJ4tiL6At_s1sgv7k,81
+vmtui-0.9.5.dev3.dist-info/METADATA,sha256=kAau8Cpc2UIMZH2aWgz2LfZwYZZ_wJyK8ReR9fbOlXU,4213
+vmtui-0.9.5.dev3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+vmtui-0.9.5.dev3.dist-info/entry_points.txt,sha256=WGpiwdRULbiFgV9sjkZGJIJnZJsuLIT6zGyRqoxoIuI,102
+vmtui-0.9.5.dev3.dist-info/pbr.json,sha256=NL7ZWeOyyGJBAVe-GZh5XaDNg3sGm7VlKWhdSHcTAXQ,47
+vmtui-0.9.5.dev3.dist-info/top_level.txt,sha256=PEivqf04TD8QCemNnbs8o6293ZERr1PTz0kocG8VaBI,6
+vmtui-0.9.5.dev3.dist-info/RECORD,,
