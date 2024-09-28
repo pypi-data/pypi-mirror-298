@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: PyThermoModels
+Version: 1.1.0a1
+Summary: A Python package designed for the calculation of thermodynamic properties using various well-established models.
+Author: Sina Gilassi
+Author-email: <sina.gilassi@gmail.com>
+License: MIT
+Keywords: python,chemical engineering,thermodynamics,PyThermoDB
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: pillow
+Requires-Dist: requests
+Requires-Dist: urllib3
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: PyYAML
+Requires-Dist: sympy
+Requires-Dist: PyThermoDB
+Requires-Dist: PyCUC
+Requires-Dist: scipy
+
+
+# Python Thermodynamic Models (PyThermoModels)
+
+
+
+PyThermoModels is an open-source Python package designed to facilitate thermodynamic modeling and calculations. This package provides a comprehensive and user-friendly interface to popular thermodynamic models, enabling quick and accurate estimation of key properties.
+
+
+
+## Alpha Version Notice
+
+
+
+**Important**: PyThermoModels is currently in alpha stage and is not yet suitable for production or critical applications. This package is still under active development, and its API, functionality, and performance are subject to change.
+
+Use at Your Own Risk:
+
+The package has not undergone thorough testing or validation.
+
+Some features may be incomplete or buggy.
+
+Documentation may be incomplete or outdated.
