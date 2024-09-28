@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+enimation/__init__.py
+enimation/loading.py
+enimation/motions.py
+enimation.egg-info/PKG-INFO
+enimation.egg-info/SOURCES.txt
+enimation.egg-info/dependency_links.txt
+enimation.egg-info/top_level.txt
