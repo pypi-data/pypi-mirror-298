@@ -1,0 +1,38 @@
+<odoo>
+  <data>
+
+    <record id="fleet_vehicle_battery_maximum_charge_view_form" model="ir.ui.view">
+        <field name="name">fleet.vehicle.battery.maximum.charge.view.form</field>
+        <field name="model">fleet.vehicle.battery.maximum.charge</field>
+        <field name="arch" type="xml">
+            <form string="Vehicle Battery Maximum Charge">
+                <group>
+                    <field name="maximum_charge"/>
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="fleet_vehicle_battery_maximum_charge_view_tree" model="ir.ui.view">
+        <field name="name">fleet.vehicle.battery.maximum.charge.view.tree</field>
+        <field name="model">fleet.vehicle.battery.maximum.charge</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="maximum_charge" class="text-left"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="fleet_vehicle_battery_maximum_charge_action" model="ir.actions.act_window">
+        <field name="name">Vehicle Battery Maximum Charge</field>
+        <field name="res_model">fleet.vehicle.battery.maximum.charge</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Add a new maximum Battery Charge (kWh)
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="fleet_vehicle_battery_maximum_charge" parent="fleet.fleet_configuration" action="fleet_vehicle_battery_maximum_charge_action" sequence="88"/>
+  </data>
+</odoo>
