@@ -1,0 +1,2 @@
+[console_scripts]
+fh_utils = fh_utils.cli:app
