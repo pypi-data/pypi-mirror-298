@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "wc-scrape"
+version = "0.1.0"
+description = "A simple Twitter scraper"
+authors = ["William Chen <wchen298@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "twitter_scraper" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+tweepy = "^4.14.0"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+wc-scrape = "twitter_scraper.scrape:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/ouiliame/wc-scrape"
