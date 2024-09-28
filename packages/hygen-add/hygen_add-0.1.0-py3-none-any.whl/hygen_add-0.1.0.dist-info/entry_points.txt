@@ -1,0 +1,2 @@
+[console_scripts]
+hygen-add = hygen_add:main
