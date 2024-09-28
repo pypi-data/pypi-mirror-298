@@ -1,0 +1,12 @@
+setup.py
+PyListFunctions/SCRAPPED_type_list.py
+PyListFunctions/__init__.py
+PyListFunctions/list_func_part.py
+PyListFunctions/str_func_part.py
+PyListFunctions.egg-info/PKG-INFO
+PyListFunctions.egg-info/SOURCES.txt
+PyListFunctions.egg-info/dependency_links.txt
+PyListFunctions.egg-info/top_level.txt
+PyListFunctions/advanced_list_EXTRA/__init__.py
+PyListFunctions/advanced_list_EXTRA/scrapped code.py
+PyListFunctions/advanced_list_MAIN/__init__.py
