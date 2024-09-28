@@ -1,0 +1,38 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='kaipy',
+    version='1.0.3',
+    description='Python software for CGS MAGE and other Kaiju models.',
+    author='Kaiju team',
+    author_email='wiltbemj@ucar.edu',
+    url='https://bitbucket.org/aplkaiju/kaipy/src/master/',
+    packages=find_packages(),
+    python_requires='>=3.8',
+    install_requires=[
+        'alive_progress',
+        'astropy',
+        #'cartopy',
+        'cdasws',
+        'configparser',
+        'h5py',
+        'jupyterlab',
+        'matplotlib',
+        'pandas',
+        'progressbar',
+        'pyhdf',
+        'pyspedas',
+        'pytest',
+        'slack_sdk',
+        'spacepy',
+        'sphinx-rtd-theme',
+        'sunpy',
+    ],
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: BSD 3-Clause',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.8',
+    ],
+)
