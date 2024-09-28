@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: swarmauri-experimental
+Version: 0.5.0.dev7
+Summary: Experimental version of the swarmauri framework
+Home-page: http://github.com/swarmauri/swarmauri-sdk
+Author: Jacob Stewart
+Author-email: corporate@swarmauri.com
+License: Apache Software License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: pydantic
+Requires-Dist: swarmauri-core==0.5.0.dev8
+Requires-Dist: swarmauri==0.5.0.dev10
+Provides-Extra: full
+Requires-Dist: ai21>=2.2.0; extra == "full"
+Requires-Dist: shuttleai; extra == "full"
+Requires-Dist: transformers; extra == "full"
+Requires-Dist: tensorflow; extra == "full"
+Requires-Dist: typing-extensions; extra == "full"
+Requires-Dist: google-api-python-client; extra == "full"
+Requires-Dist: google-auth-httplib2; extra == "full"
+Requires-Dist: google-auth-oauthlib; extra == "full"
+Requires-Dist: boto3; extra == "full"
+Requires-Dist: yake; extra == "full"
+Requires-Dist: torch; extra == "full"
+Requires-Dist: scikit-learn; extra == "full"
+Requires-Dist: gensim; extra == "full"
+Requires-Dist: textblob; extra == "full"
+Requires-Dist: spacy; extra == "full"
+Requires-Dist: pygments; extra == "full"
+Requires-Dist: gradio; extra == "full"
+Requires-Dist: websockets; extra == "full"
+Requires-Dist: openai; extra == "full"
+Requires-Dist: groq; extra == "full"
+Requires-Dist: mistralai; extra == "full"
+Requires-Dist: cohere; extra == "full"
+Requires-Dist: google-generativeai; extra == "full"
+Requires-Dist: anthropic; extra == "full"
+Requires-Dist: scipy; extra == "full"
+Requires-Dist: qdrant-client; extra == "full"
+Requires-Dist: chromadb; extra == "full"
+Requires-Dist: textstat; extra == "full"
+Requires-Dist: nltk; extra == "full"
+Requires-Dist: psutil; extra == "full"
+Requires-Dist: qrcode; extra == "full"
+Requires-Dist: folium; extra == "full"
+Requires-Dist: captcha; extra == "full"
+Requires-Dist: bs4; extra == "full"
+Requires-Dist: pygithub; extra == "full"
+Requires-Dist: pacmap; extra == "full"
+Requires-Dist: tf-keras; extra == "full"
+
+
+
+# Swarmauri Experimental SDK
+
+## Experimental
+- **In-Development Components**: Early-stage features and components that push the boundaries of the Swarmauri framework, offering innovative solutions that are still in testing phases.
+
+Visit us at: https://swarmauri.com
+Follow us at: https://github.com/swarmauri 
+
