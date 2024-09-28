@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: brundle
+Version: 0.2.0
+Summary: Run linters in optional dependencies in pyproject.toml files.
+Author-email: Janus Heide <janusheide@gmail.com>
+Project-URL: Homepage, https://github.com/janusheide/brundle
+Project-URL: Repository, https://github.com/janusheide/brundle
+Project-URL: Changelog, https://github.com/janusheide/brundle/blob/main/NEWS.rst
+Keywords: maintenance,utility
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: packaging
+Requires-Dist: tomli <3,>=2 ; python_version < "3.11"
+Provides-Extra: dev
+Requires-Dist: brundle[test] ; extra == 'dev'
+Requires-Dist: uppd ==0.3.0 ; extra == 'dev'
+Requires-Dist: bouillon ==2.1.0 ; extra == 'dev'
+Requires-Dist: build ==1.2.2 ; extra == 'dev'
+Requires-Dist: isort ==5.13.2 ; extra == 'dev'
+Requires-Dist: licensecheck ==2024.3 ; extra == 'dev'
+Requires-Dist: mypy ==1.11.2 ; extra == 'dev'
+Requires-Dist: ruff ==0.6.8 ; extra == 'dev'
+Requires-Dist: semver ==3.0.2 ; extra == 'dev'
+Requires-Dist: twine ==5.1.1 ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ==8.3.3 ; extra == 'test'
+Requires-Dist: pytest-aiohttp ==1.0.5 ; extra == 'test'
+Requires-Dist: pytest-asyncio ==0.24.0 ; extra == 'test'
+Requires-Dist: pytest-cov ==5.0.0 ; extra == 'test'
+
+..  Copyright (c) 2024, Janus Heide.
+..  All rights reserved.
+..
+.. Distributed under the "BSD 3-Clause License", see LICENSE.rst.
+
+Brundle
+=======
+
+.. image:: https://github.com/janusheide/brundle/actions/workflows/unittests.yml/badge.svg
+    :target: https://github.com/janusheide/brundle/actions/workflows/unittests.yml
+    :alt: Unit tests
+
+.. image:: https://img.shields.io/pypi/pyversions/brundle
+   :alt: PyPI - Python Version
+
+.. image:: https://img.shields.io/librariesio/github/janusheide/brundle
+   :alt: Libraries.io dependency status for GitHub repo
+
+
+Runs various linters if they are present in the optional dependencies in pyproject.toml file.
+
+Getting Started
+---------------
+
+Install and run::
+
+    pip install brundle
+    brundle --help
+
+Usage
+-----
+
+Run::
+
+    brundle
+
+Runs all the following programs in order, and return 1 if any of them gives and error.
+
+    1. licensecheck
+    2. isort
+    3. ruff
+    4. mypy
+
+
+Development
+-----------
+
+Setup, run tests and release::
+
+    pip install .[dev]
+    brundle
+    pytest
+    python boil.py release
