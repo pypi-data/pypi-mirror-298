@@ -1,0 +1,5 @@
+Django<5.1,>=2.1
+PyMySQL
+requests
+smartdb
+openpyxl
