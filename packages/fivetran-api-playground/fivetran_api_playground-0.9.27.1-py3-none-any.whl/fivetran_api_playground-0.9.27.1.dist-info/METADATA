@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fivetran_api_playground
+Version: 0.9.27.1
+Summary: Fivetran API Examples to build custom connectors
+Author-email: Fivetran <developers@fivetran.com>
+Project-URL: Homepage, https://fivetran.com/
+Project-URL: Github, https://github.com/fivetran
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: flask ==3.0.3
+Requires-Dist: faker ==30.0.0
+
