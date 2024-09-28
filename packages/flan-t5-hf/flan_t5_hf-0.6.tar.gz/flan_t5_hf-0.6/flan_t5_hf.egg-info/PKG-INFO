@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: flan_t5_hf
+Version: 0.6
+Requires-Dist: transformers[torch]==4.45.1
+Requires-Dist: torch==2.4.1
