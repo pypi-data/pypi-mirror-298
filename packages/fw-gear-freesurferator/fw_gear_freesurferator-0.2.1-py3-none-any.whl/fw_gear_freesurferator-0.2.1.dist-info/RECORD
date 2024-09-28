@@ -1,0 +1,10 @@
+fw_gear_freesurferator/__init__.py,sha256=whtgJeDZd24g8zSq6QfW-i9qPZUex9d-yL4spvrjENw,118
+fw_gear_freesurferator/main.py,sha256=D54crjeN6-SltJCOieOnJa7uAbdRFuEpxW4SvJPS35Y,34112
+fw_gear_freesurferator/parser.py,sha256=L0ddlUO2OdNwK2jbxF4Kkq_u5APrnDnauKFuIvkw-sw,3444
+fw_gear_freesurferator/segmentations.py,sha256=mldns5v9pvN6qTWDeOn52aTgDDxOFWvsAtrPju60RV8,17633
+fw_gear_freesurferator/separateROIs.py,sha256=h8ZcWNOU7yfEJQV0zlfHnZkElMvlrYUHaotim5kl_vM,17016
+fw_gear_freesurferator/utils.py,sha256=uhM-I3yS-EGcsppzmyEz0SC2btV5WcJO1jUQEBN3jnk,1910
+fw_gear_freesurferator-0.2.1.dist-info/LICENSE,sha256=NNC8xrLtqnhvmkJdOB71ctPp2jBi_2V5u9RzRVEpBcs,1092
+fw_gear_freesurferator-0.2.1.dist-info/METADATA,sha256=DAkDKC5n1-B4Fg2uPtHWnqRAcFjwA6_H7418GLdaSIw,15375
+fw_gear_freesurferator-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fw_gear_freesurferator-0.2.1.dist-info/RECORD,,

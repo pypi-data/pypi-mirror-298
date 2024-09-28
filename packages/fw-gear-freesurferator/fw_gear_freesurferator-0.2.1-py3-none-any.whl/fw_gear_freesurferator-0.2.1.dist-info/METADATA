@@ -1,0 +1,418 @@
+Metadata-Version: 2.1
+Name: fw-gear-freesurferator
+Version: 0.2.1
+Summary: 
+Home-page: https://gitlab.com/flywheel-io/scientific-solutions/gears/freesurferator
+License: MIT
+Keywords: Flywheel,Gears
+Author: Flywheel
+Author-email: support@flywheel.io
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: flywheel-gear-toolkit (==0.6.8)
+Requires-Dist: flywheel-sdk (>=17.4.1,<18.0.0)
+Requires-Dist: neuropythy (>=0.12.13,<0.13.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: urllib3 (==1.26.18)
+Project-URL: Repository, https://gitlab.com/flywheel-io/scientific-solutions/gears/freesurferator
+Description-Content-Type: text/markdown
+
+# freesurferator: create anatomical ROIs for DWI, fMRI, PET... in subject space
+
+## Overview
+
+### Summary
+
+*This gear takes either an existing FreeSurfer zipped run, or an anatomical NIfTI file
+and performs all of the FreeSurfer cortical reconstruction process. Outputs are
+provided in a zip file and include the entire output directory tree from `recon-all`.
+Configuration options exist for setting the subject ID and for converting outputs to
+NIfTI, and CSV. FreeSurfer is a software package for the analysis and visualization of
+structural and functional neuroimaging data from cross-sectional or longitudinal
+studies. It is developed by the Laboratory for Computational Neuroimaging at the
+Athinoula A. Martinos Center for Biomedical Imaging. Please see
+<https://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurferSoftwareLicense> for license
+information. Additionally, this gear includes a bunch of atlases included (cerebellum,
+HCP, Neuropythy...) and user created ROIs in surface (fsaverage) or volumetric (MNI)
+space can be provided. Depending on the configuration options it will create  ROIs in
+subject space that can later be incorporated to other neuroimaging tools (PETsurfer,
+RTP2 DWI pipeline...)*
+
+### Cite
+
+*For citation information, please visit: <https://www.biorxiv.org/content/10.1101/2022.03.17.484761v1>*
+*License:* *Other*
+
+### Classification
+
+*Category:* *analysis*
+
+*Gear Level:*
+
+- [x] Project
+- [ ] Subject
+- [ ] Session
+- [ ] Acquisition
+- [x] Analysis
+
+----
+
+[[*TOC*]]
+
+----
+
+### Inputs
+
+- *anat*
+  - __Name__: *anat*
+  - __Type__: *nifti*
+  - __Optional__: *false*
+  - __Classification__: **
+  - __Description__: *Anatomical NIfTI file.*
+  - __Notes__: **
+
+- *pre_fs*
+  - __Name__: *pre_fs*
+  - __Type__: *zip*
+  - __Optional__: *true*
+  - __Classification__: **
+  - __Description__: *ZIP file with a full freesurfer run*
+  - __Notes__: **
+  
+- *control_points*
+  - __Name__: *control_points*
+  - __Type__: *dat*
+  - __Optional__: *true*
+  - __Classification__: **
+  - __Description__: *Text file with the control points created in Freeview. You can
+        find them in the tmp/ folder once you create them in Freeview. If there is a
+        control points file and it is correct, Freesurfer will use them. Be careful to
+        add the proper recon-all call. The file name needs to be named control.dat,
+        and you need to copy it from the tmp/ folder, if it is not the case, the gear
+        will fail.*
+  - __Notes__: **
+
+- *mniroizip*
+  - __Name__: *mniroizip*
+  - __Type__: *zip*
+  - __Optional__: *true*
+  - __Classification__: **
+  - __Description__: *ZIP file with ROIs in MNI space. If this zip exists (no folder
+        names, all ROIs in base folder after unzipping), the ROIs will be converted to
+        individual subject space. The ROIs need to be in FSL's 1mm isotropic MNI
+        template space. Please check with `mri_info` (Freesurfer) or `mrinfo` (MRtrix)
+        or an equivalent software that your ROI and the template are exactly in the
+        same space. The ROIs should be composed of 0-s and 1-s. For downloading an
+        example an several ROIs, please check <https://osf.io/download/m6b7r>*
+  - __Notes__: **
+  
+- *annotfile*
+  - __Name__: *annotfile*
+  - __Type__: *zip*
+  - __Optional__: *true*
+  - __Classification__: **
+  - __Description__: *zip with annot files in fsaverage space. Create surface
+        ROIs in fsaverage and save them as annots and them zip them, the system will
+        create cortical volumetric independent ROIs in subject space*
+  - __Notes__: **
+  
+- *t1w_anatomical_2*
+  - __Name__: *t1w_anatomical_2*
+  - __Type__: *nifti*
+  - __Optional__: *true*
+  - __Classification__: **
+  - __Description__: *Additional anatomical NIfTI file*
+  - __Notes__: **
+  
+- *t1w_anatomical_3*
+  - __Name__: *t1w_anatomical_3*
+  - __Type__: *nifti*
+  - __Optional__: *true*
+  - __Classification__: **
+  - __Description__: *Additional anatomical NIfTI file*
+  - __Notes__: **
+  
+- *t1w_anatomical_4*
+  - __Name__: *t1w_anatomical_4*
+  - __Type__: *nifti*
+  - __Optional__: *true*
+  - __Classification__: **
+  - __Description__: *Additional anatomical NIfTI file*
+  - __Notes__: **
+  
+- *t1w_anatomical_5*
+  - __Name__: *t1w_anatomical_5*
+  - __Type__: *nifti*
+  - __Optional__: *true*
+  - __Classification__: **
+  - __Description__: *Additional anatomical NIfTI file*
+  - __Notes__: **
+  
+- *freesurfer_license_file*
+  - __Name__: *freesurfer_license_file*
+  - __Type__: *file*
+  - __Optional__: *true*
+  - __Classification__: *{Based on "inputs.Input-File.base"}*
+  - __Description__: *FreeSurfer license file, provided during registration
+        with FreeSurfer. This file will be copied to the $FSHOME directory and used
+        during execution of the Gear.*
+  - __Notes__: **
+  
+- *t2w_anatomical*
+  - __Name__: *t2w_anatomical*
+  - __Type__: *nifti*
+  - __Optional__: *true*
+  - __Classification__: **
+  - __Description__: *T2w Anatomical NIfTI file*
+  - __Notes__: **  
+
+### Config
+
+- *subject_id*
+  - __Name__: *subject_id*
+  - __Type__: *string*
+  - __Description__: *Desired subject ID. Any spaces in the subject_id will be replaced
+        with underscores and will be used to name the resulting FreeSurfer output
+        directory. NOTE: If using a previous Gear output as input the subject code
+        will be parsed from the input archive, however it should still be provided
+        here for good measure.*
+  - __Default__: *Sxxx*
+
+- *reconall_options*
+  - __Name__: *reconall_options*
+  - __Type__: *string*
+  - __Description__: *Command line options to the `recon-all` algorithm. (Default=`-all
+        -qcache`. `-all` runs the entire pipeline and `-qcache` will resample data onto the
+        average subject (called fsaverage) and smooth it at various full-width/half-max
+        (FWHM) values, usually 0, 5, 10, 15, 20, and 25mm, which can speed later
+        processing.) Note that modification of these options may result in failure
+        if the options are not recognized. Note: if the optional file control_points
+        are included, then it will write it in the tmp/ folder and it will re-reun it
+        with the options set up in this field. For example, if control points are added
+        for intensity correction, then -autorecon2-cp and -autorecon3 will be expected
+        here instead of -all.*
+  - __Default__: *-all -qcache*
+
+- *hippocampal_subfields*
+  - __Name__: *hippocampal_subfields*
+  - __Type__: *boolean*
+  - __Description__: *Generates an automated segmentation of the hippocampal subfields
+        based on a statistical atlas built primarily upon ultra-high resolution (~0.1 mm
+        isotropic) ex vivo MRI data. Choosing this option will write
+        `<subject_id>_HippocampalSubfields.csv` to the final results. See:
+        <https://surfer.nmr.mgh.harvard.edu/fswiki/HippocampalSubfields> for more info.
+        (Default=false)*
+  - __Default__: *false*
+
+- *brainstem_structures*
+  - __Name__: *brainstem_structures*
+  - __Type__: *boolean*
+  - __Description__: *Generate automated segmentation of four different brainstem
+        structures from the input T1 scan: medulla oblongata, pons, midbrain and
+        superior cerebellar peduncle (SCP). We use a Bayesian segmentation algorithm
+        that relies on a probabilistic atlas of the brainstem (and neighboring brain
+        structures) built upon manual delineations of the structures on interest
+        in 49 scans (10 for the brainstem structures, 39 for the surrounding
+        structures). The delineation protocol for the brainstem was designed by
+        Dr. Adam Boxer and his team at the UCSF Memory and Aging Center, and is
+        described in the paper. Choosing this option will write
+        `<subject_id>_BrainstemStructures.csv` to the final results. See:
+        <https://surfer.nmr.mgh.harvard.edu/fswiki/BrainstemSubstructures> for more
+        info. (Default=false)*
+  - __Default__: *false*
+
+- *thalamic_nuclei*
+  - __Name__: *thalamic_nuclei*
+  - __Type__: *boolean*
+  - __Description__: *Generate parcellation of the thalamus into 25 different nuclei,
+        using a probabilistic atlas built with histological data. The parcellation
+        is based on structural MRI, either the main T1 scan processed through
+        recon-all, or an additional scan of a different modality, which potentially
+        shows better contrast between the nuclei. Choosing this option will write
+        <subject_id>_thalamic-nuclei.lh.v10.T1.csv and
+        <subject_id>_thalamic-nuclei.rh.v10.T1.stats.csv to the final results. See:
+        <https://surfer.nmr.mgh.harvard.edu/fswiki/ThalamicNuclei> for more info.
+        (Default=false)*
+  - __Default__: *false*
+
+- *cerebellum*
+  - __Name__: *cerebellum*
+  - __Type__: *boolean*
+  - __Description__: *bring CerebellumParcellation-Bucker2011 (17Networks LooseMask)
+        into native space, and generate separate image files for each volume*
+  - __Default__: *false*
+
+- *hcp*
+  - __Name__: *hcp*
+  - __Type__: *boolean*
+  - __Description__: *bring MNI_Glasser_HCP into native space, and generate separate
+        image files for each volume.*
+  - __Default__: *false*
+
+- *mni_rois*
+  - __Name__: *mni_rois*
+  - __Type__: *boolean*
+  - __Description__: *Bring MNI ROIs such as MNI_JHU_tracts_ROIs, custom created and
+        other ROIs into native space. If no `mniroizip` input is passed and this is
+        set to True, it will use the default Mori ROIs, CC ROIs and some other (such
+        as eyes or the mOTS and pOTS VWFAs). Download the zip from the Freesurferator
+        repo or check the README for more information. If this is set to True and a
+        `mniroizip` input is passed, then both will be added and converted to
+        subject's space. If it is set to False and `mniroizip` is passed only those
+        MNI ROIs will be converted.*
+  - __Default__: *false*
+
+- *aparc2009*
+  - __Name__: *aparc2009*
+  - __Type__: *boolean*
+  - __Description__: *separate the aparc.a2009 from freesurfer to individual images for
+        each segment*
+  - __Default__: *false*
+
+- *rois_in_output*
+  - __Name__: *rois_in_output*
+  - __Type__: *boolean*
+  - __Description__: *Depending on the selection there can be hundreds of ROIs,
+        therefore they will be all zipped in the `fs.zip` archive in the `/ROIs`
+        folder. In some cases (few ROIs, debugging) it might be of interest having the
+        ROIs in the output. Default is false.*
+  - __Default__: *false*
+
+- *neuropythy_analysis*
+  - __Name__: *neuropythy_analysis*
+  - __Type__: *boolean*
+  - __Description__: *Perform a neuropythy analysis. See:
+        <https://github.com/noahbenson/neuropythy> for more info. (Default=false)*
+  - __Default__: *false*
+
+- *run_gtmseg*
+  - __Name__: *run_gtmseg*
+  - __Type__: *boolean*
+  - __Description__: *Run gtmseg, it is a step required for PETsurfer. By default, is
+        false.*
+  - __Default__: *false*
+
+- *force_ants*
+  - __Name__: *force_ants*
+  - __Type__: *boolean*
+  - __Description__: *Ants will be automatically done depending on what segmentations
+        are asked. If this options is set to true, ANTs will be run regardless of
+        those options. Default=false*
+  - __Default__: *false*
+
+- *freesurfer_license_key*
+  - __Name__: *freesurfer_license_key*
+  - __Type__: *string*
+  - __Description__: *Text from license file generated during FreeSurfer registration.
+        Entries should be space separated. Usually this should be added at the project
+        level and it will be read from there.*
+  - __Default__: **
+
+### Outputs
+
+#### Files
+
+- *freesurferator_<subject_id>_<date>.zip*
+  - __Name__: *freesurferator_<subject_id>_<date>.zip*
+  - __Type__: *zip*
+  - __Optional__: *false*
+  - __Classification__: *zip*
+  - __Description__: *Freesurfer's complete output, zipped*
+  - __Notes__: **
+
+- *fs.zip*
+  - __Name__: *fs.zip*
+  - __Type__: *zip*
+  - __Optional__: *false*
+  - __Classification__: *zip*
+  - __Description__: *All ROIs in subject space, that can be used in other analyses.
+        On top of that, it contains T1w file, the MNI template and other files.*
+  - __Notes__: **
+
+- *T1.nii.gz*
+  - __Name__: *T1.nii.gz*
+  - __Type__: *nifti*
+  - __Optional__: *false*
+  - __Classification__: *nifti*
+  - __Description__: *T1w image, from Freesurfer's output*
+  - __Notes__: **
+
+There are other files in the output, but most of them depend on the config options.
+They should be auto-explicative.
+
+#### Metadata
+
+This gear does not generate metadata
+
+### Pre-requisites
+
+It has no prerequisites, more than having a nifti file
+
+#### Prerequisite Gear Runs
+
+A list of gears, in the order they need to be run:
+
+1. __*dcm2niix*
+    - Level: *Acquisition*
+
+#### Prerequisite Files
+
+A list of any files (OTHER than those specified by the input) that the gear will need.
+If possible, list as many specific files as you can:
+
+None
+
+#### Prerequisite Metadata
+
+A description of any metadata that is needed for the gear to run.
+If possible, list as many specific metadata objects that are required:
+
+None
+
+## Usage
+
+This gear is used directly or as a Gear Rule. It has only one required file, the T1w.
+This is actually not always necessary. If a T1w and a previously run freesurfer zip
+is passed, it will ignore the T1w and unzip the fs_zip and go from there.
+
+### Description
+
+*In the most basic form it just runs freesurfer. If a fs_zip is passed, not even that.
+On top of those options, it is possible to select many other segmentations and atlases
+to obtain innumerable ROIs. It is possible to pass a zip with MNI ROIs that the gear
+will convert to subject space ROIs. It is possible to pass a zip with fsaverage
+annotfiles, and the gear will generate cortical volumetric ROIs as well.*
+
+### Workflow
+
+There is no workflow, it runs recon_all or unzips de zipped freesurfer output,
+and then the rest of the analyses are optional and it depends on what the
+researcher wants.
+
+Description of workflow
+
+1. Upload file to container
+1. Select file as input to gear
+1. Geat places output in Analysis
+
+### Logging
+
+There are several logs, depending on what has been run. If recon_all is being run,
+there will be a huge fresurfer log. Then, depending on the selected options,
+there will be sections per every groups of ROIs that have been asked to calculate.
+
+## FAQ
+
+[FAQ.md](FAQ.md)
+
+## Contributing
+
+[For more information about how to get started contributing to that gear,
+checkout [CONTRIBUTING.md](CONTRIBUTING.md).]
+
