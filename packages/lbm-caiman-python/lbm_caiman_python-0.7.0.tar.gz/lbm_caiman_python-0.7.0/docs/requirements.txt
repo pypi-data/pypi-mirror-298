@@ -1,0 +1,16 @@
+sphinx<=6.0, >=4.0
+docutils==0.19
+furo==2021.11.16
+nbsphinx
+sphinx_gallery
+sphinx_book_theme
+sphinx_copybutton
+sphinx_togglebutton
+sphinxcontrib-images
+sphinxcontrib-video
+numpydoc
+ipykernel
+myst_nb
+sphinx_design
+sphinx_tippy
+jupytext

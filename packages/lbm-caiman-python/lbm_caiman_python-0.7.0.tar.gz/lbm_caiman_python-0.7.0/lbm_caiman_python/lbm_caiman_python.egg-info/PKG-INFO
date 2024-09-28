@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: lbm-caiman-python
+Version: 0.7.0
+Summary: Python implementation of the Light Beads Microscopy (LBM) computational pipeline.
+Home-page: https://github.com/millerbrainobservatory/LBM-CaImAn-Python
+Author: Flynn OConnell
+Author-email: foconnell@rockefeller.edu
+Project-URL: homepage, https://github.com/MillerBrainObservatory/
+Project-URL: documentation, https://millerbrainobservatory.github.io/LBM-CaImAn-Python/index.html
+Project-URL: source, https://github.com/MillerBrainObservatory/LBM-CaImAn-Python/
+Keywords: Pipeline Numpy Microscopy ScanImage multiROI tiff
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: tifffile
+Requires-Dist: numpy>=1.24.3
+Requires-Dist: numba>=0.57.0
+Requires-Dist: matplotlib
+Requires-Dist: scipy>=1.9.0
+Requires-Dist: dask
+Provides-Extra: docs
+Requires-Dist: sphinx>=3.0; extra == "docs"
+Requires-Dist: sphinxcontrib-apidoc; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
+Requires-Dist: sphinx-prompt; extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints; extra == "docs"
+Provides-Extra: gui
+Requires-Dist: qtpy; extra == "gui"
+Requires-Dist: pyqt6; extra == "gui"
+Requires-Dist: pyqt6.sip; extra == "gui"
+Requires-Dist: pyqtgraph; extra == "gui"
+Provides-Extra: io
+Requires-Dist: opencv-python-headless; extra == "io"
+Requires-Dist: zarr; extra == "io"
+Provides-Extra: notebook
+Requires-Dist: jupyterlab; extra == "notebook"
+Provides-Extra: all
+Requires-Dist: qtpy; extra == "all"
+Requires-Dist: pyqt6; extra == "all"
+Requires-Dist: pyqt6.sip; extra == "all"
+Requires-Dist: pyqtgraph; extra == "all"
+Requires-Dist: opencv-python-headless; extra == "all"
+Requires-Dist: zarr; extra == "all"
+
+# LBM-CaImAn-Python
+
+[![Pixi Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/prefix-dev/pixi/main/assets/badge/v0.json)](https://pixi.sh) [![Documentation](https://img.shields.io/badge/%20Docs-1f425f.svg)](https://millerbrainobservatory.github.io/LBM-CaImAn-Python/)
+
+Python implementation of the Light Beads Microscopy (LBM) computational pipeline.
+
+For the `MATLAB` implementation, see [here](https://github.com/MillerBrainObservatory/LBM-CaImAn-MATLAB/)
+
+## Pipeline Steps:
+
+1. Extraction
+    - De-interleave zT
+    - Scan Phase-Correlation
+2. Registration
+    - Template creation
+    - Rigid registration
+    - Piecewise-rigid registration
+3. Segmentation
+    - Iterative CNMF segmentation
+    - Deconvolution
+    - Refinement
+
+# Requirements
+
+- caiman
+- numpy
+- scipy
+
+```{note}
+See the `environment.yml` file at the root of this project for a complete list of package dependencies.
+```
