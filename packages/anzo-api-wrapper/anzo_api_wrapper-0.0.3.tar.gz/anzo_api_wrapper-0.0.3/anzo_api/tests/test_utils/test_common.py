@@ -1,0 +1,9 @@
+DOMAIN = "http://localhost"
+PORT = 8080
+USERNAME = "sysadmin"
+PASSWORD = "123"
+FILE_STORE_URI = "http://cambridgesemantics.com/LocalFileConnection/94cd1d06d1f2451dbeaef8a95216fd1a"
+PATH_TO_FLDS_ZIP = "/opt/anzoshare/IMDBExport.zip"
+PATH_TO_RDF_TTL = "small-ttl-dataset-api/rdf.ttl"
+TEST_USER_URI = "ldap:///uid=fakeUser,ou=people,dc=example,dc=com"
+TEST_GROUP_URI = "http://cambridgesemantics.com/Group/52f35fc74e054939b974c2706e13f3b4"

@@ -1,0 +1,164 @@
+# Anzo API Wrapper
+
+This package is a Python wrapper for the Anzo API released in version 5.4.
+[Reviewing the Anzo API documentation](https://docs.cambridgesemantics.com/anzo/v5.4/api/#/) is necessary for using this
+package.
+
+The functionality of this library is centered on the AnzoApi class. The methods for this class are one-to-one with the 
+API endpoints.
+- Request parameters are function fields
+- Request bodies are key word arguments
+- Responses are object models representative of Anzo data assets
+  - When API responses do not provide objects, functions return `True` if the request is successful
+- Function names are derived from the operation ID specified in the Anzo API documentation
+- Parameter names are renamed when identical to Python built-ins. Review function documentation for the translation
+
+## Authorization
+HTTP requests in this library are all issued using the [requests](https://requests.readthedocs.io/en/latest/) library. 
+Passwords are never stored. Authorization to Anzo is possible by either using a username/password combination or an
+authorization token.
+```python
+from anzo_api import AnzoApi
+anzo_basic_auth = AnzoApi(
+  hostname="app-anzo.com", username="user", password="password")
+
+token = token_service.retrieve_token()
+anzo_auth_bearer_token = AnzoApi(
+  hostname="app-anzo.com", auth_token=f"Bearer {token}"
+)
+```
+
+## Examples
+```python
+from anzo_api import AnzoApi
+anzo = AnzoApi(hostname="app-anzo.com", username="user", password="password")
+
+# Retrieve all graphmarts
+graphmarts = anzo.list_graphmarts()
+
+# Retrieve a filtered set of graphmarts
+graphmart = anzo.list_graphmarts(filter={"title":"Project1"})
+
+# Retrieve graphmart by URI
+graphmart = anzo.retrieve_graphmart(
+  graphmart_uri="http://cambridgesemantics.com/Graphmart/MyGraphmart")
+
+# Retrieve dataset by URI
+dataset = anzo.retrieve_dataset(
+  dataset_uri="http://cambridgesemantics.com/Dataset/MyDataset")
+
+# Create a graphmart
+graphmart = anzo.create_graphmart(
+  title="My API Graphmart", 
+  description="I created this Graphmart using the Anzo API python wrapper")
+```
+```python
+# See properties attached to the graphmart
+>>> graphmart.list_props()
+['uri', 'title', 'type', 'loadPriority']
+```
+
+### Providing Parameters or Data
+Review the Anzo API documentation. Users can provide optional parameters and data for requests. Parameters are 
+built into function calls. Additional data is handled as keyword args.
+```python
+# Provide expand as a parameter
+graphmarts = self.anzo.list_graphmarts(expand=["description", "creator"])
+
+# Provide description as a keyword arg
+anzo.create_graphmart(
+  title="Create from API", description="I was created from the Anzo API.")
+
+# Provide nested keywords to create graphmart, step, and layer all in one go
+anzo.create_graphmart(
+    title="Graphmart",
+    layer=[{
+      "title": f"CSV Upload Layer",
+      "description": "Layer created from AnzoApi",
+      "enabled": True,
+      "layerStep": [{
+        "title": f"CSV Upload Step",
+        "description": "Step created from AnzoApi",
+        "type": "QueryStep",
+        "transformQuery": pre_written_query
+      }]
+    }]
+  )
+```
+### Graphmart Operations
+```python
+graphmart_uri="http://cambridgesemantics.com/Graphmart/MyGraphmart"
+# Standard operations
+anzo.activate_graphmart(graphmart_uri)
+anzo.reload_graphmart(graphmart_uri)
+anzo.refresh_graphmart(graphmart_uri)
+anzo.retrieve_graphmart_status(graphmart_uri, detail=True)
+anzo.deactivate_graphmart(graphmart_uri)
+
+# Activation with Kubernetes
+
+```
+
+### Migration Packages
+The migration package functions interact with ZIP files. To import a migration package, all you'll need to do is provide
+a path to a valid migration package zip file 
+```python
+# Import a migration package
+MIGRATION_PACKAGE_PATH = "~/path/to/ExportPackage_2024.zip"
+anzo.import_migration_package(MIGRATION_PACKAGE_PATH)
+```
+
+The export migration package returns a [BytesIO](https://docs.python.org/3/library/io.html#io.BytesIO) object. Below is an example to write a zip file with the returned value:
+```python
+# Export a migration package, write it to a location
+MIGRATION_PACKAGE_URI = "http://app-anzo.com/MigrationPackage/1234"
+migration_package = anzo.export_migration_package(MIGRATION_PACKAGE_URI)
+
+from datetime import datetime
+MIGRATION_PACKAGE_PATH = f"./ExportPackage_{"_".join(datetime.now().split(" "))}.zip"
+with open(MIGRATION_PACKAGE_PATH, "wb") as f:
+    f.write(migration_package.getvalue())
+migration_package.close()
+```
+
+
+## Classes
+The return type for many wrapper functions is a class representation of the Anzo asset.
+```commandline
+>>> anzo = AnzoApi("https://app-anzo.com", port=8080, username="username", password="password")
+>>> graphmarts = anzo.list_graphmarts(expand=["description", "loadPriority"])
+>>> type(graphmarts[0])
+anzo_api.models.Graphmart
+```
+There are a few static methods built into classes:
+```commandline
+>>> from anzo_api.models import Layer, QueryStep
+>>> Layer.basic()
+{'title': 'Layer Title', 'description': 'Layer created from API', 'enabled': True}
+>>> print(QueryStep.query_template())
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+PREFIX s:       <http://cambridgesemantics.com/ontologies/DataToolkit#>
+
+# targetGraph is replaced with the Layers URI at runtime
+# usingSources is replaced with the URIs of the Layer's Sources at runtime
+DELETE {
+    GRAPH ${targetGraph} {
+
+    }
+}
+INSERT {
+    GRAPH ${targetGraph} {
+
+    }
+}
+${usingSources}
+WHERE {
+
+}
+```
+## Additional Notes
+### Usage
+The Anzo API is used for managing artifacts on Anzo systems. In order to query data, you must query endpoints directly
+or use the PyAnzo library.
