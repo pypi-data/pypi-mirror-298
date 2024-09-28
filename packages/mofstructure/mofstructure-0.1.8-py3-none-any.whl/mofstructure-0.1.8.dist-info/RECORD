@@ -1,0 +1,15 @@
+mofstructure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mofstructure/buildingunits.py,sha256=CMYZng6MiBOgOZxwpQP-YoDapnEUyoO4Q6w-NXARGkw,4387
+mofstructure/cof_stacking.py,sha256=cGsDbSQz89JMtfhP2ZY4FjI9e10fD8fsEI58H-nrhbQ,1933
+mofstructure/collect_building_units.py,sha256=V_TEYzj4KPcPAVSxCuvFMoGx379KRbg9LTO8AvAvwPA,10298
+mofstructure/collect_data.py,sha256=I7OC2o0vvTi1KTIw9WUm6sDV5qPeIcvcS8bCbckHgcs,13451
+mofstructure/collect_oms.py,sha256=s_FNBJltPsNT195_rJms4wOrTh9SfrBGWf3mcdq76gA,5713
+mofstructure/collect_porosity.py,sha256=-nx2dKek6hkyoITYuxKBV3uCAWiuISDpxNVlX1lCEMo,6056
+mofstructure/filetyper.py,sha256=K99q9vOlpxIDAPmdpOKb2HQ09iKuZ9PpPz00oAdaHFk,5709
+mofstructure/mofdeconstructor.py,sha256=5kseb7dhNU4BWoYV3Of9uMuJahvVaFxbIrDhxZXTV-0,73947
+mofstructure/porosity.py,sha256=0nf1WJlwkqnmPldYYPLOXZObao-F35WeqzX7vW4kOvA,5201
+mofstructure-0.1.8.dist-info/LICENSE,sha256=ank1Sm_lRSY8oRCHSh9FvMo0duQzdI6ECQVYA4DmGO4,12430
+mofstructure-0.1.8.dist-info/METADATA,sha256=9C6y92IQFc4RCZpdmmm-NZnSZ59Q5pKYkQ1lOgG6SiY,10939
+mofstructure-0.1.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mofstructure-0.1.8.dist-info/entry_points.txt,sha256=m3g2YEK3pY7SqiMuhZ5RIznnBQ5XOmD3bnVCvJc5Zhc,290
+mofstructure-0.1.8.dist-info/RECORD,,
