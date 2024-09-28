@@ -1,0 +1,2 @@
+[console_scripts]
+taskpath = taskpath:main
