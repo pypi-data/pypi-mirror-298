@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+trex_id.c
+trex_id.egg-info/PKG-INFO
+trex_id.egg-info/SOURCES.txt
+trex_id.egg-info/dependency_links.txt
+trex_id.egg-info/not-zip-safe
+trex_id.egg-info/top_level.txt
