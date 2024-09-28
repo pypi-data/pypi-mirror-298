@@ -1,0 +1,8 @@
+setup.py
+haldi/__init__.py
+haldi.egg-info/PKG-INFO
+haldi.egg-info/SOURCES.txt
+haldi.egg-info/dependency_links.txt
+haldi.egg-info/top_level.txt
+tests/__init__.py
+tests/test_test.py
