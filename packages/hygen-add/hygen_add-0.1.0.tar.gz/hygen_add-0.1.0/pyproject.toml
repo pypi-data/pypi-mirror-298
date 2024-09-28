@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hygen_add"
+version = "0.1.0"
+authors = [
+    { name="Italo Maia" },
+]
+description = "Python version of the JS `hygen-add` project, which currently seems abandoned."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.0"
+dependencies = ["requests>=2"]
+
+[project.scripts]
+hygen-add = "hygen_add:main"
+
+[project.urls]
+Homepage = "https://github.com/italomaia/hygen-axum-podman-template"
+Issues = "https://github.com/italomaia/hygen-axum-podman-template/issues"
