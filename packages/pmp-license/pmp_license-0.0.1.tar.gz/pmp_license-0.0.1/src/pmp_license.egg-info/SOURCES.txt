@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/pmp_license/__init__.py
+src/pmp_license/constants.py
+src/pmp_license.egg-info/PKG-INFO
+src/pmp_license.egg-info/SOURCES.txt
+src/pmp_license.egg-info/dependency_links.txt
+src/pmp_license.egg-info/top_level.txt
+tests/test_check_license.py
