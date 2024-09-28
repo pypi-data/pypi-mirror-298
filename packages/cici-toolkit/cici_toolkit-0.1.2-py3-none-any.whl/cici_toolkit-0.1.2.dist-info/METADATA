@@ -1,0 +1,190 @@
+Metadata-Version: 2.1
+Name: cici-toolkit
+Version: 0.1.2
+Summary: Cici: The Microsoft Comic Chat Toolkit
+Home-page: https://gitlab.com/nanoNago/cici
+Author: nago
+Author-email: nago@malie.io
+Maintainer: nago
+Maintainer-email: nago@malie.io
+Project-URL: Homepage, https://gitlab.com/nanoNago/cici
+Project-URL: Documentation, https://gitlab.com/nanoNago/cici
+Project-URL: Changelog, https://gitlab.com/nanoNago/cici
+Project-URL: Issues, https://gitlab.com/nanoNago/cici/-/issues
+Project-URL: Source, https://gitlab.com/nanoNago/cici
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Classifier: Topic :: File Formats
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: Pillow>=9.0.0
+Requires-Dist: chardet>=5.0.0
+Requires-Dist: colorama>=0.4.6
+Requires-Dist: termcolor>=2.4.0
+Provides-Extra: devel
+Requires-Dist: avocado-framework>=92.0; extra == "devel"
+Requires-Dist: black>=23.0.0; extra == "devel"
+Requires-Dist: coverage>=6.1.0; extra == "devel"
+Requires-Dist: flake8>=5.0.4; extra == "devel"
+Requires-Dist: isort>=5.1.2; extra == "devel"
+Requires-Dist: mypy>=1.4.0; extra == "devel"
+Requires-Dist: pylint>=2.17.3; extra == "devel"
+Requires-Dist: tox>=3.18.0; extra == "devel"
+Requires-Dist: types-Pillow; extra == "devel"
+Requires-Dist: types-colorama; extra == "devel"
+Requires-Dist: setuptools>=66.1.0; python_version >= "3.12" and extra == "devel"
+
+cici: Microsoft Comic Chat Toolkit
+==================================
+
+Haiii!! ``cici`` is a Microsoft Comic Chat file format library and
+toolkit.
+
+This toolkit can be used to extract images from .AVB and .BGB files,
+and in some cases, repair corrupted avatars!
+
+Right now, ``cici`` is still in an early alpha form, and only the
+"info" subcommand is available, with "extract", "repair" and "scan" to
+come later. The library itself is still useful for extracting images,
+but write/repair support is temporarily unavailable.
+
+Soon!
+
+
+Installing
+----------
+
+On Linux/Mac, if you already have Python, this package can be installed from PyPI with pip::
+
+  > pip install cici-toolkit
+
+On Windows, you'll need to install Python first. Go get Python3.11
+from the Microsoft Store and install it:
+https://www.microsoft.com/store/productId/9NRWMJP3717K
+
+Once installed, open up a command prompt and confirm Python and the
+Python package installer have been installed by typing "pip
+--version". If that works, then you should be good to type::
+
+  > pip install cici-toolkit
+
+
+Usage
+-----
+
+More in-depth docs coming soon, sorry!
+
+For now, you can use ``cici info <filename>`` to see information about
+any .AVB/.BGB file, and ``cici info -v <filename>`` to see in-depth
+information about a file.
+
+See ``cici info --help`` for more details::
+
+  usage: cici info [-h] [-e] [-i] [-v] [-s] [--hide-warnings] [-d] filename
+
+  positional arguments:
+    filename
+
+  options:
+    -h, --help       show this help message and exit
+    -e, --emotions   Show pose/emotion/gesture information
+    -i, --images     Show image table information
+    -v, --verbose    Verbose output: show emotion and image tables (implies -e, -i)
+    -s, --strict     Show pedantic warnings.
+    --hide-warnings  Don't show warnings for non-fatal problems with the file.
+    -d, --debug      Show full debugging information and stack traces.
+
+To use this as a library, try starting here for now::
+
+  >>> import cici
+
+  >>> with open("xeno.avb", "rb") as infile:
+  >>>     avb = cici.Binary(infile)
+
+  >>> avb.name
+  'Xeno'
+  >>> avb.ftype
+  <FileType.AVATAR_DYNAMIC: 2>
+  >>> avb.fvers
+  <FileVersion.CCHAT_25: 2>
+
+  >>> avb.icon
+  <PIL.BmpImagePlugin.BmpImageFile image mode=P size=40x40 at 0x7F950AC81D60>
+
+  >>> img = avb.emotions[0].render()
+  >>> img
+  <PIL.Image.Image image mode=RGBA size=120x156 at 0x7F950AC43980>
+  >>> img.show()
+
+.. image:: _static/xeno.png
+   :alt: Output from img.show() above
+
+This library uses `Pillow <https://python-pillow.org/>`_ to store
+images in-memory; some familiarity with that API will be helpful for
+retrieving, converting, and saving images.
+
+Note: Although this library supports dynamic poses (heads and torsos
+stored separately, like xeno up above), the functionality to composite
+them is not present in v0.1.0. It's coming, but needs some cleanup
+before I publish it; it's not ready for primetime yet.
+
+
+Contributing
+------------
+
+Patches welcome! Please just send a Merge Request with a pretty good
+cover letter / commit message. This is still an early version and it
+is still in heavy development. Just check in with me first before you
+write a ton of stuff to make sure we aren't stepping over each other's
+toes, 'kay?
+
+Using the `issue tracker <https://gitlab.com/nanoNago/cici/-/issues>`_
+would be a great way to coordinate efforts ^_^
+
+Near-future versions will add "repair", "extract" and "scan"
+subcommands which will be useful for repairing damage to certain
+files, extracting all poses/images from files, and scanning a
+collection of files for duplicates, identifying damaged files, etc.
+
+Changelog
+---------
+
+0.1.2 (2024-09-27)
+^^^^^^^^^^^^^^^^^^
+
+- Missed a spot in packaging O:-)
+
+0.1.1 (2024-09-27)
+^^^^^^^^^^^^^^^^^^
+
+- Change package name from "cici" to "cici-toolkit" for PyPI
+
+- Tiny packaging and linting fixes
+
+- Add ``Binary.write()`` function back :)
+
+0.1.0 (2024-07-10)
+^^^^^^^^^^^^^^^^^^
+
+- First release of library and "cici info" command line utility O:-)
+
+  This library may change before v1.0 release and should be considered
+  *unstable*. I wouldn't write too much code that relies on this
+  library just yet without coordinating with me a lil' bit. Each new
+  minor version under major version 0 may break API; I promise no
+  breakages only for micro releases.
