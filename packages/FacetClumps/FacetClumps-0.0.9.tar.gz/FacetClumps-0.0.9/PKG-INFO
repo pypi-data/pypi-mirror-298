@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: FacetClumps
+Version: 0.0.9
+Summary: FacetClumps: A Facet-based Molecular Clump Detection Algorithm
+Home-page: https://github.com/JiangYuTS/FacetClumps
+Author: Jiang Yu
+Author-email: yujiang@pmo.ac.cn
+License: MIT License
