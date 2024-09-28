@@ -1,0 +1,7 @@
+README.md
+license.txt
+setup.py
+trest_solar.egg-info/PKG-INFO
+trest_solar.egg-info/SOURCES.txt
+trest_solar.egg-info/dependency_links.txt
+trest_solar.egg-info/top_level.txt
