@@ -1,0 +1,4 @@
+[console_scripts]
+prep-purr-petra=purr_petra.main:prep
+start-purr-petra=purr_petra.main:start
+
