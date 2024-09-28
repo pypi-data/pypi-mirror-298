@@ -1,0 +1,6 @@
+include:
+  - local: defaults.gitlab-ci.yml
+
+unit-test-job:
+  script: unit-test.sh
+  retry: 0

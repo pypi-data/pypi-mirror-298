@@ -1,0 +1,9 @@
+spec:
+  inputs:
+    job-stage:
+    environment:
+---
+scan-website:
+  image: test
+  stage: $[[ inputs.job-stage ]]
+  script: ./scan-website $[[ inputs.environment ]]

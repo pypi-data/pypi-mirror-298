@@ -1,0 +1,8 @@
+# https://docs.gitlab.com/ee/ci/yaml/includes.html#use-nested-includes-with-duplicate-includes-entries
+default:
+  image: test
+
+include:
+  - local: defaults.gitlab-ci.yml
+  - local: unit-tests.gitlab-ci.yml
+  - local: smoke-tests.gitlab-ci.yml

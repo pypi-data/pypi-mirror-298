@@ -1,0 +1,12 @@
+# https://docs.gitlab.com/ee/ci/yaml/includes.html#use-default-configuration-from-an-included-configuration-file
+include: before-script-template.yml
+
+image: ruby:3.0
+
+rspec1:
+  script:
+    - bundle exec rspec
+
+rspec2:
+  script:
+    - bundle exec rspec

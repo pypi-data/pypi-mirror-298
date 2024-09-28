@@ -1,0 +1,4 @@
+include:
+  - local: custom-website-scan.yml
+    inputs:
+      job-stage: 'my-test-stage'

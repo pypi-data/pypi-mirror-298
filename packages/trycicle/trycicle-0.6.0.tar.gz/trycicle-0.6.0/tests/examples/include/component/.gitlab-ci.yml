@@ -1,0 +1,3 @@
+include:
+  - component: gitlab.com/components/secret-detection/secret-detection@~latest
+  - component: gitlab.com/test/include@~latest

@@ -1,0 +1,3 @@
+default:
+  before_script: default-before-script.sh
+  retry: 2

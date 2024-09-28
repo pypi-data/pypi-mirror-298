@@ -1,0 +1,18 @@
+# https://docs.gitlab.com/ee/ci/yaml/includes.html#override-included-configuration-values
+include: autodevops-template.yml
+
+default:
+  image: alpine:latest
+
+variables:
+  POSTGRES_USER: root
+  POSTGRES_PASSWORD: secure_password
+
+stages:
+  - build
+  - test
+  - production
+
+production:
+  environment:
+    url: https://domain.com
