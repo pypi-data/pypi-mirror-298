@@ -1,0 +1,6 @@
+dist
+docs
+htmlcov
+qcml
+results
+tests
