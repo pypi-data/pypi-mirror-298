@@ -1,0 +1,1 @@
+#define HTS_VERSION_TEXT "1.18-52-g2140d03e"

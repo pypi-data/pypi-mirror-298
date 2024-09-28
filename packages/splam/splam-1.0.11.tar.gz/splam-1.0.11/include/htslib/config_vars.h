@@ -1,0 +1,5 @@
+#define HTS_CC "gcc"
+#define HTS_CPPFLAGS ""
+#define HTS_CFLAGS "-fPIC"
+#define HTS_LDFLAGS "-fvisibility=hidden "
+#define HTS_LIBS "-lbz2 -lz  "
