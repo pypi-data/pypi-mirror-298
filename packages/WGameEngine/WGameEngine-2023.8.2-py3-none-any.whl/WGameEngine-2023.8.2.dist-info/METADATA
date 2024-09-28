@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: WGameEngine
+Version: 2023.8.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: JinyuFan Seven WangHaijie
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pymunk==5.6.0
+Requires-Dist: pygame
+Requires-Dist: pytmx
+
+UNKNOWN
+
