@@ -1,0 +1,7 @@
+cffi
+pycparser-fake-libc
+numpy
+
+[example]
+pillow
+tqdm
