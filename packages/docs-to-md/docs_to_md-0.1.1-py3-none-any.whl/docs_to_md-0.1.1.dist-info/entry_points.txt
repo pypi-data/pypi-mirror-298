@@ -1,0 +1,2 @@
+[console_scripts]
+d2m = docs_to_md.main:main
