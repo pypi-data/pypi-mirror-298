@@ -1,0 +1,10 @@
+typing_extensions>=4.0.0
+lionfuncs==1.0.1
+lionabc==1.0.1
+
+[dev]
+pytest>=6.0
+mypy>=0.910
+flake8>=4.0
+black==24.8.0
+isort>=5.0
