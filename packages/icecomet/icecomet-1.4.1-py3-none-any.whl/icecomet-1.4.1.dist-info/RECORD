@@ -1,0 +1,15 @@
+icolor/__init__.py,sha256=nfeLWVo-FIuSQ82GEw4pIwr3kGn5YNVfiUfzAcq4JPw,5973
+iprint/__init__.py,sha256=ItLVSPgajQGZ8iuKqaHm-AkUgw5xHcA4R3u1aldCOSQ,6332
+iprint/oncode.py,sha256=LYdPwbzvmGxFnilrh_EiugtYkrTRc_4y4CU7TLM0XFQ,256
+its/__init__.py,sha256=lYWlOskMDXfGoSh3ne1SE8T9MLJDgdLA8JziIj73RIo,370
+ivcd/__init__.py,sha256=cn3m2foWLbIHq5dxHc3xXQfgPZ1P34zHYL2JGSCB0FI,707
+ivcd/ivos.py,sha256=Va2b-mtcUpGgNsQ5O3hg43bMK_1h0Ms5EKjfV4sSV4M,133
+ivcolor/__init__.py,sha256=nfeLWVo-FIuSQ82GEw4pIwr3kGn5YNVfiUfzAcq4JPw,5973
+ivprint/__init__.py,sha256=j_uadZoveer7EPb0GZ7mwlffYTwrO7_ofKovEkERauY,6054
+ivprint/ivprint.py,sha256=j_uadZoveer7EPb0GZ7mwlffYTwrO7_ofKovEkERauY,6054
+oncode/__init__.py,sha256=SVngAhYLiTc19bYD_HQ1YuSg3sjtgETOwbEcyL_4vVY,282
+icecomet-1.4.1.dist-info/LICENSE,sha256=eivjYNpfS4ntOmzzAsodjgcAUcFR9n-yjAEH5e_YlBg,1090
+icecomet-1.4.1.dist-info/METADATA,sha256=9DaPEt_x75cgx6UIeQYzLwA0O_FYec5V2gGslJ1kAsg,1747
+icecomet-1.4.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+icecomet-1.4.1.dist-info/top_level.txt,sha256=PhWoVRHDFDjWTgemHajuHXmkPepH_9doCGuTAF75YuA,18
+icecomet-1.4.1.dist-info/RECORD,,
