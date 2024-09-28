@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+testPyPi/__init__.py
+testPyPi/_core.py
+testPyPi123.egg-info/PKG-INFO
+testPyPi123.egg-info/SOURCES.txt
+testPyPi123.egg-info/dependency_links.txt
+testPyPi123.egg-info/requires.txt
+testPyPi123.egg-info/top_level.txt

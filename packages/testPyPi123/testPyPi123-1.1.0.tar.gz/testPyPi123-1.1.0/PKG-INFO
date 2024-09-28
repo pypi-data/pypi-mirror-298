@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: testPyPi123
+Version: 1.1.0
+Summary: A package to test
+Home-page: https://github.com/.....
+Author: 1123
+Author-email: cbs3307821258@qq.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy==2.1.1
+
+# 测试打包与上传
