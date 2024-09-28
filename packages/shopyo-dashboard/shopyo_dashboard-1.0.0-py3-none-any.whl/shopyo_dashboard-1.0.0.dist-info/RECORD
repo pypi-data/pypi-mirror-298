@@ -1,0 +1,9 @@
+shopyo_dashboard/__init__.py,sha256=3pL4u4IU3yQALv4uZWynHX9wa0mMvDhIGS42_nRUvlI,491
+shopyo_dashboard/info.json,sha256=2TghNuKUXT2IDRn6mqmzz6K0LhwO6jMFzhh5AoT-78Q,154
+shopyo_dashboard/view.py,sha256=OYwHJtvzaTivb2cfw7HFqq75N1dOUXoTMPhw4N6Z8W4,2169
+shopyo_dashboard/templates/shopyo_dashboard/index.html,sha256=-IVlKYhv4y3mfGzNZKurH6ujSwTGAg4xuor3dH3zrYM,1116
+shopyo_dashboard/templates/shopyo_dashboard/nav.html,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shopyo_dashboard-1.0.0.dist-info/METADATA,sha256=BDc0uKoK0Nhaap-yHpnhHNtH6D8slECPmcLc5jZX-eM,512
+shopyo_dashboard-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+shopyo_dashboard-1.0.0.dist-info/top_level.txt,sha256=XLt-fCdK-RUk4yGKf_-BZ-tIO5je5Aqv7XnXEf3m1es,17
+shopyo_dashboard-1.0.0.dist-info/RECORD,,
