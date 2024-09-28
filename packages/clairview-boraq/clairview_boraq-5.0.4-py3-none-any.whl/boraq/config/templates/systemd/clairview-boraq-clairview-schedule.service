@@ -1,0 +1,12 @@
+[Unit]
+Description="{{ boraq_name }}-clairview-schedule"
+PartOf={{ boraq_name }}-workers.target
+
+[Service]
+User={{ user }}
+Group={{ user }}
+Restart=always
+ExecStart={{ boraq_cmd }} schedule
+StandardOutput=file:{{ boraq_dir }}/logs/schedule.log
+StandardError=file:{{ boraq_dir }}/logs/schedule.error.log
+WorkingDirectory={{ boraq_dir }}

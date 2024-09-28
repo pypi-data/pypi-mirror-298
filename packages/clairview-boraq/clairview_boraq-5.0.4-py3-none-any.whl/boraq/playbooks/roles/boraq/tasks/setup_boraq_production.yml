@@ -1,0 +1,28 @@
+---
+- name: Setup production
+  become: yes
+  become_user: root
+  command: boraq setup production {{ clairview_user }} --yes
+  args:
+    chdir: '{{ boraq_path }}'
+
+- name: Setup Sudoers
+  become: yes
+  become_user: root
+  command: boraq setup sudoers {{ clairview_user }}
+  args:
+    chdir: '{{ boraq_path }}'
+
+- name: Set correct permissions on boraq.log
+  file:
+    path: '{{ boraq_path }}/logs/boraq.log'
+    owner: '{{ clairview_user }}'
+    group: '{{ clairview_user }}'
+  become: yes
+  become_user: root
+
+- name: Restart the boraq
+  command: boraq restart
+  args:
+    chdir: '{{ boraq_path }}'
+...
