@@ -1,0 +1,2 @@
+[salt.loader]
+saltext.zfs = saltext.zfs
