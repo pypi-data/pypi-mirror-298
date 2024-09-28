@@ -1,0 +1,10 @@
+pyproject_metadata/__init__.py,sha256=SpWRBbZXkWynnZ80QnbbRHi9uf_3sT31kjeIoRbln7c,21156
+pyproject_metadata/constants.py,sha256=strN8TFuveMS2vUXxpLGlYGZsUehbUyineaLForIzaI,2825
+pyproject_metadata/errors.py,sha256=BXz5nVUYd9kNLbKByMd6P4kG8sFNiK-5dOz69eKyaYg,2392
+pyproject_metadata/project_table.py,sha256=sf-azJFvUJDRF6g9FMadjdaB3gubJPo-ZUU3P1pBViE,2449
+pyproject_metadata/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyproject_metadata/pyproject.py,sha256=CaxzKa3lSiiuDTZINLNZio2DikVncnca7Ctchz5CCeA,14274
+pyproject_metadata-0.9.0b5.dist-info/LICENSE,sha256=qvminKWQeXHM8H3gJTdds0U5qNXu684gtGCZgFciEG8,1113
+pyproject_metadata-0.9.0b5.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+pyproject_metadata-0.9.0b5.dist-info/METADATA,sha256=TbLy1KaH0pxfX2OPgow0U0dhvyc59sM8SWr9r-c5Fj8,5659
+pyproject_metadata-0.9.0b5.dist-info/RECORD,,
