@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+espn_hidden_api/__init__.py
+espn_hidden_api/espn.py
+espn_hidden_api/tester.py
+espn_hidden_api.egg-info/PKG-INFO
+espn_hidden_api.egg-info/SOURCES.txt
+espn_hidden_api.egg-info/dependency_links.txt
+espn_hidden_api.egg-info/requires.txt
+espn_hidden_api.egg-info/top_level.txt
