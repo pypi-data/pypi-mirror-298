@@ -1,0 +1,11 @@
+feanor/__init__.py,sha256=1NyHoD6VLNVK_hUiuMlDT6bi_k7p7Z9m9ir4k5mzpw4,111
+feanor/__main__.py,sha256=2AVIwTezsW9GFp2YwS0EBisEELuBx7QuZlZGYWOTIhk,554
+feanor/builderTool.py,sha256=ZHki7AfK-MHMdk4c-p7cdVwjREoRt2l6K47O3058dCE,21265
+feanor/temp.py,sha256=Vld3r8-Bui3dfWwH7H6cpogCfPHqD6efqOLTmqbLUd0,3744
+feanor/version.py,sha256=p_ws-9W7HeP_RfNuGscH3UIczaDFgLeGOeDgRBhdzrc,21
+feanor/virtualEnv.py,sha256=mGpb6weV95bmKaWJcB4jNqga887vgsCc1tb-oicZIWk,4538
+feanor-1.0.8.dist-info/METADATA,sha256=Tb4D4giVRg5Gqc_rr8lNtw19rjSen5AnKQcX71TuJLE,2515
+feanor-1.0.8.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+feanor-1.0.8.dist-info/entry_points.txt,sha256=wqQnrUbusE-VyQGK_PAy86vB0sx0s4jiTpirbFzomGg,48
+feanor-1.0.8.dist-info/top_level.txt,sha256=uHSVRaD4zB3vcjnOt4XOhiBpD08hcqp4rB0UD-P2NH0,7
+feanor-1.0.8.dist-info/RECORD,,
