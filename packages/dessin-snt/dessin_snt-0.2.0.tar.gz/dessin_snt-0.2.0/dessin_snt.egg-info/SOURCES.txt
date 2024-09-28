@@ -1,0 +1,8 @@
+README.md
+setup.py
+dessin_snt/__init__.py
+dessin_snt/dessin_snt.py
+dessin_snt.egg-info/PKG-INFO
+dessin_snt.egg-info/SOURCES.txt
+dessin_snt.egg-info/dependency_links.txt
+dessin_snt.egg-info/top_level.txt
