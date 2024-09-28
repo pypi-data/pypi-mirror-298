@@ -1,0 +1,5 @@
+__version__ = "1.1.0"
+__author__ = "Eduard Izgorodin"
+__email__ = "edizgorodin@gmail.com"
+__description__ = "Automates the creation of demand letters based on medical PDF records."
+__url__ = "https://github.com/izgorodin/generate_summary_of_injuries"

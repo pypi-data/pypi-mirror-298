@@ -1,0 +1,7 @@
+reportlab
+spacy
+nltk
+python-dateutil
+pypdf
+dateparser
+fuzzywuzzy
