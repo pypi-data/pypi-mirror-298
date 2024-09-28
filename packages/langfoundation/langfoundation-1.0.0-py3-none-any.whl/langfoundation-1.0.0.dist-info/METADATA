@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: langfoundation
+Version: 1.0.0
+Summary: langfoundation
+Author: Yannick Stephan
+Author-email: stephan.yannick@roche.com
+Requires-Python: >=3.12.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: json-repair (>=0.29.4,<0.30.0)
+Requires-Dist: langchain (>=0.3.1,<0.4.0)
+Requires-Dist: langchain-community (>=0.3.1,<0.4.0)
+Requires-Dist: langchain-core (>=0.3.5,<0.4.0)
+Requires-Dist: langgraph (>=0.2.28,<0.3.0)
+Requires-Dist: langsmith (>=0.1.86,<0.2.0)
+Requires-Dist: mypy
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: ruff
+Requires-Dist: strenum (>=0.4.15,<0.5.0)
+Requires-Dist: toolkit @ file:///Users/yansteph/Documents/dev/agenticflow/toolkit
+Description-Content-Type: text/markdown
+
+
