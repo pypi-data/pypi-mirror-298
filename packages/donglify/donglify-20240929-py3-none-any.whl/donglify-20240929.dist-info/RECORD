@@ -1,0 +1,17 @@
+donglify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donglify/donglify.py,sha256=IBMttfCKUQ4D5cHyzZac5saoYDoOqFTNH_MF7eV_uuc,12385
+donglify/grub.py,sha256=VL4MH9DPbNGVmruS5ykmxNxtZSUtdHqR9P0pNgqysKA,1747
+donglify/isos.py,sha256=2IIMDPrT0YiBoIpZWSIr3CmYGvKLCzy4rTvHLFU8cd4,1390
+donglify/lib.py,sha256=ls1lRliA481xv3x7PIYF5uIitqdo2HElhXEBfPWF_J4,7276
+donglify/mkinitcpio.py,sha256=tJv5MA7tgd6c5PKGtia7syXbN3K7dtXmlJWilTOgpUc,1645
+donglify/assets/unicode.pf2,sha256=P3hYlIPFNtUi4iLxGYUoNVbvJxn8gI3er2CLEbSDs-0,2411774
+donglify/assets/grub.d/header.cfg,sha256=rsoQzHYKr-3lorC_YS7iZEmXHRZv_VUIFazk0hvPNYM,335
+donglify/assets/grub.d/system.cfg,sha256=Ba1kQyoW_zt782VMwIgpfxpRC-H-22OqfjofVfUY5B4,272
+donglify/assets/grub.d/isos/loopback.cfg,sha256=zKMGbq_JjvFwRJOl5xa33mCJYIXtuLy5lVQ_jWbkTVw,267
+donglify/assets/templates/defaultgrub,sha256=pF1ScWDzwctKWOUQHycH8xB-WCc2aJQ9EdmaiAwkP3U,53
+donglify/assets/templates/mkinitcpio.conf,sha256=ARK7FJnYYQzb3Xg4uomkYeP13HUb7ZmJ5muDN8n-Vpo,176
+donglify-20240929.dist-info/METADATA,sha256=9rhTtJajkCJNYtHQ8i9WokA4BKJvZ49bX6-kPPEwM-w,4299
+donglify-20240929.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+donglify-20240929.dist-info/entry_points.txt,sha256=fImA4yrhQ3NNX6U0WqjkW7weh_WKGliU9CFVueHj530,52
+donglify-20240929.dist-info/licenses/LICENSE,sha256=34EEPzqsncPr32CHh0gfQe7oSOL1Ri_Qn-xIVSKsDFI,1062
+donglify-20240929.dist-info/RECORD,,
