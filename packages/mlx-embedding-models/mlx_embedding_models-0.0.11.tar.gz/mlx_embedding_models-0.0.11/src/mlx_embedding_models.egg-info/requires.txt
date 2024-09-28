@@ -1,0 +1,7 @@
+torch
+transformers
+mlx>=0.17.0
+awkward
+numpy
+scipy
+tqdm

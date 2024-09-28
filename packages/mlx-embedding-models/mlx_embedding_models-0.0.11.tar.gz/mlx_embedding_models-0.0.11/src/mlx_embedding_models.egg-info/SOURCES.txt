@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/mlx_embedding_models/__init__.py
+src/mlx_embedding_models/clip_model.py
+src/mlx_embedding_models/embedding.py
+src/mlx_embedding_models/load_utils.py
+src/mlx_embedding_models/model.py
+src/mlx_embedding_models/nomic_model.py
+src/mlx_embedding_models/registry.py
+src/mlx_embedding_models/test_mteb.py
+src/mlx_embedding_models.egg-info/PKG-INFO
+src/mlx_embedding_models.egg-info/SOURCES.txt
+src/mlx_embedding_models.egg-info/dependency_links.txt
+src/mlx_embedding_models.egg-info/requires.txt
+src/mlx_embedding_models.egg-info/top_level.txt
