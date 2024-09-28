@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "abtf_wrapper"
+version = "1.0.0"
+description = ""
+authors = ["Reue Munz <tt574@proton.me>"]
+readme = "readme.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.9.2"
+requests = "^2.32.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
