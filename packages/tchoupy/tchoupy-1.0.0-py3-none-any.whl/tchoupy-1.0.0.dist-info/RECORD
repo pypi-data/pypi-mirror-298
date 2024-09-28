@@ -1,0 +1,17 @@
+tchoupy/__init__.py,sha256=DNZaVQvO9tXIEtHALCuftsKMtwLg3oa42ylGu_k-IBc,252
+tchoupy/conversionsystem_metaclass.py,sha256=OZSUUwxI3lgNNUOBCwrwZIWS0Oep-AwEPPuWOSgIVn8,27212
+tchoupy/future_updates.txt,sha256=jBIlFBHrGZ5-w6vA4HLAcKDwJtfSMj4oheN_m9Fcc-c,4511
+tchoupy/qty.py,sha256=KHtC2h7vgDjkXpU74T5sIHWJ3KZqqp41c3W3sul_Ir0,14392
+tchoupy/requirements.txt,sha256=vscAcwBMa0PMY8TTd2nW8bm0xn3L6sfowykIggvula0,51
+tchoupy/databases/HEP_database.py,sha256=WYY4olygojOMxLwKNUWDMRiOYY3M4qTQiN2FtRD4I94,36905
+tchoupy/systems/CGS_mod.py,sha256=RNaAC1tlkF_11cECtEd3g2opnBhza4sUOl8jHBVatnA,482
+tchoupy/systems/Cosmo_mod.py,sha256=rgIHq4hDpaQ9ZxNcdu11AAsdUTTXlFWppNJQ63-E9m8,975
+tchoupy/systems/HEP_mod.py,sha256=l6QFpIg5pWGfWL7W0eZ914jDZJYr9RGZ0KlEYlHPkAg,5343
+tchoupy/systems/Imperial_mod.py,sha256=IbISqOTN2cS9aiL1k1GDdtNNgCKccwVmjYWTOAy0zPQ,814
+tchoupy/systems/SI_mod.py,sha256=6ujnzq1Gw0vDUN8Vl2ZA3kDbds01tbGHdp_ZlzujkYk,2801
+tchoupy/systems/__init__.py,sha256=ibwwBjPBbjbm9-UcwF1oOetZbFT54tYy3gzM5rNitOQ,269
+tchoupy-1.0.0.dist-info/LICENSE,sha256=eb4bH3gwpDDmX0ywthiKib9Dh79kLvPtg9KpyAe4htA,1093
+tchoupy-1.0.0.dist-info/METADATA,sha256=lV3s6BcXllMwiKwX3t-cPQ0Tnn0B9qt3kcXJUPhlZQI,21116
+tchoupy-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+tchoupy-1.0.0.dist-info/top_level.txt,sha256=-5piFsMvTY9B-HIncGEGfIg1zU3LF3XG3OR0FdNARtw,8
+tchoupy-1.0.0.dist-info/RECORD,,
