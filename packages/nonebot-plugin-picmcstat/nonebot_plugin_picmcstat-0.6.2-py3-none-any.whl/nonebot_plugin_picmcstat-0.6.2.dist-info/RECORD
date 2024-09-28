@@ -1,0 +1,15 @@
+nonebot_plugin_picmcstat-0.6.2.dist-info/METADATA,sha256=dgXgVYUyDcmyk0j892WnhRLU5W3fNF9BlF64AX_e790,9767
+nonebot_plugin_picmcstat-0.6.2.dist-info/WHEEL,sha256=Vza3XR51HW1KmFP0iIMUVYIvz0uQuKJpIXKYOBGQyFQ,90
+nonebot_plugin_picmcstat-0.6.2.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+nonebot_plugin_picmcstat-0.6.2.dist-info/licenses/LICENSE,sha256=FgRk_OWZ2NhWR9HRhUC9NhF2knljmKer-ew0H1pbhSQ,1069
+nonebot_plugin_picmcstat/__init__.py,sha256=KPtRV89dfh6XfDfZseuX0KDczkxQ8Xt9E5Z3_R4oQt8,678
+nonebot_plugin_picmcstat/__main__.py,sha256=vTd5uhACLURhfoS0-DYIGwqY7huVIhRFORF_pALvCik,2110
+nonebot_plugin_picmcstat/config.py,sha256=-M5NypkuoJ9NWIargKuEPhC1yoVlwNU7ht48EgMl4BA,715
+nonebot_plugin_picmcstat/const.py,sha256=wCa6jGjNQSMoww4XI9muqYEsZRRnrC1_su7K-PB9GW4,1780
+nonebot_plugin_picmcstat/draw.py,sha256=UnGsVd9vYc-vHZoc12faJBVvSQUSPbLictOF7jxeJrc,13109
+nonebot_plugin_picmcstat/res.py,sha256=cIQh-c37BbgM3P9kcESC6nseSyoSy_T7hlLXvZv2cS8,399
+nonebot_plugin_picmcstat/res/default.png,sha256=Alt-CChNitA4GYlKPy3rIESTObFY7Nmo-w90qUAmeu4,12656
+nonebot_plugin_picmcstat/res/dirt.png,sha256=Ly00EB0YLnwpTcn5VrqHa302-rVsIgqrjjDKpyrdAqk,335
+nonebot_plugin_picmcstat/res/grass_side_carried.png,sha256=0qvtai4nF3ma9kw8-9WL-gUSqsT7mg2qD2evwvGmypg,556
+nonebot_plugin_picmcstat/util.py,sha256=HWqYSaJ0k0XgWBWULbIBYbIKH8FsS-XYSY3atpGB37w,6531
+nonebot_plugin_picmcstat-0.6.2.dist-info/RECORD,,
