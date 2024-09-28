@@ -1,0 +1,2 @@
+[xblock.v1]
+sql_grader = sql_grader.xblocks:SqlGrader
