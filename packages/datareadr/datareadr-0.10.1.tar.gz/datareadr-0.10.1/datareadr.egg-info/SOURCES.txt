@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+datareadr/__init__.py
+datareadr/datareadr.py
+datareadr.egg-info/PKG-INFO
+datareadr.egg-info/SOURCES.txt
+datareadr.egg-info/dependency_links.txt
+datareadr.egg-info/requires.txt
+datareadr.egg-info/top_level.txt
