@@ -1,0 +1,48 @@
+{
+    "pipeline": {
+        "identifier": "XXXX",
+        "name": "{{ pipeline_name }}",
+        "description": "",
+        "release": {
+            "author": "POPPy",
+            "contact": "xxx@xxx.xx",
+            "date": "{{ release_date }}",
+            "file": "",
+            "institute": "",
+            "reference": "",
+            "version": "0.0.0",
+            "modification": ""
+        },
+        "project": {
+            "name": "",
+            "source": "",
+            "provider": "{{ provider }}",
+            "discipline": "",
+            "PI": {
+                "name": "",
+                "affiliation": ""
+            },
+            "instrument_type": "",
+            "mission_group": ""
+        },
+        "databases": [
+        {% for database in databases_with_description %}
+            {
+                "identifier": "{{ database['identifier'] }}",
+                "name": "{{ database['short_description'] }}",
+                "description": "{{ database['description'] }}",
+                "release": {
+                    "author": "{{ database['release']['author'] }}",
+                    "date": "{{ database['release']['date'] }}",
+                    "institute": "{{ database['release']['institute'] }}",
+                    "reference": "{{ database['release']['reference'] }}",
+                    "version": "{{ database['release']['version'] }}",
+                    "modification": ""
+                }
+            }{{ "," if not loop.last }}
+        {% endfor %}
+        ],
+        "external_software": [
+        ]
+    }
+}
