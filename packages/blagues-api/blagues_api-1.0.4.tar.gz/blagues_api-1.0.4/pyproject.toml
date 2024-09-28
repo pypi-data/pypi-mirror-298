@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "blagues_api"
+version = "1.0.4"
+description = "Official client for Blagues API"
+homepage = "https://www.blagues-api.fr/"
+authors = [
+  "baptiste0928 <contact@baptiste0928.net>",
+  "DraftMan <contact@draftman.fr>",
+  "Awakno <awaknocode@gmail.com>"
+]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Blagues-API/package-py"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+aiohttp = "^3.9.5"
+pydantic = "^2.8.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pytest-asyncio = "^0.18.3"
+python-dotenv = "^0.20.0"
+flake8 = "^7.1.0"
+flake8-pyproject = "^1.2.3"
+black = "^24.4.2"
+isort = "^5.13.2"
+pytest-cov = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+asyncio_mode="auto"
+
+[tool.flake8]
+max-line-length = 120
+exclude = [".venv"]
+
+[tool.isort]
+profile = "black"
