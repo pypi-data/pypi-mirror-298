@@ -1,0 +1,11 @@
+multi_agent_llm/__init__.py,sha256=KSwzVGa-Benu9-mid_J8F-B3TZJCh6zJWCBnYV7EtYw,113
+multi_agent_llm/agent_class.py,sha256=qHwNAAVqWwSZqqDo9x-cY0_clXmC_4Iti2iOGfoYP1s,516
+multi_agent_llm/llm.py,sha256=z_u4nTa9dnICxmHYCEqWSJYnt4SdGQT8tvxFpqzwRq0,3134
+multi_agent_llm/agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multi_agent_llm/agents/base.py,sha256=E-yBGu5vPgPLRAInIqSIYiQsw8pWmFfVgDLVAmDKoXA,5974
+multi_agent_llm/agents/iteration_of_thought.py,sha256=EjIHp8FEGArT7FaUIPO9dIJHE1ljBKSxCorz3g9PG-M,13977
+generalist_multi_agent_llm-0.1.2.dist-info/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+generalist_multi_agent_llm-0.1.2.dist-info/METADATA,sha256=-K3q8JBPAl8efuKe22J3yhPPp5HnGqNpw-Utk_S_gTw,4553
+generalist_multi_agent_llm-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+generalist_multi_agent_llm-0.1.2.dist-info/top_level.txt,sha256=wWKF5gVePnDOefYFBkCCvVlK_PhCNjIWbHGs0CQH4iw,16
+generalist_multi_agent_llm-0.1.2.dist-info/RECORD,,
