@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: wc-scrape
+Version: 0.1.0
+Summary: A simple Twitter scraper
+Author: William Chen
+Author-email: wchen298@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: tweepy (>=4.14.0,<5.0.0)
+Project-URL: Homepage, https://github.com/ouiliame/wc-scrape
+Description-Content-Type: text/markdown
+
+# Will Chen's Twitter Scraper
+
+A simple command-line tool to fetch and process tweets.
+
+## Features
+
+- Fetch tweets from a specific user (most recent -- up to 3200)
+- Save tweets to JSON
+- Convert JSON tweets to a readable text format
+- Retrieve a specific tweet by ID
+
+## Installation
+
+```sh
+$ pip install wc-scrape
+```
+
+## Usage
+
+First, set up your Twitter Bearer Token:
+
+```sh
+$ wc-scrape setup
+```
+
+### Fetching Tweets
+
+Fetch the latest tweets from a user:
+
+```sh
+$ wc-scrape fetch-tweets <username> <count>
+```
+
+This will save the tweets to a JSON file.
+
+To generate a text file output, use the `--to-txt` flag when fetching tweets:
+
+```sh
+$ wc-scrape fetch-tweets <username> <count> --to-txt
+```
+
