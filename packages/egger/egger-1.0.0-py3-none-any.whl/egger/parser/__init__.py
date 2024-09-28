@@ -1,0 +1,1 @@
+'''Initiate egger parser module'''

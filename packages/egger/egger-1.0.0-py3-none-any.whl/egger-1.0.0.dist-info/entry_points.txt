@@ -1,0 +1,2 @@
+[console_scripts]
+egger = egger.__main__:entrypoint

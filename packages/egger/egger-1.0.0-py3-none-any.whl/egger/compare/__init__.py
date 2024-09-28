@@ -1,0 +1,1 @@
+'''Initiate egger compare module'''
