@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: bemserver-grdf-adict-loader
+Version: 0.1.0
+Summary: Load data from GRDF Adict API into BEMServer
+Author-email: Jérôme Lafréchoux <jlafrechoux@nobatek.inef4.com>
+Maintainer-email: Jérôme Lafréchoux <jlafrechoux@nobatek.inef4.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests>=2.32,<3.0
+Requires-Dist: lowatt_grdf>=2.3,<4.0
+Requires-Dist: bemserver_api_client>=0.21,<0.22
+Project-URL: Issues, https://github.com/bemserver/bemserver-grdf-adict-loader/issues
+Project-URL: Source, https://github.com/bemserver/bemserver-grdf-adict-loader
+
+===========================
+bemserver-grdf-adict-loader
+===========================
+
+Load data from GRDF Adict API into BEMServer
+
+
+Installation
+============
+
+In a shell, ideally in a Pyton virtual environment:
+
+    $ pip install bemserver-grdf-adict-loader
+
+
+Configuration
+=============
+
+Copy and edit config_example.ini to /path/to/config.ini.
+
+
+Usage
+=====
+
+    bemserver-grdf-adict-loader /path/to/config.ini
+

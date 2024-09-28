@@ -1,0 +1,3 @@
+[console_scripts]
+bemserver_grdf_adict_loader=bemserver_grdf_adict_loader:bemserver_grdf_adict_loader
+
