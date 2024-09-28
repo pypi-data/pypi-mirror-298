@@ -1,0 +1,9 @@
+matplotlib
+scipy
+librosa
+msgpack
+demucs
+termcolor
+colorama
+jsonschema
+diffq
