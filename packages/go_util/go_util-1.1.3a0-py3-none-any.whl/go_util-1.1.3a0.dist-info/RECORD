@@ -1,0 +1,12 @@
+CHANGELOG.md,sha256=EArYEJr6ayC1C6ulcEc_G0oa_oo_n0VK88765Vyd9hM,1724
+LICENSE,sha256=ezPST5AYh8kLncGydZbtQBrvxVwCAWYlWtc-4PxnVDw,2916
+go_util/__init__.py,sha256=LQrKFNQxkbmE2Nac3IX2jm_6-khin0aVF-vNBjNHsZQ,90
+go_util/__main__.py,sha256=KuqngxPHHb8CzXTMI1L4x65JmOpEyItzmvUET_AsnSc,145
+go_util/bookmarks.py,sha256=mBWIbZECPLBUFlTONz7Y7I5ybQEVoBId8WjELpVz1B0,3095
+go_util/cli.py,sha256=iW7Q_H7YKN5A7UeTuLYSGCpNZR5edkDRVCOSrJjSsek,3078
+go_util/consent.py,sha256=yEd8B_Ow2sdppGvNPm96smCVBnWv_hlPyA31GMJuGEc,1453
+go_util-1.1.3a0.dist-info/entry_points.txt,sha256=kxk6blL5DP4P0DUfVKiWLBjSB1JgUQIZD4sQNpeojBU,38
+go_util-1.1.3a0.dist-info/LICENSE,sha256=ezPST5AYh8kLncGydZbtQBrvxVwCAWYlWtc-4PxnVDw,2916
+go_util-1.1.3a0.dist-info/METADATA,sha256=Lm6gJN-UErsLNGdo3tywEuQmdZYHgi6w63AKCNfpGSw,3982
+go_util-1.1.3a0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+go_util-1.1.3a0.dist-info/RECORD,,
