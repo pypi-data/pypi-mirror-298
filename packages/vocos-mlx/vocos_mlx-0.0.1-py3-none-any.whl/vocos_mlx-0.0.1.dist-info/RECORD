@@ -1,0 +1,8 @@
+vocos_mlx/__init__.py,sha256=IKUnF65UdIdCBKN9iyngH5lIjii2paxX74Oib093KIs,76
+vocos_mlx/audio.py,sha256=RWbxJ-o36J7LXcw30P1eRGb6NcsVodDWd2HcuN3Yhi4,1121
+vocos_mlx/model.py,sha256=WMmOFOmun4jMQ4mYsuySTFSBnBywhp9Cft4yvMdHnDo,8610
+vocos_mlx-0.0.1.dist-info/LICENSE,sha256=FOiXioOaSycGiD0M9cD6Tq1epUTdrbKXFfCFV9LJ4JU,1069
+vocos_mlx-0.0.1.dist-info/METADATA,sha256=R14zt46Rlj2zCbZbmIYnh0Ee3VCWbze1BaPQhlUdry8,748
+vocos_mlx-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+vocos_mlx-0.0.1.dist-info/top_level.txt,sha256=uwOPTOYtVIqhoLOn8HB2ROKgJe3KFtkIa46Xghl_jG0,10
+vocos_mlx-0.0.1.dist-info/RECORD,,

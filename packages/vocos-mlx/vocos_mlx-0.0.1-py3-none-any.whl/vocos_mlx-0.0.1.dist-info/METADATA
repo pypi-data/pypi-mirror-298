@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: vocos-mlx
+Version: 0.0.1
+Summary: Vocos - MLX
+Home-page: https://github.com/lucasnewman/vocos-mlx
+Author: Lucas Newman
+Author-email: lucasnewman@me.com
+License: MIT
+Keywords: artificial intelligence,asr,audio-generation,deep learning,transformers,text-to-speech
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: huggingface-hub
+Requires-Dist: mlx>=0.17.3
+Requires-Dist: numpy
+Requires-Dist: torch>=2.0
+Requires-Dist: torchaudio>=2.0
+
