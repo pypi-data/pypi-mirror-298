@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+GNS3Utils/GNS3Utils.py
+GNS3Utils/__init__.py
+GNS3Utils.egg-info/PKG-INFO
+GNS3Utils.egg-info/SOURCES.txt
+GNS3Utils.egg-info/dependency_links.txt
+GNS3Utils.egg-info/requires.txt
+GNS3Utils.egg-info/top_level.txt
