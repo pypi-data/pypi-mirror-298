@@ -1,0 +1,20 @@
+[project]
+name = "bazpy"
+version = "0.0.12"
+authors = [
+  { name="Baz Pya", email="baz@pya.com" },
+]
+description = "My convenience library"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pytz",
+]
+[project.urls]
+Homepage = "https://github.com/pyabzz/bazpy"
+Issues = "https://github.com/pyabzz/bazpy/issues"
