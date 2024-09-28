@@ -1,0 +1,10 @@
+[console_scripts]
+md_csv_generator = mutation.csv_generator:main
+md_csv_sort = mutation.csv_sort:main
+md_ddg_double = mutation.ddg_calc_double:main
+md_ddg_single = mutation.ddg_calc:main
+md_ddg_triple = mutation.ddg_calc_triple:main
+md_dock = docking.np_docking:naisarg
+md_install_dependencies = mutation.install_dependencies:main
+md_mutate = mutation.np_mutation:naisarg
+md_vina_dock = docking.vina_dock:main
