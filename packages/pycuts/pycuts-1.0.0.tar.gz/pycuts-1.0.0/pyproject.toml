@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycuts"
+version = "1.0.0"
+description = "A small collection of Python shortcut scripts for common tasks."
+readme = "README.md"
+authors = [
+    { name = "Daniel Ialcin Misser Westergaard" }
+]
+license = { text = "MIT" }
+keywords = ["shortcuts", "pycuts", "utilities"]
+
+[project.urls]
+repository = "https://github.com/dwancin/pycuts"

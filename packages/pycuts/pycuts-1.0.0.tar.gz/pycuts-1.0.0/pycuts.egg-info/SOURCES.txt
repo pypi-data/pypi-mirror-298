@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pycuts/__init__.py
+pycuts/huggingface_hub.py
+pycuts/torch.py
+pycuts.egg-info/PKG-INFO
+pycuts.egg-info/SOURCES.txt
+pycuts.egg-info/dependency_links.txt
+pycuts.egg-info/top_level.txt
