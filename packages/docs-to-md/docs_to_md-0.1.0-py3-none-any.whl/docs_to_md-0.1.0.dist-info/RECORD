@@ -1,0 +1,10 @@
+docs_to_md/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docs_to_md/jina.py,sha256=nFUL82tcSiuHX89piHXrir7wjoUfY6oh4bOZx0oqgYw,689
+docs_to_md/main.py,sha256=_kxapnV7tUgoj9j_55TV4RU2xCvARE1wXJei01A2gOE,1602
+docs_to_md/parser.py,sha256=cpqtHXsrAHixrkuBJ4sgBkN_ShDgdWFexCSL1bJ3e_c,4473
+docs_to_md/utils.py,sha256=-WHz9OLDugQyN15WdBS5MP5ElWm3anbmy7QKeSYvGOI,4836
+docs_to_md-0.1.0.dist-info/METADATA,sha256=y-OPe712pBMXz0qIhX199i9b2FCHq_kfzooVMqXZfzk,1043
+docs_to_md-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+docs_to_md-0.1.0.dist-info/entry_points.txt,sha256=YwaG6FMoKrYrWxTvLE7uqX0stFPl2JK638eEPEY--YI,40
+docs_to_md-0.1.0.dist-info/licenses/LICENSE,sha256=eiBR3Fq80zRD77MaGW1KAqYMuoWU6fjRww82feh4N0E,1061
+docs_to_md-0.1.0.dist-info/RECORD,,
