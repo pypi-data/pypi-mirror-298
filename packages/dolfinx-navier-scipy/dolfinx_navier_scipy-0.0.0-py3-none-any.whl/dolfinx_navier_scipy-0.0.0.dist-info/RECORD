@@ -1,0 +1,13 @@
+dolfinx_navier_scipy/__init__.py,sha256=EpMVGQWAjbvrQIUvgV-sNSoI4FwyTeVyDcJZPWImfQY,347
+dolfinx_navier_scipy/data_output_utils.py,sha256=x-OeNjq2ceofa60Zb6PvWE-gj_KoXX2jKZ5ZZmDSSAE,13072
+dolfinx_navier_scipy/dolfinx_to_sparrays.py,sha256=X2ziaI0FMFBJA1kXfLmIJFa8DREnt4ceJjG0WVAt8Fs,23643
+dolfinx_navier_scipy/problem_setups.py,sha256=5m5LXOhtNYFnvHcC_uduREXSD2c3IXtSp-sUO5OVj9g,57738
+dolfinx_navier_scipy/residual_checks.py,sha256=OVGFW3KqkQlWDSQoRmqZQppXiEJpBd7E1cShLuCg1es,3439
+dolfinx_navier_scipy/stokes_navier_utils.py,sha256=4eK0wp6G8db4VgMTx7FAvhFtOQH9IstB4mKDf3b3wCA,61340
+dolfinx_navier_scipy/time_int_utils.py,sha256=FWbAG_hidTreBGRCULkKqQiWHh-HKzgyipXuDSFiAYA,22494
+dolfinx_navier_scipy-0.0.0.dist-info/LICENSE.md,sha256=4cCtcomD2KVzNeUs8QZPGv_R1FQXPYzr0-2LSnK0hwQ,35121
+dolfinx_navier_scipy-0.0.0.dist-info/METADATA,sha256=M-uAGxjpzuUH1i4ogwAEYoosp1aGFVPyWQhXqxfYDfg,3697
+dolfinx_navier_scipy-0.0.0.dist-info/WHEEL,sha256=HiCZjzuy6Dw0hdX5R3LCFPDmFS4BWl8H-8W39XfmgX4,91
+dolfinx_navier_scipy-0.0.0.dist-info/pbr.json,sha256=awgAN4d9Ke0MLwZtkdLs3m1Hdhup43Y8ySa1_2I36vY,46
+dolfinx_navier_scipy-0.0.0.dist-info/top_level.txt,sha256=VO9PNMU3bO50OOEoXgFPvCx9SRWvrGtq6ip-1rYCI6k,21
+dolfinx_navier_scipy-0.0.0.dist-info/RECORD,,
