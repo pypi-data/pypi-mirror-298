@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dd-ph
+Version: 0.1
+Summary: Many useful helper function
+Home-page: https://github.com/bnuzhouwei/py-dd-ph.git
+Author: zhouwei
+Author-email: bnuzhouwei@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# dd.ph
+
+ph is short for PythonHelper, that offer many useful helper function to improve agile devolopment.
