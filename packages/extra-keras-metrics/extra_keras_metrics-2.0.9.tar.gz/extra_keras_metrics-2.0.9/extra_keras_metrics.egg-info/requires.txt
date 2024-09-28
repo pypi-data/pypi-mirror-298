@@ -1,0 +1,12 @@
+decorator
+extra_keras_metrics>=1.0.2
+
+[test]
+pytest
+codacy-coverage
+coveralls
+validate_version_code
+pytest-cov
+numpy
+sklearn
+silence_tensorflow
