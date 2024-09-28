@@ -1,0 +1,7 @@
+pyproject.toml
+src/crimson/types_beta/__init__.py
+src/crimson/types_beta/intelli_type/__init__.py
+src/crimson_types_beta.egg-info/PKG-INFO
+src/crimson_types_beta.egg-info/SOURCES.txt
+src/crimson_types_beta.egg-info/dependency_links.txt
+src/crimson_types_beta.egg-info/top_level.txt
