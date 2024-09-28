@@ -1,0 +1,9 @@
+langchain-core==0.3.6
+langchain-text-splitters==0.3.0
+neo4j==5.25.0
+
+[dev]
+pytest==8.3.3
+black
+isort
+flake8
