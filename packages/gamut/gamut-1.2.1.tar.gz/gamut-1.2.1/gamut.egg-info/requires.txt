@@ -1,0 +1,13 @@
+numpy
+librosa
+matplotlib
+progress~=1.6
+scipy
+SoundFile
+sounddevice
+typing_extensions
+filetype
+kivy[base]
+Sphinx
+sphinx-copybutton
+sphinx-rtd-theme
