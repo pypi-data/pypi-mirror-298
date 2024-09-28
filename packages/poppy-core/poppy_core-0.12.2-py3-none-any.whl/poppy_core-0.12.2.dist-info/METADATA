@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: poppy-core
+Version: 0.12.2
+Summary: POPPy: Plugin-Oriented Pipeline for Python
+Home-page: https://gitlab.obspm.fr/POPPy/POPPyCore
+License: CeCILL 2.1
+Author: ROC Team
+Author-email: roc.support@sympa.obspm.fr
+Requires-Python: >=3.9,<4
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: alembic (>=1,<2)
+Requires-Dist: declic (>=1,<2)
+Requires-Dist: jsonschema (>=4,<5)
+Requires-Dist: packaging
+Requires-Dist: psycopg2-binary (>=2,<3)
+Requires-Dist: sqlalchemy (>=2,<3)
+Project-URL: Repository, https://gitlab.obspm.fr/POPPy/POPPyCore
+Description-Content-Type: text/markdown
+
+poppy-core
+===========
+
+[![pipeline status](https://gitlab.obspm.fr/POPPY/POPPyCore/badges/develop/pipeline.svg)](https://gitlab.obspm.fr/POPPY/POPPyCore/pipelines)
+
+This directory contains the source code of the Plugin-Oriented Pipeline for Python (POPPy) framework core.
+
+## Quickstart
+
+To install the package using [pip](https://pypi.org/project/pip-tools/):
+
+```
+pip install poppy-core
+```
+
+## License
+
+POPPY is under the license CeCILL 2.1.
+
+## Acknowledgement
+
+POPPY is project developed by the RPW Operations Centre (ROC) team based at LESIA (Meudon, France).
+The ROC is funded by the Centre National d'Etudes Spatiale (CNES) in the framework of the European Space Agency (ESA) Solar Orbiter mission.
+
+## Authors
+
+xavier.bonnin@obspm.fr
+florence.henry@obspm.fr
+
+Has also contributed in the past: Sonny Lion, Gregoire Duvauchelle, Manuel Duarte
+

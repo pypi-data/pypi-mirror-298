@@ -1,0 +1,3 @@
+[console_scripts]
+poppy=poppy.core.management.commands:poppy_cli
+

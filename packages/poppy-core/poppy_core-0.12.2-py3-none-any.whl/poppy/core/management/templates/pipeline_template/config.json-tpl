@@ -1,0 +1,23 @@
+{
+    "pipeline": {
+        "provider": "{{ provider }}",
+        "output_path": "{{ output_path }}",
+        "databases": [
+        {% for database in databases %}
+            {
+                "identifier": "{{ database['identifier'] }}",
+                "connector": "{{ database['connector'] }}",
+                "login_info": {
+                    "vendor": "{{ database['vendor'] }}",
+                    {% if 'admin_account' in database %}
+                    "admin": "{{ database['admin_account'] }}:{{ database['admin_password'] }}",
+                    {% endif %}
+                    "user": "{{ database['user_account'] }}:{{ database['user_password'] }}",
+                    "address": "{{ database['host'] }}",
+                    "database": "{{ database['name'] }}"
+                }
+            }{{ "," if not loop.last }}
+        {% endfor %}
+        ]
+    }
+}

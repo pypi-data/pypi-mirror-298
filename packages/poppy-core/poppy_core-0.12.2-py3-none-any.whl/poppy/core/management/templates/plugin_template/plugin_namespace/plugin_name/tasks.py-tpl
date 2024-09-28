@@ -1,0 +1,27 @@
+# from poppy.core.logger import logger
+# from poppy.core.task import Task
+# from poppy.core.target import FileTarget
+#
+# __all__ = ['MyJob']
+#
+#
+# @FileTarget.output('my_output', filepath='my_output.txt')
+# @Task.as_task(plugin_name='{{ plugin_namespace }}.{{ plugin_name }}', name='my_job')
+# def MyJob(task):
+#     """
+#     Do my job
+#     """
+#
+#     # Get some data from pipeline.properties
+#     my_data = task.pipeline.properties.my_data
+#
+#     # (...)
+#
+#     # do some stuff here
+#
+#     # (...)
+#
+#     # return the result via task.outputs
+#
+#     with task.outputs['my_output'].open("w") as f:
+#         json.dump(my_data, f)
