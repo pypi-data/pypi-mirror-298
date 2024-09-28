@@ -1,0 +1,2 @@
+[console_scripts]
+extractr = extracTR.extract:run_it
