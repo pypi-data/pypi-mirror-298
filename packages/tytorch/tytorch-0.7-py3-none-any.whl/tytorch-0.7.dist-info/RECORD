@@ -1,0 +1,6 @@
+tytorch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tytorch/trainer.py,sha256=9lW3fyVEx-CduluIXho0WJhIOs7hv7cBmTTuG8wwm2g,7207
+tytorch/utils.py,sha256=dkODBhvqWTkIKJd2SSlna5SLPQOIfaBYPCK6ci5Tgt0,1448
+tytorch-0.7.dist-info/METADATA,sha256=01qf705Hh3OTeLie1FY4kcXu-hBanfuioS9fj-UOwgM,439
+tytorch-0.7.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+tytorch-0.7.dist-info/RECORD,,
