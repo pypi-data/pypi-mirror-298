@@ -1,0 +1,15 @@
+django_asgi_lifespan/__init__.py,sha256=N210gk59q7fP4BxFFWGXgpK4IMeaDiokie5cfLJ56Gk,228
+django_asgi_lifespan/asgi.py,sha256=7h7F8LrI5fHihSuqLGEwZrnalKt8VX15HpCunXLhNh8,695
+django_asgi_lifespan/compat.py,sha256=imrHSVD7JFlJJzRAwYM4xfnRVFinckLOyZ_cbsJoxj8,1909
+django_asgi_lifespan/dispatcher.py,sha256=O6i2BaKYDjXdHPD6xZVMUu3hsw4VHySbplHGGim698E,2175
+django_asgi_lifespan/errors.py,sha256=_ZzvB4Buv4U9MIah7OCWJ809mZf3VZZ9Fs03MzPCWnU,239
+django_asgi_lifespan/events.py,sha256=Bid-9bEc15k7SAdhKkieA6rbOHTSWmBMbY2WOV3egFQ,2477
+django_asgi_lifespan/handler.py,sha256=HTMO9eNZWXXUCRzReiLqcbD6lAmeJeXWsJEQeeigoBw,3659
+django_asgi_lifespan/middleware.py,sha256=ZQPG4PVZI7SS9wI7mbsIEo7JB9tJKgnylXETOcLCj94,1072
+django_asgi_lifespan/register.py,sha256=75oV3Q0-mh1ugOrcmBDkU9YvZ79r8yx0Fpu408ZxeuY,1009
+django_asgi_lifespan/signals.py,sha256=g0su0PlXlHY0x8qJPGKku4tru0GpxX9l805whQlqUE8,455
+django_asgi_lifespan/types.py,sha256=qUEOP9ZdxWY4vZIZLXU4O8YVHfVvOIex1MbQ37BDOAg,234
+django_asgi_lifespan-0.3.2.dist-info/LICENSE,sha256=JAp7N1Ou0JC85kyMNlNqmNRfbm_latGkBwW-ZXl1YpM,1077
+django_asgi_lifespan-0.3.2.dist-info/METADATA,sha256=Wj6ENoDPjoDr81BDxrG9-Z0M-lPy4mmRdRg6Jy1dPBo,6099
+django_asgi_lifespan-0.3.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_asgi_lifespan-0.3.2.dist-info/RECORD,,
