@@ -1,0 +1,17 @@
+jadia/__init__.py,sha256=yRmAxyVoh20sY5bWJQhRxi-XB5_e7A5wqKnc58_-7gU,218
+jadia/audio.py,sha256=h3xkT7WYU5F89rsCMtxYYGlY8nSe2B8MYieqcivxpFc,15296
+jadia/coskmeans.py,sha256=qSek0lOZVznaXWt6OT0X-nCnjjCxLBD7FJDusq8fEYU,6369
+jadia/gaussian.py,sha256=pk4yhyMCuMAxpkRS4Wt6Gt38XaPIfgj6rEkEd8vDL4M,1322
+jadia/hungarian.py,sha256=HtoeuT-3EyDYXh4FDVbBBXDNX_BUQFaFTSCjD2N0sCI,18572
+jadia/main.py,sha256=A619GcaEbzND4KzkXxqpNwQK4ovsoN55NroaxTnwXCc,20765
+jadia/metrics.py,sha256=9mgLjXleVI05ccpyFo0_lz5chzFNIzVrCUvEZBQ1lpo,6319
+jadia/models.py,sha256=0SxYzQVpnZi1RB1d4y8zNUuA0qZ15Q4_9q6O-i6iwfI,7485
+jadia/segment.py,sha256=zG_sf1QV9_oEA_ouHtgCnorReR5wwe60qUABtV0aeeU,7850
+jadia/assets/lite.pt,sha256=32f3N19hKUshSiEH5VjtT-mcTt2sd7wc6XMPPzJhAfs,3843012
+jadia/assets/lite_v2.pt,sha256=hXb-d8fETimVfOvOOGSYkScDNz0-dS-IeqeUqu-efqk,3845016
+jadia/assets/mel_filters.npz,sha256=GN2GNd6gdDOu3dNp7w5s3AENEatBrAx0kWWO3V0ua2k,11230
+jadia-0.1.1.dist-info/LICENSE,sha256=8vh6_KDJnjxz-XQ5fABd1bCdEha-eLvKCSbxtbvjVBc,1075
+jadia-0.1.1.dist-info/METADATA,sha256=iO5vJjXvFc8wla-hjSAcnIVPeOJStcxse1rXyF8yFpU,1529
+jadia-0.1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+jadia-0.1.1.dist-info/top_level.txt,sha256=y_bSCKUIVRvCrkTA0UARY_Vi-f7oP_RqL9y3eBBey9o,6
+jadia-0.1.1.dist-info/RECORD,,
