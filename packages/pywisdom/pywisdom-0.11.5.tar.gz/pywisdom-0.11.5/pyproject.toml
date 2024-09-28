@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel","setuptools-git-versioning<2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pywisdom"
+dynamic = ["version"]
+authors = [
+  { name="Daniel Garrigan", email="daniel.garrigan@wisdompanel.com" },
+]
+description = "Python module to read and parse AB Matrix files"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+  'boto3>=1.26'
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/popgendad/pywisdom"
+
+[tool.setuptools-git-versioning]
+enabled = true
+dirty_template = "{tag}.post{ccount}+git.{sha}.dirty"
