@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.py
+generalist_multi_agent_llm.egg-info/PKG-INFO
+generalist_multi_agent_llm.egg-info/SOURCES.txt
+generalist_multi_agent_llm.egg-info/dependency_links.txt
+generalist_multi_agent_llm.egg-info/requires.txt
+generalist_multi_agent_llm.egg-info/top_level.txt
+multi_agent_llm/__init__.py
+multi_agent_llm/agent_class.py
+multi_agent_llm/llm.py
+multi_agent_llm/agents/__init__.py
+multi_agent_llm/agents/base.py
+multi_agent_llm/agents/iteration_of_thought.py
