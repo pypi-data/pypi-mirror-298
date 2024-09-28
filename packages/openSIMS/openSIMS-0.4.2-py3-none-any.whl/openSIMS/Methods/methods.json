@@ -1,0 +1,23 @@
+{
+    "UPb": {
+	"type": "geochron",
+	"ions": ["U","UOx","Pb204","Pb206","Pb207"],
+        "y0": "Pb64_0",
+        "lambda": 0.000155125,
+	"calibration_data": "calibration_data_UPb"
+    },
+    "ThPb": {
+	"type": "geochron",
+	"ions": ["Th","ThOx","Pb204","Pb208"],
+        "y0": "Pb84_0",
+        "lambda": 0.0000495
+    },
+    "O": {
+	"type": "stable",
+	"ions": ["O16","O17","O18"]
+    },
+    "S": {
+	"type": "stable",
+	"ions": ["S32","S33","S34","S36"]
+    }
+}
