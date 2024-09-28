@@ -1,0 +1,17 @@
+sgelt
+shortcodes
+pybtex
+setuptools
+
+[doc]
+Sphinx>=7.2.2
+myst-parser
+furo
+sphinx-copybutton
+sphinx-autobuild
+sphinx_design
+
+[test]
+pytest
+pytest-cov
+faker

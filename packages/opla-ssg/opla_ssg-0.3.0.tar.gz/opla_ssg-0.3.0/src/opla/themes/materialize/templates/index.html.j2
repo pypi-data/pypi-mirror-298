@@ -1,0 +1,18 @@
+{% extends "base.html.j2" %}
+{# Some global variables definitions #}
+{% set section_h2_class = color + "-text center"%}
+{% set footer_class = "page-footer " + color %}
+{% set generated_by_class = "copyright " + color + " darken-1" %}
+{% set generated_link_class = color + "-text text-lighten-4" %}
+
+{%- block style %}
+<link rel="stylesheet" href="materialize/static/css/materialize.css">
+<link rel="stylesheet" href="materialize/static/css/style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{{ super() }}
+{%- endblock style %}
+
+{% block script %}
+{% include 'partials/script_materialize.html.j2' %}
+{{ super() }}
+{% endblock script %}
