@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: isx
+Version: 2.0.0
+Summary: Inscopix Data Processing Software Python API
+Home-page: https://www.inscopix.com/support
+Author: Inscopix, Inc.
+Author-email: support@inscopix.bruker.com
+Requires-Python: >=3.9,<3.13
+License-File: LICENSE.txt
+Requires-Dist: h5py >=2.8.0
+Requires-Dist: numpy >=1.14
+Requires-Dist: scipy >=1.0
+Requires-Dist: tifffile >=0.15.1
+Requires-Dist: pandas >=0.20.1
+Requires-Dist: pillow >=8.0.1
+Requires-Dist: openpyxl >=3.0.10
+
