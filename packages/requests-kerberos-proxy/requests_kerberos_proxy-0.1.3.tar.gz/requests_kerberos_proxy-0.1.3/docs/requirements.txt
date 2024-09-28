@@ -1,0 +1,33 @@
+# Requirements file for ReadTheDocs, check .readthedocs.yml.
+# To build the module reference correctly, make sure every external package
+# under `install_requires` in `setup.cfg` is also listed here!
+sphinx>=3.2.1
+sphinx_rtd_theme
+certifi==2024.2.2
+    # via requests
+cffi==1.16.0
+    # via cryptography
+charset-normalizer==3.3.2
+    # via requests
+cryptography==42.0.2
+    # via
+    #   pyspnego
+    #   requests-kerberos
+idna==3.6
+    # via requests
+pycparser==2.21
+    # via cffi
+pyspnego[kerberos]==0.10.2
+    # via requests-kerberos
+requests==2.31.0
+    # via
+    #   requests-kerberos
+    #   requests-kerberos-proxy (setup.py)
+requests-kerberos==0.14.0
+    # via requests-kerberos-proxy (setup.py)
+sspilib==0.1.0
+    # via pyspnego
+urllib3==2.2.0
+    # via
+    #   requests
+    #   requests-kerberos-proxy (setup.py)
