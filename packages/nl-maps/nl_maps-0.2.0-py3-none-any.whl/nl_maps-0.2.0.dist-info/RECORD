@@ -1,0 +1,14 @@
+nl_maps/__init__.py,sha256=fzxTjzJCI09AceWgO6qm2rF0Ybl6_7nK6_bsU-5qUiU,250
+nl_maps/nl_config.py,sha256=Lg9DyjxI67a14jCeehJ1VtlJeVQm9npyFnfzO3duZEI,1722
+nl_maps/nl_data.py,sha256=_5nxuC4EJtxRkUeMM_y5d6nC4zGxk0eEkmA4f3wECBA,4168
+nl_maps/nl_maps.py,sha256=HBy9fAHkThRqsyk5L-TrBGrUkpZEXpAtwhM411UKqoM,4838
+nl_maps/source/LICENSE_ISLANDS_PROVINCES,sha256=IAOCnPZD1hsAp2CI3TG7EbgClUbyTFazn9SSrbkoFIM,20139
+nl_maps/source/LICENSE_MUNICIPALITIES,sha256=dAE8bR-UzfECwqyUBJPDP-iPwNONCQHK9U502muj-rg,1493
+nl_maps/source/MODIFICATIONS.md,sha256=N6NkRZNk4B77jpZrAY4XmfAzYjnC502LyIk_BOzg4A0,2350
+nl_maps/source/bes_islands.png,sha256=QZzMMuoXB-NWvGQ-HHeb1srCt0BFo7-QCQyJPOoOPL0,71046
+nl_maps/source/nl_municipalities.png,sha256=z_Y8S6CLEnXxzmlzp9T7FRtvWto4CZP1GSpW5Rx_bPA,792692
+nl_maps/source/nl_provinces.png,sha256=zODZ6DHy-3a3TEEES1v4qO7sHwdQ3jsLPuuLbZ-nsx8,290219
+nl_maps-0.2.0.dist-info/METADATA,sha256=9xGbznLG12Emk10fvxcT0yq2sEBrKe4tRJHFbMChebA,9253
+nl_maps-0.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+nl_maps-0.2.0.dist-info/licenses/LICENSE,sha256=_uW6vwy9DvGQIb2IQn14NX9CIMd1a6826-_6DygB8gM,1225
+nl_maps-0.2.0.dist-info/RECORD,,
