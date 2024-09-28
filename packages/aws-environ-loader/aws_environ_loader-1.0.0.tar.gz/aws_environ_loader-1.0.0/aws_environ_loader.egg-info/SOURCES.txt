@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+aws_environ_loader/__init__.py
+aws_environ_loader/aws_secret_manager.py
+aws_environ_loader/env_resolver.py
+aws_environ_loader.egg-info/PKG-INFO
+aws_environ_loader.egg-info/SOURCES.txt
+aws_environ_loader.egg-info/dependency_links.txt
+aws_environ_loader.egg-info/requires.txt
+aws_environ_loader.egg-info/top_level.txt
