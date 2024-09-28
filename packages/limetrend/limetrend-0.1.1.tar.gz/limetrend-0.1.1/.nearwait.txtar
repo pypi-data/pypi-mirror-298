@@ -1,0 +1,299 @@
+-- README.md --
+-- justfile --
+set shell := ["bash", "-uc"]
+
+default:
+    @just --list
+
+format:
+    just --unstable --fmt
+    ruff format .
+    ruff check --fix .
+
+costs:
+    limetrend dynamodb
+
+costs-custom:
+    python -m limetrend dynamodb --days 60
+-- pyproject.toml --
+[project]
+name = "limetrend"
+version = "0.1.0"
+description = "AWS cost analysis tool"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "boto3",
+    "jinja2"
+]
+
+[project.scripts]
+limetrend = "limetrend.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+[tool.uv]
+dev-dependencies = []
+-- src/limetrend/__init__.py --
+from .cli import main
+
+__all__ = ["main"]
+-- src/limetrend/aws_client.py --
+import asyncio
+
+import boto3
+
+
+async def get_dynamodb_tables_for_region(region):
+    session = boto3.Session(region_name=region)
+    client = session.client("dynamodb")
+    response = await asyncio.to_thread(client.list_tables)
+    return region, response.get("TableNames", [])
+
+
+async def get_dynamodb_tables_all_regions():
+    ec2_client = boto3.client("ec2", region_name="us-east-1")
+    regions = [
+        region["RegionName"] for region in ec2_client.describe_regions()["Regions"]
+    ]
+
+    semaphore = asyncio.Semaphore(15)
+
+    async def bounded_get_tables(region):
+        async with semaphore:
+            return await get_dynamodb_tables_for_region(region)
+
+    tasks = [bounded_get_tables(region) for region in regions]
+    results = await asyncio.gather(*tasks)
+
+    return {region: tables for region, tables in results if tables}
+
+
+def get_dynamodb_costs(start_date, end_date):
+    client = boto3.client("ce", region_name="us-east-1")
+    response = client.get_cost_and_usage(
+        TimePeriod={"Start": start_date, "End": end_date},
+        Granularity="DAILY",
+        Metrics=["BlendedCost", "UsageQuantity"],
+        GroupBy=[
+            {"Type": "DIMENSION", "Key": "USAGE_TYPE"},
+            {"Type": "DIMENSION", "Key": "REGION"},
+        ],
+        Filter={"Dimensions": {"Key": "SERVICE", "Values": ["Amazon DynamoDB"]}},
+    )
+    return response
+-- src/limetrend/cli.py --
+import argparse
+import asyncio
+
+from .dynamodb import dynamodb_costs, list_tables_all_regions
+
+
+def create_parser():
+    parser = argparse.ArgumentParser(description="Generate AWS cost reports")
+    subparsers = parser.add_subparsers(dest="command", help="Available commands")
+
+    cost_parser = subparsers.add_parser("cost", help="Generate cost report")
+    cost_parser.add_argument(
+        "report", choices=["dynamodb"], help="Type of report to generate"
+    )
+    cost_parser.add_argument(
+        "--days", type=int, default=30, help="Number of days to include in the report"
+    )
+
+    subparsers.add_parser("list-tables", help="List DynamoDB tables in all regions")
+
+    return parser
+
+
+def main():
+    parser = create_parser()
+    args = parser.parse_args()
+
+    if args.command == "cost":
+        if args.report == "dynamodb":
+            dynamodb_costs(args.days)
+    elif args.command == "list-tables":
+        asyncio.run(list_tables_all_regions())
+    else:
+        parser.print_help()
+
+
+if __name__ == "__main__":
+    main()
+-- src/limetrend/dynamodb.py --
+import asyncio
+import datetime
+
+from .aws_client import get_dynamodb_costs, get_dynamodb_tables_all_regions
+from .report import process_dynamodb_costs, render_report
+
+
+def dynamodb_costs(days=30):
+    end_date = datetime.datetime.now().date()
+    start_date = end_date - datetime.timedelta(days=days)
+    result = get_dynamodb_costs(start_date.isoformat(), end_date.isoformat())
+    tables = asyncio.run(get_dynamodb_tables_all_regions())
+
+    processed_data = process_dynamodb_costs(result, start_date, end_date, tables)
+    report = render_report(processed_data)
+    print(report)
+
+
+async def list_tables_all_regions():
+    tables = await get_dynamodb_tables_all_regions()
+    table_to_regions = {}
+    for region, region_tables in tables.items():
+        for table in region_tables:
+            if table not in table_to_regions:
+                table_to_regions[table] = []
+            table_to_regions[table].append(region)
+
+    for table in sorted(table_to_regions.keys()):
+        for region in sorted(table_to_regions[table]):
+            print(f"{table:<40} {region}")
+-- src/limetrend/report.py --
+import datetime
+
+import jinja2
+
+
+def process_dynamodb_costs(result, start_date, end_date, tables):
+    total_cost = 0
+    usage_types = {}
+    region_costs = {}
+    table_costs = {
+        table: 0 for region_tables in tables.values() for table in region_tables
+    }
+    daily_data = []
+
+    def find_table_name(usage_type, region):
+        # Check if the usage type contains a table name
+        for table in tables.get(region, []):
+            if table.lower() in usage_type.lower():
+                return table
+        # If no match, return None instead of "Unallocated"
+        return None
+
+    for period in result["ResultsByTime"]:
+        start = datetime.datetime.strptime(
+            period["TimePeriod"]["Start"], "%Y-%m-%d"
+        ).date()
+        days_ago = (end_date - start).days
+
+        daily_cost = 0
+        daily_usage_types = []
+
+        for group in period["Groups"]:
+            usage_type, region = group["Keys"]
+            cost = float(group["Metrics"]["BlendedCost"]["Amount"])
+            usage = float(group["Metrics"]["UsageQuantity"]["Amount"])
+
+            daily_cost += cost
+            total_cost += cost
+
+            if usage_type not in usage_types:
+                usage_types[usage_type] = 0
+            usage_types[usage_type] += cost
+
+            if region not in region_costs:
+                region_costs[region] = 0
+            region_costs[region] += cost
+
+            table_name = find_table_name(usage_type, region)
+            if table_name:
+                if table_name not in table_costs:
+                    table_costs[table_name] = 0
+                table_costs[table_name] += cost
+
+            daily_usage_types.append(
+                {
+                    "usage_type": usage_type,
+                    "region": region,
+                    "table_name": table_name,
+                    "cost": cost,
+                    "usage": usage,
+                }
+            )
+
+        daily_data.append(
+            {
+                "date": start,
+                "days_ago": days_ago,
+                "cost": daily_cost,
+                "estimated": period["Estimated"],
+                "usage_types": daily_usage_types,
+            }
+        )
+
+    usage_type_summary = [
+        {"usage_type": ut, "cost": cost}
+        for ut, cost in sorted(usage_types.items(), key=lambda x: x[1], reverse=True)
+    ]
+
+    region_cost_summary = [
+        {"region": region, "cost": cost}
+        for region, cost in sorted(
+            region_costs.items(), key=lambda x: x[1], reverse=True
+        )
+    ]
+
+    table_cost_summary = [
+        {"table_name": table, "cost": cost}
+        for table, cost in sorted(table_costs.items(), key=lambda x: x[1], reverse=True)
+    ]
+
+    return {
+        "start_date": start_date,
+        "end_date": end_date,
+        "total_cost": total_cost,
+        "daily_data": daily_data,
+        "usage_type_summary": usage_type_summary,
+        "region_cost_summary": region_cost_summary,
+        "table_cost_summary": table_cost_summary,
+    }
+
+
+def render_report(data):
+    template = jinja2.Template("""
+DynamoDB Costs and Usage:
+Period: {{ data.start_date }} to {{ data.end_date }}
+
+Detailed Results:
+{% for day in data.daily_data %}
+Date: {{ day.date }} ({{ day.days_ago }} days ago)
+{% for ut in day.usage_types %}
+  Usage Type: {{ ut.usage_type }}
+    Region: {{ ut.region }}
+    {% if ut.table_name %}Table: {{ ut.table_name }}{% else %}Table: Not specified{% endif %}
+    Cost: ${{ "%.2f"|format(ut.cost) }}
+    Usage Quantity: {{ "%.2f"|format(ut.usage) }}
+{% endfor %}
+Total Daily Cost: ${{ "%.2f"|format(day.cost) }}
+Estimated: {{ "Yes" if day.estimated else "No" }}
+{% endfor %}
+
+Total Cost Breakdown by Usage Type:
+{% for ut in data.usage_type_summary %}
+{{ "%-40s"|format(ut.usage_type) }}: ${{ "%8.2f"|format(ut.cost) -}}
+{% endfor %}
+
+Total Cost Breakdown by Region:
+{% for region in data.region_cost_summary %}
+{{ "%-40s"|format(region.region) }}: ${{ "%8.2f"|format(region.cost) -}}
+{% endfor %}
+
+Total Cost Breakdown by Table:
+{% for table in data.table_cost_summary %}
+{{ "%-40s"|format(table.table_name) }}: ${{ "%8.2f"|format(table.cost) -}}
+{% endfor %}
+
+Total Cost for the period: ${{ "%.2f"|format(data.total_cost) }}
+  """)
+
+    return template.render(data=data)

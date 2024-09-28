@@ -1,0 +1,25 @@
+[project]
+name = "limetrend"
+version = "0.1.1"
+description = "AWS cost analysis tool"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "boto3",
+    "jinja2"
+]
+
+[project.scripts]
+limetrend = "limetrend.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+[tool.uv]
+dev-dependencies = [
+    "bump2version>=1.0.1",
+]

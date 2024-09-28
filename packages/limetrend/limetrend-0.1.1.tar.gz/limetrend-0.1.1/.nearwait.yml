@@ -1,0 +1,15 @@
+filelist:
+# - /Users/mtm/pdev/taylormonacelli/limetrend/.nearwait.txtar
+# - /Users/mtm/pdev/taylormonacelli/limetrend/.python-version
+- /Users/mtm/pdev/taylormonacelli/limetrend/README.md
+# - /Users/mtm/pdev/taylormonacelli/limetrend/dist/limetrend-0.1.0-py3-none-any.whl
+# - /Users/mtm/pdev/taylormonacelli/limetrend/dist/limetrend-0.1.0.tar.gz
+- /Users/mtm/pdev/taylormonacelli/limetrend/justfile
+# - /Users/mtm/pdev/taylormonacelli/limetrend/limetrend.code-workspace
+- /Users/mtm/pdev/taylormonacelli/limetrend/pyproject.toml
+- /Users/mtm/pdev/taylormonacelli/limetrend/src/limetrend/__init__.py
+- /Users/mtm/pdev/taylormonacelli/limetrend/src/limetrend/aws_client.py
+- /Users/mtm/pdev/taylormonacelli/limetrend/src/limetrend/cli.py
+- /Users/mtm/pdev/taylormonacelli/limetrend/src/limetrend/dynamodb.py
+- /Users/mtm/pdev/taylormonacelli/limetrend/src/limetrend/report.py
+# - /Users/mtm/pdev/taylormonacelli/limetrend/uv.lock

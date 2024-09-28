@@ -1,0 +1,7 @@
+Metadata-Version: 2.3
+Name: limetrend
+Version: 0.1.1
+Summary: AWS cost analysis tool
+Requires-Python: >=3.12
+Requires-Dist: boto3
+Requires-Dist: jinja2
