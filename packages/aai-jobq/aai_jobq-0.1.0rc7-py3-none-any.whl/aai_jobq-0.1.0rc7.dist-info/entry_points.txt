@@ -1,0 +1,3 @@
+[console_scripts]
+jobq = cli:main
+jobs_execute = jobs.execute:execute
