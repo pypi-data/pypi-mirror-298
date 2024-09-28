@@ -1,0 +1,9 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "description": "Biztosan be akarja \u00e1ll\u00edtani az Ecowitt-ot?"
+            }
+        }
+    }
+}
