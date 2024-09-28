@@ -1,0 +1,29 @@
+[project]
+name = "lllqos"
+version = "1.0.0"
+description = "Linux PM QoS userspace interface"
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [
+  { name="Björn Brandenburg", email="bbb@mpi-sws.org" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+]
+dependencies = []
+
+
+[project.urls]
+Homepage = "https://github.com/brandenburg/py-linux-low-latency-qos"
+Issues = "https://github.com/brandenburg/py-linux-low-latency-qos/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff.lint]
+extend-select = [
+    "D"
+]
