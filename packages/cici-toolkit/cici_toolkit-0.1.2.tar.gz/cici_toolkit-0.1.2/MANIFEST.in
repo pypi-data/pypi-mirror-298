@@ -1,0 +1,9 @@
+include README.rst
+
+# These items only make sense from a git tree:
+global-exclude .gitignore
+exclude scripts/package.py
+
+# These items only make sense in the GitLab repo:
+exclude .gitlab-ci.yml
+exclude .gitlab-ci.d/*
