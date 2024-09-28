@@ -1,0 +1,9 @@
+protobin/__init__.py,sha256=T4NlE7q7WcEfHWfNGNEfLZ1lRFMDXRZNP0RgSPxZuF8,30
+protobin/errors.py,sha256=YGdDNIYUDsqFGMjxvfJbRQ3SRkHuEFqN3TC1uFPfWcc,182
+protobin/fields.py,sha256=4N2ZiwCAJpm9CVyUJiT7lJXAvD5ZPBxWyKv0CIJptPw,11319
+protobin/interfaces.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protobin/protocol.py,sha256=s66WQwOKHPwPsipVdGvDiki4kVU24s7buPlbrN1K4uk,2309
+protobin-0.0.8.dist-info/METADATA,sha256=WUp2ge167dpj7quAZOKnrSBl9wrNEX28FO8cBv45i6g,5402
+protobin-0.0.8.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+protobin-0.0.8.dist-info/licenses/LICENSE.txt,sha256=R7QvoV5O-yUlJWKMB_L3sYxF8QBURvZglGBf3rZ1s5s,1109
+protobin-0.0.8.dist-info/RECORD,,
