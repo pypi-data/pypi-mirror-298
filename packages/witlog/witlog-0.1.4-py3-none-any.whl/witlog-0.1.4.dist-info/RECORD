@@ -1,0 +1,10 @@
+witlog/__init__.py,sha256=Nmr4b8_wTGzkzXqG0zKQi9FQejzY76ybTY-6hs09A4c,166
+witlog/base.py,sha256=ba4RMoMjIaQd2UxGmxVhrom7e4iZ8tpkgQlu48BF9fA,843
+witlog/static.py,sha256=ZSEYe5f2VGFFamDgbW-EaPH2jeWhcXydGm0g1EZtRWY,3239
+witlog/timing/__init__.py,sha256=gpF3P79mdN4YORbARlLIlQWee3QYgY_uI36TJr1Y1Eo,113
+witlog/timing/timing.py,sha256=4g6FS_01NrwBOZjNuO0_8p0IU7s_x8E29LA74B_fuIo,3171
+witlog-0.1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+witlog-0.1.4.dist-info/METADATA,sha256=VrrMk2t2Fs-DfY7xYzwG3e_Ua6KIM48I5fvdoqNEvOA,20853
+witlog-0.1.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+witlog-0.1.4.dist-info/top_level.txt,sha256=lcjSdH27E-1LmWbyPhHXX8LVGQuVW3aNrAo89KAgsGI,7
+witlog-0.1.4.dist-info/RECORD,,
