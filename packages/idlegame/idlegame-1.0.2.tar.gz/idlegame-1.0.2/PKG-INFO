@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: idlegame
+Version: 1.0.2
+Summary: A tiny idle game you can play right from your terminal, if you are bored at your software development job
+Author: Ben Boonstra
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# idlegame
+A tiny idle game distributed through pypi, for if you're bored at your software development job
