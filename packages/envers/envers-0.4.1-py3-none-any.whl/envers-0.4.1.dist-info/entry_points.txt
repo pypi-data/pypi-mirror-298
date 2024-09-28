@@ -1,0 +1,3 @@
+[console_scripts]
+envers=envers.__main__:app
+
