@@ -1,0 +1,10 @@
+
+[dev]
+networkx
+matplotlib
+colorama
+
+[docs]
+
+[security]
+cryptography
