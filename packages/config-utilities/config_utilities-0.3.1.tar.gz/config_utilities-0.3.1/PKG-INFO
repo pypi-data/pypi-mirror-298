@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: config_utilities
+Version: 0.3.1
+Summary: Utilities for configuration management and logging setup.
+Home-page: https://github.com/audkus/config_utilities.git
+Author: Steffen S. Rasmussen
+Author-email: steffen@audkus.dk
+License: MIT
+License-File: LICENSE
