@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: enflow
+Version: 0.0.2
+Summary: ⚡ Open-source framework for sequential decision problems in the energy domain
+Home-page: https://github.com/rebase-energy/enflow
+Author: rebase.energy
+Author-email: hello@rebase.energy
+License: MIT
+License-File: LICENCE.md
+Requires-Dist: pandas
+Requires-Dist: pytz
+Requires-Dist: energydatamodel
+Requires-Dist: gymnasium
+
