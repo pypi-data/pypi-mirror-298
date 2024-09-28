@@ -1,0 +1,198 @@
+de:
+  owreport:
+    name: "Bericht"
+    placeholder_write_comment: "Einen Kommentar schreiben..."
+    btn:
+      return_to_scheme: "Zurück zum letzten Schema"
+      save: "Speichern"
+      print: "Drucken"
+    dialog:
+      save_report: "Bericht speichern"
+      print_report: "Bericht drucken"
+    msg:
+      set_instance_deprecate: "OWReport.set_instance ist veraltet"
+      remove: "Entfernen"
+      open_scheme: "Schema öffnen"
+    msg_box:
+      error: "Fehler"
+      permission_error: "Berechtigungsfehler beim Versuch, den Bericht zu schreiben."
+      permission_error_occur: "Berechtigungsfehler beim Speichern von '{}' aufgetreten."
+
+  visual_settings:
+    visual_settings: "Visuelle Einstellungen"
+    reset: "Zurücksetzen"
+    close: "Schließen"
+    open_dialog: "Dialog öffnen"
+
+  widget:
+    input_no_data: "Keine Daten im Eingang"
+    output_no_data: "Keine Daten im Ausgang"
+    tooltip:
+      widget_help: "Widget-Hilfe anzeigen"
+      save_image: "Bild speichern"
+      report: "Bericht"
+      setting_default: "Einstellungen auf Standard zurücksetzen"
+      set_visual_settings: "Visuelle Einstellungen festlegen"
+      menu: "Menü"
+      show_status_bar_tip: "Statusleiste anzeigen"
+      show_view.options: "Ansichtsoptionen anzeigen"
+      reset_to_default: "Einstellungen auf Standard zurücksetzen"
+      create_report: "Bericht erstellen und anzeigen"
+      help_tip: "Hilfe anzeigen"
+      quick_help_tip: "Schnellhilfe-Tipp"
+    btn:
+      help: "Hilfe"
+      help_tip: "Hilfe anzeigen"
+      report: "Bericht"
+      save_image: "Bild speichern"
+      show_status_bar: "Statusleiste anzeigen"
+      got_it: "Ok, verstanden"
+      learn_more: "Mehr erfahren\N{HORIZONTAL ELLIPSIS}"
+      reset: "Zurücksetzen"
+      close: "&Schließen"
+      minimize: "&Minimieren"
+      copy_image_to_clipboard: "Bild in die Zwischenablage kopieren"
+      show_menu_bar: "Menüleiste anzeigen"
+      show_control_area: "Steuerbereich anzeigen"
+      copy_to_clipboard: "In die Zwischenablage kopieren"
+      file: "&Datei"
+      edit: "&Bearbeiten"
+      view: "&Ansicht"
+      widow: "&Fenster"
+      help_menu: "&Hilfe"
+
+    warn:
+      property_change: "'OWBaseWidget.info' ist seit Version 3.19 eine Eigenschaft und wird in Version 4.0 schreibgeschützt."
+
+  settings:
+    warn:
+      miss_instance: "{0} ist als Einstellung auf {1} deklariert, aber nicht auf der Instanz vorhanden."
+      read_defaults_error: "Standardeinstellungen für Widget {0} konnten nicht gelesen werden\n Der folgende Fehler ist aufgetreten:\n\n{1}"
+      setting_error: "{0} wurde nicht als Einstellungslieferant in {1} deklariert. Einstellungen werden nicht richtig gespeichert/geladen. Standardwerte werden stattdessen verwendet."
+
+  io:
+    png_desc: "Portable Network Graphics"
+    clipboard_desc: "System-Zwischenablage"
+    svg_desc: "Scalable Vector Graphics"
+    matplotlib_desc: "Python-Code (mit Matplotlib)"
+    matplotlibpdf_desc: "Portable Document Format (von Matplotlib)"
+    pdf_desc: "Portable Document Format"
+
+  gui:
+    ignore_editable: "'editable' wird für durchsuchbare Kombinationsfelder ignoriert."
+    deprecated_string_literals: "String-Literale für die Ausrichtung sind veraltet"
+    deprecated_boolean_value: "Boolesche Werte für die Ausrichtung sind veraltet"
+    btn:
+      send_selection: "Auswahl senden"
+      send_automatically: "Automatisch senden"
+      apply_automatically: "Automatisch anwenden"
+      automatically: " Automatisch"
+      apply: "Anwenden"
+
+  config:
+    application_name: "Blauwal-Leinwand"
+    warn_cache_dir_deprecated: "'{}.cache_dir' ist veraltet."
+    warn_log_dir_deprecated: "'{}.log_dir' ist veraltet."
+    warn_setting_dir_deprecated: "'{}.widget_settings_dir' ist veraltet."
+
+  errorreporting:
+    win_title_error: "Unerwarteter Fehler"
+    label_report_error_to_developer: "Das Programm hat einen unerwarteten Fehler festgestellt. Bitte<br>melden Sie ihn anonym den Entwicklern.<br><br>Die folgenden Daten werden gemeldet:"
+    checkbox_include_workflow: "Workflow einbeziehen (Daten werden NICHT übertragen)"
+    btn:
+      send_report: "Bericht senden (Danke!)"
+      don't_send: "Nicht senden"
+    msg:
+      error_encountered: "Fehler aufgetreten"
+      error_encountered_text: "Fehler aufgetreten{}:<br><br><tt>{}</tt>"
+      widget: " im Widget <b>{}</b>"
+
+  mainwindow:
+    dialog_open_report: "Bericht öffnen"
+    text_restart_cancel: "Neustart abgebrochen"
+    app_name: "Blauwal"
+    btn:
+      show_report: "Bericht anzeigen"
+      show_report_tip: "Ein Berichtsfenster anzeigen"
+      open_report: "Bericht öffnen..."
+      open_report_tip: "Einen gespeicherten Bericht öffnen"
+      reset_widget_setting: "Widget-Einstellungen zurücksetzen..."
+    msg_box:
+      clear_settings_title: "Einstellungen löschen"
+      clear_settings_text: "{} muss neu gestartet werden, damit die Änderungen wirksam werden."
+      clear_settings_info_text: "Drücken Sie OK, um {} jetzt neu zu starten."
+      reset_settings: "Einstellungen werden beim nächsten Neustart von {} zurückgesetzt"
+      report_window_title: "Berichtsfenster"
+      report_window_text: "Der Bericht enthält ungespeicherte Änderungen."
+      report_window_info_text: "Möchten Sie den Bericht speichern?"
+
+  widgetsscheme:
+    widget_state_change: "Zustandsänderung für ein nicht verfolgtes Widget {}"
+    btn:
+      show_settings: "Einstellungen anzeigen"
+      show_settings_tip: "Widget-Einstellungen anzeigen"
+
+  line:
+    filter: "Filter..."
+
+  concurrent:
+    warn:
+      deprecate_iscancelled: "isCancelled ist veraltet"
+      deprecated_isdone: "isDone ist veraltet"
+
+  filedialogs:
+    warn_fix_error: "Nicht übereinstimmende Erweiterung. Erweiterung '{}' stimmt nicht mit dem gewählten Dateiformat {} überein.\n\n Möchten Sie dies beheben?"
+    dialog_title_save_as: "Speichern unter..."
+    dialog_title_open: "Öffnen..."
+    all_readable_files: "Alle lesbaren Dateien (*{})"
+    row_none: "(keine)"
+    btn:
+      change_extension: "Erweiterung ändern zu "
+      save_as: "Speichern unter "
+      back: "Zurück"
+
+  itemmodels:
+    pytablemodel_modification_failed: "PyTableModel kann nicht geändert werden, wenn es sortiert ist"
+
+  messagewidget:
+    msg:
+      err_encountered_hcf: "HCF aufgetreten"
+      err_encountered_hcf_detail: "<em>AAA! Es brennt.</em>"
+      warn_achtung: "ACHTUNG!"
+      warn_achtung_detail: "<div style=\"color: red\">DAS KOMPUTERMASCHINE IST NICHT FÜR DER GEFINGERPOKEN</div>"
+      info_rain_spain_plain: "Der Regen in Spanien fällt hauptsächlich auf die Ebene"
+      info_rain_spain_plain_detail: "<a href=\"https://www.google.si/search?q=Average+Yearly+Precipitation+in+Spain\">Link</a>"
+      err_not_do: "Ich habe das nicht getan!"
+      err_not_do_info: "Der Computer hat Vorschläge gemacht..."
+      err_not_do_detail: "... und die Standardoption war ja."
+
+  overlay:
+    btn_ok: "Ok"
+    btn_help: "Hilfe"
+
+  progressbar:
+    percentage_complete: " (0% abgeschlossen)"
+    called_error: "progressBarSet() wurde ohne vorheriges progressBarInit() aufgerufen"
+    ETA: "{} ({:d}%, ETA: {})"
+
+  saveplot:
+    msg_error: "Fehler"
+    msg_error_text: "Fehler beim Speichern der Datei '{}': {}"
+
+  svgexporter:
+    name: "Scalable Vector Graphics (SVG)"
+    desc: "Scalable Vector Graphics (*.svg)"
+
+  webview:
+    warn:
+      set_environment: "Um QWebEngineView zu debuggen, setzen Sie die Umgebungsvariable QTWEBENGINE_REMOTE_DEBUGGING={port} und besuchen Sie dann http://127.0.0.1:{port}/ in einem Chromium-basierten Browser. Siehe https://doc.qt.io/qt-5/qtwebengine-debugging.html Dies wurde auch für Sie erledigt."
+      js_not_readable: "://qtwebchannel/qwebchannel.js ist nicht lesbar."
+      construct_qobjects: "Exponieren Sie keine QWidgets in WebView. Konstruieren Sie stattdessen minimale QObjects."
+
+  btn:
+    ok: "OK"
+    cancel: "Abbrechen"
+    right: "Ja"
+    wrong: "Nein"
+    save: "Speichern"
+    discard: "Verwerfen"
