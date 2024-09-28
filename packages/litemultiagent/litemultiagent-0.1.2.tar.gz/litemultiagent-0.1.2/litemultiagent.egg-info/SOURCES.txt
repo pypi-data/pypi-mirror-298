@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+litemultiagent/__init__.py
+litemultiagent/main.py
+litemultiagent.egg-info/PKG-INFO
+litemultiagent.egg-info/SOURCES.txt
+litemultiagent.egg-info/dependency_links.txt
+litemultiagent.egg-info/requires.txt
+litemultiagent.egg-info/top_level.txt
