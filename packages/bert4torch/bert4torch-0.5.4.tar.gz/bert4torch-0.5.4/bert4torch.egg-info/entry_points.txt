@@ -1,0 +1,2 @@
+[console_scripts]
+bert4torch-llm-server = bert4torch.pipelines.chat:main
