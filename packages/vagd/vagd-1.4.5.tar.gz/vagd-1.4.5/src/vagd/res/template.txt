@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+from pwn import *
+
+GDB_OFF = 0x555555554000
+IP = '{ip}'
+PORT = {port}
+BINARY = '{binary}'
+ARGS = []
+ENV = {env} # os.environ
+GDB = f"""
+set follow-fork-mode parent
+
+c"""
+
+context.binary = exe = ELF(BINARY, checksec=False)
+context.aslr = {aslr}
+
+{ataka_env}
+
+{aliases}
+
+def setup():
+  global vm
+  if args.REMOTE or {is_local}{is_ataka}:
+    return
+
+  try:
+    from vagd import {dependencies}, Box # only load vagd if needed
+  except:
+    log.error("Failed to import vagd, either run locally using LOCAL or install it")
+  if not vm:
+    {vms}
+  if vm.is_new:
+    log.info("new vagd instance") # additional setup here
+
+
+vm = None
+def get_target(**kw) -> tubes.tube:
+  if args.REMOTE{is_ataka}:
+    # context.log_level = 'debug'
+    return remote(IP, PORT)
+
+  if {is_local}:
+    if args.GDB:
+      return gdb.debug([BINARY] + ARGS, env=ENV, gdbscript=GDB, **kw)
+    return process([BINARY] + ARGS, env=ENV, **kw)
+
+  return vm.start(argv=ARGS, env=ENV, gdbscript=GDB, **kw)
+
+setup()
+
+# libc = ELF('{libc}', checksec=False)
+
+t = get_target()
+
+it() # or t.interactive()
