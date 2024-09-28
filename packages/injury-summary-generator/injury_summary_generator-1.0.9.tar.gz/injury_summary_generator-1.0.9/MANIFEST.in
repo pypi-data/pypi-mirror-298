@@ -1,0 +1,1 @@
+include generate_summary_of_injuries/data/*.csv
