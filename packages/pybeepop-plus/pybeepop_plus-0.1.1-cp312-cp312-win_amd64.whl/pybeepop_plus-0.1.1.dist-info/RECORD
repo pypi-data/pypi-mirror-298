@@ -1,0 +1,10 @@
+pybeepop/__init__.py,sha256=-pR3Fue3eOVoH-9BHKHKqRl2VXU8ihTNy248uhPZceQ,32
+pybeepop/data/BeePop_exposed_parameters.csv,sha256=HX0v7WOSI1yi82d8wJAozw2n3pYi4NPrXtN2djRH8PU,11352
+pybeepop/lib/beepop_linux.so,sha256=ySi2dE1-ISSt--_-xy6Trs3NQiE5UDdYI7AVNJcgRBw,914424
+pybeepop/lib/beepop_win64.dll,sha256=y83P3jmymSO4Zr5BOQseK3acCPaMYu9595chuN5S-HA,276992
+pybeepop/pybeepop.py,sha256=Xn8Ti7EwJtytwvFfT__TFJL1rWDdiwC-fLpkGvXpKq0,8977
+pybeepop/tools.py,sha256=KWDz7byL1Ure7Kwe_FgXTjbCIHiHI1kOgLg-_WAz_a8,11498
+pybeepop_plus-0.1.1.dist-info/LICENSE,sha256=hVttqold0UAFUGbNtSyzysueY9oXXoIcEJqBRhtzAC8,1114
+pybeepop_plus-0.1.1.dist-info/METADATA,sha256=qYiMvMf2H7HrrNUMWrxAzWhDi75ENIBSHCTQhdZM55Y,7045
+pybeepop_plus-0.1.1.dist-info/WHEEL,sha256=4N0hGcnWMI_Ty6ATf4qJqqSl-UNI-Ln828iTWGIywmU,98
+pybeepop_plus-0.1.1.dist-info/RECORD,,
