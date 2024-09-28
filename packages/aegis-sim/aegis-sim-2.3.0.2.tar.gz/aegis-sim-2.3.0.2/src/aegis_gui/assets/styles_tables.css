@@ -1,0 +1,124 @@
+td,
+th {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.config-table,
+#simlog-table {
+  border-spacing: 0px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.config-table-col:nth-child(1) {
+  width: 10rem;
+}
+.config-table-col:nth-child(2) {
+  width: 1rem;
+}
+.config-table-col:nth-child(3) {
+  width: 2rem;
+}
+.config-table-col:nth-child(3) {
+  width: 4rem;
+}
+
+td,
+th {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-family: Inter;
+}
+
+td {
+  /* height: 2rem; */
+  /* padding-top: 0.5rem; */
+  /* padding-bottom: 0.5rem; */
+}
+
+th {
+  /* padding-top: 0.8rem; */
+  /* padding-bottom: 0.8rem; */
+  /* margin-top: 1.5rem; */
+  background-color: dodgerblue;
+  color:white;
+}
+
+table {
+  margin-bottom: 1rem;
+}
+
+th, td {
+  border: 1px solid dodgerblue;
+}
+
+.config-table th {
+  text-align: left;
+}
+
+.config-domain {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.serverrange_info_message {
+  font-style: italic;
+  margin: 0;
+}
+
+label {
+  padding: 0.25rem 0.5rem;
+}
+
+.config-table td.td-info {
+  font-size: 14px;
+}
+
+th.valid-values {
+  width: 100px;
+}
+/* 
+table {
+  border-radius: 10px;
+  margin-bottom: 2rem;
+} */
+
+table:hover {
+}
+
+#simlog-table {
+  text-align: center;
+}
+
+/* Rounded corners of tables -- */
+/* th:first-of-type {
+  border-top-left-radius: 10px;
+}
+
+th:last-of-type {
+  border-top-right-radius: 10px;
+}
+
+td:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+
+td:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+} */
+
+.domain,
+.dtype {
+  font-weight: 600;
+}

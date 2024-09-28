@@ -1,0 +1,15 @@
+LocalConfig:
+  ENVIRONMENT: "local"
+  SIMULATION_NUMBER_LIMIT: null
+  DATA_RETENTION_DAYS: null
+  MAX_SIM_NAME_LENGTH: 20
+  ABS_PATH_TO_BASE_DIRECTORY: null # If null, home directory will be used
+  PORT: null # If null, os will assign
+
+ServerConfig:
+  ENVIRONMENT: "server"
+  SIMULATION_NUMBER_LIMIT: 5
+  DATA_RETENTION_DAYS: 7
+  MAX_SIM_NAME_LENGTH: 20
+  ABS_PATH_TO_BASE_DIRECTORY: null # If null, home directory will be used
+  PORT: 8060
