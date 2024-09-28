@@ -1,0 +1,33 @@
+[
+{
+  "model": "buzzerboy_saas_tenants_apps_tenant.tenant",
+  "pk": "00d85654-9632-4629-abd7-a4c5848b0ead",
+  "fields": {
+    "created": "2024-09-27T17:34:56.839Z",
+    "last_updated": "2024-09-27T17:34:56.839Z",
+    "added_by": null,
+    "last_updated_by": null,
+    "uuid": "8d8db0f0-9cc4-4c30-bcd3-f379d0280e72",
+    "company_name": "*** TENANT NOT SETUP ***",
+    "subdomain": null,
+    "support_email_address": "",
+    "company_slogan": "",
+    "website": null,
+    "address": null,
+    "city": null,
+    "postalcode": null,
+    "state_province": null,
+    "country": null,
+    "telephone": "",
+    "fax": "",
+    "contract_status": null,
+    "primary_account_email": null,
+    "primary_account_name": null,
+    "company_logo": "",
+    "beta_features_csv": null,
+    "user_invite_subject": null,
+    "user_invite_template": "Please join our team. Click on the link below to create your account. <br><br><a href='{{invite_url}}'>{{invite_url}}</a>",
+    "subscription_plan": 1
+  }
+}
+]

@@ -1,0 +1,50 @@
+[
+{
+  "model": "buzzerboy_saas_tenants_apps_tenant.subscriptionplan",
+  "pk": 1,
+  "fields": {
+    "name": "BASIC",
+    "price": "19.00",
+    "description": "Starter plan for small businesses.",
+    "user_limit": 10,
+    "department_limit": 3,
+    "vulnerability_limit": 10,
+    "storage_limit": 15,
+    "dashboard_access": true,
+    "api_access": false,
+    "advanced_support": false
+  }
+},
+{
+  "model": "buzzerboy_saas_tenants_apps_tenant.subscriptionplan",
+  "pk": 2,
+  "fields": {
+    "name": "TEAM",
+    "price": "59.00",
+    "description": "Collaborate up to 25 team members.",
+    "user_limit": 25,
+    "department_limit": 10,
+    "vulnerability_limit": 25,
+    "storage_limit": 50,
+    "dashboard_access": true,
+    "api_access": true,
+    "advanced_support": true
+  }
+},
+{
+  "model": "buzzerboy_saas_tenants_apps_tenant.subscriptionplan",
+  "pk": 3,
+  "fields": {
+    "name": "ENTERPRISE",
+    "price": "149.00",
+    "description": "For bigger businesses.",
+    "user_limit": 0,
+    "department_limit": 0,
+    "vulnerability_limit": 0,
+    "storage_limit": 150,
+    "dashboard_access": true,
+    "api_access": true,
+    "advanced_support": true
+  }
+}
+]
