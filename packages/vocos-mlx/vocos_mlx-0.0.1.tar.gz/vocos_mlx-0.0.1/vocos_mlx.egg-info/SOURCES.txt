@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+vocos_mlx/__init__.py
+vocos_mlx/audio.py
+vocos_mlx/model.py
+vocos_mlx.egg-info/PKG-INFO
+vocos_mlx.egg-info/SOURCES.txt
+vocos_mlx.egg-info/dependency_links.txt
+vocos_mlx.egg-info/requires.txt
+vocos_mlx.egg-info/top_level.txt

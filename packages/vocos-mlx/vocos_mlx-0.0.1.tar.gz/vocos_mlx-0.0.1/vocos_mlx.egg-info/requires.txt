@@ -1,0 +1,5 @@
+huggingface_hub
+mlx>=0.17.3
+numpy
+torch>=2.0
+torchaudio>=2.0
