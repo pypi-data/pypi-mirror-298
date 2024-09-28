@@ -1,0 +1,5 @@
+[console_scripts]
+chaski_certificate_authority = chaski.scripts.certificate_authority:main
+chaski_remote_proxy = chaski.scripts.remote_proxy:main
+chaski_streamer_root = chaski.scripts.streamer_root:main
+chaski_terminate_connections = chaski.scripts.terminate_connections:main
