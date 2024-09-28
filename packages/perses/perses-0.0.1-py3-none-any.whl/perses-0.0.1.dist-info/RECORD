@@ -1,0 +1,15 @@
+perses-0.0.1.dist-info/METADATA,sha256=Q2XJiNUAual6g_EwHgFm9r7uCWsqyIX-myeaeyUc2BA,839
+perses-0.0.1.dist-info/WHEEL,sha256=Vza3XR51HW1KmFP0iIMUVYIvz0uQuKJpIXKYOBGQyFQ,90
+perses-0.0.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+perses-0.0.1.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+perses/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+perses/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+perses/model/common.py,sha256=3215dOfxJmUihdswi6mSUft1HWo5SszO-o58D8F3o5Y,1843
+perses/model/dashboard.py,sha256=KEHqP0YrWh68FrAO-Y_EXnaZoA4Ozv4aznGC9ST7vig,1460
+perses/model/panel.py,sha256=GgU3N1q-b5_2CtVRIAGLEqcgiawwynhRyHfqDyC8sXU,5887
+perses/model/project.py,sha256=nsD4I-0CHKxsWltVPTOONGcKEYjZ3FzA2u6X8l5yHP4,184
+perses/model/query.py,sha256=JGgklBW-xO0hx8xp1hxfHdETK7DimuJFv8ytcCQj_JU,1655
+perses/model/user.py,sha256=aLy2zd7CNnvpZf6gDXroS5BY0CLVttDj1fDOjC3A0ck,610
+perses/model/variable.py,sha256=veDEzZ4ZtzfUKuaubFtX6zweBUejH9DEI4WulMi4AfI,3095
+perses/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+perses-0.0.1.dist-info/RECORD,,
