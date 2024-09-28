@@ -1,0 +1,37 @@
+require-python-3
+pandas
+numpy
+regex
+matplotlib
+gitpython
+typing
+pydotplus
+scipy
+scikit-learn
+paramiko
+asteval
+cryptography==43.0.1
+gitdb
+pyasn1
+natsort
+webcolors
+colorama
+pygtrie
+packaging
+importlib_metadata
+npf-web-extension>=0.6.4
+nbformat
+nbconvert
+jinja2
+spellwise
+seaborn
+statsmodels
+scikit-optimize
+colorama
+scikit-optimize
+
+[:python_version < "3.7.0"]
+orderedset
+
+[:python_version >= "3.7.0"]
+ordered_set
