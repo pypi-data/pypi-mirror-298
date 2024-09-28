@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: benpipe
+Version: 0.0.2
+Summary: 
+Author-email: Gareth Davidson <gaz@bitplane.net>
+Requires-Dist: bencodepy
+Requires-Dist: build ; extra == "dev"
+Requires-Dist: twine ; extra == "dev"
+Requires-Dist: mkdocs ; extra == "dev"
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: coverage ; extra == "dev"
+Provides-Extra: dev
