@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: android-inspector
+Version: 0.0.1
+Summary: A collection of ScanCode.io pipelines dedicated to Android APK analysis.
+Home-page: https://github.com/aboutcode-org/android-inspector
+Author: nexB. Inc. and others
+Author-email: info@aboutcode.org
+License: Apache-2.0
+Keywords: utilities
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: apache-2.0.LICENSE
+License-File: NOTICE
+License-File: AUTHORS.rst
+License-File: CHANGELOG.rst
+License-File: CODE_OF_CONDUCT.rst
+Requires-Dist: commoncode
+Provides-Extra: docs
+Requires-Dist: Sphinx>=5.0.2; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=1.0.0; extra == "docs"
+Requires-Dist: sphinx-reredirects>=0.1.2; extra == "docs"
+Requires-Dist: doc8>=0.11.2; extra == "docs"
+Requires-Dist: sphinx-autobuild; extra == "docs"
+Requires-Dist: sphinx-rtd-dark-mode>=1.3.0; extra == "docs"
+Requires-Dist: sphinx-copybutton; extra == "docs"
+Provides-Extra: testing
+Requires-Dist: pytest!=7.0.0,>=6; extra == "testing"
+Requires-Dist: pytest-xdist>=2; extra == "testing"
+Requires-Dist: aboutcode-toolkit>=7.0.2; extra == "testing"
+Requires-Dist: pycodestyle>=2.8.0; extra == "testing"
+Requires-Dist: twine; extra == "testing"
+Requires-Dist: black; extra == "testing"
+Requires-Dist: isort; extra == "testing"
+Requires-Dist: scancodeio; extra == "testing"
+Requires-Dist: pytest-django; extra == "testing"
+
+Android Inspector
+=================
+A collection of ScanCode.io pipelines dedicated to Android APK analysis.
+
+Requirements
+------------
+
+- Java 11+
+- jadx 1.5.0 `https://github.com/skylot/jadx`
+
+Ensure that jadx is available in your path by moving the `bin` and `lib`
+directories to the `/usr` directory.
