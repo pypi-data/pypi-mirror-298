@@ -1,0 +1,8 @@
+configPackage/__init__.py,sha256=urhmq5QqBImvzUxNXw7VkCHllOx41xEyNenyZOWKYQQ,21
+configPackage/config.py,sha256=z2dwg4DYbjFOVMGy0U9fc0fYdzSFKb6bXQQAr51bpek,436
+routes/__init__.py,sha256=xXt5Ss7Tp_fG4IyyQ1yyESDAJoDZdkFCTj6xL1hPC-U,21
+routes/health.py,sha256=r3Nn3QjMotkeZNlmwiDPRVoM1NE3qledaqgLqv_amhc,327
+kurvaa-0.0.8.dist-info/METADATA,sha256=PSn2JRiRP23KCubC2oQVpvrnKbqWB8JVCxICnUK0asY,144
+kurvaa-0.0.8.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+kurvaa-0.0.8.dist-info/top_level.txt,sha256=bnqyPwoUFKFRQ15cACFlMGRH2yLpY9L2qCZDJENkzgI,21
+kurvaa-0.0.8.dist-info/RECORD,,
