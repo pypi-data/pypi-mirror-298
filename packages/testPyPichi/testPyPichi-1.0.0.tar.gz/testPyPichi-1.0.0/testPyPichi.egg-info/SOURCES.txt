@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+testPyPi/__init__.py
+testPyPi/_core.py
+testPyPichi.egg-info/PKG-INFO
+testPyPichi.egg-info/SOURCES.txt
+testPyPichi.egg-info/dependency_links.txt
+testPyPichi.egg-info/requires.txt
+testPyPichi.egg-info/top_level.txt
