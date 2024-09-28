@@ -1,0 +1,17 @@
+libremarkable/__init__.py,sha256=PUHm7pWUPMslQGFVneq6840Lb7mTsvahll4Ois9xjxQ,743
+libremarkable/_battery.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libremarkable/_color.py,sha256=X41OltqRZpbvt3HAwqYp9NDN5Z5pTpAuC0j14TyrP1E,1478
+libremarkable/_device.py,sha256=kZ79-55a9Uov0gO3z9V4XPgwkekaC4zABQLi-VJ4e0U,873
+libremarkable/_framebuffer.py,sha256=Hs3Aw8n27Mt5D-CUTIa4e8jQ-C8eD9dNKCN-eyJEq5w,16657
+libremarkable/_input.py,sha256=oAnowLM7XV0hvy0mv4cR7XpuyWs3atyjBan0esCvxUY,19252
+libremarkable/_ioctl.py,sha256=jCtZW39zDOllZJzy1Fjye7B7Ck-MXXxZ4sRrDMIeX_I,1153
+libremarkable/_keymap.py,sha256=R35MDql_a7QU3QnmF2e-DIzrS-HU9CsgTnSK3WvQeMs,13756
+libremarkable/_libc.py,sha256=KxvS3oxsASp0SP6l1qitoKZLwLD6gSFe6yAb56q_ixM,108
+libremarkable/_mxcfb.py,sha256=MdAhPGqSGrwYAGo4fYyQx8nhJBKa7v9dq7hDYkPW_ss,9435
+libremarkable/_rm2fb.py,sha256=W99ISGZWy9I30qKmR-Al97X36qxasPZreH_cI7ew8hw,3871
+libremarkable/geometry.py,sha256=xH-pQncOsv2_b5fsnFLe04m8_wtCQiSaGgM8LycTMrw,8311
+libremarkable-0.0.1.dist-info/LICENSE,sha256=CrhrRSSRLGF9n7W4NoPvpQqGveWQbr96d9882baiyVY,1077
+libremarkable-0.0.1.dist-info/METADATA,sha256=NH2emTV2q5ZWdy2rxkktsiqKdSeNWQoShfPu1Gh19aE,1322
+libremarkable-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+libremarkable-0.0.1.dist-info/top_level.txt,sha256=Yk_-dM6xBd1jYSi1wxAV_Pg6J5EcjGfQsZOaWF5TPtc,14
+libremarkable-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: libremarkable
+Version: 0.0.1
+Summary: Python library for developing applications for the reMarkable tablet.
+Author-email: Nathaniel van Diepen <eeems@eeems.email>
+Maintainer-email: Nathaniel van Diepen <eeems@eeems.email>
+Project-URL: Homepage, https://github.com/Eeems-Org/python-libremarkable
+Project-URL: Repository, https://github.com/Eeems-Org/python-libremarkable.git
+Project-URL: Issues, https://github.com/Eeems-Org/python-libremarkable/issues
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow >=10.1.0
+Requires-Dist: evdev >=1.7.1
+Requires-Dist: bresenham >=0.2.1
+
+[![libremarkable on PyPI](https://img.shields.io/pypi/v/libremarkable)](https://pypi.org/project/libremarkable)
+
+Python Library for Developing Applications for the reMarkable Tablet
+====================================================================
+
+Installation
+============
+
+```bash
+pip install libremarkable
+```
+
+Usage
+=====
+
+```python
+import libremarkable
+```
