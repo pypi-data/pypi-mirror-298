@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+seiRJ/__init__.py
+seiRJ/seiRJ.py
+seiRJ.egg-info/PKG-INFO
+seiRJ.egg-info/SOURCES.txt
+seiRJ.egg-info/dependency_links.txt
+seiRJ.egg-info/top_level.txt
