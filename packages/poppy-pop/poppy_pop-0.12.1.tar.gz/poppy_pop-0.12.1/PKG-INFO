@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: poppy-pop
+Version: 0.12.1
+Summary: POPPY Operation Plugin (POP)
+Home-page: https://gitlab.obspm.fr/POPPy/POP
+License: CeCILL 2.1
+Author: Xavier Bonnin
+Author-email: xavier.bonnin@obspm.fr
+Requires-Python: >=3.9,<4
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: poppy-core (>=0.12.1)
+Requires-Dist: toml
+Project-URL: Repository, https://gitlab.obspm.fr/POPPy/POP
+Description-Content-Type: text/markdown
+
+poppy.pop
+=========
+
+[![pipeline status](https://gitlab.obspm.fr/POPPY/POP/badges/develop/pipeline.svg)](https://gitlab.obspm.fr/POPPY/POP/pipelines)
+
+
+Introduction
+------------
+
+This directory contains the source code of the POPPY Operation Plugin (POP), the main plugin to be used with the POPPY framework.
+
+See "POPPY User Manual" for more details.
+
+Quickstart
+----------
+
+To install the package using [pip](https://pypi.org/project/pip-tools/):
+
+```
+pip install poppy-core
+```
+
+License
+-------
+poppy-pop is under the license CeCILL 2.1.
+
+Acknowledgement
+-----------
+POPPY is project developed by the RPW Operations Centre (ROC) team based at LESIA (Meudon, France).
+The ROC is funded by the Centre National d'Etudes Spatiale (CNES) in the framework of the European Space Agency (ESA) Solar Orbiter mission.
+
+Authors
+-------
+
+xavier.bonnin@obspm.fr
+florence.henry@obspm.fr
+
+Has also contributed in the past: Sonny Lion, Gregoire Duvauchelle, Manuel Duarte
+

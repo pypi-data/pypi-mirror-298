@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools", "wheel", "poetry", "poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "poppy-pop"
+version = "0.12.1"
+readme = "README.md"
+license = "CeCILL 2.1"
+repository = "https://gitlab.obspm.fr/POPPy/POP"
+description = "POPPY Operation Plugin (POP)"
+authors = [ "Xavier Bonnin <xavier.bonnin@obspm.fr>", "ROC Team <roc.support@sympa.obspm.fr>",]
+exclude = [ "bump_version.py",]
+[[tool.poetry.packages]]
+include = "poppy"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4"
+poppy-core = {version = ">=0.12.1"}
+toml = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "<9"
+pytest-cov = "<6"
+pytest-timeout = "<3"
+pre-commit = "^3"
+ruff = "*"
+
+[tool.poetry.scripts]
+pop = "poppy.pop.scripts:main"
