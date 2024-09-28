@@ -1,0 +1,7 @@
+local/*
+out/*
+Pipfile.lock
+.idea
+*/__pycache__/*
+examples/out/
+dist/
