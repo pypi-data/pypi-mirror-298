@@ -1,0 +1,14 @@
+README.md
+setup.py
+localizesh_sdk.egg-info/PKG-INFO
+localizesh_sdk.egg-info/SOURCES.txt
+localizesh_sdk.egg-info/dependency_links.txt
+localizesh_sdk.egg-info/requires.txt
+localizesh_sdk.egg-info/top_level.txt
+src/__init__.py
+src/generators.py
+src/mappers.py
+src/types.py
+src/protos/localize/document_pb2.py
+src/protos/localize/processor_pb2.py
+src/protos/localize/segment_pb2.py
