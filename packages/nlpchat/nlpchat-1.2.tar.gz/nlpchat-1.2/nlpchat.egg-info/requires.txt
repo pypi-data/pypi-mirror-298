@@ -1,0 +1,5 @@
+sentence-transformers
+tensorflow
+scikit-learn
+numpy
+pickle-mixin
