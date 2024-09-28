@@ -1,0 +1,93 @@
+[tool.poetry]
+name = "pyflowcl"
+version = "2024.9.28"
+description = "Cliente para comunicacion con flowAPI-3 de flow.cl"
+authors = ["Mario Hernandez <mariofix@proton.me>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/mariofix/pyflowcl"
+documentation = "https://mariofix.github.io/pyflowcl/"
+homepage = "https://www.flow.cl/docs/api.html"
+keywords = [
+    "plataforma de pagos",
+    "pagos",
+    "pagar",
+    "cobrar",
+    "ecommerce",
+    "tarjetas",
+    "credito",
+    "debito",
+    "redcompra",
+    "webpay",
+    "visa",
+    "mastercard",
+    "transbank",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+packages = [{ include = "pyflowcl" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+certifi = "^2024.8.30"
+requests = { version = "^2.32.3", extras = ["security"] }
+typer = { version = "^0.12.5", extras = ["all"] }
+pydantic = "^2.9.2"
+
+# para deprecar
+python-slugify = "*"
+python-fsutil = "*"
+openapi3 = "^1.8.1"
+pyyaml = "^6.0"
+
+
+[tool.poetry.scripts]
+flow-cli = "pyflowcl.cli:app"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+coverage = "^7.6.1"
+black = "^24.8.0"
+pre-commit = "^3.8.0"
+mkdocs-material = { version = "^9.5.38", extras = [
+    "recomended",
+    "imaging",
+    "git",
+] }
+mkdocstrings = { version = "^0.26.1", extras = ["python"] }
+mdx-include = "^1.4.2"
+rich = "^13.8.1"
+mkdocs-git-authors-plugin = "^0.9.0"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra"
+testpaths = ["tests"]
+python_files = ["test*.py"]
+
+[tool.black]
+line-length = 119
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+py_version = 39
+
+[tool.coverage.run]
+omit = ["*/tests/*", "pyflowcl/openapi3.py", "pyflowcl/cli.py"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
