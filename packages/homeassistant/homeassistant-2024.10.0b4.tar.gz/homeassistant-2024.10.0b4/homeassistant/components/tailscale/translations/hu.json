@@ -1,0 +1,64 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "A szolg\u00e1ltat\u00e1s m\u00e1r konfigur\u00e1lva van",
+            "reauth_successful": "Az \u00fajrahiteles\u00edt\u00e9s sikeres volt."
+        },
+        "error": {
+            "cannot_connect": "Sikertelen csatlakoz\u00e1s",
+            "invalid_auth": "\u00c9rv\u00e9nytelen hiteles\u00edt\u00e9s"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API kulcs"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_key": "API kulcs",
+                    "tailnet": "Tailnet"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "client": {
+                "name": "Kliens"
+            },
+            "client_supports_hair_pinning": {
+                "name": "T\u00e1mogatja a 'hairpinning' NAT-ot"
+            },
+            "client_supports_ipv6": {
+                "name": "T\u00e1mogatja az IPv6-ot"
+            },
+            "client_supports_pcp": {
+                "name": "T\u00e1mogatja a PCP-t"
+            },
+            "client_supports_pmp": {
+                "name": "T\u00e1mogatja a NAT-PMP-t"
+            },
+            "client_supports_udp": {
+                "name": "T\u00e1mogatja az UDP-t"
+            },
+            "client_supports_upnp": {
+                "name": "T\u00e1mogatja az UPnP-t"
+            },
+            "key_expiry_disabled": {
+                "name": "Kulcs lej\u00e1rata letiltva"
+            }
+        },
+        "sensor": {
+            "expires": {
+                "name": "Lej\u00e1rat"
+            },
+            "ip": {
+                "name": "IP-c\u00edm"
+            },
+            "last_seen": {
+                "name": "Utolj\u00e1ra l\u00e1tva"
+            }
+        }
+    }
+}
