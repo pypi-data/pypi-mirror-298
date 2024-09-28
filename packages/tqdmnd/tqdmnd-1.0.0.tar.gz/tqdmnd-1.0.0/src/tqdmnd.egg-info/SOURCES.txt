@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/tqdmnd/__init__.py
+src/tqdmnd/tqdmnd.py
+src/tqdmnd.egg-info/PKG-INFO
+src/tqdmnd.egg-info/SOURCES.txt
+src/tqdmnd.egg-info/dependency_links.txt
+src/tqdmnd.egg-info/requires.txt
+src/tqdmnd.egg-info/top_level.txt
