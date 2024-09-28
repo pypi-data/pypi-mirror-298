@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+polaris/python_polaris.egg-info/PKG-INFO
+polaris/python_polaris.egg-info/SOURCES.txt
+polaris/python_polaris.egg-info/dependency_links.txt
+polaris/python_polaris.egg-info/top_level.txt
+tests/test_polaris.py
