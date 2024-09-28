@@ -1,0 +1,14 @@
+shopyo_appadmin/__init__.py,sha256=v4NkmixHhPJDjpMwKB2vR8nG6lhp86LGreyKzBmINPI,488
+shopyo_appadmin/admin.py,sha256=92Liq0xfGiSn8Ie1zpMuhNeRpzbEzp1Y9wRdqI39y7k,561
+shopyo_appadmin/info.json,sha256=XOcVuIDmjVnNqvJX5fISAgLbUqOCoX0COZf6aJD8bOk,278
+shopyo_appadmin/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shopyo_appadmin/view.py,sha256=HXbMiQ09WIOQcvDhjgEycSGsP9ki9Mo3tFXFGTZ8iTc,6231
+shopyo_appadmin/templates/shopyo_appadmin/add.html,sha256=jpjWCxqcdJrRqdMdF0yll-Y6e8OAkmCEPEzr1sI-Uro,3347
+shopyo_appadmin/templates/shopyo_appadmin/edit.html,sha256=5Pt6g_Uv-aJyE3crFNsdqRl59qNjIO3kj-RZ4t10npo,3126
+shopyo_appadmin/templates/shopyo_appadmin/index.html,sha256=wZvex5N0DpYOO1ZpS7I_Uw2xEqPM1XQW3Jm_DqDhgwg,2803
+shopyo_appadmin/templates/shopyo_appadmin/roles.html,sha256=_AZBH9xcZ19zAZUL4yTdkI20iE1oYPGm2LDUeEDYkJY,1661
+shopyo_appadmin/templates/shopyo_appadmin/blocks/sidebar.html,sha256=wkOXPTxapMpDqpExCMYTRaq7TKT-UID2Qyo9YuyBZcw,268
+shopyo_appadmin-1.0.0.dist-info/METADATA,sha256=ctsQ_6tkhXNlUtPerGYED-_9sRzMGz-eCTwa8RIpf6Y,511
+shopyo_appadmin-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+shopyo_appadmin-1.0.0.dist-info/top_level.txt,sha256=KVlLWbVgtnB1dbH6wjKC0qPnkO4J5g5BsF8fIDOau7E,16
+shopyo_appadmin-1.0.0.dist-info/RECORD,,
