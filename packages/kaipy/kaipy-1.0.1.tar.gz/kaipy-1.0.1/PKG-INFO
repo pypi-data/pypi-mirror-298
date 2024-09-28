@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: kaipy
+Version: 1.0.1
+Summary: Python software for CGS MAGE
+Home-page: https://bitbucket.org/aplkaiju/kaipy/src/master/
+Author: Center for Geospace Storms
+Author-email: Eric Winter <eric.winter@jhuapl.edu>
+License: MIT
+Keywords: CGS,MAGE,KAIJU
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8, <3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: alive_progress
+Requires-Dist: astropy
+Requires-Dist: cdasws
+Requires-Dist: configparser
+Requires-Dist: h5py
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: progressbar
+Requires-Dist: pyhdf
+Requires-Dist: pyspedas
+Requires-Dist: pytest
+Requires-Dist: spacepy
+Requires-Dist: sunpy
+
+# README #
+
+Kaipy is a Python package for analysis and visualization of simulation
+results from a scientific software package Kaiju. Kaiju includes the
+[Multiscale Atmosphere-Geospace Environment (MAGE)
+](https://cgs.jhuapl.edu/Models/mage.php) model developed by the NASA
+DRIVE [Center for Geospace Storms](https://cgs.jhuapl.edu/) as well as
+other scientific software for simulation of heliospheric environments such
+as planetary magnetospheres and the solar wind. 
+
+### Documentation ###
+
+Current documentation for this package available via our [Read The Docs website](https://kaipy-docs.readthedocs.io/en/latest/).
+
+### License ###
+
+Kaipy is distributed under the [BSD 3-Clause license](LICENSE.md).
+
+### What is this repository for? ###
+
+This repository provides access to the source code used
+to implement the kaipy python package. The package is mostly commonly installed via
+pip from [https://pypi.org/project/kaipy/](PyPi).
+
+### How do I get set up? ###
+
+* Install python verison 3.8.
+* ```pip install kaipy```.
+
+
+### Contribution guidelines ###
+
+* All contributions should be made by forking this repository and submitting a pull request.
+
+
+### Who do I talk to? ###
+
+* For more information about the Kaipy project contact [Michael Wiltberger](mailto:wiltbemj@ucar.edu?subject=Kaipy).

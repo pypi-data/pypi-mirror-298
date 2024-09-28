@@ -1,0 +1,13 @@
+alive_progress
+astropy
+cdasws
+configparser
+h5py
+matplotlib
+pandas
+progressbar
+pyhdf
+pyspedas
+pytest
+spacepy
+sunpy
