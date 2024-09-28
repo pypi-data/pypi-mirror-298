@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: better-imap
+Version: 0.1.1
+Summary: Tool for working with imap
+Author: T1murKO
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aioimaplib (>=1.1.0,<1.2)
+Requires-Dist: better-proxy (>=1.1)
+Requires-Dist: httpx (>=0.22)
+Requires-Dist: python-socks (>=2.5.0,<3)
+Requires-Dist: pytz (>=2024.2,<2025.0)
+Description-Content-Type: text/markdown
+
+
