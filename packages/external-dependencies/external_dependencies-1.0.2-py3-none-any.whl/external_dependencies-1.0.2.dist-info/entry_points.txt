@@ -1,0 +1,2 @@
+[console_scripts]
+external_dependencies = external_dependencies.cli:app
