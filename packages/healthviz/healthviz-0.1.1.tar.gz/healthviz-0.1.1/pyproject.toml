@@ -1,0 +1,6 @@
+[tool.poetry]
+name = "healthviz"
+version = "0.1.1"
+description = "A package for health data visualization and analysis"
+authors = ["Saunak Ghosh <saunakofficial10@gmail.com>"]
+license = "MIT"
