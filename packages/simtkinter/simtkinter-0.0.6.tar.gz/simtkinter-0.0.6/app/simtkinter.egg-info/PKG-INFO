@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: simtkinter
+Version: 0.0.6
+Summary: Makes the Tkinter simpler
+Home-page: http://hacker-bin.com
+Author: George Langas
+Author-email: hackerakos@hacker-bin.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Simple Tkinter
+
+The Simple Tknter is a python package made to make the Tkinter simpler.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install simtkinter
+```
+
+## Usage
+
+```python
+# Import the Simple Tkinter package
+from simtkinter import *
+
+# ----- Start the GUI's main loop -----
+# winTitle=winTitle="Simple Tkinter"   --->   Set the window name (default=Simple Tkinter)
+# winSize="400x400"   --->   Set the window size (default=400x400)
+# winIcon="ico/myIco.ico" Set the window icon (default=ico/simple_tkinter.ico)
+# boxing="place"   --->   Set the boxing type for your GUI(default=pack)
+loop_start(winTitle="Simple Tkinter", winSize="400x400", winIcon="ico/simple_tkinter.ico", boxing="place")
+
+
+
+# ----- Add a some text to your window -----
+# text="Hello World! 1"   --->   Set the text for your label.
+# x=0, y=0   --->   Set the cordinates of your label
+# bg="#FF0000"   --->   Set the backround color of your label to #FF0000 (red)
+# tc="red"   --->   Set the text color of your label to black
+label(text="Hello World! 1", x=0, y=0, bc="#FF0000", tc="black")
+label(text="Hello World! 2", x=0, y=30)
+
+
+# ----- Colors -----
+# You can select every color you want from a new window
+# and the hex code of the selected color 
+# will be printed in the console
+hex_colors_palette()
+
+# You can see all the colors if you do not like hex codes 
+name_color_chart()
+
+
+
+# Close the GUI's main loop
+loop_close()
+```
+
+
+
+
+## A Hello World Program
+```python
+# Import the Simple Tkinter package
+from simtkinter import *
+
+# Start the GUI's main loop
+loop_start()
+
+
+# text="Hello World!"   --->   Set the text for your label.
+label(text="Hello World!")
+
+
+# Close the GUI's main loop
+loop_close()
+```
