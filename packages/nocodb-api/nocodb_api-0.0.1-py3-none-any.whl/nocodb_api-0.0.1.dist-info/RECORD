@@ -1,0 +1,10 @@
+nocodb/Base.py,sha256=deI87An9LBiolj6pzZ9QVHarxxNlmsteyYZoDfrMWok,3093
+nocodb/Column.py,sha256=5asZwLdfFVtxveNiHasjT6QsifENAEiJLPJon2Fgadk,926
+nocodb/Record.py,sha256=3sdTP5gDBLOESlLmxkqtWpaV7jZI_GMpeK1Rwt85K8k,1091
+nocodb/Table.py,sha256=HcKR7ZYHFWDgXgPY1OI3Og5AAN2CxB_Q_wLRB_GB2ak,5181
+nocodb/__init__.py,sha256=D5W7zKIOpDh689ri4mFcLCcrTndzoYy5zyM7yXttBsY,3215
+nocodb_api-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nocodb_api-0.0.1.dist-info/METADATA,sha256=W_DIgMAhgZQXXgT2q3wh9nVm5gPF4kBA6WLxMdqixIY,41867
+nocodb_api-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+nocodb_api-0.0.1.dist-info/top_level.txt,sha256=ux8wP_W93_7SdpRMNGBlkpwxanDOBWVlS2-_RAaXW-k,7
+nocodb_api-0.0.1.dist-info/RECORD,,
