@@ -1,0 +1,8 @@
+README.md
+setup.py
+solar_as_judge/__init__.py
+solar_as_judge.egg-info/PKG-INFO
+solar_as_judge.egg-info/SOURCES.txt
+solar_as_judge.egg-info/dependency_links.txt
+solar_as_judge.egg-info/requires.txt
+solar_as_judge.egg-info/top_level.txt
