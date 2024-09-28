@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: lap_data
+Version: 4.3.36
+Summary: Laser Aided Profiler Data Access Library
+Author-email: Peter Demján <peter.demjan@gmail.com>
+License: GNU General Public License v3 (GPLv3)
+Project-URL: homepage, https://github.com/demjanp/lap_data
+Keywords: database,graph
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Database
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: <4,>=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: deposit_gui<2,>=1.6.36
+
+# LAP-data
+Laser Aided Profiler Data Access Library
+
+Created on 22. 7. 2022
+
+### Author:
+Peter Demján (peter.demjan@gmail.com)
+
+## License: <a name="license"></a>
+
+This code is licensed under the [GNU GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html) - see the [LICENSE](LICENSE) file for details
