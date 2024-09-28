@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "crossover-util"
+version = "0.1.0.15"
+description = "Crossover utility tool"
+authors = ["Yurzs <me@yurzs.dev>"]
+readme = "README.md"
+packages = [
+    { include = "crossover_util", from = "." }
+]
+license = "MIT"
+
+[tool.poetry.scripts]
+crossover-util = "crossover_util.cli:main"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+click = "^8.1.7"
+plumbum = "^1.8.3"
+pytz = "^2024.2"
+pydantic = "^2.9.2"
+typing-extensions = "^4.12.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
