@@ -1,0 +1,7 @@
+setup.py
+flagpypi/__init__.py
+flagpypi/main.py
+flagpypi.egg-info/PKG-INFO
+flagpypi.egg-info/SOURCES.txt
+flagpypi.egg-info/dependency_links.txt
+flagpypi.egg-info/top_level.txt
