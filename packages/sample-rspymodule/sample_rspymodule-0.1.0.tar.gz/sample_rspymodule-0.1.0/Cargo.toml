@@ -1,0 +1,13 @@
+[package]
+name = "sample-rspymodule"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "sample_rspymodule"
+crate-type = ["cdylib"]
+path = "cli/lib.rs"
+
+[dependencies]
+pyo3 = "0.19.0"
