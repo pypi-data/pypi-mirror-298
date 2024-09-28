@@ -1,0 +1,5 @@
+*.img
+*.img.xz
+*.pyc
+__pycache__
+dist
