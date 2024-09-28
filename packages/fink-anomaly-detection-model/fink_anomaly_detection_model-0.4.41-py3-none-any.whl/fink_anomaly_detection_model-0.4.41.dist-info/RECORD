@@ -1,0 +1,9 @@
+fink_anomaly_detection_model/__init__.py,sha256=6sJJLbY2ZasN2J2IddgVu3r-F2l-xXDJ7mwAfBVKAgM,134
+fink_anomaly_detection_model/data_transformer.py,sha256=yxFG7AkXKoyuVYW8IBQFr9LRGBiob8CSSjlPeGKDmOk,3855
+fink_anomaly_detection_model/main_script_.py,sha256=zjDCq_x69E8qinxwoJ57muSto94xgorjtTEeVGldF34,12160
+fink_anomaly_detection_model/reactions_reader.py,sha256=DGv-BEmtVIh_bYoW9OXa407FfAukcHcFP3hWjST1wqw,6601
+fink_anomaly_detection_model-0.4.41.dist-info/METADATA,sha256=PQf4VFmj4PpFxonS3FCFxhCOUahLF0ILJU8eZRJa7hA,2497
+fink_anomaly_detection_model-0.4.41.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+fink_anomaly_detection_model-0.4.41.dist-info/entry_points.txt,sha256=5FI9XIwTOK7pMSZQC_Zev-fzEL8OZYOo47G5IiCor9k,217
+fink_anomaly_detection_model-0.4.41.dist-info/top_level.txt,sha256=DAb3WFQdegckHwrOfm4JGw5Dov31OSxHJImU9t5Fi9M,29
+fink_anomaly_detection_model-0.4.41.dist-info/RECORD,,
