@@ -1,0 +1,11 @@
+djangaudit/__init__.py,sha256=QJUqF4kLYxjE6iEWivOkoXquiLXPyEvD-mWHA8npVgw,22
+djangaudit/apps.py,sha256=ZPYDidiSWpcdDOyhmra5fyD2R2zDTBFmef3Kd__cIF0,267
+djangaudit/lib.py,sha256=8FyW0V9EcHvfdkgQKZ2OixESjD7nTx1IrYbcApXmBbc,4031
+djangaudit/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangaudit/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangaudit/management/commands/audit_project.py,sha256=xof-lfAlcRzN1huQOIqCODH-oFHx57drypneI02zxj0,4501
+djangaudit-0.1.1.dist-info/LICENCE,sha256=O5kchsR4t-5h3NAQz9w5WU6yoUTLh_HVMzLwNqrzDns,1104
+djangaudit-0.1.1.dist-info/METADATA,sha256=XqywS4-ZQljb8jF_VsB2CDd6ocwKrv-mL-UgKsg3WFs,2439
+djangaudit-0.1.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+djangaudit-0.1.1.dist-info/top_level.txt,sha256=7Z4WFCn8dJhQlDxz00bihGwL_g7Tl1uXi4Wa5frnbo4,11
+djangaudit-0.1.1.dist-info/RECORD,,
