@@ -1,0 +1,2 @@
+Version: 1.8.2
+Arguments: ['C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-21l_v5nj\\cp39-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', '--ignore-in-wheel', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-21l_v5nj\\cp39-win_amd64\\repaired_wheel', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-21l_v5nj\\cp39-win_amd64\\built_wheel\\soar_sml-9.6.4.202409280005.dev27-cp35-abi3-win_amd64.whl']
