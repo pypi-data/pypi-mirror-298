@@ -1,0 +1,10 @@
+Metadata-Version: 2.3
+Name: abs-sleep
+Version: 0.1.0
+Summary: Thin ctypes wrapper for calling Linux's `clock_nanosleep` with `TIMER_ABSTIME`
+Author-email: Björn Brandenburg <bbb@mpi-sws.org>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
