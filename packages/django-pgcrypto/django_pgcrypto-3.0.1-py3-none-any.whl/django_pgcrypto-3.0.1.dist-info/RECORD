@@ -1,0 +1,8 @@
+pgcrypto/__init__.py,sha256=0F_FkQV5vSqCESFCAJKHHcIiR5NsgtsNFQ1x4xou-ao,1391
+pgcrypto/base.py,sha256=t0wFZEjr_qC9cfKzNeXPPUIhSfxU_RZwn8xOiAT2Vik,4543
+pgcrypto/fields.py,sha256=OP11gz4VxyJ2_ZDBopWKy8ESvpiV_jHfpz-ehM-MhKY,10482
+django_pgcrypto-3.0.1.dist-info/LICENSE,sha256=NFXlhlz7eA1bqcJbKFIND9zwwyNqly9geKvLVSIxDvo,1317
+django_pgcrypto-3.0.1.dist-info/METADATA,sha256=rrNJ1FWiFDQyHV7hZMS5V8V7_6ue2ppRnc-sU3fawxQ,2844
+django_pgcrypto-3.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+django_pgcrypto-3.0.1.dist-info/top_level.txt,sha256=FkV0qCAOqVpLFxl1SsUhfqoRaLivmMpXhCDwdmf08dM,9
+django_pgcrypto-3.0.1.dist-info/RECORD,,
