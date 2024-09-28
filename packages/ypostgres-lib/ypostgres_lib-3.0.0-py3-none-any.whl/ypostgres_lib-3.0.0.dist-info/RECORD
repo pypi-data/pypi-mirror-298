@@ -1,0 +1,8 @@
+ypostgres_lib/__init__.py,sha256=AK8Bz4LNdNmakpkKfPadp-6nB6Lnt9hiOgGbLBn-Y1I,61
+ypostgres_lib/postgres_lib.py,sha256=IKQaf6iFeRkVBI8B1oXYXy1lOQ18IvTTmwWqhi7oMII,3097
+ypostgres_lib/vector_embeddings.py,sha256=xP9Nu0xYS1_8RX3uTPkFfgsKz6FmkRWt5i0VFOipqjY,180
+ypostgres_lib-3.0.0.dist-info/LICENSE,sha256=YyD-nFsgiFy0Nhr_cCiglvtY7SBkYm6zk-kxhq8ucJU,1069
+ypostgres_lib-3.0.0.dist-info/METADATA,sha256=PL4CpK4hlmWewAI3Iwo9ta3kB7Yzi-D6go4l_1nY6HE,516
+ypostgres_lib-3.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ypostgres_lib-3.0.0.dist-info/top_level.txt,sha256=o0rQbunu-NFZpLD3O8I2pltczqzstUj9WuUSg-5fNz0,14
+ypostgres_lib-3.0.0.dist-info/RECORD,,
