@@ -1,0 +1,4 @@
+include scripts/*
+include blabing.py
+include README.rst
+include LICENSE.txt

@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+bla.py
+blabing.py
+pyproject.toml
+blabing/__init__.py
+blabing.egg-info/PKG-INFO
+blabing.egg-info/SOURCES.txt
+blabing.egg-info/dependency_links.txt
+blabing.egg-info/requires.txt
+blabing.egg-info/top_level.txt
+scripts/bla
+scripts/initial.ldif
+scripts/lhl
+scripts/standalone_ldap.sh
+test/test_config.py
