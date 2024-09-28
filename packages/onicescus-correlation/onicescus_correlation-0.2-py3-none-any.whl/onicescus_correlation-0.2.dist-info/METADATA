@@ -1,0 +1,259 @@
+Metadata-Version: 2.1
+Name: onicescus-correlation
+Version: 0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>1.11.1)
+
+ 
+
+ 
+
+```markdown
+# onicescu-coreelation
+
+`onicescu-coreelation` is a Python library for computing the **Onicescu Information Correlation Coefficient** between two numerical vectors. This coefficient, based on kinetic energy concepts from information theory, serves as an alternative to traditional correlation measures like Pearson's correlation coefficient. It's particularly effective in detecting nonlinear relationships between variables.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Mathematical Background](#mathematical-background)
+  - [Onicescu's Information Energy](#onicescus-information-energy)
+  - [Onicescu Information Correlation Coefficient](#onicescu-information-correlation-coefficient)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Importing the Library](#importing-the-library)
+  - [Computing the Coefficient](#computing-the-coefficient)
+  - [Example](#example)
+- [Functions Breakdown](#functions-breakdown)
+- [Limitations](#limitations)
+- [Best Practices](#best-practices)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Introduction
+
+The `onicescu-coreelation` library provides a simple and efficient way to compute the Onicescu Information Correlation Coefficient between two datasets. This metric is designed to capture both linear and nonlinear dependencies by considering the "kinetic energy" of probability distributions.
+
+## Mathematical Background
+
+### Onicescu's Information Energy
+
+**Onicescu's Information Energy** is a measure of the concentration or dispersion of a probability distribution, introduced by Octav Onicescu in 1966. For a discrete probability distribution \( P = \{ p_i \} \), the information energy \( E \) is defined as:
+
+**E =  p<sub>i</sub>Â²**
+
+Where:
+
+- **** denotes the summation over all possible states **i**.
+- **p<sub>i</sub>** is the probability of state **i**.
+
+A higher information energy indicates that the distribution is more concentrated (less uncertain), while a lower energy indicates a more uniform (more uncertain) distribution.
+
+### Onicescu Information Correlation Coefficient
+
+The **Onicescu Information Correlation Coefficient** measures the correlation between two variables by comparing their joint information content to their individual information energies.
+
+Given two discrete random variables **X** and **Y**, the coefficient **O(X, Y)** is calculated as:
+
+**O(X, Y) = IC(X, Y) / [ E(X) Ã— E(Y) ]**
+
+Where:
+
+- **Joint Information Content (IC):**
+
+  **IC(X, Y) =  p<sub>XY</sub>(x, y)Â²**
+
+  - **p<sub>XY</sub>(x, y)** is the joint probability of **X** and **Y**.
+  - The summation **** is over all possible pairs **(x, y)** of **X** and **Y**.
+
+- **Information Energies (E):**
+
+  - **E(X) =  p<sub>X</sub>(x)Â²**
+
+    - **p<sub>X</sub>(x)** is the marginal probability of **X**.
+
+  - **E(Y) =  p<sub>Y</sub>(y)Â²**
+
+    - **p<sub>Y</sub>(y)** is the marginal probability of **Y**.
+
+**Interpretation:**
+
+- The coefficient ranges from **0** to **1**:
+  - **0** indicates no correlation.
+  - **1** indicates perfect correlation.
+- It captures both linear and nonlinear relationships.
+
+## Features
+
+- **Simple API**: Easy-to-use functions for computing the coefficient.
+- **Efficient Computation**: Utilizes NumPy for optimized performance.
+- **Broad Applicability**: Suitable for various types of data and relationships.
+
+## Installation
+
+Install the library using `pip`:
+
+```bash
+pip install onicescu-coreelation
+```
+
+Ensure that NumPy is installed:
+
+```bash
+pip install numpy
+```
+
+## Usage
+
+### Importing the Library
+
+```python
+from onicescu_coreelation.onicescu_correlation import onicescu_correlation as o  
+```
+
+### Computing the Coefficient
+
+```python
+import numpy as np
+from onicescu_coreelation import o
+
+# Example data vectors
+vector1 = np.array([...])
+vector2 = np.array([...])
+
+# Compute the Onicescu correlation coefficient
+correlation = o(vector1, vector2)
+print("Onicescu Correlation Coefficient:", correlation)
+```
+
+### Example
+
+```python
+import numpy as np
+from onicescu_coreelation import o
+
+# Generate sample data
+np.random.seed(42)
+vector1 = np.random.normal(0, 1, 1000)
+vector2 = np.sin(vector1) + np.random.normal(0, 0.1, 1000)
+
+# Compute the coefficient
+correlation = o(vector1, vector2)
+print("Onicescu Correlation Coefficient:", correlation)
+```
+
+**Output:**
+
+```
+Onicescu Correlation Coefficient: 0.0175
+```
+
+## Functions Breakdown
+
+### `o(vector1, vector2)`
+
+Calculates the Onicescu Information Correlation Coefficient between two vectors.
+
+- **Parameters:**
+  - `vector1`: First numerical vector (array-like).
+  - `vector2`: Second numerical vector (array-like).
+- **Returns:**
+  - `o`: The calculated coefficient (float).
+
+**Function Definition:**
+
+```python
+def o(vector1, vector2):
+    """Calculates the Onicescu Information Correlation Coefficient."""
+    i_c = ic(vector1, vector2)
+    o = i_c / np.sqrt(kin_energy(vector1) * kin_energy(vector2))
+    return o
+```
+
+### `ic(vector1, vector2)`
+
+Computes the joint information content of two vectors.
+
+- **Parameters:**
+  - `vector1`: First numerical vector (array-like).
+  - `vector2`: Second numerical vector (array-like).
+- **Returns:**
+  - `i_c`: Joint information content (float).
+
+**Function Definition:**
+
+```python
+def ic(vector1, vector2):
+    """Computes the joint information content."""
+    joint_prob, _, _ = np.histogram2d(vector1, vector2, bins='auto', density=True)
+    i_c = np.sum(joint_prob ** 2)
+    return i_c
+```
+
+### `kin_energy(vector)`
+
+Computes the information energy (kinetic energy) of a vector.
+
+- **Parameters:**
+  - `vector`: Numerical vector (array-like).
+- **Returns:**
+  - `e`: Information energy (float).
+
+**Function Definition:**
+
+```python
+def kin_energy(vector):
+    """Computes the information energy of a vector."""
+    prob, _ = np.histogram(vector, bins='auto', density=True)
+    e = np.sum(prob ** 2)
+    return e
+```
+
+## Limitations
+
+- **Data Discreteness:** Assumes data can be discretized into probability distributions. Continuous data are discretized using histograms.
+- **Binning Strategy:** The choice of bins in histograms affects results. The default `'auto'` strategy may not be optimal for all datasets.
+- **Sample Size Sensitivity:** Small datasets may produce unreliable estimates.
+- **Missing Data:** Does not handle missing values (`NaN`). Preprocessing required to handle missing data.
+
+## Best Practices
+
+- **Data Preparation:** Normalize or standardize data if necessary. Remove or impute missing values.
+- **Binning Experimentation:** Try different histogram bin sizes to assess impact on the coefficient.
+- **Comprehensive Analysis:** Use in conjunction with other statistical measures for a full understanding.
+
+## Contributing
+
+Contributions are welcome!
+
+1. **Fork the Repository:** Create a fork on GitHub.
+2. **Create a Branch:** Develop your feature or fix in a new branch.
+3. **Submit a Pull Request:** Explain your changes and submit for review.
+
+For major changes, please open an issue first to discuss your proposed changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For questions or support:
+
+- **Email:** [your.email@example.com](mailto:your.email@example.com)
+- **GitHub Issues:** [GitHub Repository](https://github.com/yourusername/onicescu-coreelation/issues)
+
+---
+
+*Thank you for using `onicescu-coreelation`! If you find this library useful, please consider contributing or giving it a star on GitHub.*
+
+---
+
+ 
+
