@@ -1,0 +1,92 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters": {
+        "color": {
+            "()": "poppy.core.tools.poppy_logging.TerminalColorFormatter",
+            "format": "%(asctime)s - %(name)s - %(filename)s:%(lineno)s - %(levelname)s - %(message)s"
+        },
+        "simple": {
+            "format": "%(asctime)s - %(name)s - %(filename)s:%(lineno)s - %(levelname)s - %(message)s"
+        },
+        "html": {
+            "format": "<div><p><span style='color: green;'>%(asctime)s</span> :: <span style='color: red;'>%(name)s</span> :: <span style='color: orange;'>%(levelname)s</span> :: %(message)s</p></div><br>"
+        }
+    },
+
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "level": "DEBUG",
+            "formatter": "color",
+            "stream": "ext://sys.stdout"
+        },
+
+        "debug_file_handler": {
+            "class": "poppy.core.tools.poppy_logging.RotatingFileHandlerPerUser",
+            "level": "DEBUG",
+            "formatter": "simple",
+            "filename": "/tmp/poppy.debug.log",
+            "maxBytes": 10485760,
+            "backupCount": 20,
+            "encoding": "utf8"
+        },
+
+        "info_file_handler": {
+            "class": "poppy.core.tools.poppy_logging.RotatingFileHandlerPerUser",
+            "level": "INFO",
+            "formatter": "simple",
+            "filename": "/tmp/poppy.info.log",
+            "maxBytes": 10485760,
+            "backupCount": 20,
+            "encoding": "utf8"
+        },
+
+        "warning_file_handler": {
+            "class": "poppy.core.tools.poppy_logging.RotatingFileHandlerPerUser",
+            "level": "WARNING",
+            "formatter": "simple",
+            "filename": "/tmp/poppy.warning.log",
+            "maxBytes": 10485760,
+            "backupCount": 20,
+            "encoding": "utf8"
+        },
+
+        "error_file_handler": {
+            "class": "poppy.core.tools.poppy_logging.RotatingFileHandlerPerUser",
+            "level": "ERROR",
+            "formatter": "simple",
+            "filename": "/tmp/poppy.error.log",
+            "maxBytes": 10485760,
+            "backupCount": 20,
+            "encoding": "utf8"
+        },
+
+        "null_handler": {
+            "class": "logging.NullHandler",
+            "level": "DEBUG"
+        }
+    },
+
+    "loggers": {
+        "": {
+            "handlers": ["null_handler"]
+        },
+        "poppy": {
+            "level": "DEBUG",
+            "handlers": ["console", "info_file_handler", "error_file_handler", "warning_file_handler", "debug_file_handler"]
+        },
+        "sqlalchemy": {
+            "level": "WARNING",
+            "handlers": ["console", "info_file_handler", "error_file_handler", "warning_file_handler", "debug_file_handler"]
+        },
+        "alembic": {
+            "level": "INFO",
+            "handlers": ["console", "info_file_handler", "error_file_handler", "warning_file_handler", "debug_file_handler"]
+        },
+        "weasyprint": {
+            "level": "WARNING",
+            "handlers": ["console", "info_file_handler", "error_file_handler", "warning_file_handler", "debug_file_handler"]
+        }
+    }
+}
