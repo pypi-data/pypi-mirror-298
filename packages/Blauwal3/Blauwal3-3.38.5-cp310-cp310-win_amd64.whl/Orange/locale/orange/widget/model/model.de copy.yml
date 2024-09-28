@@ -1,0 +1,354 @@
+ de:
+  package_label: "Modell"
+  package_desc: "Vorhersage."
+
+  common:
+    coefficient: "Koeffizienten"
+    base_learner: "Basislerner"
+    learners: "Lerner"
+    aggregate: "Aggregieren"
+    support_vector: "Stützvektoren"
+
+  owadaboost:
+    name: "AdaBoost"
+    desc: "Ein Ensemble-Meta-Algorithmus, der schwache Lerner kombiniert und sich an die 'Schwierigkeit' jeder Trainingsprobe anpasst."
+    msg_base_learner_unsupported_weight: "Der Basislerner unterstützt keine Gewichte."
+    checkbox_random_generator: "Fester Seed für Zufallsgenerator: "
+    box_boosting_method: "Boosting-Methode"
+    label:
+      base_estimator_invalid: "Basis-Schätzer: UNGÜLTIG"
+      base_estimator: "Basis-Schätzer: %s"
+    gbox:
+      samme: "SAMME"
+      samme_r: "SAMME.R"
+      square: "Quadratisch"
+      exponential: "Exponentiell"
+    row:
+      base_estimator: "Basis-Schätzer:  "
+      num_estimator: "Anzahl der Schätzer: "
+      algorithm: "Algorithmus (Klassifikation)"
+      loss: "Verlust (Regression)"
+      learn_rate: "Lernrate: "
+      class_algorithm: "Klassifikationsalgorithmus: "
+      regress_loss_function: "Regressionsverlustfunktion: "
+
+  owcalibratedlearner:
+    name: "Kalibrierter Lerner"
+    desc: "Umschließt einen anderen Lerner mit Wahrscheinlichkeitskalibrierung und Entscheidungsgrenzwertoptimierung"
+    box_probability_calibration: "Wahrscheinlichkeitskalibrierung"
+    box_decision_threshold_optimization: "Optimierung des Entscheidungsgrenzwerts"
+    btn:
+      no_calibration: "Keine Kalibrierung"
+      optimize_class_accuracy: "Klassifikationsgenauigkeit optimieren"
+      optimize_f1_score: "F1-Score optimieren"
+      no_threshold_optimization: "Keine Grenzwertoptimierung"
+    report:
+      calibrate_probability: "Wahrscheinlichkeiten kalibrieren"
+      threshold_optimization: "Grenzwertoptimierung"
+
+  owconstant:
+    name: "Konstant"
+    desc: "Die häufigste Klasse oder den Mittelwert aus dem Trainingssatz vorhersagen."
+
+  owcurvefit:
+    name: "Kurvenanpassung"
+    desc: "Eine Funktion an Daten anpassen."
+    box:
+      parameters: "Parameter"
+      expression: "Ausdruck"
+    placeholder:
+      expression: "Ausdruck..."
+    label:
+      name: "Name"
+      initial_value: "Anfangswert"
+      lower_bound: "Untergrenze"
+      upper_bound: "Obergrenze"
+    btn:
+      feature: "Merkmal auswählen"
+      param: "Parameter auswählen"
+      function: "Funktion auswählen"
+    warn:
+      duplicate_parameter: "Doppelter Parametername."
+      unused_parameter: "Unbenutzter Parameter '{}' in der 'Parameter'-Deklaration."
+      data_missing: "Daten am Eingang bereitstellen."
+    err:
+      invalid_exp: "Ungültiger Ausdruck."
+      no_parameter: "Fehlender Anpassungsparameter.\n Verwenden Sie stattdessen das 'Merkmalkonstruktor'-Widget."
+      unknown_parameter: "Unbekannter Parameter '{}'.\n Deklarieren Sie den Parameter im 'Parameter'-Feld"
+      parameter_in_attrs: "Einige Parameter und Merkmale haben denselben Namen '{}'."
+      data_error: "Daten haben keine kontinuierlichen Merkmale."
+
+  owgradientboosting:
+    name: "Gradient Boosting"
+    desc: "Vorhersage mit Gradient Boosting auf Entscheidungsbäumen."
+    box:
+      method: "Methode"
+      basic_property: "Grundlegende Eigenschaften"
+      growth_control: "Wachstumskontrolle"
+      subsampling: "Subsampling"
+    row:
+      extreme_gradient: "Extremes Gradient Boosting "
+      gradient_boosting: "Gradient Boosting "
+      tip: "{} ist nicht installiert"
+    label:
+      subsample: "Anteil der Trainingsinstanzen: "
+      colsample_bytree: "Anteil der Merkmale für jeden Baum: "
+      colsample_bylevel: "Anteil der Merkmale für jede Ebene: "
+      colsample_bynode: "Anteil der Merkmale für jede Teilung: "
+      min_samples_split: "Teilen Sie keine Teilmengen kleiner als: "
+      regularization: "Regularisierung: "
+      n_estimators: "Anzahl der Bäume: "
+      learning_rate: "Lernrate: "
+      random_state: "Replizierbares Training "
+      max_depth: "Begrenzen Sie die Tiefe einzelner Bäume: "
+    text:
+      lambda: "Lambda: {}"
+
+  owknn:
+    name: "kNN"
+    desc: "Vorhersage basierend auf den nächsten Trainingsinstanzen."
+    row_num_of_neighbor: "Anzahl der Nachbarn:"
+    row_metric: "Metrik:"
+    row_weight: "Gewicht:"
+    gbox:
+      euclidean: "Euklidisch"
+      manhattan: "Manhattan"
+      chebyshev: "Chebyshev"
+      mahalanobis: "Mahalanobis"
+      uniform: "Uniform"
+      distance: "Distanz"
+    report:
+      num_of_neighbor: "Anzahl der Nachbarn"
+      weight: "Gewicht"
+
+  owlinearregression:
+    name: "Lineare Regression"
+    desc: "Ein linearer Regressionsalgorithmus mit optionaler L1 (LASSO), L2 (Ridge) oder L1L2 (Elastic Net) Regularisierung."
+    row_regularization_strength: "Regularisierungsstärke: "
+    row_elastic_net_mix: "Elastic Net Mischung: "
+    row_fit_intercept: "Achsenabschnitt anpassen (Deaktivieren fixiert ihn auf null)"
+    label:
+      alpha: "α: {}"
+    btn:
+      no_regular: "Keine Regularisierung"
+      ridge_regression_l2: "Ridge-Regression (L2)"
+      lasso_regression_l1: "Lasso-Regression (L1)"
+      elastic_net_regression: "Elastic Net Regression"
+    report:
+      no_regularization: "Keine Regularisierung"
+      ridge_regression_l2: "Ridge-Regression (L2) mit α={}"
+      lasso_regression_l1: "Lasso-Regression (L1) mit α={}"
+      elastic_net_regression: "Elastic Net Regression mit α={} und L1:L2 Verhältnis von {}:{}"
+
+  owloadmodel:
+    name: "Modell laden"
+    desc: "Ein Modell aus einer Eingabedatei laden."
+    msg_reading_error: "Ein Fehler ist beim Lesen von '{}' aufgetreten"
+    box_file: "Datei"
+    tooltip_open_distance_file: "Distanzdatei öffnen"
+
+  owlogisticregression:
+    name: "Logistische Regression"
+    desc: "Der logistische Regressionsklassifikationsalgorithmus mit LASSO (L1) oder Ridge (L2) Regularisierung."
+    gbox_lasso_l1: "Lasso (L1)"
+    gbox_ridge_l2: "Ridge (L2)"
+    row_regularization_type: "Regularisierungstyp:  "
+    row_strength: "Stärke: "
+    msg_class_weights_used: "Gewichtung nach Klasse kann die Leistung verringern."
+    label:
+      weak: "Schwach"
+      strong: "Stark"
+      class_weight: "Klassendistibution ausgleichen"
+      class_weight_tip: "Klassen umgekehrt proportional zu ihren Häufigkeiten gewichten."
+
+  ownaivebayes:
+    name: "Naive Bayes"
+    desc: "Ein schneller und einfacher probabilistischer Klassifikator basierend auf dem Satz von Bayes mit der Annahme der Merkmalsunabhängigkeit."
+
+  owneuralnetwork:
+    name: "Neuronales Netzwerk"
+    desc: "Ein Multi-Layer-Perceptron (MLP) Algorithmus mit Backpropagation."
+    tooltip_define_neuron: "Eine Liste von Ganzzahlen, die Neuronen definieren. Die Länge der Liste definiert die Anzahl der Schichten. Z.B. 4, 2, 2, 3."
+    placeholder:
+      eg: "z.B. 10,"
+    row:
+      hidden_neuron: "Neuronen in versteckten Schichten: "
+      activation: "Aktivierung: "
+      solver: "Solver: "
+      iteration_num: "Maximale Anzahl von Iterationen: "
+      regularization: "Regularisierung, α={}: "
+    report:
+      hidden_layers: "Versteckte Schichten"
+      activation: "Aktivierung"
+      solver: "Solver"
+      alpha: "Alpha"
+      max_iterations: "Maximale Iterationen"
+
+  owrandomforest:
+    name: "Random Forest"
+    desc: "Vorhersage mit einem Ensemble von Entscheidungsbäumen."
+    msg_attr_insufficient: "Unzureichende Anzahl von Attributen ({})"
+    box_basic_property: "Grundlegende Eigenschaften"
+    row_num_of_tree: "Anzahl der Bäume:  "
+    box_growth_control: "Wachstumskontrolle"
+    checkbox:
+      class_weight: "Klassendistibution ausgleichen"
+      class_weight_tip: "Klassen umgekehrt proportional zu ihren Häufigkeiten gewichten."
+      split_considered_attr_num: "Anzahl der bei jeder Teilung berücksichtigten Attribute:  "
+      limit_tree_depth: "Begrenzen Sie die Tiefe einzelner Bäume: "
+      not_split_subset_smaller: "Teilen Sie keine Teilmengen kleiner als: "
+    report:
+      number_trees: "Anzahl der Bäume"
+      maximal_number: "Maximale Anzahl der berücksichtigten Merkmale"
+      maximal_tree_depth: "Maximale Baumtiefe"
+      unlimited: "unbegrenzt"
+      stop_split_node: "Stoppen Sie das Teilen von Knoten mit maximalen Instanzen"
+      ok: "Ja"
+      cancel: "Nein"
+      class_weights: "Klassen-Gewichte"
+
+  owrules:
+    name: "CN2 Regelinduktion"
+    desc: "Regeln aus Daten mit dem CN2-Algorithmus induzieren."
+    placeholder_name: "CN2 Regelinduktor"
+    gbox_entropy: "Entropie"
+    gbox_laplace_accuracy: "Laplace-Genauigkeit"
+    gbox_wracc: "WRAcc"
+    checkbox_statistical_significance: "Statistische Signifikanz (Standard α):"
+    checkbox_relative_significance: "Relative Signifikanz (Eltern α):"
+    box:
+      rule_order: "Regelreihenfolge"
+      cover_algorithm: "Abdeckungsalgorithmus"
+      rule_search: "Regelsuche"
+      rule_filter: "Regelfilterung"
+    btn:
+      order: "Geordnet"
+      unordered: "Ungeordnet"
+      exclusive: "Exklusiv"
+      weighted: "Gewichtet"
+    row:
+      evaluation_measure: "Bewertungsmaß: "
+      beam_width: "Strahlbreite:"
+      min_rule_coverage: "Minimale Regelabdeckung:"
+      max_rule_length: "Maximale Regellänge:"
+    report:
+      rule_ordering: "Regelreihenfolge"
+      cover_algorithm: "Abdeckungsalgorithmus"
+      gamma: "Gamma"
+      evaluation_measure: "Bewertungsmaß"
+      beam_width: "Strahlbreite"
+      minimum_rule_coverage: "Minimale Regelabdeckung"
+      maximum_rule_length: "Maximale Regellänge"
+      default_alpha: "Standard-Alpha"
+      parent_alpha: "Eltern-Alpha"
+
+  owsavemodel:
+    name: "Modell speichern"
+    desc: "Ein trainiertes Modell in eine Ausgabedatei speichern."
+
+  owsgd:
+    name: "Stochastischer Gradient Descent"
+    desc: "Minimieren Sie eine Zielfunktion mit einer stochastischen Annäherung an den Gradientenabstieg."
+    box_optimization: "Optimierung"
+    box_loss_func: "Verlustfunktionen"
+    checkbox_tolerance: "Toleranz (Abbruchkriterium):  "
+    checkbox_after_iteration_shuffle_data: "Daten nach jeder Iteration mischen"
+    checkbox_shuffling_fix_seed: "Fester Seed für zufälliges Mischen: "
+    placeholder_name: "SGD"
+    gbox:
+      square_loss: "Quadratischer Verlust"
+      huber: "Huber"
+      insensitive: "ε unempfindlich"
+      square_insensitive: "Quadratisch ε unempfindlich"
+      hinge: "Hinge"
+      logistic_regression: "Logistische Regression"
+      modified_huber: "Modifizierter Huber"
+      squared_hinge: "Quadratischer Hinge"
+      perceptron: "Perzeptron"
+      lasso_l1: "Lasso (L1)"
+      ridge_l2: "Ridge (L2)"
+      elastic_net: "Elastic Net"
+      constant: "Konstant"
+      optimal: "Optimal"
+      inverse_scaling: "Inverse Skalierung"
+    row:
+      strength: "Stärke (α): "
+      learn_rate: "Lernrate: "
+      initial_learn_rate: "Anfängliche Lernrate (η<sub>0</sub>): "
+      inverse_scaling_exponent: "Exponent der inversen Skalierung (t): "
+      iteration_num: "Anzahl der Iterationen: "
+      classification: "Klassifikation: "
+      regression: "Regression: "
+    report:
+      classification_loss_function: "Klassifikationsverlustfunktion"
+      epsilon_classification: "Epsilon (ε) für Klassifikation"
+      regression_loss_function: "Regressionsverlustfunktion"
+      epsilon_regression: "Epsilon (ε) für Regression"
+      regularization_strength: "Regularisierungsstärke (α)"
+      elastic_net_mix_parameter: "Elastic Net Mischparameter (L1-Verhältnis)"
+      initial_learning_rate: "Anfängliche Lernrate (η<sub>0</sub>)"
+      inverse_scaling_exponent: "Exponent der inversen Skalierung (t)"
+      shuffle_data_after_iteration: "Daten nach jeder Iteration mischen"
+      shuffle_random_seed: "Zufalls-Seed für Mischen"
+      learn_rate: "Lernrate"
+
+  owstack:
+    name: "Stacking"
+    desc: "Mehrere Modelle stapeln."
+    placeholder_name: "Stack"
+    report:
+      base_learners: "Basislerner"
+      aggregator: "Aggregator"
+      default: "Standard"
+
+  owsvm:
+    name: "SVM"
+    desc: "Support Vector Machines ordnen Eingaben höheren dimensionalen Merkmalsräumen zu."
+    msg_input_data_sparse_to_scale: "Eingabedaten sind spärlich, die Standardvorverarbeitung besteht darin, sie zu skalieren."
+    box_svm_type: "SVM-Typ"
+    box_kernel: "Kernel"
+    box_optimization_parameter: "Optimierungsparameter"
+    checkbox_iteration_limit: "Iterationslimit: "
+    btn:
+      polynomial: "Polynomiell"
+      rbf: "RBF"
+      sigmoid: "Sigmoid"
+      svm: "SVM"
+      v_svm: "ν-SVM"
+    row:
+      cost: "Kosten (C):"
+      regression_loss_epsilon: "Regressionsverlust-Epsilon (ε):"
+      regression_cost: "Regressionskosten (C):"
+      complexity_bound: "Komplexitätsgrenze (ν):"
+      kernel: "Kernel: %(kernel_eq)s"
+      numerical_tolerance: "Numerische Toleranz: "
+      auto: "auto"
+    report:
+      svm_type: "SVM-Typ"
+      numerical_tolerance: "Numerische Toleranz"
+      iteration_limt: "Iterationslimit"
+      unlimited: "unbegrenzt"
+      kernel: "Kernel"
+      polynomial: "Polynomiell, ({g:.4} x⋅y + {c:.4})<sup>{d}</sup>"
+      rbf: "RBF, exp(-{:.4}|x-y|²)"
+      sigmoid: "Sigmoid, tanh({g:.4} x⋅y + {c:.4})"
+
+  owtree:
+    name: "Baum"
+    desc: "Ein Baumalgorithmus mit Vorwärtsbeschneidung."
+    checkbox:
+      leave_min_num: "Min. Anzahl der Instanzen in Blättern: "
+      not_split_smaller_subset: "Teilen Sie keine Teilmengen kleiner als: "
+      limit_max_tree_depth: "Begrenzen Sie die maximale Baumtiefe auf: "
+      majority_reaches_stop: "Stoppen, wenn die Mehrheit [%] erreicht: "
+      induce_binary_tree: "Binären Baum induzieren"
+    report:
+      prune: "Beschneiden"
+      split: "Teilen"
+      binary_trees: "Binäre Bäume"
+      number_instance_leaves: "mindestens {number} Instanz{en} in Blättern"
+      number_instance_internal_nodes: "mindestens {number} Instanz{en} in inneren Knoten"
+      classification_stop_split: "Stoppen Sie das Teilen, wenn die Mehrheit %d%s erreicht (nur Klassifikation)"
+      maximum_depth: "maximale Tiefe {}"
+      cancel: "Nein"
+      ok: "Ja"
