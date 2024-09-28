@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aiopaypaython
+Version: 1.8.8
+Summary: Paypay mobile wrapper for asyncio
+Author-email: nennneko5787 <h4369@nennneko5787.net>
+Project-URL: Homepage, https://github.com/nennneko5787/aiopaypaython
+Project-URL: Issues, https://github.com/nennneko5787/aiopaypaython/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Japanese
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx
+Requires-Dist: beautifulsoup4
+
+# aiopaypaython
+paypaythonのasyncio版です。
