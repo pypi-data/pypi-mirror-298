@@ -1,0 +1,8 @@
+benpipe/__init__.py,sha256=xN8mgGvUGrEShsSl4t9qdcBte4TybHNYVIp192u2Tok,77
+benpipe/__main__.py,sha256=fjecovv-4IGJXrWI6Ai37lRkbByOMKZ-Mxk6ih1W0Ws,108
+benpipe/benpipe.py,sha256=3P-ulG7n8QNqP7F27W85apJ3QzWxG5On9_-rVVLIUq8,1886
+benpipe/convert.py,sha256=I484odpGgXkYnURU5igTL4g0JKSgLhTE0tbQxKBz4Q8,1241
+benpipe-0.0.2.dist-info/entry_points.txt,sha256=jA-i0ebXU_SluU3t-P9ylsif5tSqDg8e6RyfnCfXyZQ,40
+benpipe-0.0.2.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+benpipe-0.0.2.dist-info/METADATA,sha256=W1tKt0iXuUyujwztmUo7eXp9YDbLTgo2L8_fN2Zyr3c,432
+benpipe-0.0.2.dist-info/RECORD,,
