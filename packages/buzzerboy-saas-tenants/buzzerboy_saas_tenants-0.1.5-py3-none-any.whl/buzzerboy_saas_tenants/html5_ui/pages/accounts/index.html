@@ -1,0 +1,449 @@
+{% extends "layouts/base.html" %}
+{% load static i18n %}
+
+{% block title %} {% trans "Customers View" %} {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+<link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/theme.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendors/css/vendors.min.css' %}" rel="stylesheet">
+{% endblock stylesheets %}
+
+{% block pageheader %}
+<div class="page-header">
+  <div class="page-header-left d-flex align-items-center">
+    <div class="page-header-title">
+      <h5 class="m-b-10">{{ segment.text }}</h5>
+    </div>
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+      <li class="breadcrumb-item">{{ segment.text }}</li>
+    </ul>
+  </div>
+  <div class="page-header-right ms-auto">
+    <div class="page-header-right-items">
+      <div class="d-flex d-md-none">
+        <a href="javascript:void(0)" class="page-header-right-close-toggle">
+          <i class="feather-arrow-left me-2"></i>
+          <span>{% trans "Back" %}</span>
+        </a>
+      </div>
+      <div class="d-flex align-items-center gap-2 page-header-right-items-wrapper">
+        <a href="{% url 'edit_profile_settings' %}" class="btn btn-primary">
+          <i class="feather-edit me-2"></i>
+          <span>{% trans "Edit Profile" %}</span>
+        </a>
+      </div>
+    </div>
+    <div class="d-md-none d-flex align-items-center">
+      <a href="javascript:void(0)" class="page-header-right-open-toggle">
+        <i class="feather-align-right fs-20"></i>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock pageheader %}
+
+{% block content %}
+<div class="col-12" style="margin-bottom:4rem;">
+  <div class="card">
+    <div class="card-body">
+      <div class="mb-4 text-center">
+        <div class="wd-150 ht-150 mx-auto mb-3 position-relative">
+          <div class="avatar-image wd-150 ht-150 border border-5 border-gray-3">
+            <img src="/media/{{ profile.profile_picture }}" onerror="this.onerror=null; this.src=&quot;{% static 'assets/images/avatar/1.png' %}&quot;;" alt="{% trans 'Profile' %}" class="img-fluid">
+          </div>
+        </div>
+        <div class="mb-4">
+          <a href="javascript:void(0);" class="fs-14 fw-bold d-block text-capitalize"> {{ profile.user_object.first_name }} {{ profile.user_object.last_name }}</a>
+          <a href="javascript:void(0);" class="fs-12 fw-normal text-muted d-block text-capitalize">{{ profile.job_title }}</a>
+        </div>
+      </div>
+      <hr>
+      <div class="personal-information mb-5">
+        <div class="mb-4 d-flex align-items-center justify-content-between">
+          <h5 class="fw-bold mb-0">{% trans "Personal Information:" %}</h5>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "First Name:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.user_object.first_name }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Last Name:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.user_object.last_name }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Email Address:" %}</div>
+          <div class="col-sm-6 fw-semibold">{{ profile.user_object.email }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Phone:" %}</div>
+          <div class="col-sm-6 fw-semibold">{{ profile.phone_number }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Address:" %}</div>
+          <div class="col-sm-6 fw-semibold">{{ profile.address }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "City:" %}</div>
+          <div class="col-sm-6 fw-semibold">{{ profile.city }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "State/Province:" %}</div>
+          <div class="col-sm-6 fw-semibold">{{ profile.state_province }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Country:" %}</div>
+          <div class="col-sm-6 fw-semibold">{{ profile.country }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Postal Code:" %}</div>
+          <div class="col-sm-6 fw-semibold">{{ profile.postalcode }}</div>
+        </div>
+      </div>
+      <div class="professional-information mb-5">
+        <div class="mb-4 d-flex align-items-center justify-content-between">
+          <h5 class="fw-bold mb-0">{% trans "Professional Information:" %}</h5>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Job Title:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.job_title }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Company:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.company }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Website:" %}</div>
+          <div class="col-sm-6 fw-semibold">{{ profile.website }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "LinkedIn Profile:" %}</div>
+          <div class="col-sm-6 fw-semibold">{{ profile.linkedin_profile }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Github Profile:" %}</div>
+          <div class="col-sm-6 fw-semibold">{{ profile.github_profile }}</div>
+        </div>
+      </div>
+      <div class="preference-and-settings mb-5">
+        <div class="mb-4 d-flex align-items-center justify-content-between">
+          <h5 class="fw-bold mb-0">{% trans "Preferences and Settings:" %}</h5>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Language:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.language }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Timezone:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.timezone }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-12 fw-bold mb-2">{% trans "Notification preferences:" %}</div>
+          <div class="col-sm-6 text-muted">{% trans "Email Notifications:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.notification_preferences.email_notifications|yesno:_("Enabled,Disabled") }}</div>
+          <div class="col-sm-6 text-muted">{% trans "SMS Notifications:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.notification_preferences.sms_notifications|yesno:_("Enabled,Disabled") }}</div>
+          <div class="col-sm-6 text-muted">{% trans "Push Notifications:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.notification_preferences.push_notifications|yesno:_("Enabled,Disabled") }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-12 fw-bold mb-2">{% trans "Privacy Settings:" %}</div>
+          <div class="col-sm-6 text-muted">{% trans "Profile Visibility:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.privacy_settings.profile_visibility }}</div>
+          <div class="col-sm-6 text-muted">{% trans "Search Engine Indexing:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.privacy_settings.search_engine_indexing|yesno:_("Allowed,Not Allowed") }}</div>
+          <div class="col-sm-6 text-muted">{% trans "Data Sharing:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.privacy_settings.data_sharing|yesno:_("Allowed,Not Allowed") }}</div>
+        </div>
+      </div>
+      <div class="additional-information mb-5">
+        <div class="mb-4 d-flex align-items-center justify-content-between">
+          <h5 class="fw-bold mb-0">{% trans "Additional Information:" %}</h5>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Bio:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.bio | safe }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Interest:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.interests | safe }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Skills:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.skills | safe }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Education:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.education | safe }}</div>
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-sm-6 text-muted">{% trans "Experience:" %}</div>
+          <div class="col-sm-6 fw-semibold text-capitalize">{{ profile.experience | safe }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
+
+{% block components %}
+<!--! ================================================================ !-->
+<!--! [Start] Search Modal !-->
+<!--! ================================================================ !-->
+<div class="modal fade-scale" id="searchModal" aria-hidden="true" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-top modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header search-form py-0">
+        <div class="input-group">
+          <span class="input-group-text">
+            <i class="feather-search fs-4 text-muted"></i>
+          </span>
+          <input type="text" class="form-control search-input-field" placeholder="{% trans 'Search...' %}" />
+          <span class="input-group-text">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{% trans 'Close' %}"></button>
+          </span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="searching-for mb-5">
+          <h4 class="fs-13 fw-normal text-gray-600 mb-3">
+            {% trans "I'm searching for..." %}
+          </h4>
+          <div class="row g-1">
+            <div class="col-md-4 col-xl-2">
+              <a href="javascript:void(0);" class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill">
+                <i class="feather-compass"></i>
+                <span>{% trans "Recent" %}</span>
+              </a>
+            </div>
+            <div class="col-md-4 col-xl-2">
+              <a href="javascript:void(0);" class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill">
+                <i class="feather-command"></i>
+                <span>{% trans "Command" %}</span>
+              </a>
+            </div>
+            <div class="col-md-4 col-xl-2">
+              <a href="javascript:void(0);" class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill">
+                <i class="feather-users"></i>
+                <span>{% trans "Peoples" %}</span>
+              </a>
+            </div>
+            <div class="col-md-4 col-xl-2">
+              <a href="javascript:void(0);" class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill">
+                <i class="feather-file"></i>
+                <span>{% trans "Files" %}</span>
+              </a>
+            </div>
+            <div class="col-md-4 col-xl-2">
+              <a href="javascript:void(0);" class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill">
+                <i class="feather-video"></i>
+                <span>{% trans "Medias" %}</span>
+              </a>
+            </div>
+            <div class="col-md-4 col-xl-2">
+              <a href="javascript:void(0);" class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill">
+                <span>{% trans "More" %}</span>
+                <i class="feather-chevron-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="recent-result mb-5">
+          <h4 class="fs-13 fw-normal text-gray-600 mb-3">
+            {% trans "Recent" %}
+            <span class="badge small bg-gray-200 rounded ms-1 text-dark">3</span>
+          </h4>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
+              <i class="feather-airplay fs-5"></i>
+              <div class="fs-13 fw-semibold">{% trans "CRM dashboard redesign" %}</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark">/<i class="feather-command ms-1 fs-12"></i></a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
+              <i class="feather-file-plus fs-5"></i>
+              <div class="fs-13 fw-semibold">{% trans "Create new document" %}</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark">N /<i class="feather-command ms-1 fs-12"></i></a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
+              <i class="feather-user-plus fs-5"></i>
+              <div class="fs-13 fw-semibold">{% trans "Invite project colleagues" %}</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark">P /<i class="feather-command ms-1 fs-12"></i></a>
+          </div>
+        </div>
+        <div class="command-result mb-5">
+          <h4 class="fs-13 fw-normal text-gray-600 mb-3">
+            {% trans "Command" %}
+            <span class="badge small bg-gray-200 rounded ms-1 text-dark">5</span>
+          </h4>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
+              <i class="feather-user fs-5"></i>
+              <div class="fs-13 fw-semibold">{% trans "My profile" %}</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark">P /<i class="feather-command ms-1 fs-12"></i></a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
+              <i class="feather-users fs-5"></i>
+              <div class="fs-13 fw-semibold">{% trans "Team profile" %}</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark">T /<i class="feather-command ms-1 fs-12"></i></a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
+              <i class="feather-user-plus fs-5"></i>
+              <div class="fs-13 fw-semibold">{% trans "Invite colleagues" %}</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark">I /<i class="feather-command ms-1 fs-12"></i></a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
+              <i class="feather-briefcase fs-5"></i>
+              <div class="fs-13 fw-semibold">{% trans "Create new project" %}</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark">CP /<i class="feather-command ms-1 fs-12"></i></a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
+              <i class="feather-life-buoy fs-5"></i>
+              <div class="fs-13 fw-semibold">{% trans "Support center" %}</div>
+            </a>
+            <a href="javascript:void(0);" class="badge border rounded text-dark">SC /<i class="feather-command ms-1 fs-12"></i></a>
+          </div>
+        </div>
+        <div class="file-result mb-4">
+          <h4 class="fs-13 fw-normal text-gray-600 mb-3">
+            {% trans "Files" %}
+            <span class="badge small bg-gray-200 rounded ms-1 text-dark">3</span>
+          </h4>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
+              <i class="feather-folder-plus fs-5"></i>
+              <div class="fs-13 fw-semibold">
+                {% trans "CRM Design Project" %}
+                <span class="fs-12 fw-normal text-muted">(56.74 MB)</span>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="file-download">
+              <i class="feather-download"></i>
+            </a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
+              <i class="feather-folder-plus fs-5"></i>
+              <div class="fs-13 fw-semibold">
+                {% trans "Admin Dashboard Project" %}
+                <span class="fs-12 fw-normal text-muted">(46.83 MB)</span>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="file-download">
+              <i class="feather-download"></i>
+            </a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
+              <i class="feather-folder-plus fs-5"></i>
+              <div class="fs-13 fw-semibold">
+                {% trans "CRM Dashboard Project" %}
+                <span class="fs-12 fw-normal text-muted">(68.59 MB)</span>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="file-download">
+              <i class="feather-download"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--! ================================================================ !-->
+<!--! [End] Search Modal !-->
+<!--! ================================================================ !-->
+<!--! ================================================================ !-->
+<!--! [Start] Language Select !-->
+<!--! ================================================================ !-->
+<div class="modal fade-scale" id="languageSelectModal" aria-hidden="true" aria-labelledby="languageSelectModalLabel" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="languageSelectModalLabel">
+          {% trans "Select Language" %}
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{% trans 'Close' %}"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+              <div class="avatar-image avatar-sm">
+                <img src="{% static 'assets/vendors/img/flags/1x1/fr.svg' %}" alt="" class="img-fluid" />
+              </div>
+              <span>{% trans "French" %}</span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 language_select">
+            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
+              <div class="avatar-image avatar-sm">
+                <img src="{% static 'assets/vendors/img/flags/1x1/us.svg' %}" alt="" class="img-fluid" />
+              </div>
+              <span>{% trans "English" %}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--! ================================================================ !-->
+<!--! [End] Language Select !-->
+<!--! ================================================================ !-->
+<!--! ================================================================ !-->
+<!--! BEGIN: Downloading Toast !-->
+<!--! ================================================================ !-->
+<div class="position-fixed" style="right: 5px; bottom: 5px; z-index: 999999">
+  <div id="toast" class="toast bg-black hide" data-bs-delay="3000" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header px-3 bg-transparent d-flex align-items-center justify-content-between border-bottom border-light border-opacity-10">
+      <div class="text-white mb-0 mr-auto">{% trans "Downloading..." %}</div>
+      <a href="javascript:void(0)" class="ms-2 mb-1 close fw-normal" data-bs-dismiss="toast" aria-label="{% trans 'Close' %}">
+        <span class="text-white">&times;</span>
+      </a>
+    </div>
+    <div class="toast-body p-3 text-white">
+      <h6 class="fs-13 text-white">Project.zip</h6>
+      <span class="text-light fs-11">4.2mb of 5.5mb</span>
+    </div>
+    <div class="toast-footer p-3 pt-0 border-top border-light border-opacity-10">
+      <div class="progress mt-3" style="height: 5px">
+        <div class="progress-bar progress-bar-striped progress-bar-animated w-75 bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--! ================================================================ !-->
+<!--! END: Downloading Toast !-->
+<!--! ================================================================ !-->
+{% endblock components %}
+
+{% block javascripts %}
+<!--! BEGIN: Vendors JS !-->
+<script src="{% static 'assets/vendors/js/vendors.min.js' %}"></script>
+<!-- vendors.min.js {always must need to be top} -->
+<script src="{% static 'assets/vendors/js/select2.min.js' %}"></script>
+<script src="{% static 'assets/vendors/js/select2-active.min.js' %}"></script>
+<!--! END: Vendors JS !-->
+<!--! BEGIN: Apps Init  !-->
+<script src="{% static 'assets/js/common-init.min.js' %}"></script>
+<script src="{% static 'assets/js/customers-view-init.min.js' %}"></script>
+<!--! END: Apps Init !-->
+<!--! BEGIN: Theme Customizer  !-->
+<script src="{% static 'assets/js/theme-customizer-init.min.js' %}"></script>
+<!--! END: Theme Customizer !-->
+{% endblock javascripts %}
