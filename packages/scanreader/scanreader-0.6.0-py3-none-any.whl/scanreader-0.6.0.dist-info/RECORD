@@ -1,0 +1,11 @@
+scanreader/__init__.py,sha256=XV_P-juIgEQqPXq5jYePMC8hr5fE7R23S4FwH4Y2RIs,5279
+scanreader/__main__.py,sha256=OSiIagIU8GVsYAw4Y-kzjxMKkQ1yVL6CbBXYXRNnmbg,3036
+scanreader/lbm_widget.py,sha256=78pQ4_a5yXhJvjdCUnS69p_lD6nNpLWu_GIZyHfTmV8,18697
+scanreader/multiroi.py,sha256=9HXjHIG3D1JbBE1RFLHYsK5p-q30dnKnpYb2iJki6BU,19959
+scanreader/scans.py,sha256=cheenG44vFmjV3JFQhsB6FDUOLsb32rqqPqMctdxALE,27680
+scanreader/utils.py,sha256=f0FA324EFY19lvfNtmUOqZnKhq6wwNBq70aMnmoldXk,9679
+scanreader-0.6.0.dist-info/LICENSE,sha256=gl6VAGOuyvT9zvFoIlaHjM0BC4jbtvCttpcceixunJE,1088
+scanreader-0.6.0.dist-info/METADATA,sha256=4cQ3g4j0XzOfBs17RY5ty-w7q6qQ3Nct1RDuyxSB0YI,4831
+scanreader-0.6.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+scanreader-0.6.0.dist-info/top_level.txt,sha256=klvRhOfY1sGXItArn1bY8lp2uzYEmmNUPi9HZax4yb0,11
+scanreader-0.6.0.dist-info/RECORD,,
