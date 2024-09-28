@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: tytorch
+Version: 0.7
+Summary: A simple trainer for pytorch
+Project-URL: homepage, https://github.com/safersephy/tytorch
+Author: SaferSephy
+Requires-Python: >=3.11.5
+Requires-Dist: loguru
+Requires-Dist: mlflow>=2.16.2
+Requires-Dist: pydantic
+Requires-Dist: ray>=2.37.0
+Requires-Dist: torch>=2.4.1
+Requires-Dist: torcheval>=0.0.7
+Requires-Dist: tqdm>=4.66.5
+Description-Content-Type: text/markdown
+
+# tytorch
+
+tbd
