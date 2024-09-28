@@ -1,0 +1,18 @@
+{
+    "dhk_distribution": 100000,
+    "reference_date": "2024-08-27",
+    "tokens": [
+        { "token": "AKT", "network": "akash", "qty": 188787 },
+        { "token": "ATOM", "network": "cosmos", "qty": 592015 }
+    ],
+    "apis": {
+        "cryptocompare": {
+            "endpoint": "https://min-api.cryptocompare.com/data/pricehistorical",
+            "apikey": "cryptocompare-123456"
+        },
+        "mintscan": {
+            "endpoint": "https://apis.mintscan.io/v1/:network/apr",
+            "apikey": "mintscan-123456"
+        }
+    }
+}

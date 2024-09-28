@@ -1,0 +1,17 @@
+{
+    "dhk_distribution": 100000,
+    "reference_date": "2024-09-21",
+    "tokens": [
+        { "token": "AKT",   "network": "akash", "qty": 188787 }
+    ],
+    "apis": {
+        "cryptocompare": {
+            "endpoint": "https://min-api.cryptocompare.com/data/pricehistorical",
+            "apikey": "e1ea95fd906743eace32401967f3f4aeea4a870e205f36643b107a4096894ed4"
+        },
+        "mintscan": {
+            "endpoint": "https://apis.mintscan.io/v1/:network/apr",
+            "apikey": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjU4LCJpYXQiOjE3MjU0MjU4MzZ9.tExWkTzlpPa1VL56qX9thMs8f8BV7GcHhe_urFJouQ0StN_fEVxt_SOuaHi4VyOcJgJfunmfmZfZpfSkaTPkQA"
+        }
+    }
+}

@@ -1,0 +1,69 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "dhkdao-airdrop"
+version = "0.1.0"
+authors = [
+    { name = "Jimmy Chu", email = "jimmychu0807@gmail.com" },
+]
+description = "DHK dao airdrop scripts"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+    "DHK",
+    "DHK dao",
+    "airdrop",
+]
+dependencies = [
+    "pandas>=2.2.3",
+    "python-dotenv",
+    "numpy>=2.1.0",
+    "typer>=0.12.5",
+    "requests>=2.32.3",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.10",
+]
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/dhkdao/airdrop-scripts"
+Documentation = "https://github.com/dhkdao/airdrop-scripts/blob/main/README.md"
+Issues = "https://github.com/dhkdao/airdrop-scripts/issues"
+
+[project.scripts]
+dhkdao-airdrop = "dhkdao_airdrop:cli"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.scripts]
+test = "pytest"
+"test:no-capture" = "pytest --capture=no tests"
+lint = "flake8 src tests"
+"lint:write" = "black src tests"
+exe = "pdm run src/main.py"
+
+[tool.pdm.scripts.all]
+composite = [
+    "lint",
+    "test",
+]
+
+[tool.pdm.dev-dependencies]
+lint = [
+    "flake8",
+    "black",
+]
+test = [
+    "pytest>=8.3.3",
+    "python-dotenv>=1.0.1",
+]
