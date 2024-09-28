@@ -1,0 +1,13 @@
+milgeo/__init__.py,sha256=YHg962vpqSGqUyQMnQhPzoPRYyx_jfh7pHumShZzPMs,211
+milgeo/builder.py,sha256=hBa8fYPJVpZfA66S8lscKPKA4Gt6qTYh2H-rYofD90k,3479
+milgeo/color.py,sha256=E7RyU6cuy1AitgG8sHymQDpkpEsZQVX5zR84dj3B65Y,3582
+milgeo/enum.py,sha256=hTnQc-ORQUw9n8gw2UaqwfnNJXLdvB9R_8NvYwebLfY,2001
+milgeo/geometry.py,sha256=kScr13hrFcpO2RjOAIl8OAb5KomTjEt3CEmyfgP5SrA,10228
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_builder.py,sha256=x05eApyma7T0amDLo7oY9CVtaoKqJXWCY2y9AsdoJ78,3460
+tests/test_color.py,sha256=W85dqoNtE_eKZnSMeDoMVQNx6HEgtVvcs-uVLYo47Xw,1758
+tests/test_geometry.py,sha256=hceM61TujFrcjZC5rH6LpAiTbUW9-_ieJwK1tbtp0o0,7460
+milgeo-0.1.7.dist-info/METADATA,sha256=eLU0LDm8_rqbKl_s8LmwtG2Xr8d5U8dGoNxCZZIIe0c,449
+milgeo-0.1.7.dist-info/WHEEL,sha256=y4mX-SOX4fYIkonsAGA5N0Oy-8_gI4FXw5HNI1xqvWg,91
+milgeo-0.1.7.dist-info/top_level.txt,sha256=XPRoqBXtzYoWhSzRQ-b3IUSGaK0pWkP_eIKARHovvww,13
+milgeo-0.1.7.dist-info/RECORD,,
