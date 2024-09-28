@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: nlp-preprocess-toolkit-utils
+Version: 0.2.1
+Summary: A package for NLP preprocessing and word cloud generation
+Home-page: https://github.com/rubansendhur/nlp_preprocess_toolkit
+Author: Rubansendhur
+Author-email: rubansendhur78409@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: wordcloud
+Requires-Dist: nltk
+Requires-Dist: matplotlib
+
+# NLP Preprocess
+
+`nlp_preprocess_toolkit_utils` is a Python package that helps you read files (CSV, Excel, text), preprocess them for NLP tasks (like tokenization, stopword removal, lemmatization), and generate a word cloud from the text.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip nlp_preprocess_toolkit_utils
