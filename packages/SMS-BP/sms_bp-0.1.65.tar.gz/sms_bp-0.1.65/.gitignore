@@ -1,0 +1,5 @@
+.gitignore
+dist/
+.venv/
+src/SMS_BP/__pycache__/
+<YOUR-PATH-HERE-CAN-BE-ABSOLUTE-OR-RELATIVE>/
