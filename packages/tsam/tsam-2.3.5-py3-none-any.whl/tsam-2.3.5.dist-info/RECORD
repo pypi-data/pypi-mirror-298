@@ -1,0 +1,16 @@
+tsam/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsam/hyperparametertuning.py,sha256=eM7m7eY80uSlwnLRxmctnis2Jv66D15Z1QD9CCMzSXE,10349
+tsam/periodAggregation.py,sha256=h9CC06jBLNyyaFTMRynGUMN87fOH3NdSEug6EcTsKGA,5471
+tsam/representations.py,sha256=2NL1wanBhGreCeJ8jh0aNdIx05YXEyyMJmMAVFS5-T4,7133
+tsam/timeseriesaggregation.py,sha256=xLkdSmjbJnSxC0GBzF9Vc-6VMK7Y1OPOmQhdHJgymug,56963
+tsam/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsam/utils/durationRepresentation.py,sha256=A-RjELO-58jBXbEHxxJ6TPZc2zPC560_SW7kNzw2ZPA,9463
+tsam/utils/k_maxoids.py,sha256=0PyaHQMA8vtV_SuQOZ0qdcGFK46aUvOiMSQofjGkjBQ,4415
+tsam/utils/k_medoids_contiguity.py,sha256=xSN9xT61oc2CPxYERhugR9hDkVCb2o8POvAiLLgrey8,5925
+tsam/utils/k_medoids_exact.py,sha256=CW6BLQV2eTYtMxDmo97-6hY1HljxcvkPVrL4DQPN5IQ,7178
+tsam/utils/segmentation.py,sha256=y8TPv1KEqf6ByOz7TRywm3WC9ZPhGiWvhwAcQbFibt4,6132
+tsam-2.3.5.dist-info/LICENSE.txt,sha256=XEzEzumoCmdJzcp5gKT6UOtKrkH-SiGpxVbIfihkNK4,1224
+tsam-2.3.5.dist-info/METADATA,sha256=ckzCWoHhvFqngqU4vPCUzCFOLmW7aL145Ff63fEPsmw,12581
+tsam-2.3.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+tsam-2.3.5.dist-info/top_level.txt,sha256=MFI15PnPuMv8F1hTAOXbjGu41z-l6dJbnK69WlIQNcM,5
+tsam-2.3.5.dist-info/RECORD,,
