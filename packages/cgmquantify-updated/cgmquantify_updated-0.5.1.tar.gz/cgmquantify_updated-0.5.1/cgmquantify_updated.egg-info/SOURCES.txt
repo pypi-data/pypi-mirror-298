@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+cgmquantify/__init__.py
+cgmquantify_updated.egg-info/PKG-INFO
+cgmquantify_updated.egg-info/SOURCES.txt
+cgmquantify_updated.egg-info/dependency_links.txt
+cgmquantify_updated.egg-info/not-zip-safe
+cgmquantify_updated.egg-info/requires.txt
+cgmquantify_updated.egg-info/top_level.txt
