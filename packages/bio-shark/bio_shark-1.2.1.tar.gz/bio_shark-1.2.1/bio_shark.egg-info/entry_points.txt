@@ -1,0 +1,3 @@
+[console_scripts]
+shark-dive = bio_shark.dive.prediction:main
+shark-score = bio_shark.dive.run:user_run
