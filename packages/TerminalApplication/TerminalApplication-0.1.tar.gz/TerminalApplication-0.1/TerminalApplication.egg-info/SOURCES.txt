@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+BASH/requirements.txt
+TerminalApplication.egg-info/PKG-INFO
+TerminalApplication.egg-info/SOURCES.txt
+TerminalApplication.egg-info/dependency_links.txt
+TerminalApplication.egg-info/entry_points.txt
+TerminalApplication.egg-info/requires.txt
+TerminalApplication.egg-info/top_level.txt
