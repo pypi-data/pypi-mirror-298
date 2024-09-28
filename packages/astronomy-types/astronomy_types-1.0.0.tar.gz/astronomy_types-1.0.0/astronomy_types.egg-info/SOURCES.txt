@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+astronomy_types.egg-info/PKG-INFO
+astronomy_types.egg-info/SOURCES.txt
+astronomy_types.egg-info/dependency_links.txt
+astronomy_types.egg-info/top_level.txt
