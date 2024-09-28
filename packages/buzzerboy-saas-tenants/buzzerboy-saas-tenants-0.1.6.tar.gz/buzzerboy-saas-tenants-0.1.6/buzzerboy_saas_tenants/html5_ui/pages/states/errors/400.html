@@ -1,0 +1,24 @@
+{% extends "layouts/base-auth-minimal.html" %}
+{% load static i18n %}
+{% block title %} 404 Minimal {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+{% endblock stylesheets %}
+
+{% block content %}
+<div class="card mb-4 mt-5 mx-4 mx-sm-0 position-relative">
+    <div class="wd-50 bg-white p-2 rounded-circle shadow-lg position-absolute translate-middle top-0 start-50">
+        <img src="{% static 'assets/images/logo-abbr.png' %}" alt="" class="img-fluid">
+    </div>
+    <div class="card-body p-sm-5 text-center">
+        <h2 class="fw-bolder mb-4" style="font-size: 120px">4<span class="text-danger">0</span>0</h2>
+        <h4 class="fw-bold mb-2">{% trans "Bad Request - Something's not right." %}</h4>
+        <p class="fs-12 fw-medium text-muted">{% trans "It looks like your request couldn't be processed due to a mistake in the input. Please double-check your information and try again. If the issue persists, feel free to reach out for assistance. Thanks for your patience!" %}</p>
+        <div class="mt-5">
+            <a href="/" class="btn btn-light-brand w-100">{% trans "Back Home" %}</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}
