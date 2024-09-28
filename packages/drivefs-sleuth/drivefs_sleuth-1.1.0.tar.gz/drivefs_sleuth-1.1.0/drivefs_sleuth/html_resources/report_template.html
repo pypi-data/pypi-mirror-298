@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
+        <style>
+
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Arial', sans-serif;
+                background-color: #143B47;
+                color: #F2BC57;
+            }
+
+            a {
+                color: #F2BC57;
+                text-decoration: none;
+            }
+
+            header {
+                display: flex;
+                height: 5px;
+            }
+
+            .top-strip {
+                display: flex;
+                width: 100%;
+            }
+
+            .blue { background-color: #435CE8; }
+            .red { background-color: #E83935; }
+            .yellow { background-color: #F59236; }
+            .green { background-color: #36B83E; }
+
+            .center-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 20vh;
+                margin: 20px;
+            }
+
+            .card {
+                font-family: 'Roboto', sans-serif;
+                background-color: #A6294B;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                padding: 20px;
+                border-radius: 8px;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .card:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 10px;
+                width: 20px;
+                height: 100%;
+                background-color: #3CA6A6;
+            }
+
+            .text-container {
+                margin-left: 20px;
+            }
+
+            .email,
+            .card-info {
+                color: #F2E3D5;
+            }
+
+            .email {
+                font-size: 25px;
+                font-weight: bold;
+                margin: 10px 0;
+                text-align: left;
+            }
+
+            .card-info {
+                font-size: 16px;
+                text-align: left;
+            }
+
+            .icon-container {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                width: 100%;
+                font-size: 24px; /* Adjust size as needed */
+            }
+
+            .eye-icon {
+                display: inline-block;
+            }
+
+            .page-content {
+                font-family: 'Open Sans', sans-serif;
+                margin: 20px;
+            }
+
+            /* Remove default bullets */
+            ul, #myUL {
+                list-style-type: none;
+            }
+
+            /* Remove margins and padding from the parent ul */
+            #myUL {
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Style the caret/arrow */
+            .caret {
+                cursor: pointer;
+                user-select: none; /* Prevent text selection */
+            }
+
+            /* Create the caret/arrow with a unicode, and style it */
+            .caret::before {
+                content: "\25B6";
+                color: #A6294B;
+                display: inline-block;
+                margin-right: 6px;
+            }
+
+            /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+            .caret-down::before {
+                transform: rotate(90deg);
+            }
+
+            /* Hide the nested list */
+            .nested {
+                display: none;
+            }
+
+            /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+            .active {
+                display: block;
+            }
+
+            .info-box {
+                position: fixed;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                background-color: #E8E8DE;
+                box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                display: none;
+                color: #80022A;
+                font-size: 18px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            .close-button {
+              position: absolute;
+              top: 5px;
+              right: 5px;
+              cursor: pointer;
+              color: #143B47;
+              background-color: #E0C11A;
+              font-weight: bold;
+              font-size: 20px;
+            }
+
+            .close-button:hover {
+              cursor: pointer;
+              color: #80022A;
+            }
+
+            th {
+                background-color: #A6294B;
+                color: #F2E3D5;
+                padding-right: 10px;
+                padding-left: 10px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #164754; /* or any color you prefer */
+            }
+
+            tr:nth-child(odd) {
+                background-color: #0b242b; /* or any color you prefer */
+            }
+
+            #scrollToTopBtn {
+              position: fixed;
+              bottom: 20px;
+              right: 20px;
+              display: none;
+              background-color: #007BFF;
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+              padding: 10px 15px;
+              cursor: pointer;
+            }
+
+            /* Style for the hover effect */
+            #scrollToTopBtn:hover {
+              background-color: #0056b3;
+            }
+
+            /* Show the button when the page is scrolled */
+            body::-webkit-scrollbar-thumb:vertical {
+              background-color: #007BFF;
+            }
+
+            body::-webkit-scrollbar-thumb:vertical:hover {
+              background-color: #0056b3;
+            }
+
+            body::-webkit-scrollbar {
+              width: 10px;
+            }
+
+            body::-webkit-scrollbar-thumb {
+              background-color: #888;
+            }
+
+            .match {
+                color: #A6294B;
+                font-weight: bold;
+            }
+
+            td {
+                text-align: center;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+
+            .max-roots {
+                background-color: #A6294B;
+                color: #F2E3D5;
+                font-weight: bold;
+                display: inline-block;
+                padding-left: 10px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                margin-bottom: 2px;
+            }
+
+            .max-roots-number {
+                min-width: 70px;
+                background-color: #0b242b;
+                color: #F2BC57;
+                font-weight: normal;
+                display: inline-block;
+                padding-left: 10px;
+                padding-right: 10px;
+                text-align: center;
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+
+            .image-container {
+                margin-left: 20px; /* Adjust the margin as needed for spacing */
+            }
+
+        </style>
+
+        <title>DriveFS-Sleuth - Synced Files Report</title>
+    </head>
+
+    <body>
+
+        <header id="top">
+            <div class="top-strip">
+                <div class="blue" style="width: 25%;"></div>
+                <div class="red" style="width: 25%;"></div>
+                <div class="yellow" style="width: 25%;"></div>
+                <div class="green" style="width: 25%;"></div>
+                <div class="blue" style="width: 25%;"></div>
+                <div class="red" style="width: 25%;"></div>
+                <div class="yellow" style="width: 25%;"></div>
+                <div class="green" style="width: 25%;"></div>
+            </div>
+        </header>
+
+        <div class="center-container">
+            <div class="card">
+                <div class="text-container">
+                    <div>{{ setup.get_drivefs_path() }}</div>
+                    <div>Last Sync Date: {{ setup.get_last_sync_date() }}</div>
+                    <div>Max Root IDs: {{ setup.get_max_root_ids() }} - {% if setup.is_mirroring_roots_modified() %}Modified{% else %}Not Modified{% endif %}</div>
+                    <div>Last PID: {{ setup.get_last_pid() }}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+
+            {% if setup.get_connected_devices() %}
+                <h2>Connected Devices</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Media ID</th>
+                            <th>Name</th>
+                            <th>Last Mount Point</th>
+                            <th>Capacity (GB)</th>
+                            <th>Ignore</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for device in setup.get_connected_devices() %}
+                            <tr>
+                                <td>{{ device.get('media_id', None) }}</td>
+                                <td>{{ device.get('name', None) }}</td>
+                                <td>{{ device.get('last_mount_point', None) }}</td>
+                                <td>{{ device.get('capacity', None) }}</td>
+                                <td>{{ device.get('ignore', None) }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% endif %}
+
+            {% for account in setup.get_accounts() %}
+                <div class="center-container" onclick="toggleVisibility('account-details-{{ account.get_account_email() }}', 'eye-icon-{{ account.get_account_email() }}')">
+                    <div class="card">
+                        <div class="text-container">
+                            <div class="email">{{ account.get_account_email() }}</div>
+                            {% if account.get_name() %}
+                                <div class="card-info">Display Name: {{ account.get_name() }}</div>
+                            {% endif %}
+                            <div class="card-info">Account ID: {{ account.get_account_id() }}</div>
+                            <div class="card-info">Currently Logged-In: {{ account.is_logged_in() }}</div>
+                        </div>
+                        {% if account.get_photo_url() %}
+                            <div class="image-container">
+                                <img src={{ account.get_photo_url() }} alt="Account Photo" style="width: 100px; height: 100px;">
+                            </div>
+                        {% endif %}
+                    <div class="icon-container">
+                        <span id="eye-icon-{{ account.get_account_email() }}" class="eye-icon">👁️</span>
+                    </div>
+                    </div>
+                </div>
+
+                <div id="account-details-{{ account.get_account_email() }}">
+                    {% if account.get_mirroring_roots() %}
+
+                        <h2>Mirroring Roots</h2>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Root ID</th>
+                                    <th>Media ID</th>
+                                    <th>Title</th>
+                                    <th>Root Path</th>
+                                    <th>Mirroring Destination</th>
+                                    <th>Last Seen Absolute Path</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% set mirrors=account.get_mirroring_roots() %}
+                                {% for mirror in mirrors %}
+                                    <tr>
+                                        <td>{{ mirror.get('root_id', None) }}</td>
+                                        <td>{{ mirror.get('media_id', None) }}</td>
+                                        <td>{{ mirror.get('title', None) }}</td>
+                                        <td>{{ mirror.get('root_path', None) }}</td>
+                                        <td>{{ mirror.get('destination', None) }}</td>
+                                        <td>{{ mirror.get('last_seen_absolute_path', None) }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+
+                        <h2>Mirrored Items</h2>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Local Stable ID</th>
+                                    <th>Stable ID</th>
+                                    <th>Volume</th>
+                                    <th>Parent Local Stable ID</th>
+                                    <th>Local Filename</th>
+                                    <th>Cloud Filename</th>
+                                    <th>Local Modified Timestamp</th>
+                                    <th>Cloud Modified Timestamp</th>
+                                    <th>Local MD5 Checksum</th>
+                                    <th>Cloud MD5 Checksum</th>
+                                    <th>Local Size</th>
+                                    <th>Cloud Size</th>
+                                    <th>Local Version</th>
+                                    <th>Cloud Version</th>
+                                    <th>Shared</th>
+                                    <th>Read Only</th>
+                                    <th>Is Root</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% set mirrored_items=account.get_synced_files_tree().get_mirrored_items() %}
+                                {% for item in mirrored_items %}
+                                    <tr>
+                                        <td>{{ item.local_stable_id }}</td>
+                                        <td>{{ item.stable_id }}</td>
+                                        <td>{{ item.volume }}</td>
+                                        <td>{{ item.parent }}</td>
+                                        <td>{{ item.local_filename }}</td>
+                                        <td>{{ item.cloud_filename }}</td>
+                                        <td>{{ item.get_local_mtime_utc() }}</td>
+                                        <td>{{ item.get_cloud_mtime_utc() }}</td>
+                                        <td>{{ item.local_md5 }}</td>
+                                        <td>{{ item.cloud_md5 }}</td>
+                                        <td>{{ item.local_size }}</td>
+                                        <td>{{ item.cloud_size }}</td>
+                                        <td>{{ item.local_version }}</td>
+                                        <td>{{ item.cloud_version }}</td>
+                                        <td>{{ item.shared }}</td>
+                                        <td>{{ item.read_only }}</td>
+                                        <td>{{ item.is_root }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    {% endif %}
+
+                    {% if account.is_logged_in() %}
+
+                        {% if search_results.get((account.get_account_id(), account.get_account_email()), None) %}
+                            {% set searches=[] %}
+
+                            <h2>Search Results</h2>
+                            {% for result in search_results[(account.get_account_id(), account.get_account_email())] %}
+                                <li>
+                                    <a href="#{{ result.get_stable_id() }}">{{ result.tree_path }}</a>
+                                </li>
+                                {{ searches.append(result.get_stable_id()) or '' }}
+                            {% endfor %}
+                        {% endif %}
+
+                        {% set tree=account.get_synced_files_tree() %}
+                        {% set details=[] %}
+
+                        {% macro render_items(items) %}
+                            {% for item in items %}
+                                {{ details.append(item) or '' }}
+                                {% if item.is_dir() %}
+                                    <li>
+                                        <span class="caret">
+                                            <a
+                                                {% if item.get_stable_id() in searches %}
+                                                    class="match"
+                                                {% endif %}
+                                                href="#{{ item.get_stable_id() }}">{{ item.local_title }}</a>
+                                        </span>
+                                        <ul class="nested">
+                                            {{ render_items(item.get_sub_items()) }}
+                                        </ul>
+                                    </li>
+                                {% elif item.is_link() %}
+                                    {% if item.get_target_item().is_file() %}
+                                        <li>
+                                            <span class="caret">
+                                                <a
+                                                    {% if item.get_stable_id() in searches %}
+                                                        class="match"
+                                                    {% endif %}
+                                                    href="#{{ item.get_stable_id() }}">{{ item.local_title }}</a>
+                                            </span>
+                                            <ul class="nested">
+                                                {{ render_items(item.get_target_item()) }}
+                                            </ul>
+                                        </li>
+                                    {% else %}
+                                        <li>
+                                            <span class="caret">
+                                                <a
+                                                    {% if item.get_stable_id() in searches %}
+                                                        class="match"
+                                                    {% endif %}
+                                                    href="#{{ item.get_stable_id() }}">{{ item.local_title }}</a>
+                                            </span>
+                                            <ul class="nested">
+                                                {{ render_items(item.get_target_item().get_sub_items()) }}
+                                            </ul>
+                                        </li>
+                                    {% endif %}
+                                {% else %}
+                                    <li>
+                                        <a
+                                            {% if item.get_stable_id() in searches %}
+                                                class="match"
+                                            {% endif %}
+                                            href="#{{ item.get_stable_id() }}">{{ item.local_title }}</a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        {% endmacro %}
+
+                        <h2>Synced Files Tree</h2>
+
+                            <ul id="myUL">
+                                {{ render_items([tree.get_root()] + tree.get_orphan_items()) }}
+                            </ul>
+
+                        {% if tree.get_shared_with_me_items() %}
+                            <h2>Shared with me files</h2>
+
+                                <ul id="myUL">
+                                    {{ render_items(tree.get_shared_with_me_items()) }}
+                                </ul>
+                        {% endif %}
+
+                        {% if tree.get_recovered_deleted_items() or tree.get_deleted_items() %}
+                            <h2>Deleted Items</h2>
+                                {% for recovered_deleted_item in tree.get_recovered_deleted_items() %}
+                                        {{ details.append(recovered_deleted_item) or '' }}
+                                        <li>
+                                            <a
+                                                {% if recovered_deleted_item.get_stable_id() in searches %}
+                                                    class="match"
+                                                {% endif %}
+                                                href="#{{ recovered_deleted_item.get_stable_id() }}">{{ recovered_deleted_item.tree_path }}</a>
+                                        </li>
+                                {% endfor %}
+
+                                {% for deleted_item in tree.get_deleted_items() %}
+                                    <li>{{ deleted_item.get_stable_id() }}</li>
+                                {% endfor %}
+                        {% endif %}
+
+                        <h2>Items Details</h2>
+                        {% macro generate_items_details_table(headers) %}
+                            {% set properties = headers[11:] %}
+                            <table>
+                                <thead>
+                                    <tr>
+                                        {% for header in headers %}
+                                            <th>{{ header }}</th>
+                                        {% endfor %}
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for detail in details %}
+                                        <tr>
+                                            <td id='{{ detail.get_stable_id() }}'>{{ detail.get_stable_id() }}</td>
+                                            {% if detail.is_file() %}
+                                                <td>File</td>
+                                            {% elif detail.is_link() %}
+                                                <td>Link</td>
+                                            {% else %}
+                                                <td>Directory</td>
+                                            {% endif %}
+                                            <td>{{ detail.url_id }}</td>
+                                            <td>{{ detail.local_title }}</td>
+                                            <td>{{ detail.mime_type }}</td>
+                                            {% if detail.is_file() %}
+                                                <td>{{ detail.get_content_cache_path() }}</td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if detail.is_file() %}
+                                                <td>{{ detail.get_thumbnail_path() }}</td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            <td>{{ detail.is_owner }}</td>
+                                            <td>{{ detail.get_file_size_mb() }}</td>
+                                            <td>{{ detail.get_modified_date_utc() }}</td>
+                                            <td>{{ detail.get_viewed_by_me_date_utc() }}</td>
+                                            <td>{{ detail.trashed }}</td>
+                                            <td>{{ detail.tree_path }}</td>
+                                            <td>{{ detail.md5 }}</td>
+                                            {% for prop in properties %}
+                                                {% if prop not in ["trashed", "tree_path", "md5"] %}
+                                                    <td>{{ detail.properties[prop] }}</td>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        {% endmacro %}
+                        {{ generate_items_details_table(headers) }}
+
+                    {% endif %}
+                </div>
+            {% endfor %}
+
+        </div>
+
+        <a href="#" id="scrollToTopBtn" title="Go to top">&#9650; Top</a>
+
+        <script>
+            var toggler = document.getElementsByClassName("caret");
+            var i;
+
+            for (i = 0; i < toggler.length; i++) {
+              toggler[i].addEventListener("click", function() {
+                this.parentElement.querySelector(".nested").classList.toggle("active");
+                this.classList.toggle("caret-down");
+              });
+            }
+
+            function toggleVisibility(contentId, iconId) {
+                var element = document.getElementById(contentId);
+                var icon = document.getElementById(iconId);
+                if (element.style.display === "none") {
+                    element.style.display = "block";
+                    icon.innerHTML = "👁️";
+                } else {
+                    element.style.display = "none";
+                    icon.innerHTML = "👁️‍🗨️";
+                }
+            }
+        </script>
+
+    </body>
+</html>

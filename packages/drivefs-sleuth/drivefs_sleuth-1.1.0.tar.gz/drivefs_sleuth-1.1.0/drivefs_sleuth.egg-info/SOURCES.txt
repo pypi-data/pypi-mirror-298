@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+drivefs_sleuth/__init__.py
+drivefs_sleuth/executor.py
+drivefs_sleuth/setup.py
+drivefs_sleuth/synced_files_tree.py
+drivefs_sleuth/tasks.py
+drivefs_sleuth/utils.py
+drivefs_sleuth.egg-info/PKG-INFO
+drivefs_sleuth.egg-info/SOURCES.txt
+drivefs_sleuth.egg-info/dependency_links.txt
+drivefs_sleuth.egg-info/entry_points.txt
+drivefs_sleuth.egg-info/requires.txt
+drivefs_sleuth.egg-info/top_level.txt
+drivefs_sleuth/html_resources/report_template.html
