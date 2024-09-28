@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: aai-jobq
+Version: 0.1.0rc7
+Author-email: appliedAI Institute for Europe <opensource@appliedai-institute.de>
+Maintainer-email: Nicholas Junge <n.junge@appliedai-institute.de>, Max Mynter <m.mynter@appliedai-institute.de>, Adrian Rumpold <a.rumpold@appliedai-institute.de>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+Requires-Dist: pyyaml
+Provides-Extra: cli
+Requires-Dist: docker; extra == "cli"
+Requires-Dist: humanize; extra == "cli"
+Requires-Dist: rich; extra == "cli"
+Requires-Dist: pydantic-settings; extra == "cli"
+Requires-Dist: python-dateutil; extra == "cli"
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: click; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: mkdocs; extra == "docs"
+Requires-Dist: mkdocs-callouts; extra == "docs"
+Requires-Dist: mkdocs-gen-files; extra == "docs"
+Requires-Dist: mkdocs-literate-nav; extra == "docs"
+Requires-Dist: mkdocs-section-index; extra == "docs"
+Requires-Dist: mkdocs-material; extra == "docs"
+Requires-Dist: mkdocstrings[python]; extra == "docs"
+Requires-Dist: mkdocs-include-dir-to-nav; extra == "docs"
+Requires-Dist: black; extra == "docs"
+Requires-Dist: mike; extra == "docs"
+Requires-Dist: appnope; extra == "docs"
+Requires-Dist: docstring-parser; extra == "docs"
+
+## Usage
+
+If submitting to Kueue in a Minikube Kubernetes cluster, you need to configure your environment variables, so that images are available inside the cluster:
+
+```
+$ eval $(minikube -p minikube docker-env)
+```
+
+Then, you can execute a workload as a regular Python script:
+
+```
+$ python example_1.py
+```
+
+You can choose between the available execution modes (locally, in Docker, as a Kueue Kubernetes Job) by passing the `--mode` flag.
+See the output of `--help` for allowed values.
+
+## FAQ
+
+- Q: Image build aborts with an exception `docker.errors.DockerException: Error while fetching server API version: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))`:
+- A: If using Colima, might have to set `DOCKER_HOST` env var to point to the Colima Docker socket (obtain path from `docker context ls`)
