@@ -1,0 +1,15 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+djangaudit/__init__.py
+djangaudit/apps.py
+djangaudit/lib.py
+djangaudit.egg-info/PKG-INFO
+djangaudit.egg-info/SOURCES.txt
+djangaudit.egg-info/dependency_links.txt
+djangaudit.egg-info/requires.txt
+djangaudit.egg-info/top_level.txt
+djangaudit/management/__init__.py
+djangaudit/management/commands/__init__.py
+djangaudit/management/commands/audit_project.py
