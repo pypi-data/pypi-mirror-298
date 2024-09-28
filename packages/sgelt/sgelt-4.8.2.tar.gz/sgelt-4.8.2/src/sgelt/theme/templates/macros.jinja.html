@@ -1,0 +1,182 @@
+{% macro toc_text(toc_items) %}
+<div class="container toc">
+  <div class="row">
+    {% for title, id_tag in toc_items -%}
+    <div class="col s3 m6"><a href="#{{ id_tag }}">{{ title }}</a></div>
+    {%- endfor %}
+  </div>
+</div>
+{% endmacro %}
+
+{% macro event_cards(events, homepage=False) %}
+
+<div class="sr-only">
+  <ul>
+  {% for event in events -%}  
+    <li>
+      <h2>{{ event|event_date_time(weekday=True, sep='h') }} {{ event.theme if event.theme else event.category }}</h2>
+      <ul>
+        {% if event.speaker %}
+        {{ event.speaker }} {% if event.affiliation %}({{ event.affiliation }}){% endif %} :
+        {% endif %}
+        {{ event.title }}
+        <li>Lieu : {{ event.place }}</li>
+        {% if event.abstract %}
+        <li>
+          <p>Résumé : {{ event.abstract }}</p>
+        </li>
+        {% endif %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>
+</div>
+
+<div class="row agenda" aria-hidden="true">
+  {% for event in events -%}
+  <div class="col s12 l4">
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title {% if event.abstract %}activator{% endif %} grey-text text-darken-4">{{ event.speaker if event.speaker else event.title }}
+          {% if event.abstract %}
+          <svg role="button" class="icon-svg right">
+            <title>Résumé</title><use href="#icon_more_vert" />
+          </svg>
+          {% endif %}
+        </span>
+        {% if event.speaker %}
+        <p class="title"><em>{{ event.title }}
+          {% if event.affiliation %}({{ event.affiliation }}){% endif %}
+          </em>
+        </p>
+        {% endif %}
+        <div class="details">
+          <a href="{{ event|categ_to_target|url }}"
+            class="chip category {{ event.category }}">{{ event.category }}
+          </a>
+          <ul>
+            {% if event.date != datetime_min %}  
+            <li class="date">{{ event|event_date_time }}</li>
+            {% endif %}
+            {% if not homepage and event.place %}
+            <li class="place">{{ event.place }}</li>
+            {% endif %}
+            {% if event.theme %}
+              {% if event.category == 'soutenance' %}
+              <li class="theme">{{ event.theme }}</li>
+              {% else %}
+              <li class="theme"><a href="{{ event.target|e }}">{{ event.theme }}</a></li>
+              {% endif %}
+            {% endif %}
+          </ul>
+        </div>
+
+      </div>
+      {% if event.abstract %}
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Résumé
+          <svg role="button" class="icon-svg right">
+            <title>Résumé</title><use href="#icon_close" />
+          </svg>
+        </span>
+        <p>{{ event.abstract }}
+        </p>
+      </div>
+      {% endif %}
+      <div class="card-action center button">
+        <a class="btn-floating  waves-effect waves-light teal lighten-2" href="{{ event.target|string|url }}">
+          <svg role="button" class="icon-svg icon-white">
+            <title>En savoir plus</title><use href="#icon_add" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  {%- endfor %}
+</div>
+{% endmacro %}
+
+{% macro fixed_action(place='', icon='add') %}
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large red modal-trigger" href="#modal1">
+    <svg role="button" class="icon-svg icon-white">
+      <title>S'abonner à l'agenda</title><use href="#icon_{{ icon }}" />
+    </svg>
+  </a>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal {{ place }}">
+  <div class="modal-content">
+    {{ caller() }}
+  </div>
+  <div class="modal-footer">
+      <svg role="button" class="modal-close icon-svg">
+        <title>Fermer</title><use href="#icon_close" />
+      </svg>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro pagination(paginator, name) %}
+<div class="section center">
+  <div class="row">
+    <ul class="pagination">
+      <li class="{{ 'waves-effet' if paginator.has_previous(name) else 'disabled' }}" aria-hidden="True">
+        <a href="{{ paginator.previous_filename(name) }}">
+          <svg role="button" viewBox="0 0 30 30" class="icon-svg icon-chevron">
+            <title>Précédent</title><use href="#icon_chevron_left" />
+          </svg>
+        </a>
+      </li>
+      {% for n in paginator.names -%}
+      <li class="{{ 'active' if n == name else 'waves-effect' }}"><a href="{{ paginator.get_filename(n) }}">{{ n }}</a>
+      </li>
+      {%- endfor %}
+      <li class="{{ 'waves-effet' if paginator.has_next(name) else 'disabled' }}" aria-hidden="True">
+        <a href="{{ paginator.next_filename(name) }}">
+          <svg role="button" viewBox="0 0 30 30" class="icon-svg icon-chevron">
+            <title>Suivant</title><use href="#icon_chevron_right" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro tabs() %}
+{% if page.menu_item in site.nav_items %}
+<div class="row center" style="max-width: 1200px; padding-top: 1rem;">
+  <div class="col s12">
+    <ul class="tabs teal-text" style="background-color: unset;">
+      {% for item, url in (site.nav_items | dropdown_items).items() -%}
+      <li class="tab teal-text"><a href="{{ url|url }}" target="_self" class="teal-text truncate {{ page.active_tab(url) }}">{{ item }}</a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</div>
+{% endif %}
+{% endmacro %}
+
+{% macro ical_action(title) %}
+{% if page.ical_url %}
+{% call fixed_action(icon="event") %}
+<div class="center">
+  <h3>{{ title }}</h3>
+  Ajouter cette URL aux abonnements de votre calendrier électronique :<br>
+  <code><span id="content_to_copy">{{ page.ical_url }}</span></code>
+  <button onclick="CopyToClipBoard('Lien copié !')" class="waves-effect waves-teal btn-flat">
+    <svg role="button" class="modal-close icon-svg icon-copy">
+      <title>Copier le lien</title><use href="#icon_content_copy" />
+    </svg>
+  </button>
+  <button onclick="location.href='{{ page.ical_url }}'" type="button" class="waves-effect waves-teal btn-flat">
+    <svg role="button" viewBox="0 0 30 30" class="icon-svg icon-copy">
+      <title>Télécharger le fichier</title><use href="#icon_download" />
+    </svg>
+  </button>
+</div>
+{% endcall %}
+{% endif %}
+{% endmacro %}

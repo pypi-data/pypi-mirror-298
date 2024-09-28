@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block fixed_action %}
+{{ macros.ical_action(title="S'abonner au séminaire") }}
+{% endblock fixed_action %}
+
+{% block content %}
+
+<div class="section center title">
+  <div class="container">
+    <h1 class="header center teal-text">
+      <a href="#">{{ page.title }}</a>
+    </h1>
+  </div>
+  {% include "partial/date_place.html" %}
+</div>
+
+<div class="container toc">
+  <div class="row">
+    <div class="col s3 m6"><a href="#programme">Programme</a></div>
+    {% if page.event.funding %}<div class="col s3 m6"><a href="#financement">Funding</a></div>{% endif %}
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="container text ">
+    <div class="section">
+      {{ page.text }}
+    </div>
+  </div>
+
+  <div class="section center title" id="programme">
+    <div class="container">
+      <h2 class="header center teal-text">
+        <a href="#programme">Programme</a>
+      </h2>
+    </div>
+  </div>
+
+  <div class="section event program">
+    <div class="row">
+      <div class="col s12">
+        <ul class="collapsible" id="coll1">
+          {% for day in page.event.program.values()|sort(attribute='date') %}
+          {% if day.date %}
+          <li>
+            <div class="collapsible-header noabstract">
+              <p class="title">
+              <h4>{{ day.date.strftime("%A %-d %B %Y")|capitalize }}</h4>
+              </p>
+            </div>
+          </li>
+          {% endif %}
+          {% for time_slot in day.time_slots|sort(attribute='start') %}
+          <li>
+            <div class="collapsible-header {{ 'noabstract' if not time_slot.abstract else 'hoverable' }}">
+              <div class="row">
+                {% if time_slot.start %}
+                {% if time_slot.end %}
+                <div class="col s12 m3">
+                  <h5>{{ time_slot.start.strftime("%H:%M") }} - {{ time_slot.end.strftime("%H:%M") }}</h5>
+                </div>
+                {% else %}
+                <div class="col s12 m2">
+                  <h5>{{ time_slot.start.strftime("%H:%M") }}</h5>
+                </div>
+                {% endif %}
+                {% endif %}
+                <div class="col s12 {{ 'm9' if time_slot.end else 'm10' }} title">
+                  <p>
+                    <h5><strong>{{ time_slot.speaker }}</strong>{% if time_slot.affiliation %}, <span class="affiliation">{{ time_slot.affiliation }}</span>{% endif %}</h5>
+                  </p>
+                  {% if time_slot.speaker %}
+                  <p>
+                    <em>{{ time_slot.title }}</em>
+                  </p>
+                  {% endif %}
+                </div>
+                {% if time_slot.attachment %}
+                <div class="col s12 m1">
+                  <h5><a href="{{ time_slot.attachment }}"><i class="material-icons">file_download</i></a></h5>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+            {% if time_slot.abstract %}
+            <div class="collapsible-body">
+              <span>
+                {{ time_slot.abstract }}
+              </span>
+            </div>
+            {% endif %}
+          </li>
+          {% endfor %}
+          {% endfor %}
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% if page.event.funding %}
+<div class="container text ">
+  <div class="section" id="financement">
+
+    <h2 class="header center teal-text">
+      <a href="#financement">Funding</a>
+    </h2>
+
+    <p>
+      {{ page.event.funding }}
+    </p>
+  </div>
+</div>
+{% endif %}
+{% endblock content %}

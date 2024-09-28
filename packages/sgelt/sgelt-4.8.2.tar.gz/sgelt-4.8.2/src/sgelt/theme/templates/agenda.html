@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="section center title">
+  <div class="container">
+    <h1 class="header center teal-text">
+      {% block title %}{{ page.title }}{% endblock title %}
+    </h1>
+  </div>
+</div>
+
+<div class="section title">
+  <div class="container event">
+    {% block event_cards %}
+    {{ macros.event_cards(page.events|agenda) }}
+    {% endblock event_cards %}
+  </div>
+</div>
+
+{% if page.paginator %}
+{{ macros.pagination(page.paginator, page.name) }}
+{% endif %}
+
+{% endblock content %}

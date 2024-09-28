@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="section center title">
+  <div class="container">
+    <h1 class="header center teal-text">
+      <a href="#">{{ page.title }}</a>
+    </h1>
+    <h3 class="header col s12 light black-text">
+      {{ page.defense_type }} soutenue par {{ page.speaker }}
+    </h3>
+  </div>
+  {% include "partial/date_place.html" %}
+</div>
+
+{% if page.jury and page.abstract %}
+<div class="container toc">
+  <div class="row">
+    {% if page.abstract %}<div class="col s3 m6"><a href="#abstract">Résumé</a></div>{% endif %}
+  </div>
+</div>
+{% endif %}
+
+{% if page.jury %}
+<div class="section center title" id="jury">
+  <div class="container">
+    <h2 class="header center teal-text">
+      <a href="#jury">Jury</a>
+    </h2>
+  </div>
+</div>
+
+<div class="container text ">
+  <div class="section">
+    {{ page.jury }}
+  </div>
+</div>
+{% endif %}
+
+{% if page.abstract %}
+<div class="section center title" id="abstract">
+  <div class="container">
+    <h2 class="header center teal-text">
+      <a href="#abstract">Résumé</a>
+    </h2>
+  </div>
+</div>
+
+<div class="container text ">
+  <div class="section">
+    {{ page.abstract }}
+  </div>
+</div>
+{% endif %}
+
+
+{% endblock content %}

@@ -1,0 +1,695 @@
+/* Custom Stylesheet */
+
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+/* color variables defined from https://materializecss.com/color.html */
+
+:root {
+  --teal-lighten-5: #e0f2f1;
+  --teal-lighten-4: #b2dfdb;
+  --teal-lighten-3: #80cbc4;
+  --teal-lighten-2: #4db6ac;
+  --teal-lighten-1: #26a69a;
+  --teal: #009688;
+  --teal-darken-1: #00897b;
+  --teal-darken-2: #00796b;
+  --teal-darken-3: #00695c;
+  --teal-darken-4: #004d40;
+  --teal-accent-1: #a7ffeb;
+  --teal-accent-2: #64ffda;
+  --teal-accent-3: #1de9b6;
+  --teal-accent-4: #00bfa5;
+}
+
+/* Some customizations from MaterializeCSS.com parallax theme
+   (modified for SGELT) */
+
+nav ul a, nav .brand-logo {
+  color: #444;
+}
+
+.sidenav-trigger {
+  color: var(--teal-lighten-1);
+}
+
+
+/* Adapt to large top menu of IRMA's website */
+
+@media only screen and (max-width: 1374px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1374px) {
+  nav a.sidenav-trigger {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 1375px) {
+  nav .brand-logo {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  nav .brand-logo.left, nav .brand-logo.right {
+    padding: 0;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  nav .brand-logo.left {
+    left: 0.5rem;
+  }
+
+  nav .brand-logo.right {
+    right: 0.5rem;
+    left: auto;
+  }
+}
+
+@media only screen and (max-width: 1374px) {
+  .container {
+    width: 85%;
+  }
+}
+
+/* --- */
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  padding-top: 40px;
+}
+
+footer.page-footer .container {
+  width: 90%;
+}
+
+.icon-svg {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-svg.icon_arrow_drop_down {
+  margin-left: 11px;
+  vertical-align: -0.4em;
+}
+
+.icon-svg.icon-white {
+  fill: white;
+  vertical-align: -0.5em;
+}
+
+.modal-close.icon-svg {
+  margin-right: 15px;
+}
+
+.icon-svg.icon-copy {
+  vertical-align: middle;
+}
+
+.icon-chevron {
+  width: 30px;
+  height: 30px;
+  fill: var(--teal);
+}
+
+.disabled .icon-chevron {
+  fill: #9e9e9e;
+}
+
+.pagination .waves-effet :hover {
+  fill: var(--teal-darken-3);
+}
+
+.icon-menu {
+  fill: var(--teal);
+  vertical-align: -0.5em;
+}
+
+/* Custom for SGELT */
+
+/* Main container */
+
+.valign-wrapper {
+  min-height: 120px;
+}
+
+/* Typo */
+
+h1 {
+  font-size: 2.92rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1.08rem;
+}
+
+img {
+  margin: auto;
+}
+
+a {
+  color: var(--teal-lighten-1);
+}
+
+a:hover :not(.nav-wrapper *) {
+  color: teal !important;
+}
+
+/* hugly fix to unset color hover on buttons */
+
+a.btn:hover, a.btn-small:hover, a.btn-floating i:hover {
+  color: white !important;
+}
+
+/* Homepage */
+
+.container.homepage {
+  margin-top: 5px;
+}
+
+.homepage .row {
+  max-width: 1600px;
+}
+
+.homepage .section.title {
+  background-color: unset;
+  margin-bottom: 3rem;
+}
+
+.banner {
+  height: 150px;
+}
+
+.homepage h2.section-title {
+  font-size: 2.6rem;
+}
+
+.homepage h3.subtitle {
+  font-size: 2rem;
+}
+
+.homepage .section.top {
+  width: 100%;
+  padding: 0.75rem;
+  margin: auto;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.homepage .top img {
+  height: unset !important;
+  max-height: 100%;
+}
+
+.homepage .top .card.medium {
+  height: 375px;
+}
+
+/* Event cards */
+
+.row.agenda {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container.event {
+  width: 100%;
+  max-width: unset;
+  padding: 0.75rem;
+}
+
+.event p {
+  line-height: 2rem;
+}
+
+.event.collapsible-header {
+  display: block;
+}
+
+.event .title {
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem !important;
+}
+
+.event .card-content .details {
+  padding-top: 0.8em;
+}
+
+.event .card-content {
+  padding-bottom: 1px;
+}
+
+.event .row .col.l4 {
+  margin-left: 0;
+}
+
+.event :before {
+  font-family: "Material Icons";
+  display: inline-block;
+  color: #455a64;
+  width: 1.5em;
+  vertical-align: bottom;
+}
+
+.event li:before {
+  margin-left: -1.5em;
+}
+
+.event .details ul {
+  list-style: none;
+}
+
+.event .details li {
+  padding-left: 1.5em;
+  margin-bottom: 0.5rem;
+}
+
+.event .date:before {
+  content: "event";
+}
+
+.event .date.today:before {
+  color: var(--teal);
+}
+
+.event .date.today {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.event .place:before {
+  content: "place";
+}
+
+.event .theme:before {
+  content: "mic";
+}
+
+.event .seminar:before {
+  content: "speaker_notes";
+}
+
+ul.events {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.event .card .card-action.button {
+  border-top: unset;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 16px;
+}
+
+.event .card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* Add a plain colored disk to category badges */
+
+.chip.category {
+  margin-bottom: 0;
+}
+
+.chip.category:before {
+  content: "fiber_manual_record";
+  font-family: "Material Icons";
+  font-size: 0.75rem;
+  padding-right: 0.5rem;
+}
+
+.chip.category.séminaire:before {
+  color: var(--teal);
+}
+
+.chip.category.conférence:before {
+  color: #e53935;
+}
+
+.chip.category.soutenance:before {
+  color: #3f51b5;
+}
+
+/* Set equal height for all cards */
+
+.event .card {
+  height: 94%;
+}
+
+/* Nav */
+
+.dropdown-content li>a, .dropdown-content li>span {
+  font-size: 0.9rem;
+}
+
+.sidenav .dropdown-content li>a {
+  display: inline-block;
+  width: 300px;
+  line-height: 32px;
+  margin-top: 1rem;
+}
+
+/* Footer */
+
+.page-footer .row {
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+
+/* Carousel */
+
+.homepage .news {
+  margin-top: 40px;
+}
+
+.homepage .carousel .indicators .indicator-item {
+  background-color: var(--teal-lighten-4);
+}
+
+.homepage .carousel .indicators .indicator-item.active {
+  background-color: var(--teal-darken-3);
+}
+
+.homepage .carousel.hide-on-med-and-up {
+  height: 425px;
+}
+
+.homepage .carousel.hide-on-med-and-up p {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.homepage .carousel.hide-on-med-and-up .btn-floating {
+  margin-left: 0.5rem;
+}
+
+.homepage .carousel.hide-on-small-only .carousel-item {
+  height: 80%;
+  width: 450px;
+}
+
+.homepage .carousel.hide-on-small-only .card-title {
+  font-weight: 500;
+}
+
+.homepage .carousel.hide-on-small-only .card-date {
+  margin-bottom: 1rem;
+}
+
+/* Pages */
+
+.container.text {
+  background-color: white;
+}
+
+.container.text, .container.container.toc {
+  max-width: 860px;
+}
+
+.container.text .section {
+  padding: 2rem 10% 2rem 10%;
+  text-align: justify;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+}
+
+.container.toc .row {
+  margin-top: 2rem;
+}
+
+.container.toc .col {
+  width: auto;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+}
+
+.container.toc .col a {
+  color: var(--teal-lighten-1);
+}
+
+@media only screen and (max-width: 601px) {
+  .container.text, .container.toc {
+    width: 100%;
+  }
+
+  .container.text .section {
+    padding: 2rem 5% 2rem 5%;
+  }
+}
+
+.container.text p, .container.text li {
+  text-align: justify;
+  line-height: 1.75rem;
+}
+
+.container.text li:not(.collection-item) {
+  list-style-type: initial;
+  margin-left: 2rem;
+}
+
+.container.text li:before {
+  text-indent: 1.25rem;
+}
+
+.container.text h2 {
+  margin-top: 3.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.container.text h2:first-of-type {
+  margin-top: 0rem;
+}
+
+/* All séminaires page */
+
+.container.séminaires {
+  max-width: 700px;
+}
+
+.séminaires a.collection-item * {
+  color: black;
+}
+
+.séminaires span.title {
+  font-size: 16px;
+}
+
+.collection .collection-item.séminaires {
+  min-height: 84px;
+  position: relative;
+  color: black;
+  padding: 2rem;
+}
+
+.collection .collection-item.séminaires:hover * {
+  color: black !important;
+}
+
+.collection .collection-item.séminaires:not(.circle-clipper)>.circle, .collection .collection-item.séminaires :not(.circle-clipper)>.circle {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.collection .collection-item.séminaires .title {
+  font-size: 16px;
+  margin-bottom: 1px;
+}
+
+.collection .collection-item.séminaires p.team:before {
+  content: "people";
+}
+
+.collection .collection-item.séminaires p.responsible:before {
+  content: "person";
+}
+
+.collection .collection-item.séminaires p.since:before {
+  content: "event";
+  color: grey;
+}
+
+.collection .collection-item.séminaires p.since {
+  color: grey;
+}
+
+.collection .collection-item.séminaires p {
+  margin: 0;
+}
+
+.collection .collection-item.séminaires .secondary-content {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+/* séminaire pages */
+
+.section.event .collapsible-header {
+  display: block;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.section.event .collapsible-header.hoverable:hover {
+  background-color: rgb(250, 250, 250);
+}
+
+.section.event .collapsible-body {
+  background-color: white;
+}
+
+.section.event .noabstract {
+  cursor: unset;
+}
+
+.collapsible-header span.date {
+  color: grey;
+}
+
+/* Conference pages */
+
+.collapsible .row {
+  margin-left: 0;
+}
+
+.collapsible .col {
+  padding: 0
+}
+
+.program .row {
+  margin-bottom: 0;
+}
+
+.program .row h5 {
+  margin-bottom: 1rem;
+}
+
+.program .row .content {
+  margin-bottom: 1rem;
+}
+
+.program span.affiliation {
+  font-size: 1rem;
+}
+
+.program .speaker {
+  font-weight: 600;
+}
+
+.container.conference {
+  max-width: 500px;
+}
+
+.container.conference .col {
+  margin-top: 1rem;
+}
+
+.fixed-action-btn.team {
+  top: 80px;
+}
+
+/* Actualités */
+
+.actu span.date {
+  color: darkgrey;
+}
+
+.actu h3.title .material-icons {
+  vertical-align: bottom;
+}
+
+.pagination li a {
+  font-size: 0.9rem;
+  color: var(--teal);
+}
+
+.pagination li.active {
+  background-color: var(--teal-lighten-1);
+}
+
+.section.event.program .collapsible-header.hoverable:hover {
+  background-color: rgb(250, 250, 250);
+}
+
+/* Recherche */
+
+.container.search {
+  max-width: fit-content;
+}
+
+form.search {
+  max-width: 175px;
+  margin: auto;
+}
+
+a.collection-item.lunr-search-result {
+  color: black;
+}
+
+.collection-item.lunr-search-result h3.title {
+  color: var(--teal);
+}
+
+.collection-item.lunr-search-result strong {
+  font-weight: bold;
+}
+
+/* Tabs */
+
+.tab {
+  max-width: 200px;
+}
+
+/* Accessibilité */
+
+/* Content for screen readers only
+from https://webaim.org/techniques/css/invisiblecontent/#techniques */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

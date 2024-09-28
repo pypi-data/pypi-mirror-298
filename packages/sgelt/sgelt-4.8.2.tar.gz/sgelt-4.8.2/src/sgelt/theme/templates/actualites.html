@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="section center title">
+  <div class="container">
+    <h1 class="header center teal-text">
+      {{ page.title }}
+    </h1>
+  </div>
+</div>
+
+
+<div class="container séminaires">
+  
+  <div class="section actu">
+    {% block section_actu %}
+    <div class="collection">
+      {% for actu in news | news_page %}
+      {% if actu.external %}
+      <a class="collection-item" href="{{ actu.href }}" target="_blank">
+      <h3 class="title teal-text">{{ actu.title }} <i class="material-icons teal-text" aria-hidden="true">open_in_new</i></h3>
+      {% else %}
+      <a class="collection-item" href="{{ actu.href | url }}">
+      <h3 class="title teal-text">{{ actu.title }}</h3>
+      {% endif %}
+      <p>{{ actu.chapo }}</p>
+      <p class="right-align"><span class="date">{{ actu.date.strftime("%-d %B %Y") }}</span></p>
+      </a>
+      {% endfor %}
+    </div>
+    {% endblock section_actu %}
+  </div>
+
+  {% if page.paginator %}
+  {{ macros.pagination(page.paginator, page.name) }}
+  {% endif %}
+
+</div>
+{% endblock content %}

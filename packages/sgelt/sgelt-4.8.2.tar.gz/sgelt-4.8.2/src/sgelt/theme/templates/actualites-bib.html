@@ -1,0 +1,13 @@
+{% extends "actualites.html" %}
+
+    {% block section_actu %}
+    <ul class="collection">
+      {% for news in libnews | news_page %}
+      <li class="collection-item" id="{{ news.slug }}">
+      <h3 class="title teal-text"><a href="#{{ news.slug }}">{{ news.title }}</a></h3>
+      <p>{{ news.text }}</p>
+      <p class="right-align"><span class="date">{{ news.date.strftime("%-d %B %Y") }}</span></p>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endblock section_actu %}

@@ -1,0 +1,14 @@
+{% extends "article.html" %}
+
+{% block fixed_action %}
+{% call macros.fixed_action('bottom-sheet', 'mic') %}
+<div class="collection with-header">
+  <div class="collection-header">
+    <h4>Séminaires réguliers organisés par l'équipe</h4>
+  </div>
+  {% for seminar in page.team_seminars %}
+  <a href="{{ seminar.html_path.as_posix() | url }}" class="collection-item">{{ seminar.type }} {{ seminar.title }}</a>
+  {% endfor %}
+</div>
+{% endcall %}
+{% endblock fixed_action %}

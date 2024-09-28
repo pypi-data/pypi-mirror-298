@@ -1,0 +1,6 @@
+# Include the README
+include README.md
+
+# Include the data files
+recursive-include src/sgelt/theme *
+include src/sgelt/py.typed

@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sgelt"
+authors = [
+    { name = "Matthieu Boileau", email = "matthieu.boileau@math.unistra.fr" },
+]
+description = "SGELT: Site GEnerator for Labs and Teams"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "bs4",
+    "datetimejson",
+    "icalendar==4.1.0",
+    "jinja2",
+    "livereload",
+    "markdown",
+    "markdown_link_attr_modifier",
+    "python-frontmatter",
+    "shortcodes",
+    "unidecode",
+    "watchdog",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+tests = [
+    "faker<20",
+    "freezegun",
+    "pytest",
+    "pytest-cov",
+    "pytest-xdist[psutil]",
+    "pytest-mock",
+]
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://gitlab.math.unistra.fr/irma/sgelt"
+
+[project.scripts]
+sgelt = "sgelt.main:main"
+
+[tool.setuptools]
+include-package-data = true
+license-files = ["LICENSE"]
+package-dir = { "" = "src" }
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.setuptools.dynamic.version]
+attr = "sgelt.__version__"
+
+[tool.setuptools.package-data]
+sgelt = ["py.typed", "sgelt/theme/*"]

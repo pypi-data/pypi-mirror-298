@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: sgelt
+Version: 4.8.2
+Summary: SGELT: Site GEnerator for Labs and Teams
+Author-email: Matthieu Boileau <matthieu.boileau@math.unistra.fr>
+License: MIT
+Project-URL: Homepage, https://gitlab.math.unistra.fr/irma/sgelt
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bs4
+Requires-Dist: datetimejson
+Requires-Dist: icalendar==4.1.0
+Requires-Dist: jinja2
+Requires-Dist: livereload
+Requires-Dist: markdown
+Requires-Dist: markdown_link_attr_modifier
+Requires-Dist: python-frontmatter
+Requires-Dist: shortcodes
+Requires-Dist: unidecode
+Requires-Dist: watchdog
+Provides-Extra: tests
+Requires-Dist: faker<20; extra == "tests"
+Requires-Dist: freezegun; extra == "tests"
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: pytest-cov; extra == "tests"
+Requires-Dist: pytest-xdist[psutil]; extra == "tests"
+Requires-Dist: pytest-mock; extra == "tests"
+
+# SGELT: Site GEnerator for Labs and Teams
+
+## Installation
+
+* Create a python virtual environment :
+
+```bash
+virtualenv .venv/
+```
+
+* Activate it
+
+```bash
+source .venv/bin/activate
+```
+
+* Install the package and its dependencies :
+
+```bash
+pip install sgelt --index-url https://gitlab.math.unistra.fr/api/v4/projects/653/packages/pypi/simple
+```
+
+## Build a website
+
+### Files organization
+
+* `config.yml` describes the site configuration
+* `content/` dir contains markdown files
+* `agenda.json` contains all events data
+* `teams.json` contains teams data
+
+### Edit content
+
+* setup configuration in `config.yml`
+* edit `content/` dir.
+* generate json data files
+
+### Build and serve
+
+To build all site files, run :
+
+```bash
+sgelt
+```
+
+in the project directory.
+Output files will be written in `output/` dir.
+
+### Build and serve
+
+To serve the website and rebuild automatically when the content has changed:
+
+```bash
+sgelt -a -s
+```
+
+To open the homepage in a web browser, add:
+
+```bash
+sgelt -a -s -b
+```
+
+### Get help with CLI
+
+```bash
+sgelt -h
+```
+
+## Tests
+
+### Run tests using tox
+
+Tox setup the appropriate environments and run tests using pytest:
+
+```bash
+pip install tox  # install tox
+tox  # run
+```
+
+### Run tests using pytest
+
+```bash
+pip install -e .[tests]  # install dependencies for tests
+pytest -sv tests/  # run tests
+```
