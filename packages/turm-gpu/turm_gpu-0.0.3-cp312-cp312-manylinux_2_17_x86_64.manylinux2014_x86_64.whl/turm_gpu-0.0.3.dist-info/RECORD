@@ -1,0 +1,5 @@
+turm_gpu-0.0.3.dist-info/METADATA,sha256=MZzJWek3pWE8t4l2JHwZio4SOOwZ7wEkm-bsCJz7i58,918
+turm_gpu-0.0.3.dist-info/WHEEL,sha256=9nMhkhjT5-smROE-lOgRy50zrYHdk-fRmS6ah4MLvkg,129
+turm_gpu/__init__.py,sha256=ZynlMFOrWOtZ__5_ezo18bhFMyxRZycWeaihA13nhXM,115
+turm_gpu/turm_gpu.cpython-312-x86_64-linux-gnu.so,sha256=PZ_ZdKwhifqrlQrchu4VgdM8clGUXjMry4RR77TtLCY,505520
+turm_gpu-0.0.3.dist-info/RECORD,,
