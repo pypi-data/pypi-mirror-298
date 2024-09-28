@@ -1,0 +1,4 @@
+returns>=0.20.0
+typing-extensions
+pydantic>=2.0.0
+networkx
