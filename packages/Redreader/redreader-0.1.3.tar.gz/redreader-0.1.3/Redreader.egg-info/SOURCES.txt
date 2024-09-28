@@ -1,0 +1,8 @@
+setup.py
+Redreader.egg-info/PKG-INFO
+Redreader.egg-info/SOURCES.txt
+Redreader.egg-info/dependency_links.txt
+Redreader.egg-info/requires.txt
+Redreader.egg-info/top_level.txt
+redditreader/__init__.py
+redditreader/redditreader.py
