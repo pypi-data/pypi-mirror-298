@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+clr_scrn/__init__.py
+clr_scrn/clear.py
+clr_scrn.egg-info/PKG-INFO
+clr_scrn.egg-info/SOURCES.txt
+clr_scrn.egg-info/dependency_links.txt
+clr_scrn.egg-info/top_level.txt
