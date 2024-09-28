@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: spiketraindist
+Version: 0.0.1
+Summary: Calculate spike train distances
+License: Unlicense
+Keywords: temporal coding,metric space,dynamic programming,neuroscience,Spike train
+Author: matrix-reloaded-zen
+Author-email: zen@example.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numba (>=0.60.0,<0.61.0)
+Requires-Dist: numpy (>=1.26.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# SpikeTrainDist
+
+SpikeTrainDist is a Python package for calculating spike train distances.
+This tool is designed for neuroscientists and researchers working with temporal coding and spike train analysis.
+
+## Features
+
+- Efficient implementation of the Victor-Purpura distance algorithm
+- Utilizes [Numba](https://numba.pydata.org/) for performance optimization
+- Supports various cost parameters, including special cases for spike count and infinite cost
+
+## Installation
+
+You can install SpikeTrainDist using pip:
+
+```bash
+pip install spiketraindist
+```
+
+## Usage
+
+Here's a quick example of how to use the Victor-Purpura distance function:
+
+```python
+import numpy as np
+from spiketraindist import victor_purpura_distance
+
+spike_train_a = np.array([0.1, 0.3, 0.5])
+spike_train_b = np.array([0.2, 0.4, 0.6])
+
+distance = victor_purpura_distance(spike_train_a, spike_train_b, cost=1.0)
+print(f"The Victor-Purpura distance is: {distance}")
+```
+
+## API Reference
+
+### `victor_purpura_distance(spike_train_a, spike_train_b, cost=1.0)`
+
+Computes the Victor-Purpura distance between two spike trains.
+
+Parameters:
+
+- `spike_train_a` (np.ndarray): The first spike train, represented as a 1D numpy array of spike times.
+- `spike_train_b` (np.ndarray): The second spike train, represented as a 1D numpy array of spike times.
+- `cost` (float, optional): The cost of shifting a spike in time. Default is 1.0.
+
+Returns:
+
+- `distance` (float): The Victor-Purpura distance between the two spike trains.
+
+## Development
+
+To set up the development environment:
+
+1. Clone the repository
+2. Install Poetry if you haven't already: `pip install poetry`
+3. Install dependencies: `poetry install`
+4. Activate the virtual environment: `poetry shell`
+
+### Running Tests
+
+To run the tests, use pytest:
+
+```bash
+pytest .
+```
+
+### Code Style
+
+This project uses Ruff for code linting. To check your code, run:
+
+```bash
+ruff check .
+```
+
+## License
+
+This project is licensed under the Unlicense - see the [LICENSE](LICENSE) file for details.
+
+## References
+
+1. J. D. Victor and K. P. Purpura, "Nature and precision of temporal coding in visual cortex: a metric-space analysis," Journal of Neurophysiology, vol. 76, no. 2. American Physiological Society, pp. 1310–1326, Aug. 01, 1996. doi: 10.1152/jn.1996.76.2.1310.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request or open an issue.
+

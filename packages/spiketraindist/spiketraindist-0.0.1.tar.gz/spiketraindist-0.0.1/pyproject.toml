@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "spiketraindist"
+version = "0.0.1"
+description = "Calculate spike train distances"
+authors = ["matrix-reloaded-zen <zen@example.com>"]
+license = "Unlicense"
+readme = "README.md"
+keywords = [
+    "temporal coding", "metric space", "dynamic programming", "neuroscience", "Spike train"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numba = "^0.60.0"
+numpy = "^1.26.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.2"
+pytest-cov = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
