@@ -1,0 +1,10 @@
+dataclass_documenter/__init__.py,sha256=8hNeYbXW_0bA9AlHl-e3n_V9UQouqc7553yXahxdcRk,134
+dataclass_documenter/dataclass_documenter.py,sha256=cLhew9VOyEvN3vqjKfH9YpEsiRmUecKXADUio7SH-O0,5278
+dataclass_documenter/main.py,sha256=zeiRX2R58uws6yazVMPnibpiD9UQM0v1Z4I3Qn0EHRk,3837
+dataclass_documenter/typing.py,sha256=HeUEWHHiYkyqBOPnFkjR_tX_Xytn2sXvDVGsTo2iZBY,1229
+dataclass_documenter/version.py,sha256=zlYoTdOaPt_-g5NItwgndx3CpmqLFXmGmuuiCQs5Mc8,273
+dataclass_documenter-2024.3.dist-info/METADATA,sha256=a3_cFTNggD-u5YPu--vEtMwl_AqM3lF3n_mUo7rmc2g,7016
+dataclass_documenter-2024.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+dataclass_documenter-2024.3.dist-info/entry_points.txt,sha256=5gAzGAVI20sYmfIbJgY3eieF5OzUTc_3YIt5mBLM2jU,76
+dataclass_documenter-2024.3.dist-info/licenses/LICENSE.txt,sha256=7ZVgA-N1yya8Qwzr9ZjpHrjE82k8WeK_bjdWVOm4qBk,1063
+dataclass_documenter-2024.3.dist-info/RECORD,,
