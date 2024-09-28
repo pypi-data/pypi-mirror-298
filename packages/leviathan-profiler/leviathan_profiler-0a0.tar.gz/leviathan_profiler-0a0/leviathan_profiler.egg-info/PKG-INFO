@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: leviathan-profiler
+Version: 0a0
+Summary: Genome-resolved taxonomic and pathway profiling
+Home-page: https://github.com/new-atlantis-labs/leviathan
+Author: Josh L. Espinoza
+Author-email: jolespin@newatlantis.io, jol.espinoz@gmail.com
+License: GNU AGPL_v3 License
+Requires-Dist: pathlib
+Requires-Dist: tqdm
+Requires-Dist: memory_profiler
+Requires-Dist: pandas
+Requires-Dist: pyfastx
+Requires-Dist: kegg_pathway_profiler>=2024.9.21
+Requires-Dist: networkx
+Requires-Dist: scipy

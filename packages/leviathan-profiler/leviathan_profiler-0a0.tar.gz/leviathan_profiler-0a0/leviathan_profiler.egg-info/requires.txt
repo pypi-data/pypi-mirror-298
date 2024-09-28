@@ -1,0 +1,8 @@
+pathlib
+tqdm
+memory_profiler
+pandas
+pyfastx
+kegg_pathway_profiler>=2024.9.21
+networkx
+scipy
