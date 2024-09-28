@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: packer.typed
+Version: 0.1.4
+Summary: A modern library that simplifies packing and unpacking to a whole other level.
+License: MIT License
+        
+        Copyright (c) 2024 biggus-developerus
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/biggus-developerus/packer.typed
+Project-URL: Bug Tracker, https://github.com/biggus-developerus/packer.typed/issues
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# packer.typed
+[![PyPI version](https://img.shields.io/pypi/v/packer.typed.svg?style=flat-square)](https://pypi.org/project/packer.typed/)
+[![Python versions](https://img.shields.io/pypi/pyversions/packer.typed.svg?style=flat-square)](https://pypi.org/project/packer.typed/)
+
+A modern library that simplifies packing and unpacking to a whole other level.
+
+## Usage
+### Basic Usage
+```py
+from packer import Int8, Pack
+from dataclasses import dataclass
+
+@packable
+@dataclass
+class SimpleStruct:
+    test1: Pack[Int8]
+    test2: Pack[Int8]
+
+test = SimpleStruct(1, 2)
+test.pack() # \x01\x02
+```
+### Creating & Using custom types
+```py
+from packer import TypeDescriptor, packable, Pack, OptionalPack
+from dataclasses import dataclass
+
+class LengthPrefixedStr(TypeDescriptor):
+    __data_size__: int = 2
+
+    @classmethod
+    def pack(cls, val: str) -> bytes:
+        return int.to_bytes(len((enc := val.encode())), 2, "little") + enc
+
+    @classmethod
+    def unpack(cls, data: bytearray) -> tuple[int, str]:
+        str_len = int.from_bytes(data[:2], "little")
+        return str_len + 2, data[2 : 2 + str_len].decode()
+
+
+@packable
+@dataclass
+class CustomTypesStruct:
+    test1: Pack[LengthPrefixedStr]
+    test2: OptionalPack[LengthPrefixedStr] = None
+
+test = CustomTypesStruct("hi")
+test.pack() # b"\x02\x00hi"
+
+test.test2 = "hi2"
+test.pack() #b"\x02\x00hi\x03\x00hi2"
+```
+
+## Notes
+#### If you're going to use this with a dataclass then be prepared to lose object attr typehints. A simple workaround is to declare object attributes with the types like the following:
+```py
+@packable
+@dataclass
+class SimpleStruct:
+    id: Pack[Int32] = 0
+    val: OptionalPack[Float] = None
+
+    def __post_init__(self) -> None:
+        self.id: int
+        self.val: float | None
+```
+---
