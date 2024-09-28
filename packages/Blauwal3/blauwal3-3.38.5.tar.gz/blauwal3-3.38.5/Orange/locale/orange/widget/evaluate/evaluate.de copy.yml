@@ -1,0 +1,239 @@
+ de:
+  package_label: "Bewerten"
+  package_desc: "Klassifikations-/Regressionsleistung bewerten."
+
+  common:
+    evaluation_result: "Bewertungsergebnisse"
+    calibrated_model: "Kalibriertes Modell"
+    predictor: "Prädiktoren"
+    prediction: "Vorhersagen"
+    test_data: "Testdaten"
+    selected_data: "Ausgewählte Daten"
+    data: "Daten"
+
+  owpermutationplot:
+    name: "Permutationsdiagramm"
+    desc: "Permutationsanalyse-Diagramm"
+    box_info: "Info"
+    box_set: "Einstellungen"
+    box_permutationsl: "Permutationen:"
+    box_label: "Korrelation zwischen ursprünglichem Y und permutiertem Y (%)"
+    grid_lable: "Gitterlinien"
+    show_grid_lable: "Anzeigen"
+    msg:
+      not_enough_data: "Mindestens %{n_fold} Instanzen sind erforderlich."
+      no_data_available: "Keine Daten verfügbar."
+
+  owcalibrationplot:
+    name: "Kalibrierungsdiagramm"
+    desc: "Kalibrierungsdiagramm basierend auf der Bewertung von Klassifikatoren."
+    row_target: "Ziel: "
+    checkbox_show_rug: "Rug anzeigen"
+    checkbox_fold_curves: "Kurven für einzelne Falten"
+    box_metric: "Metriken"
+    box_info: "Info"
+    row_model_calibration: "Ausgabemodellkalibrierung"
+    label:
+      predict_probability: "Vorhergesagte Wahrscheinlichkeit"
+      threshold_probability_as_positive: "Schwellenwert-Wahrscheinlichkeit zur Klassifizierung als positiv"
+      threshold: "<table><tr><th align='right'>Schwellenwert: p=</th><td colspan='4'>%.2f<br/></td></tr>"
+      threshold_text: "<table><tr><th align='right'>Schwellenwert:</th><td colspan='4'>p = %.2f<br/></td><tr/></tr>"
+      sens: "Sens"
+      spec: "Spec"
+      prec: "Prec"
+      recall: "Recall"
+      ppv: "PPV"
+      tpv: "TPV"
+      tpr: "TPR"
+      fpr: "FPR"
+    gbox:
+      calibration_curve: "Kalibrierungskurve"
+      class_accuracy: "Klassifikationsgenauigkeit"
+      f1: "F1"
+      sensitivity_specificity: "Sensitivität und Spezifität"
+      sensitivity_info: "<p><b>Sensitivität</b> (fallend) ist der Anteil korrekt erkannter positiver Instanzen (TP&nbsp;/&nbsp;P).</p><p><b>Spezifität</b> (steigend) ist der Anteil erkannter negativer Instanzen (TN&nbsp;/&nbsp;N).</p>"
+      precision_recall: "Präzision und Recall"
+      precision_recall_info: "<p><b>Präzision</b> (steigend) ist der Anteil der abgerufenen relevanten Instanzen, TP&nbsp;/&nbsp;(TP&nbsp;+&nbsp;FP).</p><p><b>Recall</b> (fallend) ist der Anteil der entdeckten relevanten Instanzen, TP&nbsp;/&nbsp;P.</p>"
+      predictive_pos_neg: "Positiver und negativer prädiktiver Wert"
+      predictive_pos_neg_info: "<p><b>Positiver prädiktiver Wert</b> (steigend) ist der Anteil korrekter Positiver, TP&nbsp;/&nbsp;(TP&nbsp;+&nbsp;FP).</p><p><b>Negativer prädiktiver Wert</b> ist der Anteil korrekter Negativer, TN&nbsp;/&nbsp;(TN&nbsp;+&nbsp;FN).</p>"
+      true_false_rate: "Wahre und falsche Positivrate"
+      true_false_rate_info: "<p><b>Wahre und falsche Positivrate</b> sind Anteile erkannter und ausgelassener positiver Instanzen</p>"
+      calibration_plot: "Kalibrierungsdiagramm"
+      class_calibration_plot: "Kalibrierungsdiagramm basierend auf der Bewertung von Klassifikatoren."
+    msg:
+      non_discrete_target: "Kalibrierungsdiagramm erfordert eine kategoriale Zielvariable."
+      empty_input: "Leeres Ergebnis als Eingabe. Nichts anzuzeigen."
+      nan_classes: "Testdateninstanzen mit unbekannten Klassen entfernen."
+      all_target_class: "Alle Dateninstanzen gehören zur Zielklasse."
+      no_target_class: "Keine Dateninstanzen gehören zur Zielklasse."
+      omitted_folds: "Testfalten, bei denen alle Daten zur (Nicht-)Zielklasse gehören, werden nicht angezeigt."
+      omitted_nan_prob_points: "Instanzen, für die das Modell keine Wahrscheinlichkeiten berechnen konnte, werden übersprungen."
+      no_valid_data: "Keine gültigen Daten für Modell(e) {}"
+      cannot_output: "Kann kein Modell ausgeben:  {}"
+      train_produces_different_model: "Jede Trainingsdatenauswahl erzeugt ein anderes Modell"
+      result_not_contain_model: "Testergebnisse enthalten keine gespeicherten Modelle - versuchen Sie, auf separaten Daten oder auf Trainingsdaten zu testen"
+      select_single_model: "Wählen Sie ein einzelnes Modell - das Widget kann nur eines ausgeben"
+      cannot_calibrate: "Kann nicht-kategoriale Klassen nicht kalibrieren"
+    report:
+      output_model_calibration: "Ausgabemodellkalibrierung"
+
+  owconfusionmatrix:
+    name: "Konfusionsmatrix"
+    desc: "Eine Konfusionsmatrix anzeigen, die aus den Ergebnissen der Klassifikatorbewertungen erstellt wurde."
+    box_output: 'Ausgabe'
+    label:
+      show: "Anzeigen: "
+      predicted: 'Vorhergesagt'
+      actual: 'Tatsächlich'
+      trbl: 'trbl'
+      actual_predicted: "tatsächlich: {}\n vorhergesagt: {}"
+      show_confusion_matrix: 'Konfusionsmatrix für {} (zeigt {})'
+    btn:
+      predictions: 'Vorhersagen'
+      probability: 'Wahrscheinlichkeiten'
+      select_correct: "Korrekte auswählen"
+      select_misclassified: "Fehlklassifizierte auswählen"
+      clear_selection: 'Auswahl löschen'
+    gbox:
+      number_instance: "Anzahl der Instanzen"
+      proportion_predicted: 'Anteil der vorhergesagten'
+      proportion_actual: "Anteil der tatsächlichen"
+    msg:
+      user_advice: "Durch Klicken auf Zellen oder in Kopfzeilen werden die entsprechenden Dateninstanzen ausgegeben"
+      no_regression: "Konfusionsmatrix kann keine Regressionsresultate anzeigen."
+      invalid_values: "Bewertungsergebnisseingabe enthält ungültige Werte"
+      empty_input: "Leeres Ergebnis als Eingabe. Nichts anzuzeigen."
+
+  owliftcurve:
+    name: "Leistungskurve"
+    lift: "Lift-Kurve"
+    cumulative: "Kumulative Gewinne"
+    pr: "Präzision Recall"
+    desc: "Eine Leistungskurve aus der Bewertung von Klassifikatoren erstellen und anzeigen."
+    box_curve: "Kurve"
+    box_model: "Modelle"
+    box_set: "Einstellungen"
+    checkbox_show_convex: "Lift-Konvexhülle anzeigen"
+    checkbox_show_threshold: "Schwellenwerte anzeigen"
+    checkbox_show_points: "Punkte anzeigen"
+    check_area: "Fläche unter der Kurve"
+    listbox_classifier_names: "classifier_names"
+    label_p_rate: "P-Rate"
+    label_recall: "Recall"
+    label_tp_rate: "TP-Rate"
+    label_pr_rate: "Präzision"
+    label_lift: "Lift"
+    label_target: "Ziel: "
+    msg_warn_undefined: "Einige Kurven sind undefiniert; überprüfen Sie Modelle und Daten"
+    msg_error_undefined: "Keine definierten Kurven; überprüfen Sie Modelle und Daten"
+    msg_output_model: "Kann kein Modell ausgeben: {}"
+    msg_array_dimensions: "Array-Dimensionen stimmen nicht überein"
+    report_target_class: "Zielklasse"
+    box:
+      plot: "Diagramm"
+
+  owpredictions:
+    name: "Vorhersagen"
+    desc: "Vorhersagen von Modellen für einen Eingabedatensatz anzeigen."
+    msg_empty_dataset: "Leerer Datensatz"
+    msg_model_predict_different_target: "Einige Modelle sagen ein anderes Ziel voraus (siehe mehr ...)\n{}"
+    msg_predictor_failed: "Einige Prädiktoren sind fehlgeschlagen (siehe mehr ...)\n{}"
+    msg_score_failed: "Einige Scorer sind fehlgeschlagen (siehe mehr ...)\n{}"
+    box_show_probability : "Wahrscheinlichkeiten anzeigen für"
+    btn_restore_original: "Ursprüngliche Reihenfolge wiederherstellen"
+    tooltip_original_row: "Zeilen in der ursprünglichen Reihenfolge anzeigen"
+    detail:
+      data: "Daten:<br>"
+      no_data: "Keine Daten als Eingabe."
+      model: "Modell: {number} Modell(e)"
+      fail: " ({} fehlgeschlagen)"
+      no_model: "Modell:<br>Kein Modell als Eingabe."
+    report:
+      show_probability: "<br>Zeigt Wahrscheinlichkeiten für: "
+      data_prediction: "Daten & Vorhersagen"
+
+  owrocanalysis:
+    name: "ROC-Analyse"
+    desc: "Die Receiver Operating Characteristics-Kurve basierend auf der Bewertung von Klassifikatoren anzeigen."
+    row_fp_cost: "FP-Kosten: "
+    row_fn_cost: "FN-Kosten: "
+    row_prior_probability: "Vorherige Wahrscheinlichkeit:"
+    label_fp_rate: "FP-Rate (1-Spezifität)"
+    label_tp_rate: "TP-Rate (Sensitivität)"
+    label_target: "Ziel"
+    msg:
+      some_roc_curves_undefined: "Einige ROC-Kurven sind undefiniert"
+      all_roc_curves_undefined: "Alle ROC-Kurven sind undefiniert"
+      thresholds: "Schwellenwerte:\n"
+    box:
+      plot: "Diagramm"
+      classifier: "Klassifikatoren"
+      curves: "Kurven"
+      analysis: "Analyse"
+    gbox:
+      merge_prediction: "Vorhersagen aus Falten zusammenführen"
+      mean_tp_rate: "Mittlere TP-Rate"
+      threshold_tp_fp: "Mittlere TP und FP bei Schwellenwert"
+      show_individual_curve: "Einzelne Kurven anzeigen"
+    checkbox:
+      show_roc_curve: "Konvexe ROC-Kurven anzeigen"
+      show_roc_convex_hull: "ROC-Konvexhülle anzeigen"
+      default_threshold: "Standard-Schwellenwert (0.5) Punkt"
+      show_performance_line: "Leistungslinie anzeigen"
+    report:
+      cost: "Kosten"
+      fp_fn: "FP = {}, FN = {}"
+      target_probability: "Zielwahrscheinlichkeit"
+
+  owtestandscore:
+    name: "Testen und Bewerten"
+    desc: "Kreuzvalidierungsgenauigkeitsschätzung."
+    tooltip_click_table: "Klicken Sie auf die Tabellenüberschrift, um die angezeigten Spalten auszuwählen"
+    tooltip_click_header: "click_header"
+    placeholder_average_class: "(Durchschnitt über Klassen)"
+    row_number_of_fold: "Anzahl der Falten:  "
+    checkbox_stratified: "Stratifiziert"
+    row_repeat_train: "Trainieren/Testen wiederholen:  "
+    row_train_set_size: "Größe des Trainingssatzes:  "
+    checkbox_negligible_difference: "Vernachlässigbarer Unterschied:  "
+    tooltip_table_show_probability: "<small>Die Tabelle zeigt die Wahrscheinlichkeiten, dass die Bewertung für das Modell in der Zeile höher ist als die des Modells in der Spalte. Kleine Zahlen zeigen die Wahrscheinlichkeit, dass der Unterschied vernachlässigbar ist.</small>"
+    msg:
+      test_data_empty: "Testdatensatz ist leer."
+      class_required_test: "Testdateneingabe erfordert eine Zielvariable."
+      too_many_folds: "Anzahl der Falten übersteigt die Datengröße"
+      class_inconsistent: "Test- und Trainingsdatensätze haben unterschiedliche Zielvariablen."
+      memory_error: "Nicht genügend Speicher."
+      test_data_incompatible: "Testdaten sind möglicherweise nicht mit Trainingsdaten kompatibel."
+      remove_unknown_target_value: "Instanzen mit unbekannten Zielwerten wurden aus{}Daten entfernt."
+      miss_test_data_input: "Fehlende separate Testdateneingabe."
+      some_score_not_computed: "Einige Bewertungen konnten nicht berechnet werden."
+      use_test_data: "Testdaten sind vorhanden, aber ungenutzt. Wählen Sie 'Auf Testdaten testen', um sie zu verwenden."
+      train_data_sampled: "Trainingsdaten wurden abgetastet"
+      test_data_sampled: "Testdaten wurden abgetastet"
+      test_match_train_data: "Testdaten wurden transformiert, um den Trainingsdaten zu entsprechen."
+      cant_stratify_numeric: "Stratifizierung wird für Regression ignoriert"
+      cant_stratify: "Kann keine stratifizierte {}-fache Kreuzvalidierung durchführen; die am wenigsten häufige Klasse hat nur {} Instanzen."
+      failed_with: "{name} ist mit Fehler fehlgeschlagen:\n {exc.__class__.__name__}: {exc!s}"
+    btn:
+      cross_validation: "Kreuzvalidierung"
+      feature_cross_validation: "Kreuzvalidierung nach Merkmal"
+      random_sampling: "Zufallsstichprobe"
+      leave_one_out: "Leave-One-Out"
+      train_data_test: "Auf Trainingsdaten testen"
+      test_data_test: "Auf Testdaten testen"
+    box:
+      sampling: "Stichproben"
+      model_comparison: "Modellvergleich"
+      evaluation_result: "Bewertungsergebnisse"
+      model_comparison_name: "Modellvergleich nach {}"
+    status:
+      wait: "Warten"
+      done: "Fertig"
+      cancel: "Abgebrochen"
+
+  utils:
+    header:
+      method: "Methode"
+      model: "Modell"
+      train_time: "Trainingszeit [s]"
+      test_time: "Testzeit [s]"

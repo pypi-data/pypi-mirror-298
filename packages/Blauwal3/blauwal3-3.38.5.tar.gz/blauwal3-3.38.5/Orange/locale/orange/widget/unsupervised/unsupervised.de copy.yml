@@ -1,0 +1,319 @@
+ de:
+  package_label: "Unüberwacht"
+  package_desc: "Unüberwachtes Lernen."
+
+  common:
+    data: "Daten"
+    coordinates: "Koordinaten"
+    select_data: "Ausgewählte Daten"
+    network: "Netzwerk"
+    transformed_data: "Transformierte Daten"
+    centroids: "Zentroiden"
+
+  owcorrespondence:
+    name: "Korrespondenzanalyse"
+    desc: "Korrespondenzanalyse für kategoriale multivariate Daten."
+    msg_empty_data: "Leerer Datensatz"
+    msg_no_disc_vars: "Keine kategorialen Daten"
+    box_axes: "Achsen"
+    box_y: "Achse Y"
+    box_x: "Achse X"
+    row_axis: "Achse 1:  {: .2f}\nAchse 2:  {: .2f}"
+    label_inertia: "Beitrag zur Trägheit"
+
+  owdbscan:
+    name: "DBSCAN"
+    desc: "Dichtebasierte räumliche Clusteranalyse."
+    msg_unique_data: "Nicht genügend eindeutige Dateninstanzen. Mindestens zwei sind erforderlich."
+    box_distance_metric: "Distanzmetrik"
+    row_core: "Kernpunktnachbarn"
+    row_neighborhood: "Nachbarschaftsdistanz"
+    x_axis_label: "Datenpunkte nach Score sortiert"
+    y_axis_label: "Distanz zum k-ten nächsten Nachbarn"
+    box_normalize_features: "Merkmale normalisieren"
+
+  owdistancefile:
+    name: "Distanzdatei"
+    desc: "Distanzen aus einer Datei lesen."
+    btn_browse: "Dokumentationsdatensätze durchsuchen"
+    dialog_open_file: "Distanzdatei öffnen"
+    info:
+      point: "{} Punkt(e), "
+      unlabelled: "unbeschriftet"
+      labelled: "beschriftet"
+    tip:
+      file: "Datei"
+      file_con: "Verzeichnis mit Dokumentationsdatensätzen nicht gefunden"
+      loading: "Lade '{}' aus dem aktuellen Verzeichnis."
+      nodata: "Keine Daten geladen."
+      nodata_error: "Ungültiges Dateiformat"
+      nodata_dueto: "Daten wurden aufgrund eines Fehlers nicht geladen."
+    report:
+      load_data: "Keine Daten wurden geladen."
+      file_name: "Dateiname"
+
+  owdistancemap:
+    name: "Distanzkarte"
+    desc: "Visualisierung einer Distanzmatrix."
+    err_empty_matrix: "Leere Distanzmatrix."
+    msg_cluster_order: "Clusterreihenfolge wurde deaktiviert, da die Eingabematrix zu groß ist"
+    msg_cluster: "Clustering wurde deaktiviert, da die Eingabematrix zu groß ist"
+    box:
+      element_sort: "Elementsortierung"
+      annotation: "Anmerkungen"
+      colors: "Farben"
+    gbox:
+      attribute_name: "Attributnamen"
+      name: "Name"
+      sorting: "Sortierung"
+      order_leave: "Clustering mit geordneten Blättern"
+
+  owdistancematrix:
+    name: "Distanzmatrix"
+    desc: "Distanzmatrix anzeigen."
+    gbox_label: "Beschriftungen: "
+    gbox_enumerate: "Nummerieren"
+    gbox_attribute_name: "Attributnamen"
+    annotations:
+      name: "Name"
+
+  owdistances:
+    name: "Distanzen"
+    desc: "Berechnung einer Matrix paarweiser Distanzen."
+    box_distances_between: "Distanzen zwischen"
+    box_distance_metric: "Distanzmetrik"
+    tooltip_influence_domain: "Alle Dimensionen werden (implizit) auf eine gemeinsame Skala skaliert, um den Einfluss über den Bereich zu normalisieren."
+    set_status_calculating: "Berechnung..."
+    msg:
+      no_numeric: "Keine numerischen Merkmale"
+      no_binary: "Keine binären Merkmale"
+      dense_data: "{} erfordert dichte Daten."
+      problem: "Problem bei der Berechnung: \n{}"
+      upto: "Mahalanobis verarbeitet bis zu 1000 {}."
+      ignoring_categorical: "Kategoriale Merkmale werden ignoriert"
+      ignoring_non-binary: "Nicht-binäre Merkmale werden ignoriert"
+      miss_value: "Fehlende Werte wurden imputiert"
+    row:
+      distances_between: "Distanzen zwischen"
+      normalized: "Normalisiert"
+
+  owdistancetransformation:
+    name: "Distanztransformation"
+    desc: "Transformation von Distanzen nach ausgewählten Kriterien."
+    box_normalization: "Normalisierung"
+    box_inversion: "Inversion"
+    row:
+      no_normalization: "Keine Normalisierung"
+      to_interval: "Zum Intervall "
+      sigmoid_function: "Sigmoidfunktion: 1/(1+exp(-X))"
+      no_inversion: "Keine Inversion"
+
+  owhierarchicalclustering:
+    name: "Hierarchisches Clustering"
+    desc: "Anzeige eines Dendrogramms eines hierarchischen Clusterings, das aus der Eingabedistanzmatrix erstellt wurde."
+    msg_distance_infinite: "Einige Distanzen sind unendlich"
+    row:
+      max_depth: "Maximale Tiefe:"
+      manual: "Manuell"
+      height_ratio: "Höhenverhältnis:"
+      top_N: "Top N:"
+    gbox:
+      single: "Einzeln"
+      average: "Durchschnitt"
+      weighted: "Gewichtet"
+      complete: "Komplett"
+      ward: "Ward"
+    box:
+      linkage: "Verknüpfung"
+      annotation: "Anmerkungen"
+      pruning: "Beschneidung"
+      selection: "Auswahl"
+      zoom: "Zoom"
+    report:
+      manual: "manuell"
+      linkage: "Verknüpfung"
+      annotation: "Anmerkung"
+      prunning: "Beschneidung"
+      selection: "Auswahl"
+
+  owkmeans:
+    name: "k-Means"
+    desc: "k-Means Clustering-Algorithmus mit Silhouetten-basierter Qualitätsbewertung."
+    label_rerun: "Neu ausführen: "
+    label_maximum_iterations: "Maximale Iterationen: "
+    msg:
+      clustering_failed: "Clustering fehlgeschlagen\nFehler: {}"
+      unique_data_little: "Zu wenige ({}) eindeutige Dateninstanzen für {} Cluster"
+      missing_features: "Daten fehlen Merkmale."
+      ignore_silhouette_scores: "Silhouettenwerte werden für >{} Proben nicht berechnet"
+    gbox:
+      initialize_KMeans: "Mit KMeans++ initialisieren"
+      random_initialization: "Zufällige Initialisierung"
+      random: "zufällig"
+    checkbox:
+      quantity_clusters: "Anzahl der Cluster"
+      normalize_columns: "Spalten normalisieren"
+    btn:
+      fixed: "Fest:"
+      from: "Von"
+      to: "bis"
+    box:
+      initialization: "Initialisierung"
+      silhouette_scores: "Silhouettenwerte"
+      preprocessing: "Vorverarbeitung"
+
+  owlouvainclustering:
+    name: "Louvain Clustering"
+    desc: "Erkennt Gemeinschaften in einem Netzwerk von nächsten Nachbarn."
+    msg_send_new_data: "Drücken Sie auf Commit, um Cluster neu zu berechnen und neue Daten zu senden"
+    msg_no_features: "Keine Merkmale in den Daten"
+    box_preprocessing: "Vorverarbeitung"
+    box_graph_parameters: "Graph-Parameter"
+    checkbox_normalize_data: "Daten normalisieren"
+    checkbox_apply: "PCA-Vorverarbeitung anwenden"
+    row_PCA_components: "PCA-Komponenten: "
+    row_resolution: "Auflösung"
+    row_resolution_tip: "Der Auflösungsparameter beeinflusst die Anzahl der zu findenden Cluster. Kleinere Werte neigen dazu, mehr Cluster zu erzeugen, und größere Werte finden weniger Cluster."
+    gbox:
+      distance_metric: "Distanzmetrik"
+      k_neighbors: "k Nachbarn"
+    label_text:
+      running: "Läuft..."
+      found_clusters: "%d Cluster gefunden."
+      clusters_not_run: "Clustering noch nicht ausgeführt."
+    set_status:
+      compute_PCA: "PCA berechnen..."
+      building_graph: "Graph aufbauen..."
+      detecting_communities: "Gemeinschaften erkennen..."
+
+  owmanifoldlearning:
+    name: "Mannigfaltigkeitslernen"
+    desc: "Nichtlineare Dimensionsreduktion."
+    btn_random: "Zufällig"
+    row:
+      metric: "Metrik:"
+      perplexity: "Perplexität:"
+      early_exaggeration: "Frühe Übertreibung:"
+      learning_rate: "Lernrate:"
+      max_iterations: "Maximale Iterationen:"
+      initialization: "Initialisierung:"
+      components: "Komponenten:"
+      max_iter: "Maximale Iterationen:"
+      neighbors: "Nachbarn:"
+      standard: "Standard"
+      modified: "Modifiziert"
+      hessian_eigenmap: "Hessische Eigenkarte"
+      local: "Lokal"
+      method: "Methode:"
+      nearest_neighbors: "Nächste Nachbarn"
+      rbf: "RBF-Kernel"
+      affinity: "Affinität:"
+    msg:
+      neighbors: "Für die gewählte Methode und Komponenten müssen die Nachbarn größer als {} sein"
+      not_supported: "Sparse-Daten werden nicht unterstützt."
+      insufficient_memory: "Nicht genügend Speicher"
+      embedding_error: "Getrennter Graph, Einbettung funktioniert möglicherweise nicht"
+
+  owmds:
+    set_status_running: "Läuft..."
+    name: "MDS"
+    desc: "Zweidimensionale Datenprojektion durch multidimensionale Skalierung, die aus einer Distanzmatrix erstellt wurde."
+    row_show_pairs: "Ähnliche Paare anzeigen:"
+    row_refresh: "Aktualisieren: "
+    gbox:
+      iteration: "Jede Iteration"
+      five_steps: "Alle 5 Schritte"
+      ten_steps: "Alle 10 Schritte"
+      twenty-five_steps: "Alle 25 Schritte"
+      fifty_steps: "Alle 50 Schritte"
+    msg:
+      input_data_line: "Eingabedaten benötigen mindestens 2 Zeilen"
+      input_matrix_format: "Eingabematrix muss mindestens 2x2 sein"
+      no_attributes: "Daten haben keine Attribute"
+      dimensions_error: "Daten- und Distanzdimensionen stimmen nicht überein."
+      insufficient_memory: "Nicht genügend Speicher"
+      optimization_error: "Fehler bei der Optimierung\n{}"
+    btn:
+      start: "Start"
+      jitter: "Jitter"
+      stop: "Stopp"
+
+  owpca:
+    name: "PCA"
+    desc: "Hauptkomponentenanalyse mit einem Scree-Diagramm."
+    checkbox_normalize_variables: "Variablen normalisieren"
+    msg:
+      component_trivial: "Alle Komponenten der PCA sind trivial (erklären 0 Varianz). Eingabedaten sind konstant (oder nahezu konstant)."
+      one_feature: "Mindestens 1 Merkmal ist erforderlich"
+      one_data_instance: "Mindestens 1 Dateninstanz ist erforderlich"
+      data_sampled: "Daten wurden abgetastet"
+    box:
+      components_selection: "Komponentenauswahl"
+      options: "Optionen"
+    row:
+      components: "Komponenten:"
+      explained_variance: "Erklärte Varianz:"
+      show_first: "Nur die ersten anzeigen"
+      principal_components: "Hauptkomponenten"
+      proportion_of_variance: "Varianzanteil"
+
+  owsavedistances:
+    name: "Distanzmatrix speichern"
+    desc: "Distanzmatrix in eine Ausgabedatei speichern."
+    file: "Distanzdatei (*.dst)"
+    msg_not_saved: "Daten, die mit {} verbunden sind, wurden nicht gespeichert."
+    msg_data_not_saved: "Verbundene Daten wurden nicht gespeichert."
+
+  owsom:
+    name: "Selbstorganisierende Karte"
+    desc: "Berechnung einer selbstorganisierenden Karte."
+    box_som: "SOM"
+    box_color: "Farbe"
+    tooltip_instances: "{} Instanzen"
+    btn_restart: "Neustart"
+    btn_stop: "Stopp"
+    btn_start: "Start"
+    checkbox_pie_charts: "Kreisdiagramme anzeigen"
+    checkbox_size_instances: "Größe nach Anzahl der Instanzen"
+    msg:
+      ignore_discrete_variables: "SOM ignoriert kategoriale Variablen."
+      undefined_value: "Einige Dateninstanzen haben einen undefinierten Wert von '{}'."
+      not_shown: "{} Dateninstanz{} mit undefiniertem Wert {} nicht angezeigt."
+      contains_numeric_column: "Daten enthalten eine einzelne numerische Spalte."
+      no_numeric_columns: "Daten enthalten keine numerischen Spalten."
+      rows_contain_undefined_value: "Alle Zeilen enthalten mindestens einen undefinierten Wert."
+    gbox:
+      hexagonal_grid: "Hexagonales Gitter"
+      square_grid: "Quadratisches Gitter"
+      set_dimensions: "Dimensionen automatisch festlegen"
+      initialize_PCA: "Mit PCA initialisieren"
+      random_initialization: "Zufällige Initialisierung"
+      replicable_random: "Replizierbarer Zufall"
+      same_color: "(Gleiche Farbe)"
+
+  owtsne:
+    name: "t-SNE"
+    desc: "Zweidimensionale Datenprojektion mit t-SNE."
+    checkbox_normalize_data: "Daten normalisieren"
+    tooltip_not_support: "Datennormalisierung wird bei Sparse-Matrizen nicht unterstützt."
+    state:
+      computing_PCA: "PCA berechnen..."
+      preparing_initialization: "Initialisierung vorbereiten..."
+      find_nearest_neighbors: "Nächste Nachbarn finden..."
+      running_optimization: "Optimierung läuft..."
+    msg:
+      modify_settings: "Die Parametereinstellungen wurden geändert. Drücken Sie \"Start\", um mit den neuen Einstellungen neu zu starten."
+      input_data_rows: "Eingabedaten benötigen mindestens 2 Zeilen"
+      input_data_attributes: "Eingabedaten benötigen mindestens 2 Attribute"
+      input_data_constant: "Eingabedaten sind konstant"
+      no_projection_error: "Keine Projektion aufgrund fehlender gültiger Daten"
+    row:
+      perplexity: "Perplexität:"
+      global_structure: "Globale Struktur bewahren"
+      exaggeration: "Übertreibung:"
+      components: "PCA-Komponenten:"
+    btn:
+      start: "Start"
+      stop: "Stopp"
+    box:
+      optimize: "Optimieren"
