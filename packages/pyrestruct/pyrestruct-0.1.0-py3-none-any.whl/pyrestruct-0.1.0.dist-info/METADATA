@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: pyrestruct
+Version: 0.1.0
+Summary: Packing and unpacking between bytes and classes
+Author-email: Nicolai Sommervold <nicolai.sommervold@gmail.com>
+License-File: LICENCE
+Requires-Python: >=3.11
+Provides-Extra: dev
+Requires-Dist: black~=24.3.0; extra == 'dev'
+Requires-Dist: pytest~=8.1.1; extra == 'dev'
+Description-Content-Type: text/x-rst
+
+# restruct
+
+Restruct is a python module
