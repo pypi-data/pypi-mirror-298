@@ -1,0 +1,4 @@
+include VERSION LICENSE README.md
+graft src
+graft python
+graft tests
