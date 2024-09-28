@@ -1,0 +1,13 @@
+sqliter/__init__.py,sha256=ECfn02OPmiMCQvRYbfizKFhVDk00xV-HV1s2cH9037I,244
+sqliter/constants.py,sha256=j0lE2cB1Uj8cNo40GGtCPdOR5asm-dHRDmGG0oyindA,1050
+sqliter/exceptions.py,sha256=56yDixGEkfC-OHPG-8t067xzJhspXXoxQWFU5jkU-1M,4794
+sqliter/helpers.py,sha256=75r4zMmGztVPm9_Bz3L1cSvBdx17uPEAnaggVhD70Pg,1138
+sqliter/sqliter.py,sha256=n3EtU0Lj9tJaIZicapz1l6L5ofpcpmozmQ7O3QQ977A,18741
+sqliter/model/__init__.py,sha256=GgULmKRn0Dq0Jz6LbHGPndS6GP3vd1uxI1KrEevofLs,237
+sqliter/model/model.py,sha256=rzmYEpv28fXnLV9yuApjHyUj7bL4lkHWUzv8GXkk3kQ,4901
+sqliter/query/__init__.py,sha256=MRajhjTPJqjbmmrwndVKj8vqMbK5-XufpwoIswQf5z4,239
+sqliter/query/query.py,sha256=iUJ1jdp1vWp5n77by2LKjxdl0-SWEA7T01Uk2_gHvZ8,23547
+sqliter_py-0.4.0.dist-info/METADATA,sha256=fmkuZ-W_ZBN7ycWuxnnxZ6FPcMe1DYRtdIBatG9otrI,7102
+sqliter_py-0.4.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+sqliter_py-0.4.0.dist-info/licenses/LICENSE.txt,sha256=-r4mvgoEWzkl1hPO5k8I_iMwJate7zDj8p_Fmn7dhVg,1078
+sqliter_py-0.4.0.dist-info/RECORD,,
