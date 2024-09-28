@@ -1,0 +1,2 @@
+[console_scripts]
+open-chain-telco-sbom-validator = openchain_telco_sbom_validator.cli:main
