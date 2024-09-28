@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: quantifyindia
+Version: 0.1
+Summary: A package for fetching real-time and historical stock data from NSE and Alpha Vantage
+Home-page: https://github.com/Parthchauh/quantifyindia
+Author: Parth Chauhan
+Author-email: cparth495@gmail.com
+Requires-Dist: nsetools
+Requires-Dist: requests
