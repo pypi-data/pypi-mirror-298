@@ -1,0 +1,26 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mol_robot_prompt_templates"
+version = "0.0.4"
+description = "Importable prompt templates for the MoL robot"
+readme = "README.md"
+authors = [{ name = "Robin Karlsson", email = "robin.karlsson0@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/robin-karlsson0/robot_prompt_templates"
+
+[project.scripts]
+robot_pt = "robot_pt.__main__:main"
