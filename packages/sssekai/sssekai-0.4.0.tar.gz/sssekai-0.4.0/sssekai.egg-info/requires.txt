@@ -1,0 +1,8 @@
+msgpack
+pycryptodome
+unitypy>=1.10.14
+wannacri
+python-json-logger
+tqdm
+coloredlogs
+requests
