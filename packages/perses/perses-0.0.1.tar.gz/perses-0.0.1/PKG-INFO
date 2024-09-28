@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: perses
+Version: 0.0.1
+Summary: Python tools to work with Perses
+Author: Vincent Primault
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: System :: Monitoring
+Classifier: Typing :: Typed
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/pvcnt/py-perses.git
+Project-URL: Issues, https://github.com/pvcnt/py-perses/issues
+Requires-Python: <3.13,>=3.10
+Requires-Dist: pydantic>=2.9.2
+Description-Content-Type: text/markdown
+
+# py-perses
+
+Python tools to work with [Perses](https://perses.dev/)
