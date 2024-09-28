@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/oslovision/__init__.py
+src/oslovision/client.py
+src/oslovision.egg-info/PKG-INFO
+src/oslovision.egg-info/SOURCES.txt
+src/oslovision.egg-info/dependency_links.txt
+src/oslovision.egg-info/requires.txt
+src/oslovision.egg-info/top_level.txt
+tests/test_client.py
