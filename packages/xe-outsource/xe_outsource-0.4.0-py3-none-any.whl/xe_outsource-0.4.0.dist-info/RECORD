@@ -1,0 +1,14 @@
+outsource/__init__.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+outsource/config.py,sha256=Z1wevDRQ4I-Em0bgYDa4h0zs-AmqRfwI4mcpXpoll1Y,14466
+outsource/scripts/submit.py,sha256=3wtkj5Gv10PZzctMhG1iNoyV3KVMKzFgQwKH18Ba7Kk,4330
+outsource/submitter.py,sha256=t4a9yTRYX7Y9I4qRK9RbyHtNBJwuaHunfvQCP0BAg6c,32887
+outsource/upload.py,sha256=4BnqDz_VQ2avQ91knUx4BIq2IoF_XurknTWu36Mmylg,1556
+outsource/utils.py,sha256=dlPxdghB8rIKDSSO6VMWM1k9qqKiEqV2YJLa0aCnkbg,5890
+outsource/workflow/combine-wrapper.sh,sha256=amgHos3yJjqhDcZH-Zq9s6YT-4N2j2MAlO829bAUzKI,2097
+outsource/workflow/combine.py,sha256=3ZEHkzSesJ10TeFNjsujiS6sqZoPTX9QT7LiNLhoIuI,4159
+outsource/workflow/process-wrapper.sh,sha256=0s-aV-M7AW7_rp9MoGA0RE4urx8A3bMb0_qacQfdFGQ,3371
+outsource/workflow/process.py,sha256=fse7TNBswcxiabv8ph7ekXqtnkQXIyXqnEanX-06quk,6823
+xe_outsource-0.4.0.dist-info/METADATA,sha256=nOARczy0KlEtya0q15TlqmFPBY9e9PYxvW78sAL9fYE,11948
+xe_outsource-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+xe_outsource-0.4.0.dist-info/entry_points.txt,sha256=PnpUZzJyVwR6UGRQlF92Ec6Vg5FNegjfKgFb0yw4ebY,59
+xe_outsource-0.4.0.dist-info/RECORD,,
