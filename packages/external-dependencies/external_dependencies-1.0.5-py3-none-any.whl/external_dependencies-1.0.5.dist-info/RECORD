@@ -1,0 +1,7 @@
+external_dependencies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+external_dependencies/cli.py,sha256=tiUAqGA2_kJ_OosBkalYtiZSsY9KFJw_3zo0Z6nQHIg,1342
+external_dependencies/utils.py,sha256=CII3wJt0ryqywr0BPSolxrCAHQhLvoAZs_Thj0QeIX4,2535
+external_dependencies-1.0.5.dist-info/METADATA,sha256=o4r6Tqz8DMiL_-KxYN1ZuzD1J9KnfDzSeQ6bDuA3haE,1915
+external_dependencies-1.0.5.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+external_dependencies-1.0.5.dist-info/entry_points.txt,sha256=dU2KxMYgeYxJj7RuOVvDhyRFG0b-U4TBY3f2OOIU6fs,72
+external_dependencies-1.0.5.dist-info/RECORD,,
