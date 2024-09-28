@@ -1,0 +1,7 @@
+mtds/__init__.py,sha256=Ahl4_sTJVSdCyANisQzGw9_rRZA8_zinohicE-ZBOys,91
+mtds/common/enums.py,sha256=RMvFY95kNvc7H8YOQ5rUp2W8yPcArZhj4O5GpJHoNqs,256
+mtds/mtds.py,sha256=dJWoLHwWKVFV720oQRvja1O_VomK_lubCDDdp-eFdPo,13541
+mtds/s3_client.py,sha256=3bHBLFKgDjLlkWBg81vFkSbeRiX7ZkEqL_NUTFX5YfE,584
+mtds-0.0.5.dist-info/METADATA,sha256=rg3C0Z76VJcYoxs4eGkjmb02jWu7XxYFgvNdUzsfuMA,744
+mtds-0.0.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mtds-0.0.5.dist-info/RECORD,,
