@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: alslack
+Version: 0.1
+Summary: Provides a Slack Notification client supports custom messages and forms part of the AL Notification Modules Suite.
+Home-page: https://al.co.za/
+Author: Autumn Leaf IT South Africa
+Author-email: george@al.co.za
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires: requests
+Requires: json
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: LICENSE.txt:Zone.Identifier
+
+Provides a Slack Notification client supports custom messages and forms part of the AL Notification Modules Suite.
+

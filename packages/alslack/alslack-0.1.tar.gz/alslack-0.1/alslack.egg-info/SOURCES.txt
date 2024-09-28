@@ -1,0 +1,11 @@
+LICENSE.txt
+LICENSE.txt:Zone.Identifier
+pyproject.toml
+setup.py
+alslack/__init__.py
+alslack/slack.py
+alslack.egg-info/PKG-INFO
+alslack.egg-info/SOURCES.txt
+alslack.egg-info/dependency_links.txt
+alslack.egg-info/top_level.txt
+test/test.py
