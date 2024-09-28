@@ -1,0 +1,17 @@
+requests>2.27.0
+dacite>=1.7.0
+
+[async]
+aiohttp
+
+[pydantic]
+pydantic>1.10.0
+
+[test]
+tox>=4
+pytest
+pytest-cov
+Pygments
+PyPDF4
+aiohttp
+pydantic>1.10.0
