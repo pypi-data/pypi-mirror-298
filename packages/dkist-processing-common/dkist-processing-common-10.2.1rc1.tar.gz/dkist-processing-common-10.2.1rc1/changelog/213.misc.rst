@@ -1,0 +1,1 @@
+Upgrade to dkist-processing-core 4.2.1 which patches a bug causing the doc builds to fail.
