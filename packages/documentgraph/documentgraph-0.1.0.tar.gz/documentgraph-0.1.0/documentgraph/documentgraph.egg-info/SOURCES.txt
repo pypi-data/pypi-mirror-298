@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+documentgraph/documentgraph.egg-info/PKG-INFO
+documentgraph/documentgraph.egg-info/SOURCES.txt
+documentgraph/documentgraph.egg-info/dependency_links.txt
+documentgraph/documentgraph.egg-info/entry_points.txt
+documentgraph/documentgraph.egg-info/requires.txt
+documentgraph/documentgraph.egg-info/top_level.txt
+tests/test_loading.py
+tests/test_transformation.py
