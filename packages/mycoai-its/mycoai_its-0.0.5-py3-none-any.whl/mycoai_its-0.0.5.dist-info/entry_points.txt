@@ -1,0 +1,5 @@
+[console_scripts]
+mycoai-classify = mycoai.scripts.classify:main
+mycoai-evaluate = mycoai.scripts.evaluate:main
+mycoai-map = mycoai.scripts.map:main
+mycoai-train = mycoai.scripts.train:main
