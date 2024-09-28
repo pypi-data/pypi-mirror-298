@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: DPConCFil
+Version: 0.0.1
+Summary: A collection of filament identification and analysis algorithms
+Home-page: https://github.com/JiangYuTS/DPConCFil
+Author: ['Jiang Yu']
+Author-email: yujiang@pmo.ac.cn
+Keywords: astrophysics,DPConCFil,filaments
