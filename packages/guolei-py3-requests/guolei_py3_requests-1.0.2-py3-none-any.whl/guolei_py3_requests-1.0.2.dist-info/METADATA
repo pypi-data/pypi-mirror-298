@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: guolei-py3-requests
+Version: 1.0.2
+Summary: a python3 library for requests by guolei
+Home-page: https://github.com/guolei19850528/guolei_py3_requests
+Author: guolei
+Author-email: 174000902@qq.com
+License: MIT
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: addict
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+Requires-Dist: xmltodict
+Requires-Dist: retrying
+Requires-Dist: jsonschema
+
+# guolei-py3-requests
+
+### a python3 library for requests by guolei
+
+# Example
+```python
+from guolei_py3_requests.library import (
+    request,
+    ResponseCallable
+)
+
+result = request(
+    response_callable=ResponseCallable.text,
+    method="GET",
+    url="your url"
+)
+```
