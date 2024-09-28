@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: lofi
+Version: 0.0.1
+Summary: Local Fast Inference of machine learning models
+Project-URL: Documentation, https://github.com/freddyaboulton/lofi#readme
+Project-URL: Issues, https://github.com/freddyaboulton/lofi/issues
+Project-URL: Source, https://github.com/freddyaboulton/lofi
+Author-email: freddyaboulton <alfonsoboulton@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# lofi
+
+[![PyPI - Version](https://img.shields.io/pypi/v/lofi.svg)](https://pypi.org/project/lofi)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/lofi.svg)](https://pypi.org/project/lofi)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install lofi
+```
+
+## License
+
+`lofi` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
