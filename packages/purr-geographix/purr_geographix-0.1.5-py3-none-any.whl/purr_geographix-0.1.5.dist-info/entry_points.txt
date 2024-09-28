@@ -1,0 +1,4 @@
+[console_scripts]
+prep-purr-geographix=purr_geographix.main:prep
+start-purr-geographix=purr_geographix.main:start
+
