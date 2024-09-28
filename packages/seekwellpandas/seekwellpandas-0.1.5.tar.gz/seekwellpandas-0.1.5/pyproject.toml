@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seekwellpandas"
+dynamic = ["version"]
+authors = [
+    {name = "Essi Parent", email = "9ivko1ozf@relay.firefox.com"},
+]
+description = "SQL queries on Pandas data frames"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas>=2.2.3",
+    "pandas-flavor>=0.6.0",
+]
+
+[tool.setuptools_scm]
+write_to = "src/seekwellpandas/_version.py"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["seekwellpandas*"]
+namespaces = false
+
+[project.urls]
+"Homepage" = "https://github.com/essicolo/seekwellpandas"
+"Bug Tracker" = "https://github.com/essicolo/seekwellpandas/issues"
+
+[tool.setuptools.dynamic]
+version = {attr = "seekwellpandas.__version__"}
