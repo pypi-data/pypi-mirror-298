@@ -1,0 +1,8 @@
+fonttools[lxml,type1,ufo,unicode,woff]>=4.17.0
+fontFeatures
+
+[script]
+ufoLib2
+
+[vfb]
+vfbLib>=0.7.1
