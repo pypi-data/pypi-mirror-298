@@ -1,0 +1,12 @@
+README.md
+setup.py
+amdsmi/LICENSE
+amdsmi/__init__.py
+amdsmi/amdsmi_exception.py
+amdsmi/amdsmi_interface.py
+amdsmi/amdsmi_wrapper.py
+amdsmi/rocm_smi_tool.py
+amdsmi.egg-info/PKG-INFO
+amdsmi.egg-info/SOURCES.txt
+amdsmi.egg-info/dependency_links.txt
+amdsmi.egg-info/top_level.txt
