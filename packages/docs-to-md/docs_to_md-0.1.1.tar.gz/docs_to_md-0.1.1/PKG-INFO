@@ -1,0 +1,41 @@
+Metadata-Version: 2.3
+Name: docs-to-md
+Version: 0.1.1
+Summary: Convert readthedocs to markdown
+Author-email: ackness <ackness8@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: click>=8.1.7
+Requires-Dist: httpx>=0.27.2
+Requires-Dist: lxml>=5.3.0
+Requires-Dist: openai>=1.50.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: setuptools>=75.1.0
+Requires-Dist: tqdm>=4.66.5
+Description-Content-Type: text/markdown
+
+# Docs-to-Markdown [D2M]
+
+Docs-to-Markdown is a tool to convert `readthedocs` project to `markdown`.
+
+# Usage
+
+```bash
+pip install docs-to-md
+```
+
+```bash
+d2m --url [target_url]
+```
+
+example:
+
+```bash
+# use jina api
+d2m -u https://example-sphinx-basic.readthedocs.io/en/latest/ -t saved/demo
+
+# use openai api
+# not recommend, seems like ollama reader-lm is not good enough compare to jina api
+# make sure you have installed `ollama` and run ollama with `ollama run reader-lm`
+d2m -u https://example-sphinx-basic.readthedocs.io/en/latest/ -t saved/demo-local -nj -a http://localhost:11434/v1 -m reader-lm
+```
