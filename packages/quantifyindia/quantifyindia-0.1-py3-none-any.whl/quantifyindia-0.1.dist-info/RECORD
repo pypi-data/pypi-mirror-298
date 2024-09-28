@@ -1,0 +1,9 @@
+quantifyindia/__init__.py,sha256=2bSq8NJ8uxMN-BvODVM065bzcMDb4KRaO8G3iN6XUDA,122
+quantifyindia/historical_data.py,sha256=xK9vsa2xb0vYBM4jQXGgJ8sW3-cASQrfxZdA-4PO-k4,654
+quantifyindia/nse_data.py,sha256=qalrLiT1MJX4xAHcnNo8Nln-_HDcmcOe7dWoA5lvl44,266
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_quantifyindia.py,sha256=2YnZkFyixc8lv4u4IdcPfkVw3TZ7luMFiM-3c9g-05o,510
+quantifyindia-0.1.dist-info/METADATA,sha256=3RzRNr_EcyGOowD-u1J0G0-m6imt9ZPoDA-Gr6EgbAI,320
+quantifyindia-0.1.dist-info/WHEEL,sha256=HiCZjzuy6Dw0hdX5R3LCFPDmFS4BWl8H-8W39XfmgX4,91
+quantifyindia-0.1.dist-info/top_level.txt,sha256=9V3bqgZSkMgpp92asb1iU1-f2CeikJBRpPdp8LY8H9I,20
+quantifyindia-0.1.dist-info/RECORD,,
