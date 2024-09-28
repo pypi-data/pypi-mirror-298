@@ -1,0 +1,14 @@
+django_assert_queries/__init__.py,sha256=GZZWxDA9r4aQDGmybD0okkHMCb4_Tdtg4csS3XMhbLU,1606
+django_assert_queries/_version.py,sha256=QEDphx4sXyuhLERQT5uW3_-0VFBjR7hJF6s2q3X_OJA,1577
+django_assert_queries/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_assert_queries/query_catcher.py,sha256=32tz2Es2kYPzDNF7V7k2UIZAtH4AvhgBX0sZRGBh-1s,13381
+django_assert_queries/query_comparator.py,sha256=DOsxAsK3Hd1LZDDY2vUL_dlP_mY3l_l5FDZqa7Dq5K8,40828
+django_assert_queries/testing.py,sha256=ZxBjKnBeF-51b1znBdbk7KpbWr7GEFLSbnczkhc3uxQ,6865
+django_assert_queries/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_assert_queries/tests/models.py,sha256=KrmKrrxeNZXQnTjrLNhnjW2XpgjRaMgRPkHMyrHMULg,863
+django_assert_queries/tests/test_query_catcher.py,sha256=ihGV1qxx36LwbzHak68jNzP4y63zHoomqtyzyP9cLD4,28649
+django_assert_queries/tests/test_query_comparator.py,sha256=y4UWBTZXwgoPO_6x4zsxIlpzJK0kAcAxF_6hz8mdtp4,48447
+django_assert_queries-1.0.dist-info/METADATA,sha256=FA1v7QacSmwjEgtpdgMibssvyMew528oZfqr16jezEg,7856
+django_assert_queries-1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+django_assert_queries-1.0.dist-info/top_level.txt,sha256=dVWD1XJRrDyO0KUbJld6V_9HEKRIZgkAUHs6GIhlt-g,22
+django_assert_queries-1.0.dist-info/RECORD,,
