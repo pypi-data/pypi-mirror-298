@@ -1,0 +1,4 @@
+spec:
+  inputs: {}
+---
+include: included.yml

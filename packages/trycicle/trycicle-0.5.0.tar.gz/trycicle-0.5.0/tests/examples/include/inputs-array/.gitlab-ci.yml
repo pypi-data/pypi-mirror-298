@@ -1,0 +1,3 @@
+# https://docs.gitlab.com/ee/ci/yaml/inputs.html#array-type
+image: test
+include: job.yml

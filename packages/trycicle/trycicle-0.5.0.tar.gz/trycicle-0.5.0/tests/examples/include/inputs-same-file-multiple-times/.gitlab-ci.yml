@@ -1,0 +1,10 @@
+# https://docs.gitlab.com/ee/ci/yaml/inputs.html#include-the-same-file-multiple-times
+include:
+  - local: my-super-linter.yml
+    inputs:
+      linter: docs
+      lint-path: "doc/"
+  - local: my-super-linter.yml
+    inputs:
+      linter: yaml
+      lint-path: "data/yaml/"

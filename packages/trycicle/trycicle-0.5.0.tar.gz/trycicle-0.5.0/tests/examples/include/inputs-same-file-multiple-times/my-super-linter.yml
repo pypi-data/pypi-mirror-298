@@ -1,0 +1,7 @@
+spec:
+  inputs:
+    linter:
+    lint-path:
+---
+"run-$[[ inputs.linter ]]-lint":
+  script: ./lint --$[[ inputs.linter ]] --path=$[[ inputs.lint-path ]]
