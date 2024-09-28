@@ -1,0 +1,7 @@
+{% load helpers %}
+
+{% if object and object != "none" %}
+    <span>{{object|linkify}}</span>
+{% else %}
+    {% include 'sop_voice/tools/badge.html' %}
+{% endif %}
