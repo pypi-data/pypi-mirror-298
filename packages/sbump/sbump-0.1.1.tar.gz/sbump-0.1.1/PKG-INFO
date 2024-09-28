@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: sbump
+Version: 0.1.1
+Summary: SimpleBump, bump a static project.version in pyproject.toml, no config, no hassle
+Requires-Python: >=3.11
+Requires-Dist: click>=8.1.7
+Requires-Dist: semver>=3.0.2
+Requires-Dist: tomlkit>=0.13.2
+Description-Content-Type: text/markdown
+
+# SimpleBump
+
+Bump a static project.version in pyproject.toml, no config, no hassle. This tool exists because every other tool requires a config or tries to do too much. This one does not.
+
+- The current version is read from pyproject.toml, only a static version is supported intentionally.
+- Without flags the current version is displayed.
+- If a semver fragment is provided as an argument, that segment is incremented.
+- The new version is written back to pyproject.toml, and nowhere else.
