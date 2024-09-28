@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: nomad-schema-plugin-run
+Version: 1.0.2
+Summary: Run schema plugin for NOMAD.
+Author: The NOMAD Authors
+License: Apache-2.0
+Project-URL: homepage, https://github.com/nomad-coe/nomad-schema-plugin-run.git
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nomad-lab >=1.3.6.dev1
+Provides-Extra: dev
+Requires-Dist: mypy ==1.0.1 ; extra == 'dev'
+Requires-Dist: pytest ==3.10.0 ; extra == 'dev'
+Requires-Dist: pytest-timeout ==1.4.2 ; extra == 'dev'
+Requires-Dist: pytest-cov ==2.7.1 ; extra == 'dev'
+Requires-Dist: ruff ==0.1.4 ; extra == 'dev'
+
+[![DOI](https://zenodo.org/badge/727786061.svg)](https://zenodo.org/badge/latestdoi/727786061)
+
+Schema definition for run section in NOMAD.
+
+## How to cite this work
+Ladines, A.N., Daelman, N., Ghiringhelli, L.M., Pizarro, J.M. Rudzinski, J.F., & Scheidgen, M. NOMAD Schema Plugin Run [Computer software]. https://zenodo.org/doi/xxx
