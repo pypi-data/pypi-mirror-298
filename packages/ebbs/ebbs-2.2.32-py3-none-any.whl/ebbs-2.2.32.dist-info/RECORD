@@ -1,0 +1,10 @@
+ebbs/__init__.py,sha256=tkD6LbAOkDtXqcPAvP57Ud_7DACS8Fj2AqeCoXtFnQE,57
+ebbs/__main__.py,sha256=Tdmm88wLnKxuKmA5vbur1u3de7vp_IeFhRFF7ldK4hQ,57
+ebbs/ebbs.py,sha256=l9xHIpvvgnAwDl4fSLVFDtQ3eV3B9BFzmxOxewtb_O8,15796
+ebbs/build/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ebbs/build/build_default.py,sha256=8Hp4FetUBnPZf-yaorCw6hDpipXop3Eq0_IU24YwVcU,438
+ebbs-2.2.32.dist-info/METADATA,sha256=4xNGZQ68lEa04-QUgK4nGr99anh0sRzS7pCbMarlTAA,17726
+ebbs-2.2.32.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ebbs-2.2.32.dist-info/entry_points.txt,sha256=CLjciVaAlSjpkuadnC-ZYJal4U6Y0Bho4UuNi5nkgnA,35
+ebbs-2.2.32.dist-info/top_level.txt,sha256=mah9YkyHMNrSnGm2jRIrSM-jm5V7AhPE05kMtpbmmHI,5
+ebbs-2.2.32.dist-info/RECORD,,
