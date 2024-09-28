@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<odoo>
+    <data noupdate="1">
+        <record id="fleet_vehicle_maximum_battery_charge_74" model="fleet.vehicle.battery.maximum.charge">
+            <field name="maximum_charge" eval="7.4"/>
+        </record>
+        <record id="fleet_vehicle_maximum_battery_charge_11" model="fleet.vehicle.battery.maximum.charge">
+            <field name="maximum_charge" eval="11"/>
+        </record>
+        <record id="fleet_vehicle_maximum_battery_charge_22" model="fleet.vehicle.battery.maximum.charge">
+            <field name="maximum_charge" eval="22"/>
+        </record>
+    </data>
+</odoo>

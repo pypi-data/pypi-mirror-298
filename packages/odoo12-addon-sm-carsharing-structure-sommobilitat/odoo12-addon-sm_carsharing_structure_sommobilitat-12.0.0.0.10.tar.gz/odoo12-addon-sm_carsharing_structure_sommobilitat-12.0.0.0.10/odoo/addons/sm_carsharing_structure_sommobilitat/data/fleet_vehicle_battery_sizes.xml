@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<odoo>
+    <data noupdate="1">
+        <record id="fleet_vehicle_battery_22" model="fleet.vehicle.battery.size">
+            <field name="battery_size" eval="22"/>
+        </record>
+        <record id="fleet_vehicle_battery_28" model="fleet.vehicle.battery.size">
+            <field name="battery_size" eval="28"/>
+        </record>
+        <record id="fleet_vehicle_battery_33" model="fleet.vehicle.battery.size">
+            <field name="battery_size" eval="33"/>
+        </record>
+        <record id="fleet_vehicle_battery_41" model="fleet.vehicle.battery.size">
+            <field name="battery_size" eval="41"/>
+        </record>
+        <record id="fleet_vehicle_battery_52" model="fleet.vehicle.battery.size">
+            <field name="battery_size" eval="52"/>
+        </record>
+        <record id="fleet_vehicle_battery_60" model="fleet.vehicle.battery.size">
+            <field name="battery_size" eval="60"/>
+        </record>
+        <record id="fleet_vehicle_battery_64" model="fleet.vehicle.battery.size">
+            <field name="battery_size" eval="64"/>
+        </record>
+        <record id="fleet_vehicle_battery_75" model="fleet.vehicle.battery.size">
+            <field name="battery_size" eval="75"/>
+        </record>
+    </data>
+</odoo>

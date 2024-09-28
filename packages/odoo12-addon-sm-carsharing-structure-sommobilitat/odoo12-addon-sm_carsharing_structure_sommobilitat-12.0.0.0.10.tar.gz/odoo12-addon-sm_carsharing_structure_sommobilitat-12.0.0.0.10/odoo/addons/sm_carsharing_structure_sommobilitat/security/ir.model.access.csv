@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_car_battery_type,sommobilitat.battery.size,model_fleet_vehicle_battery_size,,1,1,1,1
+access_car_battery_maximum_charge,sommobilitat.battery.maximum.charge,model_fleet_vehicle_battery_maximum_charge,,1,1,1,1
