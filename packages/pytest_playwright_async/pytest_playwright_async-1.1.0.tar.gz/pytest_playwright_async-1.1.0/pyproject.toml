@@ -1,0 +1,81 @@
+[project]
+name = "pytest_playwright_async"
+version = "1.1.0"
+requires-python = ">=3.8"
+dependencies = [
+    # https://pypi.org/project/pytest-playwright/
+    # https://github.com/microsoft/playwright-pytest/blob/v0.5.0/pytest_playwright/pytest_playwright.py
+    "pytest-playwright>=0.5.2", # https://github.com/microsoft/playwright-pytest/pull/236/files#diff-51d99e132c467c9f729b6b633a15ce5444e52872456e8e551146e0c87a694d31R582
+    # https://github.com/microsoft/playwright-python/blob/main/local-requirements.txt
+]
+description = "ASYNC Pytest plugin for Playwright"
+license = { text = "MIT" }
+readme = "README.md"
+
+[project.entry-points.pytest11]
+playwright_async = "pytest_playwright_async.pytest_playwright_async"
+
+[project.urls]
+Homepage = "https://github.com/m9810223/playwright-async-pytest"
+Source = "https://github.com/m9810223/playwright-async-pytest"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest",
+    "ipython<8.13.1",
+    "anyio<4.6.0",
+    "nest-asyncio",
+    "uvloop",
+]
+
+[tool.pdm.scripts]
+test = "pytest"
+
+[tool.semantic_release]
+# https://python-semantic-release.readthedocs.io/en/latest/configuration.html
+version_toml = ["pyproject.toml:project.version"]
+version_variables = ["src/pytest_playwright_async/__version__.py:VERSION"]
+
+[tool.black]
+# https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html
+line-length = 100
+skip-string-normalization = true
+
+[tool.ruff]
+line-length = 100
+fix = true
+show-fixes = true
+output-format = "full"
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint]
+extend-select = [
+    "W", # pycodestyle Warning
+    "I", # isort
+    "N", # pep8-naming
+    "S", # flake8-bandit
+    # "PTH", # flake8-use-pathlib
+    "PGH", # pygrep-hooks
+    "TRY", # tryceratops
+]
+ignore = [
+    "S101", # Use of `assert` detected
+]
+
+[tool.ruff.lint.isort]
+# https://beta.ruff.rs/docs/settings/#isort
+lines-after-imports = 2
+force-single-line = true
+force-sort-within-sections = true
+known-local-folder = []
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+addopts = "--exitfirst --failed-first -r fEsxXp --disable-warnings --showlocals --tb=short"
