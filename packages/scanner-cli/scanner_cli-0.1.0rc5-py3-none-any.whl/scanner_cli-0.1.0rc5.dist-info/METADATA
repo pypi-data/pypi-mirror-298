@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: scanner-cli
+Version: 0.1.0rc5
+Summary: Python command-line interface for Scanner API
+Author: Scanner, Inc.
+Author-email: support@scanner.dev
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: scanner-client (==0.1.0rc5)
+Description-Content-Type: text/markdown
+
+# scanner-cli
+
+This is a Python CLI for the Scanner API.
+
+## Usage
+
+To install the CLI, run
+
+```
+pip install scanner-cli
+```
+
+You will need to provide the API URL of your Scanner instance and an API key. Go
+to **Settings > API Keys** to find your API URL and API key.
+
+You can either set these values as environment variables:
+
+```
+export SCANNER_API_URL=<Scanner API URL>
+export SCANNER_API_KEY=<Scanner API key>
+```
+
+or provide them as arguments to the CLI:
+
+```
+scanner-cli <command> --api-url=<Scanner API URL> --api-key=<Scanner API key>
+```
+
+## Commands
+
+Available commands are
+- `run-tests` - run tests on detection rules as code
+- `validate` - validate detection rules as code
+
+To validate or run tests on files:
+
+```
+scanner-cli <command> -f detections/errors.yaml -f detections/unauthorized_logins.yaml
+```
+
+To validate or run tests on directories:
+
+```
+scanner-cli <command> -d detections
+```
+
+This will only validate or run tests on YAML files with the correct schema header.
+
+A file or directory must be provided. Multiple files and/or directories can be provided.
+
