@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: forge-crucible
+Version: 0.1.7
+Summary: TUI for running interacting with Foundry's Forge Tests.
+Home-page: https://github.com/bowd/forge-crucible
+License: MIT
+Author: bogdan
+Author-email: bogdan@bowd.io
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pyparsing (>=3.1.4,<4.0.0)
+Requires-Dist: pyperclip (>=1.9.0,<2.0.0)
+Requires-Dist: rapidfuzz (>=3.10.0,<4.0.0)
+Requires-Dist: textual (>=0.77.0,<0.78.0)
+Requires-Dist: textual-autocomplete (>=3.0.0a9,<4.0.0)
+Project-URL: Repository, https://github.com/bowd/forge-crucible
+Description-Content-Type: text/markdown
+
+
