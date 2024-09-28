@@ -1,0 +1,23 @@
+
+# make spellcheck-sort
+# Please keep this file sorted:
+# SPDX-License-Identifier: Apache-2.0
+Backport
+backported
+benchmarking
+codebase
+dr
+eval
+gpt
+hoc
+instructlab
+jsonl
+justfile
+MMLU
+openai
+SDG
+Tatsu
+tl
+TODO
+venv
+vllm
