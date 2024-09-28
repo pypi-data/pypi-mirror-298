@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: espn_hidden_api
+Version: 0.0.5
+Summary: Retrieve ESPN hidden api endpoints in a cleaned format
+Author: peepei
+Author-email: 
+Keywords: python,api,espn
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: requests
+
+
+import with "import espn_hidden_api"
+
+current functions:
+
+tester1() #returns "tester1"
+tester2() #returns "tester2"
+
+Under construction, nt ready for use 
+
+Developed by Justin He
