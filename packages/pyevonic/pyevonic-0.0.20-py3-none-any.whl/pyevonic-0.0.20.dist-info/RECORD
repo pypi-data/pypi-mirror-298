@@ -1,0 +1,8 @@
+pyevonic/__init__.py,sha256=43mUV0vyzHHvPh_IPn6-HHq5kOcLYNWhDvCXPKSQYoQ,266
+pyevonic/evonic.py,sha256=3lYOAixnPVawdH4rUkgV3WEnWAFsDWBbv_LL3PJUO_U,15784
+pyevonic/exceptions.py,sha256=OJq-MfWGlIxhHINKyJyFXrxMhl5xybv552mW1fglL4Q,480
+pyevonic/models.py,sha256=xdNz97wBV_kDTe4JOGlo4YSpoFzC1Gbke2CwRGw9rtY,5387
+pyevonic-0.0.20.dist-info/METADATA,sha256=amrG3DgkHX6QJyeR6j6Zhk6fWU8Z0MhzO6o58qSA_Tc,2086
+pyevonic-0.0.20.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pyevonic-0.0.20.dist-info/top_level.txt,sha256=BL2ItOpwAr85nwnH4WY5fuldTx0n1CYeF4FeufagZ-c,9
+pyevonic-0.0.20.dist-info/RECORD,,
