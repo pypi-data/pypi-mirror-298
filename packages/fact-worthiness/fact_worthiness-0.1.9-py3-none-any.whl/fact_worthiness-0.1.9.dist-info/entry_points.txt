@@ -1,0 +1,2 @@
+[console_scripts]
+fact_check = src.fact_worthiness.fact_worthy:vote_on_worthiness

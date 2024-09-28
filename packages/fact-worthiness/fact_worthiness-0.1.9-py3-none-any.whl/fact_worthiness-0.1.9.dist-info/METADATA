@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fact-worthiness
+Version: 0.1.9
+Summary: A fact-checking project with multi-module, multi-model structure
+Author: Tauseef Ahmed
+Author-email: tauseefahmed.tam@gmail.com
+Requires-Python: >=3.11
+Requires-Dist: loguru (==0.7.2)
+Requires-Dist: numpy (==1.26.4)
+Requires-Dist: onnxruntime (==1.19.2)
+Requires-Dist: PyYAML (==6.0.2)
+Requires-Dist: setuptools (==72.1.0)
+Requires-Dist: apache-beam (==2.59.0)
+Requires-Dist: textblob (==0.18.0.post0)
+Requires-Dist: tokenizers
+
