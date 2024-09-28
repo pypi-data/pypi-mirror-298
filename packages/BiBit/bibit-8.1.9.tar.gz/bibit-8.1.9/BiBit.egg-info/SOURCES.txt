@@ -1,0 +1,9 @@
+LICENSE.txt
+setup.py
+BiBit.egg-info/PKG-INFO
+BiBit.egg-info/SOURCES.txt
+BiBit.egg-info/dependency_links.txt
+BiBit.egg-info/entry_points.txt
+BiBit.egg-info/top_level.txt
+BitBit/BitBit.py
+BitBit/__init__.py

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: BiBit
+Version: 8.1.9
+Summary: A brief description of your package.
+Home-page: https://github.com/yourusername/BiBit
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Title
+description
+## Heading 2
+
+- **BOLD TEXT**: description
+
+## Installation
+
+
+
+## Usage
+## Functions
+### Funtion(parameter)
