@@ -1,0 +1,66 @@
+{% extends "dcim/site.html" %}
+{% load static %}
+{% load helpers %}
+{% load buttons %}
+{% load i18n %}
+
+
+<!--
+    __________________________
+    add extra controls buttons
+-->
+{% block extra_controls %}
+    <a href="{% url 'plugins:sop_voice:voicesda_add' %}" type="button" class="btn btn-primary">
+      <i class="mdi mdi-plus-thick"></i>{% trans "Add DIDs" %}</a>
+    <a href="{% url 'plugins:sop_voice:voicesda_import' %}" type="button" class="btn btn-cyan">
+        <i class="mdi mdi-upload"></i> {% trans "Import DIDs" %}</a>
+    <a href="{% url 'plugins:sop_voice:voicedelivery_add' %}" type="button" class="btn btn-primary">
+      <i class="mdi mdi-plus-thick"></i>{% trans "Add voice deliveries" %}</a>
+{% endblock extra_controls %}
+
+
+<!--
+    ________________________________
+    displays all voice models tables
+    using sop_voice/tools/table.html
+    and sop_voice/tab/*.html
+-->
+{% block content %}
+
+<div class="row">
+    <div class="col-md-6">
+        {% include 'sop_voice/tab/site_info.html' with object=context.site_info site=object %}
+    </div>
+    <div class="col-md-12">
+        {% include 'sop_voice/tools/table.html' with object=context.delivery reversed_url='plugins:sop_voice:voicedelivery_add' pk=object.id%}
+        {% include 'sop_voice/tools/table.html' with object=context.sda reversed_url='plugins:sop_voice:voicesda_add' pk=object.id %}
+    </div>
+</div>
+
+<!--
+    ____________________________________________________
+    load my scripts for tab
+-->
+<script>
+document.addEventListener('DOMContentLoaded', function ()
+{
+    const all_tabs = document.querySelectorAll('ul.nav.nav-tabs li.nav-item a');
+    update_current_tab_color(all_tabs, "Voice");
+
+    /*
+    * update tab front background color
+    */
+    function update_current_tab_color(all_tabs, name)
+    {
+        all_tabs.forEach(tab => {
+            if (tab.innerText == "Site") {
+                tab.classList.remove('active');
+            } else if (tab.innerText.split(' ')[0] == name) {
+                tab.classList.add('active');
+            }
+        });
+    }
+});
+</script>
+
+{% endblock content %}
