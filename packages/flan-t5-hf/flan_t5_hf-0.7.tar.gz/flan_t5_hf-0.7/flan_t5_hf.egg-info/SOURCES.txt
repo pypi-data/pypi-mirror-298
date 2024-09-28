@@ -1,0 +1,8 @@
+README.md
+setup.py
+flan_t5_hf/__init__.py
+flan_t5_hf/text_generator.py
+flan_t5_hf.egg-info/PKG-INFO
+flan_t5_hf.egg-info/SOURCES.txt
+flan_t5_hf.egg-info/dependency_links.txt
+flan_t5_hf.egg-info/top_level.txt
