@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "poetry-plugin-i"
+version = "0.1.0"
+description = "Poetry plugin to support `poetry i` as shortcut of `poetry install`"
+authors = ["Waket Zheng <waketzheng@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/waketzheng/poetry-dotenv-i"
+repository = "https://github.com/waketzheng/poetry-dotenv-i"
+keywords = ["poetry", "poetry-plugin", "plugin", "shortcut", "install"]
+classifiers = [
+    "Topic :: Software Development",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+poetry = ">=1.8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."poetry.application.plugin"]
+poetry-plugin-i = "poetry_plugin_i.i_plugin:CustomPlugin"

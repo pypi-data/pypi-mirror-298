@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: poetry-plugin-i
+Version: 0.1.0
+Summary: Poetry plugin to support `poetry i` as shortcut of `poetry install`
+Home-page: https://github.com/waketzheng/poetry-dotenv-i
+Keywords: poetry,poetry-plugin,plugin,shortcut,install
+Author: Waket Zheng
+Author-email: waketzheng@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Dist: poetry (>=1.8.0)
+Project-URL: Repository, https://github.com/waketzheng/poetry-dotenv-i
+Description-Content-Type: text/markdown
+
+# Poetry Plugin I
+
+[![CI](https://github.com/waketzheng/poetry-plugin-i/actions/workflows/ci.yml/badge.svg)](https://github.com/waketzheng/poetry-plugin-i/actions/workflows/ci.yml)
+
+A [Poetry](https://python-poetry.org/) plugin that support `poetry i` as shortcut of `poetry install`"
+
+Supports Python 3.8+[^1]
+
+
+## Install
+
+The easiest way to install this plugin is via the `self add` command of Poetry.
+
+```bash
+poetry self add poetry-plugin-i
+```
+
+If you used `pipx` to install Poetry you can add the plugin via the `pipx inject` command.
+
+```bash
+pipx inject poetry-plugin-i
+```
+
+Otherwise, if you used `pip` to install Poetry you can add the plugin packages via the `pip install` command.
+
+```bash
+pip install poetry-plugin-i
+```
+
+## Usage
+
+```bash
+poetry i
+```
+
