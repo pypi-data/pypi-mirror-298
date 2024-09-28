@@ -1,0 +1,1 @@
+open_ai_model = "gpt-4o-mini" # Can change to gpt-4o or gpt-4o-mini

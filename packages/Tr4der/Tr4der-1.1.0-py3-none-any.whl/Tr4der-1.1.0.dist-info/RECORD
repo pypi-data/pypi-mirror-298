@@ -1,0 +1,17 @@
+tr4der/__init__.py,sha256=Cu1A3I4-9Yh9R8wguCxYkARc2bHHaihpTzc2hBperwY,224
+tr4der/tr4der.py,sha256=JebSIA_hBK0VVq4-CCmofBHo6lNJAmfshowy-MuqV5I,1250
+tr4der/strategies/__init__.py,sha256=ZVXbEbPGEtupRSqwVi9PKoIQAJYjsG9eyPI3k25hKzE,268
+tr4der/strategies/machine_learning_strategies.py,sha256=U88TKRifs8itd1IkONcnBzyWTfU4BcBP5eVsf93qlrQ,15633
+tr4der/strategies/simple_strategies.py,sha256=8wwRJsTs1Z9Mqcnhm6WIbqOCqzkTk608hTtZ_dNXW0o,3920
+tr4der/strategies/technical_strategies.py,sha256=L5BDw526C1QAIKW_wTGbJATk4Fs4zCUgdZe48QToRKQ,10736
+tr4der/utils/__init__.py,sha256=QfHBZ9U3DY33qSezCLx2UYJZQgph1gW2AL-qJ0MNBxg,64
+tr4der/utils/config.py,sha256=EKnIKdxnhWHQleEhOkHr-T9S-en20P3C-ucSlwXbe4M,67
+tr4der/utils/data_loader.py,sha256=rYE9UMo9LRtP4T9sxnBAheLMSqYcCOHyPAGglM3Gr9A,1093
+tr4der/utils/gpt_helper.py,sha256=n46QnZL11wGjWQ1eFVs2t4PxdOOu4F5SX9sOqO542VA,8610
+tr4der/utils/metrics.py,sha256=V9kGLYXIjZEqodNdZ1kF6nNhdxmbIrRkByoQD3VVVr4,3082
+tr4der/utils/plot.py,sha256=gA-40jCDatwwLMR-b0WmYaAyk_Vn3yDAfMbDUm7_nqk,3178
+tr4der/utils/type_transformation.py,sha256=AM5b-UYt76_px8AbJmTUDoSmdGc0Yp_kKmW5B38sWag,4061
+Tr4der-1.1.0.dist-info/METADATA,sha256=47Dm7PcLy_tLUtmsxKROdGoiHwZiXZ2663-OD_NH4ZQ,10410
+Tr4der-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Tr4der-1.1.0.dist-info/top_level.txt,sha256=3OfzBsOG-eP3PFGz-d2mP_Fr8zDSX5zWA0fH8urjlAI,7
+Tr4der-1.1.0.dist-info/RECORD,,
