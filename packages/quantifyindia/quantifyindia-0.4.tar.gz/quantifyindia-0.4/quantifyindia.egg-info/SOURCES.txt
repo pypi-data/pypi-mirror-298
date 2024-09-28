@@ -1,0 +1,11 @@
+setup.py
+quantifyindia/__init__.py
+quantifyindia/historical_data.py
+quantifyindia/nse_data.py
+quantifyindia.egg-info/PKG-INFO
+quantifyindia.egg-info/SOURCES.txt
+quantifyindia.egg-info/dependency_links.txt
+quantifyindia.egg-info/requires.txt
+quantifyindia.egg-info/top_level.txt
+tests/__init__.py
+tests/test_quantifyindia.py
