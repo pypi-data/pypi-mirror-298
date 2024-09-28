@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+RoboKinematics/__init__.py
+RoboKinematics.egg-info/PKG-INFO
+RoboKinematics.egg-info/SOURCES.txt
+RoboKinematics.egg-info/dependency_links.txt
+RoboKinematics.egg-info/requires.txt
+RoboKinematics.egg-info/top_level.txt
+RoboKinematics/src/RoboKinematics.py
+RoboKinematics/src/__init__.py
+test/test_RoboKinematics.py
