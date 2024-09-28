@@ -1,0 +1,90 @@
+
+
+'''
+ Used to generate Mako-Templates from concepts.xlsx.
+ 
+ Dependencies
+    - pandas
+    - openpyxl
+    - mako
+    - argparse
+ 
+ Bjoern Annighoefer 2023
+'''
+
+from .readconcepts import ReadConcepts
+
+import sys
+import argparse
+import datetime
+import json
+from mako.template import Template
+from mako import exceptions, template
+## used for internal resources
+from importlib.resources import files, as_file
+
+class Generator:
+    def __init__(self):
+        self.name = None
+        self.inFile = None
+        self.genDate = None
+        
+if __name__ == "__main__":
+    defaultConceptsFile = 'gen/concepts.xlsx'
+    defaultTemplateFile = 'gen/concepts.py.mako'
+    as_file(files("eoq3conceptsgen").joinpath('concepts.xlsx'))
+    with as_file(files("eoq3conceptsgen").joinpath('concepts.xlsx')) as internalConceptsFile:
+        defaultConceptsFile = str(internalConceptsFile)
+    with as_file(files("eoq3conceptsgen").joinpath('sample.mako')) as internalTemplateFile:
+        defaultTemplateFile = str(internalTemplateFile)
+    
+    
+    parser = argparse.ArgumentParser(prog='generatefromconcepts',description='Generates mako templates from the content of concepts.xlsx')
+    parser.add_argument('-c','--conceptsDefFile', required=False, type=str, default=defaultConceptsFile,help='the concept definition file')
+    parser.add_argument('-i','--inFile', required=False, type=str, default=defaultTemplateFile,help='The input template')
+    parser.add_argument('-o','--outFile', required=False, type=str, default='sample.txt',help='The generated file')
+    parser.add_argument('-d','--dataFile', required=False, type=str, default=None,help='Optional json data file, whose content is available as "data" in the template')
+
+    args = parser.parse_args()
+    
+    print('*********************************************************')
+    print('* Concepts generator                                    *')
+    print('*********************************************************')
+    print('Concept def: %s '%(args.conceptsDefFile))
+    print('In file:     %s '%(args.inFile))
+    print('Out file:    %s '%(args.outFile))
+    print('Data file:   %s '%(args.dataFile))
+    
+    # configuration
+    inFile = args.inFile
+    conceptsDefFile = args.conceptsDefFile
+    outFile = args.outFile
+    dataFile = args.dataFile
+    data = {}
+
+    # store basic information in generator class
+    generator = Generator()
+    generator.inFile = inFile
+    generator.genDate =  datetime.datetime.now()
+    generator.name = sys.argv[0]
+    generator.cmd = " ".join(sys.argv)
+
+    # load concepts class
+    concepts = ReadConcepts(conceptsDefFile)
+    
+    # optionally load data
+    if(dataFile): 
+        with open(dataFile, 'r') as f:
+            data = json.load(f)
+        
+    #render template
+    template = Template(filename=inFile,preprocessor=[lambda x: x.replace("\r\n", "\n")]) #preprocessor is necessary on Windows
+    try:
+        renderedTemplate = template.render_unicode(generator=generator,concepts=concepts,data=data)
+        with open(outFile, 'w') as f:
+            f.write(renderedTemplate)
+    except:
+        msg = exceptions.text_error_template().render()
+        print(msg, file=sys.stderr)
+        
+    
