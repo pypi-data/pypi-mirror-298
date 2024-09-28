@@ -1,0 +1,8 @@
+luigi_neo4j_target/__init__.py,sha256=UT1sob1hpyXKPuIV4QVwuQF7WGztBnuUJKnMEJ1qmgw,136
+luigi_neo4j_target/graph.py,sha256=Wca1d2LNjayrrUKXJYu2ivIS5egWx68GrY8xjMt44Ao,2128
+luigi_neo4j_target/target.py,sha256=YbcKRirCrHD46iWMUtJ78opiICYwq93smi45jTqADzo,4914
+luigi_neo4j_target-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+luigi_neo4j_target-0.1.1.dist-info/METADATA,sha256=gD9KRwvoMIPTbQ75BLW81NzCk4haGvsnsAGag5z-UvQ,14763
+luigi_neo4j_target-0.1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+luigi_neo4j_target-0.1.1.dist-info/top_level.txt,sha256=8zO4NMz72IU4G7Np0_zqiTtjkYbheoOhEvO49JpXRUs,19
+luigi_neo4j_target-0.1.1.dist-info/RECORD,,
