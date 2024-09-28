@@ -1,0 +1,11 @@
+markupy/__init__.py,sha256=12Trad1_QPo3wBaEb4UF17LK2v-daPGg0izKFywr0I4,259
+markupy/tag.py,sha256=KTS45MTuzvyvHVdrTXdzNkA-160mJQFOB6tGsXVemos,5340
+markupy/_private/attribute.py,sha256=fy_k1EDMmapzFoo2e0EcDJlaacUiUOC1zDXb2JIXagA,4728
+markupy/_private/cli.py,sha256=RSB7YNpXBK14w7xYcd2aet6GJejszuOy9anOJ9bwK2Q,1063
+markupy/_private/element.py,sha256=W-61YINl6hD1ihSIKU3mqLtEQxHoYNSJ0GIyv3EfdWs,5824
+markupy/_private/html.py,sha256=yEBprAu04ZJznRSHHb5pMhMbhHvxf-BS2PlmNMbx3qA,7309
+markupy/_private/view.py,sha256=IC4D9-etSh_aGwOTQko62Dq64JX93GXOjeWteLKGeKQ,1944
+markupy-0.9.4.dist-info/entry_points.txt,sha256=Zsdif6giWpphHqBjx5T9lA13iKI_QEoWPnk_hzJgqpM,58
+markupy-0.9.4.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+markupy-0.9.4.dist-info/METADATA,sha256=Thk1tXt1shLcaS-WRuEt3PywZqaIZypzwYdZt1UQoms,4638
+markupy-0.9.4.dist-info/RECORD,,
