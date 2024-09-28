@@ -1,0 +1,22 @@
+packaging
+
+[:python_version < "3.11"]
+tomli<3,>=2
+
+[dev]
+brundle[test]
+uppd==0.3.0
+bouillon==2.1.0
+build==1.2.2
+isort==5.13.2
+licensecheck==2024.3
+mypy==1.11.2
+ruff==0.6.8
+semver==3.0.2
+twine==5.1.1
+
+[test]
+pytest==8.3.3
+pytest-aiohttp==1.0.5
+pytest-asyncio==0.24.0
+pytest-cov==5.0.0
