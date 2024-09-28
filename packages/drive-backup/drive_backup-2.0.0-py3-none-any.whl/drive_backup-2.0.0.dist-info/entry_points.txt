@@ -1,0 +1,3 @@
+[console_scripts]
+dbackup=drive_backup.cli:main
+
