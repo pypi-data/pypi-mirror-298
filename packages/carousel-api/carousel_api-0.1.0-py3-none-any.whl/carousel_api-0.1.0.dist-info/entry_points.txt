@@ -1,0 +1,2 @@
+[console_scripts]
+carousel_api = carousel_api.wsgi:app
