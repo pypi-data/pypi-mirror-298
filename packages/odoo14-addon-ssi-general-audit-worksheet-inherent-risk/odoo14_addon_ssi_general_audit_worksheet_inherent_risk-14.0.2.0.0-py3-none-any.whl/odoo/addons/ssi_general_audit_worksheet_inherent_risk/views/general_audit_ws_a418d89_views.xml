@@ -1,0 +1,127 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl-3.0-standalone.html). -->
+<odoo>
+
+    <record id="general_audit_ws_a418d89_view_search" model="ir.ui.view">
+        <field name="name">general_audit_ws_a418d89 form</field>
+        <field name="model">general_audit_ws_a418d89</field>
+        <field
+            name="inherit_id"
+            ref="ssi_general_audit.general_audit_worksheet_mixin_view_search"
+        />
+        <field name="mode">primary</field>
+        <field name="arch" type="xml">
+            <data />
+        </field>
+    </record>
+
+    <record id="general_audit_ws_a418d89_view_tree" model="ir.ui.view">
+        <field name="name">general_audit_ws_a418d89 tree</field>
+        <field name="model">general_audit_ws_a418d89</field>
+        <field name="mode">primary</field>
+        <field
+            name="inherit_id"
+            ref="ssi_general_audit.general_audit_worksheet_mixin_view_tree"
+        />
+        <field name="arch" type="xml">
+            <data>
+            </data>
+        </field>
+    </record>
+
+    <record id="general_audit_ws_a418d89_view_form" model="ir.ui.view">
+        <field name="name">general_audit_ws_a418d89 form</field>
+        <field name="model">general_audit_ws_a418d89</field>
+        <field name="mode">primary</field>
+        <field
+            name="inherit_id"
+            ref="ssi_general_audit.general_audit_worksheet_mixin_view_form"
+        />
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//page[1]" position="before">
+                    <page name="inherent_risk" string="Inherent Risks">
+                        <field name="detail_ids">
+                        <tree create="false" delete="false">
+                            <field name="standard_detail_id" invisible="1" />
+                            <field name="currency_id" invisible="1" />
+                            <field name="type_id" />
+                            <field
+                                    name="inherent_risk_factor_without_impact_ids"
+                                    widget="many2many_tags"
+                                />
+                            <field
+                                    name="inherent_risk_factor_with_impact_ids"
+                                    widget="many2many_tags"
+                                />
+                            <field name="fraud_risk" optional="show" />
+                            <field name="likelihood_risk_occuring" optional="show" />
+                            <field name="impact_of_risk" optional="show" />
+                            <field name="inherent_risk" optional="show" />
+                            <field
+                                    name="other_significant_risk_factor"
+                                    optional="show"
+                                />
+                            <field name="significant_risk" optional="show" />
+                            <field name="note" optional="show" />
+                        </tree>
+                            <form>
+                                <sheet>
+                                    <group name="header_1" colspan="4" col="2">
+                                        <field name="type_id" />
+                                        <field
+                                            name="standard_detail_id"
+                                            invisible="1"
+                                        />
+                                        <field name="currency_id" invisible="1" />
+                                    </group>
+                                    <group name="header_3" colspan="4" col="1">
+                                        <field
+                                            name="inherent_risk_factor_without_impact_ids"
+                                            widget="many2many_checkboxes"
+                                        />
+                                        <field
+                                            name="inherent_risk_factor_with_impact_ids"
+                                            widget="many2many_checkboxes"
+                                        />
+                                        <field name="fraud_risk" />
+                                        <field name="likelihood_risk_occuring" />
+                                        <field name="impact_of_risk" />
+                                        <field name="inherent_risk" force_save="1" />
+                                        <field name="other_significant_risk_factor" />
+                                        <field name="note" />
+                                        <field
+                                            name="significant_risk"
+                                            readonly="1"
+                                            force_save="1"
+                                        />
+                                    </group>
+                                </sheet>
+                            </form>
+                        </field>
+                    </page>
+                </xpath>
+            </data>
+        </field>
+    </record>
+
+    <record id="general_audit_ws_a418d89_action" model="ir.actions.act_window">
+        <field name="name">Account Level Inherent Risks</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">general_audit_ws_a418d89</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="general_audit_ws_a418d89_menu"
+        name="Account Level Inherent Risks"
+        parent="ssi_general_audit.menu_general_audit_risk_assesment"
+        action="general_audit_ws_a418d89_action"
+        sequence="1503"
+        groups="general_audit_ws_a418d89_viewer_group"
+    />
+
+
+</odoo>
