@@ -1,0 +1,3 @@
+[console_scripts]
+my-script=spcforces_tools.mpc_tools:main
+
