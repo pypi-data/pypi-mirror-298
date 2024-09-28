@@ -1,0 +1,7 @@
+mm_mongo/__init__.py,sha256=XRYLK2DY4S6YZB_GZ-oJau2_frP7-fJb8Y8sEkz_zos,406
+mm_mongo/json_.py,sha256=6jMfQFN0Nmy1nRk2hdElFwetLaZheB_M2-W6o12A9-8,1537
+mm_mongo/mongo.py,sha256=h1E0Ucpu8lXl-UNO9IQfPI6EetgYbOOtlM2XMcLUiSY,9288
+mm_mongo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mm_mongo-0.1.1.dist-info/METADATA,sha256=1J0Qdq4bprT8w2sdRtiWQJx66upkuwQkdL-4XqB0fIA,135
+mm_mongo-0.1.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+mm_mongo-0.1.1.dist-info/RECORD,,
