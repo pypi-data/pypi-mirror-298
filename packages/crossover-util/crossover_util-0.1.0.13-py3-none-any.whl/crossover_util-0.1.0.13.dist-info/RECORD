@@ -1,0 +1,14 @@
+crossover_util/__init__.py,sha256=GVSjHhw4L6OQUN1bTeaLkkSlvrh4aETRrq4sePg0Lt0,64
+crossover_util/cli.py,sha256=Fks83HBMbAQ3MIIZJrvNsFR-TMAuWEb60rMSRy-nPGo,941
+crossover_util/config.py,sha256=MfiqXtBtirE2uLBlG2H7H32HL559-bGCob-5LRxZM-c,2241
+crossover_util/plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crossover_util/plugin/context.py,sha256=e_vnWVozAMMzyci6WNu-ojUm5Bc2PWdQu00lPpmaAHY,416
+crossover_util/plugin/deps.py,sha256=jMhHkRvi59sr4pFfQnt5tkLEduKv1OUCl_UGQJFRIYk,2876
+crossover_util/plugin/linux.py,sha256=r-qyj6bEdJ4q6_4dqp2DIJqWeD6_G6J0nLkDrJJdeBk,244
+crossover_util/plugin/mac.py,sha256=lDNZPDxhQ8luzPrH_EfGzXRpSBPm8g7IqyHlN0yezOI,8029
+crossover_util/plugin/plugin.py,sha256=wvu2YsMSIn3fphVW0xOhZVvjQ1_TDlQgFRKQWTQYzqQ,4039
+crossover_util-0.1.0.13.dist-info/LICENSE,sha256=sQ6XRJyaUx7kqNRrSskrcmGxk0j0IK57TfvgJcyPy-E,1073
+crossover_util-0.1.0.13.dist-info/METADATA,sha256=0KNvqiXegjf9TjjeMOqju9sS_AqCCaRcsjAOtSmS314,2263
+crossover_util-0.1.0.13.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+crossover_util-0.1.0.13.dist-info/entry_points.txt,sha256=et8hBJVnIAaRkFLkIhfT_ysxm1AhVQeidW-ykkQL_AQ,58
+crossover_util-0.1.0.13.dist-info/RECORD,,
