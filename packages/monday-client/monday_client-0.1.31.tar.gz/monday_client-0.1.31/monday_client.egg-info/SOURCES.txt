@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+monday/__init__.py
+monday/client.py
+monday/exceptions.py
+monday_client.egg-info/PKG-INFO
+monday_client.egg-info/SOURCES.txt
+monday_client.egg-info/dependency_links.txt
+monday_client.egg-info/requires.txt
+monday_client.egg-info/top_level.txt
+tests/test_boards.py
+tests/test_items.py
+tests/test_monday_client.py
