@@ -1,0 +1,11 @@
+seedee/seedee_wrapper.pxd,sha256=TgY7kKoHB-NDxpl6U3fm_yeJ3x33IzOBg2bElSDMnJ4,1282
+seedee/seedee_wrapper.cpython-36m-x86_64-linux-gnu.so,sha256=u5kIqAYkWkurUzTwIBIkIuFyRWaXchlzzu_oZ03uw2c,1535888
+seedee/seedee_wrapper.pyx,sha256=cFLCZF6KN-JVHH5M-5yXeaWy6HWbRsiHv0mipM8zv5c,4426
+seedee/__init__.py,sha256=ZTXQ40YG4iJl0spMB6UbYrCs9A6kxphivqsiiHBWjk8,98
+seedee-0.3.0.dist-info/top_level.txt,sha256=UvFpBm7o6qEyfTotnT77ctlBcAKibl4ZLpXR2KNq0EI,7
+seedee-0.3.0.dist-info/METADATA,sha256=Cuzzlbp_ngygRka6NaEKCC9V6LL_9x3qs9jkTjZE90c,3768
+seedee-0.3.0.dist-info/LICENSE,sha256=WExWMD6DDlaeExfTkadtxA_wadQqZRk1Wp4xjgEdBs0,1368
+seedee-0.3.0.dist-info/WHEEL,sha256=ms4WwfbDRLth-b9jYPIN7tUWkEjgGlaTOdogdRpChQA,150
+seedee-0.3.0.dist-info/LICENSE_THIRDPARTY.txt,sha256=uTRk0AcDSblZv4XNbzuPfocSa9hRLEAKqDZHctO2NjI,6678
+seedee-0.3.0.dist-info/RECORD,,
+seedee.libs/libseedee-4f423c2c.so.0.3.0,sha256=t2hK91gYVRai1rcePgnhS1v2oAQOspetstEWwzxjWYs,511104
