@@ -1,0 +1,9 @@
+ultravox_client/__init__.py,sha256=TCtPVB_EGuBPoTJtSrjAfK4EjW0HF2oUF0Lyf9DoRp4,280
+ultravox_client/async_close.py,sha256=3w2lFk1ei2H7IYUDepngaErolk0JWvPsVnD-l-vlkNY,1097
+ultravox_client/audio.py,sha256=TYHRLeZudv522rhzSkqH8Ukt8hc-pHfUnDR1o76g4Gw,4357
+ultravox_client/patched_event_emitter.py,sha256=3GXX9lh8pZLtXo-lWGVdbVTJw6LVpHUA9hUktSocuRc,1449
+ultravox_client/patched_event_emitter_test.py,sha256=c70mp38Ps2fjAl0aCm2Lij5rxSW0J4oFidxmeW7TbJs,1878
+ultravox_client/session.py,sha256=DFzw6bAqwbzeFKx8ntHgTL0jjmiiiyeWhYbJQNIjSJc,13920
+ultravox_client-0.0.4.dist-info/METADATA,sha256=Rcim9D8D_wEHNg_OuM2HopETX6Ds_INoErhIn0RbpTM,1868
+ultravox_client-0.0.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ultravox_client-0.0.4.dist-info/RECORD,,
