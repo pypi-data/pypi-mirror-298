@@ -1,0 +1,6 @@
+saywhu.py
+setup.py
+saywhu.egg-info/PKG-INFO
+saywhu.egg-info/SOURCES.txt
+saywhu.egg-info/dependency_links.txt
+saywhu.egg-info/top_level.txt
