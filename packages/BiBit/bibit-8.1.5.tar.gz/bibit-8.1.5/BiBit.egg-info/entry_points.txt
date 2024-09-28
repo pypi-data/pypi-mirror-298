@@ -1,0 +1,2 @@
+[console_scripts]
+bibit = your_module:main
