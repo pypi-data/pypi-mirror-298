@@ -1,0 +1,17 @@
+numpy
+matplotlib
+opencv-python
+openpyxl
+pandas
+Pillow
+pydicom==2.4.4
+scikit-image
+scipy
+SimpleITK
+six
+xlrd
+check-manifest
+tqdm
+pytest
+NiftiResampler
+PlotScrollNumpyArrays
