@@ -1,0 +1,7 @@
+galileo_forecast/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galileo_forecast/data_samplers.py,sha256=tdih5FNa3CWFtu6aOy3rW-4wzYyLl33cvwkDH-JyCug,2473
+galileo_forecast/model.py,sha256=L53ZlILZ7elLEi70QNCZQEqIntk1f-GA95F4ftjUL3I,1858
+galileo_forecast/models.py,sha256=EZT-NqIN-sKs4yF5sGuXOgezZtfn4jwJhKHksaV3Kk4,8530
+galileo_forecast-0.1.0.dist-info/METADATA,sha256=gcOmHuMUoOplK13gt56FeWh4yBRaL0l-GlgU4unw7wY,627
+galileo_forecast-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+galileo_forecast-0.1.0.dist-info/RECORD,,
