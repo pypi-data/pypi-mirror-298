@@ -1,0 +1,2 @@
+[console_scripts]
+sbump = sbump:cli
