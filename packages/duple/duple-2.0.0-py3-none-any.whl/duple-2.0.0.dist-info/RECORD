@@ -1,0 +1,15 @@
+duple/.DS_Store,sha256=UQwgEYByzffe8OABL6y-f6AwpzQdtcRniX5uRsh-YFk,6148
+duple/__version__.py,sha256=_7OlQdbVkK4jad0CLdpI0grT-zEAb-qgFmH5mFzDXiA,22
+duple/duple.bak.py,sha256=JtgkKkokovVfMm3AW7tzqs-h0QwVoTRr2thXauuBt_s,18750
+duple/duple.py,sha256=DEjXU6v37_lN4zTyH6sLJYux7P3nsTGfsdtKzPN-WQk,12024
+duple/file.py,sha256=mV1q8QB0dOjmCR9VyIqxPwZEhXig-ChWPiJa6QXD4wM,1396
+duple/files.py,sha256=Ou9_8y9JdrNogqKrbBXpMmM9tuQvMVLQmyiN9ao43pY,7619
+duple/info.py,sha256=JM4_p-8m52Y9Eyl-ryMGFVmJTjSzBqvz3TLueybf3rE,425
+duple/library.py,sha256=dWs6mwPh5vULGeb_JCcwuIxJDM8Np1UW1WfM1sso9yM,8271
+duple/publish_actions.py,sha256=EoYLGI2UGZD6Gv2Ul6L_3DKTma5lWCLThBfjOXUu6MA,208
+duple/status.py,sha256=SgKyQHL5czOOvX9BATrLkNPO-w8AcUcM92YGH5kggYY,426
+duple-2.0.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+duple-2.0.0.dist-info/METADATA,sha256=pqyI0UBHdgBlg4hk1fMKBk5AxAbaNVXun1MIcww1bqo,24969
+duple-2.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+duple-2.0.0.dist-info/entry_points.txt,sha256=i_ceWfF3a2Wv8W64hiuO4hUKrycNV6EXa9zqaimWHzE,138
+duple-2.0.0.dist-info/RECORD,,

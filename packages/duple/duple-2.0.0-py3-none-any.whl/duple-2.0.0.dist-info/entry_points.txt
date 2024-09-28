@@ -1,0 +1,5 @@
+[console_scripts]
+duple=duple.duple:cli
+perf_test=tests.performance_evaluation:perf_test
+sync_version=duple.publish_actions:sync_version
+
