@@ -1,0 +1,7 @@
+ase2sprkkr.bindings.xband.symmetry module
+=========================================
+
+.. automodule:: ase2sprkkr.bindings.xband.symmetry
+   :members:
+   :undoc-members:
+   :show-inheritance:
