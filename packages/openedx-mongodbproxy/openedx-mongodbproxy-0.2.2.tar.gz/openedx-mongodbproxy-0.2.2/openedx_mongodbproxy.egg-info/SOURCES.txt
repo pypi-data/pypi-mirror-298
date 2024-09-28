@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+mongodb_proxy.py
+setup.py
+openedx_mongodbproxy.egg-info/PKG-INFO
+openedx_mongodbproxy.egg-info/SOURCES.txt
+openedx_mongodbproxy.egg-info/dependency_links.txt
+openedx_mongodbproxy.egg-info/requires.txt
+openedx_mongodbproxy.egg-info/top_level.txt
+requirements/base.in
