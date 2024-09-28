@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: use-redis
+Version: 0.1.92
+Summary: 
+Author: miclon
+Author-email: jcnd@163.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: redis (>=4.6.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+# use-redis
+
+<a href="https://github.com/use-py/use-redis/actions/workflows/test.yml?query=event%3Apush+branch%3Amain" target="_blank">
+    <img src="https://github.com/use-py/use-redis/workflows/test%20suite/badge.svg?branch=main&event=push" alt="Test">
+</a>
+<a href="https://pypi.org/project/use-redis" target="_blank">
+    <img src="https://img.shields.io/pypi/v/use-redis.svg" alt="Package version">
+</a>
+
+<a href="https://pypi.org/project/use-redis" target="_blank">
+    <img src="https://img.shields.io/pypi/pyversions/use-redis.svg" alt="Supported Python versions">
+</a>
+
+A redis connector that never breaks
