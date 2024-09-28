@@ -1,0 +1,2 @@
+[console_scripts]
+invokeai-models = invokeai_models_cli.__main__:main
