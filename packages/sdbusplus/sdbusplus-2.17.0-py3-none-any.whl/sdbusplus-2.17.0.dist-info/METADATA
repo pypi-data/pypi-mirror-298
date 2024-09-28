@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sdbusplus
+Version: 2.17.0
+Summary: UNKNOWN
+Home-page: http://github.com/openbmc/sdbusplus
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: inflection
+Requires-Dist: mako
+Requires-Dist: pyyaml
+
+UNKNOWN
+
