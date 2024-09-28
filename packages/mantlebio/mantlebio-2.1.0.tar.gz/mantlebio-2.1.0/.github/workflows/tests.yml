@@ -1,0 +1,42 @@
+name: Python Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: [3.8]
+
+    steps:
+    - name: Check out the repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: |
+        pip install coverage
+        pip install -r requirements.txt
+        python -m pip install --upgrade build
+
+    - name: Run tests with coverage
+      run: |
+        cd ${GITHUB_WORKSPACE}
+        coverage run -m unittest discover -s .
+        coverage report
+        coverage xml -o coverage.xml
+
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report
+        path: python/coverage.xml

@@ -1,0 +1,33 @@
+.vercel
+.env
+.vscode
+
+# Byte-compiled / optimized / DLL files
+*__pycache__*
+*.py[cod]
+*$py.class
+.coverage
+coverage.xml
+
+# Distribution / packaging
+.DS_Store
+.Python
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.ipynb_checkpoints
+python/jupyter/cache
+python/jupyter/data
+
