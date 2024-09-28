@@ -1,0 +1,12 @@
+nustattools/__init__.py,sha256=zuOG4d6rFnPJqWSA0tEUSPeoMXXPQM-CG1dPEI9kU94,222
+nustattools/_version.py,sha256=Jk2iAU7m-7Vx9XV1TtdD9ZoJraIncDq_4_Wd-qtUotg,411
+nustattools/_version.pyi,sha256=j5kbzfm6lOn8BzASXWjGIA1yT0OlHTWqlbyZ8Si_o0E,118
+nustattools/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nustattools/stats/__init__.py,sha256=RmHbaFV1S8B7UupgrMKTUcDTELHGncI3E1qhkhh3hDw,964
+nustattools/stats/_derate.py,sha256=WR_IK8hRDi1SO8yhL-lNRvoBxvRV59EgxP-CvU8A5-8,7816
+nustattools/stats/_dist.py,sha256=5OoYkU8WlH5AC_t-grHAdeAuB98XoYm7NC58sHhZXwI,5961
+nustattools/stats/_fmax.py,sha256=VJQ1PthSAGlbC7rpR287mnp1JvdXdqLB-s-im3Swd8I,6493
+nustattools-0.3.0.dist-info/METADATA,sha256=_Ff5Y3borT1p1k2Tdj3niFKMH8cAxP72X7a4DQ9HJ0M,4912
+nustattools-0.3.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+nustattools-0.3.0.dist-info/licenses/LICENSE,sha256=Oc-qvR9pEfI7JpmGhwtPTUH2b5hxvarypJGoXc9iuXc,1050
+nustattools-0.3.0.dist-info/RECORD,,
