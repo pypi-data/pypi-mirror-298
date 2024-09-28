@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: mpcforces-extractor
+Version: 0.1.0a0
+Summary: A simple toolbox for getting mpc forces from output files from Optistruct
+License: MIT
+Author: Manuel
+Author-email: manuel.ramsaier89@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: networkx (>=3.3,<4.0)
+Requires-Dist: numpy (>=2.1.1,<3.0.0)
+Requires-Dist: scipy (>=1.14.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# MPCForces-Extractor
+
+This tool outputs the MPC forces via summing it up per connected part. It is used in combination with Optistruct
+
+## Quickstart
+
+Right now, this tool is in a alpha state and you can use it only as it is via the following way:
+- Use Taskfile to trigger it
+- Use Poetry to install dependecies
+
+Later, easy installation via pipy is planned.
+
+## Questions?
+
+- Write me a e-mail :)
+  
+
