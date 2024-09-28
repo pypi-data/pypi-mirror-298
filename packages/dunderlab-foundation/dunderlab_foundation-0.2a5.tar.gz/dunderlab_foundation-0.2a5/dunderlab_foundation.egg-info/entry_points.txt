@@ -1,0 +1,4 @@
+[console_scripts]
+foundation_logs = foundation.scripts.foundation_logs:main
+foundation_status = foundation.scripts.foundation_status:main
+foundation_worker = foundation.scripts.foundation_worker:main
