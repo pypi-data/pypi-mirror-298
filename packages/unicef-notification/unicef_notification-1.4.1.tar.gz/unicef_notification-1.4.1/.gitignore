@@ -1,0 +1,16 @@
+src/*.egg*/
+*.py[co]
+*.sqlite3
+.coverage
+build/
+dist/
+coverage.xml
+.pytest_cache/
+.tox/
+Pipfile
+Pipfile.lock
+.idea/
+.env
+.envrc
+.venv/
+.DS_Store
