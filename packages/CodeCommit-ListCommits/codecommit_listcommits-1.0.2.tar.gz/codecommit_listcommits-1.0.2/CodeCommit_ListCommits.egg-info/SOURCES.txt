@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+CodeCommitListCommits/__init__.py
+CodeCommitListCommits/list_commits.py
+CodeCommit_ListCommits.egg-info/PKG-INFO
+CodeCommit_ListCommits.egg-info/SOURCES.txt
+CodeCommit_ListCommits.egg-info/dependency_links.txt
+CodeCommit_ListCommits.egg-info/requires.txt
+CodeCommit_ListCommits.egg-info/top_level.txt
