@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: lookout_mra_client
+Version: 2.6.0
+Summary: Lookout's Mobile Risk API in Python
+Author-email: Lookout <esupport@lookout.com>
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: oauthlib>=3.2
+Requires-Dist: requests-oauthlib>=1.3
+Provides-Extra: models
+Requires-Dist: peewee>=3.15; extra == "models"
+Requires-Dist: wtforms>=3.0; extra == "models"
+Requires-Dist: flask-wtf>=1.0; extra == "models"
+Requires-Dist: furl>=2.1; extra == "models"
+
+# Mobile Risk API Client `lookout_mra_client`
+
+This package contains the code required to create a Mobile Risk API client in Python.
+
+### Installation
+
+```bash
+pip install lookout_mra_client
+```
+
+### `event_translators`
+
+Translate MRA events to third party event formats.
+
+Currently Supported:
+* IBM QRadar LEEF - `leef_translator.py`
+
+#### Field mappings
+The fields in the event can be renamed as required. In the below example, the `targetGuid`
+key is renamed to `lookoutDeviceGuid`.
+
+```python
+from lookout_mra_client.src.lookout_mra_client.event_translators.utilities import transform_event
+
+mra = MRAClient(...)
+events = mra.get_events()
+event_mappings = (("targetGuid", "lookoutDeviceGuid"))
+
+for event in events:
+    # targetGuid: guid -> lookoutDeviceGuid: guid
+    newEvent = transform_event(event_mappings, event)
+```
+
+The corresponding value of a field can also be transformed. The following code prefixes `new_` to
+the value against `targetGuid` while also renaming the field.
+
+```python
+from lookout_mra_client.src.lookout_mra_client.event_translators.utilities import transform_event
+
+mra = MRAClient(...)
+events = mra.get_events()
+event_mappings = (("targetGuid", "lookoutDeviceGuid", lambda value: "new_" + value))
+
+for event in events:
+    # targetGuid: guid -> lookoutDeviceGuid: new_guid
+    newEvent = transform_event(event_mappings, event)
+```
+
+Multiple fields can be combined into a single field.
+
+```python
+from lookout_mra_client.src.lookout_mra_client.event_translators.utilities import transform_event
+
+mra = MRAClient(...)
+events = mra.get_events()
+event_mappings = ((
+    "targetGuid", "entGuid", "guid",
+    lambda value1, value2: value1 + "_" + value
+))
+
+for event in events:
+    # targetGuid: guid1, entGuid: guid2 -> guid: guid1_guid2
+    newEvent = transform_event(event_mappings, event)
+```
+
+### `lookout_logger.py`
+
+Builds a file based logger for debugging/application level logging.
+
+### `mra_client.py`
+
+Client which can be used to retrieve events from Metis (aka Mobile Risk API).
+
+### `mra_event_runner.py`
+
+A event retrieval runner designed to be run in the background either by systemd or
+another deamon management system. The runner is designed to be generic and is able to
+use any event translator when emitting events. It also requires the aforementioned
+encryption module for retrieving the API and proxy password used to connect to the MRA.
+
+### `oauth_client.py`
+
+Handles creating Lookout tokens based on an API key copied out of the MES Console.
+The oauth client is a prerequisite for all Mobile Risk API calls.
+
+### `syslog_client.py`
+
+Logging client used to emit events/data to a remote SysLog address.
