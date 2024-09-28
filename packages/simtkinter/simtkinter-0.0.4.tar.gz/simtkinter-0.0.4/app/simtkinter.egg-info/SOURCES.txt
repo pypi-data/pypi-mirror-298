@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+app/simtkinter/__init__.py
+app/simtkinter.egg-info/PKG-INFO
+app/simtkinter.egg-info/SOURCES.txt
+app/simtkinter.egg-info/dependency_links.txt
+app/simtkinter.egg-info/top_level.txt
+app/simtkinter/src/__init__.py
+app/simtkinter/src/simtkinter.py
