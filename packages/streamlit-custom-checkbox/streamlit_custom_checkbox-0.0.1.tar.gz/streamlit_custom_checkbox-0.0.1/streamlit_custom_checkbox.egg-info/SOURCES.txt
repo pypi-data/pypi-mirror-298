@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+custom_checkbox/__init__.py
+custom_checkbox/example.py
+custom_checkbox/frontend/build/asset-manifest.json
+custom_checkbox/frontend/build/bootstrap.min.css
+custom_checkbox/frontend/build/index.html
+custom_checkbox/frontend/build/static/js/main.d02c9ca7.js
+custom_checkbox/frontend/build/static/js/main.d02c9ca7.js.LICENSE.txt
+custom_checkbox/frontend/build/static/js/main.d02c9ca7.js.map
+streamlit_custom_checkbox.egg-info/PKG-INFO
+streamlit_custom_checkbox.egg-info/SOURCES.txt
+streamlit_custom_checkbox.egg-info/dependency_links.txt
+streamlit_custom_checkbox.egg-info/requires.txt
+streamlit_custom_checkbox.egg-info/top_level.txt
