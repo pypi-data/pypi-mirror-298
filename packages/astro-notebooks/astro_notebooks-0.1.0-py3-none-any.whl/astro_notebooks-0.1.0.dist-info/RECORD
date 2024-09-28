@@ -1,0 +1,15 @@
+astro_notebooks/__about__.py,sha256=saOVhihUA6X8JizWWJSFCp5cPVPtv77FXRsZSRwSIys,128
+astro_notebooks/__init__.py,sha256=DhPLaKmGhz9Y-ej1RGCxeQyp4ZAiLfexSAPyqWmnogc,106
+astro_notebooks/_version.py,sha256=IMl2Pr_Sy4LVRKy_Sm4CdwUl1Gryous6ncL96EMYsnM,411
+astro_notebooks/image-viewers.ipynb,sha256=7xxXUnTOyqskfYGFr0UpZJ30VfCTgaQW6eENtnJdiAs,2155
+astro_notebooks/reproject-images.ipynb,sha256=I-F5m1XYBCMvm3bDyiyAEiDuwiQBeFpjfqmNSA9nEdw,4085
+astro_notebooks-0.1.0.data/data/share/jupyter/astro_notebooks/__about__.py,sha256=saOVhihUA6X8JizWWJSFCp5cPVPtv77FXRsZSRwSIys,128
+astro_notebooks-0.1.0.data/data/share/jupyter/astro_notebooks/__init__.py,sha256=DhPLaKmGhz9Y-ej1RGCxeQyp4ZAiLfexSAPyqWmnogc,106
+astro_notebooks-0.1.0.data/data/share/jupyter/astro_notebooks/_version.py,sha256=IMl2Pr_Sy4LVRKy_Sm4CdwUl1Gryous6ncL96EMYsnM,411
+astro_notebooks-0.1.0.data/data/share/jupyter/astro_notebooks/image-viewers.ipynb,sha256=7xxXUnTOyqskfYGFr0UpZJ30VfCTgaQW6eENtnJdiAs,2155
+astro_notebooks-0.1.0.data/data/share/jupyter/astro_notebooks/reproject-images.ipynb,sha256=I-F5m1XYBCMvm3bDyiyAEiDuwiQBeFpjfqmNSA9nEdw,4085
+astro_notebooks-0.1.0.data/data/share/jupyter/jupyter_app_launcher/jp_app_launcher_astro-notebooks.yaml,sha256=5bazUEWH0xGgGF8Bp9Ms1p1k29pW6yd_ut060lDaLms,566
+astro_notebooks-0.1.0.dist-info/METADATA,sha256=gAkEz7Ivuufe_m_kwoII_I0NdoxXLaZ22JJWwOeQsSc,1539
+astro_notebooks-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+astro_notebooks-0.1.0.dist-info/licenses/LICENSE,sha256=sEUd1xiCEcjxPoF_8yBE4G1M9Zsglv-4mvmm2u7XMaQ,1553
+astro_notebooks-0.1.0.dist-info/RECORD,,
