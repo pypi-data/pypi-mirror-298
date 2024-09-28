@@ -1,0 +1,8 @@
+sample_rspymodule-0.1.0.dist-info/METADATA,sha256=_TJNB2bvaIBdRFP03mVDd9U8OXHcM-y-NHG0laEAgsQ,1238
+sample_rspymodule-0.1.0.dist-info/WHEEL,sha256=2IIjlNBQxCJE0yd30sGUQxxz2xJqPeeH3d9g2v17zQY,114
+sample_rspymodule-0.1.0.dist-info/licenses/LICENSE.txt,sha256=KuKy4KViEiBV8PMcDUQOC4of3YXPRvsOdSU0M8jGDkU,1079
+sample_rspymodule.libs/libgcc_s-5b5488a6.so.1,sha256=HGKUsVmTeNAxEdSy7Ua5Vh_I9FN3RCbPWzvZ7H_TrwE,2749061
+sample_rspymodule/module.py,sha256=BOY0c9BNQXycVVRFAAoCSm1BsFqAO5hyMLkOBK_l4qk,495
+sample_rspymodule/__init__.py,sha256=dZyOGuUnUyBph632eKp8xx7VY1eRbuAVvG_zeKKRfuw,150
+sample_rspymodule/_lowlevel.pypy310-pp73-arm-linux-gnu.so,sha256=rgIQg5SCVfHskUMdfm1gaol-x22JJk3AE2u0UeuHhvA,542717
+sample_rspymodule-0.1.0.dist-info/RECORD,,
