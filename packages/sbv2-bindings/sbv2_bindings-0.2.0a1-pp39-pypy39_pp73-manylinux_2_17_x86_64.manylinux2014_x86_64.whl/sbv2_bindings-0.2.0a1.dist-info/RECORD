@@ -1,0 +1,5 @@
+sbv2_bindings-0.2.0a1.dist-info/METADATA,sha256=HKDc3F6FTg-PiXjFema4U3XJHFqFCf_Uu7vumgzh4gg,264
+sbv2_bindings-0.2.0a1.dist-info/WHEEL,sha256=eF3CkImHT_R3jp0qT_Bu0dyWfuVwgI4prpswhaeyvhM,134
+sbv2_bindings/__init__.py,sha256=t8wiF8vG_CppOnfGnO9Xd_XAYhBtb5jPjfYiAx2o9d8,135
+sbv2_bindings/sbv2_bindings.pypy39-pp73-x86_64-linux-gnu.so,sha256=5dajf3JXjs7UF-R8jk83X-C1xQWLB9msph6w3rD5nGM,82805576
+sbv2_bindings-0.2.0a1.dist-info/RECORD,,
