@@ -1,0 +1,6 @@
+loguru
+GPUtil
+
+[dev]
+pandas
+torchshow
