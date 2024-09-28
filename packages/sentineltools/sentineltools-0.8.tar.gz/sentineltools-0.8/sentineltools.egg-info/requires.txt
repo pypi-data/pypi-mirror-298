@@ -1,0 +1,4 @@
+chatollama
+pillow
+opencv-python
+numpy
