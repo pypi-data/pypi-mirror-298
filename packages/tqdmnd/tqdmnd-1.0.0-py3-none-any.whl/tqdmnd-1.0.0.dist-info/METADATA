@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: tqdmnd
+Version: 1.0.0
+Summary: A simple wrapper for tqdm supporting N-dimensional spaces
+Author-email: Steven Zeltmann <steven.zeltmann@lbl.gov>
+Project-URL: Homepage, https://github.com/sezelt/tqdmnd
+Project-URL: Bug Tracker, https://github.com/sezelt/tqdmnd/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: numpy
+
+# `tqdmnd`: `tqdm` in Multiple Dimensions
+
+`tqdmnd` is an N-dimensional wrapper of tqdm providing an iterator and
+progress bar over the product of multiple iterators.
+
+Example Usage:
+```python
+from tqdmnd import tqdmnd
+for x, y in tqdmnd(5,6):
+    pass
+```
+is equivalent to
+```python
+for x in range(5):
+    for y in range(6):
+        pass
+```
+but with a tqdm progress bar printed to standard output.
