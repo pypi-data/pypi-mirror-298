@@ -1,0 +1,4 @@
+[console_scripts]
+lfss-serve=lfss.cli.serve:main
+lfss-user=lfss.cli.user:main
+
