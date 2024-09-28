@@ -1,0 +1,14 @@
+collektions-1.0.0.dist-info/METADATA,sha256=kaxvCZ18OMHhiMaRRNEz9N2mz8nYN536SnKEZA1Rxsw,758
+collektions-1.0.0.dist-info/WHEEL,sha256=Vza3XR51HW1KmFP0iIMUVYIvz0uQuKJpIXKYOBGQyFQ,90
+collektions-1.0.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+collektions/__init__.py,sha256=mBvnzeWg8eYrpPl59xjCR8BZE2z7H-BPDT0UqF_a2zk,2251
+collektions/_defaults.py,sha256=x2oE-wfF6WFJEBn73gdSlSPVNNeXfn_eaAVeBzkYGS0,200
+collektions/_iterable.py,sha256=OFnAv80RfOce8qQhQZXcvWnHmBNNuqmYkkSX-mcnM4o,25489
+collektions/_mapping.py,sha256=iA35JYLmTSQZLHrOvae3xto5xQn_bO37tqWPNMzORgE,3034
+collektions/_sequence.py,sha256=VPCTJL1f1-tjuuo-mwjqodQCRYZVEFcYeE2zYBDuAlw,4360
+collektions/_types.py,sha256=WPg6h58qusw_sJ6O9Dv5_eSyWciwRQQXQJLNR7C7zYA,737
+collektions/preconditions.py,sha256=ZWM8wXw7oMuxs0Qoh8J1FjVituBASi-BvjMlM9aIS4E,1884
+collektions/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+collektions/shadow.py,sha256=BOm2nCOBzY1jhYf9IhUBqwXDT_VZRRk6dJJqklBBG0k,2261
+collektions/version.py,sha256=J-pLxbqTpvxuHxHpeEVl3iTpJJ8NPnep4vtk-kfREBI,27
+collektions-1.0.0.dist-info/RECORD,,
