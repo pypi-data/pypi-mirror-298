@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wordly"
+version = "0.0.1"
+authors = [
+    { name="Marko Marić", email="marko@lambdabread.io" },
+]
+license = { file = "LICENSE" }
+description = "A simple python client that requests dictionary definitions from a server that implements Dictionary Server Protocol"
+
+readme = "README.rst"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["wordly", "definition", "dictionary", "DICT"]
+
+[project.optional-dependencies]
+build = ["build", "twine"]
+
+[project.urls]
+repository = "https://github.com/MarkoM-dot/wordly"
+
+[project.scripts]
+wordly = "wordly.__main__:run"
+
+[tool.setuptools.dynamic]
+version = { attr = "wordly.__version__"}
