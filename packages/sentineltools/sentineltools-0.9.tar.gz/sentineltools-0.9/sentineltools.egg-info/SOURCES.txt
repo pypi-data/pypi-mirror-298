@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+sentineltools/__init__.py
+sentineltools.egg-info/PKG-INFO
+sentineltools.egg-info/SOURCES.txt
+sentineltools.egg-info/dependency_links.txt
+sentineltools.egg-info/requires.txt
+sentineltools.egg-info/top_level.txt
+sentineltools/files/__init__.py
+sentineltools/images/__init__.py
+sentineltools/utils/__init__.py
+sentineltools/utils/negex.py
