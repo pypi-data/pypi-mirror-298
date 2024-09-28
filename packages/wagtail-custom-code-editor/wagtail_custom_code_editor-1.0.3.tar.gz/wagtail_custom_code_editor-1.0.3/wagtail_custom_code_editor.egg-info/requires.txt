@@ -1,0 +1,8 @@
+django>=4.2
+
+[dynamic]
+dependencies
+
+[testing]
+django>=4.2
+wagtail>=6.2
