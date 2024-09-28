@@ -1,0 +1,2 @@
+[console_scripts]
+elgato-toggle = elgato_toggle.__main__:run
