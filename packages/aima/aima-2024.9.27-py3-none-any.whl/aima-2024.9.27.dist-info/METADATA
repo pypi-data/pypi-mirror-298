@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: aima
+Version: 2024.9.27
+Summary: Artificial Intelligence a Modern Approach 4th Ed by Peter Norvig and Stuart Russel
+Home-page: https://gitlab.com/tangibleai/community/aima
+License: AGPL3
+Keywords: AI,Artificial Intelligence,Artificial Intelligence a Modern Approach,NLP,Natural Language Processing,Virtual Assistant,chatbot,agent,Text Processing,Machine Learning,Graph Search,Search,AGI,AIMA
+Author: Peter Norvig (norvig)
+Author-email: peter.norvig@gmail.com
+Requires-Python: >=3.7,<3.11
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Dist: cvxopt
+Requires-Dist: image
+Requires-Dist: ipython
+Requires-Dist: ipythonblocks
+Requires-Dist: ipywidgets
+Requires-Dist: keras
+Requires-Dist: matplotlib
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pandas
+Requires-Dist: pillow
+Requires-Dist: pytest-cov
+Requires-Dist: qpsolvers
+Requires-Dist: scipy
+Requires-Dist: sortedcontainers
+Requires-Dist: tensorflow
+Project-URL: Documentation, https://gitlab.com/tangibleai/community/aima
+Project-URL: Repository, https://gitlab.com/tangibleai/community/aima
+Description-Content-Type: text/markdown
+
+# Introduction
+
+Code for Artificial Intelligence: A Modern Approach (AIMA) 4th edition by Peter Norvig and Stuart Russel.
+
+Shameless reuse of Norvig's official repository at https://github.com/aimacode/aima-python/ 
+
+The code should work in Python 3.9 and Python 3.10. Not yet tested with Python 3.11, 3.12, or 3.13.
+
+# Browse
+
+You can get some use out of the code here just by browsing, starting at the root of the source tree or by clicking on the links in the index on the project home page. The source code is in the .py files; the .txt files give examples of how to use the code.
+
+## Installation
+
+#### Linux
+```bash
+git clone git@gitlab.com:tangibleai/inactive/aima
+cd aima
+python3.10 -m venv .venv
+source .venv/bin/activate 
+pip install -e .
+```
+
+#### Mac
+1. install XCode
+2. use Linux instructions above
+
+#### Windows
+1. install git-bash or WSL
+2. use Linux instruction above
+
+## Testing
+
+In the `aima/` directory, execute the command
+
+```bash
+python doctests.py -v *.py
+```
+
+## Run the Code
+
+You're on your own -- experiment!
+Read the book, create a new python file, import the modules you need, and call the functions you want!
+
+## Acknowledgements
+
+Norvig and the aima-python contibutors:
+Many thanks for the bug reports, corrected code, and other support from Phil Ruggera, Peng Shao, Amit Patil, Ted Nienstedt, Jim Martin, Ben Catanzariti, and others.
+
