@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+checker/__init__.py
+checker/certificate_utils.py
+checker/entitlements_utils.py
+checker/file_utils.py
+checker/ocsp_utils.py
+checker/p12_utils.py
+demo_package_checker.egg-info/PKG-INFO
+demo_package_checker.egg-info/SOURCES.txt
+demo_package_checker.egg-info/dependency_links.txt
+demo_package_checker.egg-info/top_level.txt
