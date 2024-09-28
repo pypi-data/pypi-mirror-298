@@ -1,0 +1,7 @@
+[console_scripts]
+list_roofs = obstechutils.scripts.list_roofs:main
+mix_weather_sensors = obstechutils.scripts.mix_weather_sensors:main
+monitor_weather_sensor = obstechutils.scripts.monitor_weather_sensor:main
+mqtt_console = obstechutils.scripts.mqtt_console:main
+report_device_status = obstechutils.scripts.device_status:main_script
+report_pc_status = obstechutils.scripts.device_status:list_computers
