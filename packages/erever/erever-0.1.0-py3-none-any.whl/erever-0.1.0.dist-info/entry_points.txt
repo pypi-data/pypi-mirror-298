@@ -1,0 +1,2 @@
+[console_scripts]
+erever = erever.__main__:main
