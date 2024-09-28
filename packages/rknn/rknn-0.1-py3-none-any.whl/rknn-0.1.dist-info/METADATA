@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: rknn
+Version: 0.1
+Summary: A k-NN classifier using generalized social distance metrics
+Author: Ram Jeevan 
+Author-email: b.k.r.jeevan@gmail.com
+Requires-Dist: numpy
+
