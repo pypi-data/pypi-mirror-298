@@ -1,0 +1,11 @@
+jsql/__init__.py,sha256=ooaAgEdzBSuPXoP79nklY7uVf73jFB9_8RzjMffFEPQ,7501
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_list_param.py,sha256=1HZeFCr-c2vuAIDFHq3rnqmZ-C_wwB89CP_PRhMLb74,1022
+tests/test_render.py,sha256=DAmzNTWTJcJGkz0C4hmb72o3TeYiWMOGFQhlgFof3vU,3052
+tests/test_sql.py,sha256=d-3aonACOvlht3paufx4eVbH5vsO9XU3GhG4IdMFPY4,1078
+tests/test_sqlproxy.py,sha256=MugyASRMPklk6N9CoLmqdNFwbu5bCWd3phw1fJujlR0,2770
+jsql-0.9.dist-info/METADATA,sha256=8EsMpnzQo08zK1mi6wkaH7PPeqfMczUjSq5Gm8FXi0U,404
+jsql-0.9.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+jsql-0.9.dist-info/top_level.txt,sha256=2qHj30eSwFD5XHDnbLxrLzGsoZid29Ls5fhBGsVtiss,11
+jsql-0.9.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+jsql-0.9.dist-info/RECORD,,
