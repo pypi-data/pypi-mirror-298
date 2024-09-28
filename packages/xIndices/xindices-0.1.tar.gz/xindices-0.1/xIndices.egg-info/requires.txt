@@ -1,0 +1,5 @@
+xarray
+numpy
+xesmf
+eofs
+dask

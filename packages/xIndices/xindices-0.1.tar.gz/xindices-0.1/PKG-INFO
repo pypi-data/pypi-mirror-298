@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: xIndices
+Version: 0.1
+Summary: A module for computing SST trends and variability
+Author: Jivesh Dixit
+Author-email: jiveshdixit@cas.iitd.ac.in
+Requires-Python: >=3.6
+Requires-Dist: xarray
+Requires-Dist: numpy
+Requires-Dist: xesmf
+Requires-Dist: eofs
+Requires-Dist: dask
