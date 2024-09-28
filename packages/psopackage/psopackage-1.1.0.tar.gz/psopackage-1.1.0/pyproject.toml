@@ -1,0 +1,33 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "psopackage"
+version = "1.1.0"
+description = "A Particle Swarm Optimization package"
+authors = [
+    "Santiago Rocha Pachón <srochap@unal.edu.co>",
+    "Juan Sebastián Rueda <jruedase@unal.edu.co>"
+]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Unbo10/ParticleSwarmOptimization"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+pandas = ">=1.3.0"
+matplotlib = ">=3.4.3"
+numpy = ">=1.21.0"
+openpyxl = ">=3.0.9"
+toml = ">=0.10.2"
+xlsxwriter = ">=1.4.3"
+setuptools = ">=57.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+run = "psopackage.main:run"
+
+[build]
+exclude = ["examples/**", "tools/**"]
