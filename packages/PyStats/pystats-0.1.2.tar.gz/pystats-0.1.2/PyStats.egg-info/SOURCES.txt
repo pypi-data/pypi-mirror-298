@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+PyStats.egg-info/PKG-INFO
+PyStats.egg-info/SOURCES.txt
+PyStats.egg-info/dependency_links.txt
+PyStats.egg-info/not-zip-safe
+PyStats.egg-info/top_level.txt
