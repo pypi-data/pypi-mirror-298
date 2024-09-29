@@ -1,0 +1,10 @@
+LICENSE
+LICENSE.txt
+README.md
+setup.py
+gibbs_reconstructor.egg-info/PKG-INFO
+gibbs_reconstructor.egg-info/SOURCES.txt
+gibbs_reconstructor.egg-info/dependency_links.txt
+gibbs_reconstructor.egg-info/requires.txt
+gibbs_reconstructor.egg-info/top_level.txt
+gibbsreconstructor/__init__.py
