@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tsq"
+dynamic = ["version"]
+authors = [
+  { name="admk" },
+]
+description = "A Friendly Task Scheduler Frontend"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "tqdm",
+    "tomlkit",
+    "tabulate >= 0.9.0",
+    "blessed >= 1.20.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+tq = "taskq.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/admk/tsq"
+Issues = "https://github.com/admk/tsq/issues"
+
+[tool.setuptools.packages.find]
+include = ["taskq", "taskq.*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "taskq.__version__"}

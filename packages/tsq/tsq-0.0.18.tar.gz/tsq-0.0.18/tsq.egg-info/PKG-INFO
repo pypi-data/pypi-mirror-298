@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: tsq
+Version: 0.0.18
+Summary: A Friendly Task Scheduler Frontend
+Author: admk
+Project-URL: Homepage, https://github.com/admk/tsq
+Project-URL: Issues, https://github.com/admk/tsq/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: tqdm
+Requires-Dist: tomlkit
+Requires-Dist: tabulate>=0.9.0
+Requires-Dist: blessed>=1.20.0
+
+# A Friendly Task Scheduler Frontend
+
+## Introduction
+
+## Installation
+
+```shell
+pip install tsq
+```
+
+Cutting edge version from the repository:
+```shell
+pip install git+https://github.com/admk/tsq.git
+```
+
+## Usage
+
+Here’s an instruction on how to use `tq`, the front-end CLI for task-spooler:
+
+### Basic Usage
+
+```bash
+tq [options] [command]
+```
+
+### Common Commands:
+
+1. **list** (`ls`): Shows job information in a compact format.
+   Or simply call `tq` without any arguments.
+   ```bash
+   tq list
+   ```
+
+2. **ids** (`id`): Displays the job IDs.
+   ```bash
+   tq ids
+   ```
+
+3. **info**: Provides detailed job information.
+   ```bash
+   tq info
+   ```
+
+4. **commands** (`cmd`): Shows the commands of all jobs.
+   ```bash
+   tq commands
+   ```
+
+5. **outputs** (`out`): Displays job outputs.
+   ```bash
+   tq outputs
+   ```
+
+6. **add** (`a`): Add a new job to the queue.
+   ```bash
+   tq add [options] <command>
+   ```
+   - `-G`: Specify the number of GPUs required.
+   - `-N`: Specify the number of slots required.
+   - `-u`: Ensure the command is unique.
+   - `-f`: Add jobs from a file or standard input.
+
+7. **wait** (`w`): Wait for jobs to finish.
+   ```bash
+   tq wait
+   ```
+
+8. **kill** (`k`): Kill running jobs.
+   ```bash
+   tq kill <job_id>
+   ```
+
+9. **remove** (`rm`): Remove jobs from the queue.
+   ```bash
+   tq remove <job_id>
+   ```
+
+10. **rerun** (`rr`): Rerun a job.
+   ```bash
+   tq rerun <job_id>
+   ```
+
+11. **requeue** (`rq`): Requeue a job.
+   ```bash
+   tq requeue <job_id>
+   ```
+
+### Additional Options:
+- `-V`: Print version info.
+- `-rc`: Use a specific configuration file.
+- `-b`: Specify the backend (`dummy`, `ts`).
+- `-g`: Assign a group to a job.
+
+For adding a job with multiple resources:
+```bash
+tq add -G 2 -N 4 "python train_model.py"
+```
+
+For reading jobs from a file:
+```bash
+tq add -f job_list.txt
+```
