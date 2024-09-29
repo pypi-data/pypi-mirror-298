@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mdw
+Version: 1.1.1.4.2024.9.28.23.3
+Summary: High Energy Photon Source Big Data Pipe Network
+Author: zhangchenglong
+Author-email: zhangchl@ihep.ac.cn
+License: Mozilla Public License 2.0
+Requires-Python: >=3.0
+Requires-Dist: h5py
+Requires-Dist: setproctitle
+Requires-Dist: multipledispatch
+Requires-Dist: zmq
+Requires-Dist: ruamel.yaml
+Requires-Dist: lz4
+Requires-Dist: bitshuffle
+Requires-Dist: kafka-python
+Requires-Dist: redis
+Requires-Dist: hdf5-zcl
+Requires-Dist: fileservice
+Requires-Dist: paramiko
+
