@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: bilkent-traffic
+Version: 0.1
+Requires-Dist: pyfiglet
+Requires-Dist: smtplib
+Requires-Dist: pillow
+
