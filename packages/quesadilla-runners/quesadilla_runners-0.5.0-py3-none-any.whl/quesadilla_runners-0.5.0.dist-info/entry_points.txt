@@ -1,0 +1,3 @@
+[quesadilla.cli]
+runners=quesadilla.cli.runners:runners
+
