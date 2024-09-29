@@ -1,0 +1,3 @@
+from utsam.dbs.schemas.transactions.assignment_criteria_student_scores import PgAssignmentCriteriaStudentScoresTable
+from utsam.dbs.schemas.transactions.assignment_subcriteria_grade import PgAssignmentSubcriteriaGrade
+from utsam.dbs.schemas.transactions.assignment_subcriteria_student_scores import PgAssignmentSubcriteriaStudentScoresTable
