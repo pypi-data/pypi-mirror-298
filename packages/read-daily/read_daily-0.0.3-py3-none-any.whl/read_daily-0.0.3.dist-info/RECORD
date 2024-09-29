@@ -1,0 +1,9 @@
+read_daily/__init__.py,sha256=VhmRpDvuse5JNtqSU895yEVM9r6NZByj-bAVCFGmHUs,1996
+read_daily/spider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+read_daily/spider/bilibili.py,sha256=vNjdST1gaVxlkW039AjnxghXIq2j5nWr0uXWBuJYd0c,1489
+read_daily/spider/json/bilibili-popular-response.json,sha256=1Y8q8vZXo2Ybknu1n8Pw1p4BWXXBX8trdJoacOXgsiQ,63518
+read_daily-0.0.3.dist-info/METADATA,sha256=3w9kVWzjHrL6ICiT43x3eY1C4dIuG7zVDzRXo57zEPg,683
+read_daily-0.0.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+read_daily-0.0.3.dist-info/entry_points.txt,sha256=HOtCbcgiAVdA5FVy930_kOZOCrDAC0IgKfRQ8Fg0n2U,39
+read_daily-0.0.3.dist-info/licenses/LICENSE,sha256=5lP2uyekDL_lXeDrq31EB2PEpoj1ccvqsJmCrjAtm60,1110
+read_daily-0.0.3.dist-info/RECORD,,

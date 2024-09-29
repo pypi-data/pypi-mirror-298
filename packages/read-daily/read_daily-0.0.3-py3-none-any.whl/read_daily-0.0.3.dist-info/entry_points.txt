@@ -1,0 +1,2 @@
+[console_scripts]
+rdf = read_daily:cli
