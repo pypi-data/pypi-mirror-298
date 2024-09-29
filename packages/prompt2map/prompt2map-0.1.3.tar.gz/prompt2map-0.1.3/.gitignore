@@ -1,0 +1,25 @@
+# Python
+*.pyc
+__pycache__/
+venv/
+*.egg-info/
+dist/
+build/
+*.egg
+.conda/
+.vscode
+
+# Streamlit
+.streamlit/
+
+.mypy_cache/
+
+.env
+.DS_Store
+
+.git.bfg-report
+
+# Data
+*.jsonl
+dev
+data
