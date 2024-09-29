@@ -1,0 +1,10 @@
+Metadata-Version: 2.3
+Name: python-px
+Version: 0.0.7
+Summary: npx but for python
+Author-email: Ameer Arsala <ameer.arsala03@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: pydantic>2.0
+Requires-Dist: rich<14,>=13.8.1
+Requires-Dist: typer<0.13,>=0.12.5
