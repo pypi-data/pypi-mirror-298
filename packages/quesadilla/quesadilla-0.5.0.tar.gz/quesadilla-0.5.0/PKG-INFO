@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: quesadilla
+Version: 0.5.0
+Summary: An elegant background task queue for the more civilized age
+Home-page: https://gitlab.com/arcanery/python/quesadilla/quesadilla
+License: GPL-3.0-or-later
+Keywords: job,task,queue,async,actor
+Author: Artur Ciesielski
+Author-email: artur.ciesielski@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Provides-Extra: examples
+Requires-Dist: quesadilla-cli (>=0.5.0,<0.6.0)
+Requires-Dist: quesadilla-core (>=0.5.0,<0.6.0)
+Requires-Dist: quesadilla-examples[cli] (>=0.5.0,<0.6.0) ; extra == "examples"
+Requires-Dist: quesadilla-runners[cli] (>=0.5.0,<0.6.0)
+Project-URL: Documentation, https://arcanery.gitlab.io/python/quesadilla/quesadilla/
+Project-URL: Repository, https://gitlab.com/arcanery/python/quesadilla/quesadilla
+Description-Content-Type: text/markdown
+
+<!-- `quesadilla` - an elegant background task queue for the more civilized age
+Copyright (C) 2024 Artur Ciesielski <artur.ciesielski@gmail.com>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>. -->
+
+[![pipeline status](https://gitlab.com/arcanery/python/quesadilla/quesadilla/badges/main/pipeline.svg)](https://gitlab.com/arcanery/python/quesadilla/quesadilla/-/commits/main)
+[![coverage report](https://gitlab.com/arcanery/python/quesadilla/quesadilla/badges/main/coverage.svg)](https://gitlab.com/arcanery/python/quesadilla/quesadilla/-/commits/main)
+[![latest release](https://gitlab.com/arcanery/python/quesadilla/quesadilla/-/badges/release.svg)](https://gitlab.com/arcanery/python/quesadilla/quesadilla/-/releases)
+
+# quesadilla
+
+`quesadilla` is an elegant background task queue for the more civilized age.
+
+## Example usage
+
+First, install `quesadilla`: `pip install quesadilla==0.5.0`.
+
+`tasks.py`:
+
+```python
+import logging
+import random
+
+from quesadilla.connectors.in_memory import ThreadSafeInMemoryConnector
+from quesadilla.core import TaskNamespace, async_task, sync_task
+
+logging.basicConfig(level=logging.INFO)
+
+namespace = TaskNamespace("tasks", connector=ThreadSafeInMemoryConnector())
+queue = namespace.queue("queue")
+
+
+@sync_task(queue)
+def simple_task(i: int) -> bool:
+    return i == 0
+
+
+@async_task(queue)
+async def simple_atask(i: int) -> bool:
+    return i == 0
+
+
+# simulate someone adding jobs to the queue
+# queue is preloaded with 200 tasks
+for _ in range(100):
+    simple_task.queue(random.choice((0, 1)))
+    simple_atask.queue(random.choice((0, 1)))
+```
+
+Run with `python -m quesadilla runners listener tasks::queue`.
+
+Exit with `SIGINT` (Ctrl + C) or `SIGTERM`.
+
+## Roadmap
+
+- support for retrying failed tasks
+- support for cronjobs and heartbeat
+- support for task priority
+- support for delayed execution
+- documentation
+- a real-world connector! (most likely PostgreSQL with `psycopg` and `SQLAlchemy 2.0`)
+
