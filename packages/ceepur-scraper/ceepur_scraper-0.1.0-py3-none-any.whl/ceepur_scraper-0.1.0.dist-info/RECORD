@@ -1,0 +1,7 @@
+ceepur_scraper/__init__.py,sha256=CtQIfbKAclDivn-U4E5FrgSW5cOjrUEjYeRmXJjddqI,9881
+ceepur_scraper/csv_writer.py,sha256=45QsKiRSXuz4pxvDxSNYbDSB5zm7SorT9NWySF6TgI8,1645
+ceepur_scraper/models.py,sha256=Z-dMprffiCrb8ffx2iqwdpnKrVunt4xggaN_mH9Gt08,1945
+ceepur_scraper-0.1.0.dist-info/METADATA,sha256=14zeKroSdLj6lpKLri2Squ6I1v4xQNLxZQC8LbSUS9s,6008
+ceepur_scraper-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ceepur_scraper-0.1.0.dist-info/entry_points.txt,sha256=wQ-6jXRf7QNT1ig2aKQvtmDq2cef3y7H5Wwr4AZprHk,54
+ceepur_scraper-0.1.0.dist-info/RECORD,,
