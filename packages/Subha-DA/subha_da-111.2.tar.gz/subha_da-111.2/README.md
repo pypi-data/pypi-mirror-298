@@ -1,0 +1,69 @@
+A brief description of your project, outlining its purpose and key functionality.
+A lightweight Python package that provides basic arithmetic operations, including addition, subtraction, multiplication, division, modulus, and exponentiation.
+
+def add(a, b):
+    """
+    Adds two numbers together.
+    
+    Parameters:
+    a (int or float): The first number.
+    b (int or float): The second number.
+    
+    Returns:
+    int or float: The sum of a and b.
+    """
+    return a + b
+
+def sub(a, b):
+    """
+    Subtracts the second number from the first.
+    
+    Parameters:
+    a (int or float): The number to be subtracted from.
+    b (int or float): The number to subtract.
+    
+    Returns:
+    int or float: The difference of a and b.
+    """
+    return a - b
+
+def mul(a, b):
+    """
+    Multiplies two numbers together.
+    
+    Parameters:
+    a (int or float): The first number.
+    b (int or float): The second number.
+    
+    Returns:
+    int or float: The product of a and b.
+    """
+    return a * b
+
+def div(a, b):
+    """
+    Divides the first number by the second.
+    
+    Parameters:
+    a (int or float): The dividend (numerator).
+    b (int or float): The divisor (denominator).
+    
+    Returns:
+    float: The result of dividing a by b.
+    
+    Raises:
+    ZeroDivisionError: If b is zero.
+    """
+    return a / b
+
+def mod(a, b):
+    """
+    Returns the remainder of the division of the first number by the second.
+    
+    Parameters:
+    a (int or float): The dividend.
+    b (int or float): The divisor.
+    
+    Returns:
+    int or float: The remainder when a is divided by b.
+    
