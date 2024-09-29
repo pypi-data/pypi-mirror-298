@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: busy-gitlab
+Version: 0.3.0
+Summary: Busy integration plugin for GitLab issue checkboxes
+License: MIT
+Author: Steampunk Wizard
+Author-email: busy-gitlab@wizlib.ca
+Requires-Python: >=3.11,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: busy (==7.7.0)
+Description-Content-Type: text/markdown
+
+# Busy integration plugin for GitLab issue checkboxes
+
+A very basic demonstration of [Busy integrations](https://busy.wizlib.ca/integrations.html) that generates a simple output that can be copy/pasted into an issue description for all the tasks of a tag.
+
+
