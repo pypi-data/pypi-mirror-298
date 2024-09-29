@@ -1,0 +1,50 @@
+[tool.poetry]
+authors = [
+  "Joel Lee <joel@joellee.org>",
+  "Leon Fedden <leonfedden@gmail.com>",
+  "Daniel Reinón García <danielreinon@outlook.com>",
+  "Leynier Gutiérrez González <leynier41@gmail.com>",
+  "Anand Krishna <anand2312@proton.me>"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+description = "Supabase Storage client for Python."
+documentation = "https://supabase.github.io/storage-py"
+homepage = "https://supabase.github.io/storage-py"
+license = "MIT"
+name = "storage3"
+readme = "README.md"
+repository = "https://github.com/supabase/storage-py"
+version = "0.8.0" # {x-release-please-version}
+
+
+[tool.poetry.dependencies]
+httpx = {version = ">=0.24,<0.28", extras = ["http2"]}
+python = "^3.8"
+typing-extensions = "^4.2.0"
+python-dateutil = "^2.8.2"
+
+[tool.poetry.dev-dependencies]
+black = "^24.8.0"
+isort = "^5.12.0"
+pre-commit = "^3.5.0"
+pytest = "^8.3.3"
+pytest-asyncio = "^0.21.0"
+pytest-cov = "^5.0.0"
+python-dotenv = "^1.0.0"
+Sphinx = "^7.1.2"
+sphinx-press-theme = "^0.9.1"
+unasync-cli = "^0.0.9"
+
+[tool.poetry.group.dev.dependencies]
+sphinx-toolbox = "^3.4.0"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
