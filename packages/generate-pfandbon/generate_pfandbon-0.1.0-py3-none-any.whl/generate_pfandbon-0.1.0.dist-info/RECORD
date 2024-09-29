@@ -1,0 +1,9 @@
+pfandbon/__init__.py,sha256=rFnHHKCjhq-8a0xkh8tffxEW2go5QNPuoL5G3cgp0TI,140
+pfandbon/barcode_utils.py,sha256=wuMmIos3lTWgaS5GxPKnHlJ-xG5AFqDGv0wzIwRYxJA,627
+pfandbon/config.py,sha256=Z5NYog8REBWIF-D13naCLTtUJBv-0qziTDQgPiibXqg,109
+pfandbon/pfandbon_generator.py,sha256=gJlb6krUP82U3-pYihURmDubh3YLSL8oCRPAV2mzYV0,2195
+generate_pfandbon-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generate_pfandbon-0.1.0.dist-info/METADATA,sha256=NV60S9PCanZQEaOI3FQ0-MwGisHGHEPHaiWYl-P1XAQ,901
+generate_pfandbon-0.1.0.dist-info/WHEEL,sha256=Mdi9PDNwEZptOjTlUcAth7XJDFtKrHYaQMPulZeBCiQ,91
+generate_pfandbon-0.1.0.dist-info/top_level.txt,sha256=xOb8CzZhYfKw9pRMoID0RAQ7HlrA5ObQFsqVEgULWjI,9
+generate_pfandbon-0.1.0.dist-info/RECORD,,
