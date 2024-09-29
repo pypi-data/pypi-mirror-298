@@ -1,0 +1,2 @@
+[console_scripts]
+bilkent_traffic = bilkent_traffic:main
