@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dekmedia
+Version: 0.1.3
+Author-Email: sanzenwin <sanzenwin@gmail.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: dektools[yaml]<1.0.0
+Provides-Extra: audio
+Requires-Dist: just-playback<=0.1.8; extra == "audio"
+Provides-Extra: image
+Requires-Dist: pillow<=10.3.0; extra == "image"
+Provides-Extra: svg
+Requires-Dist: svglib<=1.5.1; extra == "svg"
+Requires-Dist: pymupdf<=1.22.5; extra == "svg"
+Requires-Dist: svgpathtools<=1.6.1; extra == "svg"
+Description-Content-Type: text/markdown
+
