@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nb2dbpy
+Version: 0.1.0
+Summary: Function for un- and re- doing the conversion from .ipynb ipython notebook to .py python file which Databricks performs every time it exports a notebook. Credit goes to Yoyodyne-Data-Science. I have just made a few tweaks to the original code.
+License: MIT
+Author: John Dolan
+Author-email: johndolan29@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: issues, https://github.com/johndolan29/nb2dbpy/issues
+Project-URL: repository, https://github.com/johndolan29/nb2dbpy
