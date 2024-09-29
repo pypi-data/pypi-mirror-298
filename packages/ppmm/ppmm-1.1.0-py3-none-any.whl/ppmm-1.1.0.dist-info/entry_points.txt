@@ -1,0 +1,3 @@
+[console_scripts]
+mm = ppmm.cli:cli
+ppmm = ppmm.cli:cli
