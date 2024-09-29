@@ -1,0 +1,2 @@
+[console_scripts]
+cryptograohy = cryptograohy.cli:cli
