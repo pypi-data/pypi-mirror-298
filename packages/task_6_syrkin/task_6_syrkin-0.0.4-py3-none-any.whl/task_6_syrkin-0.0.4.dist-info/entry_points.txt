@@ -1,0 +1,3 @@
+[console_scripts]
+monaco-report=task_6_syrkin.report:main
+
