@@ -1,0 +1,67 @@
+New features
+============
+There is no new feature in this version, only bug fixes and internal
+implementation changes.
+
+Implementation
+==============
+- throw a TypeError if a Javascript function is called with keyword arguments
+- to fix bugs in conversion between JS and Python, all internal lists must now
+  have __class__ set
+- add methods to js_array to avoid handling JS arrays in py_list.js
+- fix __class_getitem__ on builtin types
+- rewrite and simplify code for indexedDB cache. Related to issue #2488
+- define compiler flags in brython_builtins.js, use them in libs/dis.js and in
+  ast_to_js.js
+- reduce size of generated Javascript by putting more features in
+  make_function_infos(), make_async() and enter_frame()
+- improve speed of open() on Chrome
+
+Internal tools
+==============
+
+
+Bug fixes
+=========
+- bug in interaction between JS arrays and Python lists
+- fix datetime.strptime() bug reported at
+  https://groups.google.com/g/brython/c/jC3c2aP4bFw/m/G-uyAe8lAwAJ
+- bug in error reporting for operators & and |
+
+Issues
+- #2467 : cannot explicitly call a @staticmethod __call__() member function
+- #2468 : problem with inspect.getframeinfo
+- #2470 : running async function without await
+- #2472 : bug with regular expressions with \s inside []
+- #2474 : a javascript array inside an object becomes separated if created at
+  Python side
+- #2475 : [CPython compliance] 500 is 500 should print a SyntaxWarning /
+  "a is c" should be False if both equals to 500.
+- #2477 : .pop allows an argument to be passed in when popping from a set
+- #2479 : incorrect end_col_offset in generated AST for JoinedStr (f-string)
+- #2480 : NetworkError in import statement in version 3.12.4
+- #2481 : can't send SharedArrayBuffers between threads
+- #2484 : gh-98401 (invalid octal escape sequences)
+- #2486 : implement extendModule, or is there workaround? (issue with methods
+  in JS "classes")
+- #2490 : bug with non-greedy modifier in regular expressions
+
+Brython site
+============
+- in test_vue.html, replace "push" by "append"
+
+Github site
+===========
+
+
+Demos
+=====
+
+
+Standard distribution
+=====================
+
+
+Documentation
+=============
+
