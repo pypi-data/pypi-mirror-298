@@ -1,0 +1,10 @@
+gslogger/__init__.py,sha256=hlJ3VebjNMWHsaRpaLQoTgkLIIrqJkQve0zf5h-YcEo,219
+gslogger/extras.py,sha256=tg_olZmmiCd4_50TpzXkeAZaZelCACaRLhlyojg3E9I,2081
+gslogger/glog.py,sha256=P2B4_ZLS-O6sF_qCZM8YClPc83zj3FXMIIujbhYOplo,12554
+gslogger/jin.py,sha256=RsorXlba7tHwedVs0M-ialL99LEfbC7ND4Z666EB3CQ,3622
+gslogger/version.py,sha256=CzGMAEiMV-QnBdtd25X6MN8Vhm53SlxgGweGzpuOGdo,1413
+gslogger-0.2.69.dist-info/METADATA,sha256=VHlL-fbwjx3n8_1by0bHf0oR9V6WOhE5Rv8Mi-N49v4,515
+gslogger-0.2.69.dist-info/WHEEL,sha256=fl6v0VwpzfGBVsGtkAkhILUlJxROXbA3HvRL6Fe3140,105
+gslogger-0.2.69.dist-info/entry_points.txt,sha256=tJmWO62acjCsWAjsW_GS25-AWd0lh99w-K06EKHysAQ,44
+gslogger-0.2.69.dist-info/licenses/LICENSE,sha256=-vtZFE6lJZT1kyZyj1nyFgo3l4Er_u2XWxMjdq8c-L0,10944
+gslogger-0.2.69.dist-info/RECORD,,
