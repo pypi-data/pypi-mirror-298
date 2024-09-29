@@ -1,0 +1,16 @@
+ipython>=7.34.0
+requests>=2.32.3
+numpy>=1.26.4
+pandas>=2.1.4
+matplotlib>=3.7.1
+folium>=0.17.0
+branca>=0.7.2
+scikit-learn>=1.5.2
+plotly>=5.24.1
+ipywidgets>=7.7.1
+geopandas>=1.0.1
+openpyxl>=3.1.5
+statsmodels>=0.14.3
+
+[css]
+tinycss2<1.2.0,>=1.1.0
