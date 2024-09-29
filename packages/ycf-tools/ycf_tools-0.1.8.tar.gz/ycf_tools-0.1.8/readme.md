@@ -1,0 +1,106 @@
+# Yandex Cloud Functions Tools for Python
+
+Tools for developing Yandex cloud functions in Python
+
+[![PyPI](https://img.shields.io/pypi/v/ycf-tools)](https://pypi.org/project/ycf-tools/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ycf-tools)](https://pypi.org/project/ycf-tools/)
+[![GitLab last commit](https://img.shields.io/gitlab/last-commit/rocshers/python/ycf-tools)](https://gitlab.com/rocshers/python/ycf-tools)
+[![Docs](https://img.shields.io/badge/docs-exist-blue)](https://projects.rocshers.com/open-source/ycf-tools)
+
+[![Test coverage](https://codecov.io/gitlab/rocshers:python/ycf-tools/graph/badge.svg)](https://codecov.io/gitlab/rocshers:python/ycf-tools)
+[![Downloads](https://static.pepy.tech/badge/ycf-tools)](https://pepy.tech/project/ycf-tools)
+[![GitLab stars](https://img.shields.io/gitlab/stars/rocshers/python/ycf-tools)](https://gitlab.com/rocshers/python/ycf-tools)
+
+## Functionality
+
+- Support for type hints
+- Wrapper for convenient request `handling`
+- Sentry integration
+
+## Installation
+
+`pip install ycf-tools`
+
+or add `ycf-tools` in `requirements.txt`
+
+## Quick start
+
+```python
+# module.py
+
+from ycf import YcfServer, Context, HttpRequest
+
+class Server(YcfServer):
+    async def http_request_handler(self, context: Context, request: HttpRequest):
+        return 'OK'
+    
+
+server = Server()
+
+# entrypoint -> module.server
+```
+
+## Deployment
+
+If you are using Python to work with Yandex Cloud Functions, we recommend using the [`poetry-ycf-plugin`](https://pypi.org/project/poetry-ycf-plugin/), which allows you to deploy a new version of your function with a `single command`. It also offers easy integration with `CI/CD` systems.
+
+### Step №0
+
+Install `poetry` and get [`authorized_key.json`](https://yandex.cloud/docs/iam/concepts/authorization/key)
+
+### Step №1
+
+```bash
+poetry self add poetry-ycf-plugin
+```
+
+### Step №2
+
+Configure your deployment through `pyproject.toml`, `.env`  or `environment variables`. List of variables in [documentation](https://projects.rocshers.com/poetry-ycf-plugin/configure)
+
+### Step №3
+
+```bash
+poetry ycf-deploy
+```
+
+## Integrations
+
+### Sentry
+
+`ycf-tools` is ready to send errors and traces to your `Sentry`. To do this, you need to install the `sentry-sdk` and initialize it.
+
+```python
+# pip install sentry-sdk
+import sentry_sdk
+
+from ycf import YcfServer, Context, HttpRequest
+
+class Server(YcfServer):
+    async def http_request_handler(self, context: Context, request: HttpRequest):
+        return 'OK'
+
+server = Server()
+
+sentry_sdk.init(
+    dsn=...,
+    traces_sample_rate=1.0,
+)
+```
+
+## Contribute
+
+Issue Tracker: <https://gitlab.com/rocshers/python/ycf-tools/-/issues>  
+Source Code: <https://gitlab.com/rocshers/python/ycf-tools>
+
+Before adding changes:
+
+```bash
+make install-dev
+```
+
+After changes:
+
+```bash
+make format test
+```
