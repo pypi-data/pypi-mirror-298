@@ -1,0 +1,7 @@
+setup.py
+test_of_rm/__init__.py
+test_of_rm/main.py
+test_of_rm.egg-info/PKG-INFO
+test_of_rm.egg-info/SOURCES.txt
+test_of_rm.egg-info/dependency_links.txt
+test_of_rm.egg-info/top_level.txt
