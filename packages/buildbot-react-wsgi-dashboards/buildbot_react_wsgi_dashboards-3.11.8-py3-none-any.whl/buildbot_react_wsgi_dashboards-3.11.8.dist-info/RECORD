@@ -1,0 +1,8 @@
+buildbot_react_wsgi_dashboards/VERSION,sha256=8TN2yUwHdrM3cnt0ayySHrbLW0Sm6Wvn3OfccMetgUc,6
+buildbot_react_wsgi_dashboards/__init__.py,sha256=2gMLAy0MfJ0xSaww_6sy8fptxle6AvBOYVEoOrWaUbg,1730
+buildbot_react_wsgi_dashboards/static/scripts.js,sha256=IqDhIeO1E8ImPOMMe3kSC6PKKj_b3gNfwszZBaCsjNg,1290057
+buildbot_react_wsgi_dashboards-3.11.8.dist-info/METADATA,sha256=VZtiT78aM2LXoGdOxog5VxKQIL1c2fxUEpKjxIh1io4,334
+buildbot_react_wsgi_dashboards-3.11.8.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+buildbot_react_wsgi_dashboards-3.11.8.dist-info/entry_points.txt,sha256=vMDJ7TVVIxKyhN1ysC-2IpTKbOM4DiUvqr1C9ZE1v2k,73
+buildbot_react_wsgi_dashboards-3.11.8.dist-info/top_level.txt,sha256=f5KeaIXd5D5_eMzHUSwlvYXSs6uOaU6lsT6l9FHo7BY,31
+buildbot_react_wsgi_dashboards-3.11.8.dist-info/RECORD,,
