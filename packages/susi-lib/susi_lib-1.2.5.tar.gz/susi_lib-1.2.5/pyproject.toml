@@ -1,0 +1,116 @@
+[build-system]
+requires = ["hatchling>=1.25.0", "hatch-vcs>=0.4.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "susi-lib"
+authors = [
+  { name="Oliver Lago", email="oliver.oli.lago@gmail.com" },
+]
+description = "Library for SuŠi organizers"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Intended Audience :: Other Audience",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+dependencies = [
+  "platformdirs",
+  "typing_extensions; python_version < '3.11'"
+]
+
+[project.urls]
+Homepage = "https://github.com/olilag/susi-lib"
+
+[project.scripts]
+susi-word-finder = "susi_lib.word_finder_cli:main"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/susi_lib/_version.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.github",
+  "/docs",
+  "/tests",
+  "/examples",
+  "/assets",
+  ".pre-commit-config.yaml",
+  ".gitattributes",
+  ".readthedocs.yaml",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/susi_lib"]
+
+[tool.hatch.envs.dev]
+installer = "uv"
+dependencies = [
+  "pre-commit",
+]
+post-install-commands = [
+  "pre-commit install",
+]
+
+[tool.hatch.envs.dev.extra-scripts]
+pip = "{env:HATCH_UV} pip {args}"
+
+[tool.hatch.envs.style]
+installer = "uv"
+detached = true
+dependencies = [
+  "flake8",
+  "black",
+  "isort",
+  "pylint",
+]
+
+[tool.hatch.envs.style.scripts]
+check = [
+  "- flake8 .",
+  "- black --check --diff .",
+  "- isort --check-only --diff .",
+  "- pylint src tests"
+]
+format = [
+  "isort .",
+  "black .",
+  "check",
+]
+
+[tool.hatch.envs.hatch-test]
+installer = "uv"
+default-args = ["tests"]
+extra-args = ["-W error"]
+
+[tool.hatch.envs.hatch-test.extra-scripts]
+pip = "{env:HATCH_UV} pip {args}"
+
+[[tool.hatch.envs.hatch-test.matrix]]
+python = ["3.12", "3.11", "3.10"]
+
+[tool.hatch.envs.docs]
+dependencies = [
+  "sphinx",
+  "sphinx-last-updated-by-git",
+  "sphinx-rtd-theme",
+  "sphinx-autobuild",
+  "sphinx-git",
+]
+
+[tool.hatch.envs.docs.scripts]
+build = ["sphinx-build docs docs/_build/html"]
+watch = ["sphinx-autobuild docs docs/_build/html --watch src"]
+
+[tool.hatch.envs.docs.extra-scripts]
+pip = "{env:HATCH_UV} pip {args}"
