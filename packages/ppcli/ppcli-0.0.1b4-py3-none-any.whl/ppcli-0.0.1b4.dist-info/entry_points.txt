@@ -1,0 +1,2 @@
+[console_scripts]
+ppcli = ppcli.app:cli
