@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: python-redilock
+Version: 0.0.7
+Summary: Simple Redis Distributed Lock
+Home-page: https://github.com/zferentz/python-redilock
+Author: Zvika Ferentz
+Author-email: Zvika.Ferentz@gmail.com
+License: MIT
+Keywords: redis distributed lock mutex
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+License-File: LICENSE
+
+UNKNOWN
+
