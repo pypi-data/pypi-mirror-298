@@ -1,0 +1,3 @@
+[console_scripts]
+git-py-stats = git_py_stats.main:main
+
