@@ -1,0 +1,13 @@
+better_social_notifications/__init__.py,sha256=nNPDvyv5XUk7CUHHT2U1n1hTxIe8Ko6ddiL3hBvRT54,738
+better_social_notifications/auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+better_social_notifications/auth/youtube.py,sha256=Ub9vaD7JGkccNPSQXa8VUHgWVFL9-M0u3Ce7jDSFm6Q,629
+better_social_notifications/main.py,sha256=D7ENsKZazdPS0SoiPiQNT5JRM_nwAXoNCg5Wm0xl4Pg,1125
+better_social_notifications/models/__init__.py,sha256=i8nucUcy9UAO9UVpnEvcm0-Vy-Ej-S5Y5B5a-E_9tE0,79
+better_social_notifications/models/models.py,sha256=ZSSgQPXpXIkBPEUjGGw0QlS_ojcWnB-PnXFzqKfoB0o,399
+better_social_notifications/notifications/__init__.py,sha256=mRnjTvv3r4XEEGn0EEjaKBhoer22dkltmvJ9Ph9Grjs,63
+better_social_notifications/notifications/notifications.py,sha256=xgx0RIENdP_Vlw7ImKnwE5AnuvLSSdpIW2MEJH0O4bQ,1001
+better_social_notifications/youtube/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+better_social_notifications/youtube/youtube.py,sha256=0yRcAOEt_kpCUQafebXNEOWn3gtuuTxg_PM5UTSZGiQ,5130
+better_social_notifications-0.3.4.dist-info/METADATA,sha256=ohzSMXNnxp3Owh__2NLo0FraPK4PeLJ8_Lv6k4turXA,556
+better_social_notifications-0.3.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+better_social_notifications-0.3.4.dist-info/RECORD,,
