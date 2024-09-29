@@ -1,0 +1,16 @@
+fastkde/__init__.py,sha256=h924C7uTN7oIob-4k_o66FvXe14orO0Ffqyt8T28i64,609
+fastkde/convergence_tests.py,sha256=DJxE54WHUa8b6Cvo0qmyPA9uoAEHNW-yRAXOdpmjqio,22714
+fastkde/empiricalCharacteristicFunction.py,sha256=9I9DDdboiw86xj7iiEvXqsf8f-04-t6NqYuMB7S4ar8,11249
+fastkde/fastKDE.py,sha256=VXCbXLFx7RC3qaYTM20wH8Ef1YDNjITsv8qkay-FQvk,81711
+fastkde/floodFillSearch.c,sha256=CtgtQ8AbUcDL2K1okGtAdFVpZQDDa80wCyAmch81nlE,1346809
+fastkde/floodFillSearch.cp312-win_amd64.pyd,sha256=89tiCW0GjnpUHW9hy-qVwnFPKxzFxLEsw76af1ru-gw,188416
+fastkde/floodFillSearch.pyx,sha256=G2-GmFC359ydJIspPz3hQhXfJqdqxECNebegi2PhHC8,12330
+fastkde/nufft.c,sha256=FGEn7l6lKY1E6mQVh_PoiaSfAEB2EVHNTpRdzR2WHLM,1511591
+fastkde/nufft.cp312-win_amd64.pyd,sha256=VGBsSidE6UcrlKMViRIwu0uskEMTLeS08GU9gintbt4,240640
+fastkde/nufft.pyx,sha256=GuHmtzG6HgmbW7KdYt5XKTj0O43HmIWKjYVp0sQgsGs,24776
+fastkde/plot.py,sha256=v9c9kd6tUXEHW6MkFyLDEdwiduC4tSAJeJEdlUIceZI,17140
+fastkde-2.1.3.dist-info/LICENSE.txt,sha256=9AOOyfp3ZWeDDmAEKUA57kLbukllNJm_8xMKyh52flQ,3826
+fastkde-2.1.3.dist-info/METADATA,sha256=Q9FgClGOJqGIpeSrq8k2FuKiQtqtVRGUfBRwjuNzfoM,5866
+fastkde-2.1.3.dist-info/WHEEL,sha256=3vidnDuZ-QSnHIxLhNbI1gIM-KgyEcMHuZuv1mWPd_Q,101
+fastkde-2.1.3.dist-info/top_level.txt,sha256=9ouNn5T_UUiNRFkLR1RlknaEY3-ap0sD2n5nYwNYV6A,8
+fastkde-2.1.3.dist-info/RECORD,,
