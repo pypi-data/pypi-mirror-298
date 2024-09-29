@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ontosys"
+version = "0.0.2"
+description = "OntoSys"
+authors = ["Peter Styk <peter@styk.tv>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+ontosys = "src.ontosys:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
