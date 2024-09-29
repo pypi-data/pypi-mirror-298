@@ -1,0 +1,10 @@
+anycrc/anycrc.pyx,sha256=XhxZwgeAxRM5PHUVwOPoj3sG62ID8hsYy-uhy-6oouQ,3564
+anycrc/anycrc.cpython-311-i386-linux-musl.so,sha256=Vcp0H4-4bhgisJf5PU4p1x4zPBr5T_ww0ZclIupmeLk,1238636
+anycrc/__main__.py,sha256=pYhkStmaSlPx07Q0Xax-zf267wDa5jX_HGfctRkVyJ0,528
+anycrc/models.py,sha256=dtlP7f3qUltrdzLU2K8D4U7YaUA27tLXWTa3SC1oblQ,16666
+anycrc/__init__.py,sha256=6WUxWuBxHrqqbAXrKSveKIr9ZMlihLyjTONUmYSHIBw,21
+anycrc-1.0.1.dist-info/LICENSE,sha256=uxkqUocH4qyFvXfwLLih1UygwH13VKb6uoYwQv7Z4wQ,890
+anycrc-1.0.1.dist-info/METADATA,sha256=4D6QL5tRn1bEcZeMfewsGSW1w-V7hW7MSVRpnlh3lVI,2268
+anycrc-1.0.1.dist-info/RECORD,,
+anycrc-1.0.1.dist-info/WHEEL,sha256=qB_28toNqcXFryqGRvqDM4Hau9VnAdTFzwikQaPOdT0,110
+anycrc-1.0.1.dist-info/top_level.txt,sha256=HbCFlOeYEx638RXhl-PI4tQtdbHhwyL9ObHhSuPNyaA,7
