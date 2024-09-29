@@ -1,0 +1,3 @@
+[console_scripts]
+astrix=astrix.cli:cli
+
