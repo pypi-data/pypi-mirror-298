@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "busy-gitlab"
+description = "Busy integration plugin for GitLab issue checkboxes"
+authors = ["Steampunk Wizard <busy-gitlab@wizlib.ca>"]
+license = "MIT"
+readme = "README.md"
+version = "0.2.0"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+busy = "7.6.0"
+
+[tool.poetry.group.dev.dependencies]
+pycodestyle = "^2.11.0"
+autopep8 = "^2.0.4"
+coverage = "^7.3.0"
