@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+ai_metrics.egg-info/PKG-INFO
+ai_metrics.egg-info/SOURCES.txt
+ai_metrics.egg-info/dependency_links.txt
+ai_metrics.egg-info/requires.txt
+ai_metrics.egg-info/top_level.txt
