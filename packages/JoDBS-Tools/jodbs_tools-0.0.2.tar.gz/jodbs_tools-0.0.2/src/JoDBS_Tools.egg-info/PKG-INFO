@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: JoDBS_Tools
+Version: 0.0.2
+Summary: A utils library for JoDBS
+Home-page: https://github.com/JoDBS/JoDBS_Tools
+Author: JoDBS
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymongo
+Requires-Dist: nextcord
+
+# JoDBS Tools
+
+A utility for cleaning up your code in Discord Bots, and connecting it to your own nodes; If configured correctly.
+
+## Installation
+
+```sh
+pip install jodbs_tools 
