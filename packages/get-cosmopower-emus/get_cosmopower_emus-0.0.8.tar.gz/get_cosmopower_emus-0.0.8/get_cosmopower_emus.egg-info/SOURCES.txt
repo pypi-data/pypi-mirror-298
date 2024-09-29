@@ -1,0 +1,12 @@
+.gitignore
+MANIFEST.in
+README.md
+pypi_upload.sh
+pyproject.toml
+setup.py
+get_cosmopower_emus/__init__.py
+get_cosmopower_emus/get_cosmopower_emus.py
+get_cosmopower_emus.egg-info/PKG-INFO
+get_cosmopower_emus.egg-info/SOURCES.txt
+get_cosmopower_emus.egg-info/dependency_links.txt
+get_cosmopower_emus.egg-info/top_level.txt
