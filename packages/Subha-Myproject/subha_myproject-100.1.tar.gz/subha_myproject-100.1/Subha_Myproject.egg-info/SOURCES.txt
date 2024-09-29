@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Subha_Myproject.egg-info/PKG-INFO
+Subha_Myproject.egg-info/SOURCES.txt
+Subha_Myproject.egg-info/dependency_links.txt
+Subha_Myproject.egg-info/top_level.txt
+package/__init__.py
+package/subha.py
+package/subha1.py
