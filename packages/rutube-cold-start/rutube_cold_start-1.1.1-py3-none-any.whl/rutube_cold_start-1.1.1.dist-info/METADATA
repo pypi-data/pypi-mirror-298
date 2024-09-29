@@ -1,0 +1,51 @@
+Metadata-Version: 2.3
+Name: rutube-cold-start
+Version: 1.1.1
+Summary: Recommandation system for cold users
+Project-URL: Documentation, https://digital-fracture.github.io/cold-start
+Project-URL: Issues, https://github.com/digital-fracture/cold-start/issues
+Project-URL: Source, https://github.com/digital-fracture/cold-start
+Author-email: KruASe76 <kruanse@ya.ru>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Russian
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Requires-Dist: fastparquet
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: scikit-learn
+Description-Content-Type: text/markdown
+
+# RUTUBE Cold Start
+
+[![PyPI - Version](https://img.shields.io/pypi/v/rutube-cold-start.svg)](https://pypi.org/project/rutube-cold-start)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/rutube-cold-start.svg)](https://pypi.org/project/rutube-cold-start)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install rutube-cold-start
+```
+
+## License
+
+`rutube-cold-start` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
