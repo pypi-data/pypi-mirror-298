@@ -1,0 +1,7 @@
+click
+pyyaml
+more_itertools
+python_dotenv
+toml
+icecream
+objexplore

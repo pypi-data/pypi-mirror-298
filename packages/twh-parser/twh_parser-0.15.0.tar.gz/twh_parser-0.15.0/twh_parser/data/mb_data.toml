@@ -1,0 +1,696 @@
+["American Business"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["American Cultures"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["American Heritage"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["American Labor"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Animal Science"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Animation]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Archaeology]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Archery]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Architecture]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Art]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Astronomy]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Athletics]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Automotive Maintenance"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Aviation]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Backpacking]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Basketry]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Bird Study"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Bugling]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Camping]
+"eagle required" = true
+image = "test"
+id = 0
+
+[Canoeing]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Chemistry]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Chess]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Citizenship in Society"]
+"eagle required" = true
+image = "test"
+id = 0
+
+["Citizenship in the Community"]
+"eagle required" = true
+image = "test"
+id = 0
+
+["Citizenship in the Nation"]
+"eagle required" = true
+image = "test"
+id = 0
+
+["Citizenship in the World"]
+"eagle required" = true
+image = "test"
+id = 0
+
+[Climbing]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Coin Collecting"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Collections]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Communication]
+"eagle required" = true
+image = "test"
+id = 0
+
+["Composite Materials"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Cooking]
+"eagle required" = true
+image = "test"
+id = 0
+
+["Crime Prevention"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Cycling]
+"eagle required" = true
+alternates = ["Hiking", "Swimming"]
+image = "test"
+id = 0
+
+[Dentistry]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Digital Technology"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Disabilities Awareness"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Dog Care"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Drafting]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Electricity]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Electronics]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Emergency Preparedness"]
+"eagle required" = true
+alternates = ["Lifesaving"]
+image = "test"
+id = 0
+
+[Energy]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Engineering]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Entrepreneurship]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Environmental Science"]
+"eagle required" = true
+alternates = ["Sustainability"]
+image = "test"
+id = 0
+
+[Exploration]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Family Life"]
+"eagle required" = true
+image = "test"
+id = 0
+
+["Farm Mechanics"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Fingerprinting]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Fire Safety"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["First Aid"]
+"eagle required" = true
+image = "test"
+id = 0
+
+["Fish and Wildlife Management"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Fishing]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Fly Fishing"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Forestry]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Game Design"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Gardening]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Genealogy]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Geocaching]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Geology]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Golf]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Graphic Arts"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Health Care Professions"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Hiking]
+"eagle required" = true
+alternates = ["Swimming", "Cycling"]
+image = "test"
+id = 0
+
+["Home Repairs"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Horsemanship]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Indian Lore"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Insect Study"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Inventing]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Journalism]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Kayaking]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Landscape Architecture"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Law]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Leatherwork]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Lifesaving]
+"eagle required" = true
+alternates = ["Emergency Preparedness"]
+image = "test"
+id = 0
+
+["Mammal Study"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Metalwork]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Mining in Society"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Model Design and Building"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Motorboating]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Moviemaking]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Music]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Nature]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Nuclear Science"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Oceanography]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Orienteering]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Painting]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Personal Fitness"]
+"eagle required" = true
+image = "test"
+id = 0
+
+["Personal Management"]
+"eagle required" = true
+image = "test"
+id = 0
+
+[Pets]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Photography]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Pioneering]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Plant Science"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Plumbing]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Pottery]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Programming]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Public Health"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Public Speaking"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Pulp and Paper"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Radio]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Railroading]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Reading]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Reptile and Amphibian Study"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Rifle Shooting"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Robotics]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Rowing]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Safety]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Salesmanship]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Scholarship]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Scouting Heritage"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Scuba Diving"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Sculpture]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Search and Rescue"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Shotgun Shooting"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Signs, Signals and Codes"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Skating]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Small-Boat Sailing"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Snow Sports"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Soil and Water Conservation"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Space Exploration"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Sports]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Stamp Collecting"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Surveying]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Sustainability]
+"eagle required" = true
+alternates = ["Environmental Science"]
+image = "test"
+id = 0
+
+[Swimming]
+"eagle required" = true
+alternates = ["Hiking", "Cycling"]
+image = "test"
+id = 0
+
+[Textile]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Theater]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Traffic Safety"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Truck Transportation"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Veterinary Medicine"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Water Sports"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Weather]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Welding]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Whitewater]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Wilderness Survival"]
+"eagle required" = false
+image = "test"
+id = 0
+
+["Wood Carving"]
+"eagle required" = false
+image = "test"
+id = 0
+
+[Woodwork]
+"eagle required" = false
+image = "test"
+id = 0
