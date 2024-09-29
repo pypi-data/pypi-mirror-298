@@ -1,0 +1,19 @@
+ocrd-fork-adabelief-tf # published version of adabelief-tf @ git+https://github.com/juntang-zhuang/Adabelief-Optimizer@5a2d2dc73b227164cece2acb93f7c351aa7a9e95#subdirectory=pypi_packages/adabelief_tf0.2.1/
+dataclasses-json
+GitPython
+imageio
+nptyping
+opencv-python-headless
+openpyxl
+paiargparse==1.1.2
+pandas
+pillow
+prettytable
+python-Levenshtein
+scikit-image
+pooch==1.4.0
+tensorflow>=2.4.0,<2.16.0
+tensorflow_addons>=0.12.0  # must be compatible with tensorflow version
+tqdm
+typeguard
+xlrd==1.2.0
