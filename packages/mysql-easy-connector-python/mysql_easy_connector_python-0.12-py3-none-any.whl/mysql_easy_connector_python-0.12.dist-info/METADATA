@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: mysql-easy-connector-python
+Version: 0.12
+Summary: Easy Mysql 
+Author: mdev2007
+Author-email: m.programmer20070@gmail.com
+Requires-Dist: mysql-connector-python
+
