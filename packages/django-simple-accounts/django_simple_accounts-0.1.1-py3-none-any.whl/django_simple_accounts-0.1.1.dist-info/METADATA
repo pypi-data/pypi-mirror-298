@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: django-simple-accounts
+Version: 0.1.1
+Summary: Django accounts site
+Home-page: https://github.com/ThuanD/django-simple-accounts
+Author: kai
+Author-email: thuan.dv0@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: django (>=5.1.1,<6.0.0)
+Project-URL: Repository, https://github.com/ThuanD/django-simple-accounts
+Description-Content-Type: text/markdown
+
+# Django Accounts
+
+Django accounts site
+
+
+## Simple usage
+
+1. Install by running the following command
+
+    ```bash
+    pip install django-simple-accounts
+    ```
+
+2. Add the following settings to your `settings.py` file
+
+    ```python
+    INSTALLED_APPS = [
+        'accounts',
+        # etc
+    ]
+    
+    # example custom for accounts settings 
+    LOGIN_URL = '/login/'
+    ACCOUNTS = dict(
+        LOGIN_URL='/login/',
+        LOGIN_REDIRECT_URL='/',
+    )
+    ```
+
+3. Add the account URLs to your `urls.py` file
+    ```python
+    from django.urls import path, include
+    
+    urlpatterns = [
+        path('', include("accounts.urls")),
+    ]
+    ```
