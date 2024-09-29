@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/textx_lang_json.egg-info/PKG-INFO
+src/textx_lang_json.egg-info/SOURCES.txt
+src/textx_lang_json.egg-info/dependency_links.txt
+src/textx_lang_json.egg-info/entry_points.txt
+src/textx_lang_json.egg-info/requires.txt
+src/textx_lang_json.egg-info/top_level.txt
+src/textxjson/__init__.py
+src/textxjson/json.py
+src/textxjson/grammar/json.tx
+tests/test.py
