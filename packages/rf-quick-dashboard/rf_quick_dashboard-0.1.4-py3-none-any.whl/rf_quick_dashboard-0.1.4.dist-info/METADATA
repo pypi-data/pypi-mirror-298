@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: rf-quick-dashboard
+Version: 0.1.4
+Summary: A package to generate a simple html dashboard report for Robot Framework using junit xml output
+Home-page: UNKNOWN
+Author: Chandan Mishra
+Author-email: testautomasi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: lxml
+
+# RF Quick Dashboard
+
+## Overview
+RF Quick Report is a tool designed to generate an HTML dashboard from JUnit test results. This dashboard provides a comprehensive view of test execution, helping you quickly identify test outcomes and trends.
+
+## Features
+- Converts JUnit XML results into an interactive HTML dashboard.
+- Summarizes test results with visual charts and graphs.
+- Easy to integrate with CI/CD pipelines.
+
+## Installation
+pip install rf-quick-dashboard
+
+
+## Usage
+To generate the HTML dashboard, run the following command:
+```bash
+python -m run_dashboard .\results\junitresult.xml```
+
+
