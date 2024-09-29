@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: yescher
+Version: 0.2.13
+Summary: Run gene knockouts and analyize S. Cerevisae, built on top of yeastGEM
+Home-page: https://github.com/Shyamsaibethina/yEscher
+Author: Shyam Sai Bethina
+Author-email: shyamsaibethina@gmail.com
+License: MIT
+Keywords: yeast,escher,pytfa,ME models,thermodynamics,flux analysis,expression
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4
+License-File: LICENSE
+
+UNKNOWN
+
