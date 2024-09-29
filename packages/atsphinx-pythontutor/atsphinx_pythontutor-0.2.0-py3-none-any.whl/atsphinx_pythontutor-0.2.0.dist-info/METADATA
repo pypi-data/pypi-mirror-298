@@ -1,0 +1,71 @@
+Metadata-Version: 2.3
+Name: atsphinx-pythontutor
+Version: 0.2.0
+Summary: Embedding iframe from https://pythontutor.com
+Project-URL: Home, https://github.com/atsphinx/pythontutor
+Project-URL: Documentation, https://atsphinx.github.io/pythontutor
+Author-email: Kazuya Takei <myself@attakei.net>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Text Processing :: Markup :: reStructuredText
+Requires-Python: >=3.9
+Requires-Dist: sphinx
+Description-Content-Type: text/x-rst
+
+====================
+atsphinx-pythontutor
+====================
+
+Embedding iframe from https://pythontutor.com
+
+Getting started
+===============
+
+.. code:: console
+
+   pip install atsphinx-pythontutor
+
+Usage
+=====
+
+1. Register your ``conf.py``.
+
+.. code:: python
+
+   extensions = [
+       ...,
+       "atsphinx.pythontutor",
+   ]
+
+
+2. Write ``pythontutor`` directive into your doc.
+
+.. code:: rst
+
+   .. pythontutor::
+      :width: 800
+
+      items = ["a", "b", "c"]
+
+      for item in items:
+          print(item.upper())
