@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: column_classifier
+Version: 0.1.1
+Summary: A column classifier using spaCy for entity recognition.
+Home-page: https://github.com/roby-avo/spacy-column-classifier
+Author: Roberto
+Author-email: roberto.avogadro@sintef.no
+License: Apache License 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: spacy
+
+# spacy-column-classifier
+
+A Python package to classify DataFrame columns using spaCy.
+
+## Installation
+
+```bash
+pip install spacy-column-classifier
