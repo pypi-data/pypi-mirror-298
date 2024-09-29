@@ -1,0 +1,347 @@
+[tool.poetry]
+name = "minification-station"
+version = "0.1.1"
+description = "Minification Station is a Python script designed to process and combine multiple files within a specified directory into a single output file. This tool is particularly useful for reducing the size of large codebases or collections of text files by removing unnecessary line breaks, comments, etc."
+authors = ["myinusa"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tqdm = "^4.66.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+minification_station = "minification_station.main:main"
+
+[tool.poetry.group.dev.dependencies]
+# Code formatter for consistent style
+black = "^24.8.0"
+# Better exception handling for debugging
+better-exceptions = "^0.3.3"
+# Fast linting and code analysis tool
+ruff = "^0.6.8"
+# Import sorting tool
+isort = "^5.13.2"
+# Documentation generator
+pdoc = "^14.7.0"
+# Type checker for Python
+pyright = "^1.1.382.post1"
+# Deep comparison library for Python
+deepdiff = "^8.0.1"
+# HTTP library for making requests
+requests = "^2.32.3"
+# Mocking library for requests
+requests-mock = "^1.12.1"
+# Syntax highlighting library
+pygments = "^2.18.0"
+# Tool for finding unused code
+vulture = "^2.12"
+# Spell checker for source code
+codespell = "^2.3.0"
+
+[tool.poetry.group.test.dependencies]
+# Testing framework for Python
+pytest = "^8.3.3"
+# Coverage reporting for tests
+pytest-cov = "^5.0.0"
+# Mocking library for pytest
+pytest-mock = "^3.14.0"
+# Randomly order tests for better coverage
+pytest-randomly = "^3.15.0"
+# JSON reporting for pytest results
+pytest-json-report = "^1.5.0"
+# Testing tool for documentation
+xdoctest = "^1.2.0"
+
+[tool.poetry.group.lint.dependencies]
+# Style guide enforcement tool
+flake8 = "^7.1.1"
+# Static type checker for Python
+mypy = "^1.11.2"
+# Security analysis tool for Python
+bandit = "^1.7.10"
+# Code analysis tool for Python
+pylint = "^3.3.1"
+# Language server for Ruff
+ruff-lsp = "^0.0.57"
+
+# PDM example
+[tool.pdm.scripts]
+isort = "isort minification_station"
+black = "black minification_station"
+format = { composite = ["isort", "black"] }
+fix = "ruff --fix minification_station"
+ruff = "ruff check minification_station"
+ruff_preview = "ruff check --preview --diff --unsafe-fixes minification_station"
+unsafe_fix = "ruff check --fix --unsafe-fixes minification_station"
+pyright = "pyright minification_station"
+mypy = "mypy minification_station --strict"
+pylint = "pylint minification_station"
+vulture = "vulture minification_station --min-confidence 100"
+security-check = "bandit -r minification_station"
+lint = { composite = ["vulture", "ruff", "format"] }
+typecheck = { composite = ["pyright", "mypy"] }
+
+
+# Configuration for mypy
+# https://mypy.readthedocs.io/en/stable/config_file.html#using-a-pyproject-toml-file
+[tool.mypy]
+python_version = "3.10"
+follow_imports = "skip"
+ignore_missing_imports = true
+files = "minification_station" # directory mypy should analyze
+# Directories to exclude from mypy's analysis
+exclude = [
+    # "acme/somedir",
+    # "acme/somefile\\.py",
+    # "dirname",
+]
+
+
+# --- black ------------------------------------------------------------------
+# ref: https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#configuration-via-a-file
+[tool.black]
+target-version = ['py39']
+line-length = 100
+# target-version = ['py39']
+include = '\.pyi?$|\.ipynb$'
+extend-exclude = '''
+# # A regex preceded with ^/ will apply only to files and directories
+# # in the root of the project.
+# ^/foo.py  # exclude a file named foo.py in the root of the project (in addition to the defaults)
+\.ipynb_checkpoints$|^/\.env|^/\.git|^/\.nox|^/\.pytest_cache|^/\.tox
+'''
+
+# --- ruff -------------------------------------------------------------------
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    "*.egg-info",
+    ".direnv",
+    ".eggs",
+    ".env",
+    ".envrc",
+    ".git",
+    ".ipynb_checkpoints",
+    ".nox",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "ci/templates",
+    "build",
+    "dist",
+    "docs/conf.py",
+    "venv",
+]
+
+# Default autofix behavior
+fix = true
+
+# Max line length
+line-length = 119
+
+# Directories with source code
+# src = ["notebooks", "src", "tests"]
+
+# Assumed Python version
+target-version = "py39"
+
+[tool.ruff.lint]
+unfixable = [
+    "B",      # Autofixing bugbear findings is a bit too aggressive
+    "ERA001", # Don't remove commented-out code
+    "F841",   # Autofixing unused variables conservatively leaves right-hand-side intact, which is almost always incorrect
+    "RUF",    # Autofixes for ruff-specific rules possibly too aggressive
+    "SIM",    # Autofixes for flake8-simplify possibly too aggressive
+    "TRY",    # Autofixes for tryceratops possibly too aggressive
+]
+
+
+select = [
+    "A",     # flake8-builtins
+    "AIR",   # Airflow
+    "ANN",   # flake8-annotations
+    "ARG",   # flake8-unused-arguments
+    "ASYNC", # flake8-async
+    "B",     # flake8-bugbear
+    "BLE",   # flake8-blind-except
+    "C4",    # flake8-comprehensions
+    "C90",   # mccabe
+    "COM",   # flake8-commas
+    #"D",     # pydocstyle
+    "DJ",   # flake8-django
+    "DTZ",  # flake8-datetimez
+    "E",    # pycodestyle Error
+    "EM",   # flake8-errmsg
+    "ERA",  # eradicate
+    "EXE",  # flake8-executable
+    "F",    # Pyflakes
+    "FA",   # flake8-future-annotations
+    "FBT",  # flake8-boolean-trap
+    "FIX",  # flake8-fixme
+    "FLY",  # flynt
+    "G",    # flake8-logging-format
+    "I",    # isort
+    "ICN",  # flake8-import-conventions
+    "INP",  # flake8-no-pep420
+    "INT",  # flake8-gettext
+    "ISC",  # flake8-implicit-str-concat
+    "LOG",  # flake8-logging
+    "N",    # pep8-naming
+    "NPY",  # NumPy-specific rules
+    "PD",   # pandas-vet
+    "PERF", # Perflint
+    "PGH",  # pygrep-hooks
+    "PIE",  # flake8-pie
+    "PL",   # Pylint
+    "PT",   # flake8-pytest-style
+    "PTH",  # flake8-use-pathlib
+    "PYI",  # flake8-pyi
+    "Q",    # flake8-quotes
+    "RET",  # flake8-return
+    "RSE",  # flake8-raise
+    "RUF",  # Ruff-specific rules
+    "S",    # flake8-bandit
+    "SIM",  # flake8-simplify
+    "SLF",  # flake8-self
+    "SLOT", # flake8-slots
+    "T10",  # flake8-debugger
+    "T20",  # flake8-print
+    "TCH",  # flake8-type-checking
+    "TD",   # flake8-todos
+    "TID",  # flake8-tidy-imports
+    # "TRIO", # flake8-trio
+    "TRY", # tryceratops
+    "UP",  # pyupgrade
+    "W",   # pycodestyle Warning
+    "YTT", # flake8-2020
+    # TODO: enable these once they're out of preview
+    # "CPY",  # flake8-copyright
+    # "FURB", # refurb
+]
+
+ignore = [
+    "ERA001",
+    "T201",
+    "B905",   # zip strict=True; remove once python <3.10 support is dropped.
+    "D100",   # do not require module-level docstrings
+    "D104",   # do not require package docstrings
+    "D107",   # do not require docstrings in __init__ files
+    "D205",   # don't require linebreak after docstring (ruff vs black conflict)
+    "D401",
+    # "TRY002",
+    # "D103",
+    # "E203", # not in ruff
+    # "E265", # not in ruff
+    # "E266", # not in ruff
+    "E501", # line too long
+    "F401", # unused import
+    "F403", # import *
+    "F405", # defined from import *
+    # "F541", # f-string missing placeholders
+    "N999",   # allow "invalid" module names due to jinja templates  "S101", # assert
+    "SIM105", # allow except: pass
+    "TRY003", # Avoid specifying messages outside exception class; overly strict, especially for ValueError
+    "TRY201", # Allow raise without exception name (align with Sonarlint)
+    # "W503", # not in ruff
+    "A001",   # Allow shadowing built-in types like 'id'
+    "A002",   # Allow shadowing built-in types like 'id'
+    "DTZ005", # Allow datetime.now() without specifiying timezone
+    "ANN101", # Type annotations for "self" args -> deprecated
+    "ANN102", # Type annotations for "cls" args -> deprecated
+    "DJ",     # Disable Django linting -> unused
+    "E501",   # Avoid linter errors for line length -> ruff-format handles line length as good as possible
+    "G004",   # Allow logging statements using f-strings
+    "ISC001", # Conflicts with COM812 -> prefer trailing commas over implicit string concatenation to reduce diff noise
+    "TD002",  # Don't require author for TODOs
+    "TRY002", # Allow descriptive exception messages without defining custom exception classes for now
+    "TRY003", # Allow descriptive exception messages without defining custom exception classes for now
+    #"D",      # TODO: remove to enforce docstrings
+]
+
+[tool.ruff.per-file-ignores]
+# # Ignore `E402` (import violations) in all `__init__.py` files,
+# # and in `path/to/file.py`.
+# "__init__.py" = ["E402"]
+# "path/to/file.py" = ["E402"]
+".ci/*" = ["D"]
+"docs/*" = ["D"]
+"notebooks/*" = ["B018", "D", "S101"]
+"tests/*" = ["D", "S101"]
+
+# --- ruff plugins --------------------
+[tool.ruff.flake8-bugbear]
+extend-immutable-calls = ["chr", "typer.Argument", "typer.Option"]
+
+[tool.ruff.isort]
+combine-as-imports = true
+# extra-standard-library = ["path"]
+forced-separate = ["scipy", "sklearn", "statsmodels", "ds_utils", "src"]
+force-sort-within-sections = true
+force-wrap-aliases = true
+known-first-party = ["ds_utils", "src"]
+# known-local-folder = ["src"] # for relative imports
+
+[tool.ruff.mccabe]
+max-complexity = 14
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.pep8-naming]
+ignore-names = []
+
+# [tool.ruff.pydocstyle]
+# convention = "numpy"
+
+# --- pytest -----------------------------------------------------------------
+# ref: https://docs.pytest.org/en/7.3.x/reference/customize.html
+[tool.pytest.ini_options]
+addopts = '''
+    -ra
+    --strict-markers
+    --ignore=docs/conf.py
+    --ignore=setup.py
+    --ignore=ci
+    --ignore=.eggs
+    --tb=short
+'''
+# --doctest-modules
+# --doctest-glob=\*.rst
+norecursedirs = [
+    ".env",
+    ".git",
+    ".nox",
+    ".pytest_cache",
+    ".tox",
+    "__pycache__",
+    "dist",
+    "docs",
+    "build",
+    "migrations",
+    "notebooks",
+    "writeup",
+]
+python_files = ["test_*.py", "*_test.py", "tests.py"]
+pythonpath = "src"
+testpaths = ["tests"]
+# log_cli = true
+
+
+# --- coverage ---------------------------------------------------------------
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+
+[tool.coverage.report]
+show_missing = true
