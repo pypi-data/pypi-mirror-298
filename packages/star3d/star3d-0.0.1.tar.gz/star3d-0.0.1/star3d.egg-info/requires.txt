@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+stardist
+scikit-image
+pandas
+csbdeep
+tifffile
+pathlib
+ipywidgets

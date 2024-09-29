@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: star3d
+Version: 0.0.1
+Summary: STAR-3D (STardist-based network for AnisotRopic 3D images) is a trained StarDist-3D-based         network for 3D nucleus segmentation in highly anisotropic images.
+Home-page: https://github.com/akarsa/star-3d/
+Author: Anita Karsa
+Author-email: ak2557@cam.ac.uk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.md
