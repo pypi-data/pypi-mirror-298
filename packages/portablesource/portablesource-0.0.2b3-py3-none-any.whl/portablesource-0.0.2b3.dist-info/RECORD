@@ -1,0 +1,12 @@
+portablesource/Version.py,sha256=L_n6lBWDIzMiiRW0YvjnWRwE1cMgwlIcErfNAQitXVU,106
+portablesource/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+portablesource/__main__.py,sha256=44RCm5_0gR3Ta6owS9rh2vpzFgB6B6OR4j2o8V6jqyw,116
+portablesource/downloader.py,sha256=H3G0M_720ievmvCMHDShvO6M-kyn-eSYPKfvPtEGWnM,6788
+portablesource/get_gpu.py,sha256=LYV-KMhrAd6c-kjbTUMzq-wU_67BxGFhRaaImOMuhbI,906
+portablesource/install_from_source.py,sha256=1cOkSdbQJrOpgd2lF9wiojsvxJRURlMbpvwIFnzoCuk,13142
+portablesource/updater_facefusion.py,sha256=Obm4BkaGTBT7MLg6JXre38NBbHXRtA2Q7n3sxthaFgk,5847
+portablesource-0.0.2b3.dist-info/METADATA,sha256=rghlUv9n4Qhb0RlG9Rdbw3yB9gEflfy9sVFDy47plIA,755
+portablesource-0.0.2b3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+portablesource-0.0.2b3.dist-info/entry_points.txt,sha256=_tPDHBcewRrg7GbT-dS-XvsV75okAfhJ_xmt2YY_shA,64
+portablesource-0.0.2b3.dist-info/licenses/LICENSE,sha256=k0p2QNt-AZr8zbBwCTp9anscvw1p7nDHqJCrKVCzAag,1092
+portablesource-0.0.2b3.dist-info/RECORD,,
