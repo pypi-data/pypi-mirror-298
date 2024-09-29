@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: cgcnn2
+Version: 0.0.7
+Summary: Crystal Graph Convolutional Neural Networks
+Home-page: https://github.com/jcwang587/cgcnn2/
+License: MIT
+Keywords: python,aimd,vasp,gnn
+Author: Jiacheng Wang
+Author-email: jiachengwang@umass.edu
+Maintainer: Jiacheng Wang
+Requires-Python: >=3.10,<3.12
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ase
+Requires-Dist: mdanalysis
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pymatgen
+Project-URL: Repository, https://github.com/jcwang587/cgcnn2/
+Description-Content-Type: text/markdown
+
+# CGCNN2
+
+As the original Crystal Graph Convolutional Neural Networks (CGCNN) repository is no longer actively maintained, this repository is a reproduction of [CGCNN](https://github.com/txie-93/cgcnn) by Xie et al. It includes necessary updates for deprecated components and a few additional functions to ensure smooth operation. Despite its age, CGCNN remains a straightforward and fast deep learning framework that is easy to learn and use.
+
+The package provides two major functions:
+
+- **Training** a CGCNN model with a customized dataset.
+- **Predicting** material properties with a pre-trained CGCNN model.
+
+The original paper describes the details of the CGCNN framework:
+
+[Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties](https://link.aps.org/doi/10.1103/PhysRevLett.120.145301)
+
