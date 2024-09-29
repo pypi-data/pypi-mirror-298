@@ -1,0 +1,79 @@
+# `quesadilla` - an elegant background task queue for the more civilized age
+# Copyright (C) 2024 Artur Ciesielski <artur.ciesielski@gmail.com>
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+name = "quesadilla-examples"
+description = "An elegant background task queue for the more civilized age - examples"
+version = "0.5.0"
+license = "GPL-3.0-or-later"
+authors = [
+    "Artur Ciesielski <artur.ciesielski@gmail.com>",
+]
+readme = "README.md"
+homepage = "https://gitlab.com/arcanery/python/quesadilla/quesadilla"
+repository = "https://gitlab.com/arcanery/python/quesadilla/examples"
+documentation = "https://arcanery.gitlab.io/python/quesadilla/quesadilla/"
+keywords = ["job", "task", "queue", "async", "actor"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+packages = [
+    { include = "quesadilla", from = "src" }
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+quesadilla-core = "^0.5.0"
+quesadilla-runners = { version = "^0.5.0", extras = [ "cli" ] }
+
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^1.8.3"
+pre-commit = "^3.8.0"
+quesadilla-core = { path = "../quesadilla-core", develop = true }
+quesadilla-runners = { path = "../quesadilla-runners", extras = [ "cli" ], develop = true }
+
+
+[tool.isort]
+profile = "black"
+
+
+[tool.flake8]
+max-line-length = 88
+
+
+[tool.pyright]
+typeCheckingMode = "strict"
+
+
+[tool.bandit]
+exclude_dirs = [ "src/quesadilla/examples" ]
