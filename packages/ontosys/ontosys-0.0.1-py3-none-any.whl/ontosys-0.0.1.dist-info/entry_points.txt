@@ -1,0 +1,3 @@
+[console_scripts]
+ontosys=src.ontosys:main
+
