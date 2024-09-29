@@ -1,0 +1,2 @@
+recursive-include django_polls_dlt/static *
+recursive-include django_polls_dlt/templates *

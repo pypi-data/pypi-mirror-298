@@ -1,0 +1,13 @@
+/*
+{% static %} 模板标签在静态文件中是不可用的，需要在模板文件中才可用；
+应该始终使用 相对路径 在你的静态文件之间相互引用，
+这样就可以更改 STATIC_URL 而无需修改大量的静态文件；
+*/
+
+li a {
+    color: green;
+}
+
+body {
+    background: white url("images/background.jpg") no-repeat;
+}
