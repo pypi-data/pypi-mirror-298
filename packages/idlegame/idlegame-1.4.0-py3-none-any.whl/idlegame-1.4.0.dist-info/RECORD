@@ -1,0 +1,14 @@
+idlegame/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idlegame/battle.py,sha256=0YjNxgfy095Gf0I8WQItzAHjqT0yvlkqPV-cN3PchiU,2202
+idlegame/config.py,sha256=wdwnTnI0Wvxwt5W7Dfe3US6mkL3gGf0NPFqz2WPPKgM,657
+idlegame/data.py,sha256=xUnXNjLlbbV-ar1S6jvoFxmu_1XVVw6_JW_ZHPOAs18,2268
+idlegame/idle.py,sha256=s763VNT4ZkklGwXuWO9bgfCUeA88iYdHQYdGb5lD1BI,3171
+idlegame/main.py,sha256=uxvTSePfV78bPqg9btYdTffeRs4Uo-SRgbCNSS7Xfu8,6099
+idlegame/nanobots.py,sha256=Ejn9T_5QdcMmTDdlUZLYQWjJkObL8T_EAy6IfrtEzyw,7297
+idlegame/profile.py,sha256=cO6vwZLtq-OrAO73Wfgoe8ggfVi7Syvv0M-fVAFRnes,621
+idlegame-1.4.0.dist-info/LICENSE,sha256=lgHrZh8XJ0MizTw9FpBHPhhTw9NKLPcTgeGcoOVIQTQ,1060
+idlegame-1.4.0.dist-info/METADATA,sha256=nDnPOatBUfOR3wXcywgr-6S3ra8fjxnsZ7fwamF80Jk,1669
+idlegame-1.4.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+idlegame-1.4.0.dist-info/entry_points.txt,sha256=leruIsWcjSlZBdvoPqqTLSULIVQjT_Tch5WAhIgcvR8,93
+idlegame-1.4.0.dist-info/top_level.txt,sha256=c9eAX-fPXCw9RBIFnr9BUbYSYEHxuZH_7BqiKp95MAo,9
+idlegame-1.4.0.dist-info/RECORD,,
