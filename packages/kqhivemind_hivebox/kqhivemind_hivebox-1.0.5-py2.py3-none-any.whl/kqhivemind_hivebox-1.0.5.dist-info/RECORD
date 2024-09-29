@@ -1,0 +1,11 @@
+kqhivemind_hivebox/__init__.py,sha256=hWGxE_KubKu9k3YW4EffA160GQc4wflXLfn5svDN0h8,141
+kqhivemind_hivebox/__main__.py,sha256=6MMNTm09a1Zp3WrwhQOn2TlB8Men3ezIqhKXRtBI5P8,24041
+kqhivemind_hivebox/__version__.py,sha256=B9kKWJLln1i8LjtkcYecvNWGLTrez4gCUOHtnPlInFo,22
+kqhivemind_hivebox/constants.py,sha256=58HAPj3xy65TwJAkyGBIrPjZAOGW2bmDBmtVZ_9W--k,485
+kqhivemind_hivebox/gpio.py,sha256=q79E2S2TSvB1cAGIJYDnr5telseXiKRMhh5iv1f8bMw,4575
+kqhivemind_hivebox/lcddriver.py,sha256=ZoMZP2m5iAn-WljsCQxEDO6V5rSUqDxJaow-d7NKN4o,3975
+kqhivemind_hivebox/util.py,sha256=IrRQDgjlvlEzcAjni3c1-L4trLxIPG9z0_2UEixrSqk,215
+kqhivemind_hivebox-1.0.5.dist-info/entry_points.txt,sha256=72p1Y3TRGwsU85HJda1kIDOuggm85PpxWez5YeU0zUw,51
+kqhivemind_hivebox-1.0.5.dist-info/WHEEL,sha256=3tm2ZG-oRLlcavA1Wig9g4cIO0hV_ajg2xEhQivkwx4,99
+kqhivemind_hivebox-1.0.5.dist-info/METADATA,sha256=Ags3zrJWw9hDSHXNjJ0wkc2IEqeYYcpb9a11Zr-RjGI,420
+kqhivemind_hivebox-1.0.5.dist-info/RECORD,,
