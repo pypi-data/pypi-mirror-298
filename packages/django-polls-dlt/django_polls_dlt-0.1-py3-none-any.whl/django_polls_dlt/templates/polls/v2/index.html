@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polls Index</title>
+</head>
+<body>
+
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+{#        这里的 /polls/{{question.id}} 是硬编码的，考虑其/polls/部分，因此也是强耦合的 #}
+{#        这种硬编码强耦合的问题在于，在具有大量模板的项目中更改 URL 变得具有挑战性 #}
+{#        <li><a href="/polls/{{ question.id }}">{{ question.question_text }}</a></li>#}
+
+{#        然而，由于你在 polls.urls module 中的 path() 函数中定义了 name= 参数 #}
+{#        你可以通过使用 {% url %} 模板标签来消除对 url 配置中定义的特定 URL 路径的依赖 #}
+{#        如果有多个 url path参数，按顺序传递即可 #}
+{#        通过这种方式，后续 details视图的路径变化不会和模板文件耦合、可以自由变化 #}
+{#        在真实的 Django 项目中可能有多个应用，如果多个应用都有 details 视图，这里的 url 标签如何区分是哪个项目的视图呢？ #}
+{#        答案是：在根 URLConf 中添加 URL 命名空间 #}
+{#        url 'detail' -> url 'polls:detail' #}
+        <li><a href="{% url 'polls:detailV2' question.id %}">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available</p>
+{% endif %}
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polls Details</title>
+</head>
+<body>
+
+<form action="{% url 'polls:voteV2' question.id %}" method="post">
+{#    POST 表单具有修改数据的作用，需要小心跨站点请求伪造；#}
+{#    Django 自带了一个非常有用的防御系统；所有针对内部URL的 POST 表单都应该使用 csrf_token 模板标签 #}
+{#    当用户首次访问 Django 应用的一个页面时，Django 生成 CSRF token 并存储在用户会话中，  #}
+{#    同时在模板页面中插入生成的隐藏字段，当用户提交表单时，CSRF token会被一并提交； #}
+
+    {% csrf_token %}
+{#    <input type="hidden" name="csrfmiddlewaretoken" value="wdb2qJuxMkCx5NIgXT4qIvYd3gSeIC9NzAfZ5btZkHWRXfuesPsxDAyixUYDtZt8"> #}
+
+    <fieldset>
+        <legend><h1>{{ question.question_text }}</h1></legend>
+
+        {% if error_message %}
+            <p><strong>{{ error_message }}</strong></p>
+        {% endif %}
+
+        {% for choice in question.choice_set.all %}
+            <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+            <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+        {% endfor %}
+    </fieldset>
+
+    <input type="submit" value="Vote">
+
+</form>
+
+</body>
+</html>
