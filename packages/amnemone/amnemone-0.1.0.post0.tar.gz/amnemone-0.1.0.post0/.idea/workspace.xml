@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d682205d-1dd1-4b06-8131-4b783722d875" name="Changes" comment="build(version): bump version to 0.1.0" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1727533445" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1727533444" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2mhbkUdJDLjvlNbgvIfEyJs0i9N" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.__init__.executor": "Debug",
+    "Python.__main__.executor": "Run",
+    "Python.models.executor": "Run",
+    "Python.test_bip39.executor": "Coverage",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/danlsn/IdeaProjects/amnemone/src/amnemone/data/bip39",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "terminal",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/amnemone/data/bip39" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/amnemone/data/bip39" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="amnemone" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/amnemone" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/amnemone/__main__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="amnemone" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/amnemone" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/amnemone/models.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.models" />
+        <item itemvalue="Python.__main__" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d682205d-1dd1-4b06-8131-4b783722d875" name="Changes" comment="" />
+      <created>1727531902118</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727531902118</updated>
+      <workItem from="1727531902509" duration="289000" />
+      <workItem from="1727532224804" duration="2435000" />
+      <workItem from="1727535618473" duration="9895000" />
+    </task>
+    <task id="LOCAL-00001" summary="build: initialise git repository">
+      <option name="closed" value="true" />
+      <created>1727533078150</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727533078150</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(data): add words/an-array-of-english-words json to data&#10;&#10;- cloned from github words/an-array-of-english-words/index.json">
+      <option name="closed" value="true" />
+      <created>1727533426801</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727533426801</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat(data): add dr5hn/countries-states-cities-database/ csv to data&#10;&#10;- cloned from github dr5hn/countries-states-cities-database/csv">
+      <option name="closed" value="true" />
+      <created>1727534731682</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727534731682</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix(data): correct countries_states_cities csv data">
+      <option name="closed" value="true" />
+      <created>1727536025754</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727536025755</updated>
+    </task>
+    <task id="LOCAL-00005" summary="build(version): bump version to 0.0.1.dev1">
+      <option name="closed" value="true" />
+      <created>1727536083237</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727536083237</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat(models): add mnemonic list base class">
+      <option name="closed" value="true" />
+      <created>1727585289297</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727585289297</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix(data): change relative import to use pathlib">
+      <option name="closed" value="true" />
+      <created>1727585390031</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727585390031</updated>
+    </task>
+    <task id="LOCAL-00008" summary="style(ruff): run ruff check and format">
+      <option name="closed" value="true" />
+      <created>1727591398668</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727591398668</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat(data.bip39): add bip39 mnemonic word lists">
+      <option name="closed" value="true" />
+      <created>1727591437790</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1727591437790</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test(bip39): add tests for bip39 word list">
+      <option name="closed" value="true" />
+      <created>1727591542977</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1727591542977</updated>
+    </task>
+    <task id="LOCAL-00011" summary="docs(licenses): add licenses for data dependencies">
+      <option name="closed" value="true" />
+      <created>1727591665972</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1727591665972</updated>
+    </task>
+    <task id="LOCAL-00012" summary="build(ruff): add ruff config to pyproject.toml">
+      <option name="closed" value="true" />
+      <created>1727591696794</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1727591696794</updated>
+    </task>
+    <task id="LOCAL-00013" summary="build(version): bump version to 0.1.0">
+      <option name="closed" value="true" />
+      <created>1727591741148</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1727591741148</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="build: initialise git repository" />
+    <MESSAGE value="feat(data): add words/an-array-of-english-words json to data&#10;&#10;- cloned from github words/an-array-of-english-words/index.json" />
+    <MESSAGE value="feat(data): add dr5hn/countries-states-cities-database/ csv to data&#10;&#10;- cloned from github dr5hn/countries-states-cities-database/csv" />
+    <MESSAGE value="fix(data): correct countries_states_cities csv data" />
+    <MESSAGE value="build(version): bump version to 0.0.1.dev1" />
+    <MESSAGE value="feat(models): add mnemonic list base class" />
+    <MESSAGE value="fix(data): change relative import to use pathlib" />
+    <MESSAGE value="style(ruff): run ruff check and format" />
+    <MESSAGE value="feat(data.bip39): add bip39 mnemonic word lists" />
+    <MESSAGE value="test(bip39): add tests for bip39 word list" />
+    <MESSAGE value="docs(licenses): add licenses for data dependencies" />
+    <MESSAGE value="build(ruff): add ruff config to pyproject.toml" />
+    <MESSAGE value="build(version): bump version to 0.1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="build(version): bump version to 0.1.0" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/amnemone$models.coverage" NAME="models Coverage Results" MODIFIED="1727583216211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/amnemone" />
+    <SUITE FILE_PATH="coverage/amnemone$test_bip39.coverage" NAME="test_bip39 Coverage Results" MODIFIED="1727584627507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/amnemone$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1727584494324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/amnemone/data/bip39" />
+    <SUITE FILE_PATH="coverage/amnemone$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1727580201738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/amnemone" />
+  </component>
+</project>
