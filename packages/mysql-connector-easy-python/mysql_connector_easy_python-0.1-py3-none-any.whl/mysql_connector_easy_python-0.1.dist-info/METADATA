@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: mysql-connector-easy-python
+Version: 0.1
+Summary: An interface library to summarize database queries 
+Author: mdev2007
+Author-email: m.programmer20070@gmail.com
+Requires-Dist: mysql-connector-python
+
