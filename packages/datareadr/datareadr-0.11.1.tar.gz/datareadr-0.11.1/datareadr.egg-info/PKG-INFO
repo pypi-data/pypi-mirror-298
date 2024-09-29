@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: datareadr
+Version: 0.11.1
+Summary: DataReadr GUI Interface simplifies the process of adding Pandas code into Python scripts. Through a user-friendly GUI, users can easily select and insert Pandas functions, automating repetitive tasks and enhancing productivity in data analysis projects.
+Author: Manoj Khandelwal
+Author-email: tr.manojkhandelwal@gmail.com
+Keywords: python,pandas,gui,importer,pandas importer,import,pyimport,pyimport-0.9.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: pillow
+Requires-Dist: cryptography
+
+An Application that simplifies the process of creating dataframes in python with GUI
