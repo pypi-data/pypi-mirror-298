@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: freezcord
+Version: 0.4.0
+Summary: Eine Bibliothek für Discord-Bot-Entwicklung
+Author-email: Zinc_ipax01 <support@legendary-bot.com>
+License: MIT
+Keywords: discord,bot,api
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown

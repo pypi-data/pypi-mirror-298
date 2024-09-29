@@ -1,0 +1,32 @@
+[project]
+name = "freezcord"
+version = "0.4.0"
+description = "Eine Bibliothek für Discord-Bot-Entwicklung"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+readme = "README.md"
+keywords = ["discord", "bot", "api"]
+authors = [
+    { name = "Zinc_ipax01", email = "support@legendary-bot.com" }
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+
+[tool.setuptools.dynamic]
+version = {attr = "freezcord.__version__"}
+dependencies = {file = "freezcord/requirements.txt"}
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
