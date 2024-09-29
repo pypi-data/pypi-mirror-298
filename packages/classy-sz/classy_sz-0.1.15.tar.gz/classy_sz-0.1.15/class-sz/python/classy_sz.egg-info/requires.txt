@@ -1,0 +1,2 @@
+classy_szfast
+classy_szfast>=0.0.13
