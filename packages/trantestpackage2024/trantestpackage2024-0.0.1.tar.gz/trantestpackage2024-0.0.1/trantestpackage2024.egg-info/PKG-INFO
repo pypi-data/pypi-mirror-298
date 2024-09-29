@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: trantestpackage2024
+Version: 0.0.1
+Summary: Test Python Package
+Home-page: 
+Author: Tran
+Author-email: tuanlearnoauth2@gmail.com
+License: MIT
+Keywords: greetings
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+Test Python Package Long Description

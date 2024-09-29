@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+greetings/__init__.py
+greetings/greetings.py
+trantestpackage2024.egg-info/PKG-INFO
+trantestpackage2024.egg-info/SOURCES.txt
+trantestpackage2024.egg-info/dependency_links.txt
+trantestpackage2024.egg-info/top_level.txt
