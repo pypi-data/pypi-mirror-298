@@ -1,0 +1,11 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "pandas",
+    "numpy",
+    "ollama",
+    "pdfminer.six",
+    "scikit-learn"
+]
+build-backend = "setuptools.build_meta"
