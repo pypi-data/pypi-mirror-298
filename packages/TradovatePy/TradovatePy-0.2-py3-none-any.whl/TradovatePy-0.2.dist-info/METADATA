@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: TradovatePy
+Version: 0.2
+Summary: A description of my package
+Home-page: https://github.com/antonio-hickey/TradovatePy
+Author: Antonio Hickey
+Author-email: contact@antoniohickey.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+
+# TradovatePy
+Python wrapper for the Tradovate API
+
+### Installation
+```
+pip install TradovatePy==0.1
+```
+
+### Example
+
+Get the current positions you have open.
+
+*NOTE: You need to replace values below with your info*
+
+```python
+import asyncio
+from TradovatePy.models.session import Session
+from TradovatePy.positions import Positions
+
+if __name__ == "__main__":
+    session = Session(
+        "LIVE", 
+        "YOUR_USERNAME", 
+        "YOUR_PASSWORD", 
+        "YOUR_SECRET_KEY", 
+        "YOUR_DEVICE_ID", 
+        "YOUR_APP_VERSION", 
+        "YOUR_APP_ID", 
+        123, # YOUR CID
+    )
+    print(
+        asyncio.run(Positions(session).position_list())
+    )
+```
