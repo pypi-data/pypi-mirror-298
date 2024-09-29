@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+npiq.egg-info/PKG-INFO
+npiq.egg-info/SOURCES.txt
+npiq.egg-info/dependency_links.txt
+npiq.egg-info/requires.txt
+npiq.egg-info/top_level.txt

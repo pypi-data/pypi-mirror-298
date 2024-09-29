@@ -1,0 +1,6 @@
+marisa-trie
+
+[test]
+wheel
+ruff
+mypy
