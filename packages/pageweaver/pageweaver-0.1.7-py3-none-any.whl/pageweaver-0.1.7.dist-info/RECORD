@@ -1,0 +1,11 @@
+pageweaver/__init__.py,sha256=b7T7gZMPNA9S--pciOVmDGwyNR9wGfAByWwunVEDhTc,188
+pageweaver/document_generator.py,sha256=tsgAWLHmZmn0RK7aoP-XQtrOYMlU_CLJzPdiyVOMzvA,1740
+pageweaver/novel_crawler_service.py,sha256=LHQZuyry5ByKBnxWOalBER-mtdIq5kBi7_CoxHJv1YQ,5622
+pageweaver/text_processor.py,sha256=KL47Ie4AcWspiTvUHk-pcTfC-cCxSUcwV4-LXSj5vnU,1219
+pageweaver/web_crawler.py,sha256=c6sUA0LfDAAb5c2BjMFaOg_thAVzP7SQTV12KfWh-eA,3522
+pageweaver-0.1.7.dist-info/LICENSE,sha256=xsH5ZOjJvXPHSSRx61_Ca7wAhnJb-jo2AyLKcsCPXA0,1073
+pageweaver-0.1.7.dist-info/METADATA,sha256=ho7M4wCzCrNOtgBVQ1ZCrbwUxBaYVxxmyNzfi-70pVM,691
+pageweaver-0.1.7.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pageweaver-0.1.7.dist-info/entry_points.txt,sha256=cT-GkJapiexXo2OIVxSPkp7KzfMtFDGPRjpTPgzz3us,69
+pageweaver-0.1.7.dist-info/top_level.txt,sha256=KR7svI-aMp_04isSrjbxC3mhuH1gJa6NVIory0Dn3V8,11
+pageweaver-0.1.7.dist-info/RECORD,,
