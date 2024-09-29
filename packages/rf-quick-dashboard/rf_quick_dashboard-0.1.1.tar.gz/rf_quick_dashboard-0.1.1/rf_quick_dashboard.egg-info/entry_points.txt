@@ -1,0 +1,3 @@
+[console_scripts]
+run_dashboard = error_report.error_report:main
+
