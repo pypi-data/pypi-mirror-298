@@ -1,0 +1,8 @@
+image_text_recognition/__init__.py,sha256=32cBMgkdHSoTEkTsG_K5XUKUypX5qY4A-bDmezoE7Qk,92
+image_text_recognition/evaluate.py,sha256=F4TZPsQ6p1Jq5sHc7BofMz2Wu7V08DXD7xi24hBkFBY,1854
+image_text_recognition/generate.py,sha256=fmykNYTUKvfNxhXoB7hJeC1C31K_AUspm8w7ceV3qXI,2811
+image_text_recognition/image_text_recognition.py,sha256=EUakliC7MBkE8dvdzCJs6_ZT2gxqwFdVKCDD9lz427E,3190
+image_text_recognition-0.1.0.dist-info/METADATA,sha256=OI6MyhR0x8PIe49XMuA7AxnslJ3jjvgR0QLYfUBn6Vo,1494
+image_text_recognition-0.1.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+image_text_recognition-0.1.0.dist-info/top_level.txt,sha256=644PifI88ufVJo06zw5YDE8EkrKVUXzVpUnDrukbCnI,23
+image_text_recognition-0.1.0.dist-info/RECORD,,
