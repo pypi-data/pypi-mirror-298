@@ -1,0 +1,12 @@
+libtestzechatt-0.1.7.dist-info/METADATA,sha256=VR1qb7FMc9UK54BmHbwJC6ny_Wyk-362iKRjj_pxUF8,13516
+libtestzechatt-0.1.7.dist-info/WHEEL,sha256=Vza3XR51HW1KmFP0iIMUVYIvz0uQuKJpIXKYOBGQyFQ,90
+libtestzechatt-0.1.7.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+simplesocialauthlib/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+simplesocialauthlib/abstract.py,sha256=IP_mno40Zby5LCEi2zTJAFUgGScr62-y6ZLzTjv6Zsw,2201
+simplesocialauthlib/exceptions.py,sha256=zYin-Qq7g6jS6mFibNU0DsGV0itj5T13aybKFqUzV1o,463
+simplesocialauthlib/providers/__init__.py,sha256=J9cB7-imV3OUZN6tGNktarPsiJ5IcgYkuBAeq2IMAIc,184
+simplesocialauthlib/providers/github.py,sha256=S4Eo5fLLBhx-YXHvpcBBo8JhtIfZvIp1yE2D7YcE2jU,2998
+simplesocialauthlib/providers/google.py,sha256=7BVPQSCraTgZP3ogr3eCNK8aju5KO4p1LXm8KTvrl5M,3707
+simplesocialauthlib/types.py,sha256=W5k_9cIJoZlXyUOR3bLEQWCPgUG6_awsuMe2yX_XOz4,998
+simplesocialauthlib/utils.py,sha256=XiNHHYH5VQiOlUJZ_E307BFwg7txh3AQqse70l65Eqg,1510
+libtestzechatt-0.1.7.dist-info/RECORD,,
