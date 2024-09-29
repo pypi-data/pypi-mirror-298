@@ -1,0 +1,3 @@
+[console_scripts]
+biorag=sample_explorer.cli:main
+
