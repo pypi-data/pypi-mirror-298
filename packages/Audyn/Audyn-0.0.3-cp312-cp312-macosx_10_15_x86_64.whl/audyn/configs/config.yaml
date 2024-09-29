@@ -1,0 +1,17 @@
+defaults:
+  - system: defaults
+  - preprocess: defaults
+  - data: defaults
+  - train: defaults
+  - test: defaults
+  - model: defaults
+  - optimizer:
+  - lr_scheduler: defaults
+  - criterion:
+  - _self_
+
+hydra:
+  job:
+    chdir: false
+  run:
+    dir: "./log/${now:%Y%m%d-%H%M%S}"

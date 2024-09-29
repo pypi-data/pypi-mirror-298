@@ -1,0 +1,28 @@
+defaults:
+  - dataset: defaults
+  - dataloader: defaults
+  - _self_
+
+key_mapping:
+  inference:
+    input:
+    output:
+    identifier:
+
+checkpoint:
+
+remove_weight_norm:
+
+output:
+  exp_dir: "./exp"
+  inference_dir: ${.exp_dir}/inference
+  audio:
+    sample_rate: ${data.audio.sample_rate}
+    key_mapping:
+      inference:
+        output:
+        reference:
+    transforms:
+      inference:
+        output:
+        reference:

@@ -1,0 +1,11 @@
+defaults:
+  - defaults
+  - _self_
+
+distributed:
+  enable: false
+
+amp:
+  enable: false
+
+accelerator: mps
