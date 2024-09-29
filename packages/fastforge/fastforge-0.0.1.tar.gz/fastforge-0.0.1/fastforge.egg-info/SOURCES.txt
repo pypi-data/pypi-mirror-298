@@ -1,0 +1,10 @@
+README.md
+setup.py
+fastforge/__init__.py
+fastforge/cli.py
+fastforge.egg-info/PKG-INFO
+fastforge.egg-info/SOURCES.txt
+fastforge.egg-info/dependency_links.txt
+fastforge.egg-info/entry_points.txt
+fastforge.egg-info/requires.txt
+fastforge.egg-info/top_level.txt
