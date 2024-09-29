@@ -1,0 +1,80 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+# See configuration details in https://github.com/pypa/setuptools_scm
+
+[project]
+name = "mkv-episode-matcher-vob"
+description = "The MKV Episode Matcher VOB is a fork of MKV Episode Matcher for identifying TV series episodes from MKV files and renaming the files accordingly with additional support for VOB files."
+dynamic = ["version"]
+readme = "README.rst"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = []
+authors = [
+  { name = "NiklasPrahl", email = "niklas.prahl-git@gmx.net" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+dependencies = [
+  "requests",
+  "loguru",
+  "pillow",
+  "configparser",
+  "tmdb_client",
+  "pytesseract",
+  "opensubtitlescom",
+]
+
+[project.urls]
+Documentation = "https://github.com/Jsakkos/mkv-episode-matcher-vob#readme"
+Issues = "https://github.com/Jsakkos/mkv-episode-matcher-vob/issues"
+Source = "https://github.com/Jsakkos/mkv-episode-matcher-vob"
+
+[project.scripts]
+mkv-match = "mkv_episode_matcher_vob.__main__:main"
+
+[tool.ruff.format]
+preview = true
+quote-style = "single"
+
+[tool.ruff.lint]
+preview = true
+extend-select = ["C901"]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"docs/.hooks/*" = ["INP001", "T201"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["foo", "bar"]
+
+[tool.coverage.run]
+source_pkgs = ["mkv_episode_matcher_vob", "tests"]
+branch = true
+parallel = true
+omit = [
+  "mkv-episode-matcher-vob/mkv_episode_matcher-vob/__init__.py",
+]
+
+[tool.coverage.paths]
+calcy = ["mkv-episode-matcher-vob/mkv_episode_matcher-vob", "*/mkv-episode-matcher_vob/mkv_episode_matcher_vob"]
+tests = ["tests", "*/mkv_episode_matcher_vob/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]

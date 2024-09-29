@@ -1,0 +1,10 @@
+*.log
+*.pyc
+*.cpython*
+*.pyc
+/mkv_episode_matcher_vob/__pycache__
+build/
+dist/
+mkv_episode_matcher_vob.egg-info
+.DS_Store
+mkv_episode_matcher_vob.egg-info/PKG-INFO
