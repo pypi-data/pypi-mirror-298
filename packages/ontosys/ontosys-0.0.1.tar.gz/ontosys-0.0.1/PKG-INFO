@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ontosys
+Version: 0.0.1
+Summary: OntoSys
+Author: Peter Styk
+Author-email: peter@styk.tv
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Description-Content-Type: text/markdown
+
+## OntoSys
