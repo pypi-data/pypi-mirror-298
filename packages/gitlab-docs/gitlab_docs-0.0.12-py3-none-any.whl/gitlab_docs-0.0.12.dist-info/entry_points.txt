@@ -1,0 +1,3 @@
+[console_scripts]
+my_package_cli=gitlab-docs:gitlab-docs
+
