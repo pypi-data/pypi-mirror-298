@@ -1,0 +1,6 @@
+typer
+GPUtil
+psutil
+tqdm
+requests
+argparse
