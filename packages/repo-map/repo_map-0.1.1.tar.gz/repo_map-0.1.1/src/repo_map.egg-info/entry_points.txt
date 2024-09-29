@@ -1,0 +1,2 @@
+[console_scripts]
+repo-map = repo_map:run_main
