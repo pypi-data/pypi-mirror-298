@@ -1,0 +1,12 @@
+nistchempy/__init__.py,sha256=xCeXM5X2eGIgPY1wRFQPivFx6iDaSO20mKPmPlwe7Y4,528
+nistchempy/compound.py,sha256=KpREq5QqQ2gdXsgia1uFmFV0F26KK0QETbeUPKsPzi0,11824
+nistchempy/compound_list.py,sha256=vMligeI7MyiUYUP6T3JhKU5RgXGo1mgYLy0_V_Eb4NY,915
+nistchempy/nist_data.zip,sha256=2br7nresLoSUjg0e5W5ywHqPf6pBk_upBp661jnxkIo,10614630
+nistchempy/parsing.py,sha256=-8aEzPSlMLWsUkCuZ5Spm13HgkC_evttWE3uLX47TFw,13916
+nistchempy/requests.py,sha256=EVZWuNxdyLPRVIaow3weIVJ2pUFr37Urhg9rD-amcQ0,2658
+nistchempy/search.py,sha256=lkNWQlQ5rXVyOJT7RuRMXH1V1BRHgg7DYFRkgJs-RCE,11686
+NistChemPy-1.0.2.dist-info/LICENSE,sha256=AOX-eXSAD2nJuvWIp5pKFadVxJG-7kV70LCWDdQ9ctk,1072
+NistChemPy-1.0.2.dist-info/METADATA,sha256=D2en0U4FiDb2bxrEhvCvxyXAnZiqwB1un_Qe0pRtfjY,2591
+NistChemPy-1.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+NistChemPy-1.0.2.dist-info/top_level.txt,sha256=7BDFWdRZ1kYLZxhJKNRBVfPWLHPzvodOIfR-lYCCKgs,11
+NistChemPy-1.0.2.dist-info/RECORD,,
