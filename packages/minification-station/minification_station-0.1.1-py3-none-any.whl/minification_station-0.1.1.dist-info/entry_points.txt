@@ -1,0 +1,3 @@
+[console_scripts]
+minification_station=minification_station.main:main
+
