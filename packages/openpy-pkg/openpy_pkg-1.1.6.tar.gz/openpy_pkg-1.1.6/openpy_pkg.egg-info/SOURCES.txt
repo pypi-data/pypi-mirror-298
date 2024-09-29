@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+openpy_pkg.egg-info/PKG-INFO
+openpy_pkg.egg-info/SOURCES.txt
+openpy_pkg.egg-info/dependency_links.txt
+openpy_pkg.egg-info/requires.txt
+openpy_pkg.egg-info/top_level.txt
+openpython/__init__.py
+openpython/__main__.py
+openpython/pkgs/__init__.py
+openpython/pkgs/better_logs.py
+openpython/pkgs/licenses.py
+openpython/pkgs/scraper.py
+tests/test.py
