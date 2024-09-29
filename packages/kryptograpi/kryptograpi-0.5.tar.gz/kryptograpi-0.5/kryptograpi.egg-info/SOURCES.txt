@@ -1,0 +1,11 @@
+.gitattributes
+LICENSE
+README.md
+pyproject.toml
+setup.py
+kryptograpi/__init__.py
+kryptograpi/functions.py
+kryptograpi.egg-info/PKG-INFO
+kryptograpi.egg-info/SOURCES.txt
+kryptograpi.egg-info/dependency_links.txt
+kryptograpi.egg-info/top_level.txt
