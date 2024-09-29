@@ -1,0 +1,3 @@
+[console_scripts]
+spicer = flask_spicer.cli:run
+
