@@ -1,0 +1,14 @@
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pdf_namer/__init__.py
+pdf_namer/main.py
+pdf_namer/pdf_namer.py
+pdf_namer.egg-info/PKG-INFO
+pdf_namer.egg-info/SOURCES.txt
+pdf_namer.egg-info/dependency_links.txt
+pdf_namer.egg-info/entry_points.txt
+pdf_namer.egg-info/requires.txt
+pdf_namer.egg-info/top_level.txt

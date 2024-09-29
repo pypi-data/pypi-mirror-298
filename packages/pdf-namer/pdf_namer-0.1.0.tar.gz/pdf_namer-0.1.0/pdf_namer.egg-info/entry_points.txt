@@ -1,0 +1,2 @@
+[console_scripts]
+pdf-namer = pdf_namer.main:main
