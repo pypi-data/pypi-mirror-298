@@ -1,0 +1,12 @@
+seqwalk/__init__.py,sha256=oeqNmzL4adVqdLknmF7ZGE3EzSVHx5jIOfS1avd1y1I,111
+seqwalk/analysis.py,sha256=P0G2JN3lUKtR-5POtjzsAx3qqF9-cT41xFDCE9FT8ts,2972
+seqwalk/design.py,sha256=6Cc7RAnYzrnUUmKMZIYfYiElGgCWe2yWToNDBfaQ6DQ,3115
+seqwalk/filtering.py,sha256=6s6Htix-FZG5u8ysPc__jikXq8RsSKCIADDtHEVb1us,3165
+seqwalk/generation.py,sha256=TUK8Aj4HjpXe6akccJxA2kx_TTZyPy9U8q_vPo7JvDI,3571
+seqwalk/io.py,sha256=N6gePX0jaBFX1HFjXFYA4qqa4YLPZDfhCbzd80Q6Sks,827
+seqwalk/prebuilt_libs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seqwalk/prebuilt_libs/kishi2018.txt,sha256=qChuOD0XNE35pV0ieekpcRzF015aKioWZBHCP5FJJmk,500
+seqwalk-0.3.2.dist-info/LICENSE,sha256=LDb5MTP28l-GjzBBOZOean_shny6fCEGff6VSPa77Wc,1070
+seqwalk-0.3.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+seqwalk-0.3.2.dist-info/METADATA,sha256=mW3c7nZltg2l9v_dhqavvCJDXDhldkly8OKivhTu410,4510
+seqwalk-0.3.2.dist-info/RECORD,,
