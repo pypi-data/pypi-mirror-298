@@ -1,0 +1,11 @@
+README
+setup.py
+MySQL_E/__init__.py
+MySQL_E/core.py
+MySQL_E/database.py
+mysql_easy_connector_python.egg-info/PKG-INFO
+mysql_easy_connector_python.egg-info/SOURCES.txt
+mysql_easy_connector_python.egg-info/dependency_links.txt
+mysql_easy_connector_python.egg-info/requires.txt
+mysql_easy_connector_python.egg-info/top_level.txt
+tests/test_core.py
