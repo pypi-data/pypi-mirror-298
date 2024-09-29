@@ -1,0 +1,17 @@
+Django<6.0,>=4.2
+psycopg[binary,pool]
+environs[django]
+django-colorfield
+django-geojson
+django-leaflet
+easy-thumbnails
+ezdxf
+nh3
+pyproj
+shapely
+
+[dev]
+build
+nox
+twine
+coverage
