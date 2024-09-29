@@ -1,0 +1,7 @@
+diplib
+easygui
+huggingface_hub
+numpy
+opencv-python
+roboflow
+ultralytics
