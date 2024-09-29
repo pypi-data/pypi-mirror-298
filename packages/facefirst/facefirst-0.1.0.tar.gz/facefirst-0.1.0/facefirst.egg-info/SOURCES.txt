@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dm/__init__.py
+dm/dm_login.py
+dm/dm_logout.py
+facefirst.egg-info/PKG-INFO
+facefirst.egg-info/SOURCES.txt
+facefirst.egg-info/dependency_links.txt
+facefirst.egg-info/top_level.txt
+portal/__init__.py
+portal/portal_login.py
+portal/portal_logout.py
+tests/__init__.py
+tests/unit_test_module.py
