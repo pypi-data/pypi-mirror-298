@@ -1,0 +1,2 @@
+simple_python_app==0.3.0
+pyside6~=6.7.2
