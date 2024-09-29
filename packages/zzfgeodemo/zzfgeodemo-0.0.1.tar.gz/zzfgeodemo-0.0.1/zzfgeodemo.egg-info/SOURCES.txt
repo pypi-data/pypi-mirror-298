@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+tests/test_zzfgeodemo.py
+zzfgeodemo/__init__.py
+zzfgeodemo/common.py
+zzfgeodemo/zzfgeodemo.py
+zzfgeodemo.egg-info/PKG-INFO
+zzfgeodemo.egg-info/SOURCES.txt
+zzfgeodemo.egg-info/dependency_links.txt
+zzfgeodemo.egg-info/not-zip-safe
+zzfgeodemo.egg-info/top_level.txt

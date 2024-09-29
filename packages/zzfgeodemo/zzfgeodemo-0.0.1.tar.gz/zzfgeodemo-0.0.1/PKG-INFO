@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: zzfgeodemo
+Version: 0.0.1
+Summary: A python package for interactive mapping
+Home-page: https://github.com/giszzf/zzfgeodemo
+Author: Zhifan Zhang
+Author-email: 2692219488@qq.com
+License: MIT license
+Keywords: zzfgeodemo
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# zzfgeodemo
+
+
+[![image](https://img.shields.io/pypi/v/zzfgeodemo.svg)](https://pypi.python.org/pypi/zzfgeodemo)
+[![image](https://img.shields.io/conda/vn/conda-forge/zzfgeodemo.svg)](https://anaconda.org/conda-forge/zzfgeodemo)
+
+
+**A python package for interactive mapping**
+
+
+-   Free software: MIT license
+-   Documentation: https://giszzf.github.io/zzfgeodemo
+    
+
+## Features
+
+-   TODO
