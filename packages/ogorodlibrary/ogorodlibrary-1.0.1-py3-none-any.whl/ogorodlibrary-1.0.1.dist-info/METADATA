@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ogorodlibrary
+Version: 1.0.1
+Summary: Это библиотека с датами посадки с/х культур для моей бабушки
+Home-page: 
+Author: fhghfhfhfh
+Author-email: maximdev@internet.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+README.md
+Это библиотека с датами посадки сельско-хозяйственных культур для моей бабушки.
+По мере обновления в библиотеке будут появлятся и новые овощи, и она будет становится более универсальной.
+Пока что все файлы кроме year_2024.py и __init__.py и months.py не используются.
+Используется MIT License.
