@@ -1,0 +1,100 @@
+[project]
+name = "LibTestZechatt"
+dynamic = []
+description = "SimpleSocialAuthLib is a lightweight and easy-to-use Python library that simplifies OAuth2 authentication integration with social providers such as Google, GitHub, Facebook, Twitter, and more."
+authors = [
+    { name = "Macktireh", email = "abdimack97@gmail.com" },
+]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+]
+requires-python = ">=3.12"
+dependencies = [
+    "google-api-python-client>=2.147.0",
+    "requests-oauthlib>=2.0.0",
+]
+version = "0.1.7"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/Macktireh/SimpleSocialAuthLib"
+Repository = "https://github.com/Macktireh/SimpleSocialAuthLib"
+Documentation = "https://github.com/Macktireh/SimpleSocialAuthLib"
+Issues = "https://github.com/Macktireh/SimpleSocialAuthLib/issues"
+
+[tool.pdm]
+distribution = true
+source = [
+    { url = "https://pypi.tuna.tsinghua.edu.cn/simple", name = "tuna" },
+    { url = "https://mirror.sjtu.edu.cn/pypi/web/simple", name = "sjtug" },
+]
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.dev-dependencies]
+lint = [
+    "pre-commit>=3.8.0",
+    "ruff>=0.6.7",
+]
+test = [
+    "pytest>=8.3.3",
+]
+
+[tool.pdm.scripts]
+ruff = "ruff check --fix"
+precommit = "pre-commit run --all-files"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.ruff]
+line-length = 130
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "UP",
+    "B",
+    "SIM",
+    "I",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
