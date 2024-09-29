@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+datasets_plus/__init__.py
+datasets_plus/parsing.py
+datasets_plus/utils.py
+datasets_plus.egg-info/PKG-INFO
+datasets_plus.egg-info/SOURCES.txt
+datasets_plus.egg-info/dependency_links.txt
+datasets_plus.egg-info/top_level.txt
+tests/test_parsing.py
+tests/test_utils.py
