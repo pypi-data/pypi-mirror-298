@@ -1,0 +1,15 @@
+housaku/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+housaku/cli.py,sha256=fdCulF5q3Ss_acllLwpaW42gblQ9X8lJhFAbI6K1TyI,5537
+housaku/config_template.toml,sha256=sreouHGPZmzIoEtMP9L0PT4brOBfV3AK12HC8XKbE4o,408
+housaku/db.py,sha256=MPMSJPnbaHqRMu9WxNGWdyd84yotpssVKn1t2w2bx34,875
+housaku/feeds.py,sha256=jE7habJccU40jZi1HMxOzVT5ENhXAXYLNck8AxSA5d4,1989
+housaku/files.py,sha256=C58XYNnamELFCoNCo-3gjFWDR9nqlMAjQMARq5xMzXY,2552
+housaku/search.py,sha256=NcvX9Rn8TOa7eKmF9BRleDFtxcXpKEmSbTTjKwS6JvM,463
+housaku/settings.py,sha256=l_vbPC6E5Lxm93QCN1Hnw_JI_0zC33Ba1P2AoAn0yyc,1363
+housaku/stop_words.py,sha256=EIWoUjf6e3ir_M_UHGw0Sb15-w2RNFl2v4m76KvpnGE,19031
+housaku/utils.py,sha256=wmSW4nmpRVTkEh6gpOYK1MBEe1DqtduE8tHydN2VGnM,540
+housaku-0.3.1.dist-info/METADATA,sha256=zykGn4wzD_bf5HKBUxnxz1qne0HY0san_S9xeNCErzg,3859
+housaku-0.3.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+housaku-0.3.1.dist-info/entry_points.txt,sha256=4sSSiNmnZpZkyBD8_bRZRENUlBU4k_cHa8OjYfrkujY,44
+housaku-0.3.1.dist-info/licenses/LICENSE,sha256=cy1UYmBHXTTSn1nW75RjV6KgjxSXfNkqUfv9LCZHUTw,1052
+housaku-0.3.1.dist-info/RECORD,,
