@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: tripayiin
+Version: 1.0.2
+Summary: TriPay Payment Gateaway Client For Python (Unofficial)
+Home-page: https://github.com/AyiinXd
+Download-URL: https://github.com/AyiinXd/tripayiin/releases/latest
+Author: AyiinXd
+Author-email: ayiincorporation@gmail.com
+License: LGPLv3
+Project-URL: Tracker, https://github.com/AyiinXd/tripayiin/issues
+Project-URL: Community, https://t.me/AyiinChats
+Project-URL: Source, https://github.com/AyiinXd/tripayiin
+Keywords: tripay payment gateway
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Utilities
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: babel
+Requires-Dist: pytz
+
+# tripayiin
+TriPay Payment Gateaway Python SDK (Unofficial)
