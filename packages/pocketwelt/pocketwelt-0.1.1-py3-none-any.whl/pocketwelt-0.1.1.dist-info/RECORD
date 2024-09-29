@@ -1,0 +1,15 @@
+pocketwelt/__init__.py,sha256=sEy2boGtvFvfJ1eNo8rICk_3N3a6cJxdhfMevPZ6InM,1860
+pocketwelt/colors.py,sha256=LH6Wb9RmWxCk2gvu8BK13MWwh5jOFPt0nGB7EnXiY6w,2207
+pocketwelt/configs.py,sha256=m24BvlD-g6LC0WXdUZoFLNDUBkqpKQ422s2k2xz5trY,3563
+pocketwelt/encodings.py,sha256=ZZN32MYg2YOySb27TbXhJOVkAX6N0OC26WYUSKT3Mpo,4411
+pocketwelt/files.py,sha256=CV0vf_1KoTHCE4ZqUhq4RQ6jt_P41L9r8UwRj93a-2w,1209
+pocketwelt/imports.py,sha256=oFummGpwW2ZpxPXn-ldy_4Y2lMfKEuGtJnCsSuDh3XY,3344
+pocketwelt/logs.py,sha256=7xva8F8knCcHaNamFRKC-qXfRsDxK1qGX2JEAE0MyoQ,7551
+pocketwelt/modules.py,sha256=mdrArbtDwck9d1mzd5oCXfO1GHh-ScZZGuTH39s_Ex0,1040
+pocketwelt/objects.py,sha256=ndaVnfT8gIYHaLc78wtGeYRtSztb8-byPT1t9TGOxZM,2515
+pocketwelt/paths.py,sha256=i32sX2yRPxNmkylxOxsRcpFhwp9TUGKTlgxZvlSlnUA,3904
+pocketwelt/processes.py,sha256=OIDxd4OEaFWELXACHrUzGGG5yRRxzcVNH1X3pjcztnU,520
+pocketwelt-0.1.1.dist-info/LICENSE,sha256=0C5bujmUUaBIPAKSDCrwu1NUb3ERQylKz9n7xYA6PuE,1069
+pocketwelt-0.1.1.dist-info/METADATA,sha256=Z6vxkVuq_jxomui1lo9wMg0HqXQAExl2Dp2sWoT3vv0,5726
+pocketwelt-0.1.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+pocketwelt-0.1.1.dist-info/RECORD,,
