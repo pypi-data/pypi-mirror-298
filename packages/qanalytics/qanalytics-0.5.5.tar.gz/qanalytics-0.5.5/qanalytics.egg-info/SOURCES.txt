@@ -1,0 +1,12 @@
+LICENCE
+README.md
+pyproject.toml
+qanalytics/Core.py
+qanalytics/Enum.py
+qanalytics/Request.py
+qanalytics/Struct.py
+qanalytics/__init__.py
+qanalytics.egg-info/PKG-INFO
+qanalytics.egg-info/SOURCES.txt
+qanalytics.egg-info/dependency_links.txt
+qanalytics.egg-info/top_level.txt
