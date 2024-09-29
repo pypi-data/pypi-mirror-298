@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "better-social-notifications"
+version = "0.3.4"
+description = ""
+authors = ["Jack Stockley <34308937+jnstockley@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+google-api-python-client = "^2.145.0"
+python-dotenv = "^1.0.1"
+peewee = "^3.17.6"
+pandas = "^2.2.2"
+apprise = "^1.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
