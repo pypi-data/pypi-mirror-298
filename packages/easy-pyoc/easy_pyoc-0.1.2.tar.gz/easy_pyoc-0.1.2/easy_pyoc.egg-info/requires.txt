@@ -1,0 +1,3 @@
+
+[easy_pyoc.qt5]
+PyQt5
