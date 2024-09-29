@@ -1,0 +1,14 @@
+pillow>=10.4.0
+rich>=13.8.0
+
+[dev]
+mypy
+pytest
+pytest-asyncio
+pytest-cov
+ruff
+syrupy
+textual-dev
+
+[textual]
+textual>=0.81.0

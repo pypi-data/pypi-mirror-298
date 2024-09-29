@@ -1,0 +1,90 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textual-kitty"
+version = "0.4.0"
+description = "Render images via Kitty's Terminal Graphics Protocol with Rich and Textual"
+authors = [
+    {name = "Simon Hayessen", email = "simon@lnqs.io"}
+]
+readme = "README.md"
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+
+  "Intended Audience :: Developers",
+
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: User Interfaces",
+
+  "License :: OSI Approved :: GNU General Public License (GPL)",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "pillow>=10.4.0",
+    "rich>=13.8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/lnqs/textual-kitty"
+Documentation = "https://github.com/lnqs/textual-kitty"
+Repository = "https://github.com/lnqs/textual-kitty"
+Issues = "https://github.com/lnqs/textual-kitty/issues"
+
+[project.optional-dependencies]
+textual = [
+    "textual>=0.81.0",
+]
+dev = [
+    "mypy",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "ruff",
+    "syrupy",
+    "textual-dev",
+]
+
+[tool.setuptools]
+packages = ["textual_kitty"]
+
+[tool.ruff]
+lint.select = ["B", "D", "F", "I", "T", "Q"]
+line-length = 120
+exclude = [
+    ".env",
+    ".git",
+    ".venv",
+    "__pycache__",
+    "env",
+    "venv",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["D"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.coverage.report]
+fail_under = 100
+exclude_lines = ["if __name__ == .__main__.:"]
+
+[tool.mypy]
+strict = true
+
