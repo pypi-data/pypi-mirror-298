@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: toretools
+Version: 0.1.2
+Summary: Useful functions and classes for creating mathematical or scientific programs!
+Author: Torrez Tsoi
+Author-email: that1.stinkyarmpits@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Requires-Dist: echowave
+Requires-Dist: yt-dlp
+
