@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: catpynet
+Version: 0.9.2
+Summary: CatPyNet is a lean tool for computations on reaction systems based on CatReNet
+Home-page: https://github.com/JanRitschel/catpynet
+Author: Jan Ritschel
+Author-email: jan.ritschel@outlook.de
+License: Apache 2.0
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+
+CatPyNet is a lean tool for computations on reaction systems based on CatReNet
