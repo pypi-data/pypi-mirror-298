@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+idev-termicol/idev_termicol.egg-info/PKG-INFO
+idev-termicol/idev_termicol.egg-info/SOURCES.txt
+idev-termicol/idev_termicol.egg-info/dependency_links.txt
+idev-termicol/idev_termicol.egg-info/top_level.txt
+idev-termicol/termicol/__init__.py
+idev-termicol/termicol/termicol.py

@@ -1,0 +1,22 @@
+[build-system]
+requires = ['setuptools>=42']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "idev-termicol"
+version = "1.0.0"
+authors = [
+  { name="Irtsa", email="irtsa.development@gmail.com" },
+]
+description = "A python Simple python function aimed to handle printing of colored and / or decorated text to console / terminal."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/irtsa-dev/termicol"
+"Bug Tracker" = "https://github.com/irtsa-dev/termicol/issues"
