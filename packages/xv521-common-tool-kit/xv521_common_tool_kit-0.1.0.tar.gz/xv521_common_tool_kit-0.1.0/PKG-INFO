@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: xv521_common_tool_kit
+Version: 0.1.0
+Summary: The various boring gadgets scattered here and there are like the vegetable market after the stalls close in the evening.
+License: MIT
+Author: XV-521
+Author-email: lingyigexiaov@icloud.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Description-Content-Type: text/markdown
+
+# xv521_common_tool_kit
+
+The various boring gadgets scattered here and there are like the vegetable market after the stalls close in the evening.

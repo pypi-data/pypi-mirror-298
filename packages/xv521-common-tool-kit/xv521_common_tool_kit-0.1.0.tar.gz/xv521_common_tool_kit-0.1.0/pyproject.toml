@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "xv521_common_tool_kit"
+version = "0.1.0"
+description = "The various boring gadgets scattered here and there are like the vegetable market after the stalls close in the evening."
+authors = ["XV-521 <lingyigexiaov@icloud.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "common", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+loguru = "^0.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
