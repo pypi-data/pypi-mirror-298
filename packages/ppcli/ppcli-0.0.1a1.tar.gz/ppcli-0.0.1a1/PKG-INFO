@@ -1,0 +1,41 @@
+Metadata-Version: 2.3
+Name: ppcli
+Version: 0.0.1a1
+Project-URL: Documentation, https://github.com/lykhvar/ppcli#readme
+Project-URL: Issues, https://github.com/lykhvar/ppcli/issues
+Project-URL: Source, https://github.com/lykhvar/ppcli
+Author-email: Artem Lykhvar <me@a10r.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: click>=8.0.6
+Description-Content-Type: text/markdown
+
+# ppcli
+
+[![PyPI - Version](https://img.shields.io/pypi/v/ppcli.svg)](https://pypi.org/project/ppcli)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ppcli.svg)](https://pypi.org/project/ppcli)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install ppcli
+```
+
+## License
+
+`ppcli` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
