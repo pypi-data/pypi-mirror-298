@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ocrd-fork-adabelief_tf
+Version: 0.2.1
+Summary: Tensorflow implementation of AdaBelief Optimizer
+Home-page: https://github.com/bertsky/Adabelief-Optimizer/tree/pypi-fork/pypi_packages/adabelief_tf0.2.1
+Author: Juntang Zhuang
+Author-email: j.zhuang@yale.edu
+Maintainer: bertsky
+License: BSD-2-Clause
+Project-URL: Bug Tracker, https://github.com/bertsky/Adabelief-Optimizer/issues
+Project-URL: Upstream, https://github.com/juntang-zhuang/Adabelief-Optimizer
+Project-URL: Pull Request, https://github.com/juntang-zhuang/Adabelief-Optimizer/pull/68
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: tensorflow <2.16.0,>=2.0.0
+
+Tensorflow implementation of Adabelief Optimizer. For details, please see https://juntang-zhuang.github.io/adabelief/
