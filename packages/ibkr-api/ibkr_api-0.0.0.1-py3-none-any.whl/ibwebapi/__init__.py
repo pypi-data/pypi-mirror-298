@@ -1,0 +1,3 @@
+class IB:
+    def __init__(self):
+        ...
