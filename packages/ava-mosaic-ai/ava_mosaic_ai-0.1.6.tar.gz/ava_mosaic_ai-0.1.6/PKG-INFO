@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: ava-mosaic-ai
+Version: 0.1.6
+Summary: 
+Home-page: https://github.com/pyrotank41/Mosaic-AI.git
+Author: Karan Singh Kochar
+Author-email: pyrotank41@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: anthropic (>=0.34.0,<0.35.0)
+Requires-Dist: instructor (>=1.3.7,<2.0.0)
+Requires-Dist: openai (>=1.41.0,<2.0.0)
+Requires-Dist: portkey-ai (>=1.8.7,<2.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: pytest (>=8.3.2,<9.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: tiktoken (>=0.7.0,<0.8.0)
+Project-URL: Repository, https://github.com/pyrotank41/Mosaic-AI.git
+Description-Content-Type: text/markdown
+
+# Mosaic-AI
+```
+ __   __  _______  _______  _______  ___   _______ 
+|  |_|  ||       ||       ||   _   ||   | |       |
+|       ||   _   ||  _____||  |_|  ||   | |       |
+|       ||  | |  || |_____ |       ||   | |       |
+|       ||  |_|  ||_____  ||       ||   | |      _|
+| ||_|| ||       | _____| ||   _   ||   | |     |_ 
+|_|   |_||_______||_______||__| |__||___| |_______|
+```
+
+## About Ava-Mosaic-AI
+
+Mosaic is a lightweight Python library that extends the capabilities of the Instructor library for LLM-based tasks. Born out of a personal project to streamline repetitive processes in GenAI development, Mosaic aims to reduce overhead and simplify common operations in LLM/GenAI projects.
+
+### Key Features
+
+- Extends Instructor library functionality
+- Simplifies common LLM-based tasks
+- Reduces code repetition in GenAI projects
+- Lightweight and easy to integrate
+
+## Installation
+
+```bash
+pip install ava-mosaic-ai
+```
+
+## Quick Start
+
+```python
+import ava_mosaic_ai
+from pydantic import BaseModel
+
+# Initialize LLM
+llm = ava_mosaic_ai.get_llm("openai")
+
+# Define response model
+class ResponseModel(BaseModel):
+    response: str
+
+# Use Mosaic's simplified interface
+response = llm.create_completion(
+    response_model=ResponseModel,
+    messages=[{"role": "user", "content": "Tell me a joke about AI"}],
+)
+print(response)
+```
+
+## Documentation
+
+For full documentation, visit [our docs site](https://mosaic-ai.readthedocs.io).
+
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for more details.
+
+## Roadmap
+
+- [ ] Add support for more LLM providers
+- [ ] Implement advanced prompt engineering tools
+- [ ] Develop a CLI for quick prototyping
+
+## Special Thanks
+
+- A heartfelt shoutout to [@daveebbelaar](https://github.com/daveebbelaar) for his implementation of `llm_factory`, which inspired this project. Check out his work [here](https://gist.github.com/daveebbelaar/d24eafc6ace1c8f4a091062733b52437).
+- Immense gratitude to the creators of the [Instructor library](https://github.com/jxnl/instructor). Their work has saved countless hours in GenAI project development.
+
+## License
+
+Mosaic is released under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Built with ❤️ by [karan Singh Kochar]
+
