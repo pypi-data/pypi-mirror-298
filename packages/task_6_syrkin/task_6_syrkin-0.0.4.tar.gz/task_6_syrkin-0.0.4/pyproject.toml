@@ -1,0 +1,38 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "task_6_syrkin"
+version = "0.0.4"
+authors = [{ name = "Andrii Syrkin", email = "avvaan1981@gmail.com" }]
+readme = "README.md"
+description = "Monaco 2018 Formula 1 Qualification Report"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+classifiers = ["License :: OSI Approved :: MIT License"]
+dependencies = [
+    "pytest>=8.3.2",
+    "coverage>=7.6.1",
+    "parameterized>=0.9.0",
+    "setuptools>=75.1.0"
+]
+
+[project.urls]
+Home = "https://git.foxminded.ua/andrii-syrkin-py_ment/task_6.git"
+
+[tool.flit]
+module = "report"
+
+
+[tool.flit.sdist]
+include = [
+    "data/**",
+    "task_6_syrkin/**",
+    "README.md",
+    "LICENSE",
+    "requirements.txt"
+]
+
+[project.scripts]
+monaco-report = "task_6_syrkin.report:main"
