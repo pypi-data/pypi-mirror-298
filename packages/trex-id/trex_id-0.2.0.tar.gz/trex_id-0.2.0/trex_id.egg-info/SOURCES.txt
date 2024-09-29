@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+trex_id.c
+trex_id.pyx
+trex_id.egg-info/PKG-INFO
+trex_id.egg-info/SOURCES.txt
+trex_id.egg-info/dependency_links.txt
+trex_id.egg-info/top_level.txt

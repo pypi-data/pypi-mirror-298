@@ -1,0 +1,3 @@
+include trex_id.pyx
+include README.md
+include LICENSE
