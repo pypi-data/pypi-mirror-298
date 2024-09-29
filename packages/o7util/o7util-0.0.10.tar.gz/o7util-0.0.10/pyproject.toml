@@ -1,0 +1,67 @@
+
+# https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "o7util"
+version = "0.0.10" # This will be updated by semantic-release
+
+description = "A collection of utility functions for Python"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["python", "utility", "o7conseils"]
+classifiers = [
+  # https://pypi.org/classifiers/
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 4 - Beta",
+
+  # Indicate who your project is intended for
+  # "Intended Audience :: Developers",
+  # "Topic :: Software Development :: Build Tools",
+
+  "License :: OSI Approved :: Apache Software License",
+
+  # Specify the Python versions you support here.
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12"
+]
+
+
+authors = [
+    {name = "Philippe Gosselin", email = "phil@o7conseils.com"}
+]
+maintainers = []
+
+requires-python = ">= 3.8"
+dependencies = [
+    "sty>=1.0.0-rc.2"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+    "integration",
+]
+
+
+[tool.semantic_release]
+# https://python-semantic-release.readthedocs.io/en/latest/configuration.html#
+version_variables = [
+  "pyproject.toml:version",
+  "./src/o7util/__init__.py:__version__"
+]
+
+
