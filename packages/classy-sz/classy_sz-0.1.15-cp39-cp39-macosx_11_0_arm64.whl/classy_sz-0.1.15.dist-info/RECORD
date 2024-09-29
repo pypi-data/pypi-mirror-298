@@ -1,0 +1,9 @@
+classy_sz.cpython-39-darwin.so,sha256=5Bmyb_cYc-EeT85sPxMcH2Z_Aah-zTdyBwDquFQZCDc,3514416
+classy_sz-0.1.15.dist-info/RECORD,,
+classy_sz-0.1.15.dist-info/WHEEL,sha256=HFavhTVJkcvCt-evT_vd5IQu5DLxvBS21rDCLgo75qw,107
+classy_sz-0.1.15.dist-info/top_level.txt,sha256=ouSJ3Eta4cEujMAwfhQqPjWdeT7C9AXK1VmJYWAhxls,10
+classy_sz-0.1.15.dist-info/METADATA,sha256=jgyH5GGHObUY1QY14ccpYwxfyrmVPstXERb8isS8L6g,524
+classy_sz.dylibs/libgsl.28.dylib,sha256=uzBMawqnU7dmkJo0C95dC5VRFDKjEYlwyiG-UphK2Vs,2241424
+classy_sz.dylibs/libomp.dylib,sha256=tza7olbWlZLA2R1lxbiy0CgYyLXhY3VjCdYx-vPs6Ow,735536
+classy_sz.dylibs/libfftw3.3.dylib,sha256=JamWMO_hcpE5OqXkcmCd087baK4frjiR8gmsNYrkHa0,687968
+classy_sz.dylibs/libgslcblas.0.dylib,sha256=3LKbiyrq0qin0-dE02bvI9BKdNSmqmvESzLtv1tWiZw,239760
