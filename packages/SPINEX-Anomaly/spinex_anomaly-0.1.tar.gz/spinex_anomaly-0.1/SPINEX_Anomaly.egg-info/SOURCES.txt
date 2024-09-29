@@ -1,0 +1,6 @@
+setup.py
+SPINEX_Anomaly.egg-info/PKG-INFO
+SPINEX_Anomaly.egg-info/SOURCES.txt
+SPINEX_Anomaly.egg-info/dependency_links.txt
+SPINEX_Anomaly.egg-info/requires.txt
+SPINEX_Anomaly.egg-info/top_level.txt
