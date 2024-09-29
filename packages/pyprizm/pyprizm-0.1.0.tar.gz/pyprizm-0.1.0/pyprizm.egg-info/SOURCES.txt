@@ -1,0 +1,8 @@
+README.md
+setup.py
+prizm/__init__.py
+prizm/console.py
+pyprizm.egg-info/PKG-INFO
+pyprizm.egg-info/SOURCES.txt
+pyprizm.egg-info/dependency_links.txt
+pyprizm.egg-info/top_level.txt
