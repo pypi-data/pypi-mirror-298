@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+symdr/__init__.py
+symdr/disc_waves.py
+symdr/discrete_funcs.py
+symdr/symdr.py
+symdr/utils.py
+symdr.egg-info/PKG-INFO
+symdr.egg-info/SOURCES.txt
+symdr.egg-info/dependency_links.txt
+symdr.egg-info/requires.txt
+symdr.egg-info/top_level.txt
