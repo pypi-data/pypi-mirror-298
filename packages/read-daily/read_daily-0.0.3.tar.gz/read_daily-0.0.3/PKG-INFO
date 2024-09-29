@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: read-daily
+Version: 0.0.3
+Summary: My personal information source
+Project-URL: Homepage, https://github.com/Koril33/read-daily
+Project-URL: Issues, https://github.com/Koril33/read-daily/issues
+Author-email: Ding Jinghui <dingjinghui33@163.com>
+Maintainer-email: Ding Jinghui <dingjinghui33@163.com>
+License-File: LICENSE
+Keywords: daily,information,news
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: click
+Requires-Dist: httpx
+Description-Content-Type: text/markdown
+
+## Read Daily
+
+rdf 个人的每日信息源获取

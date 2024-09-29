@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "read-daily"
+version = "0.0.3"
+authors = [
+    { name = "Ding Jinghui", email = "dingjinghui33@163.com" },
+]
+maintainers = [
+    { name = "Ding Jinghui", email = "dingjinghui33@163.com" },
+]
+description = "My personal information source"
+keywords = ["news", "information", "daily"]
+readme = "README.md"
+dependencies = [
+    "click",
+    "httpx"
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+rdf = "read_daily:cli"
+
+[project.urls]
+Homepage = "https://github.com/Koril33/read-daily"
+Issues = "https://github.com/Koril33/read-daily/issues"
