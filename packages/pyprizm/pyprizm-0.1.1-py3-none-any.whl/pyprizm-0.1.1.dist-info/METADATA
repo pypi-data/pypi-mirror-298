@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyprizm
+Version: 0.1.1
+Summary: A simple helper package to assist with debugging
+Home-page: https://github.com/frankbenderumn/pyprizm
+Author: Frank Bender
+Author-email: bende263@umn.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# pyprizm
+Simple debug tool and helper functions to use in other libraries
