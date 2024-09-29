@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mathias-utilities
+Version: 0.8.4
+Summary: mathias-utilities ist ein privates Console-Tool, das die Verwaltung und Bearbeitung von Webprojekten sowie Dateien und Ordnern vereinfacht.
+Requires-Python: >=3.6
+License-File: LICENSE

@@ -1,0 +1,2 @@
+[console_scripts]
+mathias = mathias_utilities.cli:main

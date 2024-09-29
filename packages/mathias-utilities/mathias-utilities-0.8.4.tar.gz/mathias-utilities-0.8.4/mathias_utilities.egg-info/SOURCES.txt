@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mathias_utilities/__init__.py
+mathias_utilities/cli.py
+mathias_utilities.egg-info/PKG-INFO
+mathias_utilities.egg-info/SOURCES.txt
+mathias_utilities.egg-info/dependency_links.txt
+mathias_utilities.egg-info/entry_points.txt
+mathias_utilities.egg-info/top_level.txt
