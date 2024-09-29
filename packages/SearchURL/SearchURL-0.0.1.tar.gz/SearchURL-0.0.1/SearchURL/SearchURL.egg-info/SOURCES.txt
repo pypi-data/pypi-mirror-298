@@ -1,0 +1,7 @@
+LICENCE
+setup.py
+SearchURL/SearchURL.egg-info/PKG-INFO
+SearchURL/SearchURL.egg-info/SOURCES.txt
+SearchURL/SearchURL.egg-info/dependency_links.txt
+SearchURL/SearchURL.egg-info/requires.txt
+SearchURL/SearchURL.egg-info/top_level.txt
