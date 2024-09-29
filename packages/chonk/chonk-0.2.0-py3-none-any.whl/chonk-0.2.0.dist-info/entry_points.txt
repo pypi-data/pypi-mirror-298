@@ -1,0 +1,5 @@
+[console_scripts]
+chonk = chonk.main:generate_markdown
+
+[gui_scripts]
+
