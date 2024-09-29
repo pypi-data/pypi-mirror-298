@@ -1,0 +1,60 @@
+import setuptools
+import io
+
+with io.open('README.md', encoding='utf-8') as f:
+	long_description = f.read()
+
+setuptools.setup(name='execsql',
+	version='1.130.1',
+	description="Runs a SQL script against a PostgreSQL, SQLite, MariaDB/MySQL, DuckDB, Firebird, MS-Access, MS-SQL-Server, or Oracle database, or an ODBC DSN.  Provides metacommands to import and export data, copy data between databases, conditionally execute SQL and metacommands, and dynamically alter SQL and metacommands with substitution variables.  Data can be exported in 18 different formats, including CSV, TSV, ODS, HTML, JSON, LaTeX, and Markdown tables, and using custom templates.",
+	author='Dreas Nielsen',
+	author_email='cortice@tutanota.com',
+    url='https://osdn.net/project/execsql/',
+    packages=['execsql'],
+	scripts=['execsql/execsql.py'],
+	data_files=[('execsql_extras', ['templates/execsql.conf', 'templates/script_template.sql',
+		'templates/example_config_prompt.sql', 'templates/config_settings.sqlite',
+		'templates/READ_ME.rst',
+		'templates/pg_upsert.sql',
+		'templates/md_upsert.sql',
+		'templates/ss_upsert.sql',
+		'templates/pg_compare.sql',
+		'templates/md_compare.sql',
+		'templates/ss_compare.sql',
+		'templates/pg_glossary.sql',
+		'templates/md_glossary.sql',
+		'templates/ss_glossary.sql'
+		])],
+    license='GPL',
+	install_requires=[],
+	python_requires = '>=2.7',
+	classifiers=[
+		'Development Status :: 5 - Production/Stable',
+		'Environment :: Console',
+		'Environment :: X11 Applications',
+		'Environment :: Win32 (MS Windows)',
+		'Intended Audience :: End Users/Desktop',
+		'Intended Audience :: Information Technology',
+		'Intended Audience :: System Administrators',
+		'License :: OSI Approved :: GNU General Public License (GPL)',
+		'Natural Language :: English',
+		'Operating System :: OS Independent',
+		'Operating System :: POSIX',
+		'Operating System :: Microsoft :: Windows',
+		'Programming Language :: Python :: 2',
+		'Programming Language :: Python :: 3',
+		'Programming Language :: Python :: 2.7',
+		'Topic :: Database',
+		'Topic :: Database :: Front-Ends',
+		'Topic :: Office/Business',
+		'Topic :: Scientific/Engineering'
+		],
+	keywords=['SQL', 'Postgres', 'PostgreSQL', 'SQLite', 'Firebird',
+		'Access', 'SQL Server', 'MySQL', 'MariaDb', 'ODBC', 'Oracle', 'DuckDB', 'database',
+		'xlrd', 'psycopg2', 'pyodbc', 'pymysql', 'fdb', 'cx_Oracle', 'cx-Oracle',
+		'odfpy', 'ETL', 'CSV', 'TSV', 'XML', 'HTML', 'JSON', 'Feather', 'LaTeX', 'OpenDocument',
+		'table', 'DBMS', 'Redshift', 'CockroachDB', 'query', 'script', 'import', 'export',
+		'Parquet', 'template', 'Jinja', 'Airspeed', 'zip'],
+	long_description_content_type="text/markdown",
+	long_description=long_description
+	)
