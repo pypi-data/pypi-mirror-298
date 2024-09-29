@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: marzban
+Version: 0.2.8
+Summary: Асинхронная библиотека Python для взаимодействия с MarzbanAPI
+Home-page: https://github.com/sm1ky/marzban_api
+Author: Artem
+Author-email: contant@sm1ky.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx>=0.23.0
+Requires-Dist: pydantic>=1.10.0
+
+# MarzbanAPI Client
+
+Это асинхронная библиотека Python для взаимодействия с MarzbanAPI, предоставляющая методы для управления администраторами, пользователями, узлами и системной статистикой.
+
+## Установка
+
+```bash
+pip install marzban
+```
+
+Project in Pypi - https://pypi.org/project/marzban/
+
+If you notice an error, please create a PR and attach logs
+You can contact me by mail contant@sm1ky.com or in Telegram @sm1ky
