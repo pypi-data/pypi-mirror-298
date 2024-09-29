@@ -1,0 +1,6 @@
+setup.py
+ibkr_api.egg-info/PKG-INFO
+ibkr_api.egg-info/SOURCES.txt
+ibkr_api.egg-info/dependency_links.txt
+ibkr_api.egg-info/top_level.txt
+ibwebapi/__init__.py
