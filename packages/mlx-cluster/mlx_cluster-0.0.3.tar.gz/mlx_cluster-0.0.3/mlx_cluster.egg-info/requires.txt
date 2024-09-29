@@ -1,0 +1,7 @@
+
+[dev]
+
+[test]
+pytest==7.4.4
+torch
+mlx_graphs
