@@ -1,0 +1,14 @@
+gnome_pomodoro_tracking/__init__.py,sha256=NrJKnw-SzrlMaTrl9FWBR-rBLL5SU6gjI5r3DzjR-S0,88
+gnome_pomodoro_tracking/__main__.py,sha256=9A7GNoTVlgcipu82Oh_1MY4FF6vX-IML36u1w9JMwDY,383
+gnome_pomodoro_tracking/clockify.py,sha256=TE0sMgvZSHE5JCsvBlUD0vmWYMfI2Ky1WgMzU9BtQR4,7223
+gnome_pomodoro_tracking/odoo.py,sha256=mT_CqEza1pF9TgdTJR02-Gh1vqHdLFiuOn4WInEjRIU,8791
+gnome_pomodoro_tracking/plugin.py,sha256=4qsSvCZe36WmRmPUcHhS1ZILsjknrFTd8v-LgSPpt0I,2944
+gnome_pomodoro_tracking/toggl.py,sha256=YBxZMtpW3jlwvAJpduM9jnGTr8QPc7cc9HlDb1ZAYLA,7426
+gnome_pomodoro_tracking/tracking.py,sha256=NHytfBzmTsqyshXqdMIoF-2SFfYA133KI9dSfg2uYMs,12883
+gnome_pomodoro_tracking/utils.py,sha256=uvA0_KZPFFsk8vANOYjko5wtVwGuZjMedGhZgy0zJM4,3178
+gnome_pomodoro_tracking-4.1.2.dist-info/LICENSE,sha256=mGIWBnfsFmXcf7kru8SVGxL7nxo61jKIXYlZP6MDQ7U,1099
+gnome_pomodoro_tracking-4.1.2.dist-info/METADATA,sha256=XMaQEI1mjPJFF6Y3p_bwRIhY4gOYy6-tdFFcVafTDWs,2325
+gnome_pomodoro_tracking-4.1.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+gnome_pomodoro_tracking-4.1.2.dist-info/entry_points.txt,sha256=VeAE3Dy9OAE6hdhXHZE0fXgZPAniEIC2qTfUQDpO7SU,82
+gnome_pomodoro_tracking-4.1.2.dist-info/top_level.txt,sha256=eC1wahlCfLLzxXrTMrnHaWLyrcNYmUSWbHsHz2qDjVg,24
+gnome_pomodoro_tracking-4.1.2.dist-info/RECORD,,
