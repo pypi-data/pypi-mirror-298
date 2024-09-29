@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: prompt2map
+Version: 0.1.3
+Summary: Dynamic maps generation based on natural language prompts using Retrieval-Augmented Generation (RAG)
+Author-email: José Miguel Cordero Carvacho <josemcorderoc@gmail.com>
+Maintainer-email: José Miguel Cordero Carvacho <josemcorderoc@gmail.com>
+License: MIT License
+Project-URL: Repository, https://github.com/josemcorderoc/prompt2map
+Keywords: maps,mapping,cartography,gis,webgis,geospatial,llm,nlp,prompt
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bidict~=0.23
+Requires-Dist: click~=8.1
+Requires-Dist: folium~=0.17
+Requires-Dist: geopandas~=1.0
+Requires-Dist: jsonlines~=4.0
+Requires-Dist: matplotlib~=3.9
+Requires-Dist: pandas~=2.2
+Requires-Dist: plotly~=5.23
+Requires-Dist: psycopg~=3.2
+Requires-Dist: Shapely~=2.0
+Requires-Dist: SQLAlchemy~=2.0
+Requires-Dist: sqlglot~=25.8
+Requires-Dist: sqlparse~=0.5
+Requires-Dist: openai~=1.38
+Requires-Dist: mapclassify~=2.8
+Requires-Dist: duckdb~=1.1
+Requires-Dist: typing-extensions~=4.12
+Requires-Dist: pyarrow~=17.0
+Provides-Extra: test
+Requires-Dist: pytest~=8.3; extra == "test"
+Requires-Dist: pytest-mock~=3.14; extra == "test"
+Requires-Dist: flake8~=7.1; extra == "test"
+
+# prompt2map
+
+**prompt2map** is a Python package that generates dynamic maps based on natural language prompts, utilizing Retrieval-Augmented Generation (RAG).
+
+# Quickstart
+
+## Initialize the mapper with geospatial data
+
+To get started, initialize Prompt2Map by providing a geospatial data file, embeddings, and descriptions of the fields in your dataset:
+
+```python
+from prompt2map import Prompt2Map
+
+# Example with portuguese 2021 Census
+p2m = Prompt2Map.from_file(
+    "censo2021portugal", 
+    "data/censo_pt_2021/geodata.parquet",  # Main geospatial data source that will be queries and mapped 
+    "data/censo_pt_2021/embeddings.parquet",  # Embedding for string literals
+    "data/censo_pt_2021/variable_descriptions.csv" # Description of fields in geodata.parquet 
+)
+```
+
+## Make a query
+
+Once initialized, you can generate maps by making natural language queries. For example, to create a population density map:
+
+```python
+prompt = "Population density map of the district of Setúbal by parish in inhabitants / km2"
+generated_map = p2m.to_map(prompt)
+```
+
+![Screenshot of a web choropleth map of Setúbal district with parish polygons](docs/images/example_map_censo_pt.png)
