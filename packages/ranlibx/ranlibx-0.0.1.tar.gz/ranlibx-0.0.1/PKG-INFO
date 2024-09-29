@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: ranlibx
+Version: 0.0.1
+Summary: Add a short description here
+Author-email: Ameer Arsala <ameer.arsala03@gmail.com>
+Requires-Python: >=3.9
+Requires-Dist: email-validator<3,>=2.2.0
+Requires-Dist: fastapi<0.113,>=0.112.2
+Requires-Dist: httpx<0.28,>=0.27.2
+Requires-Dist: pydantic>2.0
+Requires-Dist: rich<13.8,>=13.7.1
+Requires-Dist: typer<0.13,>=0.12.5
+Requires-Dist: uvicorn[standard]<0.31,>=0.30.6
