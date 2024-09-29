@@ -1,0 +1,14 @@
+pysikuli/__init__.py,sha256=Nj8ySXMeLHknF12HMBmyXjwHGgG7_1FSTo7vmu3NNro,2134
+pysikuli/_config.py,sha256=EsgzSkL2YWZBQgsYGb6NDcoRjwsX1ZEr4zTujYfamLo,7370
+pysikuli/_main.py,sha256=FaJfyMYNjtL0PYHyzmsvv1jqITr0wC57p0YcpLB1U0Y,55524
+pysikuli/_osx.py,sha256=50OBTyilC4daK5eEBoZW2gnlZ5bPiZ43o36g-sfQvMU,6230
+pysikuli/_unix.py,sha256=xZ3ibSP3xYBiMpgPQuCHAIFIwp0eCO2iMLdykQDNKWg,2842
+pysikuli/_utils.py,sha256=sllnSBdx68oLYrhKSInz1AGKQF42gNcTOPrnscTblqQ,8530
+pysikuli/_win.py,sha256=6hI8Gk3LkI8uDpZ4wZraqwwrvksANZjSg5aoQQ4eHKQ,2803
+pysikuli/tools_data/_bleep.mp3,sha256=ifucsfYlFX6frPUjkiZanRkdCewI8whsNlHokVxeVvc,8894
+pysikuli/tools_data/_capture.mp3,sha256=0IcS8-bMKnuQw-LIePAgff72BpLCsDclP6pNMehn2lU,5790
+pysikuli/tools_data/_finish.mp3,sha256=j2QDfYlSmVlgbP6E8BFfXZeSVCV1a725qBeua1pCqyI,10302
+pysikuli-0.0.19.dist-info/LICENSE.txt,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pysikuli-0.0.19.dist-info/METADATA,sha256=kbnSer121roLoigTQWr31GfJTVx7TslgFnQQQ0OmBo8,10527
+pysikuli-0.0.19.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pysikuli-0.0.19.dist-info/RECORD,,
