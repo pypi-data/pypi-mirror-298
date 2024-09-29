@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+ogorodlibrary.egg-info/PKG-INFO
+ogorodlibrary.egg-info/SOURCES.txt
+ogorodlibrary.egg-info/dependency_links.txt
+ogorodlibrary.egg-info/top_level.txt
