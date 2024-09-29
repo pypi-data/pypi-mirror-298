@@ -1,0 +1,23 @@
+#run-forge-test {
+    align: center middle;
+    height: 100%;
+}
+
+.modal-box {
+    align: center middle;
+    width: 50%;
+    height: 30%;
+    border: round white;
+}
+
+.loading-text {
+    text-align: center;
+    height: 1;
+}
+
+.loading-indicator {
+    height: 1;
+}
+
+.test-screen {
+}
