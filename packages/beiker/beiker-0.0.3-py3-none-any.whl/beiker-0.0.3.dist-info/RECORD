@@ -1,0 +1,14 @@
+beiker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+beiker/app.py,sha256=DB48uYumawFyQ1AloF9YwyDyYa7z3BH693Bfj1tHpFo,1186
+beiker/beiker_string.py,sha256=HrPH_YlsfaBVRo5kGPsEkw8D5Pw-NsYFMH6sYyDbQt0,6038
+beiker/data_cleaning.py,sha256=pQSM3TcrjmOyo0d4thYmpdDb-_Ea1ckxRsuqlyt2ZD8,6287
+beiker/database.py,sha256=puxtktk52TBJCN57XzFLoiJO6fQw94h5vhH_e620l0o,13401
+beiker/files.py,sha256=W3ypuK__mYTZvmMs5WLvSP3WVo69HbLoKm6IoINSiJE,99042
+beiker/gui.py,sha256=0BBSAIltVUsGgwfyKYmI8hJTMpaUMZBSrHkhUPOkrm8,1276
+beiker/log.py,sha256=-fvGxc1yTC17qklaZJEWrohMxbtprkb9JuHv29FZUHY,2415
+beiker/ocr.py,sha256=MZDQodivlIQnNbjmB9Z7Et6Y9b2AtqSvaS_67n9yDUQ,35494
+beiker/safe.py,sha256=Z7hzIKzncHQwa_cFOs7sie8ipWrMYFguQRu6vLyysZ4,645
+beiker-0.0.3.dist-info/METADATA,sha256=H5GAkWP4NUPVBD-5eYv-BNK4jwxSDfqm_hOqEh6Yu38,957
+beiker-0.0.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+beiker-0.0.3.dist-info/top_level.txt,sha256=9cvaLt0igschLY0Cl6N3L6AEliLax9LAoV8OZM37FiA,7
+beiker-0.0.3.dist-info/RECORD,,
