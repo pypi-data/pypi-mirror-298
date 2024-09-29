@@ -1,0 +1,10 @@
+setup.py
+echowave/__init__.py
+echowave/__version__.py
+echowave/builtins.py
+echowave/coloring.py
+echowave/echowave.py
+echowave.egg-info/PKG-INFO
+echowave.egg-info/SOURCES.txt
+echowave.egg-info/dependency_links.txt
+echowave.egg-info/top_level.txt
