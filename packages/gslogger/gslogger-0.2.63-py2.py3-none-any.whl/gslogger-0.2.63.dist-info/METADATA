@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: gslogger
+Version: 0.2.63
+Summary: Greg's Simple Changelog Generator
+Author-email: Gregory Denyes <Greg.Denyes@gmail.com>
+License-File: LICENSE
+Keywords: changelog,development,project
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12

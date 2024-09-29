@@ -1,0 +1,14 @@
+gslogger/__init__.py,sha256=lgTJuv4xOIJi9AP2ly2CmeT1Cy3zRNS-mOGL_N9PIeM,224
+gslogger/changelog.md,sha256=Com82PeIocuCHAH4ROawioIdnmDaKwpKL8Ua-idh08w,3673
+gslogger/extras.py,sha256=ELtQpc3JCAfxPHJJmX6MBhLu2bLZSabdqZRsllIldlc,1564
+gslogger/glog.json,sha256=hzZuPddDzfSVBdACe5LbL3NUPy-ceI7qz2IzURlSOhE,982
+gslogger/glog.py,sha256=26uaYi_RlBiBw7F8RMDetkb24YcP8i1aY5yo0hrLMt4,12244
+gslogger/jin.py,sha256=oq6e-XZEpP76ILbd3u9v7iIPsjCEj46ZGp_1dYlIG94,3543
+gslogger/version.py,sha256=0vE6cE49fb2QVOvMoQQtPEmR4-ZO6BQx2zIeCpKWIfo,483
+gslogger/ch-logs/2024-09-27-17-38-46-FIXED.txt,sha256=omz4__ESFch7nkvtO5olxRSDWQnpfHUkAeFLbSLY3YY,209
+gslogger/ch-logs/changelog.md,sha256=Q2HQoRgt-DZfxlkWwI7UByACArGusCH5yjnth4Q38iE,3849
+gslogger/ch-logs/log_store.json,sha256=HB3UXDJhKuFsLR7s6GTPDZe6Ao0ygs6G5X_BjO8JC-U,8582
+gslogger-0.2.63.dist-info/METADATA,sha256=Mj44ACwdjRGi-WS9L3mcoJZraaXrH0PJU8Mw8_sOaLk,515
+gslogger-0.2.63.dist-info/WHEEL,sha256=fl6v0VwpzfGBVsGtkAkhILUlJxROXbA3HvRL6Fe3140,105
+gslogger-0.2.63.dist-info/licenses/LICENSE,sha256=-vtZFE6lJZT1kyZyj1nyFgo3l4Er_u2XWxMjdq8c-L0,10944
+gslogger-0.2.63.dist-info/RECORD,,
