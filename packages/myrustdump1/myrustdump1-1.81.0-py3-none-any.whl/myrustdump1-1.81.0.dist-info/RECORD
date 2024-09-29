@@ -1,0 +1,6 @@
+rust/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rust/data,sha256=ooxBruO-n4NXRyIoOXOGM2ATdaAx24ZlV8FU8WVPTDQ,85219522
+rust/__main__.py,sha256=7EgSUrS5BEI5bU4Mcdo21V-GOB2vjBKAGgdZICYkBlU,200
+myrustdump1-1.81.0.dist-info/METADATA,sha256=4-O9vCMNq_c93WXzs4kLpVpH7kBAqd3HBzmdUw8a20k,393
+myrustdump1-1.81.0.dist-info/WHEEL,sha256=3I2MfFIyG6j1ldZOItU-IbBMW4bwWCNlVfKsfTV9aw4,112
+myrustdump1-1.81.0.dist-info/RECORD,,
