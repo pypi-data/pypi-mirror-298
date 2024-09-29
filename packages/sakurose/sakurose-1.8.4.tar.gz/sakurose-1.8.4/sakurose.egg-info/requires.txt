@@ -1,0 +1,5 @@
+Flask
+Pillow
+discord.py
+pytz
+requests
