@@ -1,0 +1,2 @@
+[console_scripts]
+ranx = ranx.cli.main:app
