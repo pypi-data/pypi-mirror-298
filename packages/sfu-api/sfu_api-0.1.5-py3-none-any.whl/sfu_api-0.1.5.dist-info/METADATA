@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: sfu-api
+Version: 0.1.5
+Summary: A client for SFU's course outline API.
+Project-URL: Repository, https://github.com/Theawesometurtl/SFU_API_client/tree/main
+Project-URL: Issues, https://github.com/Theawesometurtl/SFU_API_client/issues
+Author: Alex Kubanek, Kian Khadempour
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Requires-Dist: httpx>=0.27.2
+Requires-Dist: pydantic[email]>=2.9.2
+Description-Content-Type: text/markdown
+
+# sfu-api
+
+A client for SFU's course outline API.
+
+## Examples
+
+Printing all the terms of the first year
+
+```py
+client = sfu_api.Client()
+years = client.get_years()
+terms = client.get_terms(years[0])
+for term in terms:
+    print(term)
+
+# summer
+# fall
+```
+
+Getting the course description for _MATH 150 D101_ (Calculus I with Review) in the Summer 2023 term
+
+```py
+client = sfu_api.Client()
+outline = client.get_outline("2023", "summer", "math", "150", "d101")
+print(outline.info.description)
+```
