@@ -1,0 +1,8 @@
+flask_allowed_hosts/__init__.py,sha256=D5W6Z1OQ3q6ReguHv9lnMT3WldKyd0Jd-mLcZRg50sE,220
+flask_allowed_hosts/allowed_hosts.py,sha256=AQDinE_vMn_2t93eP76s5FNYNPCu8lxMOFo0WC9heWE,2287
+flask_allowed_hosts/helpers.py,sha256=dwjd1eGqXit-Wisa5jsO-v3IGsjLuYTLRtxfimfcDFs,1678
+flask_allowed_hosts-1.0.4.dist-info/LICENSE.md,sha256=Er8Q5LmfJrOiXYOMMbGHW2AA0jTiD3h0biwpiiN8mQI,1090
+flask_allowed_hosts-1.0.4.dist-info/METADATA,sha256=rwEp63mq557EdZ6naUF799nHROxNM4psCVpxmdanLCA,6677
+flask_allowed_hosts-1.0.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+flask_allowed_hosts-1.0.4.dist-info/top_level.txt,sha256=0ZyVPhcy8k1XuYSEoTH-9u3u5SNkU1Sy8bGf89igfTM,20
+flask_allowed_hosts-1.0.4.dist-info/RECORD,,
