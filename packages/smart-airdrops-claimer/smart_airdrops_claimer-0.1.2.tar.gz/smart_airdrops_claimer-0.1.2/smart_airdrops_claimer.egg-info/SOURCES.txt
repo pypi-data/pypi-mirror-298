@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+smart_airdrops_claimer/__init__.py
+smart_airdrops_claimer/base.py
+smart_airdrops_claimer.egg-info/PKG-INFO
+smart_airdrops_claimer.egg-info/SOURCES.txt
+smart_airdrops_claimer.egg-info/dependency_links.txt
+smart_airdrops_claimer.egg-info/requires.txt
+smart_airdrops_claimer.egg-info/top_level.txt
