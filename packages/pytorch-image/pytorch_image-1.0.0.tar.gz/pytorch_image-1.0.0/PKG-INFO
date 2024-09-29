@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pytorch-image
+Version: 1.0.0
+Summary: Minimalistic library designed to be an interface for the model input with a lightweight `Image` class.
+License: MIT
+Author: Richard Löwenström
+Author-email: samedii@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: train
+Requires-Dist: albumentations (>=1.4.16,<2.0.0) ; extra == "train"
+Requires-Dist: numpy
+Requires-Dist: pillow (>=10.4.0,<11.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: torch
+Description-Content-Type: text/markdown
+
+# pytorch-image
+
+Minimalistic library designed to be an interface for the model input with a lightweight `Image` class.
+
+```python
+from my_model import MyModel, Image
+
+image = Image.from_numpy(numpy_image)
+predictions = model(image)
+```
+
+It also offers a simple interface for essential image operations such as loading, resizing, augmenting, and saving.
+
+## Installation
+
+```bash
+pip install pytorch-image
+```
+
+```bash
+poetry add pytorch-image
+```
+
+## Usage
+
+```python
+from pytorch_image import Image
+import albumentations
+
+
+image = Image.open("path/to/image.png")
+
+image.augment(albumentations.HorizontalFlip())
+
+image.torch()
+```
+
+```python
+Image.from_numpy
+Image.from_torch
+Image.from_pil_image
+Image.open
+```
+
