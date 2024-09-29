@@ -1,0 +1,6 @@
+geode-background==8.*,>=8.3.0
+geode-common==32.*,>=32.1.11
+geode-numerics==5.*,>=5.1.0
+geode-simplex==8.*,>=8.2.7rc2
+opengeode-core==15.*,>=15.4.6
+opengeode-inspector==6.*,>=6.1.1
