@@ -1,0 +1,5 @@
+setup.py
+assistant_stream.egg-info/PKG-INFO
+assistant_stream.egg-info/SOURCES.txt
+assistant_stream.egg-info/dependency_links.txt
+assistant_stream.egg-info/top_level.txt
