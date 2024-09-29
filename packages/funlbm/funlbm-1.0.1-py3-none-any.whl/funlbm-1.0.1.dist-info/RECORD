@@ -1,0 +1,17 @@
+funlbm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funlbm/config/__init__.py,sha256=Fud-ewQfyun5KZw8M21AY5T8AB05Zo1EzVZyIWhYIO0,54
+funlbm/config/base.py,sha256=taQ5JmtuI1N_JJgPUWdcomeHLG_MJ0_kKmoAY_CtihI,5526
+funlbm/flow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funlbm/flow/base.py,sha256=xoJUoo2rxd1BPIn1vPFnjRyKEMlBEXX77nrGAoIATmA,659
+funlbm/flow/flow3d.py,sha256=HBCX_wd0mqlL7WLhMp3dJKl3L5hHhX0atQsYp_ckDu4,9020
+funlbm/lbm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funlbm/lbm/base.py,sha256=Ej-COwM8DwOMMBkmSi0z7_AHkRsGCtF-_yZ3KDCe_sA,6333
+funlbm/parameter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funlbm/parameter/base.py,sha256=3HvM3tqdbLOUlVCVLqJsv5iUCjSKtfdmWuxanMzm-EE,1862
+funlbm/particle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funlbm/particle/base.py,sha256=k5BCnWlQDh-KC6RUGAwBuYljuDsTnxLux6_zODFHVA0,6263
+funlbm/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funlbm/utils/map.py,sha256=qzk-JkqTcDpt-m6lDNV6OszD3dq-Qw9bTe9c3Q2CAOk,331
+funlbm-1.0.1.dist-info/METADATA,sha256=qOb0hYebYeTJH7thIcinAN8h4_SCdZJ70PhJ1BhZ6XE,4699
+funlbm-1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+funlbm-1.0.1.dist-info/RECORD,,
