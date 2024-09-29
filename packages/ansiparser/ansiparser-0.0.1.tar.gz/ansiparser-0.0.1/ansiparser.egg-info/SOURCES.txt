@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ansiparser/__init__.py
+ansiparser/api.py
+ansiparser/converter.py
+ansiparser/re_pattern.py
+ansiparser/screen_parser.py
+ansiparser/sequence_parser.py
+ansiparser/sequence_utils.py
+ansiparser/structures.py
+ansiparser.egg-info/PKG-INFO
+ansiparser.egg-info/SOURCES.txt
+ansiparser.egg-info/dependency_links.txt
+ansiparser.egg-info/top_level.txt
