@@ -1,0 +1,9 @@
+rutube_cold_start/__about__.py,sha256=MpAT5hgNoHnTtG1XRD_GV_A7QrHVU6vJjGSw_8qMGA4,22
+rutube_cold_start/__init__.py,sha256=1pmyXFCy8zzmMtSWiHXH1etuJnwyYoZdIH6XmXrXbVk,90
+rutube_cold_start/config.py,sha256=n3CgmQHUiQ-ogby6Y7Bz6u_sJQ1alzXrDB3tTUVnQUM,128
+rutube_cold_start/main.py,sha256=KcgiYb0lvNrvvuTxSUQRQ_60acj7BkvTp7Hrb2vgSRg,1505
+rutube_cold_start/recommender.py,sha256=szNSO_Pz-Fa1LzL_fUEnaYJtwXvVr2CIiX_u6z77N2g,3895
+rutube_cold_start-1.2.0.dist-info/METADATA,sha256=3thDHhzkpIcTvBTPHtqkyldQEzjKUgLbCYtoXm8ZHV8,1750
+rutube_cold_start-1.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+rutube_cold_start-1.2.0.dist-info/licenses/LICENSE,sha256=O-kuPsuRDYJLkx8RF0ZKCaLS4CByKIbsxejcQebf174,1073
+rutube_cold_start-1.2.0.dist-info/RECORD,,
