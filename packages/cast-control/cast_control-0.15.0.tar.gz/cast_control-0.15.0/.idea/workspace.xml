@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ce6fa944-0a19-4897-83c1-29b96a5e7c39" name="Changes" comment="Fix reference to requirements" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "alexdelorenzo"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:alexdelorenzo/cast_control.git",
+    "accountId": "9c7736f5-966e-4476-89b1-f7c64679ad1c"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2miy4vwsqDTjf1zdEwXGPwpo4sN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-702c07f07bed-JavaScript-PY-243.15521.16" />
+        <option value="bundled-python-sdk-dd66037ca89d-ca77fbc60dd9-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.15521.16" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce6fa944-0a19-4897-83c1-29b96a5e7c39" name="Changes" comment="" />
+      <created>1727573504168</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727573504168</updated>
+      <workItem from="1727573505357" duration="3156000" />
+    </task>
+    <task id="LOCAL-00001" summary="Convert project to `src` dir and Rye managed">
+      <option name="closed" value="true" />
+      <created>1727574698314</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727574698314</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add Cast Control Desktop notice">
+      <option name="closed" value="true" />
+      <created>1727575012968</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727575012968</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add new build requirements including Rye and `hatchling`">
+      <option name="closed" value="true" />
+      <created>1727575618829</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727575618829</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Remove instructions about `requirements.txt`, it doesn't exist">
+      <option name="closed" value="true" />
+      <created>1727575772389</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727575772389</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fix reference to requirements">
+      <option name="closed" value="true" />
+      <created>1727575821549</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727575821549</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Convert project to `src` dir and Rye managed" />
+    <MESSAGE value="Add Cast Control Desktop notice" />
+    <MESSAGE value="Add new build requirements including Rye and `hatchling`" />
+    <MESSAGE value="Remove instructions about `requirements.txt`, it doesn't exist" />
+    <MESSAGE value="Fix reference to requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix reference to requirements" />
+  </component>
+</project>
