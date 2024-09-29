@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+envedit/__init__.py
+envedit/common.py
+envedit/env_var.py
+envedit/parsing.py
+envedit.egg-info/PKG-INFO
+envedit.egg-info/SOURCES.txt
+envedit.egg-info/dependency_links.txt
+envedit.egg-info/top_level.txt
+scripts/editvars.py
+tests/tests.py
