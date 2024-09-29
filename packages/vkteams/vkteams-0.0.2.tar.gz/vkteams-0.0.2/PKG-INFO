@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: vkteams
+Version: 0.0.2
+Summary: Pure Python interface for Bot API. Bot cookbook for Humans.
+Home-page: https://github.com/alex3ysmirnov/vkteams
+Author: alex3ysmirnov
+Author-email: alex3ysmirnov@gmail.com
+License: MIT
+Keywords: mailru im bot api postmaster alex3ysmirnov vkteams vk teams
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Internet
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >= 2.7, != 3.0.*, != 3.1.*, != 3.2.*, != 3.3.*
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<img src="logo_bot.png" width="100" height="100">
+
+# VK Teams Bot API для Python
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
+### [<img src="logo_msg.png" width="16"> Спецификация API VK Teams](https://teams.vk.com/botapi/)
+
+## Начало использования
+* Создайте своего бота, отправив команду _/newbot_ в _Metabot_ и следуя инструкциям.
+    >Внимание: бот может ответить только после того, как пользователь добавил его в свой список контактов, или если пользователь первым начал диалог.
+* Вы можете настроить домен, на котором размещен ваш сервер VK Teams. При создании экземпляра класса Bot добавьте адрес вашего домена.
+* Пример использования фреймворка можно увидеть в _example/test_bot.py_.
+
+## Установка
+Установка из исходников:
+```bash
+git clone https://github.com/alex3ysmirnov/vkteams.git
+cd vkteams
+python setup.py install
+```
+Установка с PyPi:
+```bash
+pip install --upgrade vkteams
+```
+

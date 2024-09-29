@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+vkteams.egg-info/PKG-INFO
+vkteams.egg-info/SOURCES.txt
+vkteams.egg-info/dependency_links.txt
+vkteams.egg-info/not-zip-safe
+vkteams.egg-info/requires.txt
+vkteams.egg-info/top_level.txt
