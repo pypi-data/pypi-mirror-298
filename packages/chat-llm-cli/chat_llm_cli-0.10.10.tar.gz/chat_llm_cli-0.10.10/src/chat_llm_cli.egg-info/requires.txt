@@ -1,0 +1,13 @@
+typer>=0.12.5
+prompt-toolkit>=3.0.47
+litellm<2.0.0,>=1.44.16
+rich>=13.8.0
+click>=8.1.7
+pyperclip>=1.9.0
+pygments>=2.18.0
+catppuccin[pygments]>=2.3.1
+loguru>=0.7.2
+toml>=0.10.2
+pyyaml>=6.0.2
+xdg-base-dirs>=6.0.1
+filelock>=3.15.4
