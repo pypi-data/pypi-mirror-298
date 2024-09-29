@@ -1,0 +1,193 @@
+Metadata-Version: 2.1
+Name: kalib
+Version: 0.16.6
+Summary: Alex Kalaverin Toolbelt
+Home-page: https://kalaver.in
+License: BSD
+Keywords: decorators,tools,utils
+Author: Alex Kalaverin
+Author-email: alex@kalaver.in
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: all
+Provides-Extra: data
+Provides-Extra: deploy
+Provides-Extra: pydantic
+Provides-Extra: pyyaml
+Provides-Extra: web
+Requires-Dist: base2048 (>=0.1.3,<0.2.0) ; extra == "all" or extra == "data"
+Requires-Dist: charset-normalizer (>=3.3.2,<4.0.0) ; extra == "all" or extra == "data"
+Requires-Dist: fake_useragent (>=1.5.1,<2.0.0) ; extra == "all" or extra == "web"
+Requires-Dist: feedparser (>=6.0.11,<7.0.0) ; extra == "all" or extra == "web"
+Requires-Dist: gitpython (>=3.1.43,<4.0.0)
+Requires-Dist: lxml (>=5.3.0,<6.0.0) ; extra == "all" or extra == "web"
+Requires-Dist: msgpack (>=1.1.0,<2.0.0) ; extra == "all" or extra == "web"
+Requires-Dist: natsort (>=8.4.0,<9.0.0)
+Requires-Dist: orjson (>=3.10.7,<4.0.0)
+Requires-Dist: pre-commit (>=3.7.1,<4.0.0) ; extra == "all" or extra == "deploy"
+Requires-Dist: pydantic (>=2.7.4,<3.0.0) ; extra == "all" or extra == "pydantic"
+Requires-Dist: python-magic (>=0.4.27,<0.5.0) ; extra == "all" or extra == "data"
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0) ; extra == "all" or extra == "pyyaml"
+Requires-Dist: tomli (>=2.0.1,<3.0.0) ; extra == "all" or extra == "pyyaml"
+Requires-Dist: versioneer (>=0.29,<0.30) ; extra == "all" or extra == "deploy"
+Requires-Dist: xxhash (>=3.4.1,<4.0.0)
+Requires-Dist: yarl (>=1.9.4,<2.0.0) ; extra == "all" or extra == "web"
+Requires-Dist: zstd (>=1.5.5.1,<2.0.0.0)
+Description-Content-Type: text/markdown
+
+https://xcfile.dev/task-syntax/scripts/
+
+# Tasks
+## ver
+
+Deploys a new tag for the repo.
+
+```zsh
+
+branch="$(git rev-parse --quiet --abbrev-ref HEAD 2>/dev/null)"
+
+#
+if [ -z "$branch" ]; then
+    exit 1
+elif [ "$branch" == "master" ]; then
+    echo "using main master mode"
+else
+    exit 1
+fi
+
+#
+
+changes="$(git ls-files --deleted --modified --exclude-standard /my/src/lib/kalib)"
+changes="$(printf "$changes" | sort -u | tr '\n' ' ' | xargs)"
+
+if [ "$changes" == "README.md" ] || [ "$changes" == "pyproject.toml README.md" ]; then
+    echo "pipeline development mode"
+elif [ -n "$changes" ]; then
+    exit 1
+fi
+
+current="$(git describe --tags --abbrev=0)"
+[ -z "$current" ] && exit 1
+
+
+amount="$(git rev-list --count $current..HEAD)"
+if [ "$amount" -eq 0 ]; then
+    echo "no changes since $current"
+    exit 1
+fi
+
+version="$(bump patch "$current")"
+[ -z "$version" ] && exit 1
+
+xc set "$current" "$version"
+
+while true; do
+    value="0"
+    pre-commit run --config ci/.pre-commit-config.yaml --color always --file pyproject.toml || value="$?"
+
+    if [ "$value" -eq 0 ]; then
+        break
+
+    elif [ "$value" -eq 1 ]; then
+        continue
+
+    else
+        exit "$value"
+
+    fi
+done
+
+changes="$(git diff pyproject.toml)" || exit "$?"
+changes="$(printf "$changes" | wc -l)"
+
+if [ "$changes" -ne 0 ]; then
+    git add pyproject.toml && \
+    git commit -m "$branch: $version"
+fi
+
+git tag -a "$version" -m "$version" && \
+git push --tags && \
+git fetch --tags --force
+
+echo "version update to ${version}"
+```
+
+## set
+
+Update version in pyproject.toml.
+
+```python
+#!/usr/bin/env python3.11
+from os import environ
+from sys import argv, exit
+from re import match
+from pathlib import Path
+
+import tomli_w
+import tomllib
+
+ROOT = Path(environ['PWD'])
+
+def get_version(string):
+    try:
+        return match(r'^(\d+\.\d+\.\d+)$', string).group(1)
+    except Exception:
+        print(f'could not parse version from {string}')
+        exit(3)
+
+if __name__ == '__main__':
+    try:
+        current_tag = get_version(argv[1])
+        version_tag = get_version(argv[2])
+    except IndexError:
+        print('usage: xc setver <old_tag> <new_tag>')
+        exit(1)
+
+    path = ROOT / 'pyproject.toml'
+    try:
+        with open(path, 'rb') as fd:
+            data = tomllib.load(fd)
+
+    except Exception:
+        print(f'could not load {path}')
+        exit(2)
+
+    try:
+        current_ver = get_version(data['tool']['poetry']['version'])
+    except KeyError:
+        print(f'could not find version in {data}')
+        exit(2)
+
+    if current_tag != current_ver:
+        if current_ver == version_tag:
+            exit(0)
+
+        print(f'current tag {current_tag} != {current_ver} current version')
+        exit(4)
+
+    data['tool']['poetry']['version'] = version_tag
+    try:
+        with open(path, 'wb') as fd:
+            tomli_w.dump(data, fd)
+
+    except Exception:
+        print(f'could not write {path} with {data=}')
+        exit(5)
+```
+
+## new
+
+Publishes a new version to pypi.
+
+```zsh
+xc ver
+poetry build && poetry publish
+```
+
