@@ -1,0 +1,9 @@
+README.md
+setup.py
+PassSC.egg-info/PKG-INFO
+PassSC.egg-info/SOURCES.txt
+PassSC.egg-info/dependency_links.txt
+PassSC.egg-info/entry_points.txt
+PassSC.egg-info/top_level.txt
+passsc/PassSC.py
+passsc/__init__.py

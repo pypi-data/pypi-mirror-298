@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: PassSC
+Version: 0.0.1
+Summary: CLI Password Strength Checker using regex and time-to-crack estimation.
+Home-page: https://github.com/babaralijamali/PassSC
+Author: Babar Ali Jamali
+Author-email: babar995@gmail.com
