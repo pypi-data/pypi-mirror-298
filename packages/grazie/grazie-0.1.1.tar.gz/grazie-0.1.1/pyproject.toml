@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "grazie"
+version = "0.1.1"
+description = "prepare for data manipulate use"
+authors = ["Yue <panyu996@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+sqlalchemy = "^2.0.35"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
