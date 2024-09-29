@@ -1,0 +1,3 @@
+[console_scripts]
+chat-llm-cli = chat_llm_cli.chat_llm_cli:app
+clc = chat_llm_cli.chat_llm_cli:app
