@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+EymOS.egg-info/PKG-INFO
+EymOS.egg-info/SOURCES.txt
+EymOS.egg-info/dependency_links.txt
+EymOS.egg-info/requires.txt
+EymOS.egg-info/top_level.txt
+eymos/__init__.py
+eymos/logger.py
+eymos/service.py
+eymos/service_manager.py
+eymos/utils.py
+eymos/services/__init__.py
+eymos/services/camera.py
