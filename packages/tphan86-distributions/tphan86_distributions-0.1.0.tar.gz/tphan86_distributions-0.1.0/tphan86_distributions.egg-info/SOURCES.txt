@@ -1,0 +1,10 @@
+setup.py
+tphan86_distributions/Binomialdistribution.py
+tphan86_distributions/Gaussiandistribution.py
+tphan86_distributions/Generaldistribution.py
+tphan86_distributions/__init__.py
+tphan86_distributions.egg-info/PKG-INFO
+tphan86_distributions.egg-info/SOURCES.txt
+tphan86_distributions.egg-info/dependency_links.txt
+tphan86_distributions.egg-info/not-zip-safe
+tphan86_distributions.egg-info/top_level.txt
