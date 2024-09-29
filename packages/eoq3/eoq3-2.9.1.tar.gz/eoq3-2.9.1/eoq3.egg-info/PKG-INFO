@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: eoq3
+Version: 2.9.1
+Summary: Core implementation of EOQ3 for python
+Author-email: Bjoern Annighoefer <bjoern.annighoefer@ils.uni-stuttgart.de>
+Project-URL: Homepage, https://gitlab.com/eoq/py/eoq3
+Project-URL: Issues, https://gitlab.com/eoq/py/eoq3/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: antlr4-python3-runtime
+
+# eoq3 - EOQ3 core implementation for python
+
+This implements EOQ3 domains, values, queries and commands in python. 
+It is the central module of the EOQ3 implementation for python. 
+It contains a ready-to-use domainwithmdb for programatic model interactions.
+
+## Getting started example 
+
+   TODO
+
+## Documentation
+
+For more information see EOQ3 documentation: https://eoq.gitlab.io/doc/eoq3/
+
+## pyeoq repository
+
+All eoq3 python modules can be found here: https://gitlab.com/eoq/py/pyeoq
+
+## Author
+
+2024 Bjoern Annighoefer
+
+
