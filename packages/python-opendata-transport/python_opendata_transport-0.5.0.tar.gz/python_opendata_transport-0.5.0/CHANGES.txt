@@ -1,0 +1,60 @@
+Changes
+=======
+
+20240929 - 0.5.0
+----------------
+
+- Chain errors to be more transparent to the error source (thanks @miaucl)
+- Add KeyError exception (thanks @miaucl)
+- Add line numbers (thanks @polgarc)
+
+20231120 - 0.4.0
+----------------
+
+- Add support locations API (thanks @miaucl)
+- Add missing connections parameters (thanks @miaucl)
+- Add missing stationboard parameters (thanks @miaucl)
+- Add "True" flag for correct formatting of lists (ex. via parameter `via[]=foo1&via[]=foo2`) (thanks @miaucl)
+
+20211124 - 0.3.0
+----------------
+
+- Don't use async timeout (thanks @agners)
+- Remove loop
+
+20210317 - 0.2.2
+----------------
+
+- Only allow aiohttp >= 3.7.4 to avoid CVE-2021-21330
+
+20200101 - 0.2.1
+----------------
+
+- Fix lib name
+
+20191231 - 0.2.0
+----------------
+
+- Stationboard support (Thanks @agners)
+- Various improvements (Thanks @agners)
+- Adding delay to response (Thanks @cwilhelm)
+
+20180917 - 0.1.4
+----------------
+
+- Client errors are not reported (Thanks @vikramgorla)
+
+20180609 - 0.1.3
+----------------
+
+- Modernize setup.py and support long description for PyPI
+
+20180609 - 0.1.1
+----------------
+
+- Update the README
+
+20180527 - 0.1.0
+----------------
+
+- Support for async syntax (Python 3.5+)
