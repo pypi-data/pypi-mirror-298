@@ -1,0 +1,8 @@
+cvxpy_gurobi/__init__.py,sha256=8dMhtvk8FRZa5EyHywJ_AjbmOBF4KXpnksE0ZINC4f4,8802
+cvxpy_gurobi/_version.py,sha256=DGJ4pj32xs3_DRJhSzQwCiRNnAQrMgo09USYpyMZsKc,411
+cvxpy_gurobi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvxpy_gurobi/translation.py,sha256=8-N14sqqMz55GBLZZEnNg0Rw0v1IQCQPm75gkhJXapM,17941
+cvxpy_gurobi-1.0.0.dist-info/METADATA,sha256=s-_W2tXyjZWQ4WW_MebQjilqA0yTfZWlWUyONcF8ANM,5659
+cvxpy_gurobi-1.0.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+cvxpy_gurobi-1.0.0.dist-info/licenses/LICENSE,sha256=XyC-hcFvwRtFb4HHiDlPntrA0fmUV0U5r1xUWuUc-5o,11347
+cvxpy_gurobi-1.0.0.dist-info/RECORD,,
