@@ -1,0 +1,6 @@
+defaults:
+  - cuda_ddp
+  - _self_
+
+amp:
+  enable: true

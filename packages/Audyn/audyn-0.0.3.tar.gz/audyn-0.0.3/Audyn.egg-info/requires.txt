@@ -1,0 +1,38 @@
+omegaconf
+hydra-core
+torch
+torchaudio
+torchtext
+torchvision
+tensorboard
+numpy<2.0
+webdataset
+inflect
+
+[:python_version == "3.8"]
+importlib_resources<6.2
+
+[:sys_platform != "win32"]
+matplotlib
+
+[:sys_platform == "win32"]
+matplotlib<3.9.1
+
+[dev]
+flake8
+black
+isort
+
+[docs]
+sphinx
+sphinx-autodoc-typehints
+sphinx-autobuild
+nbsphinx
+furo
+
+[recipes]
+tqdm
+
+[tests]
+pytest
+pytest-cov

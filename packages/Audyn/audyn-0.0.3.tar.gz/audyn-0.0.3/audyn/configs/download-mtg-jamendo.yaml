@@ -1,0 +1,10 @@
+defaults:
+  - config
+  - _self_
+
+quality: raw
+server_type: mirror
+root: ???
+mtg_jamendo_root:
+unpack:
+chunk_size:

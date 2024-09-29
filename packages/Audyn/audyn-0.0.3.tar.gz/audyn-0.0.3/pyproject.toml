@@ -1,0 +1,96 @@
+[build-system]
+requires = [
+    "setuptools < 70.0.0",
+    "torch",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Audyn"
+authors = [
+    {name = "Takuya Hasumi"},
+]
+description = "A PyTorch toolkit for audio synthesis."
+readme = "README.md"
+license = {file = "LICENSE"}
+urls = {url = "https://github.com/tky823/Audyn"}
+requires-python = ">=3.8, <4"
+dependencies = [
+    # https://github.com/facebookresearch/hydra/issues/2870
+    "importlib_resources < 6.2; python_version == '3.8'",
+    "omegaconf",
+    "hydra-core",
+    # https://github.com/tky823/Audyn/pull/199#issuecomment-2267236196
+    "matplotlib < 3.9.1; sys_platform == 'win32'",
+    "matplotlib; sys_platform != 'win32'",
+    "torch",
+    "torchaudio",
+    "torchtext",
+    "torchvision",
+    "tensorboard",
+    "numpy < 2.0",  # for tensorboard
+    "webdataset",
+    "inflect",
+]
+dynamic = [
+    "version",
+]
+
+[project.optional-dependencies]
+recipes = [
+    "tqdm",
+]
+dev = [
+    "flake8",
+    "black",
+    "isort"
+]
+docs = [
+    "sphinx",
+    "sphinx-autodoc-typehints",
+    "sphinx-autobuild",
+    "nbsphinx",
+    "furo",
+]
+tests = [
+    "pytest",
+    "pytest-cov",
+]
+
+[project.scripts]
+audyn-parse-run-command = "audyn.bin.parse_run_command:main"
+audyn-download-musdb18 = "audyn.bin.download_musdb18:main"
+audyn-decode-musdb18 = "audyn.bin.decode_musdb18:main"
+audyn-download-mtg-jamando = "audyn.bin.download_mtg_jamendo:main"
+audyn-download-openmic2018 = "audyn.bin.download_openmic2018:main"
+audyn-download-mtat = "audyn.bin.download_mtat:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "audyn.__version__"}
+
+[tool.setuptools.packages.find]
+include = [
+    "audyn",
+]
+
+[tool.setuptools.package-data]
+# to include config of drivers
+audyn = [
+    "*yaml",
+]
+
+[tool.black]
+line-length = 99
+
+[tools.flake8]
+max-line-length = 99
+
+[tool.isort]
+profile = "black"
+line_length = 99
+
+[tool.pytest.ini_options]
+# to import relative paths
+pythonpath = [
+    "tests",
+]

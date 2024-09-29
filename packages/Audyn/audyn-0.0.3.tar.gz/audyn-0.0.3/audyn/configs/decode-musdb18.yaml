@@ -1,0 +1,11 @@
+defaults:
+  - config
+  - _self_
+
+mp4_root:
+wav_root:
+mp4_path:
+wav_path:
+
+subset:
+frames_per_chunk: 44100
