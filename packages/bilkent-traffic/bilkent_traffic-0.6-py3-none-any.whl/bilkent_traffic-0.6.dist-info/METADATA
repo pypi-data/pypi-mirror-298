@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: bilkent_traffic
+Version: 0.6
+Requires-Dist: pyfiglet
+Requires-Dist: pillow
+
