@@ -1,0 +1,3 @@
+[console_scripts]
+ascii-generator=ascii_generator.main:main
+
