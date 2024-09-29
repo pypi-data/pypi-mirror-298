@@ -1,0 +1,173 @@
+Metadata-Version: 2.1
+Name: sharded-google-photos
+Version: 0.2.4
+Summary: A tool to shard photos across multiple Google Photo accounts
+License: GNU General Public License v3.0
+Author: Emilio K
+Author-email: e.kartonoe@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: backoff (>=2.2.1,<3.0.0)
+Requires-Dist: event-bus (>=1.0.2,<2.0.0)
+Requires-Dist: google-api-python-client (>=2.122.0,<3.0.0)
+Requires-Dist: google-auth-oauthlib (>=1.2.0,<2.0.0)
+Requires-Dist: python-magic (>=0.4.27,<0.5.0)
+Requires-Dist: tqdm (>=4.66.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Sharded-Google-Photos
+
+## Description
+
+Running out of space in your Google Photos account? Wish you can upload your photos to multiple Google Accounts? Now you can! With this Python library, you can upload your photos to multiple Google Photo Accounts and then share those albums to your main Google Photos account. That way, you get to see all of your photos on one main Google Photos account.
+
+## Getting Started
+
+It works like this:
+
+1. Let's say you have three Google Accounts. Follow [this doc](docs/create_client_id.md) to create your own OAuth2 Google Client ID to interact with Google Photos and Google Drive.
+
+2. Install `libmagic`
+
+3. Install the package by running `pip install sharded-google-photos`.
+
+4. Import the following code in your `main.py` app:
+
+    ```python
+    from sharded_google_photos.backup.gphotos_backup import GPhotosBackup
+    from sharded_google_photos.shared.gphotos_client import GPhotosClient
+
+    clients = [
+        GPhotosClient(name="bob@gmail.com", creds_file = "credentials-1.json", client_secret="client_secret.json"),
+        GPhotosClient(name="alice@gmail.com", creds_file = "credentials-2.json", client_secret="client_secret.json"),
+        GPhotosClient(name="jerry@gmail.com", creds_file = "credentials-3.json", client_secret="client_secret.json"),
+    ]
+    for client in clients:
+        client.authenticate()
+
+    backup_client = GPhotosBackup(clients)
+    ```
+
+    Run this script.
+
+    The first time this is run, it will ask for you to log in via OAuth. Copy-paste the links to your browser and follow the instructions from there. It will save the credentials (i.e, `access_token` and `refresh_token`) in the respected `creds_file` (i.e, `credentials-1.json`, `credentials-2.json`, and `credentials-3.json`).
+
+    The next time the script is run, it will take the credentials from the `creds_file`. If it needs to be reauthenticated, it will ask you to log in via OAuth.
+
+5. To upload four photos from two folders, run the following:
+
+    ```python
+    new_album_uris = backup_client.backup(
+        [
+            { "modifier": "+", "path": "./Archives/Photos/2022/Trip to California/1.jpg" },
+            { "modifier": "+", "path": "./Archives/Photos/2022/Trip to California/2.jpg" },
+            { "modifier": "+", "path": "./Archives/Photos/2022/Trip to Toronto/3.jpg" },
+            { "modifier": "+", "path": "./Archives/Photos/2022/Trip to Toronto/4.jpg" },
+        ]
+    )
+    print(new_album_uris)
+    ```
+
+    What will happen is that it will:
+
+    1. A shared read-only album `Archives/Photos/2022/Trip to California` will be made in some Google Photos account with the most amount of space available.
+
+    2. A shared read-only album `Archives/Photos/2022/Trip to Toronto` will be made in some Google Photos account with the second most amount of space available.
+
+    3. Photos `1.jpg`, and `2.jpg` will be in the `Archives/Photos/2022/Trip to California` album.
+
+    4. Photos `3.jpg`, and `4.jpg` will be in the `Archives/Photos/2022/Trip to Toronto` album.
+
+    5. The url to those new albums will be in `new_album_uris` that you can share to.
+
+6. To update a file in a folder, run the following:
+
+    ```python
+    backup_client.backup(
+        [
+            { "modifier": "-", "path": "./Archives/Photos/2022/Trip to California/1.jpg" },
+            { "modifier": "+", "path": "./Archives/Photos/2022/Trip to California/1.jpg" },
+        ]
+    )
+    ```
+
+7. To delete a file in a folder, run the following:
+
+    ```python
+    backup_client.backup(
+        [
+            {
+                "modifier": "-", "path": "./Archives/Photos/2022/Trip to California/1.jpg",
+            }
+        ]
+    )
+    ```
+
+    Note: it is not possible for the Google Photos API to actually delete a photo from Google Photos. Instead, you can clean your Google Photo accounts by putting all album-less photos into a "Trash" album by running the following script:
+
+    ```python
+    from sharded_google_photos.cleanup.gphotos_cleaner import GPhotosCleaner
+
+    for client in clients:
+        cleaner = GPhotosCleaner(client)
+        cleaner.cleanup()
+    ```
+
+    After running that script, it will put all of the albumless photos into an album called "Trash", and you can log into Google Photos and delete those photos from your account manually.
+
+## Getting Started to Contribute
+
+1. Ensure Python3, Pip, and Poetry are installed on your machine
+
+2. Install dependencies by running:
+
+    ```bash
+    poetry install
+    ```
+
+3. To lint your code, run:
+
+    ```bash
+    poetry run flake8 && poetry run black .
+    ```
+
+4. To run tests and code coverage, run:
+
+    ```bash
+    poetry run coverage run -m pytest && poetry run coverage report -m
+    ```
+
+5. To publish your app:
+
+    1. First, set your PyPI api token to Poetry
+
+        ```bash
+        poetry config pypi-token.pypi <YOUR_API_TOKEN>
+        ```
+
+    2. Then, build the app by running:
+
+        ```bash
+        poetry build
+        ```
+
+    3. Finally, publish the app by running:
+
+        ```bash
+        poetry publish
+        ```
+
+### Usage
+
+Please note that this project is used for educational purposes and is not intended to be used commercially. We are not liable for any damages/changes done by this project.
+
+### Credits
+
+Emilio Kartono, who made the entire project.
+
+### License
+
+This project is protected under the GNU licence. Please refer to the LICENSE.txt for more information.
+
