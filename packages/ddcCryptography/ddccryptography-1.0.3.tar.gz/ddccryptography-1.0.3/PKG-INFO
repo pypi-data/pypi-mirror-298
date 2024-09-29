@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: ddcCryptography
+Version: 1.0.3
+Summary: Encode and Decode Strings
+Home-page: https://github.com/ddc/ddcCryptography
+License: MIT
+Keywords: python3,Cryptography,ddcCryptography,encode,decode
+Author: Daniel Costa
+Author-email: danieldcsta@gmail.com
+Maintainer: Daniel Costa
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: cryptography (>=43.0.1,<44.0.0)
+Project-URL: Repository, https://github.com/ddc/ddcCryptography
+Description-Content-Type: text/markdown
+
+# Few Utility Functions
+
+[![License](https://img.shields.io/github/license/ddc/ddcCryptography.svg?style=plastic)](https://github.com/ddc/ddcCryptography/blob/master/LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg?style=plastic)](https://www.python.org)
+[![PyPi](https://img.shields.io/pypi/v/ddcCryptography.svg?style=plastic)](https://pypi.python.org/pypi/ddcCryptography)
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A//actions-badge.atrox.dev/ddc/ddcCryptography/badge?ref=main&style=plastic&label=build&logo=none)](https://actions-badge.atrox.dev/ddc/ddcCryptography/goto?ref=main)
+
+
+# Install
+```shell
+pip install ddcCryptography
+```
+
+# Cryptography
+```python
+from ddcCryptography import Cryptography
+cp = Cryptography()
+```
+
++ GENERATE_PRIVATE_KEY
+    + Generates a private key to be used instead of default one
+    + But keep in mind that this private key will be needed to decode further strings
+        ```
+        @staticmethod
+        cp.generate_private_key() -> str
+        ```
+
++ ENCODE
+    + Encodes a given string
+        ```
+        cp.encode(str_to_encode: str) -> str
+         ```     
+
++ DECODE
+    + Decodes a given string
+        ```
+        cp.decode(str_to_decode: str) -> str
+        ```
+
+
+# Source Code
+### Build
+```shell
+poetry build
+```
+
+
+### Run Tests
+```shell
+poetry run coverage run -m pytest -v
+```
+
+
+### Get Coverage Report
+```shell
+poetry run coverage report
+```
+
+
+# License
+Released under the [MIT License](LICENSE)
+
+
+## Buy me a cup of coffee
+I know there are people out there that may want to donate just to show their appreciation. Thanks in advance!
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/donate/?business=MRJ2NVUGSK4EA&no_recurring=0&item_name=ddcCryptography&currency_code=USD)
+
