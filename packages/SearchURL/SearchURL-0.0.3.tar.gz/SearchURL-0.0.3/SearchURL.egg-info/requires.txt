@@ -1,0 +1,6 @@
+soupsieve>=2.6
+beautifulsoup4>=4.12.3
+requests
+
+[dev]
+twine>=4.0.2
