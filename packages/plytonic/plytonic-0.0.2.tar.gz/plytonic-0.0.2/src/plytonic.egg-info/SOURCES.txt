@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/plytonic/__init__.py
+src/plytonic/__main__.py
+src/plytonic/llms.py
+src/plytonic/logger.py
+src/plytonic/plytonic.py
+src/plytonic/util.py
+src/plytonic.egg-info/PKG-INFO
+src/plytonic.egg-info/SOURCES.txt
+src/plytonic.egg-info/dependency_links.txt
+src/plytonic.egg-info/top_level.txt
