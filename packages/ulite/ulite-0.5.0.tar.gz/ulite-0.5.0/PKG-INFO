@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ulite
+Version: 0.5.0
+Summary: A GUI module for pygame Community Edition with CSS friendly layout
+Home-page: https://gitee.com/zlols/ulite.py.git
+Author: zlols
+Author-email: zlols@foxmail.com
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ulite.py
+
+基于 pygame-ce搭建的轻量化gui框架, 支持使用css的语法布局窗口。
+
