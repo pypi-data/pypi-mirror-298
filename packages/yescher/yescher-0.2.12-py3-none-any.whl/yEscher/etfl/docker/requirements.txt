@@ -1,0 +1,16 @@
+bokeh>=0.12.1
+biopython
+cobra<=0.24
+ipdb
+lxml
+openpyxl
+pymysql
+pytest
+python-libsbml
+scipy
+sklearn
+sqlalchemy
+tabulate
+sphinx
+sphinx-rtd-theme
+xlrd	>0.9.0
