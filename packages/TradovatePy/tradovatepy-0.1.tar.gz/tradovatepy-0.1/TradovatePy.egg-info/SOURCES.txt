@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+TradovatePy.egg-info/PKG-INFO
+TradovatePy.egg-info/SOURCES.txt
+TradovatePy.egg-info/dependency_links.txt
+TradovatePy.egg-info/requires.txt
+TradovatePy.egg-info/top_level.txt
