@@ -1,0 +1,13 @@
+yuseful_prompts/__init__.py,sha256=kTo2fSTa0nOoROIY3t8UtqSPZi__2TEEtqArY6mZC0g,65
+yuseful_prompts/chains.py,sha256=s4MvtJ5dq4YObteOjFP4P0QZlFLjULiuuj_2HUhkph8,2846
+yuseful_prompts/llms.py,sha256=K3xuLKoATiFIw7526lQlzj-yMZH2v4shSDAMWMup3C0,425
+yuseful_prompts/prompts.py,sha256=_HlAZlZ7NbDu70RVq9gGucG1ayvujJ40572Z6BrasI4,10778
+yuseful_prompts/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yuseful_prompts/tests/test_category_chains.py,sha256=lpw1apR0g9DqcQ1cO8DdDgU9IVF6JZaUz-26aA1kAa4,3160
+yuseful_prompts/tests/test_headline_chains.py,sha256=BAoeZt6-yrh_7mcLztBEW1R8iCDkgMqiI1OgrTNshHY,14473
+yuseful_prompts/tests/test_misc_chains.py,sha256=D_KASZGa5TuUzVnflMMlZEWk9QdgtHphhwAzloE84R4,8125
+yuseful_prompts-4.0.3.dist-info/LICENSE,sha256=YyD-nFsgiFy0Nhr_cCiglvtY7SBkYm6zk-kxhq8ucJU,1069
+yuseful_prompts-4.0.3.dist-info/METADATA,sha256=tJzJiPeQT_cgoCcg9hOP3JwrUeEUJslwRhH63rL9Tkw,1536
+yuseful_prompts-4.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+yuseful_prompts-4.0.3.dist-info/top_level.txt,sha256=JIpIUAM0opY7ECpWp5RgB93caA00uAdc34jJEHCJysw,16
+yuseful_prompts-4.0.3.dist-info/RECORD,,
