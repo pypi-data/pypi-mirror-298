@@ -1,0 +1,32 @@
+[project]
+name = "housaku"
+version = "v0.3.0"
+description = "A personal search engine."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+  "rich>=13.8.0",
+  "aiohttp[speedups]>=3.10.5",
+  "pydantic-settings>=2.4.0",
+  "click>=8.1.7",
+  "feedparser>=6.0.11",
+  "selectolax>=0.3.21",
+  "rich-click>=1.8.3",
+  "pymupdf>=1.24.10",
+]
+
+[project.scripts]
+housaku = "housaku:cli.cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+  "ruff>=0.6.3",
+  "commitizen>=3.29.0",
+  "pytest>=8.3.2",
+  "pytest-benchmark>=4.0.0",
+]
