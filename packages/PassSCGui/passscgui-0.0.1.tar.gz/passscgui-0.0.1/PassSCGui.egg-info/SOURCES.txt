@@ -1,0 +1,10 @@
+README.md
+setup.py
+PassSCGui.egg-info/PKG-INFO
+PassSCGui.egg-info/SOURCES.txt
+PassSCGui.egg-info/dependency_links.txt
+PassSCGui.egg-info/entry_points.txt
+PassSCGui.egg-info/requires.txt
+PassSCGui.egg-info/top_level.txt
+passscgui/PassSCGui.py
+passscgui/__init__.py

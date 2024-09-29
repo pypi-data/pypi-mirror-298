@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: PassSCGui
+Version: 0.0.1
+Summary: GUI Password Strength Checker using regex and time-to-crack estimation.
+Home-page: https://github.com/babaralijamali/PassSCGui
+Author: Babar Ali Jamali
+Author-email: babar995@gmail.com
+Requires-Dist: tkinter
