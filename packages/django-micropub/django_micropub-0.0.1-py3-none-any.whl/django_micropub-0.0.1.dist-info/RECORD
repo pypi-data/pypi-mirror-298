@@ -1,0 +1,14 @@
+micropub/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+micropub/admin.py,sha256=RmCKm0VadEJofyLEA3X1JAkH4PUUjGE8cpK0SbB0-Ew,301
+micropub/apps.py,sha256=iS2EN4mNznP17Hg-MeROwyoThbBiVTWqcTV_iTJYEE4,148
+micropub/forms.py,sha256=1zGpDmR8xtq-rThOhxJZqCZjCmlbrpCL_O9PL-3Iwa0,965
+micropub/models.py,sha256=6gXS21eZlevZNcLUa9dZefgQPECH2tX-nNLHcQmvqYM,999
+micropub/utils.py,sha256=tSwM1tu8KSEB19yQgvJAQic5zcgelICrAg9S5Kxhcfg,541
+micropub/views.py,sha256=38rGfUiRgc09YMh6xkICDhjU551Q-6gOoyaQoOaj0Go,26204
+micropub/migrations/0001_initial.py,sha256=867UbJ8Op4B3A1JzW-p9dSncDGZAhq4jdS2vP622MSM,2716
+micropub/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_micropub-0.0.1.dist-info/LICENSE,sha256=Ey9VvKK6sZwtdS-Wl6lCb9W67xizrCMkWXOgZ1thtPU,1502
+django_micropub-0.0.1.dist-info/METADATA,sha256=-kSMSIy7iX8EwfiSPFC_Gi_HeSgdgEpNMFtkkq3teFY,1162
+django_micropub-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+django_micropub-0.0.1.dist-info/top_level.txt,sha256=LCSI2wV-_4NQkvw2zsSR0HN2pzqHHVtgf8qFcj9jmU8,9
+django_micropub-0.0.1.dist-info/RECORD,,
