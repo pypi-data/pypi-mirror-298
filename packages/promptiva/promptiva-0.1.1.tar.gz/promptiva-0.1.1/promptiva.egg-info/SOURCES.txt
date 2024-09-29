@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+promptiva/__init__.py
+promptiva/cli.py
+promptiva.egg-info/PKG-INFO
+promptiva.egg-info/SOURCES.txt
+promptiva.egg-info/dependency_links.txt
+promptiva.egg-info/entry_points.txt
+promptiva.egg-info/requires.txt
+promptiva.egg-info/top_level.txt

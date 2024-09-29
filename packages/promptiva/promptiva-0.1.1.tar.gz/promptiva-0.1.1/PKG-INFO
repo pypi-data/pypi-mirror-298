@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: promptiva
+Version: 0.1.1
+Summary: A tool to work with Promptiva on the cli
+Home-page: https://promptiva.app
+Author: Mahendra Naik
+Author-email: m@promptiva.app
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+This package provides a command-line tool to work with the Promptiva API.
