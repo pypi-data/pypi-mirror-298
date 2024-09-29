@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: plexutil
+Version: 1.1.0
+Author-email: Carlos Florez <carlos@florez.co.uk>
+Maintainer-email: Carlos Florez <carlos@florez.co.uk>
+License: MIT License
+        
+        Copyright (c) 2024 CARLOS FLOREZ
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Repository, https://github.com/florez-carlos/plexutil
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PlexAPI==4.15.7
+Requires-Dist: alive-progress==3.1.5
+Requires-Dist: pyyaml==6.0.1
+
+# Plexutil
+
+CLI tool with helpful functions to manage a Plex server.
+
+
+> [!NOTE]
+> Installation is supported only for the following: 
+> - Windows
+> - Linux
+
+> [!NOTE]
+> Development requires a fully configured [Dotfiles](https://github.com/florez-carlos/dotfiles) dev environment <br>
+
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Development](#development)
+  * [Clone the repo in workspace with recurse submodules](#clone-the-repo-in-workspace-with-recurse-submodules)
+  * [Install Git Hooks](#install-git-hooks) 
+
+
+## Installation
+
+```bash
+python3 -m pip install plexutil
+```
+
+### Create the plexutil/config directory
+
+This directory is necessary to store our custom configuration of server settings and library preferences
+
+
+#### Windows
+
+```bash
+mkdir C:\Users\%USERNAME%\Documents\plexutil\config
+```
+
+#### Linux
+
+```bash
+mkdir -p $HOME/plexutil/config
+```
+
+### Add the sample Configuration files to the plexutil/config directory
+- Download the sample Preferences files located in ./samples/preferences and place in the plexutil config directory
+- Download the sample Manifests files located in ./samples/mainfests and place in the plexutil config directory
+- Download the sample Playlists files located in ./samples/playlists and place in the plexutil config directory
+
+The plexutil config directory should hold the folllowing
+
+```bash
+plexutil/config/music_playlist.json
+plexutil/config/tv_language_manifest.json
+plexutil/config/movie_library_preferences.json
+plexutil/config/tv_library_preferences.json
+plexutil/config/music_library_preferences.json
+plexutil/config/plex_server_setting_preferences.json
+```
+
+
+
+## Usage
+test
+
+
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
