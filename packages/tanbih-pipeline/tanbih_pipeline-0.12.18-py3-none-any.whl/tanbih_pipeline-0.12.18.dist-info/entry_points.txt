@@ -1,0 +1,5 @@
+[console_scripts]
+pipeline-copy = pipeline.__main__:copy
+
+[gui_scripts]
+
