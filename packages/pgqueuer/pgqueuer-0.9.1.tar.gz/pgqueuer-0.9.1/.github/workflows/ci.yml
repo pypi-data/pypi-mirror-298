@@ -1,0 +1,231 @@
+name: Test PGQueuer
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  example:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11"]
+        os: [ubuntu-latest]
+
+    env:
+      PGHOST: localhost
+      PGUSER: testuser
+      PGPASSWORD: testpassword
+      PGDATABASE: testdb
+      PGPORT: 5432
+
+    name: PGQueuer example
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Build custom PostgreSQL Docker image
+        run: docker compose up --build -d pgq
+
+      - name: Install PGQueuer
+        run: |
+          pip install pip -U
+          pip install ".[dev]"
+
+      - name: Run example and send SIGINT
+        run: |
+          # Start the Python program in the background
+          PYTHONUNBUFFERED=1 python3 -m pgqueuer run tools.consumer.main &
+          pid=$!
+
+          # Wait for 10 seconds
+          sleep 10
+
+          # Send SIGINT to the process
+          kill -SIGINT $pid
+
+          # Wait for the process to exit
+          wait $pid
+
+  benchmark:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11"]
+        os: [ubuntu-latest]
+        pgdriver: ["apg", "apgpool", "psy"]
+
+    env:
+      PGHOST: localhost
+      PGUSER: testuser
+      PGPASSWORD: testpassword
+      PGDATABASE: testdb
+      PGPORT: 5432
+
+    name: pgqueuer Benchmark
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Build custom PostgreSQL Docker image
+        run: docker compose up --build -d pgq
+
+      - name: Install pgqueuer
+        run: |
+          pip install pip -U
+          pip install ".[dev]"
+
+      - name: Set ISO Timestamp
+        id: timestamp
+        run: echo "TIMESTAMP=$(date -u +%s)" >> $GITHUB_ENV
+
+      - name: Set Branch or Tag Name
+        id: get_ref
+        run: |
+          if [[ "${GITHUB_EVENT_NAME}" == "pull_request" ]]; then
+            echo "REF_NAME=${GITHUB_HEAD_REF}" >> $GITHUB_ENV
+          else
+            echo "REF_NAME=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
+          fi
+
+      - name: Benchmark
+        run: |
+            PYTHONUNBUFFERED=1 python3 tools/benchmark.py \
+              --driver ${{ matrix.pgdriver }} \
+              --output-json benchmark.json
+
+      - name: Commit and Push to Artifact Repository
+        env:
+          ARTIFACTS_REPO_URL: https://github.com/janbjorge/artifacts-storage.git
+          ARTIFACTS_REPO_PAT: ${{ secrets.ARTIFACTS_STORAGE_PAT }}
+        run: |
+          # Clone the artifacts repository
+          git clone https://x-access-token:${ARTIFACTS_REPO_PAT}@github.com/janbjorge/artifacts-storage.git artifacts-repo
+
+          # Copy the benchmark JSON file to the artifacts repository
+          mkdir -p artifacts-repo/pgqueuer/benchmark/${{ matrix.pgdriver }}
+          cp benchmark.json artifacts-repo/pgqueuer/benchmark/${{ matrix.pgdriver }}/benchmark-${{ env.TIMESTAMP }}.json
+
+          # Navigate to the artifacts repository
+          cd artifacts-repo
+
+          # Configure Git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Add the new benchmark file
+          git add .
+
+          # Commit the changes
+          git commit -m "Add benchmark-${{ matrix.pgdriver }}-${{ env.TIMESTAMP }}.json"
+
+          # Push to the main branch of the artifacts repository
+          # Function to push with retry
+          push_with_retry() {
+            local retries=5
+            local count=0
+            until git push origin main; do
+              count=$((count + 1))
+              if [ $count -ge $retries ]; then
+                echo "Push failed after $retries attempts."
+                exit 1
+              fi
+              echo "Push failed, attempting to pull and retry... ($count/$retries)"
+              git fetch origin main
+              git rebase origin/main --autosquash
+            done
+          }
+
+          # Push to the main branch with retry
+          push_with_retry
+
+  test-pgqueuer:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+        postgres-version: ["13", "14", "15", "16"]
+        os: [ubuntu-latest]
+
+    env:
+      PGHOST: localhost
+      PGUSER: testuser
+      PGPASSWORD: testpassword
+      PGDATABASE: testdb
+      PGPORT: 5432
+
+    name: Python ${{ matrix.python-version }} on ${{ matrix.os }} using PG ${{ matrix.postgres-version }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Build custom PostgreSQL Docker image
+        run: |
+          POSTGRES_VERSION=${{ matrix.postgres-version }} docker compose up --build -d pgq
+      - name: Install PGQueuer
+        run: |
+          pip install pip -U
+          pip install ".[dev]"
+
+      - name: Full test
+        run: PYTHONASYNCIODEBUG=1 PYTHONDEBUG=1 PYTHONFAULTHANDLER=1 pytest -v
+
+  ruff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up python
+        uses: actions/setup-python@v4
+      - name: Install dev-env.
+        run: |
+          pip install -U pip
+          pip install ".[dev]"
+      - name: Ruff check
+        if: ${{ always() }}
+        run: ruff check .
+      - name: Ruff format
+        if: ${{ always() }}
+        run: ruff format . --check
+
+  mypy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up python
+        uses: actions/setup-python@v4
+      - name: Install dev-env.
+        run: |
+          pip install -U pip
+          pip install ".[dev]"
+      - name: Mypy
+        run: mypy .
+
+  all-tests-completed:
+    needs: [benchmark, test-pgqueuer, ruff, mypy]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check all jobs success
+        run: echo "All tests completed successfully."
