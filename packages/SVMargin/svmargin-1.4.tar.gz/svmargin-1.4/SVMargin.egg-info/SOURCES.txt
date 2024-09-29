@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+SVMargin/SVMargin.py
+SVMargin/__init__.py
+SVMargin.egg-info/PKG-INFO
+SVMargin.egg-info/SOURCES.txt
+SVMargin.egg-info/dependency_links.txt
+SVMargin.egg-info/requires.txt
+SVMargin.egg-info/top_level.txt
