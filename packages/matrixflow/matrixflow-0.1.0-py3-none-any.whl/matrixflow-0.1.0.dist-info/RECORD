@@ -1,0 +1,9 @@
+matrixflow/__init__.py,sha256=D-Q5h2pPF5J8jO6mYCJ0ht83FuGKpYZGFajVS-GWHDw,353
+matrixflow/matrix.py,sha256=CQnrsx0nZ-MG_aD9u60hgksD7NiYe1s7ftX81A4MumU,37506
+matrixflow/utils.py,sha256=kxb0JxWCUEuznT0bf8JjYCvtvRpc6XcX1Uu3sANC2dE,515
+matrixflow/vector.py,sha256=aJPNZXzQRF4f1Qqax6ZUqt0Q5kSpXmJiU_kdzeAptvk,23365
+matrixflow-0.1.0.dist-info/LICENSE,sha256=mai6jOGrzYtCkI0qAWdWyhbebyeBUFSGqQT2WvJ--sw,1100
+matrixflow-0.1.0.dist-info/METADATA,sha256=VIxTNHIGreQvNHO4gMY8EF3BcX76X8dP59BVzwJF8Nk,2985
+matrixflow-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+matrixflow-0.1.0.dist-info/top_level.txt,sha256=XUsr977TjAeV_NWgFKXUpy2yXUkgO8joW8a0YOe_nho,11
+matrixflow-0.1.0.dist-info/RECORD,,
