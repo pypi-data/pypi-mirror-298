@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: myrustdump2
+Version: 1.81.0
+Summary: Rust is awsome
+Description-Content-Type: text/markdown
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Homepage, https://ziglang.org
+Project-URL: Source Code, https://github.com/ziglang/zig-pypi
+Project-URL: Bug Tracker, https://github.com/ziglang/zig-pypi/issues
+Requires-Python: >=3.11
+
+Hello Rust
