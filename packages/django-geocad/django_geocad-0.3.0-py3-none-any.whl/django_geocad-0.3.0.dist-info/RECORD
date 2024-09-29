@@ -1,0 +1,17 @@
+djeocad/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djeocad/admin.py,sha256=EzTpEjCR7I-mzCREDf01LwEBZnXdWmL7vlqA1u2ZGuQ,523
+djeocad/apps.py,sha256=m6RSOGkAdXnhq2wZyoPlwMNTG5Ht4CBTPGuxSho1OXk,823
+djeocad/models.py,sha256=OrbdZXUIGP8n8ksh8z0fDPPofTM2Mhl3qREvbztr3F0,19923
+djeocad/tests.py,sha256=hSMnphAxNEX_MHyHv8bo5fF8tvxrbWj5LIFyf78JpdE,11628
+djeocad/urls.py,sha256=1CuckUV0oIj3yLYgtW-hrAZSXWpcGgpWVi_0sqacjKs,476
+djeocad/views.py,sha256=l5sQtrqlfgFeyYDk3nf1LkhB1vOlXFazP16h6WYkgwo,2050
+djeocad/migrations/0001_initial.py,sha256=b-AlUnjnofGgYzL851s608W-DtWXQ_2_8_laMpoD9N0,871
+djeocad/migrations/0002_alter_drawing_options_drawing_designx_and_more.py,sha256=9DLGyV4Mq2r3UtWcPiYuT8_K0J4D7U8XVqeuAjsGdxM,2699
+djeocad/migrations/0003_layer.py,sha256=kZs9pxfG5KvncDC6NC4nMjC8NKjsot2FU3OY9qo9Hyc,1945
+djeocad/migrations/0004_entity.py,sha256=KFS96D-Xa6_hI0yHqVUCnKg1R_yCuLiMToYN69DOSjg,1303
+djeocad/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_geocad-0.3.0.dist-info/LICENSE,sha256=UE6HQ2M5SRl-1942d9phIVldpPY9o4godArXdA0CSUA,1070
+django_geocad-0.3.0.dist-info/METADATA,sha256=UPDrcUT4gI1CSjAAbfx1fZ0VAutglGQP1hRAZ_2ny78,8593
+django_geocad-0.3.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+django_geocad-0.3.0.dist-info/top_level.txt,sha256=AX04rkGTBor8Cv5UidRq2ccK653nPwsNFbztqxwl5tk,8
+django_geocad-0.3.0.dist-info/RECORD,,
