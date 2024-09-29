@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: beiker
+Version: 0.0.2a0
+Summary: developed for electronic archive sort
+Author: tarantella110
+Author-email: beiker110@126.com
+Requires-Dist: pandas
+Requires-Dist: mysql-connector-python
+Requires-Dist: pillow
+Requires-Dist: openpyxl
+Requires-Dist: PySide6
