@@ -1,0 +1,28 @@
+## SPDX-FileCopyrightText: (C) 2024 Avnet Embedded GmbH
+## SPDX-License-Identifier: GPL-3.0-only
+
+usbhub-sm2s-imx8plus1:
+  serial_port3:
+    cls: 'USBSerialPort'
+    match:
+      '@ID_PATH': 'pci-0000:00:14.0-usb-0:11.3.2:1.0'
+usbhub-sm2s-imx8plus2:
+  gpio_expander_port15:
+    cls: 'USBSerialPort'
+    match:
+      '@ID_PATH': 'pci-0000:00:14.0-usb-0:11.4.4.3:1.0'
+usbhub-sm2s-imx8plus3:
+  sdwire_port4:
+    cls: 'USBSDWireDevice'
+    match: 
+      'ID_PATH': 'pci-0000:00:14.0-usb-0:11.3.1.2'
+power-sm2s-imx8plus:
+  power_plug2:
+    cls : 'TasmotaPowerPort'
+    host: '10.69.1.127'
+    status_topic: 'stat/tasmota_2B2F7A/POWER'
+    power_topic: 'cmnd/tasmota_2B2F7A/POWER'
+    avail_topic: 'tele/tasmota_2B2F7A/LWT'
+
+
+

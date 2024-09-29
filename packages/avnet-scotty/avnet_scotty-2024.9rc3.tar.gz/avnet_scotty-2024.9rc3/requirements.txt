@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: (C) 2023 Avnet Embedded GmbH
+# SPDX-License-Identifier: GPL-3.0-only
+GitPython ~= 3.1
+azure-storage-blob ~= 12.23
+colorama ~= 0.4
+inquirer ~= 3.4
+imagehash ~= 4.3
