@@ -1,0 +1,10 @@
+.venv
+.junk
+.pypirc
+.env
+
+dist/*
+GSLogger.egg-info/*
+build_msgs.txt
+
+*.py[cod]
