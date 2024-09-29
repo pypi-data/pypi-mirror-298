@@ -1,0 +1,17 @@
+pytools4windows/__init__.py,sha256=R_xSDEq-41yvgoEkTnLxdkCmS91HJ9Q8epehyZmRt5w,44
+pytools4windows/pt4winstaller.py,sha256=UaI2UVUtQHb_ZhJn3v0HFfBhJvi4Rrd1pF27uzRSDr4,3451
+pytools4windows/commandmenu/__include__.txt,sha256=HNBTRTBkyENc3XLpWPJ41aMJ-Sph8S8RldQBPXKEFe0,5
+pytools4windows/commandmenu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytools4windows/commandmenu/commandmenu.py,sha256=yzYhSsADOF7p8G_p3jRkW5CZuM7V1A_dcwKfwQGKQeU,10209
+pytools4windows/commandmenu/jsons/Python.json,sha256=Wc1hmddD8DJBhzQV2OOwJPrJcoiimI2c1D9oneumG3s,311
+pytools4windows/commandmenu/jsons/git.json,sha256=kXRuALmXKvDGvh1a1K1EnMEbn2jDC7FyyO9LRVU__gs,1423
+pytools4windows/commandmenu/jsons/pip.json,sha256=VLV9KHNHVPunjn6kwXTxINdVguJRFW6BuJmkRr1iDYk,109
+pytools4windows/commandmenu/jsons/twine.json,sha256=4f7bSzc3WvPpcPP1xecX-OaRgdbyQv7Q9BIv8x4qg3g,94
+pytools4windows/pathmenu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytools4windows/pathmenu/pathmenu.py,sha256=jKh8qk6unVnGJdsO1qkQ9xXlRkqhZHp5x79XpGL7XTw,4925
+pytools4windows/pyinstallermenu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytools4windows/pyinstallermenu/pyinstallermenu.py,sha256=Z9i40OyprK4WDx2u-D1JGaGZJfLYpyR8kAlBb3lJEwg,6296
+pytools4windows-0.1.15.dist-info/METADATA,sha256=g-9rxc3knk8mCYzAJ9-MXxS9Sebc_DEe9pBm_L90qlI,613
+pytools4windows-0.1.15.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+pytools4windows-0.1.15.dist-info/top_level.txt,sha256=njSuUqMCqT0tDxK8b5YOOLBmMFbdkRXeaYllo32r8Oo,16
+pytools4windows-0.1.15.dist-info/RECORD,,

@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pytools4windows
+Version: 0.1.15
+Summary: Command line tools for Windows
+Home-page: https://github.com/Casey-Litmer/PyTools4Windows
+Author: Casey Litmer
+Author-email: litmerc@msn.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: macrolibs
+Requires-Dist: menucmd
+
+```commandline
+pip install pytools4windows
+python
+
+>> from pytools4windows import install
+>> install()
+```
+
