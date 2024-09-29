@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tpeai
+Version: 0.2.0
+Summary: A Python package to differentiate between tuberculous and non-tuberculous pleural effusion using ChatGPT-4 with biochemistry and blood cell analysis data.
+Author: Cj Yan
+Author-email: yanchangjian2019@126.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: openai (>=1.30.3,<2.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+This Python package is designed to quickly differentiate between tuberculous pleural effusion and non-tuberculous pleural effusion by leveraging the predictive power of ChatGPT-4. 
+By inputting a set of key variables related to the patient's biochemistry and blood cell analysis, the model can provide an intelligent prediction. The required variables include:
+
+- Pleural fluid biochemistry: ADA, total protein, albumin
+- Blood cell analysis: lymphocyte count, neutrophil percentage, monocyte percentage, neutrophil count
+- Patient's age
+
+By using these inputs, the model makes a prediction through ChatGPT-4, assisting clinicians in promptly identifying the type of pleural effusion, thereby supporting more informed diagnostic and treatment decisions.
+

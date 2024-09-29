@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "tpeai"
+version = "0.2.0"
+description = "A Python package to differentiate between tuberculous and non-tuberculous pleural effusion using ChatGPT-4 with biochemistry and blood cell analysis data."
+authors = ["Cj Yan <yanchangjian2019@126.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.2.2"
+openai = "^1.30.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
