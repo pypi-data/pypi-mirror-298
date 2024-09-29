@@ -1,0 +1,9 @@
+tomplotlib/__init__.py,sha256=M50HAF930LNL8XQQ5E9QZfdhWYyEcAIkhKQQ4qF0plc,43
+tomplotlib/tomplotlib.py,sha256=QW6bch_lGFXLkC8uk16ftzQcX1DGiTFARWO-JavVi4Y,6573
+tomplotlib/tpl.py,sha256=aDGE82LD8iU2Hj0By52j7L4vI9cfn_qDxtqURkEapfs,7888
+tomplotlib-1.2.3.data/scripts/tomplotlib.py,sha256=QW6bch_lGFXLkC8uk16ftzQcX1DGiTFARWO-JavVi4Y,6573
+tomplotlib-1.2.3.data/scripts/tpl.py,sha256=aDGE82LD8iU2Hj0By52j7L4vI9cfn_qDxtqURkEapfs,7888
+tomplotlib-1.2.3.dist-info/METADATA,sha256=yYUxYV9AyUGhJ_o9SE-ZPrrBAsqII70tAm2KJSqDYzY,2927
+tomplotlib-1.2.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tomplotlib-1.2.3.dist-info/top_level.txt,sha256=0CSGOqjovLGC8JRuq6Iui7_tdAR9l_95eLRce4ZGDBk,11
+tomplotlib-1.2.3.dist-info/RECORD,,
