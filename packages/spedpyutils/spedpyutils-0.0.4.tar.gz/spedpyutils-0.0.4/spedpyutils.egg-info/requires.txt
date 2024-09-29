@@ -1,0 +1,4 @@
+spedpy
+pandas
+openpyxl
+tqdm
