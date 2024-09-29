@@ -1,0 +1,3 @@
+[console_scripts]
+piedventure=piedventure.adventure:main
+
