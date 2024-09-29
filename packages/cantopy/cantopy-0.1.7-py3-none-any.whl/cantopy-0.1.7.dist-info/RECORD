@@ -1,0 +1,13 @@
+cantopy/__init__.py,sha256=YOAgsVXH_iXmhldszMBf5wWHgSqAkEKrt3B7yxo-oDU,204
+cantopy/download_manager.py,sha256=yxw45oPLhBoqkbYV92016LdGgJsULzQU1g1KnObzITw,10239
+cantopy/fetch_manager.py,sha256=8kWh9xORjek84iCaUy5NyBkMt96jUDpBw3yOmCAowdA,3297
+cantopy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cantopy/xenocanto_components/__init__.py,sha256=wpWTtwar8-eES9wAQ8krwOvHwOyZITX2Bq7IzZCbQsk,307
+cantopy/xenocanto_components/query.py,sha256=bx3iqFXLLjoFo4wGAVKcNi-dJNVo4LBkghLJ-aSpNVs,11151
+cantopy/xenocanto_components/query_result.py,sha256=kzHxAnJgh7_aqQTz1-xGxb2nmPfwjIN6D6fr7o553eg,2311
+cantopy/xenocanto_components/recording.py,sha256=STu_tqY0ErosXlPWRbTIXdUapqiZdoQp4LkGlUMnylA,7196
+cantopy/xenocanto_components/result_page.py,sha256=3hRfR86YbWzHmUNy9FehWdlJiTQXkuKjMDuFsv6vXFw,1999
+cantopy-0.1.7.dist-info/LICENSE,sha256=grAKSFvVmficryFhSc0Q6N3ctVIDqwqCDXHkM8SBkQQ,1071
+cantopy-0.1.7.dist-info/METADATA,sha256=LGybmgLX2YzLIzn2-q2Iui4fxRcXrJkzi7d270mapt8,1815
+cantopy-0.1.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+cantopy-0.1.7.dist-info/RECORD,,
