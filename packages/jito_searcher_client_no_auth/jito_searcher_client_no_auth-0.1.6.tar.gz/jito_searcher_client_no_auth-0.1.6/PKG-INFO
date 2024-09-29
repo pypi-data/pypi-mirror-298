@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: jito_searcher_client_no_auth
+Version: 0.1.6
+Summary: Jito Labs Python Searcher Client
+Author: Jito Labs
+Author-email: support@jitolabs.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: black (>=24.8.0,<25.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: grpcio (>=1.62.1,<2.0.0)
+Requires-Dist: isort (>=5.13.2,<6.0.0)
+Requires-Dist: protobuf (>=4.25.3,<5.0.0)
+Requires-Dist: solana (==0.34.0)
+Description-Content-Type: text/markdown
+
+# About
+This library contains tooling to interact with Jito Lab's Block Engine as a searcher.
+
+# Downloading
+```bash
+$ pip install jito_searcher_client
+```
+
+# Keypair Authentication
+Basic access(5 req/second per region) no longer requires approval. Please visit our [Discord](https://discord.gg/jito) dev channel, if you have other questions.
+If your application requires higher rate limits, please complete this [form](https://forms.gle/8jZmKX1KZA71jXp38)
+
+# Examples
+
+## Sync Client
+
+```python
+from jito_searcher_client import get_searcher_client
+from jito_searcher_client.generated.searcher_pb2 import ConnectedLeadersRequest
+
+from solders.keypair import Keypair
+
+BLOCK_ENGINE_URL = "nyc.testnet.block-engine.jito.wtf"
+
+kp = None
+client = get_searcher_client(BLOCK_ENGINE_URL, kp)
+leaders = client.GetConnectedLeaders(ConnectedLeadersRequest())
+print(f"{leaders=}")
+```
+
+## Async Client
+
+```python
+import asyncio
+
+from jito_searcher_client import get_async_searcher_client
+from jito_searcher_client.generated.searcher_pb2 import ConnectedLeadersRequest
+
+from solders.keypair import Keypair
+
+KEYPAIR_PATH = "/path/to/authenticated/keypair.json"
+BLOCK_ENGINE_URL = "frankfurt.mainnet.block-engine.jito.wtf"
+
+async def main():
+    with open(KEYPAIR_PATH) as kp_path:
+        kp = Keypair.from_json(kp_path.read())
+    client = await get_async_searcher_client(BLOCK_ENGINE_URL, kp)
+    leaders = await client.GetConnectedLeaders(ConnectedLeadersRequest())
+    print(f"{leaders=}")
+
+asyncio.run(main())
+```
+
+# Development
+
+Install pip
+```bash
+$ curl -sSL https://bootstrap.pypa.io/get-pip.py | python 3 -
+```
+
+Install poetry
+```bash
+$ curl -sSL https://install.python-poetry.org | python3 -
+```
+
+Setup environment and build protobufs
+```bash
+$ poetry install
+$ poetry shell
+$ poetry protoc
+```
+
+Linting
+```bash
+$ poetry run black .
+$ poetry run isort .
+```
+
+Linting:
+```bash
+poetry run isort .
+poetry run black .
+```
+
+Publishing package
+```bash
+$ poetry protoc && poetry build && poetry publish
+```
+
