@@ -1,0 +1,10 @@
+fileservice/__init__.cpython-310-x86_64-linux-gnu.so,sha256=5gbiLebjh_feGq3JzBQ-sfVANewoSOAwYUPkbbrqKb0,28040
+fileservice/fileServiceProcess.cpython-310-x86_64-linux-gnu.so,sha256=KQ5lkMku9ubeRw21timOFE6sVnNK6OV-vFSQ0TUU-hs,87920
+fileservice/hdf5.cpython-310-x86_64-linux-gnu.so,sha256=2-YtGPP7FPjnQCFmJI3klohx0OFBOh4HQljOnYUyfXw,108272
+fileservice/backend/HDF5Service.cpython-310-x86_64-linux-gnu.so,sha256=DrFVHmfce2LXbyRwT4r7waT8VhjTesN1woBdLqv5gBc,200712
+fileservice/backend/__init__.cpython-310-x86_64-linux-gnu.so,sha256=_fCsSuq29ZA2pYkW-Efv2tfVGWCt1qntq6EJ36ZBfak,27472
+fileservice-0.0.2.2024.9.28.23.18.dist-info/METADATA,sha256=SUqKtHqyiLtRHJhxLejMIIL43HasBiZdD_y5hj9-BjQ,299
+fileservice-0.0.2.2024.9.28.23.18.dist-info/WHEEL,sha256=CFW1GTFs9Sn-hcFrVe0BYWVb81j-w0EzZWqb1k6O8Q4,109
+fileservice-0.0.2.2024.9.28.23.18.dist-info/entry_points.txt,sha256=EhU9swfiH9AX_CftFihKlZSAPQLOPBtqeC-eWWTEYkQ,68
+fileservice-0.0.2.2024.9.28.23.18.dist-info/top_level.txt,sha256=aFvD04UuEDU32QZ3aLwJ5BwwPeXLMhDxSUJMPOumJjc,12
+fileservice-0.0.2.2024.9.28.23.18.dist-info/RECORD,,
