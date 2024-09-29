@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: PyTorchLabFlow
+Version: 0.1.8
+Summary: PyTorchLabFlow is a lightweight framework that simplifies PyTorch experiment management, reducing setup time with reusable components for training, logging, and checkpointing. It streamlines workflows, making it ideal for fast and efficient model development.
+Home-page: https://github.com/BBEK-Anand/PyTorchLabFlow
+Author: BBEK-Anand
+Author-email: 
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: tqdm
+
+**PyTorchLabFlow** is your go-to offline solution for managing PyTorch experiments with ease. Run experiments securely on your local machine, no data sharing with third parties. Need more power? Seamlessly trasfer your setup to a high-end system without any reconfiguration. Wheather you are on a laptop or a workstation, PyTorchLabFlow ensures flexibility and privacy, allowing you to experiment anywhere, anytime, without internet dependency. [Read more at github](https://github.com/BBEK-Anand/PyTorchLabFlow)
+
+
+# License
+This project is licensed under the MIT License.
