@@ -1,0 +1,16 @@
+amnemone/__about__.py,sha256=BWYR-PB_J8I5h5vYNtMRVVhj3xUrsEzLrZCNDpNx-nM,156
+amnemone/__init__.py,sha256=JjYCLZ3ua6lEg_yCLgFjtGYgg2vPqrW3UpB_pmoIU-s,129
+amnemone/__main__.py,sha256=GFLeOXlRciiqu9cSWL2qZlvRH3CduWleJjDyaaizcSE,54
+amnemone/data/__init__.py,sha256=J0ShCZcPtH0oRY3JkV7Z1u7ytFP27xasziPdot6LX3A,45
+amnemone/data/countries_states_cities/__init__.py,sha256=nO3ibeAwHxpfCatqgPWc9HhU_XfQ84XVsSgrXC9TtRc,773
+amnemone/data/countries_states_cities/cities.csv,sha256=4YEVDLzyDYOfEzkZdfdra_XJevedXsycuSM30XlkFig,170075
+amnemone/data/countries_states_cities/countries.csv,sha256=wR6Fzr83q9xSt1FP9N7CoGs-uxkDKjnKpKj8x21-F0c,277255
+amnemone/data/countries_states_cities/regions.csv,sha256=ORbxNAvoy87KVc93spT-sZYnjkoCyfVhPVtH-GnCmN8,317739
+amnemone/data/countries_states_cities/states.csv,sha256=4h0r5pjlqDuTLzlpecj69UYlOjRl2bRZ_VQ_-66fEB8,613945
+amnemone/data/countries_states_cities/subregions.csv,sha256=rBvodAtJ3cf6m1Vz4eJcKhv1VSpbLAaYjLSZZkSP0Lg,318510
+amnemone/data/words/__init__.py,sha256=vP1af3YqgXpK5Z6vNIAefMPk77xJdITrkxBEuGFEDRI,141
+amnemone/data/words/an-array-of-english-words.json,sha256=-ik406CiI_AFBJ5KDV_gIDJiEr3bXJ4gmwBXzRkvLtA,3362572
+amnemone-0.0.1.dev0.dist-info/METADATA,sha256=17LwCOKELwlSDbIXXjkOnBHplt0EJCiK_sRXnIsHs4E,1409
+amnemone-0.0.1.dev0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+amnemone-0.0.1.dev0.dist-info/licenses/LICENSE.txt,sha256=LSAXaDQP78MRgqrtoVIiGQYH30X6anEm7PZylCP5S6A,1121
+amnemone-0.0.1.dev0.dist-info/RECORD,,
