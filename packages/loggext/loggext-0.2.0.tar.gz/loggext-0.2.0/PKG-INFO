@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: loggext
+Version: 0.2.0
+Summary: logging extensions for pythons logging library
+Home-page: https://github.com/utility-libraries/loggext-py
+Author: PlayerG9
+License: GPLv3
+Project-URL: Author Github, https://github.com/PlayerG9
+Project-URL: Homepage, https://github.com/utility-libraries/loggext-py
+Project-URL: Documentation, https://utility-libraries.github.io/loggext-py/
+Project-URL: Bug Tracker, https://github.com/PlayerG9/loggext-py/issues
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: all
+
+# loggext-py
+logging extensions for pythons logging library
+
+<!-- TOC -->
+* [loggext-py](#loggext-py)
+  * [Installation](#installation)
+  * [Features](#features)
+  * [Usage](#usage)
+<!-- TOC -->
+
+## Installation
+
+```shell
+pip install loggext
+```
+
+## Features
+
+- function-decorators for logging
+  - with support for asnyc-functions
+- additional logging-handlers
+  - ColoredConsoleHandler
+
+## Usage
+
+```python
+import logging
+import loggext
+from loggext.decorators import add_logging
+
+# only configures if not already configured
+if not loggext.logging_is_configured():
+    logging.basicConfig(
+        level=logging.NOTSET,
+        handlers=[
+            # adds colored output based on the level of each message
+            loggext.handlers.ColoredConsoleHandler()
+        ],
+    )
+
+@add_logging(
+  call=True,  # logs when the function is called
+  call_args=True,  # logs passed arguments of call
+  timeit=True,   # measure performance of the function
+  timeit_precision=2,  # number of units when formatting timing
+  result=True,  # log the result
+)  # note: exception-logging is always
+def myfn(arg):
+    ...  # stuff
+
+myfn("value")
+# DEBUG:root:<function myfn at 0x7f06a6cc3400> was called with ('value')
+# DEBUG:root:<function myfn at 0x7f06a6cc3400> returned None after 65μs+614ns
+```
