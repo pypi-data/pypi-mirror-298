@@ -1,0 +1,9 @@
+echowave/__init__.py,sha256=zS29hg4PSylqJgFwiUTF5Z_4SU_fkUbTxdVAst6I-us,322
+echowave/__version__.py,sha256=1hb14849DsmMHzSZ6PsB9nJWJz-aZj7fM_C__sqzidQ,356
+echowave/builtins.py,sha256=isSPGC0lSqiPSTpNxx45yymp5y3zS6zqdNKBnib64o0,353
+echowave/coloring.py,sha256=VrpyTGTiuqhViG653aJn-6RGl_72WvKMUEqEvnNEoVA,3010
+echowave/echowave.py,sha256=OTTWE4oxQi5UJ8VPKkhKFImex6pzm2sGgdT11IDdi-o,10119
+echowave-0.1.0.dist-info/METADATA,sha256=nF3nG2wX0HyZrs_c3i6EgkFbalqVnlGD3DOk0pgamZE,395
+echowave-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+echowave-0.1.0.dist-info/top_level.txt,sha256=CojxksB4r-G71st82C4HxOODENVDKIweX5cS6XwzorU,9
+echowave-0.1.0.dist-info/RECORD,,
