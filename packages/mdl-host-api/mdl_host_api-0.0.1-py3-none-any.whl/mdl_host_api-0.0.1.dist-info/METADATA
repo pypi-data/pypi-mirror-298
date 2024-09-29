@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mdl_host_api
+Version: 0.0.1
+Summary: A Python library for interacting with the mdl-host API
+Author-email: "Amadeus (Wasys)" <tubik.corp@gmail.com>
+Project-URL: Homepage, https://github.com/Vasysik/mdl-api
+Project-URL: Issues, https://github.com/Vasysik/mdl-api/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.25.1
+
