@@ -1,0 +1,13 @@
+gulagcleaner/command_line.py,sha256=UYKL_qMDG2hd5tK_vhW8f9PLM6CzLfS2qhbeh_nzjAk,4285
+gulagcleaner/clean.py,sha256=7t5KzIgfN1f8_NnIb0LGtureV0o8GXnKGVW1H6sCGXY,2387
+gulagcleaner/metadata.py,sha256=ws0zPBXIRw6YbibJzodOlZ2D1AWjB7cMVFyLN5WObX8,941
+gulagcleaner/_lib.cpython-310-x86_64-linux-gnu.so,sha256=CEKP_ogPkAdsqx3UEQ-TWGhKsHgentNIVwo7w1gtGhQ,1223209
+gulagcleaner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gulagcleaner/decrypt.py,sha256=iWDF8UAuGs2XpXIquVWHG2Vd1O5SSRA3iuIiVDh7LQA,451
+gulagcleaner-4.dist-info/LICENSE,sha256=51HPitbZtRFO9YgvLbVskUiOBGUiB8ImK2RyTGPF_38,70297
+gulagcleaner-4.dist-info/METADATA,sha256=4rR5P0xW3wo5Dt0FzYTxbGGSQoOebaaOAgzN-Y_AuIs,84660
+gulagcleaner-4.dist-info/entry_points.txt,sha256=eQusLRQShH5pUIaZot3vxhJUmIl3WZ3Od3jcHe50jAw,64
+gulagcleaner-4.dist-info/RECORD,,
+gulagcleaner-4.dist-info/WHEEL,sha256=IaR6KI8Mj16en_2wnGnaG7Ez9sZ27J2OIaqvdHxQICs,113
+gulagcleaner-4.dist-info/top_level.txt,sha256=fUsQ7UtKqrhW4ZfKQ-CsBR6X7jaVInjxVObxxpI_HVc,13
+gulagcleaner.libs/libgcc_s-a3a07607.so.1,sha256=5ptIUeAzZweNZrFehN0_Bb5B0FcJgux7NbAFoU8vwwo,148041
