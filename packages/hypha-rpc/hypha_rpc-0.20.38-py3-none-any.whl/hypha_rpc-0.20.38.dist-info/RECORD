@@ -1,0 +1,16 @@
+hypha_rpc/VERSION,sha256=xkgjguGxW59lNnjS9oDl9HFCZku2m_IYmg9v5CgsWw0,26
+hypha_rpc/__init__.py,sha256=EBhUQe4shUMPXGlZMS6v_3mPozYYFNv4G5LuOkmqlE0,1576
+hypha_rpc/pyodide_sse.py,sha256=cirFluPDoe9d-KpROePpj_famvvNxT60g8PDi2_bQ8Q,2808
+hypha_rpc/pyodide_websocket.py,sha256=h_vIIHBD5AT1RUnA-Tmq86Aca0N1k5sz7rriI5qDBgs,17366
+hypha_rpc/rpc.py,sha256=IdNMumKJ4_KJdTOfwUsRIZtjzFWCT_xFB1UchZB2Aq4,63144
+hypha_rpc/sync.py,sha256=Mrn2zQjnkqUF7rP1-bjdP3pAcyPWLZ245bwJk8Pno1w,10284
+hypha_rpc/webrtc_client.py,sha256=W2vtoVoyTBOX87A2R3dw1XcILUeOiEky62TFjbo1h8c,11012
+hypha_rpc/websocket_client.py,sha256=mUofCB7dxK27ZqE0lnZ46XIy7dVmsiyG4c5d_vhvxps,33285
+hypha_rpc/utils/__init__.py,sha256=mt-DvrQiQ7moskvHatbaZTjqwjjoVblPzmBUzl1XIb8,14113
+hypha_rpc/utils/launch.py,sha256=GB1Ranb5E_oNFBLw2ARfT78SbqGEwUmWwfMo3E82kAM,3976
+hypha_rpc/utils/schema.py,sha256=oGjAecPGRBsUp_3Rq0bH-Ngz4QH_4JQJ5svt3Jrmyd0,19022
+hypha_rpc/utils/serve.py,sha256=KeSOBRQlvI5Icj89hLejwcvB8vBLuAvEZP4k80NRG6Q,8118
+hypha_rpc-0.20.38.dist-info/METADATA,sha256=WGUmQLAPbIldYICHvNK_IdZ79S6bnT85QB87Qca_wVQ,818
+hypha_rpc-0.20.38.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+hypha_rpc-0.20.38.dist-info/top_level.txt,sha256=uShPbaPGP-Ig8OVnQcT6sEzV0Qhb6wfxSJ3uCmYaB58,10
+hypha_rpc-0.20.38.dist-info/RECORD,,
