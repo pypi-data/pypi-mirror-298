@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chat-llm-cli"
+version = "0.10.11"
+authors = [
+    { name = "Tadeáš Fořt", email = "business@tadeasfort.com" },
+    { name = "Marco Lardera", email = "larderamarco@hotmail.com" }
+]
+description = "Simple yet effective command line client for chatting with LLMs using the official APIs."
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "typer>=0.12.5",
+    "prompt-toolkit>=3.0.47",
+    "litellm>=1.44.16,<2.0.0",
+    "rich>=13.8.0",
+    "click>=8.1.7",
+    "pyperclip>=1.9.0",
+    "pygments>=2.18.0",
+    "catppuccin[pygments]>=2.3.1",
+    "loguru>=0.7.2",
+    "toml>=0.10.2",
+    "pyyaml>=6.0.2",
+    "xdg-base-dirs>=6.0.1",
+    "filelock>=3.15.4",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+"Homepage" = "https://github.com/tadeasf/chat-llm-cli"
+"Bug Tracker" = "https://github.com/tadeasf/chat-llm-cli/issues"
+
+[tool.setuptools.package-data]
+"chat_llm_cli" = ["config_template.yaml"]
+
+[tool.rye]
+dev-dependencies = [
+    "snakeviz>=2.2.0",
+]
+
+[tool.rye.scripts.build]
+cmd = [
+    "sh",
+    "-c",
+    "rye sync && rye lock && python -m version_incrementer --type patch",
+]
+
+[tool.rye.scripts.install]
+cmd = [
+    "sh",
+    "-c",
+    "rye build && pip install -e ."
+]
+
+[project.scripts]
+chat-llm-cli = "chat_llm_cli.chat_llm_cli:app"
+clc = "chat_llm_cli.chat_llm_cli:app"
+
+[tool.rye.scripts.bench]
+cmd = "python examples/cli_profiling.py"
