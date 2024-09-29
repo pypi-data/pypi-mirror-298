@@ -1,0 +1,5 @@
+numpy>=1.19.0
+Cython>=0.29.21
+tensorflow
+mcfit
+get_cosmopower_emus
