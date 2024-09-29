@@ -1,0 +1,17 @@
+bitcoin_usb/__init__.py,sha256=zZI9Ew7SHUJXZTLo7vtA7BFLrfln7Oq0iYoFZ1nGVRs,48
+bitcoin_usb/address_types.py,sha256=xD-AevySVwK1gx1YOcIO-rcN6zV18-33-CKlnM7GbMU,15258
+bitcoin_usb/demo_gui.py,sha256=OuR4XGQ9HJ1hljX0nirMELiAcju6Zvc9DyvAgc9S_F4,4885
+bitcoin_usb/device.py,sha256=_8diBSQ_l4Dsu__zUtWOk2xh-hS_lsBTsJeXVXdHpOs,4439
+bitcoin_usb/dialogs.py,sha256=k5quiCrVs3jV-AfdCxKLQIqfRZ7qL14yjgZRGdffgcU,3673
+bitcoin_usb/gui.py,sha256=ZaGDMY4c7rHtkCpBrPHH2uIerBC7EzjusmG9HtldIwg,8659
+bitcoin_usb/hwi_quick.py,sha256=oifmkvdecJ0VtXpO7QwALl6fJtA8dp2RgGfMvvZPwqA,5195
+bitcoin_usb/i18n.py,sha256=xFwrW9kpb2iQM5jkGvfuTfF-89AE90cgrBbbsHyg6fs,293
+bitcoin_usb/install_udev.sh,sha256=x8mNN_oBhyqKaK8bAJghHBlnrfXmKyeXnF-rYepJggI,849
+bitcoin_usb/psbt_tools.py,sha256=HCmWCsO-dgPOW2SOsgis8vk0xlmT4-UMbgIJVkj798E,2142
+bitcoin_usb/seed_tools.py,sha256=OCBJLtqiZ8EzAi1bM-ZvoiMTmkbIe8Z9iVKnYQzR4jU,2562
+bitcoin_usb/software_signer.py,sha256=FNC_fATnyH5yN-fqcNphPxxE90eF100c1ZP2PReGwdA,3797
+bitcoin_usb/udevwrapper.py,sha256=V8cO6BiRFa_GlaVTkkmc2-UjAiSJ38tJOVe_zLigNmE,4164
+bitcoin_usb-0.4.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bitcoin_usb-0.4.3.dist-info/METADATA,sha256=qELn7sPyoC_p_k9wnNhd5xU0miCrNOsjqhkocI3smv0,2129
+bitcoin_usb-0.4.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+bitcoin_usb-0.4.3.dist-info/RECORD,,
