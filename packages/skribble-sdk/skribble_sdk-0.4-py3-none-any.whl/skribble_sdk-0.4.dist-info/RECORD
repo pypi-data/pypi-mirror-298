@@ -1,0 +1,17 @@
+skribble/__init__.py,sha256=-ofoOop1kRVaQXMzT-A1ExTYmaWTnpVl3UOSHDOJGe4,586
+skribble/client.py,sha256=0jGY9yiKiyuXbBV5l1aKLqHFxG2plI7WwfPbNLrBbog,8052
+skribble/client_manager.py,sha256=ZP9tZHGhUsAfCmzp9_FB03ix-cukbpyfl2WexZubquI,351
+skribble/exceptions.py,sha256=a5C979Rg8bwghYKceioVyFejEb487ynzLOKXJXs6BKA,781
+skribble/models.py,sha256=pmb4H4bGq878i4lUfww-0PjuvKHTXDx7zoQme2xoNGo,8678
+skribble/attachment/__init__.py,sha256=Ws8wA2j9KWe6nH1Jqm-t-cla2gYv9UBNbKy1quFSxNc,116
+skribble/attachment/operations.py,sha256=S8VfaM78F7GsOPTeFL-4vyiClRte7f_Ab9saDoBdBbQ,2373
+skribble/document/__init__.py,sha256=qu_yJAOAzPfHb4ttFodrh4Y6fL9DdP5CBi0rkToBrGg,202
+skribble/document/operations.py,sha256=HSKs88X89PjBJTt600junBNLcVKYHzEXmQZewzCX8q4,3842
+skribble/seal/__init__.py,sha256=6BcIo84KO1gjVu-s7bovD_-ToyG1zy8OzyMb3LJt_dU,90
+skribble/seal/operations.py,sha256=HACKIH0ENNYB-0jlcZQw_ctM5no-TzxtlK23uEXmeMI,2364
+skribble/signature_request/__init__.py,sha256=xbInHOxcT6FUufvIWXk3bxruM2XdcF29-_JBzmZ2KvQ,402
+skribble/signature_request/operations.py,sha256=w3D06_WV9FT5r0RF7MwgXf1kv5Gse19fmtPE7WZxx24,12328
+skribble_sdk-0.4.dist-info/METADATA,sha256=vkdknsPZZbilnycqhmg2PfYPINZJ7ISvRXli9ByYqSs,1781
+skribble_sdk-0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+skribble_sdk-0.4.dist-info/top_level.txt,sha256=Z3Y8zp0eIVrHFlFDYpBypuLgjbTXwEHpKE6Zs2o3PyE,9
+skribble_sdk-0.4.dist-info/RECORD,,
