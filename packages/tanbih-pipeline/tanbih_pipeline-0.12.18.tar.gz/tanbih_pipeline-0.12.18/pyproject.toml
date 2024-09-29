@@ -1,0 +1,116 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.black]
+line-length = 88
+include = "\\.pyi?$"
+exclude = "/(\n    \\.git\n  | \\.hg\n  | \\.mypy_cache\n  | \\.tox\n  | \\.venv\n  | _build\n  | buck-out\n  | build\n  | dist\n)/\n"
+
+[tool.flake8]
+ignore = "E203, E266, E501, W503, F403, F401"
+max-line-length = 88
+max-complexity = 18
+select = "B,C,E,F,W,T4,B9"
+
+[tool.pytest.ini_options]
+python_files = "*.py"
+addopts = "--color=yes -p no:warnings --doctest-modules --ignore=compose --ignore=./upload.py --ignore=./setup.py --ignore=integration-tests --doctest-glob *.rst"
+doctest_optionflags = "NORMALIZE_WHITESPACE ELLIPSIS"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "tox<5.0.0,>=4.20.0",
+    "tox-pyenv<2.0.0,>=1.1.0",
+    "pre-commit<4.0.0,>=3.8.0",
+    "Sphinx<9.0.0,>=8.0.2",
+    "pytest<9.0.0,>=8.3.3",
+    "pytest-cov<6.0.0,>=5.0.0",
+    "mypy<2.0,>=1.11.2",
+    "fakeredis<3.0.0,>=2.24.1",
+    "pytest-aiohttp>=1.0.5",
+    "bump2version>=1.0.1",
+]
+
+[tool.pdm.build]
+includes = []
+
+[tool.setuptools]
+py-modules = [
+    "pipeline",
+]
+where = [
+    "src",
+]
+
+[project]
+name = "tanbih-pipeline"
+version = "0.12.18"
+description = "data streaming on top of popular message queues"
+authors = [
+    { name = "Yifan Zhang", email = "" },
+]
+dependencies = [
+    "prometheus-client<1.0.0,>=0.21.0",
+    "zstandard<1.0.0,>=0.23.0",
+    "pydantic<3.0.0,>=2.9.2",
+    "redis<6.0.0,>=5.1.0",
+    "python-dotenv<2.0.0,>=1.0.1",
+    "pydantic-settings<3.0.0,>=2.2.1",
+]
+requires-python = "<4.0,>=3.8"
+readme = "README.rst"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/yifan/pipeline"
+repository = "https://github.com/yifan/pipeline"
+documentation = "https://tanbih-pipeline.readthedocs.io/en/latest/"
+
+[project.optional-dependencies]
+full = [
+    "confluent-kafka<3.0.0,>=2.5.3",
+    "pulsar-client<4.0.0,>=1.3.0",
+    "elasticsearch<9.0.0,>=7.15.2",
+    "pymongo<5.0.0,>=3.12.3",
+    "pika<2.0.0,>=1.3.2",
+    "rq<2.0.0,>=1.16.2",
+]
+rabbitmq = [
+    "pika<2.0.0,>=1.3.2",
+]
+rq = [
+    "rq<2.0.0,>=1.16.2",
+]
+redis = [
+    "redis<6.0.0,>=5.1.0",
+]
+kafka = [
+    "confluent-kafka<3.0.0,>=2.5.3",
+]
+pulsar = [
+    "pulsar-client<4.0.0,>=1.3.0",
+]
+elastic = [
+    "elasticsearch<9.0.0,>=7.15.2",
+]
+mongodb = [
+    "pymongo<5.0.0,>=3.12.3",
+]
+http = [
+    "aiohttp<4.0.0,>=3.10.7",
+]
+cli = [
+    "click<9.0.0,>=8.1.7",
+    "python-dotenv<2.0.0,>=1.0.1",
+]
+
+[project.scripts]
+pipeline-copy = "pipeline.__main__:copy"
