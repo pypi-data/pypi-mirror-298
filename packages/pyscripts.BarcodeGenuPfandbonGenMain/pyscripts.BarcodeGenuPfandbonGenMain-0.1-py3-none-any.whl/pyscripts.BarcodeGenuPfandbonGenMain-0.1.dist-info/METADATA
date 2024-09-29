@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pyscripts.BarcodeGenuPfandbonGenMain
+Version: 0.1
+License-File: LICENSE
+Requires-Dist: reportlab
+Requires-Dist: python-barcode
+Requires-Dist: Pillow
+
