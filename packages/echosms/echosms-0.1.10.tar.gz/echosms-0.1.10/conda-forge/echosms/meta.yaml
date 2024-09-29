@@ -1,0 +1,46 @@
+{% set name = "echosms" %}
+{% set version = "0.1.9" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/echosms-{{ version }}.tar.gz
+  sha256: e7ec4b21aff1510fa21a1e8b3af8b05cead74806c458abb1ec38ad5cc37695f2
+
+build:
+  skip: true  # [py<310]
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
+
+requirements:
+  host:
+    - python >=3.10
+    - hatchling
+    - pip
+  run:
+    - python >=3.10
+    - numpy
+    - scipy
+    - pandas
+    - xarray
+    - tomli >=1.1.0  # [py<311]
+    - spheroidalwavefunctions
+
+test:
+  imports:
+    - echosms
+  commands:
+    - pip check
+  requires:
+    - pip
+
+about:
+  summary: Acoustic backscattering models used in aquatic ecosystem research
+  license: MIT
+  license_file: LICENSE
+
+extra:
+  recipe-maintainers:
+    - gavinmacaulay
