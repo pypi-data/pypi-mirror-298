@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export FZF_DEFAULT_OPTS='--reverse --exact'
+
+linker.py $@

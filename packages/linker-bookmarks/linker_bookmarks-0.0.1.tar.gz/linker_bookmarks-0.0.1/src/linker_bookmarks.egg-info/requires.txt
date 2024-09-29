@@ -1,0 +1,6 @@
+pick
+configparser
+iterfzf
+pick
+pyperclip
+python-dateutil

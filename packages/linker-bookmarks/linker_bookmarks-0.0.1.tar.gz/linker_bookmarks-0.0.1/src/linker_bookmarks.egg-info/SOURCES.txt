@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+files/linker
+files/linker.py
+src/linker/__init__.py
+src/linker/loadfile.py
+src/linker_bookmarks.egg-info/PKG-INFO
+src/linker_bookmarks.egg-info/SOURCES.txt
+src/linker_bookmarks.egg-info/dependency_links.txt
+src/linker_bookmarks.egg-info/requires.txt
+src/linker_bookmarks.egg-info/top_level.txt
