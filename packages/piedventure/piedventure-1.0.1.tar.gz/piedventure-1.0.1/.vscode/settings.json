@@ -1,0 +1,14 @@
+{
+    "[python]": {
+        "editor.formatOnSaveMode": "file",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "eeyore.yapf",
+        "editor.formatOnType": false,
+        "editor.rulers": [
+            89
+        ],
+    },
+    "[toml]": {
+        "editor.defaultFormatter": "tamasfe.even-better-toml"
+    }
+}
