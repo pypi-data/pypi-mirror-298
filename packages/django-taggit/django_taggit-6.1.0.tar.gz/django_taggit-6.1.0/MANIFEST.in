@@ -1,0 +1,12 @@
+include AUTHORS
+include CHANGELOG.rst
+include LICENSE
+include README.rst
+include setup.cfg
+include setup.py
+recursive-include taggit *.py
+recursive-include taggit/templates *.html
+recursive-include taggit/locale *.mo *.po
+prune tests
+prune sample_taggit
+prune docs
