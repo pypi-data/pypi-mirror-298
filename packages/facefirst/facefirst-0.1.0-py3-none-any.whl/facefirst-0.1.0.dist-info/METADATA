@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: facefirst
+Version: 0.1.0
+Summary: A sample Python library
+Home-page: 
+Author: shivajiwankhede
+Author-email: shivaji.wankhede@facefirst.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# facefirst
+facefirst general purpose library
