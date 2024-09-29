@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/fastapi_decorators/__init__.py
+src/fastapi_decorators/decorators.py
+src/fastapi_decorators.egg-info/PKG-INFO
+src/fastapi_decorators.egg-info/SOURCES.txt
+src/fastapi_decorators.egg-info/dependency_links.txt
+src/fastapi_decorators.egg-info/top_level.txt
