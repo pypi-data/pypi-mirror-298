@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: dj_multihash
+Version: 0.52
+Summary: DJ-MultiHash by DJOPRO_YT
+Home-page: 
+Author: DJSTUDIO
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DJ MULTIHASH 
+## The ultimate lib for protecting your data
+
+### What is DJ MULTIHASH ?
+- DJ MULTIHASH is a python library which combine between 3 methods of security including the sha256 and the "salt" and the string masked method.
+
+### What is the "string masked method" ?
+- This methods is used to mask the string by replacing each character by another character string.
+
+### What are the features of this library ?
+- This library give you the apportunity to modify how many times do you want to modify the string , which gives you more layers of security.
+
+### How it works ?
+- The Library will automaticly create a json file named 'multihash.json' in the main user directory (this used to store the chars and their equivalent of the character string)
+
+### How to use it ?
+- Just do this commands in your python code :
+```
+import dj_multihash
+returned_value = dj_multihash.hashstring256(2,"my very secured string")
+print(returned_value)
+```
