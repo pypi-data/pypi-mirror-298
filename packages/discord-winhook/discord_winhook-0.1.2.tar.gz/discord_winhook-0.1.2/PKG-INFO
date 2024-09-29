@@ -1,0 +1,33 @@
+Metadata-Version: 2.3
+Name: discord-winhook
+Version: 0.1.2
+Summary: A library to simplify sending information updates from Windows systems through a Discord webhook
+Author-email: ZackaryW <36378555+ZackaryW@users.noreply.github.com>
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: discord-webhook>=1.3.1
+Requires-Dist: psutil>=6.0.0
+Requires-Dist: pyautogui>=0.9.54
+Requires-Dist: pygetwindow>=0.0.9
+Description-Content-Type: text/markdown
+
+# discord-winhook
+A library to simplify sending information updates from Windows systems through a Discord webhook
+
+## Install
+```bash
+pip install discord-winhook
+```
+
+## Usage
+```py
+from discord_winhook import SSHook
+import pygetwindow as gw
+hook = SSHook(
+    "{webhook_url}",
+    gw.getActiveWindow(),
+)
+# send every 5 minutes
+hook.recur(5*60)
+```
+
