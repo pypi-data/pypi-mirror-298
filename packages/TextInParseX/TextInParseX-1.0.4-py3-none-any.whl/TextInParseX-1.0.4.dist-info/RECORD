@@ -1,0 +1,9 @@
+TextInParseX/TextInParseX.py,sha256=bdlYE18nL3y074ua_8Rvc5CP4LG9og2C8iKH7zssKAQ,19265
+TextInParseX/__init__.py,sha256=2zpNz3xsquFfO_i1vNOwMgJqQ-IbBnlMd8PoNeES8vI,173
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_parseX.py,sha256=KwN5cjTXQFJSowYjbGrbc5M8dhO_eek9rZ-EBj85-fA,6609
+tests/test_parseX2.py,sha256=PD0U4ENZ0GE2urTcE_-THT-zcAvUX_kblPFQfGOTa1E,5791
+TextInParseX-1.0.4.dist-info/METADATA,sha256=ERq2XM5_Y3yaNAaAEGvBR0buTzSUSKjZbQDMxQNLy-8,6459
+TextInParseX-1.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+TextInParseX-1.0.4.dist-info/top_level.txt,sha256=H_3eBJyRSQp3SrOe9-eCRSxKaa50sEYe95BBDytx_Rs,19
+TextInParseX-1.0.4.dist-info/RECORD,,
