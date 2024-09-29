@@ -1,0 +1,17 @@
+xobjects>=0.4.1
+xdeps>=0.6.0
+xpart>=0.18.2
+xtrack>=0.61.0
+xcoll>=0.5.0
+numpy
+pandas
+scipy
+sympy
+matplotlib
+
+[dev]
+pytest
+black
+mypy
+isort
+pandas-stubs
