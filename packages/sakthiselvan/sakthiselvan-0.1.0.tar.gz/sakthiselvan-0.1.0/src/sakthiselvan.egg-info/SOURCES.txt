@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/sakthiselvan/__init__.py
+src/sakthiselvan/example.py
+src/sakthiselvan.egg-info/PKG-INFO
+src/sakthiselvan.egg-info/SOURCES.txt
+src/sakthiselvan.egg-info/dependency_links.txt
+src/sakthiselvan.egg-info/top_level.txt
