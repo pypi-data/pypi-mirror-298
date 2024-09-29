@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cloud-secrets
+Version: 1.1.0
+Summary: Manage secrets in your projects using AWS Secrets Manager or Parameter Store
+License: MIT
+Author: vagelim
+Requires-Python: >=3.10,<=3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.35.0,<2.0.0)
+Requires-Dist: click (>=8.0.0,<9.0.0)
