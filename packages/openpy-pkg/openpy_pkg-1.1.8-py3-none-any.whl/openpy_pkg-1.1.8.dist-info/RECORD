@@ -1,0 +1,11 @@
+openpython/__init__.py,sha256=0XC2lB80hfuuQEnJa7Wu6IAm2aKz0O6ja_pkoeR_2hM,199
+openpython/__main__.py,sha256=juN-RBtt-Bz_eA7mZu8riSIkC26xgksAzYy1JL46PiA,58
+openpython/pkgs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openpython/pkgs/better_logs.py,sha256=jRQ4-HxJuEtUNVJIhjhl81fzHB7MGEXG8Mx32WMkfeg,1868
+openpython/pkgs/licenses.py,sha256=_hD6aw2WDD8kWGrZXX8DKNNOnTwL0v6UMuj89jXb_To,1830
+openpython/pkgs/scraper.py,sha256=Z2jpNL7_BWcDCRW2QOBPxaUupiR8txJvOdewH-_-pE8,1942
+openpy_pkg-1.1.8.dist-info/LICENSE,sha256=71Tz26_RR-qqrs7Dmr-CgS2kuyKXA9kQ1ll923OhioE,1072
+openpy_pkg-1.1.8.dist-info/METADATA,sha256=T0hxf8s__yTIws14DjBSyiC9ZMlegjQRRNAWzoREY10,1779
+openpy_pkg-1.1.8.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+openpy_pkg-1.1.8.dist-info/top_level.txt,sha256=GHuNpcBZIRkXKOZ6VVbP6ABkNQsF_jmWEO-miKNv4gc,11
+openpy_pkg-1.1.8.dist-info/RECORD,,
