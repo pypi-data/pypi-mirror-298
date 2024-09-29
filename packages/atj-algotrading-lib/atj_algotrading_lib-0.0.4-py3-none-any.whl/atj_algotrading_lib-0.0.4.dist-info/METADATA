@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: atj-algotrading-lib
+Version: 0.0.4
+Summary: ATJ Trader's Package for Algo Trading & Backtesting
+Project-URL: Homepage, https://github.com/atj-khactu/atj-algotrading-package
+Project-URL: Issues, https://github.com/atj-khactu/atj-algotrading-package/issues
+Author-email: Khac Tu Nguyen <khactu@atj-traders.com>
+License-File: LICENSE
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# atj-algotrading
+ATJ Trader's Algo Trading Package
