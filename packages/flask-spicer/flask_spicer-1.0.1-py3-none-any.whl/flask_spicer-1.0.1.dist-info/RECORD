@@ -1,0 +1,11 @@
+flask_spicer/Spice.py,sha256=PTo02DOxBkqNFFQNRqc0tOmitB_-GadM0_OfU5fX45c,1024
+flask_spicer/Spicer.py,sha256=xqn8g9rrFZSQsangaVv3jWawRMxwhC-cmah6npSiuyM,2927
+flask_spicer/Template.py,sha256=tiweXvhcceDzyBfnA7uAVJyl2PW5Yrc0NPnMkh2hqHw,997
+flask_spicer/__init__.py,sha256=kJAhl4yBMdwKsAPam8Yhi1sHL0Yx46FUkOD8Er1vFAc,26
+flask_spicer/__main__.py,sha256=jicgYq9Co7Resj8Rtmtp4eq43s6ItWi9-egQccqY9v4,17
+flask_spicer/cli.py,sha256=Hj-WLPUMoAl0oZ8XrBKmwcfBL5V-xH2mhkhTqvODBrI,2061
+flask_spicer-1.0.1.dist-info/METADATA,sha256=nBBVCpWBG4ePijq-0cgozBG77iQFkw9i4WjZU113zJk,566
+flask_spicer-1.0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+flask_spicer-1.0.1.dist-info/entry_points.txt,sha256=4Q2LIlsngIRA9i_DqXGC_OUokYLUP-0dFG3V1ai656g,45
+flask_spicer-1.0.1.dist-info/top_level.txt,sha256=P2qyXQkchADw4FmaXQbDDMyV_Xd21zEL4WNwN1mxJj8,13
+flask_spicer-1.0.1.dist-info/RECORD,,
