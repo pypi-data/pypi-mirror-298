@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: SearchURL
+Version: 0.0.5
+Summary: Search text on websites.
+Author: Pahul Gogna
+Author-email: pahulgogna@gmail.com
+License: MIT
+Keywords: python,web-scraping,search,searchurl,SearchURL,Fuzzy matching,fuzzy search,web,scraping
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: soupsieve>=2.6
+Requires-Dist: beautifulsoup4>=4.12.3
+Requires-Dist: requests
+Requires-Dist: thefuzz>=0.22.1
+Provides-Extra: dev
+Requires-Dist: twine>=4.0.2; extra == "dev"
+
+SearchURL allows you to search text on a webpage. It supports basic pattern matching, and fuzzy matching.
