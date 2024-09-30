@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: aberoth-ephemeris
+Version: 1.0.0
+Summary: Provides prediction for scroll and lunar events in the MMO Aberoth
+Home-page: https://github.com/jvandag/aberoth-ephemeris
+Author: Jeremiah Vandagrift
+Author-email: 
+Keywords: aberoth,solar system,orbs,ephemeris
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# aberoth-ephemeris
