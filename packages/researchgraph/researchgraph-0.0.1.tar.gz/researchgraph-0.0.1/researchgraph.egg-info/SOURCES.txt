@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+researchgraph.egg-info/PKG-INFO
+researchgraph.egg-info/SOURCES.txt
+researchgraph.egg-info/dependency_links.txt
+researchgraph.egg-info/requires.txt
+researchgraph.egg-info/top_level.txt
