@@ -1,0 +1,8 @@
+[console_scripts]
+setuptools_git_details = setuptools_git_details:main
+
+[distutils.setup_keywords]
+setuptools_git_details = setuptools_git_details:setup_keywords
+
+[setuptools.finalize_distribution_options]
+setuptools_git_details = setuptools_git_details:finalize_distribution_options

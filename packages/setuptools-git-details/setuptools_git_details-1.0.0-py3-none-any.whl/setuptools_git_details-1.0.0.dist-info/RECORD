@@ -1,0 +1,11 @@
+setuptools_git_details/__init__.py,sha256=v8I5_WKNBkxysdnTbS5sAlAva9ZsDs_aAt9ObCy2Amk,285
+setuptools_git_details/_git.py,sha256=1YTqRPx5aPxKT8I_M8meJAEYMrS6uidSKQWocehd1to,533
+setuptools_git_details/git.py,sha256=7qLP7PULVqAHxyQPzGmeke6pptuu1xOtVskx9e-ODuM,3868
+setuptools_git_details/logging.py,sha256=5aJ3rXPUSyNfU92J8VjPxt9PZILRZlaY5jwjcHiq4FY,1113
+setuptools_git_details/main.py,sha256=jqLYA8u73_bKvUaNXUupNHeV8ezUhZYz8u2-rcX2Rf0,6745
+setuptools_git_details-1.0.0.dist-info/LICENSE.txt,sha256=XK64NZjocWrFBIdmeQV9mpB76afcvZEFwOYXGrw996s,11341
+setuptools_git_details-1.0.0.dist-info/METADATA,sha256=Z4Aq3BZ4nlaQIYPC3jStU2_yKFxF1ZKR2ZpCKRC6lks,17714
+setuptools_git_details-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+setuptools_git_details-1.0.0.dist-info/entry_points.txt,sha256=ynf__u4is-L5fAoX8UotAvSRQdBGTK-2Ahjdsl2BYas,284
+setuptools_git_details-1.0.0.dist-info/top_level.txt,sha256=vagqaBoNeGPC5FhRxMChlmQ_SBX2V6ifJxPQS91Lpwk,23
+setuptools_git_details-1.0.0.dist-info/RECORD,,
