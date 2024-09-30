@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: guolei-py3-zkhb
+Version: 2.0.0
+Summary: 中科华博 API
+Home-page: https://github.com/guolei19850528/guolei_py3_zkhb
+Author: guolei
+Author-email: 174000902@qq.com
+License: MIT
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: guolei-py3-requests
+Requires-Dist: addict
+Requires-Dist: retrying
+Requires-Dist: jsonschema
+Requires-Dist: xmltodict
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+
+# guolei_py3_zkhb
+guolei_py3_zkhb
