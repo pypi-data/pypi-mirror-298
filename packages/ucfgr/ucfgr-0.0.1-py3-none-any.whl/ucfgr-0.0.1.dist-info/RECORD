@@ -1,0 +1,8 @@
+cfgr/__init__.py,sha256=hOpxkECmVyqUi1Cy9P7nuhZC5jh17oBtvEJ-unMMyEw,20
+cfgr/manager.py,sha256=3giRlNwJHouQYMG5ybq1R4xIgx3DTYJlsi8_nhEcgMw,2676
+cfgr/reader.py,sha256=gvTImkV146fPHoOp1Cxsx7jiLkKImKpu8D2Eo_394MM,885
+cfgr/utils/__init__.py,sha256=u7zHPcbzUxvw2oS_SePctOYZqfSu0DZt-Kq02d7mrXs,1850
+ucfgr-0.0.1.dist-info/METADATA,sha256=iSBrHBTF6RuRqggZ6RbHmM7G0AUFzi0zNFviPek_9Z0,208
+ucfgr-0.0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+ucfgr-0.0.1.dist-info/top_level.txt,sha256=nKIDEYIJvkb33IoYNRJfg34i9yOldAmmOCz3Ru9mBhA,5
+ucfgr-0.0.1.dist-info/RECORD,,
