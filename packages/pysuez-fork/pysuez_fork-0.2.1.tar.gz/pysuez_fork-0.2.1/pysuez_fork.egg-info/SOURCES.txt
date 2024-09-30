@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pysuez/__init__.py
+pysuez/__main__.py
+pysuez/client.py
+pysuez_fork.egg-info/PKG-INFO
+pysuez_fork.egg-info/SOURCES.txt
+pysuez_fork.egg-info/dependency_links.txt
+pysuez_fork.egg-info/entry_points.txt
+pysuez_fork.egg-info/requires.txt
+pysuez_fork.egg-info/top_level.txt
