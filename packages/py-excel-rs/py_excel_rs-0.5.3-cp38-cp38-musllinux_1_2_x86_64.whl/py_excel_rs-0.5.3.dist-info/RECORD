@@ -1,0 +1,8 @@
+py_excel_rs-0.5.3.dist-info/METADATA,sha256=DX-6oi9r-87dzNeN30lzA-vUxML7XGb6vd26ITYt66A,5506
+py_excel_rs-0.5.3.dist-info/WHEEL,sha256=NG_V0OGuCEHkc0LpbKnj93foYQMtUMuOmPs1VwIRQJg,105
+py_excel_rs.libs/libgcc_s-1e52349c.so.1,sha256=Ani0u_W_tB8ESsFePO4D2mn2lrgWLhyFdw6RETxBTYM,437537
+py_excel_rs/postgres.py,sha256=DTxFPjZ9mYKgQbOqcvkgjOVmyaNwcU7f2kCzPB04zqs,3059
+py_excel_rs/df_to_xlsx.py,sha256=RUtlpgTS8Go3iQV02O2l1aODTNKOQ1IpbH74DSscPyA,1222
+py_excel_rs/__init__.py,sha256=2H_SsdUjdbyiGh5yWD0NgLyjYqkZNen3ps2hrhDlJ0o,111
+py_excel_rs/_excel_rs.cpython-38-x86_64-linux-gnu.so,sha256=_ZzK46I74p3D3IMTeobXTZMIge0JFICuHWcdIQQnMGA,35335217
+py_excel_rs-0.5.3.dist-info/RECORD,,
