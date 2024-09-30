@@ -1,0 +1,4 @@
+Jinja2<4.0,>=2.7
+
+[fortran]
+glad2-fortran
