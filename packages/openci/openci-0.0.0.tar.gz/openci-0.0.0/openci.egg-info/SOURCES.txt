@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+openci.egg-info/PKG-INFO
+openci.egg-info/SOURCES.txt
+openci.egg-info/dependency_links.txt
+openci.egg-info/top_level.txt
