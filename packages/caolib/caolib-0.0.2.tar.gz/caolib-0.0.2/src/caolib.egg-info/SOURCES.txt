@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/caolib/__init__.py
+src/caolib/color_text.py
+src/caolib.egg-info/PKG-INFO
+src/caolib.egg-info/SOURCES.txt
+src/caolib.egg-info/dependency_links.txt
+src/caolib.egg-info/top_level.txt
+tests/test.py

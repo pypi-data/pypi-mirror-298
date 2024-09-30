@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: caolib
+Version: 0.0.2
+Summary: A simple package to color text in terminal.
+Author-email: clb <1265501579@qq.com>
+Project-URL: Homepage, https://github.com/caolib/color_text
+Project-URL: Issues, https://github.com/caolib/color_text/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+``` python
+from caolib.color_text import colorTxt, color
+
+# rgb颜色示例
+print(colorTxt("666"))
+print(colorTxt("666", fg=color(255, 0, 80)))
+print(colorTxt("666", bg=color(255, 100, 0)))
+print(colorTxt("666", fg=color(0, 255, 0)))
+print(colorTxt("666", bg=color(0, 0, 255)))
+print(colorTxt("666", fg=color(255, 255, 0), bg=color(0, 255, 255)))
+print()
+# 16进制颜色示例
+print(colorTxt("666", fg=color("#FF0050")))
+print(colorTxt("666", bg=color("#FF6400")))
+print(colorTxt("666", fg=color("#00FF00")))
+print(colorTxt("666", bg=color("#0000FF")))
+print(colorTxt("666", fg=color("#FFFF00"), bg=color("#00FFFF")))
+```
+
+> [!caution]
+>
+> 支持颜色的终端才能正常输出（例Terminal）

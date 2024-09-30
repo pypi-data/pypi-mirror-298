@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "caolib"
+version = "0.0.2"
+authors = [{ name = "clb", email = "1265501579@qq.com" }]
+description = "A simple package to color text in terminal."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/caolib/color_text"
+Issues = "https://github.com/caolib/color_text/issues"
