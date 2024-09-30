@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+class_sz_data/__init__.py
+class_sz_data/data_retriever.py
+class_sz_data.egg-info/PKG-INFO
+class_sz_data.egg-info/SOURCES.txt
+class_sz_data.egg-info/dependency_links.txt
+class_sz_data.egg-info/requires.txt
+class_sz_data.egg-info/top_level.txt
