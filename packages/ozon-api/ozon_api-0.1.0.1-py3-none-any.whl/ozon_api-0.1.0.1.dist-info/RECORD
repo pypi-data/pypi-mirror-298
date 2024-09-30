@@ -1,0 +1,9 @@
+ozon_api/__init__.py,sha256=Zko5p4oilZmo-4qisgMfyfOghB8stUBzC1maYAMwm2Y,17318
+ozon_api/models/__init__.py,sha256=P6juIHftSscdgQH3JBIRSXfycre4FXM89uljxUzJ70A,149
+ozon_api/models/import_by_sku.py,sha256=r-We5sRrrI7HvRbGHTbVp6bIsdr9RPC4coNMZSsUzEI,1863
+ozon_api/models/product_attributes_update.py,sha256=-BzQu3Vz-epnGIpWdzFQL5c8HKvy8oXrFR5me4gyKEg,1921
+ozon_api/models/product_import_info.py,sha256=Xrsc-TK5vwvpqmtOgdbKkbs-Ln0k1hC7vgHxLf2ApVA,235
+ozon_api-0.1.0.1.dist-info/LICENSE,sha256=XChqKo81QwBmzxkPUdf_U7EsCyv7yeA7uQSzvaVox8o,1051
+ozon_api-0.1.0.1.dist-info/METADATA,sha256=Mw8yMacZyf_gMbKEPBC1gVrik3Gqpg843jUmFGeSZHE,6921
+ozon_api-0.1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ozon_api-0.1.0.1.dist-info/RECORD,,
