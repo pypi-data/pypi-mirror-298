@@ -1,0 +1,8 @@
+process_HDST/__init__.py,sha256=kvrNCcQizjQFvIljS36I49DFVY5sT7Qn5uTzR5lbc_k,223
+process_HDST/afterPreprocess.py,sha256=mORhYAW5Q4HaSuYgAuFaQjU8P6bOnxWpi-lUUcHFd1U,14575
+process_HDST/cli.py,sha256=nllB7Nrpl17VBd1DpA1iWyK8NmhmKJj3VT3mMU9ESMg,5061
+process_hdst-0.0.13.dist-info/METADATA,sha256=AT9RxpdfpoSpVg7wDPabZqFu5Cs7pSVpTKIfIx1KDd8,1103
+process_hdst-0.0.13.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+process_hdst-0.0.13.dist-info/entry_points.txt,sha256=LVqkvz0hcwlt6v4SLojUFxq7G2xJMRD2Axw1yoqfydc,55
+process_hdst-0.0.13.dist-info/top_level.txt,sha256=er-Qw5Y1C-z5F3mByiFSeb5UQA5iTFcfWUib8LYYk1U,13
+process_hdst-0.0.13.dist-info/RECORD,,

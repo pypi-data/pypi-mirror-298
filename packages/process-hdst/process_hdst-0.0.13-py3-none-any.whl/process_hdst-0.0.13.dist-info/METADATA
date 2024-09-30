@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: process-hdst
+Version: 0.0.13
+Summary: Downstream analysis tool for spatial transcriptomics data, especially for data from HDSTDb
+Author: LabW
+Author-email: yiru.22@intl.zju.edu.cn
+License: MIT
+Keywords: python,spatial transcriptomics,database,bioinformatics
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: anndata
+Requires-Dist: plotly
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scanpy
+Requires-Dist: scipy
+Requires-Dist: squidpy
+
