@@ -1,0 +1,9 @@
+setup.py
+cfgr/__init__.py
+cfgr/manager.py
+cfgr/reader.py
+cfgr/utils/__init__.py
+ucfgr.egg-info/PKG-INFO
+ucfgr.egg-info/SOURCES.txt
+ucfgr.egg-info/dependency_links.txt
+ucfgr.egg-info/top_level.txt
