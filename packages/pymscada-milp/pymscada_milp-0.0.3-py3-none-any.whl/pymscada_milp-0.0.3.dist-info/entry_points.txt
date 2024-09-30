@@ -1,0 +1,5 @@
+[console_scripts]
+pymscada-milp = pymscada_milp.__main__:cmd_line
+
+[gui_scripts]
+
