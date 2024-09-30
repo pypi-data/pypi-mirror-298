@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: instanceSlackBot
+Version: 1.1.2
+Home-page: https://github.com/Dai-H15/InstanceSlackBot
+Download-URL: https://github.com/Dai-H15/InstanceSlackBot
+Author: Daichi Matsumoto
+Author-email: s1f102200828@iniad.org
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: slack-sdk (>=3.31.0)
+
+# InstanceSlackBot
+
+������������������������SlackSDK������������������������������������������������������������������������������������������������������������������������������������������������������������
+���������������������������������������������������������������������������������������������������������������������������������������������������������
+���������������������������������������������������������������
+
+## ���������������
+
+���������������������������MIT������������������������������������������������������������[LICENSE](./LICENSE)������������������������������������������
+
+## ������������
+```
+pip install instanceSlackBot
+```
+
+Bot���������������������������������������������������������������������������������������������������������������������������
+```
+from instanceSlackBot import SlackBotSet
+
+instance = SlackBotSet(api_token="hogehoge")
+```
+
+## ���������������������������������
+
+���������������������������������������������������������������������������������
+
+- [slack-sdk](https://github.com/slackapi/python-slack-sdk) - MIT License
