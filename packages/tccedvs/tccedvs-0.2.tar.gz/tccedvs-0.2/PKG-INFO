@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tccedvs
+Version: 0.2
+Summary: 2 Club Cluster Edge Deletion with Vertex Splitting
+Author-email: Sergio Thoumi <sergio.thoumi@lau.edu>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: networkx
+
+A heuristic for 2 Club Cluster Edge Deletion with Vertex Splitting
+
+Guide:
+
+1-Install the package by running: "pip install tccedvs"
+
+2-Import the package to your code using: "import tccedvs"
+
+3-Invoke the main function by calling: "tccedv.main()"
+
