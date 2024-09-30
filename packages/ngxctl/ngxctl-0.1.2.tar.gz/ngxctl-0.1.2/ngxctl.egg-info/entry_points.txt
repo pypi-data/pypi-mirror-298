@@ -1,0 +1,2 @@
+[console_scripts]
+ngxctl = ngxctl.cli:cli
