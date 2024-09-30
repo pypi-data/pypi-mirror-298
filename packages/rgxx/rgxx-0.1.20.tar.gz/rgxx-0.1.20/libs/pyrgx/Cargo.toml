@@ -1,0 +1,13 @@
+[package]
+name = "pyrgx"
+version.workspace = true
+edition.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "rgxx"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.22.3", features = ["extension-module", "abi3-py39"] }
+rgx.workspace = true
