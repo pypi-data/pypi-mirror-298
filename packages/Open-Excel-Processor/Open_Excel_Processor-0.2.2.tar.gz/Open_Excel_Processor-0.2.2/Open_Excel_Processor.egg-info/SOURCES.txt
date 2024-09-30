@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+Open_Excel_Processor/__init__.py
+Open_Excel_Processor/config.py
+Open_Excel_Processor/main.py
+Open_Excel_Processor.egg-info/PKG-INFO
+Open_Excel_Processor.egg-info/SOURCES.txt
+Open_Excel_Processor.egg-info/dependency_links.txt
+Open_Excel_Processor.egg-info/requires.txt
+Open_Excel_Processor.egg-info/top_level.txt
