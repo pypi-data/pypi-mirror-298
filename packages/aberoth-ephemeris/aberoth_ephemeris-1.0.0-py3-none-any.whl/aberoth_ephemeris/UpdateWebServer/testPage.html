@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Data to Server</title>
+</head>
+<body bgcolor="#2F2F2F">
+    <h1>Send Data to Python Server</h1>
+    <button onclick="sendData()">Send Data</button>
+
+    <script>
+        const key = 'admin'
+        let vars = {
+            green: [123, 126],
+            black: [23, 154],
+            red: [134, 1112],
+            white: [1715407314000, 1715408745000]
+        }
+
+        function sendData() {
+            const url = 'http://192.168.176.129:5000/update-variables';  // Replace <server-ip> with your server's IP address
+            const data = {
+                message: "",
+                timestamp: new Date().toISOString(),
+                vars: vars
+                
+            };
+
+            fetch(url, {
+                method: 'POST',  // or 'PUT'
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `${key}`
+                },
+                body: JSON.stringify(data),  // convert JavaScript object to JSON string
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>
