@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: appium78
+Version: 0.1.0
+Summary: A Python wrapper for Appium
+Author: Frieda.Hu
+Author-email: www778878net@189.cn
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Appium-Python-Client (>=2.0.0,<3.0.0)
+Requires-Dist: selenium (>=4.0.0,<5.0.0)
