@@ -1,0 +1,11 @@
+ppmm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ppmm/cli.py,sha256=YE_kv_DM_RLI1L5wZVSA4hLCeNZCBbc7yS8P3EMRJ9Y,2350
+ppmm/config.py,sha256=SXXzLZ8zy_qBp6Yl8TOKirJsMZkRwjytP0JVwkQO3jM,1698
+ppmm/data.json,sha256=T8IWua9cVM-hGfiPFgHYGVnBbHPWugKpcwSow8gJxOA,322
+ppmm/mirror.py,sha256=keY3ZGPRu_d9ci9WvSAUbxTrJAZRH_qITlBlza2rcYw,856
+ppmm-1.1.2.dist-info/LICENSE,sha256=J98utU7Use4wjA0mOnwUT2_p3Fu2FKVRXqZlOhi8Ad0,1081
+ppmm-1.1.2.dist-info/METADATA,sha256=SymaU9FQmKcffFcbyXPCZPht8hOBYNUm7T2UzNDmvws,1907
+ppmm-1.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ppmm-1.1.2.dist-info/entry_points.txt,sha256=1C7PGtpPMSu4xODtAUZRdEwRJL14jvlox6wSbRi3PCI,56
+ppmm-1.1.2.dist-info/top_level.txt,sha256=Whc0u47568RPU_xDLRLewlzdGdgC8OdG-kxXD2hMNtQ,5
+ppmm-1.1.2.dist-info/RECORD,,
