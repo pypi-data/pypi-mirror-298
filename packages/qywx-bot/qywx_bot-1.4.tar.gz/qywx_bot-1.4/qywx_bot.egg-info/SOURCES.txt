@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+qywx_bot/__init__.py
+qywx_bot/bot.py
+qywx_bot/check.py
+qywx_bot.egg-info/PKG-INFO
+qywx_bot.egg-info/SOURCES.txt
+qywx_bot.egg-info/dependency_links.txt
+qywx_bot.egg-info/requires.txt
+qywx_bot.egg-info/top_level.txt
+test/test.py
