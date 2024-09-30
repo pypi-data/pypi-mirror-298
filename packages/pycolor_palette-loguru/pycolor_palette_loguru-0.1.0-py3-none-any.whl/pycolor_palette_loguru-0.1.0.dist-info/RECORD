@@ -1,0 +1,8 @@
+pycolor_palette_loguru/__init__.py,sha256=w1MyfachpiNgdDINhTxUpPrgRcdyFTpl0DGcAWaom9c,576
+pycolor_palette_loguru/logger/__init__.py,sha256=q5OlXBSCoYI1bBYwDvOjmpFIPEiHnNkHOKsav1udgz4,194
+pycolor_palette_loguru/logger/logger.py,sha256=9ST8b76rBrjfUUAiPT-NWCBnICbOjtIMmvlfm5z-1zU,14083
+pycolor_palette_loguru/paint.py,sha256=rkC2C65hsts4xSnCl2JvQbrYTsQQordiTV933mrBGQU,6185
+pycolor_palette_loguru/pygments_colorschemes.py,sha256=_otY60UuqEF6CNxj9TtQvnvLdk3tBqz_PcMGWH8IBSg,8388
+pycolor_palette_loguru-0.1.0.dist-info/METADATA,sha256=nzZKPJND6ANW27u98jTF9llx9sWxKwKw6BwdIN6qq_U,2098
+pycolor_palette_loguru-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pycolor_palette_loguru-0.1.0.dist-info/RECORD,,
