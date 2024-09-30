@@ -1,0 +1,9 @@
+README.md
+main.py
+setup.py
+jd_docker_generator.egg-info/PKG-INFO
+jd_docker_generator.egg-info/SOURCES.txt
+jd_docker_generator.egg-info/dependency_links.txt
+jd_docker_generator.egg-info/entry_points.txt
+jd_docker_generator.egg-info/requires.txt
+jd_docker_generator.egg-info/top_level.txt

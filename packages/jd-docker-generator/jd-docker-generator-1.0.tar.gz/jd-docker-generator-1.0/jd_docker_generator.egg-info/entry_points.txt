@@ -1,0 +1,3 @@
+[console_scripts]
+jd-docker-create = main:main
+
