@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: holocron_cuantico_holografico
+Version: 0.2.0
+Summary: Una librería para simular el Holocron Cuántico Holográfico
+Home-page: https://github.com/Alphonsus411/holocron_cuantico
+Author: Adolfo González Hernández
+Author-email: adolfogonzal@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# Holocron CuÃ¡ntico HologrÃ¡fico
+
+Este proyecto implementa una simulaciÃ³n basada en la teorÃ­a del **Holocron CuÃ¡ntico HologrÃ¡fico**, donde se crean holobits (quarks y antiquarks) organizados en densidades fractales siguiendo la proporciÃ³n Ã¡urea.
+
+## Estructura
+La librerÃ­a incluye los siguientes mÃ³dulos:
+- **holobit.py**: Clase para representar un Holobit CuÃ¡ntico HologrÃ¡fico.
+- **holocron_core.py**: Estructura del Holocron.
+- **interactions.py**: SimulaciÃ³n de interacciones cuÃ¡nticas (confinamiento y spin).
+- **entanglement.py**: Entrelazamiento cuÃ¡ntico entre holobits.
+- **collisions.py**: SimulaciÃ³n de colisiones entre holobits.
+- **quantum_algorithm.py**: Ejecuta un algoritmo cuÃ¡ntico bÃ¡sico.
+
+## InstalaciÃ³n
+Puedes instalar esta librerÃ­a clonando el repositorio y ejecutando:
+
+pip install holocron
+
+## Ejemplo de uso
+```python
+fimport matplotlib.pyplot as plt
+from holocron_core import Holocron
+
+def visualizar_familia_3d(familia, titulo="VisualizaciÃ³n de Holobits"):
+    """FunciÃ³n para visualizar una familia de holobits en 3D."""
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
+
+    for holobit in familia:
+        pos = holobit.position
+        ax.scatter(pos[0], pos[1], pos[2], s=100, c='b', marker='o')
+        ax.text(pos[0], pos[1], pos[2], f"Spin: {holobit.spin}", fontsize=12)
+    
+    ax.set_xlabel('Eje X')
+    ax.set_ylabel('Eje Y')
+    ax.set_zlabel('Eje Z')
+    ax.set_title(titulo)
+    plt.show()
+
+# Crear el Holocron y generar una familia de holobits
+holocron = Holocron(num_holobits=360, num_families=12)
+familia_holobits = holocron.get_family(3)  # Elegimos la familia de la dimensiÃ³n 3
+
+# Visualizar la familia en 3D
+visualizar_familia_3d(familia_holobits, titulo="Holobits en DimensiÃ³n 3")
+
+```
+
+---
+
+### **ConclusiÃ³n**
+
+Este documento detalla completamente cÃ³mo crear la **librerÃ­a del Holocron CuÃ¡ntico HologrÃ¡fico**, desde la estructura de archivos hasta los ejemplos de cÃ³digo y los archivos de configuraciÃ³n.
+
