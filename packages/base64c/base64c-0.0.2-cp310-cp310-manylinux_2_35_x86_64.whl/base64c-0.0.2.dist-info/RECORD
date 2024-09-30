@@ -1,0 +1,9 @@
+base64c/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+base64c/base64c.c,sha256=RzEhnhXTX0qfSorr4X76TpT1tbKWXM6E_nTXSr3pUlw,6468
+base64c/base64c.h,sha256=KkRYukbcVVitszpsp6HpPQC5UrFHh7q4fOZ-f8kssME,1047
+base64c/base64c.pyi,sha256=9dR1o1x3152fByLU8T8bChfgMw1ZRApeXxCKHVDW1Oo,553
+base64c.cpython-310-x86_64-linux-gnu.so,sha256=0A9ufOHEfCZTBEtSNih3Ok2g22Bu9KLdAd8PjaYlSfY,29664
+base64c-0.0.2.dist-info/LICENSE,sha256=lkDQiibrc6fExq_nVI493RvMTvjheOPCQZtAAIRuJaM,1072
+base64c-0.0.2.dist-info/METADATA,sha256=W3Iv2k49rEH82-89EdOoaUVVau_dU8ZIRkWn7ong5yA,1154
+base64c-0.0.2.dist-info/WHEEL,sha256=9akmB9Yw5qmIU-MKN95Pv0Mip6kpcZ0b8K__D5G3wjE,110
+base64c-0.0.2.dist-info/RECORD,,
