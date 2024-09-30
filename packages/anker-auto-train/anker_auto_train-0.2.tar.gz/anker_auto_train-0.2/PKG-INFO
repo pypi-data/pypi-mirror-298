@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: anker_auto_train
+Version: 0.2
+Summary: auto train for anker
+Home-page: 
+Author: taco
+Author-email: taco.wang@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# 回流服务
