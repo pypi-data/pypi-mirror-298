@@ -1,0 +1,15 @@
+DynamicDnsUpdater/AddressInfo.py,sha256=Nj4ZzCKvaDZR5jGyunkm71npr-OJLeQ0PFE1rx-xS-o,906
+DynamicDnsUpdater/DynamicDnsUpdater.py,sha256=bCCovuBvVecriBxWcekTplM2bNQve6avkSb1DoRfYo0,3281
+DynamicDnsUpdater/IpDnsPoller.py,sha256=nzW24vvZ2zB_gK0-cpm_u0HKn6hMpC6YKG2IU6EfBcQ,3398
+DynamicDnsUpdater/NetworkAdapter.py,sha256=paQsZ16b7wfwEriLnBUsONnIqtib8SGWxF2_L4yROW4,3705
+DynamicDnsUpdater/NetworkHookHandler.py,sha256=yRLMdUNjg0Gb4wCdobiwmSojoTdnka5LEoIpV4so36Q,8965
+DynamicDnsUpdater/Registry.py,sha256=V19WThQFiMZ9S7xYeEnb0k8Sw5j8Y0mWMLCu6nEf76w,3547
+DynamicDnsUpdater/Resolve.py,sha256=MGtF1hbxWdOjzcNryRLr4DCSKnOiY5aa1cz4VrvhwRs,3319
+DynamicDnsUpdater/__init__.py,sha256=087IJq3olAxn7QsMMqZ01qI9Id-6RIBlYu1Xd_85g-E,48
+DynamicDnsUpdater/objects.py,sha256=A-KLIltw55Edq9YC67c1pUyqlWBClPnzhfplYEtnIEc,3010
+DynamicDnsUpdater/version.py,sha256=A6MbGFbpMiM0bwVX9AUjeVa7RTs3Gd3OZWzUNGO9Czw,30
+pyDynamicDnsUpdater-1.0.0a9.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyDynamicDnsUpdater-1.0.0a9.dist-info/METADATA,sha256=4vV-HzOT-2YuquzNoLYQmCGQvOCN1UI-BqUwhTAK1os,1634
+pyDynamicDnsUpdater-1.0.0a9.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pyDynamicDnsUpdater-1.0.0a9.dist-info/top_level.txt,sha256=pjr7WLmCyLrRwEMzaCxnOKP9EtZ32NGAUQx2qGveo0A,18
+pyDynamicDnsUpdater-1.0.0a9.dist-info/RECORD,,
