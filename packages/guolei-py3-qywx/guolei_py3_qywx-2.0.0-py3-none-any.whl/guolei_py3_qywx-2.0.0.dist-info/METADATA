@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: guolei-py3-qywx
+Version: 2.0.0
+Summary: 企业微信 API
+Home-page: https://github.com/guolei19850528/guolei_py3_qywx
+Author: guolei
+Author-email: 174000902@qq.com
+License: MIT
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: guolei-py3-requests
+Requires-Dist: addict
+Requires-Dist: redis
+Requires-Dist: diskcache
+Requires-Dist: retrying
+Requires-Dist: jsonschema
+
+# guolei-py3-qywx
+
+### a python3 library for qywx
+
+# Example
+
+### webhook api
+
+### [Document](https://developer.work.weixin.qq.com/document/path/91770)
+
+#### 群机器人
+
+```python
+from guolei_py3_qywx.library.webhook import (
+    Api as WebhookApi
+)
+
+webhook_api: WebhookApi = WebhookApi(key="<KEY>")
+
+state: bool = webhook_api.send_text(content="text conent")
+
+```
+
+### sever api
+
+### [Document](https://developer.work.weixin.qq.com/document/path/90664)
+
+```python
+import diskcache
+
+from guolei_py3_qywx.library.server import (
+    Api as ServerApi,
+    UrlsSetting as ServerApiUrlsSetting
+)
+
+server_api: ServerApi = ServerApi(
+    base_url="https://qyapi.weixin.qq.com",
+    corpid="<CORPID>",
+    corpsecret="<CORPSECRET>",
+    agentid="<AGENTID>",
+    cache_instance=diskcache.Cache()
+)
+
+result: dict = server_api.access_token().post(
+    url=ServerApiUrlsSetting.URL__CGI_BIN__MESSAGE__SEND,
+    kwargs={
+        "json": {
+            "agentid": server_api.agentid,
+            "touser": "guolei",
+            "msgtype": "text",
+            "text": {
+                "content": "your content"
+            }
+        }
+    }
+)
+```
