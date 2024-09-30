@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "appium78"
+version = "0.1.0"
+description = "A Python wrapper for Appium"
+authors = ["Frieda.Hu <www778878net@189.cn>"]
+packages = [
+    { include = "www778878net", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Appium-Python-Client = "^2.0.0"
+selenium = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
