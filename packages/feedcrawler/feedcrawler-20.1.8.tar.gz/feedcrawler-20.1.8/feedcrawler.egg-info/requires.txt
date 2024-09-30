@@ -1,0 +1,4 @@
+beautifulsoup4==4.12.3
+bottle==0.13.1
+pycryptodomex==3.20.0
+pystray==0.19.5
