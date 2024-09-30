@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: class_sz_data
+Version: 0.0.2
+Summary: A package to retrieve data from the CLASS-SZ repository
+Author-email: Boris Bolliet <bb667@cam.ac.uk>
+Maintainer-email: Boris Bolliet <bb667@cam.ac.uk>
+Project-URL: homepage, https://github.com/CLASS-SZ/class_sz_data
+Project-URL: repository, https://github.com/CLASS-SZ/class_sz_data
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: requests
+
+# class_sz_data
+data for the class_sz code 
+
+
+to copy the data from the main repo to this repo, run:
+
+```
+python copy_data_from_main_repo.py
+```

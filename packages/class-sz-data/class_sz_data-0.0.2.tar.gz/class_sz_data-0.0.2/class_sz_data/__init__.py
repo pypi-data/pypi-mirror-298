@@ -1,0 +1,1 @@
+from .data_retriever import get_data_from_class_sz_repo
