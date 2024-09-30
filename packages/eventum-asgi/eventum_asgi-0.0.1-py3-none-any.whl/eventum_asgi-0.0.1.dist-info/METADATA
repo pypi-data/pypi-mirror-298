@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: eventum-asgi
+Version: 0.0.1
+Summary: Websockets ASGI framework as simple as it it.
+License: LICENSE.txt
+Author: gaulix
+Author-email: vlnazarenko1199@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: orjson (>=3.10.7,<4.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: uvicorn[standard] (>=0.31.0,<0.32.0)
+Description-Content-Type: text/markdown
+
+
