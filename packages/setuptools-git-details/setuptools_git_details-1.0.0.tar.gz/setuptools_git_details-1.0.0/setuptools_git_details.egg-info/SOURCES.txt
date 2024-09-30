@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setuptools_git_details/__init__.py
+setuptools_git_details/_git.py
+setuptools_git_details/git.py
+setuptools_git_details/logging.py
+setuptools_git_details/main.py
+setuptools_git_details.egg-info/PKG-INFO
+setuptools_git_details.egg-info/SOURCES.txt
+setuptools_git_details.egg-info/dependency_links.txt
+setuptools_git_details.egg-info/entry_points.txt
+setuptools_git_details.egg-info/requires.txt
+setuptools_git_details.egg-info/top_level.txt
+tests/test_git.py
+tests/test_logging.py
+tests/test_main.py

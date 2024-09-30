@@ -1,0 +1,58 @@
+[project]
+name = "setuptools-git-details"
+version = "1.0.0"
+description = "A setuptools package to add details from git to your project."
+readme = "README.md"
+authors = [
+    {name = "Marc Carré", email = "carre.marc@gmail.com"}
+]
+license = {file = "LICENSE.txt"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Version Control",
+    "Topic :: System :: Software Distribution",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "setuptools>=75.1.0",
+    'tomli>=2.0.1; python_version < "3.11"',
+]
+
+[project.urls]
+Homepage = "https://github.com/marccarre/setuptools-git-details"
+Documentation = "https://github.com/marccarre/setuptools-git-details"
+Repository = "https://github.com/marccarre/setuptools-git-details.git"
+Issues = "https://github.com/marccarre/setuptools-git-details/issues"
+Changelog = "https://github.com/marccarre/setuptools-git-details/blob/main/CHANGELOG.md"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.3",
+    "pytest-cov>=5.0.0",
+]
+
+[project.entry-points."distutils.setup_keywords"]
+setuptools_git_details = "setuptools_git_details:setup_keywords"
+
+[project.entry-points."setuptools.finalize_distribution_options"]
+setuptools_git_details = "setuptools_git_details:finalize_distribution_options"
+
+[project.scripts]
+setuptools_git_details = "setuptools_git_details:main"
+
+[tool.setuptools]
+packages = ["setuptools_git_details"]
+
+[tool.setuptools-git-details]
+write_to = "setuptools_git_details/_git.py"
