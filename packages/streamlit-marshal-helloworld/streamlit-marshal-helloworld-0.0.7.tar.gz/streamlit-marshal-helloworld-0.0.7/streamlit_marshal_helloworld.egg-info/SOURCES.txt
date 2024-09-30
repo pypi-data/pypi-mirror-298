@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+streamlit_marshal_helloworld/__init__.py
+streamlit_marshal_helloworld/build.py
+streamlit_marshal_helloworld/pypi_readme.md
+streamlit_marshal_helloworld.egg-info/PKG-INFO
+streamlit_marshal_helloworld.egg-info/SOURCES.txt
+streamlit_marshal_helloworld.egg-info/dependency_links.txt
+streamlit_marshal_helloworld.egg-info/requires.txt
+streamlit_marshal_helloworld.egg-info/top_level.txt
+streamlit_marshal_helloworld/frontend/dist/index.html
+streamlit_marshal_helloworld/frontend/dist/vite.svg
+streamlit_marshal_helloworld/frontend/dist/assets/index-CiUi6YWB.js

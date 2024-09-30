@@ -1,0 +1,2 @@
+recursive-include streamlit_marshal_helloworld/frontend/dist *
+include streamlit_marshal_helloworld/pypi_readme.md
