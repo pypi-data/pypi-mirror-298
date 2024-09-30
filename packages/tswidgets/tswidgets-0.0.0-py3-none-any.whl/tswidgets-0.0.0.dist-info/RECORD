@@ -1,0 +1,8 @@
+tswidgets/__init__.py,sha256=6XMy-tFfuBbw4zv7Ms-mMkezj7UNzQEngQX7MGxYzNM,372
+tswidgets/utils.py,sha256=3PrH4Y4EgmOHNEQXIvrPmEFgOQ7ETRuiUTMwKSBwUZ0,6063
+tswidgets/datasets/__init__.py,sha256=48oTdL2yPfVHXdyvo_RhncVtBIGLTV9oltd6h7ajyGo,66
+tswidgets/datasets/load_dataset.py,sha256=7iDfIStnynxx8DKWcznzennKvXijkUl7NolSoTKphe8,476
+tswidgets-0.0.0.dist-info/METADATA,sha256=HyJVzysmvppcvIIV_RwlEm17owHr4LWzLybYSpu3eLw,372
+tswidgets-0.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tswidgets-0.0.0.dist-info/top_level.txt,sha256=AEe7fuOy-hNzk4JA68GtIPyrWdAiUDG8JXLxPxgkRh8,10
+tswidgets-0.0.0.dist-info/RECORD,,
