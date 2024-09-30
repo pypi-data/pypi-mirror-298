@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/silero_vad_lite/__init__.py
+src/silero_vad_lite/silero_vad.py
+src/silero_vad_lite.egg-info/PKG-INFO
+src/silero_vad_lite.egg-info/SOURCES.txt
+src/silero_vad_lite.egg-info/dependency_links.txt
+src/silero_vad_lite.egg-info/requires.txt
+src/silero_vad_lite.egg-info/top_level.txt
+src/silero_vad_lite/data/silero_vad.onnx
+tests/test_silero_vad.py
