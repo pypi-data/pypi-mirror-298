@@ -1,0 +1,2 @@
+[console_scripts]
+ollama-rag = ollama_rag.ollama_rag:OllamaRAG.main
