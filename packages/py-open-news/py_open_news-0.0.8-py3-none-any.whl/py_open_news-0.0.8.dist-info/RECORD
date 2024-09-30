@@ -1,0 +1,16 @@
+open_news/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+open_news/google/__init__.py,sha256=x6zAN8k-e2J13KY_tjBtQQKA1pJqP8BueDcLjqnpm9Q,850
+open_news/google/_parser.py,sha256=nL07sCtVaQdVRBlJarJQ9yoE5R0c_-j5h-ST5uRmQZ8,3772
+open_news/google/article.py,sha256=Bbm_bFNlnoq5m1gWcLZ-Q1HRzwS_arHGHybB2oc4TUs,293
+open_news/google/constant.py,sha256=zXgkg4twCiSLDxLFRGdFFb3Aoe_CmrShNDjPgfVwq88,251
+open_news/google/feed/__init__.py,sha256=Cc-YIH_6Jch8MLwrXqBjUx518IDSY3WxhLMhVk-fW9g,936
+open_news/google/feed/_util.py,sha256=zJzWWzeDbb7wom7eFi9TfA-f1yVXdoLgrEyFHPgZyXQ,439
+open_news/google/feed/article.py,sha256=S9mFlrW_CwgketdvmUN5CU7EFpBY6bgjH1j8Ec8dQds,2818
+open_news/google/feed/channel.py,sha256=r-EFKlY5yfsfBjYs-aZdcWtzy06I-cXBWvlgGDusoc8,695
+open_news/google/feed/exception.py,sha256=yJFBHNqxMoCThBKTvgap_peFP1eXbspHEPXeGynWO3c,54
+open_news/google/feed/item.py,sha256=mNEnC3pFYqmgKsxec38Ok09MaBEOeUpN-QBCV3dAalw,1917
+py_open_news-0.0.8.dist-info/LICENSE,sha256=pKSrZSGZ6o3S5y6YpRPUPSgem3-DMpwy5uAzaZf0u0A,1071
+py_open_news-0.0.8.dist-info/METADATA,sha256=L9Fhx6uNy0YUMg4EvT4Ql28c9X0w6IL4sAvCfuu5qa0,2598
+py_open_news-0.0.8.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+py_open_news-0.0.8.dist-info/top_level.txt,sha256=ZcI-TophiLoPy0IjHL3VF9vFVoz-QwQ7i7fGwpN6xCQ,10
+py_open_news-0.0.8.dist-info/RECORD,,
