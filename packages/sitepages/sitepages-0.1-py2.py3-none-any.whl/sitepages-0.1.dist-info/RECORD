@@ -1,0 +1,11 @@
+sitepages/__init__.py,sha256=UOfOS_q4pceotrzK0Af3w8WaDwlpy8vO9o5zNy-5tLs,90
+sitepages/attribute.py,sha256=Hkg9C3RtbjEK2KQuoAd1fdImWG7zpPhnQkH3-DFwFPk,369
+sitepages/command.py,sha256=hWO5fMYERIZVEAIa3PE2GCypTkyxWzyhW5cT7fvSvMg,1103
+sitepages/sites.py,sha256=QoQ_2wfKu0e9z5GYeM5aTUvTMmBkMuu5EhTz-GCiYTA,1753
+sitepages-0.1.dist-info/LICENSE,sha256=SEyEiJZUJAjBfi4RqJb-Rw5ASZRy_23INDNykKFdKMg,1064
+sitepages-0.1.dist-info/METADATA,sha256=DZfYCu6SHy1RIWc9Lf_Zx7lG001squDKOPMK5vZ2UwU,704
+sitepages-0.1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+sitepages-0.1.dist-info/entry_points.txt,sha256=56SqDDCcDgoAErsjK7qBcLKJ3FbGwdQfw9ZQyGs7hIw,49
+sitepages-0.1.dist-info/top_level.txt,sha256=ZVT5Rc46LMxr4ZDOmgK1i7Pv5mSGbYhwy9ETvrsHtck,10
+sitepages-0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sitepages-0.1.dist-info/RECORD,,
