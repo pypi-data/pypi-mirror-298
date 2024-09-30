@@ -1,0 +1,144 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+# This workflow will build a package using Gradle and then publish it to GitHub packages when a release is created
+# For more information see: https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#Publishing-using-gradle
+
+name: Publish KMP with Gradle
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  create_staging_repository:
+    runs-on: ubuntu-latest
+    name: Create staging repository
+    outputs:
+      repository_id: ${{ steps.create.outputs.repository_id }}
+    steps:
+      - id: create
+        uses: nexus-actions/create-nexus-staging-repo@main
+        with:
+          username: ${{ secrets.OSSRH_USERNAME }}
+          password: ${{ secrets.OSSRH_PASSWORD }}
+          staging_profile_id: ${{ secrets.OSSRH_PROFILE_ID }}
+          description: ${{ github.repository }}/gradle-publish#${{ github.run_number }}
+          base_url: https://s01.oss.sonatype.org/service/local/
+
+  publish:
+    strategy:
+      matrix:
+        os: [ macos-latest, windows-latest, ubuntu-latest ]
+
+    runs-on: ${{ matrix.os }}
+    needs: [create_staging_repository]
+    permissions:
+      contents: read
+      packages: write
+
+    env:
+      OSSRH_USERNAME: ${{ secrets.OSSRH_USERNAME }}
+      OSSRH_PASSWORD: ${{ secrets.OSSRH_PASSWORD }}
+      OSSRH_REPOSITORY_ID: ${{ needs.create_staging_repository.outputs.repository_id }}
+      SIGNING_KEY_ID: ${{ secrets.SIGNING_KEYID }}
+      SIGNING_PASSWORD: ${{ secrets.SIGNING_PASSWORD }}
+      SIGNING_SECRET_KEY_RING_FILE: secret_ring.gpg
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup Java JDK
+      uses: actions/setup-java@v3
+      with:
+        distribution: temurin
+        java-version: 17
+        cache: 'gradle'
+
+    - name: Cache Kotlin/Native compiler
+      id: cache-konan
+      uses: actions/cache@v3
+      with:
+        path: ~/.konan
+        key: ${{ runner.os }}-konan
+          
+    - name: Decode secret_ring.gpg
+      shell: bash
+      env:
+        SIGNING_SECRET_KEY_RING_BASE64: ${{ secrets.SIGNING_SECRET_KEY_RING_BASE64 }}
+      run: |
+        echo $SIGNING_SECRET_KEY_RING_BASE64 | base64 --decode > $SIGNING_SECRET_KEY_RING_FILE
+
+    - name: Publish
+      if: ${{ matrix.os == 'macos-latest' }}
+      run: |
+        ./gradlew publishAllPublicationsToSonatypeRepository
+
+    - name: Publish (linuxX64 only)
+      if: ${{ matrix.os == 'ubuntu-latest' }}
+      run: |
+        ./gradlew publishLinuxX64PublicationToSonatypeRepository
+
+    - name: Publish (mingwX64 only)
+      if: ${{ matrix.os == 'windows-latest' }}
+      run: |
+        ./gradlew publishMingwX64PublicationToSonatypeRepository
+
+  publish_npm:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v4
+        name: Set up Node.js
+        with:
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Setup Java JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: 'gradle'
+
+      - name: Cache Kotlin/Native compiler
+        id: cache-konan
+        uses: actions/cache@v3
+        with:
+          path: ~/.konan
+          key: ${{ runner.os }}-konan
+
+      - name: Publish mahjong-utils-entry for JS/WASM
+        run: |
+          ./gradlew publishJsPackageToNpmjsRegistry
+          ./gradlew publishWasmJsPackageToNpmjsRegistry
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  finalize:
+    runs-on: ubuntu-latest
+    needs: [create_staging_repository, publish, publish_npm]
+    if: ${{ always() && needs.create_staging_repository.result == 'success' }}
+    steps:
+      - name: Discard
+        if: ${{ needs.publish.result != 'success' || needs.publish_npm.result != 'success' }}
+        uses: nexus-actions/drop-nexus-staging-repo@main
+        with:
+          username: ${{ secrets.OSSRH_USERNAME }}
+          password: ${{ secrets.OSSRH_PASSWORD }}
+          staging_repository_id: ${{ needs.create_staging_repository.outputs.repository_id }}
+          base_url: https://s01.oss.sonatype.org/service/local/
+      - name: Release
+        if: ${{ needs.publish.result == 'success' && needs.publish_npm.result == 'success' }}
+        uses: nexus-actions/release-nexus-staging-repo@main
+        with:
+          username: ${{ secrets.OSSRH_USERNAME }}
+          password: ${{ secrets.OSSRH_PASSWORD }}
+          staging_repository_id: ${{ needs.create_staging_repository.outputs.repository_id }}
+          base_url: https://s01.oss.sonatype.org/service/local/
