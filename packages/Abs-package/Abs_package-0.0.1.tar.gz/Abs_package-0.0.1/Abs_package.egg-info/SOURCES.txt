@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+Abs_package.egg-info/PKG-INFO
+Abs_package.egg-info/SOURCES.txt
+Abs_package.egg-info/dependency_links.txt
+Abs_package.egg-info/top_level.txt

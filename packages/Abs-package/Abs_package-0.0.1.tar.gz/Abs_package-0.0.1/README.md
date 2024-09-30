@@ -1,0 +1,171 @@
+# Abstraction Metrics Calculator
+
+This package provides a Streamlit-based application to compute **Harmonic Abstraction** and **Rouge Complement Abstraction** metrics for text summarization tasks. It processes JSON files containing documents, reference summaries, and model-generated summaries, and returns detailed metric analysis including ROUGE complements and various abstraction ratios.
+
+## Features
+
+- Calculate **Harmonic Abstraction** based on the input text, reference summary, and model-generated summary.
+- Compute **ROUGE Complement Abstraction** for ROUGE-1, ROUGE-2, and ROUGE-L scores.
+- Calculate **Reference Abstraction (RA)**, **Summary Abstraction (SA)**, and **Abstraction Ratio (AR)**.
+- Calculate additional metrics such as **Length Ratios** and **Weighted Overlaps**.
+- Process multiple entries from a JSON file.
+- Generate downloadable CSV reports for further analysis.
+
+## Installation
+
+1. Install the required dependencies using the following commands:
+
+   ```
+   pip install streamlit
+   pip install pandas
+   pip install rouge
+   ```
+
+## Usage
+
+1. Run the Streamlit app with the following command:
+
+   ```bash
+   streamlit run app.py
+   ```
+
+2. Upload a JSON file in the format:
+
+   ```json
+   [
+     {
+       "Index": 0,
+       "Document": "The input text for the summarization task...",
+       "Summary": "The reference summary...",
+       "Models": {
+         "model_name_1": "Generated summary by model 1",
+         "model_name_2": "Generated summary by model 2"
+       }
+     }
+   ]
+   ```
+
+# Usage
+
+Once the package is installed, you can access all the functionalities it provides. Below is a guide to the available functions and how to use them.
+
+To use the functions provided in this package, you need to import them from the respective modules based on your use case (single text processing or large text processing). Here’s a guide on how to access each functionality.
+
+# single text processing
+
+from Abs_harmonic_single.Abs_harmonic import (
+calculate_ra,
+calculate_sa,
+calculate_ar,
+abs_Harmonic,
+abs_rouge_complement
+)
+
+input_text = "This is the original text."
+reference = "This is a summary of the original text."
+generated_summary = "This is the generated summary."
+
+# Calculate Harmonic Abstraction
+
+harmonic_result = abs_Harmonic(input_text, reference, generated_summary)
+print(f"Harmonic Abstraction: {harmonic_result}")
+
+# Calculate Rouge Complement Abstraction
+
+ra_complement, sa_complement = abs_rouge_complement(input_text, reference, generated_summary)
+print(f"Rouge Complement Abstraction (RA): {ra_complement}")
+print(f"Rouge Complement Abstraction (SA): {sa_complement}")
+
+In Abs_harmonic_single.Abs_harmonic
+
+1. tokenize_text(text)
+   Tokenizes the input text into individual words.
+   Parameters:
+   text (str): The input text.
+   Returns: A list of words in the text.
+2. calculate_overlap(text1, text2)
+   Calculates the overlap (intersection) of unique words between two pieces of text.
+   Parameters:
+   text1 (str): The first text (e.g., input text).
+   text2 (str): The second text (e.g., reference or generated summary).
+   Returns: The count of common words between the two texts.
+3. calculate_ra(reference, input_text, overlap)
+   Calculates the Reference Abstraction (RA) score.
+   Parameters:
+   reference (str): The reference summary.
+   input_text (str): The input text.
+   overlap (int): The overlap count between reference and input_text.
+   Returns: The calculated RA score.
+4. calculate_sa(summary, input_text, overlap)
+   Calculates the Summary Abstraction (SA) score.
+   Parameters:
+   summary (str): The generated summary.
+   input_text (str): The input text.
+   overlap (int): The overlap count between summary and input_text.
+   Returns: The calculated SA score.
+5. calculate_ar(ra, sa)
+   Calculates the Abstraction Ratio (AR) as the ratio of SA to RA.
+   Parameters:
+   ra (float): The Reference Abstraction (RA) value.
+   sa (float): The Summary Abstraction (SA) value.
+   Returns: The AR value.
+6. abs_Harmonic(input_text, reference, generated_summary)
+   Calculates the Harmonic Abstraction score using the RA and SA values derived from the input text, reference summary, and generated summary.
+   Parameters:
+   input_text (str): The original input text.
+   reference (str): The reference summary.
+   generated_summary (str): The generated summary.
+   Returns: The harmonic abstraction score.
+7. abs_rouge_complement(input_text, reference, generated_summary)
+   Calculates the Rouge Complement Abstraction by combining the RA, SA values and the Rouge Complement score.
+   Parameters:
+   input_text (str): The original input text.
+   reference (str): The reference summary.
+   generated_summary (str): The generated summary.
+   Returns: A tuple containing the Rouge Complement Abstraction values for RA and SA.
+
+# For large data sets: (Access the below package)
+
+from Abs_harmonic_large_process.Abs_harmonic_large_v2
+
+8. Click **Process Data** to calculate Harmonic Abstraction, Rouge Complement Abstraction, and other metrics for each model's generated summary.
+
+9. Download the processed results in CSV format.
+
+## Metrics
+
+- **Harmonic Abstraction (RA, SA, AR):**
+
+  - Measures abstraction based on overlap between the input text, reference summary, and model-generated summary.
+  - Calculates Reference Abstraction (RA), Summary Abstraction (SA), and Abstraction Ratio (AR).
+
+- **Rouge Complement Abstraction:**
+
+  - Complements of ROUGE-1, ROUGE-2, and ROUGE-L scores for each model-generated summary.
+
+- **Length Ratios:**
+
+  - Normalized ratio of lengths between input text and reference summary, as well as input text and generated summary.
+
+- **Weighted Overlap:**
+  - Frequency-based overlap between tokens in the input text, reference summary, and generated summary.
+
+## Example
+
+After running the application, you can upload a JSON file, calculate metrics, and download the results as a CSV file.
+
+The output file will include metrics such as:
+
+- Harmonic Abstraction (RA, SA, AR)
+- Rouge1 Complement RA/SA/AR
+- Rouge2 Complement RA/SA/AR
+- RougeL Complement RA/SA/AR
+- Length Ratios and Weighted Overlaps
+
+# To access our research paper please click below:
+
+https://drive.google.com/file/d/1_tnkzaMYOuFWWf31OdYjldfZG1XSdkcb/view?usp=sharing
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
