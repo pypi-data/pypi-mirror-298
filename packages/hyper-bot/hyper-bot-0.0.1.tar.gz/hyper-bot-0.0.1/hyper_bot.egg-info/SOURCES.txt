@@ -1,0 +1,8 @@
+setup.py
+cfgr/__init__.py
+cfgr/manager.py
+cfgr/reader.py
+hyper_bot.egg-info/PKG-INFO
+hyper_bot.egg-info/SOURCES.txt
+hyper_bot.egg-info/dependency_links.txt
+hyper_bot.egg-info/top_level.txt
