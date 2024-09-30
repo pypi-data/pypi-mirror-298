@@ -1,0 +1,10 @@
+README.md
+setup.py
+netezza_import/__init__.py
+netezza_import/main.py
+netezza_import.egg-info/PKG-INFO
+netezza_import.egg-info/SOURCES.txt
+netezza_import.egg-info/dependency_links.txt
+netezza_import.egg-info/entry_points.txt
+netezza_import.egg-info/requires.txt
+netezza_import.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+nz_csv_pipe = netezza_import:main
