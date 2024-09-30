@@ -1,0 +1,10 @@
+requests
+pytubefix>=7.1.3
+yt-dlp>=2024.9.27
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[dev]
+ruff
+build
