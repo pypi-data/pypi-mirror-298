@@ -1,0 +1,11 @@
+tswidgets/__init__.py,sha256=6XMy-tFfuBbw4zv7Ms-mMkezj7UNzQEngQX7MGxYzNM,372
+tswidgets/utils.py,sha256=3PrH4Y4EgmOHNEQXIvrPmEFgOQ7ETRuiUTMwKSBwUZ0,6063
+tswidgets/datasets/__init__.py,sha256=48oTdL2yPfVHXdyvo_RhncVtBIGLTV9oltd6h7ajyGo,66
+tswidgets/datasets/enders.pkl,sha256=NJwpQ_OapGvVbg4suE5JubrAg30HHFoMbBEYz69z1gQ,506283
+tswidgets/datasets/hyndman.pkl,sha256=4CfbnX5OuzQ2QYJru30mrcAR73NBc5LkiGJY1BVc_3M,21327895
+tswidgets/datasets/levendis.pkl,sha256=CAUu_B4dYGAOe667t8lcEkzfaGQbOZR5atjX9Gy012c,2979748
+tswidgets/datasets/load_dataset.py,sha256=Lt8ZukFD-sINIx6qOBsdtwobVkDKfHPGJ9nCxwp-d6g,651
+tswidgets-0.0.1.dist-info/METADATA,sha256=rYOUIVA8ftrfzTA1GpuH4w_5HjqK8MgBXBJAvp9YTXM,372
+tswidgets-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tswidgets-0.0.1.dist-info/top_level.txt,sha256=AEe7fuOy-hNzk4JA68GtIPyrWdAiUDG8JXLxPxgkRh8,10
+tswidgets-0.0.1.dist-info/RECORD,,
