@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pii-scanner
+Version: 0.1.2
+Summary: A library for scanning Personally Identifiable Information (PII).
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: unstructured==0.15.5
+Requires-Dist: presidio-analyzer==2.2.32
+
+UNKNOWN
+
