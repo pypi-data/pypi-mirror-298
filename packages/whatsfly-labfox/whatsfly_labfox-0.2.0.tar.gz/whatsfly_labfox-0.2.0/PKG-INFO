@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: whatsfly_labfox
+Version: 0.2.0
+Summary: Whatsapp Web wrapper in Python, without webdrivers
+Home-page: https://whatsfly.labfox.fr
+Author: David Arnold
+Author-email: Doy Bachtiar <adityabachtiar996@gmail.com>, Labfox <consockbind@gmail.com>, Otamay <mauricio@ulisse.io>, Ivo Bellin Salarin <ivo@nilleb.com>
+License: MIT License
+        
+        Copyright (c) 2023 Doy Bachtiar, Otamay, David Arnold, LabFox, Ivo Bellin Salarin
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/Labfox/whatsfly
+Project-URL: Issues, https://github.com/Labfox/whatsfly/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: types-pyyaml
+Requires-Dist: setuptools
+Requires-Dist: requests
+Requires-Dist: qrcode
+Requires-Dist: protobuf
+
+# WhatsFly
+[![Build](https://github.com/Labfox/whatsfly/actions/workflows/build.yml/badge.svg)](https://github.com/Labfox/whatsfly/actions/workflows/build.yml)
+## Just run and have fun. Just try and go fly. 
+
+# Warning ! The main branch is currently in restructuration, a lot of changes will happend, breaking backwards compatibility, until 1.0.0
+
+WhatsApp web wrapper in Python. No selenium nor gecko web driver needed. 
+
+Setting up browser driver is tricky for python newcomers, and thus it makes your code so 'laggy' while using lots of ram.
+
+## Documentation
+
+https://whatsfly.labfox.fr
+
+## Supported machines
+
+The library theoretically support every machine with go and cgo, but if the builds fails on your machine, there are pre-built binaries auto-downloaded for the following architectures:
+
+| Architecture  | Status |
+| ------------- | ------------- |
+| Linux amd64  | ✅ |
+| Linux ARM64  | GH Worlflow error |
+| Linux 686  | GH Worlflow error  |
+| Linux 386  | GH Worlflow error   |
+| Windows amd64  | GH Worlflow error  |
+| Windows 32 bit  | GH Worlflow error  |
+| OSX arm64  | ✅ |
+| OSX amd64  | ✅ |
+
+## Contributing
+> If you'd like to support my work, please consider making a pull request to help fix any issues with the code.
+> I would like to extend my gratitude to the open-source developers behind tls-client, tiktoken, and whatsmeow. Their work has inspired me greatly and helped me to create this project.
