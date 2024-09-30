@@ -1,0 +1,30 @@
+[project]
+name = "garagedoor_service"
+version = "0.1.0"
+description = "Garagedoor Service to drive a Chamberlain-style garage door opener using a Raspberry Pi" 
+authors = [
+    {name = "Dusty Lefevre", email = "dusty.lefevre@gmail.com"},
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = "==3.12.*"
+
+dependencies = [
+    "fastapi>=0.112.2",
+    "rpi-gpio>=0.7.1",
+    "bcrypt>=4.2.0",
+]
+
+[project.scripts]
+garagedoor-service = "garagedoor_service.main:main"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.scripts]
+dev = "fastapi dev garagedoor_service/app.py"
+
+[tool.pdm.dev-dependencies]
+development = [
+    "fastapi[standard]>=0.112.2",
+]
