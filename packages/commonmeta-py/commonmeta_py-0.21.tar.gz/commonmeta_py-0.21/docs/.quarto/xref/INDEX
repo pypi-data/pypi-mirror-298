@@ -1,0 +1,82 @@
+{
+  "writers/commonmeta_writer.ipynb": {
+    "commonmeta_writer.html": "865bbcbf"
+  },
+  "writers/bibtex_writer.ipynb": {
+    "bibtex_writer.html": "a0d81684"
+  },
+  "writers/citation_writer.ipynb": {
+    "citation_writer.html": "aec1232c",
+    "citation_writer.out.ipynb": "4f20cda4",
+    "citation_writer-preview.html": "1faeef3c"
+  },
+  "writers/ris_writer.ipynb": {
+    "ris_writer.html": "37babf0c"
+  },
+  "writers/csl_writer.ipynb": {
+    "csl_writer.html": "69d5a287"
+  },
+  "index.qmd": {
+    "index.html": "8157fa69"
+  },
+  "about.qmd": {
+    "about.html": "8c405949"
+  },
+  "metadata.md": {
+    "metadata.html": "47758bac"
+  },
+  "index.md": {
+    "index.html": "f812800f"
+  },
+  "readers/cff_reader.ipynb": {
+    "cff_reader.html": "215c909e"
+  },
+  "readers/datacite_reader.ipynb": {
+    "datacite_reader.html": "881794db"
+  },
+  "readers/schema_org_reader.ipynb": {
+    "schema_org_reader.html": "63a25eca"
+  },
+  "readers/crossref_reader.ipynb": {
+    "crossref_reader.html": "8dff600d"
+  },
+  "readers/crossref_xml_reader.ipynb": {
+    "crossref_xml_reader.html": "1ada7a4d"
+  },
+  "reference/index.qmd": {
+    "index.html": "5f0cb144"
+  },
+  "installation.qmd": {
+    "installation.html": "07ee3f98"
+  },
+  "examples.qmd": {
+    "examples.html": "93136bcf"
+  },
+  "examples/commonmeta_writer.ipynb": {
+    "commonmeta_writer.html": "1e7679b5"
+  },
+  "examples/cff_reader.ipynb": {
+    "cff_reader.html": "c8bfb0af"
+  },
+  "examples/bibtex_writer.ipynb": {
+    "bibtex_writer.html": "74bdd512"
+  },
+  "examples/datacite_reader.ipynb": {
+    "datacite_reader.html": "fd09fdd3"
+  },
+  "examples/schema_org_reader.ipynb": {
+    "schema_org_reader.html": "681e249a"
+  },
+  "examples/citation_writer.ipynb": {
+    "citation_writer.html": "e04dc8d0"
+  },
+  "examples/crossref_reader.ipynb": {
+    "crossref_reader.html": "8ffa3f9e"
+  },
+  "examples/crossref_xml_reader.ipynb": {
+    "crossref_xml_reader.html": "0a8010f6"
+  },
+  "cli.qmd": {
+    "cli.html": "84aea158"
+  }
+}
