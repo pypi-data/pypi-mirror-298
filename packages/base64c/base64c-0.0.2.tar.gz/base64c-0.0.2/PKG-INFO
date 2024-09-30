@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: base64c
+Version: 0.0.2
+Summary: Fast Base64 encoding/decoding with SSE2 and VSX optimizations
+Author: obahamonde
+Author-email: oscar.bahamonde@indiecloud.co
+Requires-Python: >=3.8.0,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: setuptools (>=75.1.0,<76.0.0)
+Description-Content-Type: text/markdown
+
+# Base64C
+
+A faster base64 encoding/decoding library for Python, implemented in C with SSSE3 and VSX optimizations.
+
+## Installation
+
+```bash
+pip install base64c
+```
+
+## Usage
+
+```python
+
+from base64c import b64encode, b64decode
+
+print(b64encode(b"Hello, World!"))
+print(b64decode(b64encode(b"Hello, World!")))
+```
+
+## License
+
+MIT
+
+## Performance
+
+* 3-24x faster than the stdlib `base64` module.
+* Performance increases with input size.
+* Tested across different types and sizes of inputs.
+
+<br>
+
+![Table](assets/table.png)
+![Chart](assets/chart.png)
