@@ -1,0 +1,28 @@
+Name: ATLAS_STDM_2018_55
+Year: 2024
+Summary: $p_T^\text{miss}$+jets cross-sections and ratios at 13 TeV
+Experiment: ATLAS
+Collider: LHC
+InspireID: 2765017
+Status: UNVALIDATED
+Authors:
+ - Christian Gutschow <chris.g@cern.ch>
+ - Yoran Yeh <yoran.yeh@cern.ch>
+References:
+ - stdm-2018-55
+Keywords:
+ - met
+ - jets
+ - zboson
+ - wboson
+ - vjets
+RunInfo:
+  pp -> l l + jets (l = e, mu, nu) at 13 TeV
+Luminosity_fb: 140
+Beams: [p+, p+]
+Energies: [13000]
+PtCuts: [200]
+Options:
+- MODE=EXTRAPOLATE
+Description: '
+Draft version for internal studies.'

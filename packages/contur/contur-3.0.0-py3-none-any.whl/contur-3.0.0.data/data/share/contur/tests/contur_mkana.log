@@ -1,0 +1,1138 @@
+INFO - Contur version 3.0.0.beta
+INFO - See https://hepcedar.gitlab.io/contur-webpage/
+INFO - Generated num of events: 30000
+INFO - No keyboard input. Assuming the answer is yes!
+INFO - Copying /Users/jonbutterworth/gitstuff/contur-dev/contur_user/13TeV.ana to /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/13TeV.ana
+INFO - Contur will prepare jobs for these beams:
+INFO - - 13TeV
+INFO - No run block in sources/param_file.dat. Will use environment variables
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0003/runpoint_0003.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0004/runpoint_0004.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0005/runpoint_0005.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0002/runpoint_0002.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0011/runpoint_0011.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0010/runpoint_0010.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0007/runpoint_0007.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0000/runpoint_0000.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0009/runpoint_0009.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0008/runpoint_0008.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0001/runpoint_0001.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0006/runpoint_0006.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0015/runpoint_0015.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0012/runpoint_0012.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0013/runpoint_0013.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0014/runpoint_0014.sh 
+INFO - Contur version 3.0.0.beta
+INFO - See https://hepcedar.gitlab.io/contur-webpage/
+INFO - Performing SM test 
+Contur is running in /Users/jonbutterworth/gitstuff/contur-dev/tests 
+Theory uncertainties assumed uncorrelated. 
+
+INFO - SM plotting scripts will be written to /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests
+INFO - Comparing ATLAS_2019_I1720442 to Sherpa+NLO EW
+INFO - Comparing ATLAS_2021_I1849535 to Sherpa+NLO EW
+INFO - Comparing ATLAS_2021_I1887997 to NNLOJet
+INFO - Comparing ATLAS_2021_I1887997 to Sherpa
+INFO - Comparing ATLAS_2017_I1645627 to NNLO QCD arXiv:1904.01044
+INFO - Comparing ATLAS_2019_I1772071 to Sherpa NLO
+INFO - Comparing ATLAS_2022_I2023464 to gg->H default MC + XH
+INFO - Comparing ATLAS_2018_I1698006:LVETO=ON to NNLO MCFM
+INFO - Comparing ATLAS_2019_I1725190 to Background fit
+INFO - Comparing ATLAS_2018_I1634970 to Powheg
+INFO - Comparing ATLAS_2019_I1734263 to NNLO(qq)+NLO(gg)xNLO(EW)
+INFO - Comparing ATLAS_2019_I1718132:LMODE=ELMU to MADGRAPH5_aMC+Pythia and Powheg
+INFO - Comparing ATLAS_2021_I1852328 to MATRIX nNNLO x NLO EW
+INFO - Comparing ATLAS_2019_I1759875 to PowhegBoxZpWp
+INFO - Comparing ATLAS_2018_I1707015:LMODE=DILEPTON to MG5_aMC + Pythia8
+INFO - Comparing ATLAS_2017_I1627873 to SHERPA(QCD+Zjj)+POWHEG(EW-Zjj)
+INFO - Comparing ATLAS_2017_I1627873 to MG5_aMC(QCD+Zjj)+POWHEG(EW-Zjj)
+INFO - Comparing ATLAS_2017_I1627873 to ALPGEN(QCD+Zjj)+POWHEG(EW-Zjj)
+INFO - Comparing ATLAS_2022_I2077570 to Sherpa 2.2.11
+INFO - Comparing ATLAS_2020_I1788444 to Sherpa 5FNS (NLO)
+INFO - Comparing ATLAS_2020_I1788444 to MGaMC+Py8 Zbb 4FNS (NLO)
+INFO - Comparing ATLAS_2020_I1788444 to MGaMC+Py8 5FNS (NLO)
+INFO - Comparing ATLAS_2020_I1788444 to Sherpa Zbb 4FNS (NLO)
+INFO - Comparing ATLAS_2020_I1788444 to Sherpa Fusing 4FNS+5FNS (NLO)
+INFO - Comparing ATLAS_2019_I1718132:LMODE=ELEL to MADGRAPH5_aMC+Pythia and Sherpa2.1.1
+INFO - Comparing ATLAS_2019_I1718132:LMODE=MUMU to MADGRAPH5_aMC+Pythia and Sherpa2.1.1
+INFO - Comparing ATLAS_2019_I1764342 to Sherpa NLO (2)
+INFO - Comparing ATLAS_2019_I1764342 to Sherpa NLO
+INFO - Comparing ATLAS_2022_I2593322 to SHERPA 2.2.10
+INFO - Comparing ATLAS_2022_I2593322 to MadGraph5_aMC@NLO 2.7.3 
+INFO - Comparing ATLAS_2022_I2614196 to MATRIX NNLO
+WARNING - ATLAS_13_LL_GAMMA, ATLAS_2022_I2614196/d05-x01-y01 prediction D has nan p-value
+INFO - Comparing ATLAS_2022_I2614196 to MiNNLO_PS
+INFO - Comparing ATLAS_2022_I2614196 to MadGraph5_aMC@NLO
+INFO - Comparing ATLAS_2022_I2614196 to Sherpa 2.2.11
+INFO - Comparing ATLAS_2022_I2614196 to Sherpa 2.2.4
+INFO - Comparing ATLAS_2017_I1614149 to PowhegBoxZpWp
+INFO - Comparing ATLAS_2019_I1750330:TYPE=BOTH to PowhegBoxZpWp
+INFO - Comparing ATLAS_2022_I2037744 to Powheg + Pythia 8
+INFO - Comparing ATLAS_2018_I1656578 to PowhegBoxZpWp
+INFO - Comparing ATLAS_2018_I1705857 to POWHEG+PYTHIA8
+INFO - Comparing ATLAS_2018_I1707015:LMODE=SINGLE to MG5_aMC + Pythia8
+INFO - Comparing ATLAS_2017_I1609448 to SM (Sherpa $\times$ NNLO)
+INFO - Comparing ATLAS_2016_I1458270 to Expected SM events
+INFO - Comparing ATLAS_STDM_2018_55 to Sherpa 2.2.11 QCD V+jets MEPS@NLO
+INFO - Comparing ATLAS_2019_I1738841 to Powheg+Pythia8
+INFO - Comparing ATLAS_2018_I1646686 to PowhegBoxZpWp
+INFO - Comparing ATLAS_2020_I1801434 to POWHEG+Pythia8
+INFO - Comparing ATLAS_2020_I1801434 to POWHEG+Pythia8
+INFO - Comparing ATLAS_2022_I2077575 to POWHEG+Pythia8
+INFO - Comparing ATLAS_2012_I1203852:LMODE=LL to PowhegBox+gg2zz
+INFO - Comparing ATLAS_2012_I1199269 to Catani et al
+INFO - Comparing ATLAS_2012_I1203852:LMODE=LNU to PowhegBox+gg2zz
+INFO - Comparing ATLAS_2016_I1492320:LMODE=3L to MadGraph
+INFO - Comparing ATLAS_2014_I1310835 to Powheg Minlo HJ + non-ggF
+INFO - Comparing ATLAS_2014_I1310835 to HRES + non-ggF
+INFO - Comparing ATLAS_2016_I1494075:LMODE=4L to POWHEG + Pythia
+INFO - Comparing ATLAS_2016_I1457605 to NNLO QCD Chen et al
+INFO - Comparing ATLAS_2017_I1591327 to NNLO QCD
+INFO - Comparing ATLAS_2014_I1306615 to HRES 2.2
+INFO - Comparing ATLAS_2017_I1644367 to MG5_aMC+Py8
+INFO - Comparing ATLAS_2017_I1644367 to MCFM
+INFO - Comparing ATLAS_2016_I1448301:LMODE=NU to MCFM
+INFO - Comparing ATLAS_2016_I1467454:LMODE=EL to FEWZ
+INFO - Comparing ATLAS_2016_I1467454:LMODE=MU to FEWZ
+INFO - Comparing ATLAS_2015_I1394679 to NJet/Sherpa (x 1.0)
+INFO - Comparing ATLAS_2016_I1492320:LMODE=2L2J to MadGraph
+INFO - Comparing ATLAS_2015_I1408516:LMODE=EL to Bizon et al
+INFO - Comparing ATLAS_2015_I1408516:LMODE=MU to Bizon et al
+INFO - Comparing ATLAS_2019_I1744201 to NNLOJet
+INFO - Comparing ATLAS_2019_I1744201 to MCFM 6.8
+INFO - Comparing ATLAS_2016_I1494075:LMODE=2L2NU to POWHEG + Pythia
+INFO - Comparing ATLAS_2016_I1448301:LMODE=LL to NNLO (MMHT2014)
+INFO - Comparing ATLAS_2016_I1448301:LMODE=LL to GKR and MCFM
+INFO - Comparing ATLAS_2016_I1448301:LMODE=LL to GKR and MCFM
+INFO - Comparing ATLAS_2015_I1404878 to PowhegBoxZpWp
+INFO - Comparing ATLAS_2015_I1397637 to PowhegBoxZpWp
+INFO - Comparing ATLAS_2017_I1517194 to POWHEG+Pythia8
+INFO - Comparing ATLAS_2017_I1517194 to HEJ(QCD)+POW+PY(EW)
+INFO - Comparing ATLAS_2017_I1517194 to SHERPA
+INFO - Comparing ATLAS_2018_I1635273:LMODE=EL to SHERPA 2.2.1 NLO
+INFO - Comparing CMS_2020_I1794169 to MADGRAPH5_aMC@NLO+Pythia8 with NLO corr
+INFO - Comparing CMS_2021_I1932460 to Powheg NLO 2to2 + Double-parton scattering
+INFO - Comparing CMS_2022_I2079374 to MG5_aMC(0,1,2j)+PY8
+INFO - Comparing CMS_2019_I1753680:LMODE=EMU to aMC@NLO
+INFO - Comparing CMS_2021_I1866118 to MG5_aMC (NLO) PYTHIA8, CP5 tune
+INFO - Comparing CMS_2016_I1491950 to PowhegBoxZpWp
+INFO - Comparing CMS_2018_I1662081 to PowhegBoxZpWp
+INFO - Comparing CMS_2018_I1663958 to PowhegBoxZpWp
+INFO - Comparing CMS_2019_I1753720 to MADGRAPH5 aMC@NLO (5FS tt+jets, FxFx)
+INFO - Comparing CMS_2019_I1764472 to PowhegBoxZpWp
+INFO - Comparing CMS_2021_I1963239 to Pythia8 4C
+INFO - Comparing CMS_2021_I1963239 to HERWIG++ EE3C
+INFO - Comparing CMS_2021_I1963239 to HEJ+ARIADNE
+INFO - Comparing CMS_2021_I1963239 to POWHEG+PYTHIA8
+INFO - Comparing CMS_2021_I1963239 to POWHEG+HERWIG++
+INFO - Comparing CMS_2021_I1963239 to POWHEG+HERWIG7
+INFO - Comparing CMS_2017_I1467451 to HRes 2.2
+INFO - Comparing CMS_2016_I1471281:VMODE=Z to ResBos
+INFO - Comparing CMS_2016_I1471281:VMODE=Z to POWHEG
+INFO - Comparing CMS_2016_I1471281:VMODE=Z to FEWZ
+INFO - Comparing CMS_2016_I1471281:VMODE=W to ResBos
+INFO - Comparing CMS_2016_I1471281:VMODE=W to POWHEG
+INFO - Comparing CMS_2016_I1471281:VMODE=W to FEWZ
+INFO - Comparing CMS_2017_I1518399 to PowhegBoxZpWp
+INFO - Comparing LHCB_2018_I1662483 to PowhegBoxZpWp
+INFO - These distributions have a p value < 0.05
+INFO - Measurement: ATLAS_8_GAMMA, ATLAS_2017_I1591327/d03-x01-y01 prediction A, p-value = 8.962354952767147e-24
+INFO - Measurement: ATLAS_7_GAMMA, ATLAS_2012_I1199269/d03-x01-y01 prediction A, p-value = 8.899549161737413e-23
+INFO - Measurement: CMS_2_76_DJET, CMS_2021_I1963239/d07-x01-y01 prediction A, p-value = 4.843227810396634e-19
+INFO - Measurement: CMS_2_76_DJET, CMS_2021_I1963239/d08-x01-y01 prediction A, p-value = 1.4505818021153726e-18
+INFO - Measurement: ATLAS_8_LLJET, ATLAS_2015_I1408516/d03-x01-y04 prediction A, p-value = 3.8616640311830174e-18
+INFO - Measurement: ATLAS_7_GAMMA, ATLAS_2012_I1199269/d02-x01-y01 prediction A, p-value = 1.6771723296279834e-16
+INFO - Measurement: ATLAS_8_LLJET, ATLAS_2015_I1408516/d02-x01-y04 prediction A, p-value = 3.4685588717886935e-12
+INFO - Measurement: CMS_13_LLJET, CMS_2022_I2079374/d25-x01-y01 prediction A, p-value = 3.973339523464958e-11
+INFO - Measurement: CMS_13_LLJET, CMS_2022_I2079374/d07-x01-y01 prediction A, p-value = 1.67817058540764e-10
+INFO - Measurement: ATLAS_7_GAMMA, ATLAS_2012_I1199269/d04-x01-y01 prediction A, p-value = 2.9258171790272405e-09
+INFO - Measurement: ATLAS_8_LLJET, ATLAS_2015_I1408516/d03-x01-y01 prediction A, p-value = 7.06976076893988e-09
+INFO - Measurement: ATLAS_8_LLJET, ATLAS_2015_I1408516/d02-x01-y01 prediction A, p-value = 1.3516091913486668e-06
+INFO - Measurement: CMS_13_LLJET, CMS_2022_I2079374/d05-x01-y01 prediction A, p-value = 3.753938012085274e-06
+INFO - Measurement: ATLAS_8_LLJET, ATLAS_2015_I1408516/d04-x01-y04 prediction A, p-value = 5.183962702049427e-06
+INFO - Measurement: CMS_2_76_DJET, CMS_2021_I1963239/d19-x01-y01 prediction A, p-value = 6.213014895661909e-06
+INFO - Measurement: CMS_2_76_DJET, CMS_2021_I1963239/d20-x01-y01 prediction A, p-value = 8.86470899374586e-06
+INFO - Measurement: CMS_13_LLJET, CMS_2022_I2079374/d23-x01-y01 prediction A, p-value = 6.394803809243327e-05
+INFO - Measurement: CMS_13_LLJET, CMS_2022_I2079374/d27-x01-y01 prediction A, p-value = 0.008393484116176278
+INFO - Measurement: ATLAS_13_LL_GAMMA, ATLAS_2022_I2614196/d12-x01-y01 prediction A, p-value = 0.010157037630342045
+INFO - Measurement: ATLAS_13_4L, ATLAS_2021_I1849535/d10-x01-y01 prediction A, p-value = 0.011177221220123093
+INFO - Measurement: ATLAS_13_4L, ATLAS_2021_I1849535/d42-x01-y01 prediction A, p-value = 0.011913792661089797
+INFO - Measurement: ATLAS_8_GAMMA, ATLAS_2017_I1644367/d02-x01-y01 prediction A, p-value = 0.013444054560770143
+INFO - Measurement: ATLAS_8_LMETJET, ATLAS_2017_I1517194/d112-x01-y01 prediction A, p-value = 0.019730722880746846
+INFO - Measurement: ATLAS_13_4L, ATLAS_2021_I1849535/d08-x01-y01 prediction A, p-value = 0.020267350011113454
+INFO - Measurement: ATLAS_8_JETS, ATLAS_2015_I1394679/d12-x01-y01 prediction A, p-value = 0.023620050174434463
+INFO - Measurement: ATLAS_13_LL_GAMMA, ATLAS_2019_I1764342/d04-x01-y01 prediction A, p-value = 0.02440202972641908
+INFO - Measurement: ATLAS_8_GAMMA, ATLAS_2017_I1644367/d01-x01-y01 prediction A, p-value = 0.027085694040788012
+INFO - Measurement: CMS_13_LLJET, CMS_2022_I2079374/d09-x01-y01 prediction A, p-value = 0.02854710754183795
+INFO - Measurement: ATLAS_7_GAMMA, ATLAS_2012_I1199269/d01-x01-y01 prediction A, p-value = 0.028957694052940824
+INFO - Measurement: ATLAS_13_TTHAD, ATLAS_2022_I2077575/d83-x01-y01 prediction A, p-value = 0.029701143318222618
+INFO - Measurement: ATLAS_13_TTHAD, ATLAS_2022_I2077575/d117-x01-y01 prediction A, p-value = 0.040748777057478244
+INFO - Measurement: ATLAS_8_GAMMA, ATLAS_2017_I1644367/d03-x01-y01 prediction A, p-value = 0.04528772934037322
+INFO - 1291 distributions were checked.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091604257475e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.1728130617090667e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091570674833e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.1728130567281724e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091553051746e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.1728130548252463e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091523133745e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.1728130461995082e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - Could not find contur_batch.log. Assuming default number of events 30000.
+ERROR - Error reading /Users/jonbutterworth/gitstuff/contur-dev/tests/sources/myscan00/8TeV/sampled_points.dat
+WARNING - No param file in sources/myscan00/8TeV, unable to write scan modes to database
+WARNING - Could not find contur_batch.log. Assuming default number of events 30000.
+INFO - Contur version 3.0.0.beta
+INFO - See https://hepcedar.gitlab.io/contur-webpage/
+INFO - Reading files in sources/myscan00/13TeV/0014. 
+Parameter values are :: 
+CZdL1x1=1.062202, CZdL3x3=-1.062202, CZuL1x1=1.062202, CZuL3x3=-1.062202, CZuR1x1=1.062202, CZuR3x3=-1.062202, cotH=4.500000, mZp=3666.666667 
+INFO - totalXS 480.00 fb
+INFO - Contur version 3.0.0.beta
+INFO - See https://hepcedar.gitlab.io/contur-webpage/
+INFO - Run Information 
+Contur is running in /Users/jonbutterworth/gitstuff/contur-dev/tests 
+on analysis objects in ['sources/myscan00/13TeV/0014/runpoint_0014.yoda.gz'] 
+Using search analyses 
+Including Higgs to WW measurements if available 
+Including secret b-veto measurements if available 
+Including ATLAS WZ SM measurement 
+Theory uncertainties assumed uncorrelated. 
+No data systematic correlations being used. 
+
+INFO - Found 2029 potentially valid histograms in sources/myscan00/13TeV/0014/runpoint_0014.yoda.gz, with cross section 0.4803875 pb
+INFO - Added yodafile sources/myscan00/13TeV/0014/runpoint_0014.yoda.gz with exclusions: 
+ * DATABG=0.9999999994663309 
+ * SMBG=0.9941766575222318 
+ * EXP=0.9998419035223459 
+ * HLEXP=1 
+
+INFO - Run Information 
+Contur is running in /Users/jonbutterworth/gitstuff/contur-dev/tests 
+on analysis objects in ['sources/myscan00/13TeV/0014/runpoint_0014.yoda.gz'] 
+Using search analyses 
+Including Higgs to WW measurements if available 
+Including secret b-veto measurements if available 
+Including ATLAS WZ SM measurement 
+Theory uncertainties assumed uncorrelated. 
+No data systematic correlations being used. 
+
+Model point sampled at these parameter values:
+ * CZdL1x1 : 1.062202380952381
+ * CZdL3x3 : -1.062202380952381
+ * CZuL1x1 : 1.062202380952381
+ * CZuL3x3 : -1.062202380952381
+ * CZuR1x1 : 1.062202380952381
+ * CZuR3x3 : -1.062202380952381
+ * cotH : 4.5
+ * mZp : 3666.6666666666665
+INFO - No match found in the Contur Model database for the model in /Users/jonbutterworth/gitstuff/contur-dev/tests/RunInfo.
+       If you want this to be added, copy the sources files into the contur Models area and remake.
+WARNING - Could not find contur_batch.log. Assuming default number of events 30000.
+INFO - Writing summary for grid mode into database: /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/single_results.db
+INFO - Contur version 3.0.0.beta
+INFO - See https://hepcedar.gitlab.io/contur-webpage/
+INFO - Looking for map info in /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/contur_run.db
+INFO - Read DB file /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/contur_run.db
+INFO - Starting plotting engine, outputs written to /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/conturPlot
+INFO - Adding grids ['EXP']
+INFO - Plotting combined hybrid: heatmap and contours side-by-side.
+INFO - Plotting combined overlay: heatmap with contours.
+INFO - Plotting mesh: heatmap without contours
+INFO - Plotting levels: contours without heatmap
+INFO - Plotting dominant pools: level 0 (1/1)
+INFO - Done
+INFO - Loading config file from /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/oracle...
+INFO - Generating grid from config...
+INFO - Loading config file from /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/oracle...
+INFO - Processing scan results...
+WARNING - Scan file output_cls/run-output-1.csv has not been generated yet, skipping...
+INFO - Dumping config file to /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/oracle...
+WARNING - it 1: Recall: [0.93+/-0.13/0.95], Precision: [0.68+/-0.30/0.95], Entropy: [0.43+/-0.09/0.20], total points: 16, testing: 4
+INFO - Preparing next scan...
+INFO - Loading config file from /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/oracle...
+INFO - Dumping config file to /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/oracle...
+WARNING - 
+You can now run the following commands:
+
+1. Contur batch to generate the events:
+contur-batch -p /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/oracle/param_files/param_file_2.dat -o contur_batch_output_2 -Q medium --seed 101 -n 30000 -b 7TeV,8TeV,13TeV
+
+2. Contur to analyse the points
+contur -g contur_batch_output_2 -o contur_analysis_2
+
+3. Contur export to extract the corresponding CSV wiThis th the results
+contur-export -i contur_analysis_2/contur.map -o output_cls/run-output-2.csv
+
+4. Contur oracle to process the results, train the classifier, and determine if more points need to be generated
+contur-oracle start
+
+INFO - Dumping classifier for iteration 2...
+INFO - Contur version 3.0.0.beta
+INFO - See https://hepcedar.gitlab.io/contur-webpage/
+INFO - Run Information 
+Contur is running in /Users/jonbutterworth/gitstuff/contur-dev/tests 
+on analysis objects in YODASTREAM StringIO 
+Theory uncertainties assumed uncorrelated. 
+
+INFO - Found 2029 potentially valid histograms in <_io.StringIO object at 0x161074670>, with cross section 0.4803875 pb
+INFO - Added yodafile <_io.StringIO object at 0x161074670> with exclusions: 
+ * DATABG=1.0 
+ * SMBG=0.9987837366262624 
+ * EXP=0.9999178930895601 
+ * HLEXP=1 
+
+INFO - Run Information 
+Contur is running in /Users/jonbutterworth/gitstuff/contur-dev/tests 
+on analysis objects in YODASTREAM StringIO 
+Theory uncertainties assumed uncorrelated. 
+
+Parameter values not known for this run.
+INFO - Contur version 3.0.0.beta
+INFO - See https://hepcedar.gitlab.io/contur-webpage/
+INFO - Generated num of events: 30000
+INFO - No keyboard input. Assuming the answer is yes!
+INFO - Copying /Users/jonbutterworth/gitstuff/contur-dev/contur_user/13TeV.ana to /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/13TeV.ana
+INFO - Contur will prepare jobs for these beams:
+INFO - - 13TeV
+INFO - No run block in sources/param_file.dat. Will use environment variables
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0003/runpoint_0003.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0004/runpoint_0004.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0005/runpoint_0005.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0002/runpoint_0002.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0011/runpoint_0011.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0010/runpoint_0010.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0007/runpoint_0007.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0000/runpoint_0000.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0009/runpoint_0009.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0008/runpoint_0008.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0001/runpoint_0001.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0006/runpoint_0006.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0015/runpoint_0015.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0012/runpoint_0012.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0013/runpoint_0013.sh 
+WARNING - No setup script found. Tried /Users/jonbutterworth/gitstuff/contur-dev/contur_user/setupEnv.sh. You may specify a script with --setup 
+INFO - Not Submitting: qsub /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/tmp_batch/myscan00/13TeV/0014/runpoint_0014.sh 
+INFO - Contur version 3.0.0.beta
+INFO - See https://hepcedar.gitlab.io/contur-webpage/
+INFO - Performing SM test 
+Contur is running in /Users/jonbutterworth/gitstuff/contur-dev/tests 
+Theory uncertainties assumed uncorrelated. 
+
+INFO - SM plotting scripts will be written to /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests
+INFO - Comparing ATLAS_2019_I1720442 to Sherpa+NLO EW
+INFO - Comparing ATLAS_2021_I1849535 to Sherpa+NLO EW
+INFO - Comparing ATLAS_2021_I1887997 to NNLOJet
+INFO - Comparing ATLAS_2021_I1887997 to Sherpa
+INFO - Comparing ATLAS_2017_I1645627 to NNLO QCD arXiv:1904.01044
+INFO - Comparing ATLAS_2019_I1772071 to Sherpa NLO
+INFO - Comparing ATLAS_2022_I2023464 to gg->H default MC + XH
+INFO - Comparing ATLAS_2018_I1698006:LVETO=ON to NNLO MCFM
+INFO - Comparing ATLAS_2019_I1725190 to Background fit
+INFO - Comparing ATLAS_2018_I1634970 to Powheg
+INFO - Comparing ATLAS_2019_I1734263 to NNLO(qq)+NLO(gg)xNLO(EW)
+INFO - Comparing ATLAS_2019_I1718132:LMODE=ELMU to MADGRAPH5_aMC+Pythia and Powheg
+INFO - Comparing ATLAS_2021_I1852328 to MATRIX nNNLO x NLO EW
+INFO - Comparing ATLAS_2019_I1759875 to PowhegBoxZpWp
+INFO - Comparing ATLAS_2018_I1707015:LMODE=DILEPTON to MG5_aMC + Pythia8
+INFO - Comparing ATLAS_2017_I1627873 to SHERPA(QCD+Zjj)+POWHEG(EW-Zjj)
+INFO - Comparing ATLAS_2017_I1627873 to MG5_aMC(QCD+Zjj)+POWHEG(EW-Zjj)
+INFO - Comparing ATLAS_2017_I1627873 to ALPGEN(QCD+Zjj)+POWHEG(EW-Zjj)
+INFO - Comparing ATLAS_2022_I2077570 to Sherpa 2.2.11
+INFO - Comparing ATLAS_2020_I1788444 to Sherpa 5FNS (NLO)
+INFO - Comparing ATLAS_2020_I1788444 to MGaMC+Py8 Zbb 4FNS (NLO)
+INFO - Comparing ATLAS_2020_I1788444 to MGaMC+Py8 5FNS (NLO)
+INFO - Comparing ATLAS_2020_I1788444 to Sherpa Zbb 4FNS (NLO)
+INFO - Comparing ATLAS_2020_I1788444 to Sherpa Fusing 4FNS+5FNS (NLO)
+INFO - Comparing ATLAS_2019_I1718132:LMODE=ELEL to MADGRAPH5_aMC+Pythia and Sherpa2.1.1
+INFO - Comparing ATLAS_2019_I1718132:LMODE=MUMU to MADGRAPH5_aMC+Pythia and Sherpa2.1.1
+INFO - Comparing ATLAS_2019_I1764342 to Sherpa NLO (2)
+INFO - Comparing ATLAS_2019_I1764342 to Sherpa NLO
+INFO - Comparing ATLAS_2022_I2593322 to SHERPA 2.2.10
+INFO - Comparing ATLAS_2022_I2593322 to MadGraph5_aMC@NLO 2.7.3 
+INFO - Comparing ATLAS_2022_I2614196 to MATRIX NNLO
+WARNING - ATLAS_13_LL_GAMMA, ATLAS_2022_I2614196/d05-x01-y01 prediction D has nan p-value
+INFO - Comparing ATLAS_2022_I2614196 to MiNNLO_PS
+INFO - Comparing ATLAS_2022_I2614196 to MadGraph5_aMC@NLO
+INFO - Comparing ATLAS_2022_I2614196 to Sherpa 2.2.11
+INFO - Comparing ATLAS_2022_I2614196 to Sherpa 2.2.4
+INFO - Comparing ATLAS_2017_I1614149 to PowhegBoxZpWp
+INFO - Comparing ATLAS_2019_I1750330:TYPE=BOTH to PowhegBoxZpWp
+INFO - Comparing ATLAS_2022_I2037744 to Powheg + Pythia 8
+INFO - Comparing ATLAS_2018_I1656578 to PowhegBoxZpWp
+INFO - Comparing ATLAS_2018_I1705857 to POWHEG+PYTHIA8
+INFO - Comparing ATLAS_2018_I1707015:LMODE=SINGLE to MG5_aMC + Pythia8
+INFO - Comparing ATLAS_2017_I1609448 to SM (Sherpa $\times$ NNLO)
+INFO - Comparing ATLAS_2016_I1458270 to Expected SM events
+INFO - Comparing ATLAS_STDM_2018_55 to Sherpa 2.2.11 QCD V+jets MEPS@NLO
+INFO - Comparing ATLAS_2019_I1738841 to Powheg+Pythia8
+INFO - Comparing ATLAS_2018_I1646686 to PowhegBoxZpWp
+INFO - Comparing ATLAS_2020_I1801434 to POWHEG+Pythia8
+INFO - Comparing ATLAS_2020_I1801434 to POWHEG+Pythia8
+INFO - Comparing ATLAS_2022_I2077575 to POWHEG+Pythia8
+INFO - Comparing ATLAS_2012_I1203852:LMODE=LL to PowhegBox+gg2zz
+INFO - Comparing ATLAS_2012_I1199269 to Catani et al
+INFO - Comparing ATLAS_2012_I1203852:LMODE=LNU to PowhegBox+gg2zz
+INFO - Comparing ATLAS_2016_I1492320:LMODE=3L to MadGraph
+INFO - Comparing ATLAS_2014_I1310835 to Powheg Minlo HJ + non-ggF
+INFO - Comparing ATLAS_2014_I1310835 to HRES + non-ggF
+INFO - Comparing ATLAS_2016_I1494075:LMODE=4L to POWHEG + Pythia
+INFO - Comparing ATLAS_2016_I1457605 to NNLO QCD Chen et al
+INFO - Comparing ATLAS_2017_I1591327 to NNLO QCD
+INFO - Comparing ATLAS_2014_I1306615 to HRES 2.2
+INFO - Comparing ATLAS_2017_I1644367 to MG5_aMC+Py8
+INFO - Comparing ATLAS_2017_I1644367 to MCFM
+INFO - Comparing ATLAS_2016_I1448301:LMODE=NU to MCFM
+INFO - Comparing ATLAS_2016_I1467454:LMODE=EL to FEWZ
+INFO - Comparing ATLAS_2016_I1467454:LMODE=MU to FEWZ
+INFO - Comparing ATLAS_2015_I1394679 to NJet/Sherpa (x 1.0)
+INFO - Comparing ATLAS_2016_I1492320:LMODE=2L2J to MadGraph
+INFO - Comparing ATLAS_2015_I1408516:LMODE=EL to Bizon et al
+INFO - Comparing ATLAS_2015_I1408516:LMODE=MU to Bizon et al
+INFO - Comparing ATLAS_2019_I1744201 to NNLOJet
+INFO - Comparing ATLAS_2019_I1744201 to MCFM 6.8
+INFO - Comparing ATLAS_2016_I1494075:LMODE=2L2NU to POWHEG + Pythia
+INFO - Comparing ATLAS_2016_I1448301:LMODE=LL to NNLO (MMHT2014)
+INFO - Comparing ATLAS_2016_I1448301:LMODE=LL to GKR and MCFM
+INFO - Comparing ATLAS_2016_I1448301:LMODE=LL to GKR and MCFM
+INFO - Comparing ATLAS_2015_I1404878 to PowhegBoxZpWp
+INFO - Comparing ATLAS_2015_I1397637 to PowhegBoxZpWp
+INFO - Comparing ATLAS_2017_I1517194 to POWHEG+Pythia8
+INFO - Comparing ATLAS_2017_I1517194 to HEJ(QCD)+POW+PY(EW)
+INFO - Comparing ATLAS_2017_I1517194 to SHERPA
+INFO - Comparing ATLAS_2018_I1635273:LMODE=EL to SHERPA 2.2.1 NLO
+INFO - Comparing CMS_2020_I1794169 to MADGRAPH5_aMC@NLO+Pythia8 with NLO corr
+INFO - Comparing CMS_2021_I1932460 to Powheg NLO 2to2 + Double-parton scattering
+INFO - Comparing CMS_2022_I2079374 to MG5_aMC(0,1,2j)+PY8
+INFO - Comparing CMS_2019_I1753680:LMODE=EMU to aMC@NLO
+INFO - Comparing CMS_2021_I1866118 to MG5_aMC (NLO) PYTHIA8, CP5 tune
+INFO - Comparing CMS_2016_I1491950 to PowhegBoxZpWp
+INFO - Comparing CMS_2018_I1662081 to PowhegBoxZpWp
+INFO - Comparing CMS_2018_I1663958 to PowhegBoxZpWp
+INFO - Comparing CMS_2019_I1753720 to MADGRAPH5 aMC@NLO (5FS tt+jets, FxFx)
+INFO - Comparing CMS_2019_I1764472 to PowhegBoxZpWp
+INFO - Comparing CMS_2021_I1963239 to Pythia8 4C
+INFO - Comparing CMS_2021_I1963239 to HERWIG++ EE3C
+INFO - Comparing CMS_2021_I1963239 to HEJ+ARIADNE
+INFO - Comparing CMS_2021_I1963239 to POWHEG+PYTHIA8
+INFO - Comparing CMS_2021_I1963239 to POWHEG+HERWIG++
+INFO - Comparing CMS_2021_I1963239 to POWHEG+HERWIG7
+INFO - Comparing CMS_2017_I1467451 to HRes 2.2
+INFO - Comparing CMS_2016_I1471281:VMODE=Z to ResBos
+INFO - Comparing CMS_2016_I1471281:VMODE=Z to POWHEG
+INFO - Comparing CMS_2016_I1471281:VMODE=Z to FEWZ
+INFO - Comparing CMS_2016_I1471281:VMODE=W to ResBos
+INFO - Comparing CMS_2016_I1471281:VMODE=W to POWHEG
+INFO - Comparing CMS_2016_I1471281:VMODE=W to FEWZ
+INFO - Comparing CMS_2017_I1518399 to PowhegBoxZpWp
+INFO - Comparing LHCB_2018_I1662483 to PowhegBoxZpWp
+INFO - These distributions have a p value < 0.05
+INFO - Measurement: ATLAS_8_GAMMA, ATLAS_2017_I1591327/d03-x01-y01 prediction A, p-value = 8.962354952767147e-24
+INFO - Measurement: ATLAS_7_GAMMA, ATLAS_2012_I1199269/d03-x01-y01 prediction A, p-value = 8.899549161737413e-23
+INFO - Measurement: CMS_2_76_DJET, CMS_2021_I1963239/d07-x01-y01 prediction A, p-value = 4.843227810396634e-19
+INFO - Measurement: CMS_2_76_DJET, CMS_2021_I1963239/d08-x01-y01 prediction A, p-value = 1.4505818021153726e-18
+INFO - Measurement: ATLAS_8_LLJET, ATLAS_2015_I1408516/d03-x01-y04 prediction A, p-value = 3.8616640311830174e-18
+INFO - Measurement: ATLAS_7_GAMMA, ATLAS_2012_I1199269/d02-x01-y01 prediction A, p-value = 1.6771723296279834e-16
+INFO - Measurement: ATLAS_8_LLJET, ATLAS_2015_I1408516/d02-x01-y04 prediction A, p-value = 3.4685588717886935e-12
+INFO - Measurement: CMS_13_LLJET, CMS_2022_I2079374/d25-x01-y01 prediction A, p-value = 3.973339523464958e-11
+INFO - Measurement: CMS_13_LLJET, CMS_2022_I2079374/d07-x01-y01 prediction A, p-value = 1.67817058540764e-10
+INFO - Measurement: ATLAS_7_GAMMA, ATLAS_2012_I1199269/d04-x01-y01 prediction A, p-value = 2.9258171790272405e-09
+INFO - Measurement: ATLAS_8_LLJET, ATLAS_2015_I1408516/d03-x01-y01 prediction A, p-value = 7.06976076893988e-09
+INFO - Measurement: ATLAS_8_LLJET, ATLAS_2015_I1408516/d02-x01-y01 prediction A, p-value = 1.3516091913486668e-06
+INFO - Measurement: CMS_13_LLJET, CMS_2022_I2079374/d05-x01-y01 prediction A, p-value = 3.753938012085274e-06
+INFO - Measurement: ATLAS_8_LLJET, ATLAS_2015_I1408516/d04-x01-y04 prediction A, p-value = 5.183962702049427e-06
+INFO - Measurement: CMS_2_76_DJET, CMS_2021_I1963239/d19-x01-y01 prediction A, p-value = 6.213014895661909e-06
+INFO - Measurement: CMS_2_76_DJET, CMS_2021_I1963239/d20-x01-y01 prediction A, p-value = 8.86470899374586e-06
+INFO - Measurement: CMS_13_LLJET, CMS_2022_I2079374/d23-x01-y01 prediction A, p-value = 6.394803809243327e-05
+INFO - Measurement: CMS_13_LLJET, CMS_2022_I2079374/d27-x01-y01 prediction A, p-value = 0.008393484116176278
+INFO - Measurement: ATLAS_13_LL_GAMMA, ATLAS_2022_I2614196/d12-x01-y01 prediction A, p-value = 0.010157037630342045
+INFO - Measurement: ATLAS_13_4L, ATLAS_2021_I1849535/d10-x01-y01 prediction A, p-value = 0.011177221220123093
+INFO - Measurement: ATLAS_13_4L, ATLAS_2021_I1849535/d42-x01-y01 prediction A, p-value = 0.011913792661089797
+INFO - Measurement: ATLAS_8_GAMMA, ATLAS_2017_I1644367/d02-x01-y01 prediction A, p-value = 0.013444054560770143
+INFO - Measurement: ATLAS_8_LMETJET, ATLAS_2017_I1517194/d112-x01-y01 prediction A, p-value = 0.019730722880746846
+INFO - Measurement: ATLAS_13_4L, ATLAS_2021_I1849535/d08-x01-y01 prediction A, p-value = 0.020267350011113454
+INFO - Measurement: ATLAS_8_JETS, ATLAS_2015_I1394679/d12-x01-y01 prediction A, p-value = 0.023620050174434463
+INFO - Measurement: ATLAS_13_LL_GAMMA, ATLAS_2019_I1764342/d04-x01-y01 prediction A, p-value = 0.02440202972641908
+INFO - Measurement: ATLAS_8_GAMMA, ATLAS_2017_I1644367/d01-x01-y01 prediction A, p-value = 0.027085694040788012
+INFO - Measurement: CMS_13_LLJET, CMS_2022_I2079374/d09-x01-y01 prediction A, p-value = 0.02854710754183795
+INFO - Measurement: ATLAS_7_GAMMA, ATLAS_2012_I1199269/d01-x01-y01 prediction A, p-value = 0.028957694052940824
+INFO - Measurement: ATLAS_13_TTHAD, ATLAS_2022_I2077575/d83-x01-y01 prediction A, p-value = 0.029701143318222618
+INFO - Measurement: ATLAS_13_TTHAD, ATLAS_2022_I2077575/d117-x01-y01 prediction A, p-value = 0.040748777057478244
+INFO - Measurement: ATLAS_8_GAMMA, ATLAS_2017_I1644367/d03-x01-y01 prediction A, p-value = 0.04528772934037322
+INFO - 1291 distributions were checked.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091604257475e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.1728130617090667e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091570674833e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.1728130567281724e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091553051746e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.1728130548252463e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091523133745e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.1728130461995082e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d02-x01-y01 has negative determinant (s_b -1.2157091610331985e-17, b -1.2165880736370783e-17) Covariance matrix considered pathological, test stats will be None.
+WARNING - Covariance matrix for /ATLAS_2017_I1637587/d03-x01-y01 has negative determinant (s_b -1.172813063004501e-18, b -1.1761999906779757e-18) Covariance matrix considered pathological, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/ph1_pt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_m, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pT, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - FloatingPointError: underflow encountered in det for /ATLAS_2021_I1887997/yy_pTt, test stats will be None.
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d02-x01-y01, type DATABG
+WARNING - Could not evaluate CLs for /ATLAS_2017_I1637587/d03-x01-y01, type DATABG
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - FloatingPointError: overflow encountered in det for /ATLAS_2018_I1635273:LMODE=EL/d21-x01-y01, test stats will be None.
+WARNING - Could not find contur_batch.log. Assuming default number of events 30000.
+ERROR - Error reading /Users/jonbutterworth/gitstuff/contur-dev/tests/sources/myscan00/8TeV/sampled_points.dat
+WARNING - No param file in sources/myscan00/8TeV, unable to write scan modes to database
+WARNING - Could not find contur_batch.log. Assuming default number of events 30000.
+INFO - Contur version 3.0.0.beta
+INFO - See https://hepcedar.gitlab.io/contur-webpage/
+INFO - Reading files in sources/myscan00/13TeV/0014. 
+Parameter values are :: 
+CZdL1x1=1.062202, CZdL3x3=-1.062202, CZuL1x1=1.062202, CZuL3x3=-1.062202, CZuR1x1=1.062202, CZuR3x3=-1.062202, cotH=4.500000, mZp=3666.666667 
+INFO - totalXS 480.00 fb
+INFO - Contur version 3.0.0.beta
+INFO - See https://hepcedar.gitlab.io/contur-webpage/
+INFO - Run Information 
+Contur is running in /Users/jonbutterworth/gitstuff/contur-dev/tests 
+on analysis objects in ['sources/myscan00/13TeV/0014/runpoint_0014.yoda.gz'] 
+Using search analyses 
+Including Higgs to WW measurements if available 
+Including secret b-veto measurements if available 
+Including ATLAS WZ SM measurement 
+Theory uncertainties assumed uncorrelated. 
+No data systematic correlations being used. 
+
+INFO - Found 2029 potentially valid histograms in sources/myscan00/13TeV/0014/runpoint_0014.yoda.gz, with cross section 0.4803875 pb
+INFO - Added yodafile sources/myscan00/13TeV/0014/runpoint_0014.yoda.gz with exclusions: 
+ * DATABG=0.9999999994663309 
+ * SMBG=0.9941766575222318 
+ * EXP=0.9998419035223459 
+ * HLEXP=1 
+
+INFO - Run Information 
+Contur is running in /Users/jonbutterworth/gitstuff/contur-dev/tests 
+on analysis objects in ['sources/myscan00/13TeV/0014/runpoint_0014.yoda.gz'] 
+Using search analyses 
+Including Higgs to WW measurements if available 
+Including secret b-veto measurements if available 
+Including ATLAS WZ SM measurement 
+Theory uncertainties assumed uncorrelated. 
+No data systematic correlations being used. 
+
+Model point sampled at these parameter values:
+ * CZdL1x1 : 1.062202380952381
+ * CZdL3x3 : -1.062202380952381
+ * CZuL1x1 : 1.062202380952381
+ * CZuL3x3 : -1.062202380952381
+ * CZuR1x1 : 1.062202380952381
+ * CZuR3x3 : -1.062202380952381
+ * cotH : 4.5
+ * mZp : 3666.6666666666665
+INFO - No match found in the Contur Model database for the model in /Users/jonbutterworth/gitstuff/contur-dev/tests/RunInfo.
+       If you want this to be added, copy the sources files into the contur Models area and remake.
+WARNING - Could not find contur_batch.log. Assuming default number of events 30000.
+INFO - Writing summary for grid mode into database: /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/single_results.db
+INFO - Contur version 3.0.0.beta
+INFO - See https://hepcedar.gitlab.io/contur-webpage/
+INFO - Looking for map info in /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/contur_run.db
+INFO - Read DB file /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/contur_run.db
+INFO - Starting plotting engine, outputs written to /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/conturPlot
+INFO - Adding grids ['EXP']
+INFO - Plotting combined hybrid: heatmap and contours side-by-side.
+INFO - Plotting combined overlay: heatmap with contours.
+INFO - Plotting mesh: heatmap without contours
+INFO - Plotting levels: contours without heatmap
+INFO - Plotting dominant pools: level 0 (1/1)
+INFO - Done
+INFO - Loading config file from /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/oracle...
+INFO - Generating grid from config...
+INFO - Loading config file from /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/oracle...
+INFO - Processing scan results...
+WARNING - Scan file output_cls/run-output-1.csv has not been generated yet, skipping...
+INFO - Dumping config file to /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/oracle...
+WARNING - it 1: Recall: [0.93+/-0.13/0.95], Precision: [0.68+/-0.30/0.95], Entropy: [0.43+/-0.09/0.20], total points: 16, testing: 4
+INFO - Preparing next scan...
+INFO - Loading config file from /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/oracle...
+INFO - Dumping config file to /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/oracle...
+WARNING - 
+You can now run the following commands:
+
+1. Contur batch to generate the events:
+contur-batch -p /Users/jonbutterworth/gitstuff/contur-dev/contur_user/tests/oracle/param_files/param_file_2.dat -o contur_batch_output_2 -Q medium --seed 101 -n 30000 -b 7TeV,8TeV,13TeV
+
+2. Contur to analyse the points
+contur -g contur_batch_output_2 -o contur_analysis_2
+
+3. Contur export to extract the corresponding CSV wiThis th the results
+contur-export -i contur_analysis_2/contur.map -o output_cls/run-output-2.csv
+
+4. Contur oracle to process the results, train the classifier, and determine if more points need to be generated
+contur-oracle start
+
+INFO - Dumping classifier for iteration 2...
+INFO - Contur version 3.0.0.beta
+INFO - See https://hepcedar.gitlab.io/contur-webpage/
+INFO - Run Information 
+Contur is running in /Users/jonbutterworth/gitstuff/contur-dev/tests 
+on analysis objects in YODASTREAM StringIO 
+Theory uncertainties assumed uncorrelated. 
+
+INFO - Found 2029 potentially valid histograms in <_io.StringIO object at 0x1619410d0>, with cross section 0.4803875 pb
+INFO - Added yodafile <_io.StringIO object at 0x1619410d0> with exclusions: 
+ * DATABG=1.0 
+ * SMBG=0.9987837366262624 
+ * EXP=0.9999178930895601 
+ * HLEXP=1 
+
+INFO - Run Information 
+Contur is running in /Users/jonbutterworth/gitstuff/contur-dev/tests 
+on analysis objects in YODASTREAM StringIO 
+Theory uncertainties assumed uncorrelated. 
+
+Parameter values not known for this run.
