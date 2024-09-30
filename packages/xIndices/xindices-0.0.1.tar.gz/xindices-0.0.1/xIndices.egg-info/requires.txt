@@ -1,0 +1,9 @@
+xarray
+numpy
+xesmf
+eofs
+dask
+xesmf
+matplotlib
+cartopy
+xeofs
