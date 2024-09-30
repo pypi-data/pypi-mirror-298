@@ -1,0 +1,5 @@
+scapy
+requests
+pywifi
+opencv-python
+netifaces

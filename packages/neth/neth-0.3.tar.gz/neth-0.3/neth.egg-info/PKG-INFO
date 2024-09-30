@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: neth
+Version: 0.3
+Summary: Python library for advanced network scanning, hidden SSID discovery, and Wi-Fi cracking
+Author: Majhool2M
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: scapy
+Requires-Dist: requests
+Requires-Dist: pywifi
+Requires-Dist: opencv-python
+Requires-Dist: netifaces
