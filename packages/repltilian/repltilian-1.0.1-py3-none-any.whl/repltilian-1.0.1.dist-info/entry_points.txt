@@ -1,0 +1,2 @@
+[console_scripts]
+repltilian = repltilian.__main__:main
