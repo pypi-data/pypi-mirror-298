@@ -1,0 +1,10 @@
+aliyunsdkwss/__init__.py,sha256=dHuoY6voK7np1A7oRzw1xyBy7CK9_KBAc4FCKW29uRQ,21
+aliyunsdkwss/request/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aliyunsdkwss/request/v20211221/DescribeDeliveryAddressRequest.py,sha256=dnd20gynKLoSmEPRpl37fK0spwrnx6VXB-a0cUpfGQw,1016
+aliyunsdkwss/request/v20211221/DescribePackageDeductionsRequest.py,sha256=Toi7EkN-aaveMnhThWrOi8SsF5ClZM1ClFULkQfrjuc,2126
+aliyunsdkwss/request/v20211221/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aliyun_python_sdk_wss-1.0.0.dist-info/LICENSE,sha256=CvyZB4el1cZGT3cy9OYoITxta_Ea2maondKqmi8EcpU,575
+aliyun_python_sdk_wss-1.0.0.dist-info/METADATA,sha256=iU2Mk_LpC33qRcCs_xpbFrnlVkc70Jvp4cYKzKuSZis,1453
+aliyun_python_sdk_wss-1.0.0.dist-info/WHEEL,sha256=iYlv5fX357PQyRT2o6tw1bN-YcKFFHKqB_LwHO5wP-g,110
+aliyun_python_sdk_wss-1.0.0.dist-info/top_level.txt,sha256=addat5bcl9JACc4Aq6zMsWn3Z2hg0bHQ17-ZdlLWwA0,13
+aliyun_python_sdk_wss-1.0.0.dist-info/RECORD,,
