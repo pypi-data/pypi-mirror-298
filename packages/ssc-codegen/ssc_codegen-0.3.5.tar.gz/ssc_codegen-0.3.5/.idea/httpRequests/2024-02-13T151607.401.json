@@ -1,0 +1,7 @@
+{
+  "code": 401,
+  "status": "Unauthorized",
+  "error": "NotAuthenticated",
+  "errorCode": 1074,
+  "errorMessage": "This API method does not allow anonymous callers."
+}
