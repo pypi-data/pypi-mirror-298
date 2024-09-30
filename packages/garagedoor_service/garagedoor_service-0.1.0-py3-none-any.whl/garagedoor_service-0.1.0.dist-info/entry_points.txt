@@ -1,0 +1,2 @@
+[console_scripts]
+garagedoor-service = garagedoor_service.main:main
