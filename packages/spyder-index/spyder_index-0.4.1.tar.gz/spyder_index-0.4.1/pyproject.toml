@@ -1,0 +1,43 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "spyder-index"
+version = "0.4.1"
+description = "Integration package connecting data and AI applications"
+authors = ["Leonardo Furnielis <leonardofurnielis@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+documentation = "https://leonardofurnielis.github.io/deeptext-ai"
+repository = "https://github.com/leonardofurnielis/deeptext-ai"
+packages = [{include = "deeptext"}]
+keywords = ["retrieval", "RAG", "index", "data", "LLM", "AI", "NLP"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain-core = "^0.1.48"
+langchain-community = "^0.0.36"
+langchain-experimental = "^0.0.57"
+sentence-transformers = "^2.7.0"
+pydantic = "^2.7.1"
+torch = "2.1.0"
+numpy = "^1.26.4"
+nltk = "^3.8.1"
+tiktoken = "^0.7.0"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+furo = "^2024.5.6"
+sphinx = "^7.4.6"
+sphinx-copybutton = "^0.5.2"
