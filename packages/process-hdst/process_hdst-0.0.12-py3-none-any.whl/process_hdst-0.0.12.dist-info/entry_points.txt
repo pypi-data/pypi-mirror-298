@@ -1,0 +1,2 @@
+[console_scripts]
+process-hdst = process_HDST.cli:main
