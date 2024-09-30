@@ -1,0 +1,14 @@
+pymontrace-0.1.0.dev1.dist-info/LICENSE.txt,sha256=jFGoORXmNd8bm6KUOFaQmkSCMF4gZDcuChUnFsv3Wbc,1071
+pymontrace-0.1.0.dev1.dist-info/METADATA,sha256=WWjz_yZVoSJPEx_HfeHvdZbQy34fqFo5b2Ugh02Rrqk,3127
+pymontrace-0.1.0.dev1.dist-info/entry_points.txt,sha256=E14aNU59c-31bYvjdoJBmZnGJoWSVLSoJ7OxUY3X-hA,60
+pymontrace-0.1.0.dev1.dist-info/RECORD,,
+pymontrace-0.1.0.dev1.dist-info/WHEEL,sha256=N6ZkMXwXhS2QZRig_1o6b0qolzcccSCrT_hKtY2-vkc,187
+pymontrace-0.1.0.dev1.dist-info/top_level.txt,sha256=Yi-AaNk_WErcaTHGIYO4lhT2T-xdkjGU1YVSmnAcOdM,11
+pymontrace/_darwin.py,sha256=YO-dmGRS6RwxD78mi4htEqeBFUkI7n8KGJ-fUL6qWBM,1182
+pymontrace/attacher.pyi,sha256=w8Fm0qVBqf3QCmh-veHG0wKaci_Jc0nRA2OpQNEuJ-E,178
+pymontrace/tracee.py,sha256=8qnGdZ9kjH-OjmeursNY61E3V23EfArbxM7V2uT6FRI,9040
+pymontrace/__main__.py,sha256=rnD_Bfgel4rJwpO7mhAbCg1NRPC8gWIyQzouOT6ehGU,3443
+pymontrace/tracer.py,sha256=GfPcOXFam32857MhcwnxIzSJutG4jvHFd6ZD8rfPbV0,7597
+pymontrace/attacher.cpython-38-aarch64-linux-gnu.so,sha256=q8TUmxEq8tuimYcQgMg7A_rZ_OP9lSLO4mWSakglRAk,204464
+pymontrace/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymontrace/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
