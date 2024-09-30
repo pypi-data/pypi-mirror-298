@@ -1,0 +1,111 @@
+GET http://books.toscrape.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-13T151732.200.html
+
+###
+
+POST https://43055.playfabapi.com/Client/GetPlayerCombinedInfo?sdk=UnitySDK-2.130.220406
+User-Agent: UnityPlayer/2020.3.43f1 (UnityWebRequest/1.0, libcurl/7.84.0-DEV)
+Accept-Encoding: deflate, gzip
+Content-Type: application/json
+Content-Length: 474
+Connection: Keep-Alive
+
+{"CustomTags":null,"InfoRequestParameters":{"GetCharacterInventories":false,"GetCharacterList":false,"GetPlayerProfile":true,"GetPlayerStatistics":false,"GetTitleData":false,"GetUserAccountInfo":true,"GetUserData":false,"GetUserInventory":false,"GetUserReadOnlyData":false,"GetUserVirtualCurrency":false,"PlayerStatisticNames":null,"ProfileConstraints":null,"TitleDataKeys":null,"UserDataKeys":null,"UserReadOnlyDataKeys":null},"PlayFabId":null,"AuthenticationContext":null}
+
+<> 2024-02-13T151607.401.json
+
+###
+
+POST https://43055.playfabapi.com/Client/GetPlayerCombinedInfo?sdk=UnitySDK-2.130.220406
+Host: 43055.playfabapi.com
+User-Agent: UnityPlayer/2020.3.43f1 (UnityWebRequest/1.0, libcurl/7.84.0-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+Content-Type: application/json
+Content-Length: 474
+Connection: Keep-Alive
+
+{"CustomTags":null,"InfoRequestParameters":{"GetCharacterInventories":false,"GetCharacterList":false,"GetPlayerProfile":true,"GetPlayerStatistics":false,"GetTitleData":false,"GetUserAccountInfo":true,"GetUserData":false,"GetUserInventory":false,"GetUserReadOnlyData":false,"GetUserVirtualCurrency":false,"PlayerStatisticNames":null,"ProfileConstraints":null,"TitleDataKeys":null,"UserDataKeys":null,"UserReadOnlyDataKeys":null},"PlayFabId":null,"AuthenticationContext":null}
+
+<> 2024-02-13T151556.401.json
+
+###
+
+POST https://43055.playfabapi.com/Client/GetPlayerCombinedInfo?sdk=UnitySDK-2.130.220406
+Host: 43055.playfabapi.com
+User-Agent: UnityPlayer/2020.3.43f1 (UnityWebRequest/1.0, libcurl/7.84.0-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+Content-Type: application/json
+X-Unity-Version: 2020.3.43f1
+Content-Length: 474
+Connection: Keep-Alive
+
+{"CustomTags":null,"InfoRequestParameters":{"GetCharacterInventories":false,"GetCharacterList":false,"GetPlayerProfile":true,"GetPlayerStatistics":false,"GetTitleData":false,"GetUserAccountInfo":true,"GetUserData":false,"GetUserInventory":false,"GetUserReadOnlyData":false,"GetUserVirtualCurrency":false,"PlayerStatisticNames":null,"ProfileConstraints":null,"TitleDataKeys":null,"UserDataKeys":null,"UserReadOnlyDataKeys":null},"PlayFabId":null,"AuthenticationContext":null}
+
+<> 2024-02-13T151552.401.json
+
+###
+
+POST https://43055.playfabapi.com/Client/GetPlayerCombinedInfo?sdk=UnitySDK-2.130.220406
+Host: 43055.playfabapi.com
+User-Agent: UnityPlayer/2020.3.43f1 (UnityWebRequest/1.0, libcurl/7.84.0-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.130.220406
+X-Authorization:
+Content-Type: application/json
+X-Unity-Version: 2020.3.43f1
+Content-Length: 474
+Connection: Keep-Alive
+
+{"CustomTags":null,"InfoRequestParameters":{"GetCharacterInventories":false,"GetCharacterList":false,"GetPlayerProfile":true,"GetPlayerStatistics":false,"GetTitleData":false,"GetUserAccountInfo":true,"GetUserData":false,"GetUserInventory":false,"GetUserReadOnlyData":false,"GetUserVirtualCurrency":false,"PlayerStatisticNames":null,"ProfileConstraints":null,"TitleDataKeys":null,"UserDataKeys":null,"UserReadOnlyDataKeys":null},"PlayFabId":null,"AuthenticationContext":null}
+
+<> 2024-02-13T151538.200.json
+
+###
+
+POST http://robivox.ru/local/templates/robivox/handler.php
+Host: robivox.ru
+Sec-Ch-Ua: "Chromium";v="116", "Not)A;Brand";v="24", "Brave";v="116"
+Accept: */*
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+Accept-Language: ru-RU,ru;q=0.9
+Origin: https://robivox.ru
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate
+Content-Length: 754
+Connection: Keep-Alive
+
+text=%D0%94%D0%B0+%D0%B1%D0%BB%D1%8F%D1%82%D1%8C+%D1%8F+%D0%B1%D0%BB%D1%8F%D1%82%D1%8C+%D0%BE%D0%B1%D0%BE%D1%81%D1%80%D0%B0%D0%BB+%D0%B1%D0%BB%D1%8F%D1%82%D1%8C+%D1%8F+%D0%BF%D0%B5%D1%80%D0%B4%D0%B0%D0%BD%D1%83%D0%BB+%D0%B1%D0%BB%D1%8F%D1%82%D1%8C+%D1%8F+%D0%BE%D0%B1%D0%BE%D1%81%D1%80%D0%B0%D0%BB+%D1%81%D0%B2%D0%BE%D0%B8+%D1%8D%D1%82%D0%B8+%D1%88%D0%BE%D1%80%D1%82%D1%8B+%D0%BD%D0%B0%D1%85%D1%83%D0%B9+%D0%B8+%D0%BF%D1%80%D0%B8%D1%88%D0%BB%D0%BE%D1%81%D1%8C+%D0%BC%D0%BD%D0%B5+%D0%BE%D1%82+%D0%B3%D0%BE%D0%B2%D0%BD%D0%B0+%D0%B8%D1%85+%D0%BD%D0%B5%D0%BC%D0%BD%D0%BE%D0%B6%D0%BA%D0%BE+%D0%BE%D1%82%D1%82%D0%B5%D1%80%D0%B5%D1%82%D1%8C+%D0%B1%D0%BB%D1%8F%D1%82%D1%8C&voice=filipp&language=ru-RU&emotion=&speed=1&format=mp3&service=YandexCloud&gender=%D0%96
+
+<> 2024-02-13T151514.200.html
+
+###
+
+POST https://api.openai.com/v1/chat/completions
+Authorization: Bearer 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
+Accept: application/json
+Content-Type: application/json; charset=utf-8
+Host: api.openai.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: okhttp/5.0.0-alpha.9
+Content-Length: 278
+
+{"model":"gpt-3.5-turbo","messages":[{"role":"system","content":"You are All bot, a large language model trained by Now AI."},{"role":"user","content":"Какое мое предыдущее было сообщение"},{"role":"assistant","content":"Continue"}],"stream":true}
+
+<> 2024-02-13T151439.403.html
+
+###
+
