@@ -1,0 +1,8 @@
+LICENSE
+README.md
+lyynotice.py
+setup.py
+lyynotice.egg-info/PKG-INFO
+lyynotice.egg-info/SOURCES.txt
+lyynotice.egg-info/dependency_links.txt
+lyynotice.egg-info/top_level.txt
