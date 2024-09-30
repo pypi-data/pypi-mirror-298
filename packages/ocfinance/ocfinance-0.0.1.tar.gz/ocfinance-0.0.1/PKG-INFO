@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: ocfinance
+Version: 0.0.1
+Summary: Download on-chain data from websites
+Project-URL: Homepage, https://github.com/dhruvan2006/ocfinance
+Project-URL: Issues, https://github.com/dhruvan2006/ocfinance/issues
+Author-email: Dhruvan Gnanadhandayuthapani <dhruvan2006@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: beautifulsoup4
+Requires-Dist: pandas
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# OCFINANCE

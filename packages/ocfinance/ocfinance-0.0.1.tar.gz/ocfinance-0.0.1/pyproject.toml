@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ocfinance"
+version = "0.0.1"
+authors = [
+  { name="Dhruvan Gnanadhandayuthapani", email="dhruvan2006@gmail.com" },
+]
+description = "Download on-chain data from websites"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+    "pandas",
+    "beautifulsoup4",
+]
+
+[project.urls]
+Homepage = "https://github.com/dhruvan2006/ocfinance"
+Issues = "https://github.com/dhruvan2006/ocfinance/issues"

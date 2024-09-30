@@ -1,0 +1,8 @@
+*.pyc
+test.ipynb
+
+# Environments
+.venv/
+.env/
+venv/
+ENV/
