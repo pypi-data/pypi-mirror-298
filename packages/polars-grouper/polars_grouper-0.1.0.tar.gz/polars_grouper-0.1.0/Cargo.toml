@@ -1,0 +1,17 @@
+[package]
+name = "polars-grouper" # Updated to match the new name
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "polars_grouper"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.22.3", features = ["extension-module", "abi3-py38"] }
+pyo3-polars = { version = "0.17.0", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+petgraph = "0.6.5"
+rayon = "1.10.0"
+ahash = "0.8.11"
+polars = { version = "0.43.1", default-features = false }
