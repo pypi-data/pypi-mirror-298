@@ -1,0 +1,3 @@
+[console_scripts]
+ceepur-scraper=ceepur_scraper:main
+
