@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: anco
+Version: 1.0.1
+Summary: A GPU-accelerated ant colony optimization library for Python 3 based on taichi
+Author: Shengzhi Wu
+Author-email: e1124755@u.nus.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# anco
+anco is a GPU-accelerated ANt COlony optimization library for Python 3 based on [taichi](https://github.com/taichi-dev/taichi).
+
+![animation](images/animation.gif)
