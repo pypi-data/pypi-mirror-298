@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ollama_rag.egg-info/PKG-INFO
+ollama_rag.egg-info/SOURCES.txt
+ollama_rag.egg-info/dependency_links.txt
+ollama_rag.egg-info/requires.txt
+ollama_rag.egg-info/top_level.txt
