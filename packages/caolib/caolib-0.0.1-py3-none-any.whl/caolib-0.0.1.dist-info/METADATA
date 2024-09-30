@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: caolib
+Version: 0.0.1
+Summary: A simple package to color text in terminal.
+Author-email: clb <1265501579@qq.com>
+Project-URL: Homepage, https://github.com/caolib/color_text
+Project-URL: Issues, https://github.com/caolib/color_text/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
