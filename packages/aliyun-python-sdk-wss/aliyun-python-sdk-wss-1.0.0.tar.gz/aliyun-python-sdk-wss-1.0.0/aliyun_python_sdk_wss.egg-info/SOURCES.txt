@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+aliyun_python_sdk_wss.egg-info/PKG-INFO
+aliyun_python_sdk_wss.egg-info/SOURCES.txt
+aliyun_python_sdk_wss.egg-info/dependency_links.txt
+aliyun_python_sdk_wss.egg-info/requires.txt
+aliyun_python_sdk_wss.egg-info/top_level.txt
+aliyunsdkwss/__init__.py
+aliyunsdkwss/request/__init__.py
+aliyunsdkwss/request/v20211221/DescribeDeliveryAddressRequest.py
+aliyunsdkwss/request/v20211221/DescribePackageDeductionsRequest.py
+aliyunsdkwss/request/v20211221/__init__.py
