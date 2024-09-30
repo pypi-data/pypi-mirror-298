@@ -1,0 +1,10 @@
+better_imap/__init__.py,sha256=zW98yDwr-rWw290EtnaFTraRY-UnSaVhz_txTInllEM,150
+better_imap/domains.py,sha256=zl45LHxhSH0mnTFpsDc39ahE4MZYQscwb24rP10j57A,1975
+better_imap/email_exceptions.py,sha256=G4K8FGSljBNysnLtC-QPJh4tke7Ci4Mx9TwBNVloaRw,550
+better_imap/imap_client.py,sha256=ipdxeshpvjEhAxv64OzODBqFIHVIpiOT_ITPzJOp28Q,3081
+better_imap/mailbox.py,sha256=jbR3NuS0LlEMU_qqc2tVsdxFfCGTitDcQ0fdF-Tvo8s,11810
+better_imap/models.py,sha256=j1FNXo7plzEkm0RpYEEbnvpIKxvnAdEzeAjK8nF-J7A,256
+better_imap-0.1.12.dist-info/LICENCE,sha256=iRE9eq6wMmdnMu9o2CUWu8xVh4LrFjg0iG6VaP5abrE,11345
+better_imap-0.1.12.dist-info/METADATA,sha256=gIwLDeJ5XzjU5c_lnygq6gZR0GNo7wv5eOpAFVdfk7I,562
+better_imap-0.1.12.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+better_imap-0.1.12.dist-info/RECORD,,
