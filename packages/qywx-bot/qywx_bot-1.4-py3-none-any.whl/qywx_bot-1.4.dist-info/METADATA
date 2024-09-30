@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: qywx-bot
+Version: 1.4
+Summary: python sdk for work wechat robots
+Home-page: https://github.com/sun2ot/qywx-bot
+Author: sun2ot
+Author-email: sun2ot@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+## 介绍
+
+作用：向企业微信群机器人发送信息
+
+使用方式：
+
+1. 新建 `.env`，写入企业微信 webhook key，例如：
+    ```ini
+    WEBHOOK_KEY = "asdf123456"
+    ```
+2. 发送信息
+    ```Python
+    from dotenv import load_dotenv
+    load_dotenv()
+    import os
+    key = os.getenv("WEBHOOK_KEY")
+    from qywx_bot.bot import Bot
+
+    bot = Bot(key="...")
+    bot.send_text(content="hello world")
+    ```
+
+## 环境
+
+```
+pip install requests
+```
