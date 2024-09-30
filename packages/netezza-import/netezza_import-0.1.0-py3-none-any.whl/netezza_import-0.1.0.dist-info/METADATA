@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: netezza_import
+Version: 0.1.0
+Summary: Netezza import helper
+License: GPLv3
+Requires-Dist: pywin32
+
