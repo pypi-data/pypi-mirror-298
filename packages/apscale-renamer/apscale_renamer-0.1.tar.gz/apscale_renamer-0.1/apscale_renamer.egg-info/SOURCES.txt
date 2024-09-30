@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+apscale_renamer/__init__.py
+apscale_renamer/__main__.py
+apscale_renamer.egg-info/PKG-INFO
+apscale_renamer.egg-info/SOURCES.txt
+apscale_renamer.egg-info/dependency_links.txt
+apscale_renamer.egg-info/entry_points.txt
+apscale_renamer.egg-info/requires.txt
+apscale_renamer.egg-info/top_level.txt

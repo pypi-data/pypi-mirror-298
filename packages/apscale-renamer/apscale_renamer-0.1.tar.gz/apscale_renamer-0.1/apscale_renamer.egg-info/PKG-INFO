@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: apscale_renamer
+Version: 0.1
+Summary: Advanced Pipeline for Simple yet Comprehensive AnaLysEs of DNA metabarcoding data - Sample save renamer
+Home-page: https://pypi.org/project/apscale_renamer/
+Author: Till-Hendrik Macher
+Author-email: macher@uni-trier.de
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=2.0.0
+
+# apscale_renamer
+ File renamer for .fastq.gz files (mainly for Windows users)
