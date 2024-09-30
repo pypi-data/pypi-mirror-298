@@ -1,0 +1,9 @@
+include pinpong/base/*.bin
+include pinpong/base/*.hex
+include pinpong/base/*.ttf
+include pinpong/base/*.conf
+include pinpong/base/gd32/*.sh
+include pinpong/base/gd32/*.txt
+include pinpong/base/gd32/*.ko
+include pinpong/base/gd32/*.bin
+include pinpong/libs/*.json
