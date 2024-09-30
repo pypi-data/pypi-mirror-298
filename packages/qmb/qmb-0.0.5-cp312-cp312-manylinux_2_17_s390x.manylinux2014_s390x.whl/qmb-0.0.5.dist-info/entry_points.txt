@@ -1,0 +1,3 @@
+[console_scripts]
+qmb-learn = qmb.learn:main
+qmb-vmc = qmb.vmc:main
