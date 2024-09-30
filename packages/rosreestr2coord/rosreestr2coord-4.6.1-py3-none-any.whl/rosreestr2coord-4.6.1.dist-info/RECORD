@@ -1,0 +1,15 @@
+rosreestr2coord/__init__.py,sha256=4JgHod4R6969awxyS2w7GlX0zdGdzVDDEQ3LXcNuLfU,40
+rosreestr2coord/__main__.py,sha256=y4ujVKLbYOKsYBgsnI96m1Jbx5UfhS2aytn0urhdEBE,124
+rosreestr2coord/batch.py,sha256=SPKG3GthrPd7x62llmiPyaMwHLp5Xai8GBxeWrZL4A0,2832
+rosreestr2coord/console.py,sha256=73NfKQXDxoCbFjOhb1NKp7C6Oc8HNs76cE45f7He5qE,4091
+rosreestr2coord/export.py,sha256=IZbcQS9SiFz6GMxt38uGpzJ_Qw7LNyraDPH4P2m9HRE,5597
+rosreestr2coord/logger.py,sha256=rUL8Nc33p3-W849EgG1jYDjBNPo4fVK1iHS1Q0atGbI,116
+rosreestr2coord/merge_tiles.py,sha256=hPTws6Y5sGwRN6X8A7D-wGkPf02P4PYqdTJVCwes83U,21627
+rosreestr2coord/parser.py,sha256=6RDe0v2_kPnU4Y-2eno4oywYZNS5Mvh6lE_YdE2Gh8k,14597
+rosreestr2coord/utils.py,sha256=EjKs_4Fy8pqExrLQF54QUgVfd32QAlOY-LddXA_DGb0,1015
+rosreestr2coord-4.6.1.dist-info/LICENSE.md,sha256=61YsLFQ73Tz8XSfQSXYhuu414UhkvZRJCC8kS5fo63Y,1064
+rosreestr2coord-4.6.1.dist-info/METADATA,sha256=BVnSvS_lxmLdpGftrVybaIDbkrqV7IeOYgpU1C76B-Q,16214
+rosreestr2coord-4.6.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+rosreestr2coord-4.6.1.dist-info/entry_points.txt,sha256=Ug8enDhA2in-yJVO_0zmaMaoG1ePknBXq5ETZBKB8Wk,68
+rosreestr2coord-4.6.1.dist-info/top_level.txt,sha256=Xvk36hjeKWwCNQIULyumBL6SIYAazGNnl-OHOf7JCwA,16
+rosreestr2coord-4.6.1.dist-info/RECORD,,
