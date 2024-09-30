@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sheet2db-sdk
+Version: 1.0.0
+Summary: A python library to interact with Google Sheets using sheet2db api
+Home-page: UNKNOWN
+Author: Sheet2DB
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
