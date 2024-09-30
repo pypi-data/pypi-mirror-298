@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: qwergpt
+Version: 0.1.0
+Summary: QwerGPT: A Minimal Agent Framework
+Home-page: https://github.com/promptcn/qwergpt
+Author: Leo Peng
+Author-email: leo@promptcn.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp>=3.10.2
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: pydantic>=2.8.2
+Requires-Dist: requests>=2.32.3
+
+# QwerGPT
