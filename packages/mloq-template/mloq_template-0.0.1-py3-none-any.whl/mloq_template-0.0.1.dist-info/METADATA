@@ -1,0 +1,166 @@
+Metadata-Version: 2.3
+Name: mloq-template
+Version: 0.0.1
+Summary: An example package. Generated with cookiecutter-pylibrary.
+Project-URL: Documentation, https://mloq-template.readthedocs.io/
+Project-URL: Changelog, https://mloq-template.readthedocs.io/en/latest/changelog.html
+Project-URL: Tracker, https://github.com/guillemdb/mloq-template/issues
+Author-email: Guillem Duran Ballester <guillem@fragile.tech>
+Maintainer-email: Guillem Duran Ballester <guillem@fragile.tech>
+License: BSD 2-Clause License
+        
+        Copyright (c) 2024, Guillem Duran Ballester. All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+        
+            1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+            2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: AUTHORS.rst
+License-File: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Requires-Dist: click
+Requires-Dist: flogging
+Requires-Dist: pre-commit
+Provides-Extra: docs
+Requires-Dist: autoapi; extra == 'docs'
+Requires-Dist: jupyter-book; extra == 'docs'
+Requires-Dist: jupyter-cache; extra == 'docs'
+Requires-Dist: linkify-it-py; extra == 'docs'
+Requires-Dist: myst-nb; extra == 'docs'
+Requires-Dist: myst-parser; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme; extra == 'docs'
+Requires-Dist: ruyaml; extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-autoapi; extra == 'docs'
+Requires-Dist: sphinx-autodoc2; extra == 'docs'
+Requires-Dist: sphinx-book-theme; extra == 'docs'
+Requires-Dist: sphinx-copybutton; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme; extra == 'docs'
+Requires-Dist: sphinx-togglebutton; extra == 'docs'
+Requires-Dist: sphinxcontrib-bibtex; extra == 'docs'
+Requires-Dist: sphinxcontrib-mermaid; extra == 'docs'
+Requires-Dist: sphinxext-opengraph; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: mypy; extra == 'lint'
+Requires-Dist: ruff; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest-xdist; extra == 'test'
+Description-Content-Type: text/markdown
+
+========
+Overview
+========
+
+.. start-badges
+
+.. list-table::
+    :stub-columns: 1
+
+    * - docs
+      - |docs|
+    * - tests
+      - |github-actions| |codecov|
+    * - package
+      - |version| |wheel| |supported-versions| |supported-implementations| |commits-since|
+.. |docs| image:: https://readthedocs.org/projects/mloq-template/badge/?style=flat
+    :target: https://readthedocs.org/projects/mloq-template/
+    :alt: Documentation Status
+
+.. |github-actions| image:: https://github.com/guillemdb/mloq-template/actions/workflows/github-actions.yml/badge.svg
+    :alt: GitHub Actions Build Status
+    :target: https://github.com/guillemdb/mloq-template/actions
+
+.. |codecov| image:: https://codecov.io/gh/guillemdb/mloq-template/branch/main/graphs/badge.svg?branch=main
+    :alt: Coverage Status
+    :target: https://app.codecov.io/github/guillemdb/mloq-template
+
+.. |version| image:: https://img.shields.io/pypi/v/mloq-template.svg
+    :alt: PyPI Package latest release
+    :target: https://pypi.org/project/mloq-template
+
+.. |wheel| image:: https://img.shields.io/pypi/wheel/mloq-template.svg
+    :alt: PyPI Wheel
+    :target: https://pypi.org/project/mloq-template
+
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/mloq-template.svg
+    :alt: Supported versions
+    :target: https://pypi.org/project/mloq-template
+
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/mloq-template.svg
+    :alt: Supported implementations
+    :target: https://pypi.org/project/mloq-template
+
+.. |commits-since| image:: https://img.shields.io/github/commits-since/guillemdb/mloq-template/v0.0.0.svg
+    :alt: Commits since latest release
+    :target: https://github.com/guillemdb/mloq-template/compare/v0.0.0...main
+
+
+
+.. end-badges
+
+An example package. Generated with cookiecutter-pylibrary.
+
+* Free software: BSD 2-Clause License
+
+Installation
+============
+
+::
+
+    pip install mloq-template
+
+You can also install the in-development version with::
+
+    pip install https://github.com/guillemdb/mloq-template/archive/main.zip
+
+
+Documentation
+=============
+
+
+https://mloq-template.readthedocs.io/
+
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
