@@ -1,0 +1,2 @@
+recursive-include my_component/frontend/dist *
+include my_component/pypi_readme.md
