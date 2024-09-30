@@ -1,0 +1,2 @@
+[bia_bob_plugins]
+plugin1 = pyclesperanto_prototype._bia_bob_plugins:list_bia_bob_plugins
