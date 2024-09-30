@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+psi4_help/__init__.py
+psi4_help/__main__.py
+psi4_help/psi4_help.py
+psi4_help/psi4_keywords.yaml
+psi4_help.egg-info/PKG-INFO
+psi4_help.egg-info/SOURCES.txt
+psi4_help.egg-info/dependency_links.txt
+psi4_help.egg-info/entry_points.txt
+psi4_help.egg-info/requires.txt
+psi4_help.egg-info/top_level.txt

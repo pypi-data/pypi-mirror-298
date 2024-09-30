@@ -1,0 +1,2 @@
+[console_scripts]
+psi4-help = psi4_help.__main__:run_psi4_help
