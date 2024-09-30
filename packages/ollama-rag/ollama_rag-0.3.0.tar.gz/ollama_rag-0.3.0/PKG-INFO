@@ -1,0 +1,337 @@
+Metadata-Version: 2.1
+Name: ollama_rag
+Version: 0.3.0
+Summary: A RAG (Retrieval-Augmented Generation) system using Llama Index and ChromaDB
+Home-page: https://github.com/Zakk-Yang/ollama-rag.git
+Author: Zakk Yang
+Author-email: zakkyang@protonmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aiohappyeyeballs==2.4.2
+Requires-Dist: aiohttp==3.10.8
+Requires-Dist: aiosignal==1.3.1
+Requires-Dist: annotated-types==0.7.0
+Requires-Dist: anyio==4.6.0
+Requires-Dist: asgiref==3.8.1
+Requires-Dist: async-timeout==4.0.3
+Requires-Dist: asyncpg==0.29.0
+Requires-Dist: attrs==24.2.0
+Requires-Dist: autocommand==2.2.2
+Requires-Dist: backoff==2.2.1
+Requires-Dist: backports.tarfile==1.2.0
+Requires-Dist: bcrypt==4.2.0
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: build==1.2.2
+Requires-Dist: cachetools==5.5.0
+Requires-Dist: certifi==2024.8.30
+Requires-Dist: cffi==1.17.1
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: chroma-hnswlib==0.7.6
+Requires-Dist: chromadb==0.5.11
+Requires-Dist: click==8.1.7
+Requires-Dist: coloredlogs==15.0.1
+Requires-Dist: cryptography==43.0.1
+Requires-Dist: dataclasses-json==0.6.7
+Requires-Dist: Deprecated==1.2.14
+Requires-Dist: dirtyjson==1.0.8
+Requires-Dist: distro==1.9.0
+Requires-Dist: docutils==0.21.2
+Requires-Dist: durationpy==0.7
+Requires-Dist: fastapi==0.115.0
+Requires-Dist: filelock==3.16.1
+Requires-Dist: flatbuffers==24.3.25
+Requires-Dist: frozenlist==1.4.1
+Requires-Dist: fsspec==2024.9.0
+Requires-Dist: google-auth==2.35.0
+Requires-Dist: googleapis-common-protos==1.65.0
+Requires-Dist: greenlet==3.1.1
+Requires-Dist: grpcio==1.66.2
+Requires-Dist: h11==0.14.0
+Requires-Dist: httpcore==1.0.5
+Requires-Dist: httptools==0.6.1
+Requires-Dist: httpx==0.27.2
+Requires-Dist: huggingface-hub==0.25.1
+Requires-Dist: humanfriendly==10.0
+Requires-Dist: idna==3.10
+Requires-Dist: importlib_metadata==8.4.0
+Requires-Dist: importlib_resources==6.4.5
+Requires-Dist: inflect==7.3.1
+Requires-Dist: jaraco.classes==3.4.0
+Requires-Dist: jaraco.collections==5.1.0
+Requires-Dist: jaraco.context==5.3.0
+Requires-Dist: jaraco.functools==4.0.1
+Requires-Dist: jaraco.text==3.12.1
+Requires-Dist: jeepney==0.8.0
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: jiter==0.5.0
+Requires-Dist: joblib==1.4.2
+Requires-Dist: keyring==25.4.1
+Requires-Dist: kubernetes==31.0.0
+Requires-Dist: llama-cloud==0.1.0
+Requires-Dist: llama-index==0.11.14
+Requires-Dist: llama-index-agent-openai==0.3.4
+Requires-Dist: llama-index-cli==0.3.1
+Requires-Dist: llama-index-core==0.11.14
+Requires-Dist: llama-index-embeddings-huggingface==0.3.1
+Requires-Dist: llama-index-embeddings-openai==0.2.5
+Requires-Dist: llama-index-indices-managed-llama-cloud==0.4.0
+Requires-Dist: llama-index-legacy==0.9.48.post3
+Requires-Dist: llama-index-llms-ollama==0.3.3
+Requires-Dist: llama-index-llms-openai==0.2.9
+Requires-Dist: llama-index-multi-modal-llms-openai==0.2.1
+Requires-Dist: llama-index-program-openai==0.2.0
+Requires-Dist: llama-index-question-gen-openai==0.2.0
+Requires-Dist: llama-index-readers-file==0.2.2
+Requires-Dist: llama-index-readers-llama-parse==0.3.0
+Requires-Dist: llama-index-vector-stores-chroma==0.2.0
+Requires-Dist: llama-index-vector-stores-postgres==0.2.5
+Requires-Dist: llama-parse==0.5.6
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: MarkupSafe==2.1.5
+Requires-Dist: marshmallow==3.22.0
+Requires-Dist: minijinja==2.2.0
+Requires-Dist: mmh3==5.0.1
+Requires-Dist: monotonic==1.6
+Requires-Dist: more-itertools==10.3.0
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: multidict==6.1.0
+Requires-Dist: mypy-extensions==1.0.0
+Requires-Dist: networkx==3.3
+Requires-Dist: nh3==0.2.18
+Requires-Dist: nltk==3.9.1
+Requires-Dist: numpy==1.26.4
+Requires-Dist: nvidia-cublas-cu12==12.1.3.1
+Requires-Dist: nvidia-cuda-cupti-cu12==12.1.105
+Requires-Dist: nvidia-cuda-nvrtc-cu12==12.1.105
+Requires-Dist: nvidia-cuda-runtime-cu12==12.1.105
+Requires-Dist: nvidia-cudnn-cu12==9.1.0.70
+Requires-Dist: nvidia-cufft-cu12==11.0.2.54
+Requires-Dist: nvidia-curand-cu12==10.3.2.106
+Requires-Dist: nvidia-cusolver-cu12==11.4.5.107
+Requires-Dist: nvidia-cusparse-cu12==12.1.0.106
+Requires-Dist: nvidia-nccl-cu12==2.20.5
+Requires-Dist: nvidia-nvjitlink-cu12==12.6.68
+Requires-Dist: nvidia-nvtx-cu12==12.1.105
+Requires-Dist: oauthlib==3.2.2
+Requires-Dist: ollama==0.3.3
+Requires-Dist: onnxruntime==1.19.2
+Requires-Dist: openai==1.50.2
+Requires-Dist: opentelemetry-api==1.27.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-common==1.27.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-grpc==1.27.0
+Requires-Dist: opentelemetry-instrumentation==0.48b0
+Requires-Dist: opentelemetry-instrumentation-asgi==0.48b0
+Requires-Dist: opentelemetry-instrumentation-fastapi==0.48b0
+Requires-Dist: opentelemetry-proto==1.27.0
+Requires-Dist: opentelemetry-sdk==1.27.0
+Requires-Dist: opentelemetry-semantic-conventions==0.48b0
+Requires-Dist: opentelemetry-util-http==0.48b0
+Requires-Dist: orjson==3.10.7
+Requires-Dist: overrides==7.7.0
+Requires-Dist: pandas==2.2.3
+Requires-Dist: pgvector==0.2.5
+Requires-Dist: pillow==10.4.0
+Requires-Dist: pkginfo==1.10.0
+Requires-Dist: posthog==3.6.6
+Requires-Dist: protobuf==4.25.5
+Requires-Dist: psycopg2-binary==2.9.9
+Requires-Dist: pyasn1==0.6.1
+Requires-Dist: pyasn1_modules==0.4.1
+Requires-Dist: pycparser==2.22
+Requires-Dist: pydantic==2.9.2
+Requires-Dist: pydantic_core==2.23.4
+Requires-Dist: pypdf==4.3.1
+Requires-Dist: PyPika==0.48.9
+Requires-Dist: pyproject_hooks==1.2.0
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: pytz==2024.2
+Requires-Dist: PyYAML==6.0.2
+Requires-Dist: readme_renderer==44.0
+Requires-Dist: regex==2024.9.11
+Requires-Dist: requests==2.32.3
+Requires-Dist: requests-oauthlib==2.0.0
+Requires-Dist: requests-toolbelt==1.0.0
+Requires-Dist: rfc3986==2.0.0
+Requires-Dist: rich==13.8.1
+Requires-Dist: rsa==4.9
+Requires-Dist: safetensors==0.4.5
+Requires-Dist: scikit-learn==1.5.2
+Requires-Dist: scipy==1.14.1
+Requires-Dist: SecretStorage==3.3.3
+Requires-Dist: sentence-transformers==3.1.1
+Requires-Dist: shellingham==1.5.4
+Requires-Dist: sniffio==1.3.1
+Requires-Dist: soupsieve==2.6
+Requires-Dist: SQLAlchemy==2.0.35
+Requires-Dist: starlette==0.38.6
+Requires-Dist: striprtf==0.0.26
+Requires-Dist: sympy==1.13.3
+Requires-Dist: tenacity==8.5.0
+Requires-Dist: threadpoolctl==3.5.0
+Requires-Dist: tiktoken==0.7.0
+Requires-Dist: tokenizers==0.20.0
+Requires-Dist: tomli==2.0.1
+Requires-Dist: torch==2.4.1
+Requires-Dist: tqdm==4.66.5
+Requires-Dist: transformers==4.45.1
+Requires-Dist: triton==3.0.0
+Requires-Dist: twine==5.1.1
+Requires-Dist: typeguard==4.3.0
+Requires-Dist: typer==0.12.5
+Requires-Dist: typing-inspect==0.9.0
+Requires-Dist: tzdata==2024.2
+Requires-Dist: urllib3==2.2.3
+Requires-Dist: uvicorn==0.31.0
+Requires-Dist: uvloop==0.20.0
+Requires-Dist: watchfiles==0.24.0
+Requires-Dist: websocket-client==1.8.0
+Requires-Dist: websockets==13.1
+Requires-Dist: wrapt==1.16.0
+Requires-Dist: yarl==1.13.1
+
+# Llama Index Query Engine + Ollama Model to Create Your Own Knowledge Pool
+
+This project is a robust and modular application that builds an efficient query engine using LlamaIndex, ChromaDB, and custom embeddings. It allows you to index documents from multiple directories and query them using natural language.
+
+Input Question Example: where can i find the adress of Jason Black?
+Output example: The address is 'xxx, xxx, xxx'
+
+
+
+## Table of Contents
+
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- **Modular Design**: The project is organized into separate modules for easy maintenance and scalability.
+- **Efficient Indexing**: Uses ChromaDB to store embeddings, allowing efficient indexing and querying.
+- **Incremental Updates**: Only new or updated documents are indexed, improving performance.
+- **Multiple Directories Support**: Indexes documents from multiple directories across different locations.
+- **Custom Embeddings**: Utilizes custom embedding models for better performance.
+- **Error Handling**: Gracefully handles missing directories or files and recreates the index as needed.
+- **Logging**: Provides detailed logs for monitoring and debugging.
+- **Advanced Text-Based File Support**: Supports a variety of text-based file formats, including:
+  - **Text Files**: Plain text (.txt), Markdown (.md), HTML (.html, .htm), XML (.xml), CSV (.csv).
+  - **Document Files**: PDF (.pdf), Microsoft Word (.doc, .docx), Rich Text Format (.rtf).
+  - **Jupyter Notebooks**: Jupyter Notebook (.ipynb).
+
+## Project Structure
+```graphql
+ollama_rag/
+├── ollama_rag/
+│   ├── __init__.py
+│   ├── ollama_rag.py         # Main class OllamaRAG
+│   ├── models.py
+│   ├── data_loader.py
+│   ├── indexer.py
+│   ├── query_engine.py
+│   ├── prompts.py
+│   ├── document_tracker.py
+│ 
+├── tests/
+│   └── ... (test scripts)
+├── setup.py
+├── README.md
+├── LICENSE
+├── MANIFEST.in
+└── requirements.txt
+```
+
+## Prerequisites
+
+- **Python 3.7 or higher**: Ensure you have Python installed.
+- **Git**: For cloning the repository.
+- **Pip**: Python package installer.
+
+## Installation
+### Install via PyPI (Recommended)
+You can install `ollama_rag` directly from PyPI:
+```bash
+pip install --upgrade ollama-rag
+```
+
+### Install from Source
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/Zakk-Yang/ollama-rag.git
+   cd my_llama_project
+   ```
+
+2. **Create a Virtual Environment (Recommended)**
+    ```bash
+    conda create -n env python=3.10
+    conda activate env
+    ```
+
+3. **Install Dependencies and the Package**
+    ```bash
+    pip install .
+    ```
+    
+4. **Install Ollama model**
+Please visit https://ollama.com/download for more details.
+Install your selected model by the following example: 
+```bash
+ollama pull llama3.2
+```
+
+## Usage
+### Running a Query
+```python
+from ollama_rag import OllamaRAG
+
+# Initialize the query engine with your configurations
+engine = OllamaRAG(
+    model_name="llama3.2", # replace your ollama model name
+    request_timeout=120.0,
+    embedding_model_name="BAAI/bge-large-en-v1.5", # replace your hugging face embedding model
+    trust_remote_code=True,
+    input_dirs=[
+        "/your/path/to/your/documents",
+        # Add more directories as needed
+    ],
+    required_exts=[
+        ".txt", ".md", ".html", ".htm", ".xml", ".json", ".csv",
+        ".pdf", ".doc", ".docx", ".rtf", ".ipynb",
+    ]
+)
+
+# Update the index with new or updated documents
+engine.update_index()
+
+# Run a query
+response = engine.query("where can i find Jason Black's address?") # replace your question
+print(response)
+```
+
+
+## Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the Repository
+2. Create a Branch
+```bash
+git checkout -b feature/your-feature-name
+```
+
+3. Commit Your Changes
+```bash
+git commit -am 'Add new feature'
+```
+4.Push to the Branch
+```bash
+git push origin feature/your-feature-name
+```
+
+## License
+The source code for the site is licensed under the MIT license, which you can find in the MIT-LICENSE.txt file.

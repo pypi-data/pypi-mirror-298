@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+ollama_rag/__init__.py
+ollama_rag/configs.py
+ollama_rag/data_loader.py
+ollama_rag/document_tracker.py
+ollama_rag/indexer.py
+ollama_rag/models.py
+ollama_rag/ollama_rag.py
+ollama_rag/prompts.py
+ollama_rag/query_engine.py
+ollama_rag.egg-info/PKG-INFO
+ollama_rag.egg-info/SOURCES.txt
+ollama_rag.egg-info/dependency_links.txt
+ollama_rag.egg-info/requires.txt
+ollama_rag.egg-info/top_level.txt
