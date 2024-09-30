@@ -1,0 +1,11 @@
+pandas
+mlxtend
+scikit-learn
+matplotlib
+geopandas
+shapely
+
+[dev]
+pytest>=3.9
+check-manifest
+twine
