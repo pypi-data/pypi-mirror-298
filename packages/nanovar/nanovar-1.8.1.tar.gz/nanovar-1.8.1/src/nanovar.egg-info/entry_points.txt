@@ -1,0 +1,2 @@
+[console_scripts]
+nanovar = nanovar.nanovar:main
