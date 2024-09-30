@@ -1,0 +1,11 @@
+psi4_help/__init__.py,sha256=AC6elV8YVWg4Xb-h0fE5bXYeVhAsaYje936izL28arQ,121
+psi4_help/__main__.py,sha256=TXicFoU96veABoJ3Re-jOYp978mM8hSmLLWg3WVDS-E,110
+psi4_help/main.py,sha256=TXicFoU96veABoJ3Re-jOYp978mM8hSmLLWg3WVDS-E,110
+psi4_help/psi4_help.py,sha256=eSXRmJs0H6PJnzCRSIUlS3n2w229JG-XNMOkusMn22U,7946
+psi4_help/psi4_keywords.yaml,sha256=7P62b3qfWOj_r5amWrM0W4sdEpkxqd4Ix8_ZHQ_Wm74,258156
+psi4_help-0.1.0.dist-info/LICENSE,sha256=aFLFZg6LEJFpTlNQ8su3__jw4GfV-xWBmC1cePkKZVw,35802
+psi4_help-0.1.0.dist-info/METADATA,sha256=IkYqOpSUHUpc1vtmDGDYxZwotw3EL3TfCYI6eXymKpU,1338
+psi4_help-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+psi4_help-0.1.0.dist-info/entry_points.txt,sha256=-NfwCRqeNnTmpFOqzmq49IirsUWDPnrt3M60t06ZlQ0,63
+psi4_help-0.1.0.dist-info/top_level.txt,sha256=p7vW_lGOSTQyFWbWl9CX1AECiBUsYIvr5k9goZEgFNw,10
+psi4_help-0.1.0.dist-info/RECORD,,
