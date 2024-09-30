@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: currencyapinet
+Version: 1.0.4
+Summary: Python wrapper for CurrencyApi.net
+Home-page: https://currencyapi.net/sdk/python
+Author-email: support@currencyapi.net
+Keywords: currency feed,currency rates,currencyapi,currency
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# CurrencyApi Python wrapper 
+
+
+[![PyPI version](https://badge.fury.io/py/currencyapinet.svg)](https://pypi.org/project/currencyapinet/) [![Coverage Status](https://coveralls.io/repos/github/houseofapis/currencyapi-python/badge.svg?branch=main)](https://coveralls.io/github/houseofapis/currencyapi-python?branch=main) 
+
+
+<a href="https://currencyapi.net" title="CurrencyApi">CurrencyApi.net</a> provides live currency rates via a REST API. A live currency feed for over 152 currencies, including physical (USD, GBP, EUR + more) and cryptos (Bitcoin, Litecoin, Ethereum + more). A JSON and XML currency api updated every 60 seconds. 
+
+Features:
+
+- Live exchange rates (updated every 60 seconds).
+- 152 currencies world currencies.
+- Popular cryptocurrencies included; Bitcoin, Litecoin etc.
+- Convert currencies on the fly with the convert endpoint.
+- Historical currency rates back to year 2000.
+- Easy to follow <a href="https://currencyapi.net/documentation" title="currency-api-documentation">documentation</a>
+
+Signup for a free or paid account <a href="https://currencyapi.net/#pricing-sec" title="currency-api-pricing">here</a>.
+
+## This package
+
+Python wrapper for <a href="https://currencyapi.net" title="CurrencyApi">CurrencyApi.net</a> endpoints.
+
+#### Prerequisites
+
+- Minimum Python version 3.5
+- Last tested and working on Python 3.11.5
+- Free or Paid account with CurrencyApi.net
+
+#### Test Coverage
+
+- 100% coverage
+
+## Installation
+
+View our <a href="https://currencyapi.net/sdk/python">Python SDK</a> guide
