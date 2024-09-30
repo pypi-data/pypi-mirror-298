@@ -1,0 +1,49 @@
+name: CI
+on: [push, pull_request]
+
+env:
+  TASK_PYTHON: '3.12'
+
+jobs:
+
+  test:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        python-version: ['3.8', '3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+      - uses: taiki-e/install-action@just
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: uv sync --locked --all-extras --dev
+      - run: just -v lint
+      - run: just -v types
+      - run: just -v test
+      - run: just -v dist
+      - if: matrix.python-version == env.TASK_PYTHON
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  release:
+    needs: test
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
+    runs-on: ubuntu-24.04
+    environment:  # allows release permissions to be gated behind additional rules
+      name: pypi
+      url: https://pypi.org/project/yaxmldiff
+    permissions:
+      id-token: write  # needed for trusted publishing
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+      - run: ls -l dist
+      - uses: pypa/gh-action-pypi-publish@release/v1
