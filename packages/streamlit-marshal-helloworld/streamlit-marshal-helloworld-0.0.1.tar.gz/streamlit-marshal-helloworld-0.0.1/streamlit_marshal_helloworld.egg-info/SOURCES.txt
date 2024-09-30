@@ -1,0 +1,17 @@
+setup.py
+my_component/MANIFEST.in
+my_component/__init__.py
+my_component/build.py
+my_component/pypi_readme.md
+my_component/vite.config.js
+my_component/frontend/.gitignore
+my_component/frontend/index.html
+my_component/frontend/main.js
+my_component/frontend/package-lock.json
+my_component/frontend/package.json
+my_component/frontend/public/vite.svg
+streamlit_marshal_helloworld.egg-info/PKG-INFO
+streamlit_marshal_helloworld.egg-info/SOURCES.txt
+streamlit_marshal_helloworld.egg-info/dependency_links.txt
+streamlit_marshal_helloworld.egg-info/requires.txt
+streamlit_marshal_helloworld.egg-info/top_level.txt
