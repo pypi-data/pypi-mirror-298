@@ -1,0 +1,8 @@
+setup.py
+streamlit_marshal_helloworld/__init__.py
+streamlit_marshal_helloworld/build.py
+streamlit_marshal_helloworld.egg-info/PKG-INFO
+streamlit_marshal_helloworld.egg-info/SOURCES.txt
+streamlit_marshal_helloworld.egg-info/dependency_links.txt
+streamlit_marshal_helloworld.egg-info/requires.txt
+streamlit_marshal_helloworld.egg-info/top_level.txt
