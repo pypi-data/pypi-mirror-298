@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: graphnex
+Version: 0.0.0.1
+Summary: agent framework
+Home-page: https://github.com/yaqiangsun/GraphNex
+Author: Yaqiang Sun
+License: GPL v3
+Keywords: lite agent framework
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: Unix
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Requires-Dist: llama-index
+
+# GraphNex
