@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: llmbench_cmri
+Version: 0.1.1
+Summary: A framework for load testing llmbench APIs
+License: Apache-2.0
+Author: CMRI Testing Team
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: blobfile (>=3.0.0,<4.0.0)
+Requires-Dist: dacite (>=1.8.1,<2.0.0)
+Requires-Dist: faker (>=28.4.1,<29.0.0)
+Requires-Dist: flask (>=3.0.3,<4.0.0)
+Requires-Dist: gevent (>=24.2.1,<25.0.0)
+Requires-Dist: jwt (>=1.3.1,<2.0.0)
+Requires-Dist: lz4 (>=4.3.3,<5.0.0)
+Requires-Dist: numpy (>=2.1.1,<3.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: plotly (>=5.24.1,<6.0.0)
+Requires-Dist: pyarrow (>=17.0.0,<18.0.0)
+Requires-Dist: pydantic (>=2.9.0,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: pyzstd (>=0.16.1,<0.17.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: tdqm (>=0.0.1,<0.0.2)
+Requires-Dist: tiktoken (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# LLMBench
+
+A Tool for evaulation the performance of LLM APIs.
+
+# Installation
+```bash
+git clone ...
+cd LLMBench
+pip install -e .
+```
+
+# Basic Usage
+
+
+### Example
+```bash
+llmbench_tokenmark \
+--dataset "test1" \
+--model test \   # 发起用那个客户端
+--num_concurrent_requests 10 \
+--timeout 600 \
+--max_request_num 1000 \       # test1 数据集中 取1000条数据
+--results-dir "result_outputs" \
+--extra_params '{}'
+
+```
+
+
+
