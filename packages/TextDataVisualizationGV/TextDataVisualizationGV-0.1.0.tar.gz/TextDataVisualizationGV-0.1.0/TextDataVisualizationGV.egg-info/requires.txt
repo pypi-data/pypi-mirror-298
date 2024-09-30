@@ -1,0 +1,10 @@
+pandas
+bokeh
+matplotlib
+missingno
+plotly
+seaborn
+altair
+wordcloud
+numpy
+pillow
