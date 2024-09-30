@@ -1,0 +1,7 @@
+ovos-plugin-manager>=0.0.24
+ovos-utils<1.0.0,>=0.2.1
+SpeechRecognition~=3.8
+transformers
+torch
+torchaudio
+langcodes
