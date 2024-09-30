@@ -1,0 +1,6 @@
+async_db_polars/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+async_db_polars/db.py,sha256=CfSowUWAXbnSwcgRg1PCB7tI-nB43PB21ojC5YqtRMA,7693
+async_db_polars/pgdb.py,sha256=wH7HFVdD3rfdnU5qUUgn1WjVYhpn77Khnkg9aNU-U-0,4356
+async_db_polars-0.1.8.dist-info/METADATA,sha256=Jm1DYq4J4WI38R2u3PFy02uHCgsDHjNbDwz2Fhgsjjw,394
+async_db_polars-0.1.8.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+async_db_polars-0.1.8.dist-info/RECORD,,

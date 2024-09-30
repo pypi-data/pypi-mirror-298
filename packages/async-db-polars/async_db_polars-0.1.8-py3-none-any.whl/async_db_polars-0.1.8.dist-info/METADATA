@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: async-db-polars
+Version: 0.1.8
+Summary: High level DB abstraction that uses polars to represent tables in memory.
+Author-email: WolfEYc <wolfeycode@gmail.com>
+License-Expression: MIT
+Requires-Python: >=3.12
+Requires-Dist: asyncpg
+Requires-Dist: polars
+Description-Content-Type: text/markdown
+
+High level DB abstraction that uses polars to represent tables in memory.
