@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+oban_classifier/__init__.py
+oban_classifier/classifier.py
+oban_classifier.egg-info/PKG-INFO
+oban_classifier.egg-info/SOURCES.txt
+oban_classifier.egg-info/dependency_links.txt
+oban_classifier.egg-info/requires.txt
+oban_classifier.egg-info/top_level.txt
