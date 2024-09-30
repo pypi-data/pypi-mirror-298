@@ -1,0 +1,10 @@
+predacons_cli/__init__.py,sha256=FVCNWiScqtZAcQPeCzVHtey2kCk9trXd9e-RNDmfldc,49
+predacons_cli/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+predacons_cli/src/cli.py,sha256=xtdaTF0ZLSQxEQZqLYYF7C1rd6Demnb3_tyLJbst02k,12732
+predacons_cli/src/predacons_cli.py,sha256=qXDXBXCOjQ5OFYqqdd6NGvM4EYOcfl3XzhhOGeB5RE0,857
+predacons_cli-0.0.100.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+predacons_cli-0.0.100.dist-info/METADATA,sha256=fKGsYjhAqh4rKZjJYWsvzUpFpiqg6fwCy0lNbun5FAA,12778
+predacons_cli-0.0.100.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+predacons_cli-0.0.100.dist-info/entry_points.txt,sha256=1EIDcgKjyktafhePqv1JLoFvsW16CGgpdl40ZPBP5xg,69
+predacons_cli-0.0.100.dist-info/top_level.txt,sha256=ESYf-2A_ANgITpi5QQGO96fB34THFwPFPeQpc7FBXhE,14
+predacons_cli-0.0.100.dist-info/RECORD,,
