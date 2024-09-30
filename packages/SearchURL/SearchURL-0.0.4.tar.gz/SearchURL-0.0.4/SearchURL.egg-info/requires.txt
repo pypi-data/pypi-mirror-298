@@ -1,0 +1,7 @@
+soupsieve>=2.6
+beautifulsoup4>=4.12.3
+requests
+thefuzz>=0.22.1
+
+[dev]
+twine>=4.0.2
