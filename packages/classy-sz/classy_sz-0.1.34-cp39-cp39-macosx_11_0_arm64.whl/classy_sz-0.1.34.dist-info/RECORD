@@ -1,0 +1,10 @@
+classy_sz.cpython-39-darwin.so,sha256=zxV1qw1qYa2UPF13KL4NdzAjZW-FLfqq2i14WJmBPtM,3516640
+classy_sz-0.1.34.dist-info/RECORD,,
+classy_sz-0.1.34.dist-info/LICENSE,sha256=l61CDpgwnoEFi8ZS9pQhSDKJx46PZToiKHZ2X8LSlJ0,1069
+classy_sz-0.1.34.dist-info/WHEEL,sha256=HFavhTVJkcvCt-evT_vd5IQu5DLxvBS21rDCLgo75qw,107
+classy_sz-0.1.34.dist-info/top_level.txt,sha256=ouSJ3Eta4cEujMAwfhQqPjWdeT7C9AXK1VmJYWAhxls,10
+classy_sz-0.1.34.dist-info/METADATA,sha256=d_Qr77zBcYvcijuUvtMKlzpRZAnwXTQ1KTqe1LqWyuY,522
+classy_sz.dylibs/libgsl.28.dylib,sha256=uzBMawqnU7dmkJo0C95dC5VRFDKjEYlwyiG-UphK2Vs,2241424
+classy_sz.dylibs/libomp.dylib,sha256=tza7olbWlZLA2R1lxbiy0CgYyLXhY3VjCdYx-vPs6Ow,735536
+classy_sz.dylibs/libfftw3.3.dylib,sha256=JamWMO_hcpE5OqXkcmCd087baK4frjiR8gmsNYrkHa0,687968
+classy_sz.dylibs/libgslcblas.0.dylib,sha256=3LKbiyrq0qin0-dE02bvI9BKdNSmqmvESzLtv1tWiZw,239760
