@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: oban_classifier
+Version: 0.1.85
+Summary: Oban Classifier: A Skorch-based flexible neural network for binary and multiclass classification
+Author: Dr. Volkan OBAN
+Author-email: volkanobn@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: skorch
+Requires-Dist: torch
+
+# Oban Classifier
+
+**Oban Classifier** is a flexible neural network-based classifier built on top of PyTorch and Skorch. It supports both binary and multiclass classification, and allows users to define parameters such as the number of units, activation function, dropout rate, and more.
+
+## Features
+
+- Supports **binary and multiclass classification**.
+- Allows **user-defined parameters** for hidden units, activation functions, dropout, and more.
+- Built using **Skorch** and **PyTorch** for easy integration with scikit-learn pipelines.
+- Provides detailed **performance metrics** including accuracy, precision, recall, F1-score, and confusion matrix.
+
+## Installation
+
+You can install the library via pip after publishing it on PyPI:
+
+```bash
+pip install oban_classifier
+
+
+### Usage Example
+
+from oban_classifier import oban_classifier
+from sklearn.datasets import load_breast_cancer
+import pandas as pd
+
+# Load the Breast Cancer dataset
+data = load_breast_cancer()
+X = pd.DataFrame(data.data, columns=data.feature_names)
+y = pd.Series(data.target)
+
+# Train and evaluate the model
+oban_classifier(X, y, num_units=64, num_classes=2, max_epochs=20, lr=0.01)
+
