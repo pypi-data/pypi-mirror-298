@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: attachment-downloader
+Version: 1.2.8
+Summary: Simple tool for downloading email attachments for all emails in a given folder using an IMAP client.
+Home-page: https://github.com/jamesridgway/attachment-downloader
+Author: James Ridgway
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: assertpy==1.1
+Requires-Dist: imbox==0.9.8
+Requires-Dist: iso8601==2.1.0
+Requires-Dist: jinja2==3.1.4
+Requires-Dist: python-dateutil==2.9.0
+Requires-Dist: pylint==3.3.1
+Requires-Dist: pytest==8.3.3
+Requires-Dist: pytest-cov==5.0.0
+Requires-Dist: pytz==2024.2
+
+Attachment Downloader
+=====================
+
+Simple tool for downloading email attachments for all emails in a given
+folder using an IMAP client.
+
+Install:
+
+::
+
+    $ pip install attachment-downloader
+
+Usage:
+
+::
+
+    Usage: attachment-downloader [options]
+
+    Options:
+      -h, --help            show this help message and exit
+      --host=HOST           IMAP Host
+      --username=USERNAME   IMAP Username
+      --password=PASSWORD   IMAP Password
+      --imap-folder=IMAP_FOLDER
+                            IMAP Folder to extract attachments from
+      --subject-regex=SUBJECT_REGEX
+                            Regex that the subject must match against
+      --date-after=DATE_AFTER
+                            Select messages after this date
+      --date-before=DATE_BEFORE
+                            Select messages before this date
+      --filename-template=FILENAME_TEMPLATE
+                            Attachment filename (jinja2) template.
+      --output=DOWNLOAD_FOLDER
+                            Output directory for attachment download
+      --delete              Delete downloaded emails from Mailbox
+      --delete-copy-folder=DELETE_COPY_FOLDER
+                            IMAP folder to copy emails to before deleting them
+
+
+Example:
+
+::
+
+    $ attachment-downloader --host imap.example.com --username mail@example.com --password pa55word \\
+        --imap-folder invoices --output ~/Downloads
+
+For full instructions and documentation visit: https://github.com/jamesridgway/attachment-downloader
+
