@@ -1,0 +1,7 @@
+Custom License
+
+Copyright (C) 2024 VOBAN
+
+You are free to use, modify, and distribute this software, provided that you give credit to the original author. There is no warranty for this software, and it is provided "as is" without any guarantee of functionality.
+
+
