@@ -1,0 +1,7 @@
+setup.py
+colotama/__init__.py
+colotama/__main__.py
+colotama.egg-info/PKG-INFO
+colotama.egg-info/SOURCES.txt
+colotama.egg-info/dependency_links.txt
+colotama.egg-info/top_level.txt
