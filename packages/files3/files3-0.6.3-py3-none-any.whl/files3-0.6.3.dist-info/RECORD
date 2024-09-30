@@ -1,0 +1,14 @@
+files3/__init__.py,sha256=hr2XcCYMbpeHs6y-4RlmOovcgM0oWVrNDzm0YPuwoDs,2254
+files3/_cmd_entry.py,sha256=iuBLaGQDlHyuN_iQqe4J5RcF_wpzJQnDbFpX96jNyR4,14519
+files3/f3bool.py,sha256=-I1WdLd9T_qBEK-Hl0pdiyVh4MPSK0MoAp-PIKeOSfI,3345
+files3/f3core.py,sha256=2jv-2TPXV7hhhtmSL4JOOkgqyJz24p4DjDCYuMXPyRg,4556
+files3/f3info.py,sha256=4D3OWBH9M-eiJAgXch4FTosNduSp8MDb54RLSIW_GEY,2037
+files3/f3io.py,sha256=g6nN2f2rCJYXKenBaYLceBUg4VgpQSXNj0bPZeXd-Mk,4022
+files3/f3shell.py,sha256=P5jsa0Uu1j1ABJyPk7S1P_MiRY62lV9Ji3JU99aqVkc,9458
+files3/f3test.py,sha256=ddkcaJOlXARplFAqDsmZtqtiiVsZCmzXJD4C9ceNJ4o,36149
+files3/f3utils.py,sha256=uVWWFW-1n1L7rpdUyMY1oPJ_r1IEdv6bgTmUM-kb8B8,4084
+files3-0.6.3.dist-info/METADATA,sha256=7FSAhv-_iV_9sr0kJtGWvj8T2ls7agG7CeYUFYzepHQ,7961
+files3-0.6.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+files3-0.6.3.dist-info/entry_points.txt,sha256=PFE-j5pDSbqq5mo0tXBW27Q_B5qw2FVwvFqn6bsO8PA,122
+files3-0.6.3.dist-info/top_level.txt,sha256=UR7iI64Z3iSM0v7SwRpmy66Afm1bX2145rxgsOm23Wo,7
+files3-0.6.3.dist-info/RECORD,,
