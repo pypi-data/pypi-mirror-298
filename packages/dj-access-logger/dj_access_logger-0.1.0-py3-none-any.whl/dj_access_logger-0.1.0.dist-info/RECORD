@@ -1,0 +1,12 @@
+dj_access_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_access_logger/admin.py,sha256=4riLdOKPenKn5v8VcRUhrSpkTDFL20ww5FsQd-XQpRM,368
+dj_access_logger/middleware.py,sha256=WOlmf4bG7UwJM1ZBrfOSj2s4bODboJjus2Wq3_J-DY4,2544
+dj_access_logger/models.py,sha256=HrTcdoQmDp0v9hiocmAsfE5d0hFQrnravdGkZ_Myc_k,455
+django_access_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_access_logger/admin.py,sha256=4riLdOKPenKn5v8VcRUhrSpkTDFL20ww5FsQd-XQpRM,368
+django_access_logger/middleware.py,sha256=WOlmf4bG7UwJM1ZBrfOSj2s4bODboJjus2Wq3_J-DY4,2544
+django_access_logger/models.py,sha256=HrTcdoQmDp0v9hiocmAsfE5d0hFQrnravdGkZ_Myc_k,455
+dj_access_logger-0.1.0.dist-info/METADATA,sha256=q5wn79F05XyyqaOkIXZlo9R2THkOq3IqVQVwctq0d3M,2045
+dj_access_logger-0.1.0.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+dj_access_logger-0.1.0.dist-info/top_level.txt,sha256=2hJuCIp6wv5iPeC9NKr41HEHozbVylI0MHlmo0qoyw8,17
+dj_access_logger-0.1.0.dist-info/RECORD,,
