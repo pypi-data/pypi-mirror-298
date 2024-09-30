@@ -1,0 +1,14 @@
+neelthee_mansion/Mansion_of_Amnesia.py,sha256=UU5c55WquTvcqh6oo4r48VlkqQ4HNVK8nHjvbRyDooE,45049
+neelthee_mansion/Quests.py,sha256=q6VzR3mt9AYe29ACWZuf-suz4yOKrL946aJ493eQRS0,2611
+neelthee_mansion/Rooms.py,sha256=DJ-Y_qr_-xXMJbENgtLnWqxeIhbEEM7BXsAxpuhlh0Y,90063
+neelthee_mansion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neelthee_mansion/__main__.py,sha256=OIAWZ04le70DyjtR4hlmK9csHej7EHxeUrMoNnM-Vjc,95
+neelthee_mansion/all_game_utils.py,sha256=mnxws_YEnsoftkkBMZv1k_zlnGKWGenUvsZnNKjuFJQ,349
+neelthee_mansion/creatures.py,sha256=_TF-rbiTITvTX2rb6d5gZqGMwpMDPOKjFYnYwq76UK8,15513
+neelthee_mansion/items.py,sha256=_6-kBLmlUcB9c0_YpOjAr43Mwvy0kdoTkGU4tDvA2hk,5538
+neelthee_mansion/utils.py,sha256=Wt1CdK4eCskrxRXkeKgzVoa_NIzwQ047dJU-b_e8pb8,13559
+neelthee_mansion-3.14.3.dist-info/METADATA,sha256=SPQjKAkf36FRNbPEpCiRINLy8YArUmZPZog-tLxmtV0,1992
+neelthee_mansion-3.14.3.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+neelthee_mansion-3.14.3.dist-info/entry_points.txt,sha256=j5ScTTyIidFhmT3F6hcX9pnlom4cJdDmfe26BmM6Igo,56
+neelthee_mansion-3.14.3.dist-info/top_level.txt,sha256=woQImQewylhly5Rb24HwPEGMxPY6do_PaUwGd5BNLOM,17
+neelthee_mansion-3.14.3.dist-info/RECORD,,
