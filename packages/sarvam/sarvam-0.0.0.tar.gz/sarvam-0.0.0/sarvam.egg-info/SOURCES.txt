@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sarvam/__init__.py
+sarvam.egg-info/PKG-INFO
+sarvam.egg-info/SOURCES.txt
+sarvam.egg-info/dependency_links.txt
+sarvam.egg-info/top_level.txt
